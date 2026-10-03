@@ -1,0 +1,50 @@
+filters:
+  and:
+    - file.inFolder("spells")
+    - file.name != "index"
+properties:
+  level:
+    displayName: Level
+  school:
+    displayName: School
+  classes:
+    displayName: Classes
+  casting_time:
+    displayName: Casting time
+  range:
+    displayName: Range
+  duration:
+    displayName: Duration
+  components:
+    displayName: Components
+views:
+  - type: table
+    name: All by level
+    groupBy:
+      property: level
+      direction: ASC
+    order: [file.name, school, casting_time, range, duration, components]
+  - type: table
+    name: Wizard
+    groupBy:
+      property: level
+      direction: ASC
+    filters:
+      and:
+        - classes.contains("Wizard")
+    order: [file.name, school, casting_time, range, duration, components]
+  - type: table
+    name: Cleric
+    groupBy:
+      property: level
+      direction: ASC
+    filters:
+      and:
+        - classes.contains("Cleric")
+    order: [file.name, school, casting_time, range, duration, components]
+  - type: table
+    name: Search and sort
+    order: [file.name, level, school, classes, casting_time, range, duration]
+    sort:
+      - property: level
+        direction: ASC
