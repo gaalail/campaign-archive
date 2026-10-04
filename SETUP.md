@@ -15,7 +15,8 @@ Notes:
 - Spoiler block (click to reveal): start a line with `> [!spoiler]- Title`, then put the hidden text on the lines after it, each starting with `> `.
 - Each campaign page lists its entries in tables on its own. Don't write the list by hand.
 - Class and school lists in the spell form come from `.pages.yml`. Edit them there.
-- Images go in the media folder through the editor. The upload path in `.pages.yml` assumes the repository is named `campaign-archive`.
+- **Pictures:** most forms have an optional "Picture" field. A picture set there appears on the Gallery tab of that section's page. To show an image inside an entry's text, upload it in the editor's Media area, then write its file name in the text with double brackets and an exclamation mark in front, for example `!` followed by `[[portrait.png]]`.
+- The upload path in `.pages.yml` assumes the repository is named `campaign-archive`.
 
 ## Things to know
 

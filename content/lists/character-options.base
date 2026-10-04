@@ -1,0 +1,61 @@
+filters:
+  and:
+    - file.inFolder("character-options")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  image:
+    displayName: Picture
+  formula.Name:
+    displayName: Name
+  option_type:
+    displayName: Type
+  parent_class:
+    displayName: Parent class
+  summary:
+    displayName: Summary
+views:
+  - type: table
+    name: All by type
+    groupBy:
+      property: option_type
+      direction: ASC
+    order: [formula.Name, parent_class, summary]
+  - type: table
+    name: Classes
+    filters:
+      and:
+        - option_type == "Class"
+    order: [formula.Name, parent_class, summary]
+  - type: table
+    name: Subclasses by class
+    groupBy:
+      property: parent_class
+      direction: ASC
+    filters:
+      and:
+        - option_type == "Subclass"
+    order: [formula.Name, parent_class, summary]
+  - type: table
+    name: Races
+    filters:
+      and:
+        - option_type == "Race"
+    order: [formula.Name, parent_class, summary]
+  - type: table
+    name: Backgrounds
+    filters:
+      and:
+        - option_type == "Background"
+    order: [formula.Name, parent_class, summary]
+  - type: table
+    name: Feats
+    filters:
+      and:
+        - option_type == "Feat"
+    order: [formula.Name, parent_class, summary]
+  - type: cards
+    name: Gallery
+    image: image
+    order: [formula.Name, summary]

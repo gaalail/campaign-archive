@@ -45,6 +45,9 @@ content:
       label: Tags
       type: string
       list: true
+    - name: image
+      label: Picture (optional)
+      type: image
     - &id001
       name: body
       label: Text (Markdown)
@@ -91,6 +94,9 @@ content:
       label: Tags
       type: string
       list: true
+    - name: image
+      label: Picture (optional)
+      type: image
     - *id001
   - name: vyrun-hub
     label: Hub page
@@ -134,6 +140,9 @@ content:
       label: Tags
       type: string
       list: true
+    - name: image
+      label: Picture (optional)
+      type: image
     - *id001
   - name: curse-of-strahd-hub
     label: Hub page
@@ -257,6 +266,9 @@ content:
   - name: summary
     label: One-line summary
     type: string
+  - name: image
+    label: Picture (optional)
+    type: image
   - *id001
 - name: rules
   label: Rules
@@ -281,8 +293,51 @@ content:
   filename: '{primary}.md'
   fields:
   - name: title
+    label: Name
     type: string
     required: true
+  - name: option_type
+    label: Type
+    type: select
+    required: true
+    options:
+      values:
+      - Class
+      - Subclass
+      - Race
+      - Background
+      - Feat
+      - Other
+  - name: parent_class
+    label: Parent class (subclasses only)
+    type: select
+    options:
+      values:
+      - Artificer
+      - Barbarian
+      - Bard
+      - Cleric
+      - Druid
+      - Fighter
+      - Monk
+      - Paladin
+      - Ranger
+      - Rogue
+      - Sorcerer
+      - Warlock
+      - Wizard
   - name: summary
+    label: One-line summary
     type: string
-  - *id001
+  - name: image
+    label: Picture (optional)
+    type: image
+  - name: body
+    label: Text (Markdown)
+    type: text
+  view:
+    primary: title
+    fields:
+    - option_type
+    - parent_class
+    sort: title

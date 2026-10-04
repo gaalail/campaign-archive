@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: null
   locale: en-US
-  baseUrl: YOUR-USERNAME.github.io/campaign-archive
+  baseUrl: gaalail.github.io/campaign-archive
   ignorePatterns:
     - private
     - templates
@@ -82,7 +82,7 @@ plugins:
     enabled: true
     order: 70
   - source: "@quartz-community/latex"
-    enabled: true
+    enabled: false
     options:
       renderEngine: katex
     order: 80
@@ -119,11 +119,11 @@ plugins:
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/cname"
     enabled: false
   - source: "@quartz-community/canvas-page"
-    enabled: true
+    enabled: false
   - source: "@quartz-community/content-page"
     enabled: true
   - source: "@quartz-community/folder-page"
@@ -134,6 +134,7 @@ plugins:
     enabled: true
     options:
       folderDefaultState: collapsed
+      filterFn: "(node) => node.slugSegment !== 'tags' && node.slugSegment !== 'lists' && node.slugSegment !== 'media'"
     layout:
       position: left
       priority: 50

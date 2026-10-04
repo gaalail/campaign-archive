@@ -5,6 +5,8 @@ filters:
 formulas:
   Name: file.asLink(title)
 properties:
+  image:
+    displayName: Picture
   formula.Name:
     displayName: Name
   type:
@@ -47,4 +49,8 @@ views:
     filters:
       and:
         - type == "Session"
+    order: [formula.Name, summary]
+  - type: cards
+    name: Gallery
+    image: image
     order: [formula.Name, summary]

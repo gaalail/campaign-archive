@@ -5,6 +5,8 @@ filters:
 formulas:
   Name: file.asLink(title)
 properties:
+  image:
+    displayName: Picture
   formula.Name:
     displayName: Name
   rarity:
@@ -25,3 +27,7 @@ views:
   - type: table
     name: Search and sort
     order: [formula.Name, rarity, item_type, attunement]
+  - type: cards
+    name: Gallery
+    image: image
+    order: [formula.Name, summary]
