@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: null
   locale: en-US
-  baseUrl: Gaalail.github.io/campaign-archive
+  baseUrl: YOUR-USERNAME.github.io/campaign-archive
   ignorePatterns:
     - private
     - templates
@@ -132,6 +132,8 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      folderDefaultState: collapsed
     layout:
       position: left
       priority: 50

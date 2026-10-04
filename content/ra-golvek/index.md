@@ -2,6 +2,6 @@
 title: Ra Gol'vek
 tags: [ra-golvek]
 ---
-Campaign hub. Entries added to this folder appear in the sidebar and search automatically.
+Everything for the Ra Gol'vek campaign. New entries show up in the tables below automatically.
 
-- [[ra-golvek/example-entry|Example entry]]
+![[ra-golvek.base]]

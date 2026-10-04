@@ -1,5 +1,7 @@
 ---
 title: Curse of Strahd
-tags: [strahd]
+tags: [curse-of-strahd]
 ---
-Campaign hub. Add entries to this folder.
+Everything for the Curse of Strahd campaign. New entries show up in the tables below automatically.
+
+![[curse-of-strahd.base]]

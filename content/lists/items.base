@@ -1,0 +1,27 @@
+filters:
+  and:
+    - file.inFolder("items")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  rarity:
+    displayName: Rarity
+  item_type:
+    displayName: Item type
+  attunement:
+    displayName: Attunement
+  summary:
+    displayName: Summary
+views:
+  - type: table
+    name: All items
+    groupBy:
+      property: rarity
+      direction: ASC
+    order: [formula.Name, item_type, attunement, summary]
+  - type: table
+    name: Search and sort
+    order: [formula.Name, rarity, item_type, attunement]

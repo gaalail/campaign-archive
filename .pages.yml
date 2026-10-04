@@ -1,0 +1,288 @@
+# Pages CMS config: defines the entry forms at app.pagescms.org
+media:
+  input: content/media
+  output: /campaign-archive/media
+content:
+- name: ra-golvek
+  label: Ra Gol'vek
+  type: group
+  items:
+  - name: ra-golvek-entries
+    label: Entries
+    type: collection
+    path: content/ra-golvek
+    exclude:
+    - index.md
+    filename: '{primary}.md'
+    view:
+      primary: title
+      fields:
+      - type
+      - summary
+      sort: title
+    fields:
+    - name: title
+      label: Name
+      type: string
+      required: true
+    - name: type
+      label: Type
+      type: select
+      options:
+        values: &id002
+        - Character
+        - Place
+        - Faction
+        - Lore
+        - Session
+        - Item
+        - Rules
+        - Other
+    - name: summary
+      label: One-line summary
+      type: string
+    - name: tags
+      label: Tags
+      type: string
+      list: true
+    - &id001
+      name: body
+      label: Text (Markdown)
+      type: text
+  - name: ra-golvek-hub
+    label: Hub page
+    type: file
+    path: content/ra-golvek/index.md
+    fields:
+    - name: title
+      type: string
+    - *id001
+- name: vyrun
+  label: Vyrun
+  type: group
+  items:
+  - name: vyrun-entries
+    label: Entries
+    type: collection
+    path: content/vyrun
+    exclude:
+    - index.md
+    filename: '{primary}.md'
+    view:
+      primary: title
+      fields:
+      - type
+      - summary
+      sort: title
+    fields:
+    - name: title
+      label: Name
+      type: string
+      required: true
+    - name: type
+      label: Type
+      type: select
+      options:
+        values: *id002
+    - name: summary
+      label: One-line summary
+      type: string
+    - name: tags
+      label: Tags
+      type: string
+      list: true
+    - *id001
+  - name: vyrun-hub
+    label: Hub page
+    type: file
+    path: content/vyrun/index.md
+    fields:
+    - name: title
+      type: string
+    - *id001
+- name: curse-of-strahd
+  label: Curse of Strahd
+  type: group
+  items:
+  - name: curse-of-strahd-entries
+    label: Entries
+    type: collection
+    path: content/curse-of-strahd
+    exclude:
+    - index.md
+    filename: '{primary}.md'
+    view:
+      primary: title
+      fields:
+      - type
+      - summary
+      sort: title
+    fields:
+    - name: title
+      label: Name
+      type: string
+      required: true
+    - name: type
+      label: Type
+      type: select
+      options:
+        values: *id002
+    - name: summary
+      label: One-line summary
+      type: string
+    - name: tags
+      label: Tags
+      type: string
+      list: true
+    - *id001
+  - name: curse-of-strahd-hub
+    label: Hub page
+    type: file
+    path: content/curse-of-strahd/index.md
+    fields:
+    - name: title
+      type: string
+    - *id001
+- name: spells
+  label: Spells
+  type: collection
+  path: content/spells
+  exclude:
+  - index.md
+  filename: '{primary}.md'
+  view:
+    primary: title
+    fields:
+    - level
+    - school
+    - classes
+    sort: title
+  fields:
+  - name: title
+    label: Spell name
+    type: string
+    required: true
+  - name: level
+    label: Level (0 for cantrip)
+    type: number
+    required: true
+  - name: school
+    label: School
+    type: select
+    options:
+      values:
+      - Abjuration
+      - Conjuration
+      - Divination
+      - Enchantment
+      - Evocation
+      - Illusion
+      - Necromancy
+      - Transmutation
+  - name: classes
+    label: Classes
+    type: select
+    options:
+      multiple: true
+      values:
+      - Artificer
+      - Barbarian
+      - Bard
+      - Cleric
+      - Druid
+      - Fighter
+      - Monk
+      - Paladin
+      - Ranger
+      - Rogue
+      - Sorcerer
+      - Warlock
+      - Wizard
+  - name: casting_time
+    label: Casting time
+    type: string
+  - name: range
+    label: Range
+    type: string
+  - name: duration
+    label: Duration
+    type: string
+  - name: components
+    label: Components (V, S, M)
+    type: string
+  - name: ritual
+    label: Ritual
+    type: boolean
+  - name: concentration
+    label: Concentration
+    type: boolean
+  - name: body
+    label: Description (Markdown)
+    type: text
+- name: items
+  label: Items
+  type: collection
+  path: content/items
+  exclude:
+  - index.md
+  filename: '{primary}.md'
+  view:
+    primary: title
+    fields:
+    - rarity
+    - item_type
+    sort: title
+  fields:
+  - name: title
+    label: Item name
+    type: string
+    required: true
+  - name: rarity
+    label: Rarity
+    type: select
+    options:
+      values:
+      - Common
+      - Uncommon
+      - Rare
+      - Very rare
+      - Legendary
+      - Artifact
+  - name: item_type
+    label: Item type
+    type: string
+  - name: attunement
+    label: Requires attunement
+    type: boolean
+  - name: summary
+    label: One-line summary
+    type: string
+  - *id001
+- name: rules
+  label: Rules
+  type: collection
+  path: content/rules
+  exclude:
+  - index.md
+  filename: '{primary}.md'
+  fields:
+  - name: title
+    type: string
+    required: true
+  - name: summary
+    type: string
+  - *id001
+- name: character-options
+  label: Character options
+  type: collection
+  path: content/character-options
+  exclude:
+  - index.md
+  filename: '{primary}.md'
+  fields:
+  - name: title
+    type: string
+    required: true
+  - name: summary
+    type: string
+  - *id001

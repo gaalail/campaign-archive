@@ -1,0 +1,50 @@
+filters:
+  and:
+    - file.inFolder("vyrun")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  type:
+    displayName: Type
+  summary:
+    displayName: Summary
+views:
+  - type: table
+    name: All by type
+    groupBy:
+      property: type
+      direction: ASC
+    order: [formula.Name, summary]
+  - type: table
+    name: Characters
+    filters:
+      and:
+        - type == "Character"
+    order: [formula.Name, summary]
+  - type: table
+    name: Places
+    filters:
+      and:
+        - type == "Place"
+    order: [formula.Name, summary]
+  - type: table
+    name: Factions
+    filters:
+      and:
+        - type == "Faction"
+    order: [formula.Name, summary]
+  - type: table
+    name: Lore
+    filters:
+      and:
+        - type == "Lore"
+    order: [formula.Name, summary]
+  - type: table
+    name: Sessions
+    filters:
+      and:
+        - type == "Session"
+    order: [formula.Name, summary]

@@ -2,4 +2,6 @@
 title: Vyrun
 tags: [vyrun]
 ---
-Campaign hub. Add entries to this folder.
+Everything for the Vyrun campaign. New entries show up in the tables below automatically.
+
+![[vyrun.base]]
