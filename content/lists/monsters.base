@@ -1,0 +1,48 @@
+filters:
+  and:
+    - file.inFolder("monsters")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  size:
+    displayName: Size
+  creature_type:
+    displayName: Type
+  cr:
+    displayName: CR
+  ac:
+    displayName: AC
+  hp:
+    displayName: HP
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: All by type
+    groupBy:
+      property: creature_type
+      direction: ASC
+    order: [formula.Name, size, cr, ac, hp]
+    sort:
+      - property: creature_type
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Search and sort
+    order: [formula.Name, size, creature_type, cr, ac, hp]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Homebrew
+    filters:
+      and:
+        - source == "Homebrew"
+    order: [formula.Name, size, creature_type, cr]
+    sort:
+      - property: file.name
+        direction: ASC

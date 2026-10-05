@@ -5,8 +5,6 @@ filters:
 formulas:
   Name: file.asLink(title)
 properties:
-  image:
-    displayName: Picture
   formula.Name:
     displayName: Name
   rarity:
@@ -17,17 +15,84 @@ properties:
     displayName: Attunement
   summary:
     displayName: Summary
+  source:
+    displayName: Source
 views:
   - type: table
     name: All items
-    groupBy:
-      property: rarity
-      direction: ASC
-    order: [formula.Name, item_type, attunement, summary]
-  - type: table
-    name: Search and sort
     order: [formula.Name, rarity, item_type, attunement]
-  - type: cards
-    name: Gallery
-    image: image
-    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Common
+    filters:
+      and:
+        - rarity == "Common"
+    order: [formula.Name, item_type, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Uncommon
+    filters:
+      and:
+        - rarity == "Uncommon"
+    order: [formula.Name, item_type, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Rare
+    filters:
+      and:
+        - rarity == "Rare"
+    order: [formula.Name, item_type, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Very Rare
+    filters:
+      and:
+        - rarity == "Very Rare"
+    order: [formula.Name, item_type, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Legendary
+    filters:
+      and:
+        - rarity == "Legendary"
+    order: [formula.Name, item_type, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Artifact
+    filters:
+      and:
+        - rarity == "Artifact"
+    order: [formula.Name, item_type, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Varies
+    filters:
+      and:
+        - rarity == "Varies"
+    order: [formula.Name, item_type, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Homebrew
+    filters:
+      and:
+        - source == "Homebrew"
+    order: [formula.Name, rarity, item_type]
+    sort:
+      - property: file.name
+        direction: ASC

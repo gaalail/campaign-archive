@@ -1,6 +1,6 @@
 ---
 title: Character options
 ---
-Races, classes, subclasses, feats, and other options for building a character. Use the tabs to switch lists. Subclasses are grouped under their parent class.
+Classes, subclasses, races, backgrounds, and feats. Use the tabs to switch lists. Each class page lists its own subclasses.
 
 ![[character-options.base]]

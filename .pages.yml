@@ -165,6 +165,7 @@ content:
     - level
     - school
     - classes
+    - source
     sort: title
   fields:
   - name: title
@@ -225,6 +226,14 @@ content:
   - name: concentration
     label: Concentration
     type: boolean
+  - name: source
+    label: Source
+    type: select
+    required: true
+    options: &id003
+      values:
+      - SRD 5.1
+      - Homebrew
   - name: body
     label: Description (Markdown)
     type: text
@@ -240,6 +249,7 @@ content:
     fields:
     - rarity
     - item_type
+    - source
     sort: title
   fields:
   - name: title
@@ -254,9 +264,10 @@ content:
       - Common
       - Uncommon
       - Rare
-      - Very rare
+      - Very Rare
       - Legendary
       - Artifact
+      - Varies
   - name: item_type
     label: Item type
     type: string
@@ -269,7 +280,184 @@ content:
   - name: image
     label: Picture (optional)
     type: image
+  - name: source
+    label: Source
+    type: select
+    required: true
+    options: *id003
   - *id001
+- name: character-options
+  label: Character options
+  type: group
+  items:
+  - name: co-classes
+    label: Classes
+    type: collection
+    path: content/character-options/classes
+    filename: '{primary}.md'
+    fields:
+    - &id005
+      name: title
+      label: Name
+      type: string
+      required: true
+    - name: hit_die
+      label: Hit die
+      type: select
+      options:
+        values:
+        - d6
+        - d8
+        - d10
+        - d12
+    - name: spellcasting_ability
+      label: Spellcasting ability
+      type: select
+      options:
+        values: &id004
+        - STR
+        - DEX
+        - CON
+        - INT
+        - WIS
+        - CHA
+    - name: saving_throws
+      label: Saving throws
+      type: select
+      options:
+        multiple: true
+        values: *id004
+    - &id006
+      name: summary
+      label: One-line summary
+      type: string
+    - name: image
+      label: Picture (optional)
+      type: image
+    - name: source
+      label: Source
+      type: select
+      required: true
+      options: &id007
+        values:
+        - SRD 5.1
+        - Homebrew
+    - &id008
+      name: body
+      label: Text (Markdown)
+      type: text
+    view:
+      primary: title
+      fields:
+      - hit_die
+      - source
+      sort: title
+  - name: co-subclasses
+    label: Subclasses
+    type: collection
+    path: content/character-options/subclasses
+    filename: '{primary}.md'
+    fields:
+    - *id005
+    - name: parent_class
+      label: Parent class
+      type: select
+      required: true
+      options:
+        values:
+        - Artificer
+        - Barbarian
+        - Bard
+        - Cleric
+        - Druid
+        - Fighter
+        - Monk
+        - Paladin
+        - Ranger
+        - Rogue
+        - Sorcerer
+        - Warlock
+        - Wizard
+    - *id006
+    - name: image
+      label: Picture (optional)
+      type: image
+    - name: source
+      label: Source
+      type: select
+      required: true
+      options: *id007
+    - *id008
+    view:
+      primary: title
+      fields:
+      - parent_class
+      - source
+      sort: title
+  - name: co-races
+    label: Races
+    type: collection
+    path: content/character-options/races
+    filename: '{primary}.md'
+    fields:
+    - *id005
+    - *id006
+    - name: image
+      label: Picture (optional)
+      type: image
+    - name: source
+      label: Source
+      type: select
+      required: true
+      options: *id007
+    - *id008
+    view:
+      primary: title
+      fields:
+      - source
+      sort: title
+  - name: co-backgrounds
+    label: Backgrounds
+    type: collection
+    path: content/character-options/backgrounds
+    filename: '{primary}.md'
+    fields:
+    - *id005
+    - *id006
+    - name: source
+      label: Source
+      type: select
+      required: true
+      options: *id007
+    - *id008
+    view:
+      primary: title
+      fields:
+      - source
+      sort: title
+  - name: co-feats
+    label: Feats
+    type: collection
+    path: content/character-options/feats
+    filename: '{primary}.md'
+    fields:
+    - *id005
+    - name: prerequisite
+      label: Prerequisite
+      type: string
+    - *id006
+    - name: source
+      label: Source
+      type: select
+      required: true
+      options: *id007
+    - *id008
+    view:
+      primary: title
+      fields:
+      - prerequisite
+      - source
+      sort: title
 - name: rules
   label: Rules
   type: collection
@@ -284,60 +472,57 @@ content:
   - name: summary
     type: string
   - *id001
-- name: character-options
-  label: Character options
+- name: monsters
+  label: Monsters
   type: collection
-  path: content/character-options
-  exclude:
-  - index.md
+  path: content/monsters
   filename: '{primary}.md'
   fields:
-  - name: title
-    label: Name
+  - *id005
+  - name: size
+    label: Size
+    type: select
+    options:
+      values:
+      - Tiny
+      - Small
+      - Medium
+      - Large
+      - Huge
+      - Gargantuan
+  - name: creature_type
+    label: Creature type
     type: string
-    required: true
-  - name: option_type
-    label: Type
-    type: select
-    required: true
-    options:
-      values:
-      - Class
-      - Subclass
-      - Race
-      - Background
-      - Feat
-      - Other
-  - name: parent_class
-    label: Parent class (subclasses only)
-    type: select
-    options:
-      values:
-      - Artificer
-      - Barbarian
-      - Bard
-      - Cleric
-      - Druid
-      - Fighter
-      - Monk
-      - Paladin
-      - Ranger
-      - Rogue
-      - Sorcerer
-      - Warlock
-      - Wizard
-  - name: summary
-    label: One-line summary
+  - name: alignment
+    label: Alignment
+    type: string
+  - name: ac
+    label: Armor class
+    type: number
+  - name: hp
+    label: Hit points
+    type: number
+  - name: cr
+    label: Challenge rating (like 1/4 or 3)
     type: string
   - name: image
     label: Picture (optional)
     type: image
+  - name: source
+    label: Source
+    type: select
+    required: true
+    options: *id007
   - name: body
-    label: Text (Markdown)
+    label: Stat block (Markdown)
     type: text
   view:
     primary: title
     fields:
-    - option_type
-    - parent_class
+    - size
+    - creature_type
+    - cr
+    - source
     sort: title
+  exclude:
+  - index.md

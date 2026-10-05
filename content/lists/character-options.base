@@ -5,29 +5,34 @@ filters:
 formulas:
   Name: file.asLink(title)
 properties:
-  image:
-    displayName: Picture
   formula.Name:
     displayName: Name
-  option_type:
-    displayName: Type
+  hit_die:
+    displayName: Hit die
+  spellcasting_ability:
+    displayName: Spellcasting
+  saving_throws:
+    displayName: Saving throws
   parent_class:
     displayName: Parent class
   summary:
     displayName: Summary
+  prerequisite:
+    displayName: Prerequisite
+  image:
+    displayName: Picture
+  source:
+    displayName: Source
 views:
-  - type: table
-    name: All by type
-    groupBy:
-      property: option_type
-      direction: ASC
-    order: [formula.Name, parent_class, summary]
   - type: table
     name: Classes
     filters:
       and:
-        - option_type == "Class"
-    order: [formula.Name, parent_class, summary]
+        - file.inFolder("character-options/classes")
+    order: [formula.Name, hit_die, spellcasting_ability, saving_throws]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: Subclasses by class
     groupBy:
@@ -35,26 +40,49 @@ views:
       direction: ASC
     filters:
       and:
-        - option_type == "Subclass"
-    order: [formula.Name, parent_class, summary]
+        - file.inFolder("character-options/subclasses")
+    order: [formula.Name, summary]
+    sort:
+      - property: parent_class
+        direction: ASC
+      - property: file.name
+        direction: ASC
   - type: table
     name: Races
     filters:
       and:
-        - option_type == "Race"
-    order: [formula.Name, parent_class, summary]
+        - file.inFolder("character-options/races")
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: Backgrounds
     filters:
       and:
-        - option_type == "Background"
-    order: [formula.Name, parent_class, summary]
+        - file.inFolder("character-options/backgrounds")
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: Feats
     filters:
       and:
-        - option_type == "Feat"
-    order: [formula.Name, parent_class, summary]
+        - file.inFolder("character-options/feats")
+    order: [formula.Name, prerequisite]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Homebrew
+    filters:
+      and:
+        - source == "Homebrew"
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: cards
     name: Gallery
     image: image

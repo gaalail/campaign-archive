@@ -21,6 +21,8 @@ properties:
     displayName: Duration
   components:
     displayName: Components
+  source:
+    displayName: Source
 views:
   - type: table
     name: All by level
@@ -28,15 +30,39 @@ views:
       property: level
       direction: ASC
     order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
   - type: table
-    name: Wizard
+    name: Artificer
     groupBy:
       property: level
       direction: ASC
     filters:
       and:
-        - classes.contains("Wizard")
+        - classes.contains("Artificer")
     order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Bard
+    groupBy:
+      property: level
+      direction: ASC
+    filters:
+      and:
+        - classes.contains("Bard")
+    order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
   - type: table
     name: Cleric
     groupBy:
@@ -46,9 +72,107 @@ views:
       and:
         - classes.contains("Cleric")
     order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Druid
+    groupBy:
+      property: level
+      direction: ASC
+    filters:
+      and:
+        - classes.contains("Druid")
+    order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Paladin
+    groupBy:
+      property: level
+      direction: ASC
+    filters:
+      and:
+        - classes.contains("Paladin")
+    order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Ranger
+    groupBy:
+      property: level
+      direction: ASC
+    filters:
+      and:
+        - classes.contains("Ranger")
+    order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Sorcerer
+    groupBy:
+      property: level
+      direction: ASC
+    filters:
+      and:
+        - classes.contains("Sorcerer")
+    order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Warlock
+    groupBy:
+      property: level
+      direction: ASC
+    filters:
+      and:
+        - classes.contains("Warlock")
+    order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Wizard
+    groupBy:
+      property: level
+      direction: ASC
+    filters:
+      and:
+        - classes.contains("Wizard")
+    order: [formula.Name, school, casting_time, range, duration, components]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
   - type: table
     name: Search and sort
     order: [formula.Name, level, school, classes, casting_time, range, duration]
     sort:
-      - property: level
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Homebrew
+    filters:
+      and:
+        - source == "Homebrew"
+    order: [formula.Name, level, school, classes]
+    sort:
+      - property: file.name
         direction: ASC

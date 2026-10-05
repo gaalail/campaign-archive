@@ -1,0 +1,18 @@
+filters:
+  and:
+    - file.inFolder("character-options/subclasses")
+    - parent_class == this.file.name
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  summary:
+    displayName: Summary
+views:
+  - type: table
+    name: Subclasses
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC

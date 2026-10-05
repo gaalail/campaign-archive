@@ -206,8 +206,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        SRD 5.1 attribution: https://gaalail.github.io/campaign-archive/srd-attribution
     layout:
       position: footer
       priority: 50

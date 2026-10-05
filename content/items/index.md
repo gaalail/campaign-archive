@@ -1,6 +1,6 @@
 ---
 title: Items
 ---
-Magic items and gear from every campaign.
+Magic items from the SRD plus homebrew. Use the tabs to browse by rarity.
 
 ![[items.base]]

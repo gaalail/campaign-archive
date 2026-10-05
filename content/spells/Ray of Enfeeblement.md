@@ -1,0 +1,21 @@
+---
+title: Ray of Enfeeblement
+level: 2
+school: Necromancy
+classes:
+- Warlock
+- Wizard
+casting_time: 1 action
+range: 60 feet
+duration: Up to 1 minute
+components: V, S
+ritual: false
+concentration: true
+source: SRD 5.1
+---
+
+*2nd-level necromancy*
+
+A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.
+
+At the end of each of the target's turns, it can make a constitution saving throw against the spell. On a success, the spell ends.

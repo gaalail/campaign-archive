@@ -13,3 +13,6 @@ Pick a campaign, or jump to the shared reference.
 - [[character-options/index|Character options]]
 - [[spells/index|Spells]]
 - [[items/index|Items]]
+- [[monsters/index|Monsters]]
+
+Material marked SRD 5.1 is used under a Creative Commons license. See the [[srd-attribution|attribution page]].
