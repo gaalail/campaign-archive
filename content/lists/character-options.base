@@ -19,6 +19,10 @@ properties:
     displayName: Summary
   prerequisite:
     displayName: Prerequisite
+  option_group:
+    displayName: Group
+  min_level:
+    displayName: Min level
   image:
     displayName: Picture
   source:
@@ -72,6 +76,24 @@ views:
         - file.inFolder("character-options/feats")
     order: [formula.Name, prerequisite]
     sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Class options
+    groupBy:
+      property: option_group
+      direction: ASC
+    filters:
+      and:
+        - file.inFolder("character-options/class-options")
+    order: [formula.Name, parent_class, min_level, prerequisite]
+    sort:
+      - property: option_group
+        direction: ASC
+      - property: parent_class
+        direction: ASC
+      - property: min_level
+        direction: ASC
       - property: file.name
         direction: ASC
   - type: table

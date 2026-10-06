@@ -25,6 +25,17 @@ Every spell, item, character option, and monster has a **Source** field. Pick "H
 - Class pages list their own subclasses automatically. A subclass's "Parent class" has to match its class page's name exactly.
 - To add a tab, copy a view block in `content/lists/` (for example `spells.base`) and change the name and filter. These files are hidden from the sidebar.
 
+## Class options (invocations, metamagic, and similar choices)
+
+Some class features are choices, not things a class gains automatically. Big lists of them, like Warlock invocations or Sorcerer metamagic, live as separate entries so the class page stays short.
+
+- In the editor, open Character options, then Class options, and add an entry. Pick its Group (like Eldritch Invocation), the Class, the minimum level, and any prerequisite (type None if there isn't one).
+- Each class page shows its own options in a table, grouped by type and sorted by level. Only the Warlock and Sorcerer pages have that table so far. For another class, such as the Artificer, add this line under a heading in its page text: `![[class-options-of.base]]`
+- To add a new group name (like Infusion or Maneuver), edit the list under "Group" in `.pages.yml`.
+- Small choice lists, like Fighting Style and Pact Boon, sit inside their feature's dropdown instead.
+- Repeated features, like Ability Score Improvement, appear once with every level listed.
+- The Class options tab on the Character options page lists every option from every class.
+
 ## SRD content and attribution
 
 Entries marked "SRD 5.1" come from the System Reference Document 5.1 by Wizards of the Coast, released under a Creative Commons license. The required credit is on the page `content/srd-attribution.md` and linked from the footer and the home page. Keep both. The SRD has no Artificer, no Tasha's or Eberron material, and only one subclass per class, so add your own through the editor.

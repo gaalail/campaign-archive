@@ -88,7 +88,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Primal Path (level 3)
 > At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.
 
-> [!info]- Ability Score Improvement (level 4)
+> [!info]- Ability Score Improvement (levels 4, 8, 12, 16, 19)
 > When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Extra Attack (level 5)
@@ -97,7 +97,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Fast Movement (level 5)
 > Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.
 
-> [!info]- Path feature (level 6)
+> [!info]- Path feature (levels 6, 10, 14)
 > At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.
 
 > [!info]- Feral Instinct (level 7)
@@ -105,43 +105,19 @@ You start with the following equipment, in addition to the equipment granted by 
 >
 > Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.
 
-> [!info]- Ability Score Improvement (level 8)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Brutal Critical (1 die) (level 9)
+> [!info]- Brutal Critical (levels 9, 13, 17)
 > Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three additional dice at 17th level.
-
-> [!info]- Path feature (level 10)
-> At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.
 
 > [!info]- Relentless Rage (level 11)
 > Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're raging and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.
 >
 > Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.
 
-> [!info]- Ability Score Improvement (level 12)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Brutal Critical (2 dice) (level 13)
-> Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three additional dice at 17th level.
-
-> [!info]- Path feature (level 14)
-> At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.
-
 > [!info]- Persistent Rage (level 15)
 > Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.
 
-> [!info]- Ability Score Improvement (level 16)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Brutal Critical (3 dice) (level 17)
-> Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three additional dice at 17th level.
-
 > [!info]- Indomitable Might (level 18)
 > Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.
-
-> [!info]- Ability Score Improvement (level 19)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Primal Champion (level 20)
 > At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.

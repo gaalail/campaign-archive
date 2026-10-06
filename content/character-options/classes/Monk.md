@@ -96,7 +96,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Step of the Wind (level 2)
 > You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.
 
-> [!info]- Unarmored Movement (level 2)
+> [!info]- Unarmored Movement (levels 2, 9)
 > Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in Table: The Monk.
 >
 > At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.
@@ -109,7 +109,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Monastic Tradition (level 3)
 > When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.
 
-> [!info]- Ability Score Improvement (level 4)
+> [!info]- Ability Score Improvement (levels 4, 8, 12, 16, 19)
 > When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Slow Fall (level 4)
@@ -124,7 +124,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Ki Empowered Strikes (level 6)
 > Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
 
-> [!info]- Monastic Tradition feature (level 6)
+> [!info]- Monastic Tradition feature (levels 6, 11, 17)
 > When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.
 
 > [!info]- Evasion (level 7)
@@ -133,22 +133,8 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Stillness of Mind (level 7)
 > Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.
 
-> [!info]- Ability Score Improvement (level 8)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Unarmored Movement (level 9)
-> Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in Table: The Monk.
->
-> At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.
-
 > [!info]- Purity of Body (level 10)
 > At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison.
-
-> [!info]- Monastic Tradition feature (level 11)
-> When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.
-
-> [!info]- Ability Score Improvement (level 12)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Tongue of the Sun and Moon (level 13)
 > Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.
@@ -161,19 +147,10 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Timeless Body (level 15)
 > At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. You can still die of old age, however. In addition, you no longer need food or water.
 
-> [!info]- Ability Score Improvement (level 16)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Monastic Tradition feature (level 17)
-> When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.
-
 > [!info]- Empty Body (level 18)
 > Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
 >
 > Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can't take any other creatures with you.
-
-> [!info]- Ability Score Improvement (level 19)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Perfect Self (level 20)
 > At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.

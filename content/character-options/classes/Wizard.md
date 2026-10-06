@@ -105,40 +105,18 @@ You start with the following equipment, in addition to the equipment granted by 
 >
 > Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.
 
-> [!info]- Ability Score Improvement (level 4)
+> [!info]- Ability Score Improvement (levels 4, 8, 12, 16, 19)
 > When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
-> [!info]- Arcane Tradition feature (level 6)
+> [!info]- Arcane Tradition feature (levels 6, 10, 14)
 > When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.
 >
 > Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.
-
-> [!info]- Ability Score Improvement (level 8)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Arcane Tradition feature (level 10)
-> When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.
->
-> Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.
-
-> [!info]- Ability Score Improvement (level 12)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Arcane Tradition feature (level 14)
-> When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.
->
-> Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.
-
-> [!info]- Ability Score Improvement (level 16)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Spell Mastery (level 18)
 > At 18th level, you have achieved such mastery over certain spells that you can cast them at will. Choose a 1st-level wizard spell and a 2nd-level wizard spell that are in your spellbook. You can cast those spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal.
 >
 > By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels.
-
-> [!info]- Ability Score Improvement (level 19)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Signature Spell (level 20)
 > When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two 3rd-level wizard spells in your spellbook as your signature spells. You always have these spells prepared, they don't count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot. When you do so, you can't do so again until you finish a short or long rest.

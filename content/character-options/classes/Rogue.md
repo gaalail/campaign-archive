@@ -63,7 +63,7 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ## Class features
 
-> [!info]- Expertise (level 1)
+> [!info]- Expertise (levels 1, 6)
 > At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
 >
 > At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit
@@ -86,37 +86,20 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Roguish Archetype (level 3)
 > At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.
 
-> [!info]- Ability Score Improvement (level 4)
+> [!info]- Ability Score Improvement (levels 4, 8, 10, 12, 16, 19)
 > When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Uncanny Dodge (level 5)
 > Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
 
-> [!info]- Expertise (level 6)
-> At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.
->
-> At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit
-
 > [!info]- Evasion (level 7)
 > Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon's fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.
 
-> [!info]- Ability Score Improvement (level 8)
-> When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Roguish Archetype feature (level 9)
+> [!info]- Roguish Archetype feature (levels 9, 13, 17)
 > At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.
-
-> [!info]- Ability Score Improvement (level 10)
-> When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Reliable Talent (level 11)
 > By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.
-
-> [!info]- Ability Score Improvement (level 12)
-> When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Roguish Archetype feature (level 13)
-> At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.
 
 > [!info]- Blindsense (level 14)
 > Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.
@@ -124,17 +107,8 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Slippery Mind (level 15)
 > By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.
 
-> [!info]- Ability Score Improvement (level 16)
-> When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Roguish Archetype feature (level 17)
-> At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities, such as Thief. Additional archetypes are available in the original source material. Your archetype choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.
-
 > [!info]- Elusive (level 18)
 > Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren't incapacitated.
-
-> [!info]- Ability Score Improvement (level 19)
-> When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Stroke of Luck (level 20)
 > At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.

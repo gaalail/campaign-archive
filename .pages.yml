@@ -364,7 +364,7 @@ content:
       type: select
       required: true
       options:
-        values:
+        values: &id009
         - Artificer
         - Barbarian
         - Bard
@@ -433,6 +433,51 @@ content:
     view:
       primary: title
       fields:
+      - source
+      sort: title
+  - name: co-class-options
+    label: Class options
+    type: collection
+    path: content/character-options/class-options
+    filename: '{primary}.md'
+    fields:
+    - *id005
+    - name: option_group
+      label: Group (like Eldritch Invocation)
+      type: select
+      required: true
+      options:
+        values:
+        - Eldritch Invocation
+        - Metamagic
+        - Infusion
+        - Maneuver
+        - Other
+    - name: parent_class
+      label: Class
+      type: select
+      required: true
+      options:
+        values: *id009
+    - name: min_level
+      label: Minimum level
+      type: number
+    - name: prerequisite
+      label: Prerequisite (or None)
+      type: string
+    - *id006
+    - name: source
+      label: Source
+      type: select
+      required: true
+      options: *id007
+    - *id008
+    view:
+      primary: title
+      fields:
+      - option_group
+      - parent_class
+      - min_level
       - source
       sort: title
   - name: co-feats

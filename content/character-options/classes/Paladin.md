@@ -104,18 +104,14 @@ You start with the following equipment, in addition to the equipment granted by 
 
 > [!info]- Fighting Style (level 2)
 > At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.
-
-> [!info]- Fighting Style: Defense (level 2)
-> While you are wearing armor, you gain a +1 bonus to AC.
-
-> [!info]- Fighting Style: Dueling (level 2)
-> When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
-
-> [!info]- Fighting Style: Great Weapon Fighting (level 2)
-> When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.
-
-> [!info]- Fighting Style: Protection (level 2)
-> When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
+>
+> **Defense.** While you are wearing armor, you gain a +1 bonus to AC.
+>
+> **Dueling.** When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
+>
+> **Great Weapon Fighting.** When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.
+>
+> **Protection.** When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
 
 > [!info]- Spellcasting: Paladin (level 2)
 > By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does.
@@ -140,7 +136,7 @@ You start with the following equipment, in addition to the equipment granted by 
 >
 > Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
 
-> [!info]- Ability Score Improvement (level 4)
+> [!info]- Ability Score Improvement (levels 4, 8, 12, 16, 19)
 > When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Extra Attack (level 5)
@@ -151,13 +147,10 @@ You start with the following equipment, in addition to the equipment granted by 
 >
 > At 18th level, the range of this aura increases to 30 feet.
 
-> [!info]- Sacred Oath feature (level 7)
+> [!info]- Sacred Oath feature (levels 7, 15, 20)
 > When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.
 >
 > Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
-
-> [!info]- Ability Score Improvement (level 8)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
 
 > [!info]- Aura of Courage (level 10)
 > Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.
@@ -167,32 +160,13 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Improved Divine Smite (level 11)
 > By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.
 
-> [!info]- Ability Score Improvement (level 12)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
 > [!info]- Cleansing Touch (level 14)
 > Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.
 >
 > You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.
 
-> [!info]- Sacred Oath feature (level 15)
-> When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.
->
-> Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
-
-> [!info]- Ability Score Improvement (level 16)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
 > [!info]- Aura improvements (level 18)
 > At 18th level, the range of your auras increase to 30 feet.
-
-> [!info]- Ability Score Improvement (level 19)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
-
-> [!info]- Sacred Oath feature (level 20)
-> When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.
->
-> Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
 
 
 ## Subclasses
