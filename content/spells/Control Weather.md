@@ -28,49 +28,30 @@ When you change the weather conditions, find a current condition on the followin
 ##### Precipitation
 
 | Stage | Condition |
-
 |---|---|
-
 | 1 | Clear |
-
 | 2 | Light clouds |
-
 | 3 | Overcast or ground fog |
-
 | 4 | Rain, hail, or snow |
-
 | 5 | Torrential rain, driving hail, or blizzard |
 
 ##### Temperature
 
 | Stage | Condition |
-
 |---|---|
-
 | 1 | Unbearable heat |
-
 | 2 | Hot |
-
 | 3 | Warm |
-
 | 4 | Cool |
-
 | 5 | Cold |
-
 | 6 | Arctic cold |
 
 ##### Wind
 
 | Stage | Condition |
-
 |---|---|
-
 | 1 | Calm |
-
 | 2 | Moderate wind |
-
 | 3 | Strong wind |
-
 | 4 | Gale |
-
 | 5 | Storm |

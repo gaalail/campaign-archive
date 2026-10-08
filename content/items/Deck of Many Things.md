@@ -16,51 +16,28 @@ Before you draw a card, you must declare how many cards you intend to draw and t
 Once a card is drawn, it fades from existence. Unless the card is the Fool or the Jester, the card reappears in the deck, making it possible to draw the same card twice.
 
 | Playing Card | Card |
-
 |---|---|
-
 | Ace of diamonds | Vizier* |
-
 | King of diamonds | Sun |
-
 | Queen of diamonds | Moon |
-
 | Jack of diamonds | Star |
-
 | Two of diamonds | Comet* |
-
 | Ace of hearts | The Fates* |
-
 | King of hearts | Throne |
-
 | Queen of hearts | Key |
-
 | Jack of hearts | Knight |
-
 | Two of hearts | Gem* |
-
 | Ace of clubs | Talons* |
-
 | King of clubs | The Void |
-
 | Queen of clubs | Flames |
-
 | Jack of clubs | Skull |
-
 | Two of clubs | Idiot* |
-
 | Ace of spades | Donjon* |
-
 | King of spades | Ruin |
-
 | Queen of spades | Euryale |
-
 | Jack of spades | Rogue |
-
 | Two of spades | Balance* |
-
 | Joker (with TM) | Fool* |
-
 | Joker (without TM) | Jester |
 
 * Found only in a deck with twenty-two cards

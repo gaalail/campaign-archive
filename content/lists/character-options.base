@@ -100,7 +100,7 @@ views:
     name: Homebrew
     filters:
       and:
-        - source == "Homebrew"
+        - source != "SRD 5.1"
     order: [formula.Name, summary]
     sort:
       - property: file.name

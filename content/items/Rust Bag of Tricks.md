@@ -20,21 +20,12 @@ Once three fuzzy Objects have been pulled from the bag, the bag can't be used ag
 Rust Bag:
 
 | d8 | Creature |
-
 |---|---|
-
 | 01 | Rat |
-
 | 02 | Owl |
-
 | 03 | Mastiff |
-
 | 04 | Goat |
-
 | 05 | Giant Goat |
-
 | 06 | Giant Boar |
-
 | 07 | Lion |
-
 | 08 | Brown Bear |

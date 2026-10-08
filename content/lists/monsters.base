@@ -41,7 +41,7 @@ views:
     name: Homebrew
     filters:
       and:
-        - source == "Homebrew"
+        - source != "SRD 5.1"
     order: [formula.Name, size, creature_type, cr]
     sort:
       - property: file.name

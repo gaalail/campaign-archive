@@ -342,6 +342,7 @@ content:
         values:
         - SRD 5.1
         - Homebrew
+        - Corpus Angelus
     - &id008
       name: body
       label: Text (Markdown)
@@ -364,7 +365,7 @@ content:
       type: select
       required: true
       options:
-        values: &id009
+        values:
         - Artificer
         - Barbarian
         - Bard
@@ -373,6 +374,7 @@ content:
         - Fighter
         - Monk
         - Paladin
+        - Paragon
         - Ranger
         - Rogue
         - Sorcerer
@@ -450,15 +452,33 @@ content:
         values:
         - Eldritch Invocation
         - Metamagic
+        - Avatar Feature
         - Infusion
         - Maneuver
         - Other
     - name: parent_class
-      label: Class
+      label: Class or subclass
       type: select
       required: true
       options:
-        values: *id009
+        values:
+        - Artificer
+        - Barbarian
+        - Bard
+        - Cleric
+        - Druid
+        - Fighter
+        - Monk
+        - Paladin
+        - Paragon
+        - Ranger
+        - Rogue
+        - Sorcerer
+        - Warlock
+        - Wizard
+        - Order of Valor
+        - Order of the Voice
+        - Order of Reason
     - name: min_level
       label: Minimum level
       type: number

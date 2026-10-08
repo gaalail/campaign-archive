@@ -20,21 +20,12 @@ Once three fuzzy Objects have been pulled from the bag, the bag can't be used ag
 Tan Bag:
 
 | d8 | Creature |
-
 |---|---|
-
 | 01 | Jackal |
-
 | 02 | Ape |
-
 | 03 | Baboon |
-
 | 04 | Axe Beak |
-
 | 05 | Black Bear |
-
 | 06 | Giant Weasel |
-
 | 07 | Giant Hyena |
-
 | 08 | Tiger |

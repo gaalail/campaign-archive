@@ -20,21 +20,12 @@ Once three fuzzy Objects have been pulled from the bag, the bag can't be used ag
 Gray Bag:
 
 | d8 | Creature |
-
 |---|---|
-
 | 01 | Weasel |
-
 | 02 | Giant Rat |
-
 | 03 | Badger |
-
 | 04 | Boar |
-
 | 05 | Panther |
-
 | 06 | Giant Badger |
-
 | 07 | Dire Wolf |
-
 | 08 | Giant Elk |

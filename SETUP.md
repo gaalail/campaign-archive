@@ -8,7 +8,7 @@ Live site: https://gaalail.github.io/campaign-archive
 2. The left menu lists Ra Gol'vek, Vyrun, Curse of Strahd, Spells, Items, Character options (Classes, Subclasses, Races, Backgrounds, Feats), Rules, and Monsters. The forms come from `.pages.yml`.
 3. Choose a section, click Add, fill in the form, and save. Each save is committed to the repository and the site rebuilds in 2 to 4 minutes.
 
-Every spell, item, character option, and monster has a **Source** field. Pick "Homebrew" for your own work, so it appears on that page's Homebrew tab. "SRD 5.1" marks material from the open SRD.
+Every spell, item, character option, and monster has a **Source** field. "SRD 5.1" marks material from the open SRD. Pick "Homebrew" for your own work, or "Corpus Angelus" for material from that book. Anything that isn't SRD shows on that page's Homebrew tab. To add another book or source name, edit the Source list in `.pages.yml`.
 
 ## Text format
 
@@ -30,8 +30,9 @@ Every spell, item, character option, and monster has a **Source** field. Pick "H
 Some class features are choices, not things a class gains automatically. Big lists of them, like Warlock invocations or Sorcerer metamagic, live as separate entries so the class page stays short.
 
 - In the editor, open Character options, then Class options, and add an entry. Pick its Group (like Eldritch Invocation), the Class, the minimum level, and any prerequisite (type None if there isn't one).
-- Each class page shows its own options in a table, grouped by type and sorted by level. Only the Warlock and Sorcerer pages have that table so far. For another class, such as the Artificer, add this line under a heading in its page text: `![[class-options-of.base]]`
-- To add a new group name (like Infusion or Maneuver), edit the list under "Group" in `.pages.yml`.
+- Options can belong to a class or to a subclass: in the form, pick either one under Class or subclass. A subclass page shows its own options the same way a class page does, as the Paragon's Orders do.
+- Each class page shows its own options in a table, grouped by type and sorted by level. Only the Warlock, Sorcerer, and Paragon pages and the three Order pages have that table so far. For another class, such as the Artificer, add this line under a heading in its page text: `![[class-options-of.base]]`
+- To add a new group name (like Infusion or Maneuver), edit the list under "Group" in `.pages.yml`. To let a new class or subclass own options, add its name to the "Class or subclass" list there too.
 - Small choice lists, like Fighting Style and Pact Boon, sit inside their feature's dropdown instead.
 - Repeated features, like Ability Score Improvement, appear once with every level listed.
 - The Class options tab on the Character options page lists every option from every class.
