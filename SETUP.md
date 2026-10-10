@@ -5,7 +5,7 @@ Live site: https://gaalail.github.io/campaign-archive
 ## Adding content with the editor (Pages CMS)
 
 1. Go to https://app.pagescms.org and sign in with GitHub, then open `campaign-archive`.
-2. The left menu lists Ra Gol'vek, Vyrun, Curse of Strahd, Spells, Items, Character options (Classes, Subclasses, Races, Backgrounds, Feats), Rules, and Monsters. The forms come from `.pages.yml`.
+2. The left menu lists Ra Gol'vek, Vyrun, Curse of Strahd, Spells, Items, Character options (Classes, Subclasses, Races, Backgrounds, Feats, Templates, Class options), Rules, and Monsters. The forms come from `.pages.yml`.
 3. Choose a section, click Add, fill in the form, and save. Each save is committed to the repository and the site rebuilds in 2 to 4 minutes.
 
 Every spell, item, character option, and monster has a **Source** field. "SRD 5.1" marks material from the open SRD. Pick "Homebrew" for your own work, or "Corpus Angelus" for material from that book. Anything that isn't SRD shows on that page's Homebrew tab. To add another book or source name, edit the Source list in `.pages.yml`.
@@ -21,6 +21,7 @@ Every spell, item, character option, and monster has a **Source** field. "SRD 5.
 
 - Each section's page builds its own tables and tabs from the entries, so you never write lists by hand.
 - Spells: tabs for each class, All by level, Search and sort, and Homebrew. A spell needs level, school, and classes filled in to land in the right tab.
+- Character options has a Templates section for add-ons a character can gain, like the Angelic template. Races are listed with their subraces inside the race page.
 - Items: tabs by rarity. Monsters: grouped by creature type. See `content/monsters/Owlbear.md` for the stat block layout.
 - Class pages list their own subclasses automatically. A subclass's "Parent class" has to match its class page's name exactly.
 - To add a tab, copy a view block in `content/lists/` (for example `spells.base`) and change the name and filter. These files are hidden from the sidebar.

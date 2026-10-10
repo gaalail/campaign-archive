@@ -79,6 +79,15 @@ views:
       - property: file.name
         direction: ASC
   - type: table
+    name: Templates
+    filters:
+      and:
+        - file.inFolder("character-options/templates")
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
     name: Class options
     groupBy:
       property: option_group

@@ -437,6 +437,28 @@ content:
       fields:
       - source
       sort: title
+  - name: co-templates
+    label: Templates
+    type: collection
+    path: content/character-options/templates
+    filename: '{primary}.md'
+    fields:
+    - *id005
+    - *id006
+    - name: image
+      label: Picture (optional)
+      type: image
+    - name: source
+      label: Source
+      type: select
+      required: true
+      options: *id007
+    - *id008
+    view:
+      primary: title
+      fields:
+      - source
+      sort: title
   - name: co-class-options
     label: Class options
     type: collection
