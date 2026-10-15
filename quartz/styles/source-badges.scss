@@ -1,0 +1,87 @@
+/* Source badges for entries */
+.note-properties {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: var(--lightgray);
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.note-property {
+  display: contents;
+}
+
+.note-property-key {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.note-property-value {
+  color: var(--dark);
+}
+
+/* Source badges */
+.source-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.source-badge.srd {
+  background-color: #e8f4f8;
+  color: #0c5460;
+  border: 1px solid #b8daff;
+}
+
+.source-badge.homebrew {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.source-badge.corpus {
+  background-color: #f8f5e6;
+  color: #5a4a2a;
+  border: 1px solid #d9d4c0;
+}
+
+/* Incomplete/stub warning */
+.incomplete-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 0.25rem;
+  color: #856404;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.incomplete-badge::before {
+  content: "⚠️";
+  font-size: 1.1rem;
+}
+
+/* Campaign appearances */
+.appeared-in {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.appeared-in-tag {
+  padding: 0.25rem 0.5rem;
+  background-color: var(--highlight);
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+}

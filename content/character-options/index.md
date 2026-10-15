@@ -26,7 +26,7 @@ Your role in the party. Defines your abilities and playstyle.
 
 [[Browse Classes →|Classes]]
 
-**Examples:** Fighter, Wizard, Cleric, Rogue, Barbarian
+**Examples:** Fighter, Wizard, Cleric, Rogue, Barbarian, Warlock, Sorcerer, Paragon
 
 ---
 
@@ -39,49 +39,59 @@ Specializes your class at a certain level (usually 3rd).
 - Fighter → Champion
 - Wizard → Evocation
 - Cleric → Life Domain
+- Warlock → The Fiend
+- Sorcerer → Shadow Magic
+- Paragon → Order of Valor
 
 ---
 
-### 4. Feats (Optional)
-Special abilities you can choose at certain levels (4th, 8th, 12th, etc.).
-
-[[Browse Feats →|Feats]]
-
-**Examples:** Great Weapon Master, Lucky, Resilient, Spell Sniper
-
----
-
-### 5. Background (Optional)
-Your character's story before adventuring.
-
-[[Browse Backgrounds →|Backgrounds]]
-
-**Examples:** Soldier, Scholar, Folk Hero, Criminal, Acolyte
-
----
-
-## Class-Specific Options
-
-Some classes have additional choice mechanics:
-
-**Warlock** — Eldritch Invocations (magical abilities)
-**Sorcerer** — Metamagic (spell modifications)
-**Artificer** — Infusions (magical crafting)
-**Paragon** — Orders (specializations)
+### 4. Class-Specific Options (Optional)
+Some classes have unique choice mechanics:
 
 [[Browse Class Options →|Class Options]]
 
+**Examples:**
+- **Warlock:** [[Eldritch Invocations]] (32 magical powers)
+- **Sorcerer:** [[Metamagic]] (7 spell modifications)
+- **Paragon:** [[Avatar Features]] (75+ divine powers)
+
 ---
 
-## Templates (Special Cases)
+### 5. Feats & Background (Optional)
+Special abilities and your character's story.
 
-Gain special powers or abilities on top of your race/class:
+[[Browse Feats →|Feats]] | [[Browse Backgrounds →|Backgrounds]]
 
-- **Angelic** — Holy connection and abilities
-- **Undead** — Death-related powers
-- (More templates can be added by your DM)
+**Examples:** Great Weapon Master, Lucky, Soldier, Scholar, Criminal
 
-[[Browse Templates →|Templates]]
+---
+
+## All Character Options
+
+| Option | Purpose | Choose At |
+|--------|---------|-----------|
+| [[Races]] | Ancestry and heritage | Character creation |
+| [[Classes]] | Your main role | Character creation |
+| [[Subclasses]] | Role specialization | 3rd level (usually) |
+| [[Backgrounds]] | Your story | Character creation |
+| [[Class Options]] | Class-specific powers | Varies by class |
+| [[Feats]] | Special abilities | Levels 4, 8, 12, 16, 19 |
+| [[Templates]] | Special powers (optional) | Anytime (DM choice) |
+
+---
+
+## Class-Specific Choices
+
+Some classes have unique mechanics for customization:
+
+### [[Eldritch Invocations]] (Warlock)
+32 magical powers you learn as your patron teaches you.
+
+### [[Metamagic]] (Sorcerer)
+7 ways to bend and modify your spells using Sorcery Points.
+
+### [[Avatar Features]] (Paragon)
+75+ divine powers granted by your deity. Choose by Order (Voice, Valor, Reason).
 
 ---
 
@@ -97,20 +107,6 @@ If your class can cast spells, you need to know:
 
 ---
 
-## All Character Options at a Glance
-
-| Option | Purpose |
-|--------|---------|
-| [[Races]] | Ancestry and heritage |
-| [[Classes]] | Your main role |
-| [[Subclasses]] | Specialization |
-| [[Backgrounds]] | Your story |
-| [[Feats]] | Special abilities |
-| [[Templates]] | Special powers (optional) |
-| [[Class Options]] | Class-specific choices |
-
----
-
 ## Starting at Level 1 vs Leveling Up
 
 **At Level 1:**
@@ -122,7 +118,8 @@ If your class can cast spells, you need to know:
 - Level 3: Pick your subclass (usually)
 - Level 4+: Get ability score improvements or feats
 - Level 5, 8, 11, etc.: Get more feats or ASIs (Ability Score Increases)
-- Each level: Get class features
+- Each level: Get class features and class-specific options
+- Each class has unique level-ups (check your [[Classes|class page]])
 
 Ask your DM what level you're starting at.
 
@@ -135,7 +132,8 @@ Ask your DM what level you're starting at.
 3. Pick a [[Classes|class]]
 4. Decide on a [[Subclasses|subclass]] (optional, comes at level 3)
 5. Pick [[Feats|feats]] (if your DM allows)
-6. You're ready to play!
+6. Pick class-specific options (if applicable)
+7. You're ready to play!
 
 ---
 
@@ -144,6 +142,9 @@ Ask your DM what level you're starting at.
 - **Full walkthrough:** [[Build a Character]]
 - **How does my class work?** → [[Classes|Click your class]]
 - **What spells can I cast?** → [[Spells|Browse spells by class]]
+- **What are Eldritch Invocations?** → [[Eldritch Invocations]]
+- **What is Metamagic?** → [[Metamagic]]
+- **What are Avatar Features?** → [[Avatar Features]]
 - **What's a feat?** → [[Feats|Click Feats]]
 - **How do I level up?** → [[Rules|Check the rules]]
 

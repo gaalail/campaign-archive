@@ -59,6 +59,14 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ## Spellcasting
 
+**Browse available Warlock spells by level:**
+
+![[warlock-spells.base]]
+
+---
+
+## Spell Rules
+
 > [!info]- Cantrips
 > You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.
 
