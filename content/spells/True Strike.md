@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: True Strike
 level: 0
 school: Divination
@@ -19,3 +20,4 @@ source: SRD 5.1
 *Divination cantrip*
 
 You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.
+

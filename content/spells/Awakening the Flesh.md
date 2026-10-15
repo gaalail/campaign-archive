@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Awakening the Flesh
 level: 6
 school: Necromancy
@@ -17,3 +18,4 @@ source: Corpus Angelus
 *6th-level necromancy*
 
 Magic courses through your body and unlocks its true potential, enabling it to heal most wounds almost instantly. You are immune to bludgeoning, piercing, and slashing damage from nonmagical attacks. You also don't take damage from falling and can't lose your limbs.
+

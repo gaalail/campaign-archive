@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Ring of Necrotic Resistance
 rarity: Rare
 item_type: Ring
@@ -10,3 +11,4 @@ source: SRD 5.1
 *Ring, rare (requires attunement)*
 
 You have resistance to necrotic damage while wearing this jet ring.
+

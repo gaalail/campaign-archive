@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Calm Mind
 level: 0
 school: Divination
@@ -17,3 +18,4 @@ source: Corpus Angelus
 *Divination cantrip*
 
 You attempt to end one condition affecting you by instantly clearing your mind. While you are charmed or frightened, you can use your reaction to reroll the saving throw.
+

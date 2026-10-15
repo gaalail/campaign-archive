@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Purify Food and Drink
 level: 1
 school: Transmutation
@@ -18,3 +19,4 @@ source: SRD 5.1
 *1st-level transmutation (ritual)*
 
 All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.
+

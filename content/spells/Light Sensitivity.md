@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Light Sensitivity
 level: 5
 school: Evocation
@@ -16,3 +17,4 @@ source: Corpus Angelus
 *5th-level evocation*
 
 You point at a creature and a wave of radiant energy washes over its body. The target must succeed on a Constitution saving throw or gain vulnerability to radiant damage for the duration of the spell. If the target has immunity to radiant damage, it is not affected by the spell.
+

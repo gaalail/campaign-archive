@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Greater Invisibility
 level: 4
 school: Illusion
@@ -18,3 +19,4 @@ source: SRD 5.1
 *4th-level illusion*
 
 You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.
+

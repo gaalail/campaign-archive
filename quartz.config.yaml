@@ -81,34 +81,14 @@ plugins:
   - source: "@quartz-community/description"
     enabled: true
     order: 70
-  - source: "@quartz-community/latex"
-    enabled: false
-    options:
-      renderEngine: katex
-    order: 80
-  - source: "@quartz-community/citations"
-    enabled: false
-    order: 85
-  - source: "@quartz-community/hard-line-breaks"
-    enabled: false
-    order: 90
-  - source: "@quartz-community/ox-hugo"
-    enabled: false
-    order: 91
-  - source: "@quartz-community/roam"
-    enabled: false
-    order: 92
+
   - source: "@quartz-community/quartz-fonts"
     enabled: true
-  - source: "@quartz-themes/core"
-    enabled: false
-    options:
-      theme: tokyo-night
-      mode: both
+
   - source: "@quartz-community/remove-draft"
     enabled: true
   - source: "@quartz-community/explicit-publish"
-    enabled: false
+    enabled: true
   - source: "@quartz-community/alias-redirects"
     enabled: true
   - source: "@quartz-community/content-index"
@@ -118,12 +98,9 @@ plugins:
       enableRSS: true
   - source: "@quartz-community/favicon"
     enabled: true
-  - source: "@quartz-community/og-image"
-    enabled: false
-  - source: "@quartz-community/cname"
-    enabled: false
-  - source: "@quartz-community/canvas-page"
-    enabled: false
+
+
+
   - source: "@quartz-community/content-page"
     enabled: true
   - source: "@quartz-community/folder-page"
@@ -166,22 +143,13 @@ plugins:
     layout:
       position: beforeBody
       priority: 20
-  - source: "@quartz-community/tag-list"
-    enabled: false
-    layout:
-      position: beforeBody
-      priority: 30
+
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
       position: left
       priority: 10
-  - source: "@quartz-community/darkmode"
-    enabled: false
-    layout:
-      position: left
-      priority: 30
-      group: toolbar
+
   - source: "@quartz-community/reader-mode"
     enabled: true
     layout:
@@ -194,14 +162,7 @@ plugins:
       position: beforeBody
       priority: 5
       condition: not-index
-  - source: "@quartz-community/comments"
-    enabled: false
-    options:
-      provider: giscus
-      options: {}
-    layout:
-      position: afterBody
-      priority: 10
+
   - source: "@quartz-community/footer"
     enabled: true
     options:
@@ -210,8 +171,7 @@ plugins:
     layout:
       position: footer
       priority: 50
-  - source: "@quartz-community/recent-notes"
-    enabled: false
+
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
@@ -253,12 +213,7 @@ plugins:
       unlistWhenEncrypted: false
       outputPath: static/encryptedContentIndex.json
     order: 900
-  - source: "@quartz-community/stacked-pages"
-    enabled: false
-    layout:
-      position: afterBody
-      priority: 50
-      display: all
+
 layout:
   groups:
     toolbar:

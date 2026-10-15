@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Lesser Restoration
 level: 2
 school: Abjuration
@@ -20,3 +21,4 @@ source: SRD 5.1
 *2nd-level abjuration*
 
 You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.
+

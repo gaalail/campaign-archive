@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Spare the Dying
 level: 0
 school: Necromancy
@@ -16,3 +17,4 @@ source: SRD 5.1
 *Necromancy cantrip*
 
 You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.
+

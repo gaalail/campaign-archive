@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Ring of Swimming
 rarity: Uncommon
 item_type: Ring
@@ -10,3 +11,4 @@ source: SRD 5.1
 *Ring, uncommon*
 
 You have a swimming speed of 40 feet while wearing this ring.
+

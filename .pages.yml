@@ -1,615 +1,620 @@
 # Pages CMS config: defines the entry forms at app.pagescms.org
+# Shared field definitions (YAML anchors) to reduce duplication
+
+# Reusable field anchors
+_body_field: &body
+  name: body
+  label: Text (Markdown)
+  type: text
+
+_title_field: &title
+  name: title
+  label: Name
+  type: string
+  required: true
+
+_title_only: &title_str
+  name: title
+  type: string
+
+_summary_field: &summary
+  name: summary
+  label: One-line summary
+  type: string
+
+_image_field: &image
+  name: image
+  label: Picture (optional)
+  type: image
+
+_tags_field: &tags
+  name: tags
+  label: Tags
+  type: string
+  list: true
+
+# Shared option lists
+_entry_types: &entry_types
+  values:
+    - Character
+    - Place
+    - Faction
+    - Lore
+    - Session
+    - Item
+    - Rules
+    - Other
+
+_ability_scores: &abilities
+  values:
+    - STR
+    - DEX
+    - CON
+    - INT
+    - WIS
+    - CHA
+
+# Source options (used across spells, items, character options, monsters, rules)
+_sources_standard: &sources_std
+  values:
+    - SRD 5.1
+    - Homebrew
+
+_sources_extended: &sources_ext
+  values:
+    - SRD 5.1
+    - Homebrew
+    - Corpus Angelus
+
 media:
   input: content/media
   output: /campaign-archive/media
+
 content:
-- name: ra-golvek
-  label: Ra Gol'vek
-  type: group
-  items:
-  - name: ra-golvek-entries
-    label: Entries
+  # Campaign 1: Ra Gol'vek
+  - name: ra-golvek
+    label: Ra Gol'vek
+    type: group
+    items:
+      - name: ra-golvek-entries
+        label: Entries
+        type: collection
+        path: content/ra-golvek
+        exclude:
+          - index.md
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - type
+            - summary
+          sort: title
+        fields:
+          - *title
+          - name: type
+            label: Type
+            type: select
+            options: *entry_types
+          - *summary
+          - *tags
+          - *image
+          - *body
+      - name: ra-golvek-hub
+        label: Hub page
+        type: file
+        path: content/ra-golvek/index.md
+        fields:
+          - *title_str
+          - *body
+
+  # Campaign 2: Vyrun
+  - name: vyrun
+    label: Vyrun
+    type: group
+    items:
+      - name: vyrun-entries
+        label: Entries
+        type: collection
+        path: content/vyrun
+        exclude:
+          - index.md
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - type
+            - summary
+          sort: title
+        fields:
+          - *title
+          - name: type
+            label: Type
+            type: select
+            options: *entry_types
+          - *summary
+          - *tags
+          - *image
+          - *body
+      - name: vyrun-hub
+        label: Hub page
+        type: file
+        path: content/vyrun/index.md
+        fields:
+          - *title_str
+          - *body
+
+  # Campaign 3: Curse of Strahd
+  - name: curse-of-strahd
+    label: Curse of Strahd
+    type: group
+    items:
+      - name: curse-of-strahd-entries
+        label: Entries
+        type: collection
+        path: content/curse-of-strahd
+        exclude:
+          - index.md
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - type
+            - summary
+          sort: title
+        fields:
+          - *title
+          - name: type
+            label: Type
+            type: select
+            options: *entry_types
+          - *summary
+          - *tags
+          - *image
+          - *body
+      - name: curse-of-strahd-hub
+        label: Hub page
+        type: file
+        path: content/curse-of-strahd/index.md
+        fields:
+          - *title_str
+          - *body
+
+  # Global rules
+  - name: rules
+    label: Rules
     type: collection
-    path: content/ra-golvek
+    path: content/rules
     exclude:
-    - index.md
+      - index.md
     filename: '{primary}.md'
-    view:
-      primary: title
-      fields:
-      - type
-      - summary
-      sort: title
     fields:
-    - name: title
-      label: Name
-      type: string
-      required: true
-    - name: type
-      label: Type
-      type: select
-      options:
-        values: &id002
-        - Character
-        - Place
-        - Faction
-        - Lore
-        - Session
-        - Item
-        - Rules
-        - Other
-    - name: summary
-      label: One-line summary
-      type: string
-    - name: tags
-      label: Tags
-      type: string
-      list: true
-    - name: image
-      label: Picture (optional)
-      type: image
-    - &id001
-      name: body
-      label: Text (Markdown)
-      type: text
-  - name: ra-golvek-hub
-    label: Hub page
-    type: file
-    path: content/ra-golvek/index.md
-    fields:
-    - name: title
-      type: string
-    - *id001
-- name: vyrun
-  label: Vyrun
-  type: group
-  items:
-  - name: vyrun-entries
-    label: Entries
+      - *title
+      - *summary
+      - *body
+
+  # Spells (SRD + Homebrew)
+  - name: spells
+    label: Spells
     type: collection
-    path: content/vyrun
+    path: content/spells
     exclude:
-    - index.md
+      - index.md
     filename: '{primary}.md'
     view:
       primary: title
       fields:
-      - type
-      - summary
+        - level
+        - school
+        - classes
+        - source
       sort: title
     fields:
-    - name: title
-      label: Name
-      type: string
-      required: true
-    - name: type
-      label: Type
-      type: select
-      options:
-        values: *id002
-    - name: summary
-      label: One-line summary
-      type: string
-    - name: tags
-      label: Tags
-      type: string
-      list: true
-    - name: image
-      label: Picture (optional)
-      type: image
-    - *id001
-  - name: vyrun-hub
-    label: Hub page
-    type: file
-    path: content/vyrun/index.md
-    fields:
-    - name: title
-      type: string
-    - *id001
-- name: curse-of-strahd
-  label: Curse of Strahd
-  type: group
-  items:
-  - name: curse-of-strahd-entries
-    label: Entries
+      - name: title
+        label: Spell name
+        type: string
+        required: true
+      - name: level
+        label: Level (0 for cantrip)
+        type: number
+        required: true
+      - name: school
+        label: School
+        type: select
+        options:
+          values:
+            - Abjuration
+            - Conjuration
+            - Divination
+            - Enchantment
+            - Evocation
+            - Illusion
+            - Necromancy
+            - Transmutation
+      - name: classes
+        label: Classes
+        type: select
+        options:
+          multiple: true
+          values:
+            - Artificer
+            - Barbarian
+            - Bard
+            - Cleric
+            - Druid
+            - Fighter
+            - Monk
+            - Paladin
+            - Ranger
+            - Rogue
+            - Sorcerer
+            - Warlock
+            - Wizard
+      - name: casting_time
+        label: Casting time
+        type: string
+      - name: range
+        label: Range
+        type: string
+      - name: duration
+        label: Duration
+        type: string
+      - name: components
+        label: Components (V, S, M)
+        type: string
+      - name: ritual
+        label: Ritual
+        type: boolean
+      - name: concentration
+        label: Concentration
+        type: boolean
+      - name: source
+        label: Source
+        type: select
+        required: true
+        options: *sources_std
+      - *body
+
+  # Magic items (SRD + Homebrew)
+  - name: items
+    label: Items
     type: collection
-    path: content/curse-of-strahd
+    path: content/items
     exclude:
-    - index.md
+      - index.md
     filename: '{primary}.md'
     view:
       primary: title
       fields:
-      - type
-      - summary
+        - rarity
+        - item_type
+        - source
       sort: title
     fields:
-    - name: title
-      label: Name
-      type: string
-      required: true
-    - name: type
-      label: Type
-      type: select
-      options:
-        values: *id002
-    - name: summary
-      label: One-line summary
-      type: string
-    - name: tags
-      label: Tags
-      type: string
-      list: true
-    - name: image
-      label: Picture (optional)
-      type: image
-    - *id001
-  - name: curse-of-strahd-hub
-    label: Hub page
-    type: file
-    path: content/curse-of-strahd/index.md
-    fields:
-    - name: title
-      type: string
-    - *id001
-- name: spells
-  label: Spells
-  type: collection
-  path: content/spells
-  exclude:
-  - index.md
-  filename: '{primary}.md'
-  view:
-    primary: title
-    fields:
-    - level
-    - school
-    - classes
-    - source
-    sort: title
-  fields:
-  - name: title
-    label: Spell name
-    type: string
-    required: true
-  - name: level
-    label: Level (0 for cantrip)
-    type: number
-    required: true
-  - name: school
-    label: School
-    type: select
-    options:
-      values:
-      - Abjuration
-      - Conjuration
-      - Divination
-      - Enchantment
-      - Evocation
-      - Illusion
-      - Necromancy
-      - Transmutation
-  - name: classes
-    label: Classes
-    type: select
-    options:
-      multiple: true
-      values:
-      - Artificer
-      - Barbarian
-      - Bard
-      - Cleric
-      - Druid
-      - Fighter
-      - Monk
-      - Paladin
-      - Ranger
-      - Rogue
-      - Sorcerer
-      - Warlock
-      - Wizard
-  - name: casting_time
-    label: Casting time
-    type: string
-  - name: range
-    label: Range
-    type: string
-  - name: duration
-    label: Duration
-    type: string
-  - name: components
-    label: Components (V, S, M)
-    type: string
-  - name: ritual
-    label: Ritual
-    type: boolean
-  - name: concentration
-    label: Concentration
-    type: boolean
-  - name: source
-    label: Source
-    type: select
-    required: true
-    options: &id003
-      values:
-      - SRD 5.1
-      - Homebrew
-  - name: body
-    label: Description (Markdown)
-    type: text
-- name: items
-  label: Items
-  type: collection
-  path: content/items
-  exclude:
-  - index.md
-  filename: '{primary}.md'
-  view:
-    primary: title
-    fields:
-    - rarity
-    - item_type
-    - source
-    sort: title
-  fields:
-  - name: title
-    label: Item name
-    type: string
-    required: true
-  - name: rarity
-    label: Rarity
-    type: select
-    options:
-      values:
-      - Common
-      - Uncommon
-      - Rare
-      - Very Rare
-      - Legendary
-      - Artifact
-      - Varies
-  - name: item_type
-    label: Item type
-    type: string
-  - name: attunement
-    label: Requires attunement
-    type: boolean
-  - name: summary
-    label: One-line summary
-    type: string
-  - name: image
-    label: Picture (optional)
-    type: image
-  - name: source
-    label: Source
-    type: select
-    required: true
-    options: *id003
-  - *id001
-- name: character-options
-  label: Character options
-  type: group
-  items:
-  - name: co-classes
-    label: Classes
+      - name: title
+        label: Item name
+        type: string
+        required: true
+      - name: rarity
+        label: Rarity
+        type: select
+        options:
+          values:
+            - Common
+            - Uncommon
+            - Rare
+            - Very Rare
+            - Legendary
+            - Artifact
+            - Varies
+      - name: item_type
+        label: Item type
+        type: string
+      - name: attunement
+        label: Requires attunement
+        type: boolean
+      - *summary
+      - *image
+      - name: source
+        label: Source
+        type: select
+        required: true
+        options: *sources_std
+      - *body
+
+  # Character options (Classes, Subclasses, Races, Backgrounds, Feats, Templates, Class Options)
+  - name: character-options
+    label: Character options
+    type: group
+    items:
+      - name: co-classes
+        label: Classes
+        type: collection
+        path: content/character-options/classes
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - hit_die
+            - source
+          sort: title
+        fields:
+          - *title
+          - name: hit_die
+            label: Hit die
+            type: select
+            options:
+              values:
+                - d6
+                - d8
+                - d10
+                - d12
+          - name: spellcasting_ability
+            label: Spellcasting ability
+            type: select
+            options: *abilities
+          - name: saving_throws
+            label: Saving throws
+            type: select
+            options:
+              multiple: true
+              values:
+                - STR
+                - DEX
+                - CON
+                - INT
+                - WIS
+                - CHA
+          - *summary
+          - *image
+          - name: source
+            label: Source
+            type: select
+            required: true
+            options: *sources_ext
+          - *body
+
+      - name: co-subclasses
+        label: Subclasses
+        type: collection
+        path: content/character-options/subclasses
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - parent_class
+            - source
+          sort: title
+        fields:
+          - *title
+          - name: parent_class
+            label: Parent class
+            type: select
+            required: true
+            options:
+              values:
+                - Artificer
+                - Barbarian
+                - Bard
+                - Cleric
+                - Druid
+                - Fighter
+                - Monk
+                - Paladin
+                - Paragon
+                - Ranger
+                - Rogue
+                - Sorcerer
+                - Warlock
+                - Wizard
+          - *summary
+          - *image
+          - name: source
+            label: Source
+            type: select
+            required: true
+            options: *sources_ext
+          - *body
+
+      - name: co-races
+        label: Races
+        type: collection
+        path: content/character-options/races
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - source
+          sort: title
+        fields:
+          - *title
+          - *summary
+          - *image
+          - name: source
+            label: Source
+            type: select
+            required: true
+            options: *sources_ext
+          - *body
+
+      - name: co-backgrounds
+        label: Backgrounds
+        type: collection
+        path: content/character-options/backgrounds
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - source
+          sort: title
+        fields:
+          - *title
+          - *summary
+          - name: source
+            label: Source
+            type: select
+            required: true
+            options: *sources_ext
+          - *body
+
+      - name: co-templates
+        label: Templates
+        type: collection
+        path: content/character-options/templates
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - source
+          sort: title
+        fields:
+          - *title
+          - *summary
+          - *image
+          - name: source
+            label: Source
+            type: select
+            required: true
+            options: *sources_ext
+          - *body
+
+      - name: co-class-options
+        label: Class options
+        type: collection
+        path: content/character-options/class-options
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - option_group
+            - parent_class
+            - min_level
+            - source
+          sort: title
+        fields:
+          - *title
+          - name: option_group
+            label: Group (like Eldritch Invocation)
+            type: select
+            required: true
+            options:
+              values:
+                - Eldritch Invocation
+                - Metamagic
+                - Avatar Feature
+                - Infusion
+                - Maneuver
+                - Other
+          - name: parent_class
+            label: Class or subclass
+            type: select
+            required: true
+            options:
+              values:
+                - Artificer
+                - Barbarian
+                - Bard
+                - Cleric
+                - Druid
+                - Fighter
+                - Monk
+                - Paladin
+                - Paragon
+                - Ranger
+                - Rogue
+                - Sorcerer
+                - Warlock
+                - Wizard
+                - Order of Valor
+                - Order of the Voice
+                - Order of Reason
+          - name: min_level
+            label: Minimum level
+            type: number
+          - name: prerequisite
+            label: Prerequisite (or None)
+            type: string
+          - *summary
+          - name: source
+            label: Source
+            type: select
+            required: true
+            options: *sources_ext
+          - *body
+
+      - name: co-feats
+        label: Feats
+        type: collection
+        path: content/character-options/feats
+        filename: '{primary}.md'
+        view:
+          primary: title
+          fields:
+            - prerequisite
+            - source
+          sort: title
+        fields:
+          - *title
+          - name: prerequisite
+            label: Prerequisite
+            type: string
+          - *summary
+          - name: source
+            label: Source
+            type: select
+            required: true
+            options: *sources_ext
+          - *body
+
+  # Monsters (SRD + Homebrew + Corpus Angelus)
+  - name: monsters
+    label: Monsters
     type: collection
-    path: content/character-options/classes
+    path: content/monsters
     filename: '{primary}.md'
-    fields:
-    - &id005
-      name: title
-      label: Name
-      type: string
-      required: true
-    - name: hit_die
-      label: Hit die
-      type: select
-      options:
-        values:
-        - d6
-        - d8
-        - d10
-        - d12
-    - name: spellcasting_ability
-      label: Spellcasting ability
-      type: select
-      options:
-        values: &id004
-        - STR
-        - DEX
-        - CON
-        - INT
-        - WIS
-        - CHA
-    - name: saving_throws
-      label: Saving throws
-      type: select
-      options:
-        multiple: true
-        values: *id004
-    - &id006
-      name: summary
-      label: One-line summary
-      type: string
-    - name: image
-      label: Picture (optional)
-      type: image
-    - name: source
-      label: Source
-      type: select
-      required: true
-      options: &id007
-        values:
-        - SRD 5.1
-        - Homebrew
-        - Corpus Angelus
-    - &id008
-      name: body
-      label: Text (Markdown)
-      type: text
     view:
       primary: title
       fields:
-      - hit_die
-      - source
+        - size
+        - creature_type
+        - cr
+        - source
       sort: title
-  - name: co-subclasses
-    label: Subclasses
-    type: collection
-    path: content/character-options/subclasses
-    filename: '{primary}.md'
+    exclude:
+      - index.md
     fields:
-    - *id005
-    - name: parent_class
-      label: Parent class
-      type: select
-      required: true
-      options:
-        values:
-        - Artificer
-        - Barbarian
-        - Bard
-        - Cleric
-        - Druid
-        - Fighter
-        - Monk
-        - Paladin
-        - Paragon
-        - Ranger
-        - Rogue
-        - Sorcerer
-        - Warlock
-        - Wizard
-    - *id006
-    - name: image
-      label: Picture (optional)
-      type: image
-    - name: source
-      label: Source
-      type: select
-      required: true
-      options: *id007
-    - *id008
-    view:
-      primary: title
-      fields:
-      - parent_class
-      - source
-      sort: title
-  - name: co-races
-    label: Races
-    type: collection
-    path: content/character-options/races
-    filename: '{primary}.md'
-    fields:
-    - *id005
-    - *id006
-    - name: image
-      label: Picture (optional)
-      type: image
-    - name: source
-      label: Source
-      type: select
-      required: true
-      options: *id007
-    - *id008
-    view:
-      primary: title
-      fields:
-      - source
-      sort: title
-  - name: co-backgrounds
-    label: Backgrounds
-    type: collection
-    path: content/character-options/backgrounds
-    filename: '{primary}.md'
-    fields:
-    - *id005
-    - *id006
-    - name: source
-      label: Source
-      type: select
-      required: true
-      options: *id007
-    - *id008
-    view:
-      primary: title
-      fields:
-      - source
-      sort: title
-  - name: co-templates
-    label: Templates
-    type: collection
-    path: content/character-options/templates
-    filename: '{primary}.md'
-    fields:
-    - *id005
-    - *id006
-    - name: image
-      label: Picture (optional)
-      type: image
-    - name: source
-      label: Source
-      type: select
-      required: true
-      options: *id007
-    - *id008
-    view:
-      primary: title
-      fields:
-      - source
-      sort: title
-  - name: co-class-options
-    label: Class options
-    type: collection
-    path: content/character-options/class-options
-    filename: '{primary}.md'
-    fields:
-    - *id005
-    - name: option_group
-      label: Group (like Eldritch Invocation)
-      type: select
-      required: true
-      options:
-        values:
-        - Eldritch Invocation
-        - Metamagic
-        - Avatar Feature
-        - Infusion
-        - Maneuver
-        - Other
-    - name: parent_class
-      label: Class or subclass
-      type: select
-      required: true
-      options:
-        values:
-        - Artificer
-        - Barbarian
-        - Bard
-        - Cleric
-        - Druid
-        - Fighter
-        - Monk
-        - Paladin
-        - Paragon
-        - Ranger
-        - Rogue
-        - Sorcerer
-        - Warlock
-        - Wizard
-        - Order of Valor
-        - Order of the Voice
-        - Order of Reason
-    - name: min_level
-      label: Minimum level
-      type: number
-    - name: prerequisite
-      label: Prerequisite (or None)
-      type: string
-    - *id006
-    - name: source
-      label: Source
-      type: select
-      required: true
-      options: *id007
-    - *id008
-    view:
-      primary: title
-      fields:
-      - option_group
-      - parent_class
-      - min_level
-      - source
-      sort: title
-  - name: co-feats
-    label: Feats
-    type: collection
-    path: content/character-options/feats
-    filename: '{primary}.md'
-    fields:
-    - *id005
-    - name: prerequisite
-      label: Prerequisite
-      type: string
-    - *id006
-    - name: source
-      label: Source
-      type: select
-      required: true
-      options: *id007
-    - *id008
-    view:
-      primary: title
-      fields:
-      - prerequisite
-      - source
-      sort: title
-- name: rules
-  label: Rules
-  type: collection
-  path: content/rules
-  exclude:
-  - index.md
-  filename: '{primary}.md'
-  fields:
-  - name: title
-    type: string
-    required: true
-  - name: summary
-    type: string
-  - *id001
-- name: monsters
-  label: Monsters
-  type: collection
-  path: content/monsters
-  filename: '{primary}.md'
-  fields:
-  - *id005
-  - name: size
-    label: Size
-    type: select
-    options:
-      values:
-      - Tiny
-      - Small
-      - Medium
-      - Large
-      - Huge
-      - Gargantuan
-  - name: creature_type
-    label: Creature type
-    type: string
-  - name: alignment
-    label: Alignment
-    type: string
-  - name: ac
-    label: Armor class
-    type: number
-  - name: hp
-    label: Hit points
-    type: number
-  - name: cr
-    label: Challenge rating (like 1/4 or 3)
-    type: string
-  - name: image
-    label: Picture (optional)
-    type: image
-  - name: source
-    label: Source
-    type: select
-    required: true
-    options: *id007
-  - name: body
-    label: Stat block (Markdown)
-    type: text
-  view:
-    primary: title
-    fields:
-    - size
-    - creature_type
-    - cr
-    - source
-    sort: title
-  exclude:
-  - index.md
+      - *title
+      - name: size
+        label: Size
+        type: select
+        options:
+          values:
+            - Tiny
+            - Small
+            - Medium
+            - Large
+            - Huge
+            - Gargantuan
+      - name: creature_type
+        label: Creature type
+        type: string
+      - name: alignment
+        label: Alignment
+        type: string
+      - name: ac
+        label: Armor class
+        type: number
+      - name: hp
+        label: Hit points
+        type: number
+      - name: cr
+        label: Challenge rating (like 1/4 or 3)
+        type: string
+      - *image
+      - name: source
+        label: Source
+        type: select
+        required: true
+        options: *sources_ext
+      - name: body
+        label: Stat block (Markdown)
+        type: text

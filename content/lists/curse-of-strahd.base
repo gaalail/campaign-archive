@@ -5,52 +5,45 @@ filters:
 formulas:
   Name: file.asLink(title)
 properties:
-  image:
-    displayName: Picture
   formula.Name:
     displayName: Name
   type:
     displayName: Type
   summary:
     displayName: Summary
+  tags:
+    displayName: Tags
 views:
   - type: table
-    name: All by type
-    groupBy:
-      property: type
-      direction: ASC
-    order: [formula.Name, summary]
+    name: All entries
+    order: [formula.Name, type, summary]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: Characters
     filters:
       and:
         - type == "Character"
     order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
-    name: Places
+    name: Locations
     filters:
       and:
         - type == "Place"
     order: [formula.Name, summary]
-  - type: table
-    name: Factions
-    filters:
-      and:
-        - type == "Faction"
-    order: [formula.Name, summary]
-  - type: table
-    name: Lore
-    filters:
-      and:
-        - type == "Lore"
-    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: Sessions
     filters:
       and:
         - type == "Session"
     order: [formula.Name, summary]
-  - type: cards
-    name: Gallery
-    image: image
-    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC

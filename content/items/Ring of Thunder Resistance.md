@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Ring of Thunder Resistance
 rarity: Rare
 item_type: Ring
@@ -10,3 +11,4 @@ source: SRD 5.1
 *Ring, rare (requires attunement)*
 
 You have resistance to thunder damage while wearing this spinel ring.
+

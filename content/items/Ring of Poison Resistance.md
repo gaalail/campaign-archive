@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Ring of Poison Resistance
 rarity: Rare
 item_type: Ring
@@ -10,3 +11,4 @@ source: SRD 5.1
 *Ring, rare (requires attunement)*
 
 You have resistance to poison damage while wearing this amethyst ring.
+

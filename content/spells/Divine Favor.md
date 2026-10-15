@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Divine Favor
 level: 1
 school: Evocation
@@ -16,3 +17,4 @@ source: SRD 5.1
 *1st-level evocation*
 
 Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.
+

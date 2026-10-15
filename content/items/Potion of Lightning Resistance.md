@@ -1,4 +1,5 @@
 ---
+incomplete: true
 title: Potion of Lightning Resistance
 rarity: Uncommon
 item_type: Potion
@@ -10,3 +11,4 @@ source: SRD 5.1
 *Potion, uncommon*
 
 When you drink this potion, you gain resistance to lightning damage for 1 hour.
+
