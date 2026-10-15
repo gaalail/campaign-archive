@@ -189,9 +189,12 @@ plugins:
     options:
       includeAll: false
       includedProperties:
+        - source
         - description
         - tags
         - aliases
+        - incomplete
+        - appeared_in
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---

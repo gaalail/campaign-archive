@@ -54,17 +54,25 @@ _ability_scores: &abilities
     - WIS
     - CHA
 
-# Source options (used across spells, items, character options, monsters, rules)
-_sources_standard: &sources_std
-  values:
-    - SRD 5.1
-    - Homebrew
-
-_sources_extended: &sources_ext
+# UNIFIED source options (Phase 1 fix: all sections now use same list)
+_sources_all: &sources_all
   values:
     - SRD 5.1
     - Homebrew
     - Corpus Angelus
+
+# Status field (Phase 1 fix: mark incomplete entries for filtering)
+_incomplete_field: &incomplete
+  name: incomplete
+  label: Incomplete/Stub (hidden from new players)
+  type: boolean
+
+# Campaign tracking (Phase 1 fix: which campaigns use this)
+_appeared_in_field: &appeared_in
+  name: appeared_in
+  label: Appears in (campaigns/sessions)
+  type: string
+  list: true
 
 media:
   input: content/media
@@ -98,6 +106,7 @@ content:
           - *summary
           - *tags
           - *image
+          - *incomplete
           - *body
       - name: ra-golvek-hub
         label: Hub page
@@ -134,6 +143,7 @@ content:
           - *summary
           - *tags
           - *image
+          - *incomplete
           - *body
       - name: vyrun-hub
         label: Hub page
@@ -170,6 +180,7 @@ content:
           - *summary
           - *tags
           - *image
+          - *incomplete
           - *body
       - name: curse-of-strahd-hub
         label: Hub page
@@ -190,6 +201,7 @@ content:
     fields:
       - *title
       - *summary
+      - *incomplete
       - *body
 
   # Spells (SRD + Homebrew)
@@ -271,7 +283,9 @@ content:
         label: Source
         type: select
         required: true
-        options: *sources_std
+        options: *sources_all
+      - *incomplete
+      - *appeared_in
       - *body
 
   # Magic items (SRD + Homebrew)
@@ -318,7 +332,9 @@ content:
         label: Source
         type: select
         required: true
-        options: *sources_std
+        options: *sources_all
+      - *incomplete
+      - *appeared_in
       - *body
 
   # Character options (Classes, Subclasses, Races, Backgrounds, Feats, Templates, Class Options)
@@ -370,7 +386,8 @@ content:
             label: Source
             type: select
             required: true
-            options: *sources_ext
+            options: *sources_all
+          - *incomplete
           - *body
 
       - name: co-subclasses
@@ -412,7 +429,8 @@ content:
             label: Source
             type: select
             required: true
-            options: *sources_ext
+            options: *sources_all
+          - *incomplete
           - *body
 
       - name: co-races
@@ -433,7 +451,8 @@ content:
             label: Source
             type: select
             required: true
-            options: *sources_ext
+            options: *sources_all
+          - *incomplete
           - *body
 
       - name: co-backgrounds
@@ -453,7 +472,8 @@ content:
             label: Source
             type: select
             required: true
-            options: *sources_ext
+            options: *sources_all
+          - *incomplete
           - *body
 
       - name: co-templates
@@ -474,7 +494,8 @@ content:
             label: Source
             type: select
             required: true
-            options: *sources_ext
+            options: *sources_all
+          - *incomplete
           - *body
 
       - name: co-class-options
@@ -538,7 +559,8 @@ content:
             label: Source
             type: select
             required: true
-            options: *sources_ext
+            options: *sources_all
+          - *incomplete
           - *body
 
       - name: co-feats
@@ -562,7 +584,8 @@ content:
             label: Source
             type: select
             required: true
-            options: *sources_ext
+            options: *sources_all
+          - *incomplete
           - *body
 
   # Monsters (SRD + Homebrew + Corpus Angelus)
@@ -614,7 +637,9 @@ content:
         label: Source
         type: select
         required: true
-        options: *sources_ext
+        options: *sources_all
+      - *incomplete
+      - *appeared_in
       - name: body
         label: Stat block (Markdown)
         type: text
