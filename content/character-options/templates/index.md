@@ -4,48 +4,19 @@ title: Templates
 
 # Templates
 
-**Templates** are optional, campaign-specific character powers.
+**Templates** are optional, campaign-specific character powers. DM approval required.
 
-**12+ templates available** | DM approval required | Experimental/homebrew
-
----
-
-## What Is a Template?
-
-Templates add:
-- **Extraordinary abilities** beyond normal character creation
-- **Campaign-specific powers** (tied to story events)
-- **Experimental mechanics** (tested in play)
-- **Progression systems** (level up through templates)
+This archive currently has [[Angelic]] as a template. Skip templates if you prefer core 5e only.
 
 ---
 
-## When Do You Use Templates?
+## Browse templates
 
-**You use templates if:**
-- Your DM offers them for the campaign
-- You've met specific story conditions (e.g., ancient ritual)
-- You want optional mechanical variety
-- Your campaign setting uses templates as a core system
-
-**You can skip templates** if you prefer core D&D 5e only.
+![[templates.base]]
 
 ---
 
-## Available Templates
-
-Templates vary by campaign. Common types include:
-
-| Type | Source | Purpose |
-|------|--------|---------|
-| Avatar | Campaign-specific | Channeling ancient power |
-| Paragon | Campaign-specific | Ascending to heroic status |
-| Experimental | Homebrew testing | Trying new mechanics |
-| Custom | DM-created | Campaign-specific rules |
-
----
-
-## How Templates Work
+## How templates work
 
 1. **DM offers** a template option
 2. **You choose** to accept it (or decline)
@@ -54,28 +25,16 @@ Templates vary by campaign. Common types include:
 
 ---
 
-## More Information
+## Next steps
 
-Each template has its own page with:
-- Story context (why this template exists)
-- How to gain it (what triggers it)
-- Features by level
-- Limitations & conditions
-
-Browse all templates [[here|/character-options/templates/]].
-
----
-
-## Next Steps
-
-**Step 1:** Ask your DM if templates are available in your campaign
-**Step 2:** If yes, read the available templates
-**Step 3:** Choose one that fits your character's story
+**Step 1:** Ask your DM if templates are available in your campaign  
+**Step 2:** If yes, read the available templates  
+**Step 3:** Choose one that fits your character's story  
 **Step 4:** Coordinate with your DM on activation
 
 ---
 
-## All Character Options
+## All character options
 
 - [[Races]] — Your ancestry
 - [[Classes]] — Your role

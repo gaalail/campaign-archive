@@ -248,16 +248,12 @@ content:
         options:
           multiple: true
           values:
-            - Artificer
-            - Barbarian
             - Bard
             - Cleric
             - Druid
-            - Fighter
-            - Monk
             - Paladin
+            - Paragon
             - Ranger
-            - Rogue
             - Sorcerer
             - Warlock
             - Wizard

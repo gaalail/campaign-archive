@@ -57,6 +57,12 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ## Spellcasting
 
+**Browse available Sorcerer spells by level:**
+
+![[sorcerer-spells.base]]
+
+---
+
 > [!info]- Cantrips
 > At 1st level, you know four cantrips of your choice from the sorcerer spell list. You learn additional sorcerer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Sorcerer table.
 

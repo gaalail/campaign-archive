@@ -66,6 +66,6 @@ To add a rule via the editor:
 - **[[Spells]]** — Magic reference
 - **[[Items]]** — Equipment and loot
 - **[[Monsters]]** — Creature reference
-- **[[Campaigns]]** — Your adventures
+- **[[Ra Gol'vek]]**, **[[Vyrun]]**, **[[Curse of Strahd]]** — Your adventures
 
 ---

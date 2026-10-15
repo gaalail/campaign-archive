@@ -57,6 +57,12 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ## Spellcasting
 
+**Browse available Wizard spells by level:**
+
+![[wizard-spells.base]]
+
+---
+
 > [!info]- Cantrips
 > At 1st level, you know three cantrips of your choice from the wizard spell list. You learn additional wizard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Wizard table.
 

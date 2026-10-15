@@ -6,50 +6,44 @@ title: Classes
 
 Every character has a **class** — your core role in the party and source of abilities.
 
-**13 classes available** | Choose at character creation | Foundation for all other choices
+Choose at character creation. This archive has the SRD classes plus [[Paragon]] from Corpus Angelus. There is no Artificer class here.
 
 ---
 
-## What Is a Class?
+## Browse all classes
 
-Your class determines:
-- Your **hit die** (how much HP you gain per level)
-- Your **abilities** (fighting, casting, stealth, etc.)
-- Your **proficiencies** (armor, weapons, skills)
-- Your **progression** (what you unlock at each level)
-
----
-
-## Browse All Classes
+![[classes.base]]
 
 | Class | Hit Die | Primary Ability | Role |
 |-------|---------|-----------------|------|
-| Artificer | d8 | INT | Magical crafter |
-| Barbarian | d12 | STR | Melee powerhouse |
-| Bard | d8 | CHA | Magic + support |
-| Cleric | d8 | WIS | Holy magic + healing |
-| Druid | d8 | WIS | Nature magic |
-| Fighter | d10 | STR/DEX | Weapon master |
-| Monk | d8 | DEX/WIS | Speed + control |
-| Paladin | d10 | STR/CHA | Holy warrior |
-| Ranger | d10 | DEX/WIS | Scout + magic |
-| Rogue | d8 | DEX | Stealth + precision |
-| Sorcerer | d6 | CHA | Innate magic |
-| Warlock | d8 | CHA | Patron magic |
-| Wizard | d6 | INT | Scholarly magic |
+| [[Barbarian]] | d12 | STR | Melee powerhouse |
+| [[Bard]] | d8 | CHA | Magic + support |
+| [[Cleric]] | d8 | WIS | Holy magic + healing |
+| [[Druid]] | d8 | WIS | Nature magic |
+| [[Fighter]] | d10 | STR/DEX | Weapon master |
+| [[Monk]] | d8 | DEX/WIS | Speed + control |
+| [[Paladin]] | d10 | STR/CHA | Holy warrior |
+| [[Paragon]] | d10 | WIS/CHA | Divine champion |
+| [[Ranger]] | d10 | DEX/WIS | Scout + magic |
+| [[Rogue]] | d8 | DEX | Stealth + precision |
+| [[Sorcerer]] | d6 | CHA | Innate magic |
+| [[Warlock]] | d8 | CHA | Patron magic |
+| [[Wizard]] | d6 | INT | Scholarly magic |
+
+Spellcasters have their class spell list on the class page and on [[Spells]].
 
 ---
 
-## Next Steps
+## Next steps
 
-**Step 1:** Read class pages above
-**Step 2:** Choose a [[Subclasses|subclass]] (at 3rd level)
-**Step 3:** Pick [[Feats|feats]] as you level up
-**Step 4:** See your [[Character Options|class-specific options]] (invocations, metamagic, etc.)
+**Step 1:** Read a class page above  
+**Step 2:** Choose a [[Subclasses|subclass]] (usually at 3rd level)  
+**Step 3:** Pick [[Feats|feats]] as you level up  
+**Step 4:** See [[Class Options]] for invocations, metamagic, and avatar features
 
 ---
 
-## All Character Options
+## All character options
 
 - [[Races]] — Your ancestry
 - [[Classes]] — Your role (you are here)

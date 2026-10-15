@@ -43,18 +43,11 @@ Each Order has its own set of features. Click your Order to see what's available
 
 ---
 
-## All Avatar Features
+## All avatar features
 
-Browse by Order:
+Grouped by Order (and by Paragon for features shared across Orders).
 
-### Order of the Voice
-Divine magic, communication, and command powers.
-
-### Order of Valor
-Holy warfare, protection, and divine strikes.
-
-### Order of Reason
-Divine knowledge, arcane magic, and insight.
+![[avatar-features.base]]
 
 ---
 

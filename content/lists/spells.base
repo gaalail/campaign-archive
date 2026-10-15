@@ -36,20 +36,6 @@ views:
       - property: file.name
         direction: ASC
   - type: table
-    name: Artificer
-    groupBy:
-      property: level
-      direction: ASC
-    filters:
-      and:
-        - classes.contains("Artificer")
-    order: [formula.Name, school, casting_time, range, duration, components]
-    sort:
-      - property: level
-        direction: ASC
-      - property: file.name
-        direction: ASC
-  - type: table
     name: Bard
     groupBy:
       property: level

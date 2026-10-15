@@ -21,6 +21,8 @@ Monster entries provide:
 
 ## Browse Monsters
 
+![[monsters.base]]
+
 Monster entries are organized by:
 - **Campaign** (which campaign it appears in)
 - **Creature type** (humanoid, dragon, undead, etc.)
@@ -57,6 +59,6 @@ Monster entries are organized by:
 
 - [[Spells]] — Spells monsters cast
 - [[Items]] — Loot monsters carry
-- [[Campaigns]] — Where monsters appear
+- [[Ra Gol'vek]], [[Vyrun]], [[Curse of Strahd]] — Where monsters appear
 
 ---

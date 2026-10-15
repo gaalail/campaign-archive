@@ -1,0 +1,26 @@
+filters:
+  and:
+    - file.inFolder("character-options/classes")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  hit_die:
+    displayName: Hit die
+  spellcasting_ability:
+    displayName: Spellcasting
+  saving_throws:
+    displayName: Saving throws
+  summary:
+    displayName: Summary
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: All classes
+    order: [formula.Name, hit_die, spellcasting_ability, saving_throws, source]
+    sort:
+      - property: file.name
+        direction: ASC

@@ -6,60 +6,49 @@ title: Races
 
 Your **race** defines your ancestry, heritage, and heritage-based abilities.
 
-**14 races available** | Choose at character creation | Includes subraces
+Choose at character creation. This list is the races actually in the archive (SRD plus Corpus Angelus), not a full Player's Handbook catalog.
 
 ---
 
-## What Is a Race?
+## What is a race?
 
 Your race gives you:
 - **Ability score bonuses** (boost to key attributes)
 - **Special traits** (darkvision, flight, resistance, etc.)
 - **Cultural background** (helps shape your character's story)
 - **Speed and size** (affects combat and exploration)
-- **Subraces** (variants like High Elf vs Wood Elf)
+- **Subraces** on some races (variants like High Elf vs Wood Elf)
 
 ---
 
-## Browse All Races
+## Browse all races
 
-| Race | Size | Speed | Special Trait |
-|------|------|-------|---------------|
-| Dragonborn | Medium | 30 ft | Draconic ancestry |
-| Dwarf | Medium | 25 ft | Stone cunning |
-| Elf | Medium | 30 ft | Keen senses |
-| Gnome | Small | 25 ft | Gnome cunning |
-| Half-Elf | Medium | 30 ft | Versatile |
-| Half-Orc | Medium | 30 ft | Menacing |
-| Halfling | Small | 25 ft | Lucky |
-| Human | Medium | 30 ft | Extra feat |
-| Tiefling | Medium | 30 ft | Infernal legacy |
+![[races.base]]
 
 ---
 
 ## Subraces
 
-Most races have **subraces** — cultural or magical variants.
+Some races have **subraces** — cultural or magical variants listed on the race page.
 
 **Examples:**
-- **Elf:** High Elf, Wood Elf, Drow
-- **Dwarf:** Mountain Dwarf, Hill Dwarf
-- **Halfling:** Lightfoot, Stout
-
-Click a race above to see its subraces.
-
----
-
-## Next Steps
-
-**Step 1:** Browse races above
-**Step 2:** Read your race page (includes subraces)
-**Step 3:** Choose a [[Classes|class]]
-**Step 4:** Pick [[Backgrounds|background]] for your story
+- **[[Elf]]:** High Elf
+- **[[Dwarf]]:** Hill Dwarf
+- **[[Halfling]]:** Lightfoot
+- **[[Peri]]:** Curiosity, Love, Valor
 
 ---
 
-## All Character Options
+## Next steps
+
+**Step 1:** Browse races above  
+**Step 2:** Read your race page (includes subraces)  
+**Step 3:** Choose a [[Classes|class]]  
+**Step 4:** Pick a [[Backgrounds|background]] for your story
+
+---
+
+## All character options
 
 - [[Races]] — Your ancestry (you are here)
 - [[Classes]] — Your role

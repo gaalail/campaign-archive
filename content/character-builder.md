@@ -64,12 +64,12 @@ Popular classes:
 At a certain level (usually 3rd), you pick a **subclass**. This specializes your class into a specific flavor.
 
 **Examples:**
-- Fighter → Champion (master swordsman)
-- Fighter → Battlesmith (artificer warrior)
-- Wizard → Evocation (master of explosive spells)
-- Wizard → Divination (master of sensing and prediction)
-- Cleric → Life Domain (powerful healer)
-- Cleric → War Domain (warrior priest)
+- Fighter → [[Champion]] (master of weapons)
+- Fighter → [[Holy Knight]] (faithful warrior)
+- Wizard → [[Evocation]] (master of explosive spells)
+- Wizard → [[School of Sealing]] (abjuration and binding)
+- Cleric → [[Life]] (powerful healer)
+- Cleric → [[Dawn Domain]] (light and dawn)
 
 **Browse subclasses:** [[Subclasses]]
 
@@ -84,10 +84,10 @@ Subclasses don't change how your class works fundamentally—they just add speci
 You get to choose a feat at certain levels (usually 4th, 8th, 12th, etc., depending on your class).
 
 **Example feats:**
-- **Great Weapon Master** — Master fighter with big weapons
-- **Resilient** — Better at resisting a specific type of damage
-- **Lucky** — Reroll dice when things go wrong
-- **Spell Sniper** — Better at casting spells from far away
+- **[[Grappler]]** — Better at holding enemies
+- **[[Courageous]]** — Stand firm against fear
+- **[[Consecrated Spell]]** — Infuse spells with holy power
+- **[[Celestial Blood]]** — Angelic heritage in your veins
 - **Athlete** — Stronger, faster, better at physical tasks
 
 **Browse feats:** [[Feats]]

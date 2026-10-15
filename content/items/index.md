@@ -4,79 +4,44 @@ title: Items
 
 # Items
 
-**367+ items available** | Gear, weapons, magical items, equipment
+Gear, weapons, magical items, and equipment. Filter by rarity in the table.
 
 ---
 
-## What Is an Item?
+## Browse items
 
-Items include:
-- **Weapons** (swords, bows, spells)
-- **Armor** (protection)
-- **Adventuring gear** (rope, lanterns, backpacks)
-- **Magical items** (ring of protection, staff of power)
-- **Special equipment** (thieves' tools, disguise kit)
+![[items.base]]
 
 ---
 
-## Browse Items by Type
+## How items work
 
-| Type | Purpose | Examples |
-|------|---------|----------|
-| Weapons | Melee & ranged combat | Longsword, Shortbow |
-| Armor | Protection | Plate, Chain Mail |
-| Magical Items | Special powers | Ring of Protection, Bag of Holding |
-| Adventuring Gear | Utility | Rope, Lantern, Backpack |
-| Tools | Specialized use | Thieves' Tools, Smith's Tools |
-| Potions & Scrolls | One-time effects | Healing Potion, Scroll of Magic |
-
----
-
-## How Items Work
-
-**Weapons & Armor:**
+**Weapons & armor:**
 - Choose at character creation (based on class/background)
 - Equip to use in combat
-- Deal damage or provide protection
 
-**Magical Items:**
-- Rare and powerful
+**Magical items:**
 - Found as treasure during adventures
-- Each has special abilities/activation
+- Each has special abilities or activation
 
-**Adventuring Gear:**
-- Practical equipment
-- Carry in your backpack
-- Use when needed (light fire, climb, hide)
+**Adventuring gear:**
+- Practical equipment carried in a pack
 
 ---
 
-## Starting Equipment
+## Starting equipment
 
-**At character creation,** your [[Classes|class]] gets:
+**At character creation,** your [[Classes|class]] lists:
 - Armor for your class
 - Weapons for your fighting style
 - Adventuring gear
-- Sometimes magical items
-
-Check your class page for starting equipment.
 
 ---
 
-## Getting More Items
-
-**During adventure:**
-- Find items in treasure
-- Buy from merchants
-- Craft items (if you have crafting tools)
-- Receive as rewards
-
----
-
-## Related Sections
+## Related sections
 
 - [[Character Options]] — Class-specific equipment
 - [[Spells]] — Magic items that cast spells
-- [[Monsters]] — What creatures drop/carry
+- [[Monsters]] — What creatures drop or carry
 
 ---

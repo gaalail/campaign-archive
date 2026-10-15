@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.inFolder("character-options/feats")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  prerequisite:
+    displayName: Prerequisite
+  summary:
+    displayName: Summary
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: All feats
+    order: [formula.Name, prerequisite, source]
+    sort:
+      - property: file.name
+        direction: ASC

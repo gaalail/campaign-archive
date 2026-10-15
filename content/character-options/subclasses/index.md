@@ -4,72 +4,71 @@ title: Subclasses
 
 # Subclasses
 
-At **3rd level**, you specialize your class with a **subclass**.
+At **3rd level** (sometimes earlier), you specialize your class with a **subclass**.
 
-**50+ subclasses** | Unlocks at level 3 | Defines your playstyle
-
----
-
-## What Is a Subclass?
-
-Your subclass:
-- **Specializes your class** (e.g., Fighter → Champion or Battlesmith)
-- **Adds unique features** at levels 3, 6, 10, 14, 18
-- **Unlocks special abilities** (spells, powers, tactics)
-- **Shapes your story** (connects you to a theme: divine, arcane, martial, etc.)
+This archive groups subclasses by the class they belong to. There is no Artificer class here; [[Paragon]] is the Corpus Angelus class with Orders as subclasses.
 
 ---
 
-## Browse by Class
+## Browse by class
 
-**Click a class to see its subclasses:**
+Click a class to open its page (each class also lists its own subclasses):
 
-- [[Artificer]] subclasses
-- [[Barbarian]] subclasses
-- [[Bard]] subclasses
-- [[Cleric]] subclasses
-- [[Druid]] subclasses
-- [[Fighter]] subclasses
-- [[Monk]] subclasses
-- [[Paladin]] subclasses
-- [[Ranger]] subclasses
-- [[Rogue]] subclasses
-- [[Sorcerer]] subclasses
-- [[Warlock]] subclasses
-- [[Wizard]] subclasses
+- [[Barbarian]]
+- [[Bard]]
+- [[Cleric]]
+- [[Druid]]
+- [[Fighter]]
+- [[Monk]]
+- [[Paladin]]
+- [[Paragon]]
+- [[Ranger]]
+- [[Rogue]]
+- [[Sorcerer]]
+- [[Warlock]]
+- [[Wizard]]
 
 ---
 
-## Examples
+## All subclasses
+
+Grouped by parent class, then alphabetical within each group.
+
+![[subclasses.base]]
+
+---
+
+## Examples in this archive
 
 | Class | Subclass | Theme |
 |-------|----------|-------|
-| Fighter | Champion | Master swordsman |
-| Wizard | Evocation | Explosive spells |
-| Cleric | Life Domain | Powerful healing |
-| Rogue | Assassination | Stealth killer |
-| Sorcerer | Wild Magic | Chaotic power |
+| [[Fighter]] | [[Champion]] | Master of weapons |
+| [[Wizard]] | [[Evocation]] | Explosive spells |
+| [[Cleric]] | [[Life]] | Powerful healing |
+| [[Rogue]] | [[Thief]] | Stealth and second-story work |
+| [[Sorcerer]] | [[Draconic]] | Draconic bloodline |
+| [[Paragon]] | [[Order of Valor]] | Holy warfare |
 
 ---
 
-## How Subclasses Work
+## How subclasses work
 
-**Level 3:** You choose your subclass
-**Levels 3-20:** You gain subclass features at certain levels
+**Usually level 3:** You choose your subclass (some classes choose at 1st or 2nd).  
+**Through 20th:** You gain subclass features at the levels listed on that page.
 
-Check your class page for level progression.
+Check your [[Classes|class]] page for when the choice happens.
 
 ---
 
-## Next Steps
+## Next steps
 
-**Step 1:** Choose your [[Classes|class]]
-**Step 2:** Reach level 3
+**Step 1:** Choose your [[Classes|class]]  
+**Step 2:** Reach the level that unlocks a subclass  
 **Step 3:** Pick a subclass matching your playstyle
 
 ---
 
-## All Character Options
+## All character options
 
 - [[Races]] — Your ancestry
 - [[Classes]] — Your role

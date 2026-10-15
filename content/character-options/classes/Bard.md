@@ -58,6 +58,12 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ## Spellcasting
 
+**Browse available Bard spells by level:**
+
+![[bard-spells.base]]
+
+---
+
 > [!info]- Cantrips
 > You know two cantrips of your choice from the bard spell list. You learn additional bard cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Bard table.
 

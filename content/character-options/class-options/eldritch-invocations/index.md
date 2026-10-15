@@ -38,21 +38,16 @@ Powerful late-game abilities.
 
 ---
 
-## All Invocations
+## All invocations
 
-Use the table below to browse and filter.
-
-| Name | Level | Prerequisite |
-|------|-------|--------------|
-| (Invocations listed alphabetically) | | |
+![[eldritch-invocations.base]]
 
 ---
 
 ## Your Warlock
 
 - **Class:** [[Warlock]]
-- **Features:** Eldritch Blast, Pact Boon, Spellcasting
-- **Other Options:** [[Warlock Spells]], [[Warlock Features]]
+- **Spell list:** on the [[Warlock]] page and on [[Spells]]
 
 ---
 

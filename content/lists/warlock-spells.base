@@ -45,27 +45,78 @@ views:
       and:
         - level == 1
     order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: 2nd-Level
     filters:
       and:
         - level == 2
     order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: 3rd-Level
     filters:
       and:
         - level == 3
     order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: 4th-Level
     filters:
       and:
         - level == 4
     order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
   - type: table
     name: 5th-Level
     filters:
       and:
         - level == 5
     order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 6th-Level
+    filters:
+      and:
+        - level == 6
+    order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 7th-Level
+    filters:
+      and:
+        - level == 7
+    order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 8th-Level
+    filters:
+      and:
+        - level == 8
+    order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 9th-Level
+    filters:
+      and:
+        - level == 9
+    order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC

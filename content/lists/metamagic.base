@@ -1,0 +1,26 @@
+filters:
+  and:
+    - file.inFolder("character-options/class-options/metamagic")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  min_level:
+    displayName: Level
+  prerequisite:
+    displayName: Prerequisite
+  summary:
+    displayName: Summary
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: All metamagic
+    order: [formula.Name, min_level, prerequisite]
+    sort:
+      - property: min_level
+        direction: ASC
+      - property: file.name
+        direction: ASC

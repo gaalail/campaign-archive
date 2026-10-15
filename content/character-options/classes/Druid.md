@@ -58,6 +58,12 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ## Spellcasting
 
+**Browse available Druid spells by level:**
+
+![[druid-spells.base]]
+
+---
+
 > [!info]- Cantrips
 > At 1st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table.
 

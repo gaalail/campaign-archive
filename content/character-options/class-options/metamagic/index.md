@@ -21,23 +21,22 @@ Your innate magical power lets you bend spells in unique ways. These **Metamagic
 - **[[Quickened Spell]]** — Cast a spell as a bonus action instead of full action
 - **[[Subtle Spell]]** — Cast without visible components (sneaky magic)
 - **[[Heightened Spell]]** — Make enemies less likely to resist your spell
-- **[[Twinned Spell]]** — Cast a spell on two targets instead of one
+- **[[Empowered Spell]]** — Reroll damage dice
+- **[[Distant Spell]]** — Stretch a spell's range
+- **[[Extended Spell]]** — Double a spell's duration
 
 ---
 
-## All Metamagic
+## All metamagic
 
-| Name | Level | Cost |
-|------|-------|------|
-| (Metamagic listed alphabetically) | 3+ | Sorcery Points |
+![[metamagic.base]]
 
 ---
 
 ## Your Sorcerer
 
 - **Class:** [[Sorcerer]]
-- **Spellcasting:** Charisma-based innate magic
-- **Other Options:** [[Sorcerer Spells]], [[Sorcerer Features]]
+- **Spell list:** on the [[Sorcerer]] page and on [[Spells]]
 
 ---
 

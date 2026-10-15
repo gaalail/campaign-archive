@@ -58,6 +58,12 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ## Spellcasting
 
+**Browse available Ranger spells by level:**
+
+![[ranger-spells.base]]
+
+---
+
 > [!info]- Spell Slots
 > The Ranger table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 >

@@ -36,12 +36,12 @@ Specializes your class at a certain level (usually 3rd).
 [[Browse Subclasses →|Subclasses]]
 
 **Examples:** 
-- Fighter → Champion
-- Wizard → Evocation
-- Cleric → Life Domain
-- Warlock → The Fiend
-- Sorcerer → Shadow Magic
-- Paragon → Order of Valor
+- Fighter → [[Champion]]
+- Wizard → [[Evocation]]
+- Cleric → [[Life]]
+- Warlock → [[Fiend]]
+- Sorcerer → [[Draconic]]
+- Paragon → [[Order of Valor]]
 
 ---
 
@@ -62,7 +62,7 @@ Special abilities and your character's story.
 
 [[Browse Feats →|Feats]] | [[Browse Backgrounds →|Backgrounds]]
 
-**Examples:** Great Weapon Master, Lucky, Soldier, Scholar, Criminal
+**Examples:** [[Grappler]], [[Courageous]], [[Acolyte]], [[Martyr]], [[Pilgrim]]
 
 ---
 
@@ -77,6 +77,8 @@ Special abilities and your character's story.
 | [[Class Options]] | Class-specific powers | Varies by class |
 | [[Feats]] | Special abilities | Levels 4, 8, 12, 16, 19 |
 | [[Templates]] | Special powers (optional) | Anytime (DM choice) |
+
+![[character-options.base]]
 
 ---
 
@@ -99,7 +101,7 @@ Some classes have unique mechanics for customization:
 
 If your class can cast spells, you need to know:
 
-1. **Your class's spell list** — [[Classes|Classes page shows available spells]]
+1. **Your class's spell list** — [[Spells]] and each caster class page
 2. **How to cast** — Casting time, components, concentration
 3. **When to level up** — Get new spells at higher levels
 

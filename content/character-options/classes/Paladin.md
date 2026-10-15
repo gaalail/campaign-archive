@@ -58,6 +58,12 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ## Spellcasting
 
+**Browse available Paladin spells by level:**
+
+![[paladin-spells.base]]
+
+---
+
 > [!info]- Preparing and Casting Spells
 > The Paladin table shows how many spell slots you have to cast your spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
 >

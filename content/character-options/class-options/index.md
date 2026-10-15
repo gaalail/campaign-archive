@@ -89,4 +89,6 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 **Want to customize with options?** → Come back here after choosing your class
 
+![[class-options.base]]
+
 ---

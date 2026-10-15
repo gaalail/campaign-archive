@@ -1,0 +1,20 @@
+filters:
+  and:
+    - file.inFolder("character-options/backgrounds")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  summary:
+    displayName: Summary
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: All backgrounds
+    order: [formula.Name, summary, source]
+    sort:
+      - property: file.name
+        direction: ASC
