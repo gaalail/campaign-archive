@@ -14,16 +14,18 @@ Choose an item category to see all items of that type:
 
 | Type | Count | Description |
 |------|-------|-------------|
-| [[items/Weapon\|Weapons]] | 30 | Melee and ranged weapons |
-| [[items/Armor\|Armor]] | 29 | Protective equipment |
-| [[items/Wondrous Items\|Wondrous Items]] | 181 | Other magical equipment |
-| [[items/Potion\|Potions]] | 40 | One-time magical effects |
-| [[items/Ring\|Rings]] | 36 | Magical jewelry |
-| [[items/Wand\|Wands]] | 16 | One-handed magical implements |
-| [[items/Staff\|Staves]] | 12 | Two-handed magical implements |
-| [[items/Scroll\|Scrolls]] | 11 | One-time spell casting |
-| [[items/Rod\|Rods]] | 6 | Magical rods |
-| [[items/Ammunition\|Ammunition]] | 5 | Projectiles for ranged weapons |
+| Weapons | 30 | Melee and ranged weapons |
+| Armor | 29 | Protective equipment |
+| Wondrous Items | 181 | Other magical equipment |
+| Potions | 40 | One-time magical effects |
+| Rings | 36 | Magical jewelry |
+| Wands | 16 | One-handed magical implements |
+| Staves | 12 | Two-handed magical implements |
+| Scrolls | 11 | One-time spell casting |
+| Rods | 6 | Magical rods |
+| Ammunition | 5 | Projectiles for ranged weapons |
+
+**Browse item categories:** [[items/Weapon|Weapons]], [[items/Armor|Armor]], [[items/Wondrous Items|Wondrous Items]], [[items/Potion|Potions]], [[items/Ring|Rings]], [[items/Wand|Wands]], [[items/Staff|Staves]], [[items/Scroll|Scrolls]], [[items/Rod|Rods]], [[items/Ammunition|Ammunition]]
 
 ---
 

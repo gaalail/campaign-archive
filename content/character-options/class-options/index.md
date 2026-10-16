@@ -73,13 +73,15 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 | Option | Purpose | Choose At |
 |--------|---------|-----------|
-| [[character-options/classes|Classes]] | Your role | Character creation |
-| [[character-options/subclasses|Subclasses]] | Specialization | 3rd level (usually) |
-| [[character-options/races|Races]] | Ancestry | Character creation |
-| [[character-options/backgrounds|Backgrounds]] | Your story | Character creation |
-| [[character-options/feats|Feats]] | Special abilities | Levels 4, 8, 12, 16, 19 |
-| [[character-options/class-options|Class Options]] | Class-specific powers | Varies by class |
-| [[character-options/templates|Templates]] | Special powers (optional) | Anytime (DM choice) |
+| Classes | Your role | Character creation |
+| Subclasses | Specialization | 3rd level (usually) |
+| Races | Ancestry | Character creation |
+| Backgrounds | Your story | Character creation |
+| Feats | Special abilities | Levels 4, 8, 12, 16, 19 |
+| Class Options | Class-specific powers | Varies by class |
+| Templates | Special powers (optional) | Anytime (DM choice) |
+
+**Browse character options:** [[character-options/classes|Classes]], [[character-options/subclasses|Subclasses]], [[character-options/races|Races]], [[character-options/backgrounds|Backgrounds]], [[character-options/feats|Feats]], [[character-options/class-options|Class Options]], [[character-options/templates|Templates]]
 
 ---
 
@@ -92,4 +94,3 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 ![[class-options.base]]
 
 ---
-

@@ -70,13 +70,15 @@ Special abilities and your character's story.
 
 | Option | Purpose | Choose At |
 |--------|---------|-----------|
-| [[character-options/races|Races]] | Ancestry and heritage | Character creation |
-| [[character-options/classes|Classes]] | Your main role | Character creation |
-| [[character-options/subclasses|Subclasses]] | Role specialization | 3rd level (usually) |
-| [[character-options/backgrounds|Backgrounds]] | Your story | Character creation |
-| [[character-options/class-options|Class Options]] | Class-specific powers | Varies by class |
-| [[character-options/feats|Feats]] | Special abilities | Levels 4, 8, 12, 16, 19 |
-| [[character-options/templates|Templates]] | Special powers (optional) | Anytime (DM choice) |
+| Races | Ancestry and heritage | Character creation |
+| Classes | Your main role | Character creation |
+| Subclasses | Role specialization | 3rd level (usually) |
+| Backgrounds | Your story | Character creation |
+| Class Options | Class-specific powers | Varies by class |
+| Feats | Special abilities | Levels 4, 8, 12, 16, 19 |
+| Templates | Special powers (optional) | Anytime (DM choice) |
+
+**Browse character options:** [[character-options/races|Races]], [[character-options/classes|Classes]], [[character-options/subclasses|Subclasses]], [[character-options/backgrounds|Backgrounds]], [[character-options/class-options|Class Options]], [[character-options/feats|Feats]], [[character-options/templates|Templates]]
 
 ![[character-options.base]]
 
