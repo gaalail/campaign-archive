@@ -4,7 +4,7 @@ title: Classes
 
 # Character Classes
 
-Every character has a **class** — your core role in the party and source of abilities.
+Every character has a **core role** — your class defines your abilities and playstyle.
 
 Choose at character creation. This archive has all core 5e classes plus [[character-options/classes/Paragon|Paragon]] from Corpus Angelus.
 
@@ -16,20 +16,24 @@ Choose at character creation. This archive has all core 5e classes plus [[charac
 
 | Class | Hit Die | Primary Ability | Role |
 |-------|---------|-----------------|------|
-| [[character-options/classes/Artificer|Artificer]] | d8 | INT | Crafting + magic |
-| [[character-options/classes/Barbarian|Barbarian]] | d12 | STR | Melee powerhouse |
-| [[character-options/classes/Bard|Bard]] | d8 | CHA | Magic + support |
-| [[character-options/classes/Cleric|Cleric]] | d8 | WIS | Holy magic + healing |
-| [[character-options/classes/Druid|Druid]] | d8 | WIS | Nature magic |
-| [[character-options/classes/Fighter|Fighter]] | d10 | STR/DEX | Weapon master |
-| [[character-options/classes/Monk|Monk]] | d8 | DEX/WIS | Speed + control |
-| [[character-options/classes/Paladin|Paladin]] | d10 | STR/CHA | Holy warrior |
-| [[character-options/classes/Paragon|Paragon]] | d10 | WIS/CHA | Divine champion |
-| [[character-options/classes/Ranger|Ranger]] | d10 | DEX/WIS | Scout + magic |
-| [[character-options/classes/Rogue|Rogue]] | d8 | DEX | Stealth + precision |
-| [[character-options/classes/Sorcerer|Sorcerer]] | d6 | CHA | Innate magic |
-| [[character-options/classes/Warlock|Warlock]] | d8 | CHA | Patron magic |
-| [[character-options/classes/Wizard|Wizard]] | d6 | INT | Scholarly magic |
+| Artificer | d8 | INT | Crafting + magic |
+| Barbarian | d12 | STR | Melee powerhouse |
+| Bard | d8 | CHA | Magic + support |
+| Cleric | d8 | WIS | Holy magic + healing |
+| Druid | d8 | WIS | Nature magic |
+| Fighter | d10 | STR/DEX | Weapon master |
+| Monk | d8 | DEX/WIS | Speed + control |
+| Paladin | d10 | STR/CHA | Holy warrior |
+| Paragon | d10 | WIS/CHA | Divine champion |
+| Ranger | d10 | DEX/WIS | Scout + magic |
+| Rogue | d8 | DEX | Stealth + precision |
+| Sorcerer | d6 | CHA | Innate magic |
+| Warlock | d8 | CHA | Patron magic |
+| Wizard | d6 | INT | Scholarly magic |
+
+**Click a class name to read its full rules:**
+
+[[character-options/classes/Artificer|Artificer]] • [[character-options/classes/Barbarian|Barbarian]] • [[character-options/classes/Bard|Bard]] • [[character-options/classes/Cleric|Cleric]] • [[character-options/classes/Druid|Druid]] • [[character-options/classes/Fighter|Fighter]] • [[character-options/classes/Monk|Monk]] • [[character-options/classes/Paladin|Paladin]] • [[character-options/classes/Ranger|Ranger]] • [[character-options/classes/Rogue|Rogue]] • [[character-options/classes/Sorcerer|Sorcerer]] • [[character-options/classes/Warlock|Warlock]] • [[character-options/classes/Wizard|Wizard]] • [[character-options/classes/Paragon|Paragon]]
 
 Spellcasters have their class spell list on the class page and on [[spells|Spells]].
 
