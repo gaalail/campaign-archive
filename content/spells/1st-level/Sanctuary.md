@@ -3,6 +3,7 @@ title: Sanctuary
 level: 1
 school: Abjuration
 classes:
+- Artificer
 - Cleric
 casting_time: 1 bonus action
 range: 30 feet
@@ -32,4 +33,5 @@ If the warded creature makes an attack or casts a spell that affects an enemy cr
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

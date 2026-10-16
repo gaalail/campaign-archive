@@ -3,6 +3,7 @@ title: Haste
 level: 3
 school: Transmutation
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -33,4 +34,5 @@ When the spell ends, the target can't move or take actions until after its next 
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

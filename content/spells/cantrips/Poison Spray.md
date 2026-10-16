@@ -3,6 +3,7 @@ title: Poison Spray
 level: 0
 school: Conjuration
 classes:
+- Artificer
 - Sorcerer
 - Warlock
 - Wizard
@@ -33,4 +34,5 @@ This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th leve
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

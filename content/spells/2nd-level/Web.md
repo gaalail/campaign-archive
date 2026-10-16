@@ -3,6 +3,7 @@ title: Web
 level: 2
 school: Conjuration
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -39,4 +40,5 @@ The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

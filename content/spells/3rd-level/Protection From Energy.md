@@ -4,6 +4,7 @@ title: Protection From Energy
 level: 3
 school: Abjuration
 classes:
+- Artificer
 - Cleric
 - Druid
 - Ranger
@@ -39,4 +40,5 @@ For the duration, the willing creature you touch has resistance to one damage ty
 **Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

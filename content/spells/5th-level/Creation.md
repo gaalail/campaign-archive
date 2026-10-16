@@ -3,6 +3,7 @@ title: Creation
 level: 5
 school: Illusion
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 minute
@@ -46,4 +47,5 @@ Using any material created by this spell as another spell's material component c
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

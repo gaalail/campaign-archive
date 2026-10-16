@@ -3,6 +3,7 @@ title: Identify
 level: 1
 school: Divination
 classes:
+- Artificer
 - Bard
 - Wizard
 casting_time: 1 minute
@@ -33,4 +34,5 @@ If you instead touch a creature throughout the casting, you learn what spells, i
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -3,6 +3,7 @@ title: Jump
 level: 1
 school: Transmutation
 classes:
+- Artificer
 - Druid
 - Ranger
 - Sorcerer
@@ -33,4 +34,5 @@ You touch a creature. The creature's jump distance is tripled until the spell en
 **Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

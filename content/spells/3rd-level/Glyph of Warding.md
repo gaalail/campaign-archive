@@ -3,6 +3,7 @@ title: Glyph of Warding
 level: 3
 school: Abjuration
 classes:
+- Artificer
 - Bard
 - Cleric
 - Wizard
@@ -47,4 +48,5 @@ When you inscribe the glyph, choose *explosive runes* or a *spell glyph*.
 **Available to:** [[Bard]], [[Cleric]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

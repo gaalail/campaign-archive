@@ -4,6 +4,7 @@ title: Purify Food and Drink
 level: 1
 school: Transmutation
 classes:
+- Artificer
 - Cleric
 - Druid
 - Paladin
@@ -37,4 +38,5 @@ All nonmagical food and drink within a 5-foot radius sphere centered on a point 
 **Available to:** [[Cleric]], [[Druid]], [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -3,6 +3,7 @@ title: Water Breathing
 level: 3
 school: Transmutation
 classes:
+- Artificer
 - Druid
 - Ranger
 - Sorcerer
@@ -33,4 +34,5 @@ This spell gives a maximum of ten willing creatures within range and you can see
 **Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -3,6 +3,7 @@ title: Invisibility
 level: 2
 school: Illusion
 classes:
+- Artificer
 - Bard
 - Sorcerer
 - Warlock
@@ -36,4 +37,5 @@ A creature you touch becomes invisible until the spell ends. Anything the target
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

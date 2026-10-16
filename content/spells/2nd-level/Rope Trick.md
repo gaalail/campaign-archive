@@ -3,6 +3,7 @@ title: Rope Trick
 level: 2
 school: Transmutation
 classes:
+- Artificer
 - Wizard
 casting_time: 1 action
 range: Touch
@@ -36,4 +37,5 @@ Anything inside the extradimensional space drops out when the spell ends.
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

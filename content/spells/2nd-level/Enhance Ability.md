@@ -3,6 +3,7 @@ title: Enhance Ability
 level: 2
 school: Transmutation
 classes:
+- Artificer
 - Bard
 - Cleric
 - Druid
@@ -48,4 +49,5 @@ You touch a creature and bestow upon it a magical enhancement. Choose one of the
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

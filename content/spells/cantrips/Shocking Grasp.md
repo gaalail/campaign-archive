@@ -3,6 +3,7 @@ title: Shocking Grasp
 level: 0
 school: Evocation
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -31,4 +32,5 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -3,6 +3,7 @@ title: Darkvision
 level: 2
 school: Transmutation
 classes:
+- Artificer
 - Druid
 - Ranger
 - Sorcerer
@@ -33,4 +34,5 @@ You touch a willing creature to grant it the ability to see in the dark. For the
 **Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

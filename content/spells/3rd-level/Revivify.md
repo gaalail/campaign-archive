@@ -3,6 +3,7 @@ title: Revivify
 level: 3
 school: Conjuration
 classes:
+- Artificer
 - Cleric
 - Paladin
 casting_time: 1 action
@@ -31,4 +32,5 @@ You touch a creature that has died within the last minute. That creature returns
 **Available to:** [[Cleric]], [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

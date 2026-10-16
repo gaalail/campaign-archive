@@ -3,6 +3,7 @@ title: Alter Self
 level: 2
 school: Transmutation
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -35,4 +36,5 @@ You assume a different form. When you cast the spell, choose one of the followin
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -3,6 +3,7 @@ title: Spider Climb
 level: 2
 school: Transmutation
 classes:
+- Artificer
 - Sorcerer
 - Warlock
 - Wizard
@@ -32,4 +33,5 @@ Until the spell ends, one willing creature you touch gains the ability to move u
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

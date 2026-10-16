@@ -3,6 +3,7 @@ title: Heat Metal
 level: 2
 school: Transmutation
 classes:
+- Artificer
 - Bard
 - Druid
 casting_time: 1 action
@@ -36,4 +37,5 @@ If a creature is holding or wearing the object and takes the damage from it, the
 **Available to:** [[Bard]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

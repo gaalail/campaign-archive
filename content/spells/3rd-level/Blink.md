@@ -3,6 +3,7 @@ title: Blink
 level: 3
 school: Transmutation
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -31,4 +32,5 @@ While on the Ethereal Plane, you can see and hear the plane you originated from,
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

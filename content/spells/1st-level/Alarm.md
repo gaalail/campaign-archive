@@ -3,6 +3,7 @@ title: Alarm
 level: 1
 school: Abjuration
 classes:
+- Artificer
 - Ranger
 - Wizard
 casting_time: 1 minute
@@ -35,4 +36,5 @@ An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet
 **Available to:** [[Ranger]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

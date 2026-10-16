@@ -3,6 +3,7 @@ title: Animate Objects
 level: 5
 school: Transmutation
 classes:
+- Artificer
 - Bard
 - Sorcerer
 - Wizard
@@ -49,4 +50,5 @@ If you command an object to attack, it can make a single melee attack against a 
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

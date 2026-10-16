@@ -3,6 +3,7 @@ title: Greater Restoration
 level: 5
 school: Abjuration
 classes:
+- Artificer
 - Bard
 - Cleric
 - Druid
@@ -40,4 +41,5 @@ You imbue a creature you touch with positive energy to undo a debilitating effec
 **Available to:** [[Bard]], [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

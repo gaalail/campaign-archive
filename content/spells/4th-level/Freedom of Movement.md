@@ -3,6 +3,7 @@ title: Freedom of Movement
 level: 4
 school: Abjuration
 classes:
+- Artificer
 - Bard
 - Cleric
 - Druid
@@ -35,4 +36,5 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

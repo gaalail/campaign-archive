@@ -4,6 +4,7 @@ title: Lesser Restoration
 level: 2
 school: Abjuration
 classes:
+- Artificer
 - Bard
 - Cleric
 - Druid
@@ -39,4 +40,5 @@ You touch a creature and can end either one disease or one condition afflicting 
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

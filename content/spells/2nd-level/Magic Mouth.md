@@ -3,6 +3,7 @@ title: Magic Mouth
 level: 2
 school: Illusion
 classes:
+- Artificer
 - Bard
 - Wizard
 casting_time: 1 minute
@@ -37,4 +38,5 @@ The triggering circumstance can be as general or as detailed as you like, though
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

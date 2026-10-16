@@ -3,6 +3,7 @@ title: Continual Flame
 level: 2
 school: Evocation
 classes:
+- Artificer
 - Cleric
 - Wizard
 casting_time: 1 action
@@ -31,4 +32,5 @@ A flame, equivalent in brightness to a torch, springs forth from an object that 
 **Available to:** [[Cleric]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

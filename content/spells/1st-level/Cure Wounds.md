@@ -3,6 +3,7 @@ title: Cure Wounds
 level: 1
 school: Evocation
 classes:
+- Artificer
 - Bard
 - Cleric
 - Druid
@@ -35,4 +36,5 @@ A creature you touch regains a number of hit points equal to 1d8 + your spellcas
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -3,6 +3,7 @@ title: Magic Weapon
 level: 2
 school: Transmutation
 classes:
+- Artificer
 - Paladin
 - Wizard
 casting_time: 1 bonus action
@@ -32,4 +33,5 @@ You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic
 **Available to:** [[Paladin]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

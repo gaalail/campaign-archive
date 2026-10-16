@@ -3,6 +3,7 @@ title: Disguise Self
 level: 1
 school: Illusion
 classes:
+- Artificer
 - Bard
 - Sorcerer
 - Wizard
@@ -34,4 +35,5 @@ To discern that you are disguised, a creature can use its action to inspect your
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

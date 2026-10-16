@@ -3,6 +3,7 @@ title: Light
 level: 0
 school: Evocation
 classes:
+- Artificer
 - Bard
 - Cleric
 - Sorcerer
@@ -35,4 +36,5 @@ If you target an object held or worn by a hostile creature, that creature must s
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

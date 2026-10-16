@@ -3,6 +3,7 @@ title: Dancing Lights
 level: 0
 school: Evocation
 classes:
+- Artificer
 - Bard
 - Sorcerer
 - Wizard
@@ -34,4 +35,5 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

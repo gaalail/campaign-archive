@@ -4,6 +4,7 @@ title: Expeditious Retreat
 level: 1
 school: Transmutation
 classes:
+- Artificer
 - Sorcerer
 - Warlock
 - Wizard
@@ -37,4 +38,5 @@ This spell allows you to move at an incredible pace. When you cast this spell, a
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

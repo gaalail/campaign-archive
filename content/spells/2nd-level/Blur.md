@@ -4,6 +4,7 @@ title: Blur
 level: 2
 school: Illusion
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -36,4 +37,5 @@ Your body becomes blurred, shifting and wavering to all who can see you. For the
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -3,6 +3,7 @@ title: Aid
 level: 2
 school: Abjuration
 classes:
+- Artificer
 - Cleric
 - Paladin
 casting_time: 1 action
@@ -34,4 +35,5 @@ Your spell bolsters your allies with toughness and resolve. Choose up to three c
 **Available to:** [[Cleric]], [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

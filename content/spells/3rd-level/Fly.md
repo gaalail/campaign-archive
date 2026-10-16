@@ -3,6 +3,7 @@ title: Fly
 level: 3
 school: Transmutation
 classes:
+- Artificer
 - Sorcerer
 - Warlock
 - Wizard
@@ -35,4 +36,5 @@ You touch a willing creature. The target gains a flying speed of 60 feet for the
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

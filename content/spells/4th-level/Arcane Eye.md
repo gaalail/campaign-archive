@@ -3,6 +3,7 @@ title: Arcane Eye
 level: 4
 school: Divination
 classes:
+- Artificer
 - Cleric
 - Wizard
 casting_time: 1 action
@@ -35,4 +36,5 @@ As an action, you can move the eye up to 30 feet in any direction. There is no l
 **Available to:** [[Cleric]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

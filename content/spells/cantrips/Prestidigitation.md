@@ -3,6 +3,7 @@ title: Prestidigitation
 level: 0
 school: Transmutation
 classes:
+- Artificer
 - Bard
 - Sorcerer
 - Warlock
@@ -45,4 +46,5 @@ If you cast this spell multiple times, you can have up to three of its non-insta
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

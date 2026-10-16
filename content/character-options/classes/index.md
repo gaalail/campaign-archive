@@ -6,7 +6,7 @@ title: Classes
 
 Every character has a **class** — your core role in the party and source of abilities.
 
-Choose at character creation. This archive has the SRD classes plus [[Paragon]] from Corpus Angelus. There is no Artificer class here.
+Choose at character creation. This archive has all core 5e classes plus [[Paragon]] from Corpus Angelus.
 
 ---
 
@@ -16,6 +16,7 @@ Choose at character creation. This archive has the SRD classes plus [[Paragon]] 
 
 | Class | Hit Die | Primary Ability | Role |
 |-------|---------|-----------------|------|
+| [[Artificer]] | d8 | INT | Crafting + magic |
 | [[Barbarian]] | d12 | STR | Melee powerhouse |
 | [[Bard]] | d8 | CHA | Magic + support |
 | [[Cleric]] | d8 | WIS | Holy magic + healing |

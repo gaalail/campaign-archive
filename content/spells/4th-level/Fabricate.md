@@ -3,6 +3,7 @@ title: Fabricate
 level: 4
 school: Transmutation
 classes:
+- Artificer
 - Wizard
 casting_time: 10 minutes
 range: 120 feet
@@ -32,4 +33,5 @@ Creatures or magic items can't be created or transmuted by this spell. You also 
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -3,6 +3,7 @@ title: Levitate
 level: 2
 school: Transmutation
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -35,4 +36,5 @@ When the spell ends, the target floats gently to the ground if it is still aloft
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

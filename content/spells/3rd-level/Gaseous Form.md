@@ -3,6 +3,7 @@ title: Gaseous Form
 level: 3
 school: Transmutation
 classes:
+- Artificer
 - Sorcerer
 - Warlock
 - Wizard
@@ -36,4 +37,5 @@ While in the form of a misty cloud, the target can't talk or manipulate objects,
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

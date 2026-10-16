@@ -26,7 +26,7 @@ Your role in the party. Defines your abilities and playstyle.
 
 [[Browse Classes →|Classes]]
 
-**Examples:** Fighter, Wizard, Cleric, Rogue, Barbarian, Warlock, Sorcerer, Paragon
+**Examples:** [[Artificer]], [[Fighter]], [[Wizard]], [[Cleric]], [[Rogue]], [[Barbarian]], [[Warlock]], [[Sorcerer]], [[Paragon]]
 
 ---
 
@@ -36,12 +36,12 @@ Specializes your class at a certain level (usually 3rd).
 [[Browse Subclasses →|Subclasses]]
 
 **Examples:** 
-- Fighter → [[Champion]]
-- Wizard → [[Evocation]]
-- Cleric → [[Life]]
-- Warlock → [[Fiend]]
-- Sorcerer → [[Draconic]]
-- Paragon → [[Order of Valor]]
+- [[Fighter]] → Champion
+- [[Wizard]] → Evocation
+- [[Cleric]] → Life
+- [[Warlock]] → Fiend
+- [[Sorcerer]] → Draconic
+- [[Artificer]] → Battle Smith
 
 ---
 
@@ -51,9 +51,9 @@ Some classes have unique choice mechanics:
 [[Browse Class Options →|Class Options]]
 
 **Examples:**
-- **Warlock:** [[Eldritch Invocations]] (32 magical powers)
-- **Sorcerer:** [[Metamagic]] (7 spell modifications)
-- **Paragon:** [[Avatar Features]] (75+ divine powers)
+- **Warlock:** Eldritch Invocations (32 magical powers)
+- **Sorcerer:** Metamagic (7 spell modifications)
+- **Artificer:** Infuse Item (magical item crafting)
 
 ---
 
@@ -62,7 +62,7 @@ Special abilities and your character's story.
 
 [[Browse Feats →|Feats]] | [[Browse Backgrounds →|Backgrounds]]
 
-**Examples:** [[Grappler]], [[Courageous]], [[Acolyte]], [[Martyr]], [[Pilgrim]]
+**Examples:** Grappler, Courageous, Acolyte, Martyr, Pilgrim
 
 ---
 
@@ -86,14 +86,14 @@ Special abilities and your character's story.
 
 Some classes have unique mechanics for customization:
 
-### [[Eldritch Invocations]] (Warlock)
+### Eldritch Invocations (Warlock)
 32 magical powers you learn as your patron teaches you.
 
-### [[Metamagic]] (Sorcerer)
+### Metamagic (Sorcerer)
 7 ways to bend and modify your spells using Sorcery Points.
 
-### [[Avatar Features]] (Paragon)
-75+ divine powers granted by your deity. Choose by Order (Voice, Valor, Reason).
+### Infuse Item (Artificer)
+Craft magical items by imbuing objects with special properties.
 
 ---
 
@@ -144,9 +144,7 @@ Ask your DM what level you're starting at.
 - **Full walkthrough:** [[Build a Character]]
 - **How does my class work?** → [[Classes|Click your class]]
 - **What spells can I cast?** → [[Spells|Browse spells by class]]
-- **What are Eldritch Invocations?** → [[Eldritch Invocations]]
-- **What is Metamagic?** → [[Metamagic]]
-- **What are Avatar Features?** → [[Avatar Features]]
+- **What are class-specific options?** → Check your class page for invocations, metamagic, or infusions
 - **What's a feat?** → [[Feats|Click Feats]]
 - **How do I level up?** → [[Rules|Check the rules]]
 

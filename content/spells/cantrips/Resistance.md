@@ -3,6 +3,7 @@ title: Resistance
 level: 0
 school: Abjuration
 classes:
+- Artificer
 - Cleric
 - Druid
 casting_time: 1 action
@@ -31,4 +32,5 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 **Available to:** [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

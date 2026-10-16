@@ -3,6 +3,7 @@ title: Water Walk
 level: 3
 school: Transmutation
 classes:
+- Artificer
 - Cleric
 - Druid
 - Ranger
@@ -35,4 +36,5 @@ If you target a creature submerged in a liquid, the spell carries the target to 
 **Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

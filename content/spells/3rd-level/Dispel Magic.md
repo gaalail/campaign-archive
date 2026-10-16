@@ -3,6 +3,7 @@ title: Dispel Magic
 level: 3
 school: Abjuration
 classes:
+- Artificer
 - Bard
 - Cleric
 - Druid
@@ -37,4 +38,5 @@ Choose one creature, object, or magical effect within range. Any spell of 3rd le
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

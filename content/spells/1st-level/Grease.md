@@ -3,6 +3,7 @@ title: Grease
 level: 1
 school: Conjuration
 classes:
+- Artificer
 - Wizard
 casting_time: 1 action
 range: 60 feet
@@ -32,4 +33,5 @@ When the grease appears, each creature standing in its area must succeed on a de
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

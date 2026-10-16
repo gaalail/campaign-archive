@@ -3,6 +3,7 @@ title: Fire Bolt
 level: 0
 school: Evocation
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -31,4 +32,5 @@ This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th leve
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

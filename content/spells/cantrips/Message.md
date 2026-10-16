@@ -3,6 +3,7 @@ title: Message
 level: 0
 school: Transmutation
 classes:
+- Artificer
 - Bard
 - Sorcerer
 - Wizard
@@ -34,4 +35,5 @@ You can cast this spell through solid objects if you are familiar with the targe
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

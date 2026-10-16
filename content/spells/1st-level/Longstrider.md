@@ -3,6 +3,7 @@ title: Longstrider
 level: 1
 school: Transmutation
 classes:
+- Artificer
 - Bard
 - Druid
 - Ranger
@@ -36,4 +37,5 @@ You touch a creature. The target's speed increases by 10 feet until the spell en
 **Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -4,6 +4,7 @@ title: Spare the Dying
 level: 0
 school: Necromancy
 classes:
+- Artificer
 - Cleric
 casting_time: 1 action
 range: Touch
@@ -35,4 +36,5 @@ You touch a living creature that has 0 hit points. The creature becomes stable. 
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

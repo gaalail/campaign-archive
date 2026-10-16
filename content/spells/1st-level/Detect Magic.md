@@ -3,6 +3,7 @@ title: Detect Magic
 level: 1
 school: Divination
 classes:
+- Artificer
 - Bard
 - Cleric
 - Druid
@@ -36,4 +37,5 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

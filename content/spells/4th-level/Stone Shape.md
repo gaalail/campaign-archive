@@ -3,6 +3,7 @@ title: Stone Shape
 level: 4
 school: Transmutation
 classes:
+- Artificer
 - Cleric
 - Druid
 - Wizard
@@ -32,4 +33,5 @@ You touch a stone object of Medium size or smaller or a section of stone no more
 **Available to:** [[Cleric]], [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

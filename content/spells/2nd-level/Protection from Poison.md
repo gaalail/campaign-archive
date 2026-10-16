@@ -3,6 +3,7 @@ title: Protection from Poison
 level: 2
 school: Abjuration
 classes:
+- Artificer
 - Cleric
 - Druid
 - Paladin
@@ -33,4 +34,5 @@ For the duration, the target has advantage on saving throws against being poison
 **Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

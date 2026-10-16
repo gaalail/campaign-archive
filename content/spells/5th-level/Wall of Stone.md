@@ -3,6 +3,7 @@ title: Wall of Stone
 level: 5
 school: Evocation
 classes:
+- Artificer
 - Druid
 - Sorcerer
 - Wizard
@@ -42,4 +43,5 @@ If you maintain your concentration on this spell for its whole duration, the wal
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

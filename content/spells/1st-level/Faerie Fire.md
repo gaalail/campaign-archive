@@ -3,6 +3,7 @@ title: Faerie Fire
 level: 1
 school: Evocation
 classes:
+- Artificer
 - Druid
 casting_time: 1 action
 range: 60 feet
@@ -30,4 +31,5 @@ Any attack roll against an affected creature or object has advantage if the atta
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

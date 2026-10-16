@@ -3,6 +3,7 @@ title: Feather Fall
 level: 1
 school: Transmutation
 classes:
+- Artificer
 - Bard
 - Sorcerer
 - Wizard
@@ -32,4 +33,5 @@ Choose up to five falling creatures within range. A falling creature's rate of d
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

@@ -4,6 +4,7 @@ title: Create Food and Water
 level: 3
 school: Conjuration
 classes:
+- Artificer
 - Cleric
 - Druid
 - Paladin
@@ -37,4 +38,5 @@ You create 45 pounds of food and 30 gallons of water on the ground or in contain
 **Available to:** [[Cleric]], [[Druid]], [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

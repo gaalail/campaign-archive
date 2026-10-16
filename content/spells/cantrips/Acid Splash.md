@@ -3,6 +3,7 @@ title: Acid Splash
 level: 0
 school: Conjuration
 classes:
+- Artificer
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -31,4 +32,5 @@ This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level 
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 

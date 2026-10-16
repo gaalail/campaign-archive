@@ -3,6 +3,7 @@ title: Mage Hand
 level: 0
 school: Conjuration
 classes:
+- Artificer
 - Bard
 - Sorcerer
 - Warlock
@@ -35,4 +36,5 @@ The hand can't attack, activate magic items, or carry more than 10 pounds.
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
 
