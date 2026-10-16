@@ -124,9 +124,11 @@ Each class page (like [[Warlock]] or [[Wizard]]) lists the spells available to t
 
 Once you've built your character, check which campaigns are available:
 
-- **[[Ra Gol'vek]]** — [Summary here]
-- **[[Vyrun]]** — [Summary here]
-- **[[Curse of Strahd]]** — [Summary here]
+- **[[Ra Gol'vek]]** — Coastal intrigue, ancient magic, and supernatural threats.
+- **[[Vyrun]]** — Frontier exploration, survival, and ancient mysteries.
+- **[[Curse of Strahd]]** — Gothic horror in the mist-shrouded realm of Barovia.
+
+See [[Campaigns]] for the full directory.
 
 Pick one and jump into the adventure!
 

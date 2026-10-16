@@ -41,6 +41,8 @@ This is a **D&D 5e wiki** for player-facing campaign information. It includes:
 - **[[Vyrun]]**
 - **[[Curse of Strahd]]**
 
+Or visit the [[Campaigns|campaign directory]] to choose a campaign.
+
 Each campaign has:
 - **Sessions:** What happened and when
 - **NPCs:** Characters you interact with
@@ -178,6 +180,7 @@ Each campaign can have:
 - **[[Items]]** — Equipment and treasure
 - **[[Monsters]]** — Enemy reference
 - **[[Rules]]** — House rules and clarifications
+- **[[Campaigns]]** — Browse campaign hubs
 - **[[Ra Gol'vek]]** — Campaign 1
 - **[[Vyrun]]** — Campaign 2
 - **[[Curse of Strahd]]** — Campaign 3

@@ -17,6 +17,12 @@ _title_only: &title_str
   name: title
   type: string
 
+_legacy_aliases: &legacy_aliases
+  name: aliases
+  label: Legacy URL redirects
+  type: string
+  list: true
+
 _summary_field: &summary
   name: summary
   label: One-line summary
@@ -79,116 +85,129 @@ media:
   output: /campaign-archive/media
 
 content:
-  # Campaign 1: Ra Gol'vek
-  - name: ra-golvek
-    label: Ra Gol'vek
+  # Campaigns
+  - name: campaigns
+    label: Campaigns
     type: group
     items:
-      - name: ra-golvek-entries
-        label: Entries
-        type: collection
-        path: content/ra-golvek
-        exclude:
-          - index.md
-        filename: '{primary}.md'
-        view:
-          primary: title
-          fields:
-            - type
-            - summary
-          sort: title
-        fields:
-          - *title
-          - name: type
-            label: Type
-            type: select
-            options: *entry_types
-          - *summary
-          - *tags
-          - *image
-          - *incomplete
-          - *body
-      - name: ra-golvek-hub
-        label: Hub page
+      - name: campaigns-index
+        label: Campaign directory
         type: file
-        path: content/ra-golvek/index.md
+        path: content/campaigns/index.md
         fields:
           - *title_str
           - *body
 
-  # Campaign 2: Vyrun
-  - name: vyrun
-    label: Vyrun
-    type: group
-    items:
-      - name: vyrun-entries
-        label: Entries
-        type: collection
-        path: content/vyrun
-        exclude:
-          - index.md
-        filename: '{primary}.md'
-        view:
-          primary: title
-          fields:
-            - type
-            - summary
-          sort: title
-        fields:
-          - *title
-          - name: type
-            label: Type
-            type: select
-            options: *entry_types
-          - *summary
-          - *tags
-          - *image
-          - *incomplete
-          - *body
-      - name: vyrun-hub
-        label: Hub page
-        type: file
-        path: content/vyrun/index.md
-        fields:
-          - *title_str
-          - *body
+      - name: ra-golvek
+        label: Ra Gol'vek
+        type: group
+        items:
+          - name: ra-golvek-entries
+            label: Entries
+            type: collection
+            path: content/campaigns/ra-golvek
+            exclude:
+              - index.md
+            filename: '{primary}.md'
+            view:
+              primary: title
+              fields:
+                - type
+                - summary
+              sort: title
+            fields:
+              - *title
+              - name: type
+                label: Type
+                type: select
+                options: *entry_types
+              - *summary
+              - *tags
+              - *image
+              - *incomplete
+              - *body
+          - name: ra-golvek-hub
+            label: Hub page
+            type: file
+            path: content/campaigns/ra-golvek/index.md
+            fields:
+              - *title_str
+              - *legacy_aliases
+              - *body
 
-  # Campaign 3: Curse of Strahd
-  - name: curse-of-strahd
-    label: Curse of Strahd
-    type: group
-    items:
-      - name: curse-of-strahd-entries
-        label: Entries
-        type: collection
-        path: content/curse-of-strahd
-        exclude:
-          - index.md
-        filename: '{primary}.md'
-        view:
-          primary: title
-          fields:
-            - type
-            - summary
-          sort: title
-        fields:
-          - *title
-          - name: type
-            label: Type
-            type: select
-            options: *entry_types
-          - *summary
-          - *tags
-          - *image
-          - *incomplete
-          - *body
-      - name: curse-of-strahd-hub
-        label: Hub page
-        type: file
-        path: content/curse-of-strahd/index.md
-        fields:
-          - *title_str
-          - *body
+      - name: vyrun
+        label: Vyrun
+        type: group
+        items:
+          - name: vyrun-entries
+            label: Entries
+            type: collection
+            path: content/campaigns/vyrun
+            exclude:
+              - index.md
+            filename: '{primary}.md'
+            view:
+              primary: title
+              fields:
+                - type
+                - summary
+              sort: title
+            fields:
+              - *title
+              - name: type
+                label: Type
+                type: select
+                options: *entry_types
+              - *summary
+              - *tags
+              - *image
+              - *incomplete
+              - *body
+          - name: vyrun-hub
+            label: Hub page
+            type: file
+            path: content/campaigns/vyrun/index.md
+            fields:
+              - *title_str
+              - *legacy_aliases
+              - *body
+
+      - name: curse-of-strahd
+        label: Curse of Strahd
+        type: group
+        items:
+          - name: curse-of-strahd-entries
+            label: Entries
+            type: collection
+            path: content/campaigns/curse-of-strahd
+            exclude:
+              - index.md
+            filename: '{primary}.md'
+            view:
+              primary: title
+              fields:
+                - type
+                - summary
+              sort: title
+            fields:
+              - *title
+              - name: type
+                label: Type
+                type: select
+                options: *entry_types
+              - *summary
+              - *tags
+              - *image
+              - *incomplete
+              - *body
+          - name: curse-of-strahd-hub
+            label: Hub page
+            type: file
+            path: content/campaigns/curse-of-strahd/index.md
+            fields:
+              - *title_str
+              - *legacy_aliases
+              - *body
 
   # Global rules
   - name: rules

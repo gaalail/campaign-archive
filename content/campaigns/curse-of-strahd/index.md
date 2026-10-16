@@ -1,6 +1,7 @@
 ---
 title: Curse of Strahd
 tags: [curse-of-strahd]
+aliases: [curse-of-strahd/index]
 ---
 
 # Curse of Strahd Campaign

@@ -1,11 +1,12 @@
 ---
-title: Ra Gol'vek
-tags: [ra-golvek]
+title: Vyrun
+tags: [vyrun]
+aliases: [vyrun/index]
 ---
 
-# Ra Gol'vek Campaign
+# Vyrun Campaign
 
-Everything for the Ra Gol'vek campaign. New entries show up in the tables below automatically.
+Everything for the Vyrun campaign. New entries show up in the tables below automatically.
 
 ## Quick Start
 
@@ -18,17 +19,19 @@ Everything for the Ra Gol'vek campaign. New entries show up in the tables below 
 
 ## Campaign Overview
 
-**Ra Gol'vek** is a coastal kingdom caught between ancient magic, modern politics, and forces beyond mortal understanding. The campaign focuses on political intrigue, supernatural threats, and the player characters' mysterious connections to the land's troubled past.
+**Vyrun** is a frontier region where civilization meets wilderness. The campaign centers on exploration, survival, and uncovering ancient mysteries hidden in forgotten ruins and untamed lands.
 
-**Setting:** A sprawling coastal kingdom with merchant cities, ancient ruins, and wild borderlands. The capital Ra Gol'vek dominates the trade routes; smaller cities compete for power and influence.
+**Setting:** Remote mountain valleys, ancient forests, and scattered settlements struggling to maintain their independence. Civilization is sparse; nature rules supreme.
 
-**Theme:** Political intrigue meets supernatural horror. Mysterious and atmospheric with high stakes and moral ambiguity. Not everything is black-and-white.
+**Theme:** Adventure and exploration with a touch of mystery. Frontierspeople dealing with harsh realities, magical dangers, and the unknown.
 
 **Main Conflicts:**
-- An ancient curse is slowly consuming the kingdom from within
-- Political factions vie for power and control of trade
-- A mysterious organization works to influence events from the shadows
-- Each player character has a hidden connection to these events
+- Strange occurrences in the region suggest something ancient is awakening
+- Settlers face threats from wildlife, monsters, and natural disasters
+- Ruins hint at a lost civilization with forgotten magic
+- The frontier itself seems to resist complete settlement
+
+**Example:** "Vyrun is a sprawling continent where magic has recently returned after centuries of silence. Players are among the first to wield it again, and everyone wants to control them."
 
 ---
 
@@ -52,7 +55,7 @@ Click the **Characters** tab to see:
 
 ### Locations
 Click the **Locations** tab to see:
-- Important places in Ra Gol'vek
+- Important places in Vyrun
 - What sessions take place there
 - Key NPCs based there
 - Campaign significance
@@ -89,6 +92,6 @@ Click the **All entries** tab to see everything for this campaign in one table.
 
 ## Tables Below
 
-![[ra-golvek.base]]
+![[vyrun.base]]
 
 ---

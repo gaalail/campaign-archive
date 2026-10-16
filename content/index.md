@@ -16,11 +16,11 @@ Welcome! This is your hub for 5e D&D campaigns, characters, spells, items, and r
 
 ## Pick a Campaign
 
-Choose where you want to adventure:
+Choose where you want to adventure, or [[Campaigns|browse the campaign directory]]:
 
-- **[[Ra Gol'vek]]** — [Add summary]
-- **[[Vyrun]]** — [Add summary]
-- **[[Curse of Strahd]]** — [Add summary]
+- **[[Ra Gol'vek]]** — Coastal intrigue, ancient magic, and supernatural threats.
+- **[[Vyrun]]** — Frontier exploration, survival, and ancient mysteries.
+- **[[Curse of Strahd]]** — Gothic horror in the mist-shrouded realm of Barovia.
 
 Each campaign has sessions, NPCs, locations, and loot specific to your adventure.
 
@@ -48,7 +48,7 @@ Each campaign has sessions, NPCs, locations, and loot specific to your adventure
 
 ### For Players
 1. **First time?** → [[Build a Character|Start with character building]]
-2. **In a campaign?** → Click your campaign name above
+2. **In a campaign?** → Click your campaign name above or browse [[Campaigns]]
 3. **Need a spell?** → [[Spells|Search spells by class]]
 4. **Unsure about rules?** → [[Rules|Check clarifications]]
 

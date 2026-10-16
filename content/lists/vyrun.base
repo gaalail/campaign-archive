@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("vyrun")
+    - file.inFolder("campaigns/vyrun")
     - file.name != "index"
 formulas:
   Name: file.asLink(title)

@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("curse-of-strahd")
+    - file.inFolder("campaigns/curse-of-strahd")
     - file.name != "index"
 formulas:
   Name: file.asLink(title)

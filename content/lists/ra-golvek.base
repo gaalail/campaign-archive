@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("ra-golvek")
+    - file.inFolder("campaigns/ra-golvek")
     - file.name != "index"
 formulas:
   Name: file.asLink(title)

@@ -1,11 +1,12 @@
 ---
-title: Vyrun
-tags: [vyrun]
+title: Ra Gol'vek
+tags: [ra-golvek]
+aliases: [ra-golvek/index]
 ---
 
-# Vyrun Campaign
+# Ra Gol'vek Campaign
 
-Everything for the Vyrun campaign. New entries show up in the tables below automatically.
+Everything for the Ra Gol'vek campaign. New entries show up in the tables below automatically.
 
 ## Quick Start
 
@@ -18,19 +19,17 @@ Everything for the Vyrun campaign. New entries show up in the tables below autom
 
 ## Campaign Overview
 
-**Vyrun** is a frontier region where civilization meets wilderness. The campaign centers on exploration, survival, and uncovering ancient mysteries hidden in forgotten ruins and untamed lands.
+**Ra Gol'vek** is a coastal kingdom caught between ancient magic, modern politics, and forces beyond mortal understanding. The campaign focuses on political intrigue, supernatural threats, and the player characters' mysterious connections to the land's troubled past.
 
-**Setting:** Remote mountain valleys, ancient forests, and scattered settlements struggling to maintain their independence. Civilization is sparse; nature rules supreme.
+**Setting:** A sprawling coastal kingdom with merchant cities, ancient ruins, and wild borderlands. The capital Ra Gol'vek dominates the trade routes; smaller cities compete for power and influence.
 
-**Theme:** Adventure and exploration with a touch of mystery. Frontierspeople dealing with harsh realities, magical dangers, and the unknown.
+**Theme:** Political intrigue meets supernatural horror. Mysterious and atmospheric with high stakes and moral ambiguity. Not everything is black-and-white.
 
 **Main Conflicts:**
-- Strange occurrences in the region suggest something ancient is awakening
-- Settlers face threats from wildlife, monsters, and natural disasters
-- Ruins hint at a lost civilization with forgotten magic
-- The frontier itself seems to resist complete settlement
-
-**Example:** "Vyrun is a sprawling continent where magic has recently returned after centuries of silence. Players are among the first to wield it again, and everyone wants to control them."
+- An ancient curse is slowly consuming the kingdom from within
+- Political factions vie for power and control of trade
+- A mysterious organization works to influence events from the shadows
+- Each player character has a hidden connection to these events
 
 ---
 
@@ -54,7 +53,7 @@ Click the **Characters** tab to see:
 
 ### Locations
 Click the **Locations** tab to see:
-- Important places in Vyrun
+- Important places in Ra Gol'vek
 - What sessions take place there
 - Key NPCs based there
 - Campaign significance
@@ -91,6 +90,6 @@ Click the **All entries** tab to see everything for this campaign in one table.
 
 ## Tables Below
 
-![[vyrun.base]]
+![[ra-golvek.base]]
 
 ---
