@@ -1,6 +1,12 @@
 ---
 title: Artificer
-incomplete: false
+hit_die: d8
+spellcasting_ability: INT
+saving_throws:
+- CON
+- INT
+summary: d8 hit die; saving throws CON, INT; spellcasting with INT
+source: SRD 5.1
 ---
 
 # Artificer
