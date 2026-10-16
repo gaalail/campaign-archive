@@ -60,12 +60,12 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 ## Other Character Options
 
-- **[[Classes]]** — Your main role
-- **[[Subclasses]]** — Specialization within your role
-- **[[Races]]** — Your ancestry
-- **[[Backgrounds]]** — Your story
-- **[[Feats]]** — General special abilities (any class can get these)
-- **[[Templates]]** — Special powers (optional add-ons)
+- **[[character-options/classes|Classes]]** — Your main role
+- **[[character-options/subclasses|Subclasses]]** — Specialization within your role
+- **[[character-options/races|Races]]** — Your ancestry
+- **[[character-options/backgrounds|Backgrounds]]** — Your story
+- **[[character-options/feats|Feats]]** — General special abilities (any class can get these)
+- **[[character-options/templates|Templates]]** — Special powers (optional add-ons)
 
 ---
 
@@ -73,13 +73,13 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 | Option | Purpose | Choose At |
 |--------|---------|-----------|
-| [[Classes]] | Your role | Character creation |
-| [[Subclasses]] | Specialization | 3rd level (usually) |
-| [[Races]] | Ancestry | Character creation |
-| [[Backgrounds]] | Your story | Character creation |
-| [[Feats]] | Special abilities | Levels 4, 8, 12, 16, 19 |
-| [[Class Options]] | Class-specific powers | Varies by class |
-| [[Templates]] | Special powers (optional) | Anytime (DM choice) |
+| [[character-options/classes|Classes]] | Your role | Character creation |
+| [[character-options/subclasses|Subclasses]] | Specialization | 3rd level (usually) |
+| [[character-options/races|Races]] | Ancestry | Character creation |
+| [[character-options/backgrounds|Backgrounds]] | Your story | Character creation |
+| [[character-options/feats|Feats]] | Special abilities | Levels 4, 8, 12, 16, 19 |
+| [[character-options/class-options|Class Options]] | Class-specific powers | Varies by class |
+| [[character-options/templates|Templates]] | Special powers (optional) | Anytime (DM choice) |
 
 ---
 
@@ -92,3 +92,4 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 ![[class-options.base]]
 
 ---
+

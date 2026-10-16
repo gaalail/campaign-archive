@@ -36,12 +36,13 @@ This archive currently has [[Angelic]] as a template. Skip templates if you pref
 
 ## All character options
 
-- [[Races]] — Your ancestry
-- [[Classes]] — Your role
-- [[Subclasses]] — Role specialization
-- [[Backgrounds]] — Your story
-- [[Feats]] — Special abilities
-- [[Class Options]] — Class-specific choices
-- [[Templates]] — Optional powers (you are here)
+- [[character-options/races|Races]] — Your ancestry
+- [[character-options/classes|Classes]] — Your role
+- [[character-options/subclasses|Subclasses]] — Role specialization
+- [[character-options/backgrounds|Backgrounds]] — Your story
+- [[character-options/feats|Feats]] — Special abilities
+- [[character-options/class-options|Class Options]] — Class-specific choices
+- [[character-options/templates|Templates]] — Optional powers (you are here)
 
 ---
+

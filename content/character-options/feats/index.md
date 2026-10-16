@@ -41,12 +41,13 @@ A feat gives you a special power, skill boost, resistance, or talent. Some have 
 
 ## All character options
 
-- [[Races]] — Your ancestry
-- [[Classes]] — Your role
-- [[Subclasses]] — Role specialization
-- [[Backgrounds]] — Your story
-- [[Feats]] — Special abilities (you are here)
-- [[Class Options]] — Class-specific choices
-- [[Templates]] — Optional powers
+- [[character-options/races|Races]] — Your ancestry
+- [[character-options/classes|Classes]] — Your role
+- [[character-options/subclasses|Subclasses]] — Role specialization
+- [[character-options/backgrounds|Backgrounds]] — Your story
+- [[character-options/feats|Feats]] — Special abilities (you are here)
+- [[character-options/class-options|Class Options]] — Class-specific choices
+- [[character-options/templates|Templates]] — Optional powers
 
 ---
+

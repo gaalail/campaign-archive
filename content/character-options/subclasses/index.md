@@ -90,9 +90,10 @@ Check your [[Classes|class]] page for exact timing.
 
 ## Related Sections
 
-- [[Classes]] — Base class info
+- [[character-options/classes|Classes]] — Base class info
 - [[Character Options]] — Broader character creation
-- [[Feats]] — Additional class customization
-- [[Class Options]] — Eldritch Invocations, Metamagic, etc.
+- [[character-options/feats|Feats]] — Additional class customization
+- [[character-options/class-options|Class Options]] — Eldritch Invocations, Metamagic, etc.
 
 ---
+

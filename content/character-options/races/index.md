@@ -50,12 +50,13 @@ Some races have **subraces** — cultural or magical variants listed on the race
 
 ## All character options
 
-- [[Races]] — Your ancestry (you are here)
-- [[Classes]] — Your role
-- [[Subclasses]] — Role specialization
-- [[Backgrounds]] — Your story
-- [[Feats]] — Special abilities
-- [[Class Options]] — Class-specific choices
-- [[Templates]] — Optional powers
+- [[character-options/races|Races]] — Your ancestry (you are here)
+- [[character-options/classes|Classes]] — Your role
+- [[character-options/subclasses|Subclasses]] — Role specialization
+- [[character-options/backgrounds|Backgrounds]] — Your story
+- [[character-options/feats|Feats]] — Special abilities
+- [[character-options/class-options|Class Options]] — Class-specific choices
+- [[character-options/templates|Templates]] — Optional powers
 
 ---
+
