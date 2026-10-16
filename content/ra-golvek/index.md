@@ -18,13 +18,17 @@ Everything for the Ra Gol'vek campaign. New entries show up in the tables below 
 
 ## Campaign Overview
 
-*[Add your campaign summary here. What is Ra Gol'vek? Who are the main factions? What's the story arc?]*
+**Ra Gol'vek** is a coastal kingdom caught between ancient magic, modern politics, and forces beyond mortal understanding. The campaign focuses on political intrigue, supernatural threats, and the player characters' mysterious connections to the land's troubled past.
 
-**Setting:** [Where does this take place?]
-**Theme:** [What's the tone? Gritty? Political? Heroic?]
-**Main Conflicts:** [What are players fighting against?]
+**Setting:** A sprawling coastal kingdom with merchant cities, ancient ruins, and wild borderlands. The capital Ra Gol'vek dominates the trade routes; smaller cities compete for power and influence.
 
-**Example:** "Ra Gol'vek is a coastal kingdom caught between an ancient curse and modern politics. Players navigate city intrigue, supernatural threats, and their own mysterious pasts."
+**Theme:** Political intrigue meets supernatural horror. Mysterious and atmospheric with high stakes and moral ambiguity. Not everything is black-and-white.
+
+**Main Conflicts:**
+- An ancient curse is slowly consuming the kingdom from within
+- Political factions vie for power and control of trade
+- A mysterious organization works to influence events from the shadows
+- Each player character has a hidden connection to these events
 
 ---
 

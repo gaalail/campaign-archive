@@ -4,44 +4,105 @@ title: Items
 
 # Items
 
-Gear, weapons, magical items, and equipment. Filter by rarity in the table.
+**366+ magical and mundane items** | Organized by type | Equip your character
 
 ---
 
-## Browse items
+## Browse Items by Type
 
-![[items.base]]
+Choose an item category to see all items of that type:
 
----
-
-## How items work
-
-**Weapons & armor:**
-- Choose at character creation (based on class/background)
-- Equip to use in combat
-
-**Magical items:**
-- Found as treasure during adventures
-- Each has special abilities or activation
-
-**Adventuring gear:**
-- Practical equipment carried in a pack
+| Type | Count | Description |
+|------|-------|-------------|
+| [[items/Weapon\|Weapons]] | 30 | Melee and ranged weapons |
+| [[items/Armor\|Armor]] | 29 | Protective equipment |
+| [[items/Wondrous Items\|Wondrous Items]] | 181 | Other magical equipment |
+| [[items/Potion\|Potions]] | 40 | One-time magical effects |
+| [[items/Ring\|Rings]] | 36 | Magical jewelry |
+| [[items/Wand\|Wands]] | 16 | One-handed magical implements |
+| [[items/Staff\|Staves]] | 12 | Two-handed magical implements |
+| [[items/Scroll\|Scrolls]] | 11 | One-time spell casting |
+| [[items/Rod\|Rods]] | 6 | Magical rods |
+| [[items/Ammunition\|Ammunition]] | 5 | Projectiles for ranged weapons |
 
 ---
 
-## Starting equipment
+## Browse Items by Rarity
 
-**At character creation,** your [[Classes|class]] lists:
-- Armor for your class
-- Weapons for your fighting style
-- Adventuring gear
+**Find items by how rare and powerful they are:**
+
+- **Common** — Everyone has seen these
+- **Uncommon** — Hard to find, interesting properties
+- **Rare** — Powerful effects, significant magic
+- **Very Rare** — Legendary powers
+- **Artifact** — Unique, world-altering power
+
+Use search or browse by type above to find items by rarity.
 
 ---
 
-## Related sections
+## Item Attunement
 
-- [[Character Options]] — Class-specific equipment
-- [[Spells]] — Magic items that cast spells
-- [[Monsters]] — What creatures drop or carry
+Some magical items require **attunement** — a special bond between you and the item.
+
+**Rules:**
+- Most spellcasters can attune to 3 items maximum
+- Attunement takes 1 short rest (1 hour)
+- Lose attunement if you die, move 100+ miles away, or remove it voluntarily
+- See your [[Classes|class]] page for attunement rules specific to your class
+
+---
+
+## Browse by Class
+
+**Different classes use different items effectively:**
+
+- [[Artificer]] — All items, especially wands and rods
+- [[Bard]] — Performance items, jewelry
+- [[Cleric]] — Holy symbols, armor, shields
+- [[Druid]] — Nature-themed items, armor
+- [[Paladin]] — Holy weapons, armor, shields
+- [[Ranger]] — Weapons, ammunition, gear
+- [[Rogue]] — Subtle items, daggers, light armor
+- [[Sorcerer]] — Jewelry, wands, staffs
+- [[Warlock]] — Pacts often grant item abilities
+- [[Wizard]] — Staffs, wands, jewelry
+
+---
+
+## How to Use Magic Items
+
+**General process:**
+1. Identify what the item does (check its description)
+2. Check if it requires attunement (see attunement section above)
+3. Check what action it takes to activate (action, bonus action, reaction, or passive)
+4. Use it during play
+5. Track spell slots / charges if applicable
+
+**See your DM if:**
+- You're unsure how to use an item
+- An item conflicts with another item's effect
+- An item seems overpowered for your level
+
+---
+
+## Magic Items and Spell Slots
+
+**Important:** Magic items that cast spells don't use your spell slots.
+
+- **Wands/Staffs:** Cast spells with built-in charges
+- **Potions:** One-time use, no slots needed
+- **Scrolls:** One-time use, anyone can use
+
+This makes magic items especially powerful for non-spellcasters.
+
+---
+
+## Related Sections
+
+- [[Classes]] — Class-specific item recommendations
+- [[Spells]] — Spells that magic items cast
+- [[Character Options]] — Build your character
+- [[Rules]] — Rules about magical attunement
 
 ---

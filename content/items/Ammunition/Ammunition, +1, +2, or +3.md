@@ -1,0 +1,30 @@
+---
+incomplete: true
+title: Ammunition, +1, +2, or +3
+rarity: Varies
+item_type: Ammunition
+attunement: false
+summary: Weapon (any ammunition), uncommon (+1), rare (+2), or very rare (+3)
+source: SRD 5.1
+---
+
+
+> [!warning]- ?? This Entry Is Incomplete
+> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
+
+*Weapon (any ammunition), uncommon (+1), rare (+2), or very rare (+3)*
+
+You have a bonus to attack and damage rolls made with this piece of magic ammunition. The bonus is determined by the rarity of the ammunition. Once it hits a target, the ammunition is no longer magical.
+
+
+
+---
+
+## Related Content
+
+**Item Type:** [[items/Ammunition|Ammunition]]
+
+**Rarity:** Varies
+
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+

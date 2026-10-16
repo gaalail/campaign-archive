@@ -1,0 +1,30 @@
+---
+incomplete: true
+title: Animated Shield
+rarity: Very Rare
+item_type: Armor
+attunement: true
+summary: Armor (shield), very rare (requires attunement)
+source: SRD 5.1
+---
+
+
+> [!warning]- ?? This Entry Is Incomplete
+> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
+
+*Armor (shield), very rare (requires attunement)*
+
+While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.
+
+
+
+---
+
+## Related Content
+
+**Item Type:** [[items/Armor|Armor]]
+
+**Rarity:** Very Rare
+
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+

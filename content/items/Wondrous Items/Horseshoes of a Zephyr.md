@@ -1,0 +1,30 @@
+---
+incomplete: true
+title: Horseshoes of a Zephyr
+rarity: Very Rare
+item_type: Wondrous Items
+attunement: false
+summary: Wondrous item, very rare
+source: SRD 5.1
+---
+
+
+> [!warning]- ?? This Entry Is Incomplete
+> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
+
+*Wondrous item, very rare*
+
+These iron horseshoes come in a set of four. While all four shoes are affixed to the hooves of a horse or similar creature, they allow the creature to move normally while floating 4 inches above the ground. This effect means the creature can cross or stand above nonsolid or unstable surfaces, such as water or lava. The creature leaves no tracks and ignores difficult terrain. In addition, the creature can move at normal speed for up to 12 hours a day without suffering exhaustion from a forced march.
+
+
+
+---
+
+## Related Content
+
+**Item Type:** [[items/Wondrous Items|Wondrous Items]]
+
+**Rarity:** Very Rare
+
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+

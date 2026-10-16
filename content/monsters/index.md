@@ -2,63 +2,74 @@
 title: Monsters
 ---
 
-# Monsters
+# Monsters & Creatures
 
-**2+ monster entries** | Creatures, NPCs, enemies, allies
+This section contains monsters, creatures, NPCs, and other entities that players might encounter.
 
----
-
-## What Is a Monster Entry?
-
-Monster entries provide:
-- **Stat block** (HP, AC, abilities)
-- **Traits & actions** (what it can do)
-- **Loot** (what it carries/drops)
-- **Context** (where it appears, campaigns it's in)
-- **Tactics** (how it fights)
+**Status:** This section is being populated. Check back for more creatures, or ask your DM about specific monsters.
 
 ---
 
 ## Browse Monsters
 
-![[monsters.base]]
+### By Type
 
-Monster entries are organized by:
-- **Campaign** (which campaign it appears in)
-- **Creature type** (humanoid, dragon, undead, etc.)
-- **Challenge rating** (how dangerous)
+- **Humanoids** — People, dwarves, elves, etc.
+- **Beasts** — Animals and mundane creatures
+- **Dragons** — Draconic creatures
+- **Undead** — Zombies, ghosts, vampires, etc.
+- **Elementals** — Air, fire, water, earth entities
+- **Aberrations** — Weird and alien creatures
+- **Constructs** — Golems, automatons, etc.
+- **Fey** — Fairies and magical beings
+- **Fiends** — Demons, devils, etc.
+- **Giants** — Large humanoid creatures
+- **Monstrosities** — Chimeras, hydras, etc.
+- **Oozes** — Gelatinous creatures
+- **Plants** — Treants, shambling mounds, etc.
+
+### By Challenge Rating
+
+| CR | Count | Examples |
+|----|-------|----------|
+| 0 | ? | Commoners, animals |
+| 1-2 | ? | Bandits, goblins |
+| 3-5 | ? | Bugbears, wyverns |
+| 6-10 | ? | Giants, demons |
+| 11+ | ? | Ancient dragons, liches |
 
 ---
 
-## Monster Information
-
-**For each monster, you'll find:**
-- Hit points and armor class
-- Abilities and special traits
-- Actions and reactions
-- Loot and treasure
-- Campaign context
-
----
-
-## Using Monsters
-
-**For Players:**
-- Reference during combat
-- Understand enemy abilities
-- Prepare tactics
+## Finding a Monster
 
 **For DMs:**
-- Run combat encounters
-- Design campaigns
-- Adjust difficulty
+- Use the Monster Manual (official source)
+- Or search for custom creatures in this archive
+
+**For Players:**
+- Ask your DM which monsters you might encounter
+- The DM reveals monsters as appropriate during play
 
 ---
 
-## Related Sections
+## Format
 
-- [[Spells]] — Spells monsters cast
-- [[Items]] — Loot monsters carry
-- [[Ra Gol'vek]], [[Vyrun]], [[Curse of Strahd]] — Where monsters appear
+Each monster page includes:
+- **Armor Class & Hit Points**
+- **Abilities** (Strength, Dexterity, etc.)
+- **Skills & Resistances**
+- **Senses & Languages**
+- **Special Traits** (unique abilities)
+- **Actions** (what it can do in combat)
+- **Reactions** (reactions to triggers)
+- **Legend Actions** (for boss creatures)
+
+---
+
+## Resources
+
+- **[[Rules]]** — Combat rules and mechanics
+- **Monster Manual** — Official D&D monster source
+- **Ask your DM** — For campaign-specific creatures
 
 ---

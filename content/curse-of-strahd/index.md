@@ -18,13 +18,18 @@ Everything for the Curse of Strahd campaign. New entries show up in the tables b
 
 ## Campaign Overview
 
-*[Add your campaign summary here. What is Curse of Strahd? Who are the main factions? What's the story arc?]*
+**Curse of Strahd** is the official D&D campaign set in Barovia, a land cursed by the ancient vampire lord Strahd von Zarovich. You've been trapped in this gothic horror realm. Your only hope: discover the source of Strahd's power and end his reign of terror—or die trying.
 
-**Setting:** [Where does this take place?]
-**Theme:** [What's the tone? Gritty? Political? Heroic?]
-**Main Conflicts:** [What are players fighting against?]
+**Setting:** Barovia—a dark, mist-shrouded realm trapped in eternal twilight. Gothic villages, ancient forests, and crumbling castles dominate the landscape. Strahd's castle, Ravenloft, looms over everything.
 
-**Example:** "Curse of Strahd is the official D&D campaign module. You've been trapped in Barovia, a land ruled by the vampire lord Strahd von Zarovich. Escape or die trying."
+**Theme:** Gothic horror with survival elements. Dark, atmospheric, and dangerous. Hope is thin; paranoia is justified. The land itself seems hostile.
+
+**Main Conflicts:**
+- Strahd von Zarovich, the vampire lord, actively hunts the party
+- The land of Barovia itself is hostile and cursed
+- NPCs have conflicting goals and hidden agendas
+- The party must uncover Strahd's weaknesses before it's too late
+- Escape from Barovia may be impossible—or may require ultimate sacrifice
 
 ---
 

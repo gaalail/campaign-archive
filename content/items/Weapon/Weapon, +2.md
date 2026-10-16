@@ -1,0 +1,30 @@
+---
+incomplete: true
+title: Weapon, +2
+rarity: Rare
+item_type: Weapon
+attunement: false
+summary: Weapon (any), rare
+source: SRD 5.1
+---
+
+
+> [!warning]- ?? This Entry Is Incomplete
+> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
+
+*Weapon (any), rare*
+
+You have a +2 bonus to attack and damage rolls made with this magic weapon.
+
+
+
+---
+
+## Related Content
+
+**Item Type:** [[items/Weapon|Weapon]]
+
+**Rarity:** Rare
+
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+

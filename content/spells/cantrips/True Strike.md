@@ -1,0 +1,41 @@
+---
+incomplete: true
+title: True Strike
+level: 0
+school: Divination
+classes:
+- Bard
+- Sorcerer
+- Warlock
+- Wizard
+casting_time: 1 action
+range: 30 feet
+duration: Up to 1 round
+components: S
+ritual: false
+concentration: true
+source: SRD 5.1
+---
+
+
+> [!warning]- ?? This Entry Is Incomplete
+> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
+
+*Divination cantrip*
+
+You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.
+
+
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/cantrips|Cantrips]]
+
+**School:** Divination
+
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+

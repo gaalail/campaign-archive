@@ -4,69 +4,87 @@ title: Spells
 
 # Spells
 
-**400+ spells** | Filter by class and level | Core of magical characters
+**424+ spells available** | Organized by level | Core of magical characters
 
 ---
 
-## Browse the spell list
+## Browse Spells by Level
 
-Use the tabs to see every spell, then filter by class. Click a name for the full write-up.
+Choose a spell level to see all spells available at that progression:
 
-![[spells.base]]
-
----
-
-## Browse spells on a class page
-
-Each caster class page also has that class's list, grouped by level:
-
-- [[Bard]]
-- [[Cleric]]
-- [[Druid]]
-- [[Paladin]]
-- [[Ranger]]
-- [[Sorcerer]]
-- [[Warlock]] — includes spell-like invocations on the class page
-- [[Wizard]]
+| Level | When You Get It | Count |
+|-------|-----------------|-------|
+| [[spells/cantrips\|Cantrips]] | Always available | 34 |
+| [[spells/1st-level\|1st-Level]] | Character level 1+ | 59 |
+| [[spells/2nd-level\|2nd-Level]] | Character level 3+ | 64 |
+| [[spells/3rd-level\|3rd-Level]] | Character level 5+ | 52 |
+| [[spells/4th-level\|4th-Level]] | Character level 7+ | 43 |
+| [[spells/5th-level\|5th-Level]] | Character level 9+ | 51 |
+| [[spells/6th-level\|6th-Level]] | Character level 11+ | 41 |
+| [[spells/7th-level\|7th-Level]] | Character level 13+ | 29 |
+| [[spells/8th-level\|8th-Level]] | Character level 15+ | 25 |
+| [[spells/9th-level\|9th-Level]] | Character level 17+ | 25 |
 
 ---
 
-## Common cantrips
+## Browse All Spells Organized by Class
 
-- [[Fire Bolt]] — Ranged damage (Wizard, Sorcerer)
-- [[Light]] — Create illumination (Bard, Cleric, Sorcerer, Wizard)
-- [[Mage Hand]] — Telekinesis (Bard, Sorcerer, Warlock, Wizard)
-- [[Message]] — Send secret messages (Bard, Sorcerer, Wizard)
-- [[Prestidigitation]] — Minor magic tricks (Bard, Sorcerer, Warlock, Wizard)
+**For a class-specific spell list**, go to that class page:
 
----
+- [[Artificer]] — Infusion magic
+- [[Bard]] — Magic through performance
+- [[Cleric]] — Divine magic
+- [[Druid]] — Nature magic
+- [[Paladin]] — Holy magic
+- [[Ranger]] — Primal magic
+- [[Sorcerer]] — Innate magic
+- [[Warlock]] — Patron magic (includes invocations)
+- [[Wizard]] — Scholarly magic
 
-## Popular leveled spells
-
-| Spell | Level | Effect |
-|-------|------|--------|
-| [[Magic Missile]] | 1st | Automatic force damage |
-| [[Healing Word]] | 1st | Bonus-action healing |
-| [[Fireball]] | 3rd | Area fire damage |
-| [[Counterspell]] | 3rd | Interrupt an enemy spell |
-| [[Teleportation Circle]] | 5th | Travel great distances |
+Each class page shows **spells organized by level you can learn them**.
 
 ---
 
-## How to use this section
+## How Spell Levels Work
 
-**Step 1:** Find your [[Classes|class]]  
-**Step 2:** Open a class tab above, or go to the class page  
-**Step 3:** See what spells you can learn or prepare at each level  
-**Step 4:** Click a spell name for full details  
-**Step 5:** Ask your DM about learning or preparing spells
+**Spell Level ≠ Character Level**
+
+- **Cantrips:** Character level 1+ (always available)
+- **1st-level spells:** Character level 1+ (but limited slots)
+- **2nd-level spells:** Character level 3+ (more slots as you level)
+- **3rd-9th-level spells:** Character levels 5-17+ (highest power)
+
+Check your [[Classes|class]] page for exact spell slot progression.
 
 ---
 
-## Related sections
+## Spell Slots vs. Spells Known
 
-- [[Character Options]] — Multiclass spellcasting
+**Spell Slots:** How many spells you can cast per day (limited)
+
+**Spells Known:** Which spells you have access to (depends on class)
+
+- **Wizards:** Know fewer spells but can change them on rest
+- **Sorcerers:** Know fewer spells but pick them at level-up
+- **Clerics:** Know all cleric spells; prepare subset each rest
+- **Warlocks:** Know fewer, but regain slots on short rest
+
+---
+
+## Finding a Specific Spell
+
+**Best approaches:**
+1. Go to your [[Classes|class]] page → see class spell list organized by level
+2. Use search (magnifying glass) to find spell by name
+3. Browse spells by level using tabs above
+
+---
+
+## Related Sections
+
+- [[Character Options]] — Classes and multiclassing
 - [[Feats]] — Magic-focused feats
 - [[Items]] — Magic items that cast spells
+- [[Monsters]] — Spells creatures cast
 
 ---

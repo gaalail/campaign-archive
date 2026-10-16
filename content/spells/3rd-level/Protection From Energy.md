@@ -1,0 +1,42 @@
+---
+incomplete: true
+title: Protection From Energy
+level: 3
+school: Abjuration
+classes:
+- Cleric
+- Druid
+- Ranger
+- Sorcerer
+- Wizard
+casting_time: 1 action
+range: Touch
+duration: Up to 1 hour
+components: V, S
+ritual: false
+concentration: true
+source: SRD 5.1
+---
+
+
+> [!warning]- ?? This Entry Is Incomplete
+> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
+
+*3rd-level abjuration*
+
+For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.
+
+
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/3rd-level|3rd level]]
+
+**School:** Abjuration
+
+**Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+

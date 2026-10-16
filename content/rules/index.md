@@ -2,70 +2,56 @@
 title: Rules
 ---
 
-## Game Rules & Clarifications
+# Rules & House Rules
 
-This section contains rules references for the campaigns, including:
-
-### House Rules
-Custom rules specific to this table. Things we changed from the official D&D 5e ruleset.
-
-**Examples:**
-- "Flanking gives +2 to attack"
-- "Healing potions restore 2d4+2 HP instead of 1d4+1"
-- "Short rests take 30 minutes instead of 1 hour"
-
-### Mechanic Clarifications
-Clarifications on official rules that are confusing or open to interpretation.
-
-**Examples:**
-- "How does advantage work with critical hits?"
-- "Can you use a bonus action and an action in the same turn?"
-- "What happens if you cast two spells in one turn?"
-
-### Campaign-Specific Rulings
-Rules that apply only to the current campaign.
-
-**Examples (Ra Gol'vek):**
-- "Magic is rare in this region; spellcasters are distrusted"
-- "The Church of Light enforces these laws..."
-- "In this city, only nobles can hire guards"
-
-### Related Game Mechanics
-Links to classes, spells, and items affected by these rules.
+This archive uses standard **D&D 5e rules** with a few house rules for balance and fun. This section documents any differences from the Player's Handbook.
 
 ---
 
-## Browse by Category
+## Quick Links
 
-| Type | Purpose | Examples |
-|------|---------|----------|
-| House Rules | Table customization | Flanking, healing, rests |
-| Clarifications | Confusing rules | Spellcasting, actions, bonus actions |
-| Campaign Rules | Campaign flavor | Regional laws, magic systems |
-| References | Mechanics | See Classes, Spells, Items |
+- **[[House Rules]]** — Modifications to standard rules
+- Rules questions? **Check the Player's Handbook first**, then this page, then ask your DM
 
 ---
 
-## Add a New Rule
+## What You'll Find Here
 
-To add a rule via the editor:
-
-1. Go to Pages CMS
-2. Click **Rules** → **Add**
-3. Fill in:
-   - **Title:** Rule name or topic
-   - **Summary:** One-line explanation
-   - **Text (Markdown):** Full description
-4. Save
+- **House Rules** — Rules we modify for better gameplay
+- **Clarifications** — Ambiguous rules explained
+- **Campaign-Specific Rules** — Rules for specific campaigns (Ra Gol'vek, Vyrun, Curse of Strahd)
 
 ---
 
-## What Else?
+## The Philosophy
 
-- **[[Classes]]** — Character building
-- **[[Spells]]** — Magic reference
-- **[[Items]]** — Equipment and loot
-- **[[Monsters]]** — Creature reference
-- **[[Ra Gol'vek]]**, **[[Vyrun]]**, **[[Curse of Strahd]]** — Your adventures
+We keep house rules **light**. We change things only when:
+1. The standard rule creates balance problems
+2. We want to make gameplay faster/clearer
+3. Campaign flavor requires it
+
+Most of the time, we use the rules as written.
+
+---
+
+## Need a Quick Answer?
+
+| Question | Where to Look |
+|----------|---------------|
+| How do critical hits work? | [[House Rules]] (Critical Hits) |
+| Can I take a long rest whenever I want? | [[House Rules]] (Long Rest Mechanics) |
+| Do I get multiple bonus actions? | [[House Rules]] (Clarifications) |
+| What's special about Ra Gol'vek? | [[House Rules]] (Campaign-Specific) |
+| I still don't know the answer | Ask your DM |
+
+---
+
+## Official Rules Sources
+
+For anything NOT listed here, consult:
+- **Player's Handbook** — Core rules
+- **Dungeon Master's Guide** — Tables and variants
+- **Monster Manual** — Creature statistics
+- **Sage Advice** — Official clarifications (via D&D Beyond)
 
 ---

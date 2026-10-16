@@ -1,0 +1,30 @@
+---
+incomplete: true
+title: Potion of Flying
+rarity: Very Rare
+item_type: Potion
+attunement: false
+summary: Potion, very rare
+source: SRD 5.1
+---
+
+
+> [!warning]- ?? This Entry Is Incomplete
+> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
+
+*Potion, very rare*
+
+When you drink this potion, you gain a flying speed equal to your walking speed for 1 hour and can hover. If you're in the air when the potion wears off, you fall unless you have some other means of staying aloft. This potion's clear liquid floats at the top of its container and has cloudy white impurities drifting in it.
+
+
+
+---
+
+## Related Content
+
+**Item Type:** [[items/Potion|Potion]]
+
+**Rarity:** Very Rare
+
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+

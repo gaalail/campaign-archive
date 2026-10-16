@@ -18,11 +18,17 @@ Everything for the Vyrun campaign. New entries show up in the tables below autom
 
 ## Campaign Overview
 
-*[Add your campaign summary here. What is Vyrun? Who are the main factions? What's the story arc?]*
+**Vyrun** is a frontier region where civilization meets wilderness. The campaign centers on exploration, survival, and uncovering ancient mysteries hidden in forgotten ruins and untamed lands.
 
-**Setting:** [Where does this take place?]
-**Theme:** [What's the tone? Gritty? Political? Heroic?]
-**Main Conflicts:** [What are players fighting against?]
+**Setting:** Remote mountain valleys, ancient forests, and scattered settlements struggling to maintain their independence. Civilization is sparse; nature rules supreme.
+
+**Theme:** Adventure and exploration with a touch of mystery. Frontierspeople dealing with harsh realities, magical dangers, and the unknown.
+
+**Main Conflicts:**
+- Strange occurrences in the region suggest something ancient is awakening
+- Settlers face threats from wildlife, monsters, and natural disasters
+- Ruins hint at a lost civilization with forgotten magic
+- The frontier itself seems to resist complete settlement
 
 **Example:** "Vyrun is a sprawling continent where magic has recently returned after centuries of silence. Players are among the first to wield it again, and everyone wants to control them."
 

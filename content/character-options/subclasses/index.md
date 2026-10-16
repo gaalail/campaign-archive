@@ -4,78 +4,95 @@ title: Subclasses
 
 # Subclasses
 
-At **3rd level** (sometimes earlier), you specialize your class with a **subclass**.
+At **3rd level** (sometimes 1st or 2nd), you specialize your class with a **subclass**.
 
-This archive groups subclasses by the class they belong to. There is no Artificer class here; [[Paragon]] is the Corpus Angelus class with Orders as subclasses.
-
----
-
-## Browse by class
-
-Click a class to open its page (each class also lists its own subclasses):
-
-- [[Barbarian]]
-- [[Bard]]
-- [[Cleric]]
-- [[Druid]]
-- [[Fighter]]
-- [[Monk]]
-- [[Paladin]]
-- [[Paragon]]
-- [[Ranger]]
-- [[Rogue]]
-- [[Sorcerer]]
-- [[Warlock]]
-- [[Wizard]]
+**54+ subclasses available** | Choose at level-up | Defines your playstyle
 
 ---
 
-## All subclasses
+## Browse Subclasses by Class
 
-Grouped by parent class, then alphabetical within each group.
+Click your class to see available subclasses:
 
-![[subclasses.base]]
+### Core Classes
 
----
+- [[Barbarian Subclasses|Barbarian]] (5 paths)
+- [[Bard Subclasses|Bard]] (4 colleges)
+- [[Cleric Subclasses|Cleric]] (5 domains)
+- [[Druid Subclasses|Druid]] (4 circles)
+- [[Fighter Subclasses|Fighter]] (5 archetypes)
+- [[Monk Subclasses|Monk]] (4 traditions)
+- [[Paladin Subclasses|Paladin]] (4 oaths)
+- [[Ranger Subclasses|Ranger]] (4 archetypes)
+- [[Rogue Subclasses|Rogue]] (4 archetypes)
+- [[Sorcerer Subclasses|Sorcerer]] (4 origins)
+- [[Warlock Subclasses|Warlock]] (4 patrons)
+- [[Wizard Subclasses|Wizard]] (4 traditions)
 
-## Examples in this archive
+### Homebrew Classes
 
-| Class | Subclass | Theme |
-|-------|----------|-------|
-| [[Fighter]] | [[Champion]] | Master of weapons |
-| [[Wizard]] | [[Evocation]] | Explosive spells |
-| [[Cleric]] | [[Life]] | Powerful healing |
-| [[Rogue]] | [[Thief]] | Stealth and second-story work |
-| [[Sorcerer]] | [[Draconic]] | Draconic bloodline |
-| [[Paragon]] | [[Order of Valor]] | Holy warfare |
-
----
-
-## How subclasses work
-
-**Usually level 3:** You choose your subclass (some classes choose at 1st or 2nd).  
-**Through 20th:** You gain subclass features at the levels listed on that page.
-
-Check your [[Classes|class]] page for when the choice happens.
+- [[Paragon Subclasses|Paragon]] (3 orders) — Corpus Angelus class
 
 ---
 
-## Next steps
+## All Subclasses by Parent Class
 
-**Step 1:** Choose your [[Classes|class]]  
-**Step 2:** Reach the level that unlocks a subclass  
-**Step 3:** Pick a subclass matching your playstyle
+**Looking for a specific subclass?** Each class page lists its subclasses in a table for easy browsing.
+
+| Class | Subclasses | Theme |
+|-------|-----------|-------|
+| Barbarian | Berserker, Celestial Fury, Self-Sacrifice, Hopebringer, Virtuous | Primal fury |
+| Bard | Hope, Truth, Lore, Hymn Singer | Magical performance |
+| Cleric | Angel Caller, Dawn Domain, Exorcist, Holy Virtues, Life | Divine magic |
+| Druid | Circle of Heaven, Circle of Phoenix, Circle of Unicorns, Land | Nature magic |
+| Fighter | Champion, Anointed Warrior, Glorious Combatant, Holy Knight, Iron Bulwark | Martial prowess |
+| Monk | Open Hand, Way of Angels, Way of Cardinal Virtues, Way of the Pilgrims | Disciplined power |
+| Paladin | Devotion, Oath of Righteousness, Templar, Zealot | Holy oath |
+| Ranger | Evil Slayer, Holy Messenger, Hunter, Keeper of Light | Primal tracking |
+| Rogue | Chainbreaker, Divine Blade, Thief, Vigilante | Stealth and cunning |
+| Sorcerer | Draconic, Prismatic, Starborn, Knight Dragon Bloodline | Innate magic |
+| Warlock | Archangel, Fiend, Nature, The Returned | Eldritch pact |
+| Wizard | Evocation, Celestial Summoner, Education, School of Sealing | Scholarly magic |
+| Paragon | Order of Reason, Order of the Voice, Order of Valor | Holy warrior (homebrew) |
 
 ---
 
-## All character options
+## How Subclasses Work
 
-- [[Races]] — Your ancestry
-- [[Classes]] — Your role
-- [[Subclasses]] — Role specialization (you are here)
-- [[Backgrounds]] — Your story
-- [[Feats]] — Special abilities
-- [[Class Options]] — Class-specific choices
-- [[Templates]] — Optional powers
+**Timing:**
+- **Most classes:** 3rd level
+- **Clerics & Sorcerers & Warlocks:** 1st level
+- **Druids & Wizards:** 2nd level
+- **Barbarians & Fighters:** 3rd level
+
+Check your [[Classes|class]] page for exact timing.
+
+**Features:**
+- Gain unique abilities at levels 3, 6, 10, 14, 18
+- Shape how your class plays
+- Unlock special powers or tactics
+
+**Permanent choice:**
+- You can't change subclasses once chosen (typically)
+- Make your selection carefully
+
+---
+
+## Making Your Choice
+
+1. **Read your class page** — See options and timing
+2. **Browse the subclass pages** — Click a class above
+3. **Read each subclass** — Understand the mechanics
+4. **Pick the one that fits** — Your playstyle and story
+5. **Tell your DM** — Declare your choice
+
+---
+
+## Related Sections
+
+- [[Classes]] — Base class info
+- [[Character Options]] — Broader character creation
+- [[Feats]] — Additional class customization
+- [[Class Options]] — Eldritch Invocations, Metamagic, etc.
 
 ---
