@@ -37,7 +37,7 @@ This is a **D&D 5e wiki** for player-facing campaign information. It includes:
 ### 2. Playing in a Campaign (Ongoing)
 
 **Click your campaign name:**
-- **[[Ra Gol'vek]]**
+- **[[campaigns/ra-golvek|Ra Gol'vek]]**
 - **[[Vyrun]]**
 - **[[Curse of Strahd]]**
 
@@ -81,7 +81,7 @@ Each campaign has **tabs** (Sessions, Characters, Locations, All entries). Use t
 
 **Step 1:** [[Build a Character|Read "How to Build a Character"]]
 
-**Step 2:** Pick your campaign ([[Ra Gol'vek]], [[Vyrun]], or [[Curse of Strahd]])
+**Step 2:** Pick your campaign ([[campaigns/ra-golvek|Ra Gol'vek]], [[Vyrun]], or [[Curse of Strahd]])
 
 **Step 3:** Read the campaign overview to understand the setting
 
@@ -181,7 +181,7 @@ Each campaign can have:
 - **[[Monsters]]** — Enemy reference
 - **[[Rules]]** — House rules and clarifications
 - **[[Campaigns]]** — Browse campaign hubs
-- **[[Ra Gol'vek]]** — Campaign 1
+- **[[campaigns/ra-golvek|Ra Gol'vek]]** — Campaign 1
 - **[[Vyrun]]** — Campaign 2
 - **[[Curse of Strahd]]** — Campaign 3
 

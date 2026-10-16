@@ -18,7 +18,7 @@ Welcome! This is your hub for 5e D&D campaigns, characters, spells, items, and r
 
 Choose where you want to adventure, or [[Campaigns|browse the campaign directory]]:
 
-- **[[Ra Gol'vek]]** — Coastal intrigue, ancient magic, and supernatural threats.
+- **[[campaigns/ra-golvek|Ra Gol'vek]]** — Coastal intrigue, ancient magic, and supernatural threats.
 - **[[Vyrun]]** — Frontier exploration, survival, and ancient mysteries.
 - **[[Curse of Strahd]]** — Gothic horror in the mist-shrouded realm of Barovia.
 

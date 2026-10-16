@@ -10,7 +10,7 @@ Choose a campaign to explore its setting, sessions, characters, locations, and o
 
 A coastal kingdom caught between ancient magic, political intrigue, and supernatural threats.
 
-**[[Ra Gol'vek|Visit the Ra Gol'vek campaign]]**
+**[[campaigns/ra-golvek|Visit the Ra Gol'vek campaign]]**
 
 ## Vyrun
 
