@@ -1,6 +1,6 @@
 ---
 incomplete: true
-title: Potion of Healing
+title: Potion of Healing (Common)
 rarity: Common
 item_type: Potion
 attunement: false
@@ -27,4 +27,3 @@ You regain 2d4 + 2 hit points when you drink this potion. The potion's red liqui
 **Rarity:** Common
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
-

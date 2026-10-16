@@ -20,7 +20,7 @@ Learn at 1st character level
 
 ## Spells at This Level
 
-![[spells-1st-level.base]]
+![[spells.base#1st-Level]]
 
 ---
 

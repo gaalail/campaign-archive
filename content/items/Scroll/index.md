@@ -16,14 +16,14 @@ One-time use magical scrolls
 
 ## Items of This Type
 
-![[items-Scroll.base]]
+![[items.base#Scroll]]
 
 ---
 
 ## Related Sections
 
 - [[items|All Items]]
-- [[Classes]] — Class-specific equipment
-- [[Character Options]] — Build your character
+- [[Classes]] ï¿½ Class-specific equipment
+- [[Character Options]] ï¿½ Build your character
 
 ---

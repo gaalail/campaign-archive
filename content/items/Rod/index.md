@@ -16,14 +16,14 @@ Magical rods for spellcasters
 
 ## Items of This Type
 
-![[items-Rod.base]]
+![[items.base#Rod]]
 
 ---
 
 ## Related Sections
 
 - [[items|All Items]]
-- [[Classes]] — Class-specific equipment
-- [[Character Options]] — Build your character
+- [[Classes]] ï¿½ Class-specific equipment
+- [[Character Options]] ï¿½ Build your character
 
 ---

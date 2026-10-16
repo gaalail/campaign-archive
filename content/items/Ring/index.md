@@ -16,14 +16,14 @@ Magical rings with various powers
 
 ## Items of This Type
 
-![[items-Ring.base]]
+![[items.base#Ring]]
 
 ---
 
 ## Related Sections
 
 - [[items|All Items]]
-- [[Classes]] — Class-specific equipment
-- [[Character Options]] — Build your character
+- [[Classes]] ï¿½ Class-specific equipment
+- [[Character Options]] ï¿½ Build your character
 
 ---

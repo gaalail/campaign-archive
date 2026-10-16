@@ -16,14 +16,14 @@ Protective equipment for characters
 
 ## Items of This Type
 
-![[items-Armor.base]]
+![[items.base#Armor]]
 
 ---
 
 ## Related Sections
 
 - [[items|All Items]]
-- [[Classes]] — Class-specific equipment
-- [[Character Options]] — Build your character
+- [[Classes]] ï¿½ Class-specific equipment
+- [[Character Options]] ï¿½ Build your character
 
 ---

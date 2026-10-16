@@ -14,7 +14,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { extractWikilinks, loadLinkIndex, resolveWikilink } from './link-health.js';
+import { extractWikilinks, findGeneratedViewPages, loadLinkIndex, resolveWikilink } from './link-health.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -77,7 +77,8 @@ function checkWikilinks(linkIndex) {
       const result = resolveWikilink(link, sourcePath, linkIndex);
       if (result.status === 'missing') {
         const kind = link.embed ? 'embed' : 'wikilink';
-        RESULTS.errors.push(`${displayPath}:${link.line}:${link.column}: unresolved ${kind} [[${link.target}]]`);
+        const destination = `${link.target}${link.fragment ? `#${link.fragment}` : ''}`;
+        RESULTS.errors.push(`${displayPath}:${link.line}:${link.column}: unresolved ${kind} [[${destination}]]`);
         brokenCount++;
       } else if (result.status === 'ambiguous') {
         RESULTS.warnings.push(
@@ -95,10 +96,12 @@ function checkWikilinks(linkIndex) {
 }
 
 // Report content pages with neither incoming nor outgoing wikilinks.
-function checkUnlinkedPages() {
+function checkUnlinkedPages(linkIndex) {
   console.log('\n📍 Checking for unlinked pages...');
   const incomingLinks = new Map();
   const outgoingLinks = new Map();
+  const generatedViewPages = findGeneratedViewPages(linkIndex);
+  RESULTS.info.push(`Pages included in generated .base views: ${generatedViewPages.size}.`);
 
   for (const [filepath, data] of Object.entries(fileCache)) {
     outgoingLinks.set(filepath, data.links.some((link) => link.result?.status === 'resolved'));
@@ -113,17 +116,22 @@ function checkUnlinkedPages() {
   const orphaned = [];
   for (const [filepath, data] of Object.entries(fileCache)) {
     const relativePath = path.relative(CONTENT_DIR, filepath);
+    const generatedViewPath = relativePath.replaceAll('\\', '/');
     if (path.basename(filepath).toLowerCase() === 'index.md' || !relativePath.includes(path.sep) || data.metadata.incomplete) {
       continue;
     }
-    if (!incomingLinks.has(filepath) && !outgoingLinks.get(filepath)) {
+    if (
+      !incomingLinks.has(filepath) &&
+      !outgoingLinks.get(filepath) &&
+      !generatedViewPages.has(generatedViewPath)
+    ) {
       orphaned.push(path.relative(path.dirname(CONTENT_DIR), filepath).replaceAll('\\', '/'));
     }
   }
 
   if (orphaned.length > 0) {
     RESULTS.warnings.push(
-      `⚠ ${orphaned.length} pages have no incoming or outgoing explicit wikilinks (generated views are not included)`,
+      `⚠ ${orphaned.length} pages have no incoming wikilinks, generated-view inclusion, or outgoing wikilinks`,
     );
     orphaned.slice(0, 5).forEach(f => {
       RESULTS.info.push(`  - ${f}`);
@@ -246,7 +254,7 @@ function validate() {
   
   // Run checks
   checkWikilinks(linkIndex);
-  checkUnlinkedPages();
+  checkUnlinkedPages(linkIndex);
   checkMetadata();
   checkDuplicates();
   checkIncomplete();

@@ -16,14 +16,14 @@ Magical potions with temporary effects
 
 ## Items of This Type
 
-![[items-Potion.base]]
+![[items.base#Potion]]
 
 ---
 
 ## Related Sections
 
 - [[items|All Items]]
-- [[Classes]] — Class-specific equipment
-- [[Character Options]] — Build your character
+- [[Classes]] ï¿½ Class-specific equipment
+- [[Character Options]] ï¿½ Build your character
 
 ---

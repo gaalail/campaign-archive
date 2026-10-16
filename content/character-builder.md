@@ -106,7 +106,7 @@ Not just classes—your character can be customized with:
 - **[[Backgrounds]]** — Your story before adventuring
 - **[[Feats]]** — Special talents and training
 - **[[Templates]]** — Add-ons (like becoming a werewolf, angelic being, etc.)
-- **[[Character options by class]]** — Specialized choices for your class (like Warlock Invocations or Sorcerer Metamagic)
+- **[[character-options/class-options|Character options by class]]** — Specialized choices for your class (like Warlock Invocations or Sorcerer Metamagic)
 
 ---
 

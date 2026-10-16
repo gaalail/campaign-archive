@@ -18,7 +18,7 @@ Learn at 17th character level
 
 ## Spells at This Level
 
-![[spells-9th-level.base]]
+![[spells.base#9th-Level]]
 
 ---
 

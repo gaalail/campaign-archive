@@ -20,7 +20,7 @@ Learn at 3rd character level
 
 ## Spells at This Level
 
-![[spells-2nd-level.base]]
+![[spells.base#2nd-Level]]
 
 ---
 

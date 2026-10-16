@@ -19,7 +19,7 @@ Always available, cast unlimited times
 
 ## Spells at This Level
 
-![[spells-cantrips.base]]
+![[spells.base#Cantrips]]
 
 ---
 

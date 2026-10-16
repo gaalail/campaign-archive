@@ -16,14 +16,14 @@ One-handed magical implements
 
 ## Items of This Type
 
-![[items-Wand.base]]
+![[items.base#Wand]]
 
 ---
 
 ## Related Sections
 
 - [[items|All Items]]
-- [[Classes]] — Class-specific equipment
-- [[Character Options]] — Build your character
+- [[Classes]] ï¿½ Class-specific equipment
+- [[Character Options]] ï¿½ Build your character
 
 ---

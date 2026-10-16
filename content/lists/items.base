@@ -96,3 +96,93 @@ views:
     sort:
       - property: file.name
         direction: ASC
+  - type: table
+    name: Ammunition
+    filters:
+      and:
+        - item_type == "Ammunition"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Armor
+    filters:
+      and:
+        - item_type == "Armor"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Potion
+    filters:
+      and:
+        - item_type == "Potion"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Ring
+    filters:
+      and:
+        - item_type == "Ring"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Rod
+    filters:
+      and:
+        - item_type == "Rod"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Scroll
+    filters:
+      and:
+        - item_type == "Scroll"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Staff
+    filters:
+      and:
+        - item_type == "Staff"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Wand
+    filters:
+      and:
+        - item_type == "Wand"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Weapon
+    filters:
+      and:
+        - item_type == "Weapon"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Wondrous Items
+    filters:
+      and:
+        - item_type == "Wondrous Items"
+    order: [formula.Name, rarity, attunement]
+    sort:
+      - property: file.name
+        direction: ASC

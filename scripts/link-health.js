@@ -1,7 +1,18 @@
 import fs from "node:fs"
 import path from "node:path"
+import { parse as parseYaml } from "yaml"
 
-const EMBEDDABLE_EXTENSIONS = new Set([".md", ".base", ".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".avif"])
+const EMBEDDABLE_EXTENSIONS = new Set([
+  ".md",
+  ".base",
+  ".png",
+  ".jpg",
+  ".jpeg",
+  ".gif",
+  ".svg",
+  ".webp",
+  ".avif",
+])
 
 function normalizeTarget(value) {
   return value
@@ -19,8 +30,15 @@ function parseFrontmatterTitle(content) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)
   if (!match) return undefined
 
-  const title = match[1].match(/^title:\s*(.*?)\s*$/m)?.[1]
-  return title?.replace(/^(['"])(.*)\1$/, "$2").trim()
+  return parseYaml(match[1])?.title
+}
+
+function parseBaseFile(content) {
+  const parsed = parseYaml(content)
+  return {
+    filters: parsed?.filters,
+    views: Array.isArray(parsed?.views) ? parsed.views : [],
+  }
 }
 
 function maskInlineCode(line) {
@@ -43,7 +61,11 @@ export function extractWikilinks(content) {
 
     const fenceMatch = line.match(/^ {0,3}(`{3,}|~{3,})/)
     if (fence) {
-      if (fenceMatch && fenceMatch[1][0] === fence.character && fenceMatch[1].length >= fence.length) {
+      if (
+        fenceMatch &&
+        fenceMatch[1][0] === fence.character &&
+        fenceMatch[1].length >= fence.length
+      ) {
         fence = undefined
       }
       continue
@@ -84,6 +106,10 @@ function createPageRecord(filePath, content = "") {
     routePath: normalizeTarget(routePath),
     filename: isIndex ? undefined : normalizeTarget(path.posix.basename(withoutExtension)),
     title: parseFrontmatterTitle(content),
+    metadata: (() => {
+      const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)
+      return match ? (parseYaml(match[1]) ?? {}) : {}
+    })(),
   }
 }
 
@@ -101,6 +127,7 @@ export function createLinkIndex(files) {
         filePath,
         fullPath: normalizeTarget(filePath),
         basename: normalizeTarget(path.posix.basename(filePath)),
+        base: extension === ".base" ? parseBaseFile(file.content ?? "") : undefined,
       })
     }
   }
@@ -121,7 +148,7 @@ export function loadLinkIndex(contentDirectory) {
         if (!EMBEDDABLE_EXTENSIONS.has(extension)) continue
         files.push({
           path: path.relative(contentDirectory, fullPath).replaceAll("\\", "/"),
-          content: extension === ".md" ? fs.readFileSync(fullPath, "utf8") : "",
+          content: [".md", ".base"].includes(extension) ? fs.readFileSync(fullPath, "utf8") : "",
         })
       }
     }
@@ -144,11 +171,11 @@ function resolveFromCandidates(candidates, requested, getKeys) {
     candidates.filter((record) => getKeys(record).some((key) => key.endsWith(`/${normalized}`))),
   )
 
-  const matches = normalized.includes("/") && exact.length > 0
-    ? exact
-    : uniqueRecords([...exact, ...suffix])
+  const matches =
+    normalized.includes("/") && exact.length > 0 ? exact : uniqueRecords([...exact, ...suffix])
   if (matches.length === 1) return { status: "resolved", filePath: matches[0].filePath }
-  if (matches.length > 1) return { status: "ambiguous", candidates: matches.map((record) => record.filePath) }
+  if (matches.length > 1)
+    return { status: "ambiguous", candidates: matches.map((record) => record.filePath) }
   return { status: "missing" }
 }
 
@@ -164,11 +191,16 @@ export function resolveWikilink(link, sourcePath, index) {
   let pageResult
 
   if (normalized.includes("/")) {
-    pageResult = resolveFromCandidates(index.pages, normalized, (page) => [page.fullPath, page.routePath])
+    pageResult = resolveFromCandidates(index.pages, normalized, (page) => [
+      page.fullPath,
+      page.routePath,
+    ])
   } else {
     const directMatches = uniqueRecords(
       index.pages.filter(
-        (page) => page.filename === normalized || (page.title && normalizeTarget(page.title) === normalized),
+        (page) =>
+          page.filename === normalized ||
+          (page.title && normalizeTarget(page.title) === normalized),
       ),
     )
     if (directMatches.length === 1) {
@@ -188,8 +220,100 @@ export function resolveWikilink(link, sourcePath, index) {
 
   if (pageResult.status !== "missing" || !link.embed) return pageResult
 
-  return resolveFromCandidates(index.resources, target, (resource) => [
+  const resourceResult = resolveFromCandidates(index.resources, target, (resource) => [
     resource.fullPath,
     resource.basename,
   ])
+  if (resourceResult.status !== "resolved" || !link.fragment) return resourceResult
+
+  const resource = index.resources.find(
+    (candidate) => candidate.filePath === resourceResult.filePath,
+  )
+  if (!resource?.base) return resourceResult
+
+  const requestedView = normalizeTarget(link.fragment)
+  const matchingView = resource.base.views.some(
+    (view) => normalizeTarget(view.name ?? "") === requestedView,
+  )
+  return matchingView
+    ? resourceResult
+    : { status: "missing", reason: "base view", filePath: resource.filePath }
+}
+
+function evaluateFilter(filter, page) {
+  if (!filter) return true
+  if (Array.isArray(filter)) return filter.every((entry) => evaluateFilter(entry, page))
+  if (typeof filter === "object") {
+    if (Array.isArray(filter.and)) return filter.and.every((entry) => evaluateFilter(entry, page))
+    if (Array.isArray(filter.or)) return filter.or.some((entry) => evaluateFilter(entry, page))
+    if ("not" in filter) return !evaluateFilter(filter.not, page)
+    return true
+  }
+  if (typeof filter !== "string") return true
+
+  const folderMatch = filter.match(/^file\.inFolder\(["'](.+)["']\)$/)
+  if (folderMatch) {
+    const folder = normalizeTarget(folderMatch[1])
+    const pagePath = normalizeTarget(page.filePath.replace(/\.md$/i, ""))
+    return pagePath.startsWith(`${folder}/`)
+  }
+
+  const nameMatch = filter.match(/^file\.name\s*(==|!=)\s*["']([^"']+)["']$/)
+  if (nameMatch) {
+    const matches = page.filename === normalizeTarget(nameMatch[2])
+    return nameMatch[1] === "==" ? matches : !matches
+  }
+
+  const containsMatch = filter.match(/^([a-zA-Z_][\w.]*)\.contains\(["']([^"']+)["']\)$/)
+  if (containsMatch) {
+    const value = page.metadata[containsMatch[1]]
+    return (
+      Array.isArray(value) &&
+      value.some((entry) => normalizeTarget(String(entry)) === normalizeTarget(containsMatch[2]))
+    )
+  }
+
+  const comparisonMatch = filter.match(/^([a-zA-Z_][\w.]*)\s*(==|!=)\s*(.+)$/)
+  if (comparisonMatch && comparisonMatch[1] !== "parent_class") {
+    const [, key, operator, rawValue] = comparisonMatch
+    const quoted = rawValue.match(/^(["'])(.*)\1$/)
+    const expected = quoted
+      ? quoted[2]
+      : rawValue === "true"
+        ? true
+        : rawValue === "false"
+          ? false
+          : Number.isNaN(Number(rawValue))
+            ? rawValue
+            : Number(rawValue)
+    const actual = page.metadata[key]
+    const matches = Array.isArray(actual)
+      ? actual.some((entry) => normalizeTarget(String(entry)) === normalizeTarget(String(expected)))
+      : typeof actual === "string" && typeof expected === "string"
+        ? normalizeTarget(actual) === normalizeTarget(expected)
+        : actual === expected
+    return operator === "==" ? matches : !matches
+  }
+
+  return true
+}
+
+export function findGeneratedViewPages(index) {
+  const referencedPages = new Set()
+  const bases = index.resources.filter((resource) => resource.base)
+
+  for (const page of index.pages) {
+    for (const resource of bases) {
+      if (!evaluateFilter(resource.base.filters, page)) continue
+      const includedByView =
+        resource.base.views.length === 0 ||
+        resource.base.views.some((view) => evaluateFilter(view.filters, page))
+      if (includedByView) {
+        referencedPages.add(page.filePath)
+        break
+      }
+    }
+  }
+
+  return referencedPages
 }

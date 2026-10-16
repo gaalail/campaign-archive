@@ -20,7 +20,7 @@ Learn at 13th character level
 
 ## Spells at This Level
 
-![[spells-7th-level.base]]
+![[spells.base#7th-Level]]
 
 ---
 
