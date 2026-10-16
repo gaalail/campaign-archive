@@ -4,22 +4,22 @@
  * Archive Validation Script
  * 
  * Checks:
- * - Broken wikilinks
- * - Orphaned files
+ * - Unresolved and ambiguous wikilinks/embeds
+ * - Pages without explicit incoming or outgoing wikilinks
  * - Metadata consistency
- * - Missing cross-links
  * - Duplicate entries
- * - Invalid frontmatter
+ * - Incomplete entries
  */
 
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { extractWikilinks, loadLinkIndex, resolveWikilink } from './link-health.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const CONTENT_DIR = './content';
+const CONTENT_DIR = path.resolve(__dirname, '../content');
 const RESULTS = {
   errors: [],
   warnings: [],
@@ -64,102 +64,67 @@ function parseFrontmatter(content) {
   return fm;
 }
 
-// Extract wikilinks: [[link]] or [[link|label]]
-function extractLinks(content) {
-  const links = [];
-  const regex = /\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g;
-  let match;
-  
-  while ((match = regex.exec(content)) !== null) {
-    links.push(match[1].trim());
-  }
-  
-  return links;
-}
-
-// Normalize path for comparison
-function normalizePath(linkPath) {
-  return linkPath
-    .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9/-]/g, '')
-    .replace(/\/$/, '');
-}
-
-// Find file by link
-function findFileByLink(link) {
-  // Try exact match first
-  const candidates = [
-    `${CONTENT_DIR}/${link}.md`,
-    `${CONTENT_DIR}/${link}/index.md`,
-    `${CONTENT_DIR}/${link.replace(/\//g, '/')}.md`,
-  ];
-  
-  for (const candidate of candidates) {
-    if (fs.existsSync(candidate)) {
-      return candidate;
-    }
-  }
-  
-  // Try normalized search
-  const normalized = normalizePath(link);
-  const allFiles = Object.keys(fileCache);
-  
-  for (const file of allFiles) {
-    if (file.includes(normalized)) {
-      return file;
-    }
-  }
-  
-  return null;
-}
-
 // Check for broken links
-function checkBrokenLinks() {
-  console.log('\n📍 Checking for broken links...');
+function checkWikilinks(linkIndex) {
+  console.log('\n📍 Checking wikilinks...');
   let brokenCount = 0;
-  
+  let ambiguousCount = 0;
+
   for (const [filepath, data] of Object.entries(fileCache)) {
+    const sourcePath = path.relative(CONTENT_DIR, filepath).replaceAll('\\', '/').replace(/\.md$/i, '');
+    const displayPath = path.relative(path.dirname(CONTENT_DIR), filepath).replaceAll('\\', '/');
     data.links.forEach(link => {
-      const resolved = findFileByLink(link);
-      if (!resolved) {
-        RESULTS.errors.push(`Broken link in ${filepath}: [[${link}]]`);
+      const result = resolveWikilink(link, sourcePath, linkIndex);
+      if (result.status === 'missing') {
+        const kind = link.embed ? 'embed' : 'wikilink';
+        RESULTS.errors.push(`${displayPath}:${link.line}:${link.column}: unresolved ${kind} [[${link.target}]]`);
         brokenCount++;
+      } else if (result.status === 'ambiguous') {
+        RESULTS.warnings.push(
+          `${displayPath}:${link.line}:${link.column}: ambiguous wikilink [[${link.target}]] matches ${result.candidates.join(', ')}`,
+        );
+        ambiguousCount++;
       }
+      link.result = result;
     });
   }
-  
-  if (brokenCount === 0) {
-    RESULTS.info.push(`✓ All links valid (checked ${Object.keys(fileCache).length} files)`);
-  }
+
+  RESULTS.info.push(
+    `Wikilinks checked: ${Object.values(fileCache).reduce((count, data) => count + data.links.length, 0)}; unresolved: ${brokenCount}; ambiguous: ${ambiguousCount}.`,
+  );
 }
 
-// Check for orphaned files (no incoming or outgoing links)
-function checkOrphanedFiles() {
-  console.log('\n📍 Checking for orphaned files...');
-  
-  const allLinks = new Set();
-  for (const data of Object.values(fileCache)) {
-    data.links.forEach(link => allLinks.add(link));
+// Report content pages with neither incoming nor outgoing wikilinks.
+function checkUnlinkedPages() {
+  console.log('\n📍 Checking for unlinked pages...');
+  const incomingLinks = new Map();
+  const outgoingLinks = new Map();
+
+  for (const [filepath, data] of Object.entries(fileCache)) {
+    outgoingLinks.set(filepath, data.links.some((link) => link.result?.status === 'resolved'));
+    for (const link of data.links) {
+      if (link.result?.status === 'resolved' && link.result.filePath) {
+        const destination = path.resolve(CONTENT_DIR, link.result.filePath);
+        incomingLinks.set(destination, true);
+      }
+    }
   }
-  
+
   const orphaned = [];
   for (const [filepath, data] of Object.entries(fileCache)) {
-    const relativePath = filepath.replace(CONTENT_DIR + '/', '').replace('.md', '');
-    
-    // Skip index files and top-level files
-    if (relativePath.includes('index') || !relativePath.includes('/')) {
+    const relativePath = path.relative(CONTENT_DIR, filepath);
+    if (path.basename(filepath).toLowerCase() === 'index.md' || !relativePath.includes(path.sep) || data.metadata.incomplete) {
       continue;
     }
-    
-    // Check if this file has outgoing links
-    if (data.links.length === 0 && !data.metadata.incomplete) {
-      orphaned.push(filepath);
+    if (!incomingLinks.has(filepath) && !outgoingLinks.get(filepath)) {
+      orphaned.push(path.relative(path.dirname(CONTENT_DIR), filepath).replaceAll('\\', '/'));
     }
   }
-  
+
   if (orphaned.length > 0) {
-    RESULTS.warnings.push(`⚠ ${orphaned.length} potentially orphaned files found`);
+    RESULTS.warnings.push(
+      `⚠ ${orphaned.length} pages have no incoming or outgoing explicit wikilinks (generated views are not included)`,
+    );
     orphaned.slice(0, 5).forEach(f => {
       RESULTS.info.push(`  - ${f}`);
     });
@@ -172,29 +137,36 @@ function checkOrphanedFiles() {
 function checkMetadata() {
   console.log('\n📍 Checking metadata consistency...');
   
-  const spells = Object.values(fileCache).filter(d => d.filepath.includes('/spells/'));
-  const items = Object.values(fileCache).filter(d => d.filepath.includes('/items/'));
+  const contentEntries = Object.values(fileCache).filter(
+    (data) => path.basename(data.filepath).toLowerCase() !== 'index.md',
+  );
+  const spells = contentEntries.filter((data) =>
+    path.relative(CONTENT_DIR, data.filepath).replaceAll('\\', '/').startsWith('spells/'),
+  );
+  const items = contentEntries.filter((data) =>
+    path.relative(CONTENT_DIR, data.filepath).replaceAll('\\', '/').startsWith('items/'),
+  );
   
   let missingMetadata = 0;
   
   spells.forEach(spell => {
-    if (!spell.metadata.level && !spell.metadata.incomplete) {
-      RESULTS.warnings.push(`Spell missing level: ${spell.filepath}`);
+    if (!Object.hasOwn(spell.metadata, 'level') && !spell.metadata.incomplete) {
+      RESULTS.warnings.push(`Spell missing level: ${path.relative(path.dirname(CONTENT_DIR), spell.filepath).replaceAll('\\', '/')}`);
       missingMetadata++;
     }
-    if (!spell.metadata.classes && !spell.metadata.incomplete) {
-      RESULTS.warnings.push(`Spell missing classes: ${spell.filepath}`);
+    if (!Object.hasOwn(spell.metadata, 'classes') && !spell.metadata.incomplete) {
+      RESULTS.warnings.push(`Spell missing classes: ${path.relative(path.dirname(CONTENT_DIR), spell.filepath).replaceAll('\\', '/')}`);
       missingMetadata++;
     }
   });
   
   items.forEach(item => {
-    if (!item.metadata.item_type && !item.metadata.incomplete) {
-      RESULTS.warnings.push(`Item missing item_type: ${item.filepath}`);
+    if (!Object.hasOwn(item.metadata, 'item_type') && !item.metadata.incomplete) {
+      RESULTS.warnings.push(`Item missing item_type: ${path.relative(path.dirname(CONTENT_DIR), item.filepath).replaceAll('\\', '/')}`);
       missingMetadata++;
     }
-    if (!item.metadata.rarity && !item.metadata.incomplete) {
-      RESULTS.warnings.push(`Item missing rarity: ${item.filepath}`);
+    if (!Object.hasOwn(item.metadata, 'rarity') && !item.metadata.incomplete) {
+      RESULTS.warnings.push(`Item missing rarity: ${path.relative(path.dirname(CONTENT_DIR), item.filepath).replaceAll('\\', '/')}`);
       missingMetadata++;
     }
   });
@@ -240,7 +212,7 @@ function checkIncomplete() {
     RESULTS.info.push(`Categories:`);
     const byType = {};
     incomplete.forEach(entry => {
-      const type = entry.filepath.split('/')[2] || 'other';
+      const type = path.relative(CONTENT_DIR, entry.filepath).split(path.sep)[0] || 'other';
       byType[type] = (byType[type] || 0) + 1;
     });
     Object.entries(byType).forEach(([type, count]) => {
@@ -256,12 +228,13 @@ function validate() {
   
   const files = walkDir(CONTENT_DIR);
   console.log(`Found ${files.length} markdown files\n`);
+  const linkIndex = loadLinkIndex(CONTENT_DIR);
   
   // Cache all files
   files.forEach(filepath => {
     const content = fs.readFileSync(filepath, 'utf-8');
     const metadata = parseFrontmatter(content);
-    const links = extractLinks(content);
+    const links = extractWikilinks(content);
     
     fileCache[filepath] = {
       filepath,
@@ -272,8 +245,8 @@ function validate() {
   });
   
   // Run checks
-  checkBrokenLinks();
-  checkOrphanedFiles();
+  checkWikilinks(linkIndex);
+  checkUnlinkedPages();
   checkMetadata();
   checkDuplicates();
   checkIncomplete();
@@ -285,14 +258,17 @@ function validate() {
   
   if (RESULTS.errors.length > 0) {
     console.log(`\n❌ ERRORS (${RESULTS.errors.length}):`);
-    RESULTS.errors.forEach(e => console.log(`  ${e}`));
+    RESULTS.errors.slice(0, 25).forEach(e => console.log(`  ${e}`));
+    if (RESULTS.errors.length > 25) {
+      console.log(`  ... and ${RESULTS.errors.length - 25} more`);
+    }
   }
   
   if (RESULTS.warnings.length > 0) {
     console.log(`\n⚠️  WARNINGS (${RESULTS.warnings.length}):`);
-    RESULTS.warnings.slice(0, 10).forEach(w => console.log(`  ${w}`));
-    if (RESULTS.warnings.length > 10) {
-      console.log(`  ... and ${RESULTS.warnings.length - 10} more`);
+    RESULTS.warnings.slice(0, 25).forEach(w => console.log(`  ${w}`));
+    if (RESULTS.warnings.length > 25) {
+      console.log(`  ... and ${RESULTS.warnings.length - 25} more`);
     }
   }
   
@@ -305,11 +281,15 @@ function validate() {
   console.log('\n' + '='.repeat(60));
   
   const hasErrors = RESULTS.errors.length > 0;
-  const status = hasErrors ? '❌ FAILED' : '✅ PASSED';
+  const status = process.argv.includes('--report-only')
+    ? 'REPORT ONLY — findings reported; exit code will be 0'
+    : hasErrors
+      ? '❌ FAILED'
+      : '✅ PASSED';
   console.log(`Status: ${status}`);
   console.log(`Errors: ${RESULTS.errors.length} | Warnings: ${RESULTS.warnings.length}\n`);
   
-  process.exit(hasErrors ? 1 : 0);
+  process.exit(hasErrors && !process.argv.includes('--report-only') ? 1 : 0);
 }
 
 validate();

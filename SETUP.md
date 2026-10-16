@@ -53,3 +53,7 @@ Entries marked "SRD 5.1" come from the System Reference Document 5.1 by Wizards 
 ## Editing locally instead
 
 Put new files in the `content` folder, then commit and push with GitHub Desktop.
+
+## Checking links locally
+
+Run `npm run validate:archive:report` to scan wikilinks, including embedded views and images. Unresolved links are errors; ambiguous matches and pages without explicit wikilinks are warnings. Generated `.base` views are not included in the incoming-link count. The report-only command is for reviewing existing content and does not block deployment. Once the current findings have been reviewed, `npm run validate:archive` runs the same checks and exits unsuccessfully if unresolved links remain.
