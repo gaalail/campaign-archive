@@ -7,6 +7,7 @@ classes:
 - Druid
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: 8 hours
@@ -32,7 +33,7 @@ This spell immediately ends if you cast it again before its duration ends.
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

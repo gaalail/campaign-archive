@@ -7,6 +7,7 @@ classes:
 - Druid
 - Paladin
 - Ranger
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Up to 10 minutes
@@ -32,7 +33,7 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]]
+**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

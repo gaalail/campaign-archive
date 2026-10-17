@@ -6,6 +6,7 @@ classes:
 - Bard
 - Druid
 - Ranger
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 24 hours
@@ -29,7 +30,7 @@ This spell lets you convince a beast that you mean it no harm. Choose a beast th
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Ranger]]
+**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

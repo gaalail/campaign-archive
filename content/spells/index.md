@@ -40,6 +40,7 @@ Choose a spell level to see all spells available at that progression:
 - [[Paladin]] — Holy magic
 - [[Ranger]] — Primal magic
 - [[Sorcerer]] — Innate magic
+- [[character-options/classes/Thanatomancer|Thanatomancer]] — Necromantic magic
 - [[Warlock]] — Patron magic (includes invocations)
 - [[Wizard]] — Scholarly magic
 

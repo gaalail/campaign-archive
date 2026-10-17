@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Cleric
 - Druid
+- Thanatomancer
 casting_time: 1 hour
 range: Self
 duration: Instantaneous
@@ -36,7 +37,7 @@ When you cast this spell, you are unable to cast the mark of righteous return ag
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Druid]]
+**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

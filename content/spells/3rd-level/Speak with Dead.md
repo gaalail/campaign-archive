@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Bard
 - Cleric
+- Thanatomancer
 casting_time: 1 action
 range: 10 feet
 duration: 10 minutes
@@ -30,7 +31,7 @@ Until the spell ends, you can ask the corpse up to five questions. The corpse kn
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]]
+**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -28,7 +29,7 @@ At the end of each of the target's turns, it can make a constitution saving thro
 
 **School:** Necromancy
 
-**Available to:** [[Warlock]], [[Wizard]]
+**Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

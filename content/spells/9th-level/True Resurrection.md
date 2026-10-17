@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Cleric
 - Druid
+- Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Instantaneous
@@ -32,7 +33,7 @@ The spell can even provide a new body if the original no longer exists, in which
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Druid]]
+**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

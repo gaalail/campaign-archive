@@ -7,6 +7,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: 24 hours
@@ -39,7 +40,7 @@ If you or any of your companions damage a creature affected by this spell, the s
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

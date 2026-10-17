@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Warlock
+- Thanatomancer
 casting_time: 1 day
 range: 10 feet
 duration: Instantaneous
@@ -31,7 +32,7 @@ For these 77 days, the target has advantage on all saving throws unless it devia
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Warlock]]
+**Available to:** [[Bard]], [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

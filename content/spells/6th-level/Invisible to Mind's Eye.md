@@ -6,6 +6,7 @@ classes:
 - Bard
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 150 feet
 duration: Concentration, up to 10 minutes
@@ -31,7 +32,7 @@ The second target or object can't be larger than 10 feet in any dimension. The s
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

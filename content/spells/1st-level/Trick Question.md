@@ -6,6 +6,7 @@ school: Enchantment
 classes:
 - Bard
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Instantaneous
@@ -33,7 +34,7 @@ You target a creature within range and ask them a question that makes absolutely
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Wizard]]
+**Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -5,6 +5,7 @@ level: 6
 school: Necromancy
 classes:
 - Cleric
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -32,7 +33,7 @@ You unleash a virulent disease on a creature that you can see within range. The 
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]]
+**Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

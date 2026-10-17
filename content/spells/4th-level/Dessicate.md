@@ -9,6 +9,7 @@ classes:
 - Ranger
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -30,6 +31,6 @@ A creature you touch must make a Constitution saving throw. On a failed save, yo
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Ranger]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Ranger]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

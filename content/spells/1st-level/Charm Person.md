@@ -8,6 +8,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 1 hour
@@ -32,7 +33,7 @@ You attempt to charm a humanoid you can see within range. It must make a wisdom 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -6,6 +6,7 @@ classes:
 - Bard
 - Sorcerer
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Up to 1 minute
@@ -37,7 +38,7 @@ Once you detect the presence of a creature in this way, you can read its thought
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

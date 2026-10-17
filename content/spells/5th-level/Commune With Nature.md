@@ -5,6 +5,7 @@ school: Divination
 classes:
 - Druid
 - Ranger
+- Thanatomancer
 casting_time: 1 minute
 range: Self
 duration: Instantaneous
@@ -40,7 +41,7 @@ For example, you could determine the location of powerful undead in the area, th
 
 **School:** Divination
 
-**Available to:** [[Druid]], [[Ranger]]
+**Available to:** [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

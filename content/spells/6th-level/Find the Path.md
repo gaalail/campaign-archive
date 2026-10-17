@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Druid
+- Thanatomancer
 casting_time: 1 minute
 range: Self
 duration: Up to 24 hours
@@ -31,7 +32,7 @@ For the duration, as long as you are on the same plane of existence as the desti
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

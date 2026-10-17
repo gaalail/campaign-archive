@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Cleric
 - Wizard
+- Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Indefinite
@@ -38,6 +39,6 @@ Each time a creature casts a spell using this talisman, it must make a Charisma 
 
 **School:** Enchantment
 
-**Available to:** [[Cleric]], [[Wizard]]
+**Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

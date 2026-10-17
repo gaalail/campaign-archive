@@ -8,6 +8,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -31,7 +32,7 @@ This spell gives the willing creature you touch the ability to see things as the
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

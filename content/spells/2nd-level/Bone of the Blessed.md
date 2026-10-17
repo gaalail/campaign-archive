@@ -6,6 +6,7 @@ classes:
 - Cleric
 - Druid
 - Warlock
+- Thanatomancer
 casting_time: 1 bonus action
 range: Self
 duration: Concentration, up to 10 minutes
@@ -32,7 +33,7 @@ HL: When you cast this spell using a spell slot of 3rd level or higher, the dama
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Druid]], [[Warlock]]
+**Available to:** [[Cleric]], [[Druid]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -7,6 +7,7 @@ classes:
   - Sorcerer
   - Warlock
   - Wizard
+  - Thanatomancer
 casting_time: "24 hours"
 range: "Touch"
 duration: "Until dispelled"
@@ -30,6 +31,6 @@ You touch a point and infuse an area around it with osteomancy. The area can hav
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Cleric]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

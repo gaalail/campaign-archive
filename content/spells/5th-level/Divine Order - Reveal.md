@@ -6,6 +6,7 @@ classes:
   - Bard
   - Cleric
   - Warlock
+  - Thanatomancer
 casting_time: "1 action"
 range: "30 feet"
 duration: "Instantaneous"
@@ -27,6 +28,6 @@ You attempt to gaze upon the soul of a creature within range. It must make a Cha
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Warlock]]
+**Available to:** [[Bard]], [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

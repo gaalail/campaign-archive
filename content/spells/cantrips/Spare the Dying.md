@@ -6,6 +6,7 @@ school: Necromancy
 classes:
 - Artificer
 - Cleric
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -33,7 +34,7 @@ You touch a living creature that has 0 hit points. The creature becomes stable. 
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]]
+**Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

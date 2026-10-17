@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Druid
 - Wizard
+- Thanatomancer
 casting_time: 1 hour
 range: 60 feet
 duration: 10 days
@@ -38,7 +39,7 @@ A creature that successfully saves against this effect is immune to it for 1 min
 
 **School:** Enchantment
 
-**Available to:** [[Druid]], [[Wizard]]
+**Available to:** [[Druid]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -9,6 +9,7 @@ classes:
 - Paladin
 - Ranger
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Up to 10 minutes
@@ -36,7 +37,7 @@ This spell can't locate an object if any thickness of lead, even a thin sheet, b
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

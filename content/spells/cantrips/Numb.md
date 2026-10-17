@@ -9,6 +9,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 ft
 duration: 1 round
@@ -32,6 +33,6 @@ On a hit, the target ignores any effects, abilities, benefits, and/or penalties 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

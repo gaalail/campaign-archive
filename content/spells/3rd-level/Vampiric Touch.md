@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Up to 1 minute
@@ -29,7 +30,7 @@ The touch of your shadow-wreathed hand can siphon life force from others to heal
 
 **School:** Necromancy
 
-**Available to:** [[Warlock]], [[Wizard]]
+**Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Druid
+- Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Concentration, up to 1 minute
@@ -31,6 +32,6 @@ Upon completing the ritual, choose one creature that you touch. For the next 24 
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

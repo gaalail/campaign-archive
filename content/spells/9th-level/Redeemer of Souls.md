@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Cleric
 - Warlock
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -32,7 +33,7 @@ The vision lasts a year in the demiplane and an hour in the material plane. Afte
 
 **School:** Enchantment
 
-**Available to:** [[Cleric]], [[Warlock]]
+**Available to:** [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

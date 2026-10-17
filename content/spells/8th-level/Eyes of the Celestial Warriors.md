@@ -6,6 +6,7 @@ classes:
 - Bard
 - Druid
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Concentration, up to 1 minute
@@ -30,7 +31,7 @@ HL: When you cast this spell using a 9th level spell slot, the first attack the 
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Druid]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

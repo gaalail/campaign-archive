@@ -6,6 +6,7 @@ school: Enchantment
 classes:
 - Paladin
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -33,7 +34,7 @@ You touch a creature and cause it to see all the deeds of evil it has ever commi
 
 **School:** Enchantment
 
-**Available to:** [[Paladin]], [[Wizard]]
+**Available to:** [[Paladin]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

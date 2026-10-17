@@ -6,6 +6,7 @@ classes:
 - Bard
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: Instantaneous
@@ -28,7 +29,7 @@ HL: When you cast this spell using a spell slot of 5th level or higher, you can 
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

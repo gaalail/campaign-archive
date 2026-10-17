@@ -6,6 +6,7 @@ school: Necromancy
 classes:
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 90 feet
 duration: 1 round
@@ -33,7 +34,7 @@ You target a creature within the spell's range who must succeed on a Constitutio
 
 **School:** Necromancy
 
-**Available to:** [[Warlock]], [[Wizard]]
+**Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

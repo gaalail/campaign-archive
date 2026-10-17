@@ -7,6 +7,7 @@ classes:
 - Cleric
 - Druid
 - Warlock
+- Thanatomancer
 casting_time: 1 action
 range: Self (60-foot-radius sphere)
 duration: 1 minute
@@ -30,7 +31,7 @@ The sphere moves with you, centered on you.
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

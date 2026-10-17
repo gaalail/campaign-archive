@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Cleric
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: 10 feet
 duration: Instantaneous
@@ -35,7 +36,7 @@ The creature is under your control for 24 hours, after which it stops obeying an
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Wizard]]
+**Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

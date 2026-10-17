@@ -6,6 +6,7 @@ school: Enchantment
 classes:
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Instantaneous
@@ -33,7 +34,7 @@ You reveal the strengths and weaknesses of a creature against mind-altering effe
 
 **School:** Enchantment
 
-**Available to:** [[Warlock]], [[Wizard]]
+**Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

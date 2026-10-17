@@ -7,6 +7,7 @@ classes:
 - Druid
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 60 ft
 duration: 1 round
@@ -30,6 +31,6 @@ This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level 
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

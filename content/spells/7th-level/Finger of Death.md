@@ -6,6 +6,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -29,7 +30,7 @@ A humanoid killed by this spell rises at the start of your next turn as a zombie
 
 **School:** Necromancy
 
-**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

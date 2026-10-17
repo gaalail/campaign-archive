@@ -6,6 +6,7 @@ classes:
 - Bard
 - Sorcerer
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 90 feet
 duration: 1 minute
@@ -36,7 +37,7 @@ Undead and creatures immune to being charmed aren't affected by this spell.
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

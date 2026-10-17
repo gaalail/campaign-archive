@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Up to 1 minute
@@ -40,7 +41,7 @@ A remove curse spell ends this effect. At the GM's option, you may choose an alt
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

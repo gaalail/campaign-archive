@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Bard
 - Cleric
+- Thanatomancer
 casting_time: 1 hour
 range: 10 feet
 duration: 1 day
@@ -34,7 +35,7 @@ The laws must be in keeping with your alignment, your personal code of conduct, 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]]
+**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

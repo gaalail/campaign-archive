@@ -8,6 +8,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 round
@@ -35,7 +36,7 @@ You extend your hand and point a finger at a target in range. Your magic grants 
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

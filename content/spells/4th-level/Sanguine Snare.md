@@ -8,6 +8,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 60 ft
 duration: 1 minute
@@ -35,6 +36,6 @@ On a hit, the creature's running blood hardens into chains that bind it into the
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

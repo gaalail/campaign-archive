@@ -7,6 +7,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 90 feet
 duration: Up to 1 minute
@@ -33,7 +34,7 @@ Choose a creature you can see and reach. The target must make a saving throw of 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

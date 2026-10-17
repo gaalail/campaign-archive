@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -38,7 +39,7 @@ The soul can dismiss its bond with the item at will. However, when it does, the 
 
 **School:** Necromancy
 
-**Available to:** [[Warlock]], [[Wizard]]
+**Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

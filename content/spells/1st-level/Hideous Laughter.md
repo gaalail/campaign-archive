@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Bard
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -30,7 +31,7 @@ At the end of each of its turns, and each time it takes damage, the target can m
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Wizard]]
+**Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

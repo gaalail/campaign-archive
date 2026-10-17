@@ -6,6 +6,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -32,7 +33,7 @@ A sphere of negative energy ripples out in a 60-foot radius sphere from a point 
 
 **School:** Necromancy
 
-**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

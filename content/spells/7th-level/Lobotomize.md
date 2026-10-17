@@ -6,6 +6,7 @@ classes:
 - Bard
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -54,6 +55,6 @@ Each time you cast this spell, gain 1 Fear.
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

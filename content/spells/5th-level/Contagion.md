@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Cleric
 - Druid
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: 7 days
@@ -42,7 +43,7 @@ Since this spell induces a natural disease in its target, any effect that remove
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Druid]]
+**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

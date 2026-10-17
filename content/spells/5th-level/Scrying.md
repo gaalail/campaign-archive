@@ -8,6 +8,7 @@ classes:
 - Druid
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 10 minutes
 range: Self
 duration: Up to 10 minutes
@@ -51,7 +52,7 @@ Instead of targeting a creature, you can choose a location you have seen before 
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

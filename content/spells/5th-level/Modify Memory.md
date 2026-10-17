@@ -6,6 +6,7 @@ classes:
 - Bard
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -38,7 +39,7 @@ A remove curse or greater restoration spell cast on the target restores the crea
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

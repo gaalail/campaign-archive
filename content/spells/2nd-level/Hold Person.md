@@ -9,6 +9,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -35,7 +36,7 @@ Choose a humanoid that you can see within range. The target must succeed on a wi
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

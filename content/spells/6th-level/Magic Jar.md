@@ -4,6 +4,7 @@ level: 6
 school: Necromancy
 classes:
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: Self
 duration: Until dispelled
@@ -39,7 +40,7 @@ When the spell ends, the container is destroyed.
 
 **School:** Necromancy
 
-**Available to:** [[Wizard]]
+**Available to:** [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

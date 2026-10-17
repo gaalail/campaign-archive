@@ -5,6 +5,7 @@ school: Divination
 classes:
 - Cleric
 - Paladin
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Concentration, up to 1 hour
@@ -27,7 +28,7 @@ HL: When you cast this spell using a spell slot of 2nd level or higher, the radi
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

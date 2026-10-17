@@ -6,6 +6,7 @@ classes:
   - Bard
   - Cleric
   - Warlock
+  - Thanatomancer
 casting_time: "1 action"
 range: "Self"
 duration: "Concentration, up to 1 minute"
@@ -27,6 +28,6 @@ You call upon the power of the Great Ones, seeking their guidance. Until the spe
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Warlock]]
+**Available to:** [[Bard]], [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

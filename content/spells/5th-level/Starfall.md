@@ -6,6 +6,7 @@ classes:
   - Druid
   - Sorcerer
   - Wizard
+  - Thanatomancer
 casting_time: "1 bonus action"
 range: "Self (30-foot radius)"
 duration: "Concentration, up to 1 minute"
@@ -27,6 +28,6 @@ You create a violent star shower. When you cast this spell and as a bonus action
 
 **School:** Enchantment
 
-**Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Druid]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

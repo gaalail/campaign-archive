@@ -7,6 +7,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 hour
@@ -37,7 +38,7 @@ Each time the target takes damage, it makes a new wisdom saving throw against th
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

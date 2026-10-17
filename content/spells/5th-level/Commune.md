@@ -4,6 +4,7 @@ level: 5
 school: Divination
 classes:
 - Cleric
+- Thanatomancer
 casting_time: 1 minute
 range: Self
 duration: 1 minute
@@ -31,7 +32,7 @@ If you cast the spell two or more times before finishing your next long rest, th
 
 **School:** Divination
 
-**Available to:** [[Cleric]]
+**Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

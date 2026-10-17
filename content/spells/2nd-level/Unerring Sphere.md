@@ -5,6 +5,7 @@ school: Divination
 classes:
 - Bard
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: Indefinite
@@ -36,6 +37,6 @@ You can only have one unerring sphere at a time. If you create a new one, your p
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Wizard]]
+**Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

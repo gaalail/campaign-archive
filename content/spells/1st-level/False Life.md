@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Sorcerer
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: 1 hour
@@ -31,7 +32,7 @@ Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 tempo
 
 **School:** Necromancy
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

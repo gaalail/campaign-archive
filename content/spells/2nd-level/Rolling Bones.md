@@ -7,6 +7,7 @@ classes:
   - Druid
   - Warlock
   - Wizard
+  - Thanatomancer
 casting_time: "1 minute"
 range: "Self"
 duration: "Instantaneous"
@@ -30,6 +31,6 @@ You roll bones, allowing fate to give you an omen of the future. Roll 1d6. • O
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Druid]], [[Warlock]], [[Wizard]]
+**Available to:** [[Cleric]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

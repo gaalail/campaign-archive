@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Cleric
 - Paladin
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: 1 round
@@ -41,7 +42,7 @@ Some typical commands and their effects follow. You might issue a command other 
 
 **School:** Enchantment
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

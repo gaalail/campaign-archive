@@ -7,6 +7,7 @@ classes:
 - Druid
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 80 ft
 duration: Concentration, up to 1 minute
@@ -34,6 +35,6 @@ If the initial target creature rolls a 20 on the die on its Constitution saving 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

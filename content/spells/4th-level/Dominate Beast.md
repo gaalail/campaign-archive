@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Druid
 - Sorcerer
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -33,7 +34,7 @@ You can use your action to take total and precise control of the target. Until t
 
 **School:** Enchantment
 
-**Available to:** [[Druid]], [[Sorcerer]]
+**Available to:** [[Druid]], [[Sorcerer]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

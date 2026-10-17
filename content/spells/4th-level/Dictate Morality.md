@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Bard
 - Cleric
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Concentration, up to 1 minute
@@ -28,7 +29,7 @@ This spell and the damage dealt by the spell are not considered to harm the crea
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]]
+**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

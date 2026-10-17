@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Paladin
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: 10 minutes
@@ -29,7 +30,7 @@ An affected creature is aware of the spell and can thus avoid answering question
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Paladin]]
+**Available to:** [[Bard]], [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

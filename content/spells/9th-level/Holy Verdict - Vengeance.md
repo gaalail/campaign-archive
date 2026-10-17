@@ -7,6 +7,7 @@ classes:
 - Cleric
 - Sorcerer
 - Warlock
+- Thanatomancer
 casting_time: 1 hour
 range: Self
 duration: Instantaneous
@@ -32,7 +33,7 @@ You can affect fate in this way for only one creature at a time. If you die befo
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]]
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

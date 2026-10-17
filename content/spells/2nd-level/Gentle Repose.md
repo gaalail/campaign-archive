@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Cleric
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: 10 days
@@ -30,7 +31,7 @@ The spell also effectively extends the time limit on raising the target from the
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Wizard]]
+**Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

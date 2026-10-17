@@ -6,6 +6,7 @@ classes:
 - Artificer
 - Cleric
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 hour
@@ -33,7 +34,7 @@ As an action, you can move the eye up to 30 feet in any direction. There is no l
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Wizard]]
+**Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -6,6 +6,7 @@ classes:
 - Artificer
 - Bard
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: Instantaneous
@@ -31,7 +32,7 @@ If you instead touch a creature throughout the casting, you learn what spells, i
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Wizard]]
+**Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

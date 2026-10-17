@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Cleric
 - Druid
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: 1 day
@@ -28,7 +29,7 @@ You touch a creature, expanding its ability to sustain life. The creature's hit 
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Druid]]
+**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

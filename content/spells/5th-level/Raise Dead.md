@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Paladin
+- Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Instantaneous
@@ -35,7 +36,7 @@ Coming back from the dead is an ordeal. The target takes a -4 penalty to all att
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]], [[Paladin]]
+**Available to:** [[Bard]], [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

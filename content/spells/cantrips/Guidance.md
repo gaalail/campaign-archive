@@ -7,6 +7,7 @@ classes:
 - Artificer
 - Cleric
 - Druid
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Up to 1 minute
@@ -34,7 +35,7 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Druid]]
+**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

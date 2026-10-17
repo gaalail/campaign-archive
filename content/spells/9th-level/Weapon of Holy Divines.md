@@ -6,6 +6,7 @@ classes:
 - Cleric
 - Druid
 - Warlock
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 minute
@@ -33,7 +34,7 @@ If an evil creature is killed with this weapon, it turns to ash along with the i
 
 **School:** Enchantment
 
-**Available to:** [[Cleric]], [[Druid]], [[Warlock]]
+**Available to:** [[Cleric]], [[Druid]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

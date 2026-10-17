@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Bard
 - Cleric
+- Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -28,7 +29,7 @@ Alternatively, you can make a target indifferent about creatures of your choice 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]]
+**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -7,6 +7,7 @@ classes:
 - Cleric
 - Sorcerer
 - Wizard
+- Thanatomancer
 casting_time: 10 minutes
 range: 1 mile
 duration: Up to 10 minutes
@@ -34,7 +35,7 @@ A creature that can see the sensor (such as a creature benefiting from see invis
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

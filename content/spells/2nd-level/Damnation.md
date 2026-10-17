@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Cleric
 - Paladin
+- Thanatomancer
 casting_time: 1 action
 range: 120 ft
 duration: Indefinite
@@ -28,6 +29,6 @@ Alternatively, if you cast this spell on a creature while you and the target are
 
 **School:** Enchantment
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

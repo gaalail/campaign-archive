@@ -5,6 +5,7 @@ school: Divination
 classes:
 - Cleric
 - Paladin
+- Thanatomancer
 casting_time: 1 hour
 range: Self
 duration: Instantaneous
@@ -28,7 +29,7 @@ You enter a meditative state while casting the spell and have strange dreams abo
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

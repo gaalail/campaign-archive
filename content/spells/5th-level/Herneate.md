@@ -6,6 +6,7 @@ classes:
 - Bard
 - Druid
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 120 ft
 duration: Instantaneous
@@ -31,6 +32,6 @@ For each day that a creature does not receive successful treatment, they have a 
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Druid]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

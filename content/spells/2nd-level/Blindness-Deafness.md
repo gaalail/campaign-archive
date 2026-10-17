@@ -7,6 +7,7 @@ classes:
 - Cleric
 - Sorcerer
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 1 minute
@@ -31,7 +32,7 @@ You can blind or deafen a foe. Choose one creature that you can see within range
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

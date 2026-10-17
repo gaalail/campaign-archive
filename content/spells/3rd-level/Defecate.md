@@ -7,6 +7,7 @@ classes:
 - Druid
 - Sorcerer
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 40 ft
 duration: Instantaneous
@@ -28,6 +29,6 @@ One creature that you can see within range must make a Constitution saving throw
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

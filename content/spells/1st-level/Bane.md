@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Bard
 - Cleric
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -31,7 +32,7 @@ Up to three creatures of your choice that you can see within range must make cha
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]]
+**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

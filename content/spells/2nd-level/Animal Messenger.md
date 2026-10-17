@@ -6,6 +6,7 @@ classes:
 - Bard
 - Druid
 - Ranger
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 24 hours
@@ -34,7 +35,7 @@ When the messenger arrives, it delivers your message to the creature that you de
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Ranger]]
+**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

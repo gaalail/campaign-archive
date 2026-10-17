@@ -4,6 +4,7 @@ level: 1
 school: Necromancy
 classes:
 - Cleric
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -28,7 +29,7 @@ Make a melee spell attack against a creature you can reach. On a hit, the target
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]]
+**Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -6,6 +6,7 @@ classes:
 - Cleric
 - Druid
 - Ranger
+- Thanatomancer
 casting_time: 1 action
 range: 120 feet
 duration: Instantaneous
@@ -29,7 +30,7 @@ This spell merely reveals that a trap is present. You don't learn the location o
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Druid]], [[Ranger]]
+**Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

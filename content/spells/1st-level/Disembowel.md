@@ -7,6 +7,7 @@ classes:
 - Ranger
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 60 ft
 duration: Concentration, up to 1 minute
@@ -32,6 +33,6 @@ A creature that is restrained for the entire duration of the spell has a 15% cha
 
 **School:** Necromancy
 
-**Available to:** [[Druid]], [[Ranger]], [[Warlock]], [[Wizard]]
+**Available to:** [[Druid]], [[Ranger]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

@@ -6,6 +6,7 @@ classes:
 - Bard
 - Druid
 - Ranger
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -29,7 +30,7 @@ Describe or name a specific kind of beast or plant. Concentrating on the voice o
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Druid]], [[Ranger]]
+**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

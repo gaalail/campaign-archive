@@ -8,6 +8,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 30 minutes
 range: Touch
 duration: 4 hours
@@ -34,6 +35,6 @@ You or one creature that you touch sprouts additional eyes until the creature ha
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

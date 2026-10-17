@@ -72,6 +72,10 @@ _1st-level Thanatomancer feature_
 
 The thanatomancer spell list consists of necromancy, enchantment, and divination spells from the cleric, druid, and wizard spell lists.
 
+**Browse available Thanatomancer spells by level:**
+
+![[thanatomancer-spells.base]]
+
 ### Cantrips
 
 At 1st level, you know three cantrips of your choice from the thanatomancer spell list. You learn additional cantrips as you gain levels in this class, as shown in the Cantrips Known column of the Thanatomancer table.

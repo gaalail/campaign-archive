@@ -7,6 +7,7 @@ classes:
 - Cleric
 - Druid
 - Warlock
+- Thanatomancer
 casting_time: 10 minutes
 range: Touch
 duration: Up to 1 hour
@@ -49,6 +50,6 @@ When another creature's spirit inhabits the body of the target creature, the inh
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

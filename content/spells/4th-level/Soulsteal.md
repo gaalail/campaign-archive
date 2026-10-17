@@ -8,6 +8,7 @@ classes:
 - Paladin
 - Ranger
 - Wizard
+- Thanatomancer
 casting_time: 10 minutes
 range: Touch
 duration: Instantaneous
@@ -35,6 +36,6 @@ This desecrates the corpse and makes it impossible for the corpse to ever be res
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

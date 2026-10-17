@@ -6,6 +6,7 @@ classes:
 - Cleric
 - Paladin
 - Ranger
+- Thanatomancer
 casting_time: 1 action
 range: 120 feet
 duration: Instantaneous
@@ -33,7 +34,7 @@ If you fall unconscious as a result of using your hit points in this way, you au
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Paladin]], [[Ranger]]
+**Available to:** [[Cleric]], [[Paladin]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

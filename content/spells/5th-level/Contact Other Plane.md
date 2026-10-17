@@ -5,6 +5,7 @@ school: Divination
 classes:
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: Self
 duration: 1 minute
@@ -28,7 +29,7 @@ On a successful save, you can ask the entity up to five questions. You must ask 
 
 **School:** Divination
 
-**Available to:** [[Warlock]], [[Wizard]]
+**Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

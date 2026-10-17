@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Cleric
 - Warlock
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 hour
@@ -32,7 +33,7 @@ The spell fails if the creature is not dead.
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Warlock]]
+**Available to:** [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

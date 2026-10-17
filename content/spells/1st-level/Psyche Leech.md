@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -27,6 +28,6 @@ Make a spell attack against a creature that you touch that does not have all of 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

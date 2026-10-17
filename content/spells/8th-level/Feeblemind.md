@@ -7,6 +7,7 @@ classes:
 - Druid
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -36,7 +37,7 @@ The spell can also be ended by greater restoration, heal, or wish.
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

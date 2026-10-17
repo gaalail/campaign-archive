@@ -6,6 +6,7 @@ school: Necromancy
 classes:
 - Druid
 - Warlock
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 10 minutes
@@ -33,7 +34,7 @@ Magic courses through your body and unlocks its true potential, enabling it to h
 
 **School:** Necromancy
 
-**Available to:** [[Druid]], [[Warlock]]
+**Available to:** [[Druid]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

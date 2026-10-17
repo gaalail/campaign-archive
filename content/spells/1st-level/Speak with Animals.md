@@ -7,6 +7,7 @@ classes:
 - Bard
 - Druid
 - Ranger
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: 10 minutes
@@ -34,7 +35,7 @@ You gain the ability to comprehend and verbally communicate with beasts for the 
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Druid]], [[Ranger]]
+**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

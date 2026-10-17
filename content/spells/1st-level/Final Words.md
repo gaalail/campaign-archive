@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Bard
 - Cleric
+- Thanatomancer
 casting_time: 1 action
 range: 10 feet
 duration: 1 minute
@@ -30,7 +31,7 @@ The corpse must still have a mouth and can't be undead. The spell fails if the c
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]]
+**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

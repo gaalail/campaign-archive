@@ -6,6 +6,7 @@ classes:
   - Bard
   - Druid
   - Ranger
+  - Thanatomancer
 casting_time: "1 action"
 range: "Self"
 duration: "10 minutes"
@@ -27,6 +28,6 @@ You tap into the eldritch forces of the universe, gaining heightened senses and 
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Druid]], [[Ranger]]
+**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

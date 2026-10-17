@@ -7,6 +7,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 10 minutes
 range: Touch
 duration: Up to 24 hours
@@ -36,6 +37,6 @@ The creature takes 12d6 necrotic damage and begins bleeding out, taking 4d4 pier
 
 **School:** Necromancy
 
-**Available to:** [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

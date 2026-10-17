@@ -8,6 +8,7 @@ classes:
 - Druid
 - Paladin
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: 60 feet
 duration: 30 days
@@ -36,7 +37,7 @@ You can end the spell early by using an action to dismiss it. A remove curse, gr
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

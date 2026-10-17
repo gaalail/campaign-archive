@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Wizard
+- Thanatomancer
 casting_time: 10 minutes
 range: Self
 duration: Instantaneous
@@ -31,7 +32,7 @@ The information you learn is accurate but might be couched in figurative languag
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

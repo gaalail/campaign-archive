@@ -8,6 +8,7 @@ classes:
 - Ranger
 - Sorcerer
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 150 ft
 duration: Concentration, up to 1 minute
@@ -37,6 +38,6 @@ On a successful initial save, randomly determine Fight, Flight, or Freeze; the c
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

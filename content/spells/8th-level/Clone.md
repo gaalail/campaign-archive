@@ -4,6 +4,7 @@ level: 8
 school: Necromancy
 classes:
 - Wizard
+- Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Instantaneous
@@ -29,7 +30,7 @@ At any time after the clone matures, if the original creature dies, its soul tra
 
 **School:** Necromancy
 
-**Available to:** [[Wizard]]
+**Available to:** [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -4,6 +4,7 @@ level: 6
 school: Divination
 classes:
 - Cleric
+- Thanatomancer
 casting_time: 1 hour
 range: Self
 duration: 1 hour
@@ -29,7 +30,7 @@ As you cast the spell, you experience each and every moment of the target's exis
 
 **School:** Divination
 
-**Available to:** [[Cleric]]
+**Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

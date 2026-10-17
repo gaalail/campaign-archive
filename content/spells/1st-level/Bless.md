@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Cleric
 - Paladin
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -31,7 +32,7 @@ You bless up to three creatures of your choice within range. Whenever a target m
 
 **School:** Enchantment
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

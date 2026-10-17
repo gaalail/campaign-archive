@@ -9,6 +9,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: 1 hour
@@ -35,6 +36,6 @@ At the end of the duration, you lose all benefits gained in this way.
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]], [[Ranger]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Ranger]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

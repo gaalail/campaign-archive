@@ -6,6 +6,7 @@ school: Divination
 classes:
 - Cleric
 - Wizard
+- Thanatomancer
 casting_time: 1 reaction, which you take when you are charmed or frightened
 range: Self
 duration: Instantaneous
@@ -33,7 +34,7 @@ You attempt to end one condition affecting you by instantly clearing your mind. 
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Wizard]]
+**Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

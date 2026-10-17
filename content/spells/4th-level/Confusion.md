@@ -7,6 +7,7 @@ classes:
 - Druid
 - Sorcerer
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 90 feet
 duration: Up to 1 minute
@@ -44,7 +45,7 @@ At the end of each of its turns, an affected target can make a Wisdom saving thr
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

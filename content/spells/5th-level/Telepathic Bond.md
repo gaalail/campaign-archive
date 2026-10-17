@@ -4,6 +4,7 @@ level: 5
 school: Divination
 classes:
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 1 hour
@@ -29,7 +30,7 @@ Until the spell ends, the targets can communicate telepathically through the bon
 
 **School:** Divination
 
-**Available to:** [[Wizard]]
+**Available to:** [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

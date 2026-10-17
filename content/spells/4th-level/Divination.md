@@ -4,6 +4,7 @@ level: 4
 school: Divination
 classes:
 - Druid
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -31,7 +32,7 @@ If you cast the spell two or more times before finishing your next long rest, th
 
 **School:** Divination
 
-**Available to:** [[Druid]]
+**Available to:** [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

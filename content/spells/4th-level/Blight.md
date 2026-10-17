@@ -7,6 +7,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Instantaneous
@@ -35,7 +36,7 @@ If you target a nonmagical plant that isn't a creature, such as a tree or shrub,
 
 **School:** Necromancy
 
-**Available to:** [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

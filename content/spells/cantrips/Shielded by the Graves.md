@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Warlock
+- Thanatomancer
 casting_time: 10 minutes
 range: Self
 duration: Instantaneous
@@ -31,7 +32,7 @@ You will either be blessed by the saint's soul or by a spirit watching over the 
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]], [[Warlock]]
+**Available to:** [[Bard]], [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

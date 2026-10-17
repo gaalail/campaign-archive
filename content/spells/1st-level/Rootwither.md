@@ -8,6 +8,7 @@ classes:
 - Sorcerer
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: Instantaneous
@@ -29,6 +30,6 @@ Touch a healthy inanimate plant that is Large or smaller for the duration of cas
 
 **School:** Necromancy
 
-**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

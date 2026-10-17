@@ -6,6 +6,7 @@ classes:
 - Cleric
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 hour
 range: 10 feet
 duration: Special
@@ -39,7 +40,7 @@ If you are returned to your body prematurely, your companions remain in their as
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Warlock]], [[Wizard]]
+**Available to:** [[Cleric]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

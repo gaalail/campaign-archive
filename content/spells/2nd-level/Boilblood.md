@@ -8,6 +8,7 @@ classes:
 - Paladin
 - Ranger
 - Warlock
+- Thanatomancer
 casting_time: 1 action
 range: 60 ft
 duration: Concentration, up to 1 minute
@@ -31,6 +32,6 @@ For the duration, at the start of each of its turns, the creature takes 2d6 necr
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Paladin]], [[Ranger]], [[Warlock]]
+**Available to:** [[Bard]], [[Druid]], [[Paladin]], [[Ranger]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

@@ -5,6 +5,7 @@ school: "Necromancy"
 classes:
   - Cleric
   - Druid
+  - Thanatomancer
 casting_time: "1 action"
 range: "30 feet"
 duration: "Instantaneous"
@@ -28,6 +29,6 @@ You drain the bone marrow of a creature, attempting to steal its life force and 
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Druid]]
+**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

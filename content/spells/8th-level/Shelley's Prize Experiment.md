@@ -6,6 +6,7 @@ classes:
 - Bard
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: 2 days
@@ -33,6 +34,6 @@ Creating a creature in this fashion is very difficult, and you may only do so on
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

@@ -5,6 +5,7 @@ school: Enchantment
 classes:
 - Bard
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -28,7 +29,7 @@ A dancing creature must use all its movement to dance without leaving its space 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Wizard]]
+**Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

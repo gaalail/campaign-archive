@@ -9,6 +9,7 @@ classes:
   - Sorcerer
   - Warlock
   - Wizard
+  - Thanatomancer
 casting_time: "1 minute"
 range: "Self"
 duration: "Instantaneous"
@@ -32,6 +33,6 @@ You touch the corpse of a humanoid, and visions of its descendants come to you, 
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

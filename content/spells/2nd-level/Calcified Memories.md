@@ -5,6 +5,7 @@ school: "Divination"
 classes:
   - Warlock
   - Wizard
+  - Thanatomancer
 casting_time: "1 action"
 range: "Touch"
 duration: "Instantaneous"
@@ -26,6 +27,6 @@ You touch the bones of a deceased creature. When you do so, a ghostly grey illus
 
 **School:** Divination
 
-**Available to:** [[Warlock]], [[Wizard]]
+**Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]

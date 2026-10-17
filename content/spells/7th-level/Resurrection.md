@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Bard
 - Cleric
+- Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Instantaneous
@@ -36,7 +37,7 @@ Casting this spell to restore life to a creature that has been dead for one year
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]]
+**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

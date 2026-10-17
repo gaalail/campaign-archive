@@ -6,6 +6,7 @@ classes:
 - Ranger
 - Warlock
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Concentration, up to 1 hour
@@ -29,7 +30,7 @@ You touch a creature and enhance its ability to perceive its surroundings. The t
 
 **School:** Divination
 
-**Available to:** [[Ranger]], [[Warlock]], [[Wizard]]
+**Available to:** [[Ranger]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

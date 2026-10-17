@@ -6,6 +6,7 @@ classes:
 - Bard
 - Sorcerer
 - Wizard
+- Thanatomancer
 casting_time: 1 action
 range: Self
 duration: 1 hour
@@ -29,7 +30,7 @@ For the duration of the spell, you see invisible creatures and objects as if the
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

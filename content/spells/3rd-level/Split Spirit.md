@@ -5,6 +5,7 @@ school: Necromancy
 classes:
 - Druid
 - Wizard
+- Thanatomancer
 casting_time: 10 minutes
 range: Self
 duration: Until dispelled
@@ -30,7 +31,7 @@ You can dismiss this spell as an action.
 
 **School:** Necromancy
 
-**Available to:** [[Druid]], [[Wizard]]
+**Available to:** [[Druid]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 
