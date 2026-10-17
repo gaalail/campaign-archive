@@ -6,7 +6,7 @@ title: Subclasses
 
 At **3rd level** (sometimes 1st or 2nd), you specialize your class with a **subclass**.
 
-**56+ subclasses available** | Choose at level-up | Defines your playstyle
+**59+ subclasses available** | Choose at level-up | Defines your playstyle
 
 ---
 
@@ -32,6 +32,7 @@ Click your class to see available subclasses:
 ### Homebrew Classes
 
 - [[Paragon Subclasses|Paragon]] (3 orders) — Corpus Angelus class
+- [[Thanatomancer Subclasses|Thanatomancer]] (3 paths) — Erevan's Guide to Death & Beyond class
 
 ---
 
@@ -39,40 +40,45 @@ Click your class to see available subclasses:
 
 **Looking for a specific subclass?** Each class page lists its subclasses in a table for easy browsing.
 
-| Class | Subclasses | Theme |
-|-------|-----------|-------|
-| Barbarian | Berserker, Celestial Fury, Self-Sacrifice, Branded, Hopebringer, Virtuous | Primal fury |
-| Bard | Hope, Infernal Archives, Truth, Lore, Hymn Singer | Magical performance |
-| Cleric | Angel Caller, Dawn Domain, Domain of Mythology, Exorcist, Holy Virtues, Life | Divine magic |
-| Druid | Circle of Heaven, Circle of Phoenix, Circle of Unicorns, Land | Nature magic |
-| Fighter | Champion, Anointed Warrior, Glorious Combatant, Holy Knight, Iron Bulwark | Martial prowess |
-| Monk | Open Hand, Way of Angels, Way of Cardinal Virtues, Way of the Pilgrims | Disciplined power |
-| Paladin | Devotion, Oath of Righteousness, Templar, Zealot | Holy oath |
-| Ranger | Evil Slayer, Holy Messenger, Hunter, Keeper of Light | Primal tracking |
-| Rogue | Chainbreaker, Divine Blade, Thief, Vigilante | Stealth and cunning |
-| Sorcerer | Draconic, Prismatic, Starborn, Knight Dragon Bloodline | Innate magic |
-| Warlock | Archangel, Fiend, Nature, The Returned | Eldritch pact |
-| Wizard | Evocation, Celestial Summoner, Education, School of Sealing | Scholarly magic |
-| Paragon | Order of Reason, Order of the Voice, Order of Valor | Holy warrior (homebrew) |
+| Class         | Subclasses                                                                   | Theme                   |
+| ------------- | ---------------------------------------------------------------------------- | ----------------------- |
+| Barbarian     | Berserker, Celestial Fury, Self-Sacrifice, Branded, Hopebringer, Virtuous    | Primal fury             |
+| Bard          | Hope, Infernal Archives, Truth, Lore, Hymn Singer                            | Magical performance     |
+| Cleric        | Angel Caller, Dawn Domain, Domain of Mythology, Exorcist, Holy Virtues, Life | Divine magic            |
+| Druid         | Circle of Heaven, Circle of Phoenix, Circle of Unicorns, Land                | Nature magic            |
+| Fighter       | Champion, Anointed Warrior, Glorious Combatant, Holy Knight, Iron Bulwark    | Martial prowess         |
+| Monk          | Open Hand, Way of Angels, Way of Cardinal Virtues, Way of the Pilgrims       | Disciplined power       |
+| Paladin       | Devotion, Oath of Righteousness, Templar, Zealot                             | Holy oath               |
+| Ranger        | Evil Slayer, Holy Messenger, Hunter, Keeper of Light                         | Primal tracking         |
+| Rogue         | Chainbreaker, Divine Blade, Thief, Vigilante                                 | Stealth and cunning     |
+| Sorcerer      | Draconic, Prismatic, Starborn, Knight Dragon Bloodline                       | Innate magic            |
+| Thanatomancer | Path of the Fleshweaver, Path of the Graveguard, Path of the Reaper          | Necromantic paths       |
+| Warlock       | Archangel, Fiend, Nature, The Returned                                       | Eldritch pact           |
+| Wizard        | Evocation, Celestial Summoner, Education, School of Sealing                  | Scholarly magic         |
+| Paragon       | Order of Reason, Order of the Voice, Order of Valor                          | Holy warrior (homebrew) |
 
 ---
 
 ## How Subclasses Work
 
 **Timing:**
+
 - **Most classes:** 3rd level
 - **Clerics & Sorcerers & Warlocks:** 1st level
 - **Druids & Wizards:** 2nd level
 - **Barbarians & Fighters:** 3rd level
+- **Thanatomancer:** 3rd level
 
 Check your [[Classes|class]] page for exact timing.
 
 **Features:**
+
 - Gain unique abilities at levels 3, 6, 10, 14, 18
 - Shape how your class plays
 - Unlock special powers or tactics
 
 **Permanent choice:**
+
 - You can't change subclasses once chosen (typically)
 - Make your selection carefully
 
