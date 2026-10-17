@@ -6,7 +6,7 @@ title: Subclasses
 
 At **3rd level** (sometimes 1st or 2nd), you specialize your class with a **subclass**.
 
-**54+ subclasses available** | Choose at level-up | Defines your playstyle
+**56+ subclasses available** | Choose at level-up | Defines your playstyle
 
 ---
 
@@ -16,8 +16,8 @@ Click your class to see available subclasses:
 
 ### Core Classes
 
-- [[Barbarian Subclasses|Barbarian]] (5 paths)
-- [[Bard Subclasses|Bard]] (4 colleges)
+- [[Barbarian Subclasses|Barbarian]] (6 paths)
+- [[Bard Subclasses|Bard]] (5 colleges)
 - [[Cleric Subclasses|Cleric]] (5 domains)
 - [[Druid Subclasses|Druid]] (4 circles)
 - [[Fighter Subclasses|Fighter]] (5 archetypes)
@@ -41,8 +41,8 @@ Click your class to see available subclasses:
 
 | Class | Subclasses | Theme |
 |-------|-----------|-------|
-| Barbarian | Berserker, Celestial Fury, Self-Sacrifice, Hopebringer, Virtuous | Primal fury |
-| Bard | Hope, Truth, Lore, Hymn Singer | Magical performance |
+| Barbarian | Berserker, Celestial Fury, Self-Sacrifice, Branded, Hopebringer, Virtuous | Primal fury |
+| Bard | Hope, Infernal Archives, Truth, Lore, Hymn Singer | Magical performance |
 | Cleric | Angel Caller, Dawn Domain, Exorcist, Holy Virtues, Life | Divine magic |
 | Druid | Circle of Heaven, Circle of Phoenix, Circle of Unicorns, Land | Nature magic |
 | Fighter | Champion, Anointed Warrior, Glorious Combatant, Holy Knight, Iron Bulwark | Martial prowess |

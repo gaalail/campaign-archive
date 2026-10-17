@@ -4,7 +4,7 @@ title: Barbarian Subclasses
 
 # Barbarian Subclasses
 
-**5 subclasses available** | Choose at 3rd level | Primal Paths
+**6 subclasses available** | Choose at 3rd level | Primal Paths
 
 ---
 
@@ -15,6 +15,7 @@ title: Barbarian Subclasses
 | [[Berserker]] | Frenzy | Uncontrolled rage and dual-weapon attacks |
 | [[Path of Celestial Fury]] | Radiant power | Holy divine wrath |
 | [[Path of Self-Sacrifice]] | Protective rage | Protecting allies |
+| [[Path of the Branded]] | Mystic brand & Greatweapon | Enduring wounds and otherworldly resilience |
 | [[Path of the Hopebringer]] | Hope essence | Inspiring others |
 | [[Path of the Virtuous]] | Virtue-powered | Holy warrior |
 
