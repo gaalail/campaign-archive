@@ -4,7 +4,7 @@ title: Spells
 
 # Spells
 
-**490+ spells available** | Organized by level | Core of magical characters
+**554+ spells available** | Organized by level | Core of magical characters
 
 ---
 
@@ -12,18 +12,18 @@ title: Spells
 
 Choose a spell level to see all spells available at that progression:
 
-| Level | When You Get It | Count |
-|-------|-----------------|-------|
-| Cantrips | Always available | 39 |
-| 1st-Level | Character level 1+ | 72 |
-| 2nd-Level | Character level 3+ | 78 |
-| 3rd-Level | Character level 5+ | 59 |
-| 4th-Level | Character level 7+ | 62 |
-| 5th-Level | Character level 9+ | 54 |
-| 6th-Level | Character level 11+ | 43 |
-| 7th-Level | Character level 13+ | 30 |
-| 8th-Level | Character level 15+ | 26 |
-| 9th-Level | Character level 17+ | 27 |
+| Level     | When You Get It     | Count |
+| --------- | ------------------- | ----- |
+| Cantrips  | Always available    | 44    |
+| 1st-Level | Character level 1+  | 82    |
+| 2nd-Level | Character level 3+  | 91    |
+| 3rd-Level | Character level 5+  | 69    |
+| 4th-Level | Character level 7+  | 71    |
+| 5th-Level | Character level 9+  | 59    |
+| 6th-Level | Character level 11+ | 47    |
+| 7th-Level | Character level 13+ | 34    |
+| 8th-Level | Character level 15+ | 27    |
+| 9th-Level | Character level 17+ | 30    |
 
 **Browse spell levels:** [[spells/cantrips|Cantrips]], [[spells/1st-level|1st-Level]], [[spells/2nd-level|2nd-Level]], [[spells/3rd-level|3rd-Level]], [[spells/4th-level|4th-Level]], [[spells/5th-level|5th-Level]], [[spells/6th-level|6th-Level]], [[spells/7th-level|7th-Level]], [[spells/8th-level|8th-Level]], [[spells/9th-level|9th-Level]]
 
@@ -76,6 +76,7 @@ Check your [[Classes|class]] page for exact spell slot progression.
 ## Finding a Specific Spell
 
 **Best approaches:**
+
 1. Go to your [[Classes|class]] page → see class spell list organized by level
 2. Use search (magnifying glass) to find spell by name
 3. Browse spells by level using tabs above
