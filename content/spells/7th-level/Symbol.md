@@ -5,6 +5,7 @@ school: Abjuration
 classes:
 - Bard
 - Cleric
+- Druid
 - Wizard
 casting_time: 1 minute
 range: Touch
@@ -53,7 +54,7 @@ When you inscribe the glyph, choose one of the options below for its effect. Onc
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Cleric]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

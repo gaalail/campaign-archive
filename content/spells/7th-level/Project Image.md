@@ -4,6 +4,7 @@ level: 7
 school: Illusion
 classes:
 - Bard
+- Warlock
 - Wizard
 casting_time: 1 action
 range: 500 miles
@@ -34,7 +35,7 @@ Physical interaction with the image reveals it to be an illusion, because things
 
 **School:** Illusion
 
-**Available to:** [[Bard]], [[Wizard]]
+**Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

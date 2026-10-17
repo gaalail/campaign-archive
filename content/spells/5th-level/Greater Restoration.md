@@ -7,6 +7,7 @@ classes:
 - Bard
 - Cleric
 - Druid
+- Ranger
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -38,7 +39,7 @@ You imbue a creature you touch with positive energy to undo a debilitating effec
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]]
+**Available to:** [[Artificer]], [[Bard]], [[Cleric]], [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

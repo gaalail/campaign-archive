@@ -18,7 +18,7 @@ Click your class to see available subclasses:
 
 - [[Barbarian Subclasses|Barbarian]] (6 paths)
 - [[Bard Subclasses|Bard]] (5 colleges)
-- [[Cleric Subclasses|Cleric]] (5 domains)
+- [[Cleric Subclasses|Cleric]] (6 domains)
 - [[Druid Subclasses|Druid]] (4 circles)
 - [[Fighter Subclasses|Fighter]] (5 archetypes)
 - [[Monk Subclasses|Monk]] (4 traditions)
@@ -43,7 +43,7 @@ Click your class to see available subclasses:
 |-------|-----------|-------|
 | Barbarian | Berserker, Celestial Fury, Self-Sacrifice, Branded, Hopebringer, Virtuous | Primal fury |
 | Bard | Hope, Infernal Archives, Truth, Lore, Hymn Singer | Magical performance |
-| Cleric | Angel Caller, Dawn Domain, Exorcist, Holy Virtues, Life | Divine magic |
+| Cleric | Angel Caller, Dawn Domain, Domain of Mythology, Exorcist, Holy Virtues, Life | Divine magic |
 | Druid | Circle of Heaven, Circle of Phoenix, Circle of Unicorns, Land | Nature magic |
 | Fighter | Champion, Anointed Warrior, Glorious Combatant, Holy Knight, Iron Bulwark | Martial prowess |
 | Monk | Open Hand, Way of Angels, Way of Cardinal Virtues, Way of the Pilgrims | Disciplined power |
@@ -96,4 +96,3 @@ Check your [[Classes|class]] page for exact timing.
 - [[character-options/class-options|Class Options]] — Eldritch Invocations, Metamagic, etc.
 
 ---
-

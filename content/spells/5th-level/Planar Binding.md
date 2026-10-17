@@ -6,6 +6,7 @@ classes:
 - Bard
 - Cleric
 - Druid
+- Warlock
 - Wizard
 casting_time: 1 hour
 range: 60 feet
@@ -35,7 +36,7 @@ A bound creature must follow your instructions to the best of its ability. You m
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

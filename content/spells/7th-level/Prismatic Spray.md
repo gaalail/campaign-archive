@@ -3,6 +3,7 @@ title: Prismatic Spray
 level: 7
 school: Evocation
 classes:
+- Bard
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -42,7 +43,7 @@ Eight multicolored rays of light flash from your hand. Each ray is a different c
 
 **School:** Evocation
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

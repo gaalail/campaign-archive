@@ -3,6 +3,7 @@ title: Stoneskin
 level: 4
 school: Abjuration
 classes:
+- Artificer
 - Druid
 - Ranger
 - Sorcerer
@@ -30,7 +31,7 @@ This spell turns the flesh of a willing creature you touch as hard as stone. Unt
 
 **School:** Abjuration
 
-**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Artificer]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -4,6 +4,7 @@ level: 5
 school: Illusion
 classes:
 - Bard
+- Warlock
 - Wizard
 casting_time: 1 action
 range: Self
@@ -30,7 +31,7 @@ You can see through its eyes and hear through its ears as if you were located wh
 
 **School:** Illusion
 
-**Available to:** [[Bard]], [[Wizard]]
+**Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

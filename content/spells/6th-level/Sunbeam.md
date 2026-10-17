@@ -3,6 +3,7 @@ title: Sunbeam
 level: 6
 school: Evocation
 classes:
+- Cleric
 - Druid
 - Sorcerer
 - Wizard
@@ -33,7 +34,7 @@ For the duration, a mote of brilliant radiance shines in your hand. It sheds bri
 
 **School:** Evocation
 
-**Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Cleric]], [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

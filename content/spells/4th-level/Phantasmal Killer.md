@@ -3,6 +3,7 @@ title: Phantasmal Killer
 level: 4
 school: Illusion
 classes:
+- Bard
 - Wizard
 casting_time: 1 action
 range: 120 feet
@@ -28,7 +29,7 @@ You tap into the nightmares of a creature you can see within range and create an
 
 **School:** Illusion
 
-**Available to:** [[Wizard]]
+**Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

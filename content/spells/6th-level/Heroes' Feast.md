@@ -3,6 +3,7 @@ title: Heroes' Feast
 level: 6
 school: Conjuration
 classes:
+- Bard
 - Cleric
 - Druid
 casting_time: 10 minutes
@@ -30,7 +31,7 @@ A creature that partakes of the feast gains several benefits. The creature is cu
 
 **School:** Conjuration
 
-**Available to:** [[Cleric]], [[Druid]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

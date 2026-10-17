@@ -5,6 +5,7 @@ school: Conjuration
 classes:
 - Bard
 - Sorcerer
+- Warlock
 - Wizard
 casting_time: 1 minute
 range: 10 feet
@@ -33,7 +34,7 @@ You can create a permanent teleportation circle by casting this spell in the sam
 
 **School:** Conjuration
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

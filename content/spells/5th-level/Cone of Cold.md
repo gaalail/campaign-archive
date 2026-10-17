@@ -3,6 +3,7 @@ title: Cone of Cold
 level: 5
 school: Evocation
 classes:
+- Druid
 - Sorcerer
 - Wizard
 casting_time: 1 action
@@ -33,7 +34,7 @@ A creature killed by this spell becomes a frozen statue until it thaws.
 
 **School:** Evocation
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

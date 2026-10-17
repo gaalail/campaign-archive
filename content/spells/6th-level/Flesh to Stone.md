@@ -3,6 +3,8 @@ title: Flesh to Stone
 level: 6
 school: Transmutation
 classes:
+- Druid
+- Sorcerer
 - Warlock
 - Wizard
 casting_time: 1 action
@@ -34,7 +36,7 @@ If you maintain your concentration on this spell for the entire possible duratio
 
 **School:** Transmutation
 
-**Available to:** [[Warlock]], [[Wizard]]
+**Available to:** [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -4,6 +4,7 @@ level: 5
 school: Enchantment
 classes:
 - Bard
+- Warlock
 - Wizard
 casting_time: 1 action
 range: 30 feet
@@ -37,7 +38,7 @@ A remove curse or greater restoration spell cast on the target restores the crea
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Wizard]]
+**Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

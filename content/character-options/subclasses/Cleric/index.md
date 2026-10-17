@@ -4,7 +4,7 @@ title: Cleric Subclasses
 
 # Cleric Subclasses
 
-**5 subclasses available** | Choose at 1st level | Domains
+**6 subclasses available** | Choose at 1st level | Domains
 
 ---
 
@@ -14,6 +14,7 @@ title: Cleric Subclasses
 |----------|---------|-------|
 | [[Angel Caller]] | Calling angels | Summoning divine beings |
 | [[Dawn Domain]] | Light and dawn | Morning and new beginnings |
+| [[Domain of Mythology]] | Mythological animal spirits | Divine companions |
 | [[Exorcist]] | Banishing evil | Removing corruption |
 | [[Holy Virtues Domain]] | Divine virtues | Sacred principles |
 | [[Life]] | Healing and protection | Life preservation |
