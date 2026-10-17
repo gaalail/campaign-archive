@@ -16,6 +16,7 @@ source: Homebrew
 ---
 
 *1st-level transmutation*
+
 You temporarily dissolve your bones. For the duration, you are considered to have 2 levels of Exhaustion (unless you already have more), and you cannot hold items. You can move through spaces as narrow as 1 inch. You also have resistance to bludgeoning damage for the duration.
 
 If the spell ends while you are in a space too narrow to support your body, you are immediately expelled to the nearest space that can accommodate your typical size and you take 4d12 bludgeoning damage.

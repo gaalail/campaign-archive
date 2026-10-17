@@ -16,6 +16,7 @@ source: Homebrew
 ---
 
 *5th-level necromancy*
+
 One creature in range that you can see must make a Constitution saving throw. On a failed save, they experience a hernia as their internal organs protrude from a hole that opens in their body. The creature suffers the effects of the Internal Bleeding lingering injury.
 
 A creature may end this injury early if treated with a successful Wisdom (Medicine) check. The DC is your spell save DC.

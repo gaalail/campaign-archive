@@ -17,6 +17,7 @@ source: Homebrew
 ---
 
 *4th-level transmutation (ritual)*
+
 Take 1d10 slashing damage as bony protrusions sprout from your hands. For the duration, the protrusions from your hands are considered a magic item called the Skeleton Key. The Skeleton Key has 4 charges. You may expend 1 charge to break a nonmagical lock, making a loud noise when doing so; 2 charges to break a nonmagical lock silently; or 4 charges to break a magical lock, making a loud noise when you do so.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, the Skeleton Key has 1 additional charge for each slot level above 4th.

@@ -16,6 +16,7 @@ source: Homebrew
 ---
 
 *1st-level enchantment*
+
 Make a spell attack against a creature that you touch that does not have all of its hit points. On a hit, deal 1d4 necrotic damage to it. You remove 1 Fear, or 2 Fear if you dealt this damage to an allied creature.
 
 ---

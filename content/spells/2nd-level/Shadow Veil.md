@@ -19,6 +19,7 @@ source: Homebrew
 ---
 
 *2nd-level illusion (ritual)*
+
 When you cast this spell, choose a creature type besides humanoid. You emit a psionic numbing resonance that causes you to be invisible to creatures of that type.
 
 This overrides a creature's ability to see invisibility, but does not override truesight.

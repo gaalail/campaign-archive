@@ -19,6 +19,7 @@ source: Homebrew
 ---
 
 *Enchantment cantrip*
+
 Make a ranged spell attack against a creature within range. The target creature may choose to allow you to hit automatically.
 
 On a hit, the target ignores any effects, abilities, benefits, and/or penalties that trigger upon the creature having some, all, or none of its hit points.

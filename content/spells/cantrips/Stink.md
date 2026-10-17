@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *Evocation cantrip*
+
 Make a melee spell attack. The target creature may choose to allow you to hit automatically.
 
 On a hit, for the duration, creatures that begin their turn within a 5 foot radius of the target creature are poisoned as terrible body odor wafts from the sweating pores of the target creature.

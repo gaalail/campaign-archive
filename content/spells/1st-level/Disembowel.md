@@ -17,6 +17,7 @@ source: Homebrew
 ---
 
 *1st-level necromancy*
+
 As part of casting this spell, touch a corpse that has not been dead for more than 10 minutes. Doing so reduces it to its component parts, shredding the skin and stretching the intestines, veins, nerves, ligaments, and various organs into a fleshy net. Hurl the net at a creature within range.
 
 The creature must make a Dexterity saving throw. On a success, they are restrained until the end of their next turn, and then the spell ends. On a failure, they are stunned on their next turn and are restrained; then, at the end of each of the creature's turns, it may make a Strength saving throw, ending spell on a success. When the spell ends, the corpse's viscera slough to the ground and are no longer magical in any way.

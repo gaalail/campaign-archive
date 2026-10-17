@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *Necromancy cantrip*
+
 Make a ranged spell attack against a creature within range. On a hit, when the creature starts its turn during the duration, it takes 1d4 piercing damage.
 
 This spell's duration increases by 1 round when you reach 5th level (2 rounds), 11th level (3 rounds), and 17th level (4 rounds).

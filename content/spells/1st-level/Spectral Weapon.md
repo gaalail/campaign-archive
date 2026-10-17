@@ -16,6 +16,7 @@ source: Homebrew
 ---
 
 *1st-level conjuration*
+
 A spectral duplicate of a one-handed weapon that you are holding bursts into existence, floating around you.
 
 The original weapon cannot be magical. For the duration, when you make an attack with the weapon you are holding, you may use a bonus action to make the spectral weapon attack the same target or another target within your weapon's reach. The spectral weapon's game statistics are otherwise identical to the weapon being replicated.

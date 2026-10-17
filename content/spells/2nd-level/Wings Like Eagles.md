@@ -19,6 +19,7 @@ source: Homebrew
 ---
 
 *2nd-level transmutation*
+
 Spectral wings, like those of an eagle, briefly flash around you, though they are insufficient to provide lighting. As the wings flap, you may leap vertically a number of feet equal to or less than your level x 20. You may angle your leap to move horizontally a number of feet equal to or less than your level x 10.
 
 After you cast this spell, until you reach the ground again, you do not take falling damage unless the damage would exceed 20d6, in which case you take half damage.

@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *1st-level necromancy (ritual)*
+
 Touch a healthy inanimate plant that is Large or smaller for the duration of casting the spell. The plant dies and turns into an awakened shrub that is hostile to you and all other creatures.
 
 ---

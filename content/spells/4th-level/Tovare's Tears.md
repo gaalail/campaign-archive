@@ -16,6 +16,7 @@ source: Homebrew
 ---
 
 *4th-level evocation (ritual)*
+
 Choose a point within range. A 30 foot radius circular disk that is 1 inch thick manifests centered on that point. The disk is incorporeal. It sheds faint silvery light in a cone between it and the ground, turning darkness into dim light and dim light into bright light.
 
 Rain drizzles on the ground underneath the disk, sparkling in the silvery light like diamond drops. This rain is harmless to all creatures except for fiends and vampires. When a fiend or vampire starts its turn within the area, it takes 6d10 radiant damage.

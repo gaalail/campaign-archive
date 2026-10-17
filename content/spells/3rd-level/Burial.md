@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *3rd-level transmutation*
+
 One creature that you can see within range that is on the ground must make a Wisdom saving throw. On a failure, the ground swallows the creature, burying it alive. The creature has total cover while buried in this way.
 
 At the end of each of its turns, it may make a Strength saving throw. On a success, it claws its way back partially above the ground. It no longer has total cover and is now considered restrained by you instead. If it escapes being restrained, then it is no longer partially buried and is instead prone.

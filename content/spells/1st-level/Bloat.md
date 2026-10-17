@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *1st-level conjuration*
+
 One creature of CR 2 or lower that you can see within range must make a Constitution saving throw. On a failure, roll 3d12 and add this number to the creature's Bloat Value. While the target creature has any Bloat Value, it is considered restrained.
 
 For the duration of the spell, it must repeat the saving throw at the start of each of its turns. On a failure, roll 3d12 and add this number to the creature's Bloat Value.

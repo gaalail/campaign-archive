@@ -16,6 +16,7 @@ source: Homebrew
 ---
 
 *7th-level enchantment*
+
 A creature that you touch must make an Intelligence saving throw. On a failure, they take 16d8 psychic damage and must roll for changes to their personality and memories as shown on the following tables. On a success, they take half damage and suffer no additional effects.
 
 If you hit, you may choose not to deal damage to the target creature.

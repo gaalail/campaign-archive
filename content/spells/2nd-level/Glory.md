@@ -15,6 +15,7 @@ source: Homebrew
 ---
 
 *2nd-level illusion*
+
 You explode in glorious light, searing the gaze of a specific creature type. Choose one creature type besides humanoid when you cast this spell. Creatures of that type that look directly at you see a blindingly bright light. When a creature of this type starts its turn within a 40 foot radius of you, it may choose not to look at you, rendering you invisible to that creature. If it looks at you, it must make a Constitution saving throw. On a failure, the creature is blinded until the start of its next turn.
 
 ---

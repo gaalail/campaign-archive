@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *4th-level transmutation*
+
 Choose a creature within range to make a Constitution saving throw. On a failure, one of that creature's bones immediately grows to tremendous size, punching out of its skin and possibly impaling another creature. Provided that the creature failed its Constitution saving throw, another creature within 10 feet of the first creature must make a Dexterity saving throw. On a failure, that creature is impaled by the first creature's bone.
 
 Any creature that fails its save takes 8d8 piercing damage, and their speed becomes 0 feet until the end of your next turn, as they are rooted in place by the jagged bones.

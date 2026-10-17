@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *5th-level conjuration*
+
 You conjure a burning sphere of sulfurous brimstone. This sphere has a 10 foot radius. When you cast this spell and at the start of each of your turns for the duration of the spell, the boulder rolls 20 feet away from where you were standing when you cast the spell. It travels along the ground.
 
 When the boulder ends its movement within 5 feet of a creature or traveled through a space occupied by a creature, that creature must make a Dexterity saving throw. On a failed save, the creature takes 2d10 fire damage, 2d10 poison damage, and 2d10 bludgeoning damage. On a success, the creature takes half the damage. It automatically hits structures.

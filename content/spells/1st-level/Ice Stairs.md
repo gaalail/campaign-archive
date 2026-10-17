@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *1st-level conjuration*
+
 When you cast this spell, and as a bonus action on each of your turns while you maintain concentration, you may create a 20 foot line of icy disks that float in the air before you. They are large enough to use as stepping stones and bear up to 1,000 lbs of weight. These disks last until the end of your next turn, whereupon they melt if the temperature is above freezing, or fall to the ground if the temperature is below freezing.
 
 These steps allow you to ignore difficult or hazardous terrain, and you can angle them to ascend at a rate of 5 feet vertically for every 10 feet you move horizontally.

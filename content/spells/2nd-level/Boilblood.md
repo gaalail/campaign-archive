@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *2nd-level enchantment*
+
 You magically irritate a target creature to the point that its blood literally boils. One creature within range must make a Charisma saving throw. On a success, there is no effect and you do not spend your spell slot. On a failure, when the creature makes an attack roll against a single target, it has disadvantage unless it is targeting you.
 
 For the duration, at the start of each of its turns, the creature takes 2d6 necrotic damage as its anger causes its body to degenerate.

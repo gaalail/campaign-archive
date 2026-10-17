@@ -17,6 +17,7 @@ source: Homebrew
 ---
 
 *Evocation cantrip*
+
 Each creature in the line must make a Dexterity saving throw, taking 1d6 fire damage on a failed save.
 
 This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).

@@ -17,6 +17,7 @@ source: Homebrew
 ---
 
 *3rd-level enchantment*
+
 One creature that you can see within range must make a Constitution saving throw. On a failed save, it becomes infected with dysentery.
 
 ---

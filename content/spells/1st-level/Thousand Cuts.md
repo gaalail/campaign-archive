@@ -20,6 +20,7 @@ source: Homebrew
 ---
 
 *1st-level evocation*
+
 Move up to half your speed, then pick a creature within reach of your natural weapon or weapon that you are holding. Make a melee spell attack roll.
 
 On a hit, deal 2d4 piercing damage to the creature, and it takes 2d4 piercing damage at the start of each of its turns for the next 1 minute or until it is successfully treated with a Wisdom (Medicine) check. Making such a check requires a creature's action, and the DC is your spellcasting DC.

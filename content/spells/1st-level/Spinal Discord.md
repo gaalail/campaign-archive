@@ -17,6 +17,7 @@ source: Homebrew
 ---
 
 *1st-level transmutation (ritual)*
+
 By touching the corpse of a humanoid that has died within the past 30 minutes, you may rip out its spine and augment it. The spinal cord lengthens and the vertebrae sharpen into spikes.
 
 For the duration, this becomes a whip for you. This whip has a reach of 30 feet. On a hit, you may spend your bonus action force the creature you hit to make a Dexterity saving throw. If it fails, it falls prone if it is Large or smaller.

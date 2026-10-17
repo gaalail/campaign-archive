@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *2nd-level conjuration (ritual)*
+
 Touch a willing creature, which can be yourself. The first time that creature is reduced to fewer than one half its maximum hit points during the duration, its blood magically increases in volume and force, spraying about and creating a pool in a 15 foot radius around it. This pool is difficult terrain for the next 10 minutes, whereupon the spell ends.
 
 Whenever a creature moves 5 feet in this difficult terrain, the creature takes 2d4 acid damage. You and the creature that you touched when you cast this spell ignore this difficult terrain and take no damage from it.

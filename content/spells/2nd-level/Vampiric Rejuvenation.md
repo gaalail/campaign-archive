@@ -19,6 +19,7 @@ source: Homebrew
 ---
 
 *2nd-level necromancy (ritual)*
+
 By drinking the blood of a willing target for the duration, you gain a vestige of their power. The target creature takes 1d4 piercing damage. Then choose one benefit:
 - **Skill Proficiencies.** You gain up to three skill proficiencies that the creature has.
 - **Rejuvenation.** You gain 2d8 temporary hit points.

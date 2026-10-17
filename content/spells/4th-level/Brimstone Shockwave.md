@@ -18,6 +18,7 @@ source: Homebrew
 ---
 
 *4th-level evocation*
+
 Each creature in the cone must make a Constitution saving throw. A creature takes 3d10 bludgeoning damage and 3d10 fire damage on a failure, and half as much on a success. Creatures also fall prone on a failure. This deals double damage to inanimate objects and structures and ignores their damage thresholds. The area becomes difficult terrain indefinitely.
 
 For the duration, you may spend your bonus action to force any one creature in the area to make a Dexterity saving throw, taking 1d10 fire damage on a failed save.

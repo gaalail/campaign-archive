@@ -17,6 +17,7 @@ source: Homebrew
 ---
 
 *4th-level enchantment*
+
 Drawing forth the nauseating influence of Phlegmereth, you cause a creature to violently project caustic vomit.
 
 One creature within range must make a Constitution saving throw. On a failure, the creature begins to violently vomit. It is Poisoned for the duration, and at the start of each of its turns, each creature within a 15 foot cone of the target creature must make a Dexterity saving throw. A creature takes 2d12 acid damage on a failure, and half damage on a success.

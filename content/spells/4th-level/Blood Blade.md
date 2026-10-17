@@ -19,6 +19,7 @@ source: Homebrew
 ---
 
 *4th-level transmutation*
+
 Make a melee spell attack against a target creature within range that has less than half its maximum hit points. On a miss, the effect only lasts until the end of your next turn. On a hit, the effect lasts for the duration.
 
 You draw out the target creature's blood, magically augmenting the iron within and turning their blood into a violent weapon. Choose out of the following options: Longsword, Rapier, Spear, or Glaive.

@@ -15,6 +15,7 @@ source: Homebrew
 ---
 
 *2nd-level divination (ritual)*
+
 You create a crystalline sphere that weighs about 8 pounds and has a circumference comparable to that of a dinner plate. By speaking a command word, the sphere begins recording an audio conversation, its visual environment, or both. You determine which when you speak the command word. It can record no more than 1 hour's worth of content, at which point it stops.
 
 You may play back the recording by speaking a second command word, and may choose to erase the recording by speaking a third command word.
