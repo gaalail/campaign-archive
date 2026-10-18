@@ -98,9 +98,9 @@
     "chokidar": "^5.0.0",
     "esbuild-sass-plugin": "^3.6.0",
     "github-slugger": "^2.0.0",
-    "globby": "^16.1.0",
     "hast-util-from-html": "^2.0.0",
     "hast-util-to-jsx-runtime": "^2.3.6",
+    "ignore": "7.0.9",
     "isomorphic-git": "^1.36.3",
     "lightningcss": "^1.31.1",
     "micromorph": "^0.4.5",
@@ -115,6 +115,7 @@
     "serve-handler": "^6.1.6",
     "sharp": "^0.35.4",
     "source-map-support": "^0.5.21",
+    "tinyglobby": "0.2.17",
     "to-vfile": "^8.0.0",
     "unified": "^11.0.5",
     "unist-util-visit": "^5.1.0",
@@ -138,5 +139,8 @@
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "katex": "0.18.2"
   }
 }

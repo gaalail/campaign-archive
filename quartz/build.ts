@@ -3,7 +3,6 @@ sourceMapSupport.install(options)
 import path from "path"
 import { PerfTimer } from "./util/perf"
 import { rm } from "fs/promises"
-import { GlobbyFilterFunction, isGitIgnored } from "globby"
 import { styleText } from "util"
 import { parseMarkdown } from "./processors/parse"
 import { filterContent } from "./processors/filter"
@@ -14,7 +13,7 @@ import { detectSlugCollisions, formatCollisionWarning } from "./util/slugCollisi
 import chokidar from "chokidar"
 import { ProcessedContent } from "./plugins/vfile"
 import { Argv, BuildCtx } from "./util/ctx"
-import { glob, toPosixPath } from "./util/glob"
+import { createGitIgnoredMatcher, glob, toPosixPath } from "./util/glob"
 import { trace } from "./util/trace"
 import { options } from "./util/sourcemap"
 import { Mutex } from "async-mutex"
@@ -42,7 +41,7 @@ type ContentMap = Map<
 
 type BuildData = {
   ctx: BuildCtx
-  ignored: GlobbyFilterFunction
+  ignored: (fp: string) => boolean
   mut: Mutex
   contentMap: ContentMap
   changesSinceLastBuild: Record<FilePath, ChangeEvent["type"]>
@@ -135,7 +134,7 @@ async function startWatching(
     })
   }
 
-  const gitIgnoredMatcher = await isGitIgnored()
+  const gitIgnoredMatcher = await createGitIgnoredMatcher(argv.directory)
   const buildData: BuildData = {
     ctx,
     mut,
