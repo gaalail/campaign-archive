@@ -132,5 +132,5 @@ _Large Beast, Lawful Neutral_
 ---
 
 - [[Fighter|Fighter class]]
-- [[Fighter Subclasses|Warrior Archetypes]]
+- [[character-options/subclasses/Fighter/index|Warrior Archetypes]]
 - [[character-options/class-options/martial-exploits/index|Martial Exploits]]

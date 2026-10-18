@@ -53,5 +53,5 @@ You gain temporary hit points equal to your Fighter level. You can take the Sear
 ---
 
 - [[Fighter|Fighter class]]
-- [[Fighter Subclasses|Warrior Archetypes]]
+- [[character-options/subclasses/Fighter/index|Warrior Archetypes]]
 - [[character-options/class-options/martial-exploits/index|Martial Exploits]]

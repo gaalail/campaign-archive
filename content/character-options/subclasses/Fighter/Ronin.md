@@ -59,5 +59,5 @@ Once you use this feature you must complete a long rest before you can use it ag
 ---
 
 - [[Fighter|Fighter class]]
-- [[Fighter Subclasses|Warrior Archetypes]]
+- [[character-options/subclasses/Fighter/index|Warrior Archetypes]]
 - [[character-options/class-options/martial-exploits/index|Martial Exploits]]

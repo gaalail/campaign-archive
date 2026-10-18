@@ -98,5 +98,5 @@ Cantrips (0-Level) blade ward ll booming blade ll green-flame blade ll light lig
 ---
 
 - [[Fighter|Fighter class]]
-- [[Fighter Subclasses|Warrior Archetypes]]
+- [[character-options/subclasses/Fighter/index|Warrior Archetypes]]
 - [[character-options/class-options/martial-exploits/index|Martial Exploits]]

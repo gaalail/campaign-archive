@@ -111,7 +111,7 @@ On a success, learn one of the following characteristics of your choice: its Arm
 
 ### Warrior Archetype (3rd Level)
 
-Choose a Warrior Archetype that represents your training and tactics. It grants features at 3rd, 7th, 10th, 15th, and 18th level. Browse the [[Fighter Subclasses|Warrior Archetypes]].
+Choose a Warrior Archetype that represents your training and tactics. It grants features at 3rd, 7th, 10th, 15th, and 18th level. Browse the [[character-options/subclasses/Fighter/index|Warrior Archetypes]].
 
 ![[subclasses-of.base]]
 
@@ -144,7 +144,7 @@ Whenever you roll initiative, you regain all expended Exploit Dice. You can use 
 ## Related Content
 
 - [[Classes|Back to all classes]]
-- [[Fighter Subclasses|Warrior Archetypes]]
+- [[character-options/subclasses/Fighter/index|Warrior Archetypes]]
 - [[character-options/fighting-styles/index|Fighting Styles]]
 - [[character-options/class-options/martial-exploits/index|Martial Exploits]]
 - [[character-options/feats|Feats]]

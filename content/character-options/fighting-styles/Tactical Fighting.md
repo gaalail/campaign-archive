@@ -17,7 +17,7 @@ You can take the Help or the Search action as a bonus action. When you use the H
 ## Related Content
 
 - [[Fighter|Fighter class]]
-- [[Fighter Subclasses|Warrior Archetypes]]
+- [[character-options/subclasses/Fighter/index|Warrior Archetypes]]
 
 **Prerequisite:** Intelligence of 13 or higher  
 **Minimum level:** 1

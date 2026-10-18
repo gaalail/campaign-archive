@@ -21,7 +21,7 @@ Click your class to see available subclasses:
 - [[Bard Subclasses|Bard]] (5 colleges)
 - [[Cleric Subclasses|Cleric]] (6 domains)
 - [[Druid Subclasses|Druid]] (4 circles)
-- [[Fighter Subclasses|Fighter]] (20 archetypes)
+- [[character-options/subclasses/Fighter/index|Fighter]] (20 archetypes)
 - [[Monk Subclasses|Monk]] (4 traditions)
 - [[Paladin Subclasses|Paladin]] (4 oaths)
 - [[Ranger Subclasses|Ranger]] (4 archetypes)
