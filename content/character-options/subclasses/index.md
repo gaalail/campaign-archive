@@ -6,7 +6,7 @@ title: Subclasses
 
 At **3rd level** (sometimes 1st or 2nd), you specialize your class with a **subclass**.
 
-**59+ subclasses available** | Choose at level-up | Defines your playstyle
+**67+ subclasses available** | Choose at level-up | Defines your playstyle
 
 ---
 
@@ -16,6 +16,7 @@ Click your class to see available subclasses:
 
 ### Core Classes
 
+- [[Artificer Specializations|Artificer]] (8 specializations)
 - [[Barbarian Subclasses|Barbarian]] (6 paths)
 - [[Bard Subclasses|Bard]] (5 colleges)
 - [[Cleric Subclasses|Cleric]] (6 domains)
@@ -40,22 +41,23 @@ Click your class to see available subclasses:
 
 **Looking for a specific subclass?** Each class page lists its subclasses in a table for easy browsing.
 
-| Class         | Subclasses                                                                   | Theme                   |
-| ------------- | ---------------------------------------------------------------------------- | ----------------------- |
-| Barbarian     | Berserker, Celestial Fury, Self-Sacrifice, Branded, Hopebringer, Virtuous    | Primal fury             |
-| Bard          | Hope, Infernal Archives, Truth, Lore, Hymn Singer                            | Magical performance     |
-| Cleric        | Angel Caller, Dawn Domain, Domain of Mythology, Exorcist, Holy Virtues, Life | Divine magic            |
-| Druid         | Circle of Heaven, Circle of Phoenix, Circle of Unicorns, Land                | Nature magic            |
-| Fighter       | Champion, Anointed Warrior, Glorious Combatant, Holy Knight, Iron Bulwark    | Martial prowess         |
-| Monk          | Open Hand, Way of Angels, Way of Cardinal Virtues, Way of the Pilgrims       | Disciplined power       |
-| Paladin       | Devotion, Oath of Righteousness, Templar, Zealot                             | Holy oath               |
-| Ranger        | Evil Slayer, Holy Messenger, Hunter, Keeper of Light                         | Primal tracking         |
-| Rogue         | Chainbreaker, Divine Blade, Thief, Vigilante                                 | Stealth and cunning     |
-| Sorcerer      | Draconic, Prismatic, Starborn, Knight Dragon Bloodline                       | Innate magic            |
-| Thanatomancer | Path of the Fleshweaver, Path of the Graveguard, Path of the Reaper          | Necromantic paths       |
-| Warlock       | Archangel, Fiend, Nature, The Returned                                       | Eldritch pact           |
-| Wizard        | Evocation, Celestial Summoner, Education, School of Sealing                  | Scholarly magic         |
-| Paragon       | Order of Reason, Order of the Voice, Order of Valor                          | Holy warrior (homebrew) |
+| Class         | Subclasses                                                                                                                 | Theme                    |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| Artificer     | [[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], [[Ooze Rancher]], [[Static Conductor]], [[Venomist]], [[Wagoneer]] | Inventive specialization |
+| Barbarian     | Berserker, Celestial Fury, Self-Sacrifice, Branded, Hopebringer, Virtuous                                                  | Primal fury              |
+| Bard          | Hope, Infernal Archives, Truth, Lore, Hymn Singer                                                                          | Magical performance      |
+| Cleric        | Angel Caller, Dawn Domain, Domain of Mythology, Exorcist, Holy Virtues, Life                                               | Divine magic             |
+| Druid         | Circle of Heaven, Circle of Phoenix, Circle of Unicorns, Land                                                              | Nature magic             |
+| Fighter       | Champion, Anointed Warrior, Glorious Combatant, Holy Knight, Iron Bulwark                                                  | Martial prowess          |
+| Monk          | Open Hand, Way of Angels, Way of Cardinal Virtues, Way of the Pilgrims                                                     | Disciplined power        |
+| Paladin       | Devotion, Oath of Righteousness, Templar, Zealot                                                                           | Holy oath                |
+| Ranger        | Evil Slayer, Holy Messenger, Hunter, Keeper of Light                                                                       | Primal tracking          |
+| Rogue         | Chainbreaker, Divine Blade, Thief, Vigilante                                                                               | Stealth and cunning      |
+| Sorcerer      | Draconic, Prismatic, Starborn, Knight Dragon Bloodline                                                                     | Innate magic             |
+| Thanatomancer | Path of the Fleshweaver, Path of the Graveguard, Path of the Reaper                                                        | Necromantic paths        |
+| Warlock       | Archangel, Fiend, Nature, The Returned                                                                                     | Eldritch pact            |
+| Wizard        | Evocation, Celestial Summoner, Education, School of Sealing                                                                | Scholarly magic          |
+| Paragon       | Order of Reason, Order of the Voice, Order of Valor                                                                        | Holy warrior (homebrew)  |
 
 ---
 
