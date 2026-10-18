@@ -3,9 +3,9 @@ title: Regenerate
 level: 7
 school: Transmutation
 classes:
-- Bard
-- Cleric
-- Druid
+  - Bard
+  - Cleric
+  - Druid
 casting_time: 1 minute
 range: Touch
 duration: 1 hour
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*7th-level transmutation*
+_7th-level transmutation_
 
 **Material components:** A prayer wheel and holy water.
 
@@ -34,4 +34,3 @@ The target's severed body members (fingers, legs, tails, and so on), if any, are
 **Available to:** [[Bard]], [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

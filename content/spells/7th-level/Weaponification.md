@@ -3,8 +3,8 @@ title: Weaponification
 level: 7
 school: Transmutation
 classes:
-- Warlock
-- Wizard
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Until dispelled
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*7th-level transmutation*
+_7th-level transmutation_
 
 **Material components:** broken pieces of a former magic weapon
 
@@ -45,4 +45,3 @@ You can have only one weapon created in this way at a time. If you cast the spel
 **Available to:** [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

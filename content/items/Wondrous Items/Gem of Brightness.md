@@ -7,7 +7,7 @@ summary: Wondrous item, uncommon
 source: SRD 5.1
 ---
 
-*Wondrous item, uncommon*
+_Wondrous item, uncommon_
 
 This prism has 50 charges. While you are holding it, you can use an action to speak one of three command words to cause one of the following effects:
 
@@ -28,4 +28,3 @@ When all of the gem's charges are expended, the gem becomes a nonmagical jewel w
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -7,7 +7,7 @@ summary: Wondrous item, uncommon (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, uncommon (requires attunement)*
+_Wondrous item, uncommon (requires attunement)_
 
 You must be proficient with wind instruments to use these pipes. While you are attuned to the pipes, ordinary rats and giant rats are indifferent toward you and will not attack you unless you threaten or harm them.
 
@@ -24,4 +24,3 @@ Whenever a swarm of rats that isn't under another creature's control comes withi
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

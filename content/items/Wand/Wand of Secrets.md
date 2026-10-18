@@ -8,15 +8,12 @@ summary: Wand, uncommon
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wand, uncommon*
+_Wand, uncommon_
 
 The wand has 3 charges. While holding it, you can use an action to expend 1 of its charges, and if a secret door or trap is within 30 feet of you, the wand pulses and points at the one nearest to you. The wand regains 1d3 expended charges daily at dawn.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ The wand has 3 charges. While holding it, you can use an action to expend 1 of i
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

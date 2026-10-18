@@ -3,8 +3,8 @@ title: Divination
 level: 4
 school: Divination
 classes:
-- Druid
-- Thanatomancer
+  - Druid
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*4th-level divination (ritual)*
+_4th-level divination (ritual)_
 
 **Material components:** Incense and a sacrificial offering appropriate to your religion, together worth at least 25gp, which the spell consumes.
 
@@ -35,4 +35,3 @@ If you cast the spell two or more times before finishing your next long rest, th
 **Available to:** [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

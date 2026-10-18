@@ -3,7 +3,7 @@ title: Thaumaturgy
 level: 0
 school: Transmutation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: 30 feet
 duration: 1 minute
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*Transmutation cantrip*
+_Transmutation cantrip_
 
 You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range.
 
@@ -42,4 +42,3 @@ If you cast this spell multiple times, you can have up to three of its 1-minute 
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

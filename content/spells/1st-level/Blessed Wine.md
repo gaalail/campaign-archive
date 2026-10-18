@@ -3,8 +3,8 @@ title: Blessed Wine
 level: 1
 school: Transmutation
 classes:
-- Bard
-- Druid
+  - Bard
+  - Druid
 casting_time: 1 minute
 range: Touch
 duration: 8 hours
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*1st-level transmutation*
+_1st-level transmutation_
 
 **Material components:** a drop of holy water
 
@@ -33,4 +33,3 @@ After the spell ends, unconsumed bottles of wine transform back into ordinary wa
 **Available to:** [[Bard]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

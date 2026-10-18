@@ -3,9 +3,9 @@ title: Detect Evil and Good
 level: 1
 school: Divination
 classes:
-- Cleric
-- Paladin
-- Thanatomancer
+  - Cleric
+  - Paladin
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Up to 10 minutes
@@ -14,10 +14,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
 
-*1st-level divination*
+_1st-level divination_
 
 For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.
 
@@ -34,4 +34,3 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 **Available to:** [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

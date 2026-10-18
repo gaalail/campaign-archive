@@ -3,8 +3,8 @@ title: Disintegrate
 level: 6
 school: Transmutation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level transmutation*
+_6th-level transmutation_
 
 **Material components:** A lodestone and a pinch of dust.
 
@@ -40,4 +40,3 @@ This spell automatically disintegrates a Large or smaller nonmagical object or a
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

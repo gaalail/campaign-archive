@@ -3,7 +3,7 @@ title: Burning Halo
 level: 6
 school: Evocation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: 60 feet
 duration: Concentration, up to 1 minute
@@ -13,7 +13,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*6th-level evocation*
+_6th-level evocation_
 
 **Material components:** a vial of holy water and an iron ring, which the spell consumes
 
@@ -30,4 +30,3 @@ You select a creature you can see within range and pray for its sins to be washe
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -12,18 +12,18 @@ title: Items
 
 Choose an item category to see all items of that type:
 
-| Type | Count | Description |
-|------|-------|-------------|
-| Weapons | 30 | Melee and ranged weapons |
-| Armor | 29 | Protective equipment |
-| Wondrous Items | 177 | Other magical equipment |
-| Potions | 40 | One-time magical effects |
-| Rings | 36 | Magical jewelry |
-| Wands | 16 | One-handed magical implements |
-| Staves | 12 | Two-handed magical implements |
-| Scrolls | 11 | One-time spell casting |
-| Rods | 6 | Magical rods |
-| Ammunition | 5 | Projectiles for ranged weapons |
+| Type           | Count | Description                    |
+| -------------- | ----- | ------------------------------ |
+| Weapons        | 30    | Melee and ranged weapons       |
+| Armor          | 29    | Protective equipment           |
+| Wondrous Items | 177   | Other magical equipment        |
+| Potions        | 40    | One-time magical effects       |
+| Rings          | 36    | Magical jewelry                |
+| Wands          | 16    | One-handed magical implements  |
+| Staves         | 12    | Two-handed magical implements  |
+| Scrolls        | 11    | One-time spell casting         |
+| Rods           | 6     | Magical rods                   |
+| Ammunition     | 5     | Projectiles for ranged weapons |
 
 **Browse item categories:** [[items/Weapon|Weapons]], [[items/Armor|Armor]], [[items/Wondrous Items|Wondrous Items]], [[items/Potion|Potions]], [[items/Ring|Rings]], [[items/Wand|Wands]], [[items/Staff|Staves]], [[items/Scroll|Scrolls]], [[items/Rod|Rods]], [[items/Ammunition|Ammunition]]
 
@@ -48,6 +48,7 @@ Use search or browse by type above to find items by rarity.
 Some magical items require **attunement** — a special bond between you and the item.
 
 **Rules:**
+
 - Most spellcasters can attune to 3 items maximum
 - Attunement takes 1 short rest (1 hour)
 - Lose attunement if you die, move 100+ miles away, or remove it voluntarily
@@ -75,6 +76,7 @@ Some magical items require **attunement** — a special bond between you and the
 ## How to Use Magic Items
 
 **General process:**
+
 1. Identify what the item does (check its description)
 2. Check if it requires attunement (see attunement section above)
 3. Check what action it takes to activate (action, bonus action, reaction, or passive)
@@ -82,6 +84,7 @@ Some magical items require **attunement** — a special bond between you and the
 5. Track spell slots / charges if applicable
 
 **See your DM if:**
+
 - You're unsure how to use an item
 - An item conflicts with another item's effect
 - An item seems overpowered for your level

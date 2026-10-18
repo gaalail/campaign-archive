@@ -3,9 +3,9 @@ title: Darkness
 level: 2
 school: Evocation
 classes:
-- Sorcerer
-- Warlock
-- Wizard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 10 minutes
@@ -14,11 +14,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Witchblade
+  - Arcane Knight
+  - Witchblade
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 **Material components:** Bat fur and a drop of pitch or piece of coal.
 
@@ -39,4 +39,3 @@ If any of this spell's area overlaps with an area of light created by a spell of
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

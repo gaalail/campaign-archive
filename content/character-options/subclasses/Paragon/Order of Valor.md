@@ -1,7 +1,7 @@
 ---
 title: Order of Valor
 parent_class: Paragon
-summary: 'Divine Order: Close combat and martial prowess'
+summary: "Divine Order: Close combat and martial prowess"
 source: Corpus Angelus
 ---
 
@@ -17,4 +17,4 @@ Members of the Order of Valor can choose these avatar features, as well as the g
 
 ![[class-options-of.base]]
 
-*From Corpus Angelus.*
+_From Corpus Angelus._

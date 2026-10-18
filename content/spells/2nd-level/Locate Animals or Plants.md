@@ -3,10 +3,10 @@ title: Locate Animals or Plants
 level: 2
 school: Divination
 classes:
-- Bard
-- Druid
-- Ranger
-- Thanatomancer
+  - Bard
+  - Druid
+  - Ranger
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level divination (ritual)*
+_2nd-level divination (ritual)_
 
 **Material components:** A bit of fur from a bloodhound.
 
@@ -33,4 +33,3 @@ Describe or name a specific kind of beast or plant. Concentrating on the voice o
 **Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

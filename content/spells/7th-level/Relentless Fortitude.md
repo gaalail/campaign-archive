@@ -3,9 +3,9 @@ title: Relentless Fortitude
 level: 7
 school: Abjuration
 classes:
-- Cleric
-- Sorcerer
-- Wizard
+  - Cleric
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Concentration, up to 10 minutes
@@ -15,7 +15,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*7th-level abjuration*
+_7th-level abjuration_
 
 **Material components:** a piece of sapphire worth at least 100 gp, which the spell consumes
 
@@ -34,4 +34,3 @@ The target cannot be affected by any condition for the duration unless it wants 
 **Available to:** [[Cleric]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,10 +3,10 @@ title: Feather Fall
 level: 1
 school: Transmutation
 classes:
-- Artificer
-- Bard
-- Sorcerer
-- Wizard
+  - Artificer
+  - Bard
+  - Sorcerer
+  - Wizard
 casting_time: 1 reaction
 range: 60 feet
 duration: 1 minute
@@ -15,10 +15,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 ---
 
-*1st-level transmutation*
+_1st-level transmutation_
 
 **Material components:** A small feather or a piece of down.
 
@@ -35,5 +35,3 @@ Choose up to five falling creatures within range. A falling creature's rate of d
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

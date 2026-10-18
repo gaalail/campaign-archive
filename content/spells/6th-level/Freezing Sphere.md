@@ -3,7 +3,7 @@ title: Freezing Sphere
 level: 6
 school: Evocation
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 300 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level evocation*
+_6th-level evocation_
 
 **Material components:** A small crystal sphere.
 
@@ -37,4 +37,3 @@ You can refrain from firing the globe after completing the spell, if you wish. A
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

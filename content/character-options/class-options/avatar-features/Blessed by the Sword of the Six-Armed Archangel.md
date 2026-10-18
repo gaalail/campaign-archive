@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 17
 prerequisite: None
-summary: 'Avatar form only: you hold your hands out towards the sky, crying out a prayer of vengeance, destruction, and absoluti'
+summary: "Avatar form only: you hold your hands out towards the sky, crying out a prayer of vengeance, destruction, and absoluti"
 source: Corpus Angelus
 ---
 

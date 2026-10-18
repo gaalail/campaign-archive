@@ -9,7 +9,7 @@ source: Alternate Monk
 
 Rather than focus inward, some Monks attune themselves to the forces of nature. Known as Wu Jens, these primal sages augment their skills with the power of the five elements; Air, Earth, Fire, Water, and Wood. Through meditation, they can learn to manifest their Ki in displays of elemental power.
 
-### Disciple of the Elements
+## Disciple of the Elements
 
 **3rd-level Way of the Wu Jen feature**
 

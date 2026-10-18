@@ -7,7 +7,7 @@ summary: Scroll, common
 source: SRD 5.1
 ---
 
-*Scroll, common*
+_Scroll, common_
 
 A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is uninterrupted, the scroll is not lost.
 
@@ -24,4 +24,3 @@ This scroll contains a cantrip. The spell's saving throw is 13 and the attack bo
 **Rarity:** Common
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

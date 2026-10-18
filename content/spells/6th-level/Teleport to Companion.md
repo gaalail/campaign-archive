@@ -3,8 +3,8 @@ title: Teleport to Companion
 level: 6
 school: Conjuration
 classes:
-- Bard
-- Wizard
+  - Bard
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*6th-level conjuration*
+_6th-level conjuration_
 
 You touch a willing creature, binding yourself to it. The bond allows you to teleport to an unoccupied space within 5 feet of the creature or vice versa, as a result of a 1-minute ritual. Once you use this bond to teleport, the spell ends. The spell also ends if you or the creature form(s) the same bond with someone else.
 
@@ -31,4 +31,3 @@ If there are no available unoccupied spaces within 5 feet of the creature (or yo
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

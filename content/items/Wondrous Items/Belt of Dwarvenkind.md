@@ -7,7 +7,7 @@ summary: Wondrous Items, rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous Items, rare (requires attunement)*
+_Wondrous Items, rare (requires attunement)_
 
 While wearing this belt, you gain the following benefits:
 
@@ -32,4 +32,3 @@ You can speak, read, and write Dwarvish.
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

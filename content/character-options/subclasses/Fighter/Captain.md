@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Captain"
 
 Not all Fighters rely solely on themselves in battle, some lead others with their knowledge of tactics. Captains lead from the front, issuing orders and inspiring greatness in their allies by their own brave deeds. By their presence, a true Captain can transform even an unorganized militia into a deadly force.
 
-### Captain Exploits
+## Captain Exploits
 
 **3rd-level Captain Archetype feature.** You learn certain Tactical Exploits from the Warlord Class at the Fighter levels noted in the table below. These Exploits do not count against your total number of Exploits Known:
 

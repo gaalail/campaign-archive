@@ -8,15 +8,12 @@ summary: Wondrous item, uncommon
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wondrous item, uncommon*
+_Wondrous item, uncommon_
 
 This yellow diamond contains a mote of elemental energy. When you use an action to break the gem, an earth elemental is summoned as if you had cast the conjure elemental spell, and the gem's magic is lost.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ This yellow diamond contains a mote of elemental energy. When you use an action 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

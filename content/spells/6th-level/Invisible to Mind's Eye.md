@@ -3,10 +3,10 @@ title: Invisible to Mind's Eye
 level: 6
 school: Enchantment
 classes:
-- Bard
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 150 feet
 duration: Concentration, up to 10 minutes
@@ -16,7 +16,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*6th-level enchantment*
+_6th-level enchantment_
 
 **Material components:** a handful of colorful paint dust
 
@@ -35,4 +35,3 @@ The second target or object can't be larger than 10 feet in any dimension. The s
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

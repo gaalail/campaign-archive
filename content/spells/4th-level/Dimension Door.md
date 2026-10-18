@@ -3,10 +3,10 @@ title: Dimension Door
 level: 4
 school: Conjuration
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 500 feet
 duration: Instantaneous
@@ -15,12 +15,12 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Mystic
-- Witchblade
+  - Arcane Knight
+  - Mystic
+  - Witchblade
 ---
 
-*4th-level conjuration*
+_4th-level conjuration_
 
 You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as "200 feet straight downward" or "upward to the northwest at a 45-degree angle, 300 feet."
 
@@ -39,4 +39,3 @@ If you would arrive in a place already occupied by an object or a creature, you 
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

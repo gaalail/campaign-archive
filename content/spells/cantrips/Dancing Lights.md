@@ -3,10 +3,10 @@ title: Dancing Lights
 level: 0
 school: Evocation
 classes:
-- Artificer
-- Bard
-- Sorcerer
-- Wizard
+  - Artificer
+  - Bard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*Evocation cantrip*
+_Evocation cantrip_
 
 **Material components:** A bit of phosphorus or wychwood, or a glowworm.
 
@@ -35,5 +35,3 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

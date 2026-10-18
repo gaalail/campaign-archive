@@ -3,9 +3,9 @@ title: Resurrection
 level: 7
 school: Necromancy
 classes:
-- Bard
-- Cleric
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*7th-level necromancy*
+_7th-level necromancy_
 
 **Material components:** A diamond worth at least 1,000gp, which the spell consumes.
 
@@ -40,4 +40,3 @@ Casting this spell to restore life to a creature that has been dead for one year
 **Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Runecarver"
 
 Before the mortal races rose to power, the world was ruled by giants and their powerful Rune magic. Traces of this ancient magic can still be found in the wild and remote places of the world, and Fighters who learn to use the power of Runes to augment combat ability become known as Runecarvers.
 
-### Rune Carving
+## Rune Carving
 
 **3rd-level Runecarver Archetype feature.** You have learned the ancient art of carving Runes. You learn to speak, read, and write Giant, the language of your Runes, and you gain proficiency with mason's tools. Your knowledge of Runes also grants you the benefits below:
 

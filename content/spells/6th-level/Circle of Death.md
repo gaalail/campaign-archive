@@ -3,10 +3,10 @@ title: Circle of Death
 level: 6
 school: Necromancy
 classes:
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level necromancy*
+_6th-level necromancy_
 
 **Material components:** The powder of a crushed black pearl worth at least 500 gp.
 
@@ -36,4 +36,3 @@ A sphere of negative energy ripples out in a 60-foot radius sphere from a point 
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

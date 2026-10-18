@@ -3,9 +3,9 @@ title: Magic Weapon
 level: 2
 school: Transmutation
 classes:
-- Artificer
-- Paladin
-- Wizard
+  - Artificer
+  - Paladin
+  - Wizard
 casting_time: 1 bonus action
 range: Touch
 duration: Up to 1 hour
@@ -14,11 +14,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 arcane_knight_list_marker: "LL"
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.
 
@@ -36,5 +36,3 @@ You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic
 **Available to:** [[Paladin]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

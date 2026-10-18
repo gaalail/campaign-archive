@@ -3,9 +3,9 @@ title: Twin of Light
 level: 6
 school: Conjuration
 classes:
-- Cleric
-- Sorcerer
-- Warlock
+  - Cleric
+  - Sorcerer
+  - Warlock
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*6th-level conjuration*
+_6th-level conjuration_
 
 **Material components:** a mirror
 
@@ -39,4 +39,3 @@ You look in a mirror and create a twin of yourself, completely made out of light
 **Available to:** [[Cleric]], [[Sorcerer]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,7 +3,7 @@ title: Mass Purification
 level: 5
 school: Transmutation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: Touch
 duration: Concentration, up to 8 hours
@@ -13,7 +13,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*5th-level transmutation*
+_5th-level transmutation_
 
 **Material components:** a pouch of powdered silver worth at least 1,000 gp, which the spell consumes
 
@@ -32,4 +32,3 @@ When a fiend or undead touches the purified water for the first time or starts i
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

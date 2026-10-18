@@ -14,7 +14,6 @@ Always available, cast unlimited times
 
 [[spells/1st-level|1st-Level Spells]] ?
 
-
 ---
 
 ## Spells at This Level

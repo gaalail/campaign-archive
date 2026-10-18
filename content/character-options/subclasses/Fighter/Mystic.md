@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Mystic"
 
 Where most Fighters look to increase their physical abilities, those known as Mystics work to unlock the psionic potential of their mind. Drawing upon a wondrous inner power, these ascetic warriors can perform feats that would be impossible through strength alone. Where others strive toward physical perfection, Mystics strive for spiritual enlightenment.
 
-### Psionics
+## Psionics
 
 **3rd-level Mystic Archetype feature.** You have unlocked the true potential of your mind, and have learned to manifest psionic spells, much like a Psion does:
 

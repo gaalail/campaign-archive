@@ -3,10 +3,10 @@ title: Brimstone Rupture
 level: 9
 school: Transmutation
 classes:
-- Cleric
-- Sorcerer
-- Warlock
-- Wizard
+  - Cleric
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: Homebrew
 ---
 
-*9th-level transmutation*
+_9th-level transmutation_
 
 By striking the ground, you create a yawning rift full of sulfuric lava that splits the earth. Create a 200 foot long and 10 foot wide line. This line does not have to be straight. Each creature within 5 feet of the line must make a Dexterity saving throw. On a failure, the creature takes 12d6 bludgeoning damage and falls prone in the rift. On a success, the creature takes half damage and falls prone outside the rift. This attack automatically hits structures and deals double damage to them.
 

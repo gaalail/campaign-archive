@@ -3,11 +3,11 @@ title: Brimstone Shockwave
 level: 4
 school: Evocation
 classes:
-- Cleric
-- Paladin
-- Sorcerer
-- Warlock
-- Wizard
+  - Cleric
+  - Paladin
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Self (30 foot cone)
 duration: 1 minute
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*4th-level evocation*
+_4th-level evocation_
 
 Each creature in the cone must make a Constitution saving throw. A creature takes 3d10 bludgeoning damage and 3d10 fire damage on a failure, and half as much on a success. Creatures also fall prone on a failure. This deals double damage to inanimate objects and structures and ignores their damage thresholds. The area becomes difficult terrain indefinitely.
 

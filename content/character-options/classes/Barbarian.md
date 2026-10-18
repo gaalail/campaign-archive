@@ -2,36 +2,36 @@
 title: Barbarian
 hit_die: d12
 saving_throws:
-- STR
-- CON
+  - STR
+  - CON
 summary: d12 hit die; saving throws STR, CON
 source: SRD 5.1
 ---
 
 ## The Barbarian table
 
-| Level | Proficiency Bonus | Features | Rages | Rage Damage | Brutal Critical Dice |
-| --- | --- | --- | --- | --- | --- |
-| 1st | +2 | Rage, Unarmored Defense | 2 | +2 | - |
-| 2nd | +2 | Reckless Attack, Danger Sense | 2 | +2 | - |
-| 3rd | +2 | Primal Path | 3 | +2 | - |
-| 4th | +2 | Ability Score Improvement | 3 | +2 | - |
-| 5th | +3 | Extra Attack, Fast Movement | 3 | +2 | - |
-| 6th | +3 | Path feature | 4 | +2 | - |
-| 7th | +3 | Feral Instinct | 4 | +2 | - |
-| 8th | +3 | Ability Score Improvement | 4 | +2 | - |
-| 9th | +4 | Brutal Critical (1 die) | 4 | +3 | 1 |
-| 10th | +4 | Path feature | 4 | +3 | 1 |
-| 11th | +4 | Relentless Rage | 4 | +3 | 1 |
-| 12th | +4 | Ability Score Improvement | 5 | +3 | 1 |
-| 13th | +5 | Brutal Critical (2 dice) | 5 | +3 | 2 |
-| 14th | +5 | Path feature | 5 | +3 | 2 |
-| 15th | +5 | Persistent Rage | 5 | +3 | 2 |
-| 16th | +5 | Ability Score Improvement | 5 | +4 | 2 |
-| 17th | +6 | Brutal Critical (3 dice) | 6 | +4 | 3 |
-| 18th | +6 | Indomitable Might | 6 | +4 | 3 |
-| 19th | +6 | Ability Score Improvement | 6 | +4 | 3 |
-| 20th | +6 | Primal Champion | Unlimited | +4 | 3 |
+| Level | Proficiency Bonus | Features                      | Rages     | Rage Damage | Brutal Critical Dice |
+| ----- | ----------------- | ----------------------------- | --------- | ----------- | -------------------- |
+| 1st   | +2                | Rage, Unarmored Defense       | 2         | +2          | -                    |
+| 2nd   | +2                | Reckless Attack, Danger Sense | 2         | +2          | -                    |
+| 3rd   | +2                | Primal Path                   | 3         | +2          | -                    |
+| 4th   | +2                | Ability Score Improvement     | 3         | +2          | -                    |
+| 5th   | +3                | Extra Attack, Fast Movement   | 3         | +2          | -                    |
+| 6th   | +3                | Path feature                  | 4         | +2          | -                    |
+| 7th   | +3                | Feral Instinct                | 4         | +2          | -                    |
+| 8th   | +3                | Ability Score Improvement     | 4         | +2          | -                    |
+| 9th   | +4                | Brutal Critical (1 die)       | 4         | +3          | 1                    |
+| 10th  | +4                | Path feature                  | 4         | +3          | 1                    |
+| 11th  | +4                | Relentless Rage               | 4         | +3          | 1                    |
+| 12th  | +4                | Ability Score Improvement     | 5         | +3          | 1                    |
+| 13th  | +5                | Brutal Critical (2 dice)      | 5         | +3          | 2                    |
+| 14th  | +5                | Path feature                  | 5         | +3          | 2                    |
+| 15th  | +5                | Persistent Rage               | 5         | +3          | 2                    |
+| 16th  | +5                | Ability Score Improvement     | 5         | +4          | 2                    |
+| 17th  | +6                | Brutal Critical (3 dice)      | 6         | +4          | 3                    |
+| 18th  | +6                | Indomitable Might             | 6         | +4          | 3                    |
+| 19th  | +6                | Ability Score Improvement     | 6         | +4          | 3                    |
+| 20th  | +6                | Primal Champion               | Unlimited | +4          | 3                    |
 
 ## Hit points
 
@@ -121,7 +121,6 @@ You start with the following equipment, in addition to the equipment granted by 
 
 > [!info]- Primal Champion (level 20)
 > At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.
-
 
 ## Subclasses
 

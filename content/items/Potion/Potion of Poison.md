@@ -7,7 +7,7 @@ summary: Potion, uncommon
 source: SRD 5.1
 ---
 
-*Potion, uncommon*
+_Potion, uncommon_
 
 This concoction looks, smells, and tastes like a potion of healing or other beneficial potion. However, it is actually poison masked by illusion magic. An identify spell reveals its true nature.
 
@@ -22,4 +22,3 @@ If you drink it, you take 3d6 poison damage, and you must succeed on a DC 13 Con
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

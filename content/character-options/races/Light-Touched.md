@@ -47,10 +47,8 @@ Your light-touched character has a number of traits originating from its light w
 > [!info]- Creatures of Light
 > You know the dancing lights and the light cantrips. In addition, when you reach 5th level, you can cast the daylight spell once per day.
 
-
 > [!info]- Glowing Bodies
 > You have a mark on your body that glows and emits a bright light as in the light cantrip. The light of your mark can be covered by 1 inch of common clothing or by similar materials. You have disadvantage on Dexterity (Stealth) checks when you are in a lightly or heavily obscured area unless you cover your innate glow. You also have resistance to radiant damage.
-
 
 > [!info]- Radiant Form
 > As a bonus action, your whole body emanates intense light, and you can take a humanoid form made of radiant energy (transforming with your equipment) and gain the following traits:
@@ -63,10 +61,8 @@ Your light-touched character has a number of traits originating from its light w
 >
 > You remain in the radiant form until the end of your next turn. Once you use this form, you have to finish a short or long rest to use it again.
 
-
 > [!info]- Strangers to Darkness
 > If a light-touched has had no contact with daylight for three consecutive days, its light slowly fades. Your hit point maximum decreases by 1 each time you finish a long rest, and you suffer one level of exhaustion (that can't be removed until you see the daylight again for 1 hour). The required daylight can be imitated with the daylight spell or any other spell of 3rd level or higher which radiates light. When you finish a long rest after you get in contact with daylight, your previous hit point maximum is restored and you no longer suffer from one level of exhaustion.
-
 
 **Subrace.** The light-touched have three subraces according to the type of light they host and each subrace has specific magical benefits bestowed upon them.
 
@@ -83,7 +79,6 @@ Your body emanates light in a form resembling sunlight. Your golden radiance soo
 >
 > Once you use this trait, you must finish a short or long rest to use it again.
 
-
 ## Iridescent Ones
 
 Your body glows with rainbow-colored lights that weave and fade into one another and change as you move, making you a very pleasant sight to behold.
@@ -95,14 +90,11 @@ Iridescents generally have artistic souls and a natural ability to blend in with
 > [!info]- Natural Born Artists
 > You gain proficiency with an artisan's tool of your choice.
 
-
 > [!info]- Prismatic
 > You are iridescent; you shine with different prismatic colors that interlock and change with every step you take; each step making you more elegant than before. However, some iridescents may prefer to settle down and choose a stable or signature color with which to shine. As a bonus action, you can choose the color of light your body radiates.
 
-
 > [!info]- Social Beings
 > You have the ability to blend in with different crowds and to adapt, even in the face of the harshest of conditions. You gain proficiency in one of the following skills of your choice: Insight or Persuasion.
-
 
 ## Silver Born
 
@@ -113,5 +105,4 @@ Your body exudes a graceful, silver light. All light-touched have an understandi
 > [!info]- Radiant Magic
 > You can change the damage type of any spell that deals damage to radiant damage. In addition, your spell save DC increases by one for spells that originally deal radiant damage.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

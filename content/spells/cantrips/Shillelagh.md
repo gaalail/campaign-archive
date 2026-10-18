@@ -3,7 +3,7 @@ title: Shillelagh
 level: 0
 school: Transmutation
 classes:
-- Druid
+  - Druid
 casting_time: 1 bonus action
 range: Touch
 duration: 1 minute
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*Transmutation cantrip*
+_Transmutation cantrip_
 
 **Material components:** Mistletoe, a shamrock leaf, and a club or quarterstaff.
 
@@ -30,4 +30,3 @@ The wood of a club or a quarterstaff you are holding is imbued with nature's pow
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

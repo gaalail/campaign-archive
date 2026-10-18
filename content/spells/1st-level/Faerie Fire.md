@@ -3,8 +3,8 @@ title: Faerie Fire
 level: 1
 school: Evocation
 classes:
-- Artificer
-- Druid
+  - Artificer
+  - Druid
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -13,10 +13,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 ---
 
-*1st-level evocation*
+_1st-level evocation_
 
 Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
 
@@ -33,5 +33,3 @@ Any attack roll against an affected creature or object has advantage if the atta
 **Available to:** [[Druid]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

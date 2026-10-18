@@ -3,10 +3,10 @@ title: Major Image
 level: 3
 school: Illusion
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 10 minutes
@@ -15,11 +15,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
-- Witchblade
+  - Mystic
+  - Witchblade
 ---
 
-*3rd-level illusion*
+_3rd-level illusion_
 
 **Material components:** A bit of fleece.
 
@@ -43,4 +43,3 @@ Physical interaction with the image reveals it to be an illusion, because things
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

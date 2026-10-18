@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 15
 prerequisite: Obelisk
-summary: 'Avatar form only: your obelisk feature grows stronger.'
+summary: "Avatar form only: your obelisk feature grows stronger."
 source: Corpus Angelus
 ---
 

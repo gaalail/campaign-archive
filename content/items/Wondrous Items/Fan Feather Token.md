@@ -7,7 +7,7 @@ summary: Wondrous item, rare
 source: SRD 5.1
 ---
 
-*Wondrous item, rare*
+_Wondrous item, rare_
 
 This tiny object looks like a feather.
 
@@ -22,4 +22,3 @@ If you are on a boat or ship, you can use an action to toss the token up to 10 f
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

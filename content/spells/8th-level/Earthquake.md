@@ -3,9 +3,9 @@ title: Earthquake
 level: 8
 school: Evocation
 classes:
-- Cleric
-- Druid
-- Sorcerer
+  - Cleric
+  - Druid
+  - Sorcerer
 casting_time: 1 action
 range: 500 feet
 duration: Up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*8th-level evocation*
+_8th-level evocation_
 
 **Material components:** A pinch of dirt, a piece of rock, and a lump of clay.
 
@@ -44,4 +44,3 @@ Structures. The tremor deals 50 bludgeoning damage to any structure in contact w
 **Available to:** [[Cleric]], [[Druid]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

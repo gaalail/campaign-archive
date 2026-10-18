@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Paragon
 min_level: 20
 prerequisite: None
-summary: 'Avatar form only: as an action, you shed your holy light upon heretics.'
+summary: "Avatar form only: as an action, you shed your holy light upon heretics."
 source: Corpus Angelus
 ---
 

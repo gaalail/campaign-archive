@@ -3,10 +3,10 @@ title: Thunderwave
 level: 1
 school: Evocation
 classes:
-- Bard
-- Druid
-- Sorcerer
-- Wizard
+  - Bard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -15,10 +15,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*1st-level evocation*
+_1st-level evocation_
 
 A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.
 
@@ -38,4 +38,3 @@ In addition, unsecured objects that are completely within the area of effect are
 **Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

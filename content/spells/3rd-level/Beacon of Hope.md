@@ -4,7 +4,7 @@ title: Beacon of Hope
 level: 3
 school: Abjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -14,15 +14,12 @@ concentration: true
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*3rd-level abjuration*
+_3rd-level abjuration_
 
 This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing.
-
-
 
 ---
 
@@ -35,4 +32,3 @@ This spell bestows hope and vitality. Choose any number of creatures within rang
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

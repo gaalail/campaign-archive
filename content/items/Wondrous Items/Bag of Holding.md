@@ -7,7 +7,7 @@ summary: Wondrous item, uncommon
 source: SRD 5.1
 ---
 
-*Wondrous item, uncommon*
+_Wondrous item, uncommon_
 
 This bag has an interior space considerably larger than its outside dimensions, roughly 2 feet in diameter at the mouth and 4 feet deep. The bag can hold up to 500 pounds, not exceeding a volume of 64 cubic feet. The bag weighs 15 pounds, regardless of its contents. Retrieving an item from the bag requires an action.
 
@@ -24,4 +24,3 @@ Placing a bag of holding inside an extradimensional space created by a Handy Hav
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

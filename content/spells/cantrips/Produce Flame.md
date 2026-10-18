@@ -3,7 +3,7 @@ title: Produce Flame
 level: 0
 school: Conjuration
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: Self
 duration: 10 minutes
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*Conjuration cantrip*
+_Conjuration cantrip_
 
 A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.
 
@@ -32,4 +32,3 @@ This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level 
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

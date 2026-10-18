@@ -8,15 +8,12 @@ summary: Ring, uncommon
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Ring, uncommon*
+_Ring, uncommon_
 
 While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ While wearing this ring, you can stand on and move across any liquid surface as 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

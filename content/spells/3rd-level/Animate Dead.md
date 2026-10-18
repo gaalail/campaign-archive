@@ -3,9 +3,9 @@ title: Animate Dead
 level: 3
 school: Necromancy
 classes:
-- Cleric
-- Wizard
-- Thanatomancer
+  - Cleric
+  - Wizard
+  - Thanatomancer
 casting_time: 1 minute
 range: 10 feet
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*3rd-level necromancy*
+_3rd-level necromancy_
 
 **Material components:** A drop of blood, a piece of flesh, and a pinch of bone dust.
 
@@ -39,4 +39,3 @@ The creature is under your control for 24 hours, after which it stops obeying an
 **Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,11 +3,11 @@ title: Plane Shift
 level: 7
 school: Conjuration
 classes:
-- Cleric
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
+  - Cleric
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*7th-level conjuration*
+_7th-level conjuration_
 
 **Material components:** A forked, metal rod worth at least 250 gp, attuned to a particular plane of existence.
 
@@ -38,4 +38,3 @@ You can use this spell to banish an unwilling creature to another plane. Choose 
 **Available to:** [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

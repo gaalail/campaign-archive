@@ -3,11 +3,11 @@ title: Banishment
 level: 4
 school: Abjuration
 classes:
-- Cleric
-- Paladin
-- Sorcerer
-- Warlock
-- Wizard
+  - Cleric
+  - Paladin
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -16,11 +16,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Witchblade
+  - Arcane Knight
+  - Witchblade
 ---
 
-*4th-level abjuration*
+_4th-level abjuration_
 
 **Material components:** An item distasteful to the target.
 
@@ -44,4 +44,3 @@ If the target is native to a different plane of existence than the one you're on
 **Available to:** [[Cleric]], [[Paladin]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

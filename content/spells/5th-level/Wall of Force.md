@@ -3,7 +3,7 @@ title: Wall of Force
 level: 5
 school: Evocation
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 10 minutes
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level evocation*
+_5th-level evocation_
 
 **Material components:** A pinch of powder made by crushing a clear gemstone.
 
@@ -32,4 +32,3 @@ Nothing can physically pass through the wall. It is immune to all damage and can
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

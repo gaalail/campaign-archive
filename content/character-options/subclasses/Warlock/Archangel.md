@@ -15,19 +15,18 @@ The archangel lets you choose from an expanded list of spells when you learn a w
 
 ## Archangel expanded spells
 
-| Spell level | Spells |
-| --- | --- |
-| 1st | [[Bless]], [[Cure Wounds]] |
-| 2nd | [[Angelic Executioner]], [[Spiritual Weapon]] |
-| 3rd | [[Beacon of Hope]], [[Revivify]] |
-| 4th | [[Dictate Morality]], [[Radiant Storm]] |
-| 5th | [[Burden of Sins]], well of blessing |
+| Spell level | Spells                                        |
+| ----------- | --------------------------------------------- |
+| 1st         | [[Bless]], [[Cure Wounds]]                    |
+| 2nd         | [[Angelic Executioner]], [[Spiritual Weapon]] |
+| 3rd         | [[Beacon of Hope]], [[Revivify]]              |
+| 4th         | [[Dictate Morality]], [[Radiant Storm]]       |
+| 5th         | [[Burden of Sins]], well of blessing          |
 
 ## Features
 
 > [!info]- Carrier of an Angelic Spirit (level 1)
 > At 1st level, you become an accepted member of the angelic courts of heaven. You learn Celestial and can telepathically communicate with celestials within 60 feet of you.
-
 
 > [!info]- Aid of Angels (level 1)
 > Starting at 1st level, you gain the ability to magically summon a celestial that can destroy your enemies and heal your allies. As a bonus action, you summon a Medium celestial at an unoccupied space you can see within 60 feet of you. The summoned celestial remains for 1 minute or until you use this feature to summon another one.
@@ -38,16 +37,13 @@ The archangel lets you choose from an expanded list of spells when you learn a w
 >
 > You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.
 
-
 > [!info]- Channeling Angelic Powers (level 6)
 > Starting at 6th level, you can channel angelic powers. When you deal damage with a spell or another magical effect, you can use your reaction to change the damage type to radiant. If the celestial you summoned with the Aid of Angels feature is within 30 feet of one of the targets of the magical effect when you use this feature, the effect deals an extra 1d6 fire or radiant damage (one of your choice).
-
 
 > [!info]- Angelic Protection (level 10)
 > At 10th level, angelic powers watch over you themselves. Under their watchful eye, you gain resistance to radiant damage.
 >
 > Additionally, you can use a bonus action to gain resistance to necrotic damage for 1 minute. Once you use this feature, you must finish a short or long rest to use it again.
-
 
 > [!info]- Angelic Intervention (level 14)
 > Starting at 14th level, you gain the ability to call angelic forces to your aid. As an action, you choose a point within 30 feet of you. A troop of angelic figures rushes forth in a direction you choose starting at that point, harming the enemies in a 15-foot cone, and healing the allies within the area.
@@ -56,5 +52,4 @@ The archangel lets you choose from an expanded list of spells when you learn a w
 >
 > Once you use this feature, you must finish a short or long rest to use it again.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

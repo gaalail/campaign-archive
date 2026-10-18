@@ -3,7 +3,7 @@ title: Conjure Celestial
 level: 7
 school: Conjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 minute
 range: 90 feet
 duration: Up to 1 hour
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*7th-level conjuration*
+_7th-level conjuration_
 
 You summon a celestial of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.
 
@@ -35,4 +35,3 @@ The GM has the celestial's statistics.
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

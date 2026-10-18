@@ -3,9 +3,9 @@ title: Bind Soul
 level: 6
 school: Necromancy
 classes:
-- Warlock
-- Wizard
-- Thanatomancer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*6th-level necromancy*
+_6th-level necromancy_
 
 **Material components:** diamond dust worth at least 200 gp, which the spell consumes
 
@@ -42,4 +42,3 @@ The soul can dismiss its bond with the item at will. However, when it does, the 
 **Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

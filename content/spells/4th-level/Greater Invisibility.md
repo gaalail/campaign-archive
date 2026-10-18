@@ -4,9 +4,9 @@ title: Greater Invisibility
 level: 4
 school: Illusion
 classes:
-- Bard
-- Sorcerer
-- Wizard
+  - Bard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Up to 1 minute
@@ -15,18 +15,15 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 ---
-
 
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*4th-level illusion*
+_4th-level illusion_
 
 You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person.
-
-
 
 ---
 
@@ -39,4 +36,3 @@ You or a creature you touch becomes invisible until the spell ends. Anything the
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

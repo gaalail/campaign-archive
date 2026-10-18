@@ -6,7 +6,7 @@ source: Alternate Fighter
 
 # Alternate Defensive Duelist
 
-### Updated Defensive Duelist Feat
+## Updated Defensive Duelist Feat
 
 **Prerequisite:** Dexterity of 13 or higher
 

@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Paragon
 min_level: 17
 prerequisite: None
-summary: 'Avatar form only: you are your deity''s hand that delivers death upon its enemies, but that also shows compassion to th'
+summary: "Avatar form only: you are your deity's hand that delivers death upon its enemies, but that also shows compassion to th"
 source: Corpus Angelus
 ---
 

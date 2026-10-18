@@ -8,15 +8,12 @@ summary: Wand, uncommon (requires attunement by a spellcaster)
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wand, uncommon (requires attunement by a spellcaster)*
+_Wand, uncommon (requires attunement by a spellcaster)_
 
 While holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore half cover when making a spell attack.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ While holding this wand, you gain a +1 bonus to spell attack rolls. In addition,
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

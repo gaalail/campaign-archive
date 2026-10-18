@@ -3,9 +3,9 @@ title: Calm Emotions
 level: 2
 school: Enchantment
 classes:
-- Bard
-- Cleric
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -14,10 +14,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*2nd-level enchantment*
+_2nd-level enchantment_
 
 You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects. You can suppress any effect causing a target to be charmed or frightened. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.
 
@@ -34,4 +34,3 @@ Alternatively, you can make a target indifferent about creatures of your choice 
 **Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

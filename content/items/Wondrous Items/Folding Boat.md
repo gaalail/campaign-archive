@@ -7,7 +7,7 @@ summary: Wondrous item, rare
 source: SRD 5.1
 ---
 
-*Wondrous item, rare*
+_Wondrous item, rare_
 
 This object appears as a wooden box that measures 12 inches long, 6 inches wide, and 6 inches deep. It weighs 4 pounds and floats. It can be opened to store items inside. This item also has three command words, each requiring you to use an action to speak it.
 
@@ -28,4 +28,3 @@ The third command word causes the folding boat to fold back into a box, provided
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

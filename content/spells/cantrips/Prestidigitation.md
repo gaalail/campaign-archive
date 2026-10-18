@@ -3,11 +3,11 @@ title: Prestidigitation
 level: 0
 school: Transmutation
 classes:
-- Artificer
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
+  - Artificer
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 10 feet
 duration: 1 hour
@@ -16,11 +16,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Witchblade
+  - Arcane Knight
+  - Witchblade
 ---
 
-*Transmutation cantrip*
+_Transmutation cantrip_
 
 This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':
 
@@ -49,5 +49,3 @@ If you cast this spell multiple times, you can have up to three of its non-insta
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

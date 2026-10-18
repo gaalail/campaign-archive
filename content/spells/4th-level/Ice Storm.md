@@ -3,9 +3,9 @@ title: Ice Storm
 level: 4
 school: Evocation
 classes:
-- Druid
-- Sorcerer
-- Wizard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 300 feet
 duration: Instantaneous
@@ -14,10 +14,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*4th-level evocation*
+_4th-level evocation_
 
 **Material components:** A pinch of dust and a few drops of water.
 
@@ -39,4 +39,3 @@ Hailstones turn the storm's area of effect into difficult terrain until the end 
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

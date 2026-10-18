@@ -8,15 +8,12 @@ summary: Wondrous item, rare
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wondrous item, rare*
+_Wondrous item, rare_
 
 This delicate silver chain has a brilliant-cut black gem pendant. While you wear it, poisons have no effect on you. You are immune to the poisoned condition and have immunity to poison damage.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ This delicate silver chain has a brilliant-cut black gem pendant. While you wear
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

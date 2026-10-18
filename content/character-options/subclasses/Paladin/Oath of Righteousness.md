@@ -21,13 +21,13 @@ Paladins that take the Oath of Righteousness may follow different ideals, but th
 
 You gain oath spells at the paladin levels listed.
 
-| Paladin level | Spells |
-| --- | --- |
-| 3rd | [[Command]], compelled duel |
-| 5th | [[Warding Bond]], [[Zone of Truth]] |
-| 9th | [[Dispel Magic]], [[Tongues]] |
-| 13th | [[Banishment]], [[Enhance Perception]] |
-| 17th | [[Geas]], [[Sinner's Mark]] |
+| Paladin level | Spells                                 |
+| ------------- | -------------------------------------- |
+| 3rd           | [[Command]], compelled duel            |
+| 5th           | [[Warding Bond]], [[Zone of Truth]]    |
+| 9th           | [[Dispel Magic]], [[Tongues]]          |
+| 13th          | [[Banishment]], [[Enhance Perception]] |
+| 17th          | [[Geas]], [[Sinner's Mark]]            |
 
 ## Features
 
@@ -42,16 +42,13 @@ You gain oath spells at the paladin levels listed.
 >
 > When you reach 10th level in this class, the extra fire damage increases to 1d8.
 
-
 > [!info]- Aura of the Righteous (level 7)
 > Starting at 7th level, you and your allies within 10 feet of you deal extra fire or radiant damage (one of your choice) equal to your Charisma modifier (minimum of one damage) on successful weapon attacks, and have advantage on Wisdom (Insight) and Charisma (Persuasion) checks.
-
 
 > [!info]- Enemy of All Dishonorable (level 15)
 > Beginning at 15th level, you have a +2 bonus to your weapon attack rolls.
 >
 > You can also use an action to make a single weapon attack using this feature, forfeiting the additional attacks you can make with a bonus action and the Extra Attack feature. When you do so, you cannot have disadvantage on the attack roll, and on a hit, the target cannot take reactions until the start of its next turn.
-
 
 > [!info]- Might of the Righteous (level 20)
 > At 20th level, you can cast the might of the divine ruler (p. 178) spell without expending a spell slot and requiring no spell components.
@@ -60,5 +57,4 @@ You gain oath spells at the paladin levels listed.
 >
 > Once you use this feature, you must finish a long rest to use it again.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

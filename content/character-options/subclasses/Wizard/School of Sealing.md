@@ -22,7 +22,6 @@ This school of magic is all about enhancing or reducing the effects of spells by
 >
 > You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses after you finish a long rest.
 
-
 > [!info]- Ritual of Protecting Seal (level 2)
 > Also at 2nd level, you can place a seal on objects to protect them against specific types of creatures. To do so, you perform a 1-hour ritual with the item and choose one of the following creature types; aberration, celestial, dragon, elemental, fey, fiend, giant, monstrosity, ooze, or undead.
 >
@@ -38,7 +37,6 @@ This school of magic is all about enhancing or reducing the effects of spells by
 >
 > Once you use this feature, you must finish a long rest to do so again.
 
-
 > [!info]- Interruptive Seal (level 6)
 > At 6th level, you learn to form a seal between a creature and magic. Whenever you cast the dispel magic or the counterspell spells, you can choose to have advantage on the ability check required by the spell.
 >
@@ -46,12 +44,10 @@ This school of magic is all about enhancing or reducing the effects of spells by
 >
 > You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain any expended uses when you finish a short or long rest.
 
-
 > [!info]- Detailed Knowledge of Sealing (level 10)
 > At 10th level, your knowledge of protection magic reaches immense heights, allowing you to cast an abjuration spell without expending a spell slot. Once you use this feature in this way, you must finish a long rest to do so again.
 >
 > In addition, choose one of the following creature types: aberration, celestial, dragon, elemental, fey, fiend, giant, monstrosity, ooze, or undead. When you cast a spell that targets a creature of the chosen type, the target must succeed on a Charisma saving throw or be stunned until the end of its next turn. You can change the chosen type of creature during a long rest.
-
 
 > [!info]- Master Sealer (level 14)
 > At 14th level, you can close planar gates, teleportation circles, and portals by performing a 1-hour ritual.
@@ -62,5 +58,4 @@ This school of magic is all about enhancing or reducing the effects of spells by
 >
 > This feature does not work on the gates and portals created by gods or other prominent divine forces.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

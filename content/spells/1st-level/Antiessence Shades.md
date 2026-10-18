@@ -3,11 +3,11 @@ title: Antiessence Shades
 level: 1
 school: Conjuration
 classes:
-- Bard
-- Cleric
-- Druid
-- Warlock
-- Wizard
+  - Bard
+  - Cleric
+  - Druid
+  - Warlock
+  - Wizard
 casting_time: 1 minute
 range: 40 ft
 duration: Concentration, up to 10 minutes
@@ -17,7 +17,7 @@ concentration: true
 source: Homebrew
 ---
 
-*1st-level conjuration*
+_1st-level conjuration_
 
 **Material components:** a drop of blood and a pinch of iron filings.
 

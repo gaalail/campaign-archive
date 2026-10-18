@@ -3,7 +3,7 @@ title: Spirit Guardians
 level: 3
 school: Conjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: Self
 duration: Up to 10 minutes
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*3rd-level conjuration*
+_3rd-level conjuration_
 
 **Material components:** A holy symbol.
 
@@ -35,4 +35,3 @@ When you cast this spell, you can designate any number of creatures you can see 
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

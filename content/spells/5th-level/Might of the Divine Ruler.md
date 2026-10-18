@@ -4,7 +4,7 @@ title: Might of the Divine Ruler
 level: 5
 school: Transmutation
 classes:
-- Paladin
+  - Paladin
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 minute
@@ -14,15 +14,12 @@ concentration: true
 source: Corpus Angelus
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*5th-level transmutation*
+_5th-level transmutation_
 
 Your body becomes silver and your size increases by one size category. For instance, if your size is Medium, you become Large. You have resistance to necrotic; bludgeoning, piercing and slashing damage from nonmagical attacks, advantage on saving throws against necromancy spells and being charmed and frightened. Additionally, your melee weapon attacks deal an extra 2d6 radiant damage on a hit.
-
-
 
 ---
 
@@ -35,4 +32,3 @@ Your body becomes silver and your size increases by one size category. For insta
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

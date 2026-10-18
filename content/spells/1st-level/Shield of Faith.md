@@ -3,8 +3,8 @@ title: Shield of Faith
 level: 1
 school: Abjuration
 classes:
-- Cleric
-- Paladin
+  - Cleric
+  - Paladin
 casting_time: 1 bonus action
 range: 60 feet
 duration: Up to 10 minutes
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*1st-level abjuration*
+_1st-level abjuration_
 
 **Material components:** A small parchment with a bit of holy text written on it.
 
@@ -31,4 +31,3 @@ A shimmering field appears and surrounds a creature of your choice within range,
 **Available to:** [[Cleric]], [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

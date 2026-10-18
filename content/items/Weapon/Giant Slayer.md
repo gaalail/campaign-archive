@@ -7,7 +7,7 @@ summary: Weapon (any axe or sword), rare
 source: SRD 5.1
 ---
 
-*Weapon (any axe or sword), rare*
+_Weapon (any axe or sword), rare_
 
 You gain a +1 bonus to attack and damage rolls made with this magic weapon.
 
@@ -22,4 +22,3 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

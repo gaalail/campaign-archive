@@ -4,9 +4,9 @@ title: Mindful Insight
 level: 0
 school: Enchantment
 classes:
-- Warlock
-- Wizard
-- Thanatomancer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Instantaneous
@@ -16,15 +16,12 @@ concentration: false
 source: Corpus Angelus
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Enchantment cantrip*
+_Enchantment cantrip_
 
 You reveal the strengths and weaknesses of a creature against mind-altering effects. Target a creature within range. The target must succeed on a Charisma saving throw, or you find out if the creature is immune to being charmed or frightened.
-
-
 
 ---
 
@@ -37,4 +34,3 @@ You reveal the strengths and weaknesses of a creature against mind-altering effe
 **Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

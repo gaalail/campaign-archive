@@ -3,8 +3,8 @@ title: Scorching Ray
 level: 2
 school: Evocation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Instantaneous
@@ -13,10 +13,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.
 
@@ -36,4 +36,3 @@ Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire dam
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

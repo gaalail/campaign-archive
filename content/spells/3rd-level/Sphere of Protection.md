@@ -3,7 +3,7 @@ title: Sphere of Protection
 level: 3
 school: Abjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*3rd-level abjuration*
+_3rd-level abjuration_
 
 **Material components:** a pinch of emerald dust worth at least 20 gp, which the spell consumes
 
@@ -35,4 +35,3 @@ HL: When you cast this spell using a spell slot of 4th level or higher, the sphe
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

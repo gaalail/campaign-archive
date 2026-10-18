@@ -3,36 +3,36 @@ title: Paladin
 hit_die: d10
 spellcasting_ability: CHA
 saving_throws:
-- WIS
-- CHA
+  - WIS
+  - CHA
 summary: d10 hit die; saving throws WIS, CHA; spellcasting with CHA
 source: SRD 5.1
 ---
 
 ## The Paladin table
 
-| Level | Proficiency Bonus | Features | Aura Range | 1st | 2nd | 3rd | 4th | 5th |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1st | +2 | Divine Sense, Lay on Hands | - | - | - | - | - | - |
-| 2nd | +2 | Fighting Style, Spellcasting: Paladin, Divine Smite | - | 2 | - | - | - | - |
-| 3rd | +2 | Divine Health, Sacred Oath, Oath Spells, Channel Divinity | - | 3 | - | - | - | - |
-| 4th | +2 | Ability Score Improvement | - | 3 | - | - | - | - |
-| 5th | +3 | Extra Attack | - | 4 | 2 | - | - | - |
-| 6th | +3 | Aura of Protection | 10 | 4 | 2 | - | - | - |
-| 7th | +3 | Sacred Oath feature | 10 | 4 | 3 | - | - | - |
-| 8th | +3 | Ability Score Improvement | 10 | 4 | 3 | - | - | - |
-| 9th | +4 | - | 10 | 4 | 3 | 2 | - | - |
-| 10th | +4 | Aura of Courage | 10 | 4 | 3 | 2 | - | - |
-| 11th | +4 | Improved Divine Smite | 10 | 4 | 3 | 3 | - | - |
-| 12th | +4 | Ability Score Improvement | 10 | 4 | 3 | 3 | - | - |
-| 13th | +5 | - | 10 | 4 | 3 | 3 | 1 | - |
-| 14th | +5 | Cleansing Touch | 10 | 4 | 3 | 3 | 1 | - |
-| 15th | +5 | Sacred Oath feature | 10 | 4 | 3 | 3 | 2 | - |
-| 16th | +5 | Ability Score Improvement | 10 | 4 | 3 | 3 | 2 | - |
-| 17th | +6 | - | 10 | 4 | 3 | 3 | 3 | 1 |
-| 18th | +6 | Aura improvements | 30 | 4 | 3 | 3 | 3 | 1 |
-| 19th | +6 | Ability Score Improvement | 30 | 4 | 3 | 3 | 3 | 2 |
-| 20th | +6 | Sacred Oath feature | 30 | 4 | 3 | 3 | 3 | 2 |
+| Level | Proficiency Bonus | Features                                                  | Aura Range | 1st | 2nd | 3rd | 4th | 5th |
+| ----- | ----------------- | --------------------------------------------------------- | ---------- | --- | --- | --- | --- | --- |
+| 1st   | +2                | Divine Sense, Lay on Hands                                | -          | -   | -   | -   | -   | -   |
+| 2nd   | +2                | Fighting Style, Spellcasting: Paladin, Divine Smite       | -          | 2   | -   | -   | -   | -   |
+| 3rd   | +2                | Divine Health, Sacred Oath, Oath Spells, Channel Divinity | -          | 3   | -   | -   | -   | -   |
+| 4th   | +2                | Ability Score Improvement                                 | -          | 3   | -   | -   | -   | -   |
+| 5th   | +3                | Extra Attack                                              | -          | 4   | 2   | -   | -   | -   |
+| 6th   | +3                | Aura of Protection                                        | 10         | 4   | 2   | -   | -   | -   |
+| 7th   | +3                | Sacred Oath feature                                       | 10         | 4   | 3   | -   | -   | -   |
+| 8th   | +3                | Ability Score Improvement                                 | 10         | 4   | 3   | -   | -   | -   |
+| 9th   | +4                | -                                                         | 10         | 4   | 3   | 2   | -   | -   |
+| 10th  | +4                | Aura of Courage                                           | 10         | 4   | 3   | 2   | -   | -   |
+| 11th  | +4                | Improved Divine Smite                                     | 10         | 4   | 3   | 3   | -   | -   |
+| 12th  | +4                | Ability Score Improvement                                 | 10         | 4   | 3   | 3   | -   | -   |
+| 13th  | +5                | -                                                         | 10         | 4   | 3   | 3   | 1   | -   |
+| 14th  | +5                | Cleansing Touch                                           | 10         | 4   | 3   | 3   | 1   | -   |
+| 15th  | +5                | Sacred Oath feature                                       | 10         | 4   | 3   | 3   | 2   | -   |
+| 16th  | +5                | Ability Score Improvement                                 | 10         | 4   | 3   | 3   | 2   | -   |
+| 17th  | +6                | -                                                         | 10         | 4   | 3   | 3   | 3   | 1   |
+| 18th  | +6                | Aura improvements                                         | 30         | 4   | 3   | 3   | 3   | 1   |
+| 19th  | +6                | Ability Score Improvement                                 | 30         | 4   | 3   | 3   | 3   | 2   |
+| 20th  | +6                | Sacred Oath feature                                       | 30         | 4   | 3   | 3   | 3   | 2   |
 
 ## Hit points
 
@@ -82,7 +82,6 @@ You start with the following equipment, in addition to the equipment granted by 
 
 > [!info]- Spellcasting Focus
 > You can use a holy symbol as a spellcasting focus for your paladin spells.
-
 
 ## Multiclassing
 
@@ -173,7 +172,6 @@ You start with the following equipment, in addition to the equipment granted by 
 
 > [!info]- Aura improvements (level 18)
 > At 18th level, the range of your auras increase to 30 feet.
-
 
 ## Subclasses
 

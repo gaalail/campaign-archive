@@ -3,9 +3,9 @@ title: Continual Flame
 level: 2
 school: Evocation
 classes:
-- Artificer
-- Cleric
-- Wizard
+  - Artificer
+  - Cleric
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Until dispelled
@@ -14,10 +14,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 **Material components:** Ruby dust worth 50 gp, which the spell consumes.
 
@@ -34,5 +34,3 @@ A flame, equivalent in brightness to a torch, springs forth from an object that 
 **Available to:** [[Cleric]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

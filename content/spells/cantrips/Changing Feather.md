@@ -3,8 +3,8 @@ title: Changing Feather
 level: 0
 school: Evocation
 classes:
-- Druid
-- Wizard
+  - Druid
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*Evocation cantrip*
+_Evocation cantrip_
 
 **Material components:** fire from a torch, a drop of water, a handful of dirt, or nothing
 
@@ -33,4 +33,3 @@ You can cast this spell using a material component and change the damage type of
 **Available to:** [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

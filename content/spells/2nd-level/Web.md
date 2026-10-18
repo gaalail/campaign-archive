@@ -3,9 +3,9 @@ title: Web
 level: 2
 school: Conjuration
 classes:
-- Artificer
-- Sorcerer
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 hour
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*2nd-level conjuration*
+_2nd-level conjuration_
 
 **Material components:** A bit of spiderweb.
 
@@ -40,5 +40,3 @@ The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 
 **Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

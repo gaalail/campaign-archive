@@ -3,8 +3,8 @@ title: Conjure Fey
 level: 6
 school: Conjuration
 classes:
-- Druid
-- Warlock
+  - Druid
+  - Warlock
 casting_time: 1 minute
 range: 90 feet
 duration: Up to 1 hour
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*6th-level conjuration*
+_6th-level conjuration_
 
 You summon a fey creature of challenge rating 6 or lower, or a fey spirit that takes the form of a beast of challenge rating 6 or lower. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.
 
@@ -38,4 +38,3 @@ The GM has the fey creature's statistics.
 **Available to:** [[Druid]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

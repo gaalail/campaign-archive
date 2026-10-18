@@ -7,7 +7,7 @@ summary: Ring, legendary (requires attunement)
 source: SRD 5.1
 ---
 
-*Ring, legendary (requires attunement)*
+_Ring, legendary (requires attunement)_
 
 This ring is linked to one of the four Elemental Planes. The GM chooses or randomly determines the linked plane.
 
@@ -15,7 +15,7 @@ While wearing this ring, you have advantage on attack rolls against elementals f
 
 The ring has 5 charges. It regains 1d4 + 1 expended charges daily at dawn. Spells cast from the ring have a save DC of 17.
 
-***Ring of Air Elemental Command.*** You can expend 2 of the ring's charges to cast dominate monster on an air elemental. In addition, when you fall, you descend 60 feet per round and take no damage from falling. You can also speak and understand Auran.
+_**Ring of Air Elemental Command.**_ You can expend 2 of the ring's charges to cast dominate monster on an air elemental. In addition, when you fall, you descend 60 feet per round and take no damage from falling. You can also speak and understand Auran.
 
 If you help slay an air elemental while attuned to the ring, you gain access to the following additional properties:
 
@@ -25,7 +25,7 @@ You have a flying speed equal to your walking speed and can hover.
 
 You can cast the following spells from the ring, expending the necessary number of charges: chain lightning (3 charges), gust of wind (2 charges), or wind wall (1 charge).
 
-***Ring of Earth Elemental Command.*** You can expend 2 of the ring's charges to cast dominate monster on an earth elemental. In addition, you can move in difficult terrain that is composed of rubble, rocks, or dirt as if it were normal terrain. You can also speak and understand Terran.
+_**Ring of Earth Elemental Command.**_ You can expend 2 of the ring's charges to cast dominate monster on an earth elemental. In addition, you can move in difficult terrain that is composed of rubble, rocks, or dirt as if it were normal terrain. You can also speak and understand Terran.
 
 If you help slay an earth elemental while attuned to the ring, you gain access to the following additional properties:
 
@@ -35,7 +35,7 @@ You can move through solid earth or rock as if those areas were difficult terrai
 
 You can cast the following spells from the ring, expending the necessary number of charges: stone shape (2 charges), stoneskin (3 charges), or wall of stone (3 charges).
 
-***Ring of Fire Elemental Command.*** You can expend 2 of the ring's charges to cast dominate monster on a fire elemental. In addition, you have resistance to fire damage. You can also speak and understand Ignan.
+_**Ring of Fire Elemental Command.**_ You can expend 2 of the ring's charges to cast dominate monster on a fire elemental. In addition, you have resistance to fire damage. You can also speak and understand Ignan.
 
 If you help slay a fire elemental while attuned to the ring, you gain access to the following additional properties:
 
@@ -43,7 +43,7 @@ You are immune to fire damage.
 
 You can cast the following spells from the ring, expending the necessary number of charges: burning hands (1 charge), fireball (2 charges), and wall of fire (3 charges).
 
-***Ring of Water Elemental Command.*** You can expend 2 of the ring's charges to cast dominate monster on a water elemental. In addition, you can stand on and walk across liquid surfaces as if they were solid ground. You can also speak and understand Aquan.
+_**Ring of Water Elemental Command.**_ You can expend 2 of the ring's charges to cast dominate monster on a water elemental. In addition, you can stand on and walk across liquid surfaces as if they were solid ground. You can also speak and understand Aquan.
 
 If you help slay a water elemental while attuned to the ring, you gain access to the following additional properties:
 
@@ -60,4 +60,3 @@ You can cast the following spells from the ring, expending the necessary number 
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

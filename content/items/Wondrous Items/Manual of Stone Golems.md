@@ -7,7 +7,7 @@ summary: Wondrous item, very rare
 source: SRD 5.1
 ---
 
-*Wondrous item, very rare*
+_Wondrous item, very rare_
 
 This tome contains information and incantations necessary to make a stone golem. To decipher and use the manual, you must be a spellcaster with at least two 5th-level spell slots. A creature that can't use a manual of golems and attempts to read it takes 6d6 psychic damage.
 
@@ -24,4 +24,3 @@ Once you finish creating the golem, the book is consumed in eldritch flames. The
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

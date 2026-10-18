@@ -3,9 +3,9 @@ title: Move Earth
 level: 6
 school: Transmutation
 classes:
-- Druid
-- Sorcerer
-- Wizard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 2 hours
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*6th-level transmutation*
+_6th-level transmutation_
 
 **Material components:** An iron blade and a small bag containing a mixture of soils--clay, loam, and sand.
 
@@ -40,4 +40,3 @@ Similarly, this spell doesn't directly affect plant growth. The moved earth carr
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

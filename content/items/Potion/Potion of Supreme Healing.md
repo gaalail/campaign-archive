@@ -8,15 +8,12 @@ summary: Potion, very rare
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Potion, very rare*
+_Potion, very rare_
 
 You regain 10d4 + 20 hit points when you drink this potion. The potion's red liquid glimmers when agitated.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ You regain 10d4 + 20 hit points when you drink this potion. The potion's red liq
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

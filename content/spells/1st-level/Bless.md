@@ -3,9 +3,9 @@ title: Bless
 level: 1
 school: Enchantment
 classes:
-- Cleric
-- Paladin
-- Thanatomancer
+  - Cleric
+  - Paladin
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*1st-level enchantment*
+_1st-level enchantment_
 
 **Material components:** A sprinkling of holy water.
 
@@ -35,4 +35,3 @@ You bless up to three creatures of your choice within range. Whenever a target m
 **Available to:** [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -9,7 +9,7 @@ source: Alternate Monk
 
 Focusing almost completely on the development of the spirit, disciples of this Tradition learn to manifest their inner selves into the world through Ki. With great dedication and practice these esoteric warriors learn to manifest their Astral Armor, a luminescent projection of Ki that covers their physical form.
 
-### Astral Warrior Techniques
+## Astral Warrior Techniques
 
 **3rd-level Way of the Astral Warrior feature**
 

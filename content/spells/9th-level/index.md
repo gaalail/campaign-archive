@@ -9,10 +9,10 @@ Learn at 17th character level
 ---
 
 ## Navigation
+
 ? [[spells/8th-level|8th-Level Spells]]
 
 [[spells|Back to All Spells]]
-
 
 ---
 

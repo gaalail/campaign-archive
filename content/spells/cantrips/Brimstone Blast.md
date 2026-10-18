@@ -3,10 +3,10 @@ title: Brimstone Blast
 level: 0
 school: Evocation
 classes:
-- Cleric
-- Sorcerer
-- Warlock
-- Wizard
+  - Cleric
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Self (30 foot line)
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: Homebrew
 ---
 
-*Evocation cantrip*
+_Evocation cantrip_
 
 Each creature in the line must make a Dexterity saving throw, taking 1d6 fire damage on a failed save.
 

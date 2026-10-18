@@ -3,10 +3,10 @@ title: Teleportation Circle
 level: 5
 school: Conjuration
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 minute
 range: 10 feet
 duration: 1 round
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level conjuration*
+_5th-level conjuration_
 
 **Material components:** Rare chalks and inks infused with precious gems with 50 gp, which the spell consumes.
 
@@ -37,4 +37,3 @@ You can create a permanent teleportation circle by casting this spell in the sam
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,13 +3,13 @@ title: Locate Creature
 level: 4
 school: Divination
 classes:
-- Bard
-- Cleric
-- Druid
-- Paladin
-- Ranger
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Druid
+  - Paladin
+  - Ranger
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Up to 1 hour
@@ -19,7 +19,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*4th-level divination*
+_4th-level divination_
 
 **Material components:** A bit of fur from a bloodhound.
 
@@ -40,4 +40,3 @@ This spell can't locate a creature if running water at least 10 feet wide blocks
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

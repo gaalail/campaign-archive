@@ -57,3 +57,10 @@ Put new files in the `content` folder, then commit and push with GitHub Desktop.
 ## Checking links locally
 
 Run `npm run validate:archive:report` to scan wikilinks, including embedded views and images. Unresolved links are errors; ambiguous matches and pages without explicit wikilinks are warnings. Generated `.base` views are not included in the incoming-link count. The report-only command is for reviewing existing content and does not block deployment. Once the current findings have been reviewed, `npm run validate:archive` runs the same checks and exits unsuccessfully if unresolved links remain.
+
+## Formatting and Markdown checks
+
+- `npm run format:content` formats Markdown and `.base` files under `content/`; `npm run format:check:content` checks them without changing files.
+- `npm run format:code` formats Quartz and script source; `npm run format:check:code` checks it.
+- `npm run lint:markdown` checks heading hierarchy and image alt text. Keep prose wrapping intact so Obsidian-style `[[wikilinks]]` are not split across lines.
+- `npm run check` runs the TypeScript check, repository-wide Prettier check, and Markdown lint. The Pages deployment runs it before building. Historical reports in `docs/archive/` are intentionally excluded from Prettier.

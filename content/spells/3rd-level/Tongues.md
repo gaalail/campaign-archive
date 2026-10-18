@@ -3,12 +3,12 @@ title: Tongues
 level: 3
 school: Divination
 classes:
-- Bard
-- Cleric
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -17,10 +17,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*3rd-level divination*
+_3rd-level divination_
 
 **Material components:** A small clay model of a ziggurat.
 
@@ -37,4 +37,3 @@ This spell grants the creature you touch the ability to understand any spoken la
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

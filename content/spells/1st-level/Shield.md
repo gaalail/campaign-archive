@@ -4,8 +4,8 @@ title: Shield
 level: 1
 school: Abjuration
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 reaction
 range: Self
 duration: 1 round
@@ -14,22 +14,19 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Mystic
-- Witchblade
+  - Arcane Knight
+  - Mystic
+  - Witchblade
 mystic_list_marker: "LL"
 witchblade_list_marker: "LL"
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*1st-level abjuration*
+_1st-level abjuration_
 
 An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.
-
-
 
 ---
 
@@ -42,4 +39,3 @@ An invisible barrier of magical force appears and protects you. Until the start 
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

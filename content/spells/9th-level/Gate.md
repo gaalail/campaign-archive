@@ -3,9 +3,9 @@ title: Gate
 level: 9
 school: Conjuration
 classes:
-- Cleric
-- Sorcerer
-- Wizard
+  - Cleric
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*9th-level conjuration*
+_9th-level conjuration_
 
 **Material components:** A diamond worth at least 5,000gp.
 
@@ -38,4 +38,3 @@ When you cast this spell, you can speak the name of a specific creature (a pseud
 **Available to:** [[Cleric]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

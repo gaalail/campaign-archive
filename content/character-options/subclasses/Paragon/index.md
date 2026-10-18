@@ -12,11 +12,11 @@ The **Paragon** is a Corpus Angelus class (not in standard D&D 5e). These are cu
 
 ## Available Orders
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Order of Reason]] | Logical order | Rational holy power |
-| [[Order of the Voice]] | Communication order | Speaking truth |
-| [[Order of Valor]] | Martial order | Holy combat |
+| Subclass               | Feature             | Theme               |
+| ---------------------- | ------------------- | ------------------- |
+| [[Order of Reason]]    | Logical order       | Rational holy power |
+| [[Order of the Voice]] | Communication order | Speaking truth      |
+| [[Order of Valor]]     | Martial order       | Holy combat         |
 
 ---
 

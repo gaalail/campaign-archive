@@ -11,7 +11,7 @@ prerequisite: 5th-level Monk
 
 You have trained in a specialized style of fighting. You gain a Fighting Style of your choice from the list below. As a Monk, you can only gain one Fighting Style through this Technique:
 
-### Archery
+## Archery
 
 **Prerequisite:** Dexterity of 13 or higher
 

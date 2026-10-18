@@ -3,9 +3,9 @@ title: Final Words
 level: 1
 school: Necromancy
 classes:
-- Bard
-- Cleric
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Thanatomancer
 casting_time: 1 action
 range: 10 feet
 duration: 1 minute
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*1st-level necromancy*
+_1st-level necromancy_
 
 **Material components:** a small piece of concave glass
 
@@ -34,4 +34,3 @@ The corpse must still have a mouth and can't be undead. The spell fails if the c
 **Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -19,7 +19,6 @@ source: SRD 5.1
 > [!info]- Gnome Cunning
 > You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.
 
-
 ## Rock Gnome
 
 As a rock gnome, you have a natural inventiveness and hardiness beyond that of other gnomes.

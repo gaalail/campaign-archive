@@ -3,7 +3,7 @@ title: Celestial Chains
 level: 1
 school: Conjuration
 classes:
-- Paladin
+  - Paladin
 casting_time: 1 bonus action
 range: Self
 duration: Concentration, up to 1 minute
@@ -13,7 +13,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*1st-level conjuration*
+_1st-level conjuration_
 
 **Material components:** part of a steel chain and a vial of holy water
 
@@ -33,4 +33,3 @@ HL: When you cast this spell using a spell slot of 2nd level or higher, you can 
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

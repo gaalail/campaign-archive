@@ -3,13 +3,13 @@ title: Locate Object
 level: 2
 school: Divination
 classes:
-- Bard
-- Cleric
-- Druid
-- Paladin
-- Ranger
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Druid
+  - Paladin
+  - Ranger
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Up to 10 minutes
@@ -19,7 +19,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*2nd-level divination*
+_2nd-level divination_
 
 **Material components:** A forked twig.
 
@@ -40,4 +40,3 @@ This spell can't locate an object if any thickness of lead, even a thin sheet, b
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

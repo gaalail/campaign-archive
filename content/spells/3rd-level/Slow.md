@@ -3,8 +3,8 @@ title: Slow
 level: 3
 school: Transmutation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 1 minute
@@ -13,10 +13,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*3rd-level transmutation*
+_3rd-level transmutation_
 
 **Material components:** A drop of molasses.
 
@@ -39,4 +39,3 @@ A creature affected by this spell makes another wisdom saving throw at the end o
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

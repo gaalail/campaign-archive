@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 17
 prerequisite: Echo of the Divine
-summary: 'Avatar form only: choose two of the following spells: holy verdict: retribution (p.'
+summary: "Avatar form only: choose two of the following spells: holy verdict: retribution (p."
 source: Corpus Angelus
 ---
 

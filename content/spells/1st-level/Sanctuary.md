@@ -3,8 +3,8 @@ title: Sanctuary
 level: 1
 school: Abjuration
 classes:
-- Artificer
-- Cleric
+  - Artificer
+  - Cleric
 casting_time: 1 bonus action
 range: 30 feet
 duration: 1 minute
@@ -13,10 +13,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*1st-level abjuration*
+_1st-level abjuration_
 
 **Material components:** A small silver mirror.
 
@@ -35,5 +35,3 @@ If the warded creature makes an attack or casts a spell that affects an enemy cr
 **Available to:** [[Cleric]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

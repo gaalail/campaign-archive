@@ -3,10 +3,10 @@ title: Astral Projection
 level: 9
 school: Necromancy
 classes:
-- Cleric
-- Warlock
-- Wizard
-- Thanatomancer
+  - Cleric
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 hour
 range: 10 feet
 duration: Special
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*9th-level necromancy*
+_9th-level necromancy_
 
 **Material components:** For each creature you affect with this spell, you must provide one jacinth worth at least 1,000gp and one ornately carved bar of silver worth at least 100gp, all of which the spell consumes.
 
@@ -43,4 +43,3 @@ If you are returned to your body prematurely, your companions remain in their as
 **Available to:** [[Cleric]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

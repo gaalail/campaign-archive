@@ -9,12 +9,12 @@ Learn at 1st character level
 ---
 
 ## Navigation
+
 ? [[spells/cantrips|Cantrips]]
 
 [[spells|Back to All Spells]]
 
 [[spells/2nd-level|2nd-Level Spells]] ?
-
 
 ---
 

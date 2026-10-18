@@ -26,6 +26,7 @@ This is a **D&D 5e wiki** for player-facing campaign information. It includes:
 **[[character-builder|Read the character building guide]]** for a step-by-step walkthrough.
 
 **Quick summary:**
+
 1. Pick a [[character-options/races|race]]
 2. Pick a [[character-options/classes|class]]
 3. (Optional) Pick a [[character-options/subclasses|subclass]]
@@ -37,6 +38,7 @@ This is a **D&D 5e wiki** for player-facing campaign information. It includes:
 ### 2. Playing in a Campaign (Ongoing)
 
 **Click your campaign name:**
+
 - **[[campaigns/ra-golvek|Ra Gol'vek]]**
 - **[[Vyrun]]**
 - **[[Curse of Strahd]]**
@@ -44,6 +46,7 @@ This is a **D&D 5e wiki** for player-facing campaign information. It includes:
 Or visit the [[Campaigns|campaign directory]] to choose a campaign.
 
 Each campaign has:
+
 - **Sessions:** What happened and when
 - **NPCs:** Characters you interact with
 - **Locations:** Places you've visited
@@ -54,6 +57,7 @@ Each campaign has:
 ### 3. Referencing Rules During Play
 
 **Need something fast?**
+
 - **Spell?** → [[Spells]]
 - **Monster stats?** → [[Monsters]]
 - **Item effects?** → [[Items]]
@@ -64,15 +68,19 @@ Each campaign has:
 ## Navigation Tips
 
 ### Search (Top Left)
+
 Type to search for anything: spells, items, NPCs, rules.
 
 ### Explorer (Left Sidebar)
+
 Browse the file structure. Useful for discovering categories.
 
 ### Links
+
 Click `[[like this]]` to jump to related content. Many pages link to each other, so you can explore from any starting point.
 
 ### Campaign Pages
+
 Each campaign has **tabs** (Sessions, Characters, Locations, All entries). Use tabs to filter what you're looking for.
 
 ---
@@ -94,16 +102,19 @@ Each campaign has **tabs** (Sessions, Characters, Locations, All entries). Use t
 ## For Returning Players
 
 **Before session:**
+
 - Check your campaign page for session notes
 - Review NPCs you'll encounter
 - Brush up on spells/items you'll use
 
 **During session:**
+
 - Look up spell effects and ranges
 - Check monster stats
 - Reference house rules
 
 **After session:**
+
 - Ask your DM to add session notes
 - Update your character if it changed
 
@@ -112,16 +123,19 @@ Each campaign has **tabs** (Sessions, Characters, Locations, All entries). Use t
 ## For Dungeon Masters
 
 **Setting up a campaign:**
+
 1. Go to your campaign page
 2. Add an overview (what's this campaign about?)
 3. Use Pages CMS to add sessions, NPCs, locations
 
 **During prep:**
+
 - Add session summaries before play
 - Link NPCs to sessions
 - Track campaign-specific loot
 
 **House rules:**
+
 - Add to [[Rules]] section
 - Link from relevant classes/spells
 - Share with players before game
@@ -131,6 +145,7 @@ Each campaign has **tabs** (Sessions, Characters, Locations, All entries). Use t
 ## How Content Is Organized
 
 ### SRD vs Custom
+
 - **SRD 5.1** = Official D&D material (from System Reference Document)
 - **Homebrew** = Custom content for your table
 - **Corpus Angelus** = External third-party material
@@ -138,13 +153,16 @@ Each campaign has **tabs** (Sessions, Characters, Locations, All entries). Use t
 Look for the **Source** badge on each page to see what's official vs custom.
 
 ### Complete vs Incomplete
+
 - **Complete** = Full information, ready to use
 - **Incomplete** = Stub entry, being filled in
 
 Incomplete entries won't show up in new-player search. Ask your DM for details.
 
 ### Campaign-Specific Content
+
 Each campaign can have:
+
 - Custom house rules
 - Session-specific NPCs
 - Custom items or monsters
@@ -155,18 +173,23 @@ Each campaign can have:
 ## Getting Help
 
 ### "I don't know where to start"
+
 → [[character-builder|Read the character building guide]]
 
 ### "What's in this campaign?"
+
 → Click your campaign name and read the overview
 
 ### "Where do I find [something]?"
+
 → Use the search bar (top left)
 
 ### "What does [rule] mean?"
+
 → Check [[Rules]] or ask your DM
 
 ### "I found an error or missing info"
+
 → Tell your DM, or ask them to update the page
 
 ---

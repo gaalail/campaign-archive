@@ -13,7 +13,7 @@ Restriction: Natural Weapons
 
 Only Monks with Natural Weapons from their player race, such as Lizardfolk, Tortles, Tabaxi, or Minotaurs can adopt this Monastic Tradition. Your DM may lift this restriction.
 
-### Ferocity Techniques
+## Ferocity Techniques
 
 **3rd-level Way of Ferocity feature**
 

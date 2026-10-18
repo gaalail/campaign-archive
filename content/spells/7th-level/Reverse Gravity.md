@@ -3,9 +3,9 @@ title: Reverse Gravity
 level: 7
 school: Transmutation
 classes:
-- Druid
-- Sorcerer
-- Wizard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 100 feet
 duration: Up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*7th-level transmutation*
+_7th-level transmutation_
 
 **Material components:** A lodestone and iron filings.
 
@@ -36,4 +36,3 @@ At the end of the duration, affected objects and creatures fall back down.
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,9 +3,9 @@ title: Mirage Arcane
 level: 7
 school: Illusion
 classes:
-- Bard
-- Druid
-- Wizard
+  - Bard
+  - Druid
+  - Wizard
 casting_time: 10 minutes
 range: Sight
 duration: 10 days
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*7th-level illusion*
+_7th-level illusion_
 
 You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. The terrain's general shape remains the same, however. Open fields or a road could be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road.
 
@@ -36,4 +36,3 @@ Creatures with truesight can see through the illusion to the terrain's true form
 **Available to:** [[Bard]], [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

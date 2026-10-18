@@ -45,4 +45,3 @@ This archive currently has [[Angelic]] as a template. Skip templates if you pref
 - [[character-options/templates|Templates]] — Optional powers (you are here)
 
 ---
-

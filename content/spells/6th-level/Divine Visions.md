@@ -3,8 +3,8 @@ title: Divine Visions
 level: 6
 school: Divination
 classes:
-- Cleric
-- Thanatomancer
+  - Cleric
+  - Thanatomancer
 casting_time: 1 hour
 range: Self
 duration: 1 hour
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*6th-level divination (ritual)*
+_6th-level divination (ritual)_
 
 **Material components:** a piece of the target creature such as a lock of hair and 500 gp worth of ruby, which the spell consumes
 
@@ -33,4 +33,3 @@ As you cast the spell, you experience each and every moment of the target's exis
 **Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

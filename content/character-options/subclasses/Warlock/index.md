@@ -10,11 +10,11 @@ title: Warlock Subclasses
 
 ## Available Patrons
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Archangel]] | Angelic patron | Holy pact |
-| [[Fiend]] | Infernal patron | Dark deal |
-| [[Nature]] | Nature patron | Wild pact |
+| Subclass         | Feature         | Theme        |
+| ---------------- | --------------- | ------------ |
+| [[Archangel]]    | Angelic patron  | Holy pact    |
+| [[Fiend]]        | Infernal patron | Dark deal    |
+| [[Nature]]       | Nature patron   | Wild pact    |
 | [[The Returned]] | Returned patron | Ghostly pact |
 
 ---

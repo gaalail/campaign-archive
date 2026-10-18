@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Pugilist"
 
 Most often coming from the school of hard knocks, Fighters known as Pugilists learned to fight in the dark underbelly of society. Where others use tactics and practiced techniques, Pugilists rely on brute force and dirty tricks. To them, every fight is a fight for their life and they find victory at any cost.
 
-### Pugilist Exploits
+## Pugilist Exploits
 
 **3rd-level Pugilist Archetype feature.** You learn certain Exploits at the Fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.
 

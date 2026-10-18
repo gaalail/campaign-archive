@@ -3,11 +3,11 @@ title: Water Breathing
 level: 3
 school: Transmutation
 classes:
-- Artificer
-- Druid
-- Ranger
-- Sorcerer
-- Wizard
+  - Artificer
+  - Druid
+  - Ranger
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 30 feet
 duration: 24 hours
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*3rd-level transmutation (ritual)*
+_3rd-level transmutation (ritual)_
 
 **Material components:** A short piece of reed or straw.
 
@@ -34,5 +34,3 @@ This spell gives a maximum of ten willing creatures within range and you can see
 **Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

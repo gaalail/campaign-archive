@@ -3,8 +3,8 @@ title: Look of Righteousness
 level: 0
 school: Illusion
 classes:
-- Bard
-- Cleric
+  - Bard
+  - Cleric
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*Illusion cantrip*
+_Illusion cantrip_
 
 **Material components:** a reflective surface
 
@@ -31,4 +31,3 @@ You touch a creature while it is looking at a reflective surface. Until the end 
 **Available to:** [[Bard]], [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

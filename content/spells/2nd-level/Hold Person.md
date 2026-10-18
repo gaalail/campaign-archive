@@ -3,13 +3,13 @@ title: Hold Person
 level: 2
 school: Enchantment
 classes:
-- Bard
-- Cleric
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -18,11 +18,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
-- Wu Jen
+  - Witchblade
+  - Wu Jen
 ---
 
-*2nd-level enchantment*
+_2nd-level enchantment_
 
 **Material components:** A small, straight piece of iron.
 
@@ -42,4 +42,3 @@ Choose a humanoid that you can see within range. The target must succeed on a wi
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

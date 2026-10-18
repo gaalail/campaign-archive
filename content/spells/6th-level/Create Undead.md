@@ -3,10 +3,10 @@ title: Create Undead
 level: 6
 school: Necromancy
 classes:
-- Cleric
-- Warlock
-- Wizard
-- Thanatomancer
+  - Cleric
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 minute
 range: 10 feet
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level necromancy*
+_6th-level necromancy_
 
 **Material components:** One clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse.
 
@@ -40,4 +40,3 @@ The creature is under your control for 24 hours, after which it stops obeying an
 **Available to:** [[Cleric]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,8 +3,8 @@ title: Cloudkill
 level: 5
 school: Conjuration
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 10 minutes
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level conjuration*
+_5th-level conjuration_
 
 You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.
 
@@ -36,4 +36,3 @@ The fog moves 10 feet away from you at the start of each of your turns, rolling 
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

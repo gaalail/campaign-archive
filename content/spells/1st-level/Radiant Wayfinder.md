@@ -3,8 +3,8 @@ title: Radiant Wayfinder
 level: 1
 school: Conjuration
 classes:
-- Bard
-- Wizard
+  - Bard
+  - Wizard
 casting_time: 1 minute
 range: Self
 duration: 1 hour
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*1st-level conjuration*
+_1st-level conjuration_
 
 **Material components:** a handful of pebbles and a candle
 
@@ -34,4 +34,3 @@ HL: When you cast this spell using a spell slot of 2nd level or higher, the dura
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

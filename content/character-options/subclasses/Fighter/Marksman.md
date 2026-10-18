@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Marksman"
 
 While all Fighters learn to draw a bow or hurl a javelin, those known Marksmen are masters of ranged combat. The deadly skills of a Marksman are often backed up by their signature swagger and unshakable confidence. When combined, there are few challenges that a true Marksman cannot overcome.
 
-### Marksman Exploits
+## Marksman Exploits
 
 **3rd-level Marksman Archetype feature.** You learn certain Exploits at the Fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.
 

@@ -14,7 +14,6 @@ They safeguard their noble intentions, show grace to the innocent, and blow evil
 > [!info]- Bonus Cantrip (level 2)
 > When you choose this circle at 2nd level, you learn one additional evocation cantrip of your choice.
 
-
 > [!info]- Flames Within (level 2)
 > Starting at 2nd level, you can use your action to surround yourself with a cloak of flame that is harmless to your allies. When a hostile creature enters a 5-foot radius centered on you or ends its turn within, it is affected by the flames that surround you. Creatures in the area must succeed on a Dexterity saving throw against your spell save DC or take 1d4 fire damage.
 >
@@ -24,40 +23,36 @@ They safeguard their noble intentions, show grace to the innocent, and blow evil
 >
 > The bonus fire damage increases to 1d6 at 6th level, 2d4 at 10th level, and 2d6 at 14th level.
 
-
 > [!info]- Circle Spells (level 2)
 > Your spiritual connection with phoenixes makes you skilled in the magic of fire and rebirth. At 1st, 3rd, 5th, 7th, and 9th level you gain access to spells associated with these sacred creatures, as shown in the Circle of Phoenix Spells table.
 >
 > Once you gain access to the spells of the circle of phoenix, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you.
 
-
 ## Circle of Phoenix spells
 
-| Druid level | Spells |
-| --- | --- |
-| 1st | [[Burning Hands]], [[Cure Wounds]] |
-| 3rd | [[Flaming Sphere]], [[Scorching Ray]] |
-| 5th | [[Fireball]], [[Revivify]] |
-| 7th | [[Fire Shield]], [[Radiant Storm]] |
-| 9th | [[Greater Restoration]], [[Reincarnate]] |
+| Druid level | Spells                                   |
+| ----------- | ---------------------------------------- |
+| 1st         | [[Burning Hands]], [[Cure Wounds]]       |
+| 3rd         | [[Flaming Sphere]], [[Scorching Ray]]    |
+| 5th         | [[Fireball]], [[Revivify]]               |
+| 7th         | [[Fire Shield]], [[Radiant Storm]]       |
+| 9th         | [[Greater Restoration]], [[Reincarnate]] |
 
 > [!info]- Regeneration of the Phoenix (level 6)
 > Starting at 6th level, you internalize the regenerative properties of the phoenix. You regain 1 hit point at the start of each of your turns, provided that you have at least 1 hit point. The amount of hit points regained in this way increases to 2 at 10th level.
 
-
 > [!info]- Wild Shape: Lesser Phoenix (level 10)
 > Starting at 10th level, you can use your Wild Shape feature to magically assume the shape of a lesser phoenix.
 
-
 > [!info]- Lesser Phoenix
-> *Large monstrosity, neutral good*
+> _Large monstrosity, neutral good_
 >
 > **Armor Class** 15 (natural armor)  
 > **Hit Points** 27 (5d8 + 5)  
 > **Speed** 10 ft., fly 40 ft.
 >
-> | STR | DEX | CON | INT | WIS | CHA |
-> | --- | --- | --- | --- | --- | --- |
+> | STR     | DEX     | CON     | INT     | WIS     | CHA     |
+> | ------- | ------- | ------- | ------- | ------- | ------- |
 > | 16 (+3) | 18 (+4) | 12 (+1) | 10 (+0) | 16 (+3) | 11 (+0) |
 >
 > **Damage Immunities** fire  
@@ -66,16 +61,15 @@ They safeguard their noble intentions, show grace to the innocent, and blow evil
 > **Languages** -  
 > **Challenge** 2 (450 XP)
 >
-> ***Flaming Fortitude.*** If damage reduces the lesser phoenix to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken. On a success, the phoenix drops to 1 hit point instead.
+> _**Flaming Fortitude.**_ If damage reduces the lesser phoenix to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken. On a success, the phoenix drops to 1 hit point instead.
 >
 > **Actions**
 >
-> ***Multiattack.*** The lesser phoenix makes two melee weapon attacks; one with its beak and one with its talons.
+> _**Multiattack.**_ The lesser phoenix makes two melee weapon attacks; one with its beak and one with its talons.
 >
-> ***Beak.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 6 (1d6 + 3) piercing damage.
+> _**Beak.**_ _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 6 (1d6 + 3) piercing damage.
 >
-> ***Talons.*** *Melee Weapon Attack:* +5 to hit, reach 5 ft., one target. *Hit:* 7 (1d8 + 3) slashing damage plus 3 (1d6) fire damage.
-
+> _**Talons.**_ _Melee Weapon Attack:_ +5 to hit, reach 5 ft., one target. _Hit:_ 7 (1d8 + 3) slashing damage plus 3 (1d6) fire damage.
 
 > [!info]- Resurrection of the Phoenix (level 14)
 > Starting at 14th level, you have resistance to fire damage.
@@ -86,5 +80,4 @@ They safeguard their noble intentions, show grace to the innocent, and blow evil
 >
 > Once you use this feature, you must finish a long rest to use it again.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

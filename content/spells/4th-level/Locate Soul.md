@@ -3,9 +3,9 @@ title: Locate Soul
 level: 4
 school: Necromancy
 classes:
-- Cleric
-- Warlock
-- Thanatomancer
+  - Cleric
+  - Warlock
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 hour
@@ -15,7 +15,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*4th-level necromancy*
+_4th-level necromancy_
 
 **Material components:** a piece of an item belonging to the target
 
@@ -36,4 +36,3 @@ The spell fails if the creature is not dead.
 **Available to:** [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,9 +3,9 @@ title: Mass Cure Wounds
 level: 5
 school: Conjuration
 classes:
-- Bard
-- Cleric
-- Druid
+  - Bard
+  - Cleric
+  - Druid
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level conjuration*
+_5th-level conjuration_
 
 A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 
@@ -33,4 +33,3 @@ A wave of healing energy washes out from a point of your choice within range. Ch
 **Available to:** [[Bard]], [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

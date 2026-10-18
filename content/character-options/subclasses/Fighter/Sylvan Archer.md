@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Sylvan Archer"
 
 Originally hailing from the elder forests of the world, Fighters who train to become Sylvan Archers learn to enchant arrows with elder elvish magic. Traditionally, these warriors served as guardians for places of great primal power, but they have been known to train worthy outsiders in this ancient magic.
 
-### Enchanted Shots
+## Enchanted Shots
 
 **3rd-level Sylvan Archer Archetype feature.** You have learned to enchant arrows and other ammunition with elder Sylvan magic. You gain the benefits listed below:
 

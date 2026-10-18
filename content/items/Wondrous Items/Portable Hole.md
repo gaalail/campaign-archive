@@ -7,7 +7,7 @@ summary: Wondrous item, rare
 source: SRD 5.1
 ---
 
-*Wondrous item, rare*
+_Wondrous item, rare_
 
 This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.
 
@@ -28,4 +28,3 @@ Placing a portable hole inside an extradimensional space created by a bag of hol
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

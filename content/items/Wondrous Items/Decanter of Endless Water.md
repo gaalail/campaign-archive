@@ -7,7 +7,7 @@ summary: Wondrous item, uncommon
 source: SRD 5.1
 ---
 
-*Wondrous item, uncommon*
+_Wondrous item, uncommon_
 
 This stoppered flask sloshes when shaken, as if it contains water. The decanter weighs 2 pounds.
 
@@ -28,4 +28,3 @@ You can use an action to remove the stopper and speak one of three command words
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

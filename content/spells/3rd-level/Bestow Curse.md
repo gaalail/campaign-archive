@@ -3,10 +3,10 @@ title: Bestow Curse
 level: 3
 school: Necromancy
 classes:
-- Bard
-- Cleric
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*3rd-level necromancy*
+_3rd-level necromancy_
 
 You touch a creature, and that creature must succeed on a wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:
 
@@ -44,4 +44,3 @@ A remove curse spell ends this effect. At the GM's option, you may choose an alt
 **Available to:** [[Bard]], [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

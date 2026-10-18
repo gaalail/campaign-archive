@@ -1,7 +1,7 @@
 ---
 title: Oathbound
 prerequisite: You must have an oath
-summary: 'Prerequisite: You must have an oath'
+summary: "Prerequisite: You must have an oath"
 source: Corpus Angelus
 ---
 
@@ -21,4 +21,4 @@ GMs may choose to give this feat to a character when it takes a serious oath, ev
 
 Keep in mind, you can only receive blessing from the divine once in this way. So, for instance, you do not gain the bonuses again if you take a second oath and then fulfill it.
 
-*From Corpus Angelus.*
+_From Corpus Angelus._

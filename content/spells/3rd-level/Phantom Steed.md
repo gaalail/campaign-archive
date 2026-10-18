@@ -3,7 +3,7 @@ title: Phantom Steed
 level: 3
 school: Illusion
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 minute
 range: 30 feet
 duration: 1 hour
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*3rd-level illusion (ritual)*
+_3rd-level illusion (ritual)_
 
 A Large quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed.
 
@@ -30,4 +30,3 @@ For the duration, you or a creature you choose can ride the steed. The creature 
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,10 +3,10 @@ title: Sunbeam
 level: 6
 school: Evocation
 classes:
-- Cleric
-- Druid
-- Sorcerer
-- Wizard
+  - Cleric
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*6th-level evocation*
+_6th-level evocation_
 
 **Material components:** A magnifying glass.
 
@@ -37,4 +37,3 @@ For the duration, a mote of brilliant radiance shines in your hand. It sheds bri
 **Available to:** [[Cleric]], [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

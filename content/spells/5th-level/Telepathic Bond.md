@@ -3,8 +3,8 @@ title: Telepathic Bond
 level: 5
 school: Divination
 classes:
-- Wizard
-- Thanatomancer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 1 hour
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level divination (ritual)*
+_5th-level divination (ritual)_
 
 **Material components:** Pieces of eggshell from two different kinds of creatures
 
@@ -33,4 +33,3 @@ Until the spell ends, the targets can communicate telepathically through the bon
 **Available to:** [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -4,10 +4,10 @@ title: Expeditious Retreat
 level: 1
 school: Transmutation
 classes:
-- Artificer
-- Sorcerer
-- Warlock
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 bonus action
 range: Self
 duration: Up to 10 minutes
@@ -16,18 +16,15 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
-
 
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*1st-level transmutation*
+_1st-level transmutation_
 
 This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.
-
-
 
 ---
 
@@ -40,5 +37,3 @@ This spell allows you to move at an incredible pace. When you cast this spell, a
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

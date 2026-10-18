@@ -8,15 +8,12 @@ summary: Wondrous item, uncommon (requires attunement)
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wondrous item, uncommon (requires attunement)*
+_Wondrous item, uncommon (requires attunement)_
 
 The medallion has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the detect thoughts spell (save DC 13) from it. The medallion regains 1d3 expended charges daily at dawn.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ The medallion has 3 charges. While wearing it, you can use an action and expend 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

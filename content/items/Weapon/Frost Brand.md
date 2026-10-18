@@ -7,7 +7,7 @@ summary: Weapon (any sword), very rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Weapon (any sword), very rare (requires attunement)*
+_Weapon (any sword), very rare (requires attunement)_
 
 When you hit with an attack using this magic sword, the target takes an extra 1d6 cold damage. In addition, while you hold the sword, you have resistance to fire damage.
 
@@ -24,4 +24,3 @@ When you draw this weapon, you can extinguish all nonmagical flames within 30 fe
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

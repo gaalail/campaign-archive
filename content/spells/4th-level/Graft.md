@@ -3,9 +3,9 @@ title: Graft
 level: 4
 school: Transmutation
 classes:
-- Druid
-- Warlock
-- Wizard
+  - Druid
+  - Warlock
+  - Wizard
 casting_time: 10 minutes
 range: Touch
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Homebrew
 ---
 
-*4th-level transmutation (ritual)*
+_4th-level transmutation (ritual)_
 
 **Material components:** a severed limb from a beast or monstrosity.
 

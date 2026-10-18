@@ -2,38 +2,39 @@
 title: Paragon
 hit_die: d10
 saving_throws:
-- WIS
-- CHA
+  - WIS
+  - CHA
 summary: d10 hit die; saving throws WIS, CHA; avatar form and sacred language
 source: Corpus Angelus
 ---
 
 …to wield weapons and be a close combatant, you may enjoy playing a paragon of the Order of Valor. If you want to talk to the masses and affect your enemies with your voice, Order of the Voice is for you. Or, if you want to be an expert about your enemies' weaknesses and powers, and be a scholar of religious knowledge, you would do well to choose the Order of Reason.
 Paragons can have various goals in life that may or may not be related to their orders. No matter which order you choose for your paragon character, your unwavering will and devotion form the foundation of your powers. Being a paragon is merely a tool for your faith, the eternal and the perpetual.
+
 ## The Paragon table
 
-| Level | Proficiency Bonus | Features | Avatar Features |
-| --- | --- | --- | --- |
-| 1st | +2 | Sacred Language (Carol), Avatar Form | 1 |
-| 2nd | +2 | - | 2 |
-| 3rd | +2 | Divine Order, Sacred Language (Invective) | 3 |
-| 4th | +2 | Ability Score Improvement | 3 |
-| 5th | +3 | - | 3 |
-| 6th | +3 | - | 4 |
-| 7th | +3 | Sacred Language (Confession) | 4 |
-| 8th | +3 | Ability Score Improvement | 5 |
-| 9th | +4 | - | 5 |
-| 10th | +4 | - | 6 |
-| 11th | +4 | Sacred Haven | 6 |
-| 12th | +4 | Ability Score Improvement | 6 |
-| 13th | +5 | Sacred Language (Prayer) | 6 |
-| 14th | +5 | - | 7 |
-| 15th | +5 | Sacred Haven Improvement | 7 |
-| 16th | +5 | Ability Score Improvement | 7 |
-| 17th | +6 | - | 8 |
-| 18th | +6 | Sacred Haven Improvement | 8 |
-| 19th | +6 | Ability Score Improvement | 8 |
-| 20th | +6 | The Prophet | 10 |
+| Level | Proficiency Bonus | Features                                  | Avatar Features |
+| ----- | ----------------- | ----------------------------------------- | --------------- |
+| 1st   | +2                | Sacred Language (Carol), Avatar Form      | 1               |
+| 2nd   | +2                | -                                         | 2               |
+| 3rd   | +2                | Divine Order, Sacred Language (Invective) | 3               |
+| 4th   | +2                | Ability Score Improvement                 | 3               |
+| 5th   | +3                | -                                         | 3               |
+| 6th   | +3                | -                                         | 4               |
+| 7th   | +3                | Sacred Language (Confession)              | 4               |
+| 8th   | +3                | Ability Score Improvement                 | 5               |
+| 9th   | +4                | -                                         | 5               |
+| 10th  | +4                | -                                         | 6               |
+| 11th  | +4                | Sacred Haven                              | 6               |
+| 12th  | +4                | Ability Score Improvement                 | 6               |
+| 13th  | +5                | Sacred Language (Prayer)                  | 6               |
+| 14th  | +5                | -                                         | 7               |
+| 15th  | +5                | Sacred Haven Improvement                  | 7               |
+| 16th  | +5                | Ability Score Improvement                 | 7               |
+| 17th  | +6                | -                                         | 8               |
+| 18th  | +6                | Sacred Haven Improvement                  | 8               |
+| 19th  | +6                | Ability Score Improvement                 | 8               |
+| 20th  | +6                | The Prophet                               | 10              |
 
 ## Quick build
 
@@ -147,7 +148,6 @@ You start with the following equipment, in addition to the equipment granted by 
 >
 > **Infinite.** If you are in the Order of Reason, your mind is blessed to the extent that you can comprehend the mysteries of the universe, all destined to unravel before you. Once a month, you can perform a 1-hour ritual and travel within the strings of fate in a hypnotic state. As you do so, you think about one of your allies and see prophetic visions of an event that is going to happen to them or around them within 1 month.
 
-
 ## Class options
 
 Avatar features are choices, not automatic features. You pick the number shown in the Avatar Features column of the table, if you meet the prerequisites. Members of each Order can also choose that Order's own avatar features, listed on its subclass page.
@@ -158,4 +158,4 @@ Avatar features are choices, not automatic features. You pick the number shown i
 
 ![[subclasses-of.base]]
 
-*From Corpus Angelus.*
+_From Corpus Angelus._

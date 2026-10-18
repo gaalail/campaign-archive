@@ -11,4 +11,4 @@ You are a warrior at heart; valor and bravery run through your veins. You gain t
 - You have advantage on your first attack roll at the start of each encounter.
 - Your speed increases by 10 feet when charging towards an enemy.
 
-*From Corpus Angelus.*
+_From Corpus Angelus._

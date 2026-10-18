@@ -4,9 +4,9 @@ title: Calm Mind
 level: 0
 school: Divination
 classes:
-- Cleric
-- Wizard
-- Thanatomancer
+  - Cleric
+  - Wizard
+  - Thanatomancer
 casting_time: 1 reaction, which you take when you are charmed or frightened
 range: Self
 duration: Instantaneous
@@ -16,15 +16,12 @@ concentration: false
 source: Corpus Angelus
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Divination cantrip*
+_Divination cantrip_
 
 You attempt to end one condition affecting you by instantly clearing your mind. While you are charmed or frightened, you can use your reaction to reroll the saving throw.
-
-
 
 ---
 
@@ -37,4 +34,3 @@ You attempt to end one condition affecting you by instantly clearing your mind. 
 **Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

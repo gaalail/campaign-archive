@@ -7,7 +7,7 @@ summary: Weapon (longsword), rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Weapon (longsword), rare (requires attunement)*
+_Weapon (longsword), rare (requires attunement)_
 
 This item appears to be a longsword hilt. While grasping the hilt, you can use a bonus action to cause a blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic longsword has the finesse property. If you are proficient with shortswords or longswords, you are proficient with the sun blade.
 
@@ -24,4 +24,3 @@ The sword's luminous blade emits bright light in a 15-foot radius and dim light 
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

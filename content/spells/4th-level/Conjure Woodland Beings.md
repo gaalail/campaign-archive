@@ -3,8 +3,8 @@ title: Conjure Woodland Beings
 level: 4
 school: Conjuration
 classes:
-- Druid
-- Ranger
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 hour
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*4th-level conjuration*
+_4th-level conjuration_
 
 **Material components:** One holly berry per creature summoned.
 
@@ -48,4 +48,3 @@ The GM has the creatures' statistics.
 **Available to:** [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

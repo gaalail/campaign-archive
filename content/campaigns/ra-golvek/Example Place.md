@@ -4,6 +4,7 @@ type: Place
 summary: Placeholder place. Delete or replace me.
 image: /campaign-archive/media/example.png
 ---
+
 Write the entry here. Link to other entries with double brackets, like [[Example Character]]. The page you link to shows a Backlinks entry pointing back here.
 
 > [!spoiler]- Click to reveal

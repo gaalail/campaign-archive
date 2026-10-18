@@ -3,9 +3,9 @@ title: Mirror Image
 level: 2
 school: Illusion
 classes:
-- Sorcerer
-- Warlock
-- Wizard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: 1 minute
@@ -14,11 +14,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
-- Witchblade
+  - Mystic
+  - Witchblade
 ---
 
-*2nd-level illusion*
+_2nd-level illusion_
 
 Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.
 
@@ -41,4 +41,3 @@ A creature is unaffected by this spell if it can't see, if it relies on senses o
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

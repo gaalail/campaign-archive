@@ -3,9 +3,9 @@ title: Sleep of the Sinful
 level: 3
 school: Divination
 classes:
-- Cleric
-- Paladin
-- Thanatomancer
+  - Cleric
+  - Paladin
+  - Thanatomancer
 casting_time: 1 hour
 range: Self
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*3rd-level divination*
+_3rd-level divination_
 
 **Material components:** a lock of hag hair
 
@@ -32,4 +32,3 @@ You enter a meditative state while casting the spell and have strange dreams abo
 **Available to:** [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Quartermaster"
 
 All successful adventurers know the value of teamwork, but none value it more than the Quartermaster. These supportive Fighters strive to help their allies reach their full potential in combat. Putting the needs of their companions before their own, Quartermasters keep their comrades in top condition.
 
-### Down to Earth
+## Down to Earth
 
 **3rd-level Quartermaster Archetype feature.** You gain proficiency in cook's utensils, land vehicles, and Animal Handling. Whenever you make an ability check that uses any of these proficiencies, you gain a bonus to your roll equal to your Exploit Die.
 

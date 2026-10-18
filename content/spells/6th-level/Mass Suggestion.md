@@ -3,11 +3,11 @@ title: Mass Suggestion
 level: 6
 school: Enchantment
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: 24 hours
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level enchantment*
+_6th-level enchantment_
 
 **Material components:** A snake's tongue and either a bit of honeycomb or a drop of sweet oil.
 
@@ -43,4 +43,3 @@ If you or any of your companions damage a creature affected by this spell, the s
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

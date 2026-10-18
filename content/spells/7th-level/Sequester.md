@@ -3,7 +3,7 @@ title: Sequester
 level: 7
 school: Transmutation
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Until dispelled
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*7th-level transmutation*
+_7th-level transmutation_
 
 **Material components:** A powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes.
 
@@ -34,4 +34,3 @@ You can set a condition for the spell to end early. The condition can be anythin
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

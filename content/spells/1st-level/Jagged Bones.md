@@ -3,9 +3,9 @@ title: Jagged Bones
 level: 1
 school: Transmutation
 classes:
-- Druid
-- Ranger
-- Warlock
+  - Druid
+  - Ranger
+  - Warlock
 casting_time: 1 bonus action
 range: Self
 duration: Up to 10 minutes
@@ -15,7 +15,7 @@ concentration: false
 source: Homebrew
 ---
 
-*1st-level transmutation*
+_1st-level transmutation_
 
 While this spell is active, you take 1d4 piercing damage at the end of each of your turns.
 

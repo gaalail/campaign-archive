@@ -3,7 +3,7 @@ title: Branding Smite
 level: 2
 school: Evocation
 classes:
-- Paladin
+  - Paladin
 casting_time: 1 bonus action
 range: Self
 duration: Up to 1 minute
@@ -12,11 +12,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 arcane_knight_list_marker: "LL"
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it's invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends.
 
@@ -34,4 +34,3 @@ The next time you hit a creature with a weapon attack before this spell ends, th
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

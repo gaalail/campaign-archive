@@ -3,11 +3,11 @@ title: Daylight
 level: 3
 school: Evocation
 classes:
-- Cleric
-- Druid
-- Paladin
-- Ranger
-- Sorcerer
+  - Cleric
+  - Druid
+  - Paladin
+  - Ranger
+  - Sorcerer
 casting_time: 1 action
 range: 60 feet
 duration: 1 hour
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*3rd-level evocation*
+_3rd-level evocation_
 
 A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.
 
@@ -36,4 +36,3 @@ If any of this spell's area overlaps with an area of darkness created by a spell
 **Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

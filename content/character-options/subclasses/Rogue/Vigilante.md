@@ -12,10 +12,8 @@ Most Vigilantes are investigators, bounty hunters, and local heroes. They work t
 > [!info]- Vigilant (level 3)
 > Starting at 3rd level, you are always aware of your surroundings. You gain a +5 bonus to your passive Perception and you gain proficiency in the Perception skill. Your proficiency bonus is doubled for any ability check you make that uses this proficiency.
 
-
 > [!info]- Criminal Investigator (level 3)
 > When you choose this archetype at 3rd level, you gain proficiency in the Insight or Investigation skills if you are not already proficient. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.
-
 
 > [!info]- Vigilant Moves (level 3)
 > Also, at 3rd level when you choose this archetype, you can make use of a variety of vigilant moves. You learn two moves at this level. You learn one additional move of your choice when you reach 10th, 14th, and 18th level. You can choose from the styles below:
@@ -36,14 +34,11 @@ Most Vigilantes are investigators, bounty hunters, and local heroes. They work t
 >
 > **Taking Initiative.** As an action, you can change a willing ally's initiative and make it equal to one less than your own.
 
-
 > [!info]- Denying the Unjust (level 9)
 > At 9th level, you learn how to deny the unrighteous advantage. If a creature that you are aware of is making an attack with advantage, you can make one weapon attack against that creature as a reaction before it attacks. If your attack hits, the target makes its attack without advantage.
 
-
 > [!info]- Cautious Steps (level 13)
 > Starting at 13th level, you can adjust your movement considering the actions of others. When a creature within 60 feet of you that you are aware of takes an action, you can immediately move up to 10 feet using your speed without using your reaction before the creature's action ends. This extra movement does not provoke opportunity attacks. You can use this feature once per turn.
-
 
 > [!info]- Verdict (level 17)
 > At 17th level, you can study a creature as a bonus action. When you do so, the Sneak Attack damage you deal to that creature increases by 2d6 for 1 minute.
@@ -56,5 +51,4 @@ Most Vigilantes are investigators, bounty hunters, and local heroes. They work t
 >
 > All creatures that are aware of your verdict have advantage on attack rolls against the accused creature.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

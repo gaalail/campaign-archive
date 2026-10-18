@@ -3,9 +3,9 @@ title: Levitate
 level: 2
 school: Transmutation
 classes:
-- Artificer
-- Sorcerer
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 10 minutes
@@ -14,11 +14,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
-- Wu Jen
+  - Mystic
+  - Wu Jen
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 **Material components:** Either a small leather loop or a piece of golden wire bent into a cup shape with a long shank on one end.
 
@@ -39,5 +39,3 @@ When the spell ends, the target floats gently to the ground if it is still aloft
 **Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

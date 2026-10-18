@@ -3,8 +3,8 @@ title: Grease
 level: 1
 school: Conjuration
 classes:
-- Artificer
-- Wizard
+  - Artificer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: 1 minute
@@ -13,10 +13,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 ---
 
-*1st-level conjuration*
+_1st-level conjuration_
 
 **Material components:** A bit of pork rind or butter.
 
@@ -35,5 +35,3 @@ When the grease appears, each creature standing in its area must succeed on a de
 **Available to:** [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

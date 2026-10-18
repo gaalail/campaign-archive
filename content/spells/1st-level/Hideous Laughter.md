@@ -3,9 +3,9 @@ title: Hideous Laughter
 level: 1
 school: Enchantment
 classes:
-- Bard
-- Wizard
-- Thanatomancer
+  - Bard
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -14,10 +14,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*1st-level enchantment*
+_1st-level enchantment_
 
 **Material components:** Tiny tarts and a feather that is waved in the air.
 
@@ -36,4 +36,3 @@ At the end of each of its turns, and each time it takes damage, the target can m
 **Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -7,7 +7,7 @@ summary: Weapon (maul), legendary
 source: SRD 5.1
 ---
 
-*Weapon (maul), legendary*
+_Weapon (maul), legendary_
 
 You gain a +1 bonus to attack and damage rolls made with this magic weapon.
 
@@ -24,4 +24,3 @@ The hammer also has 5 charges. While attuned to it, you can expend 1 charge and 
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -3,9 +3,9 @@ title: Haste
 level: 3
 school: Transmutation
 classes:
-- Artificer
-- Sorcerer
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*3rd-level transmutation*
+_3rd-level transmutation_
 
 **Material components:** A shaving of licorice root.
 
@@ -34,5 +34,3 @@ When the spell ends, the target can't move or take actions until after its next 
 **Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

@@ -3,9 +3,9 @@ title: Redeemer of Souls
 level: 9
 school: Enchantment
 classes:
-- Cleric
-- Warlock
-- Thanatomancer
+  - Cleric
+  - Warlock
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*9th-level enchantment*
+_9th-level enchantment_
 
 **Material components:** a fragment of your life energy
 
@@ -36,4 +36,3 @@ The vision lasts a year in the demiplane and an hour in the material plane. Afte
 **Available to:** [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

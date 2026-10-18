@@ -11,19 +11,18 @@ The druids of this circle generally seek sacred groves and abandoned temples to 
 
 ## Circle of Heaven spells
 
-| Druid level | Spells |
-| --- | --- |
-| 1st | [[Bane]], [[Bless]] |
-| 3rd | [[Prayer of Healing]], [[Warding Bond]] |
-| 5th | [[Bestow Curse]], [[Spirit Guardians]] |
-| 7th | [[Death Ward]], [[Guardian of Faith]] |
-| 9th | [[Commune]], [[Raise Dead]] |
+| Druid level | Spells                                  |
+| ----------- | --------------------------------------- |
+| 1st         | [[Bane]], [[Bless]]                     |
+| 3rd         | [[Prayer of Healing]], [[Warding Bond]] |
+| 5th         | [[Bestow Curse]], [[Spirit Guardians]]  |
+| 7th         | [[Death Ward]], [[Guardian of Faith]]   |
+| 9th         | [[Commune]], [[Raise Dead]]             |
 
 ## Features
 
 > [!info]- Tongue of Heaven (level 2)
 > At 2nd level, you learn to speak Celestial. You can also communicate with celestials within 30 feet of you telepathically. The range of telepathy increases to 60 feet at 6th, 90 feet at 10th, and 120 feet at 14th level.
-
 
 > [!info]- Celestial Spirit (level 2)
 > Starting at 2nd level, you can use your action to summon a celestial spirit from heaven. The spirit can be an angel, an ancestor, a good fey, or a celestial beast.
@@ -36,21 +35,17 @@ The druids of this circle generally seek sacred groves and abandoned temples to 
 >
 > Once you use this feature, you must finish a long rest to use it again.
 
-
 > [!info]- Shepherd of Heaven (level 6)
 > At 6th level, the damage dealt by the celestial spirit on a hit increases to 2d8 radiant damage.
 >
 > Additionally, when you conjure a creature by spells or other magical effects such as the conjure animals spell, you can choose to conjure a heavenly creature (p. 255).
-
 
 > [!info]- Heavenly Guardian of the Circle (level 10)
 > Starting at 10th level, the celestial spirit you summon can cast the protection from evil and good, sanctuary, and warding bond spells.
 >
 > When the celestial spirit casts one of these spells, it cannot cast the same spell until you summon the celestial spirit again.
 
-
 > [!info]- Celestial Shapeshifting (level 14)
 > At 14th level, you learn how to transform into a celestial by using your Wild Shape feature. The challenge rating of the celestial can be as high as your druid level divided by 5, rounded down.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

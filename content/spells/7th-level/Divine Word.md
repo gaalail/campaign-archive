@@ -3,7 +3,7 @@ title: Divine Word
 level: 7
 school: Evocation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 bonus action
 range: 30 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*7th-level evocation*
+_7th-level evocation_
 
 You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points:
 
@@ -38,4 +38,3 @@ Regardless of its current hit points, a celestial, an elemental, a fey, or a fie
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

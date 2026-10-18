@@ -3,7 +3,7 @@ title: Moonbeam
 level: 2
 school: Evocation
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: 120 feet
 duration: Up to 1 minute
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 **Material components:** Several seeds of any moonseed plant and a piece of opalescent feldspar.
 
@@ -39,4 +39,3 @@ On each of your turns after you cast this spell, you can use an action to move t
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

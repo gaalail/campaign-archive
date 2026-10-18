@@ -7,7 +7,7 @@ summary: Staff, very rare (requires attunement by a cleric, druid, or warlock)
 source: SRD 5.1
 ---
 
-*Staff, very rare (requires attunement by a cleric, druid, or warlock)*
+_Staff, very rare (requires attunement by a cleric, druid, or warlock)_
 
 You can use an action to speak this staff's command word and throw the staff on the ground within 10 feet of you. The staff becomes a giant constrictor snake under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the staff to its normal form in a space formerly occupied by the snake.
 
@@ -24,4 +24,3 @@ If the snake is reduced to 0 hit points, it dies and reverts to its staff form. 
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

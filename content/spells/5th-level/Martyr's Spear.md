@@ -3,10 +3,10 @@ title: Martyr's Spear
 level: 5
 school: Necromancy
 classes:
-- Cleric
-- Paladin
-- Ranger
-- Thanatomancer
+  - Cleric
+  - Paladin
+  - Ranger
+  - Thanatomancer
 casting_time: 1 action
 range: 120 feet
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*5th-level necromancy*
+_5th-level necromancy_
 
 **Material components:** a vial of blood from a martyr
 
@@ -37,4 +37,3 @@ If you fall unconscious as a result of using your hit points in this way, you au
 **Available to:** [[Cleric]], [[Paladin]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,7 +3,7 @@ title: Cutting Leaves
 level: 6
 school: Transmutation
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: Self (60-foot cone)
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*6th-level transmutation*
+_6th-level transmutation_
 
 **Material components:** a handful of leaves
 
@@ -31,4 +31,3 @@ HL: When you cast this spell using a spell slot of 7th level or higher, the dama
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

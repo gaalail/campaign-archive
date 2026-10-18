@@ -3,9 +3,9 @@ title: Aid
 level: 2
 school: Abjuration
 classes:
-- Artificer
-- Cleric
-- Paladin
+  - Artificer
+  - Cleric
+  - Paladin
 casting_time: 1 action
 range: 30 feet
 duration: 8 hours
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level abjuration*
+_2nd-level abjuration_
 
 **Material components:** A tiny strip of white cloth.
 
@@ -35,5 +35,3 @@ Your spell bolsters your allies with toughness and resolve. Choose up to three c
 **Available to:** [[Cleric]], [[Paladin]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

@@ -3,9 +3,9 @@ title: Fleshweave
 level: 4
 school: Conjuration
 classes:
-- Druid
-- Warlock
-- Wizard
+  - Druid
+  - Warlock
+  - Wizard
 casting_time: 1 hour
 range: Touch
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Homebrew
 ---
 
-*4th-level conjuration (ritual)*
+_4th-level conjuration (ritual)_
 
 **Material components:** 1 sc worth of the biological matter of a target creature, such as fingernail clippings, a lock of hair, a vial of blood, or a tooth, which the spell consumes.
 

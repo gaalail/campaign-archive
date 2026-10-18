@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Arcane Knight"
 
 Arcane Knights supplement their skill with the armaments of war with arcane spells. Compared a mage who studies solely magic, the Arcane Knight can only produce minor spells, but, combined with their deadly skill with the weapons of warfare, these minor spells become potent enhancements.
 
-### Enchanted Armaments
+## Enchanted Armaments
 
 **3rd-level Arcane Knight Archetype feature.** You magically bond yourself to your armaments of war. Over the course of 1-hour, which can be during a short or long rest, you can perform a ritual to bond with a weapon or shield that you are touching. You can have two such objects bound. If you perform this ritual again, you must release one object.
 

@@ -16,6 +16,12 @@
       "options": {
         "parser": "yaml"
       }
+    },
+    {
+      "files": "*.md",
+      "options": {
+        "proseWrap": "preserve"
+      }
     }
   ]
 }

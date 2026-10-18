@@ -11,31 +11,28 @@ The clerics of holy virtues travel the land to spread good and to defeat evildoe
 
 ## Holy Virtues Domain spells
 
-| Cleric level | Spells |
-| --- | --- |
-| 1st | [[Bless]], [[Heroism]] |
-| 3rd | [[Gentle Repose]], [[Warding Bond]] |
-| 5th | [[Dispel Magic]], [[Healing Ball]] |
-| 7th | [[Radiant Storm]], [[Personal Heaven]] |
-| 9th | [[Dispel Evil and Good]], [[Hallow]] |
+| Cleric level | Spells                                 |
+| ------------ | -------------------------------------- |
+| 1st          | [[Bless]], [[Heroism]]                 |
+| 3rd          | [[Gentle Repose]], [[Warding Bond]]    |
+| 5th          | [[Dispel Magic]], [[Healing Ball]]     |
+| 7th          | [[Radiant Storm]], [[Personal Heaven]] |
+| 9th          | [[Dispel Evil and Good]], [[Hallow]]   |
 
 ## Features
 
 > [!info]- Bonus Proficiencies (level 1)
 > At 1st level, you gain proficiency with martial weapons and in the Religion skill.
 
-
 > [!info]- Self-Sacrifice (level 1)
 > Starting at 1st level, you can cast the warding bond spell without expending a spell slot. In addition, starting at 5th level, you do not require material components while casting the warding bond spell.
 >
 > Once you cast this spell using this feature, you must finish a long rest to do so again.
 
-
 > [!info]- Channel Divinity: Blessing of the Honorable Virtuous (level 2)
 > Starting at 2nd level, you can use your Channel Divinity to bless your allies. You raise your holy symbol and bless up to 3 creatures of your choice within 30 feet of you.
 >
 > Blessed creatures gain the benefits of the bless spell, cast directly by your deity, which means the spell does not require concentration.
-
 
 > [!info]- Holy Might (level 6)
 > Starting at 6th level, when you deal radiant damage to a creature, it must succeed on a Wisdom saving throw or fall prone, being crushed under the might of your virtues.
@@ -44,7 +41,6 @@ The clerics of holy virtues travel the land to spread good and to defeat evildoe
 >
 > At 8th level, if a creature has advantage on attack rolls against you, you have advantage on attack rolls against it as well.
 
-
 > [!info]- Peace Bringer (level 17)
 > Starting at 17th level, you carry the most sacred of all virtues in your heart; peace. With it, you can even calm the fury of battle.
 >
@@ -52,5 +48,4 @@ The clerics of holy virtues travel the land to spread good and to defeat evildoe
 >
 > If a creature attacks another creature in the area, it makes the saving throw. On a failed save, the attack fails. On a successful save, the attack is successful but the creature has resistance against the damage dealt by the attack.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

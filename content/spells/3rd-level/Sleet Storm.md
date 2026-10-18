@@ -3,9 +3,9 @@ title: Sleet Storm
 level: 3
 school: Conjuration
 classes:
-- Druid
-- Sorcerer
-- Wizard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 150 feet
 duration: Up to 1 minute
@@ -14,10 +14,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*3rd-level conjuration*
+_3rd-level conjuration_
 
 **Material components:** A pinch of dust and a few drops of water.
 
@@ -38,4 +38,3 @@ If a creature is concentrating in the spell's area, the creature must make a suc
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

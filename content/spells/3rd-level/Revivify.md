@@ -3,9 +3,9 @@ title: Revivify
 level: 3
 school: Conjuration
 classes:
-- Artificer
-- Cleric
-- Paladin
+  - Artificer
+  - Cleric
+  - Paladin
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*3rd-level conjuration*
+_3rd-level conjuration_
 
 **Material components:** Diamonds worth 300gp, which the spell consumes.
 
@@ -32,5 +32,3 @@ You touch a creature that has died within the last minute. That creature returns
 **Available to:** [[Cleric]], [[Paladin]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

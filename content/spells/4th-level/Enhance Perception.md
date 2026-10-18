@@ -3,10 +3,10 @@ title: Enhance Perception
 level: 4
 school: Divination
 classes:
-- Ranger
-- Warlock
-- Wizard
-- Thanatomancer
+  - Ranger
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Concentration, up to 1 hour
@@ -16,7 +16,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*4th-level divination*
+_4th-level divination_
 
 **Material components:** a raven's eye and a pinch of silver dust
 
@@ -33,4 +33,3 @@ You touch a creature and enhance its ability to perceive its surroundings. The t
 **Available to:** [[Ranger]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

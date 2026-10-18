@@ -3,8 +3,8 @@ title: Delayed Blast Fireball
 level: 7
 school: Evocation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 150 feet
 duration: Up to 1 minute
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*7th-level evocation*
+_7th-level evocation_
 
 **Material components:** A tiny ball of bat guano and sulfur.
 
@@ -40,4 +40,3 @@ The fire damages objects in the area and ignites flammable objects that aren't b
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

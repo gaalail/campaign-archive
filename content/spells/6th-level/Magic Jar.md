@@ -3,8 +3,8 @@ title: Magic Jar
 level: 6
 school: Necromancy
 classes:
-- Wizard
-- Thanatomancer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 minute
 range: Self
 duration: Until dispelled
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level necromancy*
+_6th-level necromancy_
 
 **Material components:** A gem, crystal, reliquary, or some other ornamental container worth at least 500 gp.
 
@@ -43,4 +43,3 @@ When the spell ends, the container is destroyed.
 **Available to:** [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -5,19 +5,19 @@ summary: Divine Domain for the Cleric
 source: SRD 5.1
 ---
 
-*Divine Domain (Cleric subclass)*
+_Divine Domain (Cleric subclass)_
 
 The Life domain focuses on the vibrant positive energy--one of the fundamental forces of the universe--that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community.
 
 ## Bonus spells
 
-| Level | Spells |
-| --- | --- |
-| 1st | Bless, Cure Wounds |
-| 3rd | Lesser Restoration, Spiritual Weapon |
-| 5th | Beacon of Hope, Revivify |
-| 7th | Death Ward |
-| 9th | Mass Cure Wounds, Raise Dead |
+| Level | Spells                               |
+| ----- | ------------------------------------ |
+| 1st   | Bless, Cure Wounds                   |
+| 3rd   | Lesser Restoration, Spiritual Weapon |
+| 5th   | Beacon of Hope, Revivify             |
+| 7th   | Death Ward                           |
+| 9th   | Mass Cure Wounds, Raise Dead         |
 
 ## Features
 

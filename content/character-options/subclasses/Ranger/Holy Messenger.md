@@ -12,16 +12,15 @@ Holy Messengers are the chosen couriers of divine forces. They carry their divin
 > [!info]- Holy Messenger Magic (level 3)
 > Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Holy Messenger Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.
 
-
 ## Holy Messenger spells
 
-| Ranger level | Spells |
-| --- | --- |
-| 3rd | [[Radiant Wayfinder]] |
-| 5th | [[Prayer of Healing]] |
-| 9th | [[Beacon of Hope]] |
-| 13th | [[Guardian of Faith]] |
-| 17th | [[Blood of a Saint]] |
+| Ranger level | Spells                |
+| ------------ | --------------------- |
+| 3rd          | [[Radiant Wayfinder]] |
+| 5th          | [[Prayer of Healing]] |
+| 9th          | [[Beacon of Hope]]    |
+| 13th         | [[Guardian of Faith]] |
+| 17th         | [[Blood of a Saint]]  |
 
 > [!info]- Armor of the Messenger (level 3)
 > At 3rd level, divine forces bless you with a spectral-looking, shining armor to help you in your journeys. As an action, you can summon the Armor of the Messenger onto yourself or dismiss it. You can also summon this armor on top of another armor since the Armor of the Messenger doesn't provide AC. The armor sheds bright light in a 5-foot radius and dim light for an additional 5 feet. You can work with your GM to determine the appearance of your armor. When you summon the Armor of the Messenger, you gain one of the following benefits of your choice;
@@ -34,18 +33,15 @@ Holy Messengers are the chosen couriers of divine forces. They carry their divin
 >
 > Once you use this feature, you can't use it again until you finish a long rest. When you reach 10th level in this class, you can use this feature twice.
 
-
 > [!info]- Messenger's Fury (level 7)
 > At 7th level, your attacks clear the way against heretics. When you hit a creature with a weapon attack, you can choose to deal radiant damage instead of the damage normally dealt by the attack. If you choose to use this feature against your favored enemy, the target takes an extra 1d6 radiant damage.
 >
 > You can use this feature a number of times equal to your proficiency bonus. You regain any expended uses when you finish a long rest.
 
-
 > [!info]- Unknown Gospel (level 11)
 > At 11th level, as you carry the will and the words of the divine, you memorize some of them. As an action, you can shout out a single word granted to you by your deity that isn't in any known language. When you do so, each evil-aligned creature that can hear you within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature takes 3d6 psychic damage and is frightened of you for 1 minute. On a successful save, the damage is halved and the creature isn't frightened.
 >
 > Once you use this feature, you can't use it again until you finish a short or long rest.
-
 
 > [!info]- The Sacred Envoy (level 15)
 > At 15th level, your abilities as a messenger are heard across the heavens and the divine reward your prowess accordingly:
@@ -58,5 +54,4 @@ Holy Messengers are the chosen couriers of divine forces. They carry their divin
 >
 > - Once per week, you can cast the plane shift and teleport spells, requiring no material components.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

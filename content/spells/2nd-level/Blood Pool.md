@@ -3,11 +3,11 @@ title: Blood Pool
 level: 2
 school: Conjuration
 classes:
-- Druid
-- Paladin
-- Ranger
-- Warlock
-- Wizard
+  - Druid
+  - Paladin
+  - Ranger
+  - Warlock
+  - Wizard
 casting_time: 10 minutes
 range: Touch
 duration: Up to 8 hours
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level conjuration (ritual)*
+_2nd-level conjuration (ritual)_
 
 Touch a willing creature, which can be yourself. The first time that creature is reduced to fewer than one half its maximum hit points during the duration, its blood magically increases in volume and force, spraying about and creating a pool in a 15 foot radius around it. This pool is difficult terrain for the next 10 minutes, whereupon the spell ends.
 

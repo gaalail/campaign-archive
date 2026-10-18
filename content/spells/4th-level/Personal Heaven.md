@@ -3,8 +3,8 @@ title: Personal Heaven
 level: 4
 school: Illusion
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 hour
 range: Touch
 duration: 1 day
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*4th-level illusion (ritual)*
+_4th-level illusion (ritual)_
 
 You touch a point and transform a 100-foot radius centered on that point into a safe haven for yourself and your allies. The terrain looks and feels like another type of terrain; for example, you can transform a scorched area into an area full of springs, glades, and grass.
 
@@ -31,4 +31,3 @@ The time required to finish a short and long rest is halved within the area. Als
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

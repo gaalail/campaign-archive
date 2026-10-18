@@ -3,8 +3,8 @@ title: Augury
 level: 2
 school: Divination
 classes:
-- Cleric
-- Thanatomancer
+  - Cleric
+  - Thanatomancer
 casting_time: 1 minute
 range: Self
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level divination (ritual)*
+_2nd-level divination (ritual)_
 
 **Material components:** Specially marked sticks, bones, or similar tokens worth at least 25gp.
 
@@ -43,4 +43,3 @@ If you cast the spell two or more times before completing your next long rest, t
 **Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

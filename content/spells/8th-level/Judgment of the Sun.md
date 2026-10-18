@@ -3,8 +3,8 @@ title: Judgment of the Sun
 level: 8
 school: Transmutation
 classes:
-- Druid
-- Sorcerer
+  - Druid
+  - Sorcerer
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*8th-level transmutation*
+_8th-level transmutation_
 
 You call upon a fragment of your deity's power to turn rays of sunlight into flaming spears to impale your enemies with, and encourage your allies to fight in the name of all that is good and holy.
 
@@ -33,4 +33,3 @@ Your allies, on the other hand, are encouraged by the sunlight that hits them in
 **Available to:** [[Druid]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

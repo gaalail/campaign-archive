@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Paragon
 min_level: 17
 prerequisite: None
-summary: 'Avatar form only: miniature galaxies with countless colorful stars inside hover over your shoulders.'
+summary: "Avatar form only: miniature galaxies with countless colorful stars inside hover over your shoulders."
 source: Corpus Angelus
 ---
 

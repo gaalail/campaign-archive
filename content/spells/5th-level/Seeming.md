@@ -3,9 +3,9 @@ title: Seeming
 level: 5
 school: Illusion
 classes:
-- Bard
-- Sorcerer
-- Wizard
+  - Bard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 30 feet
 duration: 8 hours
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level illusion*
+_5th-level illusion_
 
 This spell allows you to change the appearance of any number of creatures that you can see within range. You give each target you choose a new, illusory appearance. An unwilling target can make a charisma saving throw, and if it succeeds, it is unaffected by this spell.
 
@@ -36,4 +36,3 @@ A creature can use its action to inspect a target and make an Intelligence (Inve
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

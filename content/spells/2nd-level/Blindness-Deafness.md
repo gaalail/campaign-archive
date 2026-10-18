@@ -3,11 +3,11 @@ title: Blindness/Deafness
 level: 2
 school: Necromancy
 classes:
-- Bard
-- Cleric
-- Sorcerer
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Sorcerer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 1 minute
@@ -16,10 +16,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*2nd-level necromancy*
+_2nd-level necromancy_
 
 You can blind or deafen a foe. Choose one creature that you can see within range to make a constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a constitution saving throw. On a success, the spell ends.
 
@@ -37,4 +37,3 @@ You can blind or deafen a foe. Choose one creature that you can see within range
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,9 +3,9 @@ title: Sunburst
 level: 8
 school: Evocation
 classes:
-- Druid
-- Sorcerer
-- Wizard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*8th-level evocation*
+_8th-level evocation_
 
 **Material components:** Fire and a piece of sunstone.
 
@@ -36,4 +36,3 @@ This spell dispels any darkness in its area that was created by a spell.
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

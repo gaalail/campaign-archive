@@ -3,12 +3,12 @@ title: Mending
 level: 0
 school: Transmutation
 classes:
-- Artificer
-- Cleric
-- Bard
-- Druid
-- Sorcerer
-- Wizard
+  - Artificer
+  - Cleric
+  - Bard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 minute
 range: Touch
 duration: Instantaneous
@@ -18,7 +18,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*Transmutation cantrip*
+_Transmutation cantrip_
 
 **Material components:** Two lodestones.
 
@@ -37,5 +37,3 @@ This spell can physically repair a magic item or construct, but the spell can't 
 **Available to:** [[Cleric]], [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

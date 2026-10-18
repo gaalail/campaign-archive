@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Ronin"
 
 Though they have been known by many names over the ages, Ronin are Fighters who have been expelled from the service of their lord or land. Regardless of the reason, these highly skilled warriors now roam the world seeking absolution through battle. With nothing to lose, these warriors fight with a deadly ferocity and ruthless focus unlike any other.
 
-### Exiled Courtier
+## Exiled Courtier
 
 **3rd-level Ronin Archetype feature.** You were once an influential member of a noble court or an important advisor. You learn to speak, read, and write one additional language of your choice, and you gain proficiency in one of the following skills: History, Insight, Performance, or Persuasion.
 

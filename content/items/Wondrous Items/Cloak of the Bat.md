@@ -7,7 +7,7 @@ summary: Wondrous item, rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, rare (requires attunement)*
+_Wondrous item, rare (requires attunement)_
 
 While wearing this cloak, you have advantage on Dexterity (Stealth) checks. In an area of dim light or darkness, you can grip the edges of the cloak with both hands and use it to fly at a speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in dim light or darkness, you lose this flying speed.
 
@@ -22,4 +22,3 @@ While wearing the cloak in an area of dim light or darkness, you can use your ac
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

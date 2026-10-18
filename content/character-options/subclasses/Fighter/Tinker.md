@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Tinker"
 
 Those who become Tinkers work for an unorthodox form of martial skill. Rather than practice combat techniques, they augment their abilities with mechanical weaponry. Always designing and testing new Schematics, Tinkers and their inventive arsenal are a deadly force on the battlefield.
 
-### Analytical Mind
+## Analytical Mind
 
 **3rd-level Tinker Archetype feature.** You have spent as much time in workshops as you have at the training ground. You gain proficiency with tinker's and smith's tools. If you are already proficient with these tools, you gain proficiency with a set of tools of your choice.
 

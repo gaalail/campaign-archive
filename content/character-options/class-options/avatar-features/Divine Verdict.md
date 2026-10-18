@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 17
 prerequisite: None
-summary: 'Avatar form only: you can target a creature whose current hit points are lower than half of its hit point maximum and '
+summary: "Avatar form only: you can target a creature whose current hit points are lower than half of its hit point maximum and "
 source: Corpus Angelus
 ---
 

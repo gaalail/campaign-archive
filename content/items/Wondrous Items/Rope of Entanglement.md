@@ -7,7 +7,7 @@ summary: Wondrous item, rare
 source: SRD 5.1
 ---
 
-*Wondrous item, rare*
+_Wondrous item, rare_
 
 This rope is 30 feet long and weighs 3 pounds. If you hold one end of the rope and use an action to speak its command word, the other end darts forward to entangle a creature you can see within 20 feet of you. The target must succeed on a DC 15 Dexterity saving throw or become restrained.
 
@@ -24,4 +24,3 @@ The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as 
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

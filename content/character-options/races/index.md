@@ -13,6 +13,7 @@ Choose at character creation. This list is the races actually in the archive (SR
 ## What is a race?
 
 Your race gives you:
+
 - **Ability score bonuses** (boost to key attributes)
 - **Special traits** (darkvision, flight, resistance, etc.)
 - **Cultural background** (helps shape your character's story)
@@ -32,6 +33,7 @@ Your race gives you:
 Some races have **subraces** — cultural or magical variants listed on the race page.
 
 **Examples:**
+
 - **[[Elf]]:** High Elf
 - **[[Dwarf]]:** Hill Dwarf
 - **[[Halfling]]:** Lightfoot

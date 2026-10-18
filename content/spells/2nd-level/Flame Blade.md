@@ -3,7 +3,7 @@ title: Flame Blade
 level: 2
 school: Evocation
 classes:
-- Druid
+  - Druid
 casting_time: 1 bonus action
 range: Self
 duration: Up to 10 minutes
@@ -12,10 +12,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 **Material components:** Leaf of sumac.
 
@@ -39,4 +39,3 @@ The flaming blade sheds bright light in a 10-foot radius and dim light for an ad
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,9 +3,9 @@ title: Creation
 level: 5
 school: Illusion
 classes:
-- Artificer
-- Sorcerer
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Wizard
 casting_time: 1 minute
 range: 30 feet
 duration: Special
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level illusion*
+_5th-level illusion_
 
 **Material components:** A tiny piece of matter of the same type of the item you plan to create.
 
@@ -23,13 +23,13 @@ You pull wisps of shadow material from the Shadowfell to create a nonliving obje
 
 The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration.
 
-| Material | Duration |
-|---|---|
-| Vegetable matter | 1 day |
-| Stone or crystal | 12 hours |
-| Precious metals | 1 hour |
-| Gems | 10 minutes |
-| Adamantine or mithral | 1 minute |
+| Material              | Duration   |
+| --------------------- | ---------- |
+| Vegetable matter      | 1 day      |
+| Stone or crystal      | 12 hours   |
+| Precious metals       | 1 hour     |
+| Gems                  | 10 minutes |
+| Adamantine or mithral | 1 minute   |
 
 Using any material created by this spell as another spell's material component causes that spell to fail.
 
@@ -47,5 +47,3 @@ Using any material created by this spell as another spell's material component c
 **Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

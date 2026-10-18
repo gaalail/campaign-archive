@@ -3,7 +3,7 @@ title: Wall of Thorns
 level: 6
 school: Conjuration
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: 120 feet
 duration: Up to 10 minutes
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*6th-level conjuration*
+_6th-level conjuration_
 
 **Material components:** A handful of thorns.
 
@@ -37,4 +37,3 @@ A creature can move through the wall, albeit slowly and painfully. For every 1 f
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

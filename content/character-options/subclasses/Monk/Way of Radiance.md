@@ -9,7 +9,7 @@ source: Alternate Monk
 
 Legends tell of wandering sages who channel bursts of light from within their bodies. These disciples of Radiance have such fine control over their spirit that they can assault others with luminous blasts of Ki. These wondrous warriors travel the land promoting harmony and justice among all peoples.
 
-### Radiant Techniques
+## Radiant Techniques
 
 **3rd-level Way of Radiance feature**
 

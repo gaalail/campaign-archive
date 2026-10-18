@@ -3,10 +3,10 @@ title: Shatter
 level: 2
 school: Evocation
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -15,11 +15,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
-- Wu Jen
+  - Witchblade
+  - Wu Jen
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 **Material components:** A burst of mica.
 
@@ -41,4 +41,3 @@ A non-magical item that is not worn or carried also suffers damage if it is in t
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,7 +3,7 @@ title: Floating Disk
 level: 1
 school: Conjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 30 feet
 duration: 1 hour
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level conjuration (ritual)*
+_1st-level conjuration (ritual)_
 
 **Material components:** A drop of mercury.
 
@@ -34,4 +34,3 @@ If you move more than 100 feet away from the disk (typically because it can't mo
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,11 +3,11 @@ title: Brimstone Boulder
 level: 5
 school: Conjuration
 classes:
-- Cleric
-- Paladin
-- Sorcerer
-- Warlock
-- Wizard
+  - Cleric
+  - Paladin
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 5 ft
 duration: 1 minute
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*5th-level conjuration*
+_5th-level conjuration_
 
 You conjure a burning sphere of sulfurous brimstone. This sphere has a 10 foot radius. When you cast this spell and at the start of each of your turns for the duration of the spell, the boulder rolls 20 feet away from where you were standing when you cast the spell. It travels along the ground.
 

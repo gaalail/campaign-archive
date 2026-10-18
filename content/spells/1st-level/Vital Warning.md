@@ -3,7 +3,7 @@ title: Vital Warning
 level: 1
 school: Abjuration
 classes:
-- Ranger
+  - Ranger
 casting_time: 1 bonus action
 range: 30 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*1st-level abjuration*
+_1st-level abjuration_
 
 Choose a creature within range and utter one word that alerts it to any danger that might occur. The creature can use two reactions until the start of its next turn.
 HL: When you cast this spell using a spell slot of 5th level or higher, the duration for the spell increases to 1 minute.
@@ -29,4 +29,3 @@ HL: When you cast this spell using a spell slot of 5th level or higher, the dura
 **Available to:** [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

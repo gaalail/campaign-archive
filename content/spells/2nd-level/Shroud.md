@@ -3,11 +3,11 @@ title: Shroud
 level: 2
 school: Abjuration
 classes:
-- Bard
-- Druid
-- Ranger
-- Warlock
-- Wizard
+  - Bard
+  - Druid
+  - Ranger
+  - Warlock
+  - Wizard
 casting_time: 10 minutes
 range: Touch
 duration: 4 hours
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level abjuration (ritual)*
+_2nd-level abjuration (ritual)_
 
 **Material components:** a bit of cotton.
 

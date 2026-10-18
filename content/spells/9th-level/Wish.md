@@ -3,8 +3,8 @@ title: Wish
 level: 9
 school: Conjuration
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*9th-level conjuration*
+_9th-level conjuration_
 
 Wish is the mightiest spell a mortal creature can cast. By simply speaking aloud, you can alter the very foundations of reality in accord with your desires.
 
@@ -47,4 +47,3 @@ The stress of casting this spell to produce any effect other than duplicating an
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

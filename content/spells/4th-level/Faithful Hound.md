@@ -3,7 +3,7 @@ title: Faithful Hound
 level: 4
 school: Conjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 30 feet
 duration: 8 hours
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*4th-level conjuration*
+_4th-level conjuration_
 
 **Material components:** A tiny silver whistle, a piece of bone, and a thread
 
@@ -34,4 +34,3 @@ At the start of each of your turns, the hound attempts to bite one creature with
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

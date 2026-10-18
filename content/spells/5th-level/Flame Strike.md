@@ -3,7 +3,7 @@ title: Flame Strike
 level: 5
 school: Evocation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level evocation*
+_5th-level evocation_
 
 **Material components:** Pinch of sulfur.
 
@@ -33,4 +33,3 @@ A vertical column of divine fire roars down from the heavens in a location you s
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

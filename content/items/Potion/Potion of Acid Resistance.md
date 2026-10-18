@@ -8,15 +8,12 @@ summary: Potion, uncommon
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Potion, uncommon*
+_Potion, uncommon_
 
 When you drink this potion, you gain resistance to acid damage for 1 hour.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ When you drink this potion, you gain resistance to acid damage for 1 hour.
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

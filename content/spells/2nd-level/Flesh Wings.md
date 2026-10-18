@@ -3,10 +3,10 @@ title: Flesh Wings
 level: 2
 school: Transmutation
 classes:
-- Druid
-- Paladin
-- Warlock
-- Wizard
+  - Druid
+  - Paladin
+  - Warlock
+  - Wizard
 casting_time: 10 minutes
 range: Touch
 duration: 4 hours
@@ -16,13 +16,14 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 **Material components:** 20 sc worth of morphine and the inner lining of a mammal's intestines, which the spell consumes.
 
 Choose a willing humanoid creature besides yourself. You sedate the target creature, numbing it to the pain of the ritual. By surgically cutting into the target's back and snapping its ribs off from its spine, you can fan its ribs and skin out to create unholy wings.
 
 For the duration, the creature gains the following modifications:
+
 - Fly speed equal to double its walking speed
 - Proficiency and advantage when making Charisma (Intimidation) checks
 - Disadvantage when making Charisma (Persuasion) checks

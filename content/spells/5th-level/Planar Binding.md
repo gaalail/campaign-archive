@@ -3,11 +3,11 @@ title: Planar Binding
 level: 5
 school: Abjuration
 classes:
-- Bard
-- Cleric
-- Druid
-- Warlock
-- Wizard
+  - Bard
+  - Cleric
+  - Druid
+  - Warlock
+  - Wizard
 casting_time: 1 hour
 range: 60 feet
 duration: 24 hours
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level abjuration*
+_5th-level abjuration_
 
 **Material components:** A jewel worth at least 1,000 gp, which the spell consumes.
 
@@ -39,4 +39,3 @@ A bound creature must follow your instructions to the best of its ability. You m
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

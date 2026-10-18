@@ -3,8 +3,8 @@ title: Time Stop
 level: 9
 school: Transmutation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*9th-level transmutation*
+_9th-level transmutation_
 
 You briefly stop the flow of time for everyone but yourself. No time passes for other creatures, while you take 1d4 + 1 turns in a row, during which you can use actions and move as normal.
 
@@ -31,4 +31,3 @@ This spell ends if one of the actions you use during this period, or any effects
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

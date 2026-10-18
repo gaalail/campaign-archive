@@ -3,9 +3,9 @@ title: Heroes' Feast
 level: 6
 school: Conjuration
 classes:
-- Bard
-- Cleric
-- Druid
+  - Bard
+  - Cleric
+  - Druid
 casting_time: 10 minutes
 range: 30 feet
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level conjuration*
+_6th-level conjuration_
 
 **Material components:** A gem-encrusted bowl worth at least 1,000gp, which the spell consumes.
 
@@ -34,4 +34,3 @@ A creature that partakes of the feast gains several benefits. The creature is cu
 **Available to:** [[Bard]], [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

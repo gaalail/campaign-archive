@@ -10,12 +10,12 @@ title: Rogue Subclasses
 
 ## Available Archetypes
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Chainbreaker]] | Breaking chains | Freedom fighter |
-| [[Divine Blade]] | Holy rogue | Sacred assassin |
-| [[Thief]] | Stealth master | Second-story work |
-| [[Vigilante]] | Justice seeker | Righteous avenger |
+| Subclass         | Feature         | Theme             |
+| ---------------- | --------------- | ----------------- |
+| [[Chainbreaker]] | Breaking chains | Freedom fighter   |
+| [[Divine Blade]] | Holy rogue      | Sacred assassin   |
+| [[Thief]]        | Stealth master  | Second-story work |
+| [[Vigilante]]    | Justice seeker  | Righteous avenger |
 
 ---
 

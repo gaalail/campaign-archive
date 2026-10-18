@@ -11,6 +11,7 @@ Everything for the Curse of Strahd campaign. New entries show up in the tables b
 ## Quick Start
 
 **First time here?**
+
 - [[Character Builder|Build a character]] for this campaign
 - Read the overview below to understand the setting
 - Check the Sessions tab to see what's happened so far
@@ -26,6 +27,7 @@ Everything for the Curse of Strahd campaign. New entries show up in the tables b
 **Theme:** Gothic horror with survival elements. Dark, atmospheric, and dangerous. Hope is thin; paranoia is justified. The land itself seems hostile.
 
 **Main Conflicts:**
+
 - Strahd von Zarovich, the vampire lord, actively hunts the party
 - The land of Barovia itself is hostile and cursed
 - NPCs have conflicting goals and hidden agendas
@@ -37,7 +39,9 @@ Everything for the Curse of Strahd campaign. New entries show up in the tables b
 ## Navigate This Campaign
 
 ### Sessions
+
 Click the **Sessions** tab to see:
+
 - What happened in each session
 - Which NPCs you met
 - What locations you visited
@@ -46,20 +50,25 @@ Click the **Sessions** tab to see:
 Each session links to related NPCs, locations, and encounters.
 
 ### Characters (NPCs)
+
 Click the **Characters** tab to see:
+
 - Major NPCs in the campaign
 - Their roles and motivations
 - Which sessions they appear in
 - Their relationships to each other
 
 ### Locations
+
 Click the **Locations** tab to see:
+
 - Important places in Barovia
 - What sessions take place there
 - Key NPCs based there
 - Campaign significance
 
 ### All Entries
+
 Click the **All entries** tab to see everything for this campaign in one table.
 
 ---
@@ -77,12 +86,14 @@ Click the **All entries** tab to see everything for this campaign in one table.
 ## Add to This Campaign
 
 **For Dungeon Masters:**
+
 - Add sessions via Pages CMS (document what happened)
 - Add NPCs (characters players interact with)
 - Add locations (places the party visits)
 - Add encounters (battles and challenges)
 
 **For Players:**
+
 - Ask your DM to add session summaries
 - Check back between sessions for updates
 - Use this as a reference during gameplay

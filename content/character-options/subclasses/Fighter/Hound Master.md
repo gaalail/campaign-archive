@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Hound Master"
 
 Since the dawn of civilization, animals have worked alongside mortals. Most notable of the domesticated animals is the dog. The earliest hunters worked in tandem with these loyal beasts, sharing both food and fire. Some Fighters still take up this mantle, training Loyal Hounds to adventure by their side.
 
-### Loyal Hound
+## Loyal Hound
 
 **3rd-level Hound Master Archetype feature.** When you adopt this Archetype, you complete the training of a Loyal Hound. Your Hound is friendly to you and your allies and obeys your commands. It uses the Loyal Hound stat block, which uses your Proficiency Bonus (PB) and Exploit save DC. Your Loyal Hound uses the following rules:
 

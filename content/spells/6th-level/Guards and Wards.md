@@ -3,8 +3,8 @@ title: Guards and Wards
 level: 6
 school: Abjuration
 classes:
-- Bard
-- Wizard
+  - Bard
+  - Wizard
 casting_time: 10 minutes
 range: Touch
 duration: 24 hours
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level abjuration*
+_6th-level abjuration_
 
 **Material components:** Burning incense, a small measure of brimstone and oil, a knotted string, a small amount of umber hulk blood, and a small silver rod worth at least 10 gp.
 
@@ -24,13 +24,13 @@ When you cast this spell, you can specify individuals that are unaffected by any
 
 Guards and wards creates the following effects within the warded area.
 
-***Corridors.*** Fog fills all the warded corridors, making them heavily obscured. In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.
+_**Corridors.**_ Fog fills all the warded corridors, making them heavily obscured. In addition, at each intersection or branching passage offering a choice of direction, there is a 50 percent chance that a creature other than you will believe it is going in the opposite direction from the one it chooses.
 
-***Doors.*** All doors in the warded area are magically locked, as if sealed by an arcane lock spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the minor illusion spell) to make them appear as plain sections of wall.
+_**Doors.**_ All doors in the warded area are magically locked, as if sealed by an arcane lock spell. In addition, you can cover up to ten doors with an illusion (equivalent to the illusory object function of the minor illusion spell) to make them appear as plain sections of wall.
 
-***Stairs.*** Webs fill all stairs in the warded area from top to bottom, as the web spell. These strands regrow in 10 minutes if they are burned or torn away while guards and wards lasts.
+_**Stairs.**_ Webs fill all stairs in the warded area from top to bottom, as the web spell. These strands regrow in 10 minutes if they are burned or torn away while guards and wards lasts.
 
-***Other Spell Effect.*** You can place your choice of one of the following magical effects within the warded area of the stronghold.
+_**Other Spell Effect.**_ You can place your choice of one of the following magical effects within the warded area of the stronghold.
 
 - Place dancing lights in four corridors. You can designate a simple program that the lights repeat as long as guards and wards lasts.
 
@@ -57,4 +57,3 @@ You can create a permanently guarded and warded structure by casting this spell 
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

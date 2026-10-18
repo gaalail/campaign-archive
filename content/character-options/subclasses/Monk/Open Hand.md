@@ -9,7 +9,7 @@ source: Alternate Monk
 
 While all Monks are warriors, the disciples of the Open Hand train relentlessly, honing their body itself into a weapon. They do not neglect their spiritual training but pride themselves on their skill in martial arts. It is exceedingly rare for a Monk of the Open Hand to use a weapon other than their fists.
 
-### Open Hand Techniques
+## Open Hand Techniques
 
 **3rd-level Way of the Open Hand feature**
 

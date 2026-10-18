@@ -7,7 +7,7 @@ summary: Wondrous item, very rare
 source: SRD 5.1
 ---
 
-*Wondrous item, very rare*
+_Wondrous item, very rare_
 
 Typically found in 1d4 pots inside a fine wooden box with a brush (weighing 1 pound in total), these pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image.
 
@@ -28,4 +28,3 @@ If you paint a form of energy such as fire or lightning, the energy appears but 
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

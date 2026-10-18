@@ -13,6 +13,7 @@ Choose at character creation. The table below is every background in this archiv
 ## What is a background?
 
 A background typically includes:
+
 - **Story elements** (who you were, what you did)
 - **Skill proficiencies** (you're trained in 2 skills)
 - **Extra language** or crafting tools
@@ -30,12 +31,14 @@ A background typically includes:
 ## How to use your background
 
 **In character creation:**
+
 1. Pick a background
 2. Get its skill proficiencies
 3. Get its feature
 4. Use it to build your character's story
 
 **During the game:**
+
 - Use your feature when it's relevant
 - Roleplay your background
 - Your listed skills are trained
@@ -62,4 +65,3 @@ A background typically includes:
 - [[character-options/templates|Templates]] — Optional powers
 
 ---
-

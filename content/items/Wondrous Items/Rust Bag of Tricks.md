@@ -7,7 +7,7 @@ summary: Wondrous item, uncommon
 source: SRD 5.1
 ---
 
-*Wondrous item, uncommon*
+_Wondrous item, uncommon_
 
 This ordinary bag, made from rust cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
 
@@ -19,16 +19,16 @@ Once three fuzzy Objects have been pulled from the bag, the bag can't be used ag
 
 Rust Bag:
 
-| d8 | Creature |
-|---|---|
-| 01 | Rat |
-| 02 | Owl |
-| 03 | Mastiff |
-| 04 | Goat |
-| 05 | Giant Goat |
-| 06 | Giant Boar |
-| 07 | Lion |
-| 08 | Brown Bear |
+| d8  | Creature   |
+| --- | ---------- |
+| 01  | Rat        |
+| 02  | Owl        |
+| 03  | Mastiff    |
+| 04  | Goat       |
+| 05  | Giant Goat |
+| 06  | Giant Boar |
+| 07  | Lion       |
+| 08  | Brown Bear |
 
 ---
 
@@ -39,4 +39,3 @@ Rust Bag:
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

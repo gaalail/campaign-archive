@@ -7,7 +7,7 @@ summary: Weapon (any sword), rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Weapon (any sword), rare (requires attunement)*
+_Weapon (any sword), rare (requires attunement)_
 
 Hit points lost to this weapon's damage can be regained only through a short or long rest, rather than by regeneration, magic, or any other means.
 
@@ -22,4 +22,3 @@ Once per turn, when you hit a creature with an attack using this magic weapon, y
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

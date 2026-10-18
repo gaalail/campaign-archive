@@ -10,14 +10,14 @@ title: Barbarian Subclasses
 
 ## Available Paths
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Berserker]] | Frenzy | Uncontrolled rage and dual-weapon attacks |
-| [[Path of Celestial Fury]] | Radiant power | Holy divine wrath |
-| [[Path of Self-Sacrifice]] | Protective rage | Protecting allies |
-| [[Path of the Branded]] | Mystic brand & Greatweapon | Enduring wounds and otherworldly resilience |
-| [[Path of the Hopebringer]] | Hope essence | Inspiring others |
-| [[Path of the Virtuous]] | Virtue-powered | Holy warrior |
+| Subclass                    | Feature                    | Theme                                       |
+| --------------------------- | -------------------------- | ------------------------------------------- |
+| [[Berserker]]               | Frenzy                     | Uncontrolled rage and dual-weapon attacks   |
+| [[Path of Celestial Fury]]  | Radiant power              | Holy divine wrath                           |
+| [[Path of Self-Sacrifice]]  | Protective rage            | Protecting allies                           |
+| [[Path of the Branded]]     | Mystic brand & Greatweapon | Enduring wounds and otherworldly resilience |
+| [[Path of the Hopebringer]] | Hope essence               | Inspiring others                            |
+| [[Path of the Virtuous]]    | Virtue-powered             | Holy warrior                                |
 
 ---
 

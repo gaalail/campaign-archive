@@ -3,12 +3,12 @@ title: Scrying
 level: 5
 school: Divination
 classes:
-- Bard
-- Cleric
-- Druid
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Druid
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 10 minutes
 range: Self
 duration: Up to 10 minutes
@@ -18,25 +18,23 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level divination*
+_5th-level divination_
 
 **Material components:** A focus worth at least 1,000 gp, such as a crystal ball, a silver mirror, or a font filled with holy water.
 
 You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.
 
-| Knowledge | Save Modifier |
-|---|---|
-| Secondhand (you have heard of the target) | +5 |
-| Firsthand (you have met the target) | +0 |
-| Familiar (you know the target well) | -5 |
+| Knowledge                                 | Save Modifier |
+| ----------------------------------------- | ------------- |
+| Secondhand (you have heard of the target) | +5            |
+| Firsthand (you have met the target)       | +0            |
+| Familiar (you know the target well)       | -5            |
 
-
-
-| Connection | Save Modifier |
-|---|---|
-| Likeness or picture | -2 |
-| Possession or garment | -4 |
-| Body part, lock of hair, bit of nail, or the like | -10 |
+| Connection                                        | Save Modifier |
+| ------------------------------------------------- | ------------- |
+| Likeness or picture                               | -2            |
+| Possession or garment                             | -4            |
+| Body part, lock of hair, bit of nail, or the like | -10           |
 
 On a successful save, the target isn't affected, and you can't use this spell against it again for 24 hours.
 
@@ -55,4 +53,3 @@ Instead of targeting a creature, you can choose a location you have seen before 
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

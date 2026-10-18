@@ -3,11 +3,11 @@ title: Clairvoyance
 level: 3
 school: Divination
 classes:
-- Bard
-- Cleric
-- Sorcerer
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Sorcerer
+  - Wizard
+  - Thanatomancer
 casting_time: 10 minutes
 range: 1 mile
 duration: Up to 10 minutes
@@ -16,10 +16,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*3rd-level divination*
+_3rd-level divination_
 
 **Material components:** A focus worth at least 100gp, either a jeweled horn for hearing or a glass eye for seeing.
 
@@ -40,4 +40,3 @@ A creature that can see the sensor (such as a creature benefiting from see invis
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

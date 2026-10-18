@@ -3,7 +3,7 @@ title: Prayer of Healing
 level: 2
 school: Evocation
 classes:
-- Cleric
+  - Cleric
 casting_time: 10 minutes
 range: 30 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 
@@ -31,4 +31,3 @@ Up to six creatures of your choice that you can see within range each regain hit
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

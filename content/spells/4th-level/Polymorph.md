@@ -3,10 +3,10 @@ title: Polymorph
 level: 4
 school: Transmutation
 classes:
-- Bard
-- Druid
-- Sorcerer
-- Wizard
+  - Bard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 hour
@@ -16,7 +16,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*4th-level transmutation*
+_4th-level transmutation_
 
 **Material components:** A caterpillar cocoon.
 
@@ -41,4 +41,3 @@ The target's gear melds into the new form. The creature can't activate, use, wie
 **Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

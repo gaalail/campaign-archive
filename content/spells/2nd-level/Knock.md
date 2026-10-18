@@ -3,9 +3,9 @@ title: Knock
 level: 2
 school: Transmutation
 classes:
-- Bard
-- Sorcerer
-- Wizard
+  - Bard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access.
 
@@ -36,4 +36,3 @@ When you cast the spell, a loud knock, audible from as far away as 300 feet, ema
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

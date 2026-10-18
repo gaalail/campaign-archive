@@ -3,11 +3,11 @@ title: Detect Poison and Disease
 level: 1
 school: Divination
 classes:
-- Cleric
-- Druid
-- Paladin
-- Ranger
-- Thanatomancer
+  - Cleric
+  - Druid
+  - Paladin
+  - Ranger
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Up to 10 minutes
@@ -17,7 +17,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*1st-level divination (ritual)*
+_1st-level divination (ritual)_
 
 **Material components:** A yew leaf.
 
@@ -36,4 +36,3 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 **Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

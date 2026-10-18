@@ -3,7 +3,7 @@ title: Hellish Rebuke
 level: 1
 school: Evocation
 classes:
-- Warlock
+  - Warlock
 casting_time: 1 reaction
 range: 60 feet
 duration: Instantaneous
@@ -12,12 +12,12 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Witchblade
-- Wu Jen
+  - Arcane Knight
+  - Witchblade
+  - Wu Jen
 ---
 
-*1st-level evocation*
+_1st-level evocation_
 
 You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.
 
@@ -35,4 +35,3 @@ You point your finger, and the creature that damaged you is momentarily surround
 **Available to:** [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

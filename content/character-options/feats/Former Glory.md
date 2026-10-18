@@ -1,7 +1,7 @@
 ---
 title: Former Glory
 prerequisite: Aengel
-summary: 'Prerequisite: Aengel'
+summary: "Prerequisite: Aengel"
 source: Corpus Angelus
 ---
 
@@ -9,4 +9,4 @@ source: Corpus Angelus
 
 You regain a small portion of your former glory and your wings start to shine with radiant energies. You have a flying speed of 60 feet instead of 30 feet.
 
-*From Corpus Angelus.*
+_From Corpus Angelus._

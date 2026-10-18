@@ -3,9 +3,9 @@ title: Stinking Cloud
 level: 3
 school: Conjuration
 classes:
-- Bard
-- Sorcerer
-- Wizard
+  - Bard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 90 feet
 duration: Up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*3rd-level conjuration*
+_3rd-level conjuration_
 
 **Material components:** A rotten egg or several skunk cabbage leaves.
 
@@ -36,4 +36,3 @@ A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds.
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

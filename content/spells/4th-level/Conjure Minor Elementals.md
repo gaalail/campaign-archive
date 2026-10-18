@@ -3,8 +3,8 @@ title: Conjure Minor Elementals
 level: 4
 school: Conjuration
 classes:
-- Druid
-- Wizard
+  - Druid
+  - Wizard
 casting_time: 1 minute
 range: 90 feet
 duration: Up to 1 hour
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*4th-level conjuration*
+_4th-level conjuration_
 
 You summon elementals that appear in unoccupied spaces that you can see within range. You choose one the following options for what appears:
 
@@ -46,4 +46,3 @@ The GM has the creatures' statistics.
 **Available to:** [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

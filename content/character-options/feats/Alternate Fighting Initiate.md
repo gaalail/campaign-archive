@@ -6,7 +6,7 @@ source: Alternate Fighter
 
 # Alternate Fighting Initiate
 
-### Updated Fighting Initiate Feat
+## Updated Fighting Initiate Feat
 
 **Prerequisite:** Proficiency with a martial weapon
 

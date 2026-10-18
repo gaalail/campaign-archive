@@ -3,8 +3,8 @@ title: Arcane Sword
 level: 7
 school: Evocation
 classes:
-- Bard
-- Wizard
+  - Bard
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*7th-level evocation*
+_7th-level evocation_
 
 **Material components:** A miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp.
 
@@ -33,4 +33,3 @@ When the sword appears, you make a melee spell attack against a target of your c
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

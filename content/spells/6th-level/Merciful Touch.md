@@ -3,9 +3,9 @@ title: Merciful Touch
 level: 6
 school: Illusion
 classes:
-- Bard
-- Cleric
-- Druid
+  - Bard
+  - Cleric
+  - Druid
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*6th-level illusion*
+_6th-level illusion_
 
 **Material components:** a bowl of milk, which is consumed by the spell
 
@@ -36,4 +36,3 @@ You touch a creature and show it a vision of one of the happiest or most peacefu
 **Available to:** [[Bard]], [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

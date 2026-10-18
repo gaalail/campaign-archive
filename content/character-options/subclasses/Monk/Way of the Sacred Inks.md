@@ -9,7 +9,7 @@ source: Alternate Monk Expanded
 
 Students of the Sacred Ink spend years learning Celestial calligraphy. Once it is mastered, they ceremonially mark themselves with Celestial tattoos of heavenly complexity. As the Monk grows in spiritual knowledge, their tattoos increase proportionally in complexity, and in the divine abilities that they bestow.
 
-### Celestial Artist
+## Celestial Artist
 
 **3rd-level Way of the Sacred Inks feature**
 

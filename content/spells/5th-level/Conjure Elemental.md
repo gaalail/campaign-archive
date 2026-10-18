@@ -3,8 +3,8 @@ title: Conjure Elemental
 level: 5
 school: Conjuration
 classes:
-- Druid
-- Wizard
+  - Druid
+  - Wizard
 casting_time: 1 minute
 range: 90 feet
 duration: Up to 1 hour
@@ -13,11 +13,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 wu_jen_list_marker: "LL"
 ---
 
-*5th-level conjuration*
+_5th-level conjuration_
 
 **Material components:** Burning incense for air, soft clay for earth, sulfur and phosphorus for fire, or water and sand for water.
 
@@ -43,4 +43,3 @@ The GM has the elemental's statistics.
 **Available to:** [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

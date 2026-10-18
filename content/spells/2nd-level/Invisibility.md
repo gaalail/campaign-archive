@@ -3,11 +3,11 @@ title: Invisibility
 level: 2
 school: Illusion
 classes:
-- Artificer
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
+  - Artificer
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Up to 1 hour
@@ -16,11 +16,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Witchblade
+  - Arcane Knight
+  - Witchblade
 ---
 
-*2nd-level illusion*
+_2nd-level illusion_
 
 **Material components:** An eyelash encased in gum arabic.
 
@@ -40,5 +40,3 @@ A creature you touch becomes invisible until the spell ends. Anything the target
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

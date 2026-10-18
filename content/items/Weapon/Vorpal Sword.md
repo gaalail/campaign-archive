@@ -7,7 +7,7 @@ summary: Weapon (any sword that deals slashing damage), legendary (requires attu
 source: SRD 5.1
 ---
 
-*Weapon (any sword that deals slashing damage), legendary (requires attunement)*
+_Weapon (any sword that deals slashing damage), legendary (requires attunement)_
 
 You gain a +3 bonus to attack and damage rolls made with this magic weapon. In addition, the weapon ignores resistance to slashing damage.
 
@@ -22,4 +22,3 @@ When you attack a creature that has at least one head with this weapon and roll 
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

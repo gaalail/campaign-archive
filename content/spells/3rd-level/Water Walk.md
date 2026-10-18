@@ -3,11 +3,11 @@ title: Water Walk
 level: 3
 school: Transmutation
 classes:
-- Artificer
-- Cleric
-- Druid
-- Ranger
-- Sorcerer
+  - Artificer
+  - Cleric
+  - Druid
+  - Ranger
+  - Sorcerer
 casting_time: 1 action
 range: 30 feet
 duration: 1 hour
@@ -16,10 +16,10 @@ ritual: true
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*3rd-level transmutation (ritual)*
+_3rd-level transmutation (ritual)_
 
 **Material components:** A piece of cork.
 
@@ -38,5 +38,3 @@ If you target a creature submerged in a liquid, the spell carries the target to 
 **Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

@@ -7,7 +7,7 @@ summary: Ring, uncommon (requires attunement)
 source: SRD 5.1
 ---
 
-*Ring, uncommon (requires attunement)*
+_Ring, uncommon (requires attunement)_
 
 While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.
 
@@ -24,4 +24,3 @@ If you die while wearing the ring, your soul enters it, unless it already houses
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

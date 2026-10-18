@@ -3,11 +3,11 @@ title: Emesis
 level: 4
 school: Enchantment
 classes:
-- Bard
-- Druid
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 80 ft
 duration: Concentration, up to 1 minute
@@ -17,7 +17,7 @@ concentration: true
 source: Homebrew
 ---
 
-*4th-level enchantment*
+_4th-level enchantment_
 
 Drawing forth the nauseating influence of Phlegmereth, you cause a creature to violently project caustic vomit.
 

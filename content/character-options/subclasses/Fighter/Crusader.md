@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Crusader"
 
 Many warriors swear Oaths to gods of battle and war, but not all are blessed with the divine power of Paladins or Clerics. Those who fight for the gods without their explicit blessing are called Crusaders. These zealots are champions of divine causes, their fervent belief fueling their battle fury.
 
-### Crusader Exploits
+## Crusader Exploits
 
 **3rd-level Crusader Archetype feature.** You learn certain Exploits at the Fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.
 

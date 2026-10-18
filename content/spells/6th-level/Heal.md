@@ -3,8 +3,8 @@ title: Heal
 level: 6
 school: Evocation
 classes:
-- Cleric
-- Druid
+  - Cleric
+  - Druid
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level evocation*
+_6th-level evocation_
 
 Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead.
 
@@ -32,4 +32,3 @@ Choose a creature that you can see within range. A surge of positive energy wash
 **Available to:** [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

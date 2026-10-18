@@ -8,15 +8,12 @@ summary: Wand, uncommon (+1), rare (+2), or very rare (+3) (requires attunement 
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wand, uncommon (+1), rare (+2), or very rare (+3) (requires attunement by a spellcaster)*
+_Wand, uncommon (+1), rare (+2), or very rare (+3) (requires attunement by a spellcaster)_
 
 While holding this wand, you gain a bonus to spell attack rolls determined by the wand's rarity. In addition, you ignore half cover when making a spell attack.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ While holding this wand, you gain a bonus to spell attack rolls determined by th
 **Rarity:** Varies
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

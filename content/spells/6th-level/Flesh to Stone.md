@@ -3,10 +3,10 @@ title: Flesh to Stone
 level: 6
 school: Transmutation
 classes:
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*6th-level transmutation*
+_6th-level transmutation_
 
 **Material components:** A pinch of lime, water, and earth.
 
@@ -39,4 +39,3 @@ If you maintain your concentration on this spell for the entire possible duratio
 **Available to:** [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

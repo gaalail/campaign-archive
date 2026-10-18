@@ -7,7 +7,7 @@ summary: Weapon (mace), rare
 source: SRD 5.1
 ---
 
-*Weapon (mace), rare*
+_Weapon (mace), rare_
 
 You gain a +1 bonus to attack and damage rolls made with this magic weapon. The bonus increases to +3 when you use the mace to attack a construct.
 
@@ -22,4 +22,3 @@ When you roll a 20 on an attack roll made with this weapon, the target takes an 
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

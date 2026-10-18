@@ -3,7 +3,7 @@ title: Private Sanctum
 level: 4
 school: Abjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 10 minutes
 range: 120 feet
 duration: 24 hours
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*4th-level abjuration*
+_4th-level abjuration_
 
 **Material components:** A thin sheet of lead, a piece of opaque glass, a wad of cotton or cloth, and powdered chrysolite.
 
@@ -49,4 +49,3 @@ Casting this spell on the same spot every day for a year makes this effect perma
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

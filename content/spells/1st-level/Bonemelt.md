@@ -3,9 +3,9 @@ title: Bonemelt
 level: 1
 school: Transmutation
 classes:
-- Druid
-- Sorcerer
-- Wizard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: Homebrew
 ---
 
-*1st-level transmutation*
+_1st-level transmutation_
 
 You temporarily dissolve your bones. For the duration, you are considered to have 2 levels of Exhaustion (unless you already have more), and you cannot hold items. You can move through spaces as narrow as 1 inch. You also have resistance to bludgeoning damage for the duration.
 

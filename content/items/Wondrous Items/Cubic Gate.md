@@ -7,7 +7,7 @@ summary: Wondrous item, legendary
 source: SRD 5.1
 ---
 
-*Wondrous item, legendary*
+_Wondrous item, legendary_
 
 This cube is 3 inches across and radiates palpable magical energy. The six sides of the cube are each keyed to a different plane of existence, one of which is the Material Plane. The other sides are linked to planes determined by the GM.
 
@@ -24,4 +24,3 @@ The cube has 3 charges. Each use of the cube expends 1 charge. The cube regains 
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

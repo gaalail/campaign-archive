@@ -3,8 +3,8 @@ title: Shapechange
 level: 9
 school: Transmutation
 classes:
-- Druid
-- Wizard
+  - Druid
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Up to 1 hour
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*9th-level transmutation*
+_9th-level transmutation_
 
 **Material components:** A jade circlet worth at least 1,500 gp, which you must place on your head before you cast the spell.
 
@@ -41,4 +41,3 @@ During this spell's duration, you can use your action to assume a different form
 **Available to:** [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

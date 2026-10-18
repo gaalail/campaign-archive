@@ -3,10 +3,10 @@ title: Fog Cloud
 level: 1
 school: Conjuration
 classes:
-- Druid
-- Ranger
-- Sorcerer
-- Wizard
+  - Druid
+  - Ranger
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 1 hour
@@ -15,11 +15,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Wu Jen
+  - Arcane Knight
+  - Wu Jen
 ---
 
-*1st-level conjuration*
+_1st-level conjuration_
 
 You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.
 
@@ -37,4 +37,3 @@ You create a 20-foot-radius sphere of fog centered on a point within range. The 
 **Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,12 +3,12 @@ title: True Seeing
 level: 6
 school: Divination
 classes:
-- Bard
-- Cleric
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -18,7 +18,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level divination*
+_6th-level divination_
 
 **Material components:** An ointment for the eyes that costs 25gp; is made from mushroom powder, saffron, and fat; and is consumed by the spell.
 
@@ -35,4 +35,3 @@ This spell gives the willing creature you touch the ability to see things as the
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

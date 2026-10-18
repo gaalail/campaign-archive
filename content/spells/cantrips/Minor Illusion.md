@@ -3,10 +3,10 @@ title: Minor Illusion
 level: 0
 school: Illusion
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 30 feet
 duration: 1 minute
@@ -15,10 +15,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
 
-*Illusion cantrip*
+_Illusion cantrip_
 
 **Material components:** A bit of fleece.
 
@@ -41,4 +41,3 @@ If a creature uses its action to examine the sound or image, the creature can de
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

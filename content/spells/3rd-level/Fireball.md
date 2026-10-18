@@ -3,8 +3,8 @@ title: Fireball
 level: 3
 school: Evocation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -13,11 +13,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Wu Jen
+  - Arcane Knight
+  - Wu Jen
 ---
 
-*3rd-level evocation*
+_3rd-level evocation_
 
 **Material components:** A tiny ball of bat guano and sulfur.
 
@@ -39,4 +39,3 @@ The fire spreads around corners. It ignites flammable objects in the area that a
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

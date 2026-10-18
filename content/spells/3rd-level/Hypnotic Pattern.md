@@ -3,10 +3,10 @@ title: Hypnotic Pattern
 level: 3
 school: Illusion
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 1 minute
@@ -15,11 +15,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 mystic_list_marker: "LL"
 ---
 
-*3rd-level illusion*
+_3rd-level illusion_
 
 **Material components:** A glowing stick of incense or a crystal vial filled with phosphorescent material.
 
@@ -38,4 +38,3 @@ The spell ends for an affected creature if it takes any damage or if someone els
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

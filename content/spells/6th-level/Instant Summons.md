@@ -3,7 +3,7 @@ title: Instant Summons
 level: 6
 school: Conjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 minute
 range: Touch
 duration: Until dispelled
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level conjuration (ritual)*
+_6th-level conjuration (ritual)_
 
 **Material components:** A sapphire worth 1,000 gp.
 
@@ -36,4 +36,3 @@ Dispel magic or a similar effect successfully applied to the sapphire ends this 
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

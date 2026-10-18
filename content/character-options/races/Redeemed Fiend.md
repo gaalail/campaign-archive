@@ -47,26 +47,20 @@ Your redeemed fiend character has certain traits that are the legacy of your fie
 > [!info]- Creature Type
 > You are a fiend rather than a humanoid. You retained your fiendish form when you were redeemed.
 
-
 > [!info]- Holy Pact
 > When you are redeemed, you agree to an unrelenting holy pact. You thus simply cease to exist if you commit evil acts, and your alignment shifts to evil. Shifts in your alignment are determined at the GM's discretion.
-
 
 > [!info]- Darkvision
 > You once ruled over the darkness, which is why you are accustomed to it. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
 
-
 > [!info]- Fiendish Heritage
 > You have advantage on saving throws against being charmed and frightened.
-
 
 > [!info]- Fiend's Lifestyle
 > As a fiend, you've been on many adventures and seen things that most mortals could only imagine. Although you are redeemed, the memory of all that you've seen stays with you. Due to your past experiences, you have proficiency in two skills of your choice.
 
-
 > [!info]- Unpopular
 > Commonfolk try to avoid you and do not trust you. You have disadvantage on Charisma (Persuasion) checks made against them while in your true form.
-
 
 **Subrace.** Redemption leads to different outcomes for different types of fiends. The subrace of each redeemed fiend is determined according to their former self.
 
@@ -81,22 +75,18 @@ Charming, lustful, and deadly; succubi/incubi are some of the most dangerous bei
 > [!info]- Demon's Claws
 > Although you have kept some of your bloodline features, some of them went blunt when you were redeemed. However, as time goes by, and as you adapt more and more to your new lifestyle, you rediscover that you can, in fact, use the features you retained for the better. As a bonus action, you can grow claws that deal 1d6 slashing damage (each) while in your true form or you can reduce them and put them away.
 
-
 > [!info]- Fiend's Wings
 > Due to your fiendish heritage, you have bat-like wings. Although your wings lose some of their former functions when you are redeemed, you can still use them in some ways.
 >
 > Your jump distance is doubled and you can glide while falling; your rate of descent slows to 60 feet per round, you do not take any falling damage, and you can land on your feet.
 
-
 > [!info]- Invigorating Kiss
 > As an action, you kiss a creature. The target regains a number of hit points equal to your Charisma modifier (minimum of 1). A creature can benefit from this feature once until it finishes a long rest.
-
 
 > [!info]- Shapechanger
 > As an action, you can polymorph into a Small or Medium humanoid or back into your true form. Without wings, you lose their benefits. Other than your size and speed, your statistics are the same in each form. Any equipment you are wearing or carrying isn't transformed. You revert to your true form if you die.
 >
 > Once you use this feature, you must finish a short or long rest to use it again.
-
 
 ## Redeemed Chain Devil
 
@@ -111,15 +101,12 @@ The memories of these horrid acts are burdens that redeemed chain devils must be
 > [!info]- Devil's Chains
 > You once used your chains to enslave your foes, but you came to understand that you could also use them for good when you were redeemed. You can use your chains to make a melee weapon attack. The chain has the following properties: It is a simple melee weapon that has the reach and finesse properties. On a hit, it deals 1d8 slashing damage, and the target is grappled (DC equal to 8 + your Strength modifier + your proficiency bonus).
 
-
 > [!info]- Devil's Eyes
 > Magical darkness doesn't impede your darkvision.
-
 
 > [!info]- Heartening Mask
 > You choose a creature within 30 feet of you that you can see. As a bonus action, you create an illusion of one of the target's loved ones to comfort it. The target has advantage on the next saving throw within 1 minute. If the target is already affected by a magical effect, it can repeat its saving throw against it, ending the effect on itself on a success.
 >
 > Once you use this feature, you must finish a short or long rest to use it again.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

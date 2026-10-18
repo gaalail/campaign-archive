@@ -3,7 +3,7 @@ title: Wind Walk
 level: 6
 school: Transmutation
 classes:
-- Druid
+  - Druid
 casting_time: 1 minute
 range: 30 feet
 duration: 8 hours
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level transmutation*
+_6th-level transmutation_
 
 **Material components:** Fire and holy water.
 
@@ -32,4 +32,3 @@ If a creature is in cloud form and flying when the effect ends, the creature des
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 5
 prerequisite: None
-summary: 'Avatar form only: you sprout wings of metal.'
+summary: "Avatar form only: you sprout wings of metal."
 source: Corpus Angelus
 ---
 

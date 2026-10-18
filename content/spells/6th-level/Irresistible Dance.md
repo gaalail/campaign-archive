@@ -3,9 +3,9 @@ title: Irresistible Dance
 level: 6
 school: Enchantment
 classes:
-- Bard
-- Wizard
-- Thanatomancer
+  - Bard
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*6th-level enchantment*
+_6th-level enchantment_
 
 Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be charmed are immune to this spell.
 
@@ -32,4 +32,3 @@ A dancing creature must use all its movement to dance without leaving its space 
 **Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

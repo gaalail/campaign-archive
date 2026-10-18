@@ -3,8 +3,8 @@ title: Awaken
 level: 5
 school: Transmutation
 classes:
-- Bard
-- Druid
+  - Bard
+  - Druid
 casting_time: 8 hours
 range: Touch
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level transmutation*
+_5th-level transmutation_
 
 **Material components:** An agate worth at least 1,000 gp, which the spell consumes.
 
@@ -33,4 +33,3 @@ The awakened beast or plant is charmed by you for 30 days or until you or your c
 **Available to:** [[Bard]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

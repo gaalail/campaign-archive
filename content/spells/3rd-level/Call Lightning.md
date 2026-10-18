@@ -3,7 +3,7 @@ title: Call Lightning
 level: 3
 school: Conjuration
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: 120 feet
 duration: Up to 10 minutes
@@ -12,10 +12,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*3rd-level conjuration*
+_3rd-level conjuration_
 
 A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).
 
@@ -37,4 +37,3 @@ If you are outdoors in stormy conditions when you cast this spell, the spell giv
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

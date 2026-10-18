@@ -3,10 +3,10 @@ title: Sanctum
 level: 4
 school: Abjuration
 classes:
-- Bard
-- Cleric
-- Paladin
-- Ranger
+  - Bard
+  - Cleric
+  - Paladin
+  - Ranger
 casting_time: 10 minutes
 range: Touch
 duration: 8 hours
@@ -16,7 +16,7 @@ concentration: false
 source: Homebrew
 ---
 
-*4th-level abjuration (ritual)*
+_4th-level abjuration (ritual)_
 
 **Material components:** 30 sc worth of incense, which the spell consumes.
 

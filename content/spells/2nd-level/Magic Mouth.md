@@ -3,9 +3,9 @@ title: Magic Mouth
 level: 2
 school: Illusion
 classes:
-- Artificer
-- Bard
-- Wizard
+  - Artificer
+  - Bard
+  - Wizard
 casting_time: 1 minute
 range: 30 feet
 duration: Until dispelled
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level illusion (ritual)*
+_2nd-level illusion (ritual)_
 
 **Material components:** A honeycomb and jade dust of at least 10 inches, the spell consumes.
 
@@ -38,5 +38,3 @@ The triggering circumstance can be as general or as detailed as you like, though
 **Available to:** [[Bard]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

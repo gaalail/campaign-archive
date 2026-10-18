@@ -3,7 +3,7 @@ title: Anchor
 level: 2
 school: Abjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*2nd-level abjuration*
+_2nd-level abjuration_
 
 **Material components:** a small crystal anchor worth at least 20 gp
 
@@ -34,4 +34,3 @@ The spell ends if there are no spaces that the target can teleport to, if the sp
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Swordsage"
 
 Known by many names through the ages: blademaster, sword saint, Swordsage, these mythic warriors dedicate their life to the art of the sword. Legends say each master Swordsage will take one apprentice in their lifetime, teaching them the secret blade arts and entrusting them with their mystical legacy.
 
-### Swordsage Exploits
+## Swordsage Exploits
 
 **3rd-level Swordsage Archetype feature.** You learn certain Exploits at the Fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.
 

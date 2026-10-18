@@ -3,11 +3,11 @@ title: Feeblemind
 level: 8
 school: Enchantment
 classes:
-- Bard
-- Druid
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*8th-level enchantment*
+_8th-level enchantment_
 
 **Material components:** A handful of clay, crystal, glass, or mineral spheres.
 
@@ -40,4 +40,3 @@ The spell can also be ended by greater restoration, heal, or wish.
 **Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

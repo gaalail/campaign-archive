@@ -3,10 +3,10 @@ title: Bone of the Blessed
 level: 2
 school: Necromancy
 classes:
-- Cleric
-- Druid
-- Warlock
-- Thanatomancer
+  - Cleric
+  - Druid
+  - Warlock
+  - Thanatomancer
 casting_time: 1 bonus action
 range: Self
 duration: Concentration, up to 10 minutes
@@ -16,7 +16,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*2nd-level necromancy*
+_2nd-level necromancy_
 
 **Material components:** a piece of bone that has been soaked in holy water for 1 hour
 
@@ -36,4 +36,3 @@ HL: When you cast this spell using a spell slot of 3rd level or higher, the dama
 **Available to:** [[Cleric]], [[Druid]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

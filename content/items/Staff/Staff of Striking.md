@@ -7,7 +7,7 @@ summary: Staff, very rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Staff, very rare (requires attunement)*
+_Staff, very rare (requires attunement)_
 
 This staff can be wielded as a magic quarterstaff that grants a +3 bonus to attack and damage rolls made with it.
 
@@ -22,4 +22,3 @@ The staff has 10 charges. When you hit with a melee attack using it, you can exp
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

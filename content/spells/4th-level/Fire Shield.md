@@ -3,7 +3,7 @@ title: Fire Shield
 level: 4
 school: Evocation
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: 10 minutes
@@ -12,10 +12,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 ---
 
-*4th-level evocation*
+_4th-level evocation_
 
 **Material components:** A little phosphorus or a firefly.
 
@@ -36,4 +36,3 @@ In addition, whenever a creature within 5 feet of you hits you with a melee atta
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

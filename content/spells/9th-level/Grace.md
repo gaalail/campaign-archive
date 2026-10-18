@@ -3,8 +3,8 @@ title: Grace
 level: 9
 school: Abjuration
 classes:
-- Cleric
-- Druid
+  - Cleric
+  - Druid
 casting_time: 1 hour
 range: Touch
 duration: 24 hours
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*9th-level abjuration (ritual)*
+_9th-level abjuration (ritual)_
 
 **Material components:** an emanation of grace (p. 241)
 
@@ -39,4 +39,3 @@ You pray for an hour as you touch an emanation of grace. Each good-aligned creat
 **Available to:** [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -7,7 +7,7 @@ summary: Wondrous item, rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, rare (requires attunement)*
+_Wondrous item, rare (requires attunement)_
 
 An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
 
@@ -15,7 +15,7 @@ When you use an action to toss one of these stones into the air, the stone orbit
 
 A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.
 
-***Reserve.*** This vibrant purple prism stores spells cast into it, holding them until you use them. The stone can store up to 3 levels worth of spells at a time. When found, it contains 1d4 - 1 levels of stored spells chosen by the GM.
+_**Reserve.**_ This vibrant purple prism stores spells cast into it, holding them until you use them. The stone can store up to 3 levels worth of spells at a time. When found, it contains 1d4 - 1 levels of stored spells chosen by the GM.
 
 Any creature can cast a spell of 1st through 3rd level into the stone by touching it as the spell is cast. The spell has no effect, other than to be stored in the stone. If the stone can't hold the spell, the spell is expended without effect. The level of the slot used to cast the spell determines how much space it uses.
 
@@ -30,4 +30,3 @@ While this stone orbits your head, you can cast any spell stored in it. The spel
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -3,10 +3,10 @@ title: Animal Messenger
 level: 2
 school: Enchantment
 classes:
-- Bard
-- Druid
-- Ranger
-- Thanatomancer
+  - Bard
+  - Druid
+  - Ranger
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 24 hours
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level enchantment (ritual)*
+_2nd-level enchantment (ritual)_
 
 **Material components:** A morsel of food.
 
@@ -38,4 +38,3 @@ When the messenger arrives, it delivers your message to the creature that you de
 **Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

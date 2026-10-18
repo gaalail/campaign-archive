@@ -21,13 +21,13 @@ Although the religious teachings of different deities vary, zealots share the fo
 
 You gain oath spells at the paladin levels listed.
 
-| Paladin level | Spells |
-| --- | --- |
-| 3rd | [[Bane]], [[Detect Magic]] |
-| 5th | [[Flame Blade]], [[Pass Without Trace]] |
-| 9th | [[Bestow Curse]], [[Protection From Energy]] |
-| 13th | [[Confusion]], [[Freedom of Movement]] |
-| 17th | [[Hallow]], [[Planar Binding]] |
+| Paladin level | Spells                                       |
+| ------------- | -------------------------------------------- |
+| 3rd           | [[Bane]], [[Detect Magic]]                   |
+| 5th           | [[Flame Blade]], [[Pass Without Trace]]      |
+| 9th           | [[Bestow Curse]], [[Protection From Energy]] |
+| 13th          | [[Confusion]], [[Freedom of Movement]]       |
+| 17th          | [[Hallow]], [[Planar Binding]]               |
 
 ## Features
 
@@ -39,7 +39,6 @@ You gain oath spells at the paladin levels listed.
 > You can use faith points to cast spells or to use paladin class features that require you to expend spell slots (such as Divine Smite). The number of faith points required to do so is equal to twice the level of the spell slot.
 >
 > You regain all expended faith points when you finish a long rest.
-
 
 > [!info]- Channel Divinity (level 3)
 > Others shall heed your call or perish.
@@ -56,18 +55,15 @@ You gain oath spells at the paladin levels listed.
 >
 > A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can only use the Dash action or try to escape from an effect preventing it from moving. If there's nowhere to move, the creature can use the Dodge action.
 
-
 > [!info]- Eyes of the Faithful (level 7)
 > Nothing shall escape your eyes.
 >
 > Starting at 7th level, when you or a friendly creature within 10 feet of you hits a creature with a weapon attack, the target sheds bright light in a 10-foot radius, melee weapon attacks against it are made with advantage, it becomes visible and cannot benefit from being invisible, and it automatically fails Dexterity (Stealth) checks until the end of its next turn. You choose the color of the light. Both you and friendly creatures can choose not to use this feature.
 
-
 > [!info]- Will of the Zealot (level 15)
 > None shall turn you from your path.
 >
 > Beginning at 15th level, you have advantage on saving throws against enchantment and illusion spells.
-
 
 > [!info]- Shadow of the Divine (level 20)
 > You shall turn terrible defeats into the greatest victories.
@@ -78,5 +74,4 @@ You gain oath spells at the paladin levels listed.
 >
 > You can use this feature a number of times equal to your Charisma modifier (minimum of twice). You regain any expended uses when you finish a long rest.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

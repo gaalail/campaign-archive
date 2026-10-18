@@ -3,9 +3,9 @@ title: Alarm
 level: 1
 school: Abjuration
 classes:
-- Artificer
-- Ranger
-- Wizard
+  - Artificer
+  - Ranger
+  - Wizard
 casting_time: 1 minute
 range: 30 feet
 duration: 8 hours
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level abjuration (ritual)*
+_1st-level abjuration (ritual)_
 
 **Material components:** A tiny bell and a piece of fine silver wire.
 
@@ -36,5 +36,3 @@ An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet
 **Available to:** [[Ranger]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

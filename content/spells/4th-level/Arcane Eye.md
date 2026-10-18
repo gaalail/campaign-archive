@@ -3,10 +3,10 @@ title: Arcane Eye
 level: 4
 school: Divination
 classes:
-- Artificer
-- Cleric
-- Wizard
-- Thanatomancer
+  - Artificer
+  - Cleric
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 hour
@@ -15,10 +15,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*4th-level divination*
+_4th-level divination_
 
 **Material components:** A bit of bat fur.
 
@@ -39,5 +39,3 @@ As an action, you can move the eye up to 30 feet in any direction. There is no l
 **Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

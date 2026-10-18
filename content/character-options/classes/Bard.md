@@ -3,36 +3,36 @@ title: Bard
 hit_die: d8
 spellcasting_ability: CHA
 saving_throws:
-- DEX
-- CHA
+  - DEX
+  - CHA
 summary: d8 hit die; saving throws DEX, CHA; spellcasting with CHA
 source: SRD 5.1
 ---
 
 ## The Bard table
 
-| Level | Proficiency Bonus | Features | Bardic Inspiration | Song of Rest | Magical Secrets Max 5 | Magical Secrets Max 7 | Magical Secrets Max 9 | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1st | +2 | Spellcasting: Bard, Bardic Inspiration (d6) | d6 | - | - | - | - | 2 | 4 | 2 | - | - | - | - | - | - | - | - |
-| 2nd | +2 | Jack of All Trades, Song of Rest (d6) | d6 | d6 | - | - | - | 2 | 5 | 3 | - | - | - | - | - | - | - | - |
-| 3rd | +2 | Expertise, Bard College | d6 | d6 | - | - | - | 2 | 6 | 4 | 2 | - | - | - | - | - | - | - |
-| 4th | +2 | Ability Score Improvement | d6 | d6 | - | - | - | 3 | 7 | 4 | 3 | - | - | - | - | - | - | - |
-| 5th | +3 | Bardic Inspiration (d8), Font of Inspiration | d8 | d6 | - | - | - | 3 | 8 | 4 | 3 | 2 | - | - | - | - | - | - |
-| 6th | +3 | Countercharm, Bard College feature | d8 | d6 | - | - | - | 3 | 9 | 4 | 3 | 3 | - | - | - | - | - | - |
-| 7th | +3 | - | d8 | d6 | - | - | - | 3 | 10 | 4 | 3 | 3 | 1 | - | - | - | - | - |
-| 8th | +3 | Ability Score Improvement | d8 | d6 | - | - | - | 3 | 11 | 4 | 3 | 3 | 2 | - | - | - | - | - |
-| 9th | +4 | Song of Rest (d8) | d8 | d8 | - | - | - | 3 | 12 | 4 | 3 | 3 | 3 | 1 | - | - | - | - |
-| 10th | +4 | Expertise, Bardic Inspiration (d10), Magical Secrets | d10 | d8 | 2 | - | - | 4 | 14 | 4 | 3 | 3 | 3 | 2 | - | - | - | - |
-| 11th | +4 | - | d10 | d8 | 2 | - | - | 4 | 15 | 4 | 3 | 3 | 3 | 2 | 1 | - | - | - |
-| 12th | +4 | Ability Score Improvement | d10 | d8 | 2 | - | - | 4 | 15 | 4 | 3 | 3 | 3 | 2 | 1 | - | - | - |
-| 13th | +5 | Song of Rest (d10) | d10 | d10 | 2 | - | - | 4 | 16 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | - | - |
-| 14th | +5 | Magical Secrets, Bard College feature | d10 | d10 | 2 | 2 | - | 4 | 18 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | - | - |
-| 15th | +5 | Bardic Inspiration (d12) | d12 | d10 | 2 | 2 | - | 4 | 19 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | - |
-| 16th | +5 | Ability Score Improvement | d12 | d10 | 2 | 2 | - | 4 | 19 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | - |
-| 17th | +6 | Song of Rest (d12) | d12 | d12 | 2 | 2 | - | 4 | 20 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | 1 |
-| 18th | +6 | Magical Secrets | d12 | d12 | 2 | 2 | 2 | 4 | 22 | 4 | 3 | 3 | 3 | 3 | 1 | 1 | 1 | 1 |
-| 19th | +6 | Ability Score Improvement | d12 | d12 | 2 | 2 | 2 | 4 | 22 | 4 | 3 | 3 | 3 | 3 | 2 | 1 | 1 | 1 |
-| 20th | +6 | Superior Inspiration | d12 | d12 | 2 | 2 | 2 | 4 | 22 | 4 | 3 | 3 | 3 | 3 | 2 | 2 | 1 | 1 |
+| Level | Proficiency Bonus | Features                                             | Bardic Inspiration | Song of Rest | Magical Secrets Max 5 | Magical Secrets Max 7 | Magical Secrets Max 9 | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+| ----- | ----------------- | ---------------------------------------------------- | ------------------ | ------------ | --------------------- | --------------------- | --------------------- | -------------- | ------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1st   | +2                | Spellcasting: Bard, Bardic Inspiration (d6)          | d6                 | -            | -                     | -                     | -                     | 2              | 4            | 2   | -   | -   | -   | -   | -   | -   | -   | -   |
+| 2nd   | +2                | Jack of All Trades, Song of Rest (d6)                | d6                 | d6           | -                     | -                     | -                     | 2              | 5            | 3   | -   | -   | -   | -   | -   | -   | -   | -   |
+| 3rd   | +2                | Expertise, Bard College                              | d6                 | d6           | -                     | -                     | -                     | 2              | 6            | 4   | 2   | -   | -   | -   | -   | -   | -   | -   |
+| 4th   | +2                | Ability Score Improvement                            | d6                 | d6           | -                     | -                     | -                     | 3              | 7            | 4   | 3   | -   | -   | -   | -   | -   | -   | -   |
+| 5th   | +3                | Bardic Inspiration (d8), Font of Inspiration         | d8                 | d6           | -                     | -                     | -                     | 3              | 8            | 4   | 3   | 2   | -   | -   | -   | -   | -   | -   |
+| 6th   | +3                | Countercharm, Bard College feature                   | d8                 | d6           | -                     | -                     | -                     | 3              | 9            | 4   | 3   | 3   | -   | -   | -   | -   | -   | -   |
+| 7th   | +3                | -                                                    | d8                 | d6           | -                     | -                     | -                     | 3              | 10           | 4   | 3   | 3   | 1   | -   | -   | -   | -   | -   |
+| 8th   | +3                | Ability Score Improvement                            | d8                 | d6           | -                     | -                     | -                     | 3              | 11           | 4   | 3   | 3   | 2   | -   | -   | -   | -   | -   |
+| 9th   | +4                | Song of Rest (d8)                                    | d8                 | d8           | -                     | -                     | -                     | 3              | 12           | 4   | 3   | 3   | 3   | 1   | -   | -   | -   | -   |
+| 10th  | +4                | Expertise, Bardic Inspiration (d10), Magical Secrets | d10                | d8           | 2                     | -                     | -                     | 4              | 14           | 4   | 3   | 3   | 3   | 2   | -   | -   | -   | -   |
+| 11th  | +4                | -                                                    | d10                | d8           | 2                     | -                     | -                     | 4              | 15           | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
+| 12th  | +4                | Ability Score Improvement                            | d10                | d8           | 2                     | -                     | -                     | 4              | 15           | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
+| 13th  | +5                | Song of Rest (d10)                                   | d10                | d10          | 2                     | -                     | -                     | 4              | 16           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
+| 14th  | +5                | Magical Secrets, Bard College feature                | d10                | d10          | 2                     | 2                     | -                     | 4              | 18           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
+| 15th  | +5                | Bardic Inspiration (d12)                             | d12                | d10          | 2                     | 2                     | -                     | 4              | 19           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
+| 16th  | +5                | Ability Score Improvement                            | d12                | d10          | 2                     | 2                     | -                     | 4              | 19           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
+| 17th  | +6                | Song of Rest (d12)                                   | d12                | d12          | 2                     | 2                     | -                     | 4              | 20           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
+| 18th  | +6                | Magical Secrets                                      | d12                | d12          | 2                     | 2                     | 2                     | 4              | 22           | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   |
+| 19th  | +6                | Ability Score Improvement                            | d12                | d12          | 2                     | 2                     | 2                     | 4              | 22           | 4   | 3   | 3   | 3   | 3   | 2   | 1   | 1   | 1   |
+| 20th  | +6                | Superior Inspiration                                 | d12                | d12          | 2                     | 2                     | 2                     | 4              | 22           | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
 
 ## Hit points
 
@@ -94,7 +94,6 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Spellcasting Focus
 > You can use a musical instrument (see Equipment) as a spellcasting focus for your bard spells.
 
-
 ## Multiclassing
 
 **Prerequisites:** CHA 13  
@@ -105,7 +104,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Bardic Inspiration (levels 1, 5, 10, 15)
 > You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.
 >
-> You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest. 
+> You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.
 >
 > Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.
 
@@ -116,7 +115,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.
 
 > [!info]- Song of Rest (levels 2, 9, 13, 17)
-> Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. 
+> Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.
 >
 > The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.
 
@@ -139,15 +138,14 @@ You start with the following equipment, in addition to the equipment granted by 
 > At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).
 
 > [!info]- Magical Secrets (levels 10, 14, 18)
-> By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. 
+> By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any class, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.
 >
-> The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table. 
+> The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.
 >
 > You learn two additional spells from any class at 14th level and again at 18th level.
 
 > [!info]- Superior Inspiration (level 20)
 > At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use.
-
 
 ## Subclasses
 

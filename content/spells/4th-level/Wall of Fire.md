@@ -3,9 +3,9 @@ title: Wall of Fire
 level: 4
 school: Evocation
 classes:
-- Druid
-- Sorcerer
-- Wizard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 1 minute
@@ -14,10 +14,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*4th-level evocation*
+_4th-level evocation_
 
 **Material components:** A small piece of phosphorus.
 
@@ -43,4 +43,3 @@ The other side of the wall deals no damage.
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

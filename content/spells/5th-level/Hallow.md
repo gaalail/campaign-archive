@@ -3,7 +3,7 @@ title: Hallow
 level: 5
 school: Evocation
 classes:
-- Cleric
+  - Cleric
 casting_time: 24 hours
 range: Touch
 duration: Until dispelled
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level evocation*
+_5th-level evocation_
 
 **Material components:** Herbs, oils, and incense worth at least 1,000 gp, which the spell consumes.
 
@@ -23,25 +23,25 @@ First, celestials, elementals, fey, fiends, and undead can't enter the area, nor
 
 Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the GM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as ores or trolls. When a creature that would be affected enters the spell's area for the first time on a turn or starts its turn there, it can make a charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area.
 
-***Courage.*** Affected creatures can't be frightened while in the area.
+_**Courage.**_ Affected creatures can't be frightened while in the area.
 
-***Darkness.*** Darkness fills the area. Normal light, as well as magical light created by spells of a lower level than the slot you used to cast this spell, can't illuminate the area.
+_**Darkness.**_ Darkness fills the area. Normal light, as well as magical light created by spells of a lower level than the slot you used to cast this spell, can't illuminate the area.
 
-***Daylight.*** Bright light fills the area. Magical darkness created by spells of a lower level than the slot you used to cast this spell can't extinguish the light.
+_**Daylight.**_ Bright light fills the area. Magical darkness created by spells of a lower level than the slot you used to cast this spell can't extinguish the light.
 
-***Energy Protection.*** Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing.
+_**Energy Protection.**_ Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing.
 
-***Energy Vulnerability.*** Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing.
+_**Energy Vulnerability.**_ Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing.
 
-***Everlasting Rest.*** Dead bodies interred in the area can't be turned into undead.
+_**Everlasting Rest.**_ Dead bodies interred in the area can't be turned into undead.
 
-***Extradimensional Interference.*** Affected creatures can't move or travel using teleportation or by extradimensional or interplanar means.
+_**Extradimensional Interference.**_ Affected creatures can't move or travel using teleportation or by extradimensional or interplanar means.
 
-***Fear.*** Affected creatures are frightened while in the area.
+_**Fear.**_ Affected creatures are frightened while in the area.
 
-***Silence.*** No sound can emanate from within the area, and no sound can reach into it.
+_**Silence.**_ No sound can emanate from within the area, and no sound can reach into it.
 
-***Tongues.*** Affected creatures can communicate with any other creature in the area, even if they don't share a common language.
+_**Tongues.**_ Affected creatures can communicate with any other creature in the area, even if they don't share a common language.
 
 ---
 
@@ -54,4 +54,3 @@ Second, you can bind an extra effect to the area. Choose the effect from the fol
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

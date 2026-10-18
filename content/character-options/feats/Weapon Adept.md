@@ -6,7 +6,7 @@ source: Alternate Fighter
 
 # Weapon Adept
 
-### Updated Weapon Master Feat
+## Updated Weapon Master Feat
 
 You have spent many hours honing your skills with the deadly armaments of war. You gain the benefits listed below:
 

@@ -7,7 +7,7 @@ summary: Wondrous item, rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, rare (requires attunement)*
+_Wondrous item, rare (requires attunement)_
 
 This robe is adorned with eyelike patterns. While you wear the robe, you gain the following benefits:
 
@@ -30,4 +30,3 @@ A light spell cast on the robe or a daylight spell cast within 5 feet of the rob
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

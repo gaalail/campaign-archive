@@ -3,10 +3,10 @@ title: Magic Circle
 level: 3
 school: Abjuration
 classes:
-- Cleric
-- Paladin
-- Warlock
-- Wizard
+  - Cleric
+  - Paladin
+  - Warlock
+  - Wizard
 casting_time: 1 minute
 range: 10 feet
 duration: 1 hour
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*3rd-level abjuration*
+_3rd-level abjuration_
 
 **Material components:** Holy water or powdered silver and iron worth at least 100 gp, which the spell consumes.
 
@@ -46,4 +46,3 @@ When you cast this spell, you can elect to cause its magic to operate in the rev
 **Available to:** [[Cleric]], [[Paladin]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -8,15 +8,12 @@ summary: Armor (light, medium, or heavy), rare
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Armor (light, medium, or heavy), rare*
+_Armor (light, medium, or heavy), rare_
 
 You have a +1 bonus to AC while wearing this armor.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ You have a +1 bonus to AC while wearing this armor.
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

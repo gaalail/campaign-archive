@@ -3,7 +3,7 @@ title: Forbiddance
 level: 6
 school: Abjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 10 minutes
 range: Touch
 duration: 24 hours
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level abjuration (ritual)*
+_6th-level abjuration (ritual)_
 
 **Material components:** A sprinkling of holy water, rare incense, and powdered ruby worth at least 1,000 gp.
 
@@ -36,4 +36,3 @@ The spell's area can't overlap with the area of another forbiddance spell. If yo
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

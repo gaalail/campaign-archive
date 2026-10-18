@@ -7,19 +7,19 @@ summary: Wondrous item, rarity varies (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, rarity varies (requires attunement)*
+_Wondrous item, rarity varies (requires attunement)_
 
 While wearing this belt, your Strength score changes to a score granted by the belt. If your Strength is already equal to or greater than the belt's score, the item has no Effect on you.
 
 Six varieties of this belt exist, corresponding with and having rarity according to The Six kinds of true Giants. The belt of Stone Giant Strength and the belt of Frost Giant Strength look different, but they have the same Effect.
 
-| Type | Strength | Rarity |
-|---|---|---|
-| Hill Giant | 21 | Rare |
-| Stone Giant / Frost Giant | 23 | Very Rare |
-| Fire Giant | 25 | Very Rare |
-| Cloud Giant | 27 | Legendary |
-| Storm Giant | 29 | Legendary |
+| Type                      | Strength | Rarity    |
+| ------------------------- | -------- | --------- |
+| Hill Giant                | 21       | Rare      |
+| Stone Giant / Frost Giant | 23       | Very Rare |
+| Fire Giant                | 25       | Very Rare |
+| Cloud Giant               | 27       | Legendary |
+| Storm Giant               | 29       | Legendary |
 
 ---
 
@@ -30,4 +30,3 @@ Six varieties of this belt exist, corresponding with and having rarity according
 **Rarity:** Varies
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

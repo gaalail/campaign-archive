@@ -3,8 +3,8 @@ title: Burning Hands
 level: 1
 school: Evocation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -13,10 +13,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*1st-level evocation*
+_1st-level evocation_
 
 As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
 
@@ -36,4 +36,3 @@ The fire ignites any flammable objects in the area that aren't being worn or car
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

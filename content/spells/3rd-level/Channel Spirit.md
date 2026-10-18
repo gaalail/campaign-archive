@@ -3,11 +3,11 @@ title: Channel Spirit
 level: 3
 school: Divination
 classes:
-- Bard
-- Cleric
-- Druid
-- Warlock
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Druid
+  - Warlock
+  - Thanatomancer
 casting_time: 10 minutes
 range: Touch
 duration: Up to 1 hour
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*3rd-level divination (ritual)*
+_3rd-level divination (ritual)_
 
 **Material components:** 666 sc worth of incense and/or gemstones, which the ritual consumes.
 
@@ -25,16 +25,16 @@ You may ignore the material cost of this spell if you have one of the personal e
 
 When you finish casting this spell, select one spirit that you will attempt to channel into the body of yourself or a willing target creature that you touch. Roll an ability check using your spellcasting ability score against a DC chosen by the DM using the following guidelines. You are proficient in this check.
 
-| Example Spirit | Suggested DC |
-|---|---|
-| Sleeping humanoid on a different plane of existence | 8–12 |
-| Wakeful humanoid on a different plane of existence | 22–26 |
-| Sleeping humanoid on the same plane of existence | 13–16 |
-| Wakeful humanoid on the same plane of existence | 27–30 |
-| Recently deceased humanoid | 10–14 |
-| Long deceased humanoid | 27–30 |
-| Planar entity on a different plane of existence | 8–14 |
-| Planar entity on the same plane of existence | 14–18 |
+| Example Spirit                                      | Suggested DC |
+| --------------------------------------------------- | ------------ |
+| Sleeping humanoid on a different plane of existence | 8–12         |
+| Wakeful humanoid on a different plane of existence  | 22–26        |
+| Sleeping humanoid on the same plane of existence    | 13–16        |
+| Wakeful humanoid on the same plane of existence     | 27–30        |
+| Recently deceased humanoid                          | 10–14        |
+| Long deceased humanoid                              | 27–30        |
+| Planar entity on a different plane of existence     | 8–14         |
+| Planar entity on the same plane of existence        | 14–18        |
 
 If you succeed, then the spirit inhabits the target creature's body for the duration. The target creature loses their consciousness during this time and may act and answer questions as the spirit would. When the duration ends, the target creature regains consciousness with no memory of what transpired.
 

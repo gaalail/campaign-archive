@@ -3,8 +3,8 @@ title: Innocence Slaughtered
 level: 2
 school: Abjuration
 classes:
-- Cleric
-- Warlock
+  - Cleric
+  - Warlock
 casting_time: 1 hour
 range: Self
 duration: 8 hours
@@ -14,11 +14,12 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level abjuration (ritual)*
+_2nd-level abjuration (ritual)_
 
 **Material components:** 2 gallons of blood from an innocent person, which is defined as someone who has never willingly caused physical or emotional harm to another person in word or deed, through acts of commission or omission.
 
 After washing your hands and face with the blood required for this spell and allowing it to dry on your person, you gain the following benefits for the duration.
+
 - +2 to your AC.
 - Proficiency on all saving throws, including death saving throws.
 - When you take any damage, reduce it by 5 (min 1).

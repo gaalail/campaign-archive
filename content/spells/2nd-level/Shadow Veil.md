@@ -3,12 +3,12 @@ title: Shadow Veil
 level: 2
 school: Illusion
 classes:
-- Bard
-- Druid
-- Ranger
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Druid
+  - Ranger
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 hour
@@ -18,7 +18,7 @@ concentration: true
 source: Homebrew
 ---
 
-*2nd-level illusion (ritual)*
+_2nd-level illusion (ritual)_
 
 When you cast this spell, choose a creature type besides humanoid. You emit a psionic numbing resonance that causes you to be invisible to creatures of that type.
 

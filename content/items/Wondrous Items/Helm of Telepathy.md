@@ -7,7 +7,7 @@ summary: Wondrous item, uncommon (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, uncommon (requires attunement)*
+_Wondrous item, uncommon (requires attunement)_
 
 While wearing this helm, you can use an action to cast the detect thoughts spell (save DC 13) from it. As long as you maintain concentration on the spell, you can use a bonus action to send a telepathic message to a creature you are focused on. It can reply-using a bonus action to do so-while your focus on it continues.
 
@@ -22,4 +22,3 @@ While focusing on a creature with detect thoughts, you can use an action to cast
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

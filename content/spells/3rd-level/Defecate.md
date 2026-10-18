@@ -3,11 +3,11 @@ title: Defecate
 level: 3
 school: Enchantment
 classes:
-- Bard
-- Druid
-- Sorcerer
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Sorcerer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 40 ft
 duration: Instantaneous
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*3rd-level enchantment*
+_3rd-level enchantment_
 
 One creature that you can see within range must make a Constitution saving throw. On a failed save, it becomes infected with dysentery.
 

@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Paragon
 min_level: 20
 prerequisite: None
-summary: 'Avatar form only: as an action, you create a sun in the sky right above you for 1 minute.'
+summary: "Avatar form only: as an action, you create a sun in the sky right above you for 1 minute."
 source: Corpus Angelus
 ---
 

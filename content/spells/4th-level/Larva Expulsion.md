@@ -3,11 +3,11 @@ title: Larva Expulsion
 level: 4
 school: Necromancy
 classes:
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 10 minutes
 range: Touch
 duration: Up to 24 hours
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*4th-level necromancy (ritual)*
+_4th-level necromancy (ritual)_
 
 **Material components:** 5 sc worth of molasses, which the spell consumes.
 

@@ -3,12 +3,12 @@ title: Wings Like Eagles
 level: 2
 school: Transmutation
 classes:
-- Cleric
-- Druid
-- Paladin
-- Ranger
-- Sorcerer
-- Wizard
+  - Cleric
+  - Druid
+  - Paladin
+  - Ranger
+  - Sorcerer
+  - Wizard
 casting_time: 1 bonus action or reaction
 range: Self
 duration: Instantaneous
@@ -18,7 +18,7 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 Spectral wings, like those of an eagle, briefly flash around you, though they are insufficient to provide lighting. As the wings flap, you may leap vertically a number of feet equal to or less than your level x 20. You may angle your leap to move horizontally a number of feet equal to or less than your level x 10.
 

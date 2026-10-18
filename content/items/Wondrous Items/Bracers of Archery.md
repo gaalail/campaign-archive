@@ -8,15 +8,12 @@ summary: Wondrous item, uncommon (requires attunement)
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wondrous item, uncommon (requires attunement)*
+_Wondrous item, uncommon (requires attunement)_
 
 While wearing these bracers, you have proficiency with the longbow and shortbow, and you gain a +2 bonus to damage rolls on ranged attacks made with such weapons.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ While wearing these bracers, you have proficiency with the longbow and shortbow,
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

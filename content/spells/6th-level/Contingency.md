@@ -3,7 +3,7 @@ title: Contingency
 level: 6
 school: Evocation
 classes:
-- Wizard
+  - Wizard
 casting_time: 10 minutes
 range: Self
 duration: 10 days
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level evocation*
+_6th-level evocation_
 
 **Material components:** A statuette of yourself carved from ivory and decorated with gems worth at least 1,500 gp.
 
@@ -34,4 +34,3 @@ The contingent spell takes effect only on you, even if it can normally target ot
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -8,15 +8,12 @@ summary: Weapon (any), rare
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Weapon (any), rare*
+_Weapon (any), rare_
 
 You have a +2 bonus to attack and damage rolls made with this magic weapon.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ You have a +2 bonus to attack and damage rolls made with this magic weapon.
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

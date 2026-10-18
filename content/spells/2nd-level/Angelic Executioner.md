@@ -3,8 +3,8 @@ title: Angelic Executioner
 level: 2
 school: Illusion
 classes:
-- Cleric
-- Sorcerer
+  - Cleric
+  - Sorcerer
 casting_time: 1 action
 range: 60 feet
 duration: Concentration, up to 1 minute
@@ -14,7 +14,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*2nd-level illusion*
+_2nd-level illusion_
 
 **Material components:** a piece of coal, which is consumed by the spell
 
@@ -33,4 +33,3 @@ The target can repeat the saving throw at the end of each of its turns, ending t
 **Available to:** [[Cleric]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

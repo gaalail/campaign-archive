@@ -3,11 +3,11 @@ title: Stink
 level: 0
 school: Evocation
 classes:
-- Bard
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 1 round
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*Evocation cantrip*
+_Evocation cantrip_
 
 Make a melee spell attack. The target creature may choose to allow you to hit automatically.
 

@@ -3,8 +3,8 @@ title: Spike Growth
 level: 2
 school: Transmutation
 classes:
-- Druid
-- Ranger
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: 150 feet
 duration: Up to 10 minutes
@@ -13,10 +13,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 **Material components:** Seven sharp thorns or seven small twigs, each sharpened to a point.
 
@@ -35,4 +35,3 @@ The transformation of the ground is camouflaged to look natural. Any creature th
 **Available to:** [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

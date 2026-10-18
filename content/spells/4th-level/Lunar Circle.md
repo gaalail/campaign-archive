@@ -3,9 +3,9 @@ title: Lunar Circle
 level: 4
 school: Abjuration
 classes:
-- Druid
-- Ranger
-- Wizard
+  - Druid
+  - Ranger
+  - Wizard
 casting_time: 1 hour
 range: 60 foot radius
 duration: 24 hours
@@ -15,7 +15,7 @@ concentration: false
 source: Homebrew
 ---
 
-*4th-level abjuration (ritual)*
+_4th-level abjuration (ritual)_
 
 **Material components:** 100 sc worth of silver dust.
 

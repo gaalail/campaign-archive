@@ -3,10 +3,10 @@ title: Message
 level: 0
 school: Transmutation
 classes:
-- Artificer
-- Bard
-- Sorcerer
-- Wizard
+  - Artificer
+  - Bard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: 1 round
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*Transmutation cantrip*
+_Transmutation cantrip_
 
 **Material components:** A short piece of copper wire.
 
@@ -35,5 +35,3 @@ You can cast this spell through solid objects if you are familiar with the targe
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

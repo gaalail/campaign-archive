@@ -3,11 +3,11 @@ title: Freedom of Movement
 level: 4
 school: Abjuration
 classes:
-- Artificer
-- Bard
-- Cleric
-- Druid
-- Ranger
+  - Artificer
+  - Bard
+  - Cleric
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -16,11 +16,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
-- Wu Jen
+  - Mystic
+  - Wu Jen
 ---
 
-*4th-level abjuration*
+_4th-level abjuration_
 
 **Material components:** A leather strap, bound around the arm or a similar appendage.
 
@@ -39,5 +39,3 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Ranger]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

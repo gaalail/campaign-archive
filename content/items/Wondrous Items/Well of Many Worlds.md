@@ -7,7 +7,7 @@ summary: Wondrous item, legendary
 source: SRD 5.1
 ---
 
-*Wondrous item, legendary*
+_Wondrous item, legendary_
 
 This fine black cloth, soft as silk, is folded up to the dimensions of a handkerchief. It unfolds into a circular sheet 6 feet in diameter.
 
@@ -22,4 +22,3 @@ You can use an action to unfold and place the well of many worlds on a solid sur
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -7,7 +7,7 @@ summary: Wondrous item, legendary
 source: SRD 5.1
 ---
 
-*Wondrous item, legendary*
+_Wondrous item, legendary_
 
 This viscous, milky-white substance can form a permanent adhesive bond between any two objects. It must be stored in a jar or flask that has been coated inside with oil of slipperiness. When found, a container contains 1d6 + 1 ounces.
 
@@ -22,4 +22,3 @@ One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

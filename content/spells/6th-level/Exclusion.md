@@ -3,9 +3,9 @@ title: Exclusion
 level: 6
 school: Abjuration
 classes:
-- Bard
-- Sorcerer
-- Wizard
+  - Bard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*6th-level abjuration*
+_6th-level abjuration_
 
 **Material components:** a rotten egg
 
@@ -32,4 +32,3 @@ For the duration of the spell, you do not take damage from spells and other magi
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

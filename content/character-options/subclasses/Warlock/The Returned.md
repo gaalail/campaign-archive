@@ -13,13 +13,13 @@ Your savior lets you choose from an expanded list of spells when you learn a war
 
 ## Returned expanded spells
 
-| Spell level | Spells |
-| --- | --- |
-| 1st | [[Final Words]], [[Heretics' Mark]] |
-| 2nd | [[Find Steed]], [[Zone of Truth]] |
-| 3rd | [[Mass Healing Word]], [[Spirit Guardians]] |
-| 4th | [[Death Ward]], [[Guardian of Faith]] |
-| 5th | [[Mass Cure Wounds]], [[Planar Binding]] |
+| Spell level | Spells                                      |
+| ----------- | ------------------------------------------- |
+| 1st         | [[Final Words]], [[Heretics' Mark]]         |
+| 2nd         | [[Find Steed]], [[Zone of Truth]]           |
+| 3rd         | [[Mass Healing Word]], [[Spirit Guardians]] |
+| 4th         | [[Death Ward]], [[Guardian of Faith]]       |
+| 5th         | [[Mass Cure Wounds]], [[Planar Binding]]    |
 
 ## Features
 
@@ -29,7 +29,6 @@ Your savior lets you choose from an expanded list of spells when you learn a war
 > Being an angel, your savior demands that you act in favor of the good and to refrain from committing evil acts. Their demands are usually along the lines of "Do not lie! Do not harm the innocent! Prevent evil from committing evil acts!", although the specifics of the conditions can change from angel to angel. For example, a warrior angel can have more battle-oriented demands such as "Kill each evildoer you meet!".
 >
 > When you do not act according to the predetermined conditions and you cannot persuade your savior that you had good reasons for doing so, or when you adhere to the terms and conditions but otherwise commit vile atrocities, your savior may choose to leave you. In this case, you lose all your archetype features and die. But who knows? Another, most probably evil, force may make you an entirely different offer...
-
 
 > [!info]- Boons of the Savior (level 1)
 > At 1st level, you gain the ability to use some of the power of your savior angel. Choose one of the following options of your choice.
@@ -44,7 +43,6 @@ Your savior lets you choose from an expanded list of spells when you learn a war
 >
 > Once you use this feature a number of times equal to your Charisma modifier (minimum of once), you must finish a long rest to use it again.
 
-
 > [!info]- Celestial Travel (level 6)
 > Starting at 6th level, you can magically teleport to a place chosen by your savior angel, called the Sanctuary. Your sanctuary can be a heavenly room, a peaceful mountaintop, or another place in which you cannot be harmed.
 >
@@ -52,10 +50,8 @@ Your savior lets you choose from an expanded list of spells when you learn a war
 >
 > Once you use this feature, you must finish a short or long rest to use it again.
 
-
 > [!info]- Becoming an Angel (level 10)
 > At 10th level, the presence of your savior angel makes you more angelic as well. You do not require air, food, drink, or sleep. In addition, you grow angelic wings that grant you a flying speed of 30 feet.
-
 
 > [!info]- Angelic Host (level 14)
 > Starting at 14th level, when you use the Celestial Travel feature, you can choose to bring with you a number of allies equal to your Charisma modifier (minimum of one ally) that you can see within 60 feet of you.
@@ -68,5 +64,4 @@ Your savior lets you choose from an expanded list of spells when you learn a war
 >
 > **The Angelic Weapon.** The damage dealt by the conjured weapon increases to 2d10, and the extra damage dealt by the infused weapon increases to 2d6.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

@@ -3,9 +3,9 @@ title: Dominate Beast
 level: 4
 school: Enchantment
 classes:
-- Druid
-- Sorcerer
-- Thanatomancer
+  - Druid
+  - Sorcerer
+  - Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*4th-level enchantment*
+_4th-level enchantment_
 
 You attempt to beguile a creature that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.
 
@@ -37,4 +37,3 @@ You can use your action to take total and precise control of the target. Until t
 **Available to:** [[Druid]], [[Sorcerer]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -5,19 +5,19 @@ summary: Otherworldly Patron for the Warlock
 source: SRD 5.1
 ---
 
-*Otherworldly Patron (Warlock subclass)*
+_Otherworldly Patron (Warlock subclass)_
 
 You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.
 
 ## Bonus spells
 
-| Level | Spells |
-| --- | --- |
-| 1st | Burning Hands, Command |
-| 3rd | Blindness/Deafness, Scorching Ray |
-| 5th | Fireball, Stinking Cloud |
-| 7th | Fire Shield, Wall of Fire |
-| 9th | Flame Strike, Hallow |
+| Level | Spells                            |
+| ----- | --------------------------------- |
+| 1st   | Burning Hands, Command            |
+| 3rd   | Blindness/Deafness, Scorching Ray |
+| 5th   | Fireball, Stinking Cloud          |
+| 7th   | Fire Shield, Wall of Fire         |
+| 9th   | Flame Strike, Hallow              |
 
 ## Features
 

@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 5
 prerequisite: None
-summary: 'Avatar form only: by the power vested in you by your gods, you sprout angelic wings.'
+summary: "Avatar form only: by the power vested in you by your gods, you sprout angelic wings."
 source: Corpus Angelus
 ---
 

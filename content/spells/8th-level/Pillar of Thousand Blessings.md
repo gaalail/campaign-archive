@@ -3,7 +3,7 @@ title: Pillar of Thousand Blessings
 level: 8
 school: Abjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 10 minutes
 range: 5 feet
 duration: 10 minutes
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*8th-level abjuration*
+_8th-level abjuration_
 
 **Material components:** precious gems, metals, and coins worth at least 5,000 gp which the spell consumes
 
@@ -76,4 +76,3 @@ If a target is affected by the dispel magic spell or any other similar effect, e
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

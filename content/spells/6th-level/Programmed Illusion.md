@@ -3,8 +3,8 @@ title: Programmed Illusion
 level: 6
 school: Illusion
 classes:
-- Bard
-- Wizard
+  - Bard
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Until dispelled
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level illusion*
+_6th-level illusion_
 
 **Material components:** A bit of fleece and jade dust worth at least 25 gp.
 
@@ -37,4 +37,3 @@ Physical interaction with the image reveals it to be an illusion, because things
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -7,7 +7,7 @@ summary: Staff, rare (requires attunement by a bard, cleric, druid, sorcerer, wa
 source: SRD 5.1
 ---
 
-*Staff, rare (requires attunement by a bard, cleric, druid, sorcerer, warlock, or wizard)*
+_Staff, rare (requires attunement by a bard, cleric, druid, sorcerer, warlock, or wizard)_
 
 While holding this staff, you can use an action to expend 1 of its 10 charges to cast charm person, command, or comprehend languages from it using your spell save DC. The staff can also be used as a magic quarterstaff.
 
@@ -24,4 +24,3 @@ The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

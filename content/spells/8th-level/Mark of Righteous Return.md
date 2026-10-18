@@ -3,9 +3,9 @@ title: Mark of Righteous Return
 level: 8
 school: Necromancy
 classes:
-- Cleric
-- Druid
-- Thanatomancer
+  - Cleric
+  - Druid
+  - Thanatomancer
 casting_time: 1 hour
 range: Self
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*8th-level necromancy (ritual)*
+_8th-level necromancy (ritual)_
 
 **Material components:** a vial of your own blood
 
@@ -40,4 +40,3 @@ When you cast this spell, you are unable to cast the mark of righteous return ag
 **Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

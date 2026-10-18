@@ -3,9 +3,9 @@ title: Healing Word
 level: 1
 school: Evocation
 classes:
-- Bard
-- Cleric
-- Druid
+  - Bard
+  - Cleric
+  - Druid
 casting_time: 1 bonus action
 range: 60 feet
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level evocation*
+_1st-level evocation_
 
 A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 
@@ -33,4 +33,3 @@ A creature of your choice that you can see within range regains hit points equal
 **Available to:** [[Bard]], [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,10 +3,10 @@ title: Gaseous Form
 level: 3
 school: Transmutation
 classes:
-- Artificer
-- Sorcerer
-- Warlock
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Up to 1 hour
@@ -15,10 +15,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*3rd-level transmutation*
+_3rd-level transmutation_
 
 **Material components:** A bit of gauze and a wisp of smoke.
 
@@ -39,5 +39,3 @@ While in the form of a misty cloud, the target can't talk or manipulate objects,
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

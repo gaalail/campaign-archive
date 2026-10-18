@@ -3,9 +3,9 @@ title: Acid Splash
 level: 0
 school: Conjuration
 classes:
-- Artificer
-- Sorcerer
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*Conjuration cantrip*
+_Conjuration cantrip_
 
 You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a dexterity saving throw or take 1d6 acid damage.
 
@@ -32,5 +32,3 @@ This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level 
 **Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

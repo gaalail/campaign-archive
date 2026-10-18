@@ -14,18 +14,15 @@ Most great forces, entities, and deities are prone to making mistakes, losing th
 >
 > Starting when you choose this path at 3rd level, your friends are filled with hope when fighting alongside you. When you roll for initiative, you and your allies within 30 feet of you gain temporary hit points equal to your barbarian level + your Charisma modifier until the combat ends.
 
-
 > [!info]- Prevail (level 6)
 > Beginning at 6th level, the forces acting through you bless the weapons you wield. Your weapon attacks deal an extra 1d6 radiant damage on a hit.
 >
 > This extra damage die is considered to be part of your weapon damage die for the purposes of determining the extra damage for a critical hit.
 
-
 > [!info]- Beacon of Hope (level 10)
 > Starting at 10th level, your presence in the battlefield encourages your allies to stay strong; even in the face of the hardest of challenges. While you rage, your allies within 30 feet of you have advantage on saving throws.
 >
 > You can also use this feature to reroll a failed saving throw and must use the new roll. Once you use this feature, you can't use it again until you finish a short or long rest.
-
 
 > [!info]- Embodiment of Hope (level 14)
 > At 14th level, you become the embodiment of hope. While you rage, you can use your bonus action to undergo fascinating transformations. Golden veins pop out all over your body, inscribing the story of your life in celestial. An angelic halo appears over your head, glowing white. This transformation lasts until your rage ends.
@@ -42,5 +39,4 @@ Most great forces, entities, and deities are prone to making mistakes, losing th
 >
 > - You have advantage on your attack rolls and attacks against you are made with disadvantage.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

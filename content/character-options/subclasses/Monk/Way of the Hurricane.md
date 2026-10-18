@@ -9,7 +9,7 @@ source: Alternate Monk Expanded
 
 Where most martial arts traditions focus on quick strikes and quick movement, disciples of the Hurricane technique master mighty weapons. Hurricane Monks wield massive weapons to devastating effect. On the battlefield they become tempests of steel, cutting down any foe who dares to stand against them.
 
-### Heavy Warrior
+## Heavy Warrior
 
 **3rd-level Way of the Hurricane feature**
 

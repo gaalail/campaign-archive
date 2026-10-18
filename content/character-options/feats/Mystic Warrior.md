@@ -6,7 +6,7 @@ source: Alternate Monk Expanded
 
 You have mastered Mystical Techniques which allow you to perform supernatural feats. You gain the following benefits:
 
-### Mystic Ki
+## Mystic Ki
 
 You gain a pool of 2 Ki, which you can spend to use the Mystic Techniques you know. You regain all expended Ki when you finish a short or long rest. If you already have Ki from another source, this Ki is added to that pool of Ki.
 

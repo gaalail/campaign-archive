@@ -3,10 +3,10 @@ title: Spinal Discord
 level: 1
 school: Transmutation
 classes:
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -16,7 +16,7 @@ concentration: false
 source: Homebrew
 ---
 
-*1st-level transmutation (ritual)*
+_1st-level transmutation (ritual)_
 
 By touching the corpse of a humanoid that has died within the past 30 minutes, you may rip out its spine and augment it. The spinal cord lengthens and the vertebrae sharpen into spikes.
 

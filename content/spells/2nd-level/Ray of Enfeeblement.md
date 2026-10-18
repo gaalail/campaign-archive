@@ -3,9 +3,9 @@ title: Ray of Enfeeblement
 level: 2
 school: Necromancy
 classes:
-- Warlock
-- Wizard
-- Thanatomancer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -14,10 +14,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
 
-*2nd-level necromancy*
+_2nd-level necromancy_
 
 A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.
 
@@ -34,4 +34,3 @@ At the end of each of the target's turns, it can make a constitution saving thro
 **Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

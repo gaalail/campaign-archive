@@ -7,7 +7,7 @@ summary: Wondrous item, legendary (requires attunement by a creature of good ali
 source: SRD 5.1
 ---
 
-*Wondrous item, legendary (requires attunement by a creature of good alignment)*
+_Wondrous item, legendary (requires attunement by a creature of good alignment)_
 
 This talisman is a mighty symbol of goodness. A creature that is neither good nor evil in alignment takes 6d6 radiant damage upon touching the talisman. An evil creature takes 8d6 radiant damage upon touching the talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman.
 
@@ -24,4 +24,3 @@ The talisman has 7 charges. If you are wearing or holding it, you can use an act
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

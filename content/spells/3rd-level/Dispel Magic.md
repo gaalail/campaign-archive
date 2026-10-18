@@ -3,14 +3,14 @@ title: Dispel Magic
 level: 3
 school: Abjuration
 classes:
-- Artificer
-- Bard
-- Cleric
-- Druid
-- Paladin
-- Sorcerer
-- Warlock
-- Wizard
+  - Artificer
+  - Bard
+  - Cleric
+  - Druid
+  - Paladin
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Instantaneous
@@ -19,11 +19,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Witchblade
+  - Arcane Knight
+  - Witchblade
 ---
 
-*3rd-level abjuration*
+_3rd-level abjuration_
 
 Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.
 
@@ -41,5 +41,3 @@ Choose one creature, object, or magical effect within range. Any spell of 3rd le
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

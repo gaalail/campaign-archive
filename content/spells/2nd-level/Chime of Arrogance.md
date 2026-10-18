@@ -3,9 +3,9 @@ title: Chime of Arrogance
 level: 2
 school: Enchantment
 classes:
-- Bard
-- Ranger
-- Warlock
+  - Bard
+  - Ranger
+  - Warlock
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 hour
@@ -15,7 +15,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*2nd-level enchantment*
+_2nd-level enchantment_
 
 You create an invisible bubble of arcane mist in a 15-foot-radius sphere centered on you that moves with you, which remains for the duration of the spell or until dispelled.
 
@@ -32,4 +32,3 @@ If a creature makes an attack against a surprised creature while inside the bubb
 **Available to:** [[Bard]], [[Ranger]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

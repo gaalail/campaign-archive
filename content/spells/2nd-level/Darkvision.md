@@ -3,11 +3,11 @@ title: Darkvision
 level: 2
 school: Transmutation
 classes:
-- Artificer
-- Druid
-- Ranger
-- Sorcerer
-- Wizard
+  - Artificer
+  - Druid
+  - Ranger
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 8 hours
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 **Material components:** Either a pinch of dried carrot or an agate.
 
@@ -34,5 +34,3 @@ You touch a willing creature to grant it the ability to see in the dark. For the
 **Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

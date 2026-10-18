@@ -3,12 +3,12 @@ title: Nick
 level: 0
 school: Necromancy
 classes:
-- Cleric
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Cleric
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 120 ft
 duration: 1 round
@@ -18,7 +18,7 @@ concentration: false
 source: Homebrew
 ---
 
-*Necromancy cantrip*
+_Necromancy cantrip_
 
 Make a ranged spell attack against a creature within range. On a hit, when the creature starts its turn during the duration, it takes 1d4 piercing damage.
 

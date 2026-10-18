@@ -3,11 +3,11 @@ title: Fade
 level: 2
 school: Illusion
 classes:
-- Bard
-- Druid
-- Ranger
-- Warlock
-- Wizard
+  - Bard
+  - Druid
+  - Ranger
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level illusion*
+_2nd-level illusion_
 
 A creature that you touch must make a Charisma saving throw. It may choose to fail, allowing the effect to take hold automatically.
 

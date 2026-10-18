@@ -3,10 +3,10 @@ title: Protection from Evil and Good
 level: 1
 school: Abjuration
 classes:
-- Cleric
-- Paladin
-- Warlock
-- Wizard
+  - Cleric
+  - Paladin
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Up to 10 minutes
@@ -15,11 +15,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Witchblade
+  - Arcane Knight
+  - Witchblade
 ---
 
-*1st-level abjuration*
+_1st-level abjuration_
 
 **Material components:** Holy water or powdered silver and iron, which the spell consumes.
 
@@ -38,4 +38,3 @@ The protection grants several benefits. Creatures of those types have disadvanta
 **Available to:** [[Cleric]], [[Paladin]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

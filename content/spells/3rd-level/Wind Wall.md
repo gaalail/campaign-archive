@@ -3,8 +3,8 @@ title: Wind Wall
 level: 3
 school: Evocation
 classes:
-- Druid
-- Ranger
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: 120 feet
 duration: Up to 1 minute
@@ -13,10 +13,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*3rd-level evocation*
+_3rd-level evocation_
 
 **Material components:** A tiny fan and a feather of exotic origin.
 
@@ -37,4 +37,3 @@ The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flyin
 **Available to:** [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

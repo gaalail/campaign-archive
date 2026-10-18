@@ -7,7 +7,7 @@ summary: Wondrous item, legendary
 source: SRD 5.1
 ---
 
-*Wondrous item, legendary*
+_Wondrous item, legendary_
 
 You can use an action to blow this horn. In response, 5d4 + 5 warrior spirits from the Valhalla appear within 60 feet of you. They use the statistics of a berserker. They return to Valhalla after 1 hour or when they drop to 0 hit points. Once you use the horn, it can't be used again until 7 days have passed.
 
@@ -22,4 +22,3 @@ If you blow the horn without having proficiency with all martial weapons, the su
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

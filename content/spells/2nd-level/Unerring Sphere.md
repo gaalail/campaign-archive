@@ -3,9 +3,9 @@ title: Unerring Sphere
 level: 2
 school: Divination
 classes:
-- Bard
-- Wizard
-- Thanatomancer
+  - Bard
+  - Wizard
+  - Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: Indefinite
@@ -15,7 +15,7 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level divination (ritual)*
+_2nd-level divination (ritual)_
 
 You create a crystalline sphere that weighs about 8 pounds and has a circumference comparable to that of a dinner plate. By speaking a command word, the sphere begins recording an audio conversation, its visual environment, or both. You determine which when you speak the command word. It can record no more than 1 hour's worth of content, at which point it stops.
 

@@ -3,8 +3,8 @@ title: Fabricate
 level: 4
 school: Transmutation
 classes:
-- Artificer
-- Wizard
+  - Artificer
+  - Wizard
 casting_time: 10 minutes
 range: 120 feet
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*4th-level transmutation*
+_4th-level transmutation_
 
 You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, and clothes from flax or wool.
 
@@ -33,5 +33,3 @@ Creatures or magic items can't be created or transmuted by this spell. You also 
 **Available to:** [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

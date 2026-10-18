@@ -3,9 +3,9 @@ title: True Resurrection
 level: 9
 school: Necromancy
 classes:
-- Cleric
-- Druid
-- Thanatomancer
+  - Cleric
+  - Druid
+  - Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*9th-level necromancy*
+_9th-level necromancy_
 
 **Material components:** A sprinkle of holy water and diamonds worth at least 25,000gp, which the spell consumes.
 
@@ -36,4 +36,3 @@ The spell can even provide a new body if the original no longer exists, in which
 **Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

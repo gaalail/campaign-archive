@@ -4,12 +4,12 @@ title: Protection From Energy
 level: 3
 school: Abjuration
 classes:
-- Artificer
-- Cleric
-- Druid
-- Ranger
-- Sorcerer
-- Wizard
+  - Artificer
+  - Cleric
+  - Druid
+  - Ranger
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Up to 1 hour
@@ -18,18 +18,15 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 ---
-
 
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*3rd-level abjuration*
+_3rd-level abjuration_
 
 For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.
-
-
 
 ---
 
@@ -42,5 +39,3 @@ For the duration, the willing creature you touch has resistance to one damage ty
 **Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

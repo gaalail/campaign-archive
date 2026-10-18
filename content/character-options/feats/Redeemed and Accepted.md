@@ -1,7 +1,7 @@
 ---
 title: Redeemed and Accepted
 prerequisite: Redeemed Fiend
-summary: 'Prerequisite: Redeemed Fiend'
+summary: "Prerequisite: Redeemed Fiend"
 source: Corpus Angelus
 ---
 
@@ -13,4 +13,4 @@ As redeemed fiends keep their fiendish physical appearance when they are redeeme
 - You no longer have disadvantage on your Charisma (Persuasion) checks against common folk while in your true form.
 - Wisdom (Insight) checks by non-evil-aligned creatures against you are made with advantage, which allows people to understand you have good intentions.
 
-*From Corpus Angelus.*
+_From Corpus Angelus._

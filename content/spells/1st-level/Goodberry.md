@@ -3,8 +3,8 @@ title: Goodberry
 level: 1
 school: Transmutation
 classes:
-- Druid
-- Ranger
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level transmutation*
+_1st-level transmutation_
 
 **Material components:** A sprig of mistletoe.
 
@@ -33,4 +33,3 @@ The berries lose their potency if they have not been consumed within 24 hours of
 **Available to:** [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

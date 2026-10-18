@@ -3,11 +3,11 @@ title: Longstrider
 level: 1
 school: Transmutation
 classes:
-- Artificer
-- Bard
-- Druid
-- Ranger
-- Wizard
+  - Artificer
+  - Bard
+  - Druid
+  - Ranger
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level transmutation*
+_1st-level transmutation_
 
 **Material components:** A pinch of dirt.
 
@@ -37,5 +37,3 @@ You touch a creature. The target's speed increases by 10 feet until the spell en
 **Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

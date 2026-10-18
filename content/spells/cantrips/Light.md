@@ -3,11 +3,11 @@ title: Light
 level: 0
 school: Evocation
 classes:
-- Artificer
-- Bard
-- Cleric
-- Sorcerer
-- Wizard
+  - Artificer
+  - Bard
+  - Cleric
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -16,11 +16,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Wu Jen
+  - Arcane Knight
+  - Wu Jen
 ---
 
-*Evocation cantrip*
+_Evocation cantrip_
 
 **Material components:** A firefly or phosphorescent moss.
 
@@ -39,5 +39,3 @@ If you target an object held or worn by a hostile creature, that creature must s
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

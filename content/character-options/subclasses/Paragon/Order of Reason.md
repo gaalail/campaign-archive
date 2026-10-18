@@ -1,7 +1,7 @@
 ---
 title: Order of Reason
 parent_class: Paragon
-summary: 'Divine Order: Scholarship and knowledge of enemies'
+summary: "Divine Order: Scholarship and knowledge of enemies"
 source: Corpus Angelus
 ---
 
@@ -15,4 +15,4 @@ Members of the Order of Reason can choose these avatar features, as well as the 
 
 ![[class-options-of.base]]
 
-*From Corpus Angelus.*
+_From Corpus Angelus._

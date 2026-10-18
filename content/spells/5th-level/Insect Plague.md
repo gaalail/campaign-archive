@@ -3,9 +3,9 @@ title: Insect Plague
 level: 5
 school: Conjuration
 classes:
-- Cleric
-- Druid
-- Sorcerer
+  - Cleric
+  - Druid
+  - Sorcerer
 casting_time: 1 action
 range: 300 feet
 duration: Up to 10 minutes
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level conjuration*
+_5th-level conjuration_
 
 **Material components:** A few grains of sugar, some kernels of grain, and a smear of fat.
 
@@ -37,4 +37,3 @@ When the area appears, each creature in it must make a constitution saving throw
 **Available to:** [[Cleric]], [[Druid]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

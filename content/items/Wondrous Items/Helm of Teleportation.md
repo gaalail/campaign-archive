@@ -7,7 +7,7 @@ summary: Wondrous item, rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, rare (requires attunement)*
+_Wondrous item, rare (requires attunement)_
 
 This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the teleport spell from it. The helm regains 1d3
 
@@ -22,4 +22,3 @@ expended charges daily at dawn.
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -3,10 +3,10 @@ title: Animal Friendship
 level: 1
 school: Enchantment
 classes:
-- Bard
-- Druid
-- Ranger
-- Thanatomancer
+  - Bard
+  - Druid
+  - Ranger
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 24 hours
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level enchantment*
+_1st-level enchantment_
 
 **Material components:** A morsel of food.
 
@@ -33,4 +33,3 @@ This spell lets you convince a beast that you mean it no harm. Choose a beast th
 **Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

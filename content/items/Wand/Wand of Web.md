@@ -7,7 +7,7 @@ summary: Wand, uncommon (requires attunement by a spellcaster)
 source: SRD 5.1
 ---
 
-*Wand, uncommon (requires attunement by a spellcaster)*
+_Wand, uncommon (requires attunement by a spellcaster)_
 
 This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the web spell (save DC 15) from it.
 
@@ -22,4 +22,3 @@ The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand'
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -3,12 +3,12 @@ title: Soulsteal
 level: 4
 school: Necromancy
 classes:
-- Bard
-- Druid
-- Paladin
-- Ranger
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Paladin
+  - Ranger
+  - Wizard
+  - Thanatomancer
 casting_time: 10 minutes
 range: Touch
 duration: Instantaneous
@@ -18,7 +18,7 @@ concentration: false
 source: Homebrew
 ---
 
-*4th-level necromancy (ritual)*
+_4th-level necromancy (ritual)_
 
 **Material components:** a corpse that died within the past hour.
 

@@ -3,36 +3,36 @@ title: Warlock
 hit_die: d8
 spellcasting_ability: CHA
 saving_throws:
-- WIS
-- CHA
+  - WIS
+  - CHA
 summary: d8 hit die; saving throws WIS, CHA; spellcasting with CHA
 source: SRD 5.1
 ---
 
 ## The Warlock table
 
-| Level | Proficiency Bonus | Features | Invocations Known | Mystic Arcanum Level 6 | Mystic Arcanum Level 7 | Mystic Arcanum Level 8 | Mystic Arcanum Level 9 | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1st | +2 | Otherworldly Patron, Pact Magic | - | - | - | - | - | 2 | 2 | 1 | - | - | - | - |
-| 2nd | +2 | Eldritch Invocations | 2 | - | - | - | - | 2 | 3 | 2 | - | - | - | - |
-| 3rd | +2 | Pact Boon | 2 | - | - | - | - | 2 | 4 | - | 2 | - | - | - |
-| 4th | +2 | Ability Score Improvement | 3 | - | - | - | - | 3 | 5 | - | 2 | - | - | - |
-| 5th | +3 | - | 3 | - | - | - | - | 3 | 6 | - | - | 2 | - | - |
-| 6th | +3 | Otherworldly Patron feature | 4 | - | - | - | - | 3 | 7 | - | - | 2 | - | - |
-| 7th | +3 | - | 4 | - | - | - | - | 3 | 8 | - | - | - | 2 | - |
-| 8th | +3 | Ability Score Improvement | 4 | - | - | - | - | 3 | 9 | - | - | - | 2 | - |
-| 9th | +4 | - | 5 | - | - | - | - | 3 | 10 | - | - | - | - | 2 |
-| 10th | +4 | Otherworldly Patron feature | 5 | - | - | - | - | 4 | 10 | - | - | - | - | 2 |
-| 11th | +4 | Mystic Arcanum (6th level) | 5 | 1 | - | - | - | 4 | 11 | - | - | - | - | 3 |
-| 12th | +4 | Ability Score Improvement | 6 | 1 | - | - | - | 4 | 11 | - | - | - | - | 3 |
-| 13th | +5 | Mystic Arcanum (7th level) | 6 | 1 | 1 | - | - | 4 | 12 | - | - | - | - | 3 |
-| 14th | +5 | Otherworldly Patron feature | 6 | 1 | 1 | - | - | 4 | 12 | - | - | - | - | 3 |
-| 15th | +5 | Mystic Arcanum (8th level) | 7 | 1 | 1 | 1 | - | 4 | 13 | - | - | - | - | 3 |
-| 16th | +5 | Ability Score Improvement | 7 | 1 | 1 | 1 | - | 4 | 13 | - | - | - | - | 3 |
-| 17th | +6 | Mystic Arcanum (9th level) | 7 | 1 | 1 | 1 | 1 | 4 | 14 | - | - | - | - | 4 |
-| 18th | +6 | - | 8 | 1 | 1 | 1 | 1 | 4 | 14 | - | - | - | - | 4 |
-| 19th | +6 | Ability Score Improvement | 8 | 1 | 1 | 1 | 1 | 4 | 15 | - | - | - | - | 4 |
-| 20th | +6 | Eldritch Master | 8 | 1 | 1 | 1 | 1 | 4 | 15 | - | - | - | - | 4 |
+| Level | Proficiency Bonus | Features                        | Invocations Known | Mystic Arcanum Level 6 | Mystic Arcanum Level 7 | Mystic Arcanum Level 8 | Mystic Arcanum Level 9 | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th |
+| ----- | ----------------- | ------------------------------- | ----------------- | ---------------------- | ---------------------- | ---------------------- | ---------------------- | -------------- | ------------ | --- | --- | --- | --- | --- |
+| 1st   | +2                | Otherworldly Patron, Pact Magic | -                 | -                      | -                      | -                      | -                      | 2              | 2            | 1   | -   | -   | -   | -   |
+| 2nd   | +2                | Eldritch Invocations            | 2                 | -                      | -                      | -                      | -                      | 2              | 3            | 2   | -   | -   | -   | -   |
+| 3rd   | +2                | Pact Boon                       | 2                 | -                      | -                      | -                      | -                      | 2              | 4            | -   | 2   | -   | -   | -   |
+| 4th   | +2                | Ability Score Improvement       | 3                 | -                      | -                      | -                      | -                      | 3              | 5            | -   | 2   | -   | -   | -   |
+| 5th   | +3                | -                               | 3                 | -                      | -                      | -                      | -                      | 3              | 6            | -   | -   | 2   | -   | -   |
+| 6th   | +3                | Otherworldly Patron feature     | 4                 | -                      | -                      | -                      | -                      | 3              | 7            | -   | -   | 2   | -   | -   |
+| 7th   | +3                | -                               | 4                 | -                      | -                      | -                      | -                      | 3              | 8            | -   | -   | -   | 2   | -   |
+| 8th   | +3                | Ability Score Improvement       | 4                 | -                      | -                      | -                      | -                      | 3              | 9            | -   | -   | -   | 2   | -   |
+| 9th   | +4                | -                               | 5                 | -                      | -                      | -                      | -                      | 3              | 10           | -   | -   | -   | -   | 2   |
+| 10th  | +4                | Otherworldly Patron feature     | 5                 | -                      | -                      | -                      | -                      | 4              | 10           | -   | -   | -   | -   | 2   |
+| 11th  | +4                | Mystic Arcanum (6th level)      | 5                 | 1                      | -                      | -                      | -                      | 4              | 11           | -   | -   | -   | -   | 3   |
+| 12th  | +4                | Ability Score Improvement       | 6                 | 1                      | -                      | -                      | -                      | 4              | 11           | -   | -   | -   | -   | 3   |
+| 13th  | +5                | Mystic Arcanum (7th level)      | 6                 | 1                      | 1                      | -                      | -                      | 4              | 12           | -   | -   | -   | -   | 3   |
+| 14th  | +5                | Otherworldly Patron feature     | 6                 | 1                      | 1                      | -                      | -                      | 4              | 12           | -   | -   | -   | -   | 3   |
+| 15th  | +5                | Mystic Arcanum (8th level)      | 7                 | 1                      | 1                      | 1                      | -                      | 4              | 13           | -   | -   | -   | -   | 3   |
+| 16th  | +5                | Ability Score Improvement       | 7                 | 1                      | 1                      | 1                      | -                      | 4              | 13           | -   | -   | -   | -   | 3   |
+| 17th  | +6                | Mystic Arcanum (9th level)      | 7                 | 1                      | 1                      | 1                      | 1                      | 4              | 14           | -   | -   | -   | -   | 4   |
+| 18th  | +6                | -                               | 8                 | 1                      | 1                      | 1                      | 1                      | 4              | 14           | -   | -   | -   | -   | 4   |
+| 19th  | +6                | Ability Score Improvement       | 8                 | 1                      | 1                      | 1                      | 1                      | 4              | 15           | -   | -   | -   | -   | 4   |
+| 20th  | +6                | Eldritch Master                 | 8                 | 1                      | 1                      | 1                      | 1                      | 4              | 15           | -   | -   | -   | -   | 4   |
 
 ## Hit points
 
@@ -78,7 +78,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Spells Known of 1st Level and Higher
 > At 1st level, you know two 1st-level spells of your choice from the warlock spell list.
 >
-> The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. 
+> The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher.
 >
 > A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.
 >
@@ -93,7 +93,6 @@ You start with the following equipment, in addition to the equipment granted by 
 
 > [!info]- Spellcasting Focus
 > You can use an arcane focus as a spellcasting focus for your warlock spells.
-
 
 ## Multiclassing
 
@@ -143,7 +142,6 @@ You start with the following equipment, in addition to the equipment granted by 
 > At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature.
 >
 > Once you regain spell slots with this feature, you must finish a long rest before you can do so again.
-
 
 ## Class options
 

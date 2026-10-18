@@ -3,7 +3,7 @@ title: Animal Shapes
 level: 8
 school: Transmutation
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: 30 feet
 duration: Up to 24 hours
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*8th-level transmutation*
+_8th-level transmutation_
 
 Your magic turns others into beasts. Choose any number of willing creatures that you can see within range. You transform each target into the form of a Large or smaller beast with a challenge rating of 4 or lower. On subsequent turns, you can use your action to transform affected creatures into new forms.
 
@@ -32,4 +32,3 @@ The target's gear melds into the new form. The target can't activate, wield, or 
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

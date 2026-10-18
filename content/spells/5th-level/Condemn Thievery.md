@@ -3,8 +3,8 @@ title: Condemn Thievery
 level: 5
 school: Divination
 classes:
-- Bard
-- Ranger
+  - Bard
+  - Ranger
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*5th-level divination*
+_5th-level divination_
 
 **Material components:** a stolen coin retrieved from a thief
 
@@ -31,4 +31,3 @@ You touch a creature and draw the attention of justice to it. The creature must 
 **Available to:** [[Bard]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

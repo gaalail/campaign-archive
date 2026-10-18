@@ -3,9 +3,9 @@ title: Gust of Wind
 level: 2
 school: Evocation
 classes:
-- Druid
-- Sorcerer
-- Wizard
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Up to 1 minute
@@ -14,10 +14,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 **Material components:** A legume seed.
 
@@ -40,4 +40,3 @@ As a bonus action on each of your turns before the spell ends, you can change th
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

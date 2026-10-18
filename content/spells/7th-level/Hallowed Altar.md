@@ -3,7 +3,7 @@ title: Hallowed Altar
 level: 7
 school: Conjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 10 minutes
 range: 120 feet
 duration: 8 hours
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*7th-level conjuration*
+_7th-level conjuration_
 
 **Material components:** a holy symbol and a piece of marble worth 500 gp, which the spell consumes
 
@@ -44,4 +44,3 @@ You can create a permanent hallowed altar by casting this spell in the same loca
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,9 +3,9 @@ title: Commune With Nature
 level: 5
 school: Divination
 classes:
-- Druid
-- Ranger
-- Thanatomancer
+  - Druid
+  - Ranger
+  - Thanatomancer
 casting_time: 1 minute
 range: Self
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level divination (ritual)*
+_5th-level divination (ritual)_
 
 You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns.
 
@@ -44,4 +44,3 @@ For example, you could determine the location of powerful undead in the area, th
 **Available to:** [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

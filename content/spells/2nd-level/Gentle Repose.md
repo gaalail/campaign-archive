@@ -3,9 +3,9 @@ title: Gentle Repose
 level: 2
 school: Necromancy
 classes:
-- Cleric
-- Wizard
-- Thanatomancer
+  - Cleric
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: 10 days
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level necromancy (ritual)*
+_2nd-level necromancy (ritual)_
 
 **Material components:** A pinch of salt and one copper piece placed on each of the corpse's eyes, which must remain there for the duration.
 
@@ -34,4 +34,3 @@ The spell also effectively extends the time limit on raising the target from the
 **Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

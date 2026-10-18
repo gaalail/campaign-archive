@@ -3,9 +3,9 @@ title: Plant Growth
 level: 3
 school: Transmutation
 classes:
-- Bard
-- Druid
-- Ranger
+  - Bard
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -14,10 +14,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*3rd-level transmutation*
+_3rd-level transmutation_
 
 This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits.
 
@@ -38,4 +38,3 @@ If you cast this spell over 8 hours, you enrich the land. All plants in a half-m
 **Available to:** [[Bard]], [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

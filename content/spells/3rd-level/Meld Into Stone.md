@@ -3,7 +3,7 @@ title: Meld Into Stone
 level: 3
 school: Transmutation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: Touch
 duration: 8 hours
@@ -12,10 +12,10 @@ ritual: true
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*3rd-level transmutation (ritual)*
+_3rd-level transmutation (ritual)_
 
 You step into a stone object or surface large enough to fully contain your body, melding yourself and all the equipment you carry with the stone for the duration. Using your movement, you step into the stone at a point you can touch. Nothing of your presence remains visible or otherwise detectable by nonmagical senses.
 
@@ -34,4 +34,3 @@ Minor physical damage to the stone doesn't harm you, but its partial destruction
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

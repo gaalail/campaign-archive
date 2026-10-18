@@ -3,10 +3,10 @@ title: Identify
 level: 1
 school: Divination
 classes:
-- Artificer
-- Bard
-- Wizard
-- Thanatomancer
+  - Artificer
+  - Bard
+  - Wizard
+  - Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level divination (ritual)*
+_1st-level divination (ritual)_
 
 **Material components:** A pearl worth at least 100gp and an owl feather.
 
@@ -35,5 +35,3 @@ If you instead touch a creature throughout the casting, you learn what spells, i
 **Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

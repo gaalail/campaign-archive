@@ -4,9 +4,9 @@ title: Awakening the Flesh
 level: 6
 school: Necromancy
 classes:
-- Druid
-- Warlock
-- Thanatomancer
+  - Druid
+  - Warlock
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 10 minutes
@@ -16,15 +16,12 @@ concentration: true
 source: Corpus Angelus
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*6th-level necromancy*
+_6th-level necromancy_
 
 Magic courses through your body and unlocks its true potential, enabling it to heal most wounds almost instantly. You are immune to bludgeoning, piercing, and slashing damage from nonmagical attacks. You also don't take damage from falling and can't lose your limbs.
-
-
 
 ---
 
@@ -37,4 +34,3 @@ Magic courses through your body and unlocks its true potential, enabling it to h
 **Available to:** [[Druid]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

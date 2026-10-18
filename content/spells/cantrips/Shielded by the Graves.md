@@ -3,10 +3,10 @@ title: Shielded by the Graves
 level: 0
 school: Necromancy
 classes:
-- Bard
-- Cleric
-- Warlock
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Warlock
+  - Thanatomancer
 casting_time: 10 minutes
 range: Self
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*Necromancy cantrip*
+_Necromancy cantrip_
 
 **Material components:** an offering
 
@@ -35,4 +35,3 @@ You will either be blessed by the saint's soul or by a spirit watching over the 
 **Available to:** [[Bard]], [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

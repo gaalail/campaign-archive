@@ -3,11 +3,11 @@ title: Brimstone Tremor
 level: 9
 school: Transmutation
 classes:
-- Cleric
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
+  - Cleric
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 hour
 range: Self (1,000 foot line)
 duration: Instantaneous
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*9th-level transmutation*
+_9th-level transmutation_
 
 **Material components:** 100 sc worth of brimstone or sulfur, which the spell consumes.
 

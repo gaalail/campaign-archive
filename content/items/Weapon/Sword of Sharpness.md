@@ -7,7 +7,7 @@ summary: Weapon (any sword that deals slashing damage), very rare (requires attu
 source: SRD 5.1
 ---
 
-*Weapon (any sword that deals slashing damage), very rare (requires attunement)*
+_Weapon (any sword that deals slashing damage), very rare (requires attunement)_
 
 When you attack an object with this magic sword and hit, maximize your weapon damage dice against the target.
 
@@ -24,4 +24,3 @@ In addition, you can speak the sword's command word to cause the blade to shed b
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

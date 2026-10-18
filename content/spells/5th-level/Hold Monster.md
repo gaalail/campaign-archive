@@ -3,11 +3,11 @@ title: Hold Monster
 level: 5
 school: Enchantment
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 90 feet
 duration: Up to 1 minute
@@ -17,7 +17,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level enchantment*
+_5th-level enchantment_
 
 **Material components:** A small piece of iron.
 
@@ -37,4 +37,3 @@ Choose a creature you can see and reach. The target must make a saving throw of 
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,9 +3,9 @@ title: Speak with Dead
 level: 3
 school: Necromancy
 classes:
-- Bard
-- Cleric
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Thanatomancer
 casting_time: 1 action
 range: 10 feet
 duration: 10 minutes
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*3rd-level necromancy*
+_3rd-level necromancy_
 
 **Material components:** Burning incense.
 
@@ -34,4 +34,3 @@ Until the spell ends, you can ask the corpse up to five questions. The corpse kn
 **Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

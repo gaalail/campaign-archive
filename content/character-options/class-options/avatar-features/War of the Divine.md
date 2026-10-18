@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 17
 prerequisite: None
-summary: 'Avatar form only: you can summon twin angels of war (p.'
+summary: "Avatar form only: you can summon twin angels of war (p."
 source: Corpus Angelus
 ---
 

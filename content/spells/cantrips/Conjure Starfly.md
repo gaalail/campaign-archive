@@ -3,8 +3,8 @@ title: Conjure Starfly
 level: 0
 school: Conjuration
 classes:
-- Druid
-- Wizard
+  - Druid
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Concentration, up to 1 hour
@@ -14,7 +14,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*Conjuration cantrip*
+_Conjuration cantrip_
 
 You summon a starfly (p. 282) that appears in an unoccupied space that you can see within range. A starfly summoned with this spell disappears when it drops to 0 hit points or when the spell ends.
 
@@ -33,4 +33,3 @@ You cannot summon more than 1 starfly at a time using this spell. The number of 
 **Available to:** [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,7 +3,7 @@ title: Simulacrum
 level: 7
 school: Illusion
 classes:
-- Wizard
+  - Wizard
 casting_time: 12 hours
 range: Touch
 duration: Until dispelled
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*7th-level illusion*
+_7th-level illusion_
 
 **Material components:** Snow or ice in quantities sufficient to made a life-size copy of the duplicated creature; some hair, fingernail clippings, or other piece of that creature's body placed inside the snow or ice; and powdered ruby worth 1,500 gp, sprinkled over the duplicate and consumed by the spell.
 
@@ -36,4 +36,3 @@ If you cast this spell again, any currently active duplicates you created with t
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

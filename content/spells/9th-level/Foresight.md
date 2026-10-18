@@ -3,11 +3,11 @@ title: Foresight
 level: 9
 school: Divination
 classes:
-- Bard
-- Druid
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: 8 hours
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*9th-level divination*
+_9th-level divination_
 
 **Material components:** A hummingbird feather.
 
@@ -36,4 +36,3 @@ This spell immediately ends if you cast it again before its duration ends.
 **Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

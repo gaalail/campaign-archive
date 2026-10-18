@@ -47,21 +47,16 @@ Your angelic powers are dimmed and you are able to channel a small part of it, w
 > [!info]- Aengelic Infusion
 > When you hit with a spell or weapon attack, your attack deals an extra 1d4 radiant damage. This damage increases to 1d8 at 11th level and to 2d8 at 20th level.
 
-
 > [!info]- Banished
 > You are removed from heaven and now live in the material plane of existence.
-
 
 > [!info]- Creature Type
 > Your creature type is Celestial.
 
-
 > [!info]- Darkvision
 > You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-
 
 > [!info]- Dimmed Resistance
 > When you fail a saving throw against a spell or another magical effect, you can choose to reroll the die. When you do so, you must take the second result. Once you use this feature, you must finish a long rest to use it again.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

@@ -3,8 +3,8 @@ title: Death Ward
 level: 4
 school: Abjuration
 classes:
-- Cleric
-- Paladin
+  - Cleric
+  - Paladin
 casting_time: 1 action
 range: Touch
 duration: 8 hours
@@ -13,11 +13,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 arcane_knight_list_marker: "LL"
 ---
 
-*4th-level abjuration*
+_4th-level abjuration_
 
 You touch a creature and grant it a measure of protection from death.
 
@@ -36,4 +36,3 @@ If the spell is still in effect when the target is subjected to an effect that w
 **Available to:** [[Cleric]], [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

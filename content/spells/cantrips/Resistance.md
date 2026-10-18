@@ -3,9 +3,9 @@ title: Resistance
 level: 0
 school: Abjuration
 classes:
-- Artificer
-- Cleric
-- Druid
+  - Artificer
+  - Cleric
+  - Druid
 casting_time: 1 action
 range: Touch
 duration: Up to 1 minute
@@ -14,11 +14,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 arcane_knight_list_marker: "LL"
 ---
 
-*Abjuration cantrip*
+_Abjuration cantrip_
 
 **Material components:** A miniature cloak.
 
@@ -35,5 +35,3 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 **Available to:** [[Cleric]], [[Druid]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

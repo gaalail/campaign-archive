@@ -3,9 +3,9 @@ title: Radiant Storm
 level: 4
 school: Conjuration
 classes:
-- Cleric
-- Druid
-- Sorcerer
+  - Cleric
+  - Druid
+  - Sorcerer
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*4th-level conjuration*
+_4th-level conjuration_
 
 **Material components:** a source of light
 
@@ -35,4 +35,3 @@ HL: When you cast this spell using a spell slot of 5th level or higher, the dama
 **Available to:** [[Cleric]], [[Druid]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

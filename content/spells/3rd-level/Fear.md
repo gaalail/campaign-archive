@@ -3,10 +3,10 @@ title: Fear
 level: 3
 school: Illusion
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Up to 1 minute
@@ -15,11 +15,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
-- Witchblade
+  - Mystic
+  - Witchblade
 ---
 
-*3rd-level illusion*
+_3rd-level illusion_
 
 **Material components:** A white feather or the heart of a hen.
 
@@ -38,4 +38,3 @@ While frightened by this spell, a creature must take the Dash action and move aw
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

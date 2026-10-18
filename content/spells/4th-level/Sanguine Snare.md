@@ -3,12 +3,12 @@ title: Sanguine Snare
 level: 4
 school: Necromancy
 classes:
-- Cleric
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Cleric
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 60 ft
 duration: 1 minute
@@ -18,7 +18,7 @@ concentration: true
 source: Homebrew
 ---
 
-*4th-level necromancy*
+_4th-level necromancy_
 
 **Material components:** a drop of your blood.
 

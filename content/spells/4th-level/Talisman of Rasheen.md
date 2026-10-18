@@ -3,9 +3,9 @@ title: Talisman of Rasheen
 level: 4
 school: Enchantment
 classes:
-- Cleric
-- Wizard
-- Thanatomancer
+  - Cleric
+  - Wizard
+  - Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Indefinite
@@ -15,11 +15,12 @@ concentration: false
 source: Homebrew
 ---
 
-*4th-level enchantment (ritual)*
+_4th-level enchantment (ritual)_
 
 **Material components:** a pendant, brooch, bracelet, or similar item worth at least 10 sc.
 
 The material component that you used in this spell turns into a talisman with a vestige of Rasheen's power. A creature may attune to the talisman as if to a magic item. A creature attuned to the talisman gains the following benefits:
+
 - +2 Wisdom (its Wisdom may exceed 20 for the duration)
 - +2 to damage rolls from weapon attacks and innate magic
 - Can cast the following divine magic innately, using Charisma as a spellcasting modifier:

@@ -3,7 +3,7 @@ title: Acid Arrow
 level: 2
 school: Evocation
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 90 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 **Material components:** Powdered rhubarb leaf and an adder's stomach.
 
@@ -33,4 +33,3 @@ A shimmering green arrow streaks toward a target within range and bursts in a sp
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

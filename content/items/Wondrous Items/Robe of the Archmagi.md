@@ -7,7 +7,7 @@ summary: Wondrous item, legendary (requires attunement by a sorcerer, warlock, o
 source: SRD 5.1
 ---
 
-*Wondrous item, legendary (requires attunement by a sorcerer, warlock, or wizard)*
+_Wondrous item, legendary (requires attunement by a sorcerer, warlock, or wizard)_
 
 This elegant garment is made from exquisite cloth of white, gray, or black and adorned with silvery runes. The robe's color corresponds to the alignment for which the item was created. A white robe was made for good, gray for neutral, and black for evil. You can't attune to a robe of the archmagi that doesn't correspond to your alignment.
 
@@ -28,4 +28,3 @@ Your spell save DC and spell attack bonus each increase by 2.
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -3,8 +3,8 @@ title: Night's Veil
 level: 1
 school: Illusion
 classes:
-- Warlock
-- Wizard
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*1st-level illusion*
+_1st-level illusion_
 
 **Material components:** a black rag, and a pinch of glitter
 
@@ -33,4 +33,3 @@ Creatures with truesight are unaffected by this spell.
 **Available to:** [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -7,7 +7,7 @@ summary: Wondrous item, very rare
 source: SRD 5.1
 ---
 
-*Wondrous item, very rare*
+_Wondrous item, very rare_
 
 This bag superficially resembles a bag of holding but is a feeding orifice for a gigantic extradimensional creature. Turning the bag inside out closes the orifice.
 
@@ -26,4 +26,3 @@ If the bag is pierced or torn, it is destroyed, and anything contained within it
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

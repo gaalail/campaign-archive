@@ -30,23 +30,25 @@ This section contains monsters, creatures, NPCs, and other entities that players
 
 ### By Challenge Rating
 
-| CR | Count | Examples |
-|----|-------|----------|
-| 0 | ? | Commoners, animals |
-| 1-2 | ? | Bandits, goblins |
-| 3-5 | ? | Bugbears, wyverns |
-| 6-10 | ? | Giants, demons |
-| 11+ | ? | Ancient dragons, liches |
+| CR   | Count | Examples                |
+| ---- | ----- | ----------------------- |
+| 0    | ?     | Commoners, animals      |
+| 1-2  | ?     | Bandits, goblins        |
+| 3-5  | ?     | Bugbears, wyverns       |
+| 6-10 | ?     | Giants, demons          |
+| 11+  | ?     | Ancient dragons, liches |
 
 ---
 
 ## Finding a Monster
 
 **For DMs:**
+
 - Use the Monster Manual (official source)
 - Or search for custom creatures in this archive
 
 **For Players:**
+
 - Ask your DM which monsters you might encounter
 - The DM reveals monsters as appropriate during play
 
@@ -55,6 +57,7 @@ This section contains monsters, creatures, NPCs, and other entities that players
 ## Format
 
 Each monster page includes:
+
 - **Armor Class & Hit Points**
 - **Abilities** (Strength, Dexterity, etc.)
 - **Skills & Resistances**

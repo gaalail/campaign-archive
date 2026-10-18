@@ -3,11 +3,11 @@ title: Stoneskin
 level: 4
 school: Abjuration
 classes:
-- Artificer
-- Druid
-- Ranger
-- Sorcerer
-- Wizard
+  - Artificer
+  - Druid
+  - Ranger
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Up to 1 hour
@@ -16,10 +16,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*4th-level abjuration*
+_4th-level abjuration_
 
 **Material components:** Diamond dust worth 100 gp, which the spell consumes.
 
@@ -36,4 +36,3 @@ This spell turns the flesh of a willing creature you touch as hard as stone. Unt
 **Available to:** [[Artificer]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

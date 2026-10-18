@@ -3,10 +3,10 @@ title: Dominate Person
 level: 5
 school: Enchantment
 classes:
-- Bard
-- Sorcerer
-- Wizard
-- Thanatomancer
+  - Bard
+  - Sorcerer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level enchantment*
+_5th-level enchantment_
 
 You attempt to beguile a humanoid that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.
 
@@ -40,4 +40,3 @@ Each time the target takes damage, it makes a new wisdom saving throw against th
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

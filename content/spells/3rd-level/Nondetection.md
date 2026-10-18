@@ -3,9 +3,9 @@ title: Nondetection
 level: 3
 school: Abjuration
 classes:
-- Bard
-- Ranger
-- Wizard
+  - Bard
+  - Ranger
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 8 hours
@@ -14,10 +14,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*3rd-level abjuration*
+_3rd-level abjuration_
 
 **Material components:** A pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes.
 
@@ -34,4 +34,3 @@ For the duration, you hide a target that you touch from divination magic. The ta
 **Available to:** [[Bard]], [[Ranger]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

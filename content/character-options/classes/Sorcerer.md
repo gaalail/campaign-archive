@@ -3,36 +3,36 @@ title: Sorcerer
 hit_die: d6
 spellcasting_ability: CHA
 saving_throws:
-- CON
-- CHA
+  - CON
+  - CHA
 summary: d6 hit die; saving throws CON, CHA; spellcasting with CHA
 source: SRD 5.1
 ---
 
 ## The Sorcerer table
 
-| Level | Proficiency Bonus | Features | Sorcery Points | Metamagic | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1st | +2 | Spellcasting: Sorcerer, Sorcerous Origin | - | - | 4 | 2 | 2 | - | - | - | - | - | - | - | - |
-| 2nd | +2 | Font of Magic, Flexible Casting: Creating Spell Slots, Flexible Casting: Converting Spell Slot | 2 | - | 4 | 3 | 3 | - | - | - | - | - | - | - | - |
-| 3rd | +2 | Metamagic | 3 | 2 | 4 | 4 | 4 | 2 | - | - | - | - | - | - | - |
-| 4th | +2 | Ability Score Improvement | 4 | 2 | 5 | 5 | 4 | 3 | - | - | - | - | - | - | - |
-| 5th | +3 | - | 5 | 2 | 5 | 6 | 4 | 3 | 2 | - | - | - | - | - | - |
-| 6th | +3 | Sorcerous Origin feature | 6 | 2 | 5 | 7 | 4 | 3 | 3 | - | - | - | - | - | - |
-| 7th | +3 | - | 7 | 2 | 5 | 8 | 4 | 3 | 3 | 1 | - | - | - | - | - |
-| 8th | +3 | Ability Score Improvement | 8 | 2 | 5 | 9 | 4 | 3 | 3 | 2 | - | - | - | - | - |
-| 9th | +4 | - | 9 | 2 | 5 | 10 | 4 | 3 | 3 | 3 | 1 | - | - | - | - |
-| 10th | +4 | Metamagic | 10 | 3 | 6 | 11 | 4 | 3 | 3 | 3 | 2 | - | - | - | - |
-| 11th | +4 | - | 11 | 3 | 6 | 12 | 4 | 3 | 3 | 3 | 2 | 1 | - | - | - |
-| 12th | +4 | Ability Score Improvement | 12 | 3 | 6 | 12 | 4 | 3 | 3 | 3 | 2 | 1 | - | - | - |
-| 13th | +5 | - | 13 | 3 | 6 | 13 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | - | - |
-| 14th | +5 | Sorcerous Origin feature | 14 | 3 | 6 | 13 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | - | - |
-| 15th | +5 | - | 15 | 3 | 6 | 14 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | - |
-| 16th | +5 | Ability Score Improvement | 16 | 4 | 6 | 14 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | - |
-| 17th | +6 | Metamagic | 17 | 4 | 6 | 15 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | 1 |
-| 18th | +6 | Sorcerous Origin feature | 18 | 4 | 6 | 15 | 4 | 3 | 3 | 3 | 3 | 1 | 1 | 1 | 1 |
-| 19th | +6 | Ability Score Improvement | 19 | 4 | 6 | 15 | 4 | 3 | 3 | 3 | 3 | 2 | 1 | 1 | 1 |
-| 20th | +6 | Sorcerous Restoration | 20 | 4 | 6 | 15 | 4 | 3 | 3 | 3 | 3 | 2 | 2 | 1 | 1 |
+| Level | Proficiency Bonus | Features                                                                                       | Sorcery Points | Metamagic | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+| ----- | ----------------- | ---------------------------------------------------------------------------------------------- | -------------- | --------- | -------------- | ------------ | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1st   | +2                | Spellcasting: Sorcerer, Sorcerous Origin                                                       | -              | -         | 4              | 2            | 2   | -   | -   | -   | -   | -   | -   | -   | -   |
+| 2nd   | +2                | Font of Magic, Flexible Casting: Creating Spell Slots, Flexible Casting: Converting Spell Slot | 2              | -         | 4              | 3            | 3   | -   | -   | -   | -   | -   | -   | -   | -   |
+| 3rd   | +2                | Metamagic                                                                                      | 3              | 2         | 4              | 4            | 4   | 2   | -   | -   | -   | -   | -   | -   | -   |
+| 4th   | +2                | Ability Score Improvement                                                                      | 4              | 2         | 5              | 5            | 4   | 3   | -   | -   | -   | -   | -   | -   | -   |
+| 5th   | +3                | -                                                                                              | 5              | 2         | 5              | 6            | 4   | 3   | 2   | -   | -   | -   | -   | -   | -   |
+| 6th   | +3                | Sorcerous Origin feature                                                                       | 6              | 2         | 5              | 7            | 4   | 3   | 3   | -   | -   | -   | -   | -   | -   |
+| 7th   | +3                | -                                                                                              | 7              | 2         | 5              | 8            | 4   | 3   | 3   | 1   | -   | -   | -   | -   | -   |
+| 8th   | +3                | Ability Score Improvement                                                                      | 8              | 2         | 5              | 9            | 4   | 3   | 3   | 2   | -   | -   | -   | -   | -   |
+| 9th   | +4                | -                                                                                              | 9              | 2         | 5              | 10           | 4   | 3   | 3   | 3   | 1   | -   | -   | -   | -   |
+| 10th  | +4                | Metamagic                                                                                      | 10             | 3         | 6              | 11           | 4   | 3   | 3   | 3   | 2   | -   | -   | -   | -   |
+| 11th  | +4                | -                                                                                              | 11             | 3         | 6              | 12           | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
+| 12th  | +4                | Ability Score Improvement                                                                      | 12             | 3         | 6              | 12           | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
+| 13th  | +5                | -                                                                                              | 13             | 3         | 6              | 13           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
+| 14th  | +5                | Sorcerous Origin feature                                                                       | 14             | 3         | 6              | 13           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
+| 15th  | +5                | -                                                                                              | 15             | 3         | 6              | 14           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
+| 16th  | +5                | Ability Score Improvement                                                                      | 16             | 4         | 6              | 14           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
+| 17th  | +6                | Metamagic                                                                                      | 17             | 4         | 6              | 15           | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
+| 18th  | +6                | Sorcerous Origin feature                                                                       | 18             | 4         | 6              | 15           | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   |
+| 19th  | +6                | Ability Score Improvement                                                                      | 19             | 4         | 6              | 15           | 4   | 3   | 3   | 3   | 3   | 2   | 1   | 1   | 1   |
+| 20th  | +6                | Sorcerous Restoration                                                                          | 20             | 4         | 6              | 15           | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
 
 ## Hit points
 
@@ -74,7 +74,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Spells Known of 1st Level and Higher
 > You know two 1st-level spells of your choice from the sorcerer spell list.
 >
-> The Spells Known column of the Sorcerer table shows when you learn more sorcerer spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level. 
+> The Spells Known column of the Sorcerer table shows when you learn more sorcerer spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.
 >
 > Additionally, when you gain a level in this class, you can choose one of the sorcerer spells you know and replace it with another spell from the sorcerer spell list, which also must be of a level for which you have spell slots.
 
@@ -87,7 +87,6 @@ You start with the following equipment, in addition to the equipment granted by 
 
 > [!info]- Spellcasting Focus
 > You can use an arcane focus as a spellcasting focus for your sorcerer spells.
-
 
 ## Multiclassing
 
@@ -107,7 +106,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level..
 
 > [!info]- Flexible Casting: Creating Spell Slots (level 2)
-> You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th. 
+> You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.
 >
 > Any spell slot you create with this feature vanishes when you finish a long rest.
 
@@ -140,7 +139,6 @@ You start with the following equipment, in addition to the equipment granted by 
 
 > [!info]- Sorcerous Restoration (level 20)
 > At 20th level, you regain 4 expended sorcery points whenever you finish a short rest.
-
 
 ## Class options
 

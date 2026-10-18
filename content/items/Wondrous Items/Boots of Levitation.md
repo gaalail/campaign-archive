@@ -8,15 +8,12 @@ summary: Wondrous item, rare (requires attunement)
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wondrous item, rare (requires attunement)*
+_Wondrous item, rare (requires attunement)_
 
 While you wear these boots, you can use an action to cast the levitate spell on yourself at will.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ While you wear these boots, you can use an action to cast the levitate spell on 
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -3,36 +3,36 @@ title: Wizard
 hit_die: d6
 spellcasting_ability: INT
 saving_throws:
-- INT
-- WIS
+  - INT
+  - WIS
 summary: d6 hit die; saving throws INT, WIS; spellcasting with INT
 source: SRD 5.1
 ---
 
 ## The Wizard table
 
-| Level | Proficiency Bonus | Features | Arcane Recovery (slot levels) | Cantrips Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1st | +2 | Spellcasting: Wizard, Arcane Recovery | 1 | 3 | 2 | - | - | - | - | - | - | - | - |
-| 2nd | +2 | Arcane Tradition | 1 | 3 | 3 | - | - | - | - | - | - | - | - |
-| 3rd | +2 | - | 2 | 3 | 4 | 2 | - | - | - | - | - | - | - |
-| 4th | +2 | Ability Score Improvement | 2 | 4 | 4 | 3 | - | - | - | - | - | - | - |
-| 5th | +3 | - | 3 | 4 | 4 | 3 | 2 | - | - | - | - | - | - |
-| 6th | +3 | Arcane Tradition feature | 3 | 4 | 4 | 3 | 3 | - | - | - | - | - | - |
-| 7th | +3 | - | 4 | 4 | 4 | 3 | 3 | 1 | - | - | - | - | - |
-| 8th | +3 | Ability Score Improvement | 4 | 4 | 4 | 3 | 3 | 2 | - | - | - | - | - |
-| 9th | +4 | - | 5 | 4 | 4 | 3 | 3 | 3 | 1 | - | - | - | - |
-| 10th | +4 | Arcane Tradition feature | 5 | 5 | 4 | 3 | 3 | 3 | 2 | - | - | - | - |
-| 11th | +4 | - | 6 | 5 | 4 | 3 | 3 | 3 | 2 | 1 | - | - | - |
-| 12th | +4 | Ability Score Improvement | 6 | 5 | 4 | 3 | 3 | 3 | 2 | 1 | - | - | - |
-| 13th | +5 | - | 7 | 5 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | - | - |
-| 14th | +5 | Arcane Tradition feature | 7 | 5 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | - | - |
-| 15th | +5 | - | 8 | 5 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | - |
-| 16th | +5 | Ability Score Improvement | 8 | 5 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | - |
-| 17th | +6 | - | 9 | 5 | 4 | 3 | 3 | 3 | 2 | 1 | 1 | 1 | 1 |
-| 18th | +6 | Spell Mastery | 9 | 5 | 4 | 3 | 3 | 3 | 3 | 1 | 1 | 1 | 1 |
-| 19th | +6 | Ability Score Improvement | 10 | 5 | 4 | 3 | 3 | 3 | 3 | 2 | 1 | 1 | 1 |
-| 20th | +6 | Signature Spell | 10 | 5 | 4 | 3 | 3 | 3 | 3 | 2 | 2 | 1 | 1 |
+| Level | Proficiency Bonus | Features                              | Arcane Recovery (slot levels) | Cantrips Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
+| ----- | ----------------- | ------------------------------------- | ----------------------------- | -------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1st   | +2                | Spellcasting: Wizard, Arcane Recovery | 1                             | 3              | 2   | -   | -   | -   | -   | -   | -   | -   | -   |
+| 2nd   | +2                | Arcane Tradition                      | 1                             | 3              | 3   | -   | -   | -   | -   | -   | -   | -   | -   |
+| 3rd   | +2                | -                                     | 2                             | 3              | 4   | 2   | -   | -   | -   | -   | -   | -   | -   |
+| 4th   | +2                | Ability Score Improvement             | 2                             | 4              | 4   | 3   | -   | -   | -   | -   | -   | -   | -   |
+| 5th   | +3                | -                                     | 3                             | 4              | 4   | 3   | 2   | -   | -   | -   | -   | -   | -   |
+| 6th   | +3                | Arcane Tradition feature              | 3                             | 4              | 4   | 3   | 3   | -   | -   | -   | -   | -   | -   |
+| 7th   | +3                | -                                     | 4                             | 4              | 4   | 3   | 3   | 1   | -   | -   | -   | -   | -   |
+| 8th   | +3                | Ability Score Improvement             | 4                             | 4              | 4   | 3   | 3   | 2   | -   | -   | -   | -   | -   |
+| 9th   | +4                | -                                     | 5                             | 4              | 4   | 3   | 3   | 3   | 1   | -   | -   | -   | -   |
+| 10th  | +4                | Arcane Tradition feature              | 5                             | 5              | 4   | 3   | 3   | 3   | 2   | -   | -   | -   | -   |
+| 11th  | +4                | -                                     | 6                             | 5              | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
+| 12th  | +4                | Ability Score Improvement             | 6                             | 5              | 4   | 3   | 3   | 3   | 2   | 1   | -   | -   | -   |
+| 13th  | +5                | -                                     | 7                             | 5              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
+| 14th  | +5                | Arcane Tradition feature              | 7                             | 5              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | -   | -   |
+| 15th  | +5                | -                                     | 8                             | 5              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
+| 16th  | +5                | Ability Score Improvement             | 8                             | 5              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | -   |
+| 17th  | +6                | -                                     | 9                             | 5              | 4   | 3   | 3   | 3   | 2   | 1   | 1   | 1   | 1   |
+| 18th  | +6                | Spell Mastery                         | 9                             | 5              | 4   | 3   | 3   | 3   | 3   | 1   | 1   | 1   | 1   |
+| 19th  | +6                | Ability Score Improvement             | 10                            | 5              | 4   | 3   | 3   | 3   | 3   | 2   | 1   | 1   | 1   |
+| 20th  | +6                | Signature Spell                       | 10                            | 5              | 4   | 3   | 3   | 3   | 3   | 2   | 2   | 1   | 1   |
 
 ## Hit points
 
@@ -91,7 +91,6 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Spellcasting Focus
 > You can use an arcane focus as a spellcasting focus for your wizard spells.
 
-
 ## Multiclassing
 
 **Prerequisites:** INT 13
@@ -128,7 +127,6 @@ You start with the following equipment, in addition to the equipment granted by 
 > When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two 3rd-level wizard spells in your spellbook as your signature spells. You always have these spells prepared, they don't count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot. When you do so, you can't do so again until you finish a short or long rest.
 >
 > If you want to cast either spell at a higher level, you must expend a spell slot as normal.
-
 
 ## Subclasses
 

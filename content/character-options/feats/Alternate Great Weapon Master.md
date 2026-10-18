@@ -6,7 +6,7 @@ source: Alternate Fighter
 
 # Alternate Great Weapon Master
 
-### Updated Great Weapon Master Feat
+## Updated Great Weapon Master Feat
 
 **Prerequisite:** Strength of 13 or higher
 

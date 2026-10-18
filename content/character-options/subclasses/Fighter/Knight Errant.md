@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Knight Errant"
 
 Often raised at court or in the upper circles of the nobility, the archetypal Knight Errant is a chivalric warrior of the highest order. They excel at mounted combat and wander the world in search of adventure and opportunities for heroism. These paragons of virtue are bound to defend the weak and weary.
 
-### Knight Errant Exploits
+## Knight Errant Exploits
 
 **3rd-level Knight Errant Archetype feature.** You learn certain Exploits at the Fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.
 

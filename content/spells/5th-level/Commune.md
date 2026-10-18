@@ -3,8 +3,8 @@ title: Commune
 level: 5
 school: Divination
 classes:
-- Cleric
-- Thanatomancer
+  - Cleric
+  - Thanatomancer
 casting_time: 1 minute
 range: Self
 duration: 1 minute
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level divination (ritual)*
+_5th-level divination (ritual)_
 
 **Material components:** Incense and a vial of holy or unholy water.
 
@@ -35,4 +35,3 @@ If you cast the spell two or more times before finishing your next long rest, th
 **Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

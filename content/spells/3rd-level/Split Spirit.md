@@ -3,9 +3,9 @@ title: Split Spirit
 level: 3
 school: Necromancy
 classes:
-- Druid
-- Wizard
-- Thanatomancer
+  - Druid
+  - Wizard
+  - Thanatomancer
 casting_time: 10 minutes
 range: Self
 duration: Until dispelled
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*3rd-level necromancy (ritual)*
+_3rd-level necromancy (ritual)_
 
 **Material components:** a big unblemished mirror worth at least 150 gp
 
@@ -34,4 +34,3 @@ You can dismiss this spell as an action.
 **Available to:** [[Druid]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

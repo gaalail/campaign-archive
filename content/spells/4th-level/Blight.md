@@ -3,11 +3,11 @@ title: Blight
 level: 4
 school: Necromancy
 classes:
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Instantaneous
@@ -16,10 +16,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
 
-*4th-level necromancy*
+_4th-level necromancy_
 
 Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. The spell has no effect on undead or constructs.
 
@@ -41,4 +41,3 @@ If you target a nonmagical plant that isn't a creature, such as a tree or shrub,
 **Available to:** [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

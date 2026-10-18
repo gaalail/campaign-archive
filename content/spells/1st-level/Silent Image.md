@@ -3,9 +3,9 @@ title: Silent Image
 level: 1
 school: Illusion
 classes:
-- Bard
-- Sorcerer
-- Wizard
+  - Bard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 10 minutes
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*1st-level illusion*
+_1st-level illusion_
 
 **Material components:** A bit of fleece.
 
@@ -36,4 +36,3 @@ Physical interaction with the image reveals it to be an illusion, because things
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

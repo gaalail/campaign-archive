@@ -3,9 +3,9 @@ title: Heat Metal
 level: 2
 school: Transmutation
 classes:
-- Artificer
-- Bard
-- Druid
+  - Artificer
+  - Bard
+  - Druid
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 **Material components:** A piece of iron and a flame.
 
@@ -37,5 +37,3 @@ If a creature is holding or wearing the object and takes the damage from it, the
 **Available to:** [[Bard]], [[Druid]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

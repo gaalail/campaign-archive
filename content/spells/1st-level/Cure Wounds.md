@@ -3,12 +3,12 @@ title: Cure Wounds
 level: 1
 school: Evocation
 classes:
-- Artificer
-- Bard
-- Cleric
-- Druid
-- Paladin
-- Ranger
+  - Artificer
+  - Bard
+  - Cleric
+  - Druid
+  - Paladin
+  - Ranger
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -18,7 +18,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level evocation*
+_1st-level evocation_
 
 A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 
@@ -36,5 +36,3 @@ A creature you touch regains a number of hit points equal to 1d8 + your spellcas
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

@@ -3,8 +3,8 @@ title: Garden of Heaven
 level: 2
 school: Transmutation
 classes:
-- Cleric
-- Druid
+  - Cleric
+  - Druid
 casting_time: 1 minute
 range: 5 feet
 duration: 8 hours
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*2nd-level transmutation (ritual)*
+_2nd-level transmutation (ritual)_
 
 **Material components:** a vial of holy water, a dozen red roses
 
@@ -31,4 +31,3 @@ You choose a point within range and cast a ritual by pouring holy water and thro
 **Available to:** [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

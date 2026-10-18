@@ -4,10 +4,10 @@ title: Purify Food and Drink
 level: 1
 school: Transmutation
 classes:
-- Artificer
-- Cleric
-- Druid
-- Paladin
+  - Artificer
+  - Cleric
+  - Druid
+  - Paladin
 casting_time: 1 action
 range: 10 feet
 duration: Instantaneous
@@ -17,15 +17,12 @@ concentration: false
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*1st-level transmutation (ritual)*
+_1st-level transmutation (ritual)_
 
 All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.
-
-
 
 ---
 
@@ -38,5 +35,3 @@ All nonmagical food and drink within a 5-foot radius sphere centered on a point 
 **Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

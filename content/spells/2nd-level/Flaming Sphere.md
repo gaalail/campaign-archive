@@ -3,8 +3,8 @@ title: Flaming Sphere
 level: 2
 school: Conjuration
 classes:
-- Druid
-- Wizard
+  - Druid
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute
@@ -13,10 +13,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*2nd-level conjuration*
+_2nd-level conjuration_
 
 **Material components:** A bit of tallow, a pinch of brimstone, and a dusting of powdered iron.
 
@@ -40,4 +40,3 @@ When you move the sphere, you can direct it over barriers up to 5 feet tall and 
 **Available to:** [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

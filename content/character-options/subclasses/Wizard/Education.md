@@ -18,14 +18,12 @@ To start your career, you graduated from a school that teaches the basics of the
 >
 > Starting at 2nd level, the money and time others spend to copy a spell from your spellbook are halved.
 
-
 > [!info]- Supervised Cantrips (level 2)
 > Beginning at 2nd level, you can teach how to cast a cantrip to others even if they have no knowledge of the arcane arts.
 >
 > You give an hour-long lecture to a creature and lend them the ability to cast one cantrip that you know. The creature uses your spellcasting ability to cast the cantrip. You can lend a maximum number of cantrips equal to your Intelligence modifier (minimum of 1).
 >
 > You cannot lend more than one cantrip to a creature using this feature. You can end this effect on any creature that you are sharing a cantrip with at any time.
-
 
 > [!info]- Master Instructor (level 6)
 > At 6th level, you learn how to effectively use your academic skills during a moment of conflict. You can use this feature to benefit from one of the following options of your choice:
@@ -38,17 +36,14 @@ To start your career, you graduated from a school that teaches the basics of the
 >
 > You can use this feature a number of times equal to your Intelligence modifier (minimum of once) and you regain the ability to do so after you finish a short or long rest.
 
-
 > [!info]- Assistant Professor (level 10)
 > Beginning at 10th level, you are an assistant professor. You prepare homework and some exam questions, and you directly report to the professor that you are working under. During this time in your career, you learn to design creative challenges for the improvement of your students through the questions you prepare.
 >
 > As an action, you ask a question to a creature, who must succeed on an Intelligence saving throw or be stunned for 1 minute. The creature repeats the saving throw at the start of each of its turns, ending the effect on a success. The creature must be able to understand you or isn't affected by this feature.
-
 
 > [!info]- Professor (level 14)
 > At 14th level, you become a professor. You prepare the curriculum and have the authority to give a certificate to your graduate students as proof of their efforts and achievements. Upon graduation, a student becomes qualified to choose this arcane tradition.
 >
 > To become a professor, you learned to tap into the untapped magical energies inside your students. You can cast the spells that have a range of self, with a range of touch instead.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

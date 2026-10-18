@@ -3,9 +3,9 @@ title: Lawmaker
 level: 8
 school: Enchantment
 classes:
-- Bard
-- Cleric
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Thanatomancer
 casting_time: 1 hour
 range: 10 feet
 duration: 1 day
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*8th-level enchantment*
+_8th-level enchantment_
 
 **Material components:** up to eight stone tablets with your code of conduct carved upon them
 
@@ -38,4 +38,3 @@ The laws must be in keeping with your alignment, your personal code of conduct, 
 **Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

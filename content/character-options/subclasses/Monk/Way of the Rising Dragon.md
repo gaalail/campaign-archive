@@ -9,7 +9,7 @@ source: Alternate Monk
 
 Often found in the service of ancient dragons, disciples of the Rising Dragon use their Ki to mimic draconic power. These mystic warriors vary greatly based on the dragons they emulate, but despite differences, they all channel the presence, poise, and elemental power of a great dragon.
 
-### Rising Dragon Techniques
+## Rising Dragon Techniques
 
 **3rd-level Way of the Rising Dragon feature**
 

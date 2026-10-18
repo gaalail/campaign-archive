@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Shadowdancer"
 
 The energies of the Shadowfell grant many strange and dark abilities to those who can wield them. The Fighters known as Shadowdancers learn to draw these sinister powers through themselves to create an exact copy of their bodies in combat.
 
-### Shadowdancer Exploits
+## Shadowdancer Exploits
 
 **3rd-level Shadowdancer Archetype feature.** You learn certain Exploits at the Fighter levels noted in the table below. They don't count against your total number of Exploits Known and can't be switched upon gaining a level.
 

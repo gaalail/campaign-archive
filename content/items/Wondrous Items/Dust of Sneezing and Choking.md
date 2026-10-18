@@ -7,7 +7,7 @@ summary: Wondrous item, uncommon
 source: SRD 5.1
 ---
 
-*Wondrous item, uncommon*
+_Wondrous item, uncommon_
 
 Found in a small container, this powder resembles very fine sand. It appears to be dust of disappearance, and an identify spell reveals it to be such. There is enough of it for one use.
 
@@ -22,4 +22,3 @@ When you use an action to throw a handful of the dust into the air, you and each
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

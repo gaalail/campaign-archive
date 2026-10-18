@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Witchblade"
 
 Driven by an overwhelming desire to vanquish the great evils of the world, Witchblades are willing to give up anything. This path leads them to enter into bargains with Eldritch Powers, beings of otherworldly might. Witchblades offer a fraction of their soul and unending fealty in return for eldrtich abilities.
 
-### Pact Magic
+## Pact Magic
 
 **3rd-level Witchblade Archetype feature.** The bargain you have struck with your Patron has granted you the ability to cast spells, much like a Warlock does:
 

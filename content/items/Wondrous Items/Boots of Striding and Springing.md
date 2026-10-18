@@ -8,15 +8,12 @@ summary: Wondrous item, uncommon (requires attunement)
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wondrous item, uncommon (requires attunement)*
+_Wondrous item, uncommon (requires attunement)_
 
 While you wear these boots, your walking speed becomes 30 feet, unless your walking speed is higher, and your speed isn't reduced if you are encumbered or wearing heavy armor. In addition, you can jump three times the normal distance, though you can't jump farther than your remaining movement would allow.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ While you wear these boots, your walking speed becomes 30 feet, unless your walk
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

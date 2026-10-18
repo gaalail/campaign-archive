@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Master at Arms"
 
 While most Fighters master one specific martial discipline, a Master at Arms is the rare warrior who is able to truly master multiple styles of combat. Whether by their talent, dedication, or extraordinary skills, these elite Fighters learn all they can about the theories of combat. A Master at Arms is always on the lookout for a new weapon or style of fighting to perfect.
 
-### Advanced Technique
+## Advanced Technique
 
 **3rd-level Master at Arms Archetype feature.** Your ability to learn and execute combat styles exceeds that of most other warriors and even other trained Fighters. You learn an additional Fighting Style of your choice, but it does not count against your number of Fighting Styles Known.
 

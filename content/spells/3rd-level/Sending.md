@@ -3,9 +3,9 @@ title: Sending
 level: 3
 school: Evocation
 classes:
-- Bard
-- Cleric
-- Wizard
+  - Bard
+  - Cleric
+  - Wizard
 casting_time: 1 action
 range: Unlimited
 duration: 1 round
@@ -14,10 +14,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*3rd-level evocation*
+_3rd-level evocation_
 
 **Material components:** A short piece of fine copper wire.
 
@@ -36,4 +36,3 @@ You can send the message across any distance and even to other planes of existen
 **Available to:** [[Bard]], [[Cleric]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

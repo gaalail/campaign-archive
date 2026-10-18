@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Champion"
 
 Champions forgo all other forms of training to focus on their raw physical might. These immense figures strive to maintain peak physical condition through relentless dedication. In battle, Champions perform supernatural feats of athleticism and dominate foes with raw power.
 
-### Champion Exploits
+## Champion Exploits
 
 **3rd-level Champion Archetype feature.** You learn certain Exploits at the Fighter levels noted in the table below. They don't count against your total number of Exploits Known, and cannot be switched out for other Exploits when you gain a Fighter level:
 

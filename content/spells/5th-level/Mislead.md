@@ -3,9 +3,9 @@ title: Mislead
 level: 5
 school: Illusion
 classes:
-- Bard
-- Warlock
-- Wizard
+  - Bard
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Up to 1 hour
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level illusion*
+_5th-level illusion_
 
 You become invisible at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends if you attack or cast a spell.
 
@@ -34,4 +34,3 @@ You can see through its eyes and hear through its ears as if you were located wh
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

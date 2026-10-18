@@ -7,7 +7,7 @@ summary: Wondrous item, legendary
 source: SRD 5.1
 ---
 
-*Wondrous item, legendary*
+_Wondrous item, legendary_
 
 This 2-foot-diameter black sphere is a hole in the multiverse, hovering in space and stabilized by a magical field surrounding it.
 
@@ -19,10 +19,10 @@ If you attempt to control a sphere that is under another creature's control, you
 
 If the sphere comes into contact with a planar portal, such as that created by the gate spell, or an extradimensional space, such as that within a portable hole, the GM determines randomly what happens, using the following table.
 
-| d100 | Result |
-|---|---|
-| 01-50 | The sphere is destroyed. |
-| 51-85 | The sphere moves through the portal or into the extradimensional space. |
+| d100  | Result                                                                                                                             |
+| ----- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 01-50 | The sphere is destroyed.                                                                                                           |
+| 51-85 | The sphere moves through the portal or into the extradimensional space.                                                            |
 | 86-00 | A spatial rift sends each creature and object within 180 feet of the sphere, including the sphere, to a random plane of existence. |
 
 ---
@@ -34,4 +34,3 @@ If the sphere comes into contact with a planar portal, such as that created by t
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -9,7 +9,7 @@ source: Alternate Monk
 
 While most traditional martial artists value honorable tactics and combat styles, disciples of the Shadow Arts exploit every weakness, no matter how dishonorable. Assassins and spies, Shadow Monks only strike if success is absolutely assured.
 
-### Eyes of Night
+## Eyes of Night
 
 **3rd-level Way of the Shadow Arts feature**
 

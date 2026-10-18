@@ -52,30 +52,23 @@ Your fey nature blesses you with a variety of mystical traits that you share wit
 > [!info]- Creature Type
 > Your creature type is Fey.
 
-
 > [!info]- Darkvision
 > Your magical nature grants you sight, even in the darkest of environments. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-
 
 > [!info]- Empathy
 > You have proficiency in the Insight skill.
 
-
 > [!info]- Fey Endurance
 > You have advantage on saving throws against spells and other magical effects.
-
 
 > [!info]- Marked Senses
 > You have proficiency in the Perception skill.
 
-
 > [!info]- Tea Expert
 > You gain proficiency with teamaker's tools. In addition, you can discern every single aroma in food or drink, and determine whether it is poisoned or not.
 
-
 > [!info]- Tool Proficiency
 > You gain proficiency with one type of artisan's tools of your choice.
-
 
 **Subrace.** While they are still young, every peri chooses an emotion or a value to hold onto when they encounter hardships. These emotions or values determine their capabilities as adults.
 
@@ -88,10 +81,8 @@ You favor the thrill of experiencing new things. You have a deep-seated desire a
 > [!info]- Truthful Memory
 > For a short while, your senses remember the things you experienced perfectly. You can make a Wisdom (Perception) skill check to perceive something that you perceived within the last minute using one of your senses, even if you can no longer perceive it. You can attempt to do so once every minute.
 
-
 > [!info]- Shared Tongue
 > You can cast the comprehend languages spell once using this trait and regain the ability to do so when you finish a short or long rest.
-
 
 ## Love Peri
 
@@ -102,10 +93,8 @@ When challenged by hardships, these peris hold on to positive feelings, such as 
 > [!info]- Aesthetic of Good
 > You have proficiency in the Performance skill.
 
-
 > [!info]- Charming Glamor
 > You can cast charm person as a 1st level spell once using this trait. Charisma is your spellcasting ability for this spell. You regain the ability to cast the spell using this trait when you finish a short or long rest.
-
 
 ## Valor Peri
 
@@ -116,9 +105,7 @@ As a valor peri, you can channel your extreme emotions into hostile action. By d
 > [!info]- Brave
 > You have advantage on saving throws against being frightened.
 
-
 > [!info]- Tests of Bravery
 > Through self-appointed tests of bravery, you learn to use great weapons as a symbol of your great courage. You have proficiency with the greataxe, greatsword, longbow, and maul.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

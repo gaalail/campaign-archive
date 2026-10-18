@@ -3,11 +3,11 @@ title: Comprehend Languages
 level: 1
 school: Divination
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: 1 hour
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level divination (ritual)*
+_1st-level divination (ritual)_
 
 **Material components:** A pinch of soot and salt.
 
@@ -36,4 +36,3 @@ This spell doesn't decode secret messages in a text or a glyph, such as an arcan
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

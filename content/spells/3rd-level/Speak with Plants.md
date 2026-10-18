@@ -3,9 +3,9 @@ title: Speak with Plants
 level: 3
 school: Transmutation
 classes:
-- Bard
-- Druid
-- Ranger
+  - Bard
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: Self
 duration: 10 minutes
@@ -14,10 +14,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*3rd-level transmutation*
+_3rd-level transmutation_
 
 You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell's area within the past day, gaining information about creatures that have passed, weather, and other circumstances.
 
@@ -40,4 +40,3 @@ This spell can cause the plants created by the entangle spell to release a restr
 **Available to:** [[Bard]], [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

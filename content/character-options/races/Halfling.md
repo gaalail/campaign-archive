@@ -22,7 +22,6 @@ source: SRD 5.1
 > [!info]- Lucky
 > When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
 
-
 ## Lightfoot Halfling
 
 As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life.

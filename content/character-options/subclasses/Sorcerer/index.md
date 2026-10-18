@@ -10,12 +10,12 @@ title: Sorcerer Subclasses
 
 ## Available Origins
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Draconic]] | Dragon bloodline | Draconic heritage |
-| [[Prismatic Sorcerer]] | Rainbow magic | Prism powers |
-| [[Starborn]] | Celestial magic | Star-touched |
-| [[The Knight Dragon Bloodline]] | Dragon knight | Holy dragon power |
+| Subclass                        | Feature          | Theme             |
+| ------------------------------- | ---------------- | ----------------- |
+| [[Draconic]]                    | Dragon bloodline | Draconic heritage |
+| [[Prismatic Sorcerer]]          | Rainbow magic    | Prism powers      |
+| [[Starborn]]                    | Celestial magic  | Star-touched      |
+| [[The Knight Dragon Bloodline]] | Dragon knight    | Holy dragon power |
 
 ---
 

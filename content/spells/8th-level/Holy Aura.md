@@ -3,7 +3,7 @@ title: Holy Aura
 level: 8
 school: Abjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: Self
 duration: Up to 1 minute
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*8th-level abjuration*
+_8th-level abjuration_
 
 **Material components:** A tiny reliquary worth at least 1,000gp containing a sacred relic, such as a scrap of cloth from a saint's robe or a piece of parchment from a religious text.
 
@@ -30,4 +30,3 @@ Divine light washes out from you and coalesces in a soft radiance in a 30-foot r
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

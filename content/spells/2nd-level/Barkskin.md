@@ -3,8 +3,8 @@ title: Barkskin
 level: 2
 school: Transmutation
 classes:
-- Druid
-- Ranger
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: Touch
 duration: Up to 1 hour
@@ -13,11 +13,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 wu_jen_list_marker: "LL"
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 **Material components:** A handful of oak bark.
 
@@ -34,4 +34,3 @@ You touch a willing creature. Until the spell ends, the target's skin has a roug
 **Available to:** [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

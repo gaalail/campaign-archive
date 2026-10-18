@@ -7,7 +7,7 @@ summary: Weapon (any sword), rare
 source: SRD 5.1
 ---
 
-*Weapon (any sword), rare*
+_Weapon (any sword), rare_
 
 You gain a +1 bonus to attack and damage rolls made with this magic weapon.
 
@@ -22,4 +22,3 @@ When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of 
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

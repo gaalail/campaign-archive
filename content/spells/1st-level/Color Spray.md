@@ -3,8 +3,8 @@ title: Color Spray
 level: 1
 school: Illusion
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: 1 round
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level illusion*
+_1st-level illusion_
 
 **Material components:** A pinch of powder or sand that is colored red, yellow, and blue.
 
@@ -36,4 +36,3 @@ Starting with the creature that has the lowest current hit points, each creature
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

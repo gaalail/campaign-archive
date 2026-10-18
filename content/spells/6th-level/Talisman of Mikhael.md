@@ -3,9 +3,9 @@ title: Talisman of Mikhael
 level: 6
 school: Enchantment
 classes:
-- Cleric
-- Wizard
-- Thanatomancer
+  - Cleric
+  - Wizard
+  - Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Indefinite
@@ -15,11 +15,12 @@ concentration: false
 source: Homebrew
 ---
 
-*6th-level enchantment (ritual)*
+_6th-level enchantment (ritual)_
 
 **Material components:** a pendant, brooch, bracelet, or similar item worth at least 10 sc.
 
 The material component that you used in this spell turns into a talisman with a vestige of Mikhael's power. A creature may attune to the talisman as if to a magic item. A creature attuned to the talisman gains the following benefits:
+
 - +2 Charisma score (its Charisma may exceed 20 for the duration)
 - +1 to saving throws
 - Can cast the following spells innately, Charisma as a spellcasting modifier:

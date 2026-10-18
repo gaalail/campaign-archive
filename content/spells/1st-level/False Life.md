@@ -3,9 +3,9 @@ title: False Life
 level: 1
 school: Necromancy
 classes:
-- Sorcerer
-- Wizard
-- Thanatomancer
+  - Sorcerer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: 1 hour
@@ -14,10 +14,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
 
-*1st-level necromancy*
+_1st-level necromancy_
 
 **Material components:** A small amount of alcohol or distilled spirits.
 
@@ -37,4 +37,3 @@ Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 tempo
 **Available to:** [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

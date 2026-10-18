@@ -3,10 +3,10 @@ title: Shelley's Prize Experiment
 level: 8
 school: Necromancy
 classes:
-- Bard
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: 2 days
@@ -16,7 +16,7 @@ concentration: false
 source: Homebrew
 ---
 
-*8th-level necromancy*
+_8th-level necromancy_
 
 **Material components:** at least three humanoid corpses and a spool of copper wire.
 

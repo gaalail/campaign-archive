@@ -7,7 +7,7 @@ summary: Wondrous item, legendary (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, legendary (requires attunement)*
+_Wondrous item, legendary (requires attunement)_
 
 If you hold this beetle-shaped medallion in your hand for 1 round, an inscription appears on its surface revealing its magical nature. It provides two benefits while it is on your person:
 
@@ -24,4 +24,3 @@ The scarab has 12 charges. If you fail a saving throw against a necromancy spell
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

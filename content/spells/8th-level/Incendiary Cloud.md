@@ -3,8 +3,8 @@ title: Incendiary Cloud
 level: 8
 school: Conjuration
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 150 feet
 duration: Up to 1 minute
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*8th-level conjuration*
+_8th-level conjuration_
 
 A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.
 
@@ -33,4 +33,3 @@ The cloud moves 10 feet directly away from you in a direction that you choose at
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -9,7 +9,7 @@ source: Alternate Monk
 
 While all Monks are trained in the use of weapons, those who walk the Way of Shining Steel dedicate their lives to mastery over their chosen armaments. Known for their extreme focus, Steel Monks challenge progressively stronger warriors to put their spirit, technique, and resolve to the ultimate test.
 
-### Shining Techniques
+## Shining Techniques
 
 **3rd-level Way of Shining Steel feature**
 

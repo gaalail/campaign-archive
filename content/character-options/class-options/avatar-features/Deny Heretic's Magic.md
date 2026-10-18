@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 17
 prerequisite: None
-summary: 'Avatar form only: you condemn a heretic casting spells against the will of your deity.'
+summary: "Avatar form only: you condemn a heretic casting spells against the will of your deity."
 source: Corpus Angelus
 ---
 

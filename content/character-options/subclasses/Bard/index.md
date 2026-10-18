@@ -10,13 +10,13 @@ title: Bard Subclasses
 
 ## Available Colleges
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[College of Hope]] | Inspiring magic | Magic through hope |
+| Subclass                         | Feature                               | Theme                                                |
+| -------------------------------- | ------------------------------------- | ---------------------------------------------------- |
+| [[College of Hope]]              | Inspiring magic                       | Magic through hope                                   |
 | [[College of Infernal Archives]] | Planar occultism & alchemical mastery | Forbidden lore, body manipulation, and teleportation |
-| [[College of Truth]] | Truth and knowledge | Speaking truths |
-| [[Lore]] | Lore Master | Broader spell access |
-| [[Hymn Singer]] | Sacred music | Holy melodies |
+| [[College of Truth]]             | Truth and knowledge                   | Speaking truths                                      |
+| [[Lore]]                         | Lore Master                           | Broader spell access                                 |
+| [[Hymn Singer]]                  | Sacred music                          | Holy melodies                                        |
 
 ---
 

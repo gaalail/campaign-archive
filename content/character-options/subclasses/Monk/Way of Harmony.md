@@ -9,7 +9,7 @@ source: Alternate Monk
 
 Balance in all things. This is the mantra of Monks who devote their lives to the Way of Harmony. Famous for their mystical abilities to manipulate Ki to heal wounds, cure disease, and even disrupt powerful curses, these Monks keep all things in balance. However, when creatures look to extend their lives through unnatural means or cheat death, these warriors will use their power to destroy said creatures, restoring balance.
 
-### Harmony Techniques
+## Harmony Techniques
 
 **3rd-level Way of Harmony feature**
 

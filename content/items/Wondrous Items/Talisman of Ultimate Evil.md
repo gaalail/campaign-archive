@@ -7,7 +7,7 @@ summary: Wondrous item, legendary (requires attunement by a creature of evil ali
 source: SRD 5.1
 ---
 
-*Wondrous item, legendary (requires attunement by a creature of evil alignment)*
+_Wondrous item, legendary (requires attunement by a creature of evil alignment)_
 
 This item symbolizes unrepentant evil. A creature that is neither good nor evil in alignment takes 6d6 necrotic damage upon touching the talisman. A good creature takes 8d6 necrotic damage upon touching the talisman. Either sort of creature takes the damage again each time it ends its turn holding or carrying the talisman.
 
@@ -24,4 +24,3 @@ The talisman has 6 charges. If you are wearing or holding it, you can use an act
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

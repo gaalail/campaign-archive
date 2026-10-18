@@ -3,7 +3,7 @@ title: Black Tentacles
 level: 4
 school: Conjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 90 feet
 duration: Up to 1 minute
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*4th-level conjuration*
+_4th-level conjuration_
 
 **Material components:** A piece of tentacle from a giant octopus or a giant squid
 
@@ -34,4 +34,3 @@ A creature restrained by the tentacles can use its action to make a Strength or 
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

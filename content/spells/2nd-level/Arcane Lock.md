@@ -3,7 +3,7 @@ title: Arcane Lock
 level: 2
 school: Abjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Until dispelled
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level abjuration*
+_2nd-level abjuration_
 
 **Material components:** Gold dust worth at least 25gp, which the spell consumes.
 
@@ -32,4 +32,3 @@ While affected by this spell, the object is more difficult to break or force ope
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

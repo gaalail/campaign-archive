@@ -3,10 +3,10 @@ title: Herneate
 level: 5
 school: Necromancy
 classes:
-- Bard
-- Druid
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 120 ft
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: Homebrew
 ---
 
-*5th-level necromancy*
+_5th-level necromancy_
 
 One creature in range that you can see must make a Constitution saving throw. On a failed save, they experience a hernia as their internal organs protrude from a hole that opens in their body. The creature suffers the effects of the Internal Bleeding lingering injury.
 

@@ -7,7 +7,7 @@ summary: Ring, rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Ring, rare (requires attunement)*
+_Ring, rare (requires attunement)_
 
 This ring stores spells cast into it, holding them until the attuned wearer uses them. The ring can store up to 5 levels worth of spells at a time. When found, it contains 1d6 - 1 levels of stored spells chosen by the GM.
 
@@ -24,4 +24,3 @@ While wearing this ring, you can cast any spell stored in it. The spell uses the
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

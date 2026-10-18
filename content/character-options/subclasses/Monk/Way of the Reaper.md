@@ -9,7 +9,7 @@ source: Alternate Monk
 
 While most monastic orders teach students to live their lives to their full potential, those who follow the Way of the Reaper are obsessed with the process of death and dying. Reaper Monks learn to channel deathly Ki to fuel their own martial prowess and are experts at using fear and other sinister techniques to drain the life force from others in order to prolong their own lives.
 
-### Reaper Techniques
+## Reaper Techniques
 
 **3rd-level Way of the Reaper feature**
 

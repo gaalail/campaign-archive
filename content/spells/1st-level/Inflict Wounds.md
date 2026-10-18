@@ -3,8 +3,8 @@ title: Inflict Wounds
 level: 1
 school: Necromancy
 classes:
-- Cleric
-- Thanatomancer
+  - Cleric
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -13,10 +13,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
 
-*1st-level necromancy*
+_1st-level necromancy_
 
 Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.
 
@@ -34,4 +34,3 @@ Make a melee spell attack against a creature you can reach. On a hit, the target
 **Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

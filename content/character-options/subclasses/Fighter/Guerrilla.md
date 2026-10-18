@@ -8,7 +8,7 @@ summary: "Alternate Fighter Warrior Archetype: Guerrilla"
 
 No matter the mission, a Guerrilla will execute it with utmost perfection. Sometimes known as commandos, these warriors are marked by their determination and adaptability. Whether harsh terrain, vicious monsters, enemy soldiers, or powerful spellcasters, nothing short of death will cause the willpower of a Guerrilla warrior to waver in the pursuit of their goals.
 
-### Adaptable Combatant
+## Adaptable Combatant
 
 **3rd-level Guerrilla Archetype feature.** You have honed your skills to meet any challenge. You gain proficiency in Athletics, Perception, Stealth, or Survival. If you choose a skill you are proficient in, you instead gain a bonus to checks with that skill equal to your Exploit Die.
 

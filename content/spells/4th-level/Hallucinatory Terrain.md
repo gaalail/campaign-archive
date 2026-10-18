@@ -3,10 +3,10 @@ title: Hallucinatory Terrain
 level: 4
 school: Illusion
 classes:
-- Bard
-- Druid
-- Warlock
-- Wizard
+  - Bard
+  - Druid
+  - Warlock
+  - Wizard
 casting_time: 10 minutes
 range: 300 feet
 duration: 24 hours
@@ -15,10 +15,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
 
-*4th-level illusion*
+_4th-level illusion_
 
 **Material components:** A stone, a twig, and a bit of green plant.
 
@@ -37,4 +37,3 @@ The tactile characteristics of the terrain are unchanged, so creatures entering 
 **Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

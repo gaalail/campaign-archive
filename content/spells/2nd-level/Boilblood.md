@@ -3,12 +3,12 @@ title: Boilblood
 level: 2
 school: Enchantment
 classes:
-- Bard
-- Druid
-- Paladin
-- Ranger
-- Warlock
-- Thanatomancer
+  - Bard
+  - Druid
+  - Paladin
+  - Ranger
+  - Warlock
+  - Thanatomancer
 casting_time: 1 action
 range: 60 ft
 duration: Concentration, up to 1 minute
@@ -18,7 +18,7 @@ concentration: true
 source: Homebrew
 ---
 
-*2nd-level enchantment*
+_2nd-level enchantment_
 
 You magically irritate a target creature to the point that its blood literally boils. One creature within range must make a Charisma saving throw. On a success, there is no effect and you do not spend your spell slot. On a failure, when the creature makes an attack roll against a single target, it has disadvantage unless it is targeting you.
 

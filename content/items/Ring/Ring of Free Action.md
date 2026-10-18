@@ -8,15 +8,12 @@ summary: Ring, rare (requires attunement)
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Ring, rare (requires attunement)*
+_Ring, rare (requires attunement)_
 
 While you wear this ring, difficult terrain doesn't cost you extra movement. In addition, magic can neither reduce your speed nor cause you to be paralyzed or restrained.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ While you wear this ring, difficult terrain doesn't cost you extra movement. In 
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

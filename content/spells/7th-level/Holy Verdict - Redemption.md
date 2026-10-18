@@ -1,12 +1,12 @@
 ---
-title: 'Holy Verdict: Redemption'
+title: "Holy Verdict: Redemption"
 level: 7
 school: Divination
 classes:
-- Bard
-- Cleric
-- Warlock
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Warlock
+  - Thanatomancer
 casting_time: 1 day
 range: 10 feet
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*7th-level divination*
+_7th-level divination_
 
 **Material components:** conversation
 
@@ -35,4 +35,3 @@ For these 77 days, the target has advantage on all saving throws unless it devia
 **Available to:** [[Bard]], [[Cleric]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

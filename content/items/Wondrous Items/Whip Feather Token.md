@@ -7,7 +7,7 @@ summary: Wondrous item, rare
 source: SRD 5.1
 ---
 
-*Wondrous item, rare*
+_Wondrous item, rare_
 
 This tiny object looks like a feather.
 
@@ -24,4 +24,3 @@ As a bonus action on your turn, you can direct the whip to fly up to 20 feet and
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

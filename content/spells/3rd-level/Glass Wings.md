@@ -3,8 +3,8 @@ title: Glass Wings
 level: 3
 school: Illusion
 classes:
-- Paladin
-- Sorcerer
+  - Paladin
+  - Sorcerer
 casting_time: 1 reaction used after being targeted by a melee attack
 range: Self
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*3rd-level illusion*
+_3rd-level illusion_
 
 **Material components:** a piece of glass
 
@@ -32,4 +32,3 @@ HL: When you cast this spell using a spell slot of 4th level or higher, the lowe
 **Available to:** [[Paladin]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

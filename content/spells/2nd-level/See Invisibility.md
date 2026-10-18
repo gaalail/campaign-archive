@@ -3,10 +3,10 @@ title: See Invisibility
 level: 2
 school: Divination
 classes:
-- Bard
-- Sorcerer
-- Wizard
-- Thanatomancer
+  - Bard
+  - Sorcerer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: 1 hour
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level divination*
+_2nd-level divination_
 
 **Material components:** A dash of talc and a small amount of silver powder.
 
@@ -33,4 +33,3 @@ For the duration of the spell, you see invisible creatures and objects as if the
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,9 +3,9 @@ title: Dream
 level: 5
 school: Illusion
 classes:
-- Bard
-- Warlock
-- Wizard
+  - Bard
+  - Warlock
+  - Wizard
 casting_time: 1 minute
 range: Special
 duration: 8 hours
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level illusion*
+_5th-level illusion_
 
 **Material components:** A handful of sand, a dab of ink, and a writing quill plucked from a sleeping bird.
 
@@ -40,4 +40,3 @@ If you have a body part, lock of hair, clipping from a nail, or similar portion 
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

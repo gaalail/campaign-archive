@@ -12,7 +12,7 @@ source: Alternate Fighter
 
 You gain a +1 bonus to attack rolls with ranged weapons. Your ranged attacks ignore half cover and treat three-quarters cover as half cover.
 
-#### Archery Expert
+## Archery Expert
 
 You gain another +1 bonus to ranged weapon attack rolls, and attacking at long range no longer imposes disadvantage.
 

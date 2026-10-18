@@ -3,7 +3,7 @@ title: Druidcraft
 level: 0
 school: Transmutation
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: 30 feet
 duration: Instantaneous
@@ -12,10 +12,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*Transmutation cantrip*
+_Transmutation cantrip_
 
 Whispering to the spirits of nature, you create one of the following effects within 'range':
 
@@ -38,4 +38,3 @@ Whispering to the spirits of nature, you create one of the following effects wit
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

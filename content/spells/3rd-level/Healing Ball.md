@@ -3,7 +3,7 @@ title: Healing Ball
 level: 3
 school: Evocation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: 120 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*3rd-level evocation*
+_3rd-level evocation_
 
 **Material components:** an oak leaf
 
@@ -31,4 +31,3 @@ HL: When you cast this spell using a spell slot of 4th level or higher, the numb
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

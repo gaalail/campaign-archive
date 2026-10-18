@@ -3,9 +3,9 @@ title: Illusory Script
 level: 1
 school: Illusion
 classes:
-- Bard
-- Warlock
-- Wizard
+  - Bard
+  - Warlock
+  - Wizard
 casting_time: 1 minute
 range: Touch
 duration: 10 days
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level illusion (ritual)*
+_1st-level illusion (ritual)_
 
 **Material components:** A lead-based ink worth at least 10gp, which this spell consumes.
 
@@ -38,4 +38,3 @@ A creature with truesight can read the hidden message.
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

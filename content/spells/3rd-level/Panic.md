@@ -3,12 +3,12 @@ title: Panic
 level: 3
 school: Enchantment
 classes:
-- Bard
-- Druid
-- Ranger
-- Sorcerer
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Ranger
+  - Sorcerer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 150 ft
 duration: Concentration, up to 1 minute
@@ -18,7 +18,7 @@ concentration: true
 source: Homebrew
 ---
 
-*3rd-level enchantment*
+_3rd-level enchantment_
 
 **Material components:** crushed seashell.
 

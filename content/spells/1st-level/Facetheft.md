@@ -3,11 +3,11 @@ title: Facetheft
 level: 1
 school: Illusion
 classes:
-- Bard
-- Druid
-- Ranger
-- Warlock
-- Wizard
+  - Bard
+  - Druid
+  - Ranger
+  - Warlock
+  - Wizard
 casting_time: 30 minutes
 range: Touch
 duration: 8 hours
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*1st-level illusion (ritual)*
+_1st-level illusion (ritual)_
 
 **Material components:** 20 sc worth of cocaine and a black pearl worth at least 40 sc, which the spell consumes.
 

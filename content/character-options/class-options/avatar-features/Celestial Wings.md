@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 5
 prerequisite: None
-summary: 'Avatar form only: you sprout four white-gold wings that douse you with their light.'
+summary: "Avatar form only: you sprout four white-gold wings that douse you with their light."
 source: Corpus Angelus
 ---
 

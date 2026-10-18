@@ -3,10 +3,10 @@ title: Fly
 level: 3
 school: Transmutation
 classes:
-- Artificer
-- Sorcerer
-- Warlock
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Up to 10 minutes
@@ -15,11 +15,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Wu Jen
+  - Arcane Knight
+  - Wu Jen
 ---
 
-*3rd-level transmutation*
+_3rd-level transmutation_
 
 **Material components:** A wing feather from any bird.
 
@@ -39,5 +39,3 @@ You touch a willing creature. The target gains a flying speed of 60 feet for the
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

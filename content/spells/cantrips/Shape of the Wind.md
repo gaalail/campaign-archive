@@ -3,8 +3,8 @@ title: Shape of the Wind
 level: 0
 school: Transmutation
 classes:
-- Druid
-- Sorcerer
+  - Druid
+  - Sorcerer
 casting_time: 1 action
 range: 60 feet
 duration: Concentration, up to 1 minute
@@ -14,7 +14,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*Transmutation cantrip*
+_Transmutation cantrip_
 
 You choose a point within range and a warm wind blows within a 15-foot-radius sphere centered on it. Wind, in the shape of Tiny animals (of your choice), runs freely within the area. You create one of the following magical effects within range:
 
@@ -34,4 +34,3 @@ You choose a point within range and a warm wind blows within a 15-foot-radius sp
 **Available to:** [[Druid]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

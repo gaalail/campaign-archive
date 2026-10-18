@@ -3,7 +3,7 @@ title: Find Familiar
 level: 1
 school: Conjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 hour
 range: 10 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*1st-level conjuration (ritual)*
+_1st-level conjuration (ritual)_
 
 **Material components:** 10gp worth of charcoal, incense, and herbs that must be consumed by fire in a brass brazier.
 
@@ -42,4 +42,3 @@ Finally, when you cast a spell with a range of touch, your familiar can deliver 
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

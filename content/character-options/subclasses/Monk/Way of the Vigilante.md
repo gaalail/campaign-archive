@@ -9,7 +9,7 @@ source: Alternate Monk Expanded
 
 Monks who practice this Tradition use their martial arts skill to fight evil and uphold the virtues of justice, liberty, and fair play. Lauded as heroes by some, and derided as extrajudicial criminals by others, these Vigilante warriors will often adopt a Heroic Persona, a larger-than-life identity that they take up to fight against the forces of evil and injustice in the world.
 
-### Vigilante Techniques
+## Vigilante Techniques
 
 **3rd-level Way of the Vigilante feature**
 

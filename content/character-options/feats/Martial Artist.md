@@ -6,7 +6,7 @@ source: Alternate Monk Expanded
 
 You have some basic martial arts training, giving you some skill in unarmed combat. You gain the following benefits:
 
-### Improved Unarmed Strikes
+## Improved Unarmed Strikes
 
 Your unarmed strikes deal 1d4 damage on hit and you can use Strength or Dexterity for their attack and damage rolls. Moreover, when you take the Attack action and make only unarmed strikes you can make a single unarmed strike as a bonus action on that turn.
 

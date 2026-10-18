@@ -3,8 +3,8 @@ title: Dispel Evil and Good
 level: 5
 school: Abjuration
 classes:
-- Cleric
-- Paladin
+  - Cleric
+  - Paladin
 casting_time: 1 action
 range: Self
 duration: Up to 1 minute
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level abjuration*
+_5th-level abjuration_
 
 **Material components:** Holy water or powdered silver and iron.
 
@@ -22,9 +22,9 @@ Shimmering energy surrounds and protects you from fey, undead, and creatures ori
 
 You can end the spell early by using either of the following special functions.
 
-***Break Enchantment.*** As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.
+_**Break Enchantment.**_ As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.
 
-***Dismissal.*** As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.
+_**Dismissal.**_ As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.
 
 ---
 
@@ -37,4 +37,3 @@ You can end the spell early by using either of the following special functions.
 **Available to:** [[Cleric]], [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

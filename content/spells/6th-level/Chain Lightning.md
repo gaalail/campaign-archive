@@ -3,8 +3,8 @@ title: Chain Lightning
 level: 6
 school: Evocation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 150 feet
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*6th-level evocation*
+_6th-level evocation_
 
 **Material components:** A bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins.
 
@@ -36,4 +36,3 @@ A target must make a dexterity saving throw. The target takes 10d8 lightning dam
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

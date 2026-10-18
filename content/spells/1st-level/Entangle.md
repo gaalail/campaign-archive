@@ -3,7 +3,7 @@ title: Entangle
 level: 1
 school: Conjuration
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: 90 feet
 duration: Up to 1 minute
@@ -12,10 +12,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*1st-level conjuration*
+_1st-level conjuration_
 
 Grasping weeds and vines sprout from the ground in a 20-foot square starting form a point within range. For the duration, these plants turn the ground in the area into difficult terrain.
 
@@ -34,4 +34,3 @@ When the spell ends, the conjured plants wilt away.
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

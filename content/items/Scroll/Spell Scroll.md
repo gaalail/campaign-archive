@@ -7,7 +7,7 @@ summary: Scroll, varies
 source: SRD 5.1
 ---
 
-*Scroll, varies*
+_Scroll, varies_
 
 A spell scroll bears the words of a single spell, written in a mystical cipher. If the spell is on your class's spell list, you can read the scroll and cast its spell without providing any material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once the spell is cast, the words on the scroll fade, and it crumbles to dust. If the casting is uninterrupted, the scroll is not lost.
 
@@ -17,18 +17,18 @@ The level of the spell on the scroll determines the spell's saving throw DC and 
 
 Spell Scroll (table)
 
-| Spell Level | Rarity | Save DC | Attack Bonus |
-|---|---|---|---|
-| Cantrip | Common | 13 | +5 |
-| 1st | Common | 13 | +5 |
-| 2nd | Uncommon | 13 | +5 |
-| 3rd | Uncommon | 15 | +7 |
-| 4th | Rare | 15 | +7 |
-| 5th | Rare | 17 | +9 |
-| 6th | Very rare | 17 | +9 |
-| 7th | Very rare | 18 | +10 |
-| 8th | Very rare | 18 | +10 |
-| 9th | Legendary | 19 | +11 |
+| Spell Level | Rarity    | Save DC | Attack Bonus |
+| ----------- | --------- | ------- | ------------ |
+| Cantrip     | Common    | 13      | +5           |
+| 1st         | Common    | 13      | +5           |
+| 2nd         | Uncommon  | 13      | +5           |
+| 3rd         | Uncommon  | 15      | +7           |
+| 4th         | Rare      | 15      | +7           |
+| 5th         | Rare      | 17      | +9           |
+| 6th         | Very rare | 17      | +9           |
+| 7th         | Very rare | 18      | +10          |
+| 8th         | Very rare | 18      | +10          |
+| 9th         | Legendary | 19      | +11          |
 
 A wizard spell on a spell scroll can be copied just as spells in spellbooks can be copied. When a spell is copied from a spell scroll, the copier must succeed on an Intelligence (Arcana) check with a DC equal to 10 + the spell's level. If the check succeeds, the spell is successfully copied. Whether the check succeeds or fails, the spell scroll is destroyed.
 
@@ -41,4 +41,3 @@ A wizard spell on a spell scroll can be copied just as spells in spellbooks can 
 **Rarity:** Varies
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -10,12 +10,12 @@ title: Wizard Subclasses
 
 ## Available Traditions
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Evocation]] | Explosive spells | Blasters and artillery |
-| [[Celestial Summoner]] | Summoning celestials | Calling angels |
-| [[Education]] | Knowledge keeper | Master scholar |
-| [[School of Sealing]] | Sealing magic | Binding and sealing |
+| Subclass               | Feature              | Theme                  |
+| ---------------------- | -------------------- | ---------------------- |
+| [[Evocation]]          | Explosive spells     | Blasters and artillery |
+| [[Celestial Summoner]] | Summoning celestials | Calling angels         |
+| [[Education]]          | Knowledge keeper     | Master scholar         |
+| [[School of Sealing]]  | Sealing magic        | Binding and sealing    |
 
 ---
 

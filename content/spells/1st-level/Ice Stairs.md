@@ -3,11 +3,11 @@ title: Ice Stairs
 level: 1
 school: Conjuration
 classes:
-- Druid
-- Ranger
-- Sorcerer
-- Warlock
-- Wizard
+  - Druid
+  - Ranger
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 bonus action
 range: 5 feet (20 foot line)
 duration: Concentration, up to 1 minute
@@ -17,7 +17,7 @@ concentration: true
 source: Homebrew
 ---
 
-*1st-level conjuration*
+_1st-level conjuration_
 
 When you cast this spell, and as a bonus action on each of your turns while you maintain concentration, you may create a 20 foot line of icy disks that float in the air before you. They are large enough to use as stepping stones and bear up to 1,000 lbs of weight. These disks last until the end of your next turn, whereupon they melt if the temperature is above freezing, or fall to the ground if the temperature is below freezing.
 

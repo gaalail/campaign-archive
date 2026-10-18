@@ -3,9 +3,9 @@ title: Angel Feathers
 level: 3
 school: Evocation
 classes:
-- Cleric
-- Druid
-- Ranger
+  - Cleric
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: Self (60-foot cone)
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*3rd-level evocation*
+_3rd-level evocation_
 
 **Material components:** an angel feather
 
@@ -33,4 +33,3 @@ HL: When you cast this spell using a spell slot of 4th level or higher, the dama
 **Available to:** [[Cleric]], [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

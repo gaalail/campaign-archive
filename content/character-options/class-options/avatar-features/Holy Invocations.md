@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 17
 prerequisite: None
-summary: 'Avatar form only: your words reach holy realms and the divine powers hear your call.'
+summary: "Avatar form only: your words reach holy realms and the divine powers hear your call."
 source: Corpus Angelus
 ---
 

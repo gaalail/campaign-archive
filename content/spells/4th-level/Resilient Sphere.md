@@ -3,7 +3,7 @@ title: Resilient Sphere
 level: 4
 school: Evocation
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -12,12 +12,12 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Mystic
-- Wu Jen
+  - Arcane Knight
+  - Mystic
+  - Wu Jen
 ---
 
-*4th-level evocation*
+_4th-level evocation_
 
 **Material components:** A hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic.
 
@@ -40,4 +40,3 @@ A disintegrate spell targeting the globe destroys it without harming anything in
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -8,15 +8,12 @@ summary: Armor (shield), very rare (requires attunement)
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Armor (shield), very rare (requires attunement)*
+_Armor (shield), very rare (requires attunement)_
 
 While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ While holding this shield, you have advantage on saving throws against spells an
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

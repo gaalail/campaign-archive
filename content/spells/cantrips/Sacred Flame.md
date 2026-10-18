@@ -3,7 +3,7 @@ title: Sacred Flame
 level: 0
 school: Evocation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*Evocation cantrip*
+_Evocation cantrip_
 
 Flame-like radiance descends on a creature that you can see within range. The target must succeed on a dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.
 
@@ -30,4 +30,3 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

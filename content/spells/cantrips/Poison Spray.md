@@ -3,11 +3,11 @@ title: Poison Spray
 level: 0
 school: Conjuration
 classes:
-- Artificer
-- Sorcerer
-- Warlock
-- Wizard
-- Druid
+  - Artificer
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Druid
 casting_time: 1 action
 range: 10 feet
 duration: Instantaneous
@@ -16,11 +16,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 witchblade_list_marker: "LL"
 ---
 
-*Conjuration cantrip*
+_Conjuration cantrip_
 
 You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a constitution saving throw or take 1d12 poison damage.
 
@@ -37,5 +37,3 @@ This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th leve
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Druid]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

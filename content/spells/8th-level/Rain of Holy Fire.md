@@ -3,8 +3,8 @@ title: Rain of Holy Fire
 level: 8
 school: Illusion
 classes:
-- Cleric
-- Sorcerer
+  - Cleric
+  - Sorcerer
 casting_time: 1 action
 range: 90 feet
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*8th-level illusion*
+_8th-level illusion_
 
 **Material components:** a mirror that you break while casting the spell
 
@@ -33,4 +33,3 @@ The illusion is so realistic that the target must succeed on a Wisdom saving thr
 **Available to:** [[Cleric]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

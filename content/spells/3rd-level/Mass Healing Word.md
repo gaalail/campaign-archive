@@ -3,7 +3,7 @@ title: Mass Healing Word
 level: 3
 school: Evocation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 bonus action
 range: 60 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*3rd-level evocation*
+_3rd-level evocation_
 
 As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 
@@ -31,4 +31,3 @@ As you call out words of restoration, up to six creatures of your choice that yo
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

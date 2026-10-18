@@ -108,7 +108,7 @@ content:
             path: content/campaigns/ra-golvek
             exclude:
               - index.md
-            filename: '{primary}.md'
+            filename: "{primary}.md"
             view:
               primary: title
               fields:
@@ -145,7 +145,7 @@ content:
             path: content/campaigns/vyrun
             exclude:
               - index.md
-            filename: '{primary}.md'
+            filename: "{primary}.md"
             view:
               primary: title
               fields:
@@ -182,7 +182,7 @@ content:
             path: content/campaigns/curse-of-strahd
             exclude:
               - index.md
-            filename: '{primary}.md'
+            filename: "{primary}.md"
             view:
               primary: title
               fields:
@@ -216,7 +216,7 @@ content:
     path: content/rules
     exclude:
       - index.md
-    filename: '{primary}.md'
+    filename: "{primary}.md"
     fields:
       - *title
       - *summary
@@ -230,7 +230,7 @@ content:
     path: content/spells
     exclude:
       - index.md
-    filename: '{primary}.md'
+    filename: "{primary}.md"
     view:
       primary: title
       fields:
@@ -310,7 +310,7 @@ content:
     path: content/items
     exclude:
       - index.md
-    filename: '{primary}.md'
+    filename: "{primary}.md"
     view:
       primary: title
       fields:
@@ -361,7 +361,7 @@ content:
         label: Classes
         type: collection
         path: content/character-options/classes
-        filename: '{primary}.md'
+        filename: "{primary}.md"
         view:
           primary: title
           fields:
@@ -409,7 +409,7 @@ content:
         label: Subclasses
         type: collection
         path: content/character-options/subclasses
-        filename: '{primary}.md'
+        filename: "{primary}.md"
         view:
           primary: title
           fields:
@@ -452,7 +452,7 @@ content:
         label: Races
         type: collection
         path: content/character-options/races
-        filename: '{primary}.md'
+        filename: "{primary}.md"
         view:
           primary: title
           fields:
@@ -474,7 +474,7 @@ content:
         label: Backgrounds
         type: collection
         path: content/character-options/backgrounds
-        filename: '{primary}.md'
+        filename: "{primary}.md"
         view:
           primary: title
           fields:
@@ -495,7 +495,7 @@ content:
         label: Templates
         type: collection
         path: content/character-options/templates
-        filename: '{primary}.md'
+        filename: "{primary}.md"
         view:
           primary: title
           fields:
@@ -517,7 +517,7 @@ content:
         label: Class options
         type: collection
         path: content/character-options/class-options
-        filename: '{primary}.md'
+        filename: "{primary}.md"
         view:
           primary: title
           fields:
@@ -582,7 +582,7 @@ content:
         label: Feats
         type: collection
         path: content/character-options/feats
-        filename: '{primary}.md'
+        filename: "{primary}.md"
         view:
           primary: title
           fields:
@@ -608,7 +608,7 @@ content:
     label: Monsters
     type: collection
     path: content/monsters
-    filename: '{primary}.md'
+    filename: "{primary}.md"
     view:
       primary: title
       fields:

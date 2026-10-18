@@ -3,36 +3,36 @@ title: Ranger
 hit_die: d10
 spellcasting_ability: WIS
 saving_throws:
-- DEX
-- STR
+  - DEX
+  - STR
 summary: d10 hit die; saving throws DEX, STR; spellcasting with WIS
 source: SRD 5.1
 ---
 
 ## The Ranger table
 
-| Level | Proficiency Bonus | Features | Favored Enemies | Favored Terrain | Spells Known | 1st | 2nd | 3rd | 4th | 5th |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1st | +2 | Favored Enemy (1 type), Natural Explorer (1 terrain type) | 1 | 1 | 0 | - | - | - | - | - |
-| 2nd | +2 | Fighting Style, Spellcasting: Ranger | 1 | 1 | 2 | 2 | - | - | - | - |
-| 3rd | +2 | Ranger Archetype, Primeval Awareness | 1 | 1 | 3 | 3 | - | - | - | - |
-| 4th | +2 | Ability Score Improvement | 1 | 1 | 3 | 3 | - | - | - | - |
-| 5th | +3 | Extra Attack | 1 | 1 | 4 | 4 | 2 | - | - | - |
-| 6th | +3 | Favored Enemy (2 types), Natural Explorer (2 terrain types) | 2 | 2 | 4 | 4 | 2 | - | - | - |
-| 7th | +3 | Ranger Archetype feature | 2 | 2 | 5 | 4 | 3 | - | - | - |
-| 8th | +3 | Ability Score Improvement, Land's Stride | 2 | 2 | 5 | 4 | 3 | - | - | - |
-| 9th | +4 | - | 2 | 2 | 6 | 4 | 3 | 2 | - | - |
-| 10th | +4 | Natural Explorer (3 terrain types), Hide in Plain Sight | 2 | 3 | 6 | 4 | 3 | 2 | - | - |
-| 11th | +4 | Ranger Archetype feature | 2 | 3 | 7 | 4 | 3 | 3 | - | - |
-| 12th | +4 | Ability Score Improvement | 2 | 3 | 7 | 4 | 3 | 3 | - | - |
-| 13th | +5 | - | 2 | 3 | 8 | 4 | 3 | 3 | 1 | - |
-| 14th | +5 | Favored Enemy (3 enemies), Vanish | 3 | 3 | 8 | 4 | 3 | 3 | 1 | - |
-| 15th | +5 | Ranger Archetype feature | 3 | 3 | 9 | 4 | 3 | 3 | 2 | - |
-| 16th | +5 | Ability Score Improvement | 3 | 3 | 9 | 4 | 3 | 3 | 2 | - |
-| 17th | +6 | - | 3 | 3 | 10 | 4 | 3 | 3 | 3 | 1 |
-| 18th | +6 | Feral Senses | 3 | 3 | 10 | 4 | 3 | 3 | 3 | 1 |
-| 19th | +6 | Ability Score Improvement | 3 | 3 | 11 | 4 | 3 | 3 | 3 | 2 |
-| 20th | +6 | Foe Slayer | 3 | 3 | 11 | 4 | 3 | 3 | 3 | 2 |
+| Level | Proficiency Bonus | Features                                                    | Favored Enemies | Favored Terrain | Spells Known | 1st | 2nd | 3rd | 4th | 5th |
+| ----- | ----------------- | ----------------------------------------------------------- | --------------- | --------------- | ------------ | --- | --- | --- | --- | --- |
+| 1st   | +2                | Favored Enemy (1 type), Natural Explorer (1 terrain type)   | 1               | 1               | 0            | -   | -   | -   | -   | -   |
+| 2nd   | +2                | Fighting Style, Spellcasting: Ranger                        | 1               | 1               | 2            | 2   | -   | -   | -   | -   |
+| 3rd   | +2                | Ranger Archetype, Primeval Awareness                        | 1               | 1               | 3            | 3   | -   | -   | -   | -   |
+| 4th   | +2                | Ability Score Improvement                                   | 1               | 1               | 3            | 3   | -   | -   | -   | -   |
+| 5th   | +3                | Extra Attack                                                | 1               | 1               | 4            | 4   | 2   | -   | -   | -   |
+| 6th   | +3                | Favored Enemy (2 types), Natural Explorer (2 terrain types) | 2               | 2               | 4            | 4   | 2   | -   | -   | -   |
+| 7th   | +3                | Ranger Archetype feature                                    | 2               | 2               | 5            | 4   | 3   | -   | -   | -   |
+| 8th   | +3                | Ability Score Improvement, Land's Stride                    | 2               | 2               | 5            | 4   | 3   | -   | -   | -   |
+| 9th   | +4                | -                                                           | 2               | 2               | 6            | 4   | 3   | 2   | -   | -   |
+| 10th  | +4                | Natural Explorer (3 terrain types), Hide in Plain Sight     | 2               | 3               | 6            | 4   | 3   | 2   | -   | -   |
+| 11th  | +4                | Ranger Archetype feature                                    | 2               | 3               | 7            | 4   | 3   | 3   | -   | -   |
+| 12th  | +4                | Ability Score Improvement                                   | 2               | 3               | 7            | 4   | 3   | 3   | -   | -   |
+| 13th  | +5                | -                                                           | 2               | 3               | 8            | 4   | 3   | 3   | 1   | -   |
+| 14th  | +5                | Favored Enemy (3 enemies), Vanish                           | 3               | 3               | 8            | 4   | 3   | 3   | 1   | -   |
+| 15th  | +5                | Ranger Archetype feature                                    | 3               | 3               | 9            | 4   | 3   | 3   | 2   | -   |
+| 16th  | +5                | Ability Score Improvement                                   | 3               | 3               | 9            | 4   | 3   | 3   | 2   | -   |
+| 17th  | +6                | -                                                           | 3               | 3               | 10           | 4   | 3   | 3   | 3   | 1   |
+| 18th  | +6                | Feral Senses                                                | 3               | 3               | 10           | 4   | 3   | 3   | 3   | 1   |
+| 19th  | +6                | Ability Score Improvement                                   | 3               | 3               | 11           | 4   | 3   | 3   | 3   | 2   |
+| 20th  | +6                | Foe Slayer                                                  | 3               | 3               | 11           | 4   | 3   | 3   | 3   | 2   |
 
 ## Hit points
 
@@ -82,7 +82,6 @@ You start with the following equipment, in addition to the equipment granted by 
 > Spell save DC = 8 + your proficiency bonus + your Wisdom modifier.
 >
 > Spell attack modifier = your proficiency bonus + your Wisdom modifier.
-
 
 ## Multiclassing
 
@@ -170,7 +169,6 @@ You start with the following equipment, in addition to the equipment granted by 
 
 > [!info]- Foe Slayer (level 20)
 > At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.
-
 
 ## Subclasses
 

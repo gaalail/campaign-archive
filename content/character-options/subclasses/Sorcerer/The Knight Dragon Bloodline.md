@@ -14,10 +14,8 @@ There are many ways one becomes a sorcerer of this bloodline; for instance, a kn
 > [!info]- Heavenly Warrior Ancestor (level 1)
 > You can speak, read, and write Celestial and Draconic. Also, you are proficient with one martial weapon and one armor of your choice.
 
-
 > [!info]- Sword of the Knight Dragon (level 1)
 > At 1st level, you feel you're under the watchful eye of your ancestors. Once per turn, when you hit a target with a weapon attack, a golden sword appears in the air and revolves around you. Creatures within 5 feet of you must succeed on a Dexterity saving throw or take slashing damage equal to half your sorcerer level (minimum of one damage).
-
 
 > [!info]- Armory of the Knight Dragon (level 6)
 > At 6th level, you can use your action to conjure up to three weapons and armor from the armory of your knight dragon ancestor (for example a longsword, a shield, and a breastplate; or a halberd, a battleaxe, and a plate), which immediately appear in your hand or on your body. You must be proficient with the armor and the weapon to conjure it. Weapons and armor made up of more than one piece (e.g. gauntlets) cannot be conjured using this feature.
@@ -30,23 +28,18 @@ There are many ways one becomes a sorcerer of this bloodline; for instance, a kn
 >
 > The conjured weapon and armor remain until you dismiss them as a bonus action, or until you fall unconscious.
 
-
 > [!info]- Knightly Metamagic (level 6)
 > Starting at 6th level, when you take the Attack action to make weapon attacks, you can spend 2 sorcery points to make another weapon attack once per turn.
-
 
 > [!info]- Extra Attack (level 14)
 > Beginning at 14th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-
 > [!info]- The Dragon Within (level 14)
 > At 14th level, you sprout draconic wings and gain a flying speed of 30 feet.
-
 
 > [!info]- Will of the Knight Dragon (level 18)
 > Starting at 18th level, you refuse to fall before your enemies do. When you drop to 0 hit points, you start to regain a number of hit points equal to your Charisma modifier (minimum of one hit point) at the start of each of your turns for 1 minute.
 >
 > Once this effect takes place, you must finish a short or long rest for it to do so again.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

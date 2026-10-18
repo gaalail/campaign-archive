@@ -4,7 +4,7 @@ option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 1
 prerequisite: None
-summary: 'When you choose this feature, you must also choose a favored weapon type (for example: shortswords, longswords, battleaxes, hal...'
+summary: "When you choose this feature, you must also choose a favored weapon type (for example: shortswords, longswords, battleaxes, hal..."
 source: Corpus Angelus
 ---
 

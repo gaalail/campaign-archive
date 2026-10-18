@@ -3,7 +3,7 @@ title: Secret Chest
 level: 4
 school: Conjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*4th-level conjuration*
+_4th-level conjuration_
 
 **Material components:** An exquisite chest, 3 feet by 2 feet by 2 feet, constructed from rare materials worth at least 5,000 gp, and a Tiny replica made from the same materials worth at least 50 gp.
 
@@ -34,4 +34,3 @@ After 60 days, there is a cumulative 5 percent chance per day that the spell's e
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

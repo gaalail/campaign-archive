@@ -3,8 +3,8 @@ title: Fountain of Blessing
 level: 5
 school: Evocation
 classes:
-- Cleric
-- Druid
+  - Cleric
+  - Druid
 casting_time: 1 action
 range: 30 feet
 duration: 1 hour
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*5th-level evocation*
+_5th-level evocation_
 
 You create a fountain of blessed water with a 10-foot radius centered on a point within range. The fountain can look like it belongs in a marble temple, like a part of a sacred grove, or anything else of which the GM approves. As an action, one of your allies can drink from the fountain, regaining 2d6 hit points. If an ally drinks from the fountain for 3 consecutive turns, it gains the benefits of the bless spell.
 
@@ -33,4 +33,3 @@ A poisoned fountain can be purified by casting the bless spell on it 3 consecuti
 **Available to:** [[Cleric]], [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,10 +3,10 @@ title: Raise Dead
 level: 5
 school: Necromancy
 classes:
-- Bard
-- Cleric
-- Paladin
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Paladin
+  - Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Instantaneous
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level necromancy*
+_5th-level necromancy_
 
 **Material components:** A diamond worth at least 500gp, which the spell consumes.
 
@@ -39,4 +39,3 @@ Coming back from the dead is an ordeal. The target takes a -4 penalty to all att
 **Available to:** [[Bard]], [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

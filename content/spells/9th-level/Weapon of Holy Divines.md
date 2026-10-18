@@ -3,10 +3,10 @@ title: Weapon of Holy Divines
 level: 9
 school: Enchantment
 classes:
-- Cleric
-- Druid
-- Warlock
-- Thanatomancer
+  - Cleric
+  - Druid
+  - Warlock
+  - Thanatomancer
 casting_time: 1 action
 range: Self
 duration: Concentration, up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*9th-level enchantment*
+_9th-level enchantment_
 
 You whisper a holy prayer to your deity and summon a magic weapon in the shape of your deity's favored weapon, ornamented with inscriptions of prayer. The weapon appears in your hand and emanates a good aura in a 30-foot radius, turning the ground within the aura to consecrated ground.
 
@@ -37,4 +37,3 @@ If an evil creature is killed with this weapon, it turns to ash along with the i
 **Available to:** [[Cleric]], [[Druid]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

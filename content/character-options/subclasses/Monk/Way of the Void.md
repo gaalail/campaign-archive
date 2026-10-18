@@ -9,7 +9,7 @@ source: Alternate Monk Expanded
 
 While all Monks look to unite their will with the cosmos, Void Monks seek unity through annihilation. Nihilistic disciples of this Tradition use their mystic power to accelerate the natural processes of cosmic decay, and see themselves as conscious agents of entropy. All will eventually become one in the Void.
 
-### Void Techniques
+## Void Techniques
 
 **3rd-level Way of the Void feature**
 

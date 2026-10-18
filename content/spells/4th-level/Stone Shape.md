@@ -3,10 +3,10 @@ title: Stone Shape
 level: 4
 school: Transmutation
 classes:
-- Artificer
-- Cleric
-- Druid
-- Wizard
+  - Artificer
+  - Cleric
+  - Druid
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -15,10 +15,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*4th-level transmutation*
+_4th-level transmutation_
 
 **Material components:** Soft clay, to be crudely worked into the desired shape for the stone object.
 
@@ -35,5 +35,3 @@ You touch a stone object of Medium size or smaller or a section of stone no more
 **Available to:** [[Cleric]], [[Druid]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

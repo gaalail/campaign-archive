@@ -7,7 +7,7 @@ summary: Weapon (any sword), legendary (requires attunement by a paladin)
 source: SRD 5.1
 ---
 
-*Weapon (any sword), legendary (requires attunement by a paladin)*
+_Weapon (any sword), legendary (requires attunement by a paladin)_
 
 You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead with it, that creature takes an extra 2d10 radiant damage.
 
@@ -22,4 +22,3 @@ While you hold the drawn sword, it creates an aura in a 10-foot radius around yo
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

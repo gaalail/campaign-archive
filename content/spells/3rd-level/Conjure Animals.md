@@ -3,8 +3,8 @@ title: Conjure Animals
 level: 3
 school: Conjuration
 classes:
-- Druid
-- Ranger
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 hour
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*3rd-level conjuration*
+_3rd-level conjuration_
 
 You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:
 
@@ -46,4 +46,3 @@ The GM has the creatures' statistics.
 **Available to:** [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

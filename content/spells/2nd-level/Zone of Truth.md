@@ -3,10 +3,10 @@ title: Zone of Truth
 level: 2
 school: Enchantment
 classes:
-- Bard
-- Cleric
-- Paladin
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Paladin
+  - Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: 10 minutes
@@ -16,7 +16,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level enchantment*
+_2nd-level enchantment_
 
 You create a magical zone that guards against deception in a 15-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.
 
@@ -33,4 +33,3 @@ An affected creature is aware of the spell and can thus avoid answering question
 **Available to:** [[Bard]], [[Cleric]], [[Paladin]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

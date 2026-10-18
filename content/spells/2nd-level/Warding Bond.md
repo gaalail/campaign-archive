@@ -3,7 +3,7 @@ title: Warding Bond
 level: 2
 school: Abjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level abjuration*
+_2nd-level abjuration_
 
 **Material components:** A pair of platinum rings worth at least 50gp each, which you and the target must wear for the duration.
 
@@ -34,4 +34,3 @@ It also ends if the spell is cast again on either of the connected creatures. Yo
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

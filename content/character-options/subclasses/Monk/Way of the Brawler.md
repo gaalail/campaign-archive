@@ -9,7 +9,7 @@ source: Alternate Monk Expanded
 
 An informal Tradition of warriors who learn their martial arts without formal training, Brawlers learn to fight in back alleys and fighting pits in the underbelly of civilized societies. Often urchins who come from nothing, Brawler Monks will do whatever it takes to assure their victory. To these ruthless scrapers, every fight is a fight for their survival.
 
-### Savage Exploits
+## Savage Exploits
 
 **3rd-level Way of the Brawler feature**
 

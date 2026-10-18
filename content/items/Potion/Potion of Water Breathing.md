@@ -8,15 +8,12 @@ summary: Potion, uncommon
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Potion, uncommon*
+_Potion, uncommon_
 
 You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ You can breathe underwater for 1 hour after drinking this potion. Its cloudy gre
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

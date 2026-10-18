@@ -3,7 +3,7 @@ title: Maze
 level: 8
 school: Conjuration
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Up to 10 minutes
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*8th-level conjuration*
+_8th-level conjuration_
 
 You banish a creature that you can see within range into a labyrinthine demiplane. The target remains there for the duration or until it escapes the maze.
 
@@ -32,4 +32,3 @@ When the spell ends, the target reappears in the space it left or, if that space
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

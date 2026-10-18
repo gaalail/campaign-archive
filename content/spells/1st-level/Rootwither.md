@@ -3,12 +3,12 @@ title: Rootwither
 level: 1
 school: Necromancy
 classes:
-- Druid
-- Ranger
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Druid
+  - Ranger
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 minute
 range: Touch
 duration: Instantaneous
@@ -18,7 +18,7 @@ concentration: false
 source: Homebrew
 ---
 
-*1st-level necromancy (ritual)*
+_1st-level necromancy (ritual)_
 
 Touch a healthy inanimate plant that is Large or smaller for the duration of casting the spell. The plant dies and turns into an awakened shrub that is hostile to you and all other creatures.
 

@@ -3,11 +3,11 @@ title: Disembowel
 level: 1
 school: Necromancy
 classes:
-- Druid
-- Ranger
-- Warlock
-- Wizard
-- Thanatomancer
+  - Druid
+  - Ranger
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 60 ft
 duration: Concentration, up to 1 minute
@@ -17,7 +17,7 @@ concentration: true
 source: Homebrew
 ---
 
-*1st-level necromancy*
+_1st-level necromancy_
 
 As part of casting this spell, touch a corpse that has not been dead for more than 10 minutes. Doing so reduces it to its component parts, shredding the skin and stretching the intestines, veins, nerves, ligaments, and various organs into a fleshy net. Hurl the net at a creature within range.
 

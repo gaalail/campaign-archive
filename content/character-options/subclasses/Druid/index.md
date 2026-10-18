@@ -10,12 +10,12 @@ title: Druid Subclasses
 
 ## Available Circles
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Circle of Heaven]] | Celestial magic | Holy nature magic |
-| [[Circle of Phoenix]] | Rebirth and flame | Phoenix-like renewal |
-| [[Circle of Unicorns]] | Mystical unicorns | Unicorn connection |
-| [[Land]] | Terrain mastery | Command over landscapes |
+| Subclass               | Feature           | Theme                   |
+| ---------------------- | ----------------- | ----------------------- |
+| [[Circle of Heaven]]   | Celestial magic   | Holy nature magic       |
+| [[Circle of Phoenix]]  | Rebirth and flame | Phoenix-like renewal    |
+| [[Circle of Unicorns]] | Mystical unicorns | Unicorn connection      |
+| [[Land]]               | Terrain mastery   | Command over landscapes |
 
 ---
 

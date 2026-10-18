@@ -3,7 +3,7 @@ title: Spiritual Weapon
 level: 2
 school: Evocation
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 bonus action
 range: 60 feet
 duration: 1 minute
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level evocation*
+_2nd-level evocation_
 
 You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.
 
@@ -35,4 +35,3 @@ The weapon can take whatever form you choose. Clerics of deities who are associa
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

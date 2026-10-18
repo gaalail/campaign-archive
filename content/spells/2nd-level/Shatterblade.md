@@ -3,8 +3,8 @@ title: Shatterblade
 level: 2
 school: Transmutation
 classes:
-- Bard
-- Wizard
+  - Bard
+  - Wizard
 casting_time: 1 action
 range: Self (30 foot cone)
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 One nonmagical weapon that you are holding and that no other creature is holding when you cast this spell bursts into a thousand pieces, sending fragments of steel and shrapnel out in a deadly spray. Each creature in the cone must make a Dexterity saving throw, taking 4d8 piercing damage on a failed save and one half as much on a successful one.
 

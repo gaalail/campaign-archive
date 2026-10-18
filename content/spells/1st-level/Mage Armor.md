@@ -3,8 +3,8 @@ title: Mage Armor
 level: 1
 school: Abjuration
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 8 hours
@@ -13,10 +13,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
+  - Arcane Knight
 ---
 
-*1st-level abjuration*
+_1st-level abjuration_
 
 **Material components:** A piece of cured leather.
 
@@ -33,4 +33,3 @@ You touch a willing creature who isn't wearing armor, and a protective magical f
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,9 +3,9 @@ title: Bane
 level: 1
 school: Enchantment
 classes:
-- Bard
-- Cleric
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -14,10 +14,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
 
-*1st-level enchantment*
+_1st-level enchantment_
 
 **Material components:** A drop of blood.
 
@@ -37,4 +37,3 @@ Up to three creatures of your choice that you can see within range must make cha
 **Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

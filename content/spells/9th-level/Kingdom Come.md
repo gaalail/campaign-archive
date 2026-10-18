@@ -3,7 +3,7 @@ title: Kingdom Come
 level: 9
 school: Conjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: 1 mile
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*9th-level conjuration*
+_9th-level conjuration_
 
 **Material components:** a star taken from a star incarnate (p. 281), which the spell consumes
 
@@ -34,4 +34,3 @@ GMs must be aware that finding the material component of this spell constitutes 
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

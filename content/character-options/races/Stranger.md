@@ -40,39 +40,35 @@ A speck of strength left from your glorious self and the burden of your curse pr
 > [!info]- Curse of Death
 > When you turn 13, dark blue veins start to spread across your body, originating from your heart. When you turn 66, you die. Also because of this condition, Wisdom (Medicine) checks to stabilize you are made with disadvantage.
 
-
 > [!info]- Curse and Strength
 > Your ancestral strengths and curses occur in various severity. This condition determines your inherited strength and weakness. Roll on the two tables below, or choose one curse from the Curses table and one strength from the Strengths table.
 
-
 ### Strengths
 
-| d6 | Strength |
-| --- | --- |
-| 1 | Backup Organs. Any critical hit against you becomes a normal hit. |
-| 2 | Borrowed Gift. You channel the power of your creators by force. Your weapon attacks deal an extra 1d6 necrotic damage. This damage increases to 2d6 against fiends. |
-| 3 | Deep Sleep. When you suffer 6 levels of exhaustion, you don't die, you remain unconscious instead. |
-| 4 | Mithridatism. You have resistance to poison damage and immunity against being poisoned. |
-| 5 | Efficient Metabolism. You can survive for a month without food or water, and you can hold your breath for one hour before you start suffocating. |
-| 6 | Persistent Existence. Your hit point maximum can't be reduced by any means. |
+| d6  | Strength                                                                                                                                                            |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Backup Organs. Any critical hit against you becomes a normal hit.                                                                                                   |
+| 2   | Borrowed Gift. You channel the power of your creators by force. Your weapon attacks deal an extra 1d6 necrotic damage. This damage increases to 2d6 against fiends. |
+| 3   | Deep Sleep. When you suffer 6 levels of exhaustion, you don't die, you remain unconscious instead.                                                                  |
+| 4   | Mithridatism. You have resistance to poison damage and immunity against being poisoned.                                                                             |
+| 5   | Efficient Metabolism. You can survive for a month without food or water, and you can hold your breath for one hour before you start suffocating.                    |
+| 6   | Persistent Existence. Your hit point maximum can't be reduced by any means.                                                                                         |
 
 ### Curses
 
-| d6 | Curse |
-| --- | --- |
-| 1 | Cursed Hands. You can't wield weapons that have metal parts. Any attempt to do so automatically fails and the weapon falls to the ground. |
-| 2 | Cursed Soul. You can be attuned to no more than two magic items at a time. |
-| 3 | Cursed Smell. Any beast within 150 feet of you is automatically aware of your location, and considers you a threat. |
-| 4 | Cursed Feet. You can't take the Dash action. |
-| 5 | Cursed Mouth. When a creature uses magical means to discern whether you are telling the truth or not, it always concludes that you're lying, even if you aren't. |
-| 6 | Cursed Emotions. You can't regain hit points by any means while charmed or frightened. |
+| d6  | Curse                                                                                                                                                            |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Cursed Hands. You can't wield weapons that have metal parts. Any attempt to do so automatically fails and the weapon falls to the ground.                        |
+| 2   | Cursed Soul. You can be attuned to no more than two magic items at a time.                                                                                       |
+| 3   | Cursed Smell. Any beast within 150 feet of you is automatically aware of your location, and considers you a threat.                                              |
+| 4   | Cursed Feet. You can't take the Dash action.                                                                                                                     |
+| 5   | Cursed Mouth. When a creature uses magical means to discern whether you are telling the truth or not, it always concludes that you're lying, even if you aren't. |
+| 6   | Cursed Emotions. You can't regain hit points by any means while charmed or frightened.                                                                           |
 
 > [!info]- Darkvision
 > You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
 
-
 > [!info]- Voice of Thunder
 > Your voice is like crackling thunder. If you use your voice during an intimidation attempt, you have advantage on your Charisma (Intimidation) check.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

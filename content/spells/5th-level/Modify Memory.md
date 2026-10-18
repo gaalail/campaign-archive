@@ -3,10 +3,10 @@ title: Modify Memory
 level: 5
 school: Enchantment
 classes:
-- Bard
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level enchantment*
+_5th-level enchantment_
 
 You attempt to reshape another creature's memories. One creature that you can see must make a wisdom saving throw. If you are fighting the creature, it has advantage on the saving throw. On a failed save, the target becomes charmed by you for the duration. The charmed target is incapacitated and unaware of its surroundings, though it can still hear you. If it takes any damage or is targeted by another spell, this spell ends, and none of the target's memories are modified.
 
@@ -42,4 +42,3 @@ A remove curse or greater restoration spell cast on the target restores the crea
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,9 +3,9 @@ title: Blessing of the Martyr
 level: 4
 school: Evocation
 classes:
-- Cleric
-- Paladin
-- Warlock
+  - Cleric
+  - Paladin
+  - Warlock
 casting_time: 1 action
 range: Touch
 duration: 1 minute
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*4th-level evocation*
+_4th-level evocation_
 
 **Material components:** a vial of martyr's blood
 
@@ -34,4 +34,3 @@ If the target knocks an opponent unconscious with a critical hit, it regains 32 
 **Available to:** [[Cleric]], [[Paladin]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

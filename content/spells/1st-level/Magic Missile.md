@@ -3,8 +3,8 @@ title: Magic Missile
 level: 1
 school: Evocation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Instantaneous
@@ -13,11 +13,11 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Mystic
+  - Arcane Knight
+  - Mystic
 ---
 
-*1st-level evocation*
+_1st-level evocation_
 
 You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.
 
@@ -35,4 +35,3 @@ You create three glowing darts of magical force. Each dart hits a creature of yo
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

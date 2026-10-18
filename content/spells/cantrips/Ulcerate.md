@@ -3,11 +3,11 @@ title: Ulcerate
 level: 0
 school: Necromancy
 classes:
-- Bard
-- Druid
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 60 ft
 duration: 1 round
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*Necromancy cantrip*
+_Necromancy cantrip_
 
 A creature within range that you can see must make a Constitution saving throw. On a failed save, the creature takes 1d4 necrotic damage and cannot take bonus actions on its next turn.
 

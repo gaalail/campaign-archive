@@ -12,7 +12,7 @@ source: Alternate Fighter
 
 While wearing medium or heavy armor, or wielding a shield, you gain a +1 bonus to AC.
 
-#### Defensive Expert
+## Defensive Expert
 
 While wearing heavy armor, reduce nonmagical bludgeoning, piercing, and slashing damage you take by your Constitution modifier (minimum 1). If your armor is magical, this can also reduce magical damage of those types.
 

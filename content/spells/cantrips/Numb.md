@@ -3,13 +3,13 @@ title: Numb
 level: 0
 school: Enchantment
 classes:
-- Bard
-- Cleric
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 ft
 duration: 1 round
@@ -19,7 +19,7 @@ concentration: false
 source: Homebrew
 ---
 
-*Enchantment cantrip*
+_Enchantment cantrip_
 
 Make a ranged spell attack against a creature within range. The target creature may choose to allow you to hit automatically.
 

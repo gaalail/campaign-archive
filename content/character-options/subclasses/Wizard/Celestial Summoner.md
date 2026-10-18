@@ -20,7 +20,6 @@ Angels and other heavenly creatures answer your call if and only if your alignme
 >
 > - You can conjure a guardian angel (p. 250) as a familiar when you cast the find familiar spell.
 
-
 > [!info]- Celestial Summoning (level 2)
 > Starting at 2nd level, you can use your action to summon a celestial with a challenge rating of 1 or lower. This challenge rating increases to 2 at 6th, 4 at 10th, and 6 at 14th level.
 >
@@ -32,17 +31,13 @@ Angels and other heavenly creatures answer your call if and only if your alignme
 >
 > Once you use this feature, you must finish a short or long rest to use it again. You can use this feature twice at 6th, three times at 10th, and four times at 14th level.
 
-
 > [!info]- Exalted Conjuration (level 6)
 > At 6th level, you become an expert on the use of magical energies to summon heavenly creatures and you can choose to apply the heavenly creature template (p. 255) to a creature you summon by a conjuration spell.
-
 
 > [!info]- Celestial Fury (level 10)
 > Starting at 10th level, the bond between you and those you summon allows you to channel radiant energy. While concentrating on a spell that summons a celestial or on the Celestial Summoning feature, you can use your bonus action to expend a spell slot. When you do so, choose a number of allies equal to the level of the expended slot that you can see within 60 feet of you. The chosen allies' melee and ranged weapon attacks deal an extra 3 radiant damage for 1 minute.
 
-
 > [!info]- Celestial Resurrection (level 14)
 > Starting at 14th level, when you drop to 0 hit points, you can choose to expend a use of Celestial Summoning feature as a reaction, and drop to 5d8 hit points instead.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

@@ -3,9 +3,9 @@ title: Project Image
 level: 7
 school: Illusion
 classes:
-- Bard
-- Warlock
-- Wizard
+  - Bard
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 500 miles
 duration: Up to 24 hours
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*7th-level illusion*
+_7th-level illusion_
 
 **Material components:** A small replica of you made from materials worth at least 5 gp.
 
@@ -38,4 +38,3 @@ Physical interaction with the image reveals it to be an illusion, because things
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -5,18 +5,18 @@ summary: Druid Circle for the Druid
 source: SRD 5.1
 ---
 
-*Druid Circle (Druid subclass)*
+_Druid Circle (Druid subclass)_
 
 The Circle of the Land is made up of mystics and sages who safeguard ancient knowledge and rites through a vast oral tradition. These druids meet within sacred circles of trees or standing stones to whisper primal secrets in Druidic. The circle's wisest members preside as the chief priests of communities that hold to the Old Faith and serve as advisors to the rulers of those folk. As a member of this circle, your magic is influenced by the land where you were initiated into the circle's mysterious rites.
 
 ## Bonus spells
 
-| Level | Spells |
-| --- | --- |
-| 3rd | Hold Person, Spike Growth, Mirror Image, Misty Step, Blur, Silence, Barkskin, Spider Climb, Invisibility, Pass Without Trace, Spider Climb, Spike Growth, Acid Arrow, Darkness |
-| 5th | Sleet Storm, Slow, Water Breathing, Water Walk, Create Food and Water, Protection From Energy, Call Lightning, Plant Growth, Daylight, Haste, Lightning Bolt, Meld Into Stone, Water Walk, Stinking Cloud |
-| 7th | Freedom of Movement, Ice Storm, Control Water, Freedom of Movement, Blight, Hallucinatory Terrain, Divination, Freedom of Movement, Divination, Freedom of Movement, Stone Shape, Stoneskin, Freedom of Movement, Locate Creature |
-| 9th | Commune With Nature, Cone of Cold, Conjure Elemental, Scrying, Insect Plague, Wall of Stone, Commune With Nature, Tree Stride, Dream, Insect Plague, Passwall, Wall of Stone, Insect Plague, Scrying |
+| Level | Spells                                                                                                                                                                                                                            |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3rd   | Hold Person, Spike Growth, Mirror Image, Misty Step, Blur, Silence, Barkskin, Spider Climb, Invisibility, Pass Without Trace, Spider Climb, Spike Growth, Acid Arrow, Darkness                                                    |
+| 5th   | Sleet Storm, Slow, Water Breathing, Water Walk, Create Food and Water, Protection From Energy, Call Lightning, Plant Growth, Daylight, Haste, Lightning Bolt, Meld Into Stone, Water Walk, Stinking Cloud                         |
+| 7th   | Freedom of Movement, Ice Storm, Control Water, Freedom of Movement, Blight, Hallucinatory Terrain, Divination, Freedom of Movement, Divination, Freedom of Movement, Stone Shape, Stoneskin, Freedom of Movement, Locate Creature |
+| 9th   | Commune With Nature, Cone of Cold, Conjure Elemental, Scrying, Insect Plague, Wall of Stone, Commune With Nature, Tree Stride, Dream, Insect Plague, Passwall, Wall of Stone, Insect Plague, Scrying                              |
 
 ## Features
 

@@ -3,10 +3,10 @@ title: Sleep
 level: 1
 school: Enchantment
 classes:
-- Bard
-- Sorcerer
-- Wizard
-- Thanatomancer
+  - Bard
+  - Sorcerer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 90 feet
 duration: 1 minute
@@ -15,10 +15,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*1st-level enchantment*
+_1st-level enchantment_
 
 **Material components:** A pinch of fine sand, rose petals, or a cricket.
 
@@ -42,4 +42,3 @@ Undead and creatures immune to being charmed aren't affected by this spell.
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

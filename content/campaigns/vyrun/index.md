@@ -11,6 +11,7 @@ Everything for the Vyrun campaign. New entries show up in the tables below autom
 ## Quick Start
 
 **First time here?**
+
 - [[Character Builder|Build a character]] for this campaign
 - Read the overview below to understand the setting
 - Check the Sessions tab to see what's happened so far
@@ -26,6 +27,7 @@ Everything for the Vyrun campaign. New entries show up in the tables below autom
 **Theme:** Adventure and exploration with a touch of mystery. Frontierspeople dealing with harsh realities, magical dangers, and the unknown.
 
 **Main Conflicts:**
+
 - Strange occurrences in the region suggest something ancient is awakening
 - Settlers face threats from wildlife, monsters, and natural disasters
 - Ruins hint at a lost civilization with forgotten magic
@@ -38,7 +40,9 @@ Everything for the Vyrun campaign. New entries show up in the tables below autom
 ## Navigate This Campaign
 
 ### Sessions
+
 Click the **Sessions** tab to see:
+
 - What happened in each session
 - Which NPCs you met
 - What locations you visited
@@ -47,20 +51,25 @@ Click the **Sessions** tab to see:
 Each session links to related NPCs, locations, and encounters.
 
 ### Characters (NPCs)
+
 Click the **Characters** tab to see:
+
 - Major NPCs in the campaign
 - Their roles and motivations
 - Which sessions they appear in
 - Their relationships to each other
 
 ### Locations
+
 Click the **Locations** tab to see:
+
 - Important places in Vyrun
 - What sessions take place there
 - Key NPCs based there
 - Campaign significance
 
 ### All Entries
+
 Click the **All entries** tab to see everything for this campaign in one table.
 
 ---
@@ -78,12 +87,14 @@ Click the **All entries** tab to see everything for this campaign in one table.
 ## Add to This Campaign
 
 **For Dungeon Masters:**
+
 - Add sessions via Pages CMS (document what happened)
 - Add NPCs (characters players interact with)
 - Add locations (places the party visits)
 - Add encounters (battles and challenges)
 
 **For Players:**
+
 - Ask your DM to add session summaries
 - Check back between sessions for updates
 - Use this as a reference during gameplay

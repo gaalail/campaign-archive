@@ -9,7 +9,7 @@ source: Alternate Monk
 
 Where most Monks are serious and contemplative, students of the Drunken Fist seek out joy wherever they go. Masters of a style that mimics the unpredictable movements of a drunk, these Monks will use their considerable skills to play the fool, make others laugh, or bring embarrassment on the prideful.
 
-### Dancing Fool
+## Dancing Fool
 
 **3rd-level Way of the Drunken Fist feature**
 

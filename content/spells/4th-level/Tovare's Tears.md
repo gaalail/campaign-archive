@@ -3,9 +3,9 @@ title: Tovare's Tears
 level: 4
 school: Evocation
 classes:
-- Cleric
-- Druid
-- Paladin
+  - Cleric
+  - Druid
+  - Paladin
 casting_time: 1 action
 range: 300 ft
 duration: Concentration, up to 1 minute
@@ -15,7 +15,7 @@ concentration: true
 source: Homebrew
 ---
 
-*4th-level evocation (ritual)*
+_4th-level evocation (ritual)_
 
 Choose a point within range. A 30 foot radius circular disk that is 1 inch thick manifests centered on that point. The disk is incorporeal. It sheds faint silvery light in a cone between it and the ground, turning darkness into dim light and dim light into bright light.
 

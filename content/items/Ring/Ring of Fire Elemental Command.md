@@ -7,7 +7,7 @@ summary: Ring, legendary (requires attunement)
 source: SRD 5.1
 ---
 
-*Ring, legendary (requires attunement)*
+_Ring, legendary (requires attunement)_
 
 This ring is linked to the Elemental Plane of Fire.
 
@@ -32,4 +32,3 @@ You can cast the following spells from the ring, expending the necessary number 
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

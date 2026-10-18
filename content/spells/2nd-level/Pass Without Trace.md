@@ -3,8 +3,8 @@ title: Pass Without Trace
 level: 2
 school: Abjuration
 classes:
-- Druid
-- Ranger
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: Self
 duration: Up to 1 hour
@@ -14,7 +14,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*2nd-level abjuration*
+_2nd-level abjuration_
 
 **Material components:** Ashes from a burned leaf of mistletoe and a sprig of spruce.
 
@@ -31,4 +31,3 @@ A veil of shadows and silence radiates from you, masking you and your companions
 **Available to:** [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

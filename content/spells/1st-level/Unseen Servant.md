@@ -3,9 +3,9 @@ title: Unseen Servant
 level: 1
 school: Conjuration
 classes:
-- Bard
-- Warlock
-- Wizard
+  - Bard
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: 1 hour
@@ -14,10 +14,10 @@ ritual: true
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Witchblade
+  - Witchblade
 ---
 
-*1st-level conjuration (ritual)*
+_1st-level conjuration (ritual)_
 
 **Material components:** A piece of string and a bit of wood.
 
@@ -38,4 +38,3 @@ If you command the servant to perform a task that would move it more than 60 fee
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

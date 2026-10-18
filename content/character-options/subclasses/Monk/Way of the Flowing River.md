@@ -9,7 +9,7 @@ source: Alternate Monk Expanded
 
 Novices who adopt the Way of the Flowing River are taught a style of martial arts that emphasizes nonviolence and the use of force only when necessary. Named for the masterful grace and fluidity that these warriors exhibit in battle, practitioners of the Flowing River are often known as dancing Monks.
 
-### Flowing River Stance
+## Flowing River Stance
 
 **3rd-level Way of the Flowing River feature**
 

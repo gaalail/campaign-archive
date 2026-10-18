@@ -3,10 +3,10 @@ title: Wall of Stone
 level: 5
 school: Evocation
 classes:
-- Artificer
-- Druid
-- Sorcerer
-- Wizard
+  - Artificer
+  - Druid
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 10 minutes
@@ -16,7 +16,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*5th-level evocation*
+_5th-level evocation_
 
 **Material components:** A small block of granite.
 
@@ -43,5 +43,3 @@ If you maintain your concentration on this spell for its whole duration, the wal
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

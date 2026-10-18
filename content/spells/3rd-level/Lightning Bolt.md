@@ -3,8 +3,8 @@ title: Lightning Bolt
 level: 3
 school: Evocation
 classes:
-- Sorcerer
-- Wizard
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: Self
 duration: Instantaneous
@@ -13,10 +13,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*3rd-level evocation*
+_3rd-level evocation_
 
 **Material components:** A bit of fur and a rod of amber, crystal, or glass.
 
@@ -38,4 +38,3 @@ The lightning ignites flammable objects in the area that aren't being worn or ca
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

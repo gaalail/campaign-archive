@@ -3,12 +3,12 @@ title: Eight Eyes of Sight
 level: 5
 school: Divination
 classes:
-- Bard
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 30 minutes
 range: Touch
 duration: 4 hours
@@ -18,11 +18,12 @@ concentration: false
 source: Homebrew
 ---
 
-*5th-level divination*
+_5th-level divination_
 
 **Material components:** dead spider or reptile's eyeball.
 
 You or one creature that you touch sprouts additional eyes until the creature has eight eyes. For the duration, gain the following benefits:
+
 - You cannot be surprised
 - Gain expertise in Perception, doubling your proficiency bonus with Perception checks
 - Any Darkvision you have extends by 60 feet and you can see in magical darkness

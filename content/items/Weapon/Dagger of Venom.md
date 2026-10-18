@@ -7,7 +7,7 @@ summary: Weapon (dagger), rare
 source: SRD 5.1
 ---
 
-*Weapon (dagger), rare*
+_Weapon (dagger), rare_
 
 You gain a +1 bonus to attack and damage rolls made with this magic weapon.
 
@@ -22,4 +22,3 @@ You can use an action to cause thick, black poison to coat the blade. The poison
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

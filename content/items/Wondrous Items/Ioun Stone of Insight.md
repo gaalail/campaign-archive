@@ -7,7 +7,7 @@ summary: Wondrous item, very rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, very rare (requires attunement)*
+_Wondrous item, very rare (requires attunement)_
 
 An Ioun stone is named after Ioun, a god of knowledge and prophecy revered on some worlds. Many types of Ioun stone exist, each type a distinct combination of shape and color.
 
@@ -15,7 +15,7 @@ When you use an action to toss one of these stones into the air, the stone orbit
 
 A stone has AC 24, 10 hit points, and resistance to all damage. It is considered to be an object that is being worn while it orbits your head.
 
-***Insight.*** Your Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.
+_**Insight.**_ Your Wisdom score increases by 2, to a maximum of 20, while this incandescent blue sphere orbits your head.
 
 ---
 
@@ -26,4 +26,3 @@ A stone has AC 24, 10 hit points, and resistance to all damage. It is considered
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

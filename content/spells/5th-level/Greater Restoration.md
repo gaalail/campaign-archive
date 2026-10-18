@@ -3,11 +3,11 @@ title: Greater Restoration
 level: 5
 school: Abjuration
 classes:
-- Artificer
-- Bard
-- Cleric
-- Druid
-- Ranger
+  - Artificer
+  - Bard
+  - Cleric
+  - Druid
+  - Ranger
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -17,7 +17,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level abjuration*
+_5th-level abjuration_
 
 **Material components:** Diamond dust worth at least 100gp, which the spell consumes.
 
@@ -42,5 +42,3 @@ You imbue a creature you touch with positive energy to undo a debilitating effec
 **Available to:** [[Artificer]], [[Bard]], [[Cleric]], [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

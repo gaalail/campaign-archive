@@ -3,7 +3,7 @@ title: Fall From Heaven
 level: 8
 school: Transmutation
 classes:
-- Warlock
+  - Warlock
 casting_time: 1 minute
 range: 1 mile
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*8th-level transmutation*
+_8th-level transmutation_
 
 **Material components:** the feather of an angel and a small piece of adamantine
 
@@ -30,4 +30,3 @@ You call upon the forces of heaven to carry you to the skies. For 1 minute, you 
 **Available to:** [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

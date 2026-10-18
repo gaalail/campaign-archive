@@ -3,7 +3,7 @@ title: Almighty Weapon
 level: 4
 school: Evocation
 classes:
-- Paladin
+  - Paladin
 casting_time: 1 bonus action
 range: Self
 duration: 1 minute
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*4th-level evocation*
+_4th-level evocation_
 
 **Material components:** a piece of metal and a vial of holy water
 
@@ -35,4 +35,3 @@ HL: When you cast this spell using a spell slot of 6th level or higher, the addi
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,12 +3,12 @@ title: Blood Blade
 level: 4
 school: Transmutation
 classes:
-- Bard
-- Cleric
-- Druid
-- Paladin
-- Warlock
-- Wizard
+  - Bard
+  - Cleric
+  - Druid
+  - Paladin
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Concentration, up to 1 minute
@@ -18,7 +18,7 @@ concentration: true
 source: Homebrew
 ---
 
-*4th-level transmutation*
+_4th-level transmutation_
 
 Make a melee spell attack against a target creature within range that has less than half its maximum hit points. On a miss, the effect only lasts until the end of your next turn. On a hit, the effect lasts for the duration.
 

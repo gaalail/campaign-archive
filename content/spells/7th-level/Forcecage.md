@@ -3,9 +3,9 @@ title: Forcecage
 level: 7
 school: Evocation
 classes:
-- Bard
-- Warlock
-- Wizard
+  - Bard
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 100 feet
 duration: 1 hour
@@ -15,7 +15,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*7th-level evocation*
+_7th-level evocation_
 
 **Material components:** Ruby dust worth 1,500 gp.
 
@@ -42,4 +42,3 @@ This spell can't be dispelled by dispel magic.
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

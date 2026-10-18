@@ -3,8 +3,8 @@ title: Holy Tempering
 level: 2
 school: Transmutation
 classes:
-- Cleric
-- Paladin
+  - Cleric
+  - Paladin
 casting_time: 30 minutes
 range: Touch
 duration: 4 hours
@@ -14,7 +14,7 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level transmutation (ritual)*
+_2nd-level transmutation (ritual)_
 
 **Material components:** a melee or reach weapon and a flask of holy water.
 

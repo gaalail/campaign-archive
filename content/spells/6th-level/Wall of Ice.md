@@ -3,7 +3,7 @@ title: Wall of Ice
 level: 6
 school: Evocation
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 120 feet
 duration: Up to 10 minutes
@@ -12,11 +12,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 wu_jen_list_marker: "ll"
 ---
 
-*6th-level evocation*
+_6th-level evocation_
 
 **Material components:** A small piece of quartz.
 
@@ -40,4 +40,3 @@ The wall is an object that can be damaged and thus breached. It has AC 12 and 30
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

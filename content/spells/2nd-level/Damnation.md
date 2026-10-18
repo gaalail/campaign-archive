@@ -3,9 +3,9 @@ title: Damnation
 level: 2
 school: Enchantment
 classes:
-- Cleric
-- Paladin
-- Thanatomancer
+  - Cleric
+  - Paladin
+  - Thanatomancer
 casting_time: 1 action
 range: 120 ft
 duration: Indefinite
@@ -15,7 +15,7 @@ concentration: false
 source: Homebrew
 ---
 
-*2nd-level enchantment*
+_2nd-level enchantment_
 
 One target creature that you can see within range must make a Charisma saving throw. On a failed save, they are eternally damned and when they die their soul goes to the demiplane of Hell. [[Greater Restoration|greater restoration]] and similar magic can end this effect.
 

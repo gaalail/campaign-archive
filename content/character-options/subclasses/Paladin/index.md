@@ -10,12 +10,12 @@ title: Paladin Subclasses
 
 ## Available Oaths
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Devotion]] | Holy devotion | True believer |
-| [[Oath of Righteousness]] | Righteous justice | Upholding good |
-| [[Templar]] | Sacred warrior | Temple defender |
-| [[Zealot]] | Zealous faith | Unwavering faith |
+| Subclass                  | Feature           | Theme            |
+| ------------------------- | ----------------- | ---------------- |
+| [[Devotion]]              | Holy devotion     | True believer    |
+| [[Oath of Righteousness]] | Righteous justice | Upholding good   |
+| [[Templar]]               | Sacred warrior    | Temple defender  |
+| [[Zealot]]                | Zealous faith     | Unwavering faith |
 
 ---
 

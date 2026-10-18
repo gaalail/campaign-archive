@@ -9,7 +9,7 @@ source: Alternate Monk Expanded
 
 Meditating on the true spiritual potential of Ki, Mystic Monks gradually forgo their physical training to plumb the depths of their spirit. Often misunderstood to be Wizards or Sorcerers, these mystical sages can draw upon the Ki within their spirits to perform wondrous supernatural feats.
 
-### Ascended Warrior
+## Ascended Warrior
 
 **3rd-level Way of the Mystic feature**
 

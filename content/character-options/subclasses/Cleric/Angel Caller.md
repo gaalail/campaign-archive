@@ -18,7 +18,6 @@ Although being an angel caller is difficult, the fellow followers of your deity 
 > [!info]- Bonus Proficiencies (level 1)
 > At 1st level, you gain proficiency in the Religion skill and with heavy armor.
 
-
 > [!info]- Angel-Calling (level 1)
 > Starting at 1st level, you learn how to channel angels and use their powers.
 >
@@ -32,29 +31,24 @@ Although being an angel caller is difficult, the fellow followers of your deity 
 >
 > When you learn the art of angel-calling, you become an angel caller.
 
-
 > [!info]- Channel Divinity: Angelic Grace (level 2)
 > Starting at 2nd level, you can use your Channel Divinity to heal your allies even if they are not within your touch range.
 >
 > When you cast a spell that restores hit points, you can use your Channel Divinity to increase its range by 30 feet.
-
 
 > [!info]- Adept Caller (level 6)
 > Starting at 6th level, you gain a reputation as an Adept Caller.
 >
 > When you use the Angel-Calling feature, you can choose to gain one resistance and one immunity that the angel you called has as well. Additionally, if the angel has flying speed, you also gain a flying speed of 30 feet.
 
-
 > [!info]- Expert Caller (level 8)
 > Starting at 8th level, you gain more renown and become an Expert Caller.
 >
 > When you use the Angel-Calling feature, you start to deal the extra damage of the weapon attack you gain with the feature.
-
 
 > [!info]- Master Caller (level 14)
 > At 14th level, your fame spreads far and wide and you become a Master Caller.
 >
 > When you use the Angel-Calling feature, you gain all the resistances and immunities of the angel, as well as one other action, bonus action, or reaction that the angel possesses.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

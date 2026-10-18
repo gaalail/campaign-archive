@@ -8,15 +8,12 @@ summary: Ring, uncommon
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Ring, uncommon*
+_Ring, uncommon_
 
 You have a swimming speed of 40 feet while wearing this ring.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ You have a swimming speed of 40 feet while wearing this ring.
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

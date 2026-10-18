@@ -3,11 +3,11 @@ title: Bloat
 level: 1
 school: Conjuration
 classes:
-- Bard
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 60 ft
 duration: Concentration, up to 1 minute
@@ -17,7 +17,7 @@ concentration: true
 source: Homebrew
 ---
 
-*1st-level conjuration*
+_1st-level conjuration_
 
 One creature of CR 2 or lower that you can see within range must make a Constitution saving throw. On a failure, roll 3d12 and add this number to the creature's Bloat Value. While the target creature has any Bloat Value, it is considered restrained.
 

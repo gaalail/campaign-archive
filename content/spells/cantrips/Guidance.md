@@ -4,10 +4,10 @@ title: Guidance
 level: 0
 school: Divination
 classes:
-- Artificer
-- Cleric
-- Druid
-- Thanatomancer
+  - Artificer
+  - Cleric
+  - Druid
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Up to 1 minute
@@ -17,15 +17,12 @@ concentration: true
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Divination cantrip*
+_Divination cantrip_
 
 You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.
-
-
 
 ---
 
@@ -38,5 +35,3 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 **Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

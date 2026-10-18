@@ -10,12 +10,12 @@ title: Ranger Subclasses
 
 ## Available Archetypes
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Evil Slayer]] | Against evil | Good hunter |
-| [[Holy Messenger]] | Divine messenger | Sacred scout |
-| [[Hunter]] | Monster hunter | Skilled tracker |
-| [[Keeper of Light]] | Light guardian | Holy ranger |
+| Subclass            | Feature          | Theme           |
+| ------------------- | ---------------- | --------------- |
+| [[Evil Slayer]]     | Against evil     | Good hunter     |
+| [[Holy Messenger]]  | Divine messenger | Sacred scout    |
+| [[Hunter]]          | Monster hunter   | Skilled tracker |
+| [[Keeper of Light]] | Light guardian   | Holy ranger     |
 
 ---
 

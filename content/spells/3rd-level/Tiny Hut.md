@@ -3,8 +3,8 @@ title: Tiny Hut
 level: 3
 school: Evocation
 classes:
-- Bard
-- Wizard
+  - Bard
+  - Wizard
 casting_time: 1 minute
 range: Self
 duration: 8 hours
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*3rd-level evocation (ritual)*
+_3rd-level evocation (ritual)_
 
 **Material components:** A small crystal bead.
 
@@ -35,4 +35,3 @@ Until the spell ends, you can command the interior to become dimly lit or dark. 
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,7 +3,7 @@ title: Passwall
 level: 5
 school: Transmutation
 classes:
-- Wizard
+  - Wizard
 casting_time: 1 action
 range: 30 feet
 duration: 1 hour
@@ -13,7 +13,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level transmutation*
+_5th-level transmutation_
 
 **Material components:** A pinch of sesame seeds.
 
@@ -32,4 +32,3 @@ When the opening disappears, any creatures or objects still in the passage creat
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

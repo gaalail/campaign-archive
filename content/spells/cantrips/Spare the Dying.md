@@ -4,9 +4,9 @@ title: Spare the Dying
 level: 0
 school: Necromancy
 classes:
-- Artificer
-- Cleric
-- Thanatomancer
+  - Artificer
+  - Cleric
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -16,15 +16,12 @@ concentration: false
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Necromancy cantrip*
+_Necromancy cantrip_
 
 You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.
-
-
 
 ---
 
@@ -37,5 +34,3 @@ You touch a living creature that has 0 hit points. The creature becomes stable. 
 **Available to:** [[Cleric]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

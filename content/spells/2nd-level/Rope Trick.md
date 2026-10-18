@@ -3,8 +3,8 @@ title: Rope Trick
 level: 2
 school: Transmutation
 classes:
-- Artificer
-- Wizard
+  - Artificer
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: 1 hour
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 **Material components:** Powdered corn extract and a twisted loop of parchment.
 
@@ -37,5 +37,3 @@ Anything inside the extradimensional space drops out when the spell ends.
 **Available to:** [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

@@ -3,8 +3,8 @@ title: Holy Chains of the Divine
 level: 8
 school: Evocation
 classes:
-- Cleric
-- Warlock
+  - Cleric
+  - Warlock
 casting_time: 1 action
 range: 100 feet
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*8th-level evocation*
+_8th-level evocation_
 
 **Material components:** a vial of blessed blood, a piece of holy scripture, and a gold chain worth at least 250 gp, which the spell consumes
 
@@ -34,4 +34,3 @@ HL: When you cast this spell using a spell slot of 9th level, the chain pulls th
 **Available to:** [[Cleric]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

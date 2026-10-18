@@ -9,7 +9,7 @@ source: Alternate Monk Expanded
 
 As ancient as the eldest mountains, the Ways of this Tradition have been passed from master to student since the sunrise of civilization. Building their monasteries upon mountain peaks and deep under the earth, students of this Tradition focus on becoming as large and immovable as the eldest mountains.
 
-### Boulder Techniques
+## Boulder Techniques
 
 **3rd-level Way of the Boulder feature**
 

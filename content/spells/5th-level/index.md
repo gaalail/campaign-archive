@@ -9,12 +9,12 @@ Learn at 9th character level
 ---
 
 ## Navigation
+
 ? [[spells/4th-level|4th-Level Spells]]
 
 [[spells|Back to All Spells]]
 
 [[spells/6th-level|6th-Level Spells]] ?
-
 
 ---
 

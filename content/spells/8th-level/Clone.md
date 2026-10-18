@@ -3,8 +3,8 @@ title: Clone
 level: 8
 school: Necromancy
 classes:
-- Wizard
-- Thanatomancer
+  - Wizard
+  - Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Instantaneous
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*8th-level necromancy*
+_8th-level necromancy_
 
 **Material components:** A diamond worth at least 1,000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes, and a vessel worth at least 2,000 gp that has a sealable lid and is large enough to hold a Medium creature, such as a huge urn, coffin, mud-filled cyst in the ground, or crystal container filled with salt water.
 
@@ -33,4 +33,3 @@ At any time after the clone matures, if the original creature dies, its soul tra
 **Available to:** [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

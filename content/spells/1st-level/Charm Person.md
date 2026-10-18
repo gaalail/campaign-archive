@@ -3,12 +3,12 @@ title: Charm Person
 level: 1
 school: Enchantment
 classes:
-- Bard
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: 1 hour
@@ -17,10 +17,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*1st-level enchantment*
+_1st-level enchantment_
 
 You attempt to charm a humanoid you can see within range. It must make a wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.
 
@@ -38,4 +38,3 @@ You attempt to charm a humanoid you can see within range. It must make a wisdom 
 **Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

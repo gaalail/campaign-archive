@@ -8,15 +8,12 @@ summary: Weapon (any ammunition), uncommon
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Weapon (any ammunition), uncommon*
+_Weapon (any ammunition), uncommon_
 
 You have a +1 bonus to attack and damage rolls made with this piece of magic ammunition. Once it hits a target, the ammunition is no longer magical.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ You have a +1 bonus to attack and damage rolls made with this piece of magic amm
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

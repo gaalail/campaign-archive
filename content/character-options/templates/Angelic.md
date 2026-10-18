@@ -43,14 +43,11 @@ When you become an angelic, you retain all your statistics and gain the followin
 >
 > You also carry a physical mark. This mark can be an angelic sign on your body, jade green eyes, marble-like skin, or anything else you can think of, so long as the GM approves of your choice.
 
-
 > [!info]- Angelic Existence
 > You age more slowly than before. Your lifespan is doubled, and you only require half the ration and half the sleep to sustain yourself: 1-day's worth of rations sustain you for two days, and you can finish a long rest in half the time you did before.
 
-
 > [!info]- Creature Type
 > You retain your old creature type, and become a celestial. Since you can be detected by a detect evil and good spell, or affected by a protection from evil and good spell, the GM should keep in mind that being a celestial may cause serious peril.
-
 
 > [!info]- Angelic Manifestation
 > Your angelic blood manifests itself more strongly as you gain more power.
@@ -63,5 +60,4 @@ When you become an angelic, you retain all your statistics and gain the followin
 >
 > - You can cast the planar binding spell. Once you use this feature, you must finish a long rest to use it again.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

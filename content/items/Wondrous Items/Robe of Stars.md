@@ -7,7 +7,7 @@ summary: Wondrous item, very rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Wondrous item, very rare (requires attunement)*
+_Wondrous item, very rare (requires attunement)_
 
 This black or dark blue robe is embroidered with small white or silver stars. You gain a +1 bonus to saving throws while you wear it.
 
@@ -24,4 +24,3 @@ While you wear the robe, you can use an action to enter the Astral Plane along w
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

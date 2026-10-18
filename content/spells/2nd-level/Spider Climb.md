@@ -3,10 +3,10 @@ title: Spider Climb
 level: 2
 school: Transmutation
 classes:
-- Artificer
-- Sorcerer
-- Warlock
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Touch
 duration: Up to 1 hour
@@ -15,11 +15,11 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Arcane Knight
-- Witchblade
+  - Arcane Knight
+  - Witchblade
 ---
 
-*2nd-level transmutation*
+_2nd-level transmutation_
 
 **Material components:** A drop of bitumen and a spider.
 
@@ -36,5 +36,3 @@ Until the spell ends, one willing creature you touch gains the ability to move u
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

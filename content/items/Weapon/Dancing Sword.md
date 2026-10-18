@@ -7,7 +7,7 @@ summary: Weapon (any sword), very rare (requires attunement)
 source: SRD 5.1
 ---
 
-*Weapon (any sword), very rare (requires attunement)*
+_Weapon (any sword), very rare (requires attunement)_
 
 You can use a bonus action to toss this magic sword into the air and speak the command word. When you do so, the sword begins to hover, flies up to 30 feet, and attacks one creature of your choice within 5 feet of it. The sword uses your attack roll and ability score modifier to damage rolls.
 
@@ -24,4 +24,3 @@ After the hovering sword attacks for the fourth time, it flies up to 30 feet and
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

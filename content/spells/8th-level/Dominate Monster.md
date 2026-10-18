@@ -3,11 +3,11 @@ title: Dominate Monster
 level: 8
 school: Enchantment
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 hour
@@ -17,7 +17,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*8th-level enchantment*
+_8th-level enchantment_
 
 You attempt to beguile a creature that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.
 
@@ -41,4 +41,3 @@ Each time the target takes damage, it makes a new wisdom saving throw against th
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

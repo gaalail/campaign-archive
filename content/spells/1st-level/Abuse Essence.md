@@ -3,12 +3,12 @@ title: Abuse Essence
 level: 1
 school: Necromancy
 classes:
-- Bard
-- Druid
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous
@@ -18,7 +18,7 @@ concentration: false
 source: Homebrew
 ---
 
-*1st-level necromancy*
+_1st-level necromancy_
 
 Touch a creature that has made a death saving throw within the past hour but is now conscious. The creature you touch must be capable of casting spells. It gains two 1st level spell slots, which it can use until the next time it takes a short or long rest.
 

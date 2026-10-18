@@ -3,9 +3,9 @@ title: Control Weather
 level: 8
 school: Transmutation
 classes:
-- Cleric
-- Druid
-- Wizard
+  - Cleric
+  - Druid
+  - Wizard
 casting_time: 10 minutes
 range: Self
 duration: Up to 8 hours
@@ -15,7 +15,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*8th-level transmutation*
+_8th-level transmutation_
 
 **Material components:** Burning incense and bits of earth and wood mixed in water.
 
@@ -25,36 +25,36 @@ When you cast the spell, you change the current weather conditions, which are de
 
 When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.
 
-##### Precipitation
+## Precipitation
 
-| Stage | Condition |
-|---|---|
-| 1 | Clear |
-| 2 | Light clouds |
-| 3 | Overcast or ground fog |
-| 4 | Rain, hail, or snow |
-| 5 | Torrential rain, driving hail, or blizzard |
+| Stage | Condition                                  |
+| ----- | ------------------------------------------ |
+| 1     | Clear                                      |
+| 2     | Light clouds                               |
+| 3     | Overcast or ground fog                     |
+| 4     | Rain, hail, or snow                        |
+| 5     | Torrential rain, driving hail, or blizzard |
 
-##### Temperature
+## Temperature
 
-| Stage | Condition |
-|---|---|
-| 1 | Unbearable heat |
-| 2 | Hot |
-| 3 | Warm |
-| 4 | Cool |
-| 5 | Cold |
-| 6 | Arctic cold |
+| Stage | Condition       |
+| ----- | --------------- |
+| 1     | Unbearable heat |
+| 2     | Hot             |
+| 3     | Warm            |
+| 4     | Cool            |
+| 5     | Cold            |
+| 6     | Arctic cold     |
 
-##### Wind
+## Wind
 
-| Stage | Condition |
-|---|---|
-| 1 | Calm |
-| 2 | Moderate wind |
-| 3 | Strong wind |
-| 4 | Gale |
-| 5 | Storm |
+| Stage | Condition     |
+| ----- | ------------- |
+| 1     | Calm          |
+| 2     | Moderate wind |
+| 3     | Strong wind   |
+| 4     | Gale          |
+| 5     | Storm         |
 
 ---
 
@@ -67,4 +67,3 @@ When you change the weather conditions, find a current condition on the followin
 **Available to:** [[Cleric]], [[Druid]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

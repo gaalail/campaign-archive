@@ -10,14 +10,14 @@ title: Cleric Subclasses
 
 ## Available Domains
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Angel Caller]] | Calling angels | Summoning divine beings |
-| [[Dawn Domain]] | Light and dawn | Morning and new beginnings |
-| [[Domain of Mythology]] | Mythological animal spirits | Divine companions |
-| [[Exorcist]] | Banishing evil | Removing corruption |
-| [[Holy Virtues Domain]] | Divine virtues | Sacred principles |
-| [[Life]] | Healing and protection | Life preservation |
+| Subclass                | Feature                     | Theme                      |
+| ----------------------- | --------------------------- | -------------------------- |
+| [[Angel Caller]]        | Calling angels              | Summoning divine beings    |
+| [[Dawn Domain]]         | Light and dawn              | Morning and new beginnings |
+| [[Domain of Mythology]] | Mythological animal spirits | Divine companions          |
+| [[Exorcist]]            | Banishing evil              | Removing corruption        |
+| [[Holy Virtues Domain]] | Divine virtues              | Sacred principles          |
+| [[Life]]                | Healing and protection      | Life preservation          |
 
 ---
 

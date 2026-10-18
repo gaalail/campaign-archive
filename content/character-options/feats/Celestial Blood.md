@@ -11,4 +11,4 @@ Your blood is infused with celestial energies and you learn how to tap its poten
 - You can communicate telepathically with creatures within 30 feet of you. You still need to share a language to be able to understand each other.
 - You have resistance to poison damage.
 
-*From Corpus Angelus.*
+_From Corpus Angelus._

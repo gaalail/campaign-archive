@@ -3,9 +3,9 @@ title: Endow Life
 level: 7
 school: Necromancy
 classes:
-- Cleric
-- Druid
-- Thanatomancer
+  - Cleric
+  - Druid
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: 1 day
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*7th-level necromancy*
+_7th-level necromancy_
 
 **Material components:** a piece of an aorta preserved in amber
 
@@ -32,4 +32,3 @@ You touch a creature, expanding its ability to sustain life. The creature's hit 
 **Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

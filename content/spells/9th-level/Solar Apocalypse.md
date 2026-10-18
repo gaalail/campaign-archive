@@ -3,9 +3,9 @@ title: Solar Apocalypse
 level: 9
 school: Illusion
 classes:
-- Bard
-- Druid
-- Sorcerer
+  - Bard
+  - Druid
+  - Sorcerer
 casting_time: 1 action
 range: 200 feet
 duration: Instantaneous
@@ -15,7 +15,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*9th-level illusion*
+_9th-level illusion_
 
 **Material components:** a firefly and amber worth at least 5,000 gp, which the spell consumes
 
@@ -32,4 +32,3 @@ You close your eyes and cast the spell as you imagine the sun devouring heretics
 **Available to:** [[Bard]], [[Druid]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

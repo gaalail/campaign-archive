@@ -3,11 +3,11 @@ title: Suggestion
 level: 2
 school: Enchantment
 classes:
-- Bard
-- Sorcerer
-- Warlock
-- Wizard
-- Thanatomancer
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: 30 feet
 duration: Up to 8 hours
@@ -16,10 +16,10 @@ ritual: false
 concentration: true
 source: SRD 5.1
 subclass_spell_lists:
-- Mystic
+  - Mystic
 ---
 
-*2nd-level enchantment*
+_2nd-level enchantment_
 
 **Material components:** A snake's tongue and either a bit of honeycomb or a drop of sweet oil.
 
@@ -42,4 +42,3 @@ If you or any of your companions damage the target, the spell ends.
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,10 +3,10 @@ title: Altar
 level: 4
 school: Necromancy
 classes:
-- Bard
-- Cleric
-- Druid
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Druid
+  - Thanatomancer
 casting_time: 1 hour
 range: Touch
 duration: Concentration, up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: Homebrew
 ---
 
-*4th-level necromancy (ritual)*
+_4th-level necromancy (ritual)_
 
 **Material components:** one fattened mammalian livestock such as a cow or pig, or three fattened avian livestock such as hens (or the equivalent value of relevant sacrificial materials specific to your deity/pantheon).
 

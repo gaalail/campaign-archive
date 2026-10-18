@@ -3,7 +3,7 @@ title: Angelfall
 level: 7
 school: Conjuration
 classes:
-- Cleric
+  - Cleric
 casting_time: 1 action
 range: 120 feet
 duration: Instantaneous
@@ -13,7 +13,7 @@ concentration: false
 source: Corpus Angelus
 ---
 
-*7th-level conjuration*
+_7th-level conjuration_
 
 **Material components:** a piece of stone, and the feather of an angel
 
@@ -30,4 +30,3 @@ As you throw the stone and the angel feather into the air and say a little praye
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -18,10 +18,8 @@ You are a zealous hunter of evil masters and their minions. An Evil Slayer searc
 >
 > Once you use this feature, you must finish a short or long rest to use it again.
 
-
 > [!info]- Slay Evil (level 3)
 > Starting at 3rd level, you can benefit from the slightest of opportunities to strike your enemies. When an evil creature within your reach misses you with an attack, you can use your reaction to make a melee weapon attack as an opportunity attack.
-
 
 > [!info]- Know Thy Enemy (level 3)
 > Also starting at 3rd level, you are able to categorize the enemies you encounter and jot down their strengths and weaknesses. In time, you gain the ability to do research about your potential enemies, learning about their methods and preparing accordingly in advance (by crafting special mixtures, buying specific spell scrolls etc.).
@@ -32,21 +30,17 @@ You are a zealous hunter of evil masters and their minions. An Evil Slayer searc
 >
 > You and others can use your List of Righteous Hunt as a sourcebook in hunting down enemies, which grants advantage on Intelligence (Arcana, History, Nature, Religion) checks.
 
-
 > [!info]- Escaping the Evil (level 7)
 > Starting at 7th level, evil creatures have disadvantage on opportunity attack rolls made against you. If the creature is on your List of Righteous Hunt, it cannot make an opportunity attack against you.
-
 
 > [!info]- No Mercy to Evil (level 11)
 > Starting at 11th level, you do not let evil escape. On each of your turns, you can make your first opportunity attack, requiring no action of any kind.
 >
 > In addition, you have advantage on weapon attack rolls against the enemies on your List of Righteous Hunt.
 
-
 > [!info]- Out of Evil's Reach (level 15)
 > Starting at 15th level, you can magically protect yourself against the attacks of evil. When you take damage from an attack or an effect by an evil source, you can halve the damage as a reaction.
 >
 > Once you use this feature, you must finish a short or long rest to use it again.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

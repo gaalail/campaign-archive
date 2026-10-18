@@ -8,15 +8,12 @@ summary: Wand, uncommon
 source: SRD 5.1
 ---
 
-
 > [!warning]- ?? This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
-*Wand, uncommon*
+_Wand, uncommon_
 
 This wand has 3 charges. While holding it, you can expend 1 charge as an action to cast the detect magic spell from it. The wand regains 1d3 expended charges daily at dawn.
-
-
 
 ---
 
@@ -27,4 +24,3 @@ This wand has 3 charges. While holding it, you can expend 1 charge as an action 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

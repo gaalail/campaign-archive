@@ -3,9 +3,9 @@ title: Ray of Frost
 level: 0
 school: Evocation
 classes:
-- Artificer
-- Sorcerer
-- Wizard
+  - Artificer
+  - Sorcerer
+  - Wizard
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous
@@ -14,10 +14,10 @@ ritual: false
 concentration: false
 source: SRD 5.1
 subclass_spell_lists:
-- Wu Jen
+  - Wu Jen
 ---
 
-*Evocation cantrip*
+_Evocation cantrip_
 
 A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.
 
@@ -34,5 +34,3 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 **Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-
-

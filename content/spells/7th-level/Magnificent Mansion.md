@@ -3,8 +3,8 @@ title: Magnificent Mansion
 level: 7
 school: Conjuration
 classes:
-- Bard
-- Wizard
+  - Bard
+  - Wizard
 casting_time: 1 minute
 range: 300 feet
 duration: 24 hours
@@ -14,7 +14,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*7th-level conjuration*
+_7th-level conjuration_
 
 **Material components:** A miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gp.
 
@@ -35,4 +35,3 @@ You can create any floor plan you like, but the space can't exceed 50 cubes, eac
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

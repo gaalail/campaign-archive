@@ -3,10 +3,10 @@ title: Eyes of the Celestial Warriors
 level: 8
 school: Divination
 classes:
-- Bard
-- Druid
-- Wizard
-- Thanatomancer
+  - Bard
+  - Druid
+  - Wizard
+  - Thanatomancer
 casting_time: 1 action
 range: Touch
 duration: Concentration, up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*8th-level divination*
+_8th-level divination_
 
 **Material components:** the weapon of a veteran
 
@@ -34,4 +34,3 @@ HL: When you cast this spell using a 9th level spell slot, the first attack the 
 **Available to:** [[Bard]], [[Druid]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

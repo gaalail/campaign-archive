@@ -3,7 +3,7 @@ title: Might of Nature
 level: 4
 school: Transmutation
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: 60 feet
 duration: Concentration, up to 1 hour
@@ -13,7 +13,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*4th-level transmutation*
+_4th-level transmutation_
 
 **Material components:** a piece belonging the chosen creature
 
@@ -36,4 +36,3 @@ The chosen creature's challenge rating must be equal to or less than the target'
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

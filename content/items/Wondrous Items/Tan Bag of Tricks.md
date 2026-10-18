@@ -7,7 +7,7 @@ summary: Wondrous item, uncommon
 source: SRD 5.1
 ---
 
-*Wondrous item, uncommon*
+_Wondrous item, uncommon_
 
 This ordinary bag, made from tan cloth, appears empty. Reaching inside the bag, however, reveals the presence of a small, fuzzy object. The bag weighs 1/2 pound.
 
@@ -19,16 +19,16 @@ Once three fuzzy Objects have been pulled from the bag, the bag can't be used ag
 
 Tan Bag:
 
-| d8 | Creature |
-|---|---|
-| 01 | Jackal |
-| 02 | Ape |
-| 03 | Baboon |
-| 04 | Axe Beak |
-| 05 | Black Bear |
-| 06 | Giant Weasel |
-| 07 | Giant Hyena |
-| 08 | Tiger |
+| d8  | Creature     |
+| --- | ------------ |
+| 01  | Jackal       |
+| 02  | Ape          |
+| 03  | Baboon       |
+| 04  | Axe Beak     |
+| 05  | Black Bear   |
+| 06  | Giant Weasel |
+| 07  | Giant Hyena  |
+| 08  | Tiger        |
 
 ---
 
@@ -39,4 +39,3 @@ Tan Bag:
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

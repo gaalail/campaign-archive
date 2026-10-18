@@ -3,9 +3,9 @@ title: Spectral Weapon
 level: 1
 school: Conjuration
 classes:
-- Bard
-- Paladin
-- Wizard
+  - Bard
+  - Paladin
+  - Wizard
 casting_time: 1 bonus action
 range: 5 ft
 duration: Concentration, up to 10 minutes
@@ -15,7 +15,7 @@ concentration: true
 source: Homebrew
 ---
 
-*1st-level conjuration*
+_1st-level conjuration_
 
 A spectral duplicate of a one-handed weapon that you are holding bursts into existence, floating around you.
 

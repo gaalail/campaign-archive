@@ -3,11 +3,11 @@ title: Burial
 level: 3
 school: Transmutation
 classes:
-- Cleric
-- Ranger
-- Sorcerer
-- Warlock
-- Wizard
+  - Cleric
+  - Ranger
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 90 ft
 duration: 10 minutes
@@ -17,7 +17,7 @@ concentration: false
 source: Homebrew
 ---
 
-*3rd-level transmutation*
+_3rd-level transmutation_
 
 One creature that you can see within range that is on the ground must make a Wisdom saving throw. On a failure, the ground swallows the creature, burying it alive. The creature has total cover while buried in this way.
 

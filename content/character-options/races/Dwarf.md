@@ -28,7 +28,6 @@ source: SRD 5.1
 > [!info]- Tool Proficiency
 > You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.
 
-
 ## Hill Dwarf
 
 As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.

@@ -3,13 +3,13 @@ title: Thousand Cuts
 level: 1
 school: Evocation
 classes:
-- Bard
-- Druid
-- Paladin
-- Ranger
-- Sorcerer
-- Warlock
-- Wizard
+  - Bard
+  - Druid
+  - Paladin
+  - Ranger
+  - Sorcerer
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: Special
 duration: Instantaneous
@@ -19,7 +19,7 @@ concentration: false
 source: Homebrew
 ---
 
-*1st-level evocation*
+_1st-level evocation_
 
 Move up to half your speed, then pick a creature within reach of your natural weapon or weapon that you are holding. Make a melee spell attack roll.
 

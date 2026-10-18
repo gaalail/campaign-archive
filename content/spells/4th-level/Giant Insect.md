@@ -3,7 +3,7 @@ title: Giant Insect
 level: 4
 school: Transmutation
 classes:
-- Druid
+  - Druid
 casting_time: 1 action
 range: 30 feet
 duration: Up to 10 minutes
@@ -13,7 +13,7 @@ concentration: true
 source: SRD 5.1
 ---
 
-*4th-level transmutation*
+_4th-level transmutation_
 
 You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration. A centipede becomes a giant centipede, a spider becomes a giant spider, a wasp becomes a giant wasp, and a scorpion becomes a giant scorpion.
 
@@ -34,4 +34,3 @@ The GM might allow you to choose different targets. For example, if you transfor
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

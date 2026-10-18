@@ -3,12 +3,12 @@ title: Geas
 level: 5
 school: Enchantment
 classes:
-- Bard
-- Cleric
-- Druid
-- Paladin
-- Wizard
-- Thanatomancer
+  - Bard
+  - Cleric
+  - Druid
+  - Paladin
+  - Wizard
+  - Thanatomancer
 casting_time: 1 minute
 range: 60 feet
 duration: 30 days
@@ -18,7 +18,7 @@ concentration: false
 source: SRD 5.1
 ---
 
-*5th-level enchantment*
+_5th-level enchantment_
 
 You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.
 
@@ -40,4 +40,3 @@ You can end the spell early by using an action to dismiss it. A remove curse, gr
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

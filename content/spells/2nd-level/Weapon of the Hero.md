@@ -3,10 +3,10 @@ title: Weapon of the Hero
 level: 2
 school: Conjuration
 classes:
-- Bard
-- Paladin
-- Ranger
-- Sorcerer
+  - Bard
+  - Paladin
+  - Ranger
+  - Sorcerer
 casting_time: 1 bonus action
 range: Self
 duration: Concentration, up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: Corpus Angelus
 ---
 
-*2nd-level conjuration*
+_2nd-level conjuration_
 
 You conjure the weapon of a hero whose story is now legend. This magic weapon remains until the spell ends. It is a martial weapon with the finesse property, and with which you are proficient. It deals 2d8 radiant damage on a hit regardless of its shape. In addition, you have advantage on attack rolls made with this weapon while in sunlight.
 
@@ -35,4 +35,3 @@ If you let go of the weapon, it disappears, but you can conjure it again as anot
 **Available to:** [[Bard]], [[Paladin]], [[Ranger]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

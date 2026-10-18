@@ -3,10 +3,10 @@ title: Medusification
 level: 3
 school: Conjuration
 classes:
-- Bard
-- Druid
-- Warlock
-- Wizard
+  - Bard
+  - Druid
+  - Warlock
+  - Wizard
 casting_time: 1 action
 range: 120 ft
 duration: Concentration, up to 1 minute
@@ -16,7 +16,7 @@ concentration: true
 source: Homebrew
 ---
 
-*3rd-level conjuration*
+_3rd-level conjuration_
 
 **Material components:** a small stone and snakeskin.
 
