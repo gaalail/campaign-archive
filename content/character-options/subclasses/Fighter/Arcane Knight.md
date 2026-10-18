@@ -18,7 +18,7 @@ So long as they are on the same plane of existence as you, you can use your bonu
 
 **3rd-level Arcane Knight Archetype feature.** You have learned to cast arcane spells that augment your abilities in combat. You gain the following features:
 
-Cantrips. You learn two Cantrips of your choice from the Arcane Knight Spell List at the end of this Archetype, and you learn an additional Arcane Knight Cantrip at 10th level.
+Cantrips. You learn two Cantrips of your choice from the Arcane Knight Spell List below, and you learn an additional Arcane Knight Cantrip at 10th level.
 
 Spells Known of 1st-Level and Higher. You know three 1st-level Arcane Knight spells from the spell list below. The Spells Known column of the Arcane Knight Spellcasting table shows when you learn more spells, all of which must be a level for which you have spell slots.
 
@@ -57,6 +57,24 @@ Spell attack modifier = your proficiency bonus + your Intelligence modifier
 | 19th          | 12           | 4   | 3   | 3   | 1   |
 | 20th          | 12           | 4   | 3   | 3   | 1   |
 
+### Arcane Knight Spell List
+
+Spells can be found in the Player's Handbook, Xanathar's Guide to Everything*, and Tasha's Cauldron of Everything**.
+
+Spells marked with LL are found in the laserllama Spell Compendium, which includes both new and alternate spells.
+
+The archive catalogue below contains spells with spell pages. Remaining options are preserved in the collapsed list.
+
+![[arcane-knight-spells.base]]
+
+> [!info]- Options without archive spell pages
+> These options remain part of the spell list but do not yet have spell pages in the archive.
+> **Cantrips:** Blade Ward (LL), Booming Blade (LL), Green-Flame Blade (LL), Lightning Lure (LL), Sword Burst (LL), Tempestuous Blade (LL)
+> **1st-Level:** Absorb Elements (_), Armor of Agathys, Chromatic Orb (_), Compelled Duel (LL), Searing Smite (LL), Thunderous Smite (LL), Zephyr Strike (_)
+> **2nd-Level:** Aura of Frost (LL), Warding Wind (_)
+> **3rd-Level:** Blinding Smite (LL), Flame Arrows (LL), Lightning Arrow (LL), Minute Meteors (_), Thunder Step (_)
+> **4th-Level:** Staggering Smite (LL)
+
 ### War Magic
 
 **7th-level Arcane Knight Archetype feature.** You can seamlessly weave minor spells with weapon attacks. Whenever you use your action to Cast a Spell you can make a single weapon attack as a bonus action on that turn.
@@ -76,83 +94,6 @@ Also, when you hit a target with an Enchanted Armament attack, you can change th
 **18th-level Arcane Knight Archetype feature.** You expertly weave spell and sword together. When you take the Attack action on your turn, you can cast an Arcane Knight spell with a casting time of one action in place of one attack.
 
 You can still use any Arcane Knight spells you know with a casting time of one attack (such as lightning lure) as normal.
-
-### Arcane Knight Spell List
-
-Here is the list of spells available to the Arcane Knight. Spells can be found in the Player's Handbook, Xanathar's Guide to Everything*, and in Tasha's Cauldron of Everything**.
-
-Spells marked with LL are found in the laserllama Spell Compendium, which includes both new and alternate spells.
-
-#### Cantrips
-
-- Blade Ward (LL)
-- Booming Blade (LL)
-- Green-Flame Blade (LL)
-- [[Light]]
-- Lightning Lure (LL)
-- Mage Hand
-- Prestidigitation
-- Resistance (LL)
-- Shocking Grasp
-- Sword Burst (LL)
-- Tempestuous Blade (LL)
-- [[True Strike]]
-
-#### 1st-Level
-
-- Absorb Elements (*)
-- Armor of Agathys
-- Chromatic Orb (*)
-- Compelled Duel (LL)
-- [[Faerie Fire]]
-- Feather Fall
-- [[Fog Cloud]]
-- [[Grease]]
-- [[Hellish Rebuke]]
-- Jump (LL)
-- Mage Armor
-- [[Magic Missile]]
-- [[Protection from Evil and Good]]
-- Searing Smite (LL)
-- [[Shield]]
-- Thunderous Smite (LL)
-- Zephyr Strike (*)
-
-#### 2nd-Level
-
-- Aura of Frost (LL)
-- [[Blur]]
-- Branding Smite (LL)
-- [[Darkness]]
-- [[Enlarge-Reduce|Enlarge/Reduce]]
-- Invisibility
-- Magic Weapon (LL)
-- [[Misty Step]]
-- Spider Climb
-- Warding Wind (*)
-
-#### 3rd-Level
-
-- Blinding Smite (LL)
-- [[Counterspell]] (LL)
-- [[Dispel Magic]]
-- [[Fireball]]
-- Flame Arrows (LL)
-- [[Fly]]
-- Lightning Arrow (LL)
-- Minute Meteors (*)
-- [[Protection From Energy]]
-- Thunder Step (*)
-
-#### 4th-Level
-
-- [[Banishment]]
-- [[Death Ward]] (LL)
-- [[Dimension Door]]
-- [[Fire Shield]]
-- Greater Invisibility
-- [[Resilient Sphere]]
-- Staggering Smite (LL)
 
 ---
 

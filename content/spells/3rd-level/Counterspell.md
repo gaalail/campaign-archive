@@ -13,6 +13,11 @@ components: S
 ritual: false
 concentration: false
 source: SRD 5.1
+subclass_spell_lists:
+- Arcane Knight
+- Witchblade
+arcane_knight_list_marker: "LL"
+witchblade_list_marker: "LL"
 ---
 
 *3rd-level abjuration*

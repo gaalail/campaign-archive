@@ -14,6 +14,10 @@ components: V
 ritual: false
 concentration: false
 source: SRD 5.1
+subclass_spell_lists:
+- Arcane Knight
+- Mystic
+- Witchblade
 ---
 
 *4th-level conjuration*

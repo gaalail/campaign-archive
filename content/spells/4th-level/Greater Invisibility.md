@@ -14,6 +14,8 @@ components: V, S
 ritual: false
 concentration: true
 source: SRD 5.1
+subclass_spell_lists:
+- Arcane Knight
 ---
 
 

@@ -15,11 +15,11 @@ Rather than focus inward, some Monks attune themselves to the forces of nature. 
 
 You use ancient monastic arts that allow you to manipulate the forces of nature to cast spells using the rules below:
 
-**Cantrips.** You learn two Cantrips of your choice from the Wu Jen spell list at the end of this Tradition description. You learn one additional Wu Jen Cantrip at 10th and 17th level.
+**Cantrips.** You learn two Cantrips of your choice from the Wu Jen spell list below. You learn one additional Wu Jen Cantrip at 10th and 17th level.
 
 **Spell Slots.** The Wu Jen Spellcasting table shows how many spell slots you have, and the level of those slots. All of your spell slots are the same level. To cast a Wu Jen spell of 1st-level or higher, you must expend a spell slot. You use the spell's casting time and other rules, but your body becomes the spellcasting focus for these spells, and you don't need to provide any material components. You regain all expended Wu Jen spell slots when you finish a short or long rest.
 
-**Spells Known of 1st-Level and Higher.** You learn two 1st-level spells of your choice from the Wu Jen spell list at the end of this Tradition. The Spells Known column of the Wu Jen Spellcasting table shows when you learn more Wu Jen spells. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level.
+**Spells Known of 1st-Level and Higher.** You learn two 1st-level spells of your choice from the Wu Jen spell list below. The Spells Known column of the Wu Jen Spellcasting table shows when you learn more Wu Jen spells. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level.
 
 When you gain a level, you can replace one Wu Jen spell you know with another equal to your Slot level or lower.
 
@@ -28,6 +28,47 @@ When you gain a level, you can replace one Wu Jen spell you know with another eq
 Spell save DC = 8 + your proficiency bonus + your Wisdom modifier
 
 Spell attack modifier = your proficiency bonus + your Wisdom modifier
+
+### Wu Jen Spellcasting
+
+| Monk Level | Spells Known | Spell Slots | Slot Level |
+| ---------- | ------------ | ----------- | ---------- |
+| 3rd        | 2            | 1           | 1st        |
+| 4th        | 2            | 2           | 1st        |
+| 5th        | 3            | 2           | 1st        |
+| 6th        | 3            | 2           | 1st        |
+| 7th        | 4            | 2           | 2nd        |
+| 8th        | 4            | 2           | 2nd        |
+| 9th        | 5            | 2           | 2nd        |
+| 10th       | 5            | 2           | 2nd        |
+| 11th       | 5            | 2           | 2nd        |
+| 12th       | 5            | 2           | 2nd        |
+| 13th       | 6            | 2           | 3rd        |
+| 14th       | 6            | 2           | 3rd        |
+| 15th       | 6            | 2           | 3rd        |
+| 16th       | 6            | 2           | 3rd        |
+| 17th       | 7            | 2           | 3rd        |
+| 18th       | 7            | 2           | 3rd        |
+| 19th       | 7            | 2           | 4th        |
+| 20th       | 7            | 2           | 4th        |
+
+### Wu Jen Spell List
+
+The spells in the Wu Jen spell list are from the Player's Handbook, Xanathar's Guide to Everything (*), and Tasha's Cauldron of Everything (**).
+
+Spells marked (LL) are found in the laserllama Spell Compendium, which includes both new and alternate spells.
+
+The archive catalogue below contains spells with spell pages. Remaining options are preserved in the collapsed list.
+
+![[wu-jen-spells.base]]
+
+> [!info]- Options without archive spell pages
+> These options remain part of the spell list but do not yet have spell pages in the archive.
+> **Cantrips (0-Level):** Beckon Air (ll), Blade Ward, Control Flame (ll), Create Bonfire (_), Frostbite, Magic Stone (_), Mold Earth (ll), Shape Water (ll), Thorn Whip, Thunderclap (_)
+> **1st-Level:** Absorb Elements (_), Armor of Agathys, Create Water (ll), Earth Tremor (_), Ensnaring Strike (ll), Hail of Thorns (ll), Ice Knife (_), Witch Bolt (ll)
+> **2nd-Level:** Dust Devil (_), Earthbind (_), Earthen Grasp (_), Snowball Swarm (_), Warding Wind (_)
+> **3rd-Level:** Erupting Earth (_), Grasping Vine (ll), Minute Meteors (_), Thunder Step (_), Tidal Wave (_), Wall of Sand (_), Wall of Water (_)
+> **4th-Level:** Elemental Bane (_), Guardian of Nature (Tree) (_), Pillars of Earth (ll), Storm Sphere (_), Watery Sphere (*)
 
 ### Fist of the Five Ways
 
@@ -58,121 +99,3 @@ You weave your martial arts with spiritual magic. When you cast a Wu Jen spell w
 As an action, you can draw all five elements into yourself to take on an Elemental Form, gaining the following benefits:
 
 You gain a flying speed equal to your walking speed. You resist bludgeoning, piercing, and slashing damage. Critical hits against you become normal hits. Opportunity attacks against you have disadvantage. You can gain temporary hit points equal to your Wisdom modifier (minimum of 1) at the start of each of your turns. Your Elemental Form lasts for 1 minute, but it ends early if you are Incapacitated or use a bonus action to end it. You can use this feature once per long rest at no cost, after that, you must expend 6 Ki to transform again.
-
-### Wu Jen Spell List
-
-Here's the list of spells you consult when you learn a Wu Jen spell. Spells are organized by spell level, not character level. The spells here are from the Player's Handbook, Xanathar's Guide to Everything (*), and Tasha's Cauldron of Everything (**).
-
-Spells marked (LL) are found in the laserllama Spell Compendium, which includes both new and alternate spells.
-
-#### Cantrips (0-Level)
-
-- Beckon Air (ll)
-- Blade Ward
-- Control Flame (ll)
-- Create Bonfire (*)
-- Druidcraft
-- Frostbite
-- [[Light]]
-- Magic Stone (*)
-- Mold Earth (ll)
-- Ray of Frost
-- Shape Water (ll)
-- Thorn Whip
-- Thunderclap (*)
-
-#### 1st-Level
-
-- Absorb Elements (*)
-- Armor of Agathys
-- Burning Hands
-- Create Water (ll)
-- Earth Tremor (*)
-- Ensnaring Strike (ll)
-- Entangle
-- [[Fog Cloud]]
-- Hail of Thorns (ll)
-- [[Hellish Rebuke]]
-- Ice Knife (*)
-- [[Sanctuary]]
-- Thunderwave
-- Witch Bolt (ll)
-
-#### 2nd-Level
-
-- [[Barkskin]] (LL)
-- [[Continual Flame]]
-- Dust Devil (*)
-- Earthbind (*)
-- Earthen Grasp (*)
-- [[Flame Blade]]
-- [[Flaming Sphere]]
-- Gust of Wind
-- [[Hold Person]]
-- [[Levitate]]
-- [[Misty Step]]
-- Scorching Ray
-- [[Shatter]]
-- Snowball Swarm (*)
-- [[Spike Growth]]
-- Warding Wind (*)
-
-#### 3rd-Level
-
-- [[Call Lightning]]
-- [[Conjure Elemental]] (LL)
-- Erupting Earth (*)
-- [[Fireball]]
-- [[Fly]]
-- Gaseous Form
-- Grasping Vine (ll)
-- [[Lightning Bolt]]
-- [[Meld Into Stone]]
-- Minute Meteors (*)
-- Plant Growth
-- Sleet Storm
-- Speak with Plants
-- Thunder Step (*)
-- Tidal Wave (*)
-- Wall of Sand (*)
-- Wall of Water (*)
-- Wind Wall
-
-#### 4th-Level
-
-- [[Control Water]]
-- Elemental Bane (*)
-- [[Freedom of Movement]]
-- Guardian of Nature (Tree) (*)
-- Ice Storm
-- Pillars of Earth (ll)
-- [[Resilient Sphere]]
-- Stone Shape
-- Stoneskin
-- Storm Sphere (*)
-- [[Wall of Fire]]
-- Wall of Ice (ll)
-- Watery Sphere (*)
-
-### Wu Jen Spellcasting
-
-| Monk Level | Spells Known | Spell Slots | Slot Level |
-| ---------- | ------------ | ----------- | ---------- |
-| 3rd        | 2            | 1           | 1st        |
-| 4th        | 2            | 2           | 1st        |
-| 5th        | 3            | 2           | 1st        |
-| 6th        | 3            | 2           | 1st        |
-| 7th        | 4            | 2           | 2nd        |
-| 8th        | 4            | 2           | 2nd        |
-| 9th        | 5            | 2           | 2nd        |
-| 10th       | 5            | 2           | 2nd        |
-| 11th       | 5            | 2           | 2nd        |
-| 12th       | 5            | 2           | 2nd        |
-| 13th       | 6            | 2           | 3rd        |
-| 14th       | 6            | 2           | 3rd        |
-| 15th       | 6            | 2           | 3rd        |
-| 16th       | 6            | 2           | 3rd        |
-| 17th       | 7            | 2           | 3rd        |
-| 18th       | 7            | 2           | 3rd        |
-| 19th       | 7            | 2           | 4th        |
-| 20th       | 7            | 2           | 4th        |

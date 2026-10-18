@@ -1,0 +1,78 @@
+filters:
+  and:
+    - file.inFolder("spells")
+    - subclass_spell_lists.contains("Wu Jen")
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  level:
+    displayName: Level
+  school:
+    displayName: School
+  casting_time:
+    displayName: Casting time
+  concentration:
+    displayName: Concentration
+  source:
+    displayName: Source
+  wu_jen_list_marker:
+    displayName: List marker
+views:
+  - type: table
+    name: All Wu Jen Spells
+    groupBy:
+      property: level
+      direction: ASC
+    order: [formula.Name, school, casting_time, concentration, source, wu_jen_list_marker]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Cantrips
+    filters:
+      and:
+        - level == 0
+    order: [formula.Name, school, casting_time, wu_jen_list_marker]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 1st-Level
+    filters:
+      and:
+        - level == 1
+    order: [formula.Name, school, concentration, wu_jen_list_marker]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 2nd-Level
+    filters:
+      and:
+        - level == 2
+    order: [formula.Name, school, concentration, wu_jen_list_marker]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 3rd-Level
+    filters:
+      and:
+        - level == 3
+    order: [formula.Name, school, concentration, wu_jen_list_marker]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 4th-Level
+    filters:
+      and:
+        - level == 4
+    order: [formula.Name, school, concentration, wu_jen_list_marker]
+    sort:
+      - property: file.name
+        direction: ASC

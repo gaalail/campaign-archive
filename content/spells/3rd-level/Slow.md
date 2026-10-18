@@ -12,6 +12,8 @@ components: V, S, M
 ritual: false
 concentration: true
 source: SRD 5.1
+subclass_spell_lists:
+- Mystic
 ---
 
 *3rd-level transmutation*

@@ -11,6 +11,10 @@ components: V, S, M
 ritual: false
 concentration: true
 source: SRD 5.1
+subclass_spell_lists:
+- Arcane Knight
+- Mystic
+- Wu Jen
 ---
 
 *4th-level evocation*

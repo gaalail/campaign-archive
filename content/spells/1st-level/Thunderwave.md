@@ -14,6 +14,8 @@ components: V, S
 ritual: false
 concentration: false
 source: SRD 5.1
+subclass_spell_lists:
+- Wu Jen
 ---
 
 *1st-level evocation*

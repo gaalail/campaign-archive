@@ -51,6 +51,23 @@ Spell attack modifier = your proficiency bonus + your Intelligence modifier
 | 19th          | 10           | 7          | 4th          |
 | 20th          | 10           | 7          | 4th          |
 
+### Mystic Spell List
+
+Spells can be found in the Player's Handbook, Xanathar's Guide to Everything*, and Tasha's Cauldron of Everything**.
+
+Spells marked with LL are found in the laserllama Spell Compendium, which includes both new and alternate spells.
+
+The archive catalogue below contains spells with spell pages. Remaining options are preserved in the collapsed list.
+
+![[mystic-spells.base]]
+
+> [!info]- Options without archive spell pages
+> These options remain part of the spell list but do not yet have spell pages in the archive.
+> **1st-Level:** Catapult (_), Cause Fear (_), Dissonant Whispers, Ethereal Anchor (LL), Id Insinuation (LL)
+> **2nd-Level:** Crown of Madness, Mind Spike (_), Mind Whip (\**), Mystic Spear (LL), Phantasmal Force
+> **3rd-Level:** Cerebral Blast (LL), Enemies Abound (_), Feign Death, Intellect Fortress (**), Spectral Passage (LL)
+> **4th-Level:** Charm Monster (*), Ego Scourge (LL)
+
 ### Psionic Talents
 
 **3rd-level Mystic Archetype feature.** Your training has begun to unlock minor psionic abilities. You unlock two Mystic Talents of your choice from those available to the Psion Class. If a Talent has a prerequisite Psion level, you can learn it if your Fighter level meets that prerequisite.
@@ -80,72 +97,6 @@ If you end your movement inside an object or creature, you are instantly shunted
 You can manifest the telekinesis spell once between each long rest, without expending any Psi Points. After that, you can epend 5 Psi Points to manifest it again.
 
 Finally, whenever you use Phase Step, you also gain a flying speed equal to your walking speed until the end of your current turn. If, you end your turn flying you fall.
-
-### Mystic Spell List
-
-Here is the list of spells available to a Mystic Fighter. Spells can be found in the Player's Handbook, Xanathar's Guide to Everything*, and in Tasha's Cauldron of Everything**.
-
-Spells marked with LL are found in the laserllama Spell Compendium, which includes both new and alternate spells.
-
-#### 1st-Level
-
-- Catapult (*)
-- Cause Fear (*)
-- [[Charm Person]]
-- [[Command]]
-- Dissonant Whispers
-- Ethereal Anchor (LL)
-- Hideous Laughter
-- Id Insinuation (LL)
-- Jump (LL)
-- [[Magic Missile]]
-- Shield (LL)
-- Sleep
-
-#### 2nd-Level
-
-- Blindness/Deafness
-- [[Blur]]
-- [[Calm Emotions]]
-- Crown of Madness
-- [[Detect Thoughts]]
-- [[Levitate]]
-- Mind Spike (*)
-- Mind Whip (**)
-- [[Mirror Image]]
-- Mystic Spear (LL)
-- Phantasmal Force
-- [[Suggestion]]
-
-#### 3rd-Level
-
-- [[Blink]]
-- Cerebral Blast (LL)
-- [[Clairvoyance]]
-- Enemies Abound (*)
-- [[Fear]]
-- Feign Death
-- Hypnotic Pattern (LL)
-- Intellect Fortress (**)
-- [[Major Image]]
-- [[Nondetection]]
-- [[Sending]]
-- [[Slow]]
-- Spectral Passage (LL)
-- [[Tongues]]
-- [[Water Walk]]
-
-#### 4th-Level
-
-- [[Arcane Eye]]
-- Charm Monster (*)
-- [[Compulsion]]
-- [[Confusion]]
-- [[Dimension Door]]
-- Ego Scourge (LL)
-- [[Freedom of Movement]]
-- [[Phantasmal Killer]]
-- [[Resilient Sphere]]
 
 ---
 

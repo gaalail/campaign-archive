@@ -26,107 +26,6 @@ Spell save DC = 8 + your proficiency bonus + your Charisma modifier
 
 Spell attack modifier = your proficiency bonus + your Charisma modifier
 
-### Sanguine Offering
-
-**3rd-level Witchblade Archetype feature.** Once per turn, when you hit a creature with a melee weapon attack, you can offer your own vitality to increase the damage. You take necrotic damage equal to your Exploit Die and deal bonus necrotic damage equal to two Exploit Die.
-
-The necrotic damage you take can't be reduced in any way.
-
-### War Magic
-
-**7th-level Witchblade Archetype feature.** You can seamlessly weave minor spells with weapon attacks. When you use your action to Cast a Spell you can make one weapon attack as a bonus action on that turn.
-
-### Otherworldly Step
-
-**10th-level Witchblade Archetype feature.** Drawing on your eldritch power allows you to slip through cracks in reality. Whenever you cast a Witchblade spell with a casting time of one action or use your Second Wind, you can teleport to an unoccupied space you can see within 60 feet.
-
-### Greater Offering
-
-**15th-level Witchblade Archetype feature.** You restore your vitality by inflicting pain on your foes. When you use Sanguine Offering, you can gain temporary hit points equal to the necrotic damage dealt to the creature. However, temporary hit points from this feature only last for 1 minute.
-
-### Legendary Witchblade
-
-**18th-level Witchblade Archetype feature.** You can offer the souls of your foes to your Eldritch Power in return for increased vitality. When a creature you can see within 30 feet is slain, you can use your reaction to teleport to an unoccupied space of within 5 feet of the slain creature, plunge your weapon into it, and gain temporary hit points equal to twice the slain creature's Challenge Rating.
-
-### Witchblade Spell List
-
-Here is the list of spells available to the Witchblade. Spells can be found in the Player's Handbook, Xanathar's Guide to Everything*, and in Tasha's Cauldron of Everything**.
-
-Spells marked with ll are found in the laserllama Spell Compendium, which includes both new and alternate spells:
-
-#### Cantrips
-
-- Blade Ward (LL)
-- Booming Blade (LL)
-- Green-Flame Blade (LL)
-- Infestation (*)
-- Lightning Lure (LL)
-- Mind Sliver (**)
-- [[Minor Illusion]]
-- [[Poison Spray]] (LL)
-- [[Prestidigitation]]
-- Sword Burst (LL)
-- Tempestuous Blade (LL)
-- Toll the Dead (*)
-- [[True Strike]] (LL)
-
-#### 1st-Level
-
-- Absorb Elements (*)
-- Armor of Agathys
-- Arms of Hadar
-- [[Bane]]
-- Cause Fear (*)
-- [[Detect Evil and Good]]
-- [[Expeditious Retreat]]
-- [[False Life]]
-- [[Hellish Rebuke]]
-- Hex
-- [[Inflict Wounds]]
-- [[Protection from Evil and Good]]
-- Searing Smite (LL)
-- [[Shield]] (LL)
-- Thunderous Smite (LL)
-- [[Unseen Servant]]
-- Witch Bolt (LL)
-
-#### 2nd-Level
-
-- Cloud of Daggers
-- Crown of Madness
-- [[Darkness]]
-- [[Hold Person]]
-- Invisibility
-- Mind Spike (*)
-- [[Mirror Image]]
-- [[Misty Step]]
-- [[Ray of Enfeeblement]]
-- Shadow Blade (*)
-- [[Shatter]]
-- Spider Climb
-
-#### 3rd-Level
-
-- Blinding Smite (LL)
-- [[Counterspell]] (LL)
-- [[Dispel Magic]]
-- Enemies Abound (*)
-- [[Fear]]
-- Hunger of Hadar (LL)
-- [[Major Image]]
-- [[Vampiric Touch]]
-
-#### 4th-Level
-
-- [[Banishment]]
-- [[Blight]]
-- [[Dimension Door]]
-- Hallucinatory Terrain
-- [[Phantasmal Killer]]
-- Staggering Smite (LL)
-- Shadow of Moil (*)
-- Sickening Radiance (*)
-
 ### Witchblade Spellcasting
 
 | Fighter Level | Spells Known | Spell Slots | Slot Level |
@@ -149,6 +48,46 @@ Spells marked with ll are found in the laserllama Spell Compendium, which includ
 | 18th          | 7            | 2           | 3rd        |
 | 19th          | 7            | 2           | 4th        |
 | 20th          | 7            | 2           | 4th        |
+
+### Witchblade Spell List
+
+Spells can be found in the Player's Handbook, Xanathar's Guide to Everything*, and Tasha's Cauldron of Everything**.
+
+Spells marked with LL are found in the laserllama Spell Compendium, which includes both new and alternate spells.
+
+The archive catalogue below contains spells with spell pages. Remaining options are preserved in the collapsed list.
+
+![[witchblade-spells.base]]
+
+> [!info]- Options without archive spell pages
+> These options remain part of the spell list but do not yet have spell pages in the archive.
+> **Cantrips:** Blade Ward (LL), Booming Blade (LL), Green-Flame Blade (LL), Infestation (_), Lightning Lure (LL), Mind Sliver (\**), Sword Burst (LL), Tempestuous Blade (LL), Toll the Dead (_)
+> **1st-Level:** Absorb Elements (_), Armor of Agathys, Arms of Hadar, Cause Fear (_), Hex, Searing Smite (LL), Thunderous Smite (LL), Witch Bolt (LL)
+> **2nd-Level:** Cloud of Daggers, Crown of Madness, Mind Spike (_), Shadow Blade (_)
+> **3rd-Level:** Blinding Smite (LL), Enemies Abound (_), Hunger of Hadar (LL)
+> **4th-Level:** Staggering Smite (LL), Shadow of Moil (_), Sickening Radiance (*)
+
+### Sanguine Offering
+
+**3rd-level Witchblade Archetype feature.** Once per turn, when you hit a creature with a melee weapon attack, you can offer your own vitality to increase the damage. You take necrotic damage equal to your Exploit Die and deal bonus necrotic damage equal to two Exploit Die.
+
+The necrotic damage you take can't be reduced in any way.
+
+### War Magic
+
+**7th-level Witchblade Archetype feature.** You can seamlessly weave minor spells with weapon attacks. When you use your action to Cast a Spell you can make one weapon attack as a bonus action on that turn.
+
+### Otherworldly Step
+
+**10th-level Witchblade Archetype feature.** Drawing on your eldritch power allows you to slip through cracks in reality. Whenever you cast a Witchblade spell with a casting time of one action or use your Second Wind, you can teleport to an unoccupied space you can see within 60 feet.
+
+### Greater Offering
+
+**15th-level Witchblade Archetype feature.** You restore your vitality by inflicting pain on your foes. When you use Sanguine Offering, you can gain temporary hit points equal to the necrotic damage dealt to the creature. However, temporary hit points from this feature only last for 1 minute.
+
+### Legendary Witchblade
+
+**18th-level Witchblade Archetype feature.** You can offer the souls of your foes to your Eldritch Power in return for increased vitality. When a creature you can see within 30 feet is slain, you can use your reaction to teleport to an unoccupied space of within 5 feet of the slain creature, plunge your weapon into it, and gain temporary hit points equal to twice the slain creature's Challenge Rating.
 
 ---
 

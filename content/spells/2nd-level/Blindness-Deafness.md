@@ -15,6 +15,8 @@ components: V
 ritual: false
 concentration: false
 source: SRD 5.1
+subclass_spell_lists:
+- Mystic
 ---
 
 *2nd-level necromancy*

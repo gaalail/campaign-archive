@@ -14,6 +14,8 @@ components: V, M
 ritual: false
 concentration: false
 source: SRD 5.1
+subclass_spell_lists:
+- Arcane Knight
 ---
 
 *1st-level transmutation*
