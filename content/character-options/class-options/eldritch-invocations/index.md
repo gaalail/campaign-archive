@@ -18,12 +18,15 @@ Your patron has granted you mystical powers. These **Eldritch Invocations** repr
 ## Browse by Level
 
 ### Level 2 Invocations
+
 Early magical abilities as you bond with your patron.
 
 ### Level 5 Invocations
+
 Mid-game powers that enhance your magic.
 
 ### Level 7+ Invocations
+
 Powerful late-game abilities.
 
 ---
@@ -53,8 +56,8 @@ Powerful late-game abilities.
 
 ## Related
 
-- [[Metamagic]] (Sorcerer equivalent)
-- [[Avatar Features]] (Paragon equivalent)
+- [[character-options/class-options/metamagic/index|Metamagic]] (Sorcerer equivalent)
+- [[character-options/class-options/avatar-features/index|Avatar Features]] (Paragon equivalent)
 - [[Class Options]] (all options)
 
 ---

@@ -12,7 +12,7 @@ Some classes have **class-specific choice mechanics** — powers you can pick to
 
 ## Your Class Options
 
-### [[Eldritch Invocations|🎭 Eldritch Invocations]] (Warlock)
+### [[character-options/class-options/eldritch-invocations/index|🎭 Eldritch Invocations]] (Warlock)
 
 Magical powers granted by your patron. You choose which ones enhance your abilities.
 
@@ -20,7 +20,7 @@ Magical powers granted by your patron. You choose which ones enhance your abilit
 
 ---
 
-### [[Metamagic|✨ Metamagic]] (Sorcerer)
+### [[character-options/class-options/metamagic/index|✨ Metamagic]] (Sorcerer)
 
 Ways to bend and modify your spells. Modify your magic on the fly with these options.
 
@@ -40,7 +40,7 @@ Martial techniques for attacks, ability checks, saving throws, and tactical supp
 
 ---
 
-### [[Avatar Features|⚡ Avatar Features]] (Paragon)
+### [[character-options/class-options/avatar-features/index|⚡ Avatar Features]] (Paragon)
 
 Divine powers granted by your deity. Unlock as you bond with your god.
 
@@ -66,13 +66,13 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 ## Finding Your Options
 
-**Playing a [[Warlock]]?** → Go to [[Eldritch Invocations]]
+**Playing a [[Warlock]]?** → Go to [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations]]
 
-**Playing a [[Sorcerer]]?** → Go to [[Metamagic]]
+**Playing a [[Sorcerer]]?** → Go to [[character-options/class-options/metamagic/index|Metamagic]]
 
 **Playing a [[Fighter]]?** → Go to [[Fighting Styles]] and [[Martial Exploits]]
 
-**Playing a [[Paragon]]?** → Go to [[Avatar Features]]
+**Playing a [[Paragon]]?** → Go to [[character-options/class-options/avatar-features/index|Avatar Features]]
 
 ---
 
