@@ -12,7 +12,7 @@ Driven by an overwhelming desire to vanquish the great evils of the world, Witch
 
 **3rd-level Witchblade Archetype feature.** The bargain you have struck with your Patron has granted you the ability to cast spells, much like a Warlock does:
 
-Cantrips. You learn one Cantrip of your choice from the Witchblade Spell List. Upon reaching 10th level in this class you learn one additional Witchblade Cantrip of your choice.
+Cantrips. You learn one Cantrip of your choice from the Witchblade Spell List below. Upon reaching 10th level in this class you learn one additional Witchblade Cantrip of your choice.
 
 Spell Slots. The Witchblade Spellcasting table shows how many spell slots you have, and the level of those spell slots. All of your spell slots from this feature are the same level. To cast one of your Witchblade spells of 1st-level or higher, you must expend a spell slot. You regain all of your expended Pact Magic spell slots when you finish a short or long rest.
 
@@ -54,19 +54,80 @@ Here is the list of spells available to the Witchblade. Spells can be found in t
 
 Spells marked with ll are found in the laserllama Spell Compendium, which includes both new and alternate spells:
 
-Cantrips (0-Level) blade ward ll booming blade ll green-flame blade ll infestation * lightning lure ll mind sliver ** minor illusion poison spray ll prestidigitation sword burst ll tempestuous blade ll toll the dead * true strike ll
+#### Cantrips
 
-1st-Level absorb elements * armor of agathys arms of hadar bane cause fear * detect evil & good expeditious retreat false life hellish rebuke hex inflict wounds protection from good & evil searing smite ll shield ll thunderous smite ll unseen servant witch bolt ll
+- Blade Ward (LL)
+- Booming Blade (LL)
+- Green-Flame Blade (LL)
+- Infestation (*)
+- Lightning Lure (LL)
+- Mind Sliver (**)
+- [[Minor Illusion]]
+- [[Poison Spray]] (LL)
+- [[Prestidigitation]]
+- Sword Burst (LL)
+- Tempestuous Blade (LL)
+- Toll the Dead (*)
+- [[True Strike]] (LL)
 
-2nd-Level cloud of daggers crown of madness darkness hold person invisibility mind spike * mirror image misty step ray of enfeeblement shadow blade * shatter spider climb
+#### 1st-Level
 
-3rd-Level blinding smite ll counterspell ll dispel magic enemies abound * fear hunger of hadar ll major image vampiric touch
+- Absorb Elements (*)
+- Armor of Agathys
+- Arms of Hadar
+- [[Bane]]
+- Cause Fear (*)
+- [[Detect Evil and Good]]
+- [[Expeditious Retreat]]
+- [[False Life]]
+- [[Hellish Rebuke]]
+- Hex
+- [[Inflict Wounds]]
+- [[Protection from Evil and Good]]
+- Searing Smite (LL)
+- [[Shield]] (LL)
+- Thunderous Smite (LL)
+- [[Unseen Servant]]
+- Witch Bolt (LL)
 
-4th-Level banishment blight dimension door hallucinatory terrain phantasmal killer staggering smite ll shadow of moil * sickening radiance *
+#### 2nd-Level
 
-### Witchblade
+- Cloud of Daggers
+- Crown of Madness
+- [[Darkness]]
+- [[Hold Person]]
+- Invisibility
+- Mind Spike (*)
+- [[Mirror Image]]
+- [[Misty Step]]
+- [[Ray of Enfeeblement]]
+- Shadow Blade (*)
+- [[Shatter]]
+- Spider Climb
 
-### Witchblade Spellcasting Table
+#### 3rd-Level
+
+- Blinding Smite (LL)
+- [[Counterspell]] (LL)
+- [[Dispel Magic]]
+- Enemies Abound (*)
+- [[Fear]]
+- Hunger of Hadar (LL)
+- [[Major Image]]
+- [[Vampiric Touch]]
+
+#### 4th-Level
+
+- [[Banishment]]
+- [[Blight]]
+- [[Dimension Door]]
+- Hallucinatory Terrain
+- [[Phantasmal Killer]]
+- Staggering Smite (LL)
+- Shadow of Moil (*)
+- Sickening Radiance (*)
+
+### Witchblade Spellcasting
 
 | Fighter Level | Spells Known | Spell Slots | Slot Level |
 | ------------- | ------------ | ----------- | ---------- |

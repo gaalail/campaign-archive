@@ -33,9 +33,9 @@ You learn certain Techniques at the levels noted in the table below. They don't 
 
 **3rd-level Way of the Shadow Arts feature**
 
-You can use your Ki to reproduce the effects of certain spells: darkness, darkvision, pass without trace ll, or silence. Your body is your Spellcasting focus for the spells, and Wisdom is your Spellcating ability. You can see through darkness you create with these spells as if it were daylight.
+You can use your Ki to reproduce the effects of certain spells: [[Darkness]], [[Darkvision]], [[Pass Without Trace]], or [[Silence]]. Your body is your spellcasting focus for the spells, and Wisdom is your spellcasting ability. You can see through darkness you create with these spells as if it were daylight.
 
-You can cast each of these spells once in between each long rest at no cost, after that, you can muse expend 2 Ki to cast it again.
+You can cast each of these spells once between long rests at no cost. After that, you can expend 2 Ki to cast it again.
 
 ### Shadow Step
 

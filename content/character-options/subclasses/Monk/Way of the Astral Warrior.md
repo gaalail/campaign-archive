@@ -35,7 +35,7 @@ When you manifest your Astral Armor, creatures within 10 feet must succeed on a 
 
 **6th-level Way of the Astral Warrior feature**
 
-The power of your Astral Armor infuses your presence even when it is dormant. You learn the thaumaturgy Cantrip, and Wisdom is your spellcasting modifier for it. Also, whenever you make an Insight or Intimidation check you gain a bonus to your roll equal to your Martial Arts Die.
+The power of your Astral Armor infuses your presence even when it is dormant. You learn the [[Thaumaturgy]] cantrip, and Wisdom is your spellcasting modifier for it. Also, whenever you make an Insight or Intimidation check you gain a bonus to your roll equal to your Martial Arts Die.
 
 While your Astral Armor is manifested, you see normally in magic and mundane darkness out to a radius of 120 feet.
 

@@ -20,7 +20,7 @@ So long as they are on the same plane of existence as you, you can use your bonu
 
 Cantrips. You learn two Cantrips of your choice from the Arcane Knight Spell List at the end of this Archetype, and you learn an additional Arcane Knight Cantrip at 10th level.
 
-Spells Known of 1st-Level and Higher. You know three 1st-level Arcane Knight spells from the list on the next page. The Spells Known column of the Arcane Knight Spellcasting table shows when you learn more spells, all of which must be a level for which you have spell slots.
+Spells Known of 1st-Level and Higher. You know three 1st-level Arcane Knight spells from the spell list below. The Spells Known column of the Arcane Knight Spellcasting table shows when you learn more spells, all of which must be a level for which you have spell slots.
 
 When you gain a level, you can replace one of your Spells Known with another spell from the Arcane Knight spell list.
 
@@ -77,23 +77,82 @@ Also, when you hit a target with an Enchanted Armament attack, you can change th
 
 You can still use any Arcane Knight spells you know with a casting time of one attack (such as lightning lure) as normal.
 
-Master Sword & Spell! Interested in playing a true master of both sword and spell? Check out the Magus Class, an arcane, Intelligence-based half-caster companion class to divine holy Paladin and primal Ranger!
-
 ### Arcane Knight Spell List
 
 Here is the list of spells available to the Arcane Knight. Spells can be found in the Player's Handbook, Xanathar's Guide to Everything*, and in Tasha's Cauldron of Everything**.
 
 Spells marked with LL are found in the laserllama Spell Compendium, which includes both new and alternate spells.
 
-Cantrips (0-Level) blade ward ll booming blade ll green-flame blade ll light lightning lure ll mage hand prestidigitation resistance ll shocking grasp sword burst ll tempestuous blade ll true strike ll
+#### Cantrips
 
-1st-Level absorb elements * armor of agathys chromatic orb * compelled duel ll faerie fire feather fall fog cloud grease hellish rebuke jump ll mage armor magic missile protection from good & evil searing smite ll shield ll thunderous smite ll zephyr strike *
+- Blade Ward (LL)
+- Booming Blade (LL)
+- Green-Flame Blade (LL)
+- [[Light]]
+- Lightning Lure (LL)
+- Mage Hand
+- Prestidigitation
+- Resistance (LL)
+- Shocking Grasp
+- Sword Burst (LL)
+- Tempestuous Blade (LL)
+- [[True Strike]]
 
-2nd-Level aura of frost ll blur branding smite ll darkness enlarge/reduce invisibility magic weapon ll misty step spider climb warding wind *
+#### 1st-Level
 
-3rd-Level blinding smite ll counterspell ll dispel magic fireball flame arrows ll fly lighting arrow ll minute meteors * protection from energy thunder step *
+- Absorb Elements (*)
+- Armor of Agathys
+- Chromatic Orb (*)
+- Compelled Duel (LL)
+- [[Faerie Fire]]
+- Feather Fall
+- [[Fog Cloud]]
+- [[Grease]]
+- [[Hellish Rebuke]]
+- Jump (LL)
+- Mage Armor
+- [[Magic Missile]]
+- [[Protection from Evil and Good]]
+- Searing Smite (LL)
+- [[Shield]]
+- Thunderous Smite (LL)
+- Zephyr Strike (*)
 
-4th-Level banishment death ward ll dimension door fire shield greater invisibility resilient sphere staggering smite ll
+#### 2nd-Level
+
+- Aura of Frost (LL)
+- [[Blur]]
+- Branding Smite (LL)
+- [[Darkness]]
+- [[Enlarge-Reduce|Enlarge/Reduce]]
+- Invisibility
+- Magic Weapon (LL)
+- [[Misty Step]]
+- Spider Climb
+- Warding Wind (*)
+
+#### 3rd-Level
+
+- Blinding Smite (LL)
+- [[Counterspell]] (LL)
+- [[Dispel Magic]]
+- [[Fireball]]
+- Flame Arrows (LL)
+- [[Fly]]
+- Lightning Arrow (LL)
+- Minute Meteors (*)
+- [[Protection From Energy]]
+- Thunder Step (*)
+
+#### 4th-Level
+
+- [[Banishment]]
+- [[Death Ward]] (LL)
+- [[Dimension Door]]
+- [[Fire Shield]]
+- Greater Invisibility
+- [[Resilient Sphere]]
+- Staggering Smite (LL)
 
 ---
 

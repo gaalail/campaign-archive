@@ -16,7 +16,7 @@ Psi Points. The potential of your mind is represented by a pool of Psi Points. T
 
 Mental Limit. Your Fighter level limits the potency of spells you can manifest with your psionics. This is shown in the Mental Limit column of the Mystic Psionics Table.
 
-Spells Known of 1st-Level and Higher. You learn two 1st-level spells of your choice from the Mystic spell list on the following page. The Spells Known column of the Mystic Psionics table shows when you learn more Mystic spells of 1st-level and up, but they cannot exceed your Mental Limit level.
+Spells Known of 1st-Level and Higher. You learn two 1st-level spells of your choice from the Mystic spell list below. The Spells Known column of the Mystic Psionics table shows when you learn more Mystic spells of 1st-level and up, but they cannot exceed your Mental Limit level.
 
 Whenever you gain a Fighter level, you can pick one of the Psion spells that you know and replace it with another Psion spell of your choice, of a level equal to your Mental Limit or lower.
 
@@ -87,13 +87,65 @@ Here is the list of spells available to a Mystic Fighter. Spells can be found in
 
 Spells marked with LL are found in the laserllama Spell Compendium, which includes both new and alternate spells.
 
-1st Level catapult * cause fear * charm person command dissonant whispers ethereal anchor ll hideous laughter id insinuation ll jump ll magic missile shield ll sleep
+#### 1st-Level
 
-2nd Level blindness/deafness blur calm emotions crown of madness detect thoughts levitate mind spike * mind whip ** mirror image mystic spear ll phantasmal force suggestion
+- Catapult (*)
+- Cause Fear (*)
+- [[Charm Person]]
+- [[Command]]
+- Dissonant Whispers
+- Ethereal Anchor (LL)
+- Hideous Laughter
+- Id Insinuation (LL)
+- Jump (LL)
+- [[Magic Missile]]
+- Shield (LL)
+- Sleep
 
-3rd Level blink cerebral blast ll clairvoyance enemies abound * fear feign death hypnotic pattern ll intellect fortress ** major image nondetection sending slow spectral passage ll tongues water walk
+#### 2nd-Level
 
-4th Level arcane eye charm monster * compulsion confusion dimension door ego scourge ll freedom of movement phantasmal killer resilient sphere
+- Blindness/Deafness
+- [[Blur]]
+- [[Calm Emotions]]
+- Crown of Madness
+- [[Detect Thoughts]]
+- [[Levitate]]
+- Mind Spike (*)
+- Mind Whip (**)
+- [[Mirror Image]]
+- Mystic Spear (LL)
+- Phantasmal Force
+- [[Suggestion]]
+
+#### 3rd-Level
+
+- [[Blink]]
+- Cerebral Blast (LL)
+- [[Clairvoyance]]
+- Enemies Abound (*)
+- [[Fear]]
+- Feign Death
+- Hypnotic Pattern (LL)
+- Intellect Fortress (**)
+- [[Major Image]]
+- [[Nondetection]]
+- [[Sending]]
+- [[Slow]]
+- Spectral Passage (LL)
+- [[Tongues]]
+- [[Water Walk]]
+
+#### 4th-Level
+
+- [[Arcane Eye]]
+- Charm Monster (*)
+- [[Compulsion]]
+- [[Confusion]]
+- [[Dimension Door]]
+- Ego Scourge (LL)
+- [[Freedom of Movement]]
+- [[Phantasmal Killer]]
+- [[Resilient Sphere]]
 
 ---
 

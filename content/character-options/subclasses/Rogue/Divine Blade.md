@@ -20,7 +20,6 @@ This quest can concern the elimination of a cult or a specific creature, the rec
 > [!info]- The Avenger (level 3)
 > When you choose this archetype at 3rd level, you are known as "The Avenger". Most clergies know and share the identities of the avengers who serve the same deity as they do. While this allows you to receive help from your temple and the members of its clergy, the same reputation also causes you to have more enemies.
 
-
 > [!info]- Bane of the Heretics (level 3)
 > Starting at 3rd level, you can use your action to declare a creature that you can see within 30 feet of you a heretic. For 1 minute, your sneak attacks deal an extra 1d4 radiant damage to the heretic.
 >
@@ -34,18 +33,15 @@ This quest can concern the elimination of a cult or a specific creature, the rec
 >
 > You can use this feature a number of times equal to your proficiency bonus, and you regain any expended uses when you finish a long rest.
 
-
 > [!info]- Seeker of the Heretics (level 9)
-> At 9th level, you become an expert in snuffing out heretics. You can cast the detect evil and good, see invisibility, and zone of truth spells, requiring no material components. Wisdom is your spellcasting ability for these spells.
+> At 9th level, you become an expert in snuffing out heretics. You can cast the [[Detect Evil and Good]], [[See Invisibility]], and [[Zone of Truth]] spells, requiring no material components. Wisdom is your spellcasting ability for these spells.
 >
-> Starting at 13th level, you can also cast the locate creature spell, requiring no material components.
+> Starting at 13th level, you can also cast the [[Locate Creature]] spell, requiring no material components.
 >
 > You can cast each spell once, and you regain any expended uses when you finish a long rest.
 
-
 > [!info]- No Sinner Runs Forever (level 13)
 > Starting at 13th level, whenever you deal your Sneak Attack damage to a creature you accused of being a heretic with your Bane of the Heretics feature, it must succeed on a Constitution saving throw (DC equal to 8 + your Dexterity modifier + your proficiency bonus) or its speed becomes 0 until the end of its next turn.
-
 
 > [!info]- The High Avenger (level 17)
 > When you reach 17th level, you earn the title: "The High Avenger". You become one of the most feared and most influential figures of your deity's clergy.
@@ -54,5 +50,4 @@ This quest can concern the elimination of a cult or a specific creature, the rec
 >
 > Once you use this feature, you cannot do so again until you finish a long rest.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

@@ -61,9 +61,9 @@ You gain a flying speed equal to your walking speed. You resist bludgeoning, pie
 
 ### Wu Jen Spell List
 
-Here's the list of spells you consult when you learn a Wu Jen spell. Spells are organized by spell level, not character level. The spells here are from the Player's Handbook, Xanathar's Guide to Everything *, and Tasha's Cauldron of Everything **.
+Here's the list of spells you consult when you learn a Wu Jen spell. Spells are organized by spell level, not character level. The spells here are from the Player's Handbook, Xanathar's Guide to Everything (*), and Tasha's Cauldron of Everything (**).
 
-Spells marked with ll are found in the laserllama Spell Compendium, which includes both new and alternate spells.
+Spells marked (LL) are found in the laserllama Spell Compendium, which includes both new and alternate spells.
 
 #### Cantrips (0-Level)
 
@@ -73,7 +73,7 @@ Spells marked with ll are found in the laserllama Spell Compendium, which includ
 - Create Bonfire (*)
 - Druidcraft
 - Frostbite
-- Light
+- [[Light]]
 - Magic Stone (*)
 - Mold Earth (ll)
 - Ray of Frost
@@ -90,45 +90,44 @@ Spells marked with ll are found in the laserllama Spell Compendium, which includ
 - Earth Tremor (*)
 - Ensnaring Strike (ll)
 - Entangle
-- Fog Cloud
+- [[Fog Cloud]]
 - Hail of Thorns (ll)
-- Hellish Rebuke
+- [[Hellish Rebuke]]
 - Ice Knife (*)
-- Sanctuary
+- [[Sanctuary]]
 - Thunderwave
 - Witch Bolt (ll)
 
 #### 2nd-Level
 
-- Barkskin (ll)
-- Continual Flame
+- [[Barkskin]] (LL)
+- [[Continual Flame]]
 - Dust Devil (*)
 - Earthbind (*)
 - Earthen Grasp (*)
-- Flame Blade
-- Flaming Sphere
+- [[Flame Blade]]
+- [[Flaming Sphere]]
 - Gust of Wind
-- Hold Person
-- Levitate
-
-- Misty Step
+- [[Hold Person]]
+- [[Levitate]]
+- [[Misty Step]]
 - Scorching Ray
-- Shatter
+- [[Shatter]]
 - Snowball Swarm (*)
-- Spike Growth
+- [[Spike Growth]]
 - Warding Wind (*)
 
 #### 3rd-Level
 
-- Call Lightning
-- Conjure Elemental (ll)
+- [[Call Lightning]]
+- [[Conjure Elemental]] (LL)
 - Erupting Earth (*)
-- Fireball
-- Fly
+- [[Fireball]]
+- [[Fly]]
 - Gaseous Form
 - Grasping Vine (ll)
-- Lightning Bolt
-- Meld into Stone
+- [[Lightning Bolt]]
+- [[Meld Into Stone]]
 - Minute Meteors (*)
 - Plant Growth
 - Sleet Storm
@@ -141,17 +140,17 @@ Spells marked with ll are found in the laserllama Spell Compendium, which includ
 
 #### 4th-Level
 
-- Control Water
+- [[Control Water]]
 - Elemental Bane (*)
-- Freedom of Movement
+- [[Freedom of Movement]]
 - Guardian of Nature (Tree) (*)
 - Ice Storm
 - Pillars of Earth (ll)
-- Resilient Sphere
+- [[Resilient Sphere]]
 - Stone Shape
 - Stoneskin
 - Storm Sphere (*)
-- Wall of Fire
+- [[Wall of Fire]]
 - Wall of Ice (ll)
 - Watery Sphere (*)
 

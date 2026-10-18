@@ -57,12 +57,12 @@ However, if you stop this special movement while you are inside a solid object o
 
 **10th-level Way of the Void feature**
 
-The entropic power of your spirit allows you to disrupt and destroy magic. You can spend 3 Ki to cast the counterspell ll or dispel magic spells at 3rd level. When you do so, Wisdom is considered your Spellcasting ability for these spells.
+The entropic power of your spirit allows you to disrupt and destroy magic. You can spend 3 Ki to cast [[Counterspell]] or [[Dispel Magic]] at 3rd level. When you do so, Wisdom is considered your spellcasting ability for these spells.
 
 ### Master of Entropy
 
 **17th-level Way of the Void feature**
 
-Your power is annihilation itself. Once one each of your turns, you can forgo one unarmed strike to instead touch a creature and force it to make a Constitution saving throw against your Technique save DC. On a failed save, it suffers the effects of a disintegrate spell cast at 6th-level.
+Your power is annihilation itself. Once on each of your turns, you can forgo one unarmed strike to instead touch a creature and force it to make a Constitution saving throw against your Technique save DC. On a failed save, it suffers the effects of [[Disintegrate]] cast at 6th level.
 
 You can use this feature once per long rest at no cost, after which, you must spend 6 Ki to use this feature again.
