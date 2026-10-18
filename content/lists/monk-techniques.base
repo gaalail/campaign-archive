@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("character-options/class-options/monk-technique-options")
+    - file.inFolder("character-options/class-options/monk-techniques")
     - file.name != "index"
 formulas:
   Name: file.asLink(title)
@@ -15,7 +15,7 @@ properties:
     displayName: Source
 views:
   - type: table
-    name: Core Mystic Techniques
+    name: Mystic Techniques
     order: [formula.Name, prerequisite, summary]
     sort:
       - property: file.name
