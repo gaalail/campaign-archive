@@ -7,6 +7,7 @@
  * - Unresolved and ambiguous wikilinks/embeds
  * - Pages without explicit incoming or outgoing wikilinks
  * - Metadata consistency
+ * - Class, subclass, and spell-catalogue relationships
  * - Duplicate entries
  * - Incomplete entries
  */
@@ -14,6 +15,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { parse as parseYaml } from 'yaml';
 import { extractWikilinks, findGeneratedViewPages, loadLinkIndex, resolveWikilink } from './link-health.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -62,6 +64,22 @@ function parseFrontmatter(content) {
   });
   
   return fm;
+}
+
+function parseYamlFrontmatter(filepath) {
+  const content = fs.readFileSync(filepath, 'utf-8');
+  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (!match) {
+    return {};
+  }
+
+  try {
+    return parseYaml(match[1]) || {};
+  } catch (error) {
+    const displayPath = path.relative(path.dirname(CONTENT_DIR), filepath).replaceAll('\\', '/');
+    RESULTS.errors.push(`Invalid YAML frontmatter: ${displayPath}: ${error.message}`);
+    return {};
+  }
 }
 
 // Check for broken links
@@ -184,6 +202,156 @@ function checkMetadata() {
   }
 }
 
+function checkContentRelationships() {
+  console.log('\n📍 Checking content relationships...');
+  const initialErrorCount = RESULTS.errors.length;
+  const contentEntries = Object.values(fileCache);
+  const relativePath = (filepath) => path.relative(CONTENT_DIR, filepath).replaceAll('\\', '/');
+  const classPages = new Map(
+    contentEntries
+      .filter((entry) => {
+        const relative = relativePath(entry.filepath);
+        return relative.startsWith('character-options/classes/') &&
+          path.basename(entry.filepath).toLowerCase() !== 'index.md';
+      })
+      .map((entry) => [path.basename(entry.filepath, '.md').toLowerCase(), entry.filepath]),
+  );
+  const subclassPages = contentEntries.filter((entry) => {
+    const relative = relativePath(entry.filepath);
+    return relative.startsWith('character-options/subclasses/') &&
+      path.basename(entry.filepath).toLowerCase() !== 'index.md';
+  });
+
+  let validParentRelationships = 0;
+  for (const subclass of subclassPages) {
+    const metadata = parseYamlFrontmatter(subclass.filepath);
+    const parentClass = metadata.parent_class;
+    const displayPath = relativePath(subclass.filepath);
+    if (typeof parentClass !== 'string' || !parentClass.trim()) {
+      RESULTS.errors.push(`Subclass missing parent_class metadata: ${displayPath}`);
+      continue;
+    }
+
+    const parentKey = parentClass.trim().toLowerCase();
+    if (!classPages.has(parentKey)) {
+      RESULTS.errors.push(`Unknown parent_class "${parentClass}" on ${displayPath}`);
+      continue;
+    }
+
+    const subclassDirectory = path.basename(path.dirname(subclass.filepath)).toLowerCase();
+    if (subclassDirectory !== parentKey) {
+      RESULTS.errors.push(
+        `Subclass directory "${subclassDirectory}" does not match parent_class "${parentClass}" on ${displayPath}`,
+      );
+      continue;
+    }
+
+    validParentRelationships++;
+  }
+
+  const listDirectory = path.join(CONTENT_DIR, 'lists');
+  const listFiles = fs.readdirSync(listDirectory)
+    .filter((filename) => filename.endsWith('.base'))
+    .map((filename) => path.join(listDirectory, filename));
+  const catalogues = new Map();
+  const filterPattern = /^subclass_spell_lists\.contains\(["'](.+)["']\)$/;
+  const collectFilterLabels = (value, labels) => {
+    if (typeof value === 'string') {
+      const match = value.trim().match(filterPattern);
+      if (match) {
+        labels.add(match[1]);
+      }
+    } else if (Array.isArray(value)) {
+      value.forEach((item) => collectFilterLabels(item, labels));
+    } else if (value && typeof value === 'object') {
+      Object.values(value).forEach((item) => collectFilterLabels(item, labels));
+    }
+  };
+
+  for (const listFile of listFiles) {
+    let parsed = {};
+    try {
+      parsed = parseYaml(fs.readFileSync(listFile, 'utf-8')) || {};
+    } catch (error) {
+      RESULTS.errors.push(`Invalid YAML catalogue: ${relativePath(listFile)}: ${error.message}`);
+    }
+
+    const labels = new Set();
+    collectFilterLabels(parsed.filters, labels);
+    for (const label of labels) {
+      if (catalogues.has(label)) {
+        RESULTS.errors.push(
+          `Multiple spell catalogues filter subclass_spell_lists "${label}": ${path.basename(catalogues.get(label))}, ${path.basename(listFile)}`,
+        );
+        continue;
+      }
+      catalogues.set(label, listFile);
+    }
+  }
+
+  const linkedCatalogues = new Set();
+  for (const entry of contentEntries) {
+    for (const link of entry.links) {
+      if (link.embed && link.target.toLowerCase().endsWith('-spells.base')) {
+        linkedCatalogues.add(path.basename(link.target).toLowerCase());
+      }
+    }
+  }
+
+  const taggedSpellCounts = new Map();
+  const spells = contentEntries.filter((entry) => relativePath(entry.filepath).startsWith('spells/'));
+  for (const spell of spells) {
+    const metadata = parseYamlFrontmatter(spell.filepath);
+    if (!Object.hasOwn(metadata, 'subclass_spell_lists')) {
+      continue;
+    }
+
+    if (!Array.isArray(metadata.subclass_spell_lists) || metadata.subclass_spell_lists.length === 0) {
+      RESULTS.errors.push(
+        `subclass_spell_lists must be a non-empty list: ${relativePath(spell.filepath)}`,
+      );
+      continue;
+    }
+
+    for (const label of metadata.subclass_spell_lists) {
+      if (typeof label !== 'string' || !catalogues.has(label)) {
+        RESULTS.errors.push(
+          `Unknown subclass spell-list label "${label}" on ${relativePath(spell.filepath)}`,
+        );
+        continue;
+      }
+
+      const catalogue = catalogues.get(label);
+      if (!linkedCatalogues.has(path.basename(catalogue).toLowerCase())) {
+        RESULTS.errors.push(
+          `Spell catalogue for "${label}" is not embedded by a content page: ${relativePath(catalogue)}`,
+        );
+        continue;
+      }
+
+      taggedSpellCounts.set(label, (taggedSpellCounts.get(label) || 0) + 1);
+    }
+  }
+
+  for (const [label, catalogue] of catalogues) {
+    if (!taggedSpellCounts.has(label)) {
+      RESULTS.errors.push(
+        `Spell catalogue for "${label}" has no matching tagged spells: ${relativePath(catalogue)}`,
+      );
+    }
+  }
+
+  if (RESULTS.errors.length === initialErrorCount) {
+    RESULTS.info.push(
+      `✓ Content relationships verified (${validParentRelationships} subclass parents, ${taggedSpellCounts.size} subclass spell catalogues)`,
+    );
+  } else {
+    RESULTS.info.push(
+      `Content relationships scanned (${validParentRelationships}/${subclassPages.length} subclass parents, ${taggedSpellCounts.size}/${catalogues.size} subclass spell catalogues)`,
+    );
+  }
+}
+
 // Check for duplicate content
 function checkDuplicates() {
   console.log('\n📍 Checking for duplicates...');
@@ -256,6 +424,7 @@ function validate() {
   checkWikilinks(linkIndex);
   checkUnlinkedPages(linkIndex);
   checkMetadata();
+  checkContentRelationships();
   checkDuplicates();
   checkIncomplete();
   
