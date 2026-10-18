@@ -1,0 +1,9 @@
+---
+title: Slow Fall
+parent_class: Monk
+option_group: Mystic Techniques
+summary: "You move through the air as light as a feather"
+source: Alternate Monk
+---
+
+You move through the air as light as a feather. You reduce any falling damage you take by five times your Monk level, so long as you are not Grapled, Incapacitated, or Restrained.

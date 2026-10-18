@@ -22,7 +22,7 @@ Choose at character creation. This archive has all core 5e classes plus [[charac
 | Cleric        | d8      | WIS             | Holy magic + healing    |
 | Druid         | d8      | WIS             | Nature magic            |
 | Fighter       | d10     | STR/DEX         | Weapon master           |
-| Monk          | d8      | DEX/WIS         | Speed + control         |
+| Monk          | d10     | DEX/WIS         | Speed + control         |
 | Paladin       | d10     | STR/CHA         | Holy warrior            |
 | Paragon       | d10     | WIS/CHA         | Divine champion         |
 | Ranger        | d10     | DEX/WIS         | Scout + magic           |

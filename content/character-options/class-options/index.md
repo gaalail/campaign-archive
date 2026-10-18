@@ -34,6 +34,12 @@ Martial techniques for attacks, ability checks, saving throws, and tactical supp
 
 ---
 
+### [[character-options/class-options/monk-techniques/index|Mystic Techniques]] (Monk)
+
+Ki-powered techniques learned by the Alternate Monk, with additional options from Alternate Monk Expanded.
+
+---
+
 ### [[character-options/class-options/avatar-features/index|⚡ Avatar Features]] (Paragon)
 
 Divine powers granted by your deity. Unlock as you bond with your god.
@@ -48,6 +54,7 @@ Divine powers granted by your deity. Unlock as you bond with your god.
    - Warlocks → Eldritch Invocations
    - Sorcerers → Metamagic
    - Fighters → Martial Exploits
+   - Monks → Mystic Techniques
    - Paragons → Avatar Features
 
 2. **You gain them at certain levels** (varies by class)
@@ -65,6 +72,8 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 **Playing a [[Sorcerer]]?** → Go to [[character-options/class-options/metamagic/index|Metamagic]]
 
 **Playing a [[Fighter]]?** → Go to [[character-options/class-options/martial-exploits/index|Martial Exploits]]; Fighting Styles are in the shared [[character-options/fighting-styles/index|Fighting Styles]] catalogue
+
+**Playing a [[Monk]]?** → Go to [[character-options/class-options/monk-techniques/index|Mystic Techniques]]
 
 **Playing a [[Paragon]]?** → Go to [[character-options/class-options/avatar-features/index|Avatar Features]]
 

@@ -6,7 +6,7 @@ title: Feats
 
 **Feats** are special abilities you can take instead of ability score increases.
 
-Gain at levels 4, 8, 12, 16, and 19 (unless your class says otherwise). The table below lists feats in this archive, including Fighter feats and SRD [[Grappler]].
+Gain at levels 4, 8, 12, 16, and 19 (unless your class says otherwise). The table below lists feats in this archive, including Fighter feats, Alternate Monk feats, and SRD [[Grappler]].
 
 ---
 

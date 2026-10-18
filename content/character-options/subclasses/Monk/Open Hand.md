@@ -2,31 +2,59 @@
 title: Open Hand
 parent_class: Monk
 summary: Monastic Tradition for the Monk
-source: SRD 5.1
+source: Alternate Monk
 ---
 
-*Monastic Tradition (Monk subclass)*
+# Open Hand
 
-Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.
+While all Monks are warriors, the disciples of the Open Hand train relentlessly, honing their body itself into a weapon. They do not neglect their spiritual training but pride themselves on their skill in martial arts. It is exceedingly rare for a Monk of the Open Hand to use a weapon other than their fists.
 
-## Features
+### Open Hand Techniques
 
-> [!info]- Open Hand Technique (level 3)
-> Starting when you choose this tradition at 3rd level, you can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:
->
-> - It must succeed on a Dexterity saving throw or be knocked prone.
->
-> - It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.
->
-> - It can't take reactions until the end of your next turn.
+**3rd-level Way of the Open Hand feature**
 
-> [!info]- Wholeness of Body (level 6)
-> At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.
+You learn certain Techniques at the Monk levels noted in the table below, but they do not count against your total number of Techniques Known.
 
-> [!info]- Tranquility (level 11)
-> Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.
+Also, each time you gain a Monk level, you can replace one of these Techniques with another Strike Technique that you meet the prerequisites for. Strike Techniques are those that can be used when you hit with a melee Martial Arts attack.
 
-> [!info]- Quivering Palm (level 17)
-> At 17th level, you gain the ability to set up lethal vibrations in someone's body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
->
-> You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.
+| Monk Level | Signature Technique |
+| ---------- | ------------------- |
+| 3rd        | empowered strike    |
+| 5th        | stunning strike     |
+| 9th        | indomitable spirit  |
+
+### Practiced Strikes
+
+**3rd-level Way of the Open Hand feature**
+
+Rigorous discipline has made your abilities second nature. Once on each of your turns when you hit with an unarmed strike, you can use a Strike Technique you know without expending the normal Ki.
+
+You can use your Strike Techniques in this way a number of times equal to your Wisdom modifier (a minimum of once), and you regain all expended uses when you finish a long rest.
+
+### Ebb and Flow
+
+**6th-level Way of the Open Hand feature**
+
+You have trained to redirect your enemy's momentum against them. When a creature you can see misses you with a melee attack, you can use one of the following reactions:
+
+Toppling Blow. The creature must succeed on a Dexterity saving throw against your Technique save DC or it falls Prone and its speed is 0 until the end of its turn. Any creature larger than you has advantage on this saving throw.
+
+Swift Reprisal. You make one unarmed strike against it.
+
+### Open Hand Strike
+
+**10th-level Way of the Open Hand feature**
+
+Your strikes disrupt the flow of Ki. If you score a critical hit with an unarmed strike, the creature has disadvantage on any saving throw that you force it to make as part of that attack.
+
+### Master of Many Forms
+
+**10th-level Way of the Open Hand feature**
+
+During each long rest, you can spend 10 minutes practicing martial arts to replace one Technique you know with another Technique which you meet the prerequisites for.
+
+### Master of the Open Hand
+
+**17th-level Way of the Open Hand feature**
+
+You have become an unparalleled master of unarmed martial arts and are able to strike with overwhelming power and wondrous speed. Whenever you use Flurry of Blows, Swift Reprisal, or make an opportunity attack you can make one additional unarmed strike.

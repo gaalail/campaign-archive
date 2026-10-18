@@ -4,18 +4,42 @@ title: Monk Subclasses
 
 # Monk Subclasses
 
-**4 subclasses available** | Choose at 3rd level | Monastic Traditions
+**22 traditions available** | Choose at 3rd level | Monastic Traditions
 
 ---
 
 ## Available Traditions
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Open Hand]] | Unarmed mastery | Kung fu master |
-| [[Way of Angels]] | Angelic training | Divine discipline |
-| [[Way of Cardinal Virtues]] | Sacred virtues | Holy monk |
-| [[Way of the Pilgrims]] | Pilgrimage path | Traveling seeker |
+### Alternate Monk
+
+- [[character-options/subclasses/Monk/Way of the Astral Warrior|Way of the Astral Warrior]]
+- [[character-options/subclasses/Monk/Way of Radiance|Way of Radiance]]
+- [[character-options/subclasses/Monk/Way of Shining Steel|Way of Shining Steel]]
+- [[character-options/subclasses/Monk/Way of the Drunken Fist|Way of the Drunken Fist]]
+- [[character-options/subclasses/Monk/Way of the Reaper|Way of the Reaper]]
+- [[character-options/subclasses/Monk/Way of the Wu Jen|Way of the Wu Jen]]
+- [[character-options/subclasses/Monk/Way of Harmony|Way of Harmony]]
+- [[character-options/subclasses/Monk/Way of the Rising Dragon|Way of the Rising Dragon]]
+- [[character-options/subclasses/Monk/Open Hand|Open Hand]]
+- [[character-options/subclasses/Monk/Way of the Shadow Arts|Way of the Shadow Arts]]
+
+### Alternate Monk Expanded
+
+- [[character-options/subclasses/Monk/Way of the Boulder|Way of the Boulder]]
+- [[character-options/subclasses/Monk/Way of the Flowing River|Way of the Flowing River]]
+- [[character-options/subclasses/Monk/Way of the Sacred Inks|Way of the Sacred Inks]]
+- [[character-options/subclasses/Monk/Way of the Brawler|Way of the Brawler]]
+- [[character-options/subclasses/Monk/Way of the Hurricane|Way of the Hurricane]]
+- [[character-options/subclasses/Monk/Way of the Vigilante|Way of the Vigilante]]
+- [[character-options/subclasses/Monk/Way of Ferocity|Way of Ferocity]]
+- [[character-options/subclasses/Monk/Way of the Mystic|Way of the Mystic]]
+- [[character-options/subclasses/Monk/Way of the Void|Way of the Void]]
+
+### Other existing traditions
+
+- [[character-options/subclasses/Monk/Way of Angels|Way of Angels]]
+- [[character-options/subclasses/Monk/Way of Cardinal Virtues|Way of Cardinal Virtues]]
+- [[character-options/subclasses/Monk/Way of the Pilgrims|Way of the Pilgrims]]
 
 ---
 
@@ -30,8 +54,8 @@ title: Monk Subclasses
 
 ## All Monk Options
 
-- [[Monk|Back to Monk class]]
-- [[Classes|All classes]]
-- [[Subclasses|All subclasses]]
+- [[character-options/classes/Monk|Back to Monk class]]
+- [[character-options/classes/index|All classes]]
+- [[character-options/subclasses/index|All subclasses]]
 
 ---
