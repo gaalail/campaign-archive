@@ -169,4 +169,4 @@ At the end of its current turn, it gains 1 level of Exhaustion that can only be 
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Martial Exploits]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]

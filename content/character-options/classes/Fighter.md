@@ -77,7 +77,7 @@ You start with the following equipment, in addition to the equipment granted by 
 
 You learn one Fighting Style of your choice. You must meet its prerequisites, and you can't learn the same style more than once. You learn additional styles at the levels shown in the Fighter table. Whenever you gain a Fighter level, you can replace one style you know with another style for which you qualify.
 
-Browse the available [[Fighting Styles]].
+Browse the available [[character-options/fighting-styles/index|Fighting Styles]].
 
 ### Second Wind (1st Level)
 
@@ -101,7 +101,7 @@ When an Exploit requires a saving throw, choose Strength or Dexterity as the abi
 
 When you make an ability check using a skill or tool with which you are proficient, you can expend an Exploit Die and add it to the check. You can do so after rolling the d20 but before learning whether the check succeeds.
 
-Browse [[Martial Exploits]].
+Browse [[character-options/class-options/martial-exploits/index|Martial Exploits]].
 
 ### Eye for Talent (3rd Level)
 
@@ -145,8 +145,8 @@ Whenever you roll initiative, you regain all expended Exploit Dice. You can use 
 
 - [[Classes|Back to all classes]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Fighting Styles]]
-- [[Martial Exploits]]
+- [[character-options/fighting-styles/index|Fighting Styles]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]
 - [[character-options/feats|Feats]]
 - [[character-options/class-options|Class Options]]
 - [[Subclasses|All subclasses]]

@@ -112,4 +112,4 @@ Maintaining the prophetic state of this Rune requires your concentration as if y
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Martial Exploits]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]

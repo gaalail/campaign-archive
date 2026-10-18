@@ -56,4 +56,4 @@ Finally, whenever you take damage while you are in your Battle Trance, you can e
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Martial Exploits]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]

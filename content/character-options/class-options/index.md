@@ -28,13 +28,7 @@ Ways to bend and modify your spells. Modify your magic on the fly with these opt
 
 ---
 
-### [[Fighting Styles]] (Multiple Classes)
-
-Martial techniques that can be gained through features from different classes and other character options.
-
----
-
-### [[Martial Exploits]] (Fighter)
+### [[character-options/class-options/martial-exploits/index|Martial Exploits]] (Fighter)
 
 Martial techniques for attacks, ability checks, saving throws, and tactical support.
 
@@ -53,7 +47,7 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 1. **Your class determines what options you can choose**
    - Warlocks → Eldritch Invocations
    - Sorcerers → Metamagic
-   - Fighters → Fighting Styles and Martial Exploits
+   - Fighters → Martial Exploits
    - Paragons → Avatar Features
 
 2. **You gain them at certain levels** (varies by class)
@@ -70,7 +64,7 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 **Playing a [[Sorcerer]]?** → Go to [[character-options/class-options/metamagic/index|Metamagic]]
 
-**Playing a [[Fighter]]?** → Go to [[Fighting Styles]] and [[Martial Exploits]]
+**Playing a [[Fighter]]?** → Go to [[character-options/class-options/martial-exploits/index|Martial Exploits]]; Fighting Styles are in the shared [[character-options/fighting-styles/index|Fighting Styles]] catalogue
 
 **Playing a [[Paragon]]?** → Go to [[character-options/class-options/avatar-features/index|Avatar Features]]
 
@@ -78,6 +72,7 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 ## Other Character Options
 
+- **[[character-options/fighting-styles/index|Fighting Styles]]** — Shared martial techniques available through features from multiple classes
 - **[[character-options/classes|Classes]]** — Your main role
 - **[[character-options/subclasses|Subclasses]]** — Specialization within your role
 - **[[character-options/races|Races]]** — Your ancestry
@@ -89,17 +84,18 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 ## All Character Options at a Glance
 
-| Option        | Purpose                   | Choose At               |
-| ------------- | ------------------------- | ----------------------- |
-| Classes       | Your role                 | Character creation      |
-| Subclasses    | Specialization            | 3rd level (usually)     |
-| Races         | Ancestry                  | Character creation      |
-| Backgrounds   | Your story                | Character creation      |
-| Feats         | Special abilities         | Levels 4, 8, 12, 16, 19 |
-| Class Options | Class-specific powers     | Varies by class         |
-| Templates     | Special powers (optional) | Anytime (DM choice)     |
+| Option          | Purpose                   | Choose At                        |
+| --------------- | ------------------------- | -------------------------------- |
+| Classes         | Your role                 | Character creation               |
+| Subclasses      | Specialization            | 3rd level (usually)              |
+| Races           | Ancestry                  | Character creation               |
+| Backgrounds     | Your story                | Character creation               |
+| Fighting Styles | Shared martial techniques | Class features and other options |
+| Feats           | Special abilities         | Levels 4, 8, 12, 16, 19          |
+| Class Options   | Class-specific powers     | Varies by class                  |
+| Templates       | Special powers (optional) | Anytime (DM choice)              |
 
-**Browse character options:** [[character-options/classes|Classes]], [[character-options/subclasses|Subclasses]], [[character-options/races|Races]], [[character-options/backgrounds|Backgrounds]], [[character-options/feats|Feats]], [[character-options/class-options|Class Options]], [[character-options/templates|Templates]]
+**Browse character options:** [[character-options/classes|Classes]], [[character-options/subclasses|Subclasses]], [[character-options/races|Races]], [[character-options/backgrounds|Backgrounds]], [[character-options/fighting-styles/index|Fighting Styles]], [[character-options/feats|Feats]], [[character-options/class-options|Class Options]], [[character-options/templates|Templates]]
 
 ---
 

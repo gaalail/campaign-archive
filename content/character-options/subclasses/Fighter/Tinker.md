@@ -132,4 +132,4 @@ Weapon. When the wielder hits a Large or smaller target with this weapon, the ta
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Martial Exploits]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]

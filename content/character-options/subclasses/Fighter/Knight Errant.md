@@ -54,4 +54,4 @@ If the attack still hits, you can expend one Exploit Die and grant the target re
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Martial Exploits]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]

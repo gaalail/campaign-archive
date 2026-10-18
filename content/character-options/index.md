@@ -13,6 +13,7 @@ Everything you need to create and customize a D&D 5e character.
 ## The Five Building Blocks
 
 ### 1. Race
+
 Your ancestry and heritage. Gives you special abilities and physical traits.
 
 [[character-options/races|Browse Races →]]
@@ -22,6 +23,7 @@ Your ancestry and heritage. Gives you special abilities and physical traits.
 ---
 
 ### 2. Class
+
 Your role in the party. Defines your abilities and playstyle.
 
 [[character-options/classes|Browse Classes →]]
@@ -31,11 +33,13 @@ Your role in the party. Defines your abilities and playstyle.
 ---
 
 ### 3. Subclass (Optional)
+
 Specializes your class at a certain level (usually 3rd).
 
 [[character-options/subclasses|Browse Subclasses →]]
 
-**Examples:** 
+**Examples:**
+
 - [[character-options/classes/Fighter|Fighter]] → Champion
 - [[character-options/classes/Wizard|Wizard]] → Evocation
 - [[character-options/classes/Cleric|Cleric]] → Life
@@ -46,18 +50,23 @@ Specializes your class at a certain level (usually 3rd).
 ---
 
 ### 4. Class-Specific Options (Optional)
+
 Some classes have unique choice mechanics:
 
 [[character-options/class-options|Browse Class Options →]]
 
 **Examples:**
+
 - **Warlock:** Eldritch Invocations (32 magical powers)
 - **Sorcerer:** Metamagic (7 spell modifications)
 - **Artificer:** Infuse Item (magical item crafting)
 
+Fighting Styles are shared martial options available through features from multiple classes. [[character-options/fighting-styles/index|Browse the Fighting Styles catalogue]].
+
 ---
 
 ### 5. Feats & Background (Optional)
+
 Special abilities and your character's story.
 
 [[character-options/feats|Browse Feats →]] | [[character-options/backgrounds|Browse Backgrounds →]]
@@ -68,17 +77,18 @@ Special abilities and your character's story.
 
 ## All Character Options
 
-| Option | Purpose | Choose At |
-|--------|---------|-----------|
-| Races | Ancestry and heritage | Character creation |
-| Classes | Your main role | Character creation |
-| Subclasses | Role specialization | 3rd level (usually) |
-| Backgrounds | Your story | Character creation |
-| Class Options | Class-specific powers | Varies by class |
-| Feats | Special abilities | Levels 4, 8, 12, 16, 19 |
-| Templates | Special powers (optional) | Anytime (DM choice) |
+| Option          | Purpose                   | Choose At                        |
+| --------------- | ------------------------- | -------------------------------- |
+| Races           | Ancestry and heritage     | Character creation               |
+| Classes         | Your main role            | Character creation               |
+| Subclasses      | Role specialization       | 3rd level (usually)              |
+| Backgrounds     | Your story                | Character creation               |
+| Fighting Styles | Shared martial techniques | Class features and other options |
+| Class Options   | Class-specific powers     | Varies by class                  |
+| Feats           | Special abilities         | Levels 4, 8, 12, 16, 19          |
+| Templates       | Special powers (optional) | Anytime (DM choice)              |
 
-**Browse character options:** [[character-options/races|Races]], [[character-options/classes|Classes]], [[character-options/subclasses|Subclasses]], [[character-options/backgrounds|Backgrounds]], [[character-options/class-options|Class Options]], [[character-options/feats|Feats]], [[character-options/templates|Templates]]
+**Browse character options:** [[character-options/races|Races]], [[character-options/classes|Classes]], [[character-options/subclasses|Subclasses]], [[character-options/backgrounds|Backgrounds]], [[character-options/fighting-styles/index|Fighting Styles]], [[character-options/class-options|Class Options]], [[character-options/feats|Feats]], [[character-options/templates|Templates]]
 
 ![[character-options.base]]
 
@@ -89,12 +99,15 @@ Special abilities and your character's story.
 Some classes have unique mechanics for customization:
 
 ### Eldritch Invocations (Warlock)
+
 32 magical powers you learn as your patron teaches you.
 
 ### Metamagic (Sorcerer)
+
 7 ways to bend and modify your spells using Sorcery Points.
 
 ### Infuse Item (Artificer)
+
 Craft magical items by imbuing objects with special properties.
 
 ---
@@ -114,11 +127,13 @@ If your class can cast spells, you need to know:
 ## Starting at Level 1 vs Leveling Up
 
 **At Level 1:**
+
 - You have your race and class
 - Most classes don't have a subclass yet (comes at level 3)
 - Your DM might let you pick a feat
 
 **As You Level Up:**
+
 - Level 3: Pick your subclass (usually)
 - Level 4+: Get ability score improvements or feats
 - Level 5, 8, 11, etc.: Get more feats or ASIs (Ability Score Increases)

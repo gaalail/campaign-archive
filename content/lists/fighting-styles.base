@@ -1,6 +1,6 @@
 filters:
   and:
-    - file.inFolder("character-options/class-options/fighting-style-options")
+    - file.inFolder("character-options/fighting-styles")
     - file.name != "index"
 formulas:
   Name: file.asLink(title)

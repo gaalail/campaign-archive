@@ -99,4 +99,4 @@ Spells marked with LL are found in the laserllama Spell Compendium, which includ
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Martial Exploits]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]

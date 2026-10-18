@@ -99,8 +99,6 @@ plugins:
   - source: "@quartz-community/favicon"
     enabled: true
 
-
-
   - source: "@quartz-community/content-page"
     enabled: true
   - source: "@quartz-community/folder-page"
@@ -195,7 +193,8 @@ plugins:
         - aliases
         - incomplete
         - appeared_in
-      excludedProperties: []
+      excludedProperties:
+        - aliases
       hidePropertiesView: false
       delimiters: ---
       language: yaml

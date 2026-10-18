@@ -60,4 +60,4 @@ Finally, whenever you score a critical hit with an unarmed strike or improvised 
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Martial Exploits]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]

@@ -93,4 +93,4 @@ Cantrips (0-Level) blade ward ll booming blade ll green-flame blade ll infestati
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Martial Exploits]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]

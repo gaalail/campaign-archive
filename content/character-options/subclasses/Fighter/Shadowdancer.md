@@ -72,4 +72,4 @@ Umbral Sentinel. If a creature provokes an opportunity attack from the Shade, yo
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Martial Exploits]]
+- [[character-options/class-options/martial-exploits/index|Martial Exploits]]
