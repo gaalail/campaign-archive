@@ -26,6 +26,12 @@ Ways to bend and modify your spells. Modify your magic on the fly with these opt
 
 ---
 
+### [[Fighter Fighting Styles]] (Fighter)
+
+Choose martial techniques that define how your Fighter fights. Additional styles are learned as you gain Fighter levels.
+
+---
+
 ### [[Avatar Features|⚡ Avatar Features]] (Paragon)
 Divine powers granted by your deity. Unlock as you bond with your god.
 
@@ -38,6 +44,7 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 1. **Your class determines what options you can choose**
    - Warlocks → Eldritch Invocations
    - Sorcerers → Metamagic
+   - Fighters → Fighting Styles and Martial Exploits
    - Paragons → Avatar Features
 
 2. **You gain them at certain levels** (varies by class)
@@ -53,6 +60,8 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 **Playing a [[Warlock]]?** → Go to [[Eldritch Invocations]]
 
 **Playing a [[Sorcerer]]?** → Go to [[Metamagic]]
+
+**Playing a [[Fighter]]?** → Go to [[Fighter Fighting Styles]]
 
 **Playing a [[Paragon]]?** → Go to [[Avatar Features]]
 

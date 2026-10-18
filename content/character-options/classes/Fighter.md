@@ -2,104 +2,148 @@
 title: Fighter
 hit_die: d10
 saving_throws:
-- STR
-- CON
-summary: d10 hit die; saving throws STR, CON
-source: SRD 5.1
+  - STR
+  - CON
+summary: d10 hit die; masters martial techniques through fighting styles and exploits
 ---
 
-## The Fighter table
+# Fighter
 
-| Level | Proficiency Bonus | Features | Action Surges | Indomitable | Extra Attacks |
-| --- | --- | --- | --- | --- | --- |
-| 1st | +2 | Fighting Style, Second Wind | - | - | - |
-| 2nd | +2 | Action Surge (1 use) | 1 | - | - |
-| 3rd | +2 | Martial Archetype | 1 | - | - |
-| 4th | +2 | Ability Score Improvement | 1 | - | - |
-| 5th | +3 | Extra Attack | 1 | - | 1 |
-| 6th | +3 | Ability Score Improvement | 1 | - | 1 |
-| 7th | +3 | Martial Archetype feature | 1 | - | 1 |
-| 8th | +3 | Ability Score Improvement | 1 | - | 1 |
-| 9th | +4 | Indomitable (1 use) | 1 | 1 | 1 |
-| 10th | +4 | Martial Archetype feature | 1 | 1 | 1 |
-| 11th | +4 | Extra Attack (2) | 1 | 1 | 2 |
-| 12th | +4 | Ability Score Improvement | 1 | 1 | 2 |
-| 13th | +5 | Indomitable (2 uses) | 1 | 2 | 2 |
-| 14th | +5 | Ability Score Improvement | 1 | 2 | 2 |
-| 15th | +5 | Martial Archetype feature | 1 | 2 | 2 |
-| 16th | +5 | Ability Score Improvement | 1 | 2 | 2 |
-| 17th | +6 | Action Surge (2 uses), Indomitable (3 uses) | 2 | 3 | 2 |
-| 18th | +6 | Martial Archetype feature | 2 | 3 | 2 |
-| 19th | +6 | Ability Score Improvement | 2 | 3 | 2 |
-| 20th | +6 | Extra Attack (3) | 2 | 3 | 3 |
+Fighters are masters of the battlefield, trained to wield weapons, armor, and tactical techniques with exceptional skill. Their training can focus on physical power, ranged precision, leadership, or esoteric battle magic.
 
-## Hit points
+## Hit Points
 
-**Hit dice:** 1d10 per fighter level  
-**Hit points at 1st level:** 10 + your Constitution modifier  
-**Hit points at higher levels:** 1d10 (or 6) + your Constitution modifier per fighter level after 1st
+**Hit Dice:** 1d10 per Fighter level
+
+**Hit Points at 1st Level:** 10 + your Constitution modifier
+
+**Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution modifier per Fighter level after 1st
 
 ## Proficiencies
 
-**Armor, weapons, and tools:** All armor, Shields, Simple Weapons, Martial Weapons  
-**Saving throws:** STR, CON  
-**Skills:** Choose two skills from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, and Survival
+**Armor:** All armor, shields
+
+**Weapons:** Simple weapons, martial weapons
+
+**Tools:** One set of artisan's tools of your choice
+
+**Saving Throws:** Strength, Constitution
+
+**Skills:** Choose two from Acrobatics, Animal Handling, Athletics, History, Intimidation, Perception, Stealth, and Survival
 
 ## Equipment
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (a) chain mail or (b) leather armor, longbow, and 20 arrows
+- (a) chain mail or (b) leather armor, a longbow, and 20 arrows
 - (a) a martial weapon and a shield or (b) two martial weapons
 - (a) a light crossbow and 20 bolts or (b) two handaxes
-- (a) a dungeoneer’s pack or (b) an explorer’s pack
+- (a) a dungeoneer's pack or (b) an explorer's pack
 
 ## Multiclassing
 
-**Prerequisites:** None  
-**Proficiencies gained:** Light Armor, Medium Armor, Shields, Simple Weapons, Martial Weapons
+**Prerequisite:** Strength or Dexterity 13
 
-## Class features
+**Proficiencies Gained:** Light armor, medium armor, shields, simple weapons, and martial weapons
 
-> [!info]- Fighting Style (level 1)
-> You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.
->
-> **Archery.** You gain a +2 bonus to attack rolls you make with ranged weapons.
->
-> **Defense.** While you are wearing armor, you gain a +1 bonus to AC.
->
-> **Dueling.** When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
->
-> **Great Weapon Fighting.** When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.
->
-> **Protection.** When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
->
-> **Two-Weapon Fighting.** When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
+## The Fighter Table
 
-> [!info]- Second Wind (level 1)
-> You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.
+| Level | Proficiency Bonus | Features                                        | Fighting Styles | Exploits Known | Exploit Die | Exploit Dice |
+| ----- | ----------------- | ----------------------------------------------- | --------------- | -------------- | ----------- | ------------ |
+| 1st   | +2                | Fighting Style, Second Wind (1 use)             | 1               | —              | —           | —            |
+| 2nd   | +2                | Martial Exploits                                | 1               | 2              | d6          | 2            |
+| 3rd   | +2                | Eye for Talent, Warrior Archetype               | 1               | 3              | d6          | 2            |
+| 4th   | +2                | Ability Score Improvement                       | 1               | 3              | d6          | 3            |
+| 5th   | +3                | Extra Attack (1)                                | 1               | 4              | d8          | 3            |
+| 6th   | +3                | Action Surge (1 use)                            | 2               | 4              | d8          | 3            |
+| 7th   | +3                | Archetype feature                               | 2               | 5              | d8          | 4            |
+| 8th   | +3                | Ability Score Improvement                       | 2               | 5              | d8          | 4            |
+| 9th   | +4                | Indomitable (1 use)                             | 2               | 6              | d8          | 4            |
+| 10th  | +4                | Archetype feature                               | 2               | 6              | d8          | 4            |
+| 11th  | +4                | Extra Attack (2), Martial Superiority           | 2               | 7              | d10         | 4            |
+| 12th  | +4                | Ability Score Improvement                       | 3               | 7              | d10         | 5            |
+| 13th  | +5                | Indomitable (2 uses)                            | 3               | 8              | d10         | 5            |
+| 14th  | +5                | Ability Score Improvement, Second Wind (2 uses) | 3               | 8              | d10         | 5            |
+| 15th  | +5                | Archetype feature                               | 3               | 9              | d10         | 5            |
+| 16th  | +5                | Ability Score Improvement                       | 3               | 9              | d10         | 6            |
+| 17th  | +6                | Extra Attack (3), Indomitable (3 uses)          | 3               | 10             | d12         | 6            |
+| 18th  | +6                | Archetype feature                               | 4               | 10             | d12         | 6            |
+| 19th  | +6                | Ability Score Improvement                       | 4               | 11             | d12         | 6            |
+| 20th  | +6                | Action Surge (2 uses), Relentless               | 4               | 11             | d12         | 6            |
 
-> [!info]- Action Surge (levels 2, 17)
-> Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.
->
-> Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.
+## Class Features
 
-> [!info]- Martial Archetype (level 3)
-> At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques, such as Champion. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.
+### Fighting Style (1st Level)
 
-> [!info]- Ability Score Improvement (levels 4, 6, 8, 12, 14, 16, 19)
-> When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+You learn one Fighting Style of your choice. You must meet its prerequisites, and you can't learn the same style more than once. You learn additional styles at the levels shown in the Fighter table. Whenever you gain a Fighter level, you can replace one style you know with another style for which you qualify.
 
-> [!info]- Extra Attack (levels 5, 11, 20)
-> Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.
+Browse the available [[Fighter Fighting Styles|Fighting Styles]].
 
-> [!info]- Martial Archetype feature (levels 7, 10, 15, 18)
-> At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques, such as Champion. The archetype you choose grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.
+### Second Wind (1st Level)
 
-> [!info]- Indomitable (levels 9, 13, 17)
-> Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest. You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.
+You can fight on when lesser warriors would fail. As a bonus action, regain hit points equal to 1d10 + your Fighter level. You regain the use of this feature when you finish a short or long rest. Starting at 14th level, you can use Second Wind twice between rests.
 
+### Martial Exploits (2nd Level)
 
-## Subclasses
+You learn two Martial Exploits of your choice, subject to their prerequisites. You learn more as shown in the Fighter table. Whenever you gain a Fighter level, you can replace one Exploit you know with another for which you qualify.
+
+#### Exploit Dice
+
+The Fighter table shows how many Exploit Dice you have. You expend these dice to use many Exploits, and regain all expended dice when you finish a short or long rest. Your Exploit Die increases as shown in the table. You can use only one Exploit per weapon attack, ability check, or saving throw.
+
+#### Exploit Saving Throws
+
+When an Exploit requires a saving throw, choose Strength or Dexterity as the ability used to calculate its save DC. This choice can't be changed.
+
+**Exploit Save DC** = 8 + your proficiency bonus + your Strength or Dexterity modifier
+
+#### Tactical Skill
+
+When you make an ability check using a skill or tool with which you are proficient, you can expend an Exploit Die and add it to the check. You can do so after rolling the d20 but before learning whether the check succeeds.
+
+### Eye for Talent (3rd Level)
+
+As a bonus action, you can take the Search action to assess one creature you can see within 30 feet. The check's DC is 8 + the creature's challenge rating. If you have hit the creature with a weapon attack within the last minute, you can add your Fighter level to the check.
+
+On a success, learn one of the following characteristics of your choice: its Armor Class; highest or lowest ability score; special senses; resistances, immunities, or vulnerabilities; or one trait or action from its stat block. On a failure, you learn nothing and can't use this feature on that creature again until you finish a long rest or hit it with a weapon attack.
+
+### Warrior Archetype (3rd Level)
+
+Choose a Warrior Archetype that represents your training and tactics. It grants features at 3rd, 7th, 10th, 15th, and 18th level. Browse the [[Fighter Subclasses|Warrior Archetypes]].
 
 ![[subclasses-of.base]]
+
+### Ability Score Improvement (4th Level)
+
+When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 19th level, increase one ability score by 2, or increase two ability scores by 1. You can't increase an ability score above 20 using this feature.
+
+### Extra Attack (5th Level)
+
+You can attack twice, instead of once, whenever you take the Attack action on your turn. In addition, if you use your action to Dash or Disengage, you can make one weapon attack as a bonus action on that turn.
+
+The number of attacks increases to three at 11th level and four at 17th level.
+
+### Action Surge (6th Level)
+
+Once on your turn, you can take one additional action. You regain the use of this feature when you finish a short or long rest. At 20th level, you can use Action Surge twice between rests, but only once on the same turn.
+
+### Indomitable (9th Level)
+
+When you fail a saving throw, you can choose to succeed instead. You regain the use of this feature when you finish a long rest. You can use it twice between long rests starting at 13th level and three times between long rests starting at 17th level.
+
+### Martial Superiority (11th Level)
+
+Once per round in combat, you can use a 1st- or 2nd-degree Martial Exploit you know without expending an Exploit Die.
+
+### Relentless (20th Level)
+
+Whenever you roll initiative, you regain all expended Exploit Dice. You can use any 3rd-degree Martial Exploit you know without limit, but must still expend Exploit Dice as normal.
+
+## Related Content
+
+- [[Classes|Back to all classes]]
+- [[Fighter Subclasses|Warrior Archetypes]]
+- [[Fighter Fighting Styles|Fighting Styles]]
+- [[character-options/feats|Feats]]
+- [[character-options/class-options|Class Options]]
+- [[Subclasses|All subclasses]]
