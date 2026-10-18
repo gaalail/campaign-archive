@@ -1,0 +1,27 @@
+{
+  "name": "archive-graph",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./components": "./components/index.js"
+  },
+  "quartz": {
+    "name": "archive-graph",
+    "displayName": "Archive Graph",
+    "description": "Explore archive links with scoped, focused graph views.",
+    "version": "1.0.0",
+    "category": "component",
+    "defaultEnabled": true,
+    "components": {
+      "Graph": {
+        "name": "Graph",
+        "displayName": "Graph View",
+        "description": "Explore contextual connections and scoped archive networks.",
+        "defaultPosition": "right",
+        "defaultPriority": 10
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ import { styleText } from "util"
 import { fileURLToPath } from "node:url"
 import { pathToFileURL } from "url"
 import { PluginSource } from "./types"
+import { symlinkOrCopySync } from "../../cli/helpers.js"
 
 /**
  * Convert an absolute filesystem path to a file:// URL string for use with dynamic import().
@@ -473,7 +474,7 @@ export async function installPlugin(
       console.log(styleText("cyan", `→`), `Linking ${spec.name} from ${spec.repo}...`)
     }
 
-    fs.symlinkSync(spec.repo, pluginDir, "dir")
+    symlinkOrCopySync(spec.repo, pluginDir)
 
     if (options.verbose) {
       console.log(styleText("green", `✓`), `Linked ${spec.name}`)
