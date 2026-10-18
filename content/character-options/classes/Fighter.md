@@ -101,6 +101,8 @@ When an Exploit requires a saving throw, choose Strength or Dexterity as the abi
 
 When you make an ability check using a skill or tool with which you are proficient, you can expend an Exploit Die and add it to the check. You can do so after rolling the d20 but before learning whether the check succeeds.
 
+Browse [[Fighter Martial Exploits|Martial Exploits]].
+
 ### Eye for Talent (3rd Level)
 
 As a bonus action, you can take the Search action to assess one creature you can see within 30 feet. The check's DC is 8 + the creature's challenge rating. If you have hit the creature with a weapon attack within the last minute, you can add your Fighter level to the check.
@@ -144,6 +146,8 @@ Whenever you roll initiative, you regain all expended Exploit Dice. You can use 
 - [[Classes|Back to all classes]]
 - [[Fighter Subclasses|Warrior Archetypes]]
 - [[Fighter Fighting Styles|Fighting Styles]]
+- [[Fighter Martial Exploits|Martial Exploits]]
+- [[Fighter Builds|Fighter Builds]]
 - [[character-options/feats|Feats]]
 - [[character-options/class-options|Class Options]]
 - [[Subclasses|All subclasses]]

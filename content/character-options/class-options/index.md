@@ -13,6 +13,7 @@ Some classes have **class-specific choice mechanics** — powers you can pick to
 ## Your Class Options
 
 ### [[Eldritch Invocations|🎭 Eldritch Invocations]] (Warlock)
+
 Magical powers granted by your patron. You choose which ones enhance your abilities.
 
 **32 invocations** | Levels 2-18 | Prerequisites vary
@@ -20,6 +21,7 @@ Magical powers granted by your patron. You choose which ones enhance your abilit
 ---
 
 ### [[Metamagic|✨ Metamagic]] (Sorcerer)
+
 Ways to bend and modify your spells. Modify your magic on the fly with these options.
 
 **7 metamagic options** | Levels 3+ | Sorcery Point cost
@@ -32,7 +34,20 @@ Choose martial techniques that define how your Fighter fights. Additional styles
 
 ---
 
+### [[Fighter Martial Exploits]] (Fighter)
+
+Martial techniques for attacks, ability checks, saving throws, and tactical support.
+
+---
+
+### [[Fighter Builds]] (Fighter)
+
+Example Fighter builds combining archetypes, styles, exploits, and feats.
+
+---
+
 ### [[Avatar Features|⚡ Avatar Features]] (Paragon)
+
 Divine powers granted by your deity. Unlock as you bond with your god.
 
 **75+ avatar features** | Levels 1-20 | By Order (Voice, Valor, Reason)
@@ -80,15 +95,15 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 ## All Character Options at a Glance
 
-| Option | Purpose | Choose At |
-|--------|---------|-----------|
-| Classes | Your role | Character creation |
-| Subclasses | Specialization | 3rd level (usually) |
-| Races | Ancestry | Character creation |
-| Backgrounds | Your story | Character creation |
-| Feats | Special abilities | Levels 4, 8, 12, 16, 19 |
-| Class Options | Class-specific powers | Varies by class |
-| Templates | Special powers (optional) | Anytime (DM choice) |
+| Option        | Purpose                   | Choose At               |
+| ------------- | ------------------------- | ----------------------- |
+| Classes       | Your role                 | Character creation      |
+| Subclasses    | Specialization            | 3rd level (usually)     |
+| Races         | Ancestry                  | Character creation      |
+| Backgrounds   | Your story                | Character creation      |
+| Feats         | Special abilities         | Levels 4, 8, 12, 16, 19 |
+| Class Options | Class-specific powers     | Varies by class         |
+| Templates     | Special powers (optional) | Anytime (DM choice)     |
 
 **Browse character options:** [[character-options/classes|Classes]], [[character-options/subclasses|Subclasses]], [[character-options/races|Races]], [[character-options/backgrounds|Backgrounds]], [[character-options/feats|Feats]], [[character-options/class-options|Class Options]], [[character-options/templates|Templates]]
 

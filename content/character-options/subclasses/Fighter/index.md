@@ -4,19 +4,39 @@ title: Fighter Subclasses
 
 # Fighter Subclasses
 
-**5 subclasses available** | Choose at 3rd level | Martial Archetypes
+**20 Warrior Archetypes available** | Choose at 3rd level
 
 ---
 
-## Available Archetypes
+## Core Warrior Archetypes
 
-| Subclass | Feature | Theme |
-|----------|---------|-------|
-| [[Champion]] | Improved critical hits | Master swordsman |
-| [[Anointed Warrior]] | Divine protection | Holy combatant |
-| [[Glorious Combatant]] | Radiant warrior | Shining in battle |
-| [[Holy Knight]] | Sacred knight | Holy warrior |
-| [[Iron Bulwark]] | Unbreakable defense | Defensive fortress |
+| Archetype          | Theme                                |
+| ------------------ | ------------------------------------ |
+| [[Arcane Knight]]  | Martial skill enhanced by spellcraft |
+| [[Captain]]        | Tactical leadership                  |
+| [[Champion]]       | Physical power and athletic mastery  |
+| [[Knight Errant]]  | Chivalric mounted combat             |
+| [[Marksman]]       | Precision ranged combat              |
+| [[Master at Arms]] | Mastery of combat disciplines        |
+| [[Mystic]]         | Psionic warrior                      |
+| [[Ronin]]          | Disciplined independent swordsman    |
+| [[Runecarver]]     | Giant runes and runic magic          |
+| [[Shadowdancer]]   | Shadow techniques                    |
+| [[Sylvan Archer]]  | Nature-bound archery                 |
+
+## Additional Warrior Archetypes
+
+| Archetype         | Theme                                     |
+| ----------------- | ----------------------------------------- |
+| [[Crusader]]      | Zealous martial combat                    |
+| [[Guardian]]      | Protecting allies                         |
+| [[Guerrilla]]     | Adaptive tactics                          |
+| [[Hound Master]]  | Fighting alongside a trained hound        |
+| [[Pugilist]]      | Unarmed combat                            |
+| [[Quartermaster]] | Tactical support and prepared rations     |
+| [[Swordsage]]     | Swordplay and battle trance               |
+| [[Tinker]]        | Mechanical weapon and armor modifications |
+| [[Witchblade]]    | Pact magic and weapon combat              |
 
 ---
 

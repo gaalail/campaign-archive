@@ -31,6 +31,7 @@ Your **race** defines your ancestry and background. It gives you special abiliti
 Each race can have **subraces** (variants). For example, there are different types of elves. Check inside the race page for details.
 
 **What races give you:**
+
 - Ability score bonuses
 - Special abilities (darkvision, flying, etc.)
 - Cultural traits and background
@@ -45,6 +46,7 @@ Your **class** is your role in the party. It determines what you're good at: fig
 **Browse classes:** [[Classes]]
 
 Popular classes:
+
 - **Fighter** — Master of weapons and armor
 - **Wizard** — Spellcaster with arcane magic
 - **Rogue** — Sneaky, dexterous, skilled
@@ -52,6 +54,7 @@ Popular classes:
 - **Barbarian** — Powerful warrior driven by rage
 
 **What your class gives you:**
+
 - Your main abilities and features
 - Hit die (how much health you get per level)
 - Spell list (if you're a spellcaster)
@@ -64,8 +67,9 @@ Popular classes:
 At a certain level (usually 3rd), you pick a **subclass**. This specializes your class into a specific flavor.
 
 **Examples:**
+
 - Fighter → [[Champion]] (master of weapons)
-- Fighter → [[Holy Knight]] (faithful warrior)
+- Fighter → [[Crusader]] (faithful warrior)
 - Wizard → [[Evocation]] (master of explosive spells)
 - Wizard → [[School of Sealing]] (abjuration and binding)
 - Cleric → [[Life]] (powerful healer)
@@ -84,6 +88,7 @@ Subclasses don't change how your class works fundamentally—they just add speci
 You get to choose a feat at certain levels (usually 4th, 8th, 12th, etc., depending on your class).
 
 **Example feats:**
+
 - **[[Grappler]]** — Better at holding enemies
 - **[[Courageous]]** — Stand firm against fear
 - **[[Consecrated Spell]]** — Infuse spells with holy power
@@ -145,11 +150,13 @@ Need more details on how the game works?
 ## Quick Reference: Forms You'll Need
 
 ### At the Table
+
 - Character sheet (print or digital)
 - Dice for rolling
 - Your spell list (if you're a caster)
 
 ### On This Site
+
 - [[Classes]] — Understanding your role
 - [[Subclasses]] — Specializing your role
 - [[Spells]] — Reference while playing
