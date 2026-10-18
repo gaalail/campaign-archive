@@ -54,4 +54,4 @@ Gunpowder & Firearms If your game includes firearms and gunpowder, and your Mark
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Fighter Martial Exploits|Martial Exploits]]
+- [[Martial Exploits]]

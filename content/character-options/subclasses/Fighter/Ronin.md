@@ -60,4 +60,4 @@ Once you use this feature you must complete a long rest before you can use it ag
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Fighter Martial Exploits|Martial Exploits]]
+- [[Martial Exploits]]

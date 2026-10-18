@@ -1,0 +1,26 @@
+filters:
+  and:
+    - file.inFolder("character-options/class-options/fighting-styles")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Fighting Style
+  parent_class:
+    displayName: Available through
+  min_level:
+    displayName: Minimum Level
+  prerequisite:
+    displayName: Prerequisite
+  summary:
+    displayName: Summary
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: All Fighting Styles
+    order: [formula.Name, min_level, prerequisite, summary]
+    sort:
+      - property: file.name
+        direction: ASC

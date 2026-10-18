@@ -54,4 +54,4 @@ If the attack reduces the creature to 0 hit points you regain the use of Crusade
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Fighter Martial Exploits|Martial Exploits]]
+- [[Martial Exploits]]

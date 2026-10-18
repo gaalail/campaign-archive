@@ -56,4 +56,4 @@ You are also no longer limited to using daring rescue once between each short or
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Fighter Martial Exploits|Martial Exploits]]
+- [[Martial Exploits]]

@@ -28,21 +28,15 @@ Ways to bend and modify your spells. Modify your magic on the fly with these opt
 
 ---
 
-### [[Fighter Fighting Styles]] (Fighter)
+### [[Fighting Styles]] (Multiple Classes)
 
-Choose martial techniques that define how your Fighter fights. Additional styles are learned as you gain Fighter levels.
+Martial techniques that can be gained through features from different classes and other character options.
 
 ---
 
-### [[Fighter Martial Exploits]] (Fighter)
+### [[Martial Exploits]] (Fighter)
 
 Martial techniques for attacks, ability checks, saving throws, and tactical support.
-
----
-
-### [[Fighter Builds]] (Fighter)
-
-Example Fighter builds combining archetypes, styles, exploits, and feats.
 
 ---
 
@@ -76,7 +70,7 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 **Playing a [[Sorcerer]]?** → Go to [[Metamagic]]
 
-**Playing a [[Fighter]]?** → Go to [[Fighter Fighting Styles]]
+**Playing a [[Fighter]]?** → Go to [[Fighting Styles]] and [[Martial Exploits]]
 
 **Playing a [[Paragon]]?** → Go to [[Avatar Features]]
 

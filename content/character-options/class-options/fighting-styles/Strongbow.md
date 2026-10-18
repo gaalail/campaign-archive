@@ -1,0 +1,14 @@
+---
+title: "Strongbow"
+option_group: "Fighting Style"
+parent_class: Multiple Classes
+min_level: 1
+prerequisite: "Strength 13"
+summary: "You can use your Strength modifier instead of Dexterity for attack and damage rolls with longbows and shortbows."
+source: Alternate Fighter
+---
+
+You can use your Strength modifier instead of Dexterity for attack and damage rolls with longbows and shortbows. When you do, you gain a +1 bonus to damage rolls with those weapons.
+
+**Prerequisite:** Strength 13  
+**Minimum level:** 1

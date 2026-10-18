@@ -58,4 +58,4 @@ Finally, whenever you use Heroic Surge, you can target up to two creatures withi
 
 - [[Fighter|Fighter class]]
 - [[Fighter Subclasses|Warrior Archetypes]]
-- [[Fighter Martial Exploits|Martial Exploits]]
+- [[Martial Exploits]]
