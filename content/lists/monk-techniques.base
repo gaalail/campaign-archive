@@ -1,6 +1,7 @@
 filters:
   and:
-    - file.inFolder("character-options/class-options/monk-technique-options/core")
+    - file.inFolder("character-options/class-options/monk-technique-options")
+    - file.name != "index"
 formulas:
   Name: file.asLink(title)
 properties:

@@ -16,24 +16,24 @@ Click your class to see available subclasses:
 
 ### Core Classes
 
-- [[Artificer Specializations|Artificer]] (8 specializations)
-- [[Barbarian Subclasses|Barbarian]] (6 paths)
-- [[Bard Subclasses|Bard]] (5 colleges)
-- [[Cleric Subclasses|Cleric]] (6 domains)
-- [[Druid Subclasses|Druid]] (4 circles)
+- [[character-options/subclasses/Artificer/index|Artificer]] (8 specializations)
+- [[character-options/subclasses/Barbarian/index|Barbarian]] (6 paths)
+- [[character-options/subclasses/Bard/index|Bard]] (5 colleges)
+- [[character-options/subclasses/Cleric/index|Cleric]] (6 domains)
+- [[character-options/subclasses/Druid/index|Druid]] (4 circles)
 - [[character-options/subclasses/Fighter/index|Fighter]] (20 archetypes)
 - [[character-options/subclasses/Monk/index|Monk]] (22 traditions)
-- [[Paladin Subclasses|Paladin]] (4 oaths)
-- [[Ranger Subclasses|Ranger]] (4 archetypes)
-- [[Rogue Subclasses|Rogue]] (4 archetypes)
-- [[Sorcerer Subclasses|Sorcerer]] (4 origins)
-- [[Warlock Subclasses|Warlock]] (4 patrons)
-- [[Wizard Subclasses|Wizard]] (4 traditions)
+- [[character-options/subclasses/Paladin/index|Paladin]] (4 oaths)
+- [[character-options/subclasses/Ranger/index|Ranger]] (4 archetypes)
+- [[character-options/subclasses/Rogue/index|Rogue]] (4 archetypes)
+- [[character-options/subclasses/Sorcerer/index|Sorcerer]] (4 origins)
+- [[character-options/subclasses/Warlock/index|Warlock]] (4 patrons)
+- [[character-options/subclasses/Wizard/index|Wizard]] (4 traditions)
 
 ### Homebrew Classes
 
-- [[Paragon Subclasses|Paragon]] (3 orders) — Corpus Angelus class
-- [[Thanatomancer Subclasses|Thanatomancer]] (3 paths) — Erevan's Guide to Death & Beyond class
+- [[character-options/subclasses/Paragon/index|Paragon]] (3 orders) — Corpus Angelus class
+- [[character-options/subclasses/Thanatomancer/index|Thanatomancer]] (3 paths) — Erevan's Guide to Death & Beyond class
 
 ---
 
@@ -71,7 +71,7 @@ Click your class to see available subclasses:
 - **Barbarians & Fighters:** 3rd level
 - **Thanatomancer:** 3rd level
 
-Check your [[Classes|class]] page for exact timing.
+Check your [[character-options/classes/index|class]] page for exact timing.
 
 **Features:**
 

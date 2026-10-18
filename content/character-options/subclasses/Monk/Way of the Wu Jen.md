@@ -120,14 +120,14 @@ Spells marked with ll are found in the laserllama Spell Compendium, which includ
 
 #### 3rd-Level
 
-- Call Lighting
+- Call Lightning
 - Conjure Elemental (ll)
 - Erupting Earth (*)
 - Fireball
 - Fly
 - Gaseous Form
 - Grasping Vine (ll)
-- Lighting Bolt
+- Lightning Bolt
 - Meld into Stone
 - Minute Meteors (*)
 - Plant Growth

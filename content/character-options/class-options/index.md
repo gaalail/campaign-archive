@@ -36,7 +36,7 @@ Martial techniques for attacks, ability checks, saving throws, and tactical supp
 
 ### [[character-options/class-options/monk-techniques/index|Mystic Techniques]] (Monk)
 
-Ki-powered techniques learned by the Alternate Monk, with additional options from Alternate Monk Expanded.
+Ki-powered techniques learned by Monks as they advance.
 
 ---
 
@@ -110,7 +110,7 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 ## Building Your Character
 
-**First time building?** → [[Build a Character|Read the character building guide]]
+**First time building?** → [[character-builder|Read the character building guide]]
 
 **Want to customize with options?** → Come back here after choosing your class
 

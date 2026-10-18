@@ -18,14 +18,11 @@ One follows the Way of Angels to unlock the heavenly ki that resides in every mo
 >
 > While you have two rings on each wrist, the extra damage increases to 2. While you have three rings on each wrist, the extra damage increases to 3.
 
-
 > [!info]- Ki Treatment (level 6)
 > Beginning at 6th level, whenever you spend ki points, you regain 3 hit points per ki point spent.
 
-
 > [!info]- Superior Deflect (level 11)
 > Starting at 11th level, you can use your reaction to deflect harm when you are hit by a melee weapon attack or a spell attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.
-
 
 > [!info]- Heavenly Ki (level 17)
 > Absolute control over your ki enables you to unlock the secrets of heavenly ki, which sustains, protects, and empowers you.
@@ -46,5 +43,4 @@ One follows the Way of Angels to unlock the heavenly ki that resides in every mo
 >
 > While you are using your golden rings in this way, you can't benefit from their damage bonus. You can call back any number of rings (in multiples of two) as a bonus action.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._

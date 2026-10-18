@@ -18,18 +18,15 @@ You must determine what you are searching for. It might be a place, a landmark, 
 > [!info]- The Traveler (level 3)
 > When you choose this archetype at 3rd level, you commit your life to finding what you seek, and to wander where you may until you do. Your body thus adapts to the harshest of conditions. You gain proficiency in Constitution saving throws. You can also choose to have advantage on a Constitution check. You can use this feature thrice, and regain any expended uses when you finish a long rest.
 
-
 > [!info]- Sanctified Body (level 3)
 > Starting at 3rd level, your holy pilgrimage is blessed by the divine. When you hit a creature using the Flurry of Blows feature, you can spend 1 additional ki point to deafen or blind the target. The target is deafened or blinded (one of your choice) until the end of its next turn.
 >
 > In addition, if both attacks of the Flurry of Blows hit, the target must succeed on a Constitution saving throw against your ki save DC or be stunned until the end of its next turn.
 
-
 > [!info]- Aura of the Blessed (level 6)
 > Starting at 6th level, you emanate an invisible holy aura in a 30-foot radius centered on you. Your aura provides your allies with relief. The aura can be detected by the Divine Sense feature, the detect evil and good spell, and truesight.
 >
 > Your allies have advantage on saving throws against being charmed and frightened.
-
 
 > [!info]- Aura of the Anointed (level 11)
 > Starting at 11th level, your Aura of the Blessed grows in strength.
@@ -38,11 +35,9 @@ You must determine what you are searching for. It might be a place, a landmark, 
 >
 > In addition, you and your allies within the aura have advantage on saving throws against spells and other magical effects.
 
-
 > [!info]- Aura of the Pilgrim (level 17)
 > When you reach 17th level, unless you take a hostile action against a target, you emanate a holy aura that keeps the creatures within 30 feet of you calm. If you take a hostile action, the aura disappears, and reappears at the start of your next turn.
 >
 > Each creature within the aura must make a Wisdom saving throw (DC equals 8 + your Monk level) before attacking or casting a harmful spell. On a failed save, creatures cannot attack. On a successful save, they can attack normally.
 
-
-*From Corpus Angelus.*
+_From Corpus Angelus._
