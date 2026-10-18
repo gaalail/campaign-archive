@@ -101,7 +101,7 @@ At the end of a long rest, you can touch a nonmagical object and imbue it with o
 
 ### Artificer Specialization (3rd Level)
 
-At 3rd level, choose one Artificer Specialization. It grants features at the levels listed in its description. The available specializations in this archive are [[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], [[Ooze Rancher]], [[Static Conductor]], [[Venomist]], and [[Wagoneer]]. Browse them in the [[Artificer Specializations|Artificer Specializations index]].
+At 3rd level, choose one Artificer Specialization. It grants features at the levels listed in its description. The available specializations in this archive are [[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], [[Ooze Rancher]], [[Static Conductor]], [[Venomist]], and [[Wagoneer]]. Browse them in the [[character-options/subclasses/Artificer/index|Artificer Specializations index]].
 
 ### The Right Tool for the Job (3rd Level)
 
@@ -177,7 +177,7 @@ Always gain:
 
 ## Artificer Specializations
 
-Choose from the eight specializations in the [[Artificer Specializations|specialization index]]: [[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], [[Ooze Rancher]], [[Static Conductor]], [[Venomist]], and [[Wagoneer]].
+Choose from the eight specializations in the [[character-options/subclasses/Artificer/index|specialization index]]: [[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], [[Ooze Rancher]], [[Static Conductor]], [[Venomist]], and [[Wagoneer]].
 
 ---
 
@@ -189,11 +189,11 @@ Choose from the eight specializations in the [[Artificer Specializations|special
 
 ## Related Content
 
-- [[Classes|Back to All Classes]]
+- [[character-options/classes|Back to All Classes]]
 - [[Spells]] — Artificer spell list
 - [[Items]] — Magic items to find and craft
-- [[Class Options]] — Artificer-specific options
-- [[Feats]] — Abilities that work with Artificer
+- [[character-options/class-options|Class Options]] — Artificer-specific options
+- [[character-options/feats|Feats]] — Abilities that work with Artificer
 - [[Rules]] — House rules that affect casters
 
 ---

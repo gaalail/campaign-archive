@@ -31,7 +31,7 @@ title: Wizard Subclasses
 ## All Wizard Options
 
 - [[Wizard|Back to Wizard class]]
-- [[Classes|All classes]]
-- [[Subclasses|All subclasses]]
+- [[character-options/classes|All classes]]
+- [[character-options/subclasses|All subclasses]]
 
 ---

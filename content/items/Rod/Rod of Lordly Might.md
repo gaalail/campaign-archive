@@ -39,5 +39,5 @@ If you press **button 6**, the rod assumes or remains in its normal form and ind
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

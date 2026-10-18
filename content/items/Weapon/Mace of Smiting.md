@@ -21,5 +21,5 @@ When you roll a 20 on an attack roll made with this weapon, the target takes an 
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

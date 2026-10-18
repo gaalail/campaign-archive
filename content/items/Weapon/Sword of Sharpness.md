@@ -23,5 +23,5 @@ In addition, you can speak the sword's command word to cause the blade to shed b
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

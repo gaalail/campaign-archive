@@ -50,5 +50,5 @@ In addition, the robe has 4d4 other patches. The GM chooses the patches or deter
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

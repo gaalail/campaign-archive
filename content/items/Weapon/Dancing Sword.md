@@ -23,5 +23,5 @@ After the hovering sword attacks for the fourth time, it flies up to 30 feet and
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

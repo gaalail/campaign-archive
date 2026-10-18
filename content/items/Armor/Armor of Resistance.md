@@ -32,5 +32,5 @@ You have resistance to one type of damage while you wear this armor. The GM choo
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

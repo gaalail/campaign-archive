@@ -33,5 +33,5 @@ If the sphere comes into contact with a planar portal, such as that created by t
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

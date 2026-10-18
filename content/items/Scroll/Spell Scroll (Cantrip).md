@@ -23,5 +23,5 @@ This scroll contains a cantrip. The spell's saving throw is 13 and the attack bo
 
 **Rarity:** Common
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

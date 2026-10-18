@@ -21,5 +21,5 @@ This carpet is 3 feet by 5 feet and has a flying speed of 80 feet. It can carry 
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

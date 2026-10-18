@@ -31,5 +31,5 @@ The goat of terror becomes a giant goat for up to 3 hours. The goat can't attack
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

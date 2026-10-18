@@ -26,5 +26,5 @@ This tube holds milky liquid with a strong alcohol smell. You can use an action 
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

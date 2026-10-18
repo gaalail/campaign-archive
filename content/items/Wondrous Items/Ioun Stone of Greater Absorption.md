@@ -27,5 +27,5 @@ Once the stone has canceled 50 levels of spells, it burns out and turns dull gra
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -26,5 +26,5 @@ While you wear this pendant, you stabilize whenever you are dying at the start o
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

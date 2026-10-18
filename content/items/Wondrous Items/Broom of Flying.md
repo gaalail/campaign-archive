@@ -21,5 +21,5 @@ You can send the broom to travel alone to a destination within 1 mile of you if 
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -32,5 +32,5 @@ You have resistance to one damage type while wearing this ring. The gem in the r
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

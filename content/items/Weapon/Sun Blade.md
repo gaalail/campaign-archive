@@ -23,5 +23,5 @@ The sword's luminous blade emits bright light in a 15-foot radius and dim light 
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

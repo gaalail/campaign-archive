@@ -21,5 +21,5 @@ The bowl is about 1 foot in diameter and half as deep. It weighs 3 pounds and ho
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

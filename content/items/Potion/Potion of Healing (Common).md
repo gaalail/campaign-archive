@@ -26,4 +26,4 @@ You regain 2d4 + 2 hit points when you drink this potion. The potion's red liqui
 
 **Rarity:** Common
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]

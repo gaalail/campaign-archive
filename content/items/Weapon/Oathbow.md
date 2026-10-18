@@ -23,5 +23,5 @@ While your sworn enemy lives, you have disadvantage on attack rolls with all oth
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

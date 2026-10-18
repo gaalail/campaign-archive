@@ -26,5 +26,5 @@ This delicate silver chain has a brilliant-cut black gem pendant. While you wear
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

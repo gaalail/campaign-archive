@@ -29,5 +29,5 @@ This potion's transparent liquid has floating in it a sliver of fingernail from 
 
 **Rarity:** Varies
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

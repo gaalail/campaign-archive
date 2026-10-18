@@ -21,5 +21,5 @@ You can draw any item the quiver contains as if doing so from a regular quiver o
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -31,7 +31,7 @@ title: Ranger Subclasses
 ## All Ranger Options
 
 - [[Ranger|Back to Ranger class]]
-- [[Classes|All classes]]
-- [[Subclasses|All subclasses]]
+- [[character-options/classes|All classes]]
+- [[character-options/subclasses|All subclasses]]
 
 ---

@@ -26,5 +26,5 @@ You gain a +2 bonus to AC against ranged attacks while you wield this shield. Th
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -23,5 +23,5 @@ The rope has AC 20 and 20 hit points. It regains 1 hit point every 5 minutes as 
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

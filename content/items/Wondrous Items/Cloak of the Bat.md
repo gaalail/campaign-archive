@@ -21,5 +21,5 @@ While wearing the cloak in an area of dim light or darkness, you can use your ac
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

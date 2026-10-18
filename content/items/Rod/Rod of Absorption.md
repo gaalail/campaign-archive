@@ -25,5 +25,5 @@ A newly found rod has 1d10 levels of spell energy stored in it already. A rod th
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

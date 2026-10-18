@@ -26,5 +26,5 @@ This emerald contains a mote of elemental energy. When you use an action to brea
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

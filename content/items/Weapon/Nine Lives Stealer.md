@@ -21,5 +21,5 @@ The sword has 1d8 + 1 charges. If you score a critical hit against a creature th
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

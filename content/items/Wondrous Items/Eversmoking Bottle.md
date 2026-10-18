@@ -21,5 +21,5 @@ The cloud persists as long as the bottle is open. Closing the bottle requires yo
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

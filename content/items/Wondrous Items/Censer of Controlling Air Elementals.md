@@ -21,5 +21,5 @@ This 6-inch-wide, 1-foot-high vessel resembles a chalice with a decorated lid. I
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

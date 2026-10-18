@@ -31,5 +31,5 @@ Roll a d20 if you are wearing the helm and take fire damage as a result of faili
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

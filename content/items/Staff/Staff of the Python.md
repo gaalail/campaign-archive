@@ -23,5 +23,5 @@ If the snake is reduced to 0 hit points, it dies and reverts to its staff form. 
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -38,5 +38,5 @@ If you remove a bean from the bag, plant it in dirt  or sand, and then water it,
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

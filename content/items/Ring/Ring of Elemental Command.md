@@ -59,5 +59,5 @@ You can cast the following spells from the ring, expending the necessary number 
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

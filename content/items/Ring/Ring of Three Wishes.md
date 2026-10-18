@@ -26,5 +26,5 @@ While wearing this ring, you can use an action to expend 1 of its 3 charges to c
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

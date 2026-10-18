@@ -29,5 +29,5 @@ A light spell cast on the robe or a daylight spell cast within 5 feet of the rob
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

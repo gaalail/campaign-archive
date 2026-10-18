@@ -29,5 +29,5 @@ This staff can be wielded as a magic quarterstaff that grants a +2 bonus to atta
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -23,13 +23,13 @@ This is a **D&D 5e wiki** for player-facing campaign information. It includes:
 
 ### 1. Building a Character (First Time?)
 
-**[[Build a Character|Read the character building guide]]** for a step-by-step walkthrough.
+**[[character-builder|Read the character building guide]]** for a step-by-step walkthrough.
 
 **Quick summary:**
-1. Pick a [[Races|race]]
-2. Pick a [[Classes|class]]
-3. (Optional) Pick a [[Subclasses|subclass]]
-4. (Optional) Pick [[Feats|feats]]
+1. Pick a [[character-options/races|race]]
+2. Pick a [[character-options/classes|class]]
+3. (Optional) Pick a [[character-options/subclasses|subclass]]
+4. (Optional) Pick [[character-options/feats|feats]]
 5. You're ready to play!
 
 ---
@@ -79,7 +79,7 @@ Each campaign has **tabs** (Sessions, Characters, Locations, All entries). Use t
 
 ## For New Players
 
-**Step 1:** [[Build a Character|Read "How to Build a Character"]]
+**Step 1:** [[character-builder|Read "How to Build a Character"]]
 
 **Step 2:** Pick your campaign ([[campaigns/ra-golvek|Ra Gol'vek]], [[Vyrun]], or [[Curse of Strahd]])
 
@@ -155,7 +155,7 @@ Each campaign can have:
 ## Getting Help
 
 ### "I don't know where to start"
-→ [[Build a Character|Read the character building guide]]
+→ [[character-builder|Read the character building guide]]
 
 ### "What's in this campaign?"
 → Click your campaign name and read the overview
@@ -174,8 +174,8 @@ Each campaign can have:
 ## Quick Links
 
 - **[[Character Builder|How to build a character]]** — Guided walkthrough
-- **[[Build a Character|Full character building guide]]** — Detailed reference
-- **[[Classes]]** — Your role in the party
+- **[[character-builder|Full character building guide]]** — Detailed reference
+- **[[character-options/classes|Classes]]** — Your role in the party
 - **[[Spells]]** — Magic reference
 - **[[Items]]** — Equipment and treasure
 - **[[Monsters]]** — Enemy reference

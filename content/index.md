@@ -10,7 +10,7 @@ Welcome! This is your hub for 5e D&D campaigns, characters, spells, items, and r
 
 ## New to D&D?
 
-**[[Build a Character|Start here: How to build a character]]** — Step-by-step guide to creating your character.
+**[[character-builder|Start here: How to build a character]]** — Step-by-step guide to creating your character.
 
 ---
 
@@ -30,11 +30,11 @@ Each campaign has sessions, NPCs, locations, and loot specific to your adventure
 
 **Building Your Character:**
 - [[Character Builder|How to build a character]]
-- [[Classes]]
-- [[Subclasses]]
-- [[Races]]
-- [[Backgrounds]]
-- [[Feats]]
+- [[character-options/classes|Classes]]
+- [[character-options/subclasses|Subclasses]]
+- [[character-options/races|Races]]
+- [[character-options/backgrounds|Backgrounds]]
+- [[character-options/feats|Feats]]
 
 **During Gameplay:**
 - [[Spells]]
@@ -47,7 +47,7 @@ Each campaign has sessions, NPCs, locations, and loot specific to your adventure
 ## How to Use This Site
 
 ### For Players
-1. **First time?** → [[Build a Character|Start with character building]]
+1. **First time?** → [[character-builder|Start with character building]]
 2. **In a campaign?** → Click your campaign name above or browse [[Campaigns]]
 3. **Need a spell?** → [[Spells|Search spells by class]]
 4. **Unsure about rules?** → [[Rules|Check clarifications]]

@@ -26,5 +26,5 @@ Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be 
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

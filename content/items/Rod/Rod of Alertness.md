@@ -27,5 +27,5 @@ The rod's head stops glowing and the effect ends after 10 minutes, or when a cre
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

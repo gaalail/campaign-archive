@@ -26,5 +26,5 @@ These crystal lenses fit over the eyes. While wearing them, you have advantage o
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -4,7 +4,7 @@ title: Items
 
 # Items
 
-**366+ magical and mundane items** | Organized by type | Equip your character
+**362+ magical and mundane items** | Organized by type | Equip your character
 
 ---
 
@@ -16,7 +16,7 @@ Choose an item category to see all items of that type:
 |------|-------|-------------|
 | Weapons | 30 | Melee and ranged weapons |
 | Armor | 29 | Protective equipment |
-| Wondrous Items | 181 | Other magical equipment |
+| Wondrous Items | 177 | Other magical equipment |
 | Potions | 40 | One-time magical effects |
 | Rings | 36 | Magical jewelry |
 | Wands | 16 | One-handed magical implements |
@@ -51,7 +51,7 @@ Some magical items require **attunement** — a special bond between you and the
 - Most spellcasters can attune to 3 items maximum
 - Attunement takes 1 short rest (1 hour)
 - Lose attunement if you die, move 100+ miles away, or remove it voluntarily
-- See your [[Classes|class]] page for attunement rules specific to your class
+- See your [[character-options/classes|class]] page for attunement rules specific to your class
 
 ---
 
@@ -102,7 +102,7 @@ This makes magic items especially powerful for non-spellcasters.
 
 ## Related Sections
 
-- [[Classes]] — Class-specific item recommendations
+- [[character-options/classes|Classes]] — Class-specific item recommendations
 - [[Spells]] — Spells that magic items cast
 - [[Character Options]] — Build your character
 - [[Rules]] — Rules about magical attunement

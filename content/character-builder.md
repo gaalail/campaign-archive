@@ -26,7 +26,7 @@ You're Ready to Play!
 
 Your **race** defines your ancestry and background. It gives you special abilities and traits.
 
-**Browse races:** [[Races]]
+**Browse races:** [[character-options/races|Races]]
 
 Each race can have **subraces** (variants). For example, there are different types of elves. Check inside the race page for details.
 
@@ -43,7 +43,7 @@ Each race can have **subraces** (variants). For example, there are different typ
 
 Your **class** is your role in the party. It determines what you're good at: fighting, casting spells, sneaking, healing, etc.
 
-**Browse classes:** [[Classes]]
+**Browse classes:** [[character-options/classes|Classes]]
 
 Popular classes:
 
@@ -75,7 +75,7 @@ At a certain level (usually 3rd), you pick a **subclass**. This specializes your
 - Cleric → [[Life]] (powerful healer)
 - Cleric → [[Dawn Domain]] (light and dawn)
 
-**Browse subclasses:** [[Subclasses]]
+**Browse subclasses:** [[character-options/subclasses|Subclasses]]
 
 Subclasses don't change how your class works fundamentally—they just add specialized abilities. You can play without one, but they make characters much more interesting.
 
@@ -95,7 +95,7 @@ You get to choose a feat at certain levels (usually 4th, 8th, 12th, etc., depend
 - **[[Celestial Blood]]** — Angelic heritage in your veins
 - **Athlete** — Stronger, faster, better at physical tasks
 
-**Browse feats:** [[Feats]]
+**Browse feats:** [[character-options/feats|Feats]]
 
 **Note:** Some feats have **prerequisites**. For example, "Great Weapon Master" requires you to have a certain fighting style. Check the prerequisite before choosing.
 
@@ -105,12 +105,12 @@ You get to choose a feat at certain levels (usually 4th, 8th, 12th, etc., depend
 
 Not just classes—your character can be customized with:
 
-- **[[Classes]]** — Your main role
-- **[[Subclasses]]** — Specialization within your role
-- **[[Races]]** — Your ancestry and heritage
-- **[[Backgrounds]]** — Your story before adventuring
-- **[[Feats]]** — Special talents and training
-- **[[Templates]]** — Add-ons (like becoming a werewolf, angelic being, etc.)
+- **[[character-options/classes|Classes]]** — Your main role
+- **[[character-options/subclasses|Subclasses]]** — Specialization within your role
+- **[[character-options/races|Races]]** — Your ancestry and heritage
+- **[[character-options/backgrounds|Backgrounds]]** — Your story before adventuring
+- **[[character-options/feats|Feats]]** — Special talents and training
+- **[[character-options/templates|Templates]]** — Add-ons (like becoming a werewolf, angelic being, etc.)
 - **[[character-options/class-options|Character options by class]]** — Specialized choices for your class (like Warlock Invocations or Sorcerer Metamagic)
 
 ---
@@ -157,8 +157,8 @@ Need more details on how the game works?
 
 ### On This Site
 
-- [[Classes]] — Understanding your role
-- [[Subclasses]] — Specializing your role
+- [[character-options/classes|Classes]] — Understanding your role
+- [[character-options/subclasses|Subclasses]] — Specializing your role
 - [[Spells]] — Reference while playing
 - [[Items]] — Magic items and equipment
 - [[Monsters]] — What enemies look like

@@ -21,5 +21,5 @@ When the boots' property has been used for a total of 10 minutes, the magic ceas
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

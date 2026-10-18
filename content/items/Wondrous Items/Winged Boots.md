@@ -21,5 +21,5 @@ The boots regain 2 hours of flying capability for every 12 hours they aren't in 
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

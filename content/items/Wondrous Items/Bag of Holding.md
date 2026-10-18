@@ -23,5 +23,5 @@ Placing a bag of holding inside an extradimensional space created by a Handy Hav
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

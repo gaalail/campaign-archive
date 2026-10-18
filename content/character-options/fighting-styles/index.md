@@ -22,6 +22,6 @@ Some of the supplemental styles are uncommon. Learning one may require training 
 
 - [[Fighter]] — Fighter styles and progression
 - [[character-options/class-options/martial-exploits/index|Martial Exploits]]
-- [[Class Options]]
+- [[character-options/class-options|Class Options]]
 
 ---

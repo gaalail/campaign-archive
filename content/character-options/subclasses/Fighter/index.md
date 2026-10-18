@@ -52,7 +52,7 @@ title: Fighter Subclasses
 ## All Fighter Options
 
 - [[Fighter|Back to Fighter class]]
-- [[Classes|All classes]]
-- [[Subclasses|All subclasses]]
+- [[character-options/classes|All classes]]
+- [[character-options/subclasses|All subclasses]]
 
 ---

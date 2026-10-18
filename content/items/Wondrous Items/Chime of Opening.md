@@ -21,5 +21,5 @@ The chime can be used ten times. After the tenth time, it cracks and becomes use
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -23,5 +23,5 @@ As a bonus action on your turn, you can direct the whip to fly up to 20 feet and
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

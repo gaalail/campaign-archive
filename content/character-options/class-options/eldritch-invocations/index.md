@@ -58,6 +58,6 @@ Powerful late-game abilities.
 
 - [[character-options/class-options/metamagic/index|Metamagic]] (Sorcerer equivalent)
 - [[character-options/class-options/avatar-features/index|Avatar Features]] (Paragon equivalent)
-- [[Class Options]] (all options)
+- [[character-options/class-options|Class Options]] (all options)
 
 ---

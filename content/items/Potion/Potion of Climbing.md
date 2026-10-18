@@ -26,5 +26,5 @@ When you drink this potion, you gain a climbing speed equal to your walking spee
 
 **Rarity:** Common
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

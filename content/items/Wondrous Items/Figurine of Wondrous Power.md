@@ -67,5 +67,5 @@ If you have a good alignment, the figurine has a 10 percent chance each time you
 
 **Rarity:** Varies
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

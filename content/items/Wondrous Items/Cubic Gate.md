@@ -23,5 +23,5 @@ The cube has 3 charges. Each use of the cube expends 1 charge. The cube regains 
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

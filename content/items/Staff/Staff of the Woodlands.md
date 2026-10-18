@@ -27,5 +27,5 @@ The tree appears ordinary but radiates a faint aura of transmutation magic if ta
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

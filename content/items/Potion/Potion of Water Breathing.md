@@ -26,5 +26,5 @@ You can breathe underwater for 1 hour after drinking this potion. Its cloudy gre
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

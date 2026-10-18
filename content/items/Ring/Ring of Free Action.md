@@ -26,5 +26,5 @@ While you wear this ring, difficult terrain doesn't cost you extra movement. In 
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

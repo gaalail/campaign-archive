@@ -21,5 +21,5 @@ Once per turn, when you hit a creature with an attack using this magic weapon, y
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

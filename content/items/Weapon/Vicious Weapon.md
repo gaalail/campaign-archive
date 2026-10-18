@@ -26,5 +26,5 @@ When you roll a 20 on your attack roll with this magic weapon, your critical hit
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

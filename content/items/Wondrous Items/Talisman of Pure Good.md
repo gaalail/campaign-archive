@@ -23,5 +23,5 @@ The talisman has 7 charges. If you are wearing or holding it, you can use an act
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -21,5 +21,5 @@ If you drink it, you take 3d6 poison damage, and you must succeed on a DC 13 Con
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

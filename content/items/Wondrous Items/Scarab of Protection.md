@@ -23,5 +23,5 @@ The scarab has 12 charges. If you fail a saving throw against a necromancy spell
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

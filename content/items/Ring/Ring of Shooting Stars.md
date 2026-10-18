@@ -38,5 +38,5 @@ As a bonus action, you can move each sphere up to 30 feet, but no farther than 1
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

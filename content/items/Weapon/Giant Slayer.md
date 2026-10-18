@@ -21,5 +21,5 @@ When you hit a giant with it, the giant takes an extra 2d6 damage of the weapon'
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -23,5 +23,5 @@ This staff has 10 charges and regains 1d6 + 4 expended charges daily at dawn. If
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

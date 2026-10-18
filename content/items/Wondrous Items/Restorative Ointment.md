@@ -21,5 +21,5 @@ As an action, one dose of the ointment can be swallowed or applied to the skin. 
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

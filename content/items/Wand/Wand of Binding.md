@@ -23,5 +23,5 @@ This wand has 7 charges for the following properties. It regains 1d6 + 1 expende
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -26,5 +26,5 @@ When you attack a creature with this magic weapon and roll a 20 on the attack ro
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

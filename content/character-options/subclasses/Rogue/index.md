@@ -31,7 +31,7 @@ title: Rogue Subclasses
 ## All Rogue Options
 
 - [[Rogue|Back to Rogue class]]
-- [[Classes|All classes]]
-- [[Subclasses|All subclasses]]
+- [[character-options/classes|All classes]]
+- [[character-options/subclasses|All subclasses]]
 
 ---

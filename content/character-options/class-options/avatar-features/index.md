@@ -64,6 +64,6 @@ Grouped by Order (and by Paragon for features shared across Orders).
 
 - [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations]] (Warlock equivalent)
 - [[character-options/class-options/metamagic/index|Metamagic]] (Sorcerer equivalent)
-- [[Class Options]] (all options)
+- [[character-options/class-options|Class Options]] (all options)
 
 ---

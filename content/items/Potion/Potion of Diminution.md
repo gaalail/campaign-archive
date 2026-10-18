@@ -26,5 +26,5 @@ When you drink this potion, you gain the "reduce" effect of the enlarge/reduce s
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

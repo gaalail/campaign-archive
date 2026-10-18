@@ -44,6 +44,6 @@ Your innate magical power lets you bend spells in unique ways. These **Metamagic
 
 - [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations]] (Warlock equivalent)
 - [[character-options/class-options/avatar-features/index|Avatar Features]] (Paragon equivalent)
-- [[Class Options]] (all options)
+- [[character-options/class-options|Class Options]] (all options)
 
 ---

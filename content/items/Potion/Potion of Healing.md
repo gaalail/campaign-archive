@@ -28,5 +28,5 @@ Potions of Healing (table)
 
 **Rarity:** Varies
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

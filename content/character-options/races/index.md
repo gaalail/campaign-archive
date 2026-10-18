@@ -43,8 +43,9 @@ Some races have **subraces** — cultural or magical variants listed on the race
 
 **Step 1:** Browse races above  
 **Step 2:** Read your race page (includes subraces)  
-**Step 3:** Choose a [[Classes|class]]  
-**Step 4:** Pick a [[Backgrounds|background]] for your story
+**Step 3:** Choose a [[character-options/classes|class]]
+
+**Step 4:** Pick a [[character-options/backgrounds|background]] for your story
 
 ---
 
@@ -59,4 +60,3 @@ Some races have **subraces** — cultural or magical variants listed on the race
 - [[character-options/templates|Templates]] — Optional powers
 
 ---
-

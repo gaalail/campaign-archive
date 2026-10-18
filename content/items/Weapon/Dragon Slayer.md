@@ -21,5 +21,5 @@ When you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of 
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

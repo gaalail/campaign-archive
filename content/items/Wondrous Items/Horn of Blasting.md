@@ -21,5 +21,5 @@ Each use of the horn's magic has a 20 percent chance of causing the horn to expl
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

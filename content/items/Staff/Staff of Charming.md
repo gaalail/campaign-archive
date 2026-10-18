@@ -23,5 +23,5 @@ The staff regains 1d8 + 2 expended charges daily at dawn. If you expend the last
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

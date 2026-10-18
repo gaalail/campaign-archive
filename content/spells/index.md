@@ -57,7 +57,7 @@ Each class page shows **spells organized by level you can learn them**.
 - **2nd-level spells:** Character level 3+ (more slots as you level)
 - **3rd-9th-level spells:** Character levels 5-17+ (highest power)
 
-Check your [[Classes|class]] page for exact spell slot progression.
+Check your [[character-options/classes|class]] page for exact spell slot progression.
 
 ---
 
@@ -78,7 +78,7 @@ Check your [[Classes|class]] page for exact spell slot progression.
 
 **Best approaches:**
 
-1. Go to your [[Classes|class]] page → see class spell list organized by level
+1. Go to your [[character-options/classes|class]] page → see class spell list organized by level
 2. Use search (magnifying glass) to find spell by name
 3. Browse spells by level using tabs above
 
@@ -87,7 +87,7 @@ Check your [[Classes|class]] page for exact spell slot progression.
 ## Related Sections
 
 - [[Character Options]] — Classes and multiclassing
-- [[Feats]] — Magic-focused feats
+- [[character-options/feats|Feats]] — Magic-focused feats
 - [[Items]] — Magic items that cast spells
 - [[Monsters]] — Spells creatures cast
 

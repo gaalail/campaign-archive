@@ -25,5 +25,5 @@ A wizard spell on a spell scroll can be copied just as spells in spellbooks can 
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

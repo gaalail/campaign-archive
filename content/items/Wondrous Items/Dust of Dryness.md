@@ -23,5 +23,5 @@ An elemental composed mostly of water that is exposed to a pinch of the dust mus
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

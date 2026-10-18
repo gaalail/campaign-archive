@@ -21,5 +21,5 @@ While you hold the drawn sword, it creates an aura in a 10-foot radius around yo
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

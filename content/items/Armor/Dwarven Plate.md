@@ -26,5 +26,5 @@ While wearing this armor, you gain a +2 bonus to AC. In addition, if an effect m
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

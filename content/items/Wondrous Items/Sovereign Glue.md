@@ -21,5 +21,5 @@ One ounce of the glue can cover a 1-foot square surface. The glue takes 1 minute
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

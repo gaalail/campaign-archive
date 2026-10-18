@@ -45,5 +45,5 @@ You can also use an action to cast the detect magic spell from the orb without u
 
 **Rarity:** Artifact
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

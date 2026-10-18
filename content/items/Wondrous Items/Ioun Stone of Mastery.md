@@ -25,5 +25,5 @@ A stone has AC 24, 10 hit points, and resistance to all damage. It is considered
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

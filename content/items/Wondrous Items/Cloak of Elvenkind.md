@@ -26,5 +26,5 @@ While you wear this cloak with its hood up, Wisdom (Perception) checks made to s
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

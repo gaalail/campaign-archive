@@ -31,7 +31,7 @@ title: Sorcerer Subclasses
 ## All Sorcerer Options
 
 - [[Sorcerer|Back to Sorcerer class]]
-- [[Classes|All classes]]
-- [[Subclasses|All subclasses]]
+- [[character-options/classes|All classes]]
+- [[character-options/subclasses|All subclasses]]
 
 ---

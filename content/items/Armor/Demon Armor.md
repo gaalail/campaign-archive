@@ -21,5 +21,5 @@ While wearing this armor, you gain a +1 bonus to AC, and you can understand and 
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

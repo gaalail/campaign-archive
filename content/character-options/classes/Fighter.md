@@ -143,10 +143,10 @@ Whenever you roll initiative, you regain all expended Exploit Dice. You can use 
 
 ## Related Content
 
-- [[Classes|Back to all classes]]
+- [[character-options/classes|Back to all classes]]
 - [[character-options/subclasses/Fighter/index|Warrior Archetypes]]
 - [[character-options/fighting-styles/index|Fighting Styles]]
 - [[character-options/class-options/martial-exploits/index|Martial Exploits]]
 - [[character-options/feats|Feats]]
 - [[character-options/class-options|Class Options]]
-- [[Subclasses|All subclasses]]
+- [[character-options/subclasses|All subclasses]]

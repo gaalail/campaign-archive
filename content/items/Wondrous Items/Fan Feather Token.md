@@ -21,5 +21,5 @@ If you are on a boat or ship, you can use an action to toss the token up to 10 f
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

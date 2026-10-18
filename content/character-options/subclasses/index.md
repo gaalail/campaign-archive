@@ -6,7 +6,7 @@ title: Subclasses
 
 At **3rd level** (sometimes 1st or 2nd), you specialize your class with a **subclass**.
 
-**85+ subclasses available** | Choose at level-up | Defines your playstyle
+**101 subclasses available** | Choose at level-up | Defines your playstyle
 
 ---
 

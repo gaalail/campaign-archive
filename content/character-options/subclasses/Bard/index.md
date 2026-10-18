@@ -32,7 +32,7 @@ title: Bard Subclasses
 ## All Bard Options
 
 - [[Bard|Back to Bard class]]
-- [[Classes|All classes]]
-- [[Subclasses|All subclasses]]
+- [[character-options/classes|All classes]]
+- [[character-options/subclasses|All subclasses]]
 
 ---

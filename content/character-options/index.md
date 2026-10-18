@@ -6,7 +6,7 @@ title: Character Options
 
 Everything you need to create and customize a D&D 5e character.
 
-**New to character building?** → **[[Build a Character|Start with the step-by-step guide]]**
+**New to character building?** → **[[character-builder|Start with the step-by-step guide]]**
 
 ---
 
@@ -146,7 +146,7 @@ Ask your DM what level you're starting at.
 
 ## Quick Start
 
-1. [[Build a Character|Read the character building guide]]
+1. [[character-builder|Read the character building guide]]
 2. Pick a [[character-options/races|race]]
 3. Pick a [[character-options/classes|class]]
 4. Decide on a [[character-options/subclasses|subclass]] (optional, comes at level 3)
@@ -158,7 +158,7 @@ Ask your DM what level you're starting at.
 
 ## Need More Info?
 
-- **Full walkthrough:** [[Build a Character]]
+- **Full walkthrough:** [[character-builder|Build a Character]]
 - **How does my class work?** → Go to [[character-options/classes|Classes]]
 - **What spells can I cast?** → [[spells|Browse spells by class]]
 - **What are class-specific options?** → Check your class page for invocations, metamagic, or infusions

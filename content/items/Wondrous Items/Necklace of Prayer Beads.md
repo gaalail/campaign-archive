@@ -30,5 +30,5 @@ Six types of magic beads exist. The GM decides the type of each bead on the neck
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

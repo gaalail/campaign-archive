@@ -21,5 +21,5 @@ Alternatively, you can expend 1 to 3 of the ring's charges as an action to try t
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

@@ -23,5 +23,5 @@ When you draw this weapon, you can extinguish all nonmagical flames within 30 fe
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

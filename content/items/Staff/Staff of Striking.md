@@ -21,5 +21,5 @@ The staff has 10 charges. When you hit with a melee attack using it, you can exp
 
 **Rarity:** Very Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

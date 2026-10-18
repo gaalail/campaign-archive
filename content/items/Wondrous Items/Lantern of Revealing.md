@@ -26,5 +26,5 @@ While lit, this hooded lantern burns for 6 hours on 1 pint of oil, shedding brig
 
 **Rarity:** Uncommon
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

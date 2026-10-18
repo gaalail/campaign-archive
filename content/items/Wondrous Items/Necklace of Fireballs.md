@@ -21,5 +21,5 @@ You can hurl multiple beads, or even the whole necklace, as one action. When you
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

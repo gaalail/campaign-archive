@@ -26,5 +26,5 @@ For 1 hour after drinking it, you gain 10 temporary hit points that last for 1 h
 
 **Rarity:** Rare
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

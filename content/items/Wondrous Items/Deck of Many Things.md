@@ -82,5 +82,5 @@ Once a card is drawn, it fades from existence. Unless the card is the Fool or th
 
 **Rarity:** Legendary
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 

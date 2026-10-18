@@ -32,7 +32,7 @@ The **Paragon** is a Corpus Angelus class (not in standard D&D 5e). These are cu
 ## All Paragon Options
 
 - [[Paragon|Back to Paragon class]]
-- [[Classes|All classes]]
-- [[Subclasses|All subclasses]]
+- [[character-options/classes|All classes]]
+- [[character-options/subclasses|All subclasses]]
 
 ---

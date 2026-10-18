@@ -26,5 +26,5 @@ You have a bonus to AC while wearing this armor. The bonus is determined by its 
 
 **Rarity:** Varies
 
-**Related:** [[items|All Items]] | [[spells|Spells]] | [[Classes|Classes]]
+**Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
 
