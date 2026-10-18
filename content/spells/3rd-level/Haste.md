@@ -31,7 +31,7 @@ When the spell ends, the target can't move or take actions until after its next 
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

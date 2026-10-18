@@ -29,7 +29,7 @@ You touch a creature that has died within the last minute. That creature returns
 
 **School:** Conjuration
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

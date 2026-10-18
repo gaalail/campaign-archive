@@ -36,6 +36,33 @@ Artificers use a variety of tools to channel their arcane power. To cast a spell
 
 ---
 
+## Progression Table
+
+| Level | Proficiency | Features                                 | Infusions Known | Infused Items | Cantrips | 1st | 2nd | 3rd | 4th | 5th |
+| ----- | ----------- | ---------------------------------------- | --------------- | ------------- | -------- | --- | --- | --- | --- | --- |
+| 1st   | +2          | Magical Tinkering, Spellcasting          | —               | —             | 2        | 2   | —   | —   | —   | —   |
+| 2nd   | +2          | Infuse Item                              | 4               | 2             | 2        | 2   | —   | —   | —   | —   |
+| 3rd   | +2          | Artificer Specialization, The Right Tool | 4               | 2             | 2        | 3   | —   | —   | —   | —   |
+| 4th   | +2          | Ability Score Improvement                | 4               | 2             | 2        | 3   | —   | —   | —   | —   |
+| 5th   | +3          | Specialization feature                   | 4               | 2             | 2        | 4   | 2   | —   | —   | —   |
+| 6th   | +3          | Tool Expertise                           | 6               | 3             | 2        | 4   | 2   | —   | —   | —   |
+| 7th   | +3          | Flash of Genius                          | 6               | 3             | 2        | 4   | 3   | —   | —   | —   |
+| 8th   | +3          | Ability Score Improvement                | 6               | 3             | 2        | 4   | 3   | —   | —   | —   |
+| 9th   | +4          | Specialization feature                   | 6               | 3             | 2        | 4   | 3   | 2   | —   | —   |
+| 10th  | +4          | Magic Item Adept, Specialization feature | 8               | 4             | 3        | 4   | 3   | 2   | —   | —   |
+| 11th  | +4          | Spell-Storing Item                       | 8               | 4             | 3        | 4   | 3   | 3   | —   | —   |
+| 12th  | +4          | Ability Score Improvement                | 8               | 4             | 3        | 4   | 3   | 3   | —   | —   |
+| 13th  | +5          | —                                        | 8               | 4             | 3        | 4   | 3   | 3   | 1   | —   |
+| 14th  | +5          | Magic Item Savant                        | 10              | 5             | 4        | 4   | 3   | 3   | 1   | —   |
+| 15th  | +5          | Specialization feature                   | 10              | 5             | 4        | 4   | 3   | 3   | 2   | —   |
+| 16th  | +5          | Ability Score Improvement                | 10              | 5             | 4        | 4   | 3   | 3   | 2   | —   |
+| 17th  | +6          | —                                        | 10              | 5             | 4        | 4   | 3   | 3   | 3   | 1   |
+| 18th  | +6          | Magic Item Master                        | 12              | 6             | 4        | 4   | 3   | 3   | 3   | 1   |
+| 19th  | +6          | Ability Score Improvement                | 12              | 6             | 4        | 4   | 3   | 3   | 3   | 2   |
+| 20th  | +6          | Soul of Artifice                         | 12              | 6             | 4        | 4   | 3   | 3   | 3   | 2   |
+
+---
+
 ## Key Class Features
 
 ### Magical Tinkering (1st Level)
@@ -52,6 +79,10 @@ You can affect a number of objects equal to your Intelligence modifier (minimum 
 ### Spellcasting (1st Level)
 
 You cast spells through your tools. You must have a spellcasting focus (thieves' tools or artisan's tool) in hand to cast any spell with the spellcasting feature.
+
+**Browse available Artificer spells by level:**
+
+![[artificer-spells.base]]
 
 **Cantrips:** You know 2 cantrips at 1st level, gaining more at higher levels (see table).
 
@@ -111,33 +142,6 @@ You can attune to up to 6 magic items at once.
 You gain a +1 bonus to all saving throws per magic item you're attuned to.
 
 If reduced to 0 hit points but not killed outright, you can use your reaction to end one of your infusions, causing you to drop to 1 hit point instead of 0.
-
----
-
-## Progression Table
-
-| Level | Proficiency | Features                                 | Infusions Known | Infused Items | Cantrips | 1st | 2nd | 3rd | 4th | 5th |
-| ----- | ----------- | ---------------------------------------- | --------------- | ------------- | -------- | --- | --- | --- | --- | --- |
-| 1st   | +2          | Magical Tinkering, Spellcasting          | —               | —             | 2        | 2   | —   | —   | —   | —   |
-| 2nd   | +2          | Infuse Item                              | 4               | 2             | 2        | 2   | —   | —   | —   | —   |
-| 3rd   | +2          | Artificer Specialization, The Right Tool | 4               | 2             | 2        | 3   | —   | —   | —   | —   |
-| 4th   | +2          | Ability Score Improvement                | 4               | 2             | 2        | 3   | —   | —   | —   | —   |
-| 5th   | +3          | Specialization feature                   | 4               | 2             | 2        | 4   | 2   | —   | —   |
-| 6th   | +3          | Tool Expertise                           | 6               | 3             | 2        | 4   | 2   | —   | —   | —   |
-| 7th   | +3          | Flash of Genius                          | 6               | 3             | 2        | 4   | 3   | —   | —   | —   |
-| 8th   | +3          | Ability Score Improvement                | 6               | 3             | 2        | 4   | 3   | —   | —   | —   |
-| 9th   | +4          | Specialization feature                   | 6               | 3             | 2        | 4   | 3   | 2   | —   | —   |
-| 10th  | +4          | Magic Item Adept, Specialization feature | 8               | 4             | 3        | 4   | 3   | 2   | —   | —   |
-| 11th  | +4          | Spell-Storing Item                       | 8               | 4             | 3        | 4   | 3   | 3   | —   | —   |
-| 12th  | +4          | Ability Score Improvement                | 8               | 4             | 3        | 4   | 3   | 3   | —   | —   |
-| 13th  | +5          | —                                        | 8               | 4             | 3        | 4   | 3   | 3   | 1   | —   |
-| 14th  | +5          | Magic Item Savant                        | 10              | 5             | 4        | 4   | 3   | 3   | 1   | —   |
-| 15th  | +5          | Specialization feature                   | 10              | 5             | 4        | 4   | 3   | 3   | 2   | —   |
-| 16th  | +5          | Ability Score Improvement                | 10              | 5             | 4        | 4   | 3   | 3   | 2   | —   |
-| 17th  | +6          | —                                        | 10              | 5             | 4        | 4   | 3   | 3   | 3   | 1   |
-| 18th  | +6          | Magic Item Master                        | 12              | 6             | 4        | 4   | 3   | 3   | 3   | 1   |
-| 19th  | +6          | Ability Score Improvement                | 12              | 6             | 4        | 4   | 3   | 3   | 3   | 2   |
-| 20th  | +6          | Soul of Artifice                         | 12              | 6             | 4        | 4   | 3   | 3   | 3   | 2   |
 
 ---
 

@@ -45,7 +45,7 @@ When you inscribe the glyph, choose *explosive runes* or a *spell glyph*.
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Cleric]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

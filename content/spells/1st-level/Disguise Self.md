@@ -32,7 +32,7 @@ To discern that you are disguised, a creature can use its action to inspect your
 
 **School:** Illusion
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

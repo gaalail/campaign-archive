@@ -33,7 +33,7 @@ You assume a different form. When you cast the spell, choose one of the followin
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

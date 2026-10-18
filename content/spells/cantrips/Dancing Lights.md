@@ -32,7 +32,7 @@ As a bonus action on your turn, you can move the lights up to 60 feet to a new s
 
 **School:** Evocation
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

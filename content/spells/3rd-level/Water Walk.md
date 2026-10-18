@@ -33,7 +33,7 @@ If you target a creature submerged in a liquid, the spell carries the target to 
 
 **School:** Transmutation
 
-**Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]]
+**Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

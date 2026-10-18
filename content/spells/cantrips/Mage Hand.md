@@ -33,7 +33,7 @@ The hand can't attack, activate magic items, or carry more than 10 pounds.
 
 **School:** Conjuration
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

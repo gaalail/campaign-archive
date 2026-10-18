@@ -29,7 +29,7 @@ A flame, equivalent in brightness to a torch, springs forth from an object that 
 
 **School:** Evocation
 
-**Available to:** [[Cleric]], [[Wizard]]
+**Available to:** [[Cleric]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

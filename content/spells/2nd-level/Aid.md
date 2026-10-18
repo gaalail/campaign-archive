@@ -32,7 +32,7 @@ Your spell bolsters your allies with toughness and resolve. Choose up to three c
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

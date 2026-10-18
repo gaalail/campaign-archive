@@ -30,7 +30,7 @@ If the warded creature makes an attack or casts a spell that affects an enemy cr
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]]
+**Available to:** [[Cleric]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

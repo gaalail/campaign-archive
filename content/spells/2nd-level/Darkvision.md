@@ -31,7 +31,7 @@ You touch a willing creature to grant it the ability to see in the dark. For the
 
 **School:** Transmutation
 
-**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

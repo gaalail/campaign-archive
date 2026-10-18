@@ -30,7 +30,7 @@ Choose up to five falling creatures within range. A falling creature's rate of d
 
 **School:** Transmutation
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

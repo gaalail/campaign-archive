@@ -35,7 +35,7 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
+**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

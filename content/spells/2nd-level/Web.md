@@ -37,7 +37,7 @@ The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 
 
 **School:** Conjuration
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

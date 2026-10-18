@@ -40,7 +40,7 @@ If you maintain your concentration on this spell for its whole duration, the wal
 
 **School:** Evocation
 
-**Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Druid]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

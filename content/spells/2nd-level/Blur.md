@@ -34,7 +34,7 @@ Your body becomes blurred, shifting and wavering to all who can see you. For the
 
 **School:** Illusion
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

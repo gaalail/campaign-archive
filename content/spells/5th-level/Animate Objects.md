@@ -47,7 +47,7 @@ If you command an object to attack, it can make a single melee attack against a 
 
 **School:** Transmutation
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

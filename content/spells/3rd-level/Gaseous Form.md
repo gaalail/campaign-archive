@@ -34,7 +34,7 @@ While in the form of a misty cloud, the target can't talk or manipulate objects,
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

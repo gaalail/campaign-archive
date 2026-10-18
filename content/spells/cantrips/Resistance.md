@@ -29,7 +29,7 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]], [[Druid]]
+**Available to:** [[Cleric]], [[Druid]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -30,7 +30,7 @@ Until the spell ends, one willing creature you touch gains the ability to move u
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

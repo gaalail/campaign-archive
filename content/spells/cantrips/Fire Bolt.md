@@ -29,7 +29,7 @@ This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th leve
 
 **School:** Evocation
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

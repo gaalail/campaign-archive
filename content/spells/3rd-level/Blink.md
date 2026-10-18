@@ -29,7 +29,7 @@ While on the Ethereal Plane, you can see and hear the plane you originated from,
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

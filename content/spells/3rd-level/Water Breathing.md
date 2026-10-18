@@ -31,7 +31,7 @@ This spell gives a maximum of ten willing creatures within range and you can see
 
 **School:** Transmutation
 
-**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

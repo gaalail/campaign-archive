@@ -33,7 +33,7 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Ranger]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Ranger]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

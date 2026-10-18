@@ -35,7 +35,7 @@ The triggering circumstance can be as general or as detailed as you like, though
 
 **School:** Illusion
 
-**Available to:** [[Bard]], [[Wizard]]
+**Available to:** [[Bard]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

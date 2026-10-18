@@ -34,7 +34,7 @@ You touch a creature. The target's speed increases by 10 feet until the spell en
 
 **School:** Transmutation
 
-**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Wizard]]
+**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

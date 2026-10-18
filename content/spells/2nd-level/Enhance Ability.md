@@ -46,7 +46,7 @@ You touch a creature and bestow upon it a magical enhancement. Choose one of the
 
 **School:** Transmutation
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

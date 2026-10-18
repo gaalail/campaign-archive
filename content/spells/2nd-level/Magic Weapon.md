@@ -30,7 +30,7 @@ You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic
 
 **School:** Transmutation
 
-**Available to:** [[Paladin]], [[Wizard]]
+**Available to:** [[Paladin]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

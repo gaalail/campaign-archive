@@ -34,7 +34,7 @@ You touch a living creature that has 0 hit points. The creature becomes stable. 
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Thanatomancer]]
+**Available to:** [[Cleric]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

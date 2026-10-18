@@ -33,7 +33,7 @@ If you target an object held or worn by a hostile creature, that creature must s
 
 **School:** Evocation
 
-**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

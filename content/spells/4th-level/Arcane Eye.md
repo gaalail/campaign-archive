@@ -34,7 +34,7 @@ As an action, you can move the eye up to 30 feet in any direction. There is no l
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

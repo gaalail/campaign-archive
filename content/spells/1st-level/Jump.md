@@ -31,7 +31,7 @@ You touch a creature. The creature's jump distance is tripled until the spell en
 
 **School:** Transmutation
 
-**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

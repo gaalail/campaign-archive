@@ -34,7 +34,7 @@ This spell can physically repair a magic item or construct, but the spell can't 
 
 **School:** Transmutation
 
-**Available to:** [[Cleric]], [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Cleric]], [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

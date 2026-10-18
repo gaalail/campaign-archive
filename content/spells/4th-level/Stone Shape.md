@@ -30,7 +30,7 @@ You touch a stone object of Medium size or smaller or a section of stone no more
 
 **School:** Transmutation
 
-**Available to:** [[Cleric]], [[Druid]], [[Wizard]]
+**Available to:** [[Cleric]], [[Druid]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

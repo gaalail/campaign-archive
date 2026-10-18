@@ -28,7 +28,7 @@ Any attack roll against an affected creature or object has advantage if the atta
 
 **School:** Evocation
 
-**Available to:** [[Druid]]
+**Available to:** [[Druid]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

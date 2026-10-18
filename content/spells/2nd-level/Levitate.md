@@ -33,7 +33,7 @@ When the spell ends, the target floats gently to the ground if it is still aloft
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

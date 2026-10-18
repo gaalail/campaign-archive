@@ -31,7 +31,7 @@ For the duration, the target has advantage on saving throws against being poison
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]]
+**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

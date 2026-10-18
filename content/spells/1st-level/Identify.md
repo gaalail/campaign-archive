@@ -32,7 +32,7 @@ If you instead touch a creature throughout the casting, you learn what spells, i
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

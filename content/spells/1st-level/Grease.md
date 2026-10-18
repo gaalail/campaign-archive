@@ -30,7 +30,7 @@ When the grease appears, each creature standing in its area must succeed on a de
 
 **School:** Conjuration
 
-**Available to:** [[Wizard]]
+**Available to:** [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

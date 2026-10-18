@@ -37,7 +37,7 @@ For the duration, the willing creature you touch has resistance to one damage ty
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

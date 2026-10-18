@@ -33,7 +33,7 @@ An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet
 
 **School:** Abjuration
 
-**Available to:** [[Ranger]], [[Wizard]]
+**Available to:** [[Ranger]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

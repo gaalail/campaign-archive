@@ -30,7 +30,7 @@ Creatures or magic items can't be created or transmuted by this spell. You also 
 
 **School:** Transmutation
 
-**Available to:** [[Wizard]]
+**Available to:** [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -44,7 +44,7 @@ Using any material created by this spell as another spell's material component c
 
 **School:** Illusion
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

@@ -32,7 +32,7 @@ You can cast this spell through solid objects if you are familiar with the targe
 
 **School:** Transmutation
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

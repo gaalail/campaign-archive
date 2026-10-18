@@ -29,7 +29,7 @@ This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level 
 
 **School:** Conjuration
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

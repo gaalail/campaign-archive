@@ -34,7 +34,7 @@ If a creature is holding or wearing the object and takes the damage from it, the
 
 **School:** Transmutation
 
-**Available to:** [[Bard]], [[Druid]]
+**Available to:** [[Bard]], [[Druid]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 

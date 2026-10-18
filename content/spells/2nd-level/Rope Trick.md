@@ -34,7 +34,7 @@ Anything inside the extradimensional space drops out when the spell ends.
 
 **School:** Transmutation
 
-**Available to:** [[Wizard]]
+**Available to:** [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
 
