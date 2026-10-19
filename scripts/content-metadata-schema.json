@@ -1,0 +1,72 @@
+{
+  "source_types": ["SRD", "homebrew", "third-party", "campaign-original"],
+  "content_status": ["complete", "incomplete", "draft"],
+  "schemas": {
+    "class": {
+      "required": ["title", "hit_die", "saving_throws", "source"],
+      "fields": {
+        "title": { "type": "string", "non_empty": true },
+        "hit_die": { "type": "string", "enum": ["d6", "d8", "d10", "d12"] },
+        "saving_throws": {
+          "type": "array",
+          "min_items": 2,
+          "max_items": 2,
+          "items": { "type": "string", "enum": ["STR", "DEX", "CON", "INT", "WIS", "CHA"] }
+        },
+        "source": { "type": "string", "non_empty": true },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    },
+    "spell": {
+      "required": ["title", "level", "school", "classes", "source"],
+      "fields": {
+        "title": { "type": "string", "non_empty": true },
+        "level": { "type": "integer", "minimum": 0, "maximum": 9 },
+        "school": { "type": "string", "non_empty": true },
+        "classes": {
+          "type": "array",
+          "min_items": 1,
+          "items": { "type": "string", "non_empty": true }
+        },
+        "source": { "type": "string", "non_empty": true },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    },
+    "item": {
+      "required": ["title", "item_type", "rarity", "source"],
+      "fields": {
+        "title": { "type": "string", "non_empty": true },
+        "item_type": { "type": "string", "non_empty": true },
+        "rarity": { "type": "string", "non_empty": true },
+        "source": { "type": "string", "non_empty": true },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    },
+    "campaign": {
+      "required": ["title"],
+      "fields": {
+        "title": { "type": "string", "non_empty": true },
+        "source": { "type": "string", "non_empty": true },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    },
+    "character_option": {
+      "required": ["title"],
+      "fields": {
+        "title": { "type": "string", "non_empty": true },
+        "source": { "type": "string", "non_empty": true },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    }
+  }
+}

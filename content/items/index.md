@@ -4,7 +4,7 @@ title: Items
 
 # Items
 
-**362+ magical and mundane items** | Organized by type | Equip your character
+**Browse magical and mundane items** | Organized by type | Equip your character
 
 ---
 

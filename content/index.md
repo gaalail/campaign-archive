@@ -16,11 +16,11 @@ Welcome! This is your hub for 5e D&D campaigns, characters, spells, items, and r
 
 ## Pick a Campaign
 
-Choose where you want to adventure, or [[Campaigns|browse the campaign directory]]:
+Choose where you want to adventure, or [[campaigns|browse the campaign directory]]:
 
 - **[[campaigns/ra-golvek|Ra Gol'vek]]** — Coastal intrigue, ancient magic, and supernatural threats.
-- **[[Vyrun]]** — Frontier exploration, survival, and ancient mysteries.
-- **[[Curse of Strahd]]** — Gothic horror in the mist-shrouded realm of Barovia.
+- **[[campaigns/vyrun|Vyrun]]** — Frontier exploration, survival, and ancient mysteries.
+- **[[campaigns/curse-of-strahd|Curse of Strahd]]** — Gothic horror in the mist-shrouded realm of Barovia.
 
 Each campaign has sessions, NPCs, locations, and loot specific to your adventure.
 
@@ -30,7 +30,7 @@ Each campaign has sessions, NPCs, locations, and loot specific to your adventure
 
 **Building Your Character:**
 
-- [[Character Builder|How to build a character]]
+- [[character-builder|How to build a character]]
 - [[character-options/classes|Classes]]
 - [[character-options/subclasses|Subclasses]]
 - [[character-options/races|Races]]
@@ -39,10 +39,10 @@ Each campaign has sessions, NPCs, locations, and loot specific to your adventure
 
 **During Gameplay:**
 
-- [[Spells]]
-- [[Items]]
-- [[Monsters]]
-- [[Rules]]
+- [[spells|Spells]]
+- [[items|Items]]
+- [[monsters|Monsters]]
+- [[rules|Rules]]
 
 ---
 
@@ -51,9 +51,9 @@ Each campaign has sessions, NPCs, locations, and loot specific to your adventure
 ### For Players
 
 1. **First time?** → [[character-builder|Start with character building]]
-2. **In a campaign?** → Click your campaign name above or browse [[Campaigns]]
-3. **Need a spell?** → [[Spells|Search spells by class]]
-4. **Unsure about rules?** → [[Rules|Check clarifications]]
+2. **In a campaign?** → Click your campaign name above or browse [[campaigns|Campaigns]]
+3. **Need a spell?** → [[spells|Search spells by class]]
+4. **Unsure about rules?** → [[rules|Check clarifications]]
 
 ### For Dungeon Masters
 

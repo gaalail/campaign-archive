@@ -84,6 +84,8 @@ You cast spells through your tools. You must have a spellcasting focus (thieves'
 
 ![[artificer-spells.base]]
 
+This catalogue reflects the spells currently tagged for Artificers in this archive; it is not a complete official Artificer list. SRD 5.1 does not include the Artificer class. The Source column identifies each spell entry's source, not the supplement that establishes Artificer access.
+
 **Cantrips:** You know 2 cantrips at 1st level, gaining more at higher levels (see table).
 
 **Spell Slots:** You prepare spells equal to your Intelligence modifier + half your level (rounded down), minimum 1.

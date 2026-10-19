@@ -38,6 +38,12 @@ Some class features are choices, not things a class gains automatically. Big lis
 - Repeated features, like Ability Score Improvement, appear once with every level listed.
 - The Class options tab on the Character options page lists every option from every class.
 
+## Metadata schemas and spell coverage
+
+`scripts/content-metadata-schema.json` defines required and typed metadata for classes, spells, items, campaigns, and character options. The archive validator checks these schemas, verifies that every class name in spell metadata resolves to exactly one class page, and confirms that each class page embeds the matching spell catalogue whose filter uses that class name. Its report lists spell counts by class and source. `source_type` accepts `SRD`, `homebrew`, `third-party`, or `campaign-original`; where it is present, the validator rejects values outside that list.
+
+Thanatomancer spell eligibility has additional rules beyond the class tag: spells must be necromancy, enchantment, or divination and come from the cleric, druid, or wizard spell lists. Its spell catalogue is the metadata-tagged set; the class rules remain authoritative for actual eligibility. Artificer spell entry sources likewise do not identify which supplement establishes class access; the class page documents that its current catalogue is not complete supplement coverage.
+
 ## SRD content and attribution
 
 Entries marked "SRD 5.1" come from the System Reference Document 5.1 by Wizards of the Coast, released under a Creative Commons license. The required credit is on the page `content/srd-attribution.md` and linked from the footer and the home page. Keep both. The SRD has no Artificer, no Tasha's or Eberron material, and only one subclass per class, so add your own through the editor.

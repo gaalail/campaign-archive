@@ -5,6 +5,7 @@ saving_throws:
   - STR
   - CON
 summary: d10 hit die; masters martial techniques through fighting styles and exploits
+source: Alternate Fighter
 ---
 
 # Fighter

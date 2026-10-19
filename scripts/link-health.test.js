@@ -1,5 +1,8 @@
 import assert from "node:assert/strict"
+import { readFileSync } from "node:fs"
 import test from "node:test"
+import { validateItemCounts, validateSpellCounts } from "./content-counts.js"
+import { validateMetadata } from "./metadata-schema.js"
 import {
   createLinkHealthAllowlist,
   createLinkIndex,
@@ -7,6 +10,213 @@ import {
   findGeneratedViewPages,
   resolveWikilink,
 } from "./link-health.js"
+
+const metadataSchema = JSON.parse(
+  readFileSync(new URL("./content-metadata-schema.json", import.meta.url), "utf-8"),
+)
+
+test("content metadata schema requires core class, spell, and item fields", () => {
+  const validRecords = [
+    [
+      "class",
+      {
+        title: "Wizard",
+        hit_die: "d6",
+        saving_throws: ["INT", "WIS"],
+        source: "SRD 5.1",
+      },
+    ],
+    [
+      "spell",
+      {
+        title: "Fire Bolt",
+        level: 0,
+        school: "Evocation",
+        classes: ["Sorcerer", "Wizard"],
+        source: "SRD 5.1",
+      },
+    ],
+    [
+      "item",
+      {
+        title: "Potion",
+        item_type: "Potion",
+        rarity: "Common",
+        source: "SRD 5.1",
+      },
+    ],
+  ]
+
+  for (const [type, metadata] of validRecords) {
+    assert.deepEqual(validateMetadata(metadata, metadataSchema.schemas[type], metadataSchema), [])
+  }
+
+  assert.ok(
+    validateMetadata(
+      { title: "Missing Details" },
+      metadataSchema.schemas.class,
+      metadataSchema,
+    ).includes('missing required "saving_throws"'),
+  )
+})
+
+test("metadata schema enforces core spell fields, enumerated source types, and incomplete reasons", () => {
+  const schema = {
+    required: ["title", "level", "classes", "source"],
+    fields: {
+      title: { type: "string", non_empty: true },
+      level: { type: "integer", minimum: 0, maximum: 9 },
+      classes: {
+        type: "array",
+        min_items: 1,
+        items: { type: "string", non_empty: true },
+      },
+      source: { type: "string", non_empty: true },
+      source_type: { type: "string", enum_from: "source_types" },
+      content_status: { type: "string", enum_from: "content_status" },
+      incomplete_reason: { type: "string", non_empty: true },
+    },
+  }
+  const definitions = {
+    source_types: ["SRD", "homebrew", "third-party", "campaign-original"],
+    content_status: ["complete", "incomplete", "draft"],
+  }
+  const metadata = {
+    title: "Test Spell",
+    level: 10,
+    classes: [],
+    source: "Example",
+    source_type: "unclassified",
+    content_status: "incomplete",
+  }
+
+  assert.deepEqual(validateMetadata(metadata, schema, definitions), [
+    '"level" must be at most 9',
+    '"classes" must contain at least 1 entries',
+    '"source_type" must be one of: SRD, homebrew, third-party, campaign-original',
+    '"incomplete_reason" is required when content_status is "incomplete"',
+  ])
+})
+
+test("spell count table covers every spell level and matches its metadata total", () => {
+  const levels = [
+    ["Cantrips", 2],
+    ["1st-Level", 1],
+    ...["2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th"].map((level) => [
+      `${level}-Level`,
+      0,
+    ]),
+  ]
+  const table = [
+    "| Level | Count |",
+    "| ----- | ----- |",
+    ...levels.map(([label, count]) => `| ${label} | ${count} |`),
+  ].join("\n")
+  const result = validateSpellCounts(table, [{ level: 0 }, { level: 0 }, { level: 1 }])
+
+  assert.deepEqual(result.errors, [])
+  assert.equal(result.displayedTotal, 3)
+  assert.equal(result.metadataTotal, 3)
+})
+
+test("spell count table detects category drift and newly added levels", () => {
+  const levels = [
+    ["Cantrips", 2],
+    ["1st-Level", 2],
+    ["2nd-Level", 0],
+    ...["3rd", "4th", "5th", "6th", "7th", "8th", "9th"].map((level) => [`${level}-Level`, 0]),
+  ]
+  const table = [
+    "| Level | Count |",
+    "| ----- | ----- |",
+    ...levels.map(([label, count]) => `| ${label} | ${count} |`),
+  ].join("\n")
+  const result = validateSpellCounts(table, [{ level: 0 }, { level: 1 }, { level: 2 }])
+
+  assert.deepEqual(result.errors, [
+    '"Cantrips" displays 2, but metadata contains 1',
+    '"1st-Level" displays 2, but metadata contains 1',
+    '"2nd-Level" displays 0, but metadata contains 1',
+  ])
+})
+
+test("spell count validation requires all ten spell-level categories", () => {
+  const levels = [
+    ["Cantrips", 0],
+    ...Array.from({ length: 9 }, (_, index) => [
+      `${["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th"][index]}-Level`,
+      index + 1,
+    ]),
+  ]
+  const table = [
+    "| Level | Count |",
+    "| ----- | ----- |",
+    ...levels.map(([label]) => `| ${label} | 1 |`),
+  ].join("\n")
+  const result = validateSpellCounts(
+    table,
+    levels.map(([, level]) => ({ level })),
+  )
+
+  assert.deepEqual(result.errors, [])
+  assert.equal(result.displayedTotal, 10)
+  assert.equal(result.metadataTotal, 10)
+})
+
+test("item count table normalizes plural display labels and detects missing categories", () => {
+  const table = [
+    "| Type | Count | Description |",
+    "| ---- | ----- | ----------- |",
+    "| Weapons | 2 | Weapons |",
+    "| Ammunition | 0 | Ammo |",
+    "| Armor | 0 | Armor |",
+    "| Potion | 0 | Potions |",
+    "| Ring | 0 | Rings |",
+    "| Rod | 0 | Rods |",
+    "| Scroll | 0 | Scrolls |",
+    "| Staves | 1 | Staves |",
+    "| Wand | 0 | Wands |",
+  ].join("\n")
+  const result = validateItemCounts(table, [
+    { item_type: "Weapon" },
+    { item_type: "Weapon" },
+    { item_type: "Staff" },
+    { item_type: "Wondrous Item" },
+  ])
+
+  assert.deepEqual(result.errors, [
+    'Metadata category "wondrous item" is missing from the count table',
+    'Item type "wondrous item" is missing from the count table',
+  ])
+})
+
+test("item count validation requires all ten item categories", () => {
+  const categories = [
+    "Ammunition",
+    "Armor",
+    "Potion",
+    "Ring",
+    "Rod",
+    "Scroll",
+    "Staff",
+    "Wand",
+    "Weapon",
+    "Wondrous Items",
+  ]
+  const table = [
+    "| Type | Count |",
+    "| ---- | ----- |",
+    ...categories.map((category) => `| ${category} | 1 |`),
+  ].join("\n")
+  const result = validateItemCounts(
+    table,
+    categories.map((item_type) => ({ item_type })),
+  )
+
+  assert.deepEqual(result.errors, [])
+  assert.equal(result.displayedTotal, 10)
+  assert.equal(result.metadataTotal, 10)
+})
 
 test("link-health allowlist requires precise, reasoned exceptions", () => {
   const allowlist = createLinkHealthAllowlist([
@@ -194,6 +404,33 @@ test("resolves exact paths, folder indexes, and page titles", () => {
     resolveWikilink({ target: "items/Ring of Protection.md" }, "index", index).filePath,
     "items/Ring of Protection.md",
   )
+})
+
+test("resolves stable aliases by title and explicit path", () => {
+  const index = createLinkIndex([
+    {
+      path: "campaigns/vyrun/index.md",
+      content: "---\ntitle: Vyrun\naliases: [vyrun/index, Old Vyrun]\n---\n",
+    },
+  ])
+
+  assert.equal(
+    resolveWikilink({ target: "Old Vyrun" }, "index", index).filePath,
+    "campaigns/vyrun/index.md",
+  )
+  assert.equal(
+    resolveWikilink({ target: "vyrun/index" }, "index", index).filePath,
+    "campaigns/vyrun/index.md",
+  )
+
+  const ambiguousIndex = createLinkIndex([
+    { path: "campaigns/old-vyrun.md", content: "---\naliases: [Old Vyrun]\n---\n" },
+    { path: "campaigns/vyrun-legacy.md", content: "---\naliases: [Old Vyrun]\n---\n" },
+  ])
+  assert.deepEqual(resolveWikilink({ target: "Old Vyrun" }, "index", ambiguousIndex), {
+    status: "ambiguous",
+    candidates: ["campaigns/old-vyrun.md", "campaigns/vyrun-legacy.md"],
+  })
 })
 
 test("reports ambiguous shortest matches rather than selecting a substring", () => {

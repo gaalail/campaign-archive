@@ -111,13 +111,6 @@ function normalizeTarget(value) {
     .toLocaleLowerCase("en-US")
 }
 
-function parseFrontmatterTitle(content) {
-  const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)
-  if (!match) return undefined
-
-  return parseYaml(match[1])?.title
-}
-
 function parseBaseFile(content) {
   const parsed = parseYaml(content)
   return {
@@ -185,16 +178,23 @@ function createPageRecord(filePath, content = "") {
   const withoutExtension = filePath.replace(/\.md$/i, "")
   const isIndex = /(?:^|\/)index$/i.test(withoutExtension)
   const routePath = withoutExtension.replace(/(?:^|\/)index$/i, "")
+  const metadata = (() => {
+    const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)
+    return match ? (parseYaml(match[1]) ?? {}) : {}
+  })()
+  const aliases = Array.isArray(metadata.aliases)
+    ? metadata.aliases
+    : typeof metadata.aliases === "string"
+      ? [metadata.aliases]
+      : []
   return {
     filePath,
     fullPath: normalizeTarget(withoutExtension),
     routePath: normalizeTarget(routePath),
     filename: isIndex ? undefined : normalizeTarget(path.posix.basename(withoutExtension)),
-    title: parseFrontmatterTitle(content),
-    metadata: (() => {
-      const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)
-      return match ? (parseYaml(match[1]) ?? {}) : {}
-    })(),
+    title: metadata.title,
+    aliases: aliases.map((alias) => normalizeTarget(String(alias))),
+    metadata,
   }
 }
 
@@ -279,13 +279,15 @@ export function resolveWikilink(link, sourcePath, index) {
     pageResult = resolveFromCandidates(index.pages, normalized, (page) => [
       page.fullPath,
       page.routePath,
+      ...page.aliases,
     ])
   } else {
     const directMatches = uniqueRecords(
       index.pages.filter(
         (page) =>
           page.filename === normalized ||
-          (page.title && normalizeTarget(page.title) === normalized),
+          (page.title && normalizeTarget(page.title) === normalized) ||
+          page.aliases.includes(normalized),
       ),
     )
     if (directMatches.length === 1) {
@@ -299,6 +301,7 @@ export function resolveWikilink(link, sourcePath, index) {
       pageResult = resolveFromCandidates(index.pages, normalized, (page) => [
         page.fullPath,
         page.routePath,
+        ...page.aliases,
       ])
     }
   }

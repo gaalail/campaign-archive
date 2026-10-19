@@ -16,6 +16,8 @@ import fs from "fs"
 import path from "path"
 import { fileURLToPath } from "url"
 import { parse as parseYaml } from "yaml"
+import { validateItemCounts, validateSpellCounts } from "./content-counts.js"
+import { validateMetadata } from "./metadata-schema.js"
 import {
   createLinkHealthAllowlist,
   extractWikilinks,
@@ -29,6 +31,9 @@ const __dirname = path.dirname(__filename)
 
 const CONTENT_DIR = path.resolve(__dirname, "../content")
 const LINK_ALLOWLIST_PATH = path.join(__dirname, "link-health-allowlist.json")
+const CONTENT_METADATA_SCHEMA = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "content-metadata-schema.json"), "utf-8"),
+)
 const RESULTS = {
   errors: [],
   warnings: [],
@@ -57,36 +62,23 @@ function walkDir(dir) {
   return files
 }
 
-// Parse frontmatter
-function parseFrontmatter(content) {
-  const match = content.match(/^---\n([\s\S]*?)\n---/)
-  if (!match) return {}
-
-  const fm = {}
-  match[1].split("\n").forEach((line) => {
-    const [key, ...rest] = line.split(":")
-    if (key.trim()) {
-      fm[key.trim()] = rest.join(":").trim()
-    }
-  })
-
-  return fm
-}
-
-function parseYamlFrontmatter(filepath) {
-  const content = fs.readFileSync(filepath, "utf-8")
+function parseFrontmatter(content, filepath) {
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/)
-  if (!match) {
-    return {}
-  }
+  if (!match) return {}
 
   try {
     return parseYaml(match[1]) || {}
   } catch (error) {
-    const displayPath = path.relative(path.dirname(CONTENT_DIR), filepath).replaceAll("\\", "/")
-    RESULTS.errors.push(`Invalid YAML frontmatter: ${displayPath}: ${error.message}`)
+    if (filepath) {
+      const displayPath = path.relative(path.dirname(CONTENT_DIR), filepath).replaceAll("\\", "/")
+      RESULTS.errors.push(`Invalid YAML frontmatter: ${displayPath}: ${error.message}`)
+    }
     return {}
   }
+}
+
+function parseYamlFrontmatter(filepath) {
+  return parseFrontmatter(fs.readFileSync(filepath, "utf-8"), filepath)
 }
 
 // Check for broken links
@@ -249,6 +241,91 @@ function checkMetadata() {
   if (missingMetadata === 0) {
     RESULTS.info.push(`✓ All metadata complete (${spells.length} spells, ${items.length} items)`)
   }
+
+  const schemaPages = Object.values(fileCache).flatMap((data) => {
+    const relative = path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/")
+    const parts = relative.split("/")
+    const isIndex = path.basename(data.filepath).toLowerCase() === "index.md"
+    const schemaName =
+      parts[0] === "spells" && !isIndex
+        ? "spell"
+        : parts[0] === "items" && !isIndex
+          ? "item"
+          : parts[0] === "campaigns"
+            ? "campaign"
+            : parts[0] === "character-options" && parts[1] === "classes" && !isIndex
+              ? "class"
+              : parts[0] === "character-options"
+                ? "character_option"
+                : undefined
+    return schemaName ? [{ data, relative, schemaName }] : []
+  })
+
+  let schemaErrorCount = 0
+  for (const { data, relative, schemaName } of schemaPages) {
+    const schema = CONTENT_METADATA_SCHEMA.schemas[schemaName]
+    const failures = validateMetadata(data.metadata, schema, CONTENT_METADATA_SCHEMA)
+    for (const failure of failures) {
+      RESULTS.errors.push(`${relative}: invalid ${schemaName} metadata: ${failure}`)
+      schemaErrorCount++
+    }
+  }
+
+  const legacyIncomplete = schemaPages.filter(
+    ({ data }) => data.metadata.incomplete === true && !data.metadata.content_status,
+  ).length
+  if (legacyIncomplete > 0) {
+    RESULTS.warnings.push(
+      `${legacyIncomplete} content entries still use legacy incomplete metadata without content_status`,
+    )
+  }
+  if (schemaErrorCount === 0) {
+    RESULTS.info.push(
+      `✓ Metadata schemas validated (${schemaPages.length} class, spell, item, campaign, and character-option pages)`,
+    )
+  }
+}
+
+function checkDisplayedCounts() {
+  console.log("\n📍 Checking displayed content counts...")
+  const entriesIn = (section) =>
+    Object.values(fileCache)
+      .filter((data) => {
+        const relative = path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/")
+        return (
+          relative.startsWith(`${section}/`) &&
+          path.basename(data.filepath).toLowerCase() !== "index.md"
+        )
+      })
+      .map((data) => data.metadata)
+
+  const checks = [
+    {
+      section: "spells",
+      result: validateSpellCounts(
+        fs.readFileSync(path.join(CONTENT_DIR, "spells/index.md"), "utf-8"),
+        entriesIn("spells"),
+      ),
+    },
+    {
+      section: "items",
+      result: validateItemCounts(
+        fs.readFileSync(path.join(CONTENT_DIR, "items/index.md"), "utf-8"),
+        entriesIn("items"),
+      ),
+    },
+  ]
+
+  for (const { section, result } of checks) {
+    for (const error of result.errors) {
+      RESULTS.errors.push(`${section}/index.md: ${error}`)
+    }
+    if (result.errors.length === 0) {
+      RESULTS.info.push(
+        `✓ ${section} count table matches metadata (${result.metadataTotal} entries across all displayed categories)`,
+      )
+    }
+  }
 }
 
 function checkContentRelationships() {
@@ -256,17 +333,20 @@ function checkContentRelationships() {
   const initialErrorCount = RESULTS.errors.length
   const contentEntries = Object.values(fileCache)
   const relativePath = (filepath) => path.relative(CONTENT_DIR, filepath).replaceAll("\\", "/")
-  const classPages = new Map(
-    contentEntries
-      .filter((entry) => {
-        const relative = relativePath(entry.filepath)
-        return (
-          relative.startsWith("character-options/classes/") &&
-          path.basename(entry.filepath).toLowerCase() !== "index.md"
-        )
-      })
-      .map((entry) => [path.basename(entry.filepath, ".md").toLowerCase(), entry.filepath]),
-  )
+  const classPages = new Map()
+  for (const entry of contentEntries) {
+    const relative = relativePath(entry.filepath)
+    if (
+      !relative.startsWith("character-options/classes/") ||
+      path.basename(entry.filepath).toLowerCase() === "index.md"
+    ) {
+      continue
+    }
+    const title = String(entry.metadata.title || path.basename(entry.filepath, ".md"))
+      .trim()
+      .toLocaleLowerCase("en-US")
+    classPages.set(title, [...(classPages.get(title) ?? []), entry])
+  }
   const subclassPages = contentEntries.filter((entry) => {
     const relative = relativePath(entry.filepath)
     return (
@@ -286,7 +366,7 @@ function checkContentRelationships() {
     }
 
     const parentKey = parentClass.trim().toLowerCase()
-    if (!classPages.has(parentKey)) {
+    if (!classPages.has(parentKey) || classPages.get(parentKey).length !== 1) {
       RESULTS.errors.push(`Unknown parent_class "${parentClass}" on ${displayPath}`)
       continue
     }
@@ -340,6 +420,84 @@ function checkContentRelationships() {
         continue
       }
       catalogues.set(label, listFile)
+    }
+  }
+
+  const spellClasses = new Map()
+  const spellEntries = contentEntries.filter((entry) =>
+    relativePath(entry.filepath).startsWith("spells/"),
+  )
+  for (const spell of spellEntries) {
+    const metadata = spell.metadata
+    if (!Array.isArray(metadata.classes)) continue
+    for (const className of metadata.classes) {
+      if (typeof className !== "string" || !className.trim()) continue
+      const normalized = className.trim().toLocaleLowerCase("en-US")
+      const coverage = spellClasses.get(normalized) ?? {
+        name: className.trim(),
+        count: 0,
+        sources: new Map(),
+      }
+      coverage.count++
+      const source = String(metadata.source || "Unspecified")
+      coverage.sources.set(source, (coverage.sources.get(source) ?? 0) + 1)
+      spellClasses.set(normalized, coverage)
+    }
+  }
+
+  const classFiltersIn = (value, labels) => {
+    if (typeof value === "string") {
+      const match = value.trim().match(/^classes\.contains\(["'](.+)["']\)$/)
+      if (match) labels.add(match[1].trim().toLocaleLowerCase("en-US"))
+    } else if (Array.isArray(value)) {
+      value.forEach((item) => classFiltersIn(item, labels))
+    } else if (value && typeof value === "object") {
+      Object.values(value).forEach((item) => classFiltersIn(item, labels))
+    }
+  }
+  for (const [classKey, coverage] of spellClasses) {
+    const matches = classPages.get(classKey) ?? []
+    if (matches.length !== 1) {
+      RESULTS.errors.push(
+        `Spell class "${coverage.name}" resolves to ${matches.length} class pages instead of exactly one`,
+      )
+      continue
+    }
+
+    const classPage = matches[0]
+    const catalogueName =
+      path.basename(classPage.filepath, ".md").toLocaleLowerCase("en-US").replace(/\s+/g, "-") +
+      "-spells.base"
+    const cataloguePath = path.join(listDirectory, catalogueName)
+    if (!fs.existsSync(cataloguePath)) {
+      RESULTS.errors.push(
+        `Class "${coverage.name}" has tagged spells but no spell catalogue ${relativePath(cataloguePath)}`,
+      )
+      continue
+    }
+    const linked = classPage.links.some(
+      (link) =>
+        link.embed && path.posix.basename(link.target).toLocaleLowerCase("en-US") === catalogueName,
+    )
+    if (!linked) {
+      RESULTS.errors.push(
+        `Class page does not embed its spell catalogue: ${relativePath(classPage.filepath)} -> ${relativePath(cataloguePath)}`,
+      )
+    }
+
+    try {
+      const catalogue = parseYaml(fs.readFileSync(cataloguePath, "utf-8")) || {}
+      const filters = new Set()
+      classFiltersIn(catalogue.filters, filters)
+      if (!filters.has(classKey)) {
+        RESULTS.errors.push(
+          `Spell catalogue does not filter classes.contains("${coverage.name}"): ${relativePath(cataloguePath)}`,
+        )
+      }
+    } catch (error) {
+      RESULTS.errors.push(
+        `Invalid YAML catalogue: ${relativePath(cataloguePath)}: ${error.message}`,
+      )
     }
   }
 
@@ -409,6 +567,24 @@ function checkContentRelationships() {
       `Content relationships scanned (${validParentRelationships}/${subclassPages.length} subclass parents, ${taggedSpellCounts.size}/${catalogues.size} subclass spell catalogues)`,
     )
   }
+
+  const spellCoverage = [...spellClasses.values()]
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map(({ name, count }) => `${name}: ${count}`)
+  RESULTS.info.push(`Class spell coverage: ${spellCoverage.join("; ")}.`)
+  const artificerCoverage = spellClasses.get("artificer")
+  if (artificerCoverage) {
+    RESULTS.info.push(
+      `Artificer catalogue source coverage: ${[...artificerCoverage.sources]
+        .map(([source, count]) => `${source} ${count}`)
+        .join(", ")}; spell metadata does not establish complete Artificer supplement coverage.`,
+    )
+  }
+  if (spellClasses.has("thanatomancer")) {
+    RESULTS.info.push(
+      "Thanatomancer spell access is additionally constrained by its class rules: eligible schools are necromancy, enchantment, and divination from the cleric, druid, and wizard lists.",
+    )
+  }
 }
 
 // Check for duplicate content
@@ -471,7 +647,7 @@ function validate() {
   // Cache all files
   files.forEach((filepath) => {
     const content = fs.readFileSync(filepath, "utf-8")
-    const metadata = parseFrontmatter(content)
+    const metadata = parseFrontmatter(content, filepath)
     const links = extractWikilinks(content)
 
     fileCache[filepath] = {
@@ -486,6 +662,7 @@ function validate() {
   checkWikilinks(linkIndex, allowlist)
   checkUnlinkedPages(linkIndex)
   checkMetadata()
+  checkDisplayedCounts()
   checkContentRelationships()
   checkDuplicates()
   checkIncomplete()

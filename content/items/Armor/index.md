@@ -23,7 +23,7 @@ Protective equipment for characters
 ## Related Sections
 
 - [[items|All Items]]
-- [[character-options/classes|Classes]] � Class-specific equipment
-- [[Character Options]] � Build your character
+- [[character-options/classes|Classes]] - Class-specific equipment
+- [[Character Options]] - Build your character
 
 ---

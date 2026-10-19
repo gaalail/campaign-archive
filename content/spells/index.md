@@ -4,7 +4,7 @@ title: Spells
 
 # Spells
 
-**554+ spells available** | Organized by level | Core of magical characters
+**Browse spells by level** | Organized for quick reference | Core of magical characters
 
 ---
 
