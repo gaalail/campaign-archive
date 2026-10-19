@@ -7,6 +7,7 @@ import {
   createLinkHealthAllowlist,
   createLinkIndex,
   extractWikilinks,
+  findAliasConflicts,
   findGeneratedViewPages,
   resolveWikilink,
 } from "./link-health.js"
@@ -441,6 +442,25 @@ test("resolves stable aliases by title and explicit path", () => {
     status: "ambiguous",
     candidates: ["campaigns/old-vyrun.md", "campaigns/vyrun-legacy.md"],
   })
+})
+
+test("detects duplicate aliases and aliases that shadow canonical routes", () => {
+  const index = createLinkIndex([
+    { path: "archive/old-name.md", content: "---\naliases: [legacy-name, rules]\n---\n" },
+    { path: "archive/another-old-name.md", content: "---\naliases: [legacy-name]\n---\n" },
+    { path: "rules/index.md", content: "---\ntitle: Rules\n---\n" },
+  ])
+
+  assert.deepEqual(findAliasConflicts(index), [
+    {
+      alias: "legacy-name",
+      reason: "assigned to multiple pages: archive/old-name.md, archive/another-old-name.md",
+    },
+    {
+      alias: "rules",
+      reason: "conflicts with canonical page path: rules/index.md",
+    },
+  ])
 })
 
 test("reports ambiguous shortest matches rather than selecting a substring", () => {

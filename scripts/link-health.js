@@ -220,6 +220,51 @@ export function createLinkIndex(files) {
   return { pages, resources }
 }
 
+export function findAliasConflicts(index) {
+  const canonicalPages = new Map()
+  const aliasPages = new Map()
+
+  for (const page of index.pages) {
+    for (const route of new Set([page.fullPath, page.routePath])) {
+      const pages = canonicalPages.get(route) ?? []
+      pages.push(page)
+      canonicalPages.set(route, pages)
+    }
+    for (const alias of page.aliases) {
+      const pages = aliasPages.get(alias) ?? []
+      pages.push(page)
+      aliasPages.set(alias, pages)
+    }
+  }
+
+  const conflicts = []
+  for (const [alias, pages] of aliasPages) {
+    const owners = [...new Map(pages.map((page) => [page.filePath, page])).values()]
+    if (owners.length > 1) {
+      conflicts.push({
+        alias,
+        reason: `assigned to multiple pages: ${owners.map((page) => page.filePath).join(", ")}`,
+      })
+      continue
+    }
+
+    const canonicalOwners = [
+      ...new Map((canonicalPages.get(alias) ?? []).map((page) => [page.filePath, page])).values(),
+    ]
+    const otherCanonicalOwners = canonicalOwners.filter(
+      (page) => page.filePath !== owners[0].filePath,
+    )
+    if (otherCanonicalOwners.length > 0) {
+      conflicts.push({
+        alias,
+        reason: `conflicts with canonical page path: ${otherCanonicalOwners.map((page) => page.filePath).join(", ")}`,
+      })
+    }
+  }
+
+  return conflicts
+}
+
 export function loadLinkIndex(contentDirectory) {
   const files = []
   const visit = (directory) => {

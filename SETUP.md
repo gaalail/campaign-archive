@@ -10,6 +10,8 @@ Live site: https://gaalail.github.io/campaign-archive
 
 Every spell, item, character option, and monster has a **Source** field and a required **Source type**. Use `SRD` for SRD 5.1, `third-party` for external works such as Corpus Angelus and Erevan's Guide, and `homebrew` for original homebrew sources including Alternate Fighter and Alternate Monk. Source type is validated whenever a source is present. Anything that isn't SRD shows on that page's Homebrew tab. To add another book or source name, edit the Source list in `.pages.yml`.
 
+Use the **Legacy URL redirects** field when renaming or moving a page. Keep each previous route as a slash-separated alias so Quartz emits a redirect; archive validation rejects aliases that collide with another alias or a current page route.
+
 ## Text format
 
 - The text box is plain Markdown on purpose, so `[[links]]` and dropdowns survive. Headings start with `##`.
@@ -40,7 +42,7 @@ Some class features are choices, not things a class gains automatically. Big lis
 
 ## Metadata schemas and spell coverage
 
-`scripts/content-metadata-schema.json` defines required and typed metadata for classes, spells, items, campaigns, and character options. The archive validator checks these schemas, verifies that every class name in spell metadata resolves to exactly one class page, and confirms that each class page embeds the matching spell catalogue whose filter uses that class name. Its report lists spell counts by class and source. `source_type` accepts `SRD`, `homebrew`, `third-party`, or `campaign-original`; where it is present, the validator rejects values outside that list.
+`scripts/content-metadata-schema.json` defines required and typed metadata for classes, spells, items, campaigns, and character options. The archive validator checks these schemas, verifies that every class name in spell metadata resolves to exactly one class page, and confirms that each class page embeds the matching spell catalogue whose filter uses that class name. Its report lists spell counts by class and source. `source_type` accepts `SRD`, `homebrew`, `third-party`, or `campaign-original`; it is required whenever a page has a `source`.
 
 Thanatomancer spell eligibility has additional rules beyond the class tag: spells must be necromancy, enchantment, or divination and come from the cleric, druid, or wizard spell lists. Its spell catalogue is the metadata-tagged set; the class rules remain authoritative for actual eligibility. Artificer spell entry sources likewise do not identify which supplement establishes class access; the class page documents that its current catalogue is not complete supplement coverage.
 

@@ -21,6 +21,7 @@ import { validateMetadata } from "./metadata-schema.js"
 import {
   createLinkHealthAllowlist,
   extractWikilinks,
+  findAliasConflicts,
   findGeneratedViewPages,
   loadLinkIndex,
   resolveWikilink,
@@ -676,6 +677,16 @@ function validate() {
   const files = walkDir(CONTENT_DIR)
   console.log(`Found ${files.length} markdown files\n`)
   const linkIndex = loadLinkIndex(CONTENT_DIR)
+  const aliasCount = linkIndex.pages.reduce((total, page) => total + page.aliases.length, 0)
+  const aliasConflicts = findAliasConflicts(linkIndex)
+  for (const conflict of aliasConflicts) {
+    RESULTS.errors.push(`Alias "${conflict.alias}" ${conflict.reason}`)
+  }
+  if (aliasConflicts.length === 0) {
+    RESULTS.info.push(
+      `✓ ${aliasCount} legacy URL aliases are unique and do not shadow canonical routes`,
+    )
+  }
   const allowlist = createLinkHealthAllowlist(
     JSON.parse(fs.readFileSync(LINK_ALLOWLIST_PATH, "utf-8")),
   )
