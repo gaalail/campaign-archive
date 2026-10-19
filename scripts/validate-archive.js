@@ -17,6 +17,7 @@ import path from "path"
 import { fileURLToPath } from "url"
 import { parse as parseYaml } from "yaml"
 import {
+  createLinkHealthAllowlist,
   extractWikilinks,
   findGeneratedViewPages,
   loadLinkIndex,
@@ -27,6 +28,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 const CONTENT_DIR = path.resolve(__dirname, "../content")
+const LINK_ALLOWLIST_PATH = path.join(__dirname, "link-health-allowlist.json")
 const RESULTS = {
   errors: [],
   warnings: [],
@@ -88,38 +90,60 @@ function parseYamlFrontmatter(filepath) {
 }
 
 // Check for broken links
-function checkWikilinks(linkIndex) {
+function checkWikilinks(linkIndex, allowlist) {
   console.log("\n📍 Checking wikilinks...")
   let brokenCount = 0
   let ambiguousCount = 0
+  let allowlistedCount = 0
 
   for (const [filepath, data] of Object.entries(fileCache)) {
     const sourcePath = path
       .relative(CONTENT_DIR, filepath)
       .replaceAll("\\", "/")
       .replace(/\.md$/i, "")
+    const allowlistSource = path.relative(CONTENT_DIR, filepath).replaceAll("\\", "/")
     const displayPath = path.relative(path.dirname(CONTENT_DIR), filepath).replaceAll("\\", "/")
     data.links.forEach((link) => {
       const result = resolveWikilink(link, sourcePath, linkIndex)
-      if (result.status === "missing") {
+      if (result.status === "missing" || result.status === "ambiguous") {
         const kind = link.embed ? "embed" : "wikilink"
+        const allowlisted = allowlist.consume({
+          source: allowlistSource,
+          target: link.target,
+          fragment: link.fragment,
+          kind,
+          status: result.status,
+          candidates: result.candidates,
+        })
+        if (allowlisted) {
+          allowlistedCount++
+          RESULTS.info.push(
+            `Allowlisted ${result.status} ${kind}: ${displayPath}:${link.line}:${link.column} [[${link.target}${link.fragment ? `#${link.fragment}` : ""}]] (${allowlisted.reason})`,
+          )
+          link.result = result
+          return
+        }
         const destination = `${link.target}${link.fragment ? `#${link.fragment}` : ""}`
         RESULTS.errors.push(
-          `${displayPath}:${link.line}:${link.column}: unresolved ${kind} [[${destination}]]`,
+          result.status === "missing"
+            ? `${displayPath}:${link.line}:${link.column}: unresolved ${kind} [[${destination}]]`
+            : `${displayPath}:${link.line}:${link.column}: ambiguous ${kind} [[${destination}]] matches ${result.candidates.join(", ")}`,
         )
-        brokenCount++
-      } else if (result.status === "ambiguous") {
-        RESULTS.warnings.push(
-          `${displayPath}:${link.line}:${link.column}: ambiguous wikilink [[${link.target}]] matches ${result.candidates.join(", ")}`,
-        )
-        ambiguousCount++
+        if (result.status === "missing") brokenCount++
+        else ambiguousCount++
       }
       link.result = result
     })
   }
 
+  for (const entry of allowlist.unused()) {
+    RESULTS.errors.push(
+      `Unused link-health allowlist entry: ${entry.source}: ${entry.status} ${entry.kind} [[${entry.target}${entry.fragment ? `#${entry.fragment}` : ""}]]`,
+    )
+  }
+
   RESULTS.info.push(
-    `Wikilinks checked: ${Object.values(fileCache).reduce((count, data) => count + data.links.length, 0)}; unresolved: ${brokenCount}; ambiguous: ${ambiguousCount}.`,
+    `Wikilinks checked: ${Object.values(fileCache).reduce((count, data) => count + data.links.length, 0)}; unresolved: ${brokenCount}; ambiguous: ${ambiguousCount}; allowlisted: ${allowlistedCount}.`,
   )
 }
 
@@ -440,6 +464,9 @@ function validate() {
   const files = walkDir(CONTENT_DIR)
   console.log(`Found ${files.length} markdown files\n`)
   const linkIndex = loadLinkIndex(CONTENT_DIR)
+  const allowlist = createLinkHealthAllowlist(
+    JSON.parse(fs.readFileSync(LINK_ALLOWLIST_PATH, "utf-8")),
+  )
 
   // Cache all files
   files.forEach((filepath) => {
@@ -456,7 +483,7 @@ function validate() {
   })
 
   // Run checks
-  checkWikilinks(linkIndex)
+  checkWikilinks(linkIndex, allowlist)
   checkUnlinkedPages(linkIndex)
   checkMetadata()
   checkContentRelationships()

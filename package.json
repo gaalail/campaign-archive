@@ -14,7 +14,7 @@
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
-    "check": "tsc --noEmit && npx prettier . --check && npm run lint:markdown",
+    "check": "tsc --noEmit && npx prettier . --check && npm run lint:markdown && npm run validate:archive",
     "format": "npx prettier . --write",
     "format:check:code": "npx prettier \"quartz/**/*.{ts,tsx,js,mjs,cjs,css,scss}\" \"scripts/**/*.{ts,tsx,js,mjs,cjs}\" --check",
     "format:code": "npx prettier \"quartz/**/*.{ts,tsx,js,mjs,cjs,css,scss}\" \"scripts/**/*.{ts,tsx,js,mjs,cjs}\" --write",

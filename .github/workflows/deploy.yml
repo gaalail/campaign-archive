@@ -31,6 +31,8 @@ jobs:
         run: npm ci
       - name: Check code and Markdown
         run: npm run check
+      - name: Run tests
+        run: npm test
       - name: Build Quartz
         run: node ./quartz/bootstrap-cli.mjs build
       - name: Upload artifact

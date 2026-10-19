@@ -56,7 +56,7 @@ Put new files in the `content` folder, then commit and push with GitHub Desktop.
 
 ## Checking links locally
 
-Run `npm run validate:archive:report` to scan wikilinks, including embedded views and images. Unresolved links are errors; ambiguous matches and pages without explicit wikilinks are warnings. Generated `.base` views are not included in the incoming-link count. The report-only command is for reviewing existing content and does not block deployment. Once the current findings have been reviewed, `npm run validate:archive` runs the same checks and exits unsuccessfully if unresolved links remain.
+Run `npm run validate:archive:report` to scan wikilinks, including embedded views and images. The report-only command is for reviewing findings and does not fail. `npm run validate:archive` fails on unresolved or ambiguous links; intentional exceptions must be documented precisely in `scripts/link-health-allowlist.json`, and stale exceptions also fail validation. Each exception identifies its `source` path relative to `content/` (including `.md`), `target`, `kind` (`wikilink` or `embed`), `status` (`missing` or `ambiguous`), and a non-empty `reason`. Ambiguous exceptions must also list their exact `candidates`; add `fragment` when the link uses one. For example: `{"source":"rules/index.md","target":"External Reference","kind":"wikilink","status":"missing","reason":"Intentionally referenced but not hosted here"}`. Generated `.base` views are not included in the incoming-link count. `npm run check` includes the blocking archive validation, while CI also runs the test suite and builds the site from a clean checkout.
 
 ## Formatting and Markdown checks
 

@@ -14,6 +14,91 @@ const EMBEDDABLE_EXTENSIONS = new Set([
   ".avif",
 ])
 
+export function createLinkHealthAllowlist(entries) {
+  if (!Array.isArray(entries)) {
+    throw new TypeError("Link-health allowlist must be an array")
+  }
+
+  const allowed = new Map()
+  entries.forEach((entry, index) => {
+    const label = `Link-health allowlist entry ${index + 1}`
+    if (!entry || typeof entry !== "object" || Array.isArray(entry)) {
+      throw new TypeError(`${label} must be an object`)
+    }
+    const { source, target, fragment, kind, status, reason, candidates } = entry
+    if (
+      typeof source !== "string" ||
+      !source.endsWith(".md") ||
+      source.startsWith("/") ||
+      source.includes("\\") ||
+      source.split("/").some((part) => part === "." || part === "..") ||
+      typeof target !== "string" ||
+      !target.trim() ||
+      !["wikilink", "embed"].includes(kind) ||
+      !["missing", "ambiguous"].includes(status) ||
+      typeof reason !== "string" ||
+      !reason.trim()
+    ) {
+      throw new TypeError(
+        `${label} requires a content-relative Markdown source, target, kind, status, and reason`,
+      )
+    }
+    if (fragment !== undefined && (typeof fragment !== "string" || !fragment.trim())) {
+      throw new TypeError(`${label} fragment must be a non-empty string when provided`)
+    }
+    if (
+      status === "ambiguous" &&
+      (!Array.isArray(candidates) ||
+        candidates.length < 2 ||
+        candidates.some((candidate) => typeof candidate !== "string" || !candidate))
+    ) {
+      throw new TypeError(`${label} must specify candidates for an ambiguous link`)
+    }
+    if (status === "missing" && candidates !== undefined) {
+      throw new TypeError(`${label} cannot specify candidates for a missing link`)
+    }
+
+    const key = JSON.stringify([source, target, fragment ?? "", kind, status])
+    if (allowed.has(key)) throw new TypeError(`${label} duplicates an earlier entry`)
+    allowed.set(key, {
+      source,
+      target,
+      fragment,
+      kind,
+      status,
+      reason,
+      candidates: candidates ? [...candidates].sort() : undefined,
+      used: false,
+    })
+  })
+
+  return {
+    consume(finding) {
+      const key = JSON.stringify([
+        finding.source,
+        finding.target,
+        finding.fragment ?? "",
+        finding.kind,
+        finding.status,
+      ])
+      const entry = allowed.get(key)
+      if (!entry) return undefined
+      if (
+        entry.candidates &&
+        (!Array.isArray(finding.candidates) ||
+          JSON.stringify(entry.candidates) !== JSON.stringify([...finding.candidates].sort()))
+      ) {
+        return undefined
+      }
+      entry.used = true
+      return entry
+    },
+    unused() {
+      return [...allowed.values()].filter((entry) => !entry.used)
+    },
+  }
+}
+
 function normalizeTarget(value) {
   return value
     .replaceAll("\\", "/")

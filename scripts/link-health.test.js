@@ -1,11 +1,113 @@
 import assert from "node:assert/strict"
 import test from "node:test"
 import {
+  createLinkHealthAllowlist,
   createLinkIndex,
   extractWikilinks,
   findGeneratedViewPages,
   resolveWikilink,
 } from "./link-health.js"
+
+test("link-health allowlist requires precise, reasoned exceptions", () => {
+  const allowlist = createLinkHealthAllowlist([
+    {
+      source: "rules/index.md",
+      target: "External Reference",
+      kind: "wikilink",
+      status: "missing",
+      reason: "Referenced in the source manuscript but not hosted here",
+    },
+    {
+      source: "rules/index.md",
+      target: "Legacy Name",
+      fragment: "Overview",
+      kind: "embed",
+      status: "ambiguous",
+      candidates: ["rules/legacy.md", "campaigns/legacy.md"],
+      reason: "The source intentionally documents both archived pages",
+    },
+  ])
+
+  assert.equal(
+    allowlist.consume({
+      source: "other/index.md",
+      target: "External Reference",
+      kind: "wikilink",
+      status: "missing",
+    }),
+    undefined,
+  )
+  assert.equal(
+    allowlist.consume({
+      source: "rules/index.md",
+      target: "Legacy Name",
+      fragment: "Overview",
+      kind: "embed",
+      status: "ambiguous",
+      candidates: ["rules/legacy.md", "campaigns/renamed.md"],
+    }),
+    undefined,
+  )
+  assert.equal(allowlist.unused().length, 2)
+  assert.equal(
+    allowlist.consume({
+      source: "rules/index.md",
+      target: "External Reference",
+      kind: "wikilink",
+      status: "missing",
+    }).reason,
+    "Referenced in the source manuscript but not hosted here",
+  )
+  assert.equal(
+    allowlist.consume({
+      source: "rules/index.md",
+      target: "Legacy Name",
+      fragment: "Overview",
+      kind: "embed",
+      status: "ambiguous",
+      candidates: ["campaigns/legacy.md", "rules/legacy.md"],
+    }).reason,
+    "The source intentionally documents both archived pages",
+  )
+  assert.deepEqual(allowlist.unused(), [])
+})
+
+test("link-health allowlist rejects invalid and duplicate entries", () => {
+  assert.throws(() => createLinkHealthAllowlist({}), /must be an array/)
+  assert.throws(
+    () =>
+      createLinkHealthAllowlist([
+        {
+          source: "rules/index.md",
+          target: "Legacy Name",
+          kind: "wikilink",
+          status: "ambiguous",
+          reason: "Intentional",
+        },
+      ]),
+    /must specify candidates/,
+  )
+  assert.throws(
+    () =>
+      createLinkHealthAllowlist([
+        {
+          source: "rules/index.md",
+          target: "External",
+          kind: "wikilink",
+          status: "missing",
+          reason: "Intentional",
+        },
+        {
+          source: "rules/index.md",
+          target: "External",
+          kind: "wikilink",
+          status: "missing",
+          reason: "Duplicate",
+        },
+      ]),
+    /duplicates an earlier entry/,
+  )
+})
 
 test("extracts aliases, embeds, fragments, and source locations", () => {
   const links = extractWikilinks(
