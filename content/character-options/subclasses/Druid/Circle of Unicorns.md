@@ -3,6 +3,7 @@ title: Circle of Unicorns
 parent_class: Druid
 summary: Druid Circle for the Druid
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Whether they look for unicorns as they roam the wild, have spent their youth among them, or now try to protect them, the druids of the Circle of Unicorns share the beliefs and ideals that unicorns symbolize. The druids of the circle of unicorns prioritize healing and the protection of living things. They travel around the wild in search of creatures to whom they can offer their help.

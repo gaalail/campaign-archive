@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Strength or Dexterity 13"
 summary: "When you fight with two weapons, you can make your off-hand attack as part of the Attack action instead of as a bonus action, and add your ability modifier to its damage."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 When you fight with two weapons, you can make your off-hand attack as part of the Attack action instead of as a bonus action, and add your ability modifier to its damage. You can't also make an attack with your bonus action that turn.

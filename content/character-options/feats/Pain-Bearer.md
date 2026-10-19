@@ -3,6 +3,7 @@ title: Pain-Bearer
 prerequisite: Constitution 13 or higher
 summary: "Prerequisite: Constitution 13 or higher"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Constitution 13 or higher

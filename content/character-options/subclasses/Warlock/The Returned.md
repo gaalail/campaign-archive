@@ -3,6 +3,7 @@ title: The Returned
 parent_class: Warlock
 summary: Otherworldly Patron for the Warlock
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You died and returned to life with the aid of an angel. At the moment of your death, an angel saw you dying and decided to visit your spirit before it left your body for all eternity. Perhaps it was because you led a life full of good deeds and you had yet a part to play in the grand scheme of things. Maybe you had great potential that you are not aware of, or you lived a life of sin, and haven't a clue what merited you for this second chance. Whatever the reason may be, you now have a second chance at life, along with some conditions and instructions you must obey. When you accepted them, the angel fused itself with your body and spirit, granting you angelic features and a new existence. You are now a host carrying your angelic savior within.

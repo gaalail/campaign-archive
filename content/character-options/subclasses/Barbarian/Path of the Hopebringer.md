@@ -3,6 +3,7 @@ title: Path of the Hopebringer
 parent_class: Barbarian
 summary: Primal Path for the Barbarian
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Most great forces, entities, and deities are prone to making mistakes, losing their standing in the process. In other words, everything can be defeated; everything but hope. When you walk the Path of the Hopebringer, mystical forces shrouded in and armed with hope assist you on your journeys as you keep hope alive and carry it in your heart to shine upon others. With your guidance, you and your allies always preserve the hope in your hearts and (eventually) prevail.

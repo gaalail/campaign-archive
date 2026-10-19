@@ -6,6 +6,7 @@ min_level: 10
 prerequisite: None
 summary: Sacred Language contains the power of all creation, including that of the elements.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Sacred Language contains the power of all creation, including that of the elements. You can change the damage type of your Sacred Language (Invective) feature to acid, cold, fire, lightning (one of your choice), before you use it.

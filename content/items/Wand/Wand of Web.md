@@ -5,6 +5,7 @@ item_type: Wand
 attunement: true
 summary: Wand, uncommon (requires attunement by a spellcaster)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Wand, uncommon (requires attunement by a spellcaster)_

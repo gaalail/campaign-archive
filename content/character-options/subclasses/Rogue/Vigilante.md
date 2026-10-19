@@ -3,6 +3,7 @@ title: Vigilante
 parent_class: Rogue
 summary: Roguish Archetype for the Rogue
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Most Vigilantes are investigators, bounty hunters, and local heroes. They work to punish crime and they value justice above practically anything else. Most vigilantes are villains and criminals in the eyes of those who prefer law over justice. It is common for a vigilante to work with people who share the same perspective about justice as they do, and it is also common for a vigilante to act as a judge, a jury, and an executioner all at once.

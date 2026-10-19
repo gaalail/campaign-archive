@@ -14,6 +14,7 @@ components: S
 ritual: true
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _1st-level transmutation (ritual)_

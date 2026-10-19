@@ -3,6 +3,7 @@ title: Angelic Strength
 prerequisite: None
 summary: Your body is enhanced by angelic essences and you are blessed with the strength of an angel.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Your body is enhanced by angelic essences and you are blessed with the strength of an angel. You gain the following benefits:

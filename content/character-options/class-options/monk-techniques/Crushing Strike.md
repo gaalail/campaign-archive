@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "Once per turn when you hit a target with an unarmed strike, you can spend Ki (up to your Wisdom modifier) to empower it with deadly force"
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

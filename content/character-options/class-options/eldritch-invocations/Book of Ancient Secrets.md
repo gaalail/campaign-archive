@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: Pact of the Tome
 summary: You can now inscribe magical rituals in your Book of Shadows.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can now inscribe magical rituals in your Book of Shadows. Choose two 1st-level spells that have the ritual tag from any class's spell list (the two needn't be from the same list). The spells appear in the book and don't count against the number of spells you know. With your Book of Shadows in hand, you can cast the chosen spells as rituals. You can't cast the spells except as rituals, unless you've learned them by some other means. You can also cast a warlock spell you know as a ritual if it has the ritual tag.

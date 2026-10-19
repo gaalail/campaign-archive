@@ -3,6 +3,7 @@ title: Evocation
 parent_class: Wizard
 summary: Arcane Tradition for the Wizard
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Arcane Tradition (Wizard subclass)_

@@ -3,6 +3,7 @@ title: College of Hope
 parent_class: Bard
 summary: Bard College for the Bard
 source: Corpus Angelus
+source_type: third-party
 ---
 
 The College of Hope focuses on all the good that surrounds us, and its members believe that hope moves us forward in life. They perform in honor of the bright and happy days to come, as a gentle reminder of the beauty in life; for it is impossible to fully be aware of it at all times. Usually, the members of this college visit battlefields or places in crisis to lift the spirits of those within.

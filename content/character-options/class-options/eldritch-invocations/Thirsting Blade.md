@@ -6,6 +6,7 @@ min_level: 5
 prerequisite: Pact of the Blade
 summary: You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can attack with your pact weapon twice, instead of once, whenever you take the Attack action on your turn.

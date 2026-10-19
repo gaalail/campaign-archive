@@ -3,6 +3,7 @@ title: Starborn
 parent_class: Sorcerer
 summary: Sorcerous Origin for the Sorcerer
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You carry the heavenly energy of stars in your veins and your innate magic comes from the arcane forces woven around the stars. Whether you are somehow related to a star incarnate, were blessed by a divine being native to the stars, or found this gift through your own endeavors in the field of star magic; you are now of the stars. You shine bright with the gift bestowed upon you and illuminate the darkness.

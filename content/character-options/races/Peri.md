@@ -2,6 +2,7 @@
 title: Peri
 summary: Medium fey; speed 30 ft.; +2 Charisma; subraces Curiosity, Love, and Valor
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > There they were on stage, with their performance illuminated by magical flakes. The audience gasped in astonishment as the naked figures moved their bodies closer to each other. Then, a red flame burst upon the stage and I saw her. She was beautiful, they were all beautiful and were as naked as the top of my bald head. It was the first time ever that I witnessed such courage from those so alien but so familiar at the same time. They taught us not to be ashamed of love.

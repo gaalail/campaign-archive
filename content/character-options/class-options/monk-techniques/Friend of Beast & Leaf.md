@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "Your Ki can read the energies of the natural world"
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 9th-level Monk
 ---
 

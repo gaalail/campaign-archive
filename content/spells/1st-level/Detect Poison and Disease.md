@@ -15,6 +15,7 @@ components: V, S, M
 ritual: true
 concentration: true
 source: SRD 5.1
+source_type: SRD
 ---
 
 _1st-level divination (ritual)_

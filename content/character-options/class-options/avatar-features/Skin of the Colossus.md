@@ -6,6 +6,7 @@ min_level: 3
 prerequisite: None
 summary: Parts of your skin become semi-transparent white quartz.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Parts of your skin become semi-transparent white quartz. You have resistance to radiant damage. At 14th level, your skin completely transforms into semi-transparent white quartz and you gain immunity to radiant damage. The change of skin can vary according to the deity you worship, if the GM approves.

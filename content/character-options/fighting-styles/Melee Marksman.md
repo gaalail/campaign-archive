@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Dexterity of 13 or higher"
 summary: "Having a hostile creature within 5 feet of you does not impose disadvantage on your ranged weapon attacks, so long as you are attacking a target within 5 feet."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 Having a hostile creature within 5 feet of you does not impose disadvantage on your ranged weapon attacks, so long as you are attacking a target within 5 feet.

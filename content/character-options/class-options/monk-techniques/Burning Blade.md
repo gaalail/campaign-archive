@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "As a bonus action, you can spend 1 Ki to infuse one melee Martial Arts weapon you are holding with burning Ki"
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

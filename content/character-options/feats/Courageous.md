@@ -3,6 +3,7 @@ title: Courageous
 prerequisite: None
 summary: You are a warrior at heart; valor and bravery run through your veins.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You are a warrior at heart; valor and bravery run through your veins. You gain the following benefits:

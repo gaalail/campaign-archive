@@ -2,6 +2,7 @@
 title: Stranger
 summary: Medium; speed 30 ft.; +2 Wisdom and +1 to three scores of your choice; cursed to die at 66
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > The latest specimen was the first one we found with all its limbs and vital organs intact; however, it was frozen. We took its measurements and started our tests to determine its age. My sorcerer colleagues started to unfreeze the chunks of ice covering the specimen without damaging the flesh. The moment I realized our specimen had been in ice for 10 years, it opened its eyes. Thanks to the cleric we had with us, he now happily lives in a human village with a wife and two children; 8 years after the incident.

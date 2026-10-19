@@ -5,6 +5,7 @@ item_type: Staff
 attunement: true
 summary: Staff, very rare (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Staff, very rare (requires attunement)_

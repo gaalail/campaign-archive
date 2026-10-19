@@ -13,6 +13,7 @@ components: "V, M"
 ritual: false
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _1st-level transmutation_

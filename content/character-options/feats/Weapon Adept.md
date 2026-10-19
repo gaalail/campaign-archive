@@ -2,6 +2,7 @@
 title: Weapon Adept
 summary: Alternate Fighter feat
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 # Weapon Adept

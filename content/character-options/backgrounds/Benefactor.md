@@ -2,6 +2,7 @@
 title: Benefactor
 summary: "Skills: Insight, Persuasion"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Benefactors are those who work for the well-being of the people around them. They spend their time helping build houses, cook, or hand out supplies. They are generally beloved by all, because not everyone dedicates their life to the well-being of others.

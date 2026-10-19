@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "You can reinforce your body with spiritual power"
 source: Alternate Monk Expanded
+source_type: homebrew
 ---
 
 You can reinforce your body with spiritual power. As a bonus action, you can spend 1 Ki to gain temporary hit points equal to your Wisdom modifier (a minimum of 1).

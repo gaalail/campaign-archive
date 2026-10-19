@@ -13,6 +13,7 @@ components: "V, S"
 ritual: false
 concentration: true
 source: Homebrew
+source_type: homebrew
 ---
 
 _5th-level conjuration_

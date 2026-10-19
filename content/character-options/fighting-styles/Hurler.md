@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Strength or Dexterity of 11"
 summary: "You can draw one thrown weapon as part of a ranged attack you make with it, and the range of your thrown weapon attacks is doubled."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 You can draw one thrown weapon as part of a ranged attack you make with it, and the range of your thrown weapon attacks is doubled.

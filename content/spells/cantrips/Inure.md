@@ -1,5 +1,6 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Inure
 level: 0
 school: Abjuration
@@ -15,6 +16,7 @@ components: S
 ritual: false
 concentration: true
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

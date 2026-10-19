@@ -3,6 +3,7 @@ title: Static Conductor
 parent_class: Artificer
 summary: Channels lightning through a specialized suit
 source: Homebrew
+source_type: homebrew
 ---
 
 # Static Conductor

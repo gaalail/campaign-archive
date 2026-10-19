@@ -3,6 +3,7 @@ title: Zealot
 parent_class: Paladin
 summary: Sacred Oath for the Paladin
 source: Corpus Angelus
+source_type: third-party
 ---
 
 The Zealot is both a paladin and a master orator, trained in religious teachings, as well as in the arts of battle. However, their most prominent feature is their unwavering faith. They follow the teachings of their religion and strictly adhere to them, no matter who stands in their way. Heretics and infidels are their mortal enemies. A Zealot's presence is proof of the might of their deity and a good reason to feel fear.

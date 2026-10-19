@@ -3,6 +3,7 @@ title: Order of Valor
 parent_class: Paragon
 summary: "Divine Order: Close combat and martial prowess"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 The blade of sacred temples discriminates against no act of evil. It must be swift and strong against any foul doing regardless of it being done by a friend or a foe. Although it is intended as such in theory, such dedication is hard to achieve in practice, which is why the Order of Valor exists.

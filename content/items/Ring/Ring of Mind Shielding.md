@@ -5,6 +5,7 @@ item_type: Ring
 attunement: true
 summary: Ring, uncommon (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Ring, uncommon (requires attunement)_

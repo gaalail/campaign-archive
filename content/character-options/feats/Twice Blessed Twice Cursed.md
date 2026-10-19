@@ -3,6 +3,7 @@ title: Twice Blessed Twice Cursed
 prerequisite: Stranger
 summary: "Prerequisite: Stranger"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Stranger

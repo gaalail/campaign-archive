@@ -2,6 +2,7 @@
 title: Sheltered
 summary: "Skills: History, Persuasion"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You were brought up with every comfort, sheltered from the heartbreaking realities of the world. You might have experienced hardships of your own, but they were different compared to what most others go through.

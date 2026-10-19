@@ -7,6 +7,7 @@ saving_throws:
   - CHA
 summary: d8 hit die; saving throws DEX, CHA; spellcasting with CHA
 source: SRD 5.1
+source_type: SRD
 ---
 
 ## The Bard table

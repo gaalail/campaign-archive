@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "Once per turn when you hit a creature with a melee Martial Arts attack, you can spend 1 Ki to strategically cripple its Ki flow, forcing it to make a Charisma s"
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

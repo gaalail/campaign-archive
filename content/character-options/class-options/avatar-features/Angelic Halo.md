@@ -6,6 +6,7 @@ min_level: 13
 prerequisite: None
 summary: You can communicate telepathically with creatures that you are familiar with, as long as they are within 120 feet of you.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can communicate telepathically with creatures that you are familiar with, as long as they are within 120 feet of you. A creature with an Intelligence score higher than 3 can understand you, but you can't understand the creature if you don't share a language that you speak.

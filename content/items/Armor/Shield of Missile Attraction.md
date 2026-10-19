@@ -5,6 +5,7 @@ item_type: Armor
 attunement: true
 summary: Armor (shield), rare (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Armor (shield), rare (requires attunement)_

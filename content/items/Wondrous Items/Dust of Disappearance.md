@@ -1,11 +1,13 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Dust of Disappearance
 rarity: Uncommon
 item_type: Wondrous Items
 attunement: false
 summary: Wondrous item, uncommon
 source: SRD 5.1
+source_type: SRD
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

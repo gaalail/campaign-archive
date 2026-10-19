@@ -3,6 +3,7 @@ title: Keeper of Light
 parent_class: Ranger
 summary: Ranger Conclave for the Ranger
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Having a strong sense of enmity against darkness, some rangers choose to hunt evil creatures of the night. Be it celestial, a good spirit of nature, or another force, some form of magical light notices such a ranger and reaches out to them. The ranger and the light form a connection, and the light starts following the ranger like a companion, circling them in the shape of a shining ball.

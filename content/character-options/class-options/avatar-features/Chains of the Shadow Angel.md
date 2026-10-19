@@ -6,6 +6,7 @@ min_level: 7
 prerequisite: None
 summary: As a bonus action, you point at a creature within 120 feet of you.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 As a bonus action, you point at a creature within 120 feet of you. Dark chains protrude from the shadows and try to capture the creature in their grasp. The creature must succeed on a Dexterity (Acrobatics) or Strength (Athletics) check (of its choice) against your Avatar feature DC, or be grappled. The target can repeat the check at the start of each of its turns, ending the effect on itself on a successful one.

@@ -6,6 +6,7 @@ min_level: 9
 prerequisite: The Speaker
 summary: You can affect others with simple words in Sacred Language.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can affect others with simple words in Sacred Language.

@@ -1,5 +1,6 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Aid of the Holy Mages
 level: 5
 school: Conjuration
@@ -15,6 +16,7 @@ components: V, S
 ritual: false
 concentration: true
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

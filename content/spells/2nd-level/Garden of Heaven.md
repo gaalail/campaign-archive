@@ -12,6 +12,7 @@ components: V, S, M
 ritual: true
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 _2nd-level transmutation (ritual)_

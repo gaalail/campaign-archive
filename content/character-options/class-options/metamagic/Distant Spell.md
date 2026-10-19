@@ -6,6 +6,7 @@ min_level: 3
 prerequisite: None
 summary: When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.
 source: SRD 5.1
+source_type: SRD
 ---
 
 When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.

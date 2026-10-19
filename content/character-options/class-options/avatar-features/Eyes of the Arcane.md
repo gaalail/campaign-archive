@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: An arcane presence fills your mind and grants you magical insight.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 An arcane presence fills your mind and grants you magical insight. You can cast detect magic at will.

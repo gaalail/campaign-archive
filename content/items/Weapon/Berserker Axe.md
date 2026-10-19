@@ -5,6 +5,7 @@ item_type: Weapon
 attunement: true
 summary: Weapon (any axe), rare (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Weapon (any axe), rare (requires attunement)_

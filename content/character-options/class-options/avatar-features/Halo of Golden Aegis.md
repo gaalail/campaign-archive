@@ -6,6 +6,7 @@ min_level: 10
 prerequisite: None
 summary: You gain resistance to one of the following damage types of your choice; acid, cold, fire, lightning, necrotic, poison, thunder.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You gain resistance to one of the following damage types of your choice; acid, cold, fire, lightning, necrotic, poison, thunder.

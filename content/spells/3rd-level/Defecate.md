@@ -15,6 +15,7 @@ components: V
 ritual: false
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _3rd-level enchantment_

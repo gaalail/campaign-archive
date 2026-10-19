@@ -1,5 +1,6 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Charge of Glory
 level: 1
 school: Evocation
@@ -13,6 +14,7 @@ components: V, S
 ritual: false
 concentration: true
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

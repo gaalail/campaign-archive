@@ -5,6 +5,7 @@ item_type: Staff
 attunement: true
 summary: Staff, very rare (requires attunement by a bard, cleric, druid, sorcerer, warlock, or wizard)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Staff, very rare (requires attunement by a bard, cleric, druid, sorcerer, warlock, or wizard)_

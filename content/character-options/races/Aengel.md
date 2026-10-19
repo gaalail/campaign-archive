@@ -2,6 +2,7 @@
 title: Aengel
 summary: Medium celestial; speed 30 ft. and fly 30 ft.; +1 Strength, Constitution, and Charisma
 source: Corpus Angelus
+source_type: third-party
 ---
 
 There are legends of angels falling from grace, thus losing their birth right and becoming something else. Such stories generally tell the tale of the most extreme of situations, but this is not always the case. Sometimes an angel starts to believe that the greater good can only be achieved outside the confines of heaven. Such angels don't fall but are removed from heaven's hierarchy. As a result, their granted powers gradually grow dim, and they become aengels.

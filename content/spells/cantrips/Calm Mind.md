@@ -1,5 +1,6 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Calm Mind
 level: 0
 school: Divination
@@ -14,6 +15,7 @@ components: V
 ritual: false
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

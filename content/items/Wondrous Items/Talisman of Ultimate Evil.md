@@ -5,6 +5,7 @@ item_type: Wondrous Items
 attunement: true
 summary: Wondrous item, legendary (requires attunement by a creature of evil alignment)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Wondrous item, legendary (requires attunement by a creature of evil alignment)_

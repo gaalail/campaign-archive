@@ -1,11 +1,13 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Wand of the War Mage, +3
 rarity: Very Rare
 item_type: Wand
 attunement: true
 summary: Wand, very rare (requires attunement by a spellcaster)
 source: SRD 5.1
+source_type: SRD
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

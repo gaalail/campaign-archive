@@ -271,6 +271,29 @@ function checkMetadata() {
     }
   }
 
+  const schemaPagePaths = new Set(schemaPages.map(({ data }) => data.filepath))
+  const sourceTypeSchema = {
+    required: [],
+    fields: {
+      source_type: CONTENT_METADATA_SCHEMA.schemas.character_option.fields.source_type,
+    },
+  }
+  for (const data of Object.values(fileCache)) {
+    if (
+      schemaPagePaths.has(data.filepath) ||
+      typeof data.metadata.source !== "string" ||
+      !data.metadata.source.trim()
+    ) {
+      continue
+    }
+    const relative = path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/")
+    const failures = validateMetadata(data.metadata, sourceTypeSchema, CONTENT_METADATA_SCHEMA)
+    for (const failure of failures) {
+      RESULTS.errors.push(`${relative}: invalid source metadata: ${failure}`)
+      schemaErrorCount++
+    }
+  }
+
   const legacyIncomplete = schemaPages.filter(
     ({ data }) => data.metadata.incomplete === true && !data.metadata.content_status,
   ).length
@@ -615,9 +638,22 @@ function checkDuplicates() {
 function checkIncomplete() {
   console.log("\n📍 Checking incomplete entries...")
 
-  const incomplete = Object.values(fileCache).filter((d) => d.metadata.incomplete)
+  const incomplete = Object.values(fileCache).filter(
+    (d) => d.metadata.content_status === "incomplete" || d.metadata.incomplete === true,
+  )
 
+  const withoutSpecificReason = incomplete.filter(
+    (d) =>
+      d.metadata.content_status === "incomplete" &&
+      d.metadata.incomplete_reason ===
+        "The legacy record did not specify which details are missing or unverified; review needed.",
+  ).length
   RESULTS.info.push(`ℹ ${incomplete.length} incomplete entries marked`)
+  if (withoutSpecificReason > 0) {
+    RESULTS.info.push(
+      `ℹ ${withoutSpecificReason} migrated entries still need a specific incomplete_reason`,
+    )
+  }
 
   if (incomplete.length > 0 && incomplete.length < 500) {
     RESULTS.info.push(`Categories:`)

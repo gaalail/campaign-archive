@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "Spiritual insight guides your speech"
 source: Alternate Monk
+source_type: homebrew
 prerequisite: 9th-level Monk
 ---
 

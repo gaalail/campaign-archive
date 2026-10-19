@@ -3,6 +3,7 @@ title: Education
 parent_class: Wizard
 summary: Arcane Tradition for the Wizard
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Education is one of the greatest virtues in existence, and you are the carrier of its enlightening flame.

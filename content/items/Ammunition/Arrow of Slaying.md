@@ -5,6 +5,7 @@ item_type: Ammunition
 attunement: false
 summary: Weapon (arrow), very rare
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Weapon (arrow), very rare_

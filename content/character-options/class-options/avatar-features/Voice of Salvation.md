@@ -6,6 +6,7 @@ min_level: 10
 prerequisite: None
 summary: Your heavenly voice is music to the ears of the innocent; however, the sound of your chants fills the hearts of sinners with dr...
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Your heavenly voice is music to the ears of the innocent; however, the sound of your chants fills the hearts of sinners with dread and sorrow. You can cast the revivify spell, requiring no material components. You can use this feature thrice. You regain any expended uses when you finish a long rest.

@@ -2,6 +2,7 @@
 title: Gravekeeper
 summary: "Skills: Choose two from Medicine, Perception, and Religion"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 While others may find graveyards frightening, even petrifying; you find serenity and composure in the cold quiet of these places. Working at night and resting during the day isn't as hard as it may seem to some, since you enjoy solitude more than the company of society.

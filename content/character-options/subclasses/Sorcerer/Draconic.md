@@ -3,6 +3,7 @@ title: Draconic
 parent_class: Sorcerer
 summary: Sorcerous Origin for the Sorcerer
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Sorcerous Origin (Sorcerer subclass)_

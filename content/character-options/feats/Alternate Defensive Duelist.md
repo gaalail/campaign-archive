@@ -2,6 +2,7 @@
 title: Alternate Defensive Duelist
 summary: Alternate Fighter feat
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 # Alternate Defensive Duelist

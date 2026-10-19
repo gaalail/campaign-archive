@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: Eldritch Blast cantrip
 summary: When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit.
 source: SRD 5.1
+source_type: SRD
 ---
 
 When you cast eldritch blast, add your Charisma modifier to the damage it deals on a hit.

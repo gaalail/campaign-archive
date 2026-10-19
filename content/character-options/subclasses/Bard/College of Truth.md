@@ -3,6 +3,7 @@ title: College of Truth
 parent_class: Bard
 summary: Bard College for the Bard
 source: Corpus Angelus
+source_type: third-party
 ---
 
 If you were a sword, you'd cut; if you were an arrow, you'd pierce; and as a sharp mind, you know what others don't.

@@ -3,6 +3,7 @@ title: Magical Birthmarks
 prerequisite: Peri
 summary: "Prerequisite: Peri"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Peri

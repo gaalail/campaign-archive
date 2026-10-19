@@ -1,11 +1,13 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Wand of Magic Detection
 rarity: Uncommon
 item_type: Wand
 attunement: false
 summary: Wand, uncommon
 source: SRD 5.1
+source_type: SRD
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

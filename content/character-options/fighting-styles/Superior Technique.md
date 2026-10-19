@@ -8,6 +8,7 @@ min_level: 6
 prerequisite: "6th-level Fighter"
 summary: "You learn one 1st-degree Martial Exploit from those available to the Alternate Fighter, but it doesn't count against your total Exploits Known."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 You learn one 1st-degree Martial Exploit from those available to the Alternate Fighter, but it doesn't count against your total Exploits Known. You also gain one additional Exploit Die.

@@ -3,6 +3,7 @@ title: Holy Messenger
 parent_class: Ranger
 summary: Ranger Conclave for the Ranger
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Holy Messengers are the chosen couriers of divine forces. They carry their divine words to mortals and sometimes to other deities. Holy messengers are known for their speed and their iconic, shining armor. Usually, they receive word of their divine purpose in their dreams or visions, and start spreading the divine word as fast as they can. People in some places believe that a visit by a holy messenger brings good harvest, but this is simply not true.

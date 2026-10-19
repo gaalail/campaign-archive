@@ -2,6 +2,7 @@
 title: Commoner
 summary: "Skills: Choose two from Animal Handling, Medicine, Nature, and Survival"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Not all heroes are nobles or trained warriors. Sometimes, fate smiles upon the most unexpected people.

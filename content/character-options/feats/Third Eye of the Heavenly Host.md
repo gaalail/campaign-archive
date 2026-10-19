@@ -3,6 +3,7 @@ title: Third Eye of the Heavenly Host
 prerequisite: None
 summary: "You open your spiritual third eye and gain the following benefits:"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You open your spiritual third eye and gain the following benefits:

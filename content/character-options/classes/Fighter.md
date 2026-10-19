@@ -6,6 +6,7 @@ saving_throws:
   - CON
 summary: d10 hit die; masters martial techniques through fighting styles and exploits
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 # Fighter

@@ -3,6 +3,7 @@ title: Path of the Graveguard
 parent_class: Thanatomancer
 summary: Endures enemy attacks and protects allies with necromantic power
 source: Erevan's Guide to Death & Beyond
+source_type: third-party
 ---
 
 # Path of the Graveguard

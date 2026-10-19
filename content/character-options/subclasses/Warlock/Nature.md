@@ -3,6 +3,7 @@ title: Nature
 parent_class: Warlock
 summary: Otherworldly Patron for the Warlock
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You've sought out a powerful entity of nature and made a pact with them. You may forge this pact with powerful forces buried in the earth, deep beneath the oceans, or high above the clouds. These forces have no quarrel with the natural order of things and have no interest in interfering with it. They never reach out to a mortal to lend their powers, but are sought out by mortals to earn their blessings. Your warlock patron of nature has appointed you to the protection of nature against evil forces seeking to turn it into a battlefield.

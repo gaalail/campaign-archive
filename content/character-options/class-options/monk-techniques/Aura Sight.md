@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "You have awakened the spiritual potential of your senses"
 source: Alternate Monk
+source_type: homebrew
 prerequisite: 9th-level Monk
 ---
 

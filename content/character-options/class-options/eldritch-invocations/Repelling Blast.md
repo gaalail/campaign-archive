@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: Eldritch Blast cantrip
 summary: When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line.
 source: SRD 5.1
+source_type: SRD
 ---
 
 When you hit a creature with eldritch blast, you can push the creature up to 10 feet away from you in a straight line.

@@ -12,6 +12,7 @@ components: V
 ritual: false
 concentration: false
 source: SRD 5.1
+source_type: SRD
 ---
 
 _9th-level transmutation_

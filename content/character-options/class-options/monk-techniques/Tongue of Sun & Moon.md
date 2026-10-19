@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "You can communicate on a spiritual level"
 source: Alternate Monk
+source_type: homebrew
 prerequisite: 13th-level Monk
 ---
 

@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: While you are under an effect that requires you to make a saving throw at the end of your turn, you can make the saving throw a...
 source: Corpus Angelus
+source_type: third-party
 ---
 
 While you are under an effect that requires you to make a saving throw at the end of your turn, you can make the saving throw at the start of your turn instead, ending the effect on yourself on a success. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain any expended uses when you finish a long rest.

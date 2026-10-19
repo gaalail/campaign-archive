@@ -6,6 +6,7 @@ min_level: 9
 prerequisite: Protector of the Temple
 summary: Your studies against the forces of evil and the blessings of your deity allow you to be more cautious and effective against the...
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Your studies against the forces of evil and the blessings of your deity allow you to be more cautious and effective against the enemies of your temple. You have advantage on saving throws and ability checks made against the creature type you chose for the Protector of the Temple feature. You are immune to being charmed, frightened, paralyzed, petrified, poisoned, and stunned by the chosen creature type.

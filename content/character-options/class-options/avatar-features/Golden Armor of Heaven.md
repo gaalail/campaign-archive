@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: You become proficient with medium armor, heavy armor, and shields.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You become proficient with medium armor, heavy armor, and shields.

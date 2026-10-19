@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: You can choose to change the shape of the effects of the Sacred Language (Invective) feature.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can choose to change the shape of the effects of the Sacred Language (Invective) feature. When you choose this feature, you gain the following benefits;

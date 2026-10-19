@@ -17,6 +17,7 @@ components: V, S
 ritual: false
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _Enchantment cantrip_

@@ -3,6 +3,7 @@ title: Path of the Fleshweaver
 parent_class: Thanatomancer
 summary: Crafts, grafts, and augments stitchwork undead minions
 source: Erevan's Guide to Death & Beyond
+source_type: third-party
 ---
 
 # Path of the Fleshweaver

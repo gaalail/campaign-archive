@@ -6,6 +6,7 @@ min_level: 4
 prerequisite: None
 summary: You know very well who your greatest enemies are, and you are well-prepared for any possible conflict with them.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You know very well who your greatest enemies are, and you are well-prepared for any possible conflict with them. Choose one of the following creature types when you take this feature: aberration, dragon, elemental, fey, fiend, or undead. You have advantage on your attack rolls against the chosen creature type.

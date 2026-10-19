@@ -12,6 +12,7 @@ components: "V, S, M"
 ritual: false
 concentration: true
 source: Homebrew
+source_type: homebrew
 ---
 
 _4th-level conjuration_

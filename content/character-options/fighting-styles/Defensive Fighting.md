@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "None"
 summary: "While wearing medium or heavy armor, or wielding a shield, you gain a +1 bonus to AC."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 While wearing medium or heavy armor, or wielding a shield, you gain a +1 bonus to AC.

@@ -5,6 +5,7 @@ item_type: Weapon
 attunement: false
 summary: Weapon (dagger), rare
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Weapon (dagger), rare_

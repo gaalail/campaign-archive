@@ -2,6 +2,7 @@
 title: Martial Training
 summary: Alternate Fighter feat
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 # Martial Training

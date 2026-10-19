@@ -6,6 +6,7 @@ min_level: 5
 prerequisite: None
 summary: "Avatar form only: by the power vested in you by your gods, you sprout angelic wings."
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Avatar Form Only.** By the power vested in you by your gods, you sprout angelic wings. You have a flying speed of 40 feet and you can hover.

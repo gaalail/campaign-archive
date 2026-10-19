@@ -3,6 +3,7 @@ title: Hunter
 parent_class: Ranger
 summary: Ranger Archetype for the Ranger
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Ranger Archetype (Ranger subclass)_

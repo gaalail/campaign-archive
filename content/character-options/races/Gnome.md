@@ -2,6 +2,7 @@
 title: Gnome
 summary: Small size; speed 25 ft.; +2 INT
 source: SRD 5.1
+source_type: SRD
 ---
 
 **Ability score increase:** +2 INT  

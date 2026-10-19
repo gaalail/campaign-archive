@@ -14,6 +14,7 @@ components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _8th-level necromancy_

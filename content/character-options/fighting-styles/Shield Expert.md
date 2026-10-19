@@ -8,6 +8,7 @@ min_level: 6
 prerequisite: "6th-level Fighter, Shield Warrior"
 summary: "While wielding a shield, you can use a bonus action on each of your turns to make a Shove attack, even if you do not take the Attack action."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 While wielding a shield, you can use a bonus action on each of your turns to make a Shove attack, even if you do not take the Attack action. You also add the Armor Class bonus from your shield to any Dexterity saving throws you make.

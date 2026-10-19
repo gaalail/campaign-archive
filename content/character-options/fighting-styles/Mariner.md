@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "proficiency in Athletics"
 summary: "When you are not wearing heavy armor or a shield, you have a swimming speed equal to your walking speed, and you gain a +1 bonus to your Armor Class."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 When you are not wearing heavy armor or a shield, you have a swimming speed equal to your walking speed, and you gain a +1 bonus to your Armor Class.

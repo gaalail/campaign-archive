@@ -3,6 +3,7 @@ title: Way of the Pilgrims
 parent_class: Monk
 summary: Monastic Tradition for the Monk
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You are a pilgrim monk. You are among the most committed people to ever walk the earth.

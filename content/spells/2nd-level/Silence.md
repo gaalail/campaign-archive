@@ -13,6 +13,7 @@ components: V, S
 ritual: true
 concentration: true
 source: SRD 5.1
+source_type: SRD
 ---
 
 _2nd-level illusion (ritual)_

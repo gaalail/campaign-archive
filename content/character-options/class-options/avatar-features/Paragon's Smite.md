@@ -6,6 +6,7 @@ min_level: 10
 prerequisite: None
 summary: You are blessed with the holy powers of your deity to crush foes.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You are blessed with the holy powers of your deity to crush foes. You can cast the branding smite spell. Using this feature, you can cast this spell twice at its lowest level without expending a spell slot. You regain any expended uses when you finish a long rest.

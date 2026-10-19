@@ -6,6 +6,7 @@ min_level: 3
 prerequisite: None
 summary: As an action, you can touch a creature and the creature regains 1d8 hit points.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 As an action, you can touch a creature and the creature regains 1d8 hit points. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain any expended uses when you finish a long rest.

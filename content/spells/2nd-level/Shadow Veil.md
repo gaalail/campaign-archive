@@ -16,6 +16,7 @@ components: S
 ritual: true
 concentration: true
 source: Homebrew
+source_type: homebrew
 ---
 
 _2nd-level illusion (ritual)_

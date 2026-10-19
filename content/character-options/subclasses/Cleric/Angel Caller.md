@@ -3,6 +3,7 @@ title: Angel Caller
 parent_class: Cleric
 summary: Divine Domain for the Cleric
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Angel Callers are clerics who practice the art of channeling angels into their bodies. Instead of the domain powers, angel callers use the power of the angels of their deities.

@@ -13,6 +13,7 @@ components: "V, S"
 ritual: true
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _2nd-level divination (ritual)_

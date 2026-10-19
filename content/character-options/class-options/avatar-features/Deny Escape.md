@@ -6,6 +6,7 @@ min_level: 14
 prerequisite: None
 summary: As an action, you choose one creature within 120 feet that you can see.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 As an action, you choose one creature within 120 feet that you can see. The target must succeed on a Charisma saving throw, or its flying speed (if any) is reduced to 0 for 1 minute. You can use this feature for a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.

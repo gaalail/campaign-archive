@@ -2,6 +2,7 @@
 title: Mystic Warrior
 summary: You have mastered Mystical Techniques which allow you to perform supernatural feats
 source: Alternate Monk Expanded
+source_type: homebrew
 ---
 
 You have mastered Mystical Techniques which allow you to perform supernatural feats. You gain the following benefits:

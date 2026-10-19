@@ -5,6 +5,7 @@ item_type: Ring
 attunement: false
 summary: Ring, rare
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Ring, rare_

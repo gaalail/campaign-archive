@@ -6,6 +6,7 @@ min_level: 14
 prerequisite: Weapon of the Chosen One
 summary: You can wield a two-handed weapon you conjured by means of the Weapon of the Chosen One feature with one hand.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can wield a two-handed weapon you conjured by means of the Weapon of the Chosen One feature with one hand.

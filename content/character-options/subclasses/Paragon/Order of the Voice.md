@@ -3,6 +3,7 @@ title: Order of the Voice
 parent_class: Paragon
 summary: "Divine Order: Voice, diplomacy, and sacred song"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 To hear someone speaking Sacred Language echoing through the hallowed halls of a cathedral is a joyous experience in and of itself, but to be able to speak the language of the divine is an absolutely euphoric one. The members of the Order of the Voice pursue perfect control over their voices and spend most of their time singing with temple choruses and reading sacred texts. They are the diplomats of many temples, their emissaries, their mediators, and the voices of their ultimatums.

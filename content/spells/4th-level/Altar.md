@@ -14,6 +14,7 @@ components: V, S, M
 ritual: true
 concentration: true
 source: Homebrew
+source_type: homebrew
 ---
 
 _4th-level necromancy (ritual)_

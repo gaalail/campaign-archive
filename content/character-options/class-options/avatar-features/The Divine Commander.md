@@ -6,6 +6,7 @@ min_level: 14
 prerequisite: The Divine Emissary
 summary: Your voice can be heard by anyone within 30 feet of you, regardless of any environmental or magical effects that would normally...
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Your voice can be heard by anyone within 30 feet of you, regardless of any environmental or magical effects that would normally hinder their ability to do so.

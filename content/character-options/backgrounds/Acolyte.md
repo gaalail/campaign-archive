@@ -2,6 +2,7 @@
 title: Acolyte
 summary: "Skills: Insight, Religion"
 source: SRD 5.1
+source_type: SRD
 ---
 
 **Skill proficiencies:** Insight, Religion  

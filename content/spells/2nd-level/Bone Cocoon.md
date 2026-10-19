@@ -14,6 +14,7 @@ components: "V, M"
 ritual: false
 concentration: true
 source: Homebrew
+source_type: homebrew
 ---
 
 _2nd-level abjuration_

@@ -6,6 +6,7 @@ min_level: 14
 prerequisite: None
 summary: When you hit a target with a ranged spell attack, the target's hit point maximum is reduced by an amount equal to half of the d...
 source: Corpus Angelus
+source_type: third-party
 ---
 
 When you hit a target with a ranged spell attack, the target's hit point maximum is reduced by an amount equal to half of the damage dealt.

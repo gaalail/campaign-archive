@@ -5,6 +5,7 @@ item_type: Wand
 attunement: false
 summary: Wand, uncommon
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Wand, uncommon_

@@ -12,6 +12,7 @@ components: V, S
 ritual: false
 concentration: true
 source: Homebrew
+source_type: homebrew
 ---
 
 _2nd-level illusion_

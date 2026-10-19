@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "None"
 summary: "While wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 While wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon. You can use a shield with this style.

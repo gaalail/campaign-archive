@@ -2,6 +2,7 @@
 title: Angelic
 summary: A template for characters with angelic blood; gain it at creation or in play at the GM's discretion
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Angelics are people that have angelic blood coursing through their veins, for one reason or another (see below). The blood of angels bestows grace upon its carrier, affecting the carrier's body and soul. Angelics are partial to good and graceful acts, and possess an unearthly charisma.

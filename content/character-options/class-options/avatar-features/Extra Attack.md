@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: None
 summary: You can attack twice instead of once whenever you take the Attack action on your turn.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can attack twice instead of once whenever you take the Attack action on your turn.

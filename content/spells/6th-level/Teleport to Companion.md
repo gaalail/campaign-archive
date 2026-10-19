@@ -12,6 +12,7 @@ components: V, S
 ritual: false
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 _6th-level conjuration_

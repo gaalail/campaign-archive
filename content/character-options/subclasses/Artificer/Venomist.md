@@ -3,6 +3,7 @@ title: Venomist
 parent_class: Artificer
 summary: Crafts, studies, and weaponizes poisons
 source: Homebrew
+source_type: homebrew
 ---
 
 # Venomist

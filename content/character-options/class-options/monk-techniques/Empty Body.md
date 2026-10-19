@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "You can become a being of pure spirit, if only temporarily"
 source: Alternate Monk
+source_type: homebrew
 prerequisite: 18th-level Monk
 ---
 

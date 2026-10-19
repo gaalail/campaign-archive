@@ -3,6 +3,7 @@ title: Blessing of Feather
 prerequisite: None
 summary: "You sprout angelic wings from your back, which grant you the following benefits:"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You sprout angelic wings from your back, which grant you the following benefits:

@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Dexterity 13"
 summary: "You gain a +1 bonus to attack rolls with ranged weapons."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 You gain a +1 bonus to attack rolls with ranged weapons. Your ranged attacks ignore half cover and treat three-quarters cover as half cover.

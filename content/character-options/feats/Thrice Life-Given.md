@@ -3,6 +3,7 @@ title: Thrice Life-Given
 prerequisite: None
 summary: When you were infused with life during your creation, you were blessed three times instead of once, and it now shows.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 When you were infused with life during your creation, you were blessed three times instead of once, and it now shows. You gain the following benefits:

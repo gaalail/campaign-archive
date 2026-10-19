@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: Pact of the Chain
 summary: You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the sam...
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can communicate telepathically with your familiar and perceive through your familiar's senses as long as you are on the same plane of existence.

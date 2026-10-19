@@ -3,6 +3,7 @@ title: Wagoneer
 parent_class: Artificer
 summary: Builds a protective, upgradeable wondrous caravan
 source: Homebrew
+source_type: homebrew
 ---
 
 # Wagoneer

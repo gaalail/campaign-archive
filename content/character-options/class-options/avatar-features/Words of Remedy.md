@@ -6,6 +6,7 @@ min_level: 10
 prerequisite: None
 summary: When you speak in Sacred Language, your voice soothes pain and cures injuries.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 When you speak in Sacred Language, your voice soothes pain and cures injuries. As an action, you can choose a creature within 30 feet of you and speak to it. As a result, you can choose one of the following effects.

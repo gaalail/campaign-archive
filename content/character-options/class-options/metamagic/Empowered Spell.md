@@ -6,6 +6,7 @@ min_level: 3
 prerequisite: None
 summary: When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modif...
 source: SRD 5.1
+source_type: SRD
 ---
 
 When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.

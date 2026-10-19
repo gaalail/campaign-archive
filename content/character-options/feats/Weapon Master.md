@@ -2,6 +2,7 @@
 title: Weapon Master
 summary: Alternate Fighter feat
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 # Weapon Master

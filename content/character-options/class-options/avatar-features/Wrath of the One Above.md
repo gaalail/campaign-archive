@@ -6,6 +6,7 @@ min_level: 9
 prerequisite: None
 summary: You can draw or stow one more weapon without requiring any type of action.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can draw or stow one more weapon without requiring any type of action.

@@ -3,6 +3,7 @@ title: Path of Self-Sacrifice
 parent_class: Barbarian
 summary: Primal Path for the Barbarian
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Life is an ancient power. Those who preserve it are called healers, and those who share it are the barbarians on the Path of Self-Sacrifice. When their allies get hurt in their presence, these barbarians focus their inner rage on the forces of vitality and learn to recover their health through their emotions. Their main purpose is to preserve life and to share it with others. They keep smiling even after they get hurt, so long as they can keep their friends from harm.

@@ -3,6 +3,7 @@ title: Exorcist
 parent_class: Cleric
 summary: Divine Domain for the Cleric
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Corruption can manifest itself in the most unexpected places and in the most unexpected forms. Demons, devils, ghosts, aberrations of unspeakable horrors; all wait until the faithful are at their weakest to strike, and to whisper their horrid lies in their ears. They reach for innocents at their most vulnerable and try to affect them, or even possess them while they would accept any help, or would close their eyes in the face of danger.

@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: While you are moving towards a fiend or undead that you can see, your speed increases by 10 feet.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 While you are moving towards a fiend or undead that you can see, your speed increases by 10 feet.

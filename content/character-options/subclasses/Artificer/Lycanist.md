@@ -3,6 +3,7 @@ title: Lycanist
 parent_class: Artificer
 summary: Transforms into a customizable beast form
 source: Homebrew
+source_type: homebrew
 ---
 
 # Lycanist

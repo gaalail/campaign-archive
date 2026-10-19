@@ -3,6 +3,7 @@ title: Divine Blade
 parent_class: Rogue
 summary: Roguish Archetype for the Rogue
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Most assassins kill for the coin, and most thieves work to grow in fame and fortune. Divine Blades, on the other hand, have a divine calling. They seek and destroy their deities' enemies; the heretics and infidels. Temples may employ a divine blade following the same deity, or a divine blade can receive visions of the targets they must vanquish directly from their deity.

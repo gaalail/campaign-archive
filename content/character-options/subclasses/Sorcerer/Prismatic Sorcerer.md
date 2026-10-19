@@ -3,6 +3,7 @@ title: Prismatic Sorcerer
 parent_class: Sorcerer
 summary: Sorcerous Origin for the Sorcerer
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You are of an arcane bloodline, blessed by a good celestial, native to a plane of light. You have the power of light coursing through your veins as a result. When you want, you can shine bright with the purest light of varying colors.

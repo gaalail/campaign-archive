@@ -3,6 +3,7 @@ title: Starcaster
 prerequisite: Spellcasting feature
 summary: "Prerequisite: Spellcasting feature"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Spellcasting feature

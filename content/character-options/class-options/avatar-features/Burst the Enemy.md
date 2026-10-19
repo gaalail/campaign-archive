@@ -6,6 +6,7 @@ min_level: 14
 prerequisite: Prepared
 summary: You can choose one more creature type that is listed in the Protector of the Temple feature.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can choose one more creature type that is listed in the Protector of the Temple feature.

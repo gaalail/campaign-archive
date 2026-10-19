@@ -3,6 +3,7 @@ title: Oathbound
 prerequisite: You must have an oath
 summary: "Prerequisite: You must have an oath"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** You must have an oath

@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: None
 summary: While flying, you gain the benefits of the freedom of movement spell.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 While flying, you gain the benefits of the freedom of movement spell.

@@ -11,6 +11,7 @@ components: V, S
 ritual: false
 concentration: false
 source: SRD 5.1
+source_type: SRD
 ---
 
 _6th-level conjuration_

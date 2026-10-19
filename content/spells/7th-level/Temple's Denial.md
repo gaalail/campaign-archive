@@ -1,5 +1,6 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Temple's Denial
 level: 7
 school: Illusion
@@ -13,6 +14,7 @@ components: S
 ritual: false
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

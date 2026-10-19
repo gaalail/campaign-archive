@@ -3,6 +3,7 @@ title: Chainbreaker
 parent_class: Rogue
 summary: Roguish Archetype for the Rogue
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Not all rogues are scoundrels, shady figures who lurk in back alleys, assassins, or wrong-doers... Some who understand the value of such things as honesty, innocence, and freedom choose a much more virtuous path; one that is far removed from that of their peers.

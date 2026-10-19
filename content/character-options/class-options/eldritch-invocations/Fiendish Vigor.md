@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: None
 summary: You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.

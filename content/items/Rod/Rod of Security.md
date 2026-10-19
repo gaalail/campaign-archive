@@ -5,6 +5,7 @@ item_type: Rod
 attunement: false
 summary: Rod, very rare
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Rod, very rare_

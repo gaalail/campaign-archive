@@ -3,6 +3,7 @@ title: Forgebound
 parent_class: Artificer
 summary: Fights alongside a companion that creates infused weapons
 source: Homebrew
+source_type: homebrew
 ---
 
 # Forgebound

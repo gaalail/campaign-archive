@@ -2,6 +2,7 @@
 title: Half-Elf
 summary: Medium size; speed 30 ft.; +2 CHA (plus 2 others of your choice)
 source: SRD 5.1
+source_type: SRD
 ---
 
 **Ability score increase:** +2 CHA (plus 2 others of your choice)  

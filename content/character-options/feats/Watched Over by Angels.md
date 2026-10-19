@@ -3,6 +3,7 @@ title: Watched Over by Angels
 prerequisite: Your alignment must be any good
 summary: "Prerequisite: Your alignment must be any good"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Your alignment must be any good

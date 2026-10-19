@@ -2,6 +2,7 @@
 title: Halfling
 summary: Small size; speed 25 ft.; +2 DEX
 source: SRD 5.1
+source_type: SRD
 ---
 
 **Ability score increase:** +2 DEX  

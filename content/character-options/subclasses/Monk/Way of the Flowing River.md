@@ -3,6 +3,7 @@ title: Way of the Flowing River
 parent_class: Monk
 summary: Monastic Tradition for the Monk
 source: Alternate Monk Expanded
+source_type: homebrew
 ---
 
 # Way of the Flowing River

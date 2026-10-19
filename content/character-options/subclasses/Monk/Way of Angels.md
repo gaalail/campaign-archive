@@ -3,6 +3,7 @@ title: Way of Angels
 parent_class: Monk
 summary: Monastic Tradition for the Monk
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Although an angel fighting is a rare sight to behold, it's not unheard of. The masters of various monastic traditions that witnessed such scenes retrain themselves in the search of heavenly perfection. They experiment with their styles to find the most efficient and elegant moves, and by doing so, they try to resemble angels.

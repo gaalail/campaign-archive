@@ -13,6 +13,7 @@ components: V, S, M
 ritual: true
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _6th-level enchantment (ritual)_

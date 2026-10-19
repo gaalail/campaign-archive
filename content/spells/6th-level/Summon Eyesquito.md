@@ -14,6 +14,7 @@ components: S
 ritual: false
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _6th-level conjuration_

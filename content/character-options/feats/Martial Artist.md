@@ -2,6 +2,7 @@
 title: Martial Artist
 summary: You have some basic martial arts training, giving you some skill in unarmed combat
 source: Alternate Monk Expanded
+source_type: homebrew
 ---
 
 You have some basic martial arts training, giving you some skill in unarmed combat. You gain the following benefits:

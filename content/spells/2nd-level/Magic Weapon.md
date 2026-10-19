@@ -13,6 +13,7 @@ components: V, S
 ritual: false
 concentration: true
 source: SRD 5.1
+source_type: SRD
 subclass_spell_lists:
   - Arcane Knight
 arcane_knight_list_marker: "LL"

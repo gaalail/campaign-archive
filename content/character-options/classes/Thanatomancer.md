@@ -7,6 +7,7 @@ saving_throws:
   - INT
 summary: d8 hit die; Intelligence spellcasting; manipulates death through mortis points
 source: Erevan's Guide to Death & Beyond
+source_type: third-party
 ---
 
 # Thanatomancer

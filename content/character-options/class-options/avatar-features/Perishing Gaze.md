@@ -6,6 +6,7 @@ min_level: 12
 prerequisite: None
 summary: You lock your gaze on the very soul of your enemy, which your deity sees through your eyes.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You lock your gaze on the very soul of your enemy, which your deity sees through your eyes. Choose a creature within 10 feet of you. The target must succeed on a Wisdom saving throw or be frightened of you for 1 minute. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target's saving throw is successful, or the effect ends on it, the target is immune to this effect for the next 24 hours.

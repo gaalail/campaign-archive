@@ -1,11 +1,13 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Armor, +3
 rarity: Legendary
 item_type: Armor
 attunement: false
 summary: Armor (light, medium, or heavy), legendary
 source: SRD 5.1
+source_type: SRD
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

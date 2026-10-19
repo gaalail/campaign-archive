@@ -3,6 +3,7 @@ title: Path of Celestial Fury
 parent_class: Barbarian
 summary: Primal Path for the Barbarian
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Also known as the Fury of Celestials, barbarians who walk this path are devoted to the forces of good and of heaven. These barbarians burn with holy fire when they rage, channeling celestial energies that can also create weapons of light.

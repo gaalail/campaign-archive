@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: None
 summary: You can use the powers granted by your deity to reject a heretic's spell.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can use the powers granted by your deity to reject a heretic's spell. You can cast the counterspell spell as a 3rd level spell, requiring no material components.

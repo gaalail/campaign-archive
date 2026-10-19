@@ -1,11 +1,13 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Trident of Fish Command
 rarity: Uncommon
 item_type: Weapon
 attunement: true
 summary: Weapon (trident), uncommon (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

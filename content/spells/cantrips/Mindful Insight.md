@@ -1,5 +1,6 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Mindful Insight
 level: 0
 school: Enchantment
@@ -14,6 +15,7 @@ components: V, S
 ritual: false
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

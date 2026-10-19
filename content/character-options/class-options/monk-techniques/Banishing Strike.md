@@ -1,9 +1,10 @@
 ---
-title: Banishing Strike
+title: Banishing Strike (Monk Technique)
 parent_class: Monk
 option_group: Mystic Techniques
 summary: "Prerequisites: 13th-level Monk Once per turn when you hit a creature with a melee Martial Arts attack, you can spend 3 Ki to empower your blow with legendary fo"
 source: Alternate Monk Expanded
+source_type: homebrew
 ---
 
 Prerequisites: 13th-level Monk Once per turn when you hit a creature with a melee Martial Arts attack, you can spend 3 Ki to empower your blow with legendary force, forcing it to make a Charisma saving throw. It takes bonus force damage equal to three Martial Arts Dice on a failure, and half as much on a success.

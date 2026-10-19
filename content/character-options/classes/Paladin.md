@@ -7,6 +7,7 @@ saving_throws:
   - CHA
 summary: d10 hit die; saving throws WIS, CHA; spellcasting with CHA
 source: SRD 5.1
+source_type: SRD
 ---
 
 ## The Paladin table

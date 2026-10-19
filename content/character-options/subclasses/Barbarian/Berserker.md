@@ -3,6 +3,7 @@ title: Berserker
 parent_class: Barbarian
 summary: Primal Path for the Barbarian
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Primal Path (Barbarian subclass)_

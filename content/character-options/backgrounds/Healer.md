@@ -2,6 +2,7 @@
 title: Healer
 summary: "Skills: Medicine, Nature"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You were once the apprentice of a healer who was also an excellent tutor in the craft of remedy and medicine. Perhaps, you wandered around the realm together, healing survivors of battles. You may have been the healers of a small settlement where you had close relations with the locals, or you practiced your craft in an entirely different context. No matter what the specifics were, you had a group of people depending on you, for whom you were a beacon of hope, of remedy, and of relief.

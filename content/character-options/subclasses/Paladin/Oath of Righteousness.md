@@ -3,6 +3,7 @@ title: Oath of Righteousness
 parent_class: Paladin
 summary: Sacred Oath for the Paladin
 source: Corpus Angelus
+source_type: third-party
 ---
 
 The Oath of Righteousness binds a paladin to honor, justice, order, and all other concepts encompassed by righteousness. They pursue the greater good. They are knights who help those in need and the enemies of all that is dishonorable. They worship the good gods of honor, justice, and law. They have no fear in the face of injustice, even if that means they have to fight the entire world.

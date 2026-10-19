@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: None
 summary: You gain proficiency in the Deception and Persuasion skills.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You gain proficiency in the Deception and Persuasion skills.

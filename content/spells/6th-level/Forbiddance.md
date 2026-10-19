@@ -11,6 +11,7 @@ components: V, S, M
 ritual: true
 concentration: false
 source: SRD 5.1
+source_type: SRD
 ---
 
 _6th-level abjuration (ritual)_

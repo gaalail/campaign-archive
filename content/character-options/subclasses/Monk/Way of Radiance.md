@@ -3,6 +3,7 @@ title: Way of Radiance
 parent_class: Monk
 summary: Monastic Tradition for the Monk
 source: Alternate Monk
+source_type: homebrew
 ---
 
 # Way of Radiance

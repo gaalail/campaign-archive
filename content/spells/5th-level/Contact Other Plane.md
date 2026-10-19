@@ -13,6 +13,7 @@ components: V
 ritual: true
 concentration: false
 source: SRD 5.1
+source_type: SRD
 ---
 
 _5th-level divination (ritual)_

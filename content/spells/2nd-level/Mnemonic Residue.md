@@ -14,6 +14,7 @@ components: V, S
 ritual: true
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 _2nd-level divination (ritual)_

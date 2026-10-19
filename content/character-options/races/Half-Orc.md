@@ -2,6 +2,7 @@
 title: Half-Orc
 summary: Medium size; speed 30 ft.; +2 STR, +1 CON
 source: SRD 5.1
+source_type: SRD
 ---
 
 **Ability score increase:** +2 STR, +1 CON  

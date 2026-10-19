@@ -6,6 +6,7 @@ min_level: 10
 prerequisite: None
 summary: If you are not proficient with the Religion skill, you gain proficiency in it.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 If you are not proficient with the Religion skill, you gain proficiency in it. If you are already proficient, you have advantage on Intelligence (Religion) checks.

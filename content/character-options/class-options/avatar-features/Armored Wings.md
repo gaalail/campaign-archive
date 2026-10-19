@@ -6,6 +6,7 @@ min_level: 5
 prerequisite: None
 summary: "Avatar form only: you sprout wings of metal."
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Avatar Form Only.** You sprout wings of metal. You have a flying speed of 30 feet and the wings grant you a +1 bonus to AC while you are not flying.

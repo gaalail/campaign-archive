@@ -8,6 +8,7 @@ min_level: 6
 prerequisite: "6th-level Fighter, Mounted Warrior"
 summary: "While you are riding a trained mount, you have advantage on melee attack rolls against unmounted creatures smaller than your mount, and whenever your mount takes damage you can use your reaction to take that damage in it"
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 While you are riding a trained mount, you have advantage on melee attack rolls against unmounted creatures smaller than your mount, and whenever your mount takes damage you can use your reaction to take that damage in its stead.

@@ -7,6 +7,7 @@ ac: 13
 hp: 59
 cr: "3"
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Large monstrosity, unaligned_

@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "You can fortify your physical form with your Ki"
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 9th-level Monk
 ---
 

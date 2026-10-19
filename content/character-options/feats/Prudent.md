@@ -3,6 +3,7 @@ title: Prudent
 prerequisite: Wisdom 15 or higher
 summary: "Prerequisite: Wisdom 15 or higher"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Wisdom 15 or higher

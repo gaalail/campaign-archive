@@ -6,6 +6,7 @@ min_level: 13
 prerequisite: None
 summary: Lightning surges through you.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Lightning surges through you. As a bonus action, you can call lightning down upon a target that you can see within 60 feet of you. The target must succeed on a Dexterity saving throw or take 8d8 lightning damage.

@@ -5,6 +5,7 @@ item_type: Rod
 attunement: true
 summary: Rod, legendary (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Rod, legendary (requires attunement)_

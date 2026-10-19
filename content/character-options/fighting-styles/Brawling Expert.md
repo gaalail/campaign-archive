@@ -8,6 +8,7 @@ min_level: 6
 prerequisite: "6th-level Fighter, Brawling"
 summary: "You gain a +1 bonus to the damage rolls of unarmed strikes."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 You gain a +1 bonus to the damage rolls of unarmed strikes. You also gain the benefits below while grappling creatures:

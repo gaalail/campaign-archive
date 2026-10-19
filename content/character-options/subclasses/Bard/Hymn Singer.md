@@ -3,6 +3,7 @@ title: Hymn Singer
 parent_class: Bard
 summary: Bard College for the Bard
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Hymn Singers are trained to inspire their fellow zealots and convert enemies to join their side. Students of both religion and war, they use sacred hymns and religious legends to inspire their allies, to make them stand tall against their enemies in their faith, and to provide them with advantage in combat.

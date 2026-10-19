@@ -15,6 +15,7 @@ components: V, S
 ritual: false
 concentration: true
 source: Homebrew
+source_type: homebrew
 ---
 
 _4th-level enchantment_

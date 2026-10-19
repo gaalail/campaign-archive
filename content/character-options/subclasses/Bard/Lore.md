@@ -3,6 +3,7 @@ title: Lore
 parent_class: Bard
 summary: Bard College for the Bard
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Bard College (Bard subclass)_

@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "You have gained the ability to contact the Ki of your previous lives to gain information"
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 9th-level Monk
 ---
 

@@ -1,9 +1,11 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Mark of Good
 prerequisite: None
 summary: You carry the mark of a good deity or another good, cosmic entity.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

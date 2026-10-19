@@ -6,6 +6,7 @@ min_level: 7
 prerequisite: None
 summary: You can cast confusion once using a warlock spell slot.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can cast confusion once using a warlock spell slot. You can't do so again until you finish a long rest.

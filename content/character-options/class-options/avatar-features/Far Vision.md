@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: You have proficiency in the Perception skill.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You have proficiency in the Perception skill. You have advantage on Wisdom (Perception) checks that rely on sight.

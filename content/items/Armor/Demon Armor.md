@@ -5,6 +5,7 @@ item_type: Armor
 attunement: true
 summary: Armor (plate), very rare (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Armor (plate), very rare (requires attunement)_

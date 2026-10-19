@@ -12,6 +12,7 @@ components: V, S
 ritual: false
 concentration: true
 source: Corpus Angelus
+source_type: third-party
 ---
 
 _5th-level abjuration_

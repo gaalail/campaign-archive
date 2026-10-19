@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "As an action, you spend Ki (up to your Wisdom modifier) and focus it into your palm"
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

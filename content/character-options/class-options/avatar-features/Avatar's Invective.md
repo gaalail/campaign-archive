@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: You shout an insult in Sacred Language filled with the anger of your deity.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You shout an insult in Sacred Language filled with the anger of your deity. The Invective feature deals an additional 1 damage. This additional damage becomes 2 when you reach 12th level in this class.

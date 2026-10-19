@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: "When you choose this feature, you must also choose a favored weapon type (for example: shortswords, longswords, battleaxes, hal..."
 source: Corpus Angelus
+source_type: third-party
 ---
 
 When you choose this feature, you must also choose a favored weapon type (for example: shortswords, longswords, battleaxes, halberds) that you are proficient with. You can conjure one or two of them in your hands as a reaction. You can dismiss it if you wish (no action required). You can change the type of your favored weapon when you gain a level in this class. The weapons disappear when they leave your hand.

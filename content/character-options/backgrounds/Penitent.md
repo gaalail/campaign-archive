@@ -2,6 +2,7 @@
 title: Penitent
 summary: "Skills: One related to your past life"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You were once a heretic. For a time in your life, you murdered innocents, stole from others, worshipped dark powers; you sinned. But then, something happened that put you on the path of penitence.

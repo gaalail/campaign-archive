@@ -5,6 +5,7 @@ item_type: Scroll
 attunement: false
 summary: Scroll, common
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Scroll, common_

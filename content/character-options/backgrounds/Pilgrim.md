@@ -2,6 +2,7 @@
 title: Pilgrim
 summary: "Skills: Religion and Survival"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You are a pious person who travels to places that are sacred to your faith. Through pilgrimage, you hope to feed your soul with divine blessings and mystical inspiration to become closer to your deity.

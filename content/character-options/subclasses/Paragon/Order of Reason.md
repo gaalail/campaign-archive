@@ -3,6 +3,7 @@ title: Order of Reason
 parent_class: Paragon
 summary: "Divine Order: Scholarship and knowledge of enemies"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Realms are filled with the enemies of holy temples, originating from different aspects of evil. They are armed in numerous ways, adapted to various uninhabitable places owing to their supernatural fortitude, and are taught how to desecrate the efforts of the good. It is the duty of the members of the Order of Reason to study such creatures and to strategize against them. They are the keepers of the temples' bestiaries and incredibly efficient leaders against the forces of evil.

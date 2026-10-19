@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: An aura of divine energies covers the weapons you hold.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 An aura of divine energies covers the weapons you hold. The melee weapons you wield gain the reach property, while the range of ranged weapons increases by 15 feet.

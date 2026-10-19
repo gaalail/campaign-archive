@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Dexterity 13"
 summary: "While wielding a single finesse weapon, with no shield and no heavy armor, you gain a +2 bonus to attack rolls with that weapon and a +1 bonus to AC."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 While wielding a single finesse weapon, with no shield and no heavy armor, you gain a +2 bonus to attack rolls with that weapon and a +1 bonus to AC.

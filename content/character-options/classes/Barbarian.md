@@ -6,6 +6,7 @@ saving_throws:
   - CON
 summary: d12 hit die; saving throws STR, CON
 source: SRD 5.1
+source_type: SRD
 ---
 
 ## The Barbarian table

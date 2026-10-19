@@ -3,6 +3,7 @@ title: Expanded Radiant Form
 prerequisite: Light-Touched
 summary: "Prerequisite: Light-Touched"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Light-Touched

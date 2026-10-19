@@ -3,6 +3,7 @@ title: Archangel
 parent_class: Warlock
 summary: Otherworldly Patron for the Warlock
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You made a pact with an archangel, one of the highest-ranking members of heaven. Archangels can be peaceful entities that aim to heal others' wounds, or they may be burning with wrath and a need for heavenly justice. You serve as the archangel's hand, watching over the world, observing mortals, and reporting and even punishing the sinful.

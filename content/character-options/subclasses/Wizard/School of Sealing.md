@@ -3,6 +3,7 @@ title: School of Sealing
 parent_class: Wizard
 summary: Arcane Tradition for the Wizard
 source: Corpus Angelus
+source_type: third-party
 ---
 
 This school of magic is all about enhancing or reducing the effects of spells by sealing them in a specific way. The wizards of this school usually work with spells from the school of abjuration and aim to provide better protection through magic. Wizards of this school are called sealers and are generally the protectors of the groups they are in.

@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "None"
 summary: "You are trained in exotic weapons typically associated with performative warriors, granting you the following benefits:"
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 You are trained in exotic weapons typically associated with performative warriors, granting you the following benefits:

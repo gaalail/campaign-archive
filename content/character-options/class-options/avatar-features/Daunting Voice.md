@@ -6,6 +6,7 @@ min_level: 4
 prerequisite: None
 summary: One word from you sows a relentless fear in the minds of your enemies.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 One word from you sows a relentless fear in the minds of your enemies. As an action, you choose a target within 30 feet of you and speak a word in Sacred Language. The target must succeed on a Wisdom saving throw, or be frightened of you until the end of their next turn.

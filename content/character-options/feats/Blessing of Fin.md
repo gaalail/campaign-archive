@@ -3,6 +3,7 @@ title: Blessing of Fin
 prerequisite: None
 summary: "Several fins appear on your arms, legs, and torso granting you the following benefits:"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Several fins appear on your arms, legs, and torso granting you the following benefits:

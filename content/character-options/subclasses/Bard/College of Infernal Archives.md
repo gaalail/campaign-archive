@@ -3,6 +3,7 @@ title: College of Infernal Archives
 parent_class: Bard
 summary: Bard College for the Bard
 source: Homebrew
+source_type: homebrew
 ---
 
 Scholars, scientists, philosophers, priests. Infernal Archivists seek to understand and record the true nature of the world, and of life and death. Though their work often overlaps with those amongst the mages who make a study of alchemy, or even of necromancy, Infernal Archivists are distinct in their focus on the underlying philosophy behind their work—and in the sources they consult.

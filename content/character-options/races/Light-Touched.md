@@ -2,6 +2,7 @@
 title: Light-Touched
 summary: Medium; speed 30 ft.; +2 Charisma; subraces Goldenborn, Iridescent Ones, and Silver Born
 source: Corpus Angelus
+source_type: third-party
 ---
 
 > I've seen the look in her eyes, bright as the sun it was. She was there to scorch me. "Oh," I exclaimed, "I'm through with filching. Promise!" She looked at me and I saw mercy in her glowing eyes. She let me live and I never stole another thing again. Never again...

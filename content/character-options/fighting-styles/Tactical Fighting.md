@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Intelligence of 13 or higher"
 summary: "You can take the Help or the Search action as a bonus action."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 You can take the Help or the Search action as a bonus action. When you use the Help action to aid an attack, the target can be up to 30 feet away, so long as the attacker can hear you.

@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "You have trained in a specialized style of fighting"
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

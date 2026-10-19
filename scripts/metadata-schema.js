@@ -54,6 +54,14 @@ export function validateMetadata(metadata, schema, definitions) {
   }
 
   if (
+    typeof metadata.source === "string" &&
+    metadata.source.trim() &&
+    !Object.hasOwn(metadata, "source_type")
+  ) {
+    errors.push('"source_type" is required when "source" is provided')
+  }
+
+  if (
     metadata.content_status === "incomplete" &&
     (!Object.hasOwn(metadata, "incomplete_reason") || !metadata.incomplete_reason?.trim())
   ) {

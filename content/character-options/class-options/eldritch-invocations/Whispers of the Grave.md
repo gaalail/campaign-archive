@@ -6,6 +6,7 @@ min_level: 9
 prerequisite: None
 summary: You can cast speak with dead at will, without expending a spell slot.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can cast speak with dead at will, without expending a spell slot.

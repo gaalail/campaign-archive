@@ -6,6 +6,7 @@ min_level: 11
 prerequisite: None
 summary: You can choose to deal force damage instead of thunder damage with your Sacred Language (Invective) feature.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can choose to deal force damage instead of thunder damage with your Sacred Language (Invective) feature.

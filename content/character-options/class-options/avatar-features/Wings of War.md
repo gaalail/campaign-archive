@@ -6,6 +6,7 @@ min_level: 10
 prerequisite: Armored Wings
 summary: You gained experience with your wings and can now use them more efficiently in combat.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You gained experience with your wings and can now use them more efficiently in combat.

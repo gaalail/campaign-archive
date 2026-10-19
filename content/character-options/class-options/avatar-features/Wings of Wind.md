@@ -6,6 +6,7 @@ min_level: 14
 prerequisite: Celestial Wings
 summary: Your flying speed becomes 60 feet and you can hover.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Your flying speed becomes 60 feet and you can hover.

@@ -3,6 +3,7 @@ title: Path of the Branded
 parent_class: Barbarian
 summary: Primal Path for the Barbarian
 source: Homebrew
+source_type: homebrew
 ---
 
 You have a magic brand on your body that rejects any attempts to heal or remove it, even through magic. This brand ravages your body, but your pure grit has rendered you capable of withstanding it. The mystic brand, and your sheer constitution, have granted you unique abilities. Furthermore, your brand occasionally bursts forth into ghostly light, filling you with otherworldly power.

@@ -3,6 +3,7 @@ title: Path of the Reaper
 parent_class: Thanatomancer
 summary: Chains swift weapon strikes and cuts at the soul
 source: Erevan's Guide to Death & Beyond
+source_type: third-party
 ---
 
 # Path of the Reaper

@@ -12,6 +12,7 @@ components: S, M
 ritual: true
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 _9th-level abjuration (ritual)_

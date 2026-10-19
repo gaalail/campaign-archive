@@ -15,6 +15,7 @@ components: V, S, M
 ritual: false
 concentration: true
 source: SRD 5.1
+source_type: SRD
 subclass_spell_lists:
   - Mystic
 ---

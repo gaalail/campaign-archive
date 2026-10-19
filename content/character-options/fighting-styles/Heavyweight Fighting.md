@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Strength of 13 or higher"
 summary: "You gain a +1 bonus to your damage rolls with heavy melee weapons."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 You gain a +1 bonus to your damage rolls with heavy melee weapons. When you hit a target with a heavy melee weapon attack, you can use your bonus action on that turn to make a Shove attack against the same target with advantage.

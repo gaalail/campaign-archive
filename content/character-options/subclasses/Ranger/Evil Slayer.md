@@ -3,6 +3,7 @@ title: Evil Slayer
 parent_class: Ranger
 summary: Ranger Conclave for the Ranger
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You are a zealous hunter of evil masters and their minions. An Evil Slayer searches for all kinds of evil and excels at both drawing them out and slaying them. Evil slayers are destined to become the heroes of glorious legends, even if some of them are crushed beneath the feet of evil and are forgotten in the dusty pages of history.

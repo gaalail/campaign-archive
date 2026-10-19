@@ -3,6 +3,7 @@ title: Holy Virtues Domain
 parent_class: Cleric
 summary: Divine Domain for the Cleric
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Self-sacrifice, honor, peace; and much more that form the foundation of universal goodness. These are holy virtues, and they come in many forms. They are some of the few things in the universe that can make kings and queens out of commoners, and their blinding light has the power to illuminate the darkest moments. The deities of these virtues watch over the virtuous, protecting and rewarding them for their deeds.

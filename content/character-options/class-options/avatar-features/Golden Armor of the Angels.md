@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: Golden Armor of Heaven
 summary: You ignore the Strength prerequisites to wear an armor.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You ignore the Strength prerequisites to wear an armor.

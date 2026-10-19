@@ -3,6 +3,7 @@ title: Epitome of Good
 prerequisite: You must be a good-aligned cleric, paladin, or paragon
 summary: "Prerequisite: You must be a good-aligned cleric, paladin, or paragon"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** You must be a good-aligned cleric, paladin, or paragon

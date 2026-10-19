@@ -6,6 +6,7 @@ min_level: 11
 prerequisite: None
 summary: You have a golden eye-shaped piece of metal on your forehead.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You have a golden eye-shaped piece of metal on your forehead. You are aware of the exact position of all creatures while they are in your domain if they are not magically concealed.

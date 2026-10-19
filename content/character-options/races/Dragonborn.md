@@ -2,6 +2,7 @@
 title: Dragonborn
 summary: Medium size; speed 30 ft.; +2 STR, +1 CHA
 source: SRD 5.1
+source_type: SRD
 ---
 
 **Ability score increase:** +2 STR, +1 CHA  

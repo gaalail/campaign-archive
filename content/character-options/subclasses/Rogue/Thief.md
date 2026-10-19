@@ -3,6 +3,7 @@ title: Thief
 parent_class: Rogue
 summary: Roguish Archetype for the Rogue
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Roguish Archetype (Rogue subclass)_

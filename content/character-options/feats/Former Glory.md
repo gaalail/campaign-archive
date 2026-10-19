@@ -3,6 +3,7 @@ title: Former Glory
 prerequisite: Aengel
 summary: "Prerequisite: Aengel"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Aengel

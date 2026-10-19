@@ -3,6 +3,7 @@ title: Celestial Blood
 prerequisite: None
 summary: Your blood is infused with celestial energies and you learn how to tap its potential.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Your blood is infused with celestial energies and you learn how to tap its potential. You gain the following benefits:

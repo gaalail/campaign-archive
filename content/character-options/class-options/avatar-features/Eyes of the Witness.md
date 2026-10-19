@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. If you have Darkvision, the range increases to 90 feet.

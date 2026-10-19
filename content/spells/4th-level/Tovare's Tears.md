@@ -13,6 +13,7 @@ components: V, S
 ritual: true
 concentration: true
 source: Homebrew
+source_type: homebrew
 ---
 
 _4th-level evocation (ritual)_

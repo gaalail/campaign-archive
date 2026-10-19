@@ -7,6 +7,7 @@ saving_throws:
   - WIS
 summary: d6 hit die; saving throws INT, WIS; spellcasting with INT
 source: SRD 5.1
+source_type: SRD
 ---
 
 ## The Wizard table

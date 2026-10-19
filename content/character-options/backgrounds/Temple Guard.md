@@ -2,6 +2,7 @@
 title: Temple Guard
 summary: "Skills: Insight, Religion"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You were once stuck between two worlds in your profession; the hard life of a guard and the comfort of the temple. While normal guards were trained to chase and arrest criminals and conduct investigations where need be, you were trained to stay at your post at all cost. You might have been the sole protector of a shrine, the gatekeeper of a temple, or the guardian of a cleric.

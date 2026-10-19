@@ -3,6 +3,7 @@ title: Grenadier
 parent_class: Artificer
 summary: Crafts alchemical explosives and weaponizes them in combat
 source: Homebrew
+source_type: homebrew
 ---
 
 # Grenadier

@@ -3,6 +3,7 @@ title: Path of the Virtuous
 parent_class: Barbarian
 summary: Primal Path for the Barbarian
 source: Corpus Angelus
+source_type: third-party
 ---
 
 When the most virtuous of all are in the midst of a life-changing near-death experience, they are presented with an offer by the forces of good; they can go to heaven, or they can start a new life with the sole purpose of protecting the innocent. The barbarians walking the Path of the Virtuous are those who choose the latter.

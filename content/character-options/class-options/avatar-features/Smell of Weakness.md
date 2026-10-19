@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: As an action, you choose a creature within 120 feet of you and reveal one of its weaknesses.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 As an action, you choose a creature within 120 feet of you and reveal one of its weaknesses. In other words, you become aware of one vulnerability of the target. If the target has no vulnerabilities, you learn one damage type to which the target has no resistance or immunity. Otherwise, this feature has no effect. If the creature is immune to magic that allows other creatures to read its mind, discern its location, or to similar divination magic, it is also immune to this feature. Also, you cannot learn information about a creature whose challenge rating is higher than your levels in this class.

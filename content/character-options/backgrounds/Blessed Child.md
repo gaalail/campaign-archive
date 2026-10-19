@@ -2,6 +2,7 @@
 title: Blessed Child
 summary: "Skills: Two of your choice"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 At birth, you were blessed by the forces of good or by a respected member of a good temple. Through this blessing, divine powers put their faith in you. In return, you are expected to follow their path and put your faith in them. You know the flame of faith burning in your heart will warm you and your allies if you hold on to it, even in the dampest and coldest of places. This flame is your blessing and your guide.

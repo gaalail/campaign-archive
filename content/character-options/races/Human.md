@@ -2,6 +2,7 @@
 title: Human
 summary: Medium size; speed 30 ft.; +1 STR, +1 DEX, +1 CON, +1 INT, +1 WIS, +1 CHA
 source: SRD 5.1
+source_type: SRD
 ---
 
 **Ability score increase:** +1 STR, +1 DEX, +1 CON, +1 INT, +1 WIS, +1 CHA  

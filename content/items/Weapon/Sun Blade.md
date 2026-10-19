@@ -5,6 +5,7 @@ item_type: Weapon
 attunement: true
 summary: Weapon (longsword), rare (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Weapon (longsword), rare (requires attunement)_

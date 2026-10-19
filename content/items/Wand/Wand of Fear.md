@@ -5,6 +5,7 @@ item_type: Wand
 attunement: true
 summary: Wand, rare (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Wand, rare (requires attunement)_

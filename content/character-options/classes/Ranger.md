@@ -7,6 +7,7 @@ saving_throws:
   - STR
 summary: d10 hit die; saving throws DEX, STR; spellcasting with WIS
 source: SRD 5.1
+source_type: SRD
 ---
 
 ## The Ranger table

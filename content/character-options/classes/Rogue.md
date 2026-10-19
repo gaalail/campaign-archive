@@ -6,6 +6,7 @@ saving_throws:
   - INT
 summary: d8 hit die; saving throws DEX, INT
 source: SRD 5.1
+source_type: SRD
 ---
 
 ## The Rogue table

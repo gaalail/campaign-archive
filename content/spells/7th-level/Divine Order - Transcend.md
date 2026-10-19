@@ -14,6 +14,7 @@ components: "V, S"
 ritual: false
 concentration: true
 source: Homebrew
+source_type: homebrew
 ---
 
 _7th-level divination_

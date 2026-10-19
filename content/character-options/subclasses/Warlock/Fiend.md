@@ -3,6 +3,7 @@ title: Fiend
 parent_class: Warlock
 summary: Otherworldly Patron for the Warlock
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Otherworldly Patron (Warlock subclass)_

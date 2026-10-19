@@ -11,6 +11,7 @@ components: "V, S, M"
 ritual: false
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _3rd-level evocation_

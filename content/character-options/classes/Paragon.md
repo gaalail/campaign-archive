@@ -6,6 +6,7 @@ saving_throws:
   - CHA
 summary: d10 hit die; saving throws WIS, CHA; avatar form and sacred language
 source: Corpus Angelus
+source_type: third-party
 ---
 
 …to wield weapons and be a close combatant, you may enjoy playing a paragon of the Order of Valor. If you want to talk to the masses and affect your enemies with your voice, Order of the Voice is for you. Or, if you want to be an expert about your enemies' weaknesses and powers, and be a scholar of religious knowledge, you would do well to choose the Order of Reason.

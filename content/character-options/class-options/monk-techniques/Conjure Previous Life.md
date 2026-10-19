@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "You summon a specter of your past life to come to your aid"
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 13th-level Monk
 ---
 

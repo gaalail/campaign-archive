@@ -5,6 +5,7 @@ item_type: Wondrous Items
 attunement: true
 summary: Wondrous item, rare (requires attunement by a cleric, druid, or paladin)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Wondrous item, rare (requires attunement by a cleric, druid, or paladin)_

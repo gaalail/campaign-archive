@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "When you are hit by a ranged weapon attack you can see, you can use a reaction to reduce the damage by your Monk level + your Martial Arts Die + your Dexterity "
 source: Alternate Monk
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

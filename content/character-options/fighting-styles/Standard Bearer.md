@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Charisma of 13 or higher"
 summary: "While holding a standard or banner aloft, and nothing else in that hand, you can rally allied creatures within a radius in feet equal to 5 times your Proficiency Bonus."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 While holding a standard or banner aloft, and nothing else in that hand, you can rally allied creatures within a radius in feet equal to 5 times your Proficiency Bonus.

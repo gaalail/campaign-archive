@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "Your sense of self and strength of your will are unshakable"
 source: Alternate Monk
+source_type: homebrew
 prerequisite: 13th-level Monk
 ---
 

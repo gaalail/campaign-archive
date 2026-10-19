@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "None"
 summary: "When a creature you can see hits you or a target within 5 feet with a melee attack, you can use your reaction to add your proficiency bonus to the target's AC against that attack."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 When a creature you can see hits you or a target within 5 feet with a melee attack, you can use your reaction to add your proficiency bonus to the target's AC against that attack. You must be wielding a shield or melee weapon.

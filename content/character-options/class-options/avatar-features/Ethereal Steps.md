@@ -6,6 +6,7 @@ min_level: 10
 prerequisite: None
 summary: As a bonus action, you teleport to an unoccupied space that you can see within 30 feet of you.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 As a bonus action, you teleport to an unoccupied space that you can see within 30 feet of you. Starting at 13th level, you can teleport back to your domain. You can use this feature for a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.

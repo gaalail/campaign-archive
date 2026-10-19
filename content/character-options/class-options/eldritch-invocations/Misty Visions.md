@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: None
 summary: You can cast silent image at will, without expending a spell slot or material components.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can cast silent image at will, without expending a spell slot or material components.

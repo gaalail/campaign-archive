@@ -14,6 +14,7 @@ components: "V"
 ritual: false
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _Transmutation cantrip_

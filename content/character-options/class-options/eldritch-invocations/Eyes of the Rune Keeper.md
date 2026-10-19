@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: None
 summary: You can read all writing.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can read all writing.

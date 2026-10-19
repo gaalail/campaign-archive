@@ -3,6 +3,7 @@ title: Circle of Heaven
 parent_class: Druid
 summary: Druid Circle for the Druid
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Druids of the Circle of Heaven find beauty in heavenly creations. They commune with celestials, good fey, and other good spirits, and call on them for aid. They see these creatures as the protectors of nature and of the living, and see themselves as these entities' reflections, acting in their place on earth.

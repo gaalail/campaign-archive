@@ -3,6 +3,7 @@ title: Circle of Phoenix
 parent_class: Druid
 summary: Druid Circle for the Druid
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Phoenixes are revered and deemed sacred by the druids of the Circle of Phoenix. They find the purity and the innocence of their rebirth by fire utterly amazing. These druids have a special bond with one another and they all try to live their lives in the way that these hallowed creatures do.

@@ -11,6 +11,7 @@ components: V, S, M
 ritual: false
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 _4th-level evocation_

@@ -2,6 +2,7 @@
 title: Redeemed Fiend
 summary: Medium fiend; speed 30 ft.; +2 Wisdom; subraces Redeemed Succubus/Incubus and Redeemed Chain Devil
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Fiends are known to be evil, ruthless, destructive, and hateful; basically the opposite of everything good. They are not only evil, evil and malevolence make up their very nature. They delight in pain and they do not know what mercy is. They do not easily change their ways either. Nevertheless, they are intelligent, capable of learning, and susceptible to change. Further, although redemption is extremely rare and difficult for a fiend, it is not impossible.

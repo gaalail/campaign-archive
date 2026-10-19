@@ -2,6 +2,7 @@
 title: Martyr
 summary: "Skills: One of Arcana, History, or Religion; one of Athletics, Persuasion, or Insight"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You are fighting for a cause of great importance for the good of all, or of your own community. This cause can be anything; you could be trying to win a war, seeking to put an end to a grave injustice, or looking to fill those around you with a sense of divine understanding.

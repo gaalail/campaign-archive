@@ -2,6 +2,7 @@
 title: Tiefling
 summary: Medium size; speed 30 ft.; +1 INT, +2 CHA
 source: SRD 5.1
+source_type: SRD
 ---
 
 **Ability score increase:** +1 INT, +2 CHA  

@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "Once per turn in place of an attack, you can expend 1 Ki to touch a creature and manipulate its Ki to put it to sleep"
 source: Alternate Monk
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

@@ -2,6 +2,7 @@
 title: Alternate Fighting Initiate
 summary: Alternate Fighter feat
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 # Alternate Fighting Initiate

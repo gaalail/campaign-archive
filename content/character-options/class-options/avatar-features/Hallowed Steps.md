@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: None
 summary: You can have your footsteps leave a holy print on the ground, which can be seen with truesight, the detect evil and good spell...
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can have your footsteps leave a holy print on the ground, which can be seen with truesight, the detect evil and good spell and Divine Sense feature. The footprints remain for one month. Both your potential allies and enemies want to follow these steps and find you, whether it is to help you or to destroy you.

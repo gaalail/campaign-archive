@@ -6,6 +6,7 @@ min_level: 9
 prerequisite: None
 summary: With the words that are given to you, you can deny death.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 With the words that are given to you, you can deny death. You can cast the death ward spell.

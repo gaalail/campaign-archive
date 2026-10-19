@@ -5,6 +5,7 @@ item_type: Scroll
 attunement: false
 summary: Scroll, very rare
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Scroll, very rare_

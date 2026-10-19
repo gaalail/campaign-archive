@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: Shaped Voice
 summary: Your voice is more demanding and commanding, enforcing the will of words upon your surroundings.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Your voice is more demanding and commanding, enforcing the will of words upon your surroundings. When you choose this avatar feature, you must also choose one of the following features, gaining the benefits of the chosen feature. You can choose this avatar feature more than once, choosing a different feature each time.

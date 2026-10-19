@@ -6,6 +6,7 @@ saving_throws:
   - DEX
 summary: d10 hit die; masters martial arts and Ki-powered Mystic Techniques
 source: Alternate Monk
+source_type: homebrew
 ---
 
 # Monk

@@ -3,6 +3,7 @@ title: Way of the Hurricane
 parent_class: Monk
 summary: Monastic Tradition for the Monk
 source: Alternate Monk Expanded
+source_type: homebrew
 ---
 
 # Way of the Hurricane

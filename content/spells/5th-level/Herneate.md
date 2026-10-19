@@ -14,6 +14,7 @@ components: V, S
 ritual: false
 concentration: false
 source: Homebrew
+source_type: homebrew
 ---
 
 _5th-level necromancy_

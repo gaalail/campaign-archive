@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: None
 summary: You can cast detect magic at will, without expending a spell slot.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can cast detect magic at will, without expending a spell slot.

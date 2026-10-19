@@ -3,6 +3,7 @@ title: Angelic Durability
 prerequisite: None
 summary: Your body is enhanced with angelic essence and some parts of it resemble that of an angel, made out of marble.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Your body is enhanced with angelic essence and some parts of it resemble that of an angel, made out of marble. You gain the following benefits:

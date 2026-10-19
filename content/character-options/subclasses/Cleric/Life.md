@@ -3,6 +3,7 @@ title: Life
 parent_class: Cleric
 summary: Divine Domain for the Cleric
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Divine Domain (Cleric subclass)_

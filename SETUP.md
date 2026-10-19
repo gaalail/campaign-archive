@@ -8,7 +8,7 @@ Live site: https://gaalail.github.io/campaign-archive
 2. The left menu lists Ra Gol'vek, Vyrun, Curse of Strahd, Spells, Items, Character options (Classes, Subclasses, Races, Backgrounds, Feats, Templates, Class options), Rules, and Monsters. The forms come from `.pages.yml`.
 3. Choose a section, click Add, fill in the form, and save. Each save is committed to the repository and the site rebuilds in 2 to 4 minutes.
 
-Every spell, item, character option, and monster has a **Source** field. "SRD 5.1" marks material from the open SRD. Pick "Homebrew" for your own work, or "Corpus Angelus" for material from that book. Anything that isn't SRD shows on that page's Homebrew tab. To add another book or source name, edit the Source list in `.pages.yml`.
+Every spell, item, character option, and monster has a **Source** field and a required **Source type**. Use `SRD` for SRD 5.1, `third-party` for external works such as Corpus Angelus and Erevan's Guide, and `homebrew` for original homebrew sources including Alternate Fighter and Alternate Monk. Source type is validated whenever a source is present. Anything that isn't SRD shows on that page's Homebrew tab. To add another book or source name, edit the Source list in `.pages.yml`.
 
 ## Text format
 

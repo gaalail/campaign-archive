@@ -2,6 +2,7 @@
 title: Alternate Great Weapon Master
 summary: Alternate Fighter feat
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 # Alternate Great Weapon Master

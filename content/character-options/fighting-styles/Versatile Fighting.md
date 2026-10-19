@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Strength or Dexterity 11"
 summary: "While wielding a single versatile weapon and no shield, you gain a +1 bonus to attack rolls with it."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 While wielding a single versatile weapon and no shield, you gain a +1 bonus to attack rolls with it. You can use a bonus action to make a Grapple or Shove attack, or take the Use an Object action.

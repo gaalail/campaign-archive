@@ -3,6 +3,7 @@ title: Celestial Summoner
 parent_class: Wizard
 summary: Arcane Tradition for the Wizard
 source: Corpus Angelus
+source_type: third-party
 ---
 
 The Celestial Summoner explores the cosmic secrets of angels and the laws of the good. As one, you combine your knowledge of arcane mysteries with religious teachings, and learn how to summon celestials to your aid.

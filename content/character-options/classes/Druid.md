@@ -7,6 +7,7 @@ saving_throws:
   - WIS
 summary: d8 hit die; saving throws INT, WIS; spellcasting with WIS
 source: SRD 5.1
+source_type: SRD
 ---
 
 ## The Druid table

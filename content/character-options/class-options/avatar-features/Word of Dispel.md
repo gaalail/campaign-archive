@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: None
 summary: You can cease the existence of mundane items, change reality and bend it to your will through the sheer power of your voice.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can cease the existence of mundane items, change reality and bend it to your will through the sheer power of your voice. As an action, you can speak a word in Sacred Language and a nonmagical item ceases to exist or a common item's magical properties are suppressed for 1 hour. You can suppress the magical properties of an uncommon item at 9th level, a rare item at 14th level and a very rare item at 20th level.

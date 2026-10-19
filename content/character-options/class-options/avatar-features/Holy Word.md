@@ -6,6 +6,7 @@ min_level: 8
 prerequisite: Hands of the Holy, Shaped Voice
 summary: You can change the damage type of your Sacred Language (Invective) feature to radiant damage.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You can change the damage type of your Sacred Language (Invective) feature to radiant damage.

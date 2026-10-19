@@ -5,6 +5,7 @@ item_type: Ring
 attunement: true
 summary: Ring, very rare (requires attunement outdoors at night)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Ring, very rare (requires attunement outdoors at night)_

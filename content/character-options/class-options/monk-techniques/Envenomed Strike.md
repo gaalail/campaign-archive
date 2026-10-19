@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "Once per turn when you hit a creature with a melee Martial Arts attack, you can spend 1 Ki to deal bonus poison damage equal to your Martial Arts Die and force "
 source: Alternate Monk Expanded
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

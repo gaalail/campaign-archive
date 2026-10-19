@@ -3,6 +3,7 @@ title: Might of the Shaper Giant
 prerequisite: Strength 19 or higher
 summary: "Prerequisite: Strength 19 or higher"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Strength 19 or higher

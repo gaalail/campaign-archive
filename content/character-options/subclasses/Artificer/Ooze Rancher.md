@@ -3,6 +3,7 @@ title: Ooze Rancher
 parent_class: Artificer
 summary: Raises a domesticated ooze and adapts it with harvested creature essences
 source: Homebrew
+source_type: homebrew
 ---
 
 # Ooze Rancher

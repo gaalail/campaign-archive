@@ -12,6 +12,7 @@ components: V, S
 ritual: true
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 _4th-level illusion (ritual)_

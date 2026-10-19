@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "Once per turn when you hit a creature with a melee Martial Arts attack, you can spend 1 Ki to assault its Ki flow, forcing it to make a Wisdom saving throw"
 source: Alternate Monk
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

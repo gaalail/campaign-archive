@@ -3,6 +3,7 @@ title: Grappler
 prerequisite: STR 13
 summary: "Prerequisite: STR 13"
 source: SRD 5.1
+source_type: SRD
 ---
 
 You’ve developed the Skills necessary to hold your own in close--quarters Grappling. You gain the following benefits:

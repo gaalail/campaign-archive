@@ -1,11 +1,13 @@
 ---
-incomplete: true
+content_status: incomplete
+incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
 title: Ring of Necrotic Resistance
 rarity: Rare
 item_type: Ring
 attunement: true
 summary: Ring, rare (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

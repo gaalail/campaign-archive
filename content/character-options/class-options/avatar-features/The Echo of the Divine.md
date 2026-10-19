@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: The Speaker
 summary: Sacred Language echoes through you and can be heard by anyone within 15 feet of you.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Sacred Language echoes through you and can be heard by anyone within 15 feet of you. Your allies in the area feel more energetic, gaining a +1 bonus to attack rolls.

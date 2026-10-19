@@ -5,6 +5,7 @@ item_type: Wondrous Items
 attunement: false
 summary: Wondrous item, legendary
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Wondrous item, legendary_

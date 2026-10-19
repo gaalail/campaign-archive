@@ -3,6 +3,7 @@ title: Way of the Drunken Fist
 parent_class: Monk
 summary: Monastic Tradition for the Monk
 source: Alternate Monk
+source_type: homebrew
 ---
 
 # Way of the Drunken Fist

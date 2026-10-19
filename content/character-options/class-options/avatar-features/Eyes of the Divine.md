@@ -6,6 +6,7 @@ min_level: 12
 prerequisite: None
 summary: You gain blindsight out to a range of 15 feet.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 You gain blindsight out to a range of 15 feet.

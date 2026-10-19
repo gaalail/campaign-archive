@@ -96,6 +96,7 @@ _source_type_field: &source_type
   name: source_type
   label: Source type
   type: select
+  required: true
   options:
     values:
       - SRD

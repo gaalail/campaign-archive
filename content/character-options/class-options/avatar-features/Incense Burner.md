@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: None
 summary: As an action, you conjure a censer in your empty hand.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 As an action, you conjure a censer in your empty hand. Incense burns in it, releasing smoke with a scent of your choice, which reveals the footprints of creatures that passed through, and the handprints and fingerprints where creatures touched surfaces or objects within the last three days. The censer and the prints remain for 1 minute. Only you and two other creatures of your choice can see the prints. The smoke covers a 5-foot sphere, which moves with you, remaining centered on you.

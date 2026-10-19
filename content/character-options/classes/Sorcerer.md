@@ -7,6 +7,7 @@ saving_throws:
   - CHA
 summary: d6 hit die; saving throws CON, CHA; spellcasting with CHA
 source: SRD 5.1
+source_type: SRD
 ---
 
 ## The Sorcerer table

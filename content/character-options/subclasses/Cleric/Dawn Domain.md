@@ -3,6 +3,7 @@ title: Dawn Domain
 parent_class: Cleric
 summary: Divine Domain for the Cleric
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Deities of dawn watch over the light of dawn, which is a symbol of hope, like the light at the end of a dark tunnel. According to these deities, dawn is one of the most fundamental and powerful concepts in the lives of mortals. To stand in the way of light, and to help darkness advance is thus unacceptable heresy. The deities of dawn are not the only ones that associate this idea of first light with goodness, as the interventions of good forces in history are generally depicted as a sun rising over darkness. These deities generally expect their followers to be the sentinels of light, standing tall against the darkness, banishing its minions.

@@ -24,6 +24,7 @@ test("content metadata schema requires core class, spell, and item fields", () =
         hit_die: "d6",
         saving_throws: ["INT", "WIS"],
         source: "SRD 5.1",
+        source_type: "SRD",
       },
     ],
     [
@@ -34,6 +35,7 @@ test("content metadata schema requires core class, spell, and item fields", () =
         school: "Evocation",
         classes: ["Sorcerer", "Wizard"],
         source: "SRD 5.1",
+        source_type: "SRD",
       },
     ],
     [
@@ -43,6 +45,7 @@ test("content metadata schema requires core class, spell, and item fields", () =
         item_type: "Potion",
         rarity: "Common",
         source: "SRD 5.1",
+        source_type: "SRD",
       },
     ],
   ]
@@ -57,6 +60,13 @@ test("content metadata schema requires core class, spell, and item fields", () =
       metadataSchema.schemas.class,
       metadataSchema,
     ).includes('missing required "saving_throws"'),
+  )
+  assert.ok(
+    validateMetadata(
+      { title: "Source Missing Type", source: "SRD 5.1" },
+      metadataSchema.schemas.campaign,
+      metadataSchema,
+    ).includes('"source_type" is required when "source" is provided'),
   )
 })
 

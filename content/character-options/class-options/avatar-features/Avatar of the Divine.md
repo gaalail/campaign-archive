@@ -6,6 +6,7 @@ min_level: 6
 prerequisite: None
 summary: As a paragon, you were chosen by your deity and your avatar form is a blessing from the divine.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 As a paragon, you were chosen by your deity and your avatar form is a blessing from the divine. As you walk your deity's path and act as the epitome of their values, your avatar form becomes even more powerful. The DCs of your avatar features and Sacred Haven features (when you gain the Sacred Haven feature) increase by one.

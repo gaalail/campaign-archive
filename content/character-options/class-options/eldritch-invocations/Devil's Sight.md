@@ -6,6 +6,7 @@ min_level: 2
 prerequisite: None
 summary: You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.
 source: SRD 5.1
+source_type: SRD
 ---
 
 You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.

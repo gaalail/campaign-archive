@@ -3,6 +3,7 @@ title: Way of Cardinal Virtues
 parent_class: Monk
 summary: Monastic Tradition for the Monk
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Every devoted creature wants to follow the same path as the divinity they worship and to be their likeness among mortals. Those who seek to follow paths of righteousness usually find common ground in some sacred cardinal virtues. As a monk trains to become a fighter for all that is good, these cardinal virtues act as a guide. In time, these virtues not only become their lifestyle, but also line the path they are to walk. The Way of Cardinal Virtues represents the very best in all monks and through these virtues, a monk becomes their best version.

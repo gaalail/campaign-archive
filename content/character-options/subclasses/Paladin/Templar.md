@@ -3,6 +3,7 @@ title: Templar
 parent_class: Paladin
 summary: Sacred Oath for the Paladin
 source: Corpus Angelus
+source_type: third-party
 ---
 
 The templar is a paladin educated by the temple of their deity. They are temple knights who act according to the dogmas of their temple and who carry their holy symbol with pride wherever they go. Templars are trained to withstand any foe, and to help their allies in any way they can without an ounce of fear in their hearts. Their presence comforts allies and makes enemies stagger.

@@ -6,6 +6,7 @@ min_level: 1
 prerequisite: None
 summary: As a bonus action, you can realize whether an attack you can make has the potential to kill a creature of your choice that you...
 source: Corpus Angelus
+source_type: third-party
 ---
 
 As a bonus action, you can realize whether an attack you can make has the potential to kill a creature of your choice that you can see within 30 feet of you. To calculate the outcome, consider the hypothetical attack as a critical hit that deals the maximum damage.

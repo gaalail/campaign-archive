@@ -3,6 +3,7 @@ title: The Knight Dragon Bloodline
 parent_class: Sorcerer
 summary: Sorcerous Origin for the Sorcerer
 source: Corpus Angelus
+source_type: third-party
 ---
 
 Your innate magic comes from the heavenly might of Knight Dragons. These knights are brave dragons who reside in heaven and embody ideas of chivalry.

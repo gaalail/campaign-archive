@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Strength 13"
 summary: "When you hit a target with a heavy melee weapon attack, you can treat a damage die as its average result instead of rolling if the roll is lower than that average: d4 (2), d6 (3), d8 (4), d10 (5), or d12 (6)."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 When you hit a target with a heavy melee weapon attack, you can treat a damage die as its average result instead of rolling if the roll is lower than that average: d4 (2), d6 (3), d8 (4), d10 (5), or d12 (6).

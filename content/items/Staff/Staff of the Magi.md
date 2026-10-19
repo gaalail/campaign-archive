@@ -5,6 +5,7 @@ item_type: Staff
 attunement: true
 summary: Staff, legendary (requires attunement by a sorcerer, warlock, or wizard)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Staff, legendary (requires attunement by a sorcerer, warlock, or wizard)_

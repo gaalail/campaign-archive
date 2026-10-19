@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Strength of 11 or higher"
 summary: "You gain proficiency with improvised weapons."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 You gain proficiency with improvised weapons. Once per turn, when you hit with an improvised attack that uses a non-magical object, you can choose to destroy the object, rendering it useless for attacks, but deal the maximum possible damage, in place of rolling.

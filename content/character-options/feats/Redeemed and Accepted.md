@@ -3,6 +3,7 @@ title: Redeemed and Accepted
 prerequisite: Redeemed Fiend
 summary: "Prerequisite: Redeemed Fiend"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Redeemed Fiend

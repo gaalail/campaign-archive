@@ -5,6 +5,7 @@ item_type: Potion
 attunement: false
 summary: Potion, very rare
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Potion, very rare_

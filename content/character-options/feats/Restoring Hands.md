@@ -3,6 +3,7 @@ title: Restoring Hands
 prerequisite: You must be a good-aligned paladin
 summary: "Prerequisite: You must be a good-aligned paladin"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** You must be a good-aligned paladin

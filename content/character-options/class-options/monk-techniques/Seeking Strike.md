@@ -4,6 +4,7 @@ parent_class: Monk
 option_group: Mystic Techniques
 summary: "Your spirit can guide your strikes if your body fails"
 source: Alternate Monk
+source_type: homebrew
 prerequisite: 5th-level Monk
 ---
 

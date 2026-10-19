@@ -3,6 +3,7 @@ title: Consecrated Spell
 prerequisite: Ability to cast at least one spell, and your alignment must be any good
 summary: "Prerequisite: Ability to cast at least one spell, and your alignment must be any good"
 source: Corpus Angelus
+source_type: third-party
 ---
 
 **Prerequisite:** Ability to cast at least one spell, and your alignment must be any good

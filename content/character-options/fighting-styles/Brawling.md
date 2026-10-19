@@ -8,6 +8,7 @@ min_level: 1
 prerequisite: "Proficiency in Athletics"
 summary: "Your unarmed strikes deal 1d6 + your Strength modifier damage."
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 Your unarmed strikes deal 1d6 + your Strength modifier damage. If both hands are free, you can make one unarmed strike, Shove, or Grapple as a bonus action.

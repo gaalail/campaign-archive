@@ -13,6 +13,7 @@ components: V, S, M
 ritual: true
 concentration: false
 source: SRD 5.1
+source_type: SRD
 ---
 
 _2nd-level necromancy (ritual)_

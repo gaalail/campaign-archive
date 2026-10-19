@@ -2,6 +2,7 @@
 title: Signature Technique
 summary: Alternate Fighter feat
 source: Alternate Fighter
+source_type: homebrew
 ---
 
 # Signature Technique

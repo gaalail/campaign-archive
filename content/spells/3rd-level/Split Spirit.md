@@ -13,6 +13,7 @@ components: V, S, M
 ritual: true
 concentration: false
 source: Corpus Angelus
+source_type: third-party
 ---
 
 _3rd-level necromancy (ritual)_

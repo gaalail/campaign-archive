@@ -5,6 +5,7 @@ item_type: Wondrous Items
 attunement: true
 summary: Wondrous Items, rare (requires attunement)
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Wondrous Items, rare (requires attunement)_

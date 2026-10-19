@@ -7,6 +7,7 @@ saving_throws:
   - INT
 summary: d8 hit die; saving throws CON, INT; spellcasting with INT
 source: SRD 5.1
+source_type: SRD
 ---
 
 # Artificer

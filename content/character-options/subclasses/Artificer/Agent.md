@@ -3,6 +3,7 @@ title: Agent
 parent_class: Artificer
 summary: Marks and studies a chosen quarry
 source: Homebrew
+source_type: homebrew
 ---
 
 # Agent

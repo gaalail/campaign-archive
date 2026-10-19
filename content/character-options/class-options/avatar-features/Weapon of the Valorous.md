@@ -6,6 +6,7 @@ min_level: 9
 prerequisite: Weapon of the Chosen One
 summary: When you take this avatar feature, all your weapon attacks become magical.
 source: Corpus Angelus
+source_type: third-party
 ---
 
 When you take this avatar feature, all your weapon attacks become magical.

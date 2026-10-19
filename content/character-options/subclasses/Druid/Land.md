@@ -3,6 +3,7 @@ title: Land
 parent_class: Druid
 summary: Druid Circle for the Druid
 source: SRD 5.1
+source_type: SRD
 ---
 
 _Druid Circle (Druid subclass)_
