@@ -140,6 +140,24 @@ test("local neighborhood follows links in either direction to the requested dept
   assert.equal(getNeighborhood(model, "missing/page").nodes.length, 0)
 })
 
+test("page neighborhood builds only the requested page's incoming and outgoing links", () => {
+  const model = createNeighborhoodModel(index, "spells/fire-bolt")
+  assert.deepEqual(
+    model.nodes.map((node) => node.slug),
+    [
+      "spells/fire-bolt",
+      "spells/index",
+      "spells/scorching-ray",
+      "character-options/classes/wizard",
+    ],
+  )
+  assert.equal(model.edges.length, 3)
+  assert.equal(
+    model.edges.some((edge) => edge.target === "missing/page"),
+    false,
+  )
+})
+
 test("search retains matching pages and their immediate context", () => {
   const result = searchGraphModel(createGraphModel(index), "scorching")
   assert.deepEqual(

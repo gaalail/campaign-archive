@@ -66,6 +66,26 @@ export default `
     return indexPage && indexPage.title || readable(area);
   }
 
+  function areaList(index, includeCollections) {
+    var pages = pagesFrom(index, includeCollections);
+    var pageBySlug = new Map(pages.map(function (page) { return [page.slug, page]; }));
+    var areas = new Map();
+    pages.forEach(function (page) {
+      var id = areaOf(page.slug);
+      if (!areas.has(id)) {
+        areas.set(id, {
+          id: id,
+          title: titleForArea(id, pageBySlug),
+          section: id.split("/")[0] || "root",
+          pageCount: 0,
+          kind: "area"
+        });
+      }
+      areas.get(id).pageCount++;
+    });
+    return Array.from(areas.values());
+  }
+
   function areaMap(index, includeCollections) {
     var pages = pagesFrom(index, includeCollections);
     var pageBySlug = new Map(pages.map(function (page) { return [page.slug, page]; }));
@@ -183,61 +203,63 @@ export default `
     };
   }
 
-  function pageModel(index, includeCollections) {
+  function createNeighborhoodIndex(index, includeCollections) {
     var pages = pagesFrom(index, includeCollections);
-    return {
-      nodes: pages.map(function (page) {
-        return {
-          id: page.slug,
-          title: page.title || page.slug,
-          section: page.slug.split("/")[0] || "root",
-          area: areaOf(page.slug),
-          contextOnly: false,
-          kind: "page"
-        };
-      }),
-      links: edgesFrom(pages)
-    };
-  }
-
-  function neighborhood(model, centerId) {
-    var adjacent = new Map();
-    model.nodes.forEach(function (node) { adjacent.set(node.id, new Set()); });
-    model.links.forEach(function (link) {
-      adjacent.get(link.source).add(link.target);
-      adjacent.get(link.target).add(link.source);
+    var pageBySlug = new Map(pages.map(function (page) { return [page.slug, page]; }));
+    var incomingBySlug = new Map();
+    pages.forEach(function (page) {
+      (page.links || []).forEach(function (target) {
+        if (!pageBySlug.has(target) || target === page.slug) return;
+        if (!incomingBySlug.has(target)) incomingBySlug.set(target, []);
+        incomingBySlug.get(target).push(page.slug);
+      });
     });
-    if (!adjacent.has(centerId)) return { nodes: [], links: [] };
-    var included = new Set([centerId]);
-    (adjacent.get(centerId) || new Set()).forEach(function (id) { included.add(id); });
+    return { pageBySlug: pageBySlug, incomingBySlug: incomingBySlug };
+  }
+
+  function pageNode(page) {
     return {
-      nodes: model.nodes.filter(function (node) { return included.has(node.id); }),
-      links: model.links.filter(function (link) {
-        return included.has(link.source) && included.has(link.target);
-      })
+      id: page.slug,
+      title: page.title || page.slug,
+      section: page.slug.split("/")[0] || "root",
+      area: areaOf(page.slug),
+      contextOnly: false,
+      kind: "page"
     };
   }
 
-  function neighborhoodModel(index, centerId, includeCollections, maxIndividualNeighbors) {
-    var fullModel = pageModel(index, includeCollections);
-    var nearby = neighborhood(fullModel, centerId);
-    if (!nearby.nodes.length || nearby.nodes.length - 1 <= maxIndividualNeighbors) return nearby;
+  function neighborhoodModel(neighborhoodIndex, centerId, maxIndividualNeighbors) {
+    var centerPage = neighborhoodIndex.pageBySlug.get(centerId);
+    if (!centerPage) return { nodes: [], links: [] };
+    var neighborsBySlug = new Map();
+    (centerPage.links || []).forEach(function (slug) {
+      var page = neighborhoodIndex.pageBySlug.get(slug);
+      if (page && slug !== centerId) neighborsBySlug.set(slug, page);
+    });
+    (neighborhoodIndex.incomingBySlug.get(centerId) || []).forEach(function (slug) {
+      neighborsBySlug.set(slug, neighborhoodIndex.pageBySlug.get(slug));
+    });
+    var neighbors = Array.from(neighborsBySlug.values());
+    var center = pageNode(centerPage);
+    if (neighbors.length <= maxIndividualNeighbors) {
+      return {
+        nodes: [center].concat(neighbors.map(pageNode)),
+        links: neighbors.map(function (page) {
+          return { source: centerId, target: page.slug };
+        })
+      };
+    }
 
-    var center = nearby.nodes.find(function (node) { return node.id === centerId; });
-    if (!center) return nearby;
-    var neighbors = nearby.nodes.filter(function (node) { return node.id !== centerId; });
     var neighborsByArea = new Map();
-    neighbors.forEach(function (node) {
-      if (!neighborsByArea.has(node.area)) neighborsByArea.set(node.area, []);
-      neighborsByArea.get(node.area).push(node);
+    neighbors.forEach(function (page) {
+      var area = areaOf(page.slug);
+      if (!neighborsByArea.has(area)) neighborsByArea.set(area, []);
+      neighborsByArea.get(area).push(page);
     });
-    var pageBySlug = new Map(pagesFrom(index, includeCollections).map(function (page) {
-      return [page.slug, page];
-    }));
     var contextNodes = Array.from(neighborsByArea.entries()).map(function (entry) {
       return {
         id: "@area:" + entry[0],
-        title: titleForArea(entry[0], pageBySlug),
+        title: titleForArea(entry[0], neighborhoodIndex.pageBySlug),
         section: entry[0].split("/")[0] || "root",
         area: entry[0],
         contextOnly: true,
@@ -286,6 +308,7 @@ export default `
     var basePath = resolveBasePath(currentSlug);
     var indexUrl = basePath + "/static/contentIndex.json";
     var indexPromise;
+    var neighborhoodIndexes = {};
     var localSimulation;
     var globalSimulation;
     var renderTimer;
@@ -336,6 +359,14 @@ export default `
       stopLocalSimulation();
     }
 
+    function getNeighborhoodIndex(index, includeCollections) {
+      var key = includeCollections ? "collections" : "pages";
+      if (!neighborhoodIndexes[key]) {
+        neighborhoodIndexes[key] = createNeighborhoodIndex(index, includeCollections);
+      }
+      return neighborhoodIndexes[key];
+    }
+
     function clearLegend() {
       while (legend.firstChild) legend.removeChild(legend.firstChild);
     }
@@ -358,25 +389,25 @@ export default `
 
     function fillAreas(index, preferredArea) {
       var currentValue = preferredArea || areaSelect.value;
-      var model = areaMap(index, collectionToggle.checked);
+      var areas = areaList(index, collectionToggle.checked);
       while (areaSelect.firstChild) areaSelect.removeChild(areaSelect.firstChild);
       var overviewOption = document.createElement("option");
       overviewOption.value = "";
       overviewOption.textContent = "Archive map";
       areaSelect.appendChild(overviewOption);
-      model.nodes.sort(function (a, b) { return a.title.localeCompare(b.title); }).forEach(function (area) {
+      areas.sort(function (a, b) { return a.title.localeCompare(b.title); }).forEach(function (area) {
         var option = document.createElement("option");
         option.value = area.id;
         option.textContent = area.title + " (" + area.pageCount + ")";
         areaSelect.appendChild(option);
       });
-      areaSelect.value = model.nodes.some(function (area) { return area.id === currentValue; })
+      areaSelect.value = areas.some(function (area) { return area.id === currentValue; })
         ? currentValue
         : "";
-      var sections = Array.from(new Set(model.nodes.map(function (area) { return area.section; })))
+      var sections = Array.from(new Set(areas.map(function (area) { return area.section; })))
         .sort(function (a, b) { return a.localeCompare(b); });
       fillLegend(sections);
-      return model;
+      return areas;
     }
 
     function draw(host, model, options) {
@@ -603,7 +634,9 @@ export default `
 
     function renderLocal(index) {
       stopLocalSimulation();
-      var local = neighborhoodModel(index, currentSlug, currentSlug.endsWith(".base"), 45);
+      var includeCollections = currentSlug.endsWith(".base");
+      var neighborhoodIndex = getNeighborhoodIndex(index, includeCollections);
+      var local = neighborhoodModel(neighborhoodIndex, currentSlug, 45);
       var caption = root.querySelector(".archive-graph-local-count");
       caption.textContent = local.collapsed
         ? local.contextPageCount + " linked pages summarized across " + local.contextAreaCount + " areas"
@@ -661,16 +694,16 @@ export default `
         if (disposed || !dialog.open) return;
         var area = areaSelect.value;
         if (selectedPage) {
-          var model = pageModel(index, collectionToggle.checked);
-          if (!model.nodes.some(function (node) { return node.id === selectedPage; })) {
+          var neighborhoodIndex = getNeighborhoodIndex(index, collectionToggle.checked);
+          var selected = neighborhoodIndex.pageBySlug.get(selectedPage);
+          if (!selected) {
             selectedPage = "";
             areaSelect.value = "";
             return renderGlobal();
           }
-          var nearby = neighborhoodModel(index, selectedPage, collectionToggle.checked, 60);
-          var selected = model.nodes.find(function (node) { return node.id === selectedPage; });
+          var nearby = neighborhoodModel(neighborhoodIndex, selectedPage, 60);
           count.textContent = nearby.collapsed
-            ? "Around " + (selected && selected.title || selectedPage) + ": " +
+            ? "Around " + (selected.title || selectedPage) + ": " +
               nearby.contextPageCount + " linked pages summarized across " +
               nearby.contextAreaCount + " areas."
             : "Around " + (selected && selected.title || selectedPage) + ": " +
@@ -684,7 +717,7 @@ export default `
               areaSelect.value = areaId;
               renderGlobal();
             },
-            ariaLabel: "Pages linked to " + (selected && selected.title || selectedPage)
+            ariaLabel: "Pages linked to " + (selected.title || selectedPage)
           });
           return;
         }

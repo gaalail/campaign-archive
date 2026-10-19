@@ -248,14 +248,36 @@ export function createNeighborhoodModel(
   includeCollections = false,
   maxIndividualNeighbors = 45,
 ): GraphModel {
-  const model = getNeighborhood(createGraphModel(index, includeCollections), centerSlug)
-  if (!model.nodes.length || model.nodes.length - 1 <= maxIndividualNeighbors) return model
+  const pages = includedPages(index, includeCollections)
+  const pageBySlug = new Map(pages.map((page) => [page.slug, page]))
+  const centerPage = pageBySlug.get(centerSlug)
+  if (!centerPage) return { nodes: [], edges: [] }
 
-  const center = model.nodes.find((node) => node.slug === centerSlug)
-  if (!center) return model
-  const neighbors = model.nodes.filter((node) => node.slug !== centerSlug)
+  const neighborsBySlug = new Map<string, ContentIndexPage>()
+  for (const target of centerPage.links ?? []) {
+    const page = pageBySlug.get(target)
+    if (page && target !== centerSlug) neighborsBySlug.set(target, page)
+  }
+  for (const page of pages) {
+    if (page.slug !== centerSlug && page.links?.includes(centerSlug)) {
+      neighborsBySlug.set(page.slug, page)
+    }
+  }
+  const neighbors = [...neighborsBySlug.values()]
+  const center = createNodes([centerPage])[0]
+  if (neighbors.length <= maxIndividualNeighbors) {
+    return {
+      nodes: [center, ...createNodes(neighbors)],
+      edges: neighbors.map((page) => {
+        const [source, target] =
+          centerSlug < page.slug ? [centerSlug, page.slug] : [page.slug, centerSlug]
+        return { source, target }
+      }),
+    }
+  }
+
   const neighborsByArea = new Map<string, GraphNode[]>()
-  for (const node of neighbors) {
+  for (const node of createNodes(neighbors)) {
     neighborsByArea.set(node.area, [...(neighborsByArea.get(node.area) ?? []), node])
   }
 
