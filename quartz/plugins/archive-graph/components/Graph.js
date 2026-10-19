@@ -34,11 +34,7 @@ function GraphComponent({ cfg, fileData }) {
           h("header", { class: "archive-graph-dialog-header" }, [
             h("div", {}, [
               h("h2", { id: "archive-graph-dialog-title" }, "Archive connections"),
-              h(
-                "p",
-                {},
-                "Explore authored page links by section. Generated collection membership is hidden by default.",
-              ),
+              h("p", {}, "Browse content areas, then inspect their pages and cross-area links."),
             ]),
             h(
               "button",
@@ -48,9 +44,9 @@ function GraphComponent({ cfg, fileData }) {
           ]),
           h("div", { class: "archive-graph-controls" }, [
             h("label", {}, [
-              "Section",
-              h("select", { class: "archive-graph-scope" }, [
-                h("option", { value: "" }, "All sections"),
+              "Content area",
+              h("select", { class: "archive-graph-area" }, [
+                h("option", { value: "" }, "Archive map"),
               ]),
             ]),
             h("label", { class: "archive-graph-search-label" }, [
@@ -62,18 +58,30 @@ function GraphComponent({ cfg, fileData }) {
                 placeholder: "Title or path",
               }),
             ]),
+            h("label", { class: "archive-graph-match-label" }, [
+              "Matching pages",
+              h("select", { class: "archive-graph-matches", disabled: true }, [
+                h("option", { value: "" }, "Enter a search"),
+              ]),
+            ]),
+            h(
+              "button",
+              { class: "archive-graph-search-open", type: "button", disabled: true },
+              "View page links",
+            ),
+            h("button", { class: "archive-graph-overview", type: "button" }, "Archive map"),
             h("label", { class: "archive-graph-collection-label" }, [
               h("input", { class: "archive-graph-collections", type: "checkbox" }),
               "Include generated collection pages",
             ]),
             h("output", { class: "archive-graph-count", "aria-live": "polite" }),
           ]),
-          h("div", { class: "archive-graph-legend", "aria-label": "Page sections" }),
+          h("div", { class: "archive-graph-legend", "aria-label": "Content areas" }),
           h("div", { class: "archive-graph-global" }),
           h(
             "p",
             { class: "archive-graph-help" },
-            "Hover or focus a node to trace its links. Select a node to open that page. Use the mouse wheel or trackpad to zoom; drag the background to pan.",
+            "On the archive map, select an area to open its pages. Cross-area links are retained and grouped into clickable area bubbles. Search for a page to inspect its neighborhood; select a page node to open it. Zoom with the mouse wheel or trackpad; drag to pan.",
           ),
         ],
       ),
@@ -110,7 +118,18 @@ GraphComponent.css = `
   color: var(--dark);
   padding: 0.4rem 0.65rem;
 }
+.archive-graph-overview, .archive-graph-search-open {
+  align-self: end;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.25rem;
+}
 .archive-graph-dialog {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   width: min(1100px, 94vw);
   height: min(820px, 92vh);
   max-width: none;
@@ -121,6 +140,7 @@ GraphComponent.css = `
   background: var(--light);
   color: var(--dark);
 }
+.archive-graph-dialog:not([open]) { display: none; }
 .archive-graph-dialog::backdrop { background: rgb(0 0 0 / 72%); backdrop-filter: blur(3px); }
 .archive-graph-dialog-header {
   display: flex;
@@ -131,14 +151,15 @@ GraphComponent.css = `
 .archive-graph-dialog-header h2 { margin: 0; }
 .archive-graph-dialog-header p { margin: 0.25rem 0 0.75rem; color: var(--archive-graph-muted); }
 .archive-graph-controls {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: end;
-  flex-wrap: wrap;
   gap: 0.75rem 1rem;
-  margin-bottom: 0.75rem;
 }
-.archive-graph-controls label { display: flex; flex-direction: column; gap: 0.25rem; }
+.archive-graph-controls label { display: flex; min-width: 0; flex-direction: column; gap: 0.25rem; }
 .archive-graph-controls select, .archive-graph-controls input[type="search"] {
+  box-sizing: border-box;
+  width: 100%;
   min-height: 2.25rem;
   max-width: 100%;
   border: 1px solid var(--archive-graph-border);
@@ -147,8 +168,12 @@ GraphComponent.css = `
   color: var(--dark);
   padding: 0.3rem 0.5rem;
 }
-.archive-graph-controls .archive-graph-collection-label { flex-direction: row; align-items: center; }
-.archive-graph-count { margin-left: auto; color: var(--archive-graph-muted); }
+.archive-graph-controls .archive-graph-collection-label {
+  grid-column: span 2;
+  flex-direction: row;
+  align-items: center;
+}
+.archive-graph-count { grid-column: 1 / -1; color: var(--archive-graph-muted); }
 .archive-graph-legend {
   display: flex;
   flex-wrap: wrap;
@@ -161,8 +186,8 @@ GraphComponent.css = `
 .archive-graph-legend-swatch { width: 0.65rem; height: 0.65rem; border-radius: 50%; }
 .archive-graph-global {
   width: 100%;
-  height: calc(100% - 190px);
-  min-height: 300px;
+  flex: 1 1 auto;
+  min-height: 200px;
   border: 1px solid var(--archive-graph-border);
   border-radius: 6px;
   overflow: hidden;
@@ -185,9 +210,17 @@ GraphComponent.css = `
   color: var(--archive-graph-muted);
 }
 @media (max-width: 700px) {
-  .archive-graph-dialog { width: 100vw; height: 100dvh; border-radius: 0; padding: 0.75rem; }
-  .archive-graph-global { height: calc(100% - 300px); }
-  .archive-graph-count { margin-left: 0; width: 100%; }
+  .archive-graph-dialog {
+    width: 100%;
+    height: 100dvh;
+    margin: 0;
+    border-radius: 0;
+    padding: 0.75rem;
+  }
+  .archive-graph-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+  .archive-graph-controls .archive-graph-collection-label { grid-column: 1 / -1; }
+  .archive-graph-controls .archive-graph-overview { grid-column: 2; }
+  .archive-graph-count { grid-column: 1 / -1; }
 }
 `
 GraphComponent.afterDOMLoaded = graphScript

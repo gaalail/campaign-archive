@@ -10,7 +10,7 @@
   "quartz": {
     "name": "archive-graph",
     "displayName": "Archive Graph",
-    "description": "Explore archive links with scoped, focused graph views.",
+    "description": "Explore clustered archive areas, cross-area links, and page neighborhoods.",
     "version": "1.0.0",
     "category": "component",
     "defaultEnabled": true,

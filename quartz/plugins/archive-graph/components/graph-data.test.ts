@@ -1,17 +1,20 @@
 import assert from "node:assert/strict"
 import test from "node:test"
 import {
+  createAreaDetailModel,
+  createAreaGraphModel,
   createGraphModel,
-  getGraphSections,
+  createNeighborhoodModel,
+  getGraphArea,
+  getGraphAreas,
   getNeighborhood,
   isCollectionPage,
-  limitGraphModel,
   searchGraphModel,
   type ContentIndex,
 } from "./graph-data"
 
 const index: ContentIndex = {
-  "spells/index": {
+  spells: {
     slug: "spells/index",
     title: "Spells",
     links: ["spells/fire-bolt", "lists/spells.base"],
@@ -19,11 +22,31 @@ const index: ContentIndex = {
   "spells/fire-bolt": {
     slug: "spells/fire-bolt",
     title: "Fire Bolt",
-    links: ["spells/index", "spells/scorching-ray", "missing/page"],
+    links: [
+      "spells/index",
+      "spells/scorching-ray",
+      "character-options/classes/wizard",
+      "missing/page",
+    ],
   },
   "spells/scorching-ray": {
     slug: "spells/scorching-ray",
     title: "Scorching Ray",
+    links: [],
+  },
+  "character-options/classes/wizard": {
+    slug: "character-options/classes/wizard",
+    title: "Wizard",
+    links: ["items/potion"],
+  },
+  "character-options/classes/sorcerer": {
+    slug: "character-options/classes/sorcerer",
+    title: "Sorcerer",
+    links: [],
+  },
+  "items/potion": {
+    slug: "items/potion",
+    title: "Potion",
     links: [],
   },
   "lists/spells.base": {
@@ -38,6 +61,58 @@ const index: ContentIndex = {
   },
 }
 
+test("areas correspond to parent folders, including index pages", () => {
+  assert.equal(getGraphArea("spells/index"), "spells")
+  assert.equal(getGraphArea("spells/fire-bolt"), "spells")
+  assert.equal(getGraphArea("character-options/classes/wizard"), "character-options/classes")
+  assert.deepEqual(
+    getGraphAreas(index).map((area) => area.id),
+    ["campaigns", "character-options/classes", "items", "spells"],
+  )
+})
+
+test("archive overview aggregates cross-area page links without generated collections", () => {
+  const model = createAreaGraphModel(index)
+  assert.deepEqual(
+    model.edges.map((edge) => [edge.source, edge.target, edge.count]),
+    [
+      ["character-options/classes", "spells", 1],
+      ["character-options/classes", "items", 1],
+    ],
+  )
+  assert.equal(model.nodes.find((node) => node.id === "spells")?.pageCount, 3)
+  assert.equal(
+    createAreaGraphModel(index).nodes.some((node) => node.id === "lists"),
+    false,
+  )
+})
+
+test("area detail preserves links across areas and excludes unrelated context-only edges", () => {
+  const model = createAreaDetailModel(index, "spells")
+  assert.deepEqual(
+    model.nodes.map((node) => [node.slug, node.contextOnly, node.kind]),
+    [
+      ["spells/index", false, "page"],
+      ["spells/fire-bolt", false, "page"],
+      ["spells/scorching-ray", false, "page"],
+      ["@area:character-options/classes", true, "area"],
+    ],
+  )
+  assert.deepEqual(model.edges, [
+    { source: "spells/fire-bolt", target: "spells/index" },
+    { source: "spells/fire-bolt", target: "spells/scorching-ray" },
+    {
+      source: "spells/fire-bolt",
+      target: "@area:character-options/classes",
+      count: 1,
+    },
+  ])
+  assert.equal(model.contextPageCount, 1)
+  assert.equal(model.contextAreaCount, 1)
+  assert.equal(model.crossAreaConnectionCount, 1)
+  assert.equal(createAreaDetailModel(index, "spells", true).contextPageCount, 2)
+})
+
 test("collection membership is excluded by default, not removed from the source index", () => {
   assert.equal(isCollectionPage("lists/spells.base"), true)
   assert.equal(isCollectionPage("spells/fire-bolt"), false)
@@ -47,22 +122,13 @@ test("collection membership is excluded by default, not removed from the source 
     model.nodes.some((node) => node.slug === "lists/spells.base"),
     false,
   )
-  assert.deepEqual(model.edges, [
-    { source: "spells/fire-bolt", target: "spells/index" },
-    { source: "spells/fire-bolt", target: "spells/scorching-ray" },
-  ])
-  assert.equal(createGraphModel(index, { includeCollections: true }).nodes.length, 5)
-})
-
-test("graph sections are inferred from page paths", () => {
-  assert.deepEqual(getGraphSections(index), ["campaigns", "lists", "spells"])
-})
-
-test("scope filters both nodes and cross-scope edges", () => {
-  const model = createGraphModel(index, { scope: "spells" })
-  assert.equal(model.nodes.length, 3)
-  assert.ok(model.nodes.every((node) => node.section === "spells"))
-  assert.equal(model.edges.length, 2)
+  assert.ok(
+    model.edges.some(
+      (edge) =>
+        edge.source === "character-options/classes/wizard" && edge.target === "spells/fire-bolt",
+    ),
+  )
+  assert.equal(createGraphModel(index, true).nodes.length, 8)
 })
 
 test("local neighborhood follows links in either direction to the requested depth", () => {
@@ -84,10 +150,44 @@ test("search retains matching pages and their immediate context", () => {
   assert.equal(searchGraphModel(createGraphModel(index), "unknown").nodes.length, 0)
 })
 
-test("local graph limit keeps the center and reports a real subset", () => {
-  const model = createGraphModel(index)
-  const neighborhood = getNeighborhood(model, "spells/fire-bolt", 1)
-  const limited = limitGraphModel(neighborhood, "spells/fire-bolt", 2)
-  assert.equal(limited.nodes.length, 2)
-  assert.ok(limited.nodes.some((node) => node.slug === "spells/fire-bolt"))
+test("large page neighborhoods summarize linked pages by content area", () => {
+  const highDegreeIndex: ContentIndex = {
+    "classes/wizard": {
+      slug: "classes/wizard",
+      title: "Wizard",
+      links: [
+        "spells/1st-level/alarm",
+        "spells/1st-level/bless",
+        "spells/2nd-level/darkness",
+        "items/potion",
+        "items/ring",
+        "items/scroll",
+      ],
+    },
+    "spells/1st-level/alarm": {
+      slug: "spells/1st-level/alarm",
+      title: "Alarm",
+    },
+    "spells/1st-level/bless": {
+      slug: "spells/1st-level/bless",
+      title: "Bless",
+    },
+    "spells/2nd-level/darkness": {
+      slug: "spells/2nd-level/darkness",
+      title: "Darkness",
+    },
+    "items/potion": { slug: "items/potion", title: "Potion" },
+    "items/ring": { slug: "items/ring", title: "Ring" },
+    "items/scroll": { slug: "items/scroll", title: "Scroll" },
+  }
+  const model = createNeighborhoodModel(highDegreeIndex, "classes/wizard", false, 3)
+
+  assert.equal(model.collapsed, true)
+  assert.equal(model.nodes.length, 4)
+  assert.equal(model.contextPageCount, 6)
+  assert.equal(model.contextAreaCount, 3)
+  assert.deepEqual(
+    model.edges.map((edge) => edge.count).sort((a, b) => (a ?? 0) - (b ?? 0)),
+    [1, 2, 3],
+  )
 })
