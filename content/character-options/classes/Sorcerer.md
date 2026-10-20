@@ -1,4 +1,9 @@
 ---
+entity_type: class
+canonical_id: class.character-options.classes.sorcerer
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Sorcerer
 hit_die: d6
 spellcasting_ability: CHA

@@ -1,4 +1,6 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.fighter.crusader
 title: Crusader
 parent_class: Fighter
 summary: "Alternate Fighter Warrior Archetype: Crusader"

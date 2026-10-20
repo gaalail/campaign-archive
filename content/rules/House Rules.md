@@ -1,4 +1,6 @@
 ---
+entity_type: rule
+canonical_id: rule.rules.house-rules
 title: Rules & House Rules
 ---
 

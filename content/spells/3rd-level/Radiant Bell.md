@@ -1,14 +1,19 @@
 ---
-title: "Radiant Bell"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.radiant-bell
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Radiant Bell
 level: 3
-school: "Abjuration"
+school: Abjuration
 classes:
   - Bard
   - Cleric
-casting_time: "1 action"
-range: "Self (30-foot radius)"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 action
+range: Self (30-foot radius)
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

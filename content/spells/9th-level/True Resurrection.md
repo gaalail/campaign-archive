@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.true-resurrection
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: True Resurrection
 level: 9
 school: Necromancy

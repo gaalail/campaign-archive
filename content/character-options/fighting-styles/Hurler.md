@@ -1,12 +1,18 @@
 ---
-title: "Hurler"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.hurler
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Hurler
 aliases:
   - character-options/class-options/fighting-style-options/hurler
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Strength or Dexterity of 11"
-summary: "You can draw one thrown weapon as part of a ranged attack you make with it, and the range of your thrown weapon attacks is doubled."
+prerequisite: Strength or Dexterity of 11
+summary: You can draw one thrown weapon as part of a ranged attack you make with
+  it, and the range of your thrown weapon attacks is doubled.
 source: Alternate Fighter
 source_type: homebrew
 ---

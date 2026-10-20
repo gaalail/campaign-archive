@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.ring.ring-of-air-elemental-command
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Ring of Air Elemental Command
 rarity: Legendary
 item_type: Ring

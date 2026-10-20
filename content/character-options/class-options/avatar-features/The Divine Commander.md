@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.the-divine-commander
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: The Divine Commander
 option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 14
 prerequisite: The Divine Emissary
-summary: Your voice can be heard by anyone within 30 feet of you, regardless of any environmental or magical effects that would normally...
+summary: Your voice can be heard by anyone within 30 feet of you, regardless of
+  any environmental or magical effects that would normally...
 source: Corpus Angelus
 source_type: third-party
 ---

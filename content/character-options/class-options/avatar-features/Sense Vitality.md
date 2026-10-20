@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.sense-vitality
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Sense Vitality
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 1
 prerequisite: None
-summary: As a bonus action, you can realize whether an attack you can make has the potential to kill a creature of your choice that you...
+summary: As a bonus action, you can realize whether an attack you can make has
+  the potential to kill a creature of your choice that you...
 source: Corpus Angelus
 source_type: third-party
 ---

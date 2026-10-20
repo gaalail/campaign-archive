@@ -1,6 +1,12 @@
 ---
+entity_type: item
+canonical_id: item.items.wand.wand-of-magic-detection
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Wand of Magic Detection
 rarity: Uncommon
 item_type: Wand

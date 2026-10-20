@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.thanatomancer.path-of-the-reaper
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Path of the Reaper
 parent_class: Thanatomancer
 summary: Chains swift weapon strikes and cuts at the soul

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.shape-of-the-wind
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Shape of the Wind
 level: 0
 school: Transmutation

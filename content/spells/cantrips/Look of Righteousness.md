@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.look-of-righteousness
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Look of Righteousness
 level: 0
 school: Illusion

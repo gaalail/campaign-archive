@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.angelic-executioner
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Angelic Executioner
 level: 2
 school: Illusion

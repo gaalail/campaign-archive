@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.incense-burner
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Incense Burner
 option_group: Avatar Feature
 parent_class: Order of Reason

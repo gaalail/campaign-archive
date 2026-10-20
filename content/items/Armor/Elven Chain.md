@@ -1,6 +1,12 @@
 ---
+entity_type: item
+canonical_id: item.items.armor.elven-chain
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Elven Chain
 rarity: Rare
 item_type: Armor

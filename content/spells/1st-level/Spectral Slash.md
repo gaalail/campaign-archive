@@ -1,14 +1,19 @@
 ---
-title: "Spectral Slash"
+entity_type: spell
+canonical_id: spell.spells.1st-level.spectral-slash
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Spectral Slash
 level: 1
-school: "Conjuration"
+school: Conjuration
 classes:
   - Paladin
   - Ranger
-casting_time: "1 bonus action"
-range: "20 feet"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 bonus action
+range: 20 feet
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

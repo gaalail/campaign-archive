@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.antiessence-shades
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Antiessence Shades
 level: 1
 school: Conjuration

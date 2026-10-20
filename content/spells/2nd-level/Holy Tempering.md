@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.holy-tempering
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Holy Tempering
 level: 2
 school: Transmutation

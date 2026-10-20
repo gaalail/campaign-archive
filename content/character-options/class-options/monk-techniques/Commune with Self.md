@@ -1,8 +1,14 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.commune-with-self
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Commune with Self
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "You have gained the ability to contact the Ki of your previous lives to gain information"
+summary: You have gained the ability to contact the Ki of your previous lives to
+  gain information
 source: Alternate Monk Expanded
 source_type: homebrew
 prerequisite: 9th-level Monk

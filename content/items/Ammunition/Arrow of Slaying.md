@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.ammunition.arrow-of-slaying
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Arrow of Slaying
 rarity: Very Rare
 item_type: Ammunition

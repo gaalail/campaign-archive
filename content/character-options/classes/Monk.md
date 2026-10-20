@@ -1,4 +1,9 @@
 ---
+entity_type: class
+canonical_id: class.character-options.classes.monk
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Monk
 hit_die: d10
 saving_throws:

@@ -1,15 +1,20 @@
 ---
-title: "Wall of Bones"
+entity_type: spell
+canonical_id: spell.spells.6th-level.wall-of-bones
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Wall of Bones
 level: 6
-school: "Conjuration"
+school: Conjuration
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Concentration, up to 10 minutes"
-components: "V, S, M"
+casting_time: 1 action
+range: 60 feet
+duration: Concentration, up to 10 minutes
+components: V, S, M
 ritual: false
 concentration: true
 source: Homebrew

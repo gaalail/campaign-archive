@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.boilblood
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Boilblood
 level: 2
 school: Enchantment

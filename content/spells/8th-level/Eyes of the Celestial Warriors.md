@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.eyes-of-the-celestial-warriors
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Eyes of the Celestial Warriors
 level: 8
 school: Divination

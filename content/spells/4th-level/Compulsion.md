@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.compulsion
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Compulsion
 level: 4
 school: Enchantment

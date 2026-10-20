@@ -1,7 +1,12 @@
 ---
-title: "Ancestral Bond"
+entity_type: spell
+canonical_id: spell.spells.5th-level.ancestral-bond
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Ancestral Bond
 level: 5
-school: "Divination"
+school: Divination
 classes:
   - Bard
   - Cleric
@@ -10,10 +15,10 @@ classes:
   - Warlock
   - Wizard
   - Thanatomancer
-casting_time: "1 minute"
-range: "Self"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 minute
+range: Self
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

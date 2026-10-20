@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.eyebite
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Eyebite
 level: 6
 school: Necromancy

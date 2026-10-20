@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.brimstone-tremor
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Brimstone Tremor
 level: 9
 school: Transmutation

@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.silent-voice
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Silent Voice
 option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 1
 prerequisite: None
-summary: You can use your Sacred Language (Invective) feature against a creature that you can see within normal range, requiring no soun...
+summary: You can use your Sacred Language (Invective) feature against a creature
+  that you can see within normal range, requiring no soun...
 source: Corpus Angelus
 source_type: third-party
 ---

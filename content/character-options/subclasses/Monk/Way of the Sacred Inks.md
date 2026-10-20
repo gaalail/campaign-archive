@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.monk.way-of-the-sacred-inks
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Way of the Sacred Inks
 parent_class: Monk
 summary: Monastic Tradition for the Monk

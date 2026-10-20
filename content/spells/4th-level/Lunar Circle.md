@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.lunar-circle
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Lunar Circle
 level: 4
 school: Abjuration

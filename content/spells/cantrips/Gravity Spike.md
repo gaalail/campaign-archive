@@ -1,15 +1,20 @@
 ---
-title: "Gravity Spike"
+entity_type: spell
+canonical_id: spell.spells.cantrips.gravity-spike
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Gravity Spike
 level: 0
-school: "Transmutation"
+school: Transmutation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: 60 feet
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.temple-s-denial
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Temple's Denial
 level: 7
 school: Illusion

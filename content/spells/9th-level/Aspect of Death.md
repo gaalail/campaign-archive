@@ -1,13 +1,18 @@
 ---
-title: "Aspect of Death"
+entity_type: spell
+canonical_id: spell.spells.9th-level.aspect-of-death
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Aspect of Death
 level: 9
-school: "Conjuration"
+school: Conjuration
 classes:
   - Warlock
-casting_time: "1 action"
-range: "Self"
-duration: "Concentration, up to 1 minute"
-components: "V, S, M"
+casting_time: 1 action
+range: Self
+duration: Concentration, up to 1 minute
+components: V, S, M
 ritual: false
 concentration: true
 source: Homebrew

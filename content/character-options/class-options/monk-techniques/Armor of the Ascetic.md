@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.armor-of-the-ascetic
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Armor of the Ascetic
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "You exude an aura of peace"
+summary: You exude an aura of peace
 source: Alternate Monk
 source_type: homebrew
 prerequisite: 13th-level Monk

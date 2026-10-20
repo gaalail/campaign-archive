@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.magnificent-mansion
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Magnificent Mansion
 level: 7
 school: Conjuration

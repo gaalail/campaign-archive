@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.helm-of-telepathy
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Helm of Telepathy
 rarity: Uncommon
 item_type: Wondrous Items

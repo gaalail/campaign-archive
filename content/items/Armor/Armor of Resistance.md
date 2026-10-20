@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.armor.armor-of-resistance
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Armor of Resistance
 rarity: Rare
 item_type: Armor

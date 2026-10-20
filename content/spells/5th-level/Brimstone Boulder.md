@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.brimstone-boulder
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Brimstone Boulder
 level: 5
 school: Conjuration

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.pillar-of-thousand-blessings
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Pillar of Thousand Blessings
 level: 8
 school: Abjuration

@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.horn-of-blasting
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Horn of Blasting
 rarity: Rare
 item_type: Wondrous Items

@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.awakening-the-flesh
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Awakening the Flesh
 level: 6
 school: Necromancy

@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.rogue.vigilante
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Vigilante
 parent_class: Rogue
 summary: Roguish Archetype for the Rogue

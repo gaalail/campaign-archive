@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.sorcerer.the-knight-dragon-bloodline
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: The Knight Dragon Bloodline
 parent_class: Sorcerer
 summary: Sorcerous Origin for the Sorcerer

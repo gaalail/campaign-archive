@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.almighty-weapon
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Almighty Weapon
 level: 4
 school: Evocation

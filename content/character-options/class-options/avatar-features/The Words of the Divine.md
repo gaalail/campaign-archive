@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.the-words-of-the-divine
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: The Words of the Divine
 option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 17
 prerequisite: Echo of the Divine
-summary: "Avatar form only: choose two of the following spells: holy verdict: retribution (p."
+summary: "Avatar form only: choose two of the following spells: holy verdict:
+  retribution (p."
 source: Corpus Angelus
 source_type: third-party
 ---

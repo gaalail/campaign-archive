@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.barbarian.berserker
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Berserker
 parent_class: Barbarian
 summary: Primal Path for the Barbarian

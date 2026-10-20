@@ -1,16 +1,21 @@
 ---
-title: "Astral Barrage"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.astral-barrage
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Astral Barrage
 level: 3
-school: "Conjuration"
+school: Conjuration
 classes:
   - Druid
   - Ranger
   - Sorcerer
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Concentration, up to 1 minute"
-components: "V, S"
+casting_time: 1 action
+range: 60 feet
+duration: Concentration, up to 1 minute
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

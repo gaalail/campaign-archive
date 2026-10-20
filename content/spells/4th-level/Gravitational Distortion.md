@@ -1,15 +1,20 @@
 ---
-title: "Gravitational Distortion"
+entity_type: spell
+canonical_id: spell.spells.4th-level.gravitational-distortion
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Gravitational Distortion
 level: 4
-school: "Transmutation"
+school: Transmutation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet (30-foot-radius sphere)"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: 60 feet (30-foot-radius sphere)
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

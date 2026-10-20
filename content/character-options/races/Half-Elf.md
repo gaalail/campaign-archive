@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.races.half-elf
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Half-Elf
 summary: Medium size; speed 30 ft.; +2 CHA (plus 2 others of your choice)
 source: SRD 5.1

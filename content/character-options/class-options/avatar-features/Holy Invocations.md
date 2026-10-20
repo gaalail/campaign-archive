@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.holy-invocations
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Holy Invocations
 option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 17
 prerequisite: None
-summary: "Avatar form only: your words reach holy realms and the divine powers hear your call."
+summary: "Avatar form only: your words reach holy realms and the divine powers
+  hear your call."
 source: Corpus Angelus
 source_type: third-party
 ---

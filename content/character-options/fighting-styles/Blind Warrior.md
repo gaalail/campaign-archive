@@ -1,12 +1,18 @@
 ---
-title: "Blind Warrior"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.blind-warrior
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Blind Warrior
 aliases:
   - character-options/class-options/fighting-style-options/blind-warrior
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "proficiency in Perception"
-summary: "You have Blindsight with a range in feet equal to 5 times your Proficiency Bonus."
+prerequisite: proficiency in Perception
+summary: You have Blindsight with a range in feet equal to 5 times your
+  Proficiency Bonus.
 source: Alternate Fighter
 source_type: homebrew
 ---

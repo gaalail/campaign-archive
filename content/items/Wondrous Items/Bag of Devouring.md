@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.bag-of-devouring
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Bag of Devouring
 rarity: Very Rare
 item_type: Wondrous Items

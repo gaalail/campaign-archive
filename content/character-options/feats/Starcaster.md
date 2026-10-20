@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.starcaster
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Starcaster
 prerequisite: Spellcasting feature
 summary: "Prerequisite: Spellcasting feature"

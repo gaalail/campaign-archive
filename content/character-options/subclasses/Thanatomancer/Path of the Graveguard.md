@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.thanatomancer.path-of-the-graveguard
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Path of the Graveguard
 parent_class: Thanatomancer
 summary: Endures enemy attacks and protects allies with necromantic power

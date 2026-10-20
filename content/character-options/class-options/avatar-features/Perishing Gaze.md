@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.perishing-gaze
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Perishing Gaze
 option_group: Avatar Feature
 parent_class: Paragon
 min_level: 12
 prerequisite: None
-summary: You lock your gaze on the very soul of your enemy, which your deity sees through your eyes.
+summary: You lock your gaze on the very soul of your enemy, which your deity
+  sees through your eyes.
 source: Corpus Angelus
 source_type: third-party
 ---

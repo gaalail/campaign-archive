@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.eldritch-invocations.gaze-of-two-minds
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Gaze of Two Minds
 option_group: Eldritch Invocation
 parent_class: Warlock
 min_level: 2
 prerequisite: None
-summary: You can use your action to touch a willing humanoid and perceive through its senses until the end of your next turn.
+summary: You can use your action to touch a willing humanoid and perceive
+  through its senses until the end of your next turn.
 source: SRD 5.1
 source_type: SRD
 ---

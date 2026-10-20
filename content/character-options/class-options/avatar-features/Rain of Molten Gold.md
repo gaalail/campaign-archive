@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.rain-of-molten-gold
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Rain of Molten Gold
 option_group: Avatar Feature
 parent_class: Paragon
 min_level: 1
 prerequisite: None
-summary: As an action, you conjure a globe of molten gold in your hand and throw it in the air.
+summary: As an action, you conjure a globe of molten gold in your hand and throw
+  it in the air.
 source: Corpus Angelus
 source_type: third-party
 ---

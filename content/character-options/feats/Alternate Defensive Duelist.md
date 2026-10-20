@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.alternate-defensive-duelist
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Alternate Defensive Duelist
 summary: Alternate Fighter feat
 source: Alternate Fighter

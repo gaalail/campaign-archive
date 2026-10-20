@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.ring.ring-of-animal-influence
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Ring of Animal Influence
 rarity: Rare
 item_type: Ring

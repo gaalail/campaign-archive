@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.ice-stairs
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Ice Stairs
 level: 1
 school: Conjuration

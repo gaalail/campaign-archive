@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.weaponification
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Weaponification
 level: 7
 school: Transmutation

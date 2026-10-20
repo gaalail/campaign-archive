@@ -1,15 +1,20 @@
 ---
-title: "Crush"
+entity_type: spell
+canonical_id: spell.spells.7th-level.crush
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Crush
 level: 7
-school: "Evocation"
+school: Evocation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 action
+range: 60 feet
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

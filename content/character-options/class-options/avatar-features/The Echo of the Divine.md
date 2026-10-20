@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.the-echo-of-the-divine
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: The Echo of the Divine
 option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 6
 prerequisite: The Speaker
-summary: Sacred Language echoes through you and can be heard by anyone within 15 feet of you.
+summary: Sacred Language echoes through you and can be heard by anyone within 15
+  feet of you.
 source: Corpus Angelus
 source_type: third-party
 ---

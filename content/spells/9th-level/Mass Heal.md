@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.mass-heal
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Mass Heal
 level: 9
 school: Conjuration

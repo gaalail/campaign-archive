@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.blood-pool
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Blood Pool
 level: 2
 school: Conjuration

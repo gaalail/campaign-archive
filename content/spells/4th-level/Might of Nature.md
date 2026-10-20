@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.might-of-nature
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Might of Nature
 level: 4
 school: Transmutation

@@ -1,4 +1,6 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.fighter.arcane-knight
 title: Arcane Knight
 parent_class: Fighter
 summary: "Alternate Fighter Warrior Archetype: Arcane Knight"

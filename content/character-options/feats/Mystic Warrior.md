@@ -1,6 +1,12 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.mystic-warrior
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Mystic Warrior
-summary: You have mastered Mystical Techniques which allow you to perform supernatural feats
+summary: You have mastered Mystical Techniques which allow you to perform
+  supernatural feats
 source: Alternate Monk Expanded
 source_type: homebrew
 ---

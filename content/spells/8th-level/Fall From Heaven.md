@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.fall-from-heaven
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Fall From Heaven
 level: 8
 school: Transmutation

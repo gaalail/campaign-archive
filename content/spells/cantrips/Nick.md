@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.nick
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Nick
 level: 0
 school: Necromancy

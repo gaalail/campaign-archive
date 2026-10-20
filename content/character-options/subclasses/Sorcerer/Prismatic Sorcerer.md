@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.sorcerer.prismatic-sorcerer
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Prismatic Sorcerer
 parent_class: Sorcerer
 summary: Sorcerous Origin for the Sorcerer

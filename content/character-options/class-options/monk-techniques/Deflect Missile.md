@@ -1,8 +1,15 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.deflect-missile
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Deflect Missile
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "When you are hit by a ranged weapon attack you can see, you can use a reaction to reduce the damage by your Monk level + your Martial Arts Die + your Dexterity "
+summary: "When you are hit by a ranged weapon attack you can see, you can use a
+  reaction to reduce the damage by your Monk level + your Martial Arts Die +
+  your Dexterity "
 source: Alternate Monk
 source_type: homebrew
 prerequisite: 5th-level Monk

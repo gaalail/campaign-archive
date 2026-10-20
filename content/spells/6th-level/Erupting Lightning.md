@@ -1,15 +1,20 @@
 ---
-title: "Erupting Lightning"
+entity_type: spell
+canonical_id: spell.spells.6th-level.erupting-lightning
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Erupting Lightning
 level: 6
-school: "Evocation"
+school: Evocation
 classes:
   - Druid
   - Sorcerer
   - Wizard
-casting_time: "1 action"
-range: "120 feet"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 action
+range: 120 feet
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

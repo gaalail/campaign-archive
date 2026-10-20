@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.guiding-bolt
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Guiding Bolt
 level: 1
 school: Evocation

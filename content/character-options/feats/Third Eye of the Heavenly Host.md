@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.third-eye-of-the-heavenly-host
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Third Eye of the Heavenly Host
 prerequisite: None
 summary: "You open your spiritual third eye and gain the following benefits:"

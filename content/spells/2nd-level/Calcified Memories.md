@@ -1,15 +1,20 @@
 ---
-title: "Calcified Memories"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.calcified-memories
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Calcified Memories
 level: 2
-school: "Divination"
+school: Divination
 classes:
   - Warlock
   - Wizard
   - Thanatomancer
-casting_time: "1 action"
-range: "Touch"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: Touch
+duration: Instantaneous
+components: V, S
 ritual: true
 concentration: false
 source: Homebrew

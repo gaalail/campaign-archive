@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.death-ward
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Death Ward
 level: 4
 school: Abjuration
@@ -15,7 +20,7 @@ source: SRD 5.1
 source_type: SRD
 subclass_spell_lists:
   - Arcane Knight
-arcane_knight_list_marker: "LL"
+arcane_knight_list_marker: LL
 ---
 
 _4th-level abjuration_

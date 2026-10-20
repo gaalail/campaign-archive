@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.numb
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Numb
 level: 0
 school: Enchantment

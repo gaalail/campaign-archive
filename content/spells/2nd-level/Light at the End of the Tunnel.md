@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.light-at-the-end-of-the-tunnel
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Light at the End of the Tunnel
 level: 2
 school: Evocation

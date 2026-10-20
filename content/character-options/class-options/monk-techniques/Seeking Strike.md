@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.seeking-strike
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Seeking Strike
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "Your spirit can guide your strikes if your body fails"
+summary: Your spirit can guide your strikes if your body fails
 source: Alternate Monk
 source_type: homebrew
 prerequisite: 5th-level Monk

@@ -1,15 +1,20 @@
 ---
-title: "Bury"
+entity_type: spell
+canonical_id: spell.spells.8th-level.bury
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Bury
 level: 8
-school: "Transmutation"
+school: Transmutation
 classes:
   - Bard
   - Sorcerer
   - Wizard
-casting_time: "1 action"
-range: "120 feet"
-duration: "Concentration, up to 10 minutes"
-components: "V, S"
+casting_time: 1 action
+range: 120 feet
+duration: Concentration, up to 10 minutes
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

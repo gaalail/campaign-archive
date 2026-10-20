@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.avatar-of-the-divine
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Avatar of the Divine
 option_group: Avatar Feature
 parent_class: Paragon
 min_level: 6
 prerequisite: None
-summary: As a paragon, you were chosen by your deity and your avatar form is a blessing from the divine.
+summary: As a paragon, you were chosen by your deity and your avatar form is a
+  blessing from the divine.
 source: Corpus Angelus
 source_type: third-party
 ---

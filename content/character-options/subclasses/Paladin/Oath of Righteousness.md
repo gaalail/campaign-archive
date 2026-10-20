@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.paladin.oath-of-righteousness
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Oath of Righteousness
 parent_class: Paladin
 summary: Sacred Oath for the Paladin

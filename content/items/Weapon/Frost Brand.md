@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.weapon.frost-brand
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Frost Brand
 rarity: Very Rare
 item_type: Weapon

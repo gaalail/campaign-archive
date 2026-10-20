@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.artificer.static-conductor
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Static Conductor
 parent_class: Artificer
 summary: Channels lightning through a specialized suit

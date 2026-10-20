@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.vampiric-rejuvenation
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Vampiric Rejuvenation
 level: 2
 school: Necromancy

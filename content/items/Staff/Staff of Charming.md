@@ -1,9 +1,15 @@
 ---
+entity_type: item
+canonical_id: item.items.staff.staff-of-charming
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Staff of Charming
 rarity: Rare
 item_type: Staff
 attunement: true
-summary: Staff, rare (requires attunement by a bard, cleric, druid, sorcerer, warlock, or wizard)
+summary: Staff, rare (requires attunement by a bard, cleric, druid, sorcerer,
+  warlock, or wizard)
 source: SRD 5.1
 source_type: SRD
 ---

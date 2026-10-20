@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.eyes-of-the-witness
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Eyes of the Witness
 option_group: Avatar Feature
 parent_class: Paragon
 min_level: 1
 prerequisite: None
-summary: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.
+summary: You can see in dim light within 60 feet of you as if it were bright
+  light, and in darkness as if it were dim light.
 source: Corpus Angelus
 source_type: third-party
 ---

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.vicious-mockery
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Vicious Mockery
 level: 0
 school: Enchantment

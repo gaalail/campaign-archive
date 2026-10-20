@@ -1,8 +1,15 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.banishing-strike
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Banishing Strike (Monk Technique)
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "Prerequisites: 13th-level Monk Once per turn when you hit a creature with a melee Martial Arts attack, you can spend 3 Ki to empower your blow with legendary fo"
+summary: "Prerequisites: 13th-level Monk Once per turn when you hit a creature
+  with a melee Martial Arts attack, you can spend 3 Ki to empower your blow with
+  legendary fo"
 source: Alternate Monk Expanded
 source_type: homebrew
 ---

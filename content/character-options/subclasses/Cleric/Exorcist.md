@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.cleric.exorcist
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Exorcist
 parent_class: Cleric
 summary: Divine Domain for the Cleric

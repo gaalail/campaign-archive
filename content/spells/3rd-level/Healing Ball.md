@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.healing-ball
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Healing Ball
 level: 3
 school: Evocation

@@ -1,17 +1,22 @@
 ---
-title: "Boneyard"
+entity_type: spell
+canonical_id: spell.spells.7th-level.boneyard
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Boneyard
 level: 7
-school: "Necromancy"
+school: Necromancy
 classes:
   - Cleric
   - Sorcerer
   - Warlock
   - Wizard
   - Thanatomancer
-casting_time: "24 hours"
-range: "Touch"
-duration: "Until dispelled"
-components: "V, S, M"
+casting_time: 24 hours
+range: Touch
+duration: Until dispelled
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

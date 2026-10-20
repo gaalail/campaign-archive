@@ -1,12 +1,18 @@
 ---
-title: "Balanced Fighting"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.balanced-fighting
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Balanced Fighting
 aliases:
   - character-options/class-options/fighting-style-options/balanced-fighting
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "None"
-summary: "While wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon."
+prerequisite: None
+summary: While wielding a melee weapon in one hand and no other weapons, you
+  gain a +2 bonus to damage rolls with that weapon.
 source: Alternate Fighter
 source_type: homebrew
 ---

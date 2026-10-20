@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.efreeti-bottle
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Efreeti Bottle
 rarity: Very Rare
 item_type: Wondrous Items

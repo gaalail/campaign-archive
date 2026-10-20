@@ -1,12 +1,18 @@
 ---
-title: "Superior Technique"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.superior-technique
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Superior Technique
 aliases:
   - character-options/class-options/fighting-style-options/superior-technique
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 6
-prerequisite: "6th-level Fighter"
-summary: "You learn one 1st-degree Martial Exploit from those available to the Alternate Fighter, but it doesn't count against your total Exploits Known."
+prerequisite: 6th-level Fighter
+summary: You learn one 1st-degree Martial Exploit from those available to the
+  Alternate Fighter, but it doesn't count against your total Exploits Known.
 source: Alternate Fighter
 source_type: homebrew
 ---

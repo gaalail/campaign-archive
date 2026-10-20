@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.weapon.hammer-of-thunderbolts
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Hammer of Thunderbolts
 rarity: Legendary
 item_type: Weapon

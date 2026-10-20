@@ -1,16 +1,21 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.divine-order-transcend
+edition: system-neutral
+adaptation: original
+license_status: original
 title: "Divine Order: Transcend"
 level: 7
-school: "Divination"
+school: Divination
 classes:
   - Bard
   - Cleric
   - Warlock
   - Thanatomancer
-casting_time: "1 action"
-range: "Self"
-duration: "Concentration, up to 1 minute"
-components: "V, S"
+casting_time: 1 action
+range: Self
+duration: Concentration, up to 1 minute
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.counterspell
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Counterspell
 level: 3
 school: Abjuration
@@ -17,8 +22,8 @@ source_type: SRD
 subclass_spell_lists:
   - Arcane Knight
   - Witchblade
-arcane_knight_list_marker: "LL"
-witchblade_list_marker: "LL"
+arcane_knight_list_marker: LL
+witchblade_list_marker: LL
 ---
 
 _3rd-level abjuration_

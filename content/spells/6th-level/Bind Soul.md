@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.bind-soul
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Bind Soul
 level: 6
 school: Necromancy

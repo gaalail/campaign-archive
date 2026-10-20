@@ -1,15 +1,20 @@
 ---
-title: "Gravity Storm"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.gravity-storm
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Gravity Storm
 level: 2
-school: "Transmutation"
+school: Transmutation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "120 feet (20-foot radius)"
-duration: "2 rounds"
-components: "V, S"
+casting_time: 1 action
+range: 120 feet (20-foot radius)
+duration: 2 rounds
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

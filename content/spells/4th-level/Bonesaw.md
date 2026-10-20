@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.bonesaw
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Bonesaw
 level: 4
 school: Necromancy

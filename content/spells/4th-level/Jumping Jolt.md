@@ -1,14 +1,19 @@
 ---
-title: "Jumping Jolt"
+entity_type: spell
+canonical_id: spell.spells.4th-level.jumping-jolt
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Jumping Jolt
 level: 4
-school: "Evocation"
+school: Evocation
 classes:
   - Sorcerer
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: 60 feet
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

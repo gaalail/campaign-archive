@@ -1,16 +1,21 @@
 ---
-title: "Bone Cocoon"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.bone-cocoon
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Bone Cocoon
 level: 2
-school: "Abjuration"
+school: Abjuration
 classes:
   - Druid
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 reaction, which you take when"
-range: "30 feet"
-duration: "Concentration, up to 1 minute"
-components: "V, M"
+casting_time: 1 reaction, which you take when
+range: 30 feet
+duration: Concentration, up to 1 minute
+components: V, M
 ritual: false
 concentration: true
 source: Homebrew

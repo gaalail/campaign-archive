@@ -1,16 +1,21 @@
 ---
-title: "Otherwordly Gaze"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.otherwordly-gaze
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Otherwordly Gaze
 level: 2
-school: "Divination"
+school: Divination
 classes:
   - Bard
   - Druid
   - Ranger
   - Thanatomancer
-casting_time: "1 action"
-range: "Self"
-duration: "10 minutes"
-components: "V, S"
+casting_time: 1 action
+range: Self
+duration: 10 minutes
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

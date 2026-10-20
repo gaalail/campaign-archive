@@ -1,15 +1,20 @@
 ---
-title: "Pressure Cage"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.pressure-cage
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Pressure Cage
 level: 2
-school: "Transmutation"
+school: Transmutation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet (10-foot-radius sphere)"
-duration: "Concentration, up to 1 minute"
-components: "V, S, M"
+casting_time: 1 action
+range: 60 feet (10-foot-radius sphere)
+duration: Concentration, up to 1 minute
+components: V, S, M
 ritual: false
 concentration: true
 source: Homebrew

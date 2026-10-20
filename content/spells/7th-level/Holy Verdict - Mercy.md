@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.holy-verdict-mercy
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: "Holy Verdict: Mercy"
 level: 7
 school: Enchantment

@@ -1,12 +1,17 @@
 ---
-title: "Brawling Expert"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.brawling-expert
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Brawling Expert
 aliases:
   - character-options/class-options/fighting-style-options/brawling-expert
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 6
-prerequisite: "6th-level Fighter, Brawling"
-summary: "You gain a +1 bonus to the damage rolls of unarmed strikes."
+prerequisite: 6th-level Fighter, Brawling
+summary: You gain a +1 bonus to the damage rolls of unarmed strikes.
 source: Alternate Fighter
 source_type: homebrew
 ---

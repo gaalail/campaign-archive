@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.magical-birthmarks
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Magical Birthmarks
 prerequisite: Peri
 summary: "Prerequisite: Peri"

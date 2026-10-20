@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.piercing-rain
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Piercing Rain
 level: 2
 school: Evocation

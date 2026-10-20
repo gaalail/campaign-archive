@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.bowl-of-commanding-water-elementals
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Bowl of Commanding Water Elementals
 rarity: Rare
 item_type: Wondrous Items

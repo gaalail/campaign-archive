@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.shrine-to-the-dark-lords
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Shrine to the Dark Lords
 level: 4
 school: Abjuration

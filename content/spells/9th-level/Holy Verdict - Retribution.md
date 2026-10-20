@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.holy-verdict-retribution
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: "Holy Verdict: Retribution"
 level: 9
 school: Evocation

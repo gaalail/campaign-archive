@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.voice-of-salvation
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Voice of Salvation
 option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 10
 prerequisite: None
-summary: Your heavenly voice is music to the ears of the innocent; however, the sound of your chants fills the hearts of sinners with dr...
+summary: Your heavenly voice is music to the ears of the innocent; however, the
+  sound of your chants fills the hearts of sinners with dr...
 source: Corpus Angelus
 source_type: third-party
 ---

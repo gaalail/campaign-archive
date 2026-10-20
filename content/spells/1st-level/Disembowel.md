@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.disembowel
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Disembowel
 level: 1
 school: Necromancy

@@ -1,15 +1,20 @@
 ---
-title: "Fling"
+entity_type: spell
+canonical_id: spell.spells.4th-level.fling
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Fling
 level: 4
-school: "Evocation"
+school: Evocation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Touch"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: Touch
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

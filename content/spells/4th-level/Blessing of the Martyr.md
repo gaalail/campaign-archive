@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.blessing-of-the-martyr
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Blessing of the Martyr
 level: 4
 school: Evocation

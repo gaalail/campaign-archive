@@ -1,15 +1,20 @@
 ---
-title: "Void Walk"
+entity_type: spell
+canonical_id: spell.spells.6th-level.void-walk
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Void Walk
 level: 6
-school: "Transmutation"
+school: Transmutation
 classes:
   - Bard
   - Sorcerer
   - Wizard
-casting_time: "1 action"
-range: "Touch"
-duration: "8 hours"
-components: "V, S"
+casting_time: 1 action
+range: Touch
+duration: 8 hours
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

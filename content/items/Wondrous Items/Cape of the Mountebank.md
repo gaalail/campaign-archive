@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.cape-of-the-mountebank
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Cape of the Mountebank
 rarity: Rare
 item_type: Wondrous Items

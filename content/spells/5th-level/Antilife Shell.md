@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.antilife-shell
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Antilife Shell
 level: 5
 school: Abjuration

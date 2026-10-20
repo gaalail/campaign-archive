@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.endow-life
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Endow Life
 level: 7
 school: Necromancy

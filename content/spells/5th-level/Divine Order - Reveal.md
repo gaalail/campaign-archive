@@ -1,16 +1,21 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.divine-order-reveal
+edition: system-neutral
+adaptation: original
+license_status: original
 title: "Divine Order: Reveal"
 level: 5
-school: "Divination"
+school: Divination
 classes:
   - Bard
   - Cleric
   - Warlock
   - Thanatomancer
-casting_time: "1 action"
-range: "30 feet"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: 30 feet
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

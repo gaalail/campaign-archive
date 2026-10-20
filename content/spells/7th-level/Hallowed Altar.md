@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.hallowed-altar
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Hallowed Altar
 level: 7
 school: Conjuration

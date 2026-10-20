@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.thousand-cuts
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Thousand Cuts
 level: 1
 school: Evocation

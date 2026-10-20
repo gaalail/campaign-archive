@@ -1,14 +1,19 @@
 ---
-title: "Vanishing Step"
+entity_type: spell
+canonical_id: spell.spells.4th-level.vanishing-step
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Vanishing Step
 level: 4
-school: "Conjuration"
+school: Conjuration
 classes:
   - Paladin
   - Ranger
-casting_time: "1 bonus action"
-range: "Touch"
-duration: "Concentration, up to 1 minute"
-components: "V, S, M"
+casting_time: 1 bonus action
+range: Touch
+duration: Concentration, up to 1 minute
+components: V, S, M
 ritual: false
 concentration: true
 source: Homebrew

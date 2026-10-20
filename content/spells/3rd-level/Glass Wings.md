@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.glass-wings
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Glass Wings
 level: 3
 school: Illusion

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.martyr-s-spear
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Martyr's Spear
 level: 5
 school: Necromancy

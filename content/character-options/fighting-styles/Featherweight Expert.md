@@ -1,12 +1,19 @@
 ---
-title: "Featherweight Expert"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.featherweight-expert
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Featherweight Expert
 aliases:
   - character-options/class-options/fighting-style-options/featherweight-expert
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 6
-prerequisite: "6th-level Fighter, Featherweight Fighting"
-summary: "When Featherweight Fighting, creatures have disadvantage on opportunity attacks against you, and you can take the Disengage action as a bonus action on each of your turns."
+prerequisite: 6th-level Fighter, Featherweight Fighting
+summary: When Featherweight Fighting, creatures have disadvantage on opportunity
+  attacks against you, and you can take the Disengage action as a bonus action
+  on each of your turns.
 source: Alternate Fighter
 source_type: homebrew
 ---

@@ -1,7 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.angelic-durability
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Angelic Durability
 prerequisite: None
-summary: Your body is enhanced with angelic essence and some parts of it resemble that of an angel, made out of marble.
+summary: Your body is enhanced with angelic essence and some parts of it
+  resemble that of an angel, made out of marble.
 source: Corpus Angelus
 source_type: third-party
 ---

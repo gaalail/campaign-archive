@@ -1,4 +1,9 @@
 ---
+entity_type: class
+canonical_id: class.character-options.classes.paragon
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Paragon
 hit_die: d10
 saving_throws:

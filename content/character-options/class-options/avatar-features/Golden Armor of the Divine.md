@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.golden-armor-of-the-divine
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Golden Armor of the Divine
 option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 9
 prerequisite: Golden Armor of Angels
-summary: "Avatar form only: if you are not wearing armor when you assume avatar form, you can conjure a golden version of a +2 a"
+summary: "Avatar form only: if you are not wearing armor when you assume avatar
+  form, you can conjure a golden version of a +2 a"
 source: Corpus Angelus
 source_type: third-party
 ---

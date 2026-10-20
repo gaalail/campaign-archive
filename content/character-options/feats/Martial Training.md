@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.martial-training
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Martial Training
 summary: Alternate Fighter feat
 source: Alternate Fighter

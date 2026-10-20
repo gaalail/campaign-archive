@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.divine-verdict
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Divine Verdict
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 17
 prerequisite: None
-summary: "Avatar form only: you can target a creature whose current hit points are lower than half of its hit point maximum and "
+summary: "Avatar form only: you can target a creature whose current hit points
+  are lower than half of its hit point maximum and "
 source: Corpus Angelus
 source_type: third-party
 ---

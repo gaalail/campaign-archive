@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.races.gnome
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Gnome
 summary: Small size; speed 25 ft.; +2 INT
 source: SRD 5.1

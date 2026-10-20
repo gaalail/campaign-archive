@@ -1,15 +1,20 @@
 ---
-title: "Gravity Barrier"
+entity_type: spell
+canonical_id: spell.spells.4th-level.gravity-barrier
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Gravity Barrier
 level: 4
-school: "Evocation"
+school: Evocation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Concentration, up to 10 minutes"
-components: "V, S"
+casting_time: 1 action
+range: 60 feet
+duration: Concentration, up to 10 minutes
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

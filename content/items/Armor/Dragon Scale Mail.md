@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.armor.dragon-scale-mail
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Dragon Scale Mail
 rarity: Very Rare
 item_type: Armor

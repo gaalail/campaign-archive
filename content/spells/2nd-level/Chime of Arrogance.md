@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.chime-of-arrogance
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Chime of Arrogance
 level: 2
 school: Enchantment

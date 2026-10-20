@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.alter-self
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Alter Self
 level: 2
 school: Transmutation

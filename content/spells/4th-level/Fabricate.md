@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.fabricate
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Fabricate
 level: 4
 school: Transmutation

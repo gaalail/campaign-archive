@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.pain-bearer
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Pain-Bearer
 prerequisite: Constitution 13 or higher
 summary: "Prerequisite: Constitution 13 or higher"

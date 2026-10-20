@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.ioun-stone-of-greater-absorption
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Ioun Stone of Greater Absorption
 rarity: Legendary
 item_type: Wondrous Items

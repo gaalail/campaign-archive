@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.backgrounds.acolyte
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Acolyte
 summary: "Skills: Insight, Religion"
 source: SRD 5.1

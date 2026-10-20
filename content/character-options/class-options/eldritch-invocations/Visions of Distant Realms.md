@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.eldritch-invocations.visions-of-distant-realms
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Visions of Distant Realms
 option_group: Eldritch Invocation
 parent_class: Warlock

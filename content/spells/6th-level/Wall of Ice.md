@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.wall-of-ice
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Wall of Ice
 level: 6
 school: Evocation
@@ -14,7 +19,7 @@ source: SRD 5.1
 source_type: SRD
 subclass_spell_lists:
   - Wu Jen
-wu_jen_list_marker: "ll"
+wu_jen_list_marker: ll
 ---
 
 _6th-level evocation_

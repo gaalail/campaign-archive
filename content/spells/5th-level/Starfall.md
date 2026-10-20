@@ -1,16 +1,21 @@
 ---
-title: "Starfall"
+entity_type: spell
+canonical_id: spell.spells.5th-level.starfall
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Starfall
 level: 5
-school: "Enchantment"
+school: Enchantment
 classes:
   - Druid
   - Sorcerer
   - Wizard
   - Thanatomancer
-casting_time: "1 bonus action"
-range: "Self (30-foot radius)"
-duration: "Concentration, up to 1 minute"
-components: "V, S"
+casting_time: 1 bonus action
+range: Self (30-foot radius)
+duration: Concentration, up to 1 minute
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

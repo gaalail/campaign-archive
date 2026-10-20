@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.sleep-of-the-sinful
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Sleep of the Sinful
 level: 3
 school: Divination

@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.dust-of-sneezing-and-choking
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Dust of Sneezing and Choking
 rarity: Uncommon
 item_type: Wondrous Items

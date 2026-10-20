@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.dominate-monster
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Dominate Monster
 level: 8
 school: Enchantment

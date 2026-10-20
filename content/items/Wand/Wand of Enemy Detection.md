@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wand.wand-of-enemy-detection
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Wand of Enemy Detection
 rarity: Rare
 item_type: Wand

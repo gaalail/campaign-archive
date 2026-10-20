@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.exoskeleton
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Exoskeleton
 level: 3
 school: Abjuration

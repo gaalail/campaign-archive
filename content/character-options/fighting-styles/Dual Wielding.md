@@ -1,12 +1,19 @@
 ---
-title: "Dual Wielding"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.dual-wielding
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Dual Wielding
 aliases:
   - character-options/class-options/fighting-style-options/dual-wielding
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Strength or Dexterity 13"
-summary: "When you fight with two weapons, you can make your off-hand attack as part of the Attack action instead of as a bonus action, and add your ability modifier to its damage."
+prerequisite: Strength or Dexterity 13
+summary: When you fight with two weapons, you can make your off-hand attack as
+  part of the Attack action instead of as a bonus action, and add your ability
+  modifier to its damage.
 source: Alternate Fighter
 source_type: homebrew
 ---

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.eight-eyes-of-sight
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Eight Eyes of Sight
 level: 5
 school: Divination

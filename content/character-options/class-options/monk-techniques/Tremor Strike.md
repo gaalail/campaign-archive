@@ -1,8 +1,15 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.tremor-strike
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Tremor Strike
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "Prerequisites: 9th-level Monk As an action, you can spend Ki (up to your Wisdom modifier) and strike the ground, destroying an adjacent 25-foot cone of earth al"
+summary: "Prerequisites: 9th-level Monk As an action, you can spend Ki (up to
+  your Wisdom modifier) and strike the ground, destroying an adjacent 25-foot
+  cone of earth al"
 source: Alternate Monk Expanded
 source_type: homebrew
 ---

@@ -1,12 +1,17 @@
 ---
-title: "Tactical Fighting"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.tactical-fighting
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Tactical Fighting
 aliases:
   - character-options/class-options/fighting-style-options/tactical-fighting
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Intelligence of 13 or higher"
-summary: "You can take the Help or the Search action as a bonus action."
+prerequisite: Intelligence of 13 or higher
+summary: You can take the Help or the Search action as a bonus action.
 source: Alternate Fighter
 source_type: homebrew
 ---

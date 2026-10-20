@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.rogue.chainbreaker
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Chainbreaker
 parent_class: Rogue
 summary: Roguish Archetype for the Rogue

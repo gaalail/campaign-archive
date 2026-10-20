@@ -1,17 +1,22 @@
 ---
-title: "Rolling Bones"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.rolling-bones
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Rolling Bones
 level: 2
-school: "Divination"
+school: Divination
 classes:
   - Cleric
   - Druid
   - Warlock
   - Wizard
   - Thanatomancer
-casting_time: "1 minute"
-range: "Self"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 minute
+range: Self
+duration: Instantaneous
+components: V, S, M
 ritual: true
 concentration: false
 source: Homebrew

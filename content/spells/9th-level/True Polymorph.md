@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.true-polymorph
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: True Polymorph
 level: 9
 school: Transmutation

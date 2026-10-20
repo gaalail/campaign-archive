@@ -1,8 +1,14 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.burning-blade
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Burning Blade
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "As a bonus action, you can spend 1 Ki to infuse one melee Martial Arts weapon you are holding with burning Ki"
+summary: As a bonus action, you can spend 1 Ki to infuse one melee Martial Arts
+  weapon you are holding with burning Ki
 source: Alternate Monk Expanded
 source_type: homebrew
 prerequisite: 5th-level Monk

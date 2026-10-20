@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.mass-purification
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Mass Purification
 level: 5
 school: Transmutation

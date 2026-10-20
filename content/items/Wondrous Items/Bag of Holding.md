@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.bag-of-holding
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Bag of Holding
 rarity: Uncommon
 item_type: Wondrous Items

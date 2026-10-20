@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.cutting-leaves
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Cutting Leaves
 level: 6
 school: Transmutation

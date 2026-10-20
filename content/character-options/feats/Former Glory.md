@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.former-glory
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Former Glory
 prerequisite: Aengel
 summary: "Prerequisite: Aengel"

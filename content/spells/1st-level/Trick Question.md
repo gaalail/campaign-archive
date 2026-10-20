@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.trick-question
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Trick Question
 level: 1
 school: Enchantment

@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.warlock.the-returned
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: The Returned
 parent_class: Warlock
 summary: Otherworldly Patron for the Warlock

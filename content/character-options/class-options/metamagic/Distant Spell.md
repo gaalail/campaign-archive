@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.metamagic.distant-spell
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Distant Spell
 option_group: Metamagic
 parent_class: Sorcerer
 min_level: 3
 prerequisite: None
-summary: When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.
+summary: When you cast a spell that has a range of 5 feet or greater, you can
+  spend 1 sorcery point to double the range of the spell.
 source: SRD 5.1
 source_type: SRD
 ---

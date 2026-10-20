@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.the-divine-emissary
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: The Divine Emissary
 option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 6
 prerequisite: The Divine Bannerette
-summary: You are the emissary of the divine, a sacred messenger, and the banner you conjure with the Divine Bannerette feature is the pr...
+summary: You are the emissary of the divine, a sacred messenger, and the banner
+  you conjure with the Divine Bannerette feature is the pr...
 source: Corpus Angelus
 source_type: third-party
 ---

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.detect-poison-and-disease
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Detect Poison and Disease
 level: 1
 school: Divination

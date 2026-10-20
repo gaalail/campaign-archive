@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.dispel-evil-and-good
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Dispel Evil and Good
 level: 5
 school: Abjuration

@@ -1,4 +1,6 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.fighter.master-at-arms
 title: Master at Arms
 parent_class: Fighter
 summary: "Alternate Fighter Warrior Archetype: Master at Arms"

@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.alternate-great-weapon-master
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Alternate Great Weapon Master
 summary: Alternate Fighter feat
 source: Alternate Fighter

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.heretics-mark
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Heretics' Mark
 level: 1
 school: Divination

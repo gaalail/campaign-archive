@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.hypnotic-pattern
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Hypnotic Pattern
 level: 3
 school: Illusion
@@ -17,7 +22,7 @@ source: SRD 5.1
 source_type: SRD
 subclass_spell_lists:
   - Mystic
-mystic_list_marker: "LL"
+mystic_list_marker: LL
 ---
 
 _3rd-level illusion_

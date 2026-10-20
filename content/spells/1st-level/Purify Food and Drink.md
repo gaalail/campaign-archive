@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.purify-food-and-drink
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Purify Food and Drink
 level: 1
 school: Transmutation

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.bonemelt
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Bonemelt
 level: 1
 school: Transmutation

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.commune-with-nature
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Commune With Nature
 level: 5
 school: Divination

@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.obelisk
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Obelisk
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 6
 prerequisite: None
-summary: As an action, you target a point within 60 feet of you and an obelisk of a height of up to 30 feet rises out of the ground.
+summary: As an action, you target a point within 60 feet of you and an obelisk
+  of a height of up to 30 feet rises out of the ground.
 source: Corpus Angelus
 source_type: third-party
 ---

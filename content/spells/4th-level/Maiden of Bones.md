@@ -1,14 +1,19 @@
 ---
-title: "Maiden of Bones"
+entity_type: spell
+canonical_id: spell.spells.4th-level.maiden-of-bones
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Maiden of Bones
 level: 4
-school: "Conjuration"
+school: Conjuration
 classes:
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "1 minute"
-components: "V, S, M"
+casting_time: 1 action
+range: 60 feet
+duration: 1 minute
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

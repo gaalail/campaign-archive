@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.brimstone-blast
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Brimstone Blast
 level: 0
 school: Evocation

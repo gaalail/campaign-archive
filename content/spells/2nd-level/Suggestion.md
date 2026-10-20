@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.suggestion
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Suggestion
 level: 2
 school: Enchantment

@@ -1,15 +1,20 @@
 ---
-title: "Osseous Impalement"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.osseous-impalement
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Osseous Impalement
 level: 3
-school: "Conjuration"
+school: Conjuration
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Concentration, up to 1 minute"
-components: "V, S, M"
+casting_time: 1 action
+range: 60 feet
+duration: Concentration, up to 1 minute
+components: V, S, M
 ritual: false
 concentration: true
 source: Homebrew

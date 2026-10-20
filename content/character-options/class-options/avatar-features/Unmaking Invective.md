@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.unmaking-invective
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Unmaking Invective
 option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 11
 prerequisite: None
-summary: You can choose to deal force damage instead of thunder damage with your Sacred Language (Invective) feature.
+summary: You can choose to deal force damage instead of thunder damage with your
+  Sacred Language (Invective) feature.
 source: Corpus Angelus
 source_type: third-party
 ---

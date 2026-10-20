@@ -1,13 +1,18 @@
 ---
-title: "Cosmic Eye"
+entity_type: spell
+canonical_id: spell.spells.cantrips.cosmic-eye
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Cosmic Eye
 level: 0
-school: "Transmutation"
+school: Transmutation
 classes:
   - Sorcerer
-casting_time: "1 action"
-range: "150 feet"
-duration: "Instantaneous"
-components: "M"
+casting_time: 1 action
+range: 150 feet
+duration: Instantaneous
+components: M
 ritual: false
 concentration: false
 source: Homebrew

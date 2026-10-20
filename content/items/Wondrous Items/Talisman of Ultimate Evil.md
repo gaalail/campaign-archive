@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.talisman-of-ultimate-evil
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Talisman of Ultimate Evil
 rarity: Legendary
 item_type: Wondrous Items

@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.scroll.spell-scroll-cantrip
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Spell Scroll (Cantrip)
 rarity: Common
 item_type: Scroll

@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.staff.staff-of-the-magi
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Staff of the Magi
 rarity: Legendary
 item_type: Staff

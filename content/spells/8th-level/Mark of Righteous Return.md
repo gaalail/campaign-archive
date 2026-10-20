@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.mark-of-righteous-return
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Mark of Righteous Return
 level: 8
 school: Necromancy

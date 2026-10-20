@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.metamagic.quickened-spell
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Quickened Spell
 option_group: Metamagic
 parent_class: Sorcerer
 min_level: 3
 prerequisite: None
-summary: When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus...
+summary: When you cast a spell that has a casting time of 1 action, you can
+  spend 2 sorcery points to change the casting time to 1 bonus...
 source: SRD 5.1
 source_type: SRD
 ---

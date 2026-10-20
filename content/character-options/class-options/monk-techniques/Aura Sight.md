@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.aura-sight
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Aura Sight
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "You have awakened the spiritual potential of your senses"
+summary: You have awakened the spiritual potential of your senses
 source: Alternate Monk
 source_type: homebrew
 prerequisite: 9th-level Monk

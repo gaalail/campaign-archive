@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.burst-the-enemy
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Burst the Enemy
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 14
 prerequisite: Prepared
-summary: You can choose one more creature type that is listed in the Protector of the Temple feature.
+summary: You can choose one more creature type that is listed in the Protector
+  of the Temple feature.
 source: Corpus Angelus
 source_type: third-party
 ---

@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.shaped-voice
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Shaped Voice
 option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 1
 prerequisite: None
-summary: You can choose to change the shape of the effects of the Sacred Language (Invective) feature.
+summary: You can choose to change the shape of the effects of the Sacred
+  Language (Invective) feature.
 source: Corpus Angelus
 source_type: third-party
 ---

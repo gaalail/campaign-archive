@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.potion.potion-of-frost-giant-strength
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Potion of Frost Giant Strength
 rarity: Rare
 item_type: Potion

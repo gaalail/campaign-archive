@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.night-s-veil
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Night's Veil
 level: 1
 school: Illusion

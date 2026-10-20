@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.empty-body
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Empty Body
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "You can become a being of pure spirit, if only temporarily"
+summary: You can become a being of pure spirit, if only temporarily
 source: Alternate Monk
 source_type: homebrew
 prerequisite: 18th-level Monk

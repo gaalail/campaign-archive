@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.expanded-radiant-form
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Expanded Radiant Form
 prerequisite: Light-Touched
 summary: "Prerequisite: Light-Touched"

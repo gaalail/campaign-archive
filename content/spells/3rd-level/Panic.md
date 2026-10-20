@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.panic
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Panic
 level: 3
 school: Enchantment

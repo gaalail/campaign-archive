@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.smell-of-weakness
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Smell of Weakness
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 1
 prerequisite: None
-summary: As an action, you choose a creature within 120 feet of you and reveal one of its weaknesses.
+summary: As an action, you choose a creature within 120 feet of you and reveal
+  one of its weaknesses.
 source: Corpus Angelus
 source_type: third-party
 ---

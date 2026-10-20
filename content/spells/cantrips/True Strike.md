@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.true-strike
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: True Strike
 level: 0
 school: Divination
@@ -21,7 +27,7 @@ source_type: SRD
 subclass_spell_lists:
   - Arcane Knight
   - Witchblade
-witchblade_list_marker: "LL"
+witchblade_list_marker: LL
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

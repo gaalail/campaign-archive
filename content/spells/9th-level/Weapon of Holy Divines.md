@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.weapon-of-holy-divines
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Weapon of Holy Divines
 level: 9
 school: Enchantment

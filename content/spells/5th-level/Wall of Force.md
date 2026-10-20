@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.wall-of-force
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Wall of Force
 level: 5
 school: Evocation

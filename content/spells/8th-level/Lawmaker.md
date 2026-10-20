@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.lawmaker
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Lawmaker
 level: 8
 school: Enchantment

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.shroud
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Shroud
 level: 2
 school: Abjuration

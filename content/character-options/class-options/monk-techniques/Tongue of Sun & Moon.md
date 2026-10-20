@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.tongue-of-sun-and-moon
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Tongue of Sun & Moon
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "You can communicate on a spiritual level"
+summary: You can communicate on a spiritual level
 source: Alternate Monk
 source_type: homebrew
 prerequisite: 13th-level Monk

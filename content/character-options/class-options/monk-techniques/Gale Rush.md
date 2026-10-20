@@ -1,8 +1,14 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.gale-rush
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Gale Rush
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "As an action, you spend Ki (up to your Wisdom modifier) and focus it into your palm"
+summary: As an action, you spend Ki (up to your Wisdom modifier) and focus it
+  into your palm
 source: Alternate Monk Expanded
 source_type: homebrew
 prerequisite: 5th-level Monk

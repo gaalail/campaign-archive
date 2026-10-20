@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.merciful-touch
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Merciful Touch
 level: 6
 school: Illusion

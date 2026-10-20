@@ -1,4 +1,9 @@
 ---
+entity_type: class
+canonical_id: class.character-options.classes.fighter
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Fighter
 hit_die: d10
 saving_throws:

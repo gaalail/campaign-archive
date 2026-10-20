@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.artificer.wagoneer
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Wagoneer
 parent_class: Artificer
 summary: Builds a protective, upgradeable wondrous caravan

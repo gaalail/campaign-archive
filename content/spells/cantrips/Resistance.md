@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.resistance
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Resistance
 level: 0
 school: Abjuration
@@ -16,7 +21,7 @@ source: SRD 5.1
 source_type: SRD
 subclass_spell_lists:
   - Arcane Knight
-arcane_knight_list_marker: "LL"
+arcane_knight_list_marker: LL
 ---
 
 _Abjuration cantrip_

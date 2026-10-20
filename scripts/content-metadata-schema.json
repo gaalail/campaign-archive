@@ -1,11 +1,21 @@
 {
   "source_types": ["SRD", "homebrew", "third-party", "campaign-original"],
-  "content_status": ["complete", "incomplete", "draft"],
+  "content_status": ["complete", "incomplete", "draft", "deprecated", "archived"],
+  "editions": ["2014", "2024", "system-neutral"],
+  "adaptations": ["verbatim", "summarized", "curated", "adapted", "original"],
+  "license_statuses": ["CC-BY-4.0", "reference-only", "original"],
   "schemas": {
     "class": {
       "required": ["title", "hit_die", "saving_throws", "source"],
       "fields": {
-        "title": { "type": "string", "non_empty": true },
+        "entity_type": {
+          "type": "string",
+          "enum": ["class", "spell", "item", "campaign", "monster", "rule", "character_option"]
+        },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "edition": { "type": "string", "enum_from": "editions" },
+        "adaptation": { "type": "string", "enum_from": "adaptations" },
+        "license_status": { "type": "string", "enum_from": "license_statuses" },
         "hit_die": { "type": "string", "enum": ["d6", "d8", "d10", "d12"] },
         "saving_throws": {
           "type": "array",
@@ -22,6 +32,14 @@
     "spell": {
       "required": ["title", "level", "school", "classes", "source"],
       "fields": {
+        "entity_type": {
+          "type": "string",
+          "enum": ["class", "spell", "item", "campaign", "monster", "rule", "character_option"]
+        },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "edition": { "type": "string", "enum_from": "editions" },
+        "adaptation": { "type": "string", "enum_from": "adaptations" },
+        "license_status": { "type": "string", "enum_from": "license_statuses" },
         "title": { "type": "string", "non_empty": true },
         "level": { "type": "integer", "minimum": 0, "maximum": 9 },
         "school": { "type": "string", "non_empty": true },
@@ -39,6 +57,14 @@
     "item": {
       "required": ["title", "item_type", "rarity", "source"],
       "fields": {
+        "entity_type": {
+          "type": "string",
+          "enum": ["class", "spell", "item", "campaign", "monster", "rule", "character_option"]
+        },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "edition": { "type": "string", "enum_from": "editions" },
+        "adaptation": { "type": "string", "enum_from": "adaptations" },
+        "license_status": { "type": "string", "enum_from": "license_statuses" },
         "title": { "type": "string", "non_empty": true },
         "item_type": { "type": "string", "non_empty": true },
         "rarity": { "type": "string", "non_empty": true },
@@ -51,6 +77,14 @@
     "campaign": {
       "required": ["title"],
       "fields": {
+        "entity_type": {
+          "type": "string",
+          "enum": ["class", "spell", "item", "campaign", "monster", "rule", "character_option"]
+        },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "edition": { "type": "string", "enum_from": "editions" },
+        "adaptation": { "type": "string", "enum_from": "adaptations" },
+        "license_status": { "type": "string", "enum_from": "license_statuses" },
         "title": { "type": "string", "non_empty": true },
         "source": { "type": "string", "non_empty": true },
         "source_type": { "type": "string", "enum_from": "source_types" },
@@ -61,6 +95,14 @@
     "character_option": {
       "required": ["title"],
       "fields": {
+        "entity_type": {
+          "type": "string",
+          "enum": ["class", "spell", "item", "campaign", "monster", "rule", "character_option"]
+        },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "edition": { "type": "string", "enum_from": "editions" },
+        "adaptation": { "type": "string", "enum_from": "adaptations" },
+        "license_status": { "type": "string", "enum_from": "license_statuses" },
         "title": { "type": "string", "non_empty": true },
         "source": { "type": "string", "non_empty": true },
         "source_type": { "type": "string", "enum_from": "source_types" },

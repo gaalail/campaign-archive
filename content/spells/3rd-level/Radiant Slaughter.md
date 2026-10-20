@@ -1,15 +1,20 @@
 ---
-title: "Radiant Slaughter"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.radiant-slaughter
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Radiant Slaughter
 level: 3
-school: "Conjuration"
+school: Conjuration
 classes:
   - Cleric
   - Paladin
   - Warlock
-casting_time: "1 action"
-range: "Self (30-foot radius)"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 action
+range: Self (30-foot radius)
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

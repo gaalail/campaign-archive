@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.backgrounds.gravekeeper
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Gravekeeper
 summary: "Skills: Choose two from Medicine, Perception, and Religion"
 source: Corpus Angelus

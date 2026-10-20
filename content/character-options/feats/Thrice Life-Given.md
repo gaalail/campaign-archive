@@ -1,7 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.thrice-life-given
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Thrice Life-Given
 prerequisite: None
-summary: When you were infused with life during your creation, you were blessed three times instead of once, and it now shows.
+summary: When you were infused with life during your creation, you were blessed
+  three times instead of once, and it now shows.
 source: Corpus Angelus
 source_type: third-party
 ---

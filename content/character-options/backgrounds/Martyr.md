@@ -1,6 +1,12 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.backgrounds.martyr
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Martyr
-summary: "Skills: One of Arcana, History, or Religion; one of Athletics, Persuasion, or Insight"
+summary: "Skills: One of Arcana, History, or Religion; one of Athletics,
+  Persuasion, or Insight"
 source: Corpus Angelus
 source_type: third-party
 ---

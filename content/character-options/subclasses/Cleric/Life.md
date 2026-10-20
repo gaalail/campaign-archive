@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.cleric.life
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Life
 parent_class: Cleric
 summary: Divine Domain for the Cleric

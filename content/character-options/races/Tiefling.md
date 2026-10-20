@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.races.tiefling
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Tiefling
 summary: Medium size; speed 30 ft.; +1 INT, +2 CHA
 source: SRD 5.1

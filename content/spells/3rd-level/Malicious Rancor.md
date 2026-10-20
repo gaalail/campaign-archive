@@ -1,13 +1,18 @@
 ---
-title: "Malicious Rancor"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.malicious-rancor
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Malicious Rancor
 level: 3
-school: "Evocation"
+school: Evocation
 classes:
   - Warlock
-casting_time: "1 action"
-range: "60 feet (10-foot radius)"
-duration: "1 round"
-components: "V, S, M"
+casting_time: 1 action
+range: 60 feet (10-foot radius)
+duration: 1 round
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

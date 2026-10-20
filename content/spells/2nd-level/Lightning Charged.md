@@ -1,16 +1,21 @@
 ---
-title: "Lightning Charged"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.lightning-charged
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Lightning Charged
 level: 2
-school: "Evocation"
+school: Evocation
 classes:
   - Druid
   - Ranger
   - Sorcerer
   - Wizard
-casting_time: "1 action"
-range: "Touch"
-duration: "10 minutes"
-components: "V, S, M"
+casting_time: 1 action
+range: Touch
+duration: 10 minutes
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

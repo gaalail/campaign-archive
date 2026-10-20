@@ -1,8 +1,14 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.crushing-strike
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Crushing Strike
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "Once per turn when you hit a target with an unarmed strike, you can spend Ki (up to your Wisdom modifier) to empower it with deadly force"
+summary: Once per turn when you hit a target with an unarmed strike, you can
+  spend Ki (up to your Wisdom modifier) to empower it with deadly force
 source: Alternate Monk Expanded
 source_type: homebrew
 prerequisite: 5th-level Monk

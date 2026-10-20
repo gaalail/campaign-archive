@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.warlock.fiend
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Fiend
 parent_class: Warlock
 summary: Otherworldly Patron for the Warlock

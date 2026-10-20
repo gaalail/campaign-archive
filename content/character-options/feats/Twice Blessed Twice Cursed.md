@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.twice-blessed-twice-cursed
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Twice Blessed Twice Cursed
 prerequisite: Stranger
 summary: "Prerequisite: Stranger"

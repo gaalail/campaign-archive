@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.spiritual-weapon
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Spiritual Weapon
 level: 2
 school: Evocation

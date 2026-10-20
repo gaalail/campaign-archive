@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.rise-above
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Rise Above
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 5
 prerequisite: None
-summary: "Avatar form only: by the power vested in you by your gods, you sprout angelic wings."
+summary: "Avatar form only: by the power vested in you by your gods, you sprout
+  angelic wings."
 source: Corpus Angelus
 source_type: third-party
 ---

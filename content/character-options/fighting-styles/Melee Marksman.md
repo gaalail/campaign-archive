@@ -1,12 +1,19 @@
 ---
-title: "Melee Marksman"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.melee-marksman
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Melee Marksman
 aliases:
   - character-options/class-options/fighting-style-options/melee-marksman
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Dexterity of 13 or higher"
-summary: "Having a hostile creature within 5 feet of you does not impose disadvantage on your ranged weapon attacks, so long as you are attacking a target within 5 feet."
+prerequisite: Dexterity of 13 or higher
+summary: Having a hostile creature within 5 feet of you does not impose
+  disadvantage on your ranged weapon attacks, so long as you are attacking a
+  target within 5 feet.
 source: Alternate Fighter
 source_type: homebrew
 ---

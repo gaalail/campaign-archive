@@ -1,4 +1,9 @@
 ---
+entity_type: class
+canonical_id: class.character-options.classes.warlock
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Warlock
 hit_die: d8
 spellcasting_ability: CHA

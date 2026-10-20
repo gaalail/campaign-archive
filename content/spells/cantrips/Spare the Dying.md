@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.spare-the-dying
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Spare the Dying
 level: 0
 school: Necromancy

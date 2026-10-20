@@ -1,4 +1,6 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.cleric.domain-of-mythology
 title: Domain of Mythology
 parent_class: Cleric
 summary: Divine Domain for the Cleric

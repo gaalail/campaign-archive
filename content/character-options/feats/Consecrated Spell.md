@@ -1,7 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.consecrated-spell
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Consecrated Spell
 prerequisite: Ability to cast at least one spell, and your alignment must be any good
-summary: "Prerequisite: Ability to cast at least one spell, and your alignment must be any good"
+summary: "Prerequisite: Ability to cast at least one spell, and your alignment
+  must be any good"
 source: Corpus Angelus
 source_type: third-party
 ---

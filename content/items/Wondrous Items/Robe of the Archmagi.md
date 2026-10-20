@@ -1,9 +1,15 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.robe-of-the-archmagi
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Robe of the Archmagi
 rarity: Legendary
 item_type: Wondrous Items
 attunement: true
-summary: Wondrous item, legendary (requires attunement by a sorcerer, warlock, or wizard)
+summary: Wondrous item, legendary (requires attunement by a sorcerer, warlock,
+  or wizard)
 source: SRD 5.1
 source_type: SRD
 ---

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.twin-of-light
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Twin of Light
 level: 6
 school: Conjuration

@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.ring.ring-of-spell-storing
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Ring of Spell Storing
 rarity: Rare
 item_type: Ring

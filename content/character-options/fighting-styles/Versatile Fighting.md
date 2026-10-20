@@ -1,12 +1,18 @@
 ---
-title: "Versatile Fighting"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.versatile-fighting
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Versatile Fighting
 aliases:
   - character-options/class-options/fighting-style-options/versatile-fighting
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Strength or Dexterity 11"
-summary: "While wielding a single versatile weapon and no shield, you gain a +1 bonus to attack rolls with it."
+prerequisite: Strength or Dexterity 11
+summary: While wielding a single versatile weapon and no shield, you gain a +1
+  bonus to attack rolls with it.
 source: Alternate Fighter
 source_type: homebrew
 ---

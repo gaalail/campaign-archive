@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.mass-suggestion
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Mass Suggestion
 level: 6
 school: Enchantment

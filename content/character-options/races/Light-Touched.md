@@ -1,6 +1,12 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.races.light-touched
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Light-Touched
-summary: Medium; speed 30 ft.; +2 Charisma; subraces Goldenborn, Iridescent Ones, and Silver Born
+summary: Medium; speed 30 ft.; +2 Charisma; subraces Goldenborn, Iridescent
+  Ones, and Silver Born
 source: Corpus Angelus
 source_type: third-party
 ---

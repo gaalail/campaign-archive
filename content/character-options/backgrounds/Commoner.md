@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.backgrounds.commoner
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Commoner
 summary: "Skills: Choose two from Animal Handling, Medicine, Nature, and Survival"
 source: Corpus Angelus

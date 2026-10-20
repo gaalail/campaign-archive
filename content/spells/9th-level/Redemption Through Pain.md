@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.redemption-through-pain
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Redemption Through Pain
 level: 9
 school: Necromancy

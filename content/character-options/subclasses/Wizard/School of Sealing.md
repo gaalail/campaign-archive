@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.wizard.school-of-sealing
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: School of Sealing
 parent_class: Wizard
 summary: Arcane Tradition for the Wizard

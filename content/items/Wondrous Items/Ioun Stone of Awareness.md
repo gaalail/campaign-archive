@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.ioun-stone-of-awareness
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Ioun Stone of Awareness
 rarity: Rare
 item_type: Wondrous Items

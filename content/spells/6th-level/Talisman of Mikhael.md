@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.talisman-of-mikhael
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Talisman of Mikhael
 level: 6
 school: Enchantment

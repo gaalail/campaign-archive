@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.faith-burst
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Faith Burst
 level: 0
 school: Conjuration

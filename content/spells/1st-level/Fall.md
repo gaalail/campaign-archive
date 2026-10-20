@@ -1,15 +1,20 @@
 ---
-title: "Fall"
+entity_type: spell
+canonical_id: spell.spells.1st-level.fall
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Fall
 level: 1
-school: "Transmutation"
+school: Transmutation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Self"
-duration: "Instantaneous"
-components: "V, M"
+casting_time: 1 action
+range: Self
+duration: Instantaneous
+components: V, M
 ritual: false
 concentration: false
 source: Homebrew

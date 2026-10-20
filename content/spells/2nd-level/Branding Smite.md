@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.branding-smite
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Branding Smite
 level: 2
 school: Evocation
@@ -14,7 +19,7 @@ source: SRD 5.1
 source_type: SRD
 subclass_spell_lists:
   - Arcane Knight
-arcane_knight_list_marker: "LL"
+arcane_knight_list_marker: LL
 ---
 
 _2nd-level evocation_

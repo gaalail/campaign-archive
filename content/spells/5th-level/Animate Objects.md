@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.animate-objects
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Animate Objects
 level: 5
 school: Transmutation

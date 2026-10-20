@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.shield
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Shield
 level: 1
 school: Abjuration
@@ -19,8 +25,8 @@ subclass_spell_lists:
   - Arcane Knight
   - Mystic
   - Witchblade
-mystic_list_marker: "LL"
-witchblade_list_marker: "LL"
+mystic_list_marker: LL
+witchblade_list_marker: LL
 ---
 
 > [!warning]- ?? This Entry Is Incomplete

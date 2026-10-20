@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.deny-heretic-s-magic
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Deny Heretic's Magic
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 17
 prerequisite: None
-summary: "Avatar form only: you condemn a heretic casting spells against the will of your deity."
+summary: "Avatar form only: you condemn a heretic casting spells against the
+  will of your deity."
 source: Corpus Angelus
 source_type: third-party
 ---

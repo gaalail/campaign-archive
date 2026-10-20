@@ -1,15 +1,20 @@
 ---
-title: "Bludgeoning Horror"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.bludgeoning-horror
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Bludgeoning Horror
 level: 2
-school: "Conjuration"
+school: Conjuration
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "15 feet"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 action
+range: 15 feet
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

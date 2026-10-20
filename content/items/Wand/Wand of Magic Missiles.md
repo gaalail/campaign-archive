@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wand.wand-of-magic-missiles
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Wand of Magic Missiles
 rarity: Uncommon
 item_type: Wand

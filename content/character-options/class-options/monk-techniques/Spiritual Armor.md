@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.spiritual-armor
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Spiritual Armor
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "You can reinforce your body with spiritual power"
+summary: You can reinforce your body with spiritual power
 source: Alternate Monk Expanded
 source_type: homebrew
 ---

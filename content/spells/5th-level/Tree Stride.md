@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.tree-stride
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Tree Stride
 level: 5
 school: Conjuration

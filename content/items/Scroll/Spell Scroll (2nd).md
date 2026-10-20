@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.scroll.spell-scroll-2nd
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Spell Scroll (2nd)
 rarity: Uncommon
 item_type: Scroll

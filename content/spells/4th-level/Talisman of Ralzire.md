@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.talisman-of-ralzire
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Talisman of Ralzire
 level: 4
 school: Enchantment

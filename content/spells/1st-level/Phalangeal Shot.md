@@ -1,15 +1,20 @@
 ---
-title: "Phalangeal Shot"
+entity_type: spell
+canonical_id: spell.spells.1st-level.phalangeal-shot
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Phalangeal Shot
 level: 1
-school: "Evocation"
+school: Evocation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Self (30-foot line)"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: Self (30-foot line)
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

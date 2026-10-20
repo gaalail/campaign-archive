@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.the-divine-bannerette
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: The Divine Bannerette
 option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 4
 prerequisite: None
-summary: As an action, you can conjure a banner of your deity, your temple, or another divine authority you serve.
+summary: As an action, you can conjure a banner of your deity, your temple, or
+  another divine authority you serve.
 source: Corpus Angelus
 source_type: third-party
 ---

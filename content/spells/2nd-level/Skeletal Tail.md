@@ -1,14 +1,19 @@
 ---
-title: "Skeletal Tail"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.skeletal-tail
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Skeletal Tail
 level: 2
-school: "Conjuration"
+school: Conjuration
 classes:
   - Druid
   - Ranger
-casting_time: "1 action"
-range: "Self (20-foot radius)"
-duration: "1 minute"
-components: "V, S, M"
+casting_time: 1 action
+range: Self (20-foot radius)
+duration: 1 minute
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

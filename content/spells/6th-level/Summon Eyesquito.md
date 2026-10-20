@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.summon-eyesquito
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Summon Eyesquito
 level: 6
 school: Conjuration

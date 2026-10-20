@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.ascetic-fortitude
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Ascetic Fortitude
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "You can fortify your physical form with your Ki"
+summary: You can fortify your physical form with your Ki
 source: Alternate Monk Expanded
 source_type: homebrew
 prerequisite: 9th-level Monk

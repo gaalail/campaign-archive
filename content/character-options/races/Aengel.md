@@ -1,6 +1,12 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.races.aengel
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Aengel
-summary: Medium celestial; speed 30 ft. and fly 30 ft.; +1 Strength, Constitution, and Charisma
+summary: Medium celestial; speed 30 ft. and fly 30 ft.; +1 Strength,
+  Constitution, and Charisma
 source: Corpus Angelus
 source_type: third-party
 ---

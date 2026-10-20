@@ -1,7 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.angelic-strength
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Angelic Strength
 prerequisite: None
-summary: Your body is enhanced by angelic essences and you are blessed with the strength of an angel.
+summary: Your body is enhanced by angelic essences and you are blessed with the
+  strength of an angel.
 source: Corpus Angelus
 source_type: third-party
 ---

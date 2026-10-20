@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.stink
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Stink
 level: 0
 school: Evocation

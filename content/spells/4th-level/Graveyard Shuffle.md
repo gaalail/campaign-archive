@@ -1,15 +1,20 @@
 ---
-title: "Graveyard Shuffle"
+entity_type: spell
+canonical_id: spell.spells.4th-level.graveyard-shuffle
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Graveyard Shuffle
 level: 4
-school: "Necromancy"
+school: Necromancy
 classes:
   - Cleric
   - Druid
   - Thanatomancer
-casting_time: "1 action"
-range: "30 feet"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 action
+range: 30 feet
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

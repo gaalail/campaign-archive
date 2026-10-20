@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.flesh-wings
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Flesh Wings
 level: 2
 school: Transmutation

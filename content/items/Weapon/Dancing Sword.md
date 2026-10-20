@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.weapon.dancing-sword
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Dancing Sword
 rarity: Very Rare
 item_type: Weapon

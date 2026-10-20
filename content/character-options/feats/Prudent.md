@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.prudent
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Prudent
 prerequisite: Wisdom 15 or higher
 summary: "Prerequisite: Wisdom 15 or higher"

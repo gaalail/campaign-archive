@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.shattering-voice
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Shattering Voice
 option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 14
 prerequisite: None
-summary: When you hit a target with a ranged spell attack, the target's hit point maximum is reduced by an amount equal to half of the d...
+summary: When you hit a target with a ranged spell attack, the target's hit
+  point maximum is reduced by an amount equal to half of the d...
 source: Corpus Angelus
 source_type: third-party
 ---

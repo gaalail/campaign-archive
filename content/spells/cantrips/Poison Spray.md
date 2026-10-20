@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.poison-spray
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Poison Spray
 level: 0
 school: Conjuration
@@ -18,7 +23,7 @@ source: SRD 5.1
 source_type: SRD
 subclass_spell_lists:
   - Witchblade
-witchblade_list_marker: "LL"
+witchblade_list_marker: LL
 ---
 
 _Conjuration cantrip_

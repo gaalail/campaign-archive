@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.paragon.order-of-the-voice
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Order of the Voice
 parent_class: Paragon
 summary: "Divine Order: Voice, diplomacy, and sacred song"

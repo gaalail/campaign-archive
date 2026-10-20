@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.ranger.evil-slayer
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Evil Slayer
 parent_class: Ranger
 summary: Ranger Conclave for the Ranger

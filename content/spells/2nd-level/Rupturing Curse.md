@@ -1,14 +1,19 @@
 ---
-title: "Rupturing Curse"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.rupturing-curse
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Rupturing Curse
 level: 2
-school: "Evocation"
+school: Evocation
 classes:
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Concentration, up to 1 minute"
-components: "V, S"
+casting_time: 1 action
+range: 60 feet
+duration: Concentration, up to 1 minute
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

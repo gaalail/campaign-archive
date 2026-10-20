@@ -1,8 +1,15 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.envenomed-strike
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Envenomed Strike
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "Once per turn when you hit a creature with a melee Martial Arts attack, you can spend 1 Ki to deal bonus poison damage equal to your Martial Arts Die and force "
+summary: "Once per turn when you hit a creature with a melee Martial Arts
+  attack, you can spend 1 Ki to deal bonus poison damage equal to your Martial
+  Arts Die and force "
 source: Alternate Monk Expanded
 source_type: homebrew
 prerequisite: 5th-level Monk

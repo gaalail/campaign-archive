@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.angel-feathers
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Angel Feathers
 level: 3
 school: Evocation

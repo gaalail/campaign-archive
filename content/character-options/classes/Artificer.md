@@ -1,4 +1,9 @@
 ---
+entity_type: class
+canonical_id: class.character-options.classes.artificer
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Artificer
 hit_die: d8
 spellcasting_ability: INT

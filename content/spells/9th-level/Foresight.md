@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.foresight
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Foresight
 level: 9
 school: Divination

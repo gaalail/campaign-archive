@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.watched-over-by-angels
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Watched Over by Angels
 prerequisite: Your alignment must be any good
 summary: "Prerequisite: Your alignment must be any good"

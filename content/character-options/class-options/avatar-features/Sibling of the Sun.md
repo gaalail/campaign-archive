@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.sibling-of-the-sun
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Sibling of the Sun
 option_group: Avatar Feature
 parent_class: Paragon
 min_level: 20
 prerequisite: None
-summary: "Avatar form only: as an action, you create a sun in the sky right above you for 1 minute."
+summary: "Avatar form only: as an action, you create a sun in the sky right
+  above you for 1 minute."
 source: Corpus Angelus
 source_type: third-party
 ---

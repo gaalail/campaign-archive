@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.gates-of-heaven
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Gates of Heaven
 level: 8
 school: Conjuration

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.rain-of-holy-fire
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Rain of Holy Fire
 level: 8
 school: Illusion

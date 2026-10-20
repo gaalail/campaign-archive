@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.blessed-by-the-sword-of-the-six-armed-archangel
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Blessed by the Sword of the Six-Armed Archangel
 option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 17
 prerequisite: None
-summary: "Avatar form only: you hold your hands out towards the sky, crying out a prayer of vengeance, destruction, and absoluti"
+summary: "Avatar form only: you hold your hands out towards the sky, crying out
+  a prayer of vengeance, destruction, and absoluti"
 source: Corpus Angelus
 source_type: third-party
 ---

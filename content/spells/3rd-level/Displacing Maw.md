@@ -1,14 +1,19 @@
 ---
-title: "Displacing Maw"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.displacing-maw
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Displacing Maw
 level: 3
-school: "Conjuration"
+school: Conjuration
 classes:
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "10 feet"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: 10 feet
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

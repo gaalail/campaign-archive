@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.gray-bag-of-tricks
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Gray Bag of Tricks
 rarity: Uncommon
 item_type: Wondrous Items

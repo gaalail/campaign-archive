@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.mirage-arcane
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Mirage Arcane
 level: 7
 school: Illusion

@@ -1,15 +1,20 @@
 ---
-title: "Brittle Bone Throw"
+entity_type: spell
+canonical_id: spell.spells.cantrips.brittle-bone-throw
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Brittle Bone Throw
 level: 0
-school: "Conjuration"
+school: Conjuration
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 action
+range: 60 feet
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

@@ -1,15 +1,20 @@
 ---
-title: "Chisel Skull"
+entity_type: spell
+canonical_id: spell.spells.5th-level.chisel-skull
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Chisel Skull
 level: 5
-school: "Evocation"
+school: Evocation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Instantaneous"
-components: "S, M"
+casting_time: 1 action
+range: 60 feet
+duration: Instantaneous
+components: S, M
 ritual: false
 concentration: false
 source: Homebrew

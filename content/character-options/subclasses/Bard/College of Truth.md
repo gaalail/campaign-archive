@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.bard.college-of-truth
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: College of Truth
 parent_class: Bard
 summary: Bard College for the Bard

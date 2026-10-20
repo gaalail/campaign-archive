@@ -1,4 +1,6 @@
 ---
+entity_type: campaign
+canonical_id: campaign.campaigns.ra-golvek.example-place
 title: Example Place
 type: Place
 summary: Placeholder place. Delete or replace me.

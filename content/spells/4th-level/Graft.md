@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.graft
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Graft
 level: 4
 school: Transmutation

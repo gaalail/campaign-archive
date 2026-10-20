@@ -1,15 +1,20 @@
 ---
-title: "Bone Shield"
+entity_type: spell
+canonical_id: spell.spells.1st-level.bone-shield
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Bone Shield
 level: 1
-school: "Abjuration"
+school: Abjuration
 classes:
   - Druid
   - Ranger
   - Warlock
-casting_time: "1 reaction, which you take when you are"
-range: "Self"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 reaction, which you take when you are
+range: Self
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.mantle-of-courtesy
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Mantle of Courtesy
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "Spiritual insight guides your speech"
+summary: Spiritual insight guides your speech
 source: Alternate Monk
 source_type: homebrew
 prerequisite: 9th-level Monk

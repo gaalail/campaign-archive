@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.psyche-leech
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Psyche Leech
 level: 1
 school: Enchantment

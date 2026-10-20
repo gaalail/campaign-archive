@@ -1,12 +1,17 @@
 ---
-title: "Archery"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.archery
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Archery
 aliases:
   - character-options/class-options/fighting-style-options/archery
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Dexterity 13"
-summary: "You gain a +1 bonus to attack rolls with ranged weapons."
+prerequisite: Dexterity 13
+summary: You gain a +1 bonus to attack rolls with ranged weapons.
 source: Alternate Fighter
 source_type: homebrew
 ---

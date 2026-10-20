@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.wall-of-thorns
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Wall of Thorns
 level: 6
 school: Conjuration

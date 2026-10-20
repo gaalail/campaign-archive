@@ -1,8 +1,15 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.heavenly-step
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Heavenly Step
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "While using your Unarmored Movement, you can move along vertical surfaces, across liquids, and upside down on ceilings without falling during the move"
+summary: While using your Unarmored Movement, you can move along vertical
+  surfaces, across liquids, and upside down on ceilings without falling during
+  the move
 source: Alternate Monk
 source_type: homebrew
 prerequisite: 9th-level Monk

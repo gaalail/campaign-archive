@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.eldritch-invocations.bewitching-whispers
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Bewitching Whispers
 option_group: Eldritch Invocation
 parent_class: Warlock

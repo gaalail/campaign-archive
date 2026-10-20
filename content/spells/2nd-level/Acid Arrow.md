@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.acid-arrow
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Acid Arrow
 level: 2
 school: Evocation

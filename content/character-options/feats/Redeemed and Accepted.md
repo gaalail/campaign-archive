@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.redeemed-and-accepted
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Redeemed and Accepted
 prerequisite: Redeemed Fiend
 summary: "Prerequisite: Redeemed Fiend"

@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.ring.ring-of-x-ray-vision
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Ring of X-ray Vision
 rarity: Rare
 item_type: Ring

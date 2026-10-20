@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.clairvoyance
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Clairvoyance
 level: 3
 school: Divination

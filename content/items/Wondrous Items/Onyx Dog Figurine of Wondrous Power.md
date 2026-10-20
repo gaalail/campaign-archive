@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.onyx-dog-figurine-of-wondrous-power
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Onyx Dog Figurine of Wondrous Power
 rarity: Rare
 item_type: Wondrous Items

@@ -1,4 +1,9 @@
 ---
+entity_type: class
+canonical_id: class.character-options.classes.ranger
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Ranger
 hit_die: d10
 spellcasting_ability: WIS

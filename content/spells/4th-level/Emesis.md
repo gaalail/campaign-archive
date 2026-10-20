@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.emesis
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Emesis
 level: 4
 school: Enchantment

@@ -1,6 +1,12 @@
 ---
+entity_type: item
+canonical_id: item.items.armor.armor-2
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Armor, +2
 rarity: Very Rare
 item_type: Armor

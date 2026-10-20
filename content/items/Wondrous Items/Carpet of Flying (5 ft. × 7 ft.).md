@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.carpet-of-flying-5-ft-7-ft
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Carpet of Flying (5 ft. × 7 ft.)
 rarity: Very Rare
 item_type: Wondrous Items

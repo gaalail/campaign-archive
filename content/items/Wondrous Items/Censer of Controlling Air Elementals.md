@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.censer-of-controlling-air-elementals
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Censer of Controlling Air Elementals
 rarity: Rare
 item_type: Wondrous Items

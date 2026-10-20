@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.warrior-adept
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Warrior Adept
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "You have trained in a specialized style of fighting"
+summary: You have trained in a specialized style of fighting
 source: Alternate Monk Expanded
 source_type: homebrew
 prerequisite: 5th-level Monk

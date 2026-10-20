@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.druid.circle-of-heaven
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Circle of Heaven
 parent_class: Druid
 summary: Druid Circle for the Druid

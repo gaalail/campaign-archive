@@ -1,6 +1,9 @@
 ---
+entity_type: campaign
+canonical_id: campaign.campaigns.ra-golvek.example-character
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Example Character
 type: Character
 summary: Placeholder character. Delete or replace me.

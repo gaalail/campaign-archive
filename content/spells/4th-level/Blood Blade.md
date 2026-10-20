@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.blood-blade
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Blood Blade
 level: 4
 school: Transmutation

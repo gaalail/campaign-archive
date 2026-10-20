@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.ethereal-steps
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Ethereal Steps
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 10
 prerequisite: None
-summary: As a bonus action, you teleport to an unoccupied space that you can see within 30 feet of you.
+summary: As a bonus action, you teleport to an unoccupied space that you can see
+  within 30 feet of you.
 source: Corpus Angelus
 source_type: third-party
 ---

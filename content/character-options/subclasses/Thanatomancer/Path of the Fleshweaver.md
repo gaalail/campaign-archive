@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.thanatomancer.path-of-the-fleshweaver
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Path of the Fleshweaver
 parent_class: Thanatomancer
 summary: Crafts, grafts, and augments stitchwork undead minions

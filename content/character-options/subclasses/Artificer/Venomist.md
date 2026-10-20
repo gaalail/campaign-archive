@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.artificer.venomist
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Venomist
 parent_class: Artificer
 summary: Crafts, studies, and weaponizes poisons

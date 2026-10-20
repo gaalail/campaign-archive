@@ -1,15 +1,20 @@
 ---
-title: "Gravity Leap"
+entity_type: spell
+canonical_id: spell.spells.1st-level.gravity-leap
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Gravity Leap
 level: 1
-school: "Transmutation"
+school: Transmutation
 classes:
   - Druid
   - Ranger
   - Sorcerer
-casting_time: "1 action"
-range: "Self"
-duration: "Concentration, up to 1 minute"
-components: "V, S"
+casting_time: 1 action
+range: Self
+duration: Concentration, up to 1 minute
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

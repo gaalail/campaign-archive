@@ -1,15 +1,20 @@
 ---
-title: "Dampen Gravity"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.dampen-gravity
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Dampen Gravity
 level: 3
-school: "Transmutation"
+school: Transmutation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Self (60-foot-radius sphere)"
-duration: "1 hour"
-components: "V, S, M"
+casting_time: 1 action
+range: Self (60-foot-radius sphere)
+duration: 1 hour
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.innocence-slaughtered
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Innocence Slaughtered
 level: 2
 school: Abjuration

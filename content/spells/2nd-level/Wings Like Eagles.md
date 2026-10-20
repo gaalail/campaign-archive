@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.wings-like-eagles
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Wings Like Eagles
 level: 2
 school: Transmutation

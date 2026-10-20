@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.conjure-woodland-beings
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Conjure Woodland Beings
 level: 4
 school: Conjuration

@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.hallowed-steps
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Hallowed Steps
 option_group: Avatar Feature
 parent_class: Paragon
 min_level: 6
 prerequisite: None
-summary: You can have your footsteps leave a holy print on the ground, which can be seen with truesight, the detect evil and good spell...
+summary: You can have your footsteps leave a holy print on the ground, which can
+  be seen with truesight, the detect evil and good spell...
 source: Corpus Angelus
 source_type: third-party
 ---

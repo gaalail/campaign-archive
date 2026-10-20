@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.protector-of-the-temple
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Protector of the Temple
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 4
 prerequisite: None
-summary: You know very well who your greatest enemies are, and you are well-prepared for any possible conflict with them.
+summary: You know very well who your greatest enemies are, and you are
+  well-prepared for any possible conflict with them.
 source: Corpus Angelus
 source_type: third-party
 ---

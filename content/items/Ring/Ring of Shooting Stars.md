@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.ring.ring-of-shooting-stars
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Ring of Shooting Stars
 rarity: Very Rare
 item_type: Ring

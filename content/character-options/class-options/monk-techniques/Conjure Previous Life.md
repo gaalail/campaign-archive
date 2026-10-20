@@ -1,8 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.conjure-previous-life
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Conjure Previous Life
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "You summon a specter of your past life to come to your aid"
+summary: You summon a specter of your past life to come to your aid
 source: Alternate Monk Expanded
 source_type: homebrew
 prerequisite: 13th-level Monk

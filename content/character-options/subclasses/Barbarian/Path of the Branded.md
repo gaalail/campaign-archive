@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.barbarian.path-of-the-branded
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Path of the Branded
 parent_class: Barbarian
 summary: Primal Path for the Barbarian

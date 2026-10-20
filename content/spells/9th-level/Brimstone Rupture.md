@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.brimstone-rupture
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Brimstone Rupture
 level: 9
 school: Transmutation

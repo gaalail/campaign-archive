@@ -1,15 +1,20 @@
 ---
-title: "Forest of Dread"
+entity_type: spell
+canonical_id: spell.spells.5th-level.forest-of-dread
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Forest of Dread
 level: 5
-school: "Conjuration"
+school: Conjuration
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Self (30-foot radius)"
-duration: "Concentration, up to 10 minutes"
-components: "V, S"
+casting_time: 1 action
+range: Self (30-foot radius)
+duration: Concentration, up to 10 minutes
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

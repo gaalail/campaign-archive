@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.meld-into-stone
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Meld Into Stone
 level: 3
 school: Transmutation

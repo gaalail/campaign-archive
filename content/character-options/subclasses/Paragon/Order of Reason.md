@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.paragon.order-of-reason
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Order of Reason
 parent_class: Paragon
 summary: "Divine Order: Scholarship and knowledge of enemies"

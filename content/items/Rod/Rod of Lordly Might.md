@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.rod.rod-of-lordly-might
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Rod of Lordly Might
 rarity: Legendary
 item_type: Rod

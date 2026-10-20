@@ -1,6 +1,12 @@
 ---
+entity_type: item
+canonical_id: item.items.ammunition.ammunition-2
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Ammunition, +2
 rarity: Rare
 item_type: Ammunition

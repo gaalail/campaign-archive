@@ -1,8 +1,15 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.probing-strike
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Probing Strike
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "Whenever you hit a creature with an unarmed strike, you can spend 1 Ki to learn one characteristic from the following list: Armor Class Highest Ability Score Co"
+summary: "Whenever you hit a creature with an unarmed strike, you can spend 1 Ki
+  to learn one characteristic from the following list: Armor Class Highest
+  Ability Score Co"
 source: Alternate Monk Expanded
 source_type: homebrew
 ---

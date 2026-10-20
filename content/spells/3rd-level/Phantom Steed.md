@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.phantom-steed
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Phantom Steed
 level: 3
 school: Illusion

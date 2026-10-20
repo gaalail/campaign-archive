@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.words-of-remedy
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Words of Remedy
 option_group: Avatar Feature
 parent_class: Order of the Voice

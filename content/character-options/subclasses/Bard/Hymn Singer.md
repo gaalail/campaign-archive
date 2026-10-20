@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.bard.hymn-singer
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Hymn Singer
 parent_class: Bard
 summary: Bard College for the Bard

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.fountain-of-blessing
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Fountain of Blessing
 level: 5
 school: Evocation

@@ -1,8 +1,15 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.monk-techniques.severing-strike
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Severing Strike
 parent_class: Monk
 option_group: Mystic Techniques
-summary: "Once per turn when you hit a creature with a melee Martial Arts attack, you can spend 3 Ki to break its connection to the arcane, forcing it to make a saving th"
+summary: Once per turn when you hit a creature with a melee Martial Arts attack,
+  you can spend 3 Ki to break its connection to the arcane, forcing it to make a
+  saving th
 source: Alternate Monk Expanded
 source_type: homebrew
 prerequisite: 13th-level Monk

@@ -1,15 +1,20 @@
 ---
-title: "Electrify"
+entity_type: spell
+canonical_id: spell.spells.1st-level.electrify
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Electrify
 level: 1
-school: "Evocation"
+school: Evocation
 classes:
   - Ranger
   - Sorcerer
   - Wizard
-casting_time: "1 bonus action"
-range: "Self"
-duration: "1 round"
-components: "V, S"
+casting_time: 1 bonus action
+range: Self
+duration: 1 round
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

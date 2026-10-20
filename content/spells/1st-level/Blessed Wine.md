@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.blessed-wine
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Blessed Wine
 level: 1
 school: Transmutation

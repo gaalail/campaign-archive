@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.illusionary-divine-choir
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Illusionary Divine Choir
 level: 5
 school: Illusion

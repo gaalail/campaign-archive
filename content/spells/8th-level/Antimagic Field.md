@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.antimagic-field
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Antimagic Field
 level: 8
 school: Abjuration

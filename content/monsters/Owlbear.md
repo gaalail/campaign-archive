@@ -1,4 +1,9 @@
 ---
+entity_type: monster
+canonical_id: monster.monsters.owlbear
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Owlbear
 size: Large
 creature_type: Monstrosity

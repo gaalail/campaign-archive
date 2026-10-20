@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.monk.way-of-cardinal-virtues
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Way of Cardinal Virtues
 parent_class: Monk
 summary: Monastic Tradition for the Monk

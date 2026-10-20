@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.redeemer-of-souls
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Redeemer of Souls
 level: 9
 school: Enchantment

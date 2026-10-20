@@ -1,14 +1,19 @@
 ---
-title: "Fractured Shell"
+entity_type: spell
+canonical_id: spell.spells.1st-level.fractured-shell
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Fractured Shell
 level: 1
-school: "Transmutation"
+school: Transmutation
 classes:
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Touch"
-duration: "Concentration, up to 10 minutes"
-components: "V, S, M"
+casting_time: 1 action
+range: Touch
+duration: Concentration, up to 10 minutes
+components: V, S, M
 ritual: false
 concentration: true
 source: Homebrew

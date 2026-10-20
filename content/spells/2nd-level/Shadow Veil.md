@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.shadow-veil
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Shadow Veil
 level: 2
 school: Illusion

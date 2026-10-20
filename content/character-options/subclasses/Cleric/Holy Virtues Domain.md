@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.cleric.holy-virtues-domain
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Holy Virtues Domain
 parent_class: Cleric
 summary: Divine Domain for the Cleric

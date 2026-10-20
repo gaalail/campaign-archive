@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.lobotomize
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Lobotomize
 level: 7
 school: Enchantment

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.personal-heaven
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Personal Heaven
 level: 4
 school: Illusion

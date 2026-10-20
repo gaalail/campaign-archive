@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.halo-of-golden-aegis
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Halo of Golden Aegis
 option_group: Avatar Feature
 parent_class: Paragon
 min_level: 10
 prerequisite: None
-summary: You gain resistance to one of the following damage types of your choice; acid, cold, fire, lightning, necrotic, poison, thunder.
+summary: You gain resistance to one of the following damage types of your
+  choice; acid, cold, fire, lightning, necrotic, poison, thunder.
 source: Corpus Angelus
 source_type: third-party
 ---

@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.prepared
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Prepared
 option_group: Avatar Feature
 parent_class: Order of Reason
 min_level: 9
 prerequisite: Protector of the Temple
-summary: Your studies against the forces of evil and the blessings of your deity allow you to be more cautious and effective against the...
+summary: Your studies against the forces of evil and the blessings of your deity
+  allow you to be more cautious and effective against the...
 source: Corpus Angelus
 source_type: third-party
 ---

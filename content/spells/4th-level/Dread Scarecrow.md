@@ -1,15 +1,20 @@
 ---
-title: "Dread Scarecrow"
+entity_type: spell
+canonical_id: spell.spells.4th-level.dread-scarecrow
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Dread Scarecrow
 level: 4
-school: "Illusion"
+school: Illusion
 classes:
   - Bard
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Self (30-foot-radius sphere)"
-duration: "Concentration, up to 1 minute"
-components: "V, S, M"
+casting_time: 1 action
+range: Self (30-foot-radius sphere)
+duration: Concentration, up to 1 minute
+components: V, S, M
 ritual: false
 concentration: true
 source: Homebrew

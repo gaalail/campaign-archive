@@ -1,6 +1,12 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.martial-artist
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Martial Artist
-summary: You have some basic martial arts training, giving you some skill in unarmed combat
+summary: You have some basic martial arts training, giving you some skill in
+  unarmed combat
 source: Alternate Monk Expanded
 source_type: homebrew
 ---

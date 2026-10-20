@@ -1,13 +1,18 @@
 ---
-title: "Graviturgic Smite"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.graviturgic-smite
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Graviturgic Smite
 level: 2
-school: "Evocation"
+school: Evocation
 classes:
   - Paladin
-casting_time: "1 bonus action"
-range: "Self"
-duration: "Concentration, up to 1 minute"
-components: "V"
+casting_time: 1 bonus action
+range: Self
+duration: Concentration, up to 1 minute
+components: V
 ritual: false
 concentration: true
 source: Homebrew

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.angelfall
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Angelfall
 level: 7
 school: Conjuration

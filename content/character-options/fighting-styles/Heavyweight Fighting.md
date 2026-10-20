@@ -1,12 +1,17 @@
 ---
-title: "Heavyweight Fighting"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.heavyweight-fighting
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Heavyweight Fighting
 aliases:
   - character-options/class-options/fighting-style-options/heavyweight-fighting
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Strength of 13 or higher"
-summary: "You gain a +1 bonus to your damage rolls with heavy melee weapons."
+prerequisite: Strength of 13 or higher
+summary: You gain a +1 bonus to your damage rolls with heavy melee weapons.
 source: Alternate Fighter
 source_type: homebrew
 ---

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.move-earth
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Move Earth
 level: 6
 school: Transmutation

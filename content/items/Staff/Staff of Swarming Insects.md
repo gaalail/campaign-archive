@@ -1,9 +1,15 @@
 ---
+entity_type: item
+canonical_id: item.items.staff.staff-of-swarming-insects
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Staff of Swarming Insects
 rarity: Very Rare
 item_type: Staff
 attunement: true
-summary: Staff, very rare (requires attunement by a bard, cleric, druid, sorcerer, warlock, or wizard)
+summary: Staff, very rare (requires attunement by a bard, cleric, druid,
+  sorcerer, warlock, or wizard)
 source: SRD 5.1
 source_type: SRD
 ---

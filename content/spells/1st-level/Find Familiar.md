@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.find-familiar
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Find Familiar
 level: 1
 school: Conjuration

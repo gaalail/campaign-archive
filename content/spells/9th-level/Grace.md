@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.grace
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Grace
 level: 9
 school: Abjuration

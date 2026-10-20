@@ -1,6 +1,12 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.templates.angelic
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Angelic
-summary: A template for characters with angelic blood; gain it at creation or in play at the GM's discretion
+summary: A template for characters with angelic blood; gain it at creation or in
+  play at the GM's discretion
 source: Corpus Angelus
 source_type: third-party
 ---

@@ -1,6 +1,12 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.races.stranger
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Stranger
-summary: Medium; speed 30 ft.; +2 Wisdom and +1 to three scores of your choice; cursed to die at 66
+summary: Medium; speed 30 ft.; +2 Wisdom and +1 to three scores of your choice;
+  cursed to die at 66
 source: Corpus Angelus
 source_type: third-party
 ---

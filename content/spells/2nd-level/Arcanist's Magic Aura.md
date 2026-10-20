@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.arcanist-s-magic-aura
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Arcanist's Magic Aura
 level: 2
 school: Illusion

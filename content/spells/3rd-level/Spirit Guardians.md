@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.spirit-guardians
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Spirit Guardians
 level: 3
 school: Conjuration

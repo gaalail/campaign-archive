@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.sphere-of-protection
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Sphere of Protection
 level: 3
 school: Abjuration

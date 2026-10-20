@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.weapon-of-the-hero
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Weapon of the Hero
 level: 2
 school: Conjuration

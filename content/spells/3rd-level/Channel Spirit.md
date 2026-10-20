@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.channel-spirit
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Channel Spirit
 level: 3
 school: Divination

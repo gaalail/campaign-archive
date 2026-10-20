@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.golden-armor-of-the-angels
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Golden Armor of the Angels
 option_group: Avatar Feature
 parent_class: Order of Valor

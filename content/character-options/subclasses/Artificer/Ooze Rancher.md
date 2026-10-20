@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.artificer.ooze-rancher
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Ooze Rancher
 parent_class: Artificer
 summary: Raises a domesticated ooze and adapts it with harvested creature essences

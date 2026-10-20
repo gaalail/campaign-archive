@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.eldritch-invocations.mask-of-many-faces
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Mask of Many Faces
 option_group: Eldritch Invocation
 parent_class: Warlock

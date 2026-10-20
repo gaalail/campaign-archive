@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.7th-level.reverse-gravity
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Reverse Gravity
 level: 7
 school: Transmutation

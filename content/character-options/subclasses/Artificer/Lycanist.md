@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.artificer.lycanist
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Lycanist
 parent_class: Artificer
 summary: Transforms into a customizable beast form

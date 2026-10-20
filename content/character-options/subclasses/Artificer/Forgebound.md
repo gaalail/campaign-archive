@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.artificer.forgebound
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Forgebound
 parent_class: Artificer
 summary: Fights alongside a companion that creates infused weapons

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.barkskin
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Barkskin
 level: 2
 school: Transmutation
@@ -15,7 +20,7 @@ source: SRD 5.1
 source_type: SRD
 subclass_spell_lists:
   - Wu Jen
-wu_jen_list_marker: "LL"
+wu_jen_list_marker: LL
 ---
 
 _2nd-level transmutation_

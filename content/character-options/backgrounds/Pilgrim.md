@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.backgrounds.pilgrim
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Pilgrim
 summary: "Skills: Religion and Survival"
 source: Corpus Angelus

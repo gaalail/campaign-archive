@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.wall-of-fire
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Wall of Fire
 level: 4
 school: Evocation

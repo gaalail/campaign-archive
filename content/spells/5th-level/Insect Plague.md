@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.insect-plague
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Insect Plague
 level: 5
 school: Conjuration

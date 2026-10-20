@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.storm-of-vengeance
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Storm of Vengeance
 level: 9
 school: Conjuration

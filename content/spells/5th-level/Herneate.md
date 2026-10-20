@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.herneate
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Herneate
 level: 5
 school: Necromancy

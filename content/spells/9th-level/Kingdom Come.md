@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.kingdom-come
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Kingdom Come
 level: 9
 school: Conjuration

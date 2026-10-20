@@ -1,12 +1,17 @@
 ---
-title: "Shield Warrior"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.shield-warrior
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Shield Warrior
 aliases:
   - character-options/class-options/fighting-style-options/shield-warrior
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Strength of 13 or higher"
-summary: "You gain proficiency with shields as martial melee weapons."
+prerequisite: Strength of 13 or higher
+summary: You gain proficiency with shields as martial melee weapons.
 source: Alternate Fighter
 source_type: homebrew
 ---

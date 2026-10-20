@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.barbarian.path-of-celestial-fury
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Path of Celestial Fury
 parent_class: Barbarian
 summary: Primal Path for the Barbarian

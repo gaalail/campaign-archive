@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.changing-feather
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Changing Feather
 level: 0
 school: Evocation

@@ -1,15 +1,20 @@
 ---
-title: "Arm Cannon"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.arm-cannon
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Arm Cannon
 level: 2
-school: "Evocation"
+school: Evocation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "30 feet"
-duration: "1 round"
-components: "V, S"
+casting_time: 1 action
+range: 30 feet
+duration: 1 round
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

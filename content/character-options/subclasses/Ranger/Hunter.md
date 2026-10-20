@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.ranger.hunter
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Hunter
 parent_class: Ranger
 summary: Ranger Archetype for the Ranger

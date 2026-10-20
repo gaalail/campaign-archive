@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.exclusion
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Exclusion
 level: 6
 school: Abjuration

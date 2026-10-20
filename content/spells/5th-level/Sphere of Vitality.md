@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.sphere-of-vitality
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Sphere of Vitality
 level: 5
 school: Abjuration

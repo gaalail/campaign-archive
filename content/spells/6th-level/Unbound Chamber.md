@@ -1,15 +1,20 @@
 ---
-title: "Unbound Chamber"
+entity_type: spell
+canonical_id: spell.spells.6th-level.unbound-chamber
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Unbound Chamber
 level: 6
-school: "Transmutation"
+school: Transmutation
 classes:
   - Druid
   - Sorcerer
   - Wizard
-casting_time: "10 minutes"
-range: "500 feet"
-duration: "8 hours"
-components: "V, S"
+casting_time: 10 minutes
+range: 500 feet
+duration: 8 hours
+components: V, S
 ritual: true
 concentration: false
 source: Homebrew

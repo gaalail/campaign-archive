@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.judgment-of-the-sun
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Judgment of the Sun
 level: 8
 school: Transmutation

@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.races.dragonborn
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Dragonborn
 summary: Medium size; speed 30 ft.; +2 STR, +1 CHA
 source: SRD 5.1

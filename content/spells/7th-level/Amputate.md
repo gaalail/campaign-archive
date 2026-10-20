@@ -1,15 +1,20 @@
 ---
-title: "Amputate"
+entity_type: spell
+canonical_id: spell.spells.7th-level.amputate
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Amputate
 level: 7
-school: "Evocation"
+school: Evocation
 classes:
   - Druid
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Touch"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: Touch
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

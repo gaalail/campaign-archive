@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.facetheft
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Facetheft
 level: 1
 school: Illusion

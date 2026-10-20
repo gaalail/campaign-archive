@@ -1,14 +1,19 @@
 ---
-title: "Spectral Fury"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.spectral-fury
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Spectral Fury
 level: 3
-school: "Conjuration"
+school: Conjuration
 classes:
   - Paladin
   - Ranger
-casting_time: "1 action"
-range: "30 feet"
-duration: "Instantaneous"
-components: "V, S, M"
+casting_time: 1 action
+range: 30 feet
+duration: Instantaneous
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

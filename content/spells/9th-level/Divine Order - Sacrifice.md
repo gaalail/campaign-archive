@@ -1,15 +1,20 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.divine-order-sacrifice
+edition: system-neutral
+adaptation: original
+license_status: original
 title: "Divine Order: Sacrifice"
 level: 9
-school: "Conjuration"
+school: Conjuration
 classes:
   - Bard
   - Cleric
   - Warlock
-casting_time: "1 action"
-range: "120 feet"
-duration: "Concentration, up to 1 minute"
-components: "V, S"
+casting_time: 1 action
+range: 120 feet
+duration: Concentration, up to 1 minute
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

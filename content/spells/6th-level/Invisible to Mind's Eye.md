@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.invisible-to-mind-s-eye
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Invisible to Mind's Eye
 level: 6
 school: Enchantment

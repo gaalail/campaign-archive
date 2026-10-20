@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.9th-level.holy-verdict-vengeance
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: "Holy Verdict: Vengeance"
 level: 9
 school: Divination

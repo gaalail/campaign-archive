@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.word-of-dispel
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Word of Dispel
 option_group: Avatar Feature
 parent_class: Order of the Voice
 min_level: 6
 prerequisite: None
-summary: You can cease the existence of mundane items, change reality and bend it to your will through the sheer power of your voice.
+summary: You can cease the existence of mundane items, change reality and bend
+  it to your will through the sheer power of your voice.
 source: Corpus Angelus
 source_type: third-party
 ---

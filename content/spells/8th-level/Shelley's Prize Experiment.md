@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.shelley-s-prize-experiment
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Shelley's Prize Experiment
 level: 8
 school: Necromancy

@@ -1,7 +1,12 @@
 ---
-title: "Gravity Well"
+entity_type: spell
+canonical_id: spell.spells.1st-level.gravity-well
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Gravity Well
 level: 1
-school: "Evocation"
+school: Evocation
 classes:
   - Cleric
   - Druid
@@ -9,10 +14,10 @@ classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "60 feet"
-duration: "Instantaneous"
-components: "V, S"
+casting_time: 1 action
+range: 60 feet
+duration: Instantaneous
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

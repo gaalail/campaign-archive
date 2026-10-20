@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.unerring-sphere
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Unerring Sphere
 level: 2
 school: Divination

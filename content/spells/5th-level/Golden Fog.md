@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.golden-fog
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Golden Fog
 level: 5
 school: Conjuration

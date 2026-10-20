@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.brimstone-shockwave
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Brimstone Shockwave
 level: 4
 school: Evocation

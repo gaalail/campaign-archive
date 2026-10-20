@@ -1,15 +1,20 @@
 ---
-title: "Rubber Bones"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.rubber-bones
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Rubber Bones
 level: 3
-school: "Transmutation"
+school: Transmutation
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Touch"
-duration: "Concentration, up to 10 minutes"
-components: "V, S"
+casting_time: 1 action
+range: Touch
+duration: Concentration, up to 10 minutes
+components: V, S
 ritual: false
 concentration: true
 source: Homebrew

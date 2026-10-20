@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.deny-weakness
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Deny Weakness
 option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 1
 prerequisite: None
-summary: While you are under an effect that requires you to make a saving throw at the end of your turn, you can make the saving throw a...
+summary: While you are under an effect that requires you to make a saving throw
+  at the end of your turn, you can make the saving throw a...
 source: Corpus Angelus
 source_type: third-party
 ---

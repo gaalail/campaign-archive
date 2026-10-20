@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.potion.potion-of-cloud-giant-strength
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Potion of Cloud Giant Strength
 rarity: Very Rare
 item_type: Potion

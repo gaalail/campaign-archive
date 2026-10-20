@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.rootwither
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Rootwither
 level: 1
 school: Necromancy

@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.staff.staff-of-healing
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Staff of Healing
 rarity: Rare
 item_type: Staff

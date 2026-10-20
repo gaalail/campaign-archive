@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.bard.college-of-infernal-archives
+edition: system-neutral
+adaptation: original
+license_status: original
 title: College of Infernal Archives
 parent_class: Bard
 summary: Bard College for the Bard

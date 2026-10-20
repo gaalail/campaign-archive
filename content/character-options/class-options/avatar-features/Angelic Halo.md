@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.angelic-halo
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Angelic Halo
 option_group: Avatar Feature
 parent_class: Paragon
 min_level: 13
 prerequisite: None
-summary: You can communicate telepathically with creatures that you are familiar with, as long as they are within 120 feet of you.
+summary: You can communicate telepathically with creatures that you are familiar
+  with, as long as they are within 120 feet of you.
 source: Corpus Angelus
 source_type: third-party
 ---

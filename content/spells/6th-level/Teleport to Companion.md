@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.teleport-to-companion
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Teleport to Companion
 level: 6
 school: Conjuration

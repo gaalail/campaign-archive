@@ -1,7 +1,13 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.celestial-blood
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Celestial Blood
 prerequisite: None
-summary: Your blood is infused with celestial energies and you learn how to tap its potential.
+summary: Your blood is infused with celestial energies and you learn how to tap
+  its potential.
 source: Corpus Angelus
 source_type: third-party
 ---

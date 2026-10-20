@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.charge-of-glory
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Charge of Glory
 level: 1
 school: Evocation

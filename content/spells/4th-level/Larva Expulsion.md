@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.larva-expulsion
+edition: system-neutral
+adaptation: original
+license_status: original
 title: Larva Expulsion
 level: 4
 school: Necromancy

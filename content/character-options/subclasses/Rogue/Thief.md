@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.rogue.thief
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Thief
 parent_class: Rogue
 summary: Roguish Archetype for the Rogue

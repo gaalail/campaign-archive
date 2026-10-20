@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.wondrous-items.apparatus-of-the-crab
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Apparatus of the Crab
 rarity: Legendary
 item_type: Wondrous Items

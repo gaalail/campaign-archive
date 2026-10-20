@@ -1,16 +1,21 @@
 ---
-title: "Bestial Roar"
+entity_type: spell
+canonical_id: spell.spells.cantrips.bestial-roar
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Bestial Roar
 level: 0
-school: "Transmutation"
+school: Transmutation
 classes:
   - Bard
   - Druid
   - Sorcerer
   - Warlock
-casting_time: "1 action"
-range: "Self (10-foot-radius sphere)"
-duration: "Instantaneous"
-components: "V"
+casting_time: 1 action
+range: Self (10-foot-radius sphere)
+duration: Instantaneous
+components: V
 ritual: false
 concentration: false
 source: Homebrew

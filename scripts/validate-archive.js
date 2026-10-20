@@ -259,6 +259,76 @@ function checkRegistry() {
   }
 }
 
+function checkCanonicalIdentity() {
+  console.log("\n📍 Checking canonical identities and provenance...")
+  const ids = new Map()
+  let checked = 0
+  let errors = 0
+  const validTypes = new Set([
+    "class",
+    "spell",
+    "item",
+    "campaign",
+    "monster",
+    "rule",
+    "character_option",
+  ])
+
+  for (const data of Object.values(fileCache)) {
+    const metadata = data.metadata
+    if (!metadata.entity_type && !metadata.canonical_id) continue
+    const relative = path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/")
+    checked++
+
+    if (!validTypes.has(metadata.entity_type)) {
+      RESULTS.errors.push(`${relative}: invalid entity_type "${metadata.entity_type ?? "missing"}"`)
+      errors++
+    }
+    if (typeof metadata.canonical_id !== "string" || !metadata.canonical_id.trim()) {
+      RESULTS.errors.push(`${relative}: missing canonical_id`)
+      errors++
+      continue
+    }
+    const owner = ids.get(metadata.canonical_id)
+    if (owner) {
+      RESULTS.errors.push(
+        `Duplicate canonical_id "${metadata.canonical_id}": ${owner} and ${relative}`,
+      )
+      errors++
+    } else {
+      ids.set(metadata.canonical_id, relative)
+    }
+
+    if (typeof metadata.source === "string" && metadata.source.trim()) {
+      if (!CONTENT_METADATA_SCHEMA.source_types.includes(metadata.source_type)) {
+        RESULTS.errors.push(
+          `${relative}: invalid or missing source_type for source "${metadata.source}"`,
+        )
+        errors++
+      }
+      if (
+        !CONTENT_METADATA_SCHEMA.editions.includes(metadata.edition) &&
+        metadata.entity_type !== "campaign"
+      ) {
+        RESULTS.errors.push(`${relative}: invalid or missing edition`)
+        errors++
+      }
+      if (!CONTENT_METADATA_SCHEMA.adaptations.includes(metadata.adaptation)) {
+        RESULTS.errors.push(`${relative}: invalid or missing adaptation`)
+        errors++
+      }
+      if (!CONTENT_METADATA_SCHEMA.license_statuses.includes(metadata.license_status)) {
+        RESULTS.errors.push(`${relative}: invalid or missing license_status`)
+        errors++
+      }
+    }
+  }
+
+  if (errors === 0) {
+    RESULTS.info.push(`✓ Canonical identities validated (${checked} pages, ${ids.size} unique IDs)`)
+  }
+}
+
 function checkMetadata() {
   console.log("\n📍 Checking metadata consistency...")
 
@@ -774,6 +844,7 @@ function validate() {
   checkWikilinks(linkIndex, allowlist)
   checkUnlinkedPages(linkIndex)
   checkMetadata()
+  checkCanonicalIdentity()
   checkRegistry()
   checkDisplayedCounts()
   checkContentRelationships()

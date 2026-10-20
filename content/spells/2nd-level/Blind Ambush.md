@@ -1,16 +1,21 @@
 ---
-title: "Blind Ambush"
+entity_type: spell
+canonical_id: spell.spells.2nd-level.blind-ambush
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Blind Ambush
 level: 2
-school: "Conjuration"
+school: Conjuration
 classes:
   - Bard
   - Druid
   - Ranger
   - Warlock
-casting_time: "1 action"
-range: "60 feet (10-foot square)"
-duration: "1 minute"
-components: "V, S, M"
+casting_time: 1 action
+range: 60 feet (10-foot square)
+duration: 1 minute
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

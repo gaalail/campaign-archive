@@ -1,14 +1,19 @@
 ---
-title: "Silvered Shell"
+entity_type: spell
+canonical_id: spell.spells.1st-level.silvered-shell
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Silvered Shell
 level: 1
-school: "Transmutation"
+school: Transmutation
 classes:
   - Paladin
   - Ranger
-casting_time: "1 bonus action"
-range: "Self"
-duration: "1 minute"
-components: "V, S, M"
+casting_time: 1 bonus action
+range: Self
+duration: 1 minute
+components: V, S, M
 ritual: false
 concentration: false
 source: Homebrew

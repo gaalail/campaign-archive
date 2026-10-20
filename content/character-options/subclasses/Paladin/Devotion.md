@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.subclasses.paladin.devotion
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Devotion
 parent_class: Paladin
 summary: Sacred Oath for the Paladin

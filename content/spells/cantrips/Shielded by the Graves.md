@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.cantrips.shielded-by-the-graves
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Shielded by the Graves
 level: 0
 school: Necromancy

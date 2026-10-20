@@ -1,12 +1,19 @@
 ---
-title: "Great Weapon Fighting"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.great-weapon-fighting
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Great Weapon Fighting
 aliases:
   - character-options/class-options/fighting-style-options/great-weapon-fighting
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Strength 13"
-summary: "When you hit a target with a heavy melee weapon attack, you can treat a damage die as its average result instead of rolling if the roll is lower than that average: d4 (2), d6 (3), d8 (4), d10 (5), or d12 (6)."
+prerequisite: Strength 13
+summary: "When you hit a target with a heavy melee weapon attack, you can treat
+  a damage die as its average result instead of rolling if the roll is lower
+  than that average: d4 (2), d6 (3), d8 (4), d10 (5), or d12 (6)."
 source: Alternate Fighter
 source_type: homebrew
 ---

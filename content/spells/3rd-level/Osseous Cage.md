@@ -1,15 +1,20 @@
 ---
-title: "Osseous Cage"
+entity_type: spell
+canonical_id: spell.spells.3rd-level.osseous-cage
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Osseous Cage
 level: 3
-school: "Conjuration"
+school: Conjuration
 classes:
   - Druid
   - Warlock
   - Wizard
-casting_time: "1 action"
-range: "Self (10-foot-radius sphere)"
-duration: "10 minutes"
-components: "V, S"
+casting_time: 1 action
+range: Self (10-foot-radius sphere)
+duration: 10 minutes
+components: V, S
 ritual: false
 concentration: false
 source: Homebrew

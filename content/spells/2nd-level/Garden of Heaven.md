@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.garden-of-heaven
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Garden of Heaven
 level: 2
 school: Transmutation

@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.might-of-the-shaper-giant
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Might of the Shaper Giant
 prerequisite: Strength 19 or higher
 summary: "Prerequisite: Strength 19 or higher"

@@ -1,6 +1,12 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.protection-from-energy
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: "The legacy record did not specify which details are missing or unverified; review needed."
+incomplete_reason: The legacy record did not specify which details are missing
+  or unverified; review needed.
 title: Protection From Energy
 level: 3
 school: Abjuration

@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.oathbound
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Oathbound
 prerequisite: You must have an oath
 summary: "Prerequisite: You must have an oath"

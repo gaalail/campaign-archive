@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.4th-level.freedom-of-movement
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Freedom of Movement
 level: 4
 school: Abjuration

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.5th-level.condemn-thievery
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Condemn Thievery
 level: 5
 school: Divination

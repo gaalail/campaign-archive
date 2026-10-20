@@ -1,10 +1,16 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.class-options.avatar-features.wings-of-war
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Wings of War
 option_group: Avatar Feature
 parent_class: Order of Valor
 min_level: 10
 prerequisite: Armored Wings
-summary: You gained experience with your wings and can now use them more efficiently in combat.
+summary: You gained experience with your wings and can now use them more
+  efficiently in combat.
 source: Corpus Angelus
 source_type: third-party
 ---

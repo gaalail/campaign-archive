@@ -1,12 +1,19 @@
 ---
-title: "Classical Swordplay"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.classical-swordplay
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Classical Swordplay
 aliases:
   - character-options/class-options/fighting-style-options/classical-swordplay
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Dexterity 13"
-summary: "While wielding a single finesse weapon, with no shield and no heavy armor, you gain a +2 bonus to attack rolls with that weapon and a +1 bonus to AC."
+prerequisite: Dexterity 13
+summary: While wielding a single finesse weapon, with no shield and no heavy
+  armor, you gain a +2 bonus to attack rolls with that weapon and a +1 bonus to
+  AC.
 source: Alternate Fighter
 source_type: homebrew
 ---

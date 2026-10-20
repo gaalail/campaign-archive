@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.8th-level.holy-chains-of-the-divine
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Holy Chains of the Divine
 level: 8
 school: Evocation

@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.1st-level.jump
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Jump
 level: 1
 school: Transmutation
@@ -19,8 +24,8 @@ source_type: SRD
 subclass_spell_lists:
   - Arcane Knight
   - Mystic
-arcane_knight_list_marker: "LL"
-mystic_list_marker: "LL"
+arcane_knight_list_marker: LL
+mystic_list_marker: LL
 ---
 
 _1st-level transmutation_

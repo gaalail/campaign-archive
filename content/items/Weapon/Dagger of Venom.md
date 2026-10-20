@@ -1,4 +1,9 @@
 ---
+entity_type: item
+canonical_id: item.items.weapon.dagger-of-venom
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: Dagger of Venom
 rarity: Rare
 item_type: Weapon

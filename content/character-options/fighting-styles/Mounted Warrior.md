@@ -1,12 +1,17 @@
 ---
-title: "Mounted Warrior"
+entity_type: character_option
+canonical_id: character_option.character-options.fighting-styles.mounted-warrior
+edition: system-neutral
+adaptation: original
+license_status: original
+title: Mounted Warrior
 aliases:
   - character-options/class-options/fighting-style-options/mounted-warrior
-option_group: "Fighting Style"
+option_group: Fighting Style
 parent_class: Multiple Classes
 min_level: 1
-prerequisite: "Proficiency in Animal Handling"
-summary: "While riding a controlled mount, you and your mount gain a +1 bonus to AC."
+prerequisite: Proficiency in Animal Handling
+summary: While riding a controlled mount, you and your mount gain a +1 bonus to AC.
 source: Alternate Fighter
 source_type: homebrew
 ---

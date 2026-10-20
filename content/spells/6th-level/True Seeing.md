@@ -1,4 +1,9 @@
 ---
+entity_type: spell
+canonical_id: spell.spells.6th-level.true-seeing
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
 title: True Seeing
 level: 6
 school: Divination

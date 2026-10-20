@@ -1,4 +1,9 @@
 ---
+entity_type: character_option
+canonical_id: character_option.character-options.feats.epitome-of-good
+edition: "2014"
+adaptation: curated
+license_status: reference-only
 title: Epitome of Good
 prerequisite: You must be a good-aligned cleric, paladin, or paragon
 summary: "Prerequisite: You must be a good-aligned cleric, paladin, or paragon"
