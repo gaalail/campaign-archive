@@ -60,16 +60,17 @@ Some magical items require **attunement** — a special bond between you and the
 
 **Different classes use different items effectively:**
 
-- [[Artificer]] — All items, especially wands and rods
-- [[Bard]] — Performance items, jewelry
-- [[Cleric]] — Holy symbols, armor, shields
-- [[Druid]] — Nature-themed items, armor
-- [[Paladin]] — Holy weapons, armor, shields
-- [[Ranger]] — Weapons, ammunition, gear
-- [[Rogue]] — Subtle items, daggers, light armor
-- [[Sorcerer]] — Jewelry, wands, staffs
-- [[Warlock]] — Pacts often grant item abilities
-- [[Wizard]] — Staffs, wands, jewelry
+- [[character-options/classes/Artificer|Artificer]] — All items, especially wands and rods
+- [[character-options/classes/Bard|Bard]] — Performance items, jewelry
+- [[character-options/classes/Cleric|Cleric]] — Holy symbols, armor, shields
+- [[character-options/classes/Druid|Druid]] — Nature-themed items, armor
+- [[character-options/classes/Paladin|Paladin]] — Holy weapons, armor, shields
+- [[character-options/classes/Ranger|Ranger]] — Weapons, ammunition, gear
+- [[character-options/classes/Rogue|Rogue]] — Subtle items, daggers, light armor
+- [[character-options/classes/Sorcerer|Sorcerer]] — Jewelry, wands, staffs
+- [[character-options/classes/Thanatomancer|Thanatomancer]] — Necromantic implements and grimoires
+- [[character-options/classes/Warlock|Warlock]] — Pacts often grant item abilities
+- [[character-options/classes/Wizard|Wizard]] — Staffs, wands, jewelry
 
 ---
 
@@ -106,8 +107,8 @@ This makes magic items especially powerful for non-spellcasters.
 ## Related Sections
 
 - [[character-options/classes|Classes]] — Class-specific item recommendations
-- [[Spells]] — Spells that magic items cast
-- [[Character Options]] — Build your character
-- [[Rules]] — Rules about magical attunement
+- [[spells|Spells]] — Spells that magic items cast
+- [[character-options|Character Options]] — Build your character
+- [[rules|Rules]] — Rules about magical attunement
 
 ---

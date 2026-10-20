@@ -33,16 +33,16 @@ Choose a spell level to see all spells available at that progression:
 
 **For a class-specific spell list**, go to that class page:
 
-- [[Artificer]] — Infusion magic
-- [[Bard]] — Magic through performance
-- [[Cleric]] — Divine magic
-- [[Druid]] — Nature magic
-- [[Paladin]] — Holy magic
-- [[Ranger]] — Primal magic
-- [[Sorcerer]] — Innate magic
+- [[character-options/classes/Artificer|Artificer]] — Infusion magic
+- [[character-options/classes/Bard|Bard]] — Magic through performance
+- [[character-options/classes/Cleric|Cleric]] — Divine magic
+- [[character-options/classes/Druid|Druid]] — Nature magic
+- [[character-options/classes/Paladin|Paladin]] — Holy magic
+- [[character-options/classes/Ranger|Ranger]] — Primal magic
+- [[character-options/classes/Sorcerer|Sorcerer]] — Innate magic
 - [[character-options/classes/Thanatomancer|Thanatomancer]] — Necromantic magic
-- [[Warlock]] — Patron magic (includes invocations)
-- [[Wizard]] — Scholarly magic
+- [[character-options/classes/Warlock|Warlock]] — Patron magic
+- [[character-options/classes/Wizard|Wizard]] — Scholarly magic
 
 Each class page shows **spells organized by level you can learn them**.
 
@@ -86,9 +86,9 @@ Check your [[character-options/classes|class]] page for exact spell slot progres
 
 ## Related Sections
 
-- [[Character Options]] — Classes and multiclassing
+- [[character-options|Character Options]] — Classes and multiclassing
 - [[character-options/feats|Feats]] — Magic-focused feats
-- [[Items]] — Magic items that cast spells
-- [[Monsters]] — Spells creatures cast
+- [[items|Items]] — Magic items that cast spells
+- [[monsters|Monsters]] — Spells creatures cast
 
 ---

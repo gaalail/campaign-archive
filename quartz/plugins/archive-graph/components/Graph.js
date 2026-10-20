@@ -72,7 +72,7 @@ function GraphComponent({ cfg, fileData }) {
             h("button", { class: "archive-graph-overview", type: "button" }, "Archive map"),
             h("label", { class: "archive-graph-collection-label" }, [
               h("input", { class: "archive-graph-collections", type: "checkbox" }),
-              "Include generated collection pages",
+              "Include generated collection pages (catalogues and views)",
             ]),
             h("output", { class: "archive-graph-count", "aria-live": "polite" }),
           ]),

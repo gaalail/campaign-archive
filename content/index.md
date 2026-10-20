@@ -60,7 +60,7 @@ Each campaign has sessions, NPCs, locations, and loot specific to your adventure
 1. **Set up a campaign** → Fill in campaign hub pages
 2. **Add sessions** → Document what happened
 3. **Track NPCs & locations** → Players can reference them
-4. **Define house rules** → [[Rules|Add custom rules]]
+4. **Define house rules** → [[rules|Add custom rules]]
 
 ---
 
