@@ -8,6 +8,17 @@ title: Owlbear
 size: Large
 creature_type: Monstrosity
 alignment: unaligned
+habitats:
+  - forest
+  - hills
+  - mountains
+roles:
+  - ambusher
+tags:
+  - predator
+legendary: false
+lair: false
+spellcaster: false
 ac: 13
 hp: 59
 cr: "3"

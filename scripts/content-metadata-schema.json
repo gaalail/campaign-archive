@@ -108,7 +108,29 @@
         "creature_type": { "type": "string", "non_empty": true },
         "alignment": { "type": "string", "non_empty": true },
         "cr": { "type": "string", "non_empty": true },
-        "source": { "type": "string", "non_empty": true },
+        "habitats": {
+          "type": "array",
+          "items": { "type": "string", "non_empty": true }
+        },
+        "roles": {
+          "type": "array",
+          "items": { "type": "string", "non_empty": true }
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string", "non_empty": true }
+        },
+        "legendary": { "type": "boolean" },
+        "lair": { "type": "boolean" },
+        "spellcaster": { "type": "boolean" },
+        "campaigns": {
+          "type": "array",
+          "items": { "type": "string", "non_empty": true }
+        },
+        "encounters": {
+          "type": "array",
+          "items": { "type": "string", "non_empty": true }
+        },
         "source_type": { "type": "string", "enum_from": "source_types" },
         "content_status": { "type": "string", "enum_from": "content_status" },
         "incomplete_reason": { "type": "string", "non_empty": true }

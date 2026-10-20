@@ -349,6 +349,22 @@ function checkMetadata() {
   if (monsters.length === 0) {
     RESULTS.warnings.push("No monster records found")
   }
+  for (const monster of monsters) {
+    for (const field of ["habitats", "roles", "tags", "campaigns", "encounters"]) {
+      if (monster.metadata[field] !== undefined && !Array.isArray(monster.metadata[field])) {
+        RESULTS.errors.push(
+          `Monster ${path.relative(CONTENT_DIR, monster.filepath).replaceAll("\\", "/")}: ${field} must be an array`,
+        )
+      }
+    }
+    for (const field of ["legendary", "lair", "spellcaster"]) {
+      if (monster.metadata[field] !== undefined && typeof monster.metadata[field] !== "boolean") {
+        RESULTS.errors.push(
+          `Monster ${path.relative(CONTENT_DIR, monster.filepath).replaceAll("\\", "/")}: ${field} must be boolean`,
+        )
+      }
+    }
+  }
 
   spells.forEach((spell) => {
     if (!Object.hasOwn(spell.metadata, "level") && !spell.metadata.incomplete) {

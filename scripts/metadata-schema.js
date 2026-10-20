@@ -1,6 +1,7 @@
 function matchesType(value, type) {
   if (type === "array") return Array.isArray(value)
   if (type === "integer") return Number.isInteger(value)
+  if (type === "boolean") return typeof value === "boolean"
   if (type === "string") return typeof value === "string"
   return false
 }

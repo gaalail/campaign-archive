@@ -4,31 +4,55 @@ title: Monsters
 
 # Monsters & Creatures
 
-The monster compendium is now metadata-backed and ready to expand.
+A bestiary for quick lookup, encounter preparation, and campaign discovery.
 
-## Browse the Compendium
+## Choose a Starting Point
 
-![[monsters.base]]
+### Find by Challenge Rating
 
-### By Source
+Use CR when you already know the approximate threat level you need.
+
+![[monsters.base#By Challenge Rating]]
+
+### Find by Creature Type
+
+Use creature type when the story or rules call for a specific kind of creature.
+
+![[monsters.base#Beasts]]
+![[monsters.base#Monstrosities]]
+![[monsters.base#Undead]]
+
+### Find by Environment
+
+- **Forest:** ![[monsters-forest.base]]
+
+### Find by Tactical Role
+
+- **Ambushers:** ![[monsters-ambushers.base]]
+
+### Find by Source
 
 ![[monsters-srd.base]]
 
-### Needs Review
+### Find Content to Review
 
 ![[monsters-review.base]]
 
-## Current Coverage
+## Monster Cards and Full Pages
 
-The catalogue supports filtering by:
+The catalogue is for scanning. Open a monster page for the complete stat block, traits, actions, provenance, and related campaign context.
 
-- Creature type
-- Size
-- Challenge rating
-- Source and source type
-- Edition
-- Content status
-- Campaign and encounter links when present
+## Encounter Preparation
+
+Encounter pages will connect selected monsters to:
+
+- Campaigns
+- Sessions
+- Locations
+- Encounter themes
+- Loot and related rules
+
+No encounter records are invented until actual campaign material exists.
 
 ## Monster Page Standard
 
@@ -37,9 +61,11 @@ Each monster should include:
 - `canonical_id`
 - `entity_type: monster`
 - Size, creature type, alignment, AC, HP, and CR
-- Source, source type, edition, adaptation, and license status
+- Habitats, tactical roles, and tags when known
+- Legendary, lair, and spellcaster flags when applicable
+- Source, edition, adaptation, and license status
 - Content status and a specific incomplete reason when needed
-- Explicit links to campaigns, sessions, locations, encounters, or loot when relevant
+- Explicit campaign, session, location, encounter, and loot links when relevant
 
 ## Resources
 

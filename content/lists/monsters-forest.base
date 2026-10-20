@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.inFolder("monsters")
+    - file.name != "index"
+    - habitats.contains("forest")
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  creature_type:
+    displayName: Type
+  size:
+    displayName: Size
+  cr:
+    displayName: CR
+  roles:
+    displayName: Role
+views:
+  - type: table
+    name: Forest Creatures
+    order: [formula.Name, creature_type, size, cr, roles]
+    sort:
+      - property: file.name
+        direction: ASC

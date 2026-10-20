@@ -13,13 +13,28 @@ properties:
     displayName: Size
   cr:
     displayName: CR
+  habitats:
+    displayName: Habitat
+  roles:
+    displayName: Role
   source:
     displayName: Source
 views:
   - type: table
     name: All Monsters
-    order: [formula.Name, creature_type, size, cr, source]
+    order: [formula.Name, creature_type, size, cr, habitats, roles, source]
     sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: By Challenge Rating
+    groupBy:
+      property: cr
+      direction: ASC
+    order: [formula.Name, creature_type, size, source]
+    sort:
+      - property: cr
+        direction: ASC
       - property: file.name
         direction: ASC
   - type: table
@@ -27,16 +42,16 @@ views:
     filters:
       and:
         - creature_type == "Beast"
-    order: [formula.Name, size, cr, source]
+    order: [formula.Name, size, cr, habitats, roles]
   - type: table
     name: Monstrosities
     filters:
       and:
         - creature_type == "Monstrosity"
-    order: [formula.Name, size, cr, source]
+    order: [formula.Name, size, cr, habitats, roles]
   - type: table
     name: Undead
     filters:
       and:
         - creature_type == "Undead"
-    order: [formula.Name, size, cr, source]
+    order: [formula.Name, size, cr, habitats, roles]

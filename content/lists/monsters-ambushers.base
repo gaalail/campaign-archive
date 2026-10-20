@@ -1,0 +1,25 @@
+filters:
+  and:
+    - file.inFolder("monsters")
+    - file.name != "index"
+    - roles.contains("ambusher")
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  creature_type:
+    displayName: Type
+  size:
+    displayName: Size
+  cr:
+    displayName: CR
+  habitats:
+    displayName: Habitat
+views:
+  - type: table
+    name: Ambushers
+    order: [formula.Name, creature_type, size, cr, habitats]
+    sort:
+      - property: file.name
+        direction: ASC
