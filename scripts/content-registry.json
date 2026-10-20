@@ -1,0 +1,81 @@
+{
+  "classes": {
+    "Artificer": {
+      "source": "Tasha's Cauldron of Everything",
+      "source_type": "third-party",
+      "spell_catalogue": "artificer-spells.base"
+    },
+    "Barbarian": { "source": "SRD 5.1", "source_type": "SRD" },
+    "Bard": { "source": "SRD 5.1", "source_type": "SRD", "spell_catalogue": "bard-spells.base" },
+    "Cleric": {
+      "source": "SRD 5.1",
+      "source_type": "SRD",
+      "spell_catalogue": "cleric-spells.base"
+    },
+    "Druid": { "source": "SRD 5.1", "source_type": "SRD", "spell_catalogue": "druid-spells.base" },
+    "Fighter": { "source": "Alternate Fighter", "source_type": "homebrew" },
+    "Monk": { "source": "Alternate Monk", "source_type": "homebrew" },
+    "Paladin": {
+      "source": "SRD 5.1",
+      "source_type": "SRD",
+      "spell_catalogue": "paladin-spells.base"
+    },
+    "Paragon": { "source": "Corpus Angelus", "source_type": "third-party" },
+    "Ranger": {
+      "source": "SRD 5.1",
+      "source_type": "SRD",
+      "spell_catalogue": "ranger-spells.base"
+    },
+    "Rogue": { "source": "SRD 5.1", "source_type": "SRD" },
+    "Sorcerer": {
+      "source": "SRD 5.1",
+      "source_type": "SRD",
+      "spell_catalogue": "sorcerer-spells.base"
+    },
+    "Thanatomancer": {
+      "source": "Erevan's Guide to Death & Beyond",
+      "source_type": "third-party",
+      "spell_catalogue": "thanatomancer-spells.base"
+    },
+    "Warlock": {
+      "source": "SRD 5.1",
+      "source_type": "SRD",
+      "spell_catalogue": "warlock-spells.base"
+    },
+    "Wizard": { "source": "SRD 5.1", "source_type": "SRD", "spell_catalogue": "wizard-spells.base" }
+  },
+  "directories": {
+    "spells": {
+      "required_frontmatter": ["title", "level", "school", "classes", "source", "source_type"],
+      "levels": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    },
+    "items": {
+      "required_frontmatter": ["title", "item_type", "rarity", "source", "source_type"],
+      "categories": [
+        "Ammunition",
+        "Armor",
+        "Potion",
+        "Ring",
+        "Rod",
+        "Scroll",
+        "Staff",
+        "Wand",
+        "Weapon",
+        "Wondrous Items"
+      ]
+    },
+    "character-options/classes": {
+      "required_frontmatter": ["title", "hit_die", "saving_throws", "source", "source_type"]
+    }
+  },
+  "catalogues": {
+    "subclass_spell_lists": {
+      "directory": "lists",
+      "required_embed_suffix": "-spells.base"
+    },
+    "class_options": {
+      "directory": "content/character-options/class-options",
+      "required_index": "index.md"
+    }
+  }
+}

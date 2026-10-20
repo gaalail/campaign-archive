@@ -35,6 +35,9 @@ const LINK_ALLOWLIST_PATH = path.join(__dirname, "link-health-allowlist.json")
 const CONTENT_METADATA_SCHEMA = JSON.parse(
   fs.readFileSync(path.join(__dirname, "content-metadata-schema.json"), "utf-8"),
 )
+const CONTENT_REGISTRY = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "content-registry.json"), "utf-8"),
+)
 const RESULTS = {
   errors: [],
   warnings: [],
@@ -194,6 +197,68 @@ function checkUnlinkedPages(linkIndex) {
 }
 
 // Check metadata consistency
+function checkRegistry() {
+  console.log("\n📍 Checking expansion registry...")
+  let errors = 0
+
+  const classDirectory = path.join(CONTENT_DIR, "character-options", "classes")
+  const registeredClasses = new Set(
+    Object.keys(CONTENT_REGISTRY.classes ?? {}).map((name) => name.toLowerCase()),
+  )
+  for (const filename of fs.readdirSync(classDirectory)) {
+    if (!filename.endsWith(".md") || filename.toLowerCase() === "index.md") continue
+    const className = path.basename(filename, ".md")
+    if (!registeredClasses.has(className.toLowerCase())) {
+      RESULTS.errors.push(
+        `Class is missing from expansion registry: character-options/classes/${filename}`,
+      )
+      errors++
+    }
+  }
+
+  for (const [className, expected] of Object.entries(CONTENT_REGISTRY.classes ?? {})) {
+    const classPath = path.join(CONTENT_DIR, "character-options", "classes", `${className}.md`)
+    if (!fs.existsSync(classPath)) {
+      RESULTS.errors.push(`Registry class is missing: character-options/classes/${className}.md`)
+      errors++
+      continue
+    }
+    const metadata = parseFrontmatter(fs.readFileSync(classPath, "utf-8"), classPath)
+    for (const field of ["source", "source_type"]) {
+      if (expected[field] !== undefined && metadata[field] !== expected[field]) {
+        RESULTS.errors.push(
+          `Registry mismatch for ${className}: ${field} is "${metadata[field] ?? "missing"}", expected "${expected[field]}"`,
+        )
+        errors++
+      }
+    }
+    if (expected.spell_catalogue) {
+      const cataloguePath = path.join(CONTENT_DIR, "lists", expected.spell_catalogue)
+      if (!fs.existsSync(cataloguePath)) {
+        RESULTS.errors.push(`Registry catalogue is missing: lists/${expected.spell_catalogue}`)
+        errors++
+      } else {
+        const classEntry = fileCache[classPath]
+        const expectedCatalogue = expected.spell_catalogue.toLowerCase()
+        const embedsCatalogue = classEntry?.links.some(
+          (link) =>
+            link.embed && path.posix.basename(link.target).toLowerCase() === expectedCatalogue,
+        )
+        if (!embedsCatalogue) {
+          RESULTS.errors.push(
+            `Registry class ${className} does not embed lists/${expected.spell_catalogue}`,
+          )
+          errors++
+        }
+      }
+    }
+  }
+
+  if (errors === 0) {
+    RESULTS.info.push("✓ Expansion registry matches class provenance and catalogues")
+  }
+}
+
 function checkMetadata() {
   console.log("\n📍 Checking metadata consistency...")
 
@@ -709,6 +774,7 @@ function validate() {
   checkWikilinks(linkIndex, allowlist)
   checkUnlinkedPages(linkIndex)
   checkMetadata()
+  checkRegistry()
   checkDisplayedCounts()
   checkContentRelationships()
   checkDuplicates()
