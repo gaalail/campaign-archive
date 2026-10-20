@@ -2,7 +2,7 @@
   "classes": {
     "Artificer": {
       "source": "Tasha's Cauldron of Everything",
-      "source_type": "third-party",
+      "source_type": "official-supplement",
       "spell_catalogue": "artificer-spells.base"
     },
     "Barbarian": { "source": "SRD 5.1", "source_type": "SRD" },

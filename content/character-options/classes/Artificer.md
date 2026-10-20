@@ -12,7 +12,7 @@ saving_throws:
   - INT
 summary: d8 hit die; saving throws CON, INT; spellcasting with INT
 source: Tasha's Cauldron of Everything
-source_type: third-party
+source_type: official-supplement
 ---
 
 # Artificer

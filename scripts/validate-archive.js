@@ -343,6 +343,12 @@ function checkMetadata() {
   )
 
   let missingMetadata = 0
+  const monsters = contentEntries.filter((data) =>
+    path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/").startsWith("monsters/"),
+  )
+  if (monsters.length === 0) {
+    RESULTS.warnings.push("No monster records found")
+  }
 
   spells.forEach((spell) => {
     if (!Object.hasOwn(spell.metadata, "level") && !spell.metadata.incomplete) {
@@ -375,7 +381,9 @@ function checkMetadata() {
   })
 
   if (missingMetadata === 0) {
-    RESULTS.info.push(`✓ All metadata complete (${spells.length} spells, ${items.length} items)`)
+    RESULTS.info.push(
+      `✓ All metadata complete (${spells.length} spells, ${items.length} items, ${monsters.length} monsters)`,
+    )
   }
 
   const schemaPages = Object.values(fileCache).flatMap((data) => {
@@ -389,11 +397,13 @@ function checkMetadata() {
           ? "item"
           : parts[0] === "campaigns"
             ? "campaign"
-            : parts[0] === "character-options" && parts[1] === "classes" && !isIndex
-              ? "class"
-              : parts[0] === "character-options"
-                ? "character_option"
-                : undefined
+            : parts[0] === "monsters" && !isIndex
+              ? "monster"
+              : parts[0] === "character-options" && parts[1] === "classes" && !isIndex
+                ? "class"
+                : parts[0] === "character-options"
+                  ? "character_option"
+                  : undefined
     return schemaName ? [{ data, relative, schemaName }] : []
   })
 

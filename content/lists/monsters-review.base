@@ -1,0 +1,23 @@
+filters:
+  and:
+    - file.inFolder("monsters")
+    - file.name != "index"
+    - content_status == "incomplete"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  creature_type:
+    displayName: Type
+  cr:
+    displayName: CR
+  incomplete_reason:
+    displayName: Review reason
+views:
+  - type: table
+    name: Monsters to Review
+    order: [formula.Name, creature_type, cr, incomplete_reason]
+    sort:
+      - property: file.name
+        direction: ASC

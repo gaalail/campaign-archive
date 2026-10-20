@@ -1,5 +1,5 @@
 {
-  "source_types": ["SRD", "homebrew", "third-party", "campaign-original"],
+  "source_types": ["SRD", "official-supplement", "homebrew", "third-party", "campaign-original"],
   "content_status": ["complete", "incomplete", "draft", "deprecated", "archived"],
   "editions": ["2014", "2024", "system-neutral"],
   "adaptations": ["verbatim", "summarized", "curated", "adapted", "original"],
@@ -86,6 +86,28 @@
         "adaptation": { "type": "string", "enum_from": "adaptations" },
         "license_status": { "type": "string", "enum_from": "license_statuses" },
         "title": { "type": "string", "non_empty": true },
+        "source": { "type": "string", "non_empty": true },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    },
+    "monster": {
+      "required": ["title", "size", "creature_type", "alignment", "cr", "source"],
+      "fields": {
+        "entity_type": {
+          "type": "string",
+          "enum": ["class", "spell", "item", "campaign", "monster", "rule", "character_option"]
+        },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "edition": { "type": "string", "enum_from": "editions" },
+        "adaptation": { "type": "string", "enum_from": "adaptations" },
+        "license_status": { "type": "string", "enum_from": "license_statuses" },
+        "title": { "type": "string", "non_empty": true },
+        "size": { "type": "string", "non_empty": true },
+        "creature_type": { "type": "string", "non_empty": true },
+        "alignment": { "type": "string", "non_empty": true },
+        "cr": { "type": "string", "non_empty": true },
         "source": { "type": "string", "non_empty": true },
         "source_type": { "type": "string", "enum_from": "source_types" },
         "content_status": { "type": "string", "enum_from": "content_status" },

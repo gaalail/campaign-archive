@@ -7,42 +7,36 @@ formulas:
 properties:
   formula.Name:
     displayName: Name
-  size:
-    displayName: Size
   creature_type:
     displayName: Type
+  size:
+    displayName: Size
   cr:
     displayName: CR
-  ac:
-    displayName: AC
-  hp:
-    displayName: HP
   source:
     displayName: Source
 views:
   - type: table
-    name: All by type
-    groupBy:
-      property: creature_type
-      direction: ASC
-    order: [formula.Name, size, cr, ac, hp]
-    sort:
-      - property: creature_type
-        direction: ASC
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Search and sort
-    order: [formula.Name, size, creature_type, cr, ac, hp]
+    name: All Monsters
+    order: [formula.Name, creature_type, size, cr, source]
     sort:
       - property: file.name
         direction: ASC
   - type: table
-    name: Homebrew
+    name: Beasts
     filters:
       and:
-        - source != "SRD 5.1"
-    order: [formula.Name, size, creature_type, cr]
-    sort:
-      - property: file.name
-        direction: ASC
+        - creature_type == "Beast"
+    order: [formula.Name, size, cr, source]
+  - type: table
+    name: Monstrosities
+    filters:
+      and:
+        - creature_type == "Monstrosity"
+    order: [formula.Name, size, cr, source]
+  - type: table
+    name: Undead
+    filters:
+      and:
+        - creature_type == "Undead"
+    order: [formula.Name, size, cr, source]
