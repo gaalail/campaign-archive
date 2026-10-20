@@ -1,0 +1,19 @@
+{
+  "manifest_version": 1,
+  "name": "Example Expansion",
+  "source": "Replace with source title",
+  "source_type": "third-party",
+  "edition": "2014",
+  "adaptation": "curated",
+  "license_status": "reference-only",
+  "content_status": "draft",
+  "entities": {
+    "classes": [],
+    "spells": [],
+    "items": [],
+    "monsters": [],
+    "character_options": []
+  },
+  "catalogues": [],
+  "attribution": "Replace with attribution or source reference"
+}

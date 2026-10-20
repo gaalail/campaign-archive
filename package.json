@@ -24,6 +24,7 @@
     "test": "tsx --test",
     "validate:archive": "node scripts/validate-archive.js",
     "validate:archive:report": "node scripts/validate-archive.js --report-only",
+    "validate:expansion": "node scripts/validate-expansion-manifest.mjs scripts/expansion-manifest.example.json",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "install-plugins": "npx tsx ./quartz/plugins/loader/install-plugins.ts",
     "prebuild": "npm run install-plugins"
