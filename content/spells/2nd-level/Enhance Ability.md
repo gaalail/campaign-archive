@@ -13,6 +13,7 @@ classes:
   - Cleric
   - Druid
   - Sorcerer
+  - Tamer
 casting_time: 1 action
 range: Touch
 duration: Up to 1 hour

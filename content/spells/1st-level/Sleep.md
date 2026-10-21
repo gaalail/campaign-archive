@@ -12,6 +12,7 @@ classes:
   - Sorcerer
   - Wizard
   - Thanatomancer
+  - Tamer
 casting_time: 1 action
 range: 90 feet
 duration: 1 minute

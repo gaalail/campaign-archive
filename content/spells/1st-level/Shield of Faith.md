@@ -10,6 +10,7 @@ school: Abjuration
 classes:
   - Cleric
   - Paladin
+  - Tamer
 casting_time: 1 bonus action
 range: 60 feet
 duration: Up to 10 minutes

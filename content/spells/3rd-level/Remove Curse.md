@@ -15,6 +15,7 @@ classes:
   - Paladin
   - Warlock
   - Wizard
+  - Tamer
 casting_time: 1 action
 range: Touch
 duration: Instantaneous

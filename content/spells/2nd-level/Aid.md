@@ -11,6 +11,7 @@ classes:
   - Artificer
   - Cleric
   - Paladin
+  - Tamer
 casting_time: 1 action
 range: 30 feet
 duration: 8 hours

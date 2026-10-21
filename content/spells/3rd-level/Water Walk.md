@@ -13,6 +13,7 @@ classes:
   - Druid
   - Ranger
   - Sorcerer
+  - Tamer
 casting_time: 1 action
 range: 30 feet
 duration: 1 hour

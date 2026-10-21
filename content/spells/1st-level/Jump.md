@@ -13,6 +13,7 @@ classes:
   - Ranger
   - Sorcerer
   - Wizard
+  - Tamer
 casting_time: 1 action
 range: Touch
 duration: 1 minute

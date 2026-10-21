@@ -15,6 +15,7 @@ classes:
   - Sorcerer
   - Warlock
   - Wizard
+  - Tamer
 casting_time: 1 bonus action
 range: Self
 duration: Up to 10 minutes

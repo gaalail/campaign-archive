@@ -11,6 +11,7 @@ classes:
   - Sorcerer
   - Wizard
   - Thanatomancer
+  - Tamer
 casting_time: 1 action
 range: Self
 duration: 1 hour

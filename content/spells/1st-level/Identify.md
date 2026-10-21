@@ -12,6 +12,7 @@ classes:
   - Bard
   - Wizard
   - Thanatomancer
+  - Tamer
 casting_time: 1 minute
 range: Touch
 duration: Instantaneous

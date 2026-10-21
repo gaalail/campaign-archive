@@ -13,6 +13,7 @@ classes:
   - Cleric
   - Druid
   - Ranger
+  - Tamer
 casting_time: 1 action
 range: Touch
 duration: 1 hour

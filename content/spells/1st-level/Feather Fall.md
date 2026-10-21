@@ -12,6 +12,7 @@ classes:
   - Bard
   - Sorcerer
   - Wizard
+  - Tamer
 casting_time: 1 reaction
 range: 60 feet
 duration: 1 minute

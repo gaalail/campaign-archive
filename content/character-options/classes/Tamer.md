@@ -8,21 +8,21 @@ saving_throws:
   - CON
   - CHA
 summary: Bond with, train, and empower captured companions.
-source: User-provided Tamer class
-source_type: homebrew
+source: Appendix B — Spells
+source_type: third-party
 edition: system-neutral
 adaptation: curated
-license_status: original
+license_status: reference-only
 content_status: incomplete
-incomplete_reason: The class rules are integrated, but the referenced Tamer spell list and Appendix B spells are not included in the supplied material.
+incomplete_reason: The supplied Appendix B spell material is identified, but full spell transcription and complete spell metadata remain to be finalized.
 ---
 
 # Tamer
 
 Whether imbuing companions with primordial elements, enhancing them through biomancy, or inspiring them with words of encouragement, tamers work through captured friends. Alone, a tamer possesses little destructive ability. With carefully selected companions, a tamer can become an unstoppable menagerie of mayhem.
 
-> [!warning]- Tamer spell list still required
-> The supplied class rules reference a separate Tamer spell list and Appendix B spells. The class is playable as a companion-focused homebrew class, but spell selection is incomplete until those sources are imported.
+> [!warning]- Some Appendix B spell definitions still need review
+> The Tamer catalogue contains the supplied Appendix B spell list. Existing archive spells retain their original provenance; Appendix B records without full definitions remain marked incomplete for transcription review.
 
 ## Quick Build
 
@@ -204,9 +204,9 @@ A companion loses spellcasting, summoning or creature-creating actions, Regenera
 
 _2nd-level Tamer feature_
 
-You can cast Tamer spells from the separate Tamer spell list. The supplied material names the list but does not include its full contents.
+**Tamer spells:** The catalogue below contains the supplied Appendix B spell list. Existing archive spells retain their original provenance; Appendix B records without full definitions remain marked incomplete for transcription review.
 
-At 2nd level, know two cantrips and two 1st-level spells. The progression table shows later spells known and slots.
+![[tamer-spells.base]]
 
 Choose Intelligence, Wisdom, or Charisma as your Tamer spellcasting ability.
 

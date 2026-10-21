@@ -11,6 +11,7 @@ classes:
   - Cleric
   - Druid
   - Wizard
+  - Tamer
 casting_time: 1 action
 range: 300 feet
 duration: Up to 10 minutes

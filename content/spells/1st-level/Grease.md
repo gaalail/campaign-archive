@@ -10,6 +10,7 @@ school: Conjuration
 classes:
   - Artificer
   - Wizard
+  - Tamer
 casting_time: 1 action
 range: 60 feet
 duration: 1 minute

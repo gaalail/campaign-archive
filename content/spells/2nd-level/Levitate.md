@@ -11,6 +11,7 @@ classes:
   - Artificer
   - Sorcerer
   - Wizard
+  - Tamer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 10 minutes

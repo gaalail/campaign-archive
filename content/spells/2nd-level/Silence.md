@@ -11,6 +11,7 @@ classes:
   - Bard
   - Cleric
   - Ranger
+  - Tamer
 casting_time: 1 action
 range: 120 feet
 duration: Up to 10 minutes

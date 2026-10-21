@@ -9,6 +9,7 @@ level: 0
 school: Enchantment
 classes:
   - Bard
+  - Tamer
 casting_time: 1 action
 range: 60 feet
 duration: Instantaneous

@@ -11,6 +11,7 @@ classes:
   - Bard
   - Cleric
   - Druid
+  - Tamer
 casting_time: 1 bonus action
 range: 60 feet
 duration: Instantaneous

@@ -13,6 +13,7 @@ classes:
   - Paladin
   - Ranger
   - Sorcerer
+  - Tamer
 casting_time: 1 action
 range: 60 feet
 duration: 1 hour

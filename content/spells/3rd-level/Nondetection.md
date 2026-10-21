@@ -11,6 +11,7 @@ classes:
   - Bard
   - Ranger
   - Wizard
+  - Tamer
 casting_time: 1 action
 range: Touch
 duration: 8 hours

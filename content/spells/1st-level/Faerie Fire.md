@@ -10,6 +10,7 @@ school: Evocation
 classes:
   - Artificer
   - Druid
+  - Tamer
 casting_time: 1 action
 range: 60 feet
 duration: Up to 1 minute

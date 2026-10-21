@@ -1,0 +1,48 @@
+filters:
+  and:
+    - file.inFolder("spells")
+    - file.name != "index"
+    - classes.contains("Tamer")
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  level:
+    displayName: Level
+  school:
+    displayName: School
+  source:
+    displayName: Source
+  content_status:
+    displayName: Status
+views:
+  - type: table
+    name: All Tamer Spells
+    groupBy:
+      property: level
+      direction: ASC
+    order: [formula.Name, level, school, source, content_status]
+    sort:
+      - property: level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Complete Tamer Spells
+    filters:
+      and:
+        - content_status == "complete"
+    order: [formula.Name, level, school, source]
+    sort:
+      - property: level
+        direction: ASC
+  - type: table
+    name: Tamer Appendix B Spells to Review
+    filters:
+      and:
+        - content_status == "incomplete"
+    order: [formula.Name, level, source]
+    sort:
+      - property: level
+        direction: ASC

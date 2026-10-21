@@ -9,6 +9,7 @@ level: 4
 school: Evocation
 classes:
   - Wizard
+  - Tamer
 casting_time: 1 action
 range: Self
 duration: 10 minutes

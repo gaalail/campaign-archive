@@ -12,6 +12,7 @@ classes:
   - Sorcerer
   - Warlock
   - Wizard
+  - Tamer
 casting_time: 1 action
 range: Self
 duration: Up to 1 minute

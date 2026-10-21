@@ -16,6 +16,7 @@ classes:
   - Sorcerer
   - Warlock
   - Wizard
+  - Tamer
 casting_time: 1 action
 range: 120 feet
 duration: Instantaneous

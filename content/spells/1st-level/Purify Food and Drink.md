@@ -15,6 +15,7 @@ classes:
   - Cleric
   - Druid
   - Paladin
+  - Tamer
 casting_time: 1 action
 range: 10 feet
 duration: Instantaneous
