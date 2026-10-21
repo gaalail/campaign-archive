@@ -32,6 +32,10 @@
       "source_type": "SRD",
       "spell_catalogue": "sorcerer-spells.base"
     },
+    "Tamer": {
+      "source": "User-provided Tamer class",
+      "source_type": "homebrew"
+    },
     "Thanatomancer": {
       "source": "Erevan's Guide to Death & Beyond",
       "source_type": "third-party",

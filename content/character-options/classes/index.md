@@ -29,10 +29,11 @@ Choose at character creation. This archive includes core 5e classes, alternate c
 | Rogue         | d8      | DEX             | Stealth + precision     |
 | Sorcerer      | d6      | CHA             | Innate magic            |
 | Thanatomancer | d8      | INT             | Necromantic spellcaster |
+| Tamer         | d8      | Choice          | Companion tamer         |
 | Warlock       | d8      | CHA             | Patron magic            |
 | Wizard        | d6      | INT             | Scholarly magic         |
 
-**Class pages:** [[character-options/classes/Artificer|Artificer]] • [[character-options/classes/Barbarian|Barbarian]] • [[character-options/classes/Bard|Bard]] • [[character-options/classes/Cleric|Cleric]] • [[character-options/classes/Druid|Druid]] • [[character-options/classes/Fighter|Fighter]] • [[character-options/classes/Monk|Monk]] • [[character-options/classes/Paladin|Paladin]] • [[character-options/classes/Paragon|Paragon]] • [[character-options/classes/Ranger|Ranger]] • [[character-options/classes/Rogue|Rogue]] • [[character-options/classes/Sorcerer|Sorcerer]] • [[character-options/classes/Thanatomancer|Thanatomancer]] • [[character-options/classes/Warlock|Warlock]] • [[character-options/classes/Wizard|Wizard]]
+**Class pages:** [[character-options/classes/Artificer|Artificer]] • [[character-options/classes/Barbarian|Barbarian]] • [[character-options/classes/Bard|Bard]] • [[character-options/classes/Cleric|Cleric]] • [[character-options/classes/Druid|Druid]] • [[character-options/classes/Fighter|Fighter]] • [[character-options/classes/Monk|Monk]] • [[character-options/classes/Paladin|Paladin]] • [[character-options/classes/Paragon|Paragon]] • [[character-options/classes/Ranger|Ranger]] • [[character-options/classes/Rogue|Rogue]] • [[character-options/classes/Sorcerer|Sorcerer]] • [[character-options/classes/Thanatomancer|Thanatomancer]] • [[character-options/classes/Tamer|Tamer]] • [[character-options/classes/Warlock|Warlock]] • [[character-options/classes/Wizard|Wizard]]
 
 Spellcasters have their class spell list on the class page and on [[spells|Spells]].
 
