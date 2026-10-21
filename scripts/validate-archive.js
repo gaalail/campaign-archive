@@ -415,7 +415,10 @@ function checkMetadata() {
             ? "campaign"
             : parts[0] === "monsters" && !isIndex
               ? "monster"
-              : parts[0] === "character-options" && parts[1] === "classes" && !isIndex
+              : parts[0] === "character-options" &&
+                  parts[1] === "classes" &&
+                  !isIndex &&
+                  parts.length === 3
                 ? "class"
                 : parts[0] === "character-options"
                   ? "character_option"
