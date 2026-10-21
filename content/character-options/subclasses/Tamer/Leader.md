@@ -1,8 +1,8 @@
 ---
 entity_type: character_option
-canonical_id: character-option.tamer-paradigm.leader
-title: Leader
 parent_class: Tamer
+canonical_id: subclass.tamer.leader
+title: Leader
 source: User-provided Tamer class
 source_type: homebrew
 edition: system-neutral

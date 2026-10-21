@@ -1,8 +1,8 @@
 ---
 entity_type: character_option
-canonical_id: character-option.tamer-paradigm.splicer
-title: Splicer
 parent_class: Tamer
+canonical_id: subclass.tamer.splicer
+title: Splicer
 source: User-provided Tamer class
 source_type: homebrew
 edition: system-neutral

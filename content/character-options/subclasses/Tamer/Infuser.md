@@ -1,8 +1,8 @@
 ---
 entity_type: character_option
-canonical_id: character-option.tamer-paradigm.infuser
-title: Infuser
 parent_class: Tamer
+canonical_id: subclass.tamer.infuser
+title: Infuser
 source: User-provided Tamer class
 source_type: homebrew
 edition: system-neutral

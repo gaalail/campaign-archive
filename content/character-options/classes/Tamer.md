@@ -241,10 +241,7 @@ _3rd-level Tamer feature_
 
 Choose one of the following paradigms:
 
-- [[character-options/classes/tamer-paradigms/Leader|Leader]]
-- [[character-options/classes/tamer-paradigms/Infuser|Infuser]]
-- [[character-options/classes/tamer-paradigms/Necromancer|Necromancer]]
-- [[character-options/classes/tamer-paradigms/Splicer|Splicer]]
+- [[character-options/subclasses/Tamer|Tamer Training Paradigms]]
 
 Your paradigm grants features at 3rd, 7th, 10th, and 14th level. Its 7th-level feature improves at 18th level.
 
