@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: The legacy record did not specify which details are missing
-  or unverified; review needed.
+incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: Blur
 level: 2
 school: Illusion
@@ -28,7 +27,7 @@ subclass_spell_lists:
   - Mystic
 ---
 
-> [!warning]- ?? This Entry Is Incomplete
+> [!warning]- ⚠️ This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _2nd-level illusion_
@@ -46,3 +45,4 @@ Your body becomes blurred, shifting and wavering to all who can see you. For the
 **Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+

@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: The legacy record did not specify which details are missing
-  or unverified; review needed.
+incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: True Strike
 level: 0
 school: Divination
@@ -30,7 +29,7 @@ subclass_spell_lists:
 witchblade_list_marker: LL
 ---
 
-> [!warning]- ?? This Entry Is Incomplete
+> [!warning]- ⚠️ This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _Divination cantrip_
@@ -48,3 +47,4 @@ You extend your hand and point a finger at a target in range. Your magic grants 
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+

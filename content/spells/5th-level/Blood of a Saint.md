@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: reference-only
 content_status: incomplete
-incomplete_reason: The legacy record did not specify which details are missing
-  or unverified; review needed.
+incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: Blood of a Saint
 level: 5
 school: Transmutation
@@ -24,7 +23,7 @@ source: Corpus Angelus
 source_type: third-party
 ---
 
-> [!warning]- ?? This Entry Is Incomplete
+> [!warning]- ⚠️ This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _5th-level transmutation_
@@ -42,3 +41,4 @@ You carry the blood of a saint within your veins, which harms your enemies when 
 **Available to:** [[Cleric]], [[Sorcerer]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+

@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: reference-only
 content_status: incomplete
-incomplete_reason: The legacy record did not specify which details are missing
-  or unverified; review needed.
+incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: Mindful Insight
 level: 0
 school: Enchantment
@@ -24,7 +23,7 @@ source: Corpus Angelus
 source_type: third-party
 ---
 
-> [!warning]- ?? This Entry Is Incomplete
+> [!warning]- ⚠️ This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _Enchantment cantrip_
@@ -42,3 +41,4 @@ You reveal the strengths and weaknesses of a creature against mind-altering effe
 **Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+

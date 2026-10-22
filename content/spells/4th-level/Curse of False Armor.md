@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: reference-only
 content_status: incomplete
-incomplete_reason: The legacy record did not specify which details are missing
-  or unverified; review needed.
+incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: Curse of False Armor
 level: 4
 school: Abjuration
@@ -23,7 +22,7 @@ source: Corpus Angelus
 source_type: third-party
 ---
 
-> [!warning]- ?? This Entry Is Incomplete
+> [!warning]- ⚠️ This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _4th-level abjuration_
@@ -41,3 +40,4 @@ You target a creature within range and curse it. The target must succeed on a Co
 **Available to:** [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+

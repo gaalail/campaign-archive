@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: reference-only
 content_status: incomplete
-incomplete_reason: The legacy record did not specify which details are missing
-  or unverified; review needed.
+incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: Redemption Through Pain
 level: 9
 school: Necromancy
@@ -24,7 +23,7 @@ source: Corpus Angelus
 source_type: third-party
 ---
 
-> [!warning]- ?? This Entry Is Incomplete
+> [!warning]- ⚠️ This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _9th-level necromancy_
@@ -42,3 +41,4 @@ You target a creature within the spell's range who must succeed on a Constitutio
 **Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+

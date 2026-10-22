@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: reference-only
 content_status: incomplete
-incomplete_reason: The legacy record did not specify which details are missing
-  or unverified; review needed.
+incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: Chain Smite
 level: 3
 school: Evocation
@@ -22,7 +21,7 @@ source: Corpus Angelus
 source_type: third-party
 ---
 
-> [!warning]- ?? This Entry Is Incomplete
+> [!warning]- ⚠️ This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _3rd-level evocation_
@@ -40,3 +39,4 @@ The next time you hit a creature with a weapon attack before this spell ends, th
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+

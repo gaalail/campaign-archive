@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: The legacy record did not specify which details are missing
-  or unverified; review needed.
+incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: Dwarven Thrower
 rarity: Very Rare
 item_type: Weapon
@@ -16,7 +15,7 @@ source: SRD 5.1
 source_type: SRD
 ---
 
-> [!warning]- ?? This Entry Is Incomplete
+> [!warning]- ⚠️ This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _Weapon (warhammer), very rare (requires attunement by a dwarf)_
@@ -32,3 +31,4 @@ You gain a +3 bonus to attack and damage rolls made with this magic weapon. It h
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
+

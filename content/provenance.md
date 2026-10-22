@@ -17,7 +17,7 @@ Use these catalogues to distinguish official reference material from adaptations
 
 - **Complete:** ![[lists/provenance-complete.base]]
 - **Incomplete:** ![[lists/provenance-incomplete.base]]
-- **Draft:** ![[lists/provenance-draft.base]]
+- **Legacy review queue:** ![[provenance-legacy-review.base]]
 
 ## Metadata Used
 

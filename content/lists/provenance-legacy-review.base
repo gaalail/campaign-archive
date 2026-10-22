@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.name != "index"
+    - incomplete == true
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  entity_type:
+    displayName: Type
+  source_type:
+    displayName: Source type
+  source:
+    displayName: Source
+  incomplete_reason:
+    displayName: Review reason
+views:
+  - type: table
+    name: Legacy Content Review
+    order: [formula.Name, entity_type, source_type, source, incomplete_reason]
+    sort:
+      - property: file.name
+        direction: ASC

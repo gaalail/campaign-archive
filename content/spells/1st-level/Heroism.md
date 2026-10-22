@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: incomplete
-incomplete_reason: The legacy record did not specify which details are missing
-  or unverified; review needed.
+incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: Heroism
 level: 1
 school: Enchantment
@@ -24,7 +23,7 @@ source: SRD 5.1
 source_type: SRD
 ---
 
-> [!warning]- ?? This Entry Is Incomplete
+> [!warning]- ⚠️ This Entry Is Incomplete
 > This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _1st-level enchantment_
@@ -42,3 +41,4 @@ A willing creature you touch is imbued with bravery. Until the spell ends, the c
 **Available to:** [[Bard]], [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
+
