@@ -40,4 +40,3 @@ Spirits of glorious, mount-riding knights appear in your space in their shining 
 **Available to:** [[Sorcerer]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

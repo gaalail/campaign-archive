@@ -3,10 +3,14 @@ entity_type: spell
 canonical_id: spell.tamer.eelskin
 title: Eelskin
 level: 2
-school: Unspecified
+school: Biomancy
 classes:
+  - Druid
+  - Sorcerer
   - Tamer
-source: Appendix B � Spells
+  - Warlock
+  - Wizard
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

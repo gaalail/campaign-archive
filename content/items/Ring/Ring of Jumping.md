@@ -31,4 +31,3 @@ While wearing this ring, you can cast the jump spell from it as a bonus action a
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

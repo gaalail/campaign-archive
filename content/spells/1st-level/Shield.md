@@ -46,4 +46,3 @@ An invisible barrier of magical force appears and protects you. Until the start 
 **Available to:** [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -42,4 +42,3 @@ Choose a target that you can see within range. You speak a single word filled wi
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

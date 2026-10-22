@@ -31,4 +31,3 @@ While wearing this armor, you gain a +1 bonus to AC. You can also use a bonus ac
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

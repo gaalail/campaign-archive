@@ -39,4 +39,3 @@ This spell bestows hope and vitality. Choose any number of creatures within rang
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

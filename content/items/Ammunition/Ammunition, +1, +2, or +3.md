@@ -31,4 +31,3 @@ You have a bonus to attack and damage rolls made with this piece of magic ammuni
 **Rarity:** Varies
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

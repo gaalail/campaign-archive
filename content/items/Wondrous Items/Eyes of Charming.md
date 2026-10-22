@@ -31,4 +31,3 @@ These crystal lenses fit over the eyes. They have 3 charges. While wearing them,
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

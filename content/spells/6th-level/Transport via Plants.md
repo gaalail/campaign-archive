@@ -39,4 +39,3 @@ This spell creates a magical link between a Large or larger inanimate plant with
 **Available to:** [[Druid]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

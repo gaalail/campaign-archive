@@ -31,4 +31,3 @@ This yellow diamond contains a mote of elemental energy. When you use an action 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

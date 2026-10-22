@@ -42,4 +42,3 @@ You touch a living creature that has 0 hit points. The creature becomes stable. 
 **Available to:** [[Cleric]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

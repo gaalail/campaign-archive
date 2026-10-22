@@ -31,4 +31,3 @@ While wearing this belt, your Strength score changes to 29. If your Strength is 
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

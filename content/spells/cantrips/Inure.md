@@ -42,4 +42,3 @@ Your body is slightly strengthened against minor inconveniences. For the duratio
 **Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

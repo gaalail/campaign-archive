@@ -43,4 +43,3 @@ At your touch, all curses affecting one creature or object end. If the object is
 **Available to:** [[Cleric]], [[Paladin]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

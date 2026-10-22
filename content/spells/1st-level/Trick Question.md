@@ -41,4 +41,3 @@ You target a creature within range and ask them a question that makes absolutely
 **Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

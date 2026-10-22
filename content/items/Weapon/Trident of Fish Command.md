@@ -31,4 +31,3 @@ This trident is a magic weapon. It has 3 charges. While you carry it, you can us
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

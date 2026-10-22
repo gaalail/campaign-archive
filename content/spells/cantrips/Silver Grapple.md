@@ -41,4 +41,3 @@ You conjure a glowing silver hand that rushes to the side of a creature of your 
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

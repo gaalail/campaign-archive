@@ -31,4 +31,3 @@ You have a +1 bonus to attack and damage rolls made with this magic weapon.
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

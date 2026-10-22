@@ -31,4 +31,3 @@ You have a swimming speed of 40 feet while wearing this ring.
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

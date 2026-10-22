@@ -31,4 +31,3 @@ You have resistance to force damage while wearing this sapphire ring.
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

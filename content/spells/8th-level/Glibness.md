@@ -40,4 +40,3 @@ Until the spell ends, when you make a Charisma check, you can replace the number
 **Available to:** [[Bard]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

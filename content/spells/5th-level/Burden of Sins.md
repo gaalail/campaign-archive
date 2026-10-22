@@ -41,4 +41,3 @@ You touch a creature and cause it to see all the deeds of evil it has ever commi
 **Available to:** [[Paladin]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

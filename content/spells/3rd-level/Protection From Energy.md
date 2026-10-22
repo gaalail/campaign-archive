@@ -47,4 +47,3 @@ For the duration, the willing creature you touch has resistance to one damage ty
 **Available to:** [[Cleric]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -41,4 +41,3 @@ You make a gesture, pointing at a creature within range. The creature is bombard
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

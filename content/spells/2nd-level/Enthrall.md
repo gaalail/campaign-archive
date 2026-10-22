@@ -40,4 +40,3 @@ You weave a distracting string of words, causing creatures of your choice that y
 **Available to:** [[Bard]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -31,4 +31,3 @@ You must be proficient with wind instruments to use these pipes. They have 3 cha
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -3,10 +3,11 @@ entity_type: spell
 canonical_id: spell.tamer.primalscent
 title: Primal Scent
 level: 0
-school: Unspecified
+school: Divination
 classes:
+  - Druid
   - Tamer
-source: Appendix B � Spells
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

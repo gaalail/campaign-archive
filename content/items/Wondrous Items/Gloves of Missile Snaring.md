@@ -31,4 +31,3 @@ These gloves seem to almost meld into your hands when you don them. When a range
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

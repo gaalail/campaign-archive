@@ -39,4 +39,3 @@ The next time you hit a creature with a weapon attack before this spell ends, th
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

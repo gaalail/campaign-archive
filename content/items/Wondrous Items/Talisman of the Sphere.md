@@ -31,4 +31,3 @@ When you make an Intelligence (Arcana) check to control a sphere of annihilation
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

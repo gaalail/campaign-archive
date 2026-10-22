@@ -31,4 +31,3 @@ This clear, gelatinous oil sparkles with tiny, ultrathin silver shards. The oil 
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -40,4 +40,3 @@ You create the illusion of a temple around you in an area that is 60 feet long, 
 **Available to:** [[Cleric]], [[Sorcerer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

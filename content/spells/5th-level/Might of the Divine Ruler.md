@@ -39,4 +39,3 @@ Your body becomes silver and your size increases by one size category. For insta
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

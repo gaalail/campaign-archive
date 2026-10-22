@@ -31,4 +31,3 @@ While wearing these bracers, you gain a +2 bonus to AC if you are wearing no arm
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

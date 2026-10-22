@@ -39,4 +39,3 @@ A beam of crackling energy streaks toward a creature within range. Make a ranged
 **Available to:** [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

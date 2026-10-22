@@ -42,4 +42,3 @@ Choose a point within range, in which a golden, translucent humanoid figure (the
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

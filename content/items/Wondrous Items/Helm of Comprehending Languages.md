@@ -31,4 +31,3 @@ While wearing this helm, you can use an action to cast the comprehend languages 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

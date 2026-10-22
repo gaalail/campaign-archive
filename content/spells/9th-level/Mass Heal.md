@@ -39,4 +39,3 @@ A flood of healing energy flows from you into injured creatures around you. You 
 **Available to:** [[Cleric]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

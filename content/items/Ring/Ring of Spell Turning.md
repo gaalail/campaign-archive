@@ -31,4 +31,3 @@ While wearing this ring, you have advantage on saving throws against any spell t
 **Rarity:** Legendary
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

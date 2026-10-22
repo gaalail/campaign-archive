@@ -43,4 +43,3 @@ All nonmagical food and drink within a 5-foot radius sphere centered on a point 
 **Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

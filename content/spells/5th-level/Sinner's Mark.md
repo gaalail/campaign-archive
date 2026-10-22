@@ -40,4 +40,3 @@ You hold the hand of a creature and learn whether or not it has sinned in the la
 **Available to:** [[Bard]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

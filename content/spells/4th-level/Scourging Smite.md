@@ -39,4 +39,3 @@ The weapon you are wielding gathers great magical power which is to be released 
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

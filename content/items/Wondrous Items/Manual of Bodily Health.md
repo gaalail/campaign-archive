@@ -31,4 +31,3 @@ This book contains health and diet tips, and its words are charged with magic. I
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

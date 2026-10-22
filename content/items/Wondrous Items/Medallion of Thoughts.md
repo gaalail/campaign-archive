@@ -31,4 +31,3 @@ The medallion has 3 charges. While wearing it, you can use an action and expend 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

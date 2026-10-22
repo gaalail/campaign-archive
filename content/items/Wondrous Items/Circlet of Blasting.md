@@ -31,4 +31,3 @@ While wearing this circlet, you can use an action to cast the scorching ray spel
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

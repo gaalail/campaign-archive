@@ -31,4 +31,3 @@ You gain a +1 bonus to AC and saving throws while you wear this cloak.
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

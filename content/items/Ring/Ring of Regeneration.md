@@ -31,4 +31,3 @@ While wearing this ring, you regain 1d6 hit points every 10 minutes, provided th
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

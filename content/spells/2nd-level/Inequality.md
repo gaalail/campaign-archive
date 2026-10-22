@@ -3,10 +3,13 @@ entity_type: spell
 canonical_id: spell.tamer.inequality
 title: Inequality
 level: 2
-school: Unspecified
+school: Enchantment
 classes:
+  - Bard
+  - Cleric
+  - Paladin
   - Tamer
-source: Appendix B � Spells
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

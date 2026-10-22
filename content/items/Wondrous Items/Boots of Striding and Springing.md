@@ -31,4 +31,3 @@ While you wear these boots, your walking speed becomes 30 feet, unless your walk
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -31,4 +31,3 @@ Beads of this cloudy gray oil form on the outside of its container and quickly e
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

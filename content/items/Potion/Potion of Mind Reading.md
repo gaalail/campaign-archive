@@ -31,4 +31,3 @@ When you drink this potion, you gain the effect of the detect thoughts spell (sa
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

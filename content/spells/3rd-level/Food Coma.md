@@ -3,10 +3,14 @@ entity_type: spell
 canonical_id: spell.tamer.foodcoma
 title: Food Coma
 level: 3
-school: Unspecified
+school: Enchantment
 classes:
+  - Bard
+  - Cleric
+  - Druid
+  - Paladin
   - Tamer
-source: Appendix B � Spells
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

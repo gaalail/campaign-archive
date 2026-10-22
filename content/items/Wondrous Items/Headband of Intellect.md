@@ -31,4 +31,3 @@ Your Intelligence score is 19 while you wear this headband. It has no effect on 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

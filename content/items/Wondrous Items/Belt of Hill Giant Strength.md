@@ -31,4 +31,3 @@ While wearing this belt, your Strength score changes to a 21. If your Strength i
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

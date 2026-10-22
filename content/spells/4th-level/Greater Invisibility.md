@@ -44,4 +44,3 @@ You or a creature you touch becomes invisible until the spell ends. Anything the
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

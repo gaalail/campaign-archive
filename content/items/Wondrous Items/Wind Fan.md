@@ -31,4 +31,3 @@ While holding this fan, you can use an action to cast the gust of wind spell (sa
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

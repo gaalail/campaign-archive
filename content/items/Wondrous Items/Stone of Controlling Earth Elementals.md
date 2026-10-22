@@ -31,4 +31,3 @@ If the stone is touching the ground, you can use an action to speak its command 
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

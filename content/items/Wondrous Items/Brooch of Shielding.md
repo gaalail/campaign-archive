@@ -31,4 +31,3 @@ While wearing this brooch, you have resistance to force damage, and you have imm
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

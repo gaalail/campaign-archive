@@ -31,4 +31,3 @@ While wearing this ring, you have resistance to cold damage. In addition, you an
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

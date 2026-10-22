@@ -31,4 +31,3 @@ These iron horseshoes come in a set of four. While all four shoes are affixed to
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

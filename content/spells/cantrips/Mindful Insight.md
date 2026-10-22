@@ -41,4 +41,3 @@ You reveal the strengths and weaknesses of a creature against mind-altering effe
 **Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

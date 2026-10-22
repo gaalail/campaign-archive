@@ -41,4 +41,3 @@ You attempt to end one condition affecting you by instantly clearing your mind. 
 **Available to:** [[Cleric]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,10 +3,15 @@ entity_type: spell
 canonical_id: spell.tamer.switcheroo
 title: Switcheroo
 level: 3
-school: Unspecified
+school: Transmutation
 classes:
+  - Bard
+  - Cleric
+  - Sorcerer
   - Tamer
-source: Appendix B � Spells
+  - Warlock
+  - Wizard
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

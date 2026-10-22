@@ -31,4 +31,3 @@ Your Constitution score is 19 while you wear this amulet. It has no effect on yo
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

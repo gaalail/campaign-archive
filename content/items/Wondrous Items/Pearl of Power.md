@@ -31,4 +31,3 @@ While this pearl is on your person, you can use an action to speak its command w
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

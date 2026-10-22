@@ -3,10 +3,15 @@ entity_type: spell
 canonical_id: spell.tamer.peppermintplate
 title: Peppermint Plate
 level: 1
-school: Unspecified
+school: Abjuration
 classes:
+  - Cleric
+  - Paladin
+  - Sorcerer
   - Tamer
-source: Appendix B � Spells
+  - Warlock
+  - Wizard
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

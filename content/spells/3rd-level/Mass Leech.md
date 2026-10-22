@@ -3,10 +3,13 @@ entity_type: spell
 canonical_id: spell.tamer.massleech
 title: Mass Leech
 level: 3
-school: Unspecified
+school: Necromancy
 classes:
+  - Cleric
   - Tamer
-source: Appendix B � Spells
+  - Warlock
+  - Wizard
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

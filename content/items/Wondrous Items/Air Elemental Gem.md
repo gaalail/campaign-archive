@@ -31,4 +31,3 @@ This blue sapphire contains a mote of elemental energy. When you use an action t
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

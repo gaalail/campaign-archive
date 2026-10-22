@@ -31,4 +31,3 @@ You gain a +1 bonus to AC while you wear this armor. You are considered proficie
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

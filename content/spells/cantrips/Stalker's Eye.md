@@ -3,10 +3,12 @@ entity_type: spell
 canonical_id: spell.tamer.stalkerseye
 title: Stalker's Eye
 level: 0
-school: Unspecified
+school: Enchantment
 classes:
+  - Bard
+  - Druid
   - Tamer
-source: Appendix B � Spells
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

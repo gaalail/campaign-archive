@@ -45,4 +45,3 @@ Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied 
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

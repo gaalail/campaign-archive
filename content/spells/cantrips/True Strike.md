@@ -47,4 +47,3 @@ You extend your hand and point a finger at a target in range. Your magic grants 
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

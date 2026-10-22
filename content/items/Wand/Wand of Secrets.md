@@ -31,4 +31,3 @@ The wand has 3 charges. While holding it, you can use an action to expend 1 of i
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

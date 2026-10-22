@@ -40,4 +40,3 @@ You target a creature within range and curse it. The target must succeed on a Co
 **Available to:** [[Druid]], [[Ranger]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

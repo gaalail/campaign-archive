@@ -43,4 +43,3 @@ You create 45 pounds of food and 30 gallons of water on the ground or in contain
 **Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

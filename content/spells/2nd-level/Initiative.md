@@ -3,10 +3,14 @@ entity_type: spell
 canonical_id: spell.tamer.initiative
 title: Initiative
 level: 2
-school: Unspecified
+school: Enchantment
 classes:
+  - Bard
+  - Ranger
+  - Sorcerer
   - Tamer
-source: Appendix B � Spells
+  - Wizard
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

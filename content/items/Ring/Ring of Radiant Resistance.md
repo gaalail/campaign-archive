@@ -31,4 +31,3 @@ You have resistance to radiant damage while wearing this topaz ring.
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

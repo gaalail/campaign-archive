@@ -31,4 +31,3 @@ You have advantage on saving throws against spells while you wear this cloak.
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

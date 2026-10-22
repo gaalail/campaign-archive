@@ -45,4 +45,3 @@ This spell allows you to move at an incredible pace. When you cast this spell, a
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

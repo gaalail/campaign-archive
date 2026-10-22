@@ -31,4 +31,3 @@ Found in a small packet, this powder resembles very fine sand. There is enough o
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

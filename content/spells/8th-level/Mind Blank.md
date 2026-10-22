@@ -40,4 +40,3 @@ Until the spell ends, one willing creature you touch is immune to psychic damage
 **Available to:** [[Bard]], [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

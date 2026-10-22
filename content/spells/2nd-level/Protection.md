@@ -3,10 +3,15 @@ entity_type: spell
 canonical_id: spell.tamer.protection
 title: Protection (Tamer Spell)
 level: 2
-school: Unspecified
+school: Abjuration
 classes:
+  - Bard
+  - Cleric
+  - Druid
+  - Paladin
+  - Ranger
   - Tamer
-source: Appendix B � Spells
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

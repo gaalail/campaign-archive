@@ -43,4 +43,3 @@ You utter a word of power that can compel one creature you can see within range 
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

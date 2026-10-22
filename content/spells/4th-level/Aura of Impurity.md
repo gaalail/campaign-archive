@@ -3,10 +3,12 @@ entity_type: spell
 canonical_id: spell.tamer.auraofimpurity
 title: Aura of Impurity
 level: 4
-school: Unspecified
+school: Abjuration
 classes:
+  - Paladin
   - Tamer
-source: Appendix B � Spells
+  - Warlock
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

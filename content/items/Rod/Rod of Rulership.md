@@ -31,4 +31,3 @@ You can use an action to present the rod and command obedience from each creatur
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

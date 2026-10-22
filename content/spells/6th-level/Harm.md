@@ -40,4 +40,3 @@ You unleash a virulent disease on a creature that you can see within range. The 
 **Available to:** [[Cleric]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

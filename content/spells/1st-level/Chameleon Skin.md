@@ -3,10 +3,14 @@ entity_type: spell
 canonical_id: spell.tamer.chameleonskin
 title: Chameleon Skin
 level: 1
-school: Unspecified
+school: Biomancy
 classes:
+  - Bard
+  - Druid
+  - Ranger
   - Tamer
-source: Appendix B � Spells
+  - Wizard
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

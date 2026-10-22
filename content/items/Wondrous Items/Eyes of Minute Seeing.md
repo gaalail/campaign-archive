@@ -31,4 +31,3 @@ These crystal lenses fit over the eyes. While wearing them, you can see much bet
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

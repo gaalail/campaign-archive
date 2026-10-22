@@ -31,4 +31,3 @@ This suit of armor is reinforced with adamantine, one of the hardest substances 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

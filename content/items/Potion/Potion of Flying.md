@@ -31,4 +31,3 @@ When you drink this potion, you gain a flying speed equal to your walking speed 
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

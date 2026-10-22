@@ -39,4 +39,3 @@ You imbue a weapon you are wielding with angelic might until the spell ends. The
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

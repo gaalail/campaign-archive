@@ -31,4 +31,3 @@ This ring has 3 charges, and it regains 1d3 expended charges daily at dawn. When
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

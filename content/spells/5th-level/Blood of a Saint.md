@@ -41,4 +41,3 @@ You carry the blood of a saint within your veins, which harms your enemies when 
 **Available to:** [[Cleric]], [[Sorcerer]], [[Warlock]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

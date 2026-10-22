@@ -31,4 +31,3 @@ While you wear these boots, your steps make no sound, regardless of the surface 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

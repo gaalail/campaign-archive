@@ -31,4 +31,3 @@ You have resistance to thunder damage while wearing this spinel ring.
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -31,4 +31,3 @@ While wearing these dark lenses, you have darkvision out to a range of 60 feet. 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

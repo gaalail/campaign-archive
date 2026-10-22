@@ -31,4 +31,3 @@ While wearing this hat, you can use an action to cast the disguise self spell fr
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

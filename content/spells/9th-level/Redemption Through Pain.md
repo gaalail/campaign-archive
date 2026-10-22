@@ -41,4 +41,3 @@ You target a creature within the spell's range who must succeed on a Constitutio
 **Available to:** [[Warlock]], [[Wizard]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

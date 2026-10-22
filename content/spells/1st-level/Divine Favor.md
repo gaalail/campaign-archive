@@ -39,4 +39,3 @@ Your prayer empowers you with divine radiance. Until the spell ends, your weapon
 **Available to:** [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,10 +3,13 @@ entity_type: spell
 canonical_id: spell.tamer.cantrip
 title: Can'trip
 level: 0
-school: Unspecified
+school: Abjuration
 classes:
-  - Tamer
-source: Appendix B � Spells
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

@@ -31,4 +31,3 @@ While holding this wand, you gain a +1 bonus to spell attack rolls. In addition,
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -43,4 +43,3 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 **Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]], [[Artificer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

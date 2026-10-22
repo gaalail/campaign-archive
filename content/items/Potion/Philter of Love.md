@@ -31,4 +31,3 @@ The next time you see a creature within 10 minutes after drinking this philter, 
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

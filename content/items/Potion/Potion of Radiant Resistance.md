@@ -31,4 +31,3 @@ When you drink this potion, you gain resistance to radiant damage for 1 hour.
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

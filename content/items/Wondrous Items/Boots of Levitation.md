@@ -31,4 +31,3 @@ While you wear these boots, you can use an action to cast the levitate spell on 
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

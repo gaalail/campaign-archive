@@ -31,4 +31,3 @@ This red corundum contains a mote of elemental energy. When you use an action to
 **Rarity:** Uncommon
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

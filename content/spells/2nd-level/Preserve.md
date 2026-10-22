@@ -3,10 +3,15 @@ entity_type: spell
 canonical_id: spell.tamer.preserve
 title: Preserve
 level: 2
-school: Unspecified
+school: Biomancy
 classes:
+  - Cleric
+  - Druid
+  - Paladin
+  - Ranger
   - Tamer
-source: Appendix B � Spells
+  - Wizard
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

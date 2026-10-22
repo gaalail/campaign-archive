@@ -31,4 +31,3 @@ You have a +3 bonus to attack and damage rolls made with this piece of magic amm
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

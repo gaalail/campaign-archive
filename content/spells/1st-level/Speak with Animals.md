@@ -43,4 +43,3 @@ You gain the ability to comprehend and verbally communicate with beasts for the 
 **Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

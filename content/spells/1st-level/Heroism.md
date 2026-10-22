@@ -41,4 +41,3 @@ A willing creature you touch is imbued with bravery. Until the spell ends, the c
 **Available to:** [[Bard]], [[Paladin]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

@@ -3,10 +3,11 @@ entity_type: spell
 canonical_id: spell.tamer.howl
 title: Howl
 level: 0
-school: Unspecified
+school: Transmutation
 classes:
+  - Druid
   - Tamer
-source: Appendix B � Spells
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

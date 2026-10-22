@@ -31,4 +31,3 @@ You have resistance to lightning damage while wearing this citrine ring.
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

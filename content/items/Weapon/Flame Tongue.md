@@ -31,4 +31,3 @@ You can use a bonus action to speak this magic sword's command word, causing fla
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

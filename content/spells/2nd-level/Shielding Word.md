@@ -3,10 +3,14 @@ entity_type: spell
 canonical_id: spell.tamer.shieldingword
 title: Shielding Word
 level: 2
-school: Unspecified
+school: Abjuration
 classes:
+  - Bard
+  - Cleric
+  - Paladin
+  - Sorcerer
   - Tamer
-source: Appendix B � Spells
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

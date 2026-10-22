@@ -3,10 +3,13 @@ entity_type: spell
 canonical_id: spell.tamer.smokescreen
 title: Smokescreen
 level: 0
-school: Unspecified
+school: Conjuration
 classes:
+  - Druid
+  - Sorcerer
   - Tamer
-source: Appendix B � Spells
+  - Wizard
+source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated

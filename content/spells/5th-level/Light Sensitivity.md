@@ -39,4 +39,3 @@ You point at a creature and a wave of radiant energy washes over its body. The t
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

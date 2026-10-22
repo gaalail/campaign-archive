@@ -31,4 +31,3 @@ While holding this shield, you have advantage on saving throws against spells an
 **Rarity:** Very Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

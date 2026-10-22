@@ -39,4 +39,3 @@ The rules of existence of all that surrounds you are altered constantly, bending
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

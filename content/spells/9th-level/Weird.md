@@ -39,4 +39,3 @@ Drawing on the deepest fears of a group of creatures, you create illusory creatu
 **Available to:** [[Wizard]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

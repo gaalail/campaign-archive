@@ -31,4 +31,3 @@ While you wear this cloak, it projects an illusion that makes you appear to be s
 **Rarity:** Rare
 
 **Related:** [[items|All Items]] | [[spells|Spells]] | [[character-options/classes|Classes]]
-

@@ -41,4 +41,3 @@ Magic courses through your body and unlocks its true potential, enabling it to h
 **Available to:** [[Druid]], [[Warlock]], [[Thanatomancer]]
 
 **Related:** [[spells|All Spells]] | [[items|Magic Items]]
-

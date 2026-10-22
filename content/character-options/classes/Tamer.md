@@ -8,11 +8,11 @@ saving_throws:
   - CON
   - CHA
 summary: Bond with, train, and empower captured companions.
-source: Appendix B — Spells
-source_type: third-party
+source: User-provided Tamer class
+source_type: homebrew
 edition: system-neutral
 adaptation: curated
-license_status: reference-only
+license_status: original
 content_status: incomplete
 incomplete_reason: The supplied Appendix B spell material is identified, but full spell transcription and complete spell metadata remain to be finalized.
 ---
