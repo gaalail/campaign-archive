@@ -11,6 +11,7 @@ This archive uses standard **D&D 5e rules** with a few house rules for balance a
 ## Quick Links
 
 - **[[House Rules]]** — Modifications to standard rules
+- **[[Attunement - Epic Point Pool]]** — Scaling attunement points and rarity costs
 - Rules questions? **Check the Player's Handbook first**, then this page, then ask your DM
 
 ---

@@ -43,16 +43,15 @@ Use search or browse by type above to find items by rarity.
 
 ---
 
-## Item Attunement
+## Attunement
 
-Some magical items require **attunement** — a special bond between you and the item.
+This archive uses the [[rules/Attunement - Epic Point Pool|Epic Point Pool]] house rule instead of the standard three-item limit.
 
-**Rules:**
+- Attunement points equal twice your proficiency bonus.
+- Item point costs depend on rarity.
+- The Dungeon Master may apply an Audit Tax to unusually powerful items.
 
-- Most spellcasters can attune to 3 items maximum
-- Attunement takes 1 short rest (1 hour)
-- Lose attunement if you die, move 100+ miles away, or remove it voluntarily
-- See your [[character-options/classes|class]] page for attunement rules specific to your class
+Read the full [[rules/Attunement - Epic Point Pool|attunement rule]] before building around multiple magic items.
 
 ---
 
