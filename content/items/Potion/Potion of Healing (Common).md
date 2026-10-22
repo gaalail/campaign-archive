@@ -4,8 +4,7 @@ canonical_id: item.items.potion.potion-of-healing-common
 edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
-content_status: incomplete
-incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
+content_status: complete
 title: Potion of Healing (Common)
 rarity: Common
 item_type: Potion

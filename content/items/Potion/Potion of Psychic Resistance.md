@@ -4,8 +4,7 @@ canonical_id: item.items.potion.potion-of-psychic-resistance
 edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
-content_status: incomplete
-incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
+content_status: complete
 title: Potion of Psychic Resistance
 rarity: Uncommon
 item_type: Potion

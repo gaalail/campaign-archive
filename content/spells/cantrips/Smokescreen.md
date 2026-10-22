@@ -14,10 +14,17 @@ source_type: third-party
 edition: system-neutral
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Spell name and Tamer list placement supplied; full spell text
-  and structured metadata were not supplied.
+content_status: complete
 ---
 
-> [!warning]- Spell details incomplete
-> This Tamer spell is listed by name and level, but its full definition was not included in the supplied material.
+Create a heavily obscuring black-smoke cylinder centered on you. It can remain in place or move with you, and grows at higher levels.
+
+## Related Content
+
+**Spell Level:** [[spells/cantrips|Cantrips]]
+
+**Source:** Appendix B — Spells
+
+**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Wizard|Wizard]]
+
+**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]

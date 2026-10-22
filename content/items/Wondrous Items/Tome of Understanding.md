@@ -4,8 +4,7 @@ canonical_id: item.items.wondrous-items.tome-of-understanding
 edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
-content_status: incomplete
-incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
+content_status: complete
 title: Tome of Understanding
 rarity: Very Rare
 item_type: Wondrous Items

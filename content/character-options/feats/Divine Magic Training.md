@@ -4,8 +4,7 @@ canonical_id: character_option.character-options.feats.divine-magic-training
 edition: "2014"
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
+content_status: complete
 title: Divine Magic Training
 prerequisite: None
 summary: You learn two cantrips from the cleric spell list, and one 1st-level

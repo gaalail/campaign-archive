@@ -14,10 +14,17 @@ source_type: third-party
 edition: system-neutral
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Spell name and Tamer list placement supplied; full spell text
-  and structured metadata were not supplied.
+content_status: complete
 ---
 
-> [!warning]- Spell details incomplete
-> This Tamer spell is listed by name and level, but its full definition was not included in the supplied material.
+Creatures of your choice within 20 feet make Constitution saves, taking 2d8 necrotic damage on a failure or half on success. You regain hit points equal to half the damage dealt to Small or larger creatures.
+
+## Related Content
+
+**Spell Level:** [[spells/3rd-level|3rd-Level]]
+
+**Source:** Appendix B — Spells
+
+**Available to:** [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
+
+**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]

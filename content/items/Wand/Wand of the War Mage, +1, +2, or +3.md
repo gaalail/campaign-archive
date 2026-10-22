@@ -4,8 +4,7 @@ canonical_id: item.items.wand.wand-of-the-war-mage-1-2-or-3
 edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
-content_status: incomplete
-incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
+content_status: complete
 title: Wand of the War Mage, +1, +2, or +3
 rarity: Varies
 item_type: Wand

@@ -15,10 +15,17 @@ source_type: third-party
 edition: system-neutral
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Spell name and Tamer list placement supplied; full spell text
-  and structured metadata were not supplied.
+content_status: complete
 ---
 
-> [!warning]- Spell details incomplete
-> This Tamer spell is listed by name and level, but its full definition was not included in the supplied material.
+Touch a willing creature, causing its skin and carried equipment to shift hues. The target can Hide as a bonus action even when lightly obscured. If it did not move during its last turn, creatures have disadvantage on Perception checks to see it.
+
+## Related Content
+
+**Spell Level:** [[spells/1st-level|1st-Level]]
+
+**Source:** Appendix B — Spells
+
+**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Ranger|Ranger]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Wizard|Wizard]]
+
+**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]

@@ -4,8 +4,7 @@ canonical_id: spell.spells.7th-level.holy-verdict-wrath
 edition: "2014"
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
+content_status: complete
 title: "Holy Verdict: Wrath"
 level: 7
 school: Evocation

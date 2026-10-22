@@ -4,8 +4,7 @@ canonical_id: spell.spells.2nd-level.lesser-restoration
 edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
-content_status: incomplete
-incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
+content_status: complete
 title: Lesser Restoration
 level: 2
 school: Abjuration

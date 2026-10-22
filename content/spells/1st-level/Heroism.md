@@ -4,8 +4,7 @@ canonical_id: spell.spells.1st-level.heroism
 edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
-content_status: incomplete
-incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
+content_status: complete
 title: Heroism
 level: 1
 school: Enchantment

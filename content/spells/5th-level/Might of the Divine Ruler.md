@@ -4,8 +4,7 @@ canonical_id: spell.spells.5th-level.might-of-the-divine-ruler
 edition: "2014"
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
+content_status: complete
 title: Might of the Divine Ruler
 level: 5
 school: Transmutation

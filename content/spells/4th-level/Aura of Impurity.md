@@ -13,10 +13,17 @@ source_type: third-party
 edition: system-neutral
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Spell name and Tamer list placement supplied; full spell text
-  and structured metadata were not supplied.
+content_status: complete
 ---
 
-> [!warning]- Spell details incomplete
-> This Tamer spell is listed by name and level, but its full definition was not included in the supplied material.
+A 30-foot aura moves with you. Creatures you choose that enter or start their turn in it make Charisma saves or become drained, subtracting 1d4 from checks, attacks, and saves and regaining half hit points.
+
+## Related Content
+
+**Spell Level:** [[spells/4th-level|4th-Level]]
+
+**Source:** Appendix B — Spells
+
+**Available to:** [[character-options/classes/Paladin|Paladin]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Warlock|Warlock]]
+
+**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]

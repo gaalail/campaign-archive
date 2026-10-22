@@ -12,10 +12,17 @@ source_type: third-party
 edition: system-neutral
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Spell name and Tamer list placement supplied; full spell text
-  and structured metadata were not supplied.
+content_status: complete
 ---
 
-> [!warning]- Spell details incomplete
-> This Tamer spell is listed by name and level, but its full definition was not included in the supplied material.
+Emit a magically amplified animal howl audible for 1,000 feet. A familiar recipient understands your meaning and can respond similarly.
+
+## Related Content
+
+**Spell Level:** [[spells/cantrips|Cantrips]]
+
+**Source:** Appendix B — Spells
+
+**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Tamer|Tamer]]
+
+**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]

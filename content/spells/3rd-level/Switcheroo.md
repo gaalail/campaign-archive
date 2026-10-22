@@ -16,10 +16,17 @@ source_type: third-party
 edition: system-neutral
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Spell name and Tamer list placement supplied; full spell text
-  and structured metadata were not supplied.
+content_status: complete
 ---
 
-> [!warning]- Spell details incomplete
-> This Tamer spell is listed by name and level, but its full definition was not included in the supplied material.
+Attempt to switch places with a Large or smaller creature within 90 feet. The target makes a Charisma save or teleports to your space while you occupy its former space.
+
+## Related Content
+
+**Spell Level:** [[spells/3rd-level|3rd-Level]]
+
+**Source:** Appendix B — Spells
+
+**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
+
+**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]

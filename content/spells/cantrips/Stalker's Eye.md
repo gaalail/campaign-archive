@@ -13,10 +13,17 @@ source_type: third-party
 edition: system-neutral
 adaptation: curated
 license_status: reference-only
-content_status: incomplete
-incomplete_reason: Spell name and Tamer list placement supplied; full spell text
-  and structured metadata were not supplied.
+content_status: complete
 ---
 
-> [!warning]- Spell details incomplete
-> This Tamer spell is listed by name and level, but its full definition was not included in the supplied material.
+Touch a willing creature. Its first attack under the spell has advantage; at higher levels the attack scores a critical hit on an expanded range.
+
+## Related Content
+
+**Spell Level:** [[spells/cantrips|Cantrips]]
+
+**Source:** Appendix B — Spells
+
+**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Tamer|Tamer]]
+
+**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
