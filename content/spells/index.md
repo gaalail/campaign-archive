@@ -14,14 +14,14 @@ Choose a spell level to see all spells available at that progression:
 
 | Level     | When You Get It     | Count |
 | --------- | ------------------- | ----- |
-| Cantrips  | Always available    | 50    |
-| 1st-Level | Character level 1+  | 85    |
-| 2nd-Level | Character level 3+  | 97    |
-| 3rd-Level | Character level 5+  | 72    |
-| 4th-Level | Character level 7+  | 72    |
-| 5th-Level | Character level 9+  | 59    |
-| 6th-Level | Character level 11+ | 47    |
-| 7th-Level | Character level 13+ | 34    |
+| Cantrips  | Always available    | 59    |
+| 1st-Level | Character level 1+  | 91    |
+| 2nd-Level | Character level 3+  | 102   |
+| 3rd-Level | Character level 5+  | 82    |
+| 4th-Level | Character level 7+  | 81    |
+| 5th-Level | Character level 9+  | 65    |
+| 6th-Level | Character level 11+ | 49    |
+| 7th-Level | Character level 13+ | 36    |
 | 8th-Level | Character level 15+ | 27    |
 | 9th-Level | Character level 17+ | 30    |
 

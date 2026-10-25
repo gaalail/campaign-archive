@@ -2,3 +2,8 @@ public
 node_modules
 .quartz-cache
 docs/archive/
+.agents
+.claude
+.playwright
+graphify-out
+

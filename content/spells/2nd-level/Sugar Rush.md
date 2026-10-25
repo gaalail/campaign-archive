@@ -16,13 +16,24 @@ edition: system-neutral
 adaptation: curated
 license_status: reference-only
 content_status: complete
+spell_name: Sugar Rush
+alternate_school: Transmutation
 ---
 
-A willing creature gains 15 feet of speed, +1 AC, and can Dash, Disengage, Hide, or Use an Object as a bonus action. When the spell ends, it becomes poisoned until the end of its next turn if it failed to spend its movement.
+Casting Time: 1 action
+Range: 30 feet
+Components: V, S, M (some candy)
+Duration: Concentration, up to 1 minute
+
+A willing creature gains 15 feet of speed and +1 AC. As a bonus action on each turn it can Dash, Disengage, Hide, or Use an Object. When the spell ends, or if it ends a turn without moving up to its walking speed, it is poisoned until the end of its next turn.
+
+**At Higher Levels.** Target one additional creature per slot level above 2nd.
 
 ## Related Content
 
 **Spell Level:** [[spells/2nd-level|2nd-Level]]
+
+**School:** Biomancy
 
 **Source:** Appendix B — Spells
 

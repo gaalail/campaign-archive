@@ -17,13 +17,23 @@ edition: system-neutral
 adaptation: curated
 license_status: reference-only
 content_status: complete
+spell_name: Protection
 ---
 
-Ward a willing creature within 30 feet. Immediately before it takes non-psychic damage, it gains resistance to all damage except psychic until the end of its next turn, then the ward ends.
+Casting Time: 1 action
+Range: 30 feet
+Components: V, S, M (a miniature silver shield worth 10 gp, consumed)
+Duration: Concentration, up to 1 hour
+
+A warding sigil circles a willing creature you see. Immediately before it takes damage other than psychic, the ward grants resistance to all damage except psychic until the end of its next turn, including the triggering damage. The sigil then disappears and the spell ends on it.
+
+**At Higher Levels.** Target one additional creature per slot level above 2nd.
 
 ## Related Content
 
 **Spell Level:** [[spells/2nd-level|2nd-Level]]
+
+**School:** Abjuration
 
 **Source:** Appendix B — Spells
 

@@ -10,19 +10,34 @@ classes:
   - Druid
   - Paladin
   - Tamer
+  - Thanatomancer
 source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated
 license_status: reference-only
 content_status: complete
+spell_name: Food Coma
 ---
 
-Enchant a turkey drumstick. A willing creature that eats it falls unconscious for one hour, regains all hit points when it wakes, and can be awakened early only by damage, greater restoration, or wish.
+Casting Time: 1 minute
+Range: Touch
+Components: V, S, M (a turkey drumstick and cranberry-colored ruby worth at least 50 gp, both consumed)
+Duration: 1 hour
+
+Enchant a turkey drumstick. A willing creature that eats all of it falls asleep and is unconscious for one hour. It wakes early only if damaged or affected by greater restoration or wish. At the end of the hour, it wakes with full HP. If woken early, the spell has no effect.
+
+**At Higher Levels.** Enchant one additional drumstick per slot level above 3rd.
 
 ## Related Content
 
+**Thanatomancer access:** Eligible school and Cleric, Druid, or Wizard list.
+
+**Class:** [[character-options/classes/Thanatomancer|Thanatomancer]]
+
 **Spell Level:** [[spells/3rd-level|3rd-Level]]
+
+**School:** Enchantment
 
 **Source:** Appendix B — Spells
 

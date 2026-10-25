@@ -16,13 +16,23 @@ edition: system-neutral
 adaptation: curated
 license_status: reference-only
 content_status: complete
+spell_name: Shielding Word
 ---
 
-As a reaction when a creature within 30 feet is hit or fails a Strength or Dexterity save, grant it 15 temporary hit points until the start of its next turn.
+Casting Time: 1 reaction, when a creature you see within range is hit by an attack or fails a Strength or Dexterity save
+Range: 30 feet
+Components: V
+Duration: 1 round
+
+The creature gains 15 temporary HP immediately before the triggering damage. These HP last until the start of its next turn.
+
+**At Higher Levels.** Per slot level above 2nd, increase range by 30 feet or temporary HP by 5.
 
 ## Related Content
 
 **Spell Level:** [[spells/2nd-level|2nd-Level]]
+
+**School:** Abjuration
 
 **Source:** Appendix B — Spells
 

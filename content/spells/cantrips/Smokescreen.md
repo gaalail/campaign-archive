@@ -15,13 +15,21 @@ edition: system-neutral
 adaptation: curated
 license_status: reference-only
 content_status: complete
+spell_name: Smokescreen
 ---
 
-Create a heavily obscuring black-smoke cylinder centered on you. It can remain in place or move with you, and grows at higher levels.
+Casting Time: 1 action
+Range: Self (5-foot-radius, 10-foot-high cylinder)
+Components: V, S, M (a puffball mushroom)
+Duration: Concentration, up to 1 round
+
+A heavily obscuring black smoke cylinder appears centered on you until the start of your next turn. Choose whether it stays in place or moves with you. Its maximum diameter and height become 15 feet at 5th level, 25 feet at 11th, and 40 feet at 17th level. Choose dimensions up to those limits when casting.
 
 ## Related Content
 
 **Spell Level:** [[spells/cantrips|Cantrips]]
+
+**School:** Conjuration
 
 **Source:** Appendix B — Spells
 

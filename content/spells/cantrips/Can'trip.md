@@ -15,13 +15,21 @@ edition: system-neutral
 adaptation: curated
 license_status: reference-only
 content_status: complete
+spell_name: Can'trip
 ---
 
-Tangle the Weave around a creature within 60 feet. Until your next turn, each cantrip it attempts requires a spellcasting ability check or its action is wasted.
+Casting Time: 1 action
+Range: 60 feet
+Components: V, S
+Duration: 1 round
+
+Tangle the Weave around a creature you see. Until your next turn, each cantrip it attempts requires a spellcasting ability check against your spell save DC or its action is wasted, but no slot is expended. The spell ends if the target leaves range. The maximum inhibited spell level becomes 1st at 5th level, 2nd at 11th, and 3rd at 17th.
 
 ## Related Content
 
 **Spell Level:** [[spells/cantrips|Cantrips]]
+
+**School:** Abjuration
 
 **Source:** Appendix B — Spells
 

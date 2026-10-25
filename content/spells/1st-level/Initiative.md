@@ -10,19 +10,34 @@ classes:
   - Sorcerer
   - Tamer
   - Wizard
+  - Thanatomancer
 source: Appendix B — Spells
 source_type: third-party
 edition: system-neutral
 adaptation: curated
 license_status: reference-only
 content_status: complete
+spell_name: Initiative
 ---
 
-As a reaction when initiative is rolled, choose a willing creature within 30 feet. If surprised, it is no longer surprised; otherwise it gains advantage on that initiative roll.
+Casting Time: 1 reaction, taken when initiative is rolled
+Range: 30 feet
+Components: V, S, M (a coffee bean)
+Duration: Instantaneous
+
+Choose a willing creature you see. If surprised, it is no longer surprised and takes its first-round turn normally. Otherwise it has advantage on the triggering initiative roll.
+
+**At Higher Levels.** Target one additional creature per slot level above 1st.
 
 ## Related Content
 
+**Thanatomancer access:** Eligible school and Cleric, Druid, or Wizard list.
+
+**Class:** [[character-options/classes/Thanatomancer|Thanatomancer]]
+
 **Spell Level:** [[spells/1st-level|1st-Level]]
+
+**School:** Enchantment
 
 **Source:** Appendix B — Spells
 
