@@ -2,8 +2,11 @@ public
 node_modules
 .quartz-cache
 docs/archive/
+docs/superpowers/
+.superpowers
 .agents
 .claude
 .playwright
 graphify-out
+ponytail
 
