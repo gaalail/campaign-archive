@@ -1,6 +1,6 @@
 import { computePosition, flip, inline, shift } from "@floating-ui/dom"
 import { normalizeRelativeURLs } from "../../util/path"
-import { fetchCanonical } from "./util"
+import { fetchCanonical, responseUrl } from "./util"
 
 const p = new DOMParser()
 let activeAnchor: HTMLAnchorElement | null = null
@@ -95,7 +95,7 @@ async function mouseEnterHandler(
     default:
       const contents = await response.text()
       const html = p.parseFromString(contents, "text/html")
-      normalizeRelativeURLs(html, targetUrl)
+      normalizeRelativeURLs(html, responseUrl(response, targetUrl))
       // prepend all IDs inside popovers to prevent duplicates
       html.querySelectorAll("[id]").forEach((el) => {
         const targetID = `popover-internal-${el.id}`

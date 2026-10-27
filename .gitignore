@@ -1,0 +1,26 @@
+# Dependencies and build output
+node_modules/
+ponytail/
+public/
+prof/
+.quartz/
+.quartz-cache/
+quartz/.quartz-cache/
+quartz/cli/tui/dist/
+tsconfig.tsbuildinfo
+.turbo/
+
+# Private notes and local editor data
+content/private/
+private/
+.obsidian/
+.replit
+replit.nix
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Playwright CLI output (may contain credentials)
+.playwright-cli/

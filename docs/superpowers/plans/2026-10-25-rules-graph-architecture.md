@@ -8,7 +8,7 @@
 
 **Tech Stack:** Node.js (v24), Quartz 5.0, Markdown / YAML frontmatter, tsx (Node test runner), Prettier.
 
-**Spec:** [rules-graph-architecture.md](file:///C:/Users/andre/.gemini/antigravity/brain/ecf91309-fc5b-4725-87e0-337985e01a90/design-docs/rules-graph-architecture.md)
+**Spec:** rules-graph-architecture.md (kept outside this repository, so there is no link here)
 
 ## Global Constraints
 
