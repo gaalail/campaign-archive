@@ -4,6 +4,52 @@ function normalizeCategory(value) {
   return normalized.endsWith("s") ? normalized.slice(0, -1) : normalized
 }
 
+function syncCountTable(markdown, entries, options) {
+  const lines = markdown.split(/\r?\n/)
+  let headerIndex = -1
+  let categoryIndex = -1
+  let countIndex = -1
+
+  for (let index = 0; index < lines.length; index++) {
+    const cells = lines[index]
+      .split("|")
+      .slice(1, -1)
+      .map((cell) => cell.trim().toLocaleLowerCase("en-US"))
+    categoryIndex = cells.indexOf(options.categoryHeader.toLocaleLowerCase("en-US"))
+    countIndex = cells.indexOf(options.countHeader.toLocaleLowerCase("en-US"))
+    if (categoryIndex !== -1 && countIndex !== -1) {
+      headerIndex = index
+      break
+    }
+  }
+  if (headerIndex === -1) return markdown
+
+  const counts = new Map()
+  for (const entry of entries) {
+    const category = options.entryCategory(entry)
+    if (category === undefined || category === null || category === "") continue
+    const key = options.categoryKey ? options.categoryKey(category) : normalizeCategory(category)
+    counts.set(key, (counts.get(key) ?? 0) + 1)
+  }
+
+  for (let index = headerIndex + 1; index < lines.length; index++) {
+    const line = lines[index]
+    if (!line.trim().startsWith("|")) break
+    const cells = line.split("|")
+    const category = cells[categoryIndex + 1]?.trim()
+    const key = options.categoryKey ? options.categoryKey(category) : normalizeCategory(category)
+    const count = counts.get(key)
+    if (count === undefined) continue
+    const oldCell = cells[countIndex + 1]
+    const leading = oldCell.match(/^\s*/)?.[0] ?? " "
+    const trailing = oldCell.match(/\s*$/)?.[0] ?? " "
+    cells[countIndex + 1] = `${leading}${count}${trailing}`
+    lines[index] = cells.join("|")
+  }
+
+  return lines.join("\n")
+}
+
 export function validateCountTable(markdown, entries, options) {
   const lines = markdown.split(/\r?\n/)
   let headerIndex = -1
@@ -113,6 +159,23 @@ export function validateSpellCounts(markdown, spells) {
   return result
 }
 
+export function syncSpellCounts(markdown, spells) {
+  const levelByLabel = new Map([
+    ["cantrips", "0"],
+    ...Array.from({ length: 9 }, (_, index) => [
+      `${["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th"][index]}-level`,
+      String(index + 1),
+    ]),
+  ])
+  return syncCountTable(markdown, spells, {
+    categoryHeader: "Level",
+    countHeader: "Count",
+    categoryKey: (value) =>
+      levelByLabel.get(String(value).toLocaleLowerCase("en-US")) ?? String(value),
+    entryCategory: (spell) => String(spell.level),
+  })
+}
+
 export function validateItemCounts(markdown, items) {
   const result = validateCountTable(markdown, items, {
     categoryHeader: "Type",
@@ -136,4 +199,12 @@ export function validateItemCounts(markdown, items) {
     }
   }
   return result
+}
+
+export function syncItemCounts(markdown, items) {
+  return syncCountTable(markdown, items, {
+    categoryHeader: "Type",
+    countHeader: "Count",
+    entryCategory: (item) => item.item_type,
+  })
 }

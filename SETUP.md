@@ -5,8 +5,8 @@ Live site: https://gaalail.github.io/campaign-archive
 ## Adding content with the editor (Pages CMS)
 
 1. Go to https://app.pagescms.org and sign in with GitHub, then open `campaign-archive`.
-2. The left menu lists Ra Gol'vek, Vyrun, Curse of Strahd, Spells, Items, Character options (Classes, Subclasses, Races, Backgrounds, Feats, Templates, Class options), Rules, and Monsters. The forms come from `.pages.yml`.
-3. Choose a section, click Add, fill in the form, and save. Each save is committed to the repository and the site rebuilds in 2 to 4 minutes.
+2. The left menu lists Ra Gol'vek, Vyrun, Curse of Strahd, Spells, Items, Character options (Classes, Subclasses, Races, Backgrounds, Feats, Templates, Class options, and Fighting Styles), Rules, and Monsters. The forms come from `.pages.yml`.
+3. Choose a section, click Add, fill in the form, and save. Each save is committed to the repository. The quality workflow checks pull requests; publishing is a separate manual action.
 
 Every spell, item, character option, and monster has a **Source** field and a required **Source type**. Use `SRD` for SRD 5.1, `third-party` for external works such as Corpus Angelus and Erevan's Guide, and `homebrew` for original homebrew sources including Alternate Fighter and Alternate Monk. Source type is validated whenever a source is present. Anything that isn't SRD shows on that page's Homebrew tab. To add another book or source name, edit the Source list in `.pages.yml`.
 
@@ -62,9 +62,15 @@ Entries marked "SRD 5.1" come from the System Reference Document 5.1 by Wizards 
 
 Put new files in the `content` folder, then commit and push with GitHub Desktop.
 
+## Publishing the site
+
+Pushes to `main` do not publish automatically. After reviewing the change and confirming the quality workflow is green, open **Actions → Deploy Quartz site to GitHub Pages → Run workflow** and run it from `main`. The workflow builds and verifies the site before deploying. To require a second reviewer in GitHub, add required reviewers to the `github-pages` environment in repository settings.
+
 ## Checking links locally
 
 Run `npm run validate:archive:report` to scan wikilinks, including embedded views and images. The report-only command is for reviewing findings and does not fail. `npm run validate:archive` fails on unresolved or ambiguous links; intentional exceptions must be documented precisely in `scripts/link-health-allowlist.json`, and stale exceptions also fail validation. Each exception identifies its `source` path relative to `content/` (including `.md`), `target`, `kind` (`wikilink` or `embed`), `status` (`missing` or `ambiguous`), and a non-empty `reason`. Ambiguous exceptions must also list their exact `candidates`; add `fragment` when the link uses one. For example: `{"source":"rules/index.md","target":"External Reference","kind":"wikilink","status":"missing","reason":"Intentionally referenced but not hosted here"}`. Generated `.base` views are not included in the incoming-link count. `npm run check` includes the blocking archive validation, while CI also runs the test suite and builds the site from a clean checkout.
+
+Spell and item index counts are synchronized from entry frontmatter automatically when `npm run validate:archive` or `npm run check` runs. Add a new entry to its collection; the generated count table will be updated before validation.
 
 ## Formatting and Markdown checks
 
@@ -72,3 +78,4 @@ Run `npm run validate:archive:report` to scan wikilinks, including embedded view
 - `npm run format:code` formats Quartz and script source; `npm run format:check:code` checks it.
 - `npm run lint:markdown` checks heading hierarchy and image alt text. Keep prose wrapping intact so Obsidian-style `[[wikilinks]]` are not split across lines.
 - `npm run check` runs the TypeScript check, repository-wide Prettier check, and Markdown lint. The Pages deployment runs it before building. Historical reports in `docs/archive/` are intentionally excluded from Prettier.
+- `npm run verify:site` checks generated internal links, assets, canonical alias targets, sitemap entries, and the built-page orphan allowlist. `npm run verify:browser` uses Chromium to click through every generated folder route and legacy alias through the SPA router. Both workflows run these checks before deployment.

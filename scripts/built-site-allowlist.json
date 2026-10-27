@@ -1,0 +1,12 @@
+{
+  "orphans": [
+    "lists/class-options-of.base.html",
+    "lists/curse-of-strahd.base.html",
+    "lists/monsters-review.base.html",
+    "lists/provenance-campaign-original.base.html",
+    "lists/provenance-draft.base.html",
+    "lists/subclasses-of.base.html",
+    "lists/vyrun.base.html",
+    "tags/index.html"
+  ]
+}

@@ -18,7 +18,10 @@ describe("responseUrl", () => {
   test("uses the URL the response was served from", () => {
     const requested = new URL("https://example.com/campaign-archive/spells")
     const res = htmlResponse("", "https://example.com/campaign-archive/spells/")
-    assert.strictEqual(responseUrl(res, requested).href, "https://example.com/campaign-archive/spells/")
+    assert.strictEqual(
+      responseUrl(res, requested).href,
+      "https://example.com/campaign-archive/spells/",
+    )
   })
 
   test("falls back to the requested URL when the response has none", () => {
@@ -47,7 +50,9 @@ describe("fetchCanonical", () => {
       return htmlResponse("real page", href)
     }) as typeof fetch
 
-    const res = await fetchCanonical(new URL("https://example.com/campaign-archive/curse-of-strahd"))
+    const res = await fetchCanonical(
+      new URL("https://example.com/campaign-archive/curse-of-strahd"),
+    )
     assert.deepStrictEqual(fetched, [
       "https://example.com/campaign-archive/curse-of-strahd",
       "https://example.com/campaign-archive/campaigns/curse-of-strahd",

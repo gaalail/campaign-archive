@@ -37,7 +37,7 @@ export default `
   }
 
   function pagesFrom(index, includeCollections) {
-    return Object.keys(index).map(function (key) { return index[key]; }).filter(function (page) {
+    return (Array.isArray(index) ? index : Object.keys(index).map(function (key) { return index[key]; })).filter(function (page) {
       return page && typeof page.slug === "string" &&
         (includeCollections || !isCollection(page.slug));
     });
@@ -306,7 +306,7 @@ export default `
     var currentSlug = root.dataset.currentSlug || "";
     var currentArea = areaOf(currentSlug);
     var basePath = resolveBasePath(currentSlug);
-    var indexUrl = basePath + "/static/contentIndex.json";
+    var indexUrl = basePath + "/static/archiveGraphIndex.json";
     var indexPromise;
     var neighborhoodIndexes = {};
     var localSimulation;

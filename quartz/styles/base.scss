@@ -23,6 +23,11 @@ body {
   color: var(--darkgray);
 }
 
+:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+}
+
 .text-highlight {
   background-color: var(--textHighlight);
   padding: 0 0.1rem;

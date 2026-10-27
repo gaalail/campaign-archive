@@ -1,1 +1,1 @@
-export {}
+export { ArchiveGraphIndex } from "./graph-index.js"

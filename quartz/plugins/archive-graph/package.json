@@ -12,7 +12,10 @@
     "displayName": "Archive Graph",
     "description": "Explore clustered archive areas, cross-area links, and page neighborhoods.",
     "version": "1.0.0",
-    "category": "component",
+    "category": [
+      "component",
+      "emitter"
+    ],
     "defaultEnabled": true,
     "components": {
       "Graph": {

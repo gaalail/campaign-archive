@@ -21,25 +21,25 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#0f0f12"
-        lightgray: "#26262d"
-        gray: "#5a5a66"
-        darkgray: "#c4c4cc"
-        dark: "#e6e6ea"
-        secondary: "#d9636c"
-        tertiary: "#b3363f"
-        highlight: rgba(179, 54, 63, 0.18)
-        textHighlight: "#b3363f55"
+        light: "#faf7f2"
+        lightgray: "#e8e3dc"
+        gray: "#5d5962"
+        darkgray: "#34313a"
+        dark: "#24232a"
+        secondary: "#8c2631"
+        tertiary: "#6e1d26"
+        highlight: rgba(140, 38, 49, 0.14)
+        textHighlight: "#8c263155"
       darkMode:
-        light: "#0f0f12"
-        lightgray: "#26262d"
-        gray: "#5a5a66"
-        darkgray: "#c4c4cc"
-        dark: "#e6e6ea"
-        secondary: "#d9636c"
-        tertiary: "#b3363f"
-        highlight: rgba(179, 54, 63, 0.18)
-        textHighlight: "#b3363f55"
+        light: "#111116"
+        lightgray: "#292831"
+        gray: "#b6b3c0"
+        darkgray: "#e4e1eb"
+        dark: "#f5f2fa"
+        secondary: "#ff858d"
+        tertiary: "#ffb0b6"
+        highlight: rgba(255, 133, 141, 0.18)
+        textHighlight: "#ff858d55"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -54,7 +54,7 @@ plugins:
     enabled: true
     options:
       theme:
-        light: github-dark
+        light: github-light
         dark: github-dark
       keepBackground: false
     order: 20
@@ -87,8 +87,6 @@ plugins:
 
   - source: "@quartz-community/remove-draft"
     enabled: true
-  - source: "@quartz-community/explicit-publish"
-    enabled: false
   - source: "@quartz-community/alias-redirects"
     enabled: true
   - source: "@quartz-community/content-index"
@@ -147,6 +145,12 @@ plugins:
     layout:
       position: left
       priority: 10
+  - source: "@quartz-community/darkmode"
+    enabled: true
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
 
   - source: "@quartz-community/reader-mode"
     enabled: true
@@ -207,14 +211,6 @@ plugins:
     enabled: true
     options: {}
     order: 45
-  - source: "@quartz-community/encrypted-pages"
-    enabled: true
-    options:
-      iterations: 600000
-      passwordField: password
-      unlistWhenEncrypted: false
-      outputPath: static/encryptedContentIndex.json
-    order: 900
 
 layout:
   groups:

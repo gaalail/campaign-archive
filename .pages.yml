@@ -70,6 +70,10 @@ _sources_all: &sources_all
     - Alternate Monk
     - Alternate Monk Expanded
     - Erevan's Guide to Death & Beyond
+    - Tasha's Cauldron of Everything
+    - User-provided Tamer class
+    - Appendix B — Spells
+    - Campaign Archive house rule
 
 # Status field (Phase 1 fix: mark incomplete entries for filtering)
 _incomplete_field: &incomplete
@@ -102,7 +106,39 @@ _source_type_field: &source_type
       - SRD
       - homebrew
       - third-party
+      - official-supplement
       - campaign-original
+
+_entity_type_field: &entity_type
+  name: entity_type
+  label: Entity type (keep unchanged)
+  type: string
+
+_canonical_id_field: &canonical_id
+  name: canonical_id
+  label: Canonical ID (keep unchanged)
+  type: string
+
+_edition_field: &edition
+  name: edition
+  label: Rules edition
+  type: select
+  options:
+    values: ["2014", "2024", system-neutral]
+
+_adaptation_field: &adaptation
+  name: adaptation
+  label: Adaptation type
+  type: select
+  options:
+    values: [verbatim, summarized, curated, adapted, original]
+
+_license_status_field: &license_status
+  name: license_status
+  label: License status (keep unchanged)
+  type: select
+  options:
+    values: [CC-BY-4.0, reference-only, original]
 
 # Campaign tracking (Phase 1 fix: which campaigns use this)
 _appeared_in_field: &appeared_in
@@ -147,6 +183,11 @@ content:
                 - summary
               sort: title
             fields:
+              - *entity_type
+              - *canonical_id
+              - *edition
+              - *adaptation
+              - *license_status
               - *title
               - name: type
                 label: Type
@@ -187,6 +228,11 @@ content:
                 - summary
               sort: title
             fields:
+              - *entity_type
+              - *canonical_id
+              - *edition
+              - *adaptation
+              - *license_status
               - *title
               - name: type
                 label: Type
@@ -227,6 +273,11 @@ content:
                 - summary
               sort: title
             fields:
+              - *entity_type
+              - *canonical_id
+              - *edition
+              - *adaptation
+              - *license_status
               - *title
               - name: type
                 label: Type
@@ -258,7 +309,15 @@ content:
       - index.md
     filename: "{primary}.md"
     fields:
+      - *entity_type
+      - *canonical_id
+      - *edition
+      - *adaptation
+      - *license_status
       - *title
+      - name: source
+        label: Source
+        type: string
       - *summary
       - *content_status
       - *incomplete_reason
@@ -283,6 +342,11 @@ content:
         - source
       sort: title
     fields:
+      - *entity_type
+      - *canonical_id
+      - *edition
+      - *adaptation
+      - *license_status
       - name: title
         label: Spell name
         type: string
@@ -304,6 +368,7 @@ content:
             - Illusion
             - Necromancy
             - Transmutation
+            - Biomancy
       - name: classes
         label: Classes
         type: select
@@ -319,6 +384,7 @@ content:
             - Ranger
             - Sorcerer
             - Thanatomancer
+            - Tamer
             - Warlock
             - Wizard
       - name: casting_time
@@ -339,6 +405,28 @@ content:
       - name: concentration
         label: Concentration
         type: boolean
+      - name: subclass_spell_lists
+        label: Subclass spell lists
+        type: string
+        list: true
+      - name: spell_name
+        label: Legacy spell name
+        type: string
+      - name: alternate_school
+        label: Alternate school
+        type: string
+      - name: arcane_knight_list_marker
+        label: Arcane Knight list marker
+        type: string
+      - name: mystic_list_marker
+        label: Mystic list marker
+        type: string
+      - name: witchblade_list_marker
+        label: Witchblade list marker
+        type: string
+      - name: wu_jen_list_marker
+        label: Wu Jen list marker
+        type: string
       - name: source
         label: Source
         type: select
@@ -367,6 +455,11 @@ content:
         - source
       sort: title
     fields:
+      - *entity_type
+      - *canonical_id
+      - *edition
+      - *adaptation
+      - *license_status
       - name: title
         label: Item name
         type: string
@@ -420,6 +513,11 @@ content:
             - source
           sort: title
         fields:
+          - *entity_type
+          - *canonical_id
+          - *edition
+          - *adaptation
+          - *license_status
           - *title
           - name: hit_die
             label: Hit die
@@ -433,7 +531,8 @@ content:
           - name: spellcasting_ability
             label: Spellcasting ability
             type: select
-            options: *abilities
+            options:
+              values: [STR, DEX, CON, INT, WIS, CHA, choice]
           - name: saving_throws
             label: Saving throws
             type: select
@@ -471,6 +570,11 @@ content:
             - source
           sort: title
         fields:
+          - *entity_type
+          - *canonical_id
+          - *edition
+          - *adaptation
+          - *license_status
           - *title
           - name: parent_class
             label: Parent class
@@ -492,6 +596,8 @@ content:
                 - Sorcerer
                 - Warlock
                 - Wizard
+                - Tamer
+                - Thanatomancer
           - *summary
           - *image
           - name: source
@@ -516,6 +622,11 @@ content:
             - source
           sort: title
         fields:
+          - *entity_type
+          - *canonical_id
+          - *edition
+          - *adaptation
+          - *license_status
           - *title
           - *summary
           - *image
@@ -541,6 +652,11 @@ content:
             - source
           sort: title
         fields:
+          - *entity_type
+          - *canonical_id
+          - *edition
+          - *adaptation
+          - *license_status
           - *title
           - *summary
           - name: source
@@ -565,6 +681,11 @@ content:
             - source
           sort: title
         fields:
+          - *entity_type
+          - *canonical_id
+          - *edition
+          - *adaptation
+          - *license_status
           - *title
           - *summary
           - *image
@@ -593,6 +714,11 @@ content:
             - source
           sort: title
         fields:
+          - *entity_type
+          - *canonical_id
+          - *edition
+          - *adaptation
+          - *license_status
           - *title
           - name: option_group
             label: Group (like Eldritch Invocation)
@@ -606,6 +732,8 @@ content:
                 - Infusion
                 - Maneuver
                 - Other
+                - Martial Exploit
+                - Mystic Techniques
           - name: parent_class
             label: Class or subclass
             type: select
@@ -629,11 +757,64 @@ content:
                 - Order of Valor
                 - Order of the Voice
                 - Order of Reason
+                - Tamer
+                - Thanatomancer
           - name: min_level
             label: Minimum level
             type: number
           - name: prerequisite
             label: Prerequisite (or None)
+            type: string
+          - name: aliases
+            label: Legacy URL redirects
+            type: string
+            list: true
+          - name: degree
+            label: Degree
+            type: number
+          - *summary
+          - name: source
+            label: Source
+            type: select
+            required: true
+            options: *sources_all
+          - *content_status
+          - *incomplete_reason
+          - *source_type
+          - *incomplete
+          - *body
+
+      - name: co-fighting-styles
+        label: Fighting Styles
+        type: collection
+        path: content/character-options/fighting-styles
+        filename: "{primary}.md"
+        view:
+          primary: title
+          fields:
+            - parent_class
+            - min_level
+            - source
+          sort: title
+        fields:
+          - *entity_type
+          - *canonical_id
+          - *edition
+          - *adaptation
+          - *license_status
+          - *title
+          - *legacy_aliases
+          - name: option_group
+            label: Option group
+            type: string
+          - name: parent_class
+            label: Class or classes
+            type: string
+          - name: min_level
+            label: Minimum level
+            type: number
+          - name: prerequisite
+            label: Prerequisite
             type: string
           - *summary
           - name: source
@@ -659,6 +840,11 @@ content:
             - source
           sort: title
         fields:
+          - *entity_type
+          - *canonical_id
+          - *edition
+          - *adaptation
+          - *license_status
           - *title
           - name: prerequisite
             label: Prerequisite
@@ -692,6 +878,11 @@ content:
     exclude:
       - index.md
     fields:
+      - *entity_type
+      - *canonical_id
+      - *edition
+      - *adaptation
+      - *license_status
       - *title
       - name: size
         label: Size
@@ -707,6 +898,27 @@ content:
       - name: creature_type
         label: Creature type
         type: string
+      - name: habitats
+        label: Habitats
+        type: string
+        list: true
+      - name: roles
+        label: Roles
+        type: string
+        list: true
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: legendary
+        label: Legendary
+        type: boolean
+      - name: lair
+        label: Has a lair
+        type: boolean
+      - name: spellcaster
+        label: Spellcaster
+        type: boolean
       - name: alignment
         label: Alignment
         type: string
