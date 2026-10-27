@@ -6,7 +6,7 @@ title: Subclasses
 
 At **3rd level** (sometimes 1st or 2nd), you specialize your class with a **subclass**.
 
-**114 subclasses available** | Choose at level-up | Defines your playstyle
+**119 subclasses available** | Choose at level-up | Defines your playstyle
 
 ---
 
@@ -17,7 +17,7 @@ Click your class to see available subclasses:
 ### Core Classes
 
 - [[character-options/subclasses/Artificer/index|Artificer]] (8 specializations)
-- [[character-options/subclasses/Barbarian/index|Barbarian]] (19 paths)
+- [[character-options/subclasses/Barbarian/index|Barbarian]] (24 paths)
 - [[character-options/subclasses/Bard/index|Bard]] (5 colleges)
 - [[character-options/subclasses/Cleric/index|Cleric]] (6 domains)
 - [[character-options/subclasses/Druid/index|Druid]] (4 circles)
@@ -44,7 +44,7 @@ Click your class to see available subclasses:
 | Class         | Subclasses                                                                                                                                                                                                                                            | Theme                    |
 | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | Artificer     | [[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], [[Ooze Rancher]], [[Static Conductor]], [[Venomist]], [[Wagoneer]]                                                                                                                            | Inventive specialization |
-| Barbarian     | [[character-options/subclasses/Barbarian/index]] (19 paths)                                                                                                                                                                                           | Rage and Savage Exploits |
+| Barbarian     | [[character-options/subclasses/Barbarian/index]] (24 paths)                                                                                                                                                                                           | Rage and Savage Exploits |
 | Bard          | Hope, Infernal Archives, Truth, Lore, Hymn Singer                                                                                                                                                                                                     | Magical performance      |
 | Cleric        | Angel Caller, Dawn Domain, Domain of Mythology, Exorcist, Holy Virtues, Life                                                                                                                                                                          | Divine magic             |
 | Druid         | Circle of Heaven, Circle of Phoenix, Circle of Unicorns, Land                                                                                                                                                                                         | Nature magic             |
