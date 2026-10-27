@@ -2,6 +2,7 @@
 entity_type: rule
 canonical_id: rule.rules.attunement-epic-point-pool
 title: "Attunement: Epic Point Pool"
+category: adventuring
 source: Campaign Archive house rule
 source_type: homebrew
 edition: system-neutral

@@ -1,6 +1,10 @@
 import test, { describe } from "node:test"
 import assert from "node:assert"
-import { detectSlugCollisions, formatCollisionWarning } from "./slugCollisions"
+import {
+  assertNoSlugCollisions,
+  detectSlugCollisions,
+  formatCollisionError,
+} from "./slugCollisions"
 import { ProcessedContent } from "../plugins/vfile"
 import { FilePath, FullSlug } from "./path"
 
@@ -18,6 +22,27 @@ function makeContent(
     return [{ type: "root", children: [] }, vfile] as unknown as ProcessedContent
   })
 }
+
+describe("assertNoSlugCollisions", () => {
+  test("allows pages with unique slugs", () => {
+    assert.doesNotThrow(() =>
+      assertNoSlugCollisions(makeContent([{ slug: "one" }, { slug: "two" }])),
+    )
+  })
+
+  test("fails with the colliding source paths", () => {
+    assert.throws(
+      () =>
+        assertNoSlugCollisions(
+          makeContent([
+            { slug: "rules/attunement", relativePath: "rules/attunement.md" },
+            { slug: "rules/attunement", relativePath: "rules/Attunement.md" },
+          ]),
+        ),
+      /rules\/attunement\.md.*rules\/Attunement\.md/s,
+    )
+  })
+})
 
 describe("detectSlugCollisions", () => {
   test("returns empty array when there are no collisions", () => {
@@ -92,9 +117,9 @@ describe("detectSlugCollisions", () => {
   })
 })
 
-describe("formatCollisionWarning", () => {
+describe("formatCollisionError", () => {
   test("returns empty string for empty input", () => {
-    assert.strictEqual(formatCollisionWarning([]), "")
+    assert.strictEqual(formatCollisionError([]), "")
   })
 
   test("formats single collision with winner and shadowed markers", () => {
@@ -103,7 +128,7 @@ describe("formatCollisionWarning", () => {
       { slug: "foo/index", relativePath: "foo/index.md" },
     ])
     const collisions = detectSlugCollisions(content)
-    const output = formatCollisionWarning(collisions)
+    const output = formatCollisionError(collisions)
     assert.match(output, /1 slug collision detected/)
     assert.match(output, /foo\/index/)
     assert.match(output, /foo\/foo\.md .*\(shadowed\)/)
@@ -118,7 +143,7 @@ describe("formatCollisionWarning", () => {
       { slug: "b/index", relativePath: "b/index.md" },
     ])
     const collisions = detectSlugCollisions(content)
-    const output = formatCollisionWarning(collisions)
+    const output = formatCollisionError(collisions)
     assert.match(output, /2 slug collisions detected/)
     assert.match(output, /a\/index/)
     assert.match(output, /b\/index/)
@@ -129,7 +154,7 @@ describe("formatCollisionWarning", () => {
       { slug: "foo/index", relativePath: "foo/foo.md" },
       { slug: "foo/index", relativePath: "foo/index.md" },
     ])
-    const output = formatCollisionWarning(detectSlugCollisions(content))
+    const output = formatCollisionError(detectSlugCollisions(content))
     assert.match(output, /Folder Notes/)
   })
 
@@ -138,7 +163,7 @@ describe("formatCollisionWarning", () => {
       { slug: "x/index", relativePath: "", filePath: "/vault/x/x.md" },
       { slug: "x/index", relativePath: "", filePath: "/vault/x/index.md" },
     ])
-    const output = formatCollisionWarning(detectSlugCollisions(content))
+    const output = formatCollisionError(detectSlugCollisions(content))
     assert.match(output, /\/vault\/x\/x\.md/)
     assert.match(output, /\/vault\/x\/index\.md/)
   })

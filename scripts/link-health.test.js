@@ -71,6 +71,38 @@ test("content metadata schema requires core class, spell, and item fields", () =
   )
 })
 
+test("rule metadata validates categories and requires a campaign for campaign-local rules", () => {
+  const schema = metadataSchema.schemas.rule
+  const base = { title: "A rule", entity_type: "rule", canonical_id: "rule.test" }
+
+  assert.deepEqual(
+    validateMetadata({ ...base, category: "adventuring" }, schema, metadataSchema),
+    [],
+  )
+  assert.deepEqual(
+    validateMetadata(
+      { ...base, category: "campaign_rule", campaign: "curse-of-strahd" },
+      schema,
+      metadataSchema,
+    ),
+    [],
+  )
+  assert.deepEqual(
+    validateMetadata({ ...base, category: "campaign_rule" }, schema, metadataSchema),
+    ['"campaign" is required when "category" is "campaign_rule"'],
+  )
+  assert.deepEqual(
+    validateMetadata({ ...base, category: "combat", campaign: "unknown" }, schema, metadataSchema),
+    ['"campaign" must be one of: curse-of-strahd, ra-golvek, vyrun'],
+  )
+  assert.deepEqual(
+    validateMetadata({ ...base, category: "uncategorized" }, schema, metadataSchema),
+    [
+      '"category" must be one of: condition, combat, adventuring, spellcasting, campaign_rule, house_rule',
+    ],
+  )
+})
+
 test("metadata schema enforces core spell fields, enumerated source types, and incomplete reasons", () => {
   const schema = {
     required: ["title", "level", "classes", "source"],

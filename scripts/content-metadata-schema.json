@@ -4,7 +4,38 @@
   "editions": ["2014", "2024", "system-neutral"],
   "adaptations": ["verbatim", "summarized", "curated", "adapted", "original"],
   "license_statuses": ["CC-BY-4.0", "reference-only", "original"],
+  "rule_categories": [
+    "condition",
+    "combat",
+    "adventuring",
+    "spellcasting",
+    "campaign_rule",
+    "house_rule"
+  ],
+  "campaigns": ["curse-of-strahd", "ra-golvek", "vyrun"],
   "schemas": {
+    "rule": {
+      "required": ["title", "category"],
+      "fields": {
+        "entity_type": { "type": "string", "enum": ["rule"] },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "category": { "type": "string", "enum_from": "rule_categories" },
+        "campaign": {
+          "type": "string",
+          "enum_from": "campaigns",
+          "required_when": { "field": "category", "equals": "campaign_rule" }
+        },
+        "title": { "type": "string", "non_empty": true },
+        "summary": { "type": "string", "non_empty": true },
+        "source": { "type": "string", "non_empty": true },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "edition": { "type": "string", "enum_from": "editions" },
+        "adaptation": { "type": "string", "enum_from": "adaptations" },
+        "license_status": { "type": "string", "enum_from": "license_statuses" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    },
     "class": {
       "required": ["title", "hit_die", "saving_throws", "source"],
       "fields": {

@@ -1,0 +1,38 @@
+filters:
+  and:
+    - entity_type == "rule"
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  category:
+    displayName: Category
+  campaign:
+    displayName: Campaign
+views:
+  - type: table
+    name: All Rules
+    order: [formula.Name, category, campaign]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Adventuring
+    filters:
+      and:
+        - category == "adventuring"
+    order: [formula.Name, campaign]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: House Rules
+    filters:
+      and:
+        - category == "house_rule"
+    order: [formula.Name, campaign]
+    sort:
+      - property: file.name
+        direction: ASC

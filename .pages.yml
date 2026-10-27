@@ -91,6 +91,21 @@ _content_status_field: &content_status
       - incomplete
       - draft
 
+_rule_categories: &rule_categories
+  values:
+    - condition
+    - combat
+    - adventuring
+    - spellcasting
+    - campaign_rule
+    - house_rule
+
+_campaigns: &campaigns
+  values:
+    - curse-of-strahd
+    - ra-golvek
+    - vyrun
+
 _incomplete_reason_field: &incomplete_reason
   name: incomplete_reason
   label: Reason incomplete
@@ -113,11 +128,13 @@ _entity_type_field: &entity_type
   name: entity_type
   label: Entity type (keep unchanged)
   type: string
+  readonly: true
 
 _canonical_id_field: &canonical_id
   name: canonical_id
   label: Canonical ID (keep unchanged)
   type: string
+  readonly: true
 
 _edition_field: &edition
   name: edition
@@ -150,6 +167,9 @@ _appeared_in_field: &appeared_in
 media:
   input: content/media
   output: /campaign-archive/media
+
+settings:
+  content: true
 
 content:
   # Campaigns
@@ -305,6 +325,7 @@ content:
     label: Rules
     type: collection
     path: content/rules
+    subfolders: true
     exclude:
       - index.md
     filename: "{primary}.md"
@@ -315,6 +336,15 @@ content:
       - *adaptation
       - *license_status
       - *title
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options: *rule_categories
+      - name: campaign
+        label: Campaign (campaign rules only)
+        type: select
+        options: *campaigns
       - name: source
         label: Source
         type: string

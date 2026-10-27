@@ -16,7 +16,14 @@ export function validateMetadata(metadata, schema, definitions) {
 
   for (const [field, rule] of Object.entries(schema.fields)) {
     const value = metadata[field]
-    if (value === undefined || value === null) continue
+    if (value === undefined || value === null || value === "") {
+      if (rule.required_when && metadata[rule.required_when.field] === rule.required_when.equals) {
+        errors.push(
+          `"${field}" is required when "${rule.required_when.field}" is "${rule.required_when.equals}"`,
+        )
+      }
+      continue
+    }
     if (!matchesType(value, rule.type)) {
       errors.push(`"${field}" must be ${rule.type}`)
       continue

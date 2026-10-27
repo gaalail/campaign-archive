@@ -47,19 +47,26 @@ export function detectSlugCollisions(content: ProcessedContent[]): SlugCollision
   return collisions
 }
 
+export function assertNoSlugCollisions(content: ProcessedContent[]): void {
+  const collisions = detectSlugCollisions(content)
+  if (collisions.length > 0) {
+    throw new Error(formatCollisionError(collisions))
+  }
+}
+
 /**
- * Format a list of collisions as a single human-readable warning block.
+ * Format a list of collisions as a single human-readable error block.
  * Returns an empty string when there are no collisions so callers can
  * unconditionally log the result.
  */
-export function formatCollisionWarning(collisions: SlugCollision[]): string {
+export function formatCollisionError(collisions: SlugCollision[]): string {
   if (collisions.length === 0) return ""
 
   const lines: string[] = []
   const header =
     collisions.length === 1
-      ? `Warning: 1 slug collision detected.`
-      : `Warning: ${collisions.length} slug collisions detected.`
+      ? `Error: 1 slug collision detected.`
+      : `Error: ${collisions.length} slug collisions detected.`
   lines.push(header)
   lines.push(
     `Multiple source files produced the same URL slug. The last-processed file wins; the others are shadowed and their content will not appear in the output.`,

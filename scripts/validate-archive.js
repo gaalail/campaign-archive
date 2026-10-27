@@ -407,22 +407,24 @@ function checkMetadata() {
     const parts = relative.split("/")
     const isIndex = path.basename(data.filepath).toLowerCase() === "index.md"
     const schemaName =
-      parts[0] === "spells" && !isIndex
-        ? "spell"
-        : parts[0] === "items" && !isIndex
-          ? "item"
-          : parts[0] === "campaigns"
-            ? "campaign"
-            : parts[0] === "monsters" && !isIndex
-              ? "monster"
-              : parts[0] === "character-options" &&
-                  parts[1] === "classes" &&
-                  !isIndex &&
-                  parts.length === 3
-                ? "class"
-                : parts[0] === "character-options"
-                  ? "character_option"
-                  : undefined
+      data.metadata.entity_type === "rule"
+        ? "rule"
+        : parts[0] === "spells" && !isIndex
+          ? "spell"
+          : parts[0] === "items" && !isIndex
+            ? "item"
+            : parts[0] === "campaigns"
+              ? "campaign"
+              : parts[0] === "monsters" && !isIndex
+                ? "monster"
+                : parts[0] === "character-options" &&
+                    parts[1] === "classes" &&
+                    !isIndex &&
+                    parts.length === 3
+                  ? "class"
+                  : parts[0] === "character-options"
+                    ? "character_option"
+                    : undefined
     return schemaName ? [{ data, relative, schemaName }] : []
   })
 
@@ -469,7 +471,7 @@ function checkMetadata() {
   }
   if (schemaErrorCount === 0) {
     RESULTS.info.push(
-      `✓ Metadata schemas validated (${schemaPages.length} class, spell, item, campaign, and character-option pages)`,
+      `✓ Metadata schemas validated (${schemaPages.length} rule, class, spell, item, campaign, and character-option pages)`,
     )
   }
 }
