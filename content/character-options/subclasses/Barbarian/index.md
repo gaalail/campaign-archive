@@ -10,7 +10,7 @@ title: Barbarian Primal Paths
 
 - [[Path of the Ancestors|Path of the Ancestors]] — Ancestral spirits and knowledge
 - [[Path of the Beast Heart|Path of the Beast Heart]] — Bestial spirits and physical transformation
-- [[Path of the Berserker|Path of the Berserker]] — Unrestrained fury and relentless attacks
+- [[Berserker|Path of the Berserker]] — Unrestrained fury and relentless attacks
 - [[Path of Blood & Iron|Path of Blood & Iron]] — Spiked armor and aggressive heavy-armor combat
 - [[Path of the Brute|Path of the Brute]] — Raw physical power and punishing strikes
 - [[Path of the Champion|Path of the Champion]] — Athletic mastery and critical strikes

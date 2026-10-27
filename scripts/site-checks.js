@@ -46,11 +46,11 @@ function hrefs(html) {
     .filter(Boolean)
 }
 
-function canonicalUrl(html, fromUrl) {
-  const canonical = html.match(/<link\b[^>]*\brel=["']canonical["'][^>]*\bhref=["']([^"']+)["']/i)
+export function canonicalUrl(html, fromUrl) {
+  const canonical = html.match(/<link\b[^>]*\brel=(["'])canonical\1[^>]*\bhref=(["'])(.*?)\2/i)
   if (!canonical) return undefined
   try {
-    return new URL(canonical[1], fromUrl)
+    return new URL(canonical[3], fromUrl)
   } catch {
     return undefined
   }
