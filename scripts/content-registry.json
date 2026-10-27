@@ -5,28 +5,51 @@
       "source_type": "official-supplement",
       "spell_catalogue": "artificer-spells.base"
     },
-    "Barbarian": { "source": "SRD 5.1", "source_type": "SRD" },
-    "Bard": { "source": "SRD 5.1", "source_type": "SRD", "spell_catalogue": "bard-spells.base" },
+    "Barbarian": {
+      "source": "Alternate Barbarian Expanded",
+      "source_type": "third-party"
+    },
+    "Bard": {
+      "source": "SRD 5.1",
+      "source_type": "SRD",
+      "spell_catalogue": "bard-spells.base"
+    },
     "Cleric": {
       "source": "SRD 5.1",
       "source_type": "SRD",
       "spell_catalogue": "cleric-spells.base"
     },
-    "Druid": { "source": "SRD 5.1", "source_type": "SRD", "spell_catalogue": "druid-spells.base" },
-    "Fighter": { "source": "Alternate Fighter", "source_type": "homebrew" },
-    "Monk": { "source": "Alternate Monk", "source_type": "homebrew" },
+    "Druid": {
+      "source": "SRD 5.1",
+      "source_type": "SRD",
+      "spell_catalogue": "druid-spells.base"
+    },
+    "Fighter": {
+      "source": "Alternate Fighter",
+      "source_type": "homebrew"
+    },
+    "Monk": {
+      "source": "Alternate Monk",
+      "source_type": "homebrew"
+    },
     "Paladin": {
       "source": "SRD 5.1",
       "source_type": "SRD",
       "spell_catalogue": "paladin-spells.base"
     },
-    "Paragon": { "source": "Corpus Angelus", "source_type": "third-party" },
+    "Paragon": {
+      "source": "Corpus Angelus",
+      "source_type": "third-party"
+    },
     "Ranger": {
       "source": "SRD 5.1",
       "source_type": "SRD",
       "spell_catalogue": "ranger-spells.base"
     },
-    "Rogue": { "source": "SRD 5.1", "source_type": "SRD" },
+    "Rogue": {
+      "source": "SRD 5.1",
+      "source_type": "SRD"
+    },
     "Sorcerer": {
       "source": "SRD 5.1",
       "source_type": "SRD",
@@ -47,7 +70,11 @@
       "source_type": "SRD",
       "spell_catalogue": "warlock-spells.base"
     },
-    "Wizard": { "source": "SRD 5.1", "source_type": "SRD", "spell_catalogue": "wizard-spells.base" }
+    "Wizard": {
+      "source": "SRD 5.1",
+      "source_type": "SRD",
+      "spell_catalogue": "wizard-spells.base"
+    }
   },
   "directories": {
     "spells": {

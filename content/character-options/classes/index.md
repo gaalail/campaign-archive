@@ -17,7 +17,7 @@ Choose at character creation. This archive includes core 5e classes, alternate c
 | Class         | Hit Die | Primary Ability | Role                    |
 | ------------- | ------- | --------------- | ----------------------- |
 | Artificer     | d8      | INT             | Crafting + magic        |
-| Barbarian     | d12     | STR             | Melee powerhouse        |
+| Barbarian     | d12     | STR             | Rage + Savage Exploits  |
 | Bard          | d8      | CHA             | Magic + support         |
 | Cleric        | d8      | WIS             | Holy magic + healing    |
 | Druid         | d8      | WIS             | Nature magic            |
