@@ -19,6 +19,17 @@ source_type: homebrew
 
 Storm strikes with thunder first, then lightning.
 
+## Using This Path
+
+- **When you can smite.** When you hit with a melee weapon attack or an unarmed strike, expend a spell slot to use one smite from this path. You can use only one smite per hit.
+- **Slot scaling.** A smite accepts its listed slot or higher. Each slot level above the listed level adds one damage die, to a maximum of six dice. A 5th-tier smite has fixed damage and accepts only a 5th-level slot.
+- **Access.** The table shows the Paladin level and minimum slot for each smite.
+- **Saving throws.** Use your spell save DC.
+- **Concentration.** A smite marked concentration lasts until your concentration is broken. You can't use it while concentrating on a spell; casting a concentration spell ends the smite. You can concentrate on only one smite at a time. Any smite effect lasting past the end of the target's next turn requires concentration.
+- **Limits.** A smite's effect lasts no longer than 1 minute and affects creatures in the fight, not objects or the world.
+- **Improved dice.** Each damage die marked `*` increases one size at Paladin 9th level: d6 becomes d8, and d8 becomes d10. This applies to the base damage, added dice from higher-level slots, and the listed maximum.
+- **Righteous Strikes.** This path lets you choose lightning or thunder damage for Righteous Strikes.
+
 | Tier | Required slot | Paladin level | Concentration |
 | ---- | ------------- | ------------- | ------------- |
 | 1    | 1st-level     | 2             | No            |
@@ -26,8 +37,6 @@ Storm strikes with thunder first, then lightning.
 | 3    | 3rd-level     | 9             | No            |
 | 4    | 4th-level     | 13            | No            |
 | 5    | 5th-level     | 17            | Yes           |
-
-See the [[character-options/class-options/smite-paths/index|shared Smite Path rules]] for slot scaling, saving throws, and concentration.
 
 ## Smites
 

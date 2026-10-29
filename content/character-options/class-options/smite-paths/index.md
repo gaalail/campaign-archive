@@ -20,17 +20,17 @@ Divine Smite draws its smites from these paths. Choose one path at 2nd level and
 
 ## Choose a Path
 
-| Smite Path          | Damage type            | Through-line          |
-| ------------------- | ---------------------- | --------------------- |
-| [[Corrosion         | Corrosion Smite Path]] | Acid                  | Corrosion strips a foe's gear and then its flesh.                                                         |
-| [[Arcana            | Arcana Smite Path]]    | Force                 | Arcana reaches and repositions first, then unravels what the foe depends on.                              |
-| [[Frost             | Frost Smite Path]]     | Cold                  | Frost slows what it touches, spreads the slowing across the field, then holds the target in place.        |
-| [[Radiance          | Radiance Smite Path]]  | Radiant               | Radiance exposes a foe, takes its sight, binds it, and condemns it.                                       |
-| [[Inferno           | Inferno Smite Path]]   | Fire                  | Inferno punishes action until even the strongest monsters stop to think.                                  |
-| [[Judgment          | Judgment Smite Path]]  | Psychic               | Judgment shakes a foe's nerve, then its footing, then its aim, and finally its sense of what it is doing. |
-| [[Storm             | Storm Smite Path]]     | Lightning and thunder | Storm strikes with thunder first, then lightning.                                                         |
-| [[Venom             | Venom Smite Path]]     | Poison                | Venom fails a foe's body one system at a time.                                                            |
-| [[Blight-Smite-Path | Blight Smite Path]]    | Necrotic              | Blight feeds on a foe's life, then withers it piece by piece.                                             |
+Each path has five smites, unlocking as your Paladin level rises. Choose the theme and combat effect you want to build around; the linked page includes that path’s full rules and all five smites.
+
+- **[[Corrosion|Corrosion Smite Path]]** · Acid damage — Strips away a foe's defenses, then corrodes its body.
+- **[[Arcana|Arcana Smite Path]]** · Force damage — Repositions enemies and disrupts the magic and protections they rely on.
+- **[[Frost|Frost Smite Path]]** · Cold damage — Slows enemies, spreads that control across the field, then locks a target in place.
+- **[[Radiance|Radiance Smite Path]]** · Radiant damage — Reveals hidden foes, blinds them, binds them, and brings divine judgment.
+- **[[Inferno|Inferno Smite Path]]** · Fire damage — Punishes a foe for attacking or moving, escalating into overwhelming heat.
+- **[[Judgment|Judgment Smite Path]]** · Psychic damage — Shakes a foe's courage, footing, aim, and control of its actions.
+- **[[Storm|Storm Smite Path]]** · lightning or thunder damage — Opens with thunder and builds into lightning, disruption, and surging force.
+- **[[Venom|Venom Smite Path]]** · Poison damage — Undermines a foe's body, steadily weakening its ability to act.
+- **[[Blight-Smite-Path|Blight Smite Path]]** · Necrotic damage — Drains a foe's vitality and withers its ability to fight.
 
 ## Designer's Notes
 
