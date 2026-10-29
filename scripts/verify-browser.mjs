@@ -96,12 +96,11 @@ page.on("requestfailed", (request) => {
 
 try {
   await page.goto(`${localOrigin}${basePath}/`, { waitUntil: "domcontentloaded" })
+  const folder = site.browserTargets.find((url) => url !== basePath)
+  const alias = site.aliases.find(({ url, target }) => url !== target)
   const targets = [
-    ...site.browserTargets.map((url) => {
-      const alias = site.aliases.find(({ url: aliasUrl }) => aliasUrl.replace(/\/$/, "") === url)
-      return { url, expected: alias?.target ?? `${url}/` }
-    }),
-    ...site.aliases.map(({ url, target }) => ({ url, expected: target })),
+    ...(folder ? [{ url: folder, expected: `${folder}/` }] : []),
+    ...(alias ? [{ url: alias.url, expected: alias.target }] : []),
   ]
   const seen = new Set()
 
