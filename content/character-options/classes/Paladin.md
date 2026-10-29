@@ -2,183 +2,260 @@
 entity_type: class
 canonical_id: class.character-options.classes.paladin
 edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
+adaptation: adapted
+license_status: reference-only
 title: Paladin
 hit_die: d10
 spellcasting_ability: CHA
 saving_throws:
   - WIS
   - CHA
-summary: d10 hit die; saving throws WIS, CHA; spellcasting with CHA
-source: SRD 5.1
-source_type: SRD
+summary: "d10 hit die; powers smites and healing with Resolve and conviction"
+source: User-provided Paladin rework
+source_type: homebrew
 ---
 
-## The Paladin table
+# Paladin
 
-| Level | Proficiency Bonus | Features                                                  | Aura Range | 1st | 2nd | 3rd | 4th | 5th |
-| ----- | ----------------- | --------------------------------------------------------- | ---------- | --- | --- | --- | --- | --- |
-| 1st   | +2                | Divine Sense, Lay on Hands                                | -          | -   | -   | -   | -   | -   |
-| 2nd   | +2                | Fighting Style, Spellcasting: Paladin, Divine Smite       | -          | 2   | -   | -   | -   | -   |
-| 3rd   | +2                | Divine Health, Sacred Oath, Oath Spells, Channel Divinity | -          | 3   | -   | -   | -   | -   |
-| 4th   | +2                | Ability Score Improvement                                 | -          | 3   | -   | -   | -   | -   |
-| 5th   | +3                | Extra Attack                                              | -          | 4   | 2   | -   | -   | -   |
-| 6th   | +3                | Aura of Protection                                        | 10         | 4   | 2   | -   | -   | -   |
-| 7th   | +3                | Sacred Oath feature                                       | 10         | 4   | 3   | -   | -   | -   |
-| 8th   | +3                | Ability Score Improvement                                 | 10         | 4   | 3   | -   | -   | -   |
-| 9th   | +4                | -                                                         | 10         | 4   | 3   | 2   | -   | -   |
-| 10th  | +4                | Aura of Courage                                           | 10         | 4   | 3   | 2   | -   | -   |
-| 11th  | +4                | Improved Divine Smite                                     | 10         | 4   | 3   | 3   | -   | -   |
-| 12th  | +4                | Ability Score Improvement                                 | 10         | 4   | 3   | 3   | -   | -   |
-| 13th  | +5                | -                                                         | 10         | 4   | 3   | 3   | 1   | -   |
-| 14th  | +5                | Cleansing Touch                                           | 10         | 4   | 3   | 3   | 1   | -   |
-| 15th  | +5                | Sacred Oath feature                                       | 10         | 4   | 3   | 3   | 2   | -   |
-| 16th  | +5                | Ability Score Improvement                                 | 10         | 4   | 3   | 3   | 2   | -   |
-| 17th  | +6                | -                                                         | 10         | 4   | 3   | 3   | 3   | 1   |
-| 18th  | +6                | Aura improvements                                         | 30         | 4   | 3   | 3   | 3   | 1   |
-| 19th  | +6                | Ability Score Improvement                                 | 30         | 4   | 3   | 3   | 3   | 2   |
-| 20th  | +6                | Sacred Oath feature                                       | 30         | 4   | 3   | 3   | 3   | 2   |
+Paladins fight on a vow. Resolve heals and endures, spell slots power smites, and a Sacred Oath keeps the account.
 
-## Hit points
+## The Paladin Table
 
-**Hit dice:** 1d10 per paladin level  
-**Hit points at 1st level:** 10 + your Constitution modifier  
-**Hit points at higher levels:** 1d10 (or 6) + your Constitution modifier per paladin level after 1st
+| Level | Proficiency Bonus | Resolve | Features                              | Spells Known | 1st | 2nd | 3rd | 4th | 5th | Aura Radius |
+| ----- | ----------------- | ------- | ------------------------------------- | ------------ | --- | --- | --- | --- | --- | ----------- |
+| 1st   | +2                | 2       | Resolve, Lay on Hands, Fighting Style | —            | —   | —   | —   | —   | —   | —           |
+| 2nd   | +2                | 4       | Spellcasting, Divine Smite            | 2            | 2   | —   | —   | —   | —   | —           |
+| 3rd   | +2                | 6       | Sacred Oath, Rekindle                 | 2            | 3   | —   | —   | —   | —   | —           |
+| 4th   | +2                | 8       | Ability Score Improvement             | 3            | 3   | —   | —   | —   | —   | —           |
+| 5th   | +3                | 10      | Divine Sense, Extra Attack            | 3            | 4   | 2   | —   | —   | —   | —           |
+| 6th   | +3                | 12      | Aura of Protection                    | 4            | 4   | 2   | —   | —   | —   | 10 ft.      |
+| 7th   | +3                | 14      | Oath Feature                          | 4            | 4   | 3   | —   | —   | —   | 10 ft.      |
+| 8th   | +3                | 16      | Ability Score Improvement             | 5            | 4   | 3   | —   | —   | —   | 10 ft.      |
+| 9th   | +4                | 18      | Divine Health                         | 5            | 4   | 3   | 2   | —   | —   | 15 ft.      |
+| 10th  | +4                | 20      | Aura of Courage                       | 6            | 4   | 3   | 2   | —   | —   | 15 ft.      |
+| 11th  | +4                | 22      | Righteous Strikes, Second Smite Path  | 6            | 4   | 3   | 3   | —   | —   | 15 ft.      |
+| 12th  | +4                | 24      | Ability Score Improvement             | 7            | 4   | 3   | 3   | —   | —   | 20 ft.      |
+| 13th  | +5                | 26      | —                                     | 7            | 4   | 3   | 3   | 1   | —   | 20 ft.      |
+| 14th  | +5                | 28      | Unbreakable Ideals                    | 8            | 4   | 3   | 3   | 1   | —   | 20 ft.      |
+| 15th  | +5                | 30      | Oath Feature                          | 8            | 4   | 3   | 3   | 2   | —   | 25 ft.      |
+| 16th  | +5                | 32      | Ability Score Improvement             | 9            | 4   | 3   | 3   | 2   | —   | 25 ft.      |
+| 17th  | +6                | 34      | —                                     | 9            | 4   | 3   | 3   | 3   | 1   | 25 ft.      |
+| 18th  | +6                | 36      | Legendary Conviction                  | 10           | 4   | 3   | 3   | 3   | 1   | 30 ft.      |
+| 19th  | +6                | 38      | Ability Score Improvement             | 10           | 4   | 3   | 3   | 3   | 2   | 30 ft.      |
+| 20th  | +6                | 40      | Sacred Oath Feature                   | 11           | 4   | 3   | 3   | 3   | 2   | 30 ft.      |
 
-## Proficiencies
+Smite tiers unlock at 2nd, 5th, 9th, 13th, and 17th level. Each Smite Path provides five smites, with access determined by your level and spell slots.
 
-**Armor, weapons, and tools:** All armor, Shields, Simple Weapons, Martial Weapons  
-**Saving throws:** WIS, CHA  
-**Skills:** Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion
+## Class Features
 
-## Equipment
+### Hit Points
+
+**Hit Dice:** 1d10 per Paladin level
+
+**Hit Points at 1st Level:** 10 + your Constitution modifier
+
+**Hit Points at Higher Levels:** 1d10 (or 6) + your Constitution modifier per Paladin level after 1st
+
+### Proficiencies
+
+**Armor:** All armor, shields
+
+**Weapons:** Simple weapons, martial weapons
+
+**Tools:** None
+
+**Saving Throws:** Wisdom, Charisma
+
+**Skills:** Choose two: Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion
+
+### Starting Equipment
 
 You start with the following equipment, in addition to the equipment granted by your background:
 
-- (a) a martial weapon and a shield or (b) two martial weapons
-- (a) five javelins or (b) any simple melee weapon
-- (a) a priest’s pack or (b) an explorer’s pack
-- holy symbol
-- Chain Mail
+- (a) a martial weapon and shield or (b) two martial weapons
+- (a) a simple melee weapon or (b) five javelins
+- (a) a priest's pack or (b) an explorer's pack
+- Chain mail and a holy symbol
 
-## Spellcasting
+### Quick Build
 
-**Browse available Paladin spells by level:**
+Make Strength your highest ability score, followed by Charisma. Choose the Acolyte background and the Balanced Fighting style. At 2nd level, choose the Smite Path whose damage type and effects you most want to use.
+
+### Multiclassing
+
+**Prerequisites:** Strength 13 and Charisma 13
+
+**Proficiencies Gained:** Light armor, medium armor, shields, simple weapons, and martial weapons
+
+### Resolve
+
+_1st-level Paladin feature_
+
+Your power comes from fanatical conviction to an ideal. You have a pool of Resolve charges equal to twice your Paladin level. You regain all expended charges when you finish a long rest.
+
+### Lay on Hands
+
+_1st-level Paladin feature_
+
+Your faith and allegiance to an ideal let you focus divine energy that closes wounds. As a bonus action, you can touch a creature, which can be yourself, and expend one or more Resolve charges to restore 3 hit points for each charge spent.
+
+Alternatively, you can expend 2 charges to end one disease afflicting the creature or to end the **Poisoned** condition. This restores no hit points.
+
+### Fighting Style
+
+_1st-level Paladin feature_
+
+You learn one Fighting Style from the [[character-options/fighting-styles/index|Fighting Styles]] available to Paladins. You can't learn the same Fighting Style more than once, even if a feature allows you to learn another. To learn a style, you must meet its prerequisites.
+
+When you gain a level, you can replace this Fighting Style with another Fighting Style available to the Paladin class.
+
+### Spellcasting
+
+_2nd-level Paladin feature_
+
+At 2nd level, you learn to draw on the power of your Sacred Oath to cast divine spells.
+
+#### Spell Slots
+
+The Paladin table shows how many spell slots you have to cast your spells of 1st level and higher. To cast a Paladin spell, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
+
+#### Spells Known of 1st Level and Higher
+
+At 2nd level, you know two 1st-level spells from the Paladin spell list. The Spells Known column of the Paladin table shows when you learn more Paladin spells. Each spell you learn must be of a level for which you have spell slots. When you gain a Paladin level, you can replace one Paladin spell you know with another of your choice.
+
+The smite spells (Banishing, Blinding, Branding, Searing, Staggering, Thunderous, and Wrathful Smite) aren't on the Paladin spell list; Smite Paths replace them.
+
+Browse available spells by level:
 
 ![[paladin-spells.base]]
 
----
+#### Spellcasting Ability
 
-> [!info]- Preparing and Casting Spells
-> The Paladin table shows how many spell slots you have to cast your spells. To cast one of your paladin spells of 1st level or higher, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.
->
-> You prepare the list of paladin spells that are available for you to cast, choosing from the paladin spell list. When you do so, choose a number of paladin spells equal to your Charisma modifier + half your paladin level, rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.
->
-> For example, if you are a 5th-level paladin, you have four 1st-level and two 2nd-level spell slots. With a Charisma of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell cure wounds, you can cast it using a 1st-level or a 2nd- level slot. Casting the spell doesn't remove it from your list of prepared spells.
->
-> You can change your list of prepared spells when you finish a long rest. Preparing a new list of paladin spells requires time spent in prayer and meditation: at least 1 minute per spell level for each spell on your list.
+Charisma is your spellcasting ability for Paladin spells. You use Charisma whenever a spell refers to your spellcasting ability, spell save DC, or spell attack roll.
 
-> [!info]- Spellcasting Ability
-> Charisma is your spellcasting ability for your paladin spells, since their power derives from the strength of your convictions. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a paladin spell you cast and when making an attack roll with one.
->
-> Spell save DC = 8 + your proficiency bonus + your Charisma modifier.
->
-> Spell attack modifier = your proficiency bonus + your Charisma modifier.
+- **Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
+- **Spell attack modifier** = your proficiency bonus + your Charisma modifier
 
-> [!info]- Spellcasting Focus
-> You can use a holy symbol as a spellcasting focus for your paladin spells.
+#### Spellcasting Focus
 
-## Multiclassing
+You use a holy symbol as the focus for Paladin spells. A holy symbol is a Tiny object or emblem that represents what you stand for. If you emblazon this symbol on a shield, you can use that shield as a spellcasting focus for your spells.
 
-**Prerequisites:** STR 13, CHA 13  
-**Proficiencies gained:** Light Armor, Medium Armor, Shields, Simple Weapons, Martial Weapons
+### Divine Smite
 
-## Class features
+_2nd-level Paladin feature_
 
-> [!info]- Divine Sense (level 1)
-> The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.
->
-> You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.
+You can channel your conviction through your weapon. When you hit a creature with a melee weapon attack or an unarmed strike, you can expend a spell slot to smite it with one of the smites from your Smite Paths. You can use only one smite per hit.
 
-> [!info]- Lay on Hands (level 1)
-> Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.
->
-> As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.
->
-> Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.
->
-> This feature has no effect on undead and constructs.
+You learn one Smite Path at 2nd level and a second at 11th level. Each path holds five smites, and you gain access to a smite when you reach the level in its prerequisite. Each smite lists the lowest spell slot it accepts; you can expend a slot of that level or higher. Its rules explain damage dice, saving throws, and concentration.
 
-> [!info]- Divine Smite (level 2)
-> Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.
+A smite that requires concentration can't be used while you concentrate on a spell, and casting a spell that requires concentration ends the smite. You can concentrate on only one smite at a time.
 
-> [!info]- Fighting Style (level 2)
-> At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.
->
-> **Defense.** While you are wearing armor, you gain a +1 bonus to AC.
->
-> **Dueling.** When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.
->
-> **Great Weapon Fighting.** When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.
->
-> **Protection.** When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.
+### Sacred Oath
 
-> [!info]- Spellcasting: Paladin (level 2)
-> By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does.
+_3rd-level Paladin feature_
 
-> [!info]- Channel Divinity (level 3)
-> Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.
->
-> When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.
->
-> Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC.
+At 3rd level, choose a Sacred Oath that best represents your beliefs. Oath options include the Oath of the Ancients, Conquest, Devotion, Glory, Splendor, Throne, Vengeance, Vigilance, Repentance, Oathless, and Blackguard.
 
-> [!info]- Divine Health (level 3)
-> By 3rd level, the divine magic flowing through you makes you immune to disease.
+Your Sacred Oath grants features at 3rd level, and again when you reach 7th, 15th, and 20th level in this class.
 
-> [!info]- Oath Spells (level 3)
-> Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.
->
-> If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you.
+#### Oath Spells
 
-> [!info]- Sacred Oath (level 3)
-> When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.
->
-> Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
+Each Sacred Oath includes a list of Oath Spells you learn at the Paladin levels in its description. They are Paladin spells for you, don't count against your number of Spells Known, and can't be replaced.
 
-> [!info]- Ability Score Improvement (levels 4, 8, 12, 16, 19)
-> When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
+#### Sacred Tenets
 
-> [!info]- Extra Attack (level 5)
-> Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
+Each Oath has three Sacred Tenets that you vow to uphold. If you knowingly and willingly violate one of your Sacred Tenets, you can't use your Sacred Oath features until you spend 1 hour making reparations appropriate to your Oath.
 
-> [!info]- Aura of Protection (level 6)
-> Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.
->
-> At 18th level, the range of this aura increases to 30 feet.
+#### Breaking an Oath
 
-> [!info]- Sacred Oath feature (levels 7, 15, 20)
-> When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.
->
-> Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.
+A Paladin who consistently violates their Sacred Tenets risks breaking their Oath. Some swear an Oath of Redemption, while others fall and become Oathless or a Blackguard. Talk with your DM about the limits of your Oath and its Tenets.
 
-> [!info]- Aura of Courage (level 10)
-> Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.
->
-> At 18th level, the range of this aura increases to 30 feet.
+### Rekindle
 
-> [!info]- Improved Divine Smite (level 11)
-> By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.
+_3rd-level Paladin feature_
 
-> [!info]- Cleansing Touch (level 14)
-> Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.
->
-> You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.
+You kindle spent power back from your conviction. During a short rest, you can expend Resolve charges to recover spell slots. Each slot level costs 3 charges, or 2 charges while you are below 9th level. The recovered slots can have a combined level up to your Charisma modifier (minimum 1).
 
-> [!info]- Aura improvements (level 18)
-> At 18th level, the range of your auras increase to 30 feet.
+Once you use this feature, you must finish a long rest before you can use it again.
+
+### Ability Score Improvement
+
+When you reach 4th level, you can increase one ability score of your choice by 2, or two ability scores by 1. You can't increase an ability score above 20 with this feature. You gain this feature again at 8th, 12th, 16th, and 19th level.
+
+### Divine Sense
+
+_5th-level Paladin feature_
+
+You can use an action to awaken your senses to the presence of otherworldly creatures. For 10 minutes, you know the exact location and creature type of Celestial, Elemental, Fey, Fiend, or Undead creatures within 60 feet, unless they are behind total cover or shielded from Divination magic.
+
+Once you use Divine Sense, you must finish a short or long rest before you can use it again. If you have no uses, you can expend 2 Resolve charges to use it again.
+
+### Extra Attack
+
+_5th-level Paladin feature_
+
+You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, if you use your action to cast a Paladin spell, you can make one weapon attack as a bonus action on that turn.
+
+### Aura of Protection
+
+_6th-level Paladin feature_
+
+Unwavering belief in your creed bolsters those who stand alongside you. You exude an invisible aura in a 10-foot radius while you aren't incapacitated. Your aura benefits only you and creatures of your choice.
+
+Creatures under your Aura of Protection can add your Charisma modifier (minimum +0) to saving throws. The aura's radius increases at the levels shown in the Paladin table.
+
+### Divine Health
+
+_9th-level Paladin feature_
+
+The power of your Oath protects you from harm. You gain resistance to poison damage and immunity to all disease and to the **Poisoned** condition.
+
+### Aura of Courage
+
+_10th-level Paladin feature_
+
+Your aura infuses those under its effects with great bravery in the face of evil and danger. Creatures under your Aura of Protection are immune to the **Frightened** condition. If a Frightened creature enters your aura, you can suspend the effect while it remains within your aura.
+
+### Righteous Strikes
+
+_11th-level Paladin feature_
+
+Conviction rides every blow. Once on each of your turns when you hit with a melee weapon attack or an unarmed strike, you deal an extra 1d8 damage. Choose the damage type from a Smite Path you know:
+
+| Smite Path | Damage Type          |
+| ---------- | -------------------- |
+| Corrosion  | Acid                 |
+| Arcana     | Force                |
+| Frost      | Cold                 |
+| Radiance   | Radiant              |
+| Inferno    | Fire                 |
+| Judgment   | Psychic              |
+| Storm      | Lightning or thunder |
+| Venom      | Poison               |
+| Blight     | Necrotic             |
+
+### Second Smite Path
+
+_11th-level Paladin feature_
+
+You learn a second Smite Path. Smites from both paths are available to you, limited by your level and spell slots.
+
+### Unbreakable Ideals
+
+_14th-level Paladin feature_
+
+Your allegiance strengthens further, letting you go beyond the limit. Whenever you use Lay on Hands, you can enhance it in one of the following ways:
+
+- **Aegis:** The target also gains 2 temporary hit points for each charge spent.
+- **Beacon:** You can use Lay on Hands on a creature within 30 feet of you that isn't behind total cover.
+- **Zeal:** Expend 2 additional charges to let the target immediately repeat a saving throw to end one effect currently affecting it. Alternatively, expend 10 additional charges to end one spell affecting the target.
+
+### Legendary Conviction
+
+_18th-level Paladin feature_
+
+Your conviction feeds on every blow. Whenever you expend a spell slot to use a smite, you regain Resolve charges equal to half the slot's level (rounded down, minimum 1).
 
 ## Subclasses
 
-![[subclasses-of.base]]
+Choose your Sacred Oath from the available [[character-options/subclasses/Paladin/index|Paladin subclasses]].

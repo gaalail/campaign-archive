@@ -23,7 +23,7 @@ Choose at character creation. This archive includes core 5e classes, alternate c
 | Druid         | d8      | WIS             | Nature magic            |
 | Fighter       | d10     | STR/DEX         | Weapon master           |
 | Monk          | d10     | DEX/WIS         | Speed + control         |
-| Paladin       | d10     | STR/CHA         | Holy warrior            |
+| Paladin       | d10     | STR/CHA         | Resolve + Smite Paths   |
 | Paragon       | d10     | WIS/CHA         | Divine champion         |
 | Ranger        | d10     | DEX/WIS         | Scout + magic           |
 | Rogue         | d8      | DEX             | Stealth + precision     |

@@ -75,6 +75,7 @@ _sources_all: &sources_all
     - User-provided Tamer class
     - Appendix B — Spells
     - Campaign Archive house rule
+    - User-provided Paladin rework
 
 # Status field (Phase 1 fix: mark incomplete entries for filtering)
 _incomplete_field: &incomplete

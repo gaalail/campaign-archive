@@ -33,8 +33,8 @@
       "source_type": "homebrew"
     },
     "Paladin": {
-      "source": "SRD 5.1",
-      "source_type": "SRD",
+      "source": "User-provided Paladin rework",
+      "source_type": "homebrew",
       "spell_catalogue": "paladin-spells.base"
     },
     "Paragon": {
