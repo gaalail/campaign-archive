@@ -2,8 +2,8 @@
 entity_type: class
 canonical_id: class.character-options.classes.paladin
 edition: "2014"
-adaptation: adapted
-license_status: reference-only
+adaptation: original
+license_status: original
 title: Paladin
 hit_die: d10
 spellcasting_ability: CHA
@@ -11,7 +11,7 @@ saving_throws:
   - WIS
   - CHA
 summary: "d10 hit die; powers smites and healing with Resolve and conviction"
-source: User-provided Paladin rework
+source: Alternate Paladin
 source_type: homebrew
 ---
 
@@ -146,7 +146,7 @@ _2nd-level Paladin feature_
 
 You can channel your conviction through your weapon. When you hit a creature with a melee weapon attack or an unarmed strike, you can expend a spell slot to smite it with one of the smites from your Smite Paths. You can use only one smite per hit.
 
-You learn one Smite Path at 2nd level and a second at 11th level. Each path holds five smites, and you gain access to a smite when you reach the level in its prerequisite. Each smite lists the lowest spell slot it accepts; you can expend a slot of that level or higher. Its rules explain damage dice, saving throws, and concentration.
+You learn one Smite Path at 2nd level and a second at 11th level. Each path holds five smites, and you gain access to a smite when you reach the level in its prerequisite. Each smite lists the lowest spell slot it accepts; you can expend a slot of that level or higher. See the [[character-options/class-options/smite-paths/index|Smite Paths]] section for the path rules, damage dice, saving throws, and concentration.
 
 A smite that requires concentration can't be used while you concentrate on a spell, and casting a spell that requires concentration ends the smite. You can concentrate on only one smite at a time.
 

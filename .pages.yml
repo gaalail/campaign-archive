@@ -76,6 +76,7 @@ _sources_all: &sources_all
     - Appendix B — Spells
     - Campaign Archive house rule
     - User-provided Paladin rework
+    - Alternate Paladin
 
 # Status field (Phase 1 fix: mark incomplete entries for filtering)
 _incomplete_field: &incomplete
@@ -766,6 +767,7 @@ content:
                 - Other
                 - Martial Exploit
                 - Mystic Techniques
+                - Smite Path
           - name: parent_class
             label: Class or subclass
             type: select

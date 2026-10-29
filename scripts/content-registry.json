@@ -7,7 +7,7 @@
     },
     "Barbarian": {
       "source": "Alternate Barbarian Expanded",
-      "source_type": "third-party"
+      "source_type": "homebrew"
     },
     "Bard": {
       "source": "SRD 5.1",
@@ -33,7 +33,7 @@
       "source_type": "homebrew"
     },
     "Paladin": {
-      "source": "User-provided Paladin rework",
+      "source": "Alternate Paladin",
       "source_type": "homebrew",
       "spell_catalogue": "paladin-spells.base"
     },

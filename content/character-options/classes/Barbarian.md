@@ -2,8 +2,8 @@
 entity_type: class
 canonical_id: class.character-options.classes.barbarian
 edition: "2014"
-adaptation: adapted
-license_status: reference-only
+adaptation: original
+license_status: original
 title: Barbarian
 hit_die: d12
 saving_throws:
@@ -11,7 +11,7 @@ saving_throws:
   - CON
 summary: d12 hit die; fights through Rage and Savage Exploits
 source: Alternate Barbarian Expanded
-source_type: third-party
+source_type: homebrew
 ---
 
 # Barbarian

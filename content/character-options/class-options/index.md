@@ -34,6 +34,14 @@ Martial techniques for attacks, ability checks, saving throws, and tactical supp
 
 ---
 
+### [[character-options/class-options/smite-paths/index|Smite Paths]] (Paladin)
+
+Nine themed paths that define the damage and effects of a Paladin's Divine Smite.
+
+**9 paths** | Choose one at 2nd level and a second at 11th
+
+---
+
 ### [[character-options/class-options/monk-techniques/index|Mystic Techniques]] (Monk)
 
 Ki-powered techniques learned by Monks as they advance.
@@ -54,6 +62,7 @@ Divine powers granted by your deity. Unlock as you bond with your god.
    - Warlocks → Eldritch Invocations
    - Sorcerers → Metamagic
    - Fighters → Martial Exploits
+   - Paladins → Smite Paths
    - Monks → Mystic Techniques
    - Paragons → Avatar Features
 
@@ -72,6 +81,8 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 **Playing a [[Sorcerer]]?** → Go to [[character-options/class-options/metamagic/index|Metamagic]]
 
 **Playing a [[Fighter]]?** → Go to [[character-options/class-options/martial-exploits/index|Martial Exploits]]; Fighting Styles are in the shared [[character-options/fighting-styles/index|Fighting Styles]] catalogue
+
+**Playing a [[Paladin]]?** → Go to [[character-options/class-options/smite-paths/index|Smite Paths]]
 
 **Playing a [[Monk]]?** → Go to [[character-options/class-options/monk-techniques/index|Mystic Techniques]]
 
