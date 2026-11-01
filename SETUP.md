@@ -64,7 +64,7 @@ Put new files in the `content` folder, then commit and push with GitHub Desktop.
 
 ## Publishing the site
 
-Pushes to `main` do not publish automatically. After reviewing the change and confirming the quality workflow is green, open **Actions → Deploy Quartz site to GitHub Pages → Run workflow** and run it from `main`. The workflow builds and verifies the site before deploying. To require a second reviewer in GitHub, add required reviewers to the `github-pages` environment in repository settings.
+Pushes to `main` publish automatically through the **Deploy Quartz site to GitHub Pages** workflow. The workflow also runs from **Actions** when **Run workflow** is used manually. It builds and verifies the site before deploying; to require a second reviewer in GitHub, add required reviewers to the `github-pages` environment in repository settings.
 
 ## Checking links locally
 

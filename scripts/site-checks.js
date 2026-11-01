@@ -1,6 +1,7 @@
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import GithubSlugger from "github-slugger"
 import { parse as parseYaml } from "yaml"
 
 const root = path.resolve("public")
@@ -18,9 +19,12 @@ function walk(directory) {
 
 function pageUrl(filepath) {
   const relative = path.relative(root, filepath).replaceAll(path.sep, "/")
-  const route = relative.endsWith("/index.html")
-    ? relative.slice(0, -"index.html".length)
-    : relative.replace(/\.html$/, "")
+  const route =
+    relative === "index.html"
+      ? ""
+      : relative.endsWith("/index.html")
+        ? relative.slice(0, -"index.html".length)
+        : relative.replace(/\.html$/, "")
   return new URL(`${basePath}/${route}`, origin)
 }
 
@@ -46,6 +50,25 @@ function hrefs(html) {
     .filter(Boolean)
 }
 
+export function htmlFragmentIds(html) {
+  const ids = new Set()
+  const slugger = new GithubSlugger()
+
+  for (const match of html.matchAll(/\b(?:id|name)\s*=\s*(?:(["'])([^"']+)\1|([^\s>]+))/gi)) {
+    const id = match[2] ?? match[3]?.replace(/^["']|["']$/g, "")
+    if (id) ids.add(id.toLocaleLowerCase("en-US"))
+  }
+  for (const match of html.matchAll(/<(h[1-6])\b[^>]*>([\s\S]*?)<\/\1>/gi)) {
+    const text = match[2]
+      .replace(/<[^>]*>/g, " ")
+      .replace(/\s+/g, " ")
+      .trim()
+    if (text) ids.add(slugger.slug(text))
+  }
+
+  return ids
+}
+
 export function canonicalUrl(html, fromUrl) {
   const canonical = html.match(/<link\b[^>]*\brel=(["'])canonical\1[^>]*\bhref=(["'])(.*?)\2/i)
   if (!canonical) return undefined
@@ -54,6 +77,34 @@ export function canonicalUrl(html, fromUrl) {
   } catch {
     return undefined
   }
+}
+
+export function findMissingSitemapPages(documents, sitemap) {
+  const sitemapLocations = new Set(
+    [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, location]) => {
+      try {
+        return new URL(location).href.replace(/\/$/, "")
+      } catch {
+        return location.replace(/\/$/, "")
+      }
+    }),
+  )
+  const missing = []
+
+  for (const document of documents) {
+    if (/[/\\]404\.html$/.test(document.filepath)) continue
+    const canonical = document.canonical
+    if (canonical) {
+      const canonicalPath = canonical.pathname.replace(/\/$/, "")
+      const documentPath = document.url.pathname.replace(/\/$/, "")
+      if (canonical.origin !== document.url.origin || canonicalPath !== documentPath) continue
+    }
+
+    const expected = document.url.href.replace(/\/$/, "")
+    if (!sitemapLocations.has(expected)) missing.push(document.url.pathname)
+  }
+
+  return [...new Set(missing)].sort()
 }
 
 export function collectSite() {
@@ -70,7 +121,7 @@ export function collectSite() {
 
   for (const document of documents) {
     for (const raw of hrefs(document.html)) {
-      if (/^(?:#|data:|mailto:|tel:|javascript:|blob:)/i.test(raw)) continue
+      if (/^(?:data:|mailto:|tel:|javascript:|blob:)/i.test(raw)) continue
       let url
       try {
         url = new URL(raw, document.url)
@@ -89,6 +140,24 @@ export function collectSite() {
       if (!target) {
         errors.push(`${path.relative(root, document.filepath)}: missing target ${raw}`)
         continue
+      }
+      if (url.hash) {
+        let fragment
+        try {
+          fragment = decodeURIComponent(url.hash.slice(1))
+        } catch {
+          fragment = url.hash.slice(1)
+        }
+        const targetHtml = fs.readFileSync(target, "utf8")
+        const fragmentIds = htmlFragmentIds(targetHtml)
+        const slugger = new GithubSlugger()
+        const fragmentId = fragment.toLocaleLowerCase("en-US")
+        const fragmentSlug = slugger.slug(fragment)
+        if (!fragmentIds.has(fragmentId) && !fragmentIds.has(fragmentSlug)) {
+          errors.push(
+            `${path.relative(root, document.filepath)}: missing fragment #${url.hash.slice(1)} in ${path.relative(root, target)}`,
+          )
+        }
       }
       if (target.endsWith(".html") && !document.canonical) incoming.add(target)
       if (target.endsWith(`${path.sep}index.html`) && !url.pathname.endsWith("/")) {
@@ -112,6 +181,9 @@ export function collectSite() {
     errors.push("public/sitemap.xml is missing")
   } else {
     const sitemap = fs.readFileSync(sitemapPath, "utf8")
+    for (const missing of findMissingSitemapPages(documents, sitemap)) {
+      errors.push(`sitemap.xml: missing canonical page ${missing}`)
+    }
     for (const [, location] of sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)) {
       let url
       try {

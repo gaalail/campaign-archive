@@ -8,16 +8,32 @@ export default `
     return new Promise(function (resolve, reject) {
       var existing = document.querySelector('script[data-archive-graph-d3]');
       if (existing) {
-        existing.addEventListener("load", function () { resolve(window.d3); }, { once: true });
-        existing.addEventListener("error", reject, { once: true });
-        return;
+        if (existing.dataset.archiveGraphD3Failed === "true") {
+          existing.remove();
+        } else {
+          existing.addEventListener("load", function () {
+            window.d3 ? resolve(window.d3) : reject(new Error("D3 loaded without registering window.d3"));
+          }, { once: true });
+          existing.addEventListener("error", function () {
+            existing.dataset.archiveGraphD3Failed = "true";
+            existing.remove();
+            reject(new Error("Failed to load D3"));
+          }, { once: true });
+          return;
+        }
       }
       var script = document.createElement("script");
       script.src = "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js";
       script.crossOrigin = "anonymous";
       script.dataset.archiveGraphD3 = "true";
-      script.onload = function () { resolve(window.d3); };
-      script.onerror = reject;
+      script.onload = function () {
+        window.d3 ? resolve(window.d3) : reject(new Error("D3 loaded without registering window.d3"));
+      };
+      script.onerror = function () {
+        script.dataset.archiveGraphD3Failed = "true";
+        script.remove();
+        reject(new Error("Failed to load D3"));
+      };
       document.head.appendChild(script);
     });
   }

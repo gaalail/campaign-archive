@@ -9,6 +9,7 @@ import {
   extractWikilinks,
   findAliasConflicts,
   findGeneratedViewPages,
+  markdownFragmentIds,
   resolveWikilink,
 } from "./link-health.js"
 
@@ -564,6 +565,46 @@ test("validates a named view in a base embed", () => {
       index,
     ),
     { status: "missing", reason: "base view", filePath: "lists/items.base" },
+  )
+})
+
+test("validates Markdown heading and explicit-ID fragments", () => {
+  const content =
+    '# House Rules\n\n## Combat Rules\n\n## Legacy Anchor {#old-anchor}\n\n<a name="legacy-name"></a>'
+  const fragments = markdownFragmentIds(content)
+
+  assert.ok(fragments.has("house-rules"))
+  assert.ok(fragments.has("combat-rules"))
+  assert.ok(fragments.has("legacy-anchor"))
+  assert.ok(fragments.has("old-anchor"))
+  assert.ok(fragments.has("legacy-name"))
+
+  const destination = {
+    filePath: "rules/House Rules.md",
+    fullPath: "rules/house-rules",
+    routePath: "rules/house-rules",
+    filename: "house-rules",
+    title: "House Rules",
+    aliases: [],
+    fragments,
+  }
+  const fragmentIndex = { pages: [destination], resources: [] }
+
+  assert.deepEqual(
+    resolveWikilink(
+      { target: "House Rules", fragment: "Combat Rules", embed: false },
+      "index",
+      fragmentIndex,
+    ),
+    { status: "resolved", filePath: "rules/House Rules.md" },
+  )
+  assert.deepEqual(
+    resolveWikilink(
+      { target: "House Rules", fragment: "Missing Section", embed: false },
+      "index",
+      fragmentIndex,
+    ),
+    { status: "missing", reason: "fragment", filePath: "rules/House Rules.md" },
   )
 })
 

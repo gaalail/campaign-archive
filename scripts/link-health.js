@@ -1,5 +1,6 @@
 import fs from "node:fs"
 import path from "node:path"
+import GithubSlugger from "github-slugger"
 import { parse as parseYaml } from "yaml"
 
 const EMBEDDABLE_EXTENSIONS = new Set([
@@ -174,6 +175,33 @@ export function extractWikilinks(content) {
   return links
 }
 
+export function markdownFragmentIds(content) {
+  const ids = new Set()
+  const slugger = new GithubSlugger()
+
+  for (const match of content.matchAll(/^\s{0,3}#{1,6}\s+(.+?)\s*#*\s*$/gm)) {
+    let heading = match[1]
+    const explicit = heading.match(/\{#([^}\s]+)\}\s*$/)
+    if (explicit) {
+      ids.add(explicit[1].toLocaleLowerCase("en-US"))
+      heading = heading.replace(/\s*\{#[^}\s]+\}\s*$/, "")
+    }
+    heading = heading
+      .replace(/!\[([^\]]*)\]\([^)]*\)/g, "$1")
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
+      .replace(/[*_~`]/g, "")
+      .trim()
+    ids.add(slugger.slug(heading))
+  }
+
+  for (const match of content.matchAll(/\b(?:id|name)\s*=\s*(?:(["'])([^"']+)\1|([^\s>]+))/gi)) {
+    const id = match[2] ?? match[3]?.replace(/^["']|["']$/g, "")
+    if (id) ids.add(id.toLocaleLowerCase("en-US"))
+  }
+
+  return ids
+}
+
 function createPageRecord(filePath, content = "") {
   const withoutExtension = filePath.replace(/\.md$/i, "")
   const isIndex = /(?:^|\/)index$/i.test(withoutExtension)
@@ -194,6 +222,7 @@ function createPageRecord(filePath, content = "") {
     filename: isIndex ? undefined : normalizeTarget(path.posix.basename(withoutExtension)),
     title: metadata.title,
     aliases: aliases.map((alias) => normalizeTarget(String(alias))),
+    fragments: markdownFragmentIds(content),
     metadata,
   }
 }
@@ -348,6 +377,26 @@ export function resolveWikilink(link, sourcePath, index) {
         page.routePath,
         ...page.aliases,
       ])
+    }
+  }
+
+  if (pageResult.status === "resolved" && link.fragment) {
+    let fragment
+    try {
+      fragment = decodeURIComponent(link.fragment).trim()
+    } catch {
+      fragment = link.fragment.trim()
+    }
+    const slugger = new GithubSlugger()
+    const fragmentId = fragment.toLocaleLowerCase("en-US")
+    const fragmentSlug = slugger.slug(fragment.replace(/^#+/, ""))
+    const page = index.pages.find((candidate) => candidate.filePath === pageResult.filePath)
+    if (!page?.fragments?.has(fragmentId) && !page?.fragments?.has(fragmentSlug)) {
+      return {
+        status: "missing",
+        reason: "fragment",
+        filePath: pageResult.filePath,
+      }
     }
   }
 
