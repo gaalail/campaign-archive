@@ -15,6 +15,8 @@ source_type: homebrew
 
 Zealots are master orators and warriors whose strict faith makes heretics and infidels their mortal enemies. **Tenets:** Divine Might—prepare to fight your deity's enemies; God's Kingdom—rule with wisdom and strength; True Path—those who defy it are infidels.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                          |
 | ------------- | ------------------------------------ |
 | 3rd           | bane, detect magic                   |
@@ -27,8 +29,6 @@ Zealots are master orators and warriors whose strict faith makes heretics and in
 
 **Call of the Zealot (3rd, Channel Divinity, 4 Resolve).** As an action, choose creatures up to your Charisma modifier (minimum 1) that can hear you within 30 feet. Choose charmed, frightened, bless, or bane for each. Charm and fear last until the end of your next turn; bless and bane last 1 minute without concentration. Unwilling targets can make a Charisma save. At 10th level, double range and target count.
 
-**Turn the Heretic (3rd, Channel Divinity, 4 Resolve).** As an action, enemies that don't worship your deity and can see or hear you within 30 feet make a Wisdom save. Failure: until the end of their next turn, they can't willingly move closer to you or take reactions.
-
 **Eyes of the Faithful (7th).** When you or a friendly creature within 10 feet hits with a weapon attack, the target sheds bright light in 10 feet, is visible and can't benefit from invisibility, automatically fails Dexterity (Stealth) checks, and the next melee weapon attack against it has advantage, all until its next turn ends. Choose light color; you and allies may opt out.
 
 **Will of the Zealot (15th).** Advantage on saves against enchantment and illusion spells.
@@ -37,4 +37,4 @@ Zealots are master orators and warriors whose strict faith makes heretics and in
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

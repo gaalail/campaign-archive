@@ -15,6 +15,8 @@ source_type: homebrew
 
 Blackguards devote themselves to cruelty and ruin. Sparing the helpless or protecting the weak at personal cost breaks their vow.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Blackguard spells                       |
 | ------------- | --------------------------------------- |
 | 3rd           | cause fear*, hellish rebuke             |
@@ -35,4 +37,4 @@ Blackguards devote themselves to cruelty and ruin. Sparing the helpless or prote
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

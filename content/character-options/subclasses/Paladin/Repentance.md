@@ -15,6 +15,8 @@ source_type: homebrew
 
 You seek forgiveness and use violence only as a last resort. **Tenets:** Peace—violence is a last resort; Poverty—give excess wealth to those suffering; Redemption—no mortal is beyond forgiveness.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                          |
 | ------------- | ------------------------------------ |
 | 3rd           | sanctuary, sleep                     |
@@ -35,4 +37,4 @@ You seek forgiveness and use violence only as a last resort. **Tenets:** Peace�
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

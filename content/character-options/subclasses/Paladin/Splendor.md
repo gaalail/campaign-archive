@@ -15,6 +15,8 @@ source_type: homebrew
 
 You serve a primordial power and remake the material plane in its elemental image. **Tenets:** Destruction—display elemental power; Nobility—act with beauty befitting your patron; Wrath—destroy those who oppose or disrespect you.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 **Primordial Sovereign (3rd).** Choose your element; only a wish can change it. Use Charisma instead of Dexterity to calculate AC.
 
 | Element | Damage type |
@@ -44,4 +46,4 @@ Whenever you cast a Splendor spell, its damage uses your element's type instead 
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

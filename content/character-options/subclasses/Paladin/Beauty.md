@@ -15,6 +15,8 @@ source_type: homebrew
 
 Paladins of Beauty strive for excellence and a gleaming presence, inspiring the downtrodden or manipulating those they consider beneath them. **Tenets:** Grace—act with quiet dignity; Perfection—improve combat skill and social standing; Reputation—uphold the highest social standard.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                   |
 | ------------- | ----------------------------- |
 | 3rd           | charm person, disguise self   |
@@ -35,4 +37,4 @@ Paladins of Beauty strive for excellence and a gleaming presence, inspiring the 
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

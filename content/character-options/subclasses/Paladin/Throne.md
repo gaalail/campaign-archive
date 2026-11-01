@@ -15,6 +15,8 @@ source_type: homebrew
 
 You serve your sovereign, uphold their laws, and protect their lands and subjects. **Tenets:** Bravery—carry out orders despite overwhelming odds; Loyalty—serve your liege's interests; Order—uphold the law as civilization's bedrock.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                        |
 | ------------- | ---------------------------------- |
 | 3rd           | command, compelled duel ll         |
@@ -35,4 +37,4 @@ You serve your sovereign, uphold their laws, and protect their lands and subject
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

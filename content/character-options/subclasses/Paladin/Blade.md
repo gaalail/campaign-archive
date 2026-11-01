@@ -15,6 +15,8 @@ source_type: homebrew
 
 Blade Masters dedicate their lives to martial mastery. **Tenets:** Fair Play—level the field for a fair fight; Respect—respect every fellow warrior, even a bitter foe.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 **Sacred Duel (3rd, Channel Divinity, 4 Resolve).** As a bonus action, begin a 1-minute duel with a willing creature within 30 feet, ending if either duelist becomes unconscious. Duelists resist all damage from others, and can target only each other with attacks, spells, and features.
 
 **Blade Paths (3rd).** Learn one additional Smite Path. Your 11th-level Second Smite Path feature grants a third path.
@@ -27,4 +29,4 @@ Blade Masters dedicate their lives to martial mastery. **Tenets:** Fair Play—l
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

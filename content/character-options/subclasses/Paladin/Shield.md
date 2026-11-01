@@ -15,6 +15,8 @@ source_type: homebrew
 
 Divine Shields defend the innocent by standing between allies and danger. **Tenets:** Defend—protect those who seek aid; Immovable—keep your vows; Resilient—stand firm while innocents are at risk.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
 | 3rd           | shield, shield of faith          |
@@ -35,4 +37,4 @@ Divine Shields defend the innocent by standing between allies and danger. **Tene
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

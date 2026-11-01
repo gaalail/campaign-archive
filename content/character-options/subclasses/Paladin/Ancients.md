@@ -15,6 +15,8 @@ source_type: homebrew
 
 Often called green knights, these paladins guard life and natural beauty. **Tenets:** Beauty—protect natural beauty and innocent life; Hope—kindle hope and never give in to despair; Light—delight in song, dance, and laughter, and spread joy.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
 | 3rd           | absorb elements*, entangle       |
@@ -35,4 +37,4 @@ Often called green knights, these paladins guard life and natural beauty. **Tene
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

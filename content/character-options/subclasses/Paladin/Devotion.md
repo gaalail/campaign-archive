@@ -15,6 +15,8 @@ source_type: homebrew
 
 White knights stand as paragons of virtue, justice, and honor. **Tenets:** Compassion—protect the vulnerable and temper mercy with caution; Honesty—don't deceive for your own benefit and keep your word; Honor—do the most good with the least harm and obey rightful authority.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
 | 3rd           | bless, shield of faith           |
@@ -35,4 +37,4 @@ White knights stand as paragons of virtue, justice, and honor. **Tenets:** Compa
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

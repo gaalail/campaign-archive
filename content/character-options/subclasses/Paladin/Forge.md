@@ -15,6 +15,8 @@ source_type: homebrew
 
 Forge paladins pursue progress and order through a chosen craft. **Tenets:** Order—create order from disorder; Perfection—strive for perfection; Progress—pass knowledge on so successors surpass you.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                              |
 | ------------- | ---------------------------------------- |
 | 3rd           | identify, burning hands                  |
@@ -35,4 +37,4 @@ Forge paladins pursue progress and order through a chosen craft. **Tenets:** Ord
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

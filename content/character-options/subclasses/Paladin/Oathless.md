@@ -15,6 +15,8 @@ source_type: homebrew
 
 Oathless paladins broke their oath for reasons other than evil but retain some power. They owe allegiance to none; their safety and power come first.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oathless spells                      |
 | ------------- | ------------------------------------ |
 | 3rd           | charm person, false life             |
@@ -37,4 +39,4 @@ Oathless paladins broke their oath for reasons other than evil but retain some p
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

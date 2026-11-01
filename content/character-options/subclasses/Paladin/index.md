@@ -8,7 +8,23 @@ title: Paladin Subclasses
 
 ## Sacred Oath Rules
 
-Oath spells are Paladin spells for you, don't count against your Spells Known, and can't be replaced. Resolve features are Channel Divinity options with their listed costs. An Oath Smite is a tier-1 smite with no path prerequisite; see [[character-options/classes/Paladin#divine-smite|Divine Smite]] for shared rules. Each oath's full mechanics are on its own page below.
+Oath spells are Paladin spells for you, don't count against your Spells Known, and can't be replaced. Resolve features are Channel Divinity options with their listed costs and have no other limit. Oaths refer to creature types or their own Tenets, never alignment. For Oath Smite scaling, marked dice, rider limits, and Avatar transformation rules, see the [[character-options/subclasses/Paladin/index#sacred-oath-rules|shared Sacred Oath rules]].
+
+### Oath Smites
+
+An Oath Smite belongs to no Smite Path and has no prerequisite. When you hit with a melee weapon attack or an unarmed strike, you can expend a spell slot to use it, in place of a path smite; you can use only one smite per hit, and the spell slot is its only cost.
+
+An Oath Smite deals 2d6* damage of its listed type for a 1st-level slot, plus 1d6* for each slot level above 1st, to a maximum of 6d6*. A marked die increases one size at Paladin 9th level (d6 to d8, or d8 to d10). Selfish Smite grants temporary hit points equal to half the necrotic damage dealt. Glorious Smite instead grants temporary hit points equal to your Charisma modifier plus twice the slot level, as its feature specifies.
+
+Its rider is one effect, either instantaneous or ending by the end of the target's next turn. A rider is comparable in strength to a tier-1 path rider such as [[character-options/class-options/smite-paths/Frost#chilling-smite|Chilling Smite]], [[character-options/class-options/smite-paths/Storm#thundering-smite|Thundering Smite]], or [[character-options/class-options/smite-paths/Venom#sickening-smite|Sickening Smite]], and doesn't scale with slot level. Saving throw DCs equal your spell save DC. No Oath Smite rider lasts longer than 1 minute or takes a creature's turn. See this catalogue's [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]] for transformation duration and repeat-use rules.
+
+### Avatar Terms
+
+An Avatar feature lasts 1 minute unless that feature says otherwise. It ends early if you become unconscious or use a bonus action to end it. You can transform once per long rest without a spell slot; each additional transformation before your next long rest requires expending a 5th-level spell slot. An oath capstone's own duration or ending conditions override these default terms where they differ.
+
+### Spell source marks
+
+`ll` identifies a laserllama Spell Compendium version, as described in the archive's Warden spell list. Those alternate versions are not included here, so their levels cannot be verified from the archive. The standard versions of Grasping Vine and Elemental Bane are 4th-level spells, Locate Creature is 4th level, Create Undead is 6th level, and Dominate Creature is 8th level. The `ll` variants may differ; confirm their actual levels in the compendium before using these lists with the Paladin slot progression. This matters for the listed unlocks: Grasping Vine and Elemental Bane at 9th-level Paladin, Locate Creature at 5th, Dominate Creature at 13th, and Create Undead at 13th.
 
 ## Part 1: Core Oaths
 
@@ -43,7 +59,7 @@ Oath spells are Paladin spells for you, don't count against your Spells Known, a
 ## Other Records
 
 - [[character-options/subclasses/Paladin/Oath of Righteousness|Retired Oath of Righteousness reference]], folded into Devotion.
-- [[character-options/subclasses/Paladin/index|This catalogue]] contains the additional Paladin Fighting Styles.
+- Additional Fighting Styles are deferred; they are not included in this catalogue yet.
 
 ---
 

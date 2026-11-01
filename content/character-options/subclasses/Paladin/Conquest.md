@@ -15,6 +15,8 @@ source_type: homebrew
 
 Conquerors seek glory through domination, crushing foes in body and spirit and upholding law through iron justice. **Tenets:** Conquest—crush foes so they never oppose you again; Iron Law—your word is law, reward loyalty and punish dissent; Might—might makes right, and you are mighty.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
 | 3rd           | cause fear*, command             |
@@ -35,4 +37,4 @@ Conquerors seek glory through domination, crushing foes in body and spirit and u
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

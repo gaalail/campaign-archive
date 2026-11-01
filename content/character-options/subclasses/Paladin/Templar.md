@@ -15,6 +15,8 @@ source_type: homebrew
 
 Templars are temple-trained knights who withstand foes, aid allies, and comfort the faithful. Their temple may provide quests, tokens, and shelter. **Tenets:** Faith—let faith be your shield; Loyalty—let temple and allies be your weapons; Unwavering—do not fear the divine.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                   |
 | ------------- | ----------------------------- |
 | 3rd           | bless, guiding bolt           |
@@ -35,4 +37,4 @@ Templars are temple-trained knights who withstand foes, aid allies, and comfort 
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

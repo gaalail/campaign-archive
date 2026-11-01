@@ -15,6 +15,8 @@ source_type: homebrew
 
 Avengers dedicate their lives to destroying a sworn foe or corrupt organization. **Tenets:** Destroy Evil—fight sworn foes and the greater evil; No Mercy—defeat evil by any means; Restitution—make amends for your foes' evil and other evildoers.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                |
 | ------------- | -------------------------- |
 | 3rd           | bane, compelled duel ll    |
@@ -35,4 +37,4 @@ Avengers dedicate their lives to destroying a sworn foe or corrupt organization.
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

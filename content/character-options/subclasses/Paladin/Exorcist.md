@@ -15,6 +15,8 @@ source_type: homebrew
 
 Exorcists hunt the undead and protect the living, sacrificing ordinary lives to defend the world. **Tenets:** Defend—protect life, especially the innocent; Destroy—hunt and destroy undead; Focus—bear no titles, lands, family, or children.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                              |
 | ------------- | ---------------------------------------- |
 | 3rd           | protection from evil and good, sanctuary |
@@ -35,4 +37,4 @@ Exorcists hunt the undead and protect the living, sacrificing ordinary lives to 
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

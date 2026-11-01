@@ -15,6 +15,8 @@ source_type: homebrew
 
 You strive to become a legendary hero through mighty deeds and deadly challenges. **Tenets:** Glory—be known for deeds, not words; Might—seek physical, spiritual, and mental perfection; Tenacity—meet worthy adversity without fleeing.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                        |
 | ------------- | ---------------------------------- |
 | 3rd           | compelled duel ll, jump ll         |
@@ -35,4 +37,4 @@ You strive to become a legendary hero through mighty deeds and deadly challenges
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

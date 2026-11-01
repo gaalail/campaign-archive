@@ -15,6 +15,8 @@ source_type: homebrew
 
 Liberty paladins stand with the oppressed against tyranny and seek justice fairly applied. **Tenets:** Equality—treat all equally; Equity—ensure access to basic needs; Freedom—free the oppressed and bring justice to oppressors.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                             |
 | ------------- | --------------------------------------- |
 | 3rd           | heroism, shield of faith                |
@@ -35,4 +37,4 @@ Liberty paladins stand with the oppressed against tyranny and seek justice fairl
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

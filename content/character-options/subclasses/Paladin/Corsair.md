@@ -15,6 +15,8 @@ source_type: homebrew
 
 Corsairs are fearsome sea warriors devoted to personal freedom and loyalty to their crew. **Tenets:** Bravery—live so others sing of your deeds; Freedom—be free of rules you did not agree to; Loyalty—reward loyalty and judge traitors ruthlessly.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
 | 3rd           | fog cloud, zephyr strike XGE     |
@@ -35,4 +37,4 @@ Corsairs are fearsome sea warriors devoted to personal freedom and loyalty to th
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

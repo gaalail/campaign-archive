@@ -15,6 +15,8 @@ source_type: homebrew
 
 Mystics awaken their own inner psionic power. Optional rule: use Intelligence instead of Charisma for all Paladin features. **Tenets:** Asceticism—forsake attachments; Enlightenment—realize potential and help others; Knowledge—seek deeper enlightenment through knowledge.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
 | 3rd           | catapult XGE, dissonant whispers |
@@ -35,4 +37,4 @@ Mystics awaken their own inner psionic power. Optional rule: use Intelligence in
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

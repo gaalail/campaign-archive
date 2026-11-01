@@ -15,6 +15,8 @@ source_type: homebrew
 
 Inquisitors reveal what is hidden and punish those who deceive mortals by obscuring their true form. **Tenets:** Truth—bring truth to light; Immutability—distrust those who alter or hide their form; Retribution—fit punishment to the crime.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                   |
 | ------------- | ----------------------------- |
 | 3rd           | charm person, command         |
@@ -35,4 +37,4 @@ Inquisitors reveal what is hidden and punish those who deceive mortals by obscur
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]

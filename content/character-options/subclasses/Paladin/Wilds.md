@@ -15,6 +15,8 @@ source_type: homebrew
 
 Wilds paladins protect the balance between civilization and nature and embody the power of beasts. **Tenets:** Balance—keep nature and civilization in balance; Freedom—let living things choose their path; Natural Law—uphold the world's natural order.
 
+See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
+
 | Paladin level | Oath spells                  |
 | ------------- | ---------------------------- |
 | 3rd           | command, speak with animals  |
@@ -35,4 +37,4 @@ Wilds paladins protect the balance between civilization and nature and embody th
 
 ---
 
-[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] · [[character-options/classes/Paladin|Paladin class]]
