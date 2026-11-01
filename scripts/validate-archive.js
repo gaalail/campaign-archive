@@ -272,6 +272,7 @@ function checkCanonicalIdentity() {
     "monster",
     "rule",
     "character_option",
+    "campaign_entry",
   ])
 
   for (const data of Object.values(fileCache)) {
@@ -414,7 +415,9 @@ function checkMetadata() {
           : parts[0] === "items" && !isIndex
             ? "item"
             : parts[0] === "campaigns"
-              ? "campaign"
+              ? isIndex
+                ? "campaign"
+                : "campaign_entry"
               : parts[0] === "monsters" && !isIndex
                 ? "monster"
                 : parts[0] === "character-options" &&
@@ -515,6 +518,123 @@ function checkDisplayedCounts() {
         `✓ ${section} count table matches metadata (${result.metadataTotal} entries across all displayed categories)`,
       )
     }
+  }
+}
+
+function checkCampaignRelationships() {
+  console.log("📍 Checking campaign relationships...")
+  const initialErrorCount = RESULTS.errors.length
+  const campaignHubs = new Map()
+  const entriesByCampaign = new Map()
+
+  for (const data of Object.values(fileCache)) {
+    const relative = path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/")
+    if (
+      !relative.startsWith("campaigns/") ||
+      path.basename(data.filepath).toLowerCase() !== "index.md"
+    ) {
+      continue
+    }
+    const relativeParts = relative.split("/")
+    if (relativeParts.length === 2) continue
+    const folder = relativeParts[1]
+    const campaignId = String(data.metadata.campaign_id || folder).trim()
+    campaignHubs.set(campaignId, { data, calendarId: data.metadata.calendar_id })
+    entriesByCampaign.set(campaignId, [])
+  }
+
+  let checkedEntries = 0
+  let validDateEntries = 0
+  for (const data of Object.values(fileCache)) {
+    const relative = path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/")
+    if (
+      !relative.startsWith("campaigns/") ||
+      path.basename(data.filepath).toLowerCase() === "index.md"
+    ) {
+      continue
+    }
+
+    const parts = relative.split("/")
+    const campaignId = String(data.metadata.campaign_id || parts[1]).trim()
+    checkedEntries++
+    const entries = entriesByCampaign.get(campaignId) || []
+    entries.push(data)
+    entriesByCampaign.set(campaignId, entries)
+
+    if (!campaignHubs.has(campaignId)) {
+      RESULTS.errors.push(`${relative}: unknown campaign_id "${campaignId}"`)
+    } else {
+      const hub = campaignHubs.get(campaignId)
+      if (
+        data.metadata.calendar_id &&
+        hub.calendarId &&
+        data.metadata.calendar_id !== hub.calendarId
+      ) {
+        RESULTS.errors.push(
+          `${relative}: calendar_id "${data.metadata.calendar_id}" does not match campaign calendar "${hub.calendarId}"`,
+        )
+      }
+    }
+
+    const type = data.metadata.type
+    const dateType = type === "Session" || type === "CalendarEvent"
+    if (dateType) {
+      const hasStructuredDate =
+        Number.isInteger(data.metadata.year) &&
+        Number.isInteger(data.metadata.month) &&
+        Number.isInteger(data.metadata.day)
+      const hasTextDate =
+        typeof data.metadata.date === "string" && data.metadata.date.trim().length > 0
+      if (!hasTextDate && !hasStructuredDate) {
+        RESULTS.errors.push(`${relative}: session/event requires a date or year/month/day fields`)
+      } else {
+        validDateEntries++
+      }
+    }
+
+    for (const field of ["locations", "characters", "factions", "encounters", "appeared_in"]) {
+      const value = data.metadata[field]
+      if (value === undefined) continue
+      if (!Array.isArray(value)) {
+        RESULTS.errors.push(
+          `${relative}: "${field}" must be an array of page names or canonical IDs`,
+        )
+      }
+    }
+  }
+
+  for (const [campaignId, entries] of entriesByCampaign.entries()) {
+    const knownTargets = new Set()
+    for (const entry of entries) {
+      for (const key of [
+        entry.metadata.title,
+        entry.metadata.canonical_id,
+        path.basename(entry.filepath, ".md"),
+      ]) {
+        if (typeof key === "string" && key.trim()) knownTargets.add(key.trim().toLowerCase())
+      }
+    }
+
+    for (const entry of entries) {
+      const relative = path.relative(CONTENT_DIR, entry.filepath).replaceAll("\\", "/")
+      for (const field of ["locations", "characters", "factions", "encounters", "appeared_in"]) {
+        if (!Array.isArray(entry.metadata[field])) continue
+        for (const target of entry.metadata[field]) {
+          if (!knownTargets.has(String(target).trim().toLowerCase())) {
+            RESULTS.errors.push(
+              `${relative}: ${field} target "${target}" does not resolve within campaign "${campaignId}"`,
+            )
+          }
+        }
+      }
+    }
+  }
+
+  // Every campaign entry must belong to a known campaign and may contain structured game time.
+  if (RESULTS.errors.length === initialErrorCount) {
+    RESULTS.info.push(
+      `✓ Campaign relationships validated (${checkedEntries} entries; ${entriesByCampaign.size} campaigns; ${validDateEntries} dated sessions/events)`,
+    )
   }
 }
 
@@ -878,6 +998,7 @@ function validate() {
   checkCanonicalIdentity()
   checkRegistry()
   checkDisplayedCounts()
+  checkCampaignRelationships()
   checkContentRelationships()
   checkDuplicates()
   checkIncomplete()

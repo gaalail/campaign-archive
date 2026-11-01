@@ -113,11 +113,53 @@
           "enum": ["class", "spell", "item", "campaign", "monster", "rule", "character_option"]
         },
         "canonical_id": { "type": "string", "non_empty": true },
+        "campaign_id": { "type": "string", "enum_from": "campaigns" },
+        "calendar_id": { "type": "string", "non_empty": true },
+        "calendar_name": { "type": "string", "non_empty": true },
         "edition": { "type": "string", "enum_from": "editions" },
         "adaptation": { "type": "string", "enum_from": "adaptations" },
         "license_status": { "type": "string", "enum_from": "license_statuses" },
         "title": { "type": "string", "non_empty": true },
         "source": { "type": "string", "non_empty": true },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    },
+    "campaign_entry": {
+      "required": ["title", "campaign_id", "type", "summary"],
+      "fields": {
+        "entity_type": { "type": "string", "enum": ["campaign_entry"] },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "title": { "type": "string", "non_empty": true },
+        "campaign_id": { "type": "string", "enum_from": "campaigns" },
+        "type": {
+          "type": "string",
+          "enum": [
+            "Character",
+            "Place",
+            "Faction",
+            "Lore",
+            "Session",
+            "Item",
+            "Rules",
+            "Other",
+            "Encounter",
+            "CalendarEvent"
+          ]
+        },
+        "summary": { "type": "string", "non_empty": true },
+        "session_number": { "type": "integer", "minimum": 1 },
+        "date": { "type": "string", "non_empty": true },
+        "calendar_id": { "type": "string", "non_empty": true },
+        "year": { "type": "integer" },
+        "month": { "type": "integer", "minimum": 1 },
+        "day": { "type": "integer", "minimum": 1 },
+        "locations": { "type": "array", "items": { "type": "string", "non_empty": true } },
+        "characters": { "type": "array", "items": { "type": "string", "non_empty": true } },
+        "factions": { "type": "array", "items": { "type": "string", "non_empty": true } },
+        "encounters": { "type": "array", "items": { "type": "string", "non_empty": true } },
+        "appeared_in": { "type": "array", "items": { "type": "string", "non_empty": true } },
         "source_type": { "type": "string", "enum_from": "source_types" },
         "content_status": { "type": "string", "enum_from": "content_status" },
         "incomplete_reason": { "type": "string", "non_empty": true }

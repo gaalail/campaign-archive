@@ -1,6 +1,7 @@
 ---
-entity_type: campaign
+entity_type: campaign_entry
 canonical_id: campaign.campaigns.ra-golvek.example-character
+campaign_id: ra-golvek
 content_status: incomplete
 incomplete_reason: Legacy entry imported with incomplete metadata; missing or unverified details require review.
 title: Example Character

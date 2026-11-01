@@ -47,6 +47,8 @@ _entry_types: &entry_types
     - Faction
     - Lore
     - Session
+    - CalendarEvent
+    - Encounter
     - Item
     - Rules
     - Other
@@ -167,6 +169,67 @@ _appeared_in_field: &appeared_in
   type: string
   list: true
 
+_campaign_id_field: &campaign_id
+  name: campaign_id
+  label: Campaign ID
+  type: select
+  required: true
+  options: *campaigns
+
+_campaign_calendar_id_field: &campaign_calendar_id
+  name: calendar_id
+  label: Campaign calendar ID
+  type: string
+
+_campaign_session_number_field: &campaign_session_number
+  name: session_number
+  label: Session number
+  type: number
+
+_campaign_date_field: &campaign_date
+  name: date
+  label: In-game date
+  type: string
+
+_campaign_year_field: &campaign_year
+  name: year
+  label: In-game year
+  type: number
+
+_campaign_month_field: &campaign_month
+  name: month
+  label: In-game month
+  type: number
+
+_campaign_day_field: &campaign_day
+  name: day
+  label: In-game day
+  type: number
+
+_campaign_locations_field: &campaign_locations
+  name: locations
+  label: Related locations
+  type: string
+  list: true
+
+_campaign_characters_field: &campaign_characters
+  name: characters
+  label: Related characters/NPCs
+  type: string
+  list: true
+
+_campaign_factions_field: &campaign_factions
+  name: factions
+  label: Related factions
+  type: string
+  list: true
+
+_campaign_encounters_field: &campaign_encounters
+  name: encounters
+  label: Related encounters
+  type: string
+  list: true
+
 media:
   input: content/media
   output: /campaign-archive/media
@@ -261,7 +324,19 @@ content:
                 label: Type
                 type: select
                 options: *entry_types
+              - *campaign_id
               - *summary
+              - *campaign_calendar_id
+              - *campaign_session_number
+              - *campaign_date
+              - *campaign_year
+              - *campaign_month
+              - *campaign_day
+              - *campaign_locations
+              - *campaign_characters
+              - *campaign_factions
+              - *campaign_encounters
+              - *appeared_in
               - *tags
               - *image
               - *content_status
@@ -274,8 +349,18 @@ content:
             type: file
             path: content/campaigns/vyrun/index.md
             fields:
+              - *entity_type
+              - *canonical_id
               - *title_str
+              - *campaign_id
+              - *campaign_calendar_id
+              - name: calendar_name
+                label: Calendar name
+                type: string
               - *legacy_aliases
+              - *content_status
+              - *incomplete_reason
+              - *source_type
               - *body
 
       - name: curse-of-strahd

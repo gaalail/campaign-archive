@@ -72,6 +72,33 @@ test("content metadata schema requires core class, spell, and item fields", () =
   )
 })
 
+test("campaign entry metadata validates campaign, type, and game-time foundations", () => {
+  const schema = metadataSchema.schemas.campaign_entry
+  const valid = {
+    title: "Session One",
+    campaign_id: "vyrun",
+    type: "Session",
+    summary: "The party enters the frontier",
+    session_number: 1,
+    date: "Year 1, Month 1, Day 1",
+    calendar_id: "vyrun-calendar",
+  }
+
+  assert.deepEqual(validateMetadata(valid, schema, metadataSchema), [])
+  assert.deepEqual(
+    validateMetadata(
+      { title: "Missing", campaign_id: "unknown", type: "Unknown" },
+      schema,
+      metadataSchema,
+    ),
+    [
+      'missing required "summary"',
+      '"campaign_id" must be one of: curse-of-strahd, ra-golvek, vyrun',
+      '"type" must be one of: Character, Place, Faction, Lore, Session, Item, Rules, Other, Encounter, CalendarEvent',
+    ],
+  )
+})
+
 test("rule metadata validates categories and requires a campaign for campaign-local rules", () => {
   const schema = metadataSchema.schemas.rule
   const base = { title: "A rule", entity_type: "rule", canonical_id: "rule.test" }

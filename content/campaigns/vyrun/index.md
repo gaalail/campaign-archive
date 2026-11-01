@@ -2,6 +2,14 @@
 title: Vyrun
 tags: [vyrun]
 aliases: [vyrun/index]
+entity_type: campaign
+canonical_id: campaign-vyrun
+campaign_id: vyrun
+calendar_id: vyrun-calendar
+calendar_name: Vyrun Calendar
+source_type: campaign-original
+content_status: incomplete
+incomplete_reason: Campaign chronology, calendar rules, and location map are still being established
 ---
 
 # Vyrun Campaign
