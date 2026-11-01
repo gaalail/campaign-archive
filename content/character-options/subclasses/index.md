@@ -23,7 +23,7 @@ Click your class to see available subclasses:
 - [[character-options/subclasses/Druid/index|Druid]] (4 circles)
 - [[character-options/subclasses/Fighter/index|Fighter]] (20 archetypes)
 - [[character-options/subclasses/Monk/index|Monk]] (22 traditions)
-- [[character-options/subclasses/Paladin/index|Paladin]] (4 oaths)
+- [[character-options/subclasses/Paladin/index|Paladin]] (24 oaths)
 - [[character-options/subclasses/Ranger/index|Ranger]] (4 archetypes)
 - [[character-options/subclasses/Rogue/index|Rogue]] (4 archetypes)
 - [[character-options/subclasses/Sorcerer/index|Sorcerer]] (4 origins)
@@ -50,7 +50,7 @@ Click your class to see available subclasses:
 | Druid         | Circle of Heaven, Circle of Phoenix, Circle of Unicorns, Land                                                                                                                                                                                         | Nature magic             |
 | Fighter       | Arcane Knight, Captain, Champion, Knight Errant, Marksman, Master at Arms, Mystic, Ronin, Runecarver, Shadowdancer, Sylvan Archer, Crusader, Guardian, Guerrilla, Hound Master, Pugilist, Quartermaster, Swordsage, Tinker, Witchblade                | Martial prowess          |
 | Monk          | Open Hand, Astral Warrior, Boulder, Brawler, Drunken Fist, Ferocity, Flowing River, Harmony, Hurricane, Mystic, Radiance, Reaper, Rising Dragon, Sacred Inks, Shadow Arts, Shining Steel, Vigilante, Void, Wu Jen, Angels, Cardinal Virtues, Pilgrims | Disciplined power        |
-| Paladin       | Devotion, Oath of Righteousness, Templar, Zealot                                                                                                                                                                                                      | Holy oath                |
+| Paladin       | [[character-options/subclasses/Paladin/index]] (24 oaths, 2 parts)                                                                                                                                                                                    | Holy oath                |
 | Ranger        | Evil Slayer, Holy Messenger, Hunter, Keeper of Light                                                                                                                                                                                                  | Primal tracking          |
 | Rogue         | Chainbreaker, Divine Blade, Thief, Vigilante                                                                                                                                                                                                          | Stealth and cunning      |
 | Sorcerer      | Draconic, Prismatic, Starborn, Knight Dragon Bloodline                                                                                                                                                                                                | Innate magic             |
