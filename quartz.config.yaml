@@ -116,6 +116,11 @@ plugins:
     layout:
       position: right
       priority: 10
+  - source: "./quartz/plugins/campaign-atlas"
+    enabled: true
+    layout:
+      position: beforeBody
+      priority: 12
   - source: "@quartz-community/search"
     enabled: true
     layout:

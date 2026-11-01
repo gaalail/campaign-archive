@@ -18,6 +18,7 @@ import { fileURLToPath } from "url"
 import { parse as parseYaml } from "yaml"
 import { validateItemCounts, validateSpellCounts } from "./content-counts.js"
 import { validateMetadata } from "./metadata-schema.js"
+import { validateMapCoordinates } from "./campaign-validation.js"
 import {
   createLinkHealthAllowlist,
   extractWikilinks,
@@ -663,6 +664,11 @@ function checkCampaignRelationships() {
               `${relative}: ${field} target "${target}" does not resolve within campaign "${campaignId}"`,
             )
           }
+        }
+      }
+      if (entry.metadata.type === "Place") {
+        for (const issue of validateMapCoordinates(entry.metadata)) {
+          RESULTS.errors.push(`${relative}: ${issue}`)
         }
       }
     }

@@ -142,6 +142,7 @@
           "type": "array",
           "items": { "type": "string", "non_empty": true }
         },
+        "map_image": { "type": "string", "non_empty": true },
         "edition": { "type": "string", "enum_from": "editions" },
         "adaptation": { "type": "string", "enum_from": "adaptations" },
         "license_status": { "type": "string", "enum_from": "license_statuses" },
@@ -186,6 +187,8 @@
         "factions": { "type": "array", "items": { "type": "string", "non_empty": true } },
         "encounters": { "type": "array", "items": { "type": "string", "non_empty": true } },
         "appeared_in": { "type": "array", "items": { "type": "string", "non_empty": true } },
+        "map_x": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "map_y": { "type": "integer", "minimum": 0, "maximum": 100 },
         "source_type": { "type": "string", "enum_from": "source_types" },
         "content_status": { "type": "string", "enum_from": "content_status" },
         "incomplete_reason": { "type": "string", "non_empty": true }

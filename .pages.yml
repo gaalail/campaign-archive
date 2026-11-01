@@ -270,6 +270,21 @@ _campaign_encounters_field: &campaign_encounters
   type: string
   list: true
 
+_campaign_map_image_field: &campaign_map_image
+  name: map_image
+  label: Site-relative campaign map image path (e.g. media/world-map.png)
+  type: string
+
+_campaign_map_x_field: &campaign_map_x
+  name: map_x
+  label: Atlas horizontal position (0-100%)
+  type: number
+
+_campaign_map_y_field: &campaign_map_y
+  name: map_y
+  label: Atlas vertical position (0-100%)
+  type: number
+
 media:
   input: content/media
   output: /campaign-archive/media
@@ -332,6 +347,8 @@ content:
               - *campaign_factions
               - *campaign_encounters
               - *appeared_in
+              - *campaign_map_x
+              - *campaign_map_y
               - *tags
               - *image
               - *content_status
@@ -359,6 +376,7 @@ content:
               - *campaign_month_names
               - *campaign_days_per_month
               - *campaign_weekday_names
+              - *campaign_map_image
               - *legacy_aliases
               - *content_status
               - *incomplete_reason
@@ -406,6 +424,8 @@ content:
               - *campaign_factions
               - *campaign_encounters
               - *appeared_in
+              - *campaign_map_x
+              - *campaign_map_y
               - *tags
               - *image
               - *content_status
@@ -433,6 +453,7 @@ content:
               - *campaign_month_names
               - *campaign_days_per_month
               - *campaign_weekday_names
+              - *campaign_map_image
               - *legacy_aliases
               - *content_status
               - *incomplete_reason
@@ -480,6 +501,8 @@ content:
               - *campaign_factions
               - *campaign_encounters
               - *appeared_in
+              - *campaign_map_x
+              - *campaign_map_y
               - *tags
               - *image
               - *content_status
@@ -507,6 +530,7 @@ content:
               - *campaign_month_names
               - *campaign_days_per_month
               - *campaign_weekday_names
+              - *campaign_map_image
               - *legacy_aliases
               - *content_status
               - *incomplete_reason
