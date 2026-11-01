@@ -7,12 +7,14 @@ canonical_id: campaign-vyrun
 campaign_id: vyrun
 calendar_id: vyrun-calendar
 calendar_name: Vyrun Calendar
-calendar_system: custom
-current_year: 1
-current_month: 1
-current_day: 1
-calendar_month_names: []
-calendar_weekday_names: []
+calendar_system: gregorian
+current_year: 2015
+current_month: 9
+current_day: 20
+calendar_month_names:
+  [January, February, March, April, May, June, July, August, September, October, November, December]
+calendar_days_per_month: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+calendar_weekday_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
 source_type: campaign-original
 content_status: incomplete
 incomplete_reason: Campaign chronology, calendar rules, and location map are still being established
@@ -48,6 +50,16 @@ Everything for the Vyrun campaign. New entries show up in the tables below autom
 - The frontier itself seems to resist complete settlement
 
 **Example:** "Vyrun is a sprawling continent where magic has recently returned after centuries of silence. Players are among the first to wield it again, and everyone wants to control them."
+
+---
+
+## Campaign Calendar
+
+**Current date:** September 20, 2015
+
+**Calendar system:** Gregorian
+
+Add dated sessions and campaign events to the **Sessions** or **Calendar events** tables below. Calendar metadata is validated against Vyrun's configured months and date fields.
 
 ---
 

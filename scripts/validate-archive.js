@@ -545,6 +545,7 @@ function checkCampaignRelationships() {
       data,
       calendarId: data.metadata.calendar_id,
       monthNames: data.metadata.calendar_month_names,
+      daysPerMonth: data.metadata.calendar_days_per_month,
     })
     entriesByCampaign.set(campaignId, [])
   }
@@ -589,6 +590,27 @@ function checkCampaignRelationships() {
         RESULTS.errors.push(
           `${relative}: in-game month ${data.metadata.month} exceeds the campaign's ${hub.monthNames.length} defined months`,
         )
+      }
+      if (
+        Number.isInteger(data.metadata.year) &&
+        Number.isInteger(data.metadata.month) &&
+        Number.isInteger(data.metadata.day) &&
+        Array.isArray(hub.daysPerMonth) &&
+        hub.daysPerMonth.length === hub.monthNames?.length
+      ) {
+        let days = Number(hub.daysPerMonth[data.metadata.month - 1])
+        if (
+          data.metadata.month === 2 &&
+          data.metadata.year % 4 === 0 &&
+          (data.metadata.year % 100 !== 0 || data.metadata.year % 400 === 0)
+        ) {
+          days = 29
+        }
+        if (data.metadata.day < 1 || data.metadata.day > days) {
+          RESULTS.errors.push(
+            `${relative}: in-game day ${data.metadata.day} is outside month ${data.metadata.month}, which has ${days} days`,
+          )
+        }
       }
     }
 

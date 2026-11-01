@@ -209,6 +209,12 @@ _campaign_month_names_field: &campaign_month_names
   type: string
   list: true
 
+_campaign_days_per_month_field: &campaign_days_per_month
+  name: calendar_days_per_month
+  label: Days per month
+  type: number
+  list: true
+
 _campaign_weekday_names_field: &campaign_weekday_names
   name: calendar_weekday_names
   label: Calendar weekday names
@@ -351,6 +357,7 @@ content:
               - *campaign_current_month
               - *campaign_current_day
               - *campaign_month_names
+              - *campaign_days_per_month
               - *campaign_weekday_names
               - *legacy_aliases
               - *content_status
@@ -424,6 +431,7 @@ content:
               - *campaign_current_month
               - *campaign_current_day
               - *campaign_month_names
+              - *campaign_days_per_month
               - *campaign_weekday_names
               - *legacy_aliases
               - *content_status
@@ -497,6 +505,7 @@ content:
               - *campaign_current_month
               - *campaign_current_day
               - *campaign_month_names
+              - *campaign_days_per_month
               - *campaign_weekday_names
               - *legacy_aliases
               - *content_status

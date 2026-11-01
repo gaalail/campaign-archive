@@ -134,6 +134,10 @@
           "type": "array",
           "items": { "type": "string", "non_empty": true }
         },
+        "calendar_days_per_month": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 1, "maximum": 31 }
+        },
         "calendar_weekday_names": {
           "type": "array",
           "items": { "type": "string", "non_empty": true }
