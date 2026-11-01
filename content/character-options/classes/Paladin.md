@@ -123,7 +123,7 @@ The Paladin table shows how many spell slots you have to cast your spells of 1st
 
 At 2nd level, you know two 1st-level spells from the Paladin spell list. The Spells Known column of the Paladin table shows when you learn more Paladin spells. Each spell you learn must be of a level for which you have spell slots. When you gain a Paladin level, you can replace one Paladin spell you know with another of your choice.
 
-The smite spells (Banishing, Blinding, Branding, Searing, Staggering, Thunderous, and Wrathful Smite) aren't on the Paladin spell list; Smite Paths replace them.
+Smite Paths are class features, not spells. They use your spell slots but don't count as Paladin spells.
 
 Browse available spells by level:
 
@@ -144,11 +144,15 @@ You use a holy symbol as the focus for Paladin spells. A holy symbol is a Tiny o
 
 _2nd-level Paladin feature_
 
-You can channel your conviction through your weapon. When you hit a creature with a melee weapon attack or an unarmed strike, you can expend a spell slot to use one smite from a Smite Path you know, or an Oath Smite granted by your Sacred Oath. You can use only one smite per hit.
+You channel your conviction through your weapon. When you hit with a melee weapon attack or an unarmed strike, you can expend a spell slot to use one smite from a Smite Path you know, or an Oath Smite granted by your Sacred Oath. You can use only one smite per hit.
 
-You learn one Smite Path at 2nd level and a second at 11th level. Each path holds five smites, and you gain access to a smite when you reach the level in its prerequisite. Each smite lists the lowest spell slot it accepts; you can expend a slot of that level or higher. See the [[character-options/class-options/smite-paths/index|Smite Paths]] section for the path rules, damage dice, saving throws, and concentration. An Oath Smite belongs to no Smite Path and can be used with any spell slot.
+You choose one Smite Path at 2nd level and a second at 11th level. Each path has five smites, one for each spell slot level from 1st to 5th. Smites unlock at 2nd, 5th, 9th, 13th, and 17th level, respectively. Each smite lists the lowest slot it accepts; a higher-level slot adds one damage die for each level above that, to a maximum of six dice. A 5th-tier smite has fixed damage and accepts only a 5th-level slot.
 
-A smite that requires concentration can't be used while you concentrate on a spell, and casting a spell that requires concentration ends the smite. You can concentrate on only one smite at a time.
+A smite's saving throw DC equals your spell save DC. A smite marked concentration lasts until your concentration is broken, as if you were concentrating on a spell. You can't use it while concentrating on a spell, casting a concentration spell ends it, and you can concentrate on only one smite at a time. Any effect that would last past the end of the target's next turn requires concentration.
+
+No smite effect lasts longer than 1 minute, and no smite affects objects or the world; smites affect creatures in the fight. A damage die marked with an asterisk increases one size when you reach 9th level (d6 to d8, or d8 to d10). Each path has one damage type, which Righteous Strikes uses; see the Righteous Strikes table. Some Sacred Oaths grant an additional Oath Smite that belongs to no path; its rules appear in the Sacred Oaths document and it follows these same rules.
+
+See the [[character-options/class-options/smite-paths/index|Smite Paths]] section for each path's five smites and full rules.
 
 ### Sacred Oath
 
