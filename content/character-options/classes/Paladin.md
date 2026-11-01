@@ -79,7 +79,7 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ### Quick Build
 
-Make Strength your highest ability score, followed by Charisma. Choose the Acolyte background and the Balanced Fighting style. At 2nd level, choose the Smite Path whose damage type and effects you most want to use.
+Make Strength your highest ability score, followed by Charisma. Choose the Acolyte background. Choose Balanced Fighting as your Fighting Style. At 2nd level, pick the Smite Path whose damage type and effects you most want to use.
 
 ### Multiclassing
 
@@ -144,9 +144,9 @@ You use a holy symbol as the focus for Paladin spells. A holy symbol is a Tiny o
 
 _2nd-level Paladin feature_
 
-You can channel your conviction through your weapon. When you hit a creature with a melee weapon attack or an unarmed strike, you can expend a spell slot to smite it with one of the smites from your Smite Paths. You can use only one smite per hit.
+You can channel your conviction through your weapon. When you hit a creature with a melee weapon attack or an unarmed strike, you can expend a spell slot to use one smite from a Smite Path you know, or an Oath Smite granted by your Sacred Oath. You can use only one smite per hit.
 
-You learn one Smite Path at 2nd level and a second at 11th level. Each path holds five smites, and you gain access to a smite when you reach the level in its prerequisite. Each smite lists the lowest spell slot it accepts; you can expend a slot of that level or higher. See the [[character-options/class-options/smite-paths/index|Smite Paths]] section for the path rules, damage dice, saving throws, and concentration.
+You learn one Smite Path at 2nd level and a second at 11th level. Each path holds five smites, and you gain access to a smite when you reach the level in its prerequisite. Each smite lists the lowest spell slot it accepts; you can expend a slot of that level or higher. See the [[character-options/class-options/smite-paths/index|Smite Paths]] section for the path rules, damage dice, saving throws, and concentration. An Oath Smite belongs to no Smite Path and can be used with any spell slot.
 
 A smite that requires concentration can't be used while you concentrate on a spell, and casting a spell that requires concentration ends the smite. You can concentrate on only one smite at a time.
 
@@ -154,9 +154,9 @@ A smite that requires concentration can't be used while you concentrate on a spe
 
 _3rd-level Paladin feature_
 
-At 3rd level, choose a Sacred Oath that best represents your beliefs. Oath options include the Oath of the Ancients, Conquest, Devotion, Glory, Splendor, Throne, Vengeance, Vigilance, Repentance, Oathless, and Blackguard.
+At 3rd level, choose a Sacred Oath that best represents your beliefs. The available Oaths are Oath of the Ancients, Beauty, the Blade, Conquest, the Corsair, Devotion, the Exorcist, the Forge, Glory, Inquisition, Liberty, Mysticism, Prosperity, the Shield, Splendor, the Templar, the Throne, Vengeance, Vigilance, the Wilds, and the Zealot. The archive also includes Repentance, Oathless, and Blackguard. Browse the [[character-options/subclasses/Paladin/index|Paladin Oath catalogue]].
 
-Your Sacred Oath grants features at 3rd level, and again when you reach 7th, 15th, and 20th level in this class.
+Your Sacred Oath grants features at 3rd level, and again when you reach 7th, 15th, and 20th level in this class. Some Oaths grant an **Oath Smite** at 3rd level. An Oath Smite belongs to no Smite Path and works with any spell slot. Many Oaths also grant Channel Divinity options, each of which lists its Resolve cost and has no other limit. The Sacred Oaths catalogue contains each Oath's full rules.
 
 #### Oath Spells
 
@@ -203,6 +203,8 @@ _6th-level Paladin feature_
 Unwavering belief in your creed bolsters those who stand alongside you. You exude an invisible aura in a 10-foot radius while you aren't incapacitated. Your aura benefits only you and creatures of your choice.
 
 Creatures under your Aura of Protection can add your Charisma modifier (minimum +0) to saving throws. The aura's radius increases at the levels shown in the Paladin table.
+
+**Surge.** As a bonus action, expend 2 Resolve to double your aura's radius until the start of your next turn.
 
 ### Divine Health
 
