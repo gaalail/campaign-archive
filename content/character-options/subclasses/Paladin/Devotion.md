@@ -2,52 +2,37 @@
 entity_type: character_option
 canonical_id: character_option.character-options.subclasses.paladin.devotion
 edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Devotion
+adaptation: adapted
+license_status: reference-only
+title: "Oath of Devotion"
 parent_class: Paladin
-summary: Sacred Oath for the Paladin
-source: SRD 5.1
-source_type: SRD
+summary: "Revised Sacred Oath for the Paladin"
+source: Alternate Paladin
+source_type: homebrew
 ---
 
-_Sacred Oath (Paladin subclass)_
+# Oath of Devotion
 
-The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels--the perfect servants of good--as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.
+White knights stand as paragons of virtue, justice, and honor. **Tenets:** Compassion—protect the vulnerable and temper mercy with caution; Honesty—don't deceive for your own benefit and keep your word; Honor—do the most good with the least harm and obey rightful authority.
 
-## Bonus spells
+| Paladin level | Oath spells                      |
+| ------------- | -------------------------------- |
+| 3rd           | bless, shield of faith           |
+| 5th           | find steed ll, restoration ll    |
+| 9th           | beacon of hope, remove curse     |
+| 13th          | death ward ll, guardian of faith |
+| 17th          | dawn*, dispel evil and good      |
 
-| Level | Spells                                   |
-| ----- | ---------------------------------------- |
-| 3rd   | Protection from Evil and Good, Sanctuary |
-| 5th   | Lesser Restoration, Zone of Truth        |
-| 9th   | Beacon of Hope, Dispel Magic             |
-| 13th  | Freedom of Movement, Guardian of Faith   |
-| 17th  | Commune, Flame Strike                    |
+**Consecrated Smite (3rd, Oath Smite, radiant).** Wisdom save or, until the end of its next turn, the target can't willingly move closer to you or take reactions. Fiends and undead have disadvantage on the save.
 
-## Features
+**Sacred Weapon (3rd, Channel Divinity, 4 Resolve).** As a bonus action, imbue a melee weapon you hold for 1 minute: it sheds bright light in 30 feet, adds your Charisma modifier to its attack rolls, and is magical. The effect ends if it leaves your hand. When you activate it, you can spend 2 more Resolve to share the fire: choose creatures up to your Charisma modifier (minimum 1) within 30 feet, including yourself. Until the end of each chosen creature's next turn, its weapons deal +1d4 radiant damage on a hit (+1d8 at 10th level).
 
-> [!info]- Channel Divinity: Sacred Weapon (level 3)
-> As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.
->
-> You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.
+**Aura of Devotion (7th).** Creatures under your Aura of Protection are immune to charmed. You can suspend the effect on a charmed creature while it remains in your aura.
 
-> [!info]- Channel Divinity: Turn the Unholy (level 3)
-> As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.
->
-> A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.
+**Purity of Spirit (15th).** You are always under protection from evil and good.
 
-> [!info]- Aura of Devotion (level 7)
-> Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.
->
-> At 18th level, the range of this aura increases to 30 feet.
+**Avatar of Devotion (20th).** Manifest angelic wings (flying speed 60 feet); every melee weapon you hold becomes a Sacred Weapon; you radiate bright sunlight within your Aura of Protection.
 
-> [!info]- Purity of Spirit (level 15)
-> Beginning at 15th level, you are always under the effects of a protection from evil and good spell.
+---
 
-> [!info]- Holy Nimbus (level 20)
-> At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.
->
-> Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.
->
-> In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.
+[[character-options/subclasses/Paladin/index|All Paladin Oaths]] ? [[character-options/classes/Paladin|Paladin class]]
