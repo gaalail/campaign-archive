@@ -81,6 +81,8 @@ const site = collectSite()
 const failures = []
 
 try {
+  const context = await browser.newContext()
+  const page = await context.newPage()
   const targets = [
     ...[...site.browserTargets]
       .filter((url) => url !== basePath)
@@ -95,8 +97,6 @@ try {
     if (seen.has(url)) continue
     seen.add(url)
     const expectedPath = new URL(expected, localOrigin).pathname
-    const context = await browser.newContext()
-    const page = await context.newPage()
     try {
       const response = await page.goto(`${localOrigin}${url}`, {
         waitUntil: "domcontentloaded",
@@ -114,8 +114,6 @@ try {
       }
     } catch (error) {
       failures.push(`${url}: ${error.message}`)
-    } finally {
-      await context.close()
     }
   }
 
