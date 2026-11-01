@@ -79,23 +79,8 @@ try {
 
 const site = collectSite()
 const failures = []
-const badResponses = new Set()
-const page = await browser.newPage()
-page.on("response", (response) => {
-  if (response.url().startsWith(localOrigin) && response.status() >= 400) {
-    badResponses.add(`${response.status()} ${response.url()}`)
-  }
-})
-page.on("requestfailed", (request) => {
-  if (request.url().startsWith(localOrigin)) {
-    badResponses.add(
-      `request failed ${request.url()}: ${request.failure()?.errorText ?? "unknown"}`,
-    )
-  }
-})
 
 try {
-  await page.goto(`${localOrigin}${basePath}/`, { waitUntil: "domcontentloaded" })
   const targets = [
     ...[...site.browserTargets]
       .filter((url) => url !== basePath)
@@ -109,42 +94,30 @@ try {
   for (const { url, expected } of targets) {
     if (seen.has(url)) continue
     seen.add(url)
-    const priorPath = new URL(page.url()).pathname
-    if (priorPath === expected || priorPath === url) continue
+    const expectedPath = new URL(expected, localOrigin).pathname
+    const context = await browser.newContext()
+    const page = await context.newPage()
     try {
-      await page.evaluate((href) => {
-        const anchor = document.createElement("a")
-        anchor.href = href
-        anchor.textContent = "navigation check"
-        document.body.append(anchor)
-        anchor.click()
-        anchor.remove()
-      }, `${localOrigin}${url}`)
-      await page.waitForTimeout(1000)
-      const result = await page.evaluate(() => ({
-        pathname: location.pathname,
-        title: document.title,
-        heading: document.querySelector("h1")?.textContent ?? "",
-        body: document.body.innerText.slice(0, 500),
-      }))
-      if (!result.pathname.startsWith(`${basePath}/`)) {
-        failures.push(`${url} left the base path at ${result.pathname}`)
+      const response = await page.goto(`${localOrigin}${url}`, {
+        waitUntil: "domcontentloaded",
+        timeout: 10_000,
+      })
+      await page.waitForURL((current) => current.pathname === expectedPath, {
+        timeout: 10_000,
+      })
+      const finalPath = new URL(page.url()).pathname
+      if (finalPath !== expectedPath) {
+        failures.push(`${url} resolved to ${finalPath}, expected ${expectedPath}`)
       }
-      if (/not found|404/i.test(`${result.title} ${result.heading}`)) {
-        failures.push(`${url} opened a Not Found page (${result.title || result.heading})`)
+      if (response && response.status() >= 400) {
+        failures.push(`${url} returned HTTP ${response.status()}`)
       }
     } catch (error) {
-      const state = await page.evaluate(() => ({
-        pathname: location.pathname,
-        title: document.title,
-        progress: Boolean(document.querySelector(".navigation-progress")),
-      }))
-      failures.push(`${url}: ${error.message}; current=${JSON.stringify(state)}`)
-      await page.goto(`${localOrigin}${basePath}/`, { waitUntil: "domcontentloaded" })
+      failures.push(`${url}: ${error.message}`)
+    } finally {
+      await context.close()
     }
   }
-
-  for (const failure of badResponses) failures.push(failure)
 
   if (failures.length) {
     console.error(failures.join("\n"))
