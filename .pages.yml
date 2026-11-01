@@ -181,6 +181,40 @@ _campaign_calendar_id_field: &campaign_calendar_id
   label: Campaign calendar ID
   type: string
 
+_campaign_calendar_system_field: &campaign_calendar_system
+  name: calendar_system
+  label: Calendar system
+  type: select
+  options:
+    values: [gregorian, custom, campaign-defined]
+
+_campaign_current_year_field: &campaign_current_year
+  name: current_year
+  label: Current in-game year
+  type: number
+
+_campaign_current_month_field: &campaign_current_month
+  name: current_month
+  label: Current in-game month number
+  type: number
+
+_campaign_current_day_field: &campaign_current_day
+  name: current_day
+  label: Current in-game day number
+  type: number
+
+_campaign_month_names_field: &campaign_month_names
+  name: calendar_month_names
+  label: Calendar month names
+  type: string
+  list: true
+
+_campaign_weekday_names_field: &campaign_weekday_names
+  name: calendar_weekday_names
+  label: Calendar weekday names
+  type: string
+  list: true
+
 _campaign_session_number_field: &campaign_session_number
   name: session_number
   label: Session number
@@ -279,7 +313,19 @@ content:
                 label: Type
                 type: select
                 options: *entry_types
+              - *campaign_id
               - *summary
+              - *campaign_calendar_id
+              - *campaign_session_number
+              - *campaign_date
+              - *campaign_year
+              - *campaign_month
+              - *campaign_day
+              - *campaign_locations
+              - *campaign_characters
+              - *campaign_factions
+              - *campaign_encounters
+              - *appeared_in
               - *tags
               - *image
               - *content_status
@@ -292,8 +338,24 @@ content:
             type: file
             path: content/campaigns/ra-golvek/index.md
             fields:
+              - *entity_type
+              - *canonical_id
               - *title_str
+              - *campaign_id
+              - *campaign_calendar_id
+              - name: calendar_name
+                label: Calendar name
+                type: string
+              - *campaign_calendar_system
+              - *campaign_current_year
+              - *campaign_current_month
+              - *campaign_current_day
+              - *campaign_month_names
+              - *campaign_weekday_names
               - *legacy_aliases
+              - *content_status
+              - *incomplete_reason
+              - *source_type
               - *body
 
       - name: vyrun
@@ -357,6 +419,12 @@ content:
               - name: calendar_name
                 label: Calendar name
                 type: string
+              - *campaign_calendar_system
+              - *campaign_current_year
+              - *campaign_current_month
+              - *campaign_current_day
+              - *campaign_month_names
+              - *campaign_weekday_names
               - *legacy_aliases
               - *content_status
               - *incomplete_reason
@@ -391,7 +459,19 @@ content:
                 label: Type
                 type: select
                 options: *entry_types
+              - *campaign_id
               - *summary
+              - *campaign_calendar_id
+              - *campaign_session_number
+              - *campaign_date
+              - *campaign_year
+              - *campaign_month
+              - *campaign_day
+              - *campaign_locations
+              - *campaign_characters
+              - *campaign_factions
+              - *campaign_encounters
+              - *appeared_in
               - *tags
               - *image
               - *content_status
@@ -404,8 +484,24 @@ content:
             type: file
             path: content/campaigns/curse-of-strahd/index.md
             fields:
+              - *entity_type
+              - *canonical_id
               - *title_str
+              - *campaign_id
+              - *campaign_calendar_id
+              - name: calendar_name
+                label: Calendar name
+                type: string
+              - *campaign_calendar_system
+              - *campaign_current_year
+              - *campaign_current_month
+              - *campaign_current_day
+              - *campaign_month_names
+              - *campaign_weekday_names
               - *legacy_aliases
+              - *content_status
+              - *incomplete_reason
+              - *source_type
               - *body
 
   # Global rules

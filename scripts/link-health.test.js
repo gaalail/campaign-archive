@@ -72,6 +72,27 @@ test("content metadata schema requires core class, spell, and item fields", () =
   )
 })
 
+test("campaign hub metadata requires calendar configuration", () => {
+  const schema = metadataSchema.schemas.campaign
+  const valid = {
+    title: "Vyrun",
+    campaign_id: "vyrun",
+    calendar_id: "vyrun-calendar",
+    calendar_name: "Vyrun Calendar",
+    calendar_system: "custom",
+    current_year: 1,
+    current_month: 1,
+    current_day: 1,
+  }
+
+  assert.deepEqual(validateMetadata(valid, schema, metadataSchema), [])
+  assert.ok(
+    validateMetadata({ title: "Missing Calendar" }, schema, metadataSchema).includes(
+      'missing required "campaign_id"',
+    ),
+  )
+})
+
 test("campaign entry metadata validates campaign, type, and game-time foundations", () => {
   const schema = metadataSchema.schemas.campaign_entry
   const valid = {

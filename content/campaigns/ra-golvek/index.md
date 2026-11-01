@@ -2,6 +2,20 @@
 title: Ra Gol'vek
 tags: [ra-golvek]
 aliases: [ra-golvek/index]
+entity_type: campaign
+canonical_id: campaign-ra-golvek
+campaign_id: ra-golvek
+calendar_id: ra-golvek-calendar
+calendar_name: Ra Gol'vek Calendar
+calendar_system: custom
+current_year: 1
+current_month: 1
+current_day: 1
+calendar_month_names: []
+calendar_weekday_names: []
+source_type: campaign-original
+content_status: incomplete
+incomplete_reason: Campaign chronology, calendar rules, and location map are still being established
 ---
 
 # Ra Gol'vek Campaign

@@ -13,6 +13,7 @@
     "house_rule"
   ],
   "campaigns": ["curse-of-strahd", "ra-golvek", "vyrun"],
+  "calendar_systems": ["gregorian", "custom", "campaign-defined"],
   "schemas": {
     "rule": {
       "required": ["title", "category"],
@@ -106,7 +107,16 @@
       }
     },
     "campaign": {
-      "required": ["title"],
+      "required": [
+        "title",
+        "campaign_id",
+        "calendar_id",
+        "calendar_name",
+        "calendar_system",
+        "current_year",
+        "current_month",
+        "current_day"
+      ],
       "fields": {
         "entity_type": {
           "type": "string",
@@ -116,6 +126,18 @@
         "campaign_id": { "type": "string", "enum_from": "campaigns" },
         "calendar_id": { "type": "string", "non_empty": true },
         "calendar_name": { "type": "string", "non_empty": true },
+        "calendar_system": { "type": "string", "enum_from": "calendar_systems" },
+        "current_year": { "type": "integer" },
+        "current_month": { "type": "integer", "minimum": 1 },
+        "current_day": { "type": "integer", "minimum": 1 },
+        "calendar_month_names": {
+          "type": "array",
+          "items": { "type": "string", "non_empty": true }
+        },
+        "calendar_weekday_names": {
+          "type": "array",
+          "items": { "type": "string", "non_empty": true }
+        },
         "edition": { "type": "string", "enum_from": "editions" },
         "adaptation": { "type": "string", "enum_from": "adaptations" },
         "license_status": { "type": "string", "enum_from": "license_statuses" },

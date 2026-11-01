@@ -416,7 +416,9 @@ function checkMetadata() {
             ? "item"
             : parts[0] === "campaigns"
               ? isIndex
-                ? "campaign"
+                ? parts.length === 2
+                  ? undefined
+                  : "campaign"
                 : "campaign_entry"
               : parts[0] === "monsters" && !isIndex
                 ? "monster"
@@ -539,7 +541,11 @@ function checkCampaignRelationships() {
     if (relativeParts.length === 2) continue
     const folder = relativeParts[1]
     const campaignId = String(data.metadata.campaign_id || folder).trim()
-    campaignHubs.set(campaignId, { data, calendarId: data.metadata.calendar_id })
+    campaignHubs.set(campaignId, {
+      data,
+      calendarId: data.metadata.calendar_id,
+      monthNames: data.metadata.calendar_month_names,
+    })
     entriesByCampaign.set(campaignId, [])
   }
 
@@ -572,6 +578,16 @@ function checkCampaignRelationships() {
       ) {
         RESULTS.errors.push(
           `${relative}: calendar_id "${data.metadata.calendar_id}" does not match campaign calendar "${hub.calendarId}"`,
+        )
+      }
+      if (
+        Array.isArray(hub.monthNames) &&
+        hub.monthNames.length > 0 &&
+        Number.isInteger(data.metadata.month) &&
+        (data.metadata.month < 1 || data.metadata.month > hub.monthNames.length)
+      ) {
+        RESULTS.errors.push(
+          `${relative}: in-game month ${data.metadata.month} exceeds the campaign's ${hub.monthNames.length} defined months`,
         )
       }
     }

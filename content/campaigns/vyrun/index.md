@@ -7,6 +7,12 @@ canonical_id: campaign-vyrun
 campaign_id: vyrun
 calendar_id: vyrun-calendar
 calendar_name: Vyrun Calendar
+calendar_system: custom
+current_year: 1
+current_month: 1
+current_day: 1
+calendar_month_names: []
+calendar_weekday_names: []
 source_type: campaign-original
 content_status: incomplete
 incomplete_reason: Campaign chronology, calendar rules, and location map are still being established

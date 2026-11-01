@@ -11,6 +11,16 @@ properties:
     displayName: Type
   summary:
     displayName: Summary
+  date:
+    displayName: In-game date
+  locations:
+    displayName: Locations
+  characters:
+    displayName: Characters / NPCs
+  factions:
+    displayName: Factions
+  encounters:
+    displayName: Encounters
   tags:
     displayName: Tags
 views:
@@ -43,7 +53,25 @@ views:
     filters:
       and:
         - type == "Session"
-    order: [formula.Name, summary]
+    order: [formula.Name, date, locations, characters, encounters, summary]
+    sort:
+      - property: date
+        direction: ASC
+  - type: table
+    name: Calendar events
+    filters:
+      and:
+        - type == "CalendarEvent"
+    order: [formula.Name, date, locations, summary]
+    sort:
+      - property: date
+        direction: ASC
+  - type: table
+    name: Encounters
+    filters:
+      and:
+        - type == "Encounter"
+    order: [formula.Name, locations, characters, summary]
     sort:
       - property: file.name
         direction: ASC
