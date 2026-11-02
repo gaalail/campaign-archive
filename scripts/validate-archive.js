@@ -453,7 +453,12 @@ function checkMetadata() {
   const warlockClassOptionPath = /^character-options\/class-options\//
   for (const data of Object.values(fileCache)) {
     const relative = path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/")
-    if (relative.endsWith("/index.md") || !warlockClassOptionPath.test(relative) || data.metadata.parent_class !== "Warlock") continue
+    if (
+      relative.endsWith("/index.md") ||
+      !warlockClassOptionPath.test(relative) ||
+      data.metadata.parent_class !== "Warlock"
+    )
+      continue
     const schema = WARLOCK_OPTION_SCHEMA.schemas.patron_option
     const failures = validateMetadata(data.metadata, schema, WARLOCK_OPTION_SCHEMA)
     for (const failure of failures) {
@@ -465,7 +470,9 @@ function checkMetadata() {
       schemaErrorCount++
     }
     if (/\/familiars\//.test(relative) && data.metadata.option_group !== "Eldritch Familiar") {
-      RESULTS.errors.push(`${relative}: Eldritch Familiar entries must use option_group: Eldritch Familiar`)
+      RESULTS.errors.push(
+        `${relative}: Eldritch Familiar entries must use option_group: Eldritch Familiar`,
+      )
       schemaErrorCount++
     }
     if (/\/pact-foci\//.test(relative) && data.metadata.option_group !== "Pact Focus") {
@@ -474,7 +481,9 @@ function checkMetadata() {
     }
     const prose = String(data.content || "")
     if (/source supplies|transcribe|placeholder|incomplete mechanics/i.test(prose)) {
-      RESULTS.errors.push(`${relative}: unresolved placeholder mechanics are not allowed in Warlock option content`)
+      RESULTS.errors.push(
+        `${relative}: unresolved placeholder mechanics are not allowed in Warlock option content`,
+      )
       schemaErrorCount++
     }
   }

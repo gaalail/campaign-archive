@@ -2,7 +2,9 @@ import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
-throw new Error("Deprecated: this importer generated unverified Warlock option summaries. Restore source content directly; do not run this script.")
+throw new Error(
+  "Deprecated: this importer generated unverified Warlock option summaries. Restore source content directly; do not run this script.",
+)
 
 const contentRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../content")
 const optionsRoot = path.join(contentRoot, "character-options/class-options")
