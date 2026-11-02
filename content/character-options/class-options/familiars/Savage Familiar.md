@@ -9,25 +9,46 @@ option_group: Eldritch Familiar
 parent_class: Warlock
 min_level: 3
 prerequisite: Eldritch Familiar
-summary: "Eldritch Familiar stat block sourced from Alternate Warlock: Savage Familiar."
+summary: "Small Monstrosity familiar form."
 source: Alternate Warlock
 source_type: third-party
+content_status: complete
 ---
 
 ## Stat Block
 
-Small Monstrosity, Patron AlignmentAC 12 +PB (natural armor)HP 5 + three times your Warlock levelSpeed 30 ft., climb 30 ft.
-MODSAVEStr15+2+2Int6-2-2
-MODSAVEDex10+0+0Wis8-1-1
-MODSAVECon16+3+3Cha2-4-4Resistances Acid, Cold, PoisonImmunities PoisonedSenses Darkvision 120 ft.Languages None, understands its Warlock
+**Small Monstrosity, Patron Alignment**
+
+- **Armor Class:** 12 + PB (natural armor)
+- **Hit Points:** 5 + 3 × Warlock level
+- **Speed:** 30 ft., climb 30 ft.
+- **Ability Scores:** Str 15 (+2), Dex 10 (+0), Con 16 (+3), Int 6 (-2), Wis 8 (-1), Cha 2 (-4)
+- **Other:** Resistance: Acid, Cold, Poison; Immunity: Poisoned; Darkvision 120 ft.; understands its Warlock.
 
 ### Traits
 
-Eldritch Bond. When the Familiar is forced to make an ability check or saving throw, it adds your PB to its roll.Hit Dice. The Familiar has a number of d4 Hit Dice equal to your Warlock level. It also gains all the normal benefits of both short and long rests.Iron Claws. The Familiar can climb on sheer surfaces and upside down without needing to make an ability check.Magic Resistance. The Familiar has advantage on saving throws to resist spells and other magic effects.
+Eldritch Bond. When the familiar is forced to make an ability check or saving throw, add the Warlock’s Proficiency Bonus.
+
+Hit Dice. The familiar has a number of d4 Hit Dice equal to the Warlock level and gains the normal benefits of short and long rests.
+
+Magic Resistance. The familiar has advantage on saving throws against spells and other magical effects.
+
+Iron Claws. Can climb sheer surfaces and ceilings without checks.
 
 ### Actions
 
-Bite. Melee Weapon Attack: Spell Attack Modifier to hit, reach 5 ft., one target. Hit: (1d4 +3 +PB) Slashing, and the target must make a Constitution saving throw or be Poisoned until the start of the Familiar's next turn.
+Bite. Melee Spell Attack: Warlock spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 + 3 + PB Slashing damage; target makes a Constitution save or is Poisoned until the familiar’s next turn.
+
+**Ability modifiers and saves**
+
+| Ability | Score | Modifier | Save |
+| ------- | ----: | -------: | ---: |
+| STR     |    15 |       +2 |   +2 |
+| DEX     |    10 |       +0 |   +0 |
+| CON     |    16 |       +3 |   +3 |
+| INT     |     6 |       -2 |   -2 |
+| WIS     |     8 |       -1 |   -1 |
+| CHA     |     2 |       -4 |   -4 |
 
 **Prerequisite:** Eldritch Familiar  
 **Minimum level:** 3

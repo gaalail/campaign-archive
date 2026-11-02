@@ -9,7 +9,7 @@ source_type: third-party
 title: Favor of the Master
 option_group: Eldritch Invocation
 parent_class: Warlock
-min_level: 9
+min_level: 8
 prerequisite: Eldritch Familiar
 summary: "At the end of a long rest, choose a Warlock spell of 1st level or higher that you know"
 content_status: complete

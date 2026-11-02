@@ -9,25 +9,48 @@ option_group: Eldritch Familiar
 parent_class: Warlock
 min_level: 3
 prerequisite: Eldritch Familiar
-summary: "Eldritch Familiar stat block sourced from Alternate Warlock: Verdant Familiar."
+summary: "Tiny Plant familiar form."
 source: Alternate Warlock
 source_type: third-party
+content_status: complete
 ---
 
 ## Stat Block
 
-Tiny Plant, Patron AlignmentAC 10 +PB (natural armor)HP 5 + three times your Warlock levelSpeed 25 ft., climb 40 ft.
-MODSAVEStr10+0+0Int3-4-4
-MODSAVEDex13+1+1Wis8-1-1
-MODSAVECon16+3+3Cha8-1-1Resistances Acid, PoisonImmunities Blinded, Deafened, Exhaustion, PoisonedSenses Blindsight 60 ft.Languages Sylvan, understands its Warlock
+**Tiny Plant, Patron Alignment**
+
+- **Armor Class:** 10 + PB (natural armor)
+- **Hit Points:** 5 + 3 × Warlock level
+- **Speed:** 25 ft., climb 40 ft.
+- **Ability Scores:** Str 10 (+0), Dex 13 (+1), Con 16 (+3), Int 3 (-4), Wis 8 (-1), Cha 8 (-1)
+- **Other:** Resistance: Acid, Poison; Immunity: Blinded, Deafened, Exhaustion, Poisoned; Blindsight 60 ft.; Sylvan, understands its Warlock.
 
 ### Traits
 
-Eldritch Bond. When the Familiar is forced to make an ability check or saving throw, it adds your PB to its roll.Evergreen. The Familiar gains temporary hit points equal to your Pact modifier at the start of each of its turns.Hit Dice. The Familiar has a number of d4 Hit Dice equal to your Warlock level. It also gains all the normal benefits of both short and long rests.Magic Resistance. The Familiar has advantage on saving throws to resist spells and other magic effects.Natural Camouflage. When it remains still, the Familiaris indistinguishable from normal plants and foliage.
+Eldritch Bond. When the familiar is forced to make an ability check or saving throw, add the Warlock’s Proficiency Bonus.
+
+Hit Dice. The familiar has a number of d4 Hit Dice equal to the Warlock level and gains the normal benefits of short and long rests.
+
+Magic Resistance. The familiar has advantage on saving throws against spells and other magical effects.
+
+Evergreen. Gains temporary hit points equal to the Pact modifier at the start of each turn.
+
+Natural Camouflage. While still, it is indistinguishable from ordinary plants and foliage.
 
 ### Actions
 
-Lash. Melee Weapon Attack: Spell Attack Modifier to hit, reach 10 ft., one target. Hit: (1d4 +3 +PB) Slashing.
+Lash. Melee Spell Attack: Warlock spell attack modifier to hit, reach 10 ft., one target. Hit: 1d4 + 3 + PB Slashing damage.
+
+**Ability modifiers and saves**
+
+| Ability | Score | Modifier | Save |
+| ------- | ----: | -------: | ---: |
+| STR     |    10 |       +0 |   +0 |
+| DEX     |    13 |       +1 |   +1 |
+| CON     |    16 |       +3 |   +3 |
+| INT     |     3 |       -4 |   -4 |
+| WIS     |     8 |       -1 |   -1 |
+| CHA     |     8 |       -1 |   -1 |
 
 **Prerequisite:** Eldritch Familiar  
 **Minimum level:** 3

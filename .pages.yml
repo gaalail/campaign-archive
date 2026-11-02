@@ -983,9 +983,10 @@ content:
             options:
               values:
                 - Eldritch Invocation
-                - Warlock Pact Focus
-                - Warlock Familiar
-                - Warlock Elder Arcanum
+                - Pact Focus
+                - Otherworldly Patron
+                - Eldritch Familiar
+                - Elder Arcanum
                 - Metamagic
                 - Avatar Feature
                 - Infusion
@@ -1019,14 +1020,6 @@ content:
                 - Order of Reason
                 - Tamer
                 - Thanatomancer
-                - Eldritch Blade
-                - Eldritch Familiar
-                - Eldritch Tome
-                - Eldritch Chalice
-                - Eldritch Flesh
-                - Eldritch Hourglass
-                - Eldritch Instrument
-                - Eldritch Shroud
           - name: min_level
             label: Minimum level
             type: number

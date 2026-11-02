@@ -10,24 +10,28 @@ Your patron has granted you mystical powers. These **Eldritch Invocations** repr
 
 ## How They Work
 
-- You learn invocations at certain levels (2nd, 5th, 7th, 9th, 12th, 15th, 18th)
-- Most have a minimum level requirement
-- Many have prerequisites (e.g., must know Eldritch Blast first)
-- You know a certain number (check your [[Warlock]] class page for specifics)
+- You choose invocations at 1st level, then learn more as shown in the [[Warlock]] table.
+- An invocation prerequisite can be met when you choose that invocation.
+- When you gain a Warlock level, you can replace one known invocation with another for which you qualify.
+- Each invocation is bound to a Trinket. The Warlock class page explains the Trinket rules.
 
 ## Browse by Level
 
-### Level 2 Invocations
+### Level 1 Invocations
 
-Early magical abilities as you bond with your patron.
+Starting occult abilities bound to your Trinkets.
+
+### Level 3 Invocations
+
+New options become available alongside Pact Focus.
 
 ### Level 5 Invocations
 
-Mid-game powers that enhance your magic.
+Invocations for experienced warlocks and their Pact Foci.
 
-### Level 7+ Invocations
+### Level 7 and Higher Invocations
 
-Powerful late-game abilities.
+The Warlock class table and each invocation entry show level prerequisites.
 
 ---
 

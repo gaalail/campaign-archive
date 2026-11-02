@@ -28,6 +28,14 @@
         },
         "title": { "type": "string", "non_empty": true },
         "summary": { "type": "string", "non_empty": true },
+        "subclass_spell_lists": {
+          "type": "array",
+          "items": { "type": "string", "non_empty": true }
+        },
+        "patron_spells": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["Fiend"] }
+        },
         "source": { "type": "string", "non_empty": true },
         "source_type": { "type": "string", "enum_from": "source_types" },
         "edition": { "type": "string", "enum_from": "editions" },
@@ -65,6 +73,29 @@
         "incomplete_reason": { "type": "string", "non_empty": true }
       }
     },
+    "warlock_option": {
+      "required": ["title", "option_group", "parent_class", "source", "source_type"],
+      "fields": {
+        "entity_type": { "type": "string", "enum": ["character_option"] },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "edition": { "type": "string", "enum_from": "editions" },
+        "adaptation": { "type": "string", "enum_from": "adaptations" },
+        "license_status": { "type": "string", "enum_from": "license_statuses" },
+        "title": { "type": "string", "non_empty": true },
+        "option_group": {
+          "type": "string",
+          "enum": ["Eldritch Invocation", "Pact Focus", "Eldritch Familiar", "Elder Arcanum"]
+        },
+        "parent_class": { "type": "string", "enum": ["Warlock", "Fiend"] },
+        "min_level": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "prerequisite": { "type": "string" },
+        "summary": { "type": "string", "non_empty": true },
+        "source": { "type": "string", "non_empty": true },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    },
     "spell": {
       "required": ["title", "level", "school", "classes", "source"],
       "fields": {
@@ -83,6 +114,10 @@
           "type": "array",
           "min_items": 1,
           "items": { "type": "string", "non_empty": true }
+        },
+        "patron_spells": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["Fiend"] }
         },
         "source": { "type": "string", "non_empty": true },
         "source_type": { "type": "string", "enum_from": "source_types" },
@@ -237,6 +272,29 @@
           "type": "array",
           "items": { "type": "string", "non_empty": true }
         },
+        "source_type": { "type": "string", "enum_from": "source_types" },
+        "content_status": { "type": "string", "enum_from": "content_status" },
+        "incomplete_reason": { "type": "string", "non_empty": true }
+      }
+    },
+    "warlock_option": {
+      "required": ["title", "option_group", "parent_class", "source", "source_type"],
+      "fields": {
+        "entity_type": { "type": "string", "enum": ["character_option"] },
+        "canonical_id": { "type": "string", "non_empty": true },
+        "edition": { "type": "string", "enum_from": "editions" },
+        "adaptation": { "type": "string", "enum_from": "adaptations" },
+        "license_status": { "type": "string", "enum_from": "license_statuses" },
+        "title": { "type": "string", "non_empty": true },
+        "option_group": {
+          "type": "string",
+          "enum": ["Eldritch Invocation", "Pact Focus", "Eldritch Familiar", "Elder Arcanum"]
+        },
+        "parent_class": { "type": "string", "enum": ["Warlock", "Fiend"] },
+        "min_level": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "prerequisite": { "type": "string" },
+        "summary": { "type": "string", "non_empty": true },
+        "source": { "type": "string", "non_empty": true },
         "source_type": { "type": "string", "enum_from": "source_types" },
         "content_status": { "type": "string", "enum_from": "content_status" },
         "incomplete_reason": { "type": "string", "non_empty": true }

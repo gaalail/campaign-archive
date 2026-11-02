@@ -9,7 +9,7 @@ source_type: third-party
 title: Commune with Patron
 option_group: Eldritch Invocation
 parent_class: Warlock
-min_level: 9
+min_level: 8
 prerequisite: None
 summary: "You learn contact other plane"
 content_status: complete

@@ -9,25 +9,48 @@ option_group: Eldritch Familiar
 parent_class: Warlock
 min_level: 3
 prerequisite: Eldritch Familiar
-summary: "Eldritch Familiar stat block sourced from Alternate Warlock: Risen Familiar."
+summary: "Small or Medium Undead familiar form."
 source: Alternate Warlock
 source_type: third-party
+content_status: complete
 ---
 
 ## Stat Block
 
-Small or Medium Undead, Patron AlignmentAC 11 +PB (natural armor)HP 5 + three times your Warlock levelSpeed 25 ft., climb 25 ft.
-MODSAVEStr10+0+0Int3-4-4
-MODSAVEDex13+1+1Wis8-1-1
-MODSAVECon16+3+3Cha8-1-1Resistances Cold, NecroticImmunities Poison; Exhaustion, PoisonedSenses Darkvision 60 ft.Languages None, understands its Warlock
+**Small or Medium Undead, Patron Alignment**
+
+- **Armor Class:** 11 + PB (natural armor)
+- **Hit Points:** 5 + 3 × Warlock level
+- **Speed:** 25 ft., climb 25 ft.
+- **Ability Scores:** Str 10 (+0), Dex 13 (+1), Con 16 (+3), Int 3 (-4), Wis 8 (-1), Cha 8 (-1)
+- **Other:** Resistance: Cold, Necrotic; Immunity: Poison, Exhaustion, Poisoned; Darkvision 60 ft.; understands its Warlock.
 
 ### Traits
 
-Deathless Nature. The Familiar does not need to breathe, eat, drink, or sleep. To gain the normal benefits of a short or long rest, it can spend the duration performing light activity, such as keeping watch, or staring ominously into the distance.Eldritch Bond. When the Familiar is forced to make an ability check or saving throw, it adds your PB to its roll.Hit Dice. The Familiar has a number of d4 Hit Dice equal to your Warlock level. It also gains all the normal benefits of both short and long rests.Magic Resistance. The Familiar has advantage on saving throws to resist spells and other magic effects.Undead Fortitude. If the Familiar is reduced to 0 Hit Pointsby damage other than Radiant, it can make a Constitution saving throw (DC = 5 + the damage taken). On a success,the Familiar drops to 1 Hit Point instead.
+Eldritch Bond. When the familiar is forced to make an ability check or saving throw, add the Warlock’s Proficiency Bonus.
+
+Hit Dice. The familiar has a number of d4 Hit Dice equal to the Warlock level and gains the normal benefits of short and long rests.
+
+Magic Resistance. The familiar has advantage on saving throws against spells and other magical effects.
+
+Deathless Nature. Does not need to breathe, eat, drink, or sleep. It can spend rest duration in light activity to gain rest benefits.
+
+Undead Fortitude. When reduced to 0 HP by non-Radiant damage, make a Constitution save (DC 5 + damage taken); on success, drop to 1 HP.
 
 ### Actions
 
-Slam. Melee Weapon Attack: Spell Attack Modifier to hit, reach 5 ft., one target. Hit: (1d4 +3 +PB) Bludgeoning, andif the target is a creature that is not a Construct or Undead, then it cannot regain hit points or gain temporary hit points until the start of the Familiar's next turn.
+Slam. Melee Spell Attack: Warlock spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 + 3 + PB Bludgeoning damage. A living target cannot regain hit points or temporary hit points until the familiar’s next turn.
+
+**Ability modifiers and saves**
+
+| Ability | Score | Modifier | Save |
+| ------- | ----: | -------: | ---: |
+| STR     |    10 |       +0 |   +0 |
+| DEX     |    13 |       +1 |   +1 |
+| CON     |    16 |       +3 |   +3 |
+| INT     |     3 |       -4 |   -4 |
+| WIS     |     8 |       -1 |   -1 |
+| CHA     |     8 |       -1 |   -1 |
 
 **Prerequisite:** Eldritch Familiar  
 **Minimum level:** 3

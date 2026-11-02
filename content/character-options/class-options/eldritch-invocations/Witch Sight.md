@@ -9,7 +9,7 @@ source_type: third-party
 title: Witch Sight
 option_group: Eldritch Invocation
 parent_class: Warlock
-min_level: 9
+min_level: 8
 prerequisite: None
 summary: "While conscious, you have Truesight out to 10 feet"
 content_status: complete

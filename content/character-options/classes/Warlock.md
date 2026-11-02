@@ -138,27 +138,15 @@ Spells learned from an invocation count as Warlock spells but do not count again
 
 ## Pact Focus
 
-At 3rd level, choose one Pact Focus from the catalogue below.
+At 3rd level, choose one of the Pact Foci in the catalogue. Each option's record gives its rules.
 
 ![[warlock-pact-foci.base]]
 
-### Eldritch Blade
+### Eldritch Familiars
 
-As a bonus action, conjure a nonmagical melee weapon of your choice in an empty hand. It can serve as a Trinket for one invocation. You are proficient with it and can use your Pact modifier instead of Strength or Dexterity for attack and damage rolls. Its attacks deal the same damage type as your Eldritch Blast but do not apply its other effects. It disappears if more than 5 feet away for 1 minute, if you conjure another blade, dismiss it (no action required), or die. You can bond a magic melee weapon by performing a 1-hour ritual; bonding another weapon ends the previous bond.
-
-### Eldritch Familiar
-
-You learn _conjure familiar_ and can cast it as a ritual; it does not count against your Spells Known. The familiar can take one of the forms below. It shares your initiative and acts on your turn, but takes only the Dodge action unless you use a bonus action to command it. When you cast a spell or Eldritch Blast, you can have it originate from your familiar if it is within 60 feet.
-
-#### Eldritch Familiar forms
-
-Choose a form when you conjure your familiar. Each form uses your Proficiency Bonus and Warlock level; spell attacks use your Warlock spell attack modifier, and saving throws use your Warlock spell save DC.
+When you choose Eldritch Familiar, conjure one of the available forms. The Familiar catalogue contains the stat blocks and options provided for this pact focus.
 
 ![[warlock-familiars.base]]
-
-### Eldritch Tome
-
-Your Tome contains one copy of each Warlock spell you know. Your Invocations Known increases by one; the bonus invocation cannot have prerequisites, and the Tome is its Trinket. At the end of each long rest, you can replace that invocation with another invocation without prerequisites. You can replace a known Warlock spell with another of the same level at the end of a long rest, and cast ritual-tagged Warlock spells in the Tome as rituals. You can spend 1 hour to conjure an exact replacement Tome, destroying the previous one; it crumbles to ash if you die.
 
 ### Ability Score Improvement
 
@@ -172,7 +160,7 @@ At 5th level, Eldritch Blast creates two beams. It creates three beams at 11th l
 
 At 11th level, choose an Elder Arcanum for which you meet the prerequisites. You learn another at 13th, 15th, and 17th level. Once learned, an Arcanum cannot be replaced.
 
-**Elder Arcanum options:**
+**Browse Elder Arcanum options:**
 
 ![[warlock-elder-arcana.base]]
 

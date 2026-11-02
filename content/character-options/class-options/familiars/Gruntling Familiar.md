@@ -9,25 +9,48 @@ option_group: Eldritch Familiar
 parent_class: Warlock
 min_level: 3
 prerequisite: Eldritch Familiar
-summary: "Eldritch Familiar stat block sourced from Alternate Warlock: Gruntling Familiar."
+summary: "Small Giant familiar form."
 source: Alternate Warlock
 source_type: third-party
+content_status: complete
 ---
 
 ## Stat Block
 
-Small Giant, Patron AlignmentAC 10 +PB (natural armor)HP 5 + four times your Warlock levelSpeed 25 ft.
-MODSAVEStr15+2+2Int6-2-2
-MODSAVEDex8-1-1Wis8-1-1
-MODSAVECon16+3+3Cha2-4-4Resistances Cold, Poison, ThunderLanguages Giant, understands its Warlock
+**Small Giant, Patron Alignment**
+
+- **Armor Class:** 10 + PB (natural armor)
+- **Hit Points:** 5 + 4 × Warlock level
+- **Speed:** 25 ft.
+- **Ability Scores:** Str 15 (+2), Dex 8 (-1), Con 16 (+3), Int 6 (-2), Wis 8 (-1), Cha 2 (-4)
+- **Other:** Resistance: Cold, Poison, Thunder; Giant, understands its Warlock.
 
 ### Traits
 
-Eldritch Bond. When the Familiar is forced to make an ability check or saving throw, it adds your PB to its roll.Hit Dice. The Familiar has a number of d6 Hit Dice equal to your Warlock level. It also gains all the normal benefits of both short and long rests.Magic Resistance. The Familiar has advantage on saving throws to resist spells and other magic effects.Mythic Might. The Familiar counts as two sizes larger for the purposes of Grapples, Shoves, and carrying capacity.
+Eldritch Bond. When the familiar is forced to make an ability check or saving throw, add the Warlock’s Proficiency Bonus.
+
+Hit Dice. The familiar has a number of d4 Hit Dice equal to the Warlock level and gains the normal benefits of short and long rests.
+
+Magic Resistance. The familiar has advantage on saving throws against spells and other magical effects.
+
+Mythic Might. Counts as two sizes larger for Grapples, Shoves, and carrying capacity.
 
 ### Actions
 
-Hurl. Ranged Weapon Attack: The Familiar throws a Tiny (or smaller) object. Spell Attack Modifier to hit, range 25/50 ft., one target. Hit: (1d4 + 3 +PB) Bludgeoning.Fist. Melee Weapon Attack: Spell Attack Modifier to hit, reach 5 ft., one target. Hit: (1d6 +3 +PB) Bludgeoning. It can forgo the damage to automatically Grapple its target.
+Hurl. Ranged Spell Attack: Warlock spell attack modifier to hit, range 25/50 ft., one target. Hit: 1d4 + 3 + PB Bludgeoning damage.
+
+Fist. Melee Spell Attack: Warlock spell attack modifier to hit, reach 5 ft., one target. Hit: 1d6 + 3 + PB Bludgeoning damage, or forgo damage to automatically Grapple the target.
+
+**Ability modifiers and saves**
+
+| Ability | Score | Modifier | Save |
+| ------- | ----: | -------: | ---: |
+| STR     |    15 |       +2 |   +2 |
+| DEX     |     8 |       -1 |   -1 |
+| CON     |    16 |       +3 |   +3 |
+| INT     |     6 |       -2 |   -2 |
+| WIS     |     8 |       -1 |   -1 |
+| CHA     |     2 |       -4 |   -4 |
 
 **Prerequisite:** Eldritch Familiar  
 **Minimum level:** 3

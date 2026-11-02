@@ -9,25 +9,46 @@ option_group: Eldritch Familiar
 parent_class: Warlock
 min_level: 3
 prerequisite: Eldritch Familiar
-summary: "Eldritch Familiar stat block sourced from Alternate Warlock: Oozing Familiar."
+summary: "Tiny Ooze familiar form."
 source: Alternate Warlock
 source_type: third-party
+content_status: complete
 ---
 
 ## Stat Block
 
-Tiny Ooze, Patron AlignmentAC 10 +PB (natural armor)HP 5 + four times your Warlock levelSpeed 25 ft., climb 25 ft.
-MODSAVEStr12+1+1Int1-5-5
-MODSAVEDex8-1-1Wis8-1-1
-MODSAVECon16+3+3Cha2-4-4Resistances Bludgeoning, Cold, FireImmunities Acid; Grappled, Prone, RestrainedSenses Blindsight 60 ft. (blind beyond this radius)Languages None, understands its Warlock
+**Tiny Ooze, Patron Alignment**
+
+- **Armor Class:** 10 + PB (natural armor)
+- **Hit Points:** 5 + 4 × Warlock level
+- **Speed:** 25 ft., climb 25 ft.
+- **Ability Scores:** Str 12 (+1), Dex 8 (-1), Con 16 (+3), Int 1 (-5), Wis 8 (-1), Cha 2 (-4)
+- **Other:** Resistance: Bludgeoning, Cold, Fire; Immunity: Acid, Grappled, Prone, Restrained; Blindsight 60 ft. (blind beyond); understands its Warlock.
 
 ### Traits
 
-Amorphous. The Familiar can move through a space as narrow as 1 inch without extra movement or squeezing.Eldritch Bond. When the Familiar is forced to make an ability check or saving throw, it adds your PB to its roll.Hit Dice. The Familiar has a number of d4 Hit Dice equal to your Warlock level. It also gains all the normal benefits of both short and long rests.Magic Resistance. The Familiar has advantage on saving throws to resist spells and other magic effects.
+Eldritch Bond. When the familiar is forced to make an ability check or saving throw, add the Warlock’s Proficiency Bonus.
+
+Hit Dice. The familiar has a number of d4 Hit Dice equal to the Warlock level and gains the normal benefits of short and long rests.
+
+Magic Resistance. The familiar has advantage on saving throws against spells and other magical effects.
+
+Amorphous. Can move through a space as narrow as 1 inch without squeezing or extra movement.
 
 ### Actions
 
-Pseudopod. Melee Weapon Attack: Spell Attack Modifier to hit, reach 5 ft., one target. Hit: (1d4 +3 +PB) Acid, and if the target is Medium or smaller, it is Grappled (escape DC = Spell save DC). While Grappling, the Familiar can only use its Pseudopod to attack the Grappled creature.
+Pseudopod. Melee Spell Attack: Warlock spell attack modifier to hit, reach 5 ft., one target. Hit: 1d4 + 3 + PB Acid damage; a Medium or smaller target is Grappled (escape DC equals Warlock spell save DC). While grappling, the familiar can attack only that creature.
+
+**Ability modifiers and saves**
+
+| Ability | Score | Modifier | Save |
+| ------- | ----: | -------: | ---: |
+| STR     |    12 |       +1 |   +1 |
+| DEX     |     8 |       -1 |   -1 |
+| CON     |    16 |       +3 |   +3 |
+| INT     |     1 |       -5 |   -5 |
+| WIS     |     8 |       -1 |   -1 |
+| CHA     |     2 |       -4 |   -4 |
 
 **Prerequisite:** Eldritch Familiar  
 **Minimum level:** 3

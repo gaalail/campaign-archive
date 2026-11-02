@@ -39,12 +39,12 @@ const CONTENT_METADATA_SCHEMA = JSON.parse(
 const CONTENT_REGISTRY = JSON.parse(
   fs.readFileSync(path.join(__dirname, "content-registry.json"), "utf-8"),
 )
-const WARLOCK_OPTION_SCHEMA = JSON.parse(
-  fs.readFileSync(
-    path.join(CONTENT_DIR, "character-options", "class-options", "warlock-option-schema.json"),
-    "utf-8",
-  ),
-)
+const WARLOCK_OPTION_SCHEMA = {
+  ...CONTENT_METADATA_SCHEMA,
+  schemas: {
+    patron_option: CONTENT_METADATA_SCHEMA.schemas.warlock_option,
+  },
+}
 const RESULTS = {
   errors: [],
   warnings: [],
@@ -496,10 +496,10 @@ function checkMetadata() {
     ) {
       continue
     }
-    const allowedGroups = WARLOCK_OPTION_SCHEMA.schemas.patron_option.fields.option_group.enum
+    const allowedGroups = ["Otherworldly Patron"]
     if (!allowedGroups.includes(data.metadata.option_group)) {
       RESULTS.errors.push(
-        `${relative}: invalid Warlock option metadata: "option_group" must be one of: ${allowedGroups.join(", ")}`,
+        `${relative}: invalid Warlock subclass metadata: "option_group" must be one of: ${allowedGroups.join(", ")}`,
       )
       schemaErrorCount++
     }
