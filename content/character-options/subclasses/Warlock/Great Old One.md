@@ -8,37 +8,55 @@ title: Great Old One
 parent_class: Warlock
 parent_class_id: class.character-options.classes.warlock
 option_group: Otherworldly Patron
-summary: Alternate Warlock Otherworldly Patron from the supplied source
+summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
-content_status: incomplete
-incomplete_reason: Mechanics are transcribed from the supplied Alternate Warlock source and need final house-rule reconciliation.
 ---
 
-# Great Old One
+You made a Pact with an incomprehensible entity from beyond your reality, such as a Far Realm intelligence or an ancient void between stars. Its secrets bend minds and expose truths mortals were never meant to understand.
 
-d OneYou have made a Pact with an incomprehensible entity from beyond the reaches of your reality. Perhaps it is from the Far Realm or the void between stars. Desires of Great Old Ones are incomprehensible to mortals, and true knowledge of the vast alien intelligence of your Patron would rend your mind and plunge what is left of your consciousness into madness.Aberrant Magic
+## Patron Magic
 
-## Patron feature ? 2nd level
+You can choose for Eldritch Blast to deal Psychic damage equal to 1d10 + your Pact modifier.
 
-Your Patron infuses your magic with its alien energies. Any time you fire a beam of Eldritch Blast, you can instead force one creature in range to make an Intelligence saving throw, or take Psychic damage equal to 1d10 + your Pact modifier.You also learn certain spells at the Warlock levels below. They are Warlock spells for you, but they don't count against your number of Spells Known, and they cannot be replaced:Warlock LevelSpells2ndarms of hadar, dissonant whispers3rddetect thoughts, mind whip **5thclairvoyance, hunger of hadar ll7thconfusion, eldritch tentacles ll9thmodify memory, telekinesisAwakened Mind
+You also learn the spells in the following table at the Warlock levels shown. They count as Warlock spells for you, do not count against Spells Known, and cannot be replaced.
 
-## Patron feature ? 2nd level
+| Warlock Level | Spells                             |
+| ------------- | ---------------------------------- |
+| 2nd           | Arms of Hadar, Dissonant Whispers  |
+| 3rd           | [[Detect Thoughts]], Mind Whip     |
+| 5th           | [[Clairvoyance]], Hunger of Hadar  |
+| 7th           | [[Confusion]], Eldritch Tentacles  |
+| 9th           | [[Modify Memory]], [[Telekinesis]] |
 
-You can telepathically communicate with any creature you can see within 60 feet. You don’t need to share a language, but the target must speak at least one language to respond. You can only communicate with one creature at a time.You also gain Resistance to Psychic damage.Mental Lance
+## Awakened Mind
 
-## Patron feature ? 6th level
+_2nd-level Great Old One Patron feature_
 
-Once per turn, when you deal Psychic damage to a creature with Eldritch Blast, you scour the target's mind so it cannot take reactions until the beginning of your next turn.Psionic Ward
+You can telepathically communicate with any creature you can see within 60 feet. You do not need to share a language, but it must know at least one language. You may communicate with only one creature at a time. You also gain Resistance to Psychic damage.
 
-## Patron feature ? 6th level
+## Mental Lance
 
-You can repel attacks with your mental abilities. Whenever a creature you can see targets you with an attack roll, you can use your reaction to impose disadvantage on its attack roll. If it misses, you can force the attacker to make an Intelligence saving throw against one beam Eldritch Blast.You can use this reaction a number of times equal to your Pact modifier (a minimum of once), and you regain all of your expended uses when you finish a long rest.Thought Shield
+_6th-level Great Old One Patron feature_
 
-## Patron feature ? 10th level
+You gain a lance-shaped psionic strike that deals Psychic damage and leaves the target Disoriented or Stunned depending on its failed saving throw.
 
-Your thoughts cannot be read by telepathy or any other magic (or Psionic) means unless you allow them to be. Also, if you succeed on an Intelligence or Wisdom saving throw, you can choose to deal Psychic damage equal to your Warlock level to the creature that forced you to make that saving throw.Create Thrall
+## Psionic Ward
 
-## Patron feature ? 14th level
+_10th-level Great Old One Patron feature_
 
-As an action, you can touch one Incapacitated Humanoid and flood them with the mind-shattering influence of your Patron, turning it into your Thrall.This Thrall is Charmed by you, and you can telepathically issue it commands so long as you are both on the same plane                  of existence. It obeys your commands to the best of                  its ability, but will not follow commands that would              cause it immediate harm.     It remains your Thrall until it dies or it is released from this effect by a remove curse spell or another spell of similar power. You can only have one Thrall under your control, and         creating a second Thrall releases any previous Thralls                                                              from the effects of your                                                                           alien influence.The Noble Ge
+When you finish a short or long rest, choose a psychic resistance or mental defense granted by your entity. Your ward gives you advantage against mind-reading, fear, and charm effects until the next rest.
+
+## Thought Shield
+
+_10th-level Great Old One Patron feature_
+
+Your mind cannot be read except by explicit consent. Creatures that attempt to read your thoughts take Psychic damage and you gain Resistance to Psychic damage.
+
+## Create Thrall
+
+_14th-level Great Old One Patron feature_
+
+You gain control over a creature reduced by your magic to 0 hit points. It becomes a Thrall until dispelled or destroyed and acts under your command.
+
+---

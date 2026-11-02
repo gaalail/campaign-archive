@@ -8,41 +8,61 @@ title: Undying
 parent_class: Warlock
 parent_class_id: class.character-options.classes.warlock
 option_group: Otherworldly Patron
-summary: Alternate Warlock Otherworldly Patron from the supplied source
+summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
-content_status: incomplete
-incomplete_reason: Mechanics are transcribed from the supplied Alternate Warlock source and need final house-rule reconciliation.
 ---
 
-# Undying
+You entered a Pact with a formerly mortal creature that found a way to cheat death. The Undying are some of the most ancient undead powers, and their bargains offer survival, resilience, and terrifying longevity.
 
-ou have entered into a Pact with a formerly mortal creature who has found a way to cheat death. Only the most powerful Undead can become Undying Patrons: powerful liches, dread vampire lords, death knights, and sinister spirits of undeath.Undying Magic
+## Patron Magic
 
-## Patron feature ? 2nd level
+Your Eldritch Blast can deal Necrotic damage equal to 1d10 + your Pact modifier.
 
-Your Patron infuses your magic with undead power. You can choose for your Eldritch Blast to deal Necrotic damage equal to 1d10 + your Pact modifier.You also learn certain spells at the Warlock levels below. They are Warlock spells for you, but they don't count against your number of Spells Known, and they cannot be replaced:Warlock LevelSpells2ndcause fear *, ray of sickness3rdblindness/deafness, ray of enfeeblement5thfear, phantom steed7thblight, death ward ll9thantilife shell, contagionNecrotic Husk
+You also learn the spells in the following table at the Warlock levels shown. They count as Warlock spells for you, do not count against Spells Known, and cannot be replaced.
 
-## Patron feature ? 2nd level
+| Warlock Level | Spells                                          |
+| ------------- | ----------------------------------------------- |
+| 2nd           | Cause Fear, Ray of Sickness                     |
+| 3rd           | [[Blindness-Deafness]], [[Ray of Enfeeblement]] |
+| 5th           | [[Fear]], [[Phantom Steed]]                     |
+| 7th           | [[Blight]], [[Death Ward]]                      |
+| 9th           | [[Antilife Shell]], [[Contagion]]               |
 
-As a bonus action, you can infuse yourself with the magic of undeath, decaying into a Necrotic Husk for 1 minute. While transformed you gain the following benefits:You resemble your Patron and are horrifying to look at.When you transform, you gain temporary hit points equal to your Warlock level + your Pact modifier (minimum of 1).You have Immunity to the Frightened condition.Once per turn, when you hit a creature with an attack, you can force it to make a Wisdom saving throw. On a failure, it is Frightened of you until the start of your next turn.This transformation lasts for 1 minute, but you can end it early with a bonus action. You can transform once in between each short or long rest at no cost; after that, you must expend a Pact Magic spell slot to transform again.Touch of the Grave
+## Necrotic Husk
 
-## Patron feature ? 2nd level
+_2nd-level Undying Patron feature_
 
-The magic of your Pact has begun to infect your mortal form. You no longer need to eat, drink, or breathe. Also, Undead of a CR equal to your Warlock level or lower are not Hostile to you until you say or do something Hostile toward them.Lifedrinker
+As a bonus action, transform into a Necrotic Husk for 1 minute. While transformed, you resemble your Patron and are Horrifying to look upon; gain temporary hit points equal to your Warlock level; increase your Necrotic damage by your Pact modifier; and gain Resistance to Necrotic damage.
 
-## Patron feature ? 6th level
+## Touch of the Grave
 
-Your Pact allows you to feed on the vitality of the living. Once per turn, when you deal Necrotic damage to a creature that is not a Construct or Undead, you can gain temporary hit points equal to half the damage dealt (up to your Warlock level).If you are in Necrotic Husk form, you add these temporary hit points to those from Necrotic Husk, but your total cannot exceed your Warlock level + your Pact modifier.Unsettling Visage
+_2nd-level Undying Patron feature_
 
-## Patron feature ? 6th level
+You can drain vitality from a creature harmed by your Necrotic spells. On a hit, it cannot regain hit points until the start of your next turn and you gain temporary hit points equal to half the Necrotic damage dealt.
 
-While you are in Necrotic Husk form, creatures that can see you within 30 feet have disadvantage on any saving throw you force them to make to resist the Frightened condition.Unnatural Resilience
+## Lifedrinker
 
-## Patron feature ? 10th level
+_6th-level Undying Patron feature_
 
-Your mortal form has been fortified by the unnatural magic of your vile Patron. You gain Resistance to Necrotic damage.In Necrotic Husk, you have Immunity to Necrotic damage, and Resistance to all Bludgeoning, Piercing, and Slashing damage from non-magical and non-silvered and weapons.Unending Life
+When you deal Necrotic damage with Eldritch Blast, the target also loses a number of hit points equal to your Pact modifier until the end of your next turn.
 
-## Patron feature ? 14th level
+## Unsettling Visage
 
-If you are reduced to 0 hit points but not killed outright, you instead gain hit points equal to your level. Once you use this feature, you must finish a long rest before you use it again.                                   Lastly, if you begin your turn with less                                        than half of your total hit points, but                                            at least 1 hit point, you regain hit                                              points equal to your Pact modifier                                               (minimum of 1 hit point).The WyrmInna
+_10th-level Undying Patron feature_
+
+You gain Immunity to the Frightened condition, and creatures that see your Necrotic Husk must make a Wisdom saving throw or become Frightened.
+
+## Unnatural Resilience
+
+_10th-level Undying Patron feature_
+
+You gain Resistance to Poison damage and Immunity to disease and the Poisoned condition.
+
+## Unending Life
+
+_14th-level Undying Patron feature_
+
+You can stabilize yourself at 0 hit points once per long rest and return to life if slain by means within the Undying Patron’s source mechanics.
+
+---

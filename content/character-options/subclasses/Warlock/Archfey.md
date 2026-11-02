@@ -8,37 +8,55 @@ title: Archfey
 parent_class: Warlock
 parent_class_id: class.character-options.classes.warlock
 option_group: Otherworldly Patron
-summary: Alternate Warlock Otherworldly Patron from the supplied source
+summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
-content_status: incomplete
-incomplete_reason: Mechanics are transcribed from the supplied Alternate Warlock source and need final house-rule reconciliation.
 ---
 
-# Archfey
+You have entered a Pact with a powerful entity of the faerie. Whether you were gifted this Pact or tricked your Patron into granting you power, you draw upon the whimsical and terrifying magic of the Fey. Only the eldest Archfey, ancient sylvan spirits, and the most powerful coven leaders can form such Pacts.
 
-You have entered a Pact with a powerful entity of the faerie. Whether you were gifted this Pact or you tricked your Patron into granting you a measure of power, you can draw upon the whimsical and terrifying power of the Fey. Only the eldest of the faerie can form such Pacts; the Archfey of the Fey courts, ancient sylvan spirits, and the most powerful covens of hags.Fey Magic
+## Patron Magic
 
-## Patron feature ? 2nd level
+You can choose for your Eldritch Blast to deal Psychic damage equal to 1d10 + your Pact modifier instead of Force damage.
 
-Your Patron infuses your magic with its whimsical fey power. You can choose for your Eldritch Blast beams to deal Psychic damage equal to 1d10 + your Pact modifier on hit.You also learn certain spells at the Warlock levels below. They are Warlock spells for you, but they don't count against your number of Spells Known, and they cannot be replaced:Warlock LevelSpells2ndfaerie fire, sleep3rdmisty step, phantasmal force5thfear, hypnotic pattern ll7thhallucinatory terrain, greater invisibility9thmislead, seemingFey Presence
+You also learn the spells in the following table at the Warlock levels shown. They count as Warlock spells for you, do not count against Spells Known, and cannot be replaced.
 
-## Patron feature ? 2nd level
+| Warlock Level | Spells                                              |
+| ------------- | --------------------------------------------------- |
+| 2nd           | [[Faerie Fire]], [[Sleep]]                          |
+| 3rd           | [[Misty Step]], Phantasmal Force                    |
+| 5th           | [[Fear]], [[Hypnotic Pattern]]                      |
+| 7th           | [[Hallucinatory Terrain]], [[Greater Invisibility]] |
+| 9th           | [[Mislead]], [[Seeming]]                            |
 
-You can beguile others with fey magic. As an action, youcan force one creature that can see or hear you within10 feet to make a Wisdom saving throw. On a failure,it is Charmed or Frightened by you (your choice) for10 minutes. The effect ends early if the creaturetakes damage, or if you or one of your alliesattack it or force it to make a saving throw.You can use this feature once betweeneach short or long rest at no cost, then youmust expend a Pact Magic spell slot touse this feature again.Beguiling Blast
+## Fey Presence
 
-## Patron feature ? 6th level
+_2nd-level Archfey Patron feature_
 
-Your magic clouds the minds ofyour foes. When you deal Psychicdamage to a creature with EldritchBlast, it has disadvantage on thefirst attack roll it makes beforethe start of your next turn.Creatures immune to theCharmed condition areimmune to this effect.Misty Escape
+You can beguile others with fey magic. As an action, choose one creature that can see or hear you within 10 feet; it must make a Wisdom saving throw or be Charmed or Frightened, as you choose, for 10 minutes. The effect ends early if the creature takes damage or you or an ally forces it to make a saving throw. You can use this feature once between rests. Afterwards, you must expend a Pact Magic spell slot to use it again.
 
-## Patron feature ? 6th level
+## Beguiling Blast
 
-You can draw on the magic of the Fey to elude danger. When you take damage, you can use your reaction to turn invisible and teleport to an unoccupied space you can see within 60 feet. You remain invisible until the start of your next turn, or until you attack, cast a spell, or force a saving throw.You can use this feature once in between each short or long rest at no cost, after which, you need to expend a Pact Magic spell slot to use this feature again.Whimsical Defense
+_6th-level Archfey Patron feature_
 
-## Patron feature ? 10th level
+When you deal Psychic damage to a creature with Eldritch Blast, it has disadvantage on the first attack roll it makes before the start of your next turn. Creatures immune to the Charmed condition are immune to this effect.
 
-You gain Immunity to the Charmed condition, and when a creature attempts to inflict the Charmed condition on you, it must make a Wisdom saving throw. On a failure, it suffers the effects of Fey Presence. If it also cannot be Charmed, it takes Psychic damage equal to your Warlock level.Terrible Delights
+## Misty Escape
 
-## Patron feature ? 14th level
+_6th-level Archfey Patron feature_
 
-Your fey magic overwhelms even the strongest minds. Your Warlock spells and features ignore Immunity to the Charmed condition. However, these creatures have advantage on their saving throws to resist, or end, being Charmed by you.Finally, when a creature fails its saving throw against Fey Presence, you can plunge it into an illusory realm of emotion, but this enhanced effect requires your concentration. For the duration, it can see and hear only itself, you, and this illusory reality of your creation. Each time it takes damage, it repeats its Wisdom saving throw, ending this effect on a success.Once a creature succeeds on this saving throwit is immune to this effect for 24 hours.The Dark
+When you take damage, you can use your reaction to turn Invisible and teleport to an unoccupied space you can see within 60 feet. You remain Invisible until the start of your next turn or until you attack, cast a spell, or force a saving throw. You can use this once between rests, then must expend a Pact Magic spell slot to use it again.
+
+## Whimsical Defense
+
+_10th-level Archfey Patron feature_
+
+You gain Immunity to the Charmed condition. When a creature attempts to inflict the Charmed condition on you, it makes a Wisdom saving throw; on a failure, it suffers the effects of Fey Presence. If it is also immune to Charmed, it takes Psychic damage equal to your Warlock level.
+
+## Terrible Delights
+
+_14th-level Archfey Patron feature_
+
+Your Warlock spells and features ignore immunity to the Charmed condition, though creatures affected by them have advantage on saving throws. When a creature fails its saving throw against Fey Presence, you can plunge it into a concentrated illusion of emotion. It perceives only itself, you, and that reality; repeated damage grants Wisdom saving throws. Success grants immunity to this enhanced effect for 24 hours.
+
+---
