@@ -20,6 +20,24 @@ Magical powers granted by your patron. You choose which ones enhance your abilit
 
 ---
 
+### [[character-options/class-options/pact-foci/index|Pact Foci]] (Warlock)
+
+Choose a Pact Focus at 3rd level to gain a weapon, familiar, tome, or other source-approved focus.
+
+---
+
+### [[character-options/class-options/familiars/index|Eldritch Familiars]] (Warlock)
+
+Use source-transcribed stat blocks when selecting the Eldritch Familiar Pact Focus.
+
+---
+
+### [[character-options/class-options/elder-arcana/index|Elder Arcana]] (Warlock)
+
+High-level Warlock options available at 11th level and higher.
+
+---
+
 ### [[character-options/class-options/metamagic/index|✨ Metamagic]] (Sorcerer)
 
 Ways to bend and modify your spells. Modify your magic on the fly with these options.

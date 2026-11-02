@@ -22,8 +22,8 @@
             "Eldritch Invocation",
             "Pact Focus",
             "Otherworldly Patron",
-            "Warlock Familiar",
-            "Warlock Elder Arcanum"
+            "Eldritch Familiar",
+            "Elder Arcanum"
           ]
         },
         "min_level": { "type": "integer", "minimum": 1, "maximum": 20 },

@@ -1,8 +1,9 @@
 filters:
   and:
-    - file.inFolder("character-options/class-options")
+    - file.inFolder("character-options/class-options/familiars")
+    - file.name != "index"
     - parent_class == "Warlock"
-    - option_group == "Warlock Familiar"
+    - option_group == "Eldritch Familiar"
 formulas:
   Name: file.asLink(title)
 properties:

@@ -9,14 +9,19 @@ option_group: Pact Focus
 parent_class: Warlock
 min_level: 3
 prerequisite: None
-summary: "Conjure a nonmagical melee weapon as a bonus action"
+summary: "Conjure and bond a magical melee weapon as an Eldritch Blade."
 source: Alternate Warlock
 source_type: third-party
-content_status: incomplete
-incomplete_reason: The source text lists this option but does not include its complete mechanics. Transcribe and verify the full entry before use.
 ---
 
-Conjure a nonmagical melee weapon as a bonus action. It is proficient, uses your Pact modifier for attacks and damage, can hold one invocation, and deals your Eldritch Blast damage type. A bonded magic weapon can be summoned or dismissed.
+You can focus your Patron's power into a sinister weapon. As a bonus action, you can conjure an Eldritch Blade in an empty hand. Each time you do, it takes the form of a nonmagical melee weapon of your choice, with the following benefits:
+
+- It can be used as a Trinket for one Eldritch Invocation.
+- You can use your Pact modifier in place of Strength or Dexterity for its attack and damage rolls.
+- You are considered proficient with this weapon.
+- This weapon's attacks deal the same damage type as your Eldritch Blast, but do not apply its other effects.
+
+The Eldritch Blade disappears if it is more than 5 feet from you for 1 minute, if you conjure another Eldritch Blade, if you dismiss it (no action required), or if you die. You can bond a magic melee weapon as your Eldritch Blade with a 1-hour Ritual. You can use a bonus action to shunt it to an extradimensional space or conjure it. Bonding a second weapon ends the bond for any previous weapon.
 
 **Prerequisite:** None  
 **Minimum level:** 3

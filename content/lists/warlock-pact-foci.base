@@ -1,6 +1,7 @@
 filters:
   and:
-    - file.inFolder("character-options/class-options")
+    - file.inFolder("character-options/class-options/pact-foci")
+    - file.name != "index"
     - parent_class == "Warlock"
     - option_group == "Pact Focus"
 formulas:
