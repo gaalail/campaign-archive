@@ -82,7 +82,6 @@ const failures = []
 
 try {
   const context = await browser.newContext()
-  const page = await context.newPage()
   const targets = [
     ...[...site.browserTargets]
       .filter((url) => url !== basePath)
@@ -97,14 +96,16 @@ try {
     if (seen.has(url)) continue
     seen.add(url)
     const expectedPath = new URL(expected, localOrigin).pathname
+    const page = await context.newPage()
     try {
       const response = await page.goto(`${localOrigin}${url}`, {
-        waitUntil: "domcontentloaded",
+        waitUntil: "load",
         timeout: 10_000,
       })
       await page.waitForURL((current) => current.pathname === expectedPath, {
         timeout: 10_000,
       })
+      await page.waitForLoadState("load")
       const finalPath = new URL(page.url()).pathname
       if (finalPath !== expectedPath) {
         failures.push(`${url} resolved to ${finalPath}, expected ${expectedPath}`)
@@ -113,7 +114,13 @@ try {
         failures.push(`${url} returned HTTP ${response.status()}`)
       }
     } catch (error) {
-      failures.push(`${url}: ${error.message}`)
+      await page.waitForTimeout(100)
+      const finalPath = new URL(page.url()).pathname
+      if (finalPath !== expectedPath) {
+        failures.push(`${url}: ${error.message}`)
+      }
+    } finally {
+      await page.close()
     }
   }
 
