@@ -66,8 +66,8 @@
       "spell_catalogue": "thanatomancer-spells.base"
     },
     "Warlock": {
-      "source": "SRD 5.1",
-      "source_type": "SRD",
+      "source": "Alternate Warlock",
+      "source_type": "third-party",
       "spell_catalogue": "warlock-spells.base"
     },
     "Wizard": {

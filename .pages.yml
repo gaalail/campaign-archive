@@ -79,6 +79,7 @@ _sources_all: &sources_all
     - Campaign Archive house rule
     - User-provided Paladin rework
     - Alternate Paladin
+    - Alternate Warlock
 
 # Status field (Phase 1 fix: mark incomplete entries for filtering)
 _incomplete_field: &incomplete
