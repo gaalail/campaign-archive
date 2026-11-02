@@ -11,6 +11,8 @@ option_group: Otherworldly Patron
 summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
+content_status: incomplete
+incomplete_reason: Mechanics were transcribed from the supplied Alternate Warlock source and require line-by-line verification before use.
 ---
 
 You have entered into a Pact with a sinister ruler of the Shadowfell, imprisoned within a Domain of Dread and able to affect the outside world only through trusted servants. Your Darklord grants you a fraction of its umbral power.

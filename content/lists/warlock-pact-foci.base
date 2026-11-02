@@ -2,7 +2,7 @@ filters:
   and:
     - file.inFolder("character-options/class-options")
     - parent_class == "Warlock"
-    - option_group == "Warlock Pact Focus"
+    - option_group == "Pact Focus"
 formulas:
   Name: file.asLink(title)
 properties:

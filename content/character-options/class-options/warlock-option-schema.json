@@ -20,7 +20,8 @@
           "type": "string",
           "enum": [
             "Eldritch Invocation",
-            "Warlock Pact Focus",
+            "Pact Focus",
+            "Otherworldly Patron",
             "Warlock Familiar",
             "Warlock Elder Arcanum"
           ]

@@ -11,6 +11,8 @@ option_group: Otherworldly Patron
 summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
+content_status: incomplete
+incomplete_reason: Mechanics were transcribed from the supplied Alternate Warlock source and require line-by-line verification before use.
 ---
 
 You made a Pact with an incomprehensible entity from beyond your reality, such as a Far Realm intelligence or an ancient void between stars. Its secrets bend minds and expose truths mortals were never meant to understand.

@@ -11,6 +11,8 @@ option_group: Otherworldly Patron
 summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
+content_status: incomplete
+incomplete_reason: Mechanics were transcribed from the supplied Alternate Warlock source and require line-by-line verification before use.
 ---
 
 You have entered a Pact with a powerful entity of the faerie. Whether you were gifted this Pact or tricked your Patron into granting you power, you draw upon the whimsical and terrifying magic of the Fey. Only the eldest Archfey, ancient sylvan spirits, and the most powerful coven leaders can form such Pacts.

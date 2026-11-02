@@ -4,7 +4,7 @@ title: Warlock Subclasses
 
 # Warlock Subclasses
 
-**12 subclasses available** | Choose at 1st level | Otherworldly Patrons
+**12 subclasses available** | Choose at 2nd level | Otherworldly Patrons
 
 ---
 

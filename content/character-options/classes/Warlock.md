@@ -162,6 +162,10 @@ Your Tome contains one copy of each Warlock spell you know. Your Invocations Kno
 
 ### Ability Score Improvement
 
+When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. You cannot increase an ability score above 20 using this feature.
+
+### Empowered Blast
+
 At 5th level, Eldritch Blast creates two beams. It creates three beams at 11th level and four at 17th level. You can direct each beam at the same target or different targets, making a separate spell attack roll for each.
 
 ### Elder Arcanum

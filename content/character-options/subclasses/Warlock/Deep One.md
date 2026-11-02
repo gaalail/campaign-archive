@@ -11,6 +11,7 @@ option_group: Otherworldly Patron
 summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
+content_status: complete
 ---
 
 You have bonded yourself to a primordial force of the ancient waters. Deep Ones are thalassic entities whose unknown motives stretch back to an age before recorded history. Their servants wield the crushing, alien pressure of the ocean depths.
@@ -33,36 +34,46 @@ You also learn the spells in the following table at the Warlock levels shown. Th
 
 _2nd-level Deep One Patron feature_
 
-When you deal Cold damage to a Large or smaller creature, you can summon a spectral tendril in its space. The creature is Grappled by the tendril for 1 minute. It can escape with a Strength check against your spell save DC, and taking Cold damage ends the grapple.
+Whenever you deal Cold damage to a Large or smaller creature, you can conjure a spectral tendril from your Patron in that creature's space. The creature is Grappled by the tendril for 1 minute.
+
+As an action, a grappled creature can make a Strength check against your spell save DC. On a success, the grapple ends and the tendril disappears.
+
+You can use this feature a number of times equal to your Pact modifier (minimum of once). You regain all uses when you finish a long rest. If you have no uses remaining, you can expend a Pact Magic spell slot to use it again.
 
 ## Scion of the Deep
 
 _2nd-level Deep One Patron feature_
 
-You gain a swimming speed equal to your walking speed and can breathe underwater. You gain darkvision with a range of 30 feet; if you already have darkvision, add 30 feet to its range.
+Your Pact alters your physiology so you can survive the depths. You gain Resistance to Cold damage, a swimming speed of 30 feet, and the ability to breathe air and water.
+
+While underwater, you and another creature underwater can understand each other as if you shared a common language.
 
 ## Oceanic Grasp
 
 _6th-level Deep One Patron feature_
 
-You gain the Eldritch Tentacles Invocation even if you do not meet its prerequisites. You can use it once without expending a spell slot, then must finish a short or long rest before doing so again.
+If you deal Cold damage to a creature with Eldritch Blast two or more times in one turn, you can use Grasp of the Deep without expending a use of that feature.
 
 ## Greater Tendrils
 
 _10th-level Deep One Patron feature_
 
-You can strengthen Eldritch Tentacles so one tentacle grips an additional creature within reach. Creatures grappled by different tentacles act independently.
+You can use Grasp of the Deep on Huge creatures. When a creature begins its turn Grappled by Grasp of the Deep, it takes 2d8 Cold damage.
 
 ## Thalassic Mind
 
 _10th-level Deep One Patron feature_
 
-You gain Resistance to Psychic damage and advantage on saving throws against effects that would frighten or stun you.
+Your concentration on Deep Magic spells cannot be broken by taking damage.
 
 ## Unleash the Depths
 
 _14th-level Deep One Patron feature_
 
-You can unleash abyssal water in a chosen area. Creatures in the area make a Constitution saving throw, take Cold damage, and are Restrained or Bludgeoned by crushing currents as specified by your deepwater feature.
+As an action, you conjure up to five Grasp of the Deep tendrils in spaces of your choice within 30 feet of you. Each tendril forces one creature within 10 feet to make a Dexterity saving throw.
+
+On a failed save, the creature takes 2d8 Cold damage and is Restrained by the tendril for its duration. On a successful save, the creature takes half damage and is not Restrained.
+
+You can use this feature once per long rest without a cost. After that, you must spend a Pact Magic spell slot to use it again.
 
 ---

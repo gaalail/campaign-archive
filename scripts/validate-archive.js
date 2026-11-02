@@ -39,6 +39,12 @@ const CONTENT_METADATA_SCHEMA = JSON.parse(
 const CONTENT_REGISTRY = JSON.parse(
   fs.readFileSync(path.join(__dirname, "content-registry.json"), "utf-8"),
 )
+const WARLOCK_OPTION_SCHEMA = JSON.parse(
+  fs.readFileSync(
+    path.join(CONTENT_DIR, "character-options", "class-options", "warlock-option-schema.json"),
+    "utf-8",
+  ),
+)
 const RESULTS = {
   errors: [],
   warnings: [],
@@ -440,6 +446,35 @@ function checkMetadata() {
     const failures = validateMetadata(data.metadata, schema, CONTENT_METADATA_SCHEMA)
     for (const failure of failures) {
       RESULTS.errors.push(`${relative}: invalid ${schemaName} metadata: ${failure}`)
+      schemaErrorCount++
+    }
+  }
+
+  const warlockClassOptionPath = /^character-options\/class-options\//
+  for (const data of Object.values(fileCache)) {
+    const relative = path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/")
+    if (!warlockClassOptionPath.test(relative) || data.metadata.parent_class !== "Warlock") continue
+    const schema = WARLOCK_OPTION_SCHEMA.schemas.patron_option
+    const failures = validateMetadata(data.metadata, schema, WARLOCK_OPTION_SCHEMA)
+    for (const failure of failures) {
+      RESULTS.errors.push(`${relative}: invalid Warlock option metadata: ${failure}`)
+      schemaErrorCount++
+    }
+  }
+
+  for (const data of Object.values(fileCache)) {
+    const relative = path.relative(CONTENT_DIR, data.filepath).replaceAll("\\", "/")
+    if (
+      !/^character-options\/subclasses\/Warlock\//.test(relative) ||
+      typeof data.metadata.option_group !== "string"
+    ) {
+      continue
+    }
+    const allowedGroups = WARLOCK_OPTION_SCHEMA.schemas.patron_option.fields.option_group.enum
+    if (!allowedGroups.includes(data.metadata.option_group)) {
+      RESULTS.errors.push(
+        `${relative}: invalid Warlock option metadata: "option_group" must be one of: ${allowedGroups.join(", ")}`,
+      )
       schemaErrorCount++
     }
   }

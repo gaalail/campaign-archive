@@ -11,6 +11,8 @@ option_group: Otherworldly Patron
 summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
+content_status: incomplete
+incomplete_reason: Mechanics were transcribed from the supplied Alternate Warlock source and require line-by-line verification before use.
 ---
 
 You have entered a Pact with a powerful Celestial native to the Upper Planes. Whether your Patron sought you as an ally or you proved yourself worthy, your pact carries the responsibility of supporting good and opposing evil.

@@ -11,6 +11,8 @@ option_group: Otherworldly Patron
 summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
+content_status: incomplete
+incomplete_reason: Mechanics were transcribed from the supplied Alternate Warlock source and require line-by-line verification before use.
 ---
 
 Great dragons are innately arcane beings with lifespans beyond mortal comprehension. Kind or terrible, benevolent or malicious, elder dragons make for dangerous Patrons whose motives exceed mortal understanding.

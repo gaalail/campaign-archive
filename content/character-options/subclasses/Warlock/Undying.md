@@ -11,6 +11,8 @@ option_group: Otherworldly Patron
 summary: Otherworldly Patron that grants alternate Warlock Patron magic
 source: Alternate Warlock
 source_type: third-party
+content_status: incomplete
+incomplete_reason: Mechanics were transcribed from the supplied Alternate Warlock source and require line-by-line verification before use.
 ---
 
 You entered a Pact with a formerly mortal creature that found a way to cheat death. The Undying are some of the most ancient undead powers, and their bargains offer survival, resilience, and terrifying longevity.
