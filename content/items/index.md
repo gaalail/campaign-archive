@@ -51,7 +51,7 @@ This archive uses the [[rules/Attunement - Epic Point Pool|Epic Point Pool]] hou
 - Item point costs depend on rarity.
 - The Dungeon Master may apply an Audit Tax to unusually powerful items.
 
-Read the full [[rules/Attunement - Epic Point Pool|attunement rule]] before building around multiple magic items.
+Read the full [[rules/Attunement - Epic Point Pool|Epic Point Pool]] and general [[rules/adventuring/attunement|attunement rules]] before building around multiple magic items.
 
 ---
 

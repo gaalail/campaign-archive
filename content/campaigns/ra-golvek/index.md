@@ -88,7 +88,7 @@ Click the **All entries** tab to see everything for this campaign in one table.
 
 ## Resources
 
-- **[[Rules]]** — House rules for this campaign
+- **[[campaigns/ra-golvek/rules/index|Campaign Rules]]** — Setting rulings, supernatural madness saves, and hazards
 - **[[Character Builder|Build a character]]** — Create your character
 - **[[Spells]]** — Magic reference
 - **[[Items]]** — Equipment and magic items

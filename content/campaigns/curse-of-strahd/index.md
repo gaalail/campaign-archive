@@ -89,7 +89,7 @@ Click the **All entries** tab to see everything for this campaign in one table.
 
 ## Resources
 
-- **[[Rules]]** — House rules for this campaign
+- **[[campaigns/curse-of-strahd/rules/index|Campaign Rules]]** — Setting rulings, alterations to magic, and planar restrictions
 - **[[Character Builder|Build a character]]** — Create your character
 - **[[Spells]]** — Magic reference
 - **[[Items]]** — Equipment and magic items

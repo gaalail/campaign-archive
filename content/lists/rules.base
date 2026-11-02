@@ -11,10 +11,32 @@ properties:
     displayName: Category
   campaign:
     displayName: Campaign
+  summary:
+    displayName: Summary
+  source:
+    displayName: Source
 views:
   - type: table
     name: All Rules
-    order: [formula.Name, category, campaign]
+    order: [formula.Name, category, campaign, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Conditions
+    filters:
+      and:
+        - category == "condition"
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Combat
+    filters:
+      and:
+        - category == "combat"
+    order: [formula.Name, summary]
     sort:
       - property: file.name
         direction: ASC
@@ -23,7 +45,25 @@ views:
     filters:
       and:
         - category == "adventuring"
-    order: [formula.Name, campaign]
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Spellcasting
+    filters:
+      and:
+        - category == "spellcasting"
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Campaign Rules
+    filters:
+      and:
+        - category == "campaign_rule"
+    order: [formula.Name, campaign, summary]
     sort:
       - property: file.name
         direction: ASC
@@ -32,7 +72,7 @@ views:
     filters:
       and:
         - category == "house_rule"
-    order: [formula.Name, campaign]
+    order: [formula.Name, summary]
     sort:
       - property: file.name
         direction: ASC

@@ -539,7 +539,7 @@ function checkCampaignRelationships() {
       continue
     }
     const relativeParts = relative.split("/")
-    if (relativeParts.length === 2) continue
+    if (relativeParts.length !== 3) continue
     const folder = relativeParts[1]
     const campaignId = String(data.metadata.campaign_id || folder).trim()
     campaignHubs.set(campaignId, {

@@ -2,61 +2,53 @@
 title: Rules
 ---
 
-# Rules & House Rules
+# Rules Compendium
 
-This archive uses standard **D&D 5e rules** with a few house rules for balance and fun. This section documents any differences from the Player's Handbook.
+This archive uses standard **D&D 5e SRD rules** supplemented with targeted table rulings and campaign-specific mechanics. Rules are organized into modular, atomic reference cards for rapid lookup and cross-referencing.
 
 ---
 
-## Quick Links
+## Rule Categories
 
-- **[[House Rules]]** — Modifications to standard rules
-- **[[Attunement - Epic Point Pool]]** — Scaling attunement points and rarity costs
-- Rules questions? **Check the Player's Handbook first**, then this page, then ask your DM
+| Category           | Description                                                                                 | Index                                                |
+| ------------------ | ------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| **Conditions**     | Core 5e status impairments and advantages (15 atomic cards)                                 | [[rules/conditions/index                             | Conditions Index]]                              |
+| **Combat**         | Action economy, attack rolls, critical hits, damage & healing, death saves, flanking, cover | [[rules/combat/index                                 | Combat Rules]]                                  |
+| **Adventuring**    | Resting cycles, attunement, light & vision, and the Epic Point Pool system                  | [[rules/adventuring/index                            | Adventuring Rules]]                             |
+| **Spellcasting**   | Spell slots, components, concentration, and preparation mechanics                           | [[rules/spellcasting/index                           | Spellcasting Rules]]                            |
+| **House Rules**    | Overview of global table modifications across campaigns                                     | [[House Rules]]                                      |
+| **Campaign Rules** | Setting-specific rulings for [[campaigns/curse-of-strahd/rules/index                        | Curse of Strahd]], [[campaigns/ra-golvek/rules/index | Ra Gol'vek]], and [[campaigns/vyrun/rules/index | Vyrun]] | [[campaigns/index | Campaign Hubs]] |
+
+---
+
+## Interactive Rules Database
+
+Use the tabs below to browse all rules or filter by category:
 
 ![[rules.base]]
 
 ---
 
-## What You'll Find Here
+## Quick Reference: Table Rulings
 
-- **House Rules** — Rules we modify for better gameplay
-- **Clarifications** — Ambiguous rules explained
-- **Campaign-Specific Rules** — Rules for specific campaigns (Ra Gol'vek, Vyrun, Curse of Strahd)
-
----
-
-## The Philosophy
-
-We keep house rules **light**. We change things only when:
-
-1. The standard rule creates balance problems
-2. We want to make gameplay faster/clearer
-3. Campaign flavor requires it
-
-Most of the time, we use the rules as written.
+| Topic                   | Summary Ruling                                                                       | Detailed Rule                                          |
+| ----------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------ |
+| **Critical Hits**       | Rolls of 19–20 crit; maximized base damage dice + bonus rolled die                   | [[rules/combat/critical-hits                           | Critical Hits]]        |
+| **Death Saves**         | 10 ft. stabilizing Medicine checks; _healing word_ stabilizes automatically          | [[rules/combat/death-saves                             | Death Saves]]          |
+| **Flanking**            | Flat +2 bonus to melee attacks for opposite-side flankers (not advantage)            | [[rules/combat/flanking                                | Flanking]]             |
+| **Long Rests**          | Requires 8 hours of sleep plus 4 waking hours of light activity (max 1 per 24 hours) | [[rules/adventuring/resting                            | Resting]]              |
+| **Attunement**          | Scaling attunement point pool based on proficiency bonus (2x PB)                     | [[rules/Attunement - Epic Point Pool                   | Epic Point Pool]]      |
+| **Barovian Magic**      | Planar isolation; cosmetic spell alterations; Strahd's domain attack bonus           | [[campaigns/curse-of-strahd/rules/alterations-to-magic | Alterations to Magic]] |
+| **Eldritch Madness**    | Wisdom saving throws against supernatural horrors in Ra Gol'vek                      | [[campaigns/ra-golvek/rules/index                      | Ra Gol'vek Rules]]     |
+| **Wilderness Survival** | Group survival checks with lowest modifier; exposure causes exhaustion in Vyrun      | [[campaigns/vyrun/rules/index                          | Vyrun Rules]]          |
 
 ---
 
-## Need a Quick Answer?
+## Official Rules Hierarchy
 
-| Question                                | Where to Look                         |
-| --------------------------------------- | ------------------------------------- |
-| How do critical hits work?              | [[House Rules]] (Critical Hits)       |
-| Can I take a long rest whenever I want? | [[House Rules]] (Long Rest Mechanics) |
-| Do I get multiple bonus actions?        | [[House Rules]] (Clarifications)      |
-| What's special about Ra Gol'vek?        | [[House Rules]] (Campaign-Specific)   |
-| I still don't know the answer           | Ask your DM                           |
+For anything not explicitly modified in this archive, consult:
 
----
-
-## Official Rules Sources
-
-For anything NOT listed here, consult:
-
-- **Player's Handbook** — Core rules
-- **Dungeon Master's Guide** — Tables and variants
-- **Monster Manual** — Creature statistics
-- **Sage Advice** — Official clarifications (via D&D Beyond)
-
----
+1. **Player's Handbook** — Core rules
+2. **Dungeon Master's Guide** — Rules variants and environmental hazards
+3. **Monster Manual** — Creature abilities and actions
+4. **Your Dungeon Master** — Context-specific adjudication

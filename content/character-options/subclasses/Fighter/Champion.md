@@ -14,17 +14,17 @@ Champions forgo all other forms of training to focus on their raw physical might
 
 **3rd-level Champion Archetype feature.** You learn certain Exploits at the Fighter levels noted in the table below. They don't count against your total number of Exploits Known, and cannot be switched out for other Exploits when you gain a Fighter level:
 
-| Fighter Level | Exploits                           |
-| ------------- | ---------------------------------- |
-| 3rd           | feat of strength, heroic fortitude |
-| 5th           | concussive blow, martial focus     |
-| 9th           | mythic athleticism                 |
+| Fighter Level | Exploits                                                                                                                                                                         |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 3rd           | [[character-options/class-options/martial-exploits/Feat of Strength\|feat of strength]], [[character-options/class-options/martial-exploits/Heroic Fortitude\|heroic fortitude]] |
+| 5th           | [[character-options/class-options/martial-exploits/Concussive Blow\|concussive blow]], [[character-options/class-options/martial-exploits/Martial Focus\|martial focus]]         |
+| 9th           | [[character-options/class-options/martial-exploits/Mythic Athleticism\|mythic athleticism]]                                                                                      |
 
 ### Mighty Warrior
 
-**3rd-level Champion Archetype feature.** The raw physical might you have cultivated enhances your attacks. Your weapon attacks score a critical hit on a roll of 19 or 20 on the d20.
+**3rd-level Champion Archetype feature.** The raw physical might you have cultivated enhances your attacks. Your weapon attacks score a [[rules/combat/critical-hits|critical hit]] on a roll of 19 or 20 on the d20.
 
-At 15th level, this critical hit range increases again and your weapon attacks score a critical hit on a d20 roll of 18 through 20 on the d20.
+At 15th level, this critical hit range increases again and your weapon attacks score a [[rules/combat/critical-hits|critical hit]] on a d20 roll of 18 through 20 on the d20.
 
 ### Peak Athlete
 
@@ -34,15 +34,15 @@ If you were already proficient in Athletics, you gain proficiency in another Fig
 
 ### Remarkable Strength
 
-**7th-level Champion Archetype feature.** Your physical abilities are unrivaled by normal mortals. When you make a Strength or Constitution ability check or saving throw, you can use feat of strength or heroic fortitude without expending an Exploit Die.
+**7th-level Champion Archetype feature.** Your physical abilities are unrivaled by normal mortals. When you make a Strength or Constitution ability check or saving throw, you can use [[character-options/class-options/martial-exploits/Feat of Strength|feat of strength]] or [[character-options/class-options/martial-exploits/Heroic Fortitude|heroic fortitude]] without expending an Exploit Die.
 
 Used this way, feat of strength counts as if you spent one Exploit Die, though you can add Exploit Dice to it.
 
 ### Devastating Critical
 
-**10th-level Champion Archetype feature.** Whenever you score a critical hit with a weapon attack you deal bonus damage equal to your Fighter level.
+**10th-level Champion Archetype feature.** Whenever you score a [[rules/combat/critical-hits|critical hit]] with a weapon attack you deal bonus damage equal to your Fighter level.
 
-At 15th level, when you score a critical hit with a weapon attack, you can maximize the damage instead of rolling. Once you do you must finish a long rest before you can do so again.
+At 15th level, when you score a [[rules/combat/critical-hits|critical hit]] with a weapon attack, you can maximize the damage instead of rolling. Once you do you must finish a [[rules/adventuring/resting|long rest]] before you can do so again.
 
 ### Legendary Champion
 
@@ -52,10 +52,10 @@ At 15th level, when you score a critical hit with a weapon attack, you can maxim
 
 As printed in the Player's Handbook, the Champion is the easiest subclass to understand in the game.
 
-The Champion as included here is also the most straightforward option for the Alternate Fighter. If a player wants to play a simple character, Champion is still the best option. Make sure they also choose Exploits like hurl, mighty leap, and ruthless strike.
+The Champion as included here is also the most straightforward option for the Alternate Fighter. If a player wants to play a simple character, Champion is still the best option. Make sure they also choose Exploits like [[character-options/class-options/martial-exploits/Hurl|hurl]], [[character-options/class-options/martial-exploits/Mighty Leap|mighty leap]], and [[character-options/class-options/martial-exploits/Ruthless Strike|ruthless strike]].
 
 ---
 
 - [[Fighter|Fighter class]]
 - [[character-options/subclasses/Fighter/index|Warrior Archetypes]]
-- [[character-options/class-options/martial-exploits/index|Martial Exploits]]
+- [[rules/combat/critical-hits|Critical Hits Rule]]
