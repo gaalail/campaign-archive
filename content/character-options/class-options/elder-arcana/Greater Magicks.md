@@ -1,4 +1,6 @@
 ---
+aliases:
+  - elder-arcana/Greater-Magicks
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.greater-magicks
 edition: system-neutral

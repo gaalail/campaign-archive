@@ -1,5 +1,9 @@
 ---
 title: Eldritch Familiars
+aliases:
+  - familiars
+  - character-options/familiars
+  - eldritch-familiars
 parent_class: Warlock
 summary: Full stat blocks for familiar forms available through Eldritch Familiar
 ---

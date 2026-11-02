@@ -1,4 +1,6 @@
 ---
+aliases:
+  - elder-arcana/Greater-Arcanum
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.greater-arcanum
 edition: system-neutral

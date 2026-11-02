@@ -1,5 +1,8 @@
 ---
 title: Pact Foci
+aliases:
+  - pact-foci
+  - character-options/pact-foci
 parent_class: Warlock
 summary: Pact objects and forms granted by a Warlock's Pact Focus feature
 ---

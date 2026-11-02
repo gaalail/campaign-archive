@@ -1,4 +1,6 @@
 ---
+aliases:
+  - elder-arcana/Chains-of-the-Abyss
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.chains-of-the-abyss
 edition: system-neutral

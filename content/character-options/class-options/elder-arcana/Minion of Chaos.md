@@ -1,4 +1,6 @@
 ---
+aliases:
+  - elder-arcana/Minion-of-Chaos
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.minion-of-chaos
 edition: system-neutral

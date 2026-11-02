@@ -1,4 +1,6 @@
 ---
+aliases:
+  - elder-arcana/Minor-Arcanum
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.minor-arcanum
 edition: system-neutral

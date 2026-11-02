@@ -101,9 +101,7 @@ If your group uses multiclassing, you need a score of 13 in Intelligence, Wisdom
 
 At 1st level, you bind two invocations to Trinkets. A lost or destroyed Trinket reforms on your person at the end of your next short or long rest. The Invocations Known column shows when you learn additional invocations. You can learn an invocation when you meet its prerequisites. When you gain a Warlock level, you can replace one invocation you know with another for which you qualify.
 
-**Browse Eldritch Invocations:**
-
-![[warlock-invocations.base]]
+Browse the complete [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations catalogue]].
 
 ### Eldritch Spellcasting
 
@@ -132,21 +130,17 @@ At 2nd level, you know three 1st-level Warlock spells. The Spells Known column s
 
 Spells learned from an invocation count as Warlock spells but do not count against your Spells Known. You can use an invocation-bearing Trinket or an arcane focus as a Spellcasting Focus.
 
-**Browse available Warlock spells by level:**
+Browse available Warlock spells by level:
 
 ![[warlock-spells.base]]
 
 ## Pact Focus
 
-At 3rd level, choose one of the Pact Foci in the catalogue. Each option's record gives its rules.
-
-![[warlock-pact-foci.base]]
+At 3rd level, choose one of the [[character-options/class-options/pact-foci/index|Pact Foci]]. Each option's record gives its rules.
 
 ### Eldritch Familiars
 
-When you choose Eldritch Familiar, conjure one of the available forms. The Familiar catalogue contains the stat blocks and options provided for this pact focus.
-
-![[warlock-familiars.base]]
+When you choose Eldritch Familiar, conjure one of the [[character-options/class-options/familiars/index|Eldritch Familiar forms]]. Each record contains the applicable stat block.
 
 ### Ability Score Improvement
 
@@ -160,9 +154,7 @@ At 5th level, Eldritch Blast creates two beams. It creates three beams at 11th l
 
 At 11th level, choose an Elder Arcanum for which you meet the prerequisites. You learn another at 13th, 15th, and 17th level. Once learned, an Arcanum cannot be replaced.
 
-**Browse Elder Arcanum options:**
-
-![[warlock-elder-arcana.base]]
+Browse the [[character-options/class-options/elder-arcana/index|Elder Arcanum catalogue]].
 
 ### Seat at the Table
 

@@ -1,4 +1,6 @@
 ---
+aliases:
+  - elder-arcana/Bond-of-the-Master
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.bond-of-the-master
 edition: system-neutral

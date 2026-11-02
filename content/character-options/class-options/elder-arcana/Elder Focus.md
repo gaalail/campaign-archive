@@ -1,4 +1,6 @@
 ---
+aliases:
+  - elder-arcana/Elder-Focus
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.elder-focus
 edition: system-neutral

@@ -1,4 +1,6 @@
 ---
+aliases:
+  - elder-arcana/Mystic-Arcanum
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.mystic-arcanum
 edition: system-neutral

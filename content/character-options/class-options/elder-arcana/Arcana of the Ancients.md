@@ -1,4 +1,6 @@
 ---
+aliases:
+  - elder-arcana/Arcana-of-the-Ancients
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.arcana-of-the-ancients
 edition: system-neutral
