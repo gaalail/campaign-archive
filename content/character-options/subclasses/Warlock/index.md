@@ -4,18 +4,26 @@ title: Warlock Subclasses
 
 # Warlock Subclasses
 
-**4 subclasses available** | Choose at 1st level | Otherworldly Patrons
+**12 subclasses available** | Choose at 1st level | Otherworldly Patrons
 
 ---
 
 ## Available Patrons
 
-| Subclass         | Feature         | Theme        |
-| ---------------- | --------------- | ------------ |
-| [[Archangel]]    | Angelic patron  | Holy pact    |
-| [[Fiend]]        | Infernal patron | Dark deal    |
-| [[Nature]]       | Nature patron   | Wild pact    |
-| [[The Returned]] | Returned patron | Ghostly pact |
+| Subclass          | Feature          | Theme         |
+| ----------------- | ---------------- | ------------- |
+| [[Archfey]]       | Fey patron       | Tricky pact   |
+| [[Archangel]]     | Angelic patron   | Holy pact     |
+| [[Darklord]]      | Shadowfell ruler | Dread pact    |
+| [[Deep One]]      | Thalassic patron | Oceanic pact  |
+| [[Exalted]]       | Celestial patron | Divine pact   |
+| [[Fiend]]         | Infernal patron  | Dark deal     |
+| [[Great Old One]] | Far Realm patron | Cosmic pact   |
+| [[Nature]]        | Nature patron    | Wild pact     |
+| [[Noble Genie]]   | Elemental noble  | Genie pact    |
+| [[The Returned]]  | Returned patron  | Ghostly pact  |
+| [[Undying]]       | Undead patron    | Ageless pact  |
+| [[Wyrm]]          | Dragon patron    | Draconic pact |
 
 ---
 
