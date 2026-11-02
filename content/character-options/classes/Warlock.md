@@ -19,7 +19,13 @@ incomplete_reason: The supplied alternate class replaces the SRD class; its prov
 
 # The Warlock
 
-Warlocks are occult mages who gather dark secrets and sinister magicks. Through forbidden research and bargains with powerful entities, they unlock esoteric power.
+A striking tiefling with an auburn complexion and dark horns stands in a ritual circle beneath the full moon. As he chants in a forgotten tongue, the moon is swallowed by darkness. A voice beyond the stars offers power if he works toward its goals. He agrees, and the moonlight returns as eldritch power fills him.
+
+A massive goliath carves an eldritch idol from the bones of a guardian beast. Steeped in the jungle's magic, its bones become a vessel for the power he discovered in its temple.
+
+A dark warrior faces cultists of a rival demon lord. He conjures a clear blue-ice axe and moves with impossible speed, fueled by the frigid magic of a powerful fiend. When his foes fall, the axe melts away.
+
+These occult mages are Warlocks. Through dark secrets, sinister magic, and bargains with powerful entities, they gain power from many traditions.
 
 ## Lure of Secrets
 
@@ -56,7 +62,7 @@ Consider why your character pursues knowledge and power. Are they driven to unco
 | 17th  | +6  | Elder Arcanum (4), Empowered Blast (4) | 7                 | 4              | 9            | 4           | 5th        |
 | 18th  | +6  | —                                      | 8                 | 4              | 10           | 4           | 5th        |
 | 19th  | +6  | Ability Score Improvement              | 8                 | 4              | 10           | 4           | 5th        |
-| 20th  | +6  | Pact Master                            | 8                 | 4              | 10           | 4           | 5th        |
+| 20th  | +6  | Seat at the Table                      | 8                 | 4              | 10           | 4           | 5th        |
 
 ## Class Features
 
@@ -91,13 +97,13 @@ Choose Intelligence, Wisdom, or Charisma as your highest ability score, followed
 
 If your group uses multiclassing, you need a score of 13 in Intelligence, Wisdom, or Charisma to take a Warlock level or a level in another class while you are a warlock. This must be your Pact Spellcasting Ability. If Warlock is not your initial class, you gain proficiency with light armor and simple weapons.
 
-### Eldritch Invocations
+## Eldritch Invocations
 
-At 1st level, you have two Trinkets, each binding one Eldritch Invocation. If a Trinket is lost or destroyed, it reforms on your person at the end of your next short or long rest. The Invocations Known column shows when you learn additional invocations. You can learn an invocation when you meet its prerequisites. When you gain a Warlock level, you can replace one invocation you know with another for which you qualify.
+At 1st level, you bind two invocations to Trinkets. A lost or destroyed Trinket reforms on your person at the end of your next short or long rest. The Invocations Known column shows when you learn additional invocations. You can learn an invocation when you meet its prerequisites. When you gain a Warlock level, you can replace one invocation you know with another for which you qualify.
 
-Invocation options remain in the archive's generated class options catalogue:
+**Browse Eldritch Invocations:**
 
-![[class-options-of.base]]
+![[warlock-invocations.base]]
 
 ### Eldritch Spellcasting
 
@@ -130,31 +136,51 @@ Spells learned from an invocation count as Warlock spells but do not count again
 
 ![[warlock-spells.base]]
 
-### Pact Focus
+## Pact Focus
 
-At 3rd level, choose a Pact Focus.
+At 3rd level, choose one Pact Focus from the catalogue below.
 
-**Eldritch Blade.** As a bonus action, conjure a nonmagical melee weapon of your choice in an empty hand. It can serve as a Trinket for one invocation. You are proficient with it and can use your Pact modifier instead of Strength or Dexterity for its attack and damage rolls. Its attacks deal the same damage type as your Eldritch Blast but do not apply Eldritch Blast's other effects. It disappears if more than 5 feet away from you for 1 minute, if you conjure another blade, dismiss it (no action required), or die. You can bond a magic melee weapon by performing a 1-hour ritual; bonding another weapon ends the previous bond.
+![[warlock-pact-foci.base]]
 
-**Eldritch Familiar.** You learn _conjure familiar_ and can cast it as a ritual; it does not count against your Spells Known. Your familiar can take an Eldritch Familiar form. It shares your initiative and acts on your turn, but takes only the Dodge action unless you use a bonus action to command it. When you cast a spell or Eldritch Blast, you can have it originate from your familiar if it is within 60 feet.
+### Eldritch Blade
 
-**Eldritch Tome.** Your Tome contains one copy of each Warlock spell you know. Your Invocations Known increases by one; the bonus invocation cannot have prerequisites, and the Tome is its Trinket. At the end of each long rest, you can replace that invocation with another invocation without prerequisites. You can replace a known Warlock spell with another of the same level at the end of a long rest, and cast ritual-tagged Warlock spells in the Tome as rituals. You can spend 1 hour to conjure an exact replacement Tome, destroying the previous one; it crumbles to ash if you die.
+As a bonus action, conjure a nonmagical melee weapon of your choice in an empty hand. It can serve as a Trinket for one invocation. You are proficient with it and can use your Pact modifier instead of Strength or Dexterity for attack and damage rolls. Its attacks deal the same damage type as your Eldritch Blast but do not apply its other effects. It disappears if more than 5 feet away for 1 minute, if you conjure another blade, dismiss it (no action required), or die. You can bond a magic melee weapon by performing a 1-hour ritual; bonding another weapon ends the previous bond.
+
+### Eldritch Familiar
+
+You learn _conjure familiar_ and can cast it as a ritual; it does not count against your Spells Known. The familiar can take one of the forms below. It shares your initiative and acts on your turn, but takes only the Dodge action unless you use a bonus action to command it. When you cast a spell or Eldritch Blast, you can have it originate from your familiar if it is within 60 feet.
+
+#### Eldritch Familiar forms
+
+Choose a form when you conjure your familiar. Each form uses your Proficiency Bonus and Warlock level; spell attacks use your Warlock spell attack modifier, and saving throws use your Warlock spell save DC.
+
+![[warlock-familiars.base]]
+
+### Eldritch Tome
+
+Your Tome contains one copy of each Warlock spell you know. Your Invocations Known increases by one; the bonus invocation cannot have prerequisites, and the Tome is its Trinket. At the end of each long rest, you can replace that invocation with another invocation without prerequisites. You can replace a known Warlock spell with another of the same level at the end of a long rest, and cast ritual-tagged Warlock spells in the Tome as rituals. You can spend 1 hour to conjure an exact replacement Tome, destroying the previous one; it crumbles to ash if you die.
 
 ### Ability Score Improvement
-
-At 4th level, and again at 8th, 12th, 16th, and 19th levels, increase one ability score by 2 or two ability scores by 1. You cannot increase a score above 20 with this feature.
-
-### Empowered Blast
 
 At 5th level, Eldritch Blast creates two beams. It creates three beams at 11th level and four at 17th level. You can direct each beam at the same target or different targets, making a separate spell attack roll for each.
 
 ### Elder Arcanum
 
-At 11th level, choose one Elder Arcanum for which you meet the prerequisites. You learn another at 13th, 15th, and 17th levels. Once learned, an Elder Arcanum cannot be replaced.
+At 11th level, choose an Elder Arcanum for which you meet the prerequisites. You learn another at 13th, 15th, and 17th level. Once learned, an Arcanum cannot be replaced.
 
-### Pact Master
+**Elder Arcanum options:**
 
-At 20th level, choose a second Otherworldly Patron. You gain its 2nd-level features and Patron Spells. After a long rest, you can replace this secondary Patron with another Patron available to Warlocks.
+![[warlock-elder-arcana.base]]
+
+### Seat at the Table
+
+_**20th-level Warlock Feature**_
+
+Over the course of your adventures, you have gathered forbidden lore, mastered eldritch secrets, and wielded powers beyond the understanding of mortal spellcasters. Your Patron no longer regards you as a mere servant, but as a trusted agent, valued ally, or dangerous equal. Other powers have taken notice as well.
+
+Choose a second Otherworldly Patron. You gain that Patron's 2nd-level features and all of its Patron Spells.
+
+Whenever you finish a long rest, you may replace this secondary Patron with another Otherworldly Patron available to Warlocks.
 
 ## Subclasses
 

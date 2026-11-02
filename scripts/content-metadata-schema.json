@@ -49,6 +49,10 @@
         "adaptation": { "type": "string", "enum_from": "adaptations" },
         "license_status": { "type": "string", "enum_from": "license_statuses" },
         "hit_die": { "type": "string", "enum": ["d6", "d8", "d10", "d12"] },
+        "spellcasting_ability": {
+          "type": "string",
+          "enum": ["STR", "DEX", "CON", "INT", "WIS", "CHA", "choice"]
+        },
         "saving_throws": {
           "type": "array",
           "min_items": 2,

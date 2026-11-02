@@ -1,0 +1,19 @@
+filters:
+  and:
+    - file.inFolder("character-options/class-options")
+    - parent_class == "Warlock"
+    - option_group == "Warlock Familiar"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Familiar
+  summary:
+    displayName: Summary
+views:
+  - type: table
+    name: Eldritch Familiars
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC

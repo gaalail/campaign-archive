@@ -1,20 +1,21 @@
 ---
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.eldritch-invocations.eldritch-spear
-edition: "2014"
+edition: system-neutral
 adaptation: curated
-license_status: CC-BY-4.0
+license_status: reference-only
+source: Alternate Warlock
+source_type: third-party
 title: Eldritch Spear
 option_group: Eldritch Invocation
 parent_class: Warlock
-min_level: 2
-prerequisite: Eldritch Blast cantrip
-summary: When you cast eldritch blast, its range is 300 feet.
-source: SRD 5.1
-source_type: SRD
+min_level: 3
+prerequisite: None
+summary: "Double the range of Eldritch Blast and Warlock spells that require a ranged spell attack"
+content_status: complete
 ---
 
-When you cast eldritch blast, its range is 300 feet.
+Double the range of Eldritch Blast and Warlock spells that require a ranged spell attack.
 
-**Prerequisite:** Eldritch Blast cantrip  
-**Minimum level:** 2
+**Prerequisite:** None  
+**Minimum level:** 3

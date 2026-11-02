@@ -1,21 +1,21 @@
 ---
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.eldritch-invocations.ascendant-step
-edition: "2014"
+edition: system-neutral
 adaptation: curated
-license_status: CC-BY-4.0
+license_status: reference-only
+source: Alternate Warlock
+source_type: third-party
 title: Ascendant Step
 option_group: Eldritch Invocation
 parent_class: Warlock
-min_level: 9
+min_level: 7
 prerequisite: None
-summary: You can cast levitate on yourself at will, without expending a spell
-  slot or material components.
-source: SRD 5.1
-source_type: SRD
+summary: "As a bonus action, gain a flying speed equal to your walking speed until the end of the current turn"
+content_status: complete
 ---
 
-You can cast levitate on yourself at will, without expending a spell slot or material components.
+As a bonus action, gain a flying speed equal to your walking speed until the end of the current turn. You cannot hover; if not supported at turn end, you fall.
 
 **Prerequisite:** None  
-**Minimum level:** 9
+**Minimum level:** 7

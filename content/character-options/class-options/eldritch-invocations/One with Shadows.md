@@ -1,21 +1,21 @@
 ---
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.eldritch-invocations.one-with-shadows
-edition: "2014"
+edition: system-neutral
 adaptation: curated
-license_status: CC-BY-4.0
+license_status: reference-only
+source: Alternate Warlock
+source_type: third-party
 title: One with Shadows
 option_group: Eldritch Invocation
 parent_class: Warlock
 min_level: 5
 prerequisite: None
-summary: When you are in an area of dim light or darkness, you can use your
-  action to become invisible until you move or take an action...
-source: SRD 5.1
-source_type: SRD
+summary: "Once per long rest, cast invisibility on yourself without a spell slot while in dim light or darkness"
+content_status: complete
 ---
 
-When you are in an area of dim light or darkness, you can use your action to become invisible until you move or take an action or a reaction.
+Once per long rest, cast invisibility on yourself without a spell slot while in dim light or darkness. At 9th level, you can do so at will.
 
 **Prerequisite:** None  
 **Minimum level:** 5

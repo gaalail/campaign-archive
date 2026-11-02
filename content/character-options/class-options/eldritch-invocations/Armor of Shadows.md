@@ -1,21 +1,21 @@
 ---
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.eldritch-invocations.armor-of-shadows
-edition: "2014"
+edition: system-neutral
 adaptation: curated
-license_status: CC-BY-4.0
+license_status: reference-only
+source: Alternate Warlock
+source_type: third-party
 title: Armor of Shadows
 option_group: Eldritch Invocation
 parent_class: Warlock
-min_level: 2
+min_level: 3
 prerequisite: None
-summary: You can cast mage armor on yourself at will, without expending a spell
-  slot or material components.
-source: SRD 5.1
-source_type: SRD
+summary: "As an action, manifest or dismiss living shadow armor"
+content_status: complete
 ---
 
-You can cast mage armor on yourself at will, without expending a spell slot or material components.
+As an action, manifest or dismiss living shadow armor. While wearing no armor or shield, your AC equals 10 + your Pact modifier + your Dexterity modifier. The armor is visibly magical and frightening.
 
 **Prerequisite:** None  
-**Minimum level:** 2
+**Minimum level:** 3

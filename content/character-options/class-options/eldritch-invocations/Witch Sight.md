@@ -1,21 +1,21 @@
 ---
 entity_type: character_option
 canonical_id: character_option.character-options.class-options.eldritch-invocations.witch-sight
-edition: "2014"
+edition: system-neutral
 adaptation: curated
-license_status: CC-BY-4.0
+license_status: reference-only
+source: Alternate Warlock
+source_type: third-party
 title: Witch Sight
 option_group: Eldritch Invocation
 parent_class: Warlock
-min_level: 15
+min_level: 9
 prerequisite: None
-summary: You can see the true form of any shapechanger or creature concealed by
-  illusion or transmutation magic while the creature is wi...
-source: SRD 5.1
-source_type: SRD
+summary: "While conscious, you have Truesight out to 10 feet"
+content_status: complete
 ---
 
-You can see the true form of any shapechanger or creature concealed by illusion or transmutation magic while the creature is within 30 feet of you and within line of sight.
+While conscious, you have Truesight out to 10 feet. At 15th level, the range becomes 30 feet.
 
 **Prerequisite:** None  
-**Minimum level:** 15
+**Minimum level:** 9

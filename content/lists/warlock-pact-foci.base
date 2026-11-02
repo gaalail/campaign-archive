@@ -1,0 +1,21 @@
+filters:
+  and:
+    - file.inFolder("character-options/class-options")
+    - parent_class == "Warlock"
+    - option_group == "Warlock Pact Focus"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Pact Focus
+  prerequisite:
+    displayName: Prerequisite
+  summary:
+    displayName: Summary
+views:
+  - type: table
+    name: Pact Foci
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC

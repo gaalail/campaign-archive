@@ -777,7 +777,7 @@ content:
                 - d10
                 - d12
           - name: spellcasting_ability
-            label: Spellcasting ability
+            label: Pact spellcasting ability
             type: select
             options:
               values: [STR, DEX, CON, INT, WIS, CHA, choice]
@@ -846,6 +846,14 @@ content:
                 - Wizard
                 - Tamer
                 - Thanatomancer
+                - Eldritch Blade
+                - Eldritch Familiar
+                - Eldritch Tome
+                - Eldritch Chalice
+                - Eldritch Flesh
+                - Eldritch Hourglass
+                - Eldritch Instrument
+                - Eldritch Shroud
           - *summary
           - *image
           - name: source
@@ -975,6 +983,9 @@ content:
             options:
               values:
                 - Eldritch Invocation
+                - Warlock Pact Focus
+                - Warlock Familiar
+                - Warlock Elder Arcanum
                 - Metamagic
                 - Avatar Feature
                 - Infusion
@@ -1008,6 +1019,14 @@ content:
                 - Order of Reason
                 - Tamer
                 - Thanatomancer
+                - Eldritch Blade
+                - Eldritch Familiar
+                - Eldritch Tome
+                - Eldritch Chalice
+                - Eldritch Flesh
+                - Eldritch Hourglass
+                - Eldritch Instrument
+                - Eldritch Shroud
           - name: min_level
             label: Minimum level
             type: number
