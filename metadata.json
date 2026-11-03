@@ -1,5 +1,6 @@
 {
-  "name": "Campaign Archive",
-  "description": "Interactive 5e D&D wiki and campaign manager for Ra Gol'vek, Vyrun, and Curse of Strahd, featuring character options, items compendium, character builder, and knowledge graph.",
-  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "name": "Campaign Archive - 5e D&D Wiki & Character Hub",
+  "description": "Comprehensive 5e D&D campaign wiki, character builder, dynamic rules & options catalogue, and interactive knowledge graph.",
+  "permissions": [],
+  "capabilities": []
 }
