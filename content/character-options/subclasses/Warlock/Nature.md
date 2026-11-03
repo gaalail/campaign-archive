@@ -1,50 +1,74 @@
 ---
 entity_type: character_option
 canonical_id: character_option.character-options.subclasses.warlock.nature
-edition: "2014"
+edition: system-neutral
 adaptation: curated
 license_status: reference-only
 title: Nature
 parent_class: Warlock
-summary: Otherworldly Patron for the Warlock
-source: Corpus Angelus
+parent_class_id: class.character-options.classes.warlock
+option_group: Otherworldly Patron
+summary: Otherworldly Patron that grants alternate Warlock Patron magic
+source: Alternate Warlock
 source_type: third-party
+content_status: complete
 ---
 
-You've sought out a powerful entity of nature and made a pact with them. You may forge this pact with powerful forces buried in the earth, deep beneath the oceans, or high above the clouds. These forces have no quarrel with the natural order of things and have no interest in interfering with it. They never reach out to a mortal to lend their powers, but are sought out by mortals to earn their blessings. Your warlock patron of nature has appointed you to the protection of nature against evil forces seeking to turn it into a battlefield.
+You have entered into a Pact with a primordial force of the wild. Mortals seek these powers out: they climb to the peaks, wade into the black water of old swamps, and wait under great storms until something answers. What answers asks one thing of you: to stand guard over the wild against the evil that would turn it into a battlefield. Only the oldest powers of the natural world can form such Pacts. Living mountains, the spirits of ancient swamps, and the storms that circle the high sky are most common.
 
-## Expanded Spell List
+## Primordial Magic
 
-Entities of nature let you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.
+_2nd-level Nature Patron feature_
 
-## Nature expanded spells
+Your Patron infuses your magic with the power of the wild. Choose an Aspect from the table below. Once chosen, your Aspect cannot be changed. You can choose for your Eldritch Blast beams to deal your Aspect's damage type, equal to 1d10 + your Pact modifier on hit.
 
-| Spell level | Spells                                     |
-| ----------- | ------------------------------------------ |
-| 1st         | [[Entangle]], [[Fog Cloud]]                |
-| 2nd         | [[Gust of Wind]], [[Spike Growth]]         |
-| 3rd         | [[Meld Into Stone]], [[Water Breathing]]   |
-| 4th         | [[Control Water]], [[Freedom of Movement]] |
-| 5th         | [[Commune With Nature]], [[Tree Stride]]   |
+| Aspect   | Embodies            | Damage    |
+| -------- | ------------------- | --------- |
+| Mountain | Stone and avalanche | Thunder   |
+| Swamp    | Rot and reeds       | Poison    |
+| Sky      | Storm and wind      | Lightning |
 
-## Features
+You also learn certain spells at the Warlock levels below. They are Warlock spells for you, but they don't count against your number of Spells Known, and they cannot be replaced:
 
-> [!info]- Nature's Resilience (level 1)
-> You have hit points equal to 8 + your Charisma modifier at 1st level, and equal to 1d8 + your Charisma modifier per warlock level after 1st. In other words, your hit points are determined by your Charisma score rather than your Constitution score.
+| Warlock Level | Spells                                     |
+| ------------- | ------------------------------------------ |
+| 2nd           | [[Entangle]], [[Fog Cloud]]                |
+| 3rd           | [[Gust of Wind]], [[Spike Growth]]         |
+| 5th           | [[Meld Into Stone]], [[Water Breathing]]   |
+| 7th           | [[Control Water]], [[Freedom of Movement]] |
+| 9th           | [[Commune With Nature]], [[Tree Stride]]   |
 
-> [!info]- Gift of the Mountains (level 6)
-> At 6th level, your patron rewards your efforts with a gift that transforms your skin to iron. You have AC 18 and you are considered to be wearing heavy armor at all times. You are proficient with this armor.
->
-> Starting at 10th level, your skin is mithral and you have AC 19. At 14th level, your skin transforms into adamantine, you have AC 20 and any critical hit against you becomes a normal hit.
+## Child of the Wild
 
-> [!info]- Gift of the Swamps (level 10)
-> Starting at 10th level, you can cover yourself with water droplets to create an obscuring fog. As an action, you create a heavy fog that surrounds you for 1 minute. For the duration, everything within 5 feet of you is heavily obscured and everything within 15 feet of you is lightly obscured. You can see clearly within the fog.
->
-> Once you use this feature, you can't use it again until you finish a short or long rest.
+_2nd-level Nature Patron feature_
 
-> [!info]- Gift of the Skies (level 14)
-> Starting at 14th level, you can conjure lightning from the skies and redirect it. You can use your action to make a ranged spell attack against a target within 150 feet of you. On a hit, you deal 20d6 lightning damage.
->
-> Once you use this feature, you can't use it again until you finish a long rest.
+Your Pact has taken root in your body. You gain Resistance to your Aspect's damage type, and nonmagical difficult terrain costs you no extra movement.
 
-_From Corpus Angelus._
+## Rooted Blast
+
+_6th-level Nature Patron feature_
+
+Your Patron's power seizes your foes' footing. Once per turn, when you deal your Aspect's damage to a Large or smaller creature with Eldritch Blast, you can force it to make a Strength saving throw, expending one use of this feature. On a failure, roots, stone, or reeds hold its feet, and its speed is 0 until the end of its next turn.
+
+You can use this feature a number of times equal to your Pact modifier (minimum of once), and you regain all expended uses when you finish a long rest. If you have no uses left, you can expend a Pact Magic spell slot to use this feature again.
+
+## Primordial Form
+
+_10th-level Nature Patron feature_
+
+You can take the shape of the wild force behind your Aspect. As a bonus action, you assume this form for 1 minute. Your skin hardens into stone plates, a hide of wet bark and reeds, or a crackling skin of storm cloud, matching your Aspect. While transformed:
+
+- When you transform, you gain temporary hit points equal to your Warlock level + your Pact modifier (minimum of 1).
+- Damage you take from weapon attacks is reduced by your Pact modifier (minimum of 1).
+
+You can end this form early with a bonus action. You can transform once in between each short or long rest at no cost. After that, you must expend a Pact Magic spell slot to transform again.
+
+## Wrath of the Wild
+
+_14th-level Nature Patron feature_
+
+You call down the full fury of your Patron. As an action, choose a point within 60 feet. Each creature in a 10-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failure, a creature takes 6d10 damage of your Aspect's type, and if it is Large or smaller, roots, stone, or reeds hold its feet, and its speed is 0 until the end of its next turn. On a success, it takes half as much damage and suffers no other effect.
+
+You can use this feature once per long rest at no cost. After that, you must expend a Pact Magic spell slot to use it again.
+
+---
