@@ -1,7 +1,11 @@
 ---
 title: Ra Gol'vek
 tags: [ra-golvek]
-aliases: [ra-golvek/index]
+aliases:
+  - campaigns/ra-golvek
+  - ra-golvek
+  - "Ra Gol'vek"
+  - ra-golvek/index
 entity_type: campaign
 canonical_id: campaign-ra-golvek
 campaign_id: ra-golvek
@@ -13,6 +17,7 @@ current_month: 1
 current_day: 1
 calendar_month_names: []
 calendar_weekday_names: []
+source: Campaign Archive house rule
 source_type: campaign-original
 content_status: incomplete
 incomplete_reason: Campaign chronology, calendar rules, and location map are still being established

@@ -1,5 +1,9 @@
 ---
 title: Ring
+aliases:
+  - items/Ring
+  - items/ring
+  - Ring
 ---
 
 # Ring

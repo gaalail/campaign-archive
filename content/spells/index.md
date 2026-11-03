@@ -1,94 +1,26 @@
 ---
 title: Spells
+aliases:
+  - spells
+  - Spells
 ---
 
-# Spells
+# Spells Catalogue
 
-**Browse spells by level** | Organized for quick reference | Core of magical characters
-
----
-
-## Browse Spells by Level
-
-Choose a spell level to see all spells available at that progression:
-
-| Level     | When You Get It     | Count |
-| --------- | ------------------- | ----- |
-| Cantrips  | Always available    | 59    |
-| 1st-Level | Character level 1+  | 91    |
-| 2nd-Level | Character level 3+  | 102   |
-| 3rd-Level | Character level 5+  | 82    |
-| 4th-Level | Character level 7+  | 81    |
-| 5th-Level | Character level 9+  | 65    |
-| 6th-Level | Character level 11+ | 49    |
-| 7th-Level | Character level 13+ | 36    |
-| 8th-Level | Character level 15+ | 27    |
-| 9th-Level | Character level 17+ | 30    |
-
-**Browse spell levels:** [[spells/cantrips|Cantrips]], [[spells/1st-level|1st-Level]], [[spells/2nd-level|2nd-Level]], [[spells/3rd-level|3rd-Level]], [[spells/4th-level|4th-Level]], [[spells/5th-level|5th-Level]], [[spells/6th-level|6th-Level]], [[spells/7th-level|7th-Level]], [[spells/8th-level|8th-Level]], [[spells/9th-level|9th-Level]]
+Search and browse spells by class, level, and school of magic.
 
 ---
 
-## Browse All Spells Organized by Class
+## Spell Lists by Class
 
-**For a class-specific spell list**, go to that class page:
-
-- [[character-options/classes/Artificer|Artificer]] — Infusion magic
-- [[character-options/classes/Bard|Bard]] — Magic through performance
-- [[character-options/classes/Cleric|Cleric]] — Divine magic
-- [[character-options/classes/Druid|Druid]] — Nature magic
-- [[character-options/classes/Paladin|Paladin]] — Holy magic
-- [[character-options/classes/Ranger|Ranger]] — Primal magic
-- [[character-options/classes/Sorcerer|Sorcerer]] — Innate magic
-- [[character-options/classes/Thanatomancer|Thanatomancer]] — Necromantic magic
-- [[character-options/classes/Warlock|Warlock]] — Patron magic
-- [[character-options/classes/Wizard|Wizard]] — Scholarly magic
-
-Each class page shows **spells organized by level you can learn them**.
-
----
-
-## How Spell Levels Work
-
-**Spell Level ≠ Character Level**
-
-- **Cantrips:** Character level 1+ (always available)
-- **1st-level spells:** Character level 1+ (but limited slots)
-- **2nd-level spells:** Character level 3+ (more slots as you level)
-- **3rd-9th-level spells:** Character levels 5-17+ (highest power)
-
-Check your [[character-options/classes|class]] page for exact spell slot progression.
-
----
-
-## Spell Slots vs. Spells Known
-
-**Spell Slots:** How many spells you can cast per day (limited)
-
-**Spells Known:** Which spells you have access to (depends on class)
-
-- **Wizards:** Know fewer spells but can change them on rest
-- **Sorcerers:** Know fewer spells but pick them at level-up
-- **Clerics:** Know all cleric spells; prepare subset each rest
-- **Warlocks:** Know fewer, but regain slots on short rest
-
----
-
-## Finding a Specific Spell
-
-**Best approaches:**
-
-1. Go to your [[character-options/classes|class]] page → see class spell list organized by level
-2. Use search (magnifying glass) to find spell by name
-3. Browse spells by level using tabs above
-
----
-
-## Related Sections
-
-- [[character-options|Character Options]] — Classes and multiclassing
-- [[character-options/feats|Feats]] — Magic-focused feats
-- [[items|Items]] — Magic items that cast spells
-- [[monsters|Monsters]] — Spells creatures cast
-
----
+- [[character-options/classes/Artificer|Artificer Spells]]
+- [[character-options/classes/Bard|Bard Spells]]
+- [[character-options/classes/Cleric|Cleric Spells]]
+- [[character-options/classes/Druid|Druid Spells]]
+- [[character-options/classes/Paladin|Paladin Spells]]
+- [[character-options/classes/Ranger|Ranger Spells]]
+- [[character-options/classes/Sorcerer|Sorcerer Spells]]
+- [[character-options/classes/Tamer|Tamer Spells]]
+- [[character-options/classes/Thanatomancer|Thanatomancer Spells]]
+- [[character-options/classes/Warlock|Warlock Spells]]
+- [[character-options/classes/Wizard|Wizard Spells]]

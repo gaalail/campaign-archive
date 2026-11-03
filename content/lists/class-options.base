@@ -6,30 +6,21 @@ formulas:
   Name: file.asLink(title)
 properties:
   formula.Name:
-    displayName: Name
+    displayName: Option
+  parent_class:
+    displayName: Class
   option_group:
     displayName: Group
-  parent_class:
-    displayName: Class or Order
   min_level:
-    displayName: Level
+    displayName: Min Level
   prerequisite:
     displayName: Prerequisite
   source:
     displayName: Source
 views:
   - type: table
-    name: By group
-    groupBy:
-      property: option_group
-      direction: ASC
-    order: [formula.Name, parent_class, min_level, prerequisite]
+    name: All Class Options
+    order: [formula.Name, parent_class, option_group, min_level, prerequisite, source]
     sort:
-      - property: option_group
-        direction: ASC
-      - property: parent_class
-        direction: ASC
-      - property: min_level
-        direction: ASC
       - property: file.name
         direction: ASC

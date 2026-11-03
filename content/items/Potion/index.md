@@ -1,5 +1,9 @@
 ---
 title: Potion
+aliases:
+  - items/Potion
+  - items/potion
+  - Potion
 ---
 
 # Potion

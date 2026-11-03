@@ -1,7 +1,11 @@
 ---
 title: Curse of Strahd
 tags: [curse-of-strahd]
-aliases: [curse-of-strahd/index]
+aliases:
+  - campaigns/curse-of-strahd
+  - curse-of-strahd
+  - Curse of Strahd
+  - curse-of-strahd/index
 entity_type: campaign
 canonical_id: campaign-curse-of-strahd
 campaign_id: curse-of-strahd
@@ -13,6 +17,7 @@ current_month: 1
 current_day: 1
 calendar_month_names: []
 calendar_weekday_names: []
+source: Campaign Archive house rule
 source_type: official-supplement
 content_status: incomplete
 incomplete_reason: Campaign chronology, calendar rules, and location map are still being established

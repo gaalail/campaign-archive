@@ -7,12 +7,6 @@ formulas:
 properties:
   formula.Name:
     displayName: Fighting Style
-  parent_class:
-    displayName: Available through
-  min_level:
-    displayName: Minimum Level
-  prerequisite:
-    displayName: Prerequisite
   summary:
     displayName: Summary
   source:
@@ -20,7 +14,7 @@ properties:
 views:
   - type: table
     name: All Fighting Styles
-    order: [formula.Name, min_level, prerequisite, summary]
+    order: [formula.Name, summary, source]
     sort:
       - property: file.name
         direction: ASC

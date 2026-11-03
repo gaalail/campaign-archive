@@ -1,5 +1,9 @@
 ---
 title: Class Options
+aliases:
+  - character-options/class-options
+  - class-options
+  - Class Options
 ---
 
 # Class Options

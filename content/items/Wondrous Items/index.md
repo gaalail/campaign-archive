@@ -1,10 +1,14 @@
 ---
 title: Wondrous Items
+aliases:
+  - items/Wondrous Items
+  - items/wondrous-items
+  - Wondrous Items
 ---
 
 # Wondrous Items
 
-Other magical equipment
+Miscellaneous magic items, wondrous artifacts, tools, garments, and relics.
 
 ---
 
@@ -16,14 +20,4 @@ Other magical equipment
 
 ## Items of This Type
 
-![[items.base#Wondrous-Items]]
-
----
-
-## Related Sections
-
-- [[items|All Items]]
-- [[character-options/classes|Classes]] - Class-specific equipment
-- [[Character Options]] - Build your character
-
----
+![[items.base#Wondrous Items]]

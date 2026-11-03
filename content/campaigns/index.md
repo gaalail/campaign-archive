@@ -1,5 +1,8 @@
 ---
 title: Campaigns
+aliases:
+  - campaigns
+  - Campaigns
 ---
 
 # Campaigns

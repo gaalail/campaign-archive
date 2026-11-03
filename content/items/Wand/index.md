@@ -1,5 +1,9 @@
 ---
 title: Wand
+aliases:
+  - items/Wand
+  - items/wand
+  - Wand
 ---
 
 # Wand

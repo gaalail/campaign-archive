@@ -1,5 +1,8 @@
 ---
 title: Build a Character
+aliases:
+  - Character Builder
+  - character-builder
 ---
 
 # How to Build a D&D Character

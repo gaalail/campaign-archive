@@ -1,5 +1,9 @@
 ---
 title: Templates
+aliases:
+  - character-options/templates
+  - templates
+  - Templates
 ---
 
 # Templates

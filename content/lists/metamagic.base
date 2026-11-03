@@ -6,21 +6,17 @@ formulas:
   Name: file.asLink(title)
 properties:
   formula.Name:
-    displayName: Name
-  min_level:
-    displayName: Level
-  prerequisite:
-    displayName: Prerequisite
+    displayName: Option
+  cost:
+    displayName: Sorcery Points
   summary:
     displayName: Summary
   source:
     displayName: Source
 views:
   - type: table
-    name: All metamagic
-    order: [formula.Name, min_level, prerequisite]
+    name: Metamagic
+    order: [formula.Name, cost, summary, source]
     sort:
-      - property: min_level
-        direction: ASC
       - property: file.name
         direction: ASC

@@ -1,7 +1,8 @@
 filters:
   and:
     - file.inFolder("spells")
-    - subclass_spell_lists.contains("Arcane Knight")
+    - file.name != "index"
+    - classes.contains("Arcane Knight")
 formulas:
   Name: file.asLink(title)
 properties:
@@ -17,15 +18,13 @@ properties:
     displayName: Concentration
   source:
     displayName: Source
-  arcane_knight_list_marker:
-    displayName: List marker
 views:
   - type: table
     name: All Arcane Knight Spells
     groupBy:
       property: level
       direction: ASC
-    order: [formula.Name, school, casting_time, concentration, source, arcane_knight_list_marker]
+    order: [formula.Name, school, casting_time, concentration, source]
     sort:
       - property: level
         direction: ASC
@@ -36,7 +35,7 @@ views:
     filters:
       and:
         - level == 0
-    order: [formula.Name, school, casting_time, arcane_knight_list_marker]
+    order: [formula.Name, school, casting_time]
     sort:
       - property: file.name
         direction: ASC
@@ -45,7 +44,7 @@ views:
     filters:
       and:
         - level == 1
-    order: [formula.Name, school, concentration, arcane_knight_list_marker]
+    order: [formula.Name, school, concentration]
     sort:
       - property: file.name
         direction: ASC
@@ -54,7 +53,7 @@ views:
     filters:
       and:
         - level == 2
-    order: [formula.Name, school, concentration, arcane_knight_list_marker]
+    order: [formula.Name, school, concentration]
     sort:
       - property: file.name
         direction: ASC
@@ -63,7 +62,7 @@ views:
     filters:
       and:
         - level == 3
-    order: [formula.Name, school, concentration, arcane_knight_list_marker]
+    order: [formula.Name, school, concentration]
     sort:
       - property: file.name
         direction: ASC
@@ -72,7 +71,7 @@ views:
     filters:
       and:
         - level == 4
-    order: [formula.Name, school, concentration, arcane_knight_list_marker]
+    order: [formula.Name, school, concentration]
     sort:
       - property: file.name
         direction: ASC

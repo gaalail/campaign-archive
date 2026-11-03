@@ -6,9 +6,9 @@ formulas:
   Name: file.asLink(title)
 properties:
   formula.Name:
-    displayName: Name
+    displayName: Invocation
   min_level:
-    displayName: Level
+    displayName: Min Level
   prerequisite:
     displayName: Prerequisite
   summary:
@@ -17,11 +17,8 @@ properties:
     displayName: Source
 views:
   - type: table
-    name: By level
-    groupBy:
-      property: min_level
-      direction: ASC
-    order: [formula.Name, prerequisite, summary]
+    name: Eldritch Invocations
+    order: [formula.Name, min_level, prerequisite, summary, source]
     sort:
       - property: min_level
         direction: ASC

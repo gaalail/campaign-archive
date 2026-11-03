@@ -1,5 +1,9 @@
 ---
 title: Scroll
+aliases:
+  - items/Scroll
+  - items/scroll
+  - Scroll
 ---
 
 # Scroll

@@ -1,5 +1,9 @@
 ---
 title: Classes
+aliases:
+  - character-options/classes
+  - classes
+  - Classes
 ---
 
 # Character Classes

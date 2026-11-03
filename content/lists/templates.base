@@ -6,14 +6,14 @@ formulas:
   Name: file.asLink(title)
 properties:
   formula.Name:
-    displayName: Name
+    displayName: Template
   summary:
     displayName: Summary
   source:
     displayName: Source
 views:
   - type: table
-    name: All templates
+    name: All Templates
     order: [formula.Name, summary, source]
     sort:
       - property: file.name

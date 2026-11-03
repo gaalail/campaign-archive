@@ -1,7 +1,11 @@
 ---
 title: Vyrun
 tags: [vyrun]
-aliases: [vyrun/index]
+aliases:
+  - campaigns/vyrun
+  - vyrun
+  - Vyrun
+  - vyrun/index
 entity_type: campaign
 canonical_id: campaign-vyrun
 campaign_id: vyrun
@@ -15,6 +19,7 @@ calendar_month_names:
   [January, February, March, April, May, June, July, August, September, October, November, December]
 calendar_days_per_month: [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 calendar_weekday_names: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+source: Campaign Archive house rule
 source_type: campaign-original
 content_status: incomplete
 incomplete_reason: Campaign chronology, calendar rules, and location map are still being established

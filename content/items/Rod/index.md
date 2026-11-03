@@ -1,5 +1,9 @@
 ---
 title: Rod
+aliases:
+  - items/Rod
+  - items/rod
+  - Rod
 ---
 
 # Rod

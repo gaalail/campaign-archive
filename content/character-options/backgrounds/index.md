@@ -1,5 +1,9 @@
 ---
 title: Backgrounds
+aliases:
+  - character-options/backgrounds
+  - backgrounds
+  - Backgrounds
 ---
 
 # Backgrounds

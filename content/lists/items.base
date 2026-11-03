@@ -10,161 +10,15 @@ properties:
   rarity:
     displayName: Rarity
   item_type:
-    displayName: Item type
+    displayName: Type
   attunement:
     displayName: Attunement
-  summary:
-    displayName: Summary
   source:
     displayName: Source
 views:
   - type: table
-    name: All items
-    order: [formula.Name, rarity, item_type, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Common
-    filters:
-      and:
-        - rarity == "Common"
-    order: [formula.Name, item_type, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Uncommon
-    filters:
-      and:
-        - rarity == "Uncommon"
-    order: [formula.Name, item_type, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Rare
-    filters:
-      and:
-        - rarity == "Rare"
-    order: [formula.Name, item_type, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Very Rare
-    filters:
-      and:
-        - rarity == "Very Rare"
-    order: [formula.Name, item_type, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Legendary
-    filters:
-      and:
-        - rarity == "Legendary"
-    order: [formula.Name, item_type, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Artifact
-    filters:
-      and:
-        - rarity == "Artifact"
-    order: [formula.Name, item_type, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Varies
-    filters:
-      and:
-        - rarity == "Varies"
-    order: [formula.Name, item_type, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Homebrew
-    filters:
-      and:
-        - source != "SRD 5.1"
-    order: [formula.Name, rarity, item_type]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Ammunition
-    filters:
-      and:
-        - item_type == "Ammunition"
-    order: [formula.Name, rarity, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Armor
-    filters:
-      and:
-        - item_type == "Armor"
-    order: [formula.Name, rarity, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Potion
-    filters:
-      and:
-        - item_type == "Potion"
-    order: [formula.Name, rarity, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Ring
-    filters:
-      and:
-        - item_type == "Ring"
-    order: [formula.Name, rarity, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Rod
-    filters:
-      and:
-        - item_type == "Rod"
-    order: [formula.Name, rarity, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Scroll
-    filters:
-      and:
-        - item_type == "Scroll"
-    order: [formula.Name, rarity, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Staff
-    filters:
-      and:
-        - item_type == "Staff"
-    order: [formula.Name, rarity, attunement]
-    sort:
-      - property: file.name
-        direction: ASC
-  - type: table
-    name: Wand
-    filters:
-      and:
-        - item_type == "Wand"
-    order: [formula.Name, rarity, attunement]
+    name: All Items
+    order: [formula.Name, item_type, rarity, attunement, source]
     sort:
       - property: file.name
         direction: ASC
@@ -173,7 +27,70 @@ views:
     filters:
       and:
         - item_type == "Weapon"
-    order: [formula.Name, rarity, attunement]
+    order: [formula.Name, rarity, attunement, source]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Armor
+    filters:
+      and:
+        - item_type == "Armor"
+    order: [formula.Name, rarity, attunement, source]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Potion
+    filters:
+      and:
+        - item_type == "Potion"
+    order: [formula.Name, rarity, source]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Ring
+    filters:
+      and:
+        - item_type == "Ring"
+    order: [formula.Name, rarity, attunement, source]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Rod
+    filters:
+      and:
+        - item_type == "Rod"
+    order: [formula.Name, rarity, attunement, source]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Scroll
+    filters:
+      and:
+        - item_type == "Scroll"
+    order: [formula.Name, rarity, source]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Staff
+    filters:
+      and:
+        - item_type == "Staff"
+    order: [formula.Name, rarity, attunement, source]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Wand
+    filters:
+      and:
+        - item_type == "Wand"
+    order: [formula.Name, rarity, attunement, source]
     sort:
       - property: file.name
         direction: ASC
@@ -181,8 +98,17 @@ views:
     name: Wondrous Items
     filters:
       and:
-        - item_type == "Wondrous Items"
-    order: [formula.Name, rarity, attunement]
+        - item_type == "Wondrous Item"
+    order: [formula.Name, rarity, attunement, source]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Ammunition
+    filters:
+      and:
+        - item_type == "Ammunition"
+    order: [formula.Name, rarity, source]
     sort:
       - property: file.name
         direction: ASC

@@ -1,5 +1,9 @@
 ---
 title: Ammunition
+aliases:
+  - items/Ammunition
+  - items/ammunition
+  - Ammunition
 ---
 
 # Ammunition

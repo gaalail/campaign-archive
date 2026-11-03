@@ -1,5 +1,9 @@
 ---
 title: Subclasses
+aliases:
+  - character-options/subclasses
+  - subclasses
+  - Subclasses
 ---
 
 # Subclasses

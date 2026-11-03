@@ -1,5 +1,9 @@
 ---
 title: Staff
+aliases:
+  - items/Staff
+  - items/staff
+  - Staff
 ---
 
 # Staff

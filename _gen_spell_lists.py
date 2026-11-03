@@ -72,18 +72,28 @@ views:
 ''' + "\n".join(views) + "\n"
 
 
+root.mkdir(parents=True, exist_ok=True)
+
 specs = [
+    ("artificer-spells.base", "Artificer", 5, True),
     ("bard-spells.base", "Bard", 9, True),
     ("cleric-spells.base", "Cleric", 9, True),
     ("druid-spells.base", "Druid", 9, True),
     ("paladin-spells.base", "Paladin", 5, False),
     ("ranger-spells.base", "Ranger", 5, False),
     ("sorcerer-spells.base", "Sorcerer", 9, True),
+    ("tamer-spells.base", "Tamer", 5, True),
+    ("thanatomancer-spells.base", "Thanatomancer", 9, True),
     ("warlock-spells.base", "Warlock", 9, True),
     ("wizard-spells.base", "Wizard", 9, True),
+    ("arcane-knight-spells.base", "Arcane Knight", 4, True),
+    ("mystic-spells.base", "Mystic", 4, True),
+    ("witchblade-spells.base", "Witchblade", 4, True),
+    ("wu-jen-spells.base", "Way of the Wu Jen", 5, True),
 ]
 
 for fname, cls, mx, can in specs:
     path = root / fname
     path.write_text(make_spell_base(cls, mx, can), encoding="utf-8")
     print("wrote", path)
+

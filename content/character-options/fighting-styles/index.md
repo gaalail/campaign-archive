@@ -1,7 +1,10 @@
 ---
 title: Fighting Styles
 aliases:
+  - character-options/fighting-styles
   - character-options/class-options/fighting-styles
+  - fighting-styles
+  - Fighting Styles
 ---
 
 # Fighting Styles

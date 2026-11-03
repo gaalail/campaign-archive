@@ -6,21 +6,17 @@ formulas:
   Name: file.asLink(title)
 properties:
   formula.Name:
-    displayName: Name
+    displayName: Class
   hit_die:
-    displayName: Hit die
-  spellcasting_ability:
-    displayName: Spellcasting
-  saving_throws:
-    displayName: Saving throws
+    displayName: Hit Die
   summary:
     displayName: Summary
   source:
     displayName: Source
 views:
   - type: table
-    name: All classes
-    order: [formula.Name, hit_die, spellcasting_ability, saving_throws, source]
+    name: All Classes
+    order: [formula.Name, hit_die, summary, source]
     sort:
       - property: file.name
         direction: ASC

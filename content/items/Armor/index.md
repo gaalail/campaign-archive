@@ -1,5 +1,9 @@
 ---
 title: Armor
+aliases:
+  - items/Armor
+  - items/armor
+  - Armor
 ---
 
 # Armor

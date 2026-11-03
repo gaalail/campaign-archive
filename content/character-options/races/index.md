@@ -1,5 +1,9 @@
 ---
 title: Races
+aliases:
+  - character-options/races
+  - races
+  - Races
 ---
 
 # Character Races

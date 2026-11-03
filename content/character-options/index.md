@@ -1,5 +1,8 @@
 ---
 title: Character Options
+aliases:
+  - character-options
+  - Character Options
 ---
 
 # Building Your Character

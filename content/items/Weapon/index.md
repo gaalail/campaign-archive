@@ -1,5 +1,9 @@
 ---
 title: Weapon
+aliases:
+  - items/Weapon
+  - items/weapon
+  - Weapon
 ---
 
 # Weapon

@@ -6,7 +6,7 @@ formulas:
   Name: file.asLink(title)
 properties:
   formula.Name:
-    displayName: Name
+    displayName: Feat
   prerequisite:
     displayName: Prerequisite
   summary:
@@ -15,8 +15,8 @@ properties:
     displayName: Source
 views:
   - type: table
-    name: All feats
-    order: [formula.Name, prerequisite, source]
+    name: All Feats
+    order: [formula.Name, prerequisite, summary, source]
     sort:
       - property: file.name
         direction: ASC

@@ -7,6 +7,8 @@ formulas:
 properties:
   formula.Name:
     displayName: Technique
+  min_level:
+    displayName: Min Level
   prerequisite:
     displayName: Prerequisite
   summary:
@@ -15,8 +17,8 @@ properties:
     displayName: Source
 views:
   - type: table
-    name: Mystic Techniques
-    order: [formula.Name, prerequisite, summary]
+    name: Monk Techniques
+    order: [formula.Name, min_level, prerequisite, summary, source]
     sort:
       - property: file.name
         direction: ASC

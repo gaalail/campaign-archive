@@ -1,5 +1,9 @@
 ---
 title: Feats
+aliases:
+  - character-options/feats
+  - feats
+  - Feats
 ---
 
 # Feats
