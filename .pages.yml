@@ -578,6 +578,7 @@ content:
     label: Spells
     type: collection
     path: content/spells
+    subfolders: true
     exclude:
       - index.md
     filename: "{primary}.md"
@@ -692,6 +693,7 @@ content:
     label: Items
     type: collection
     path: content/items
+    subfolders: true
     exclude:
       - index.md
     filename: "{primary}.md"
@@ -810,6 +812,7 @@ content:
         label: Subclasses
         type: collection
         path: content/character-options/subclasses
+        subfolders: true
         filename: "{primary}.md"
         view:
           primary: title
@@ -960,6 +963,7 @@ content:
         label: Class options
         type: collection
         path: content/character-options/class-options
+        subfolders: true
         filename: "{primary}.md"
         view:
           primary: title
@@ -1127,6 +1131,7 @@ content:
     label: Monsters
     type: collection
     path: content/monsters
+    subfolders: true
     filename: "{primary}.md"
     view:
       primary: title
