@@ -138,6 +138,12 @@ function parseMarkdownBlocks(text: string): Block[] {
       continue;
     }
 
+    // Obsidian embeds are supplied by React catalogue grids below; skip the embed marker itself.
+    if (line.trim().startsWith('![[')) {
+      i++;
+      continue;
+    }
+
     // Regular paragraph
     if (line.trim() !== '') {
       const paraLines: string[] = [];
@@ -326,11 +332,7 @@ export const InlineContent: React.FC<{ text: string; onNavigate: (id: string) =>
 
     // Check if target is a base embed view (e.g. ![[ra-golvek.base]])
     if (target.endsWith('.base')) {
-      parts.push(
-        <span key={match.index} className="inline-flex items-center text-xs text-slate-400 bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">
-          Integrated catalog table
-        </span>
-      );
+      parts.push(<React.Fragment key={match.index} />);
     } else {
       const resolved = resolveWikilink(target);
       if (resolved) {

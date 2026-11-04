@@ -1,0 +1,120 @@
+filters:
+  and:
+    - file.inFolder("character-options")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  hit_die:
+    displayName: Hit die
+  spellcasting_ability:
+    displayName: Spellcasting
+  saving_throws:
+    displayName: Saving throws
+  parent_class:
+    displayName: Parent class
+  summary:
+    displayName: Summary
+  prerequisite:
+    displayName: Prerequisite
+  option_group:
+    displayName: Group
+  min_level:
+    displayName: Min level
+  image:
+    displayName: Picture
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: Classes
+    filters:
+      and:
+        - file.inFolder("character-options/classes")
+    order: [formula.Name, hit_die, spellcasting_ability, saving_throws]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Subclasses by class
+    groupBy:
+      property: parent_class
+      direction: ASC
+    filters:
+      and:
+        - file.inFolder("character-options/subclasses")
+    order: [formula.Name, summary]
+    sort:
+      - property: parent_class
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Races
+    filters:
+      and:
+        - file.inFolder("character-options/races")
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Backgrounds
+    filters:
+      and:
+        - file.inFolder("character-options/backgrounds")
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Feats
+    filters:
+      and:
+        - file.inFolder("character-options/feats")
+    order: [formula.Name, prerequisite]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Templates
+    filters:
+      and:
+        - file.inFolder("character-options/templates")
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Class options
+    groupBy:
+      property: option_group
+      direction: ASC
+    filters:
+      and:
+        - file.inFolder("character-options/class-options")
+    order: [formula.Name, parent_class, min_level, prerequisite]
+    sort:
+      - property: option_group
+        direction: ASC
+      - property: parent_class
+        direction: ASC
+      - property: min_level
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Homebrew
+    filters:
+      and:
+        - source != "SRD 5.1"
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: cards
+    name: Gallery
+    image: image
+    order: [formula.Name, summary]

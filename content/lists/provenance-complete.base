@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.name != "index"
+    - content_status == "complete"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  entity_type:
+    displayName: Type
+  source_type:
+    displayName: Source type
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: Complete Content
+    order: [formula.Name, entity_type, source_type, source]
+    sort:
+      - property: file.name
+        direction: ASC

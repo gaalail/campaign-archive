@@ -51,6 +51,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   };
 
   const spells = archiveDb.entries.filter(e => e.category === 'spells' && !e.id.endsWith('/index'));
+  const rules = archiveDb.entries.filter(e => e.category === 'rules' && !e.id.endsWith('/index'));
+  const monsters = archiveDb.entries.filter(e => e.category === 'monsters' && !e.id.endsWith('/index'));
   const classes = archiveDb.entries.filter(e => e.category === 'classes' && !e.id.endsWith('/index'));
   const races = archiveDb.entries.filter(e => e.category === 'races' && !e.id.endsWith('/index'));
   const backgrounds = archiveDb.entries.filter(e => e.category === 'backgrounds' && !e.id.endsWith('/index'));
@@ -165,6 +167,38 @@ export const Sidebar: React.FC<SidebarProps> = ({
           >
             <Sparkles className="w-4 h-4 text-violet-400" />
             <span>Spell Compendium ({spells.length})</span>
+          </button>
+
+          <button
+            onClick={() => {
+              onSetView('reader');
+              onNavigateToEntry('rules/index');
+              onClose();
+            }}
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+              currentView === 'reader' && currentEntryId?.startsWith('rules/')
+                ? 'bg-amber-500 text-slate-950 shadow'
+                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+            }`}
+          >
+            <BookOpen className="w-4 h-4 text-teal-400" />
+            <span>Rules Compendium ({rules.length})</span>
+          </button>
+
+          <button
+            onClick={() => {
+              onSetView('reader');
+              onNavigateToEntry('monsters/index');
+              onClose();
+            }}
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+              currentView === 'reader' && currentEntryId?.startsWith('monsters/')
+                ? 'bg-amber-500 text-slate-950 shadow'
+                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+            }`}
+          >
+            <Shield className="w-4 h-4 text-red-400" />
+            <span>Bestiary ({monsters.length})</span>
           </button>
 
           <button
@@ -297,22 +331,52 @@ export const Sidebar: React.FC<SidebarProps> = ({
             {openSections.classes && (
               <div className="pl-2 mt-1 space-y-0.5 border-l border-slate-800">
                 {classes.map(cls => (
-                  <button
-                    key={cls.id}
-                    onClick={() => {
-                      onSetView('reader');
-                      onNavigateToEntry(cls.id);
-                      onClose();
-                    }}
-                    className={`w-full text-left px-2.5 py-1.5 rounded-lg transition-colors flex items-center justify-between ${
-                      currentView === 'reader' && currentEntryId === cls.id
-                        ? 'text-rose-400 bg-rose-500/10 font-semibold'
-                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
-                    }`}
-                  >
-                    <span className="truncate">{cls.title}</span>
-                    <span className="text-[10px] text-slate-500 font-mono">{cls.hit_die}</span>
-                  </button>
+                  <React.Fragment key={cls.id}>
+                    <button
+                      onClick={() => {
+                        onSetView('reader');
+                        onNavigateToEntry(cls.id);
+                        onClose();
+                      }}
+                      className={`w-full text-left px-2.5 py-1.5 rounded-lg transition-colors flex items-center justify-between ${
+                        currentView === 'reader' && currentEntryId === cls.id
+                          ? 'text-rose-400 bg-rose-500/10 font-semibold'
+                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
+                      }`}
+                    >
+                      <span className="truncate">{cls.title}</span>
+                      <span className="text-[10px] text-slate-500 font-mono">{cls.hit_die}</span>
+                    </button>
+                    {cls.title === 'Warlock' && (
+                      <div className="ml-3 mb-1 border-l border-slate-800 pl-2 space-y-0.5">
+                        {[
+                          ['eldritch-invocations/index', 'Eldritch Invocations'],
+                          ['pact-foci/index', 'Pact Foci'],
+                          ['familiars/index', 'Eldritch Familiars'],
+                          ['elder-arcana/index', 'Elder Arcana']
+                        ].map(([folder, label]) => {
+                          const id = `character-options/class-options/${folder}`;
+                          return (
+                            <button
+                              key={folder}
+                              onClick={() => {
+                                onSetView('reader');
+                                onNavigateToEntry(id);
+                                onClose();
+                              }}
+                              className={`w-full text-left px-2 py-1 rounded-lg transition-colors truncate text-[11px] ${
+                                currentView === 'reader' && currentEntryId === id
+                                  ? 'text-violet-300 bg-violet-500/10 font-semibold'
+                                  : 'text-slate-500 hover:text-slate-200 hover:bg-slate-800/40'
+                              }`}
+                            >
+                              {label}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </React.Fragment>
                 ))}
               </div>
             )}

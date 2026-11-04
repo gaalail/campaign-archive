@@ -1,0 +1,33 @@
+filters:
+  and:
+    - file.inFolder("character-options/class-options/avatar-features")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  parent_class:
+    displayName: Class or Order
+  min_level:
+    displayName: Level
+  prerequisite:
+    displayName: Prerequisite
+  summary:
+    displayName: Summary
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: By Order
+    groupBy:
+      property: parent_class
+      direction: ASC
+    order: [formula.Name, min_level, prerequisite, summary]
+    sort:
+      - property: parent_class
+        direction: ASC
+      - property: min_level
+        direction: ASC
+      - property: file.name
+        direction: ASC

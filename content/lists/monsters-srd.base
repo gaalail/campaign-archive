@@ -1,0 +1,23 @@
+filters:
+  and:
+    - file.inFolder("monsters")
+    - file.name != "index"
+    - source_type == "SRD"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  creature_type:
+    displayName: Type
+  cr:
+    displayName: CR
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: SRD Monsters
+    order: [formula.Name, creature_type, cr, source]
+    sort:
+      - property: file.name
+        direction: ASC

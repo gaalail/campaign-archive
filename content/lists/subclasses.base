@@ -1,0 +1,33 @@
+filters:
+  and:
+    - file.inFolder("character-options/subclasses")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  parent_class:
+    displayName: Class
+  summary:
+    displayName: Summary
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: By class
+    groupBy:
+      property: parent_class
+      direction: ASC
+    order: [formula.Name, summary, source]
+    sort:
+      - property: parent_class
+        direction: ASC
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Alphabetical
+    order: [formula.Name, parent_class, summary, source]
+    sort:
+      - property: file.name
+        direction: ASC

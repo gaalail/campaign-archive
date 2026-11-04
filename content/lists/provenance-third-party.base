@@ -1,0 +1,24 @@
+filters:
+  and:
+    - file.name != "index"
+    - source_type == "third-party"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  entity_type:
+    displayName: Type
+  source:
+    displayName: Source
+  edition:
+    displayName: Edition
+  content_status:
+    displayName: Status
+views:
+  - type: table
+    name: Third-party Content
+    order: [formula.Name, entity_type, source, edition, content_status]
+    sort:
+      - property: file.name
+        direction: ASC

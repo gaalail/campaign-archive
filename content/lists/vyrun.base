@@ -1,0 +1,77 @@
+filters:
+  and:
+    - file.inFolder("campaigns/vyrun")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  type:
+    displayName: Type
+  summary:
+    displayName: Summary
+  date:
+    displayName: In-game date
+  locations:
+    displayName: Locations
+  characters:
+    displayName: Characters / NPCs
+  factions:
+    displayName: Factions
+  encounters:
+    displayName: Encounters
+  tags:
+    displayName: Tags
+views:
+  - type: table
+    name: All entries
+    order: [formula.Name, type, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Characters
+    filters:
+      and:
+        - type == "Character"
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Locations
+    filters:
+      and:
+        - type == "Place"
+    order: [formula.Name, summary]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: Sessions
+    filters:
+      and:
+        - type == "Session"
+    order: [formula.Name, date, locations, characters, encounters, summary]
+    sort:
+      - property: date
+        direction: ASC
+  - type: table
+    name: Calendar events
+    filters:
+      and:
+        - type == "CalendarEvent"
+    order: [formula.Name, date, locations, summary]
+    sort:
+      - property: date
+        direction: ASC
+  - type: table
+    name: Encounters
+    filters:
+      and:
+        - type == "Encounter"
+    order: [formula.Name, locations, characters, summary]
+    sort:
+      - property: file.name
+        direction: ASC

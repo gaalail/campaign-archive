@@ -1,0 +1,35 @@
+filters:
+  and:
+    - file.inFolder("character-options/class-options")
+    - file.name != "index"
+formulas:
+  Name: file.asLink(title)
+properties:
+  formula.Name:
+    displayName: Name
+  option_group:
+    displayName: Group
+  parent_class:
+    displayName: Class or Order
+  min_level:
+    displayName: Level
+  prerequisite:
+    displayName: Prerequisite
+  source:
+    displayName: Source
+views:
+  - type: table
+    name: By group
+    groupBy:
+      property: option_group
+      direction: ASC
+    order: [formula.Name, parent_class, min_level, prerequisite]
+    sort:
+      - property: option_group
+        direction: ASC
+      - property: parent_class
+        direction: ASC
+      - property: min_level
+        direction: ASC
+      - property: file.name
+        direction: ASC

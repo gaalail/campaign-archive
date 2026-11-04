@@ -253,6 +253,29 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
               </div>
             )}
 
+            {entry.category === 'class-options' && entry.id.endsWith('/index') && (
+              <div className="mt-6 rounded-xl border border-slate-800 bg-slate-900/50 p-4">
+                <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-violet-300">
+                  Available {entry.title}
+                </h2>
+                <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {archiveDb.entries
+                    .filter(candidate => candidate.category === 'class-options' && candidate.subcategory === entry.subcategory && !candidate.id.endsWith('/index'))
+                    .sort((a, b) => a.title.localeCompare(b.title))
+                    .map(option => (
+                      <button
+                        key={option.id}
+                        onClick={() => onNavigate(option.id)}
+                        className="rounded-lg border border-slate-800 bg-slate-950/60 px-3 py-2 text-left transition-colors hover:border-violet-500/50"
+                      >
+                        <span className="block text-sm font-semibold text-slate-200">{option.title}</span>
+                        {option.summary && <span className="mt-1 block text-xs text-slate-400">{option.summary}</span>}
+                      </button>
+                    ))}
+                </div>
+              </div>
+            )}
+
             {/* If not a class, show backlinks directly at bottom */}
             {!isClass && entry.incomingLinks && entry.incomingLinks.length > 0 && (
               <div className="mt-8 pt-6 border-t border-slate-800">
