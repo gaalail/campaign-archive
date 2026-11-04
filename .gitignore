@@ -2,6 +2,7 @@
 node_modules/
 ponytail/
 public/
+dist/
 prof/
 .quartz/
 .quartz-cache/
