@@ -5,7 +5,8 @@ import {
   getRarityColor,
   getSubclassesForClass,
   getClassOptionsForClass,
-  getEntryById
+  getEntryById,
+  archiveDb
 } from '../utils/archiveUtils';
 import { MarkdownView } from './MarkdownView';
 import {
@@ -231,6 +232,26 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
         {activeTab === 'content' && (
           <div className="space-y-6">
             <MarkdownView content={entry.body} onNavigate={onNavigate} />
+
+            {entry.category === 'spells' && entry.id.endsWith('/index') && (
+              <div className="mt-6 rounded-xl border border-slate-800 bg-slate-900/50 p-4">
+                <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-violet-300">Available Spells</h2>
+                <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                  {(entry.subcategory
+                    ? archiveDb.entries.filter(candidate => candidate.category === 'spells' && candidate.subcategory === entry.subcategory && !candidate.id.endsWith('/index'))
+                    : archiveDb.entries.filter(candidate => candidate.category === 'spells' && !candidate.id.endsWith('/index'))
+                  ).sort((a, b) => a.title.localeCompare(b.title)).map(spell => (
+                    <button
+                      key={spell.id}
+                      onClick={() => onNavigate(spell.id)}
+                      className="rounded-lg border border-slate-800 bg-slate-950/60 px-3 py-2 text-left text-sm text-slate-300 transition-colors hover:border-violet-500/50 hover:text-violet-300"
+                    >
+                      {spell.title}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* If not a class, show backlinks directly at bottom */}
             {!isClass && entry.incomingLinks && entry.incomingLinks.length > 0 && (

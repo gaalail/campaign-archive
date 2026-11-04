@@ -38,6 +38,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({
     classes: true,
     campaigns: true,
+    spells: true,
     races: false,
     backgrounds: false,
     feats: false,
@@ -49,6 +50,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     setOpenSections(prev => ({ ...prev, [section]: !prev[section] }));
   };
 
+  const spells = archiveDb.entries.filter(e => e.category === 'spells' && !e.id.endsWith('/index'));
   const classes = archiveDb.entries.filter(e => e.category === 'classes' && !e.id.endsWith('/index'));
   const races = archiveDb.entries.filter(e => e.category === 'races' && !e.id.endsWith('/index'));
   const backgrounds = archiveDb.entries.filter(e => e.category === 'backgrounds' && !e.id.endsWith('/index'));
@@ -151,6 +153,22 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           <button
             onClick={() => {
+              onSetView('reader');
+              onNavigateToEntry('spells/index');
+              onClose();
+            }}
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+              currentView === 'reader' && currentEntryId?.startsWith('spells/')
+                ? 'bg-amber-500 text-slate-950 shadow'
+                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+            }`}
+          >
+            <Sparkles className="w-4 h-4 text-violet-400" />
+            <span>Spell Compendium ({spells.length})</span>
+          </button>
+
+          <button
+            onClick={() => {
               onSetView('items');
               onClose();
             }}
@@ -218,6 +236,47 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     {c.title}
                   </button>
                 ))}
+              </div>
+            )}
+          </div>
+
+          {/* SPELLS ACCORDION */}
+          <div>
+            <button
+              onClick={() => toggleSection('spells')}
+              className="w-full flex items-center justify-between text-slate-400 hover:text-slate-200 font-semibold uppercase text-[11px] tracking-wider py-1"
+            >
+              <div className="flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-violet-400" />
+                <span>Spells ({spells.length})</span>
+              </div>
+              {openSections.spells ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronRight className="w-3.5 h-3.5" />}
+            </button>
+
+            {openSections.spells && (
+              <div className="pl-2 mt-1 space-y-0.5 border-l border-slate-800">
+                {[
+                  ['cantrips', 'Cantrips'],
+                  ['1st-level', '1st Level'], ['2nd-level', '2nd Level'], ['3rd-level', '3rd Level'],
+                  ['4th-level', '4th Level'], ['5th-level', '5th Level'], ['6th-level', '6th Level'],
+                  ['7th-level', '7th Level'], ['8th-level', '8th Level'], ['9th-level', '9th Level']
+                ].map(([folder, label]) => {
+                  const levelSpells = spells.filter(spell => spell.subcategory === folder);
+                  return (
+                    <button
+                      key={folder}
+                      onClick={() => {
+                        onSetView('reader');
+                        onNavigateToEntry(`spells/${folder}/index`);
+                        onClose();
+                      }}
+                      className="w-full text-left px-2.5 py-1.5 rounded-lg transition-colors truncate text-slate-400 hover:text-slate-200 hover:bg-slate-800/40 flex items-center justify-between"
+                    >
+                      <span>{label}</span>
+                      <span className="text-[10px] text-slate-500 font-mono">{levelSpells.length}</span>
+                    </button>
+                  );
+                })}
               </div>
             )}
           </div>

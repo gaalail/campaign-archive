@@ -1,0 +1,39 @@
+---
+entity_type: spell
+canonical_id: spell.spells.5th-level.tree-stride
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
+title: Tree Stride
+level: 5
+school: Conjuration
+classes:
+  - Druid
+  - Ranger
+casting_time: 1 action
+range: Self
+duration: Up to 1 minute
+components: V, S
+ritual: false
+concentration: true
+source: SRD 5.1
+source_type: SRD
+---
+
+_5th-level conjuration_
+
+You gain the ability to enter a tree and move from inside it to inside another tree of the same kind within 500 feet. Both trees must be living and at least the same size as you. You must use 5 feet of movement to enter a tree. You instantly know the location of all other trees of the same kind within 500 feet and, as part of the move used to enter the tree, can either pass into one of those trees or step out of the tree you're in. You appear in a spot of your choice within 5 feet of the destination tree, using another 5 feet of movement. If you have no movement left, you appear within 5 feet of the tree you entered.
+
+You can use this transportation ability once per round for the duration. You must end each turn outside a tree.
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/5th-level|5th level]]
+
+**School:** Conjuration
+
+**Available to:** [[Druid]], [[Ranger]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]

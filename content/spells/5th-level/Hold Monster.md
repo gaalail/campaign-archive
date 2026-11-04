@@ -1,0 +1,45 @@
+---
+entity_type: spell
+canonical_id: spell.spells.5th-level.hold-monster
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
+title: Hold Monster
+level: 5
+school: Enchantment
+classes:
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
+casting_time: 1 action
+range: 90 feet
+duration: Up to 1 minute
+components: V, S, M
+ritual: false
+concentration: true
+source: SRD 5.1
+source_type: SRD
+---
+
+_5th-level enchantment_
+
+**Material components:** A small piece of iron.
+
+Choose a creature you can see and reach. The target must make a saving throw of Wisdom or be paralyzed for the duration of the spell. This spell has no effect against the undead. At the end of each round, the target can make a new saving throw of Wisdom. If successful, the spell ends for the creature.
+
+> [!info]- At higher levels
+> When you cast this spell using a level 6 or higher location, you can target an additional creature for each level of location beyond the fifth. The creatures must be within 30 feet o f each other when you target them.
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/5th-level|5th level]]
+
+**School:** Enchantment
+
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]

@@ -1,0 +1,57 @@
+---
+entity_type: spell
+canonical_id: spell.spells.cantrips.prestidigitation
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
+title: Prestidigitation
+level: 0
+school: Transmutation
+classes:
+  - Artificer
+  - Bard
+  - Sorcerer
+  - Warlock
+  - Wizard
+casting_time: 1 action
+range: 10 feet
+duration: 1 hour
+components: V, S
+ritual: false
+concentration: false
+source: SRD 5.1
+source_type: SRD
+subclass_spell_lists:
+  - Arcane Knight
+  - Witchblade
+---
+
+_Transmutation cantrip_
+
+This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':
+
+You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.
+
+You instantaneously light or snuff out a candle, a torch, or a small campfire.
+
+You instantaneously clean or soil an object no larger than 1 cubic foot.
+
+You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.
+
+You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.
+
+You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.
+
+If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/cantrips|Cantrips]]
+
+**School:** Transmutation
+
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]

@@ -1,0 +1,54 @@
+---
+entity_type: spell
+canonical_id: spell.spells.7th-level.prismatic-spray
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
+title: Prismatic Spray
+level: 7
+school: Evocation
+classes:
+  - Bard
+  - Sorcerer
+  - Wizard
+casting_time: 1 action
+range: Self
+duration: Instantaneous
+components: V, S
+ritual: false
+concentration: false
+source: SRD 5.1
+source_type: SRD
+---
+
+_7th-level evocation_
+
+Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a dexterity saving throw. For each target, roll a d8 to determine which color ray affects it.
+
+_**1. Red.**_ The target takes 10d6 fire damage on a failed save, or half as much damage on a successful one.
+
+_**2. Orange.**_ The target takes 10d6 acid damage on a failed save, or half as much damage on a successful one.
+
+_**3. Yellow.**_ The target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.
+
+_**4. Green.**_ The target takes 10d6 poison damage on a failed save, or half as much damage on a successful one.
+
+_**5. Blue.**_ The target takes 10d6 cold damage on a failed save, or half as much damage on a successful one.
+
+_**6. Indigo.**_ On a failed save, the target is restrained. It must then make a constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.
+
+_**7. Violet.**_ On a failed save, the target is blinded. It must then make a wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the GM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)
+
+_**8. Special.**_ The target is struck by two rays. Roll twice more, rerolling any 8.
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/7th-level|7th level]]
+
+**School:** Evocation
+
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]

@@ -149,6 +149,12 @@ for (const filePath of files) {
     } else {
       category = 'character-options';
     }
+  } else if (parts[0] === 'spells') {
+    category = 'spells';
+    subcategory = parts[1] === 'index.md' ? null : (parts[1] || null);
+  } else if (parts[0] === 'monsters') {
+    category = 'monsters';
+    subcategory = parts[1] || null;
   } else if (parts[0] === 'items') {
     category = 'items';
     if (parts.length > 2) {
@@ -301,6 +307,8 @@ const outputData = {
     feats: entries.filter(e => e.category === 'feats' && !e.id.endsWith('/index')).length,
     fightingStyles: entries.filter(e => e.category === 'fighting-styles' && !e.id.endsWith('/index')).length,
     classOptions: entries.filter(e => e.category === 'class-options' && !e.id.endsWith('/index')).length,
+    spells: entries.filter(e => e.category === 'spells' && !e.id.endsWith('/index')).length,
+    monsters: entries.filter(e => e.category === 'monsters' && !e.id.endsWith('/index')).length,
     items: entries.filter(e => e.category === 'items' && !e.id.endsWith('/index')).length,
     campaigns: entries.filter(e => e.category === 'campaigns').length,
     rules: entries.filter(e => e.category === 'rules' || e.id.includes('/rules/')).length

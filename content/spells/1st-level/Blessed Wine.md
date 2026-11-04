@@ -1,0 +1,41 @@
+---
+entity_type: spell
+canonical_id: spell.spells.1st-level.blessed-wine
+edition: "2014"
+adaptation: curated
+license_status: reference-only
+title: Blessed Wine
+level: 1
+school: Transmutation
+classes:
+  - Bard
+  - Druid
+casting_time: 1 minute
+range: Touch
+duration: 8 hours
+components: V, S, M
+ritual: false
+concentration: false
+source: Corpus Angelus
+source_type: third-party
+---
+
+_1st-level transmutation_
+
+**Material components:** a drop of holy water
+
+You touch up to four bottles of water and transform them into bottles of magical wine for the duration of the spell. Upon drinking a bottle, a creature regains hit points equal to 2d8 + your spellcasting ability modifier and has disadvantage on its Charisma saving throw until it finishes a short or long rest. The wine has no effect on the undead or on constructs.
+
+After the spell ends, unconsumed bottles of wine transform back into ordinary water. If you create new bottles of wine using this spell, the previous ones cease to function.
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/1st-level|1st level]]
+
+**School:** Transmutation
+
+**Available to:** [[Bard]], [[Druid]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]

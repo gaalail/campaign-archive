@@ -9,6 +9,8 @@ export type Category =
   | 'fighting-styles'
   | 'class-options'
   | 'templates'
+  | 'spells'
+  | 'monsters'
   | 'items'
   | 'campaigns'
   | 'rules'
@@ -77,6 +79,8 @@ export interface ArchiveDatabase {
     feats: number;
     fightingStyles: number;
     classOptions: number;
+    spells: number;
+    monsters: number;
     items: number;
     campaigns: number;
     rules: number;

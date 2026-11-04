@@ -1,0 +1,43 @@
+---
+entity_type: spell
+canonical_id: spell.spells.3rd-level.nondetection
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
+title: Nondetection
+level: 3
+school: Abjuration
+classes:
+  - Bard
+  - Ranger
+  - Wizard
+  - Tamer
+casting_time: 1 action
+range: Touch
+duration: 8 hours
+components: V, S, M
+ritual: false
+concentration: false
+source: SRD 5.1
+source_type: SRD
+subclass_spell_lists:
+  - Mystic
+---
+
+_3rd-level abjuration_
+
+**Material components:** A pinch of diamond dust worth 25 gp sprinkled over the target, which the spell consumes.
+
+For the duration, you hide a target that you touch from divination magic. The target can be a willing creature or a place or an object no larger than 10 feet in any dimension. The target can't be targeted by any divination magic or perceived through magical scrying sensors.
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/3rd-level|3rd level]]
+
+**School:** Abjuration
+
+**Available to:** [[Bard]], [[Ranger]], [[Wizard]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]

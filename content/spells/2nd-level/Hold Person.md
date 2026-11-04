@@ -1,0 +1,50 @@
+---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.hold-person
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
+title: Hold Person
+level: 2
+school: Enchantment
+classes:
+  - Bard
+  - Cleric
+  - Druid
+  - Sorcerer
+  - Warlock
+  - Wizard
+  - Thanatomancer
+casting_time: 1 action
+range: 60 feet
+duration: Up to 1 minute
+components: V, S, M
+ritual: false
+concentration: true
+source: SRD 5.1
+source_type: SRD
+subclass_spell_lists:
+  - Witchblade
+  - Wu Jen
+---
+
+_2nd-level enchantment_
+
+**Material components:** A small, straight piece of iron.
+
+Choose a humanoid that you can see within range. The target must succeed on a wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another wisdom saving throw. On a success, the spell ends on the target.
+
+> [!info]- At higher levels
+> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/2nd-level|2nd level]]
+
+**School:** Enchantment
+
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]

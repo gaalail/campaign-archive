@@ -1,0 +1,49 @@
+---
+entity_type: spell
+canonical_id: spell.spells.2nd-level.locate-object
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
+title: Locate Object
+level: 2
+school: Divination
+classes:
+  - Bard
+  - Cleric
+  - Druid
+  - Paladin
+  - Ranger
+  - Wizard
+  - Thanatomancer
+  - Tamer
+casting_time: 1 action
+range: Self
+duration: Up to 10 minutes
+components: V, S, M
+ritual: false
+concentration: true
+source: SRD 5.1
+source_type: SRD
+---
+
+_2nd-level divination_
+
+**Material components:** A forked twig.
+
+Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.
+
+The spell can locate a specific object known to you, as long as you have seen it up close--within 30 feet--at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.
+
+This spell can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/2nd-level|2nd level]]
+
+**School:** Divination
+
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]], [[Thanatomancer]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]

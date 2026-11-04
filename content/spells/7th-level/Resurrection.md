@@ -1,0 +1,48 @@
+---
+entity_type: spell
+canonical_id: spell.spells.7th-level.resurrection
+edition: "2014"
+adaptation: curated
+license_status: CC-BY-4.0
+title: Resurrection
+level: 7
+school: Necromancy
+classes:
+  - Bard
+  - Cleric
+  - Thanatomancer
+casting_time: 1 hour
+range: Touch
+duration: Instantaneous
+components: V, S, M
+ritual: false
+concentration: false
+source: SRD 5.1
+source_type: SRD
+---
+
+_7th-level necromancy_
+
+**Material components:** A diamond worth at least 1,000gp, which the spell consumes.
+
+You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points.
+
+This spell neutralizes any poisons and cures normal diseases afflicting the creature when it died. It doesn't, however, remove magical diseases, curses, and the like; if such effects aren't removed prior to casting the spell, they afflict the target on its return to life.
+
+This spell closes all mortal wounds and restores any missing body parts.
+
+Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.
+
+Casting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you finish a long rest, you can't cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws.
+
+---
+
+## Related Content
+
+**Spell Level:** [[spells/7th-level|7th level]]
+
+**School:** Necromancy
+
+**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
+
+**Related:** [[spells|All Spells]] | [[items|Magic Items]]
