@@ -1,0 +1,317 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const rootDir = path.resolve(__dirname, '..');
+const contentDir = path.join(rootDir, 'content');
+const outDir = path.join(rootDir, 'src', 'data');
+
+if (!fs.existsSync(outDir)) {
+  fs.mkdirSync(outDir, { recursive: true });
+}
+
+function parseFrontmatter(fileText) {
+  const match = fileText.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
+  if (!match) {
+    return { frontmatter: {}, body: fileText };
+  }
+  const rawYml = match[1];
+  const body = match[2];
+  const frontmatter = {};
+
+  const lines = rawYml.split(/\r?\n/);
+  let currentKey = null;
+  let isList = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (!line.trim() || line.trim().startsWith('#')) continue;
+
+    const listMatch = line.match(/^\s*-\s+(.*)$/);
+    if (listMatch && currentKey && isList) {
+      let val = listMatch[1].trim();
+      if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+        val = val.slice(1, -1);
+      }
+      frontmatter[currentKey].push(val);
+      continue;
+    }
+
+    const keyValMatch = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
+    if (keyValMatch) {
+      currentKey = keyValMatch[1].trim();
+      let val = keyValMatch[2].trim();
+
+      if (val === '') {
+        isList = true;
+        frontmatter[currentKey] = [];
+      } else if (val.startsWith('[') && val.endsWith(']')) {
+        isList = false;
+        const items = val.slice(1, -1).split(',').map(s => s.trim().replace(/^['"]|['"]$/g, '')).filter(Boolean);
+        frontmatter[currentKey] = items;
+      } else {
+        isList = false;
+        if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+          val = val.slice(1, -1);
+        } else if (val === 'true') {
+          val = true;
+        } else if (val === 'false') {
+          val = false;
+        } else if (!isNaN(Number(val)) && val !== '') {
+          val = Number(val);
+        }
+        frontmatter[currentKey] = val;
+      }
+    }
+  }
+
+  return { frontmatter, body };
+}
+
+function extractWikilinks(text) {
+  const regex = /\[\[(.*?)\]\]/g;
+  const links = new Set();
+  let match;
+  while ((match = regex.exec(text)) !== null) {
+    const raw = match[1];
+    const parts = raw.split('|');
+    const target = parts[0].split('#')[0].trim();
+    if (target && !target.endsWith('.base')) {
+      links.add(target);
+    }
+  }
+  return Array.from(links);
+}
+
+function getAllFiles(dir, fileList = []) {
+  if (!fs.existsSync(dir)) return fileList;
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      getAllFiles(fullPath, fileList);
+    } else if (entry.isFile() && entry.name.endsWith('.md')) {
+      fileList.push(fullPath);
+    }
+  }
+  return fileList;
+}
+
+const files = getAllFiles(contentDir);
+const entries = [];
+const linkIndex = new Map();
+const titleToId = new Map();
+const aliasToId = new Map();
+
+for (const filePath of files) {
+  const relPath = path.relative(contentDir, filePath).replace(/\\/g, '/');
+  const cleanId = relPath.replace(/\.md$/, '');
+  const rawText = fs.readFileSync(filePath, 'utf-8');
+  const { frontmatter, body } = parseFrontmatter(rawText);
+
+  const fileNameWithoutExt = path.basename(filePath, '.md');
+  const title = frontmatter.title || fileNameWithoutExt;
+
+  const parts = relPath.split('/');
+  let category = 'other';
+  let subcategory = null;
+  let parentClass = null;
+
+  if (parts[0] === 'character-options') {
+    if (parts[1] === 'classes') {
+      category = 'classes';
+    } else if (parts[1] === 'subclasses') {
+      category = 'subclasses';
+      parentClass = parts[2] || frontmatter.parent_class || null;
+      subcategory = parentClass;
+    } else if (parts[1] === 'races') {
+      category = 'races';
+    } else if (parts[1] === 'backgrounds') {
+      category = 'backgrounds';
+    } else if (parts[1] === 'feats') {
+      category = 'feats';
+    } else if (parts[1] === 'fighting-styles') {
+      category = 'fighting-styles';
+    } else if (parts[1] === 'class-options') {
+      category = 'class-options';
+      subcategory = parts[2] || null;
+      // map subcategory to class if relevant
+      if (subcategory === 'eldritch-invocations' || subcategory === 'pact-foci' || subcategory === 'elder-arcana') parentClass = 'Warlock';
+      if (subcategory === 'martial-exploits') parentClass = 'Fighter';
+      if (subcategory === 'metamagic') parentClass = 'Sorcerer';
+      if (subcategory === 'monk-techniques') parentClass = 'Monk';
+      if (subcategory === 'avatar-features') parentClass = 'Paragon';
+      if (subcategory === 'smite-paths') parentClass = 'Paladin';
+    } else if (parts[1] === 'templates') {
+      category = 'templates';
+    } else {
+      category = 'character-options';
+    }
+  } else if (parts[0] === 'items') {
+    category = 'items';
+    if (parts.length > 2) {
+      subcategory = parts[1];
+    }
+  } else if (parts[0] === 'campaigns') {
+    category = 'campaigns';
+    subcategory = parts[1] || null;
+  } else if (parts[0] === 'rules') {
+    category = 'rules';
+  } else if (cleanId === 'index') {
+    category = 'home';
+  } else if (cleanId === 'character-builder') {
+    category = 'builder';
+  } else if (cleanId === 'discovery-features' || cleanId === 'getting-started') {
+    category = 'guide';
+  }
+
+  const wikilinks = extractWikilinks(body);
+
+  const entry = {
+    id: cleanId,
+    title,
+    path: relPath,
+    category,
+    subcategory,
+    parentClass,
+    summary: frontmatter.summary || '',
+    source: frontmatter.source || (frontmatter.source_type === 'SRD' ? 'SRD 5.1' : (category === 'campaigns' ? 'Campaign Archive' : '')),
+    source_type: frontmatter.source_type || (frontmatter.source === 'SRD 5.1' ? 'SRD' : 'homebrew'),
+    entity_type: frontmatter.entity_type || '',
+    tags: Array.isArray(frontmatter.tags) ? frontmatter.tags : (frontmatter.tags ? [frontmatter.tags] : []),
+    aliases: Array.isArray(frontmatter.aliases) ? frontmatter.aliases : (frontmatter.aliases ? [frontmatter.aliases] : []),
+    rarity: frontmatter.rarity || null,
+    item_type: frontmatter.item_type || null,
+    attunement: frontmatter.attunement || false,
+    hit_die: frontmatter.hit_die || null,
+    saving_throws: frontmatter.saving_throws || [],
+    campaign_id: frontmatter.campaign_id || frontmatter.campaign || (parts[0] === 'campaigns' ? parts[1] : null),
+    content_status: frontmatter.content_status || 'complete',
+    frontmatter,
+    body,
+    wikilinks
+  };
+
+  entries.push(entry);
+
+  titleToId.set(title.toLowerCase(), cleanId);
+  titleToId.set(cleanId.toLowerCase(), cleanId);
+  titleToId.set(fileNameWithoutExt.toLowerCase(), cleanId);
+
+  if (entry.aliases) {
+    for (const alias of entry.aliases) {
+      aliasToId.set(String(alias).toLowerCase(), cleanId);
+    }
+  }
+}
+
+// Build incoming links
+for (const entry of entries) {
+  for (const link of entry.wikilinks) {
+    const normalized = link.toLowerCase();
+    const resolvedId = aliasToId.get(normalized) || titleToId.get(normalized);
+    if (resolvedId) {
+      if (!linkIndex.has(resolvedId)) {
+        linkIndex.set(resolvedId, new Set());
+      }
+      linkIndex.get(resolvedId).add(entry.id);
+    }
+  }
+}
+
+for (const entry of entries) {
+  const incoming = linkIndex.get(entry.id);
+  entry.incomingLinks = incoming ? Array.from(incoming) : [];
+}
+
+// Build graph nodes and links
+const graphNodes = [];
+const graphEdges = [];
+const edgeSet = new Set();
+
+const validEntities = entries.filter(e => !e.id.endsWith('/index') && e.id !== 'index');
+
+for (const e of validEntities) {
+  graphNodes.push({
+    id: e.id,
+    title: e.title,
+    category: e.category,
+    subcategory: e.subcategory,
+    parentClass: e.parentClass,
+    source: e.source,
+    source_type: e.source_type,
+    campaign: e.campaign_id,
+    linkCount: (e.incomingLinks?.length || 0) + (e.wikilinks?.length || 0)
+  });
+
+  // Explicit wikilinks
+  for (const link of e.wikilinks) {
+    const normalized = link.toLowerCase();
+    const resolvedId = aliasToId.get(normalized) || titleToId.get(normalized);
+    if (resolvedId && resolvedId !== e.id && !resolvedId.endsWith('/index')) {
+      const edgeKey = [e.id, resolvedId].sort().join('---');
+      if (!edgeSet.has(edgeKey)) {
+        edgeSet.add(edgeKey);
+        graphEdges.push({ source: e.id, target: resolvedId, type: 'mention' });
+      }
+    }
+  }
+
+  // Structural relationship: Subclass -> Class
+  if (e.category === 'subclasses' && e.parentClass) {
+    const classId = `character-options/classes/${e.parentClass}`;
+    const edgeKey = [e.id, classId].sort().join('---');
+    if (!edgeSet.has(edgeKey)) {
+      edgeSet.add(edgeKey);
+      graphEdges.push({ source: e.id, target: classId, type: 'subclass_of' });
+    }
+  }
+
+  // Structural relationship: Class-option -> Class
+  if (e.category === 'class-options' && e.parentClass) {
+    const classId = `character-options/classes/${e.parentClass}`;
+    const edgeKey = [e.id, classId].sort().join('---');
+    if (!edgeSet.has(edgeKey)) {
+      edgeSet.add(edgeKey);
+      graphEdges.push({ source: e.id, target: classId, type: 'option_of' });
+    }
+  }
+
+  // Structural relationship: Campaign entry -> Campaign hub
+  if (e.category === 'campaigns' && e.campaign_id && e.id !== `campaigns/${e.campaign_id}/index`) {
+    const hubId = `campaigns/${e.campaign_id}/index`;
+    const edgeKey = [e.id, hubId].sort().join('---');
+    if (!edgeSet.has(edgeKey)) {
+      edgeSet.add(edgeKey);
+      graphEdges.push({ source: e.id, target: hubId, type: 'campaign_content' });
+    }
+  }
+}
+
+const outputData = {
+  generatedAt: new Date().toISOString(),
+  stats: {
+    totalEntries: entries.length,
+    classes: entries.filter(e => e.category === 'classes' && !e.id.endsWith('/index')).length,
+    subclasses: entries.filter(e => e.category === 'subclasses' && !e.id.endsWith('/index')).length,
+    races: entries.filter(e => e.category === 'races' && !e.id.endsWith('/index')).length,
+    backgrounds: entries.filter(e => e.category === 'backgrounds' && !e.id.endsWith('/index')).length,
+    feats: entries.filter(e => e.category === 'feats' && !e.id.endsWith('/index')).length,
+    fightingStyles: entries.filter(e => e.category === 'fighting-styles' && !e.id.endsWith('/index')).length,
+    classOptions: entries.filter(e => e.category === 'class-options' && !e.id.endsWith('/index')).length,
+    items: entries.filter(e => e.category === 'items' && !e.id.endsWith('/index')).length,
+    campaigns: entries.filter(e => e.category === 'campaigns').length,
+    rules: entries.filter(e => e.category === 'rules' || e.id.includes('/rules/')).length
+  },
+  entries,
+  graph: {
+    nodes: graphNodes,
+    edges: graphEdges
+  }
+};
+
+const targetPath = path.join(outDir, 'archiveData.json');
+fs.writeFileSync(targetPath, JSON.stringify(outputData), 'utf-8');
+console.log(`Generated ${targetPath} with ${entries.length} entries and ${graphEdges.length} graph connections.`);
