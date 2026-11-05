@@ -60,14 +60,8 @@ Spells marked with LL are found in the laserllama Spell Compendium, which includ
 The archive catalogue below contains spells with spell pages. Remaining options are preserved in the collapsed list.
 
 ![[witchblade-spells.base]]
-
-> [!info]- Options without archive spell pages
-> These options remain part of the spell list but do not yet have spell pages in the archive.
-> **Cantrips:** Blade Ward (LL), Booming Blade (LL), Green-Flame Blade (LL), Infestation (_), Lightning Lure (LL), Mind Sliver (\**), Sword Burst (LL), Tempestuous Blade (LL), Toll the Dead (_)
-> **1st-Level:** Absorb Elements (_), Armor of Agathys, Arms of Hadar, Cause Fear (_), Hex, Searing Smite (LL), Thunderous Smite (LL), Witch Bolt (LL)
-> **2nd-Level:** Cloud of Daggers, Crown of Madness, Mind Spike (_), Shadow Blade (_)
-> **3rd-Level:** Blinding Smite (LL), Enemies Abound (_), Hunger of Hadar (LL)
-> **4th-Level:** Staggering Smite (LL), Shadow of Moil (_), Sickening Radiance (*)
+> [!tip] Full Archive Integration
+> All Witchblade spells—including options from the Player's Handbook, Xanathar's Guide to Everything, Tasha's Cauldron of Everything, and Laserllama supplements—now have full archive pages with complete stats and descriptions.
 
 ### Sanguine Offering
 

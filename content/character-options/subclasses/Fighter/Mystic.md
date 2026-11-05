@@ -63,12 +63,8 @@ The archive catalogue below contains spells with spell pages. Remaining options 
 
 ![[mystic-spells.base]]
 
-> [!info]- Options without archive spell pages
-> These options remain part of the spell list but do not yet have spell pages in the archive.
-> **1st-Level:** Catapult (_), Cause Fear (_), Dissonant Whispers, Ethereal Anchor (LL), Id Insinuation (LL)
-> **2nd-Level:** Crown of Madness, Mind Spike (_), Mind Whip (\**), Mystic Spear (LL), Phantasmal Force
-> **3rd-Level:** Cerebral Blast (LL), Enemies Abound (_), Feign Death, Intellect Fortress (**), Spectral Passage (LL)
-> **4th-Level:** Charm Monster (*), Ego Scourge (LL)
+> [!tip] Full Archive Integration
+> All Mystic spells—including psionic options from Xanathar's Guide to Everything, Tasha's Cauldron of Everything, and Laserllama supplements—now have full archive pages with complete stats and descriptions.
 
 ### Psionic Talents
 

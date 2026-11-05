@@ -68,13 +68,8 @@ The archive catalogue below contains spells with spell pages. Remaining options 
 
 ![[wu-jen-spells.base]]
 
-> [!info]- Options without archive spell pages
-> These options remain part of the spell list but do not yet have spell pages in the archive.
-> **Cantrips (0-Level):** Beckon Air (ll), Blade Ward, Control Flame (ll), Create Bonfire (_), Frostbite, Magic Stone (_), Mold Earth (ll), Shape Water (ll), Thorn Whip, Thunderclap (_)
-> **1st-Level:** Absorb Elements (_), Armor of Agathys, Create Water (ll), Earth Tremor (_), Ensnaring Strike (ll), Hail of Thorns (ll), Ice Knife (_), Witch Bolt (ll)
-> **2nd-Level:** Dust Devil (_), Earthbind (_), Earthen Grasp (_), Snowball Swarm (_), Warding Wind (_)
-> **3rd-Level:** Erupting Earth (_), Grasping Vine (ll), Minute Meteors (_), Thunder Step (_), Tidal Wave (_), Wall of Sand (_), Wall of Water (_)
-> **4th-Level:** Elemental Bane (_), Guardian of Nature (Tree) (_), Pillars of Earth (ll), Storm Sphere (_), Watery Sphere (*)
+> [!tip] Full Archive Integration
+> All Wu Jen spells—including elemental spells from the Player's Handbook, Xanathar's Guide to Everything, and Laserllama supplements—now have full archive pages with complete stats and descriptions.
 
 ### Fist of the Five Ways
 

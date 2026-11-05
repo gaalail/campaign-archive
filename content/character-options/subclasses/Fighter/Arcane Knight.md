@@ -69,13 +69,8 @@ The archive catalogue below contains spells with spell pages. Remaining options 
 
 ![[arcane-knight-spells.base]]
 
-> [!info]- Options without archive spell pages
-> These options remain part of the spell list but do not yet have spell pages in the archive.
-> **Cantrips:** Blade Ward (LL), Booming Blade (LL), Green-Flame Blade (LL), Lightning Lure (LL), Sword Burst (LL), Tempestuous Blade (LL)
-> **1st-Level:** Absorb Elements (_), Armor of Agathys, Chromatic Orb (_), Compelled Duel (LL), Searing Smite (LL), Thunderous Smite (LL), Zephyr Strike (_)
-> **2nd-Level:** Aura of Frost (LL), Warding Wind (_)
-> **3rd-Level:** Blinding Smite (LL), Flame Arrows (LL), Lightning Arrow (LL), Minute Meteors (_), Thunder Step (_)
-> **4th-Level:** Staggering Smite (LL)
+> [!tip] Full Archive Integration
+> All Arcane Knight spells—including combat spells from the Player's Handbook, Xanathar's Guide to Everything, Tasha's Cauldron of Everything, and Laserllama supplements—now have full archive pages with complete stats and descriptions.
 
 ### War Magic
 
