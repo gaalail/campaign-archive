@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { resolveWikilink, getSourceBadgeInfo } from '../utils/archiveUtils';
 import { AlertTriangle, Info, Lightbulb, ShieldAlert, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
+import { SpellCatalogue } from './SpellCatalogue';
 
 interface MarkdownViewProps {
   content: string;
@@ -21,7 +22,8 @@ export const MarkdownView: React.FC<MarkdownViewProps> = ({ content, onNavigate 
 };
 
 interface Block {
-  type: 'header' | 'callout' | 'table' | 'list' | 'paragraph' | 'divider' | 'code';
+  type: 'header' | 'callout' | 'table' | 'list' | 'paragraph' | 'divider' | 'code' | 'embed';
+  target?: string;
   level?: number;
   title?: string;
   calloutType?: string;
@@ -138,8 +140,13 @@ function parseMarkdownBlocks(text: string): Block[] {
       continue;
     }
 
-    // Obsidian embeds are supplied by React catalogue grids below; skip the embed marker itself.
-    if (line.trim().startsWith('![[')) {
+    // Obsidian embeds (spells.base, *-spells.base, etc.)
+    const embedMatch = line.trim().match(/^!\[\[(.*?)\]\]$/);
+    if (embedMatch) {
+      blocks.push({
+        type: 'embed',
+        target: embedMatch[1].trim()
+      });
       i++;
       continue;
     }
@@ -178,6 +185,55 @@ const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }
 
   if (block.type === 'divider') {
     return <hr className="border-slate-800 my-6" />;
+  }
+
+  if (block.type === 'embed' && block.target) {
+    const target = block.target;
+    // Check if it is a spell list
+    if (target.endsWith('-spells.base') || target.startsWith('spells.base')) {
+      let initialClass = 'All Spells';
+      let initialLevel: number | 'all' = 'all';
+      let hideClassSelector = false;
+
+      if (target === 'wizard-spells.base') { initialClass = 'Wizard'; hideClassSelector = true; }
+      else if (target === 'cleric-spells.base') { initialClass = 'Cleric'; hideClassSelector = true; }
+      else if (target === 'druid-spells.base') { initialClass = 'Druid'; hideClassSelector = true; }
+      else if (target === 'bard-spells.base') { initialClass = 'Bard'; hideClassSelector = true; }
+      else if (target === 'paladin-spells.base') { initialClass = 'Paladin'; hideClassSelector = true; }
+      else if (target === 'ranger-spells.base') { initialClass = 'Ranger'; hideClassSelector = true; }
+      else if (target === 'sorcerer-spells.base') { initialClass = 'Sorcerer'; hideClassSelector = true; }
+      else if (target === 'warlock-spells.base') { initialClass = 'Warlock'; hideClassSelector = true; }
+      else if (target === 'artificer-spells.base') { initialClass = 'Artificer'; hideClassSelector = true; }
+      else if (target === 'thanatomancer-spells.base') { initialClass = 'Thanatomancer'; hideClassSelector = true; }
+      else if (target === 'tamer-spells.base') { initialClass = 'Tamer'; hideClassSelector = true; }
+      else if (target === 'arcane-knight-spells.base') { initialClass = 'Arcane Knight'; hideClassSelector = true; }
+      else if (target === 'mystic-spells.base') { initialClass = 'Mystic'; hideClassSelector = true; }
+      else if (target === 'witchblade-spells.base') { initialClass = 'Witchblade'; hideClassSelector = true; }
+      else if (target === 'wu-jen-spells.base') { initialClass = 'Way of the Wu Jen'; hideClassSelector = true; }
+      else if (target.includes('#Cantrips')) { initialLevel = 0; }
+      else if (target.includes('#1st-Level')) { initialLevel = 1; }
+      else if (target.includes('#2nd-Level')) { initialLevel = 2; }
+      else if (target.includes('#3rd-Level')) { initialLevel = 3; }
+      else if (target.includes('#4th-Level')) { initialLevel = 4; }
+      else if (target.includes('#5th-Level')) { initialLevel = 5; }
+      else if (target.includes('#6th-Level')) { initialLevel = 6; }
+      else if (target.includes('#7th-Level')) { initialLevel = 7; }
+      else if (target.includes('#8th-Level')) { initialLevel = 8; }
+      else if (target.includes('#9th-Level')) { initialLevel = 9; }
+
+      return (
+        <div className="my-6 not-prose">
+          <SpellCatalogue
+            initialClass={initialClass}
+            initialLevel={initialLevel}
+            hideClassSelector={hideClassSelector}
+            onSelectSpell={onNavigate}
+          />
+        </div>
+      );
+    }
+
+    return null;
   }
 
   if (block.type === 'header') {

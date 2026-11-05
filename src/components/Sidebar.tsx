@@ -20,9 +20,9 @@ import {
 
 interface SidebarProps {
   currentEntryId: string | null;
-  currentView: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns';
+  currentView: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells';
   onNavigateToEntry: (id: string) => void;
-  onSetView: (view: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns') => void;
+  onSetView: (view: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells') => void;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -155,12 +155,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           <button
             onClick={() => {
-              onSetView('reader');
-              onNavigateToEntry('spells/index');
+              onSetView('spells');
               onClose();
             }}
             className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
-              currentView === 'reader' && currentEntryId?.startsWith('spells/')
+              currentView === 'spells'
                 ? 'bg-amber-500 text-slate-950 shadow'
                 : 'text-slate-300 hover:bg-slate-800 hover:text-white'
             }`}

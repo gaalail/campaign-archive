@@ -5,10 +5,13 @@ import {
   getRarityColor,
   getSubclassesForClass,
   getClassOptionsForClass,
+  getSpellsForClass,
+  getSpellLevelLabel,
   getEntryById,
   archiveDb
 } from '../utils/archiveUtils';
 import { MarkdownView } from './MarkdownView';
+import { SpellCatalogue } from './SpellCatalogue';
 import {
   ArrowLeft,
   BookOpen,
@@ -22,7 +25,10 @@ import {
   MapPin,
   Compass,
   AlertTriangle,
-  Info
+  Info,
+  Clock,
+  Zap,
+  Target
 } from 'lucide-react';
 
 interface EntryDetailProps {
@@ -32,7 +38,7 @@ interface EntryDetailProps {
 }
 
 export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onBack }) => {
-  const [activeTab, setActiveTab] = useState<'content' | 'subclasses' | 'options' | 'backlinks'>('content');
+  const [activeTab, setActiveTab] = useState<'content' | 'spells' | 'subclasses' | 'options' | 'backlinks'>('content');
 
   const sourceBadge = getSourceBadgeInfo(entry.source_type, entry.source);
   const rarityBadge = entry.rarity ? getRarityColor(entry.rarity) : null;
@@ -42,8 +48,23 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
   // If this entry is a class, find its subclasses and options
   const isClass = entry.category === 'classes' && !entry.id.endsWith('/index');
+  const isSubclass = entry.category === 'subclasses' && !entry.id.endsWith('/index');
   const subclasses = isClass ? getSubclassesForClass(entry.title) : [];
   const classOptions = isClass ? getClassOptionsForClass(entry.title) : [];
+  const classSpells = (isClass || isSubclass) ? getSpellsForClass(entry.title) : [];
+
+  // If this entry is an individual spell
+  const isSpell = entry.category === 'spells' && !entry.id.endsWith('/index');
+  const spellLevel = entry.level !== null && entry.level !== undefined ? entry.level : (entry.frontmatter?.level ?? 0);
+  const spellSchool = entry.school || entry.frontmatter?.school || '';
+  const castingTime = entry.casting_time || entry.frontmatter?.casting_time || '';
+  const range = entry.range || entry.frontmatter?.range || '';
+  const duration = entry.duration || entry.frontmatter?.duration || '';
+  const components = entry.components || entry.frontmatter?.components || '';
+  const ritual = entry.ritual ?? Boolean(entry.frontmatter?.ritual);
+  const concentration = entry.concentration ?? Boolean(entry.frontmatter?.concentration);
+  const spellClasses: string[] = entry.classes || entry.frontmatter?.classes || [];
+  const subclassSpellLists: string[] = entry.subclass_spell_lists || entry.frontmatter?.subclass_spell_lists || [];
 
   return (
     <div className="max-w-5xl mx-auto space-y-6">
@@ -170,9 +191,84 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           </div>
         </div>
 
-        {/* Navigation Tabs for Classes (Content | Subclasses | Class Options | Backlinks) */}
-        {isClass && (
-          <div className="flex items-center gap-2 border-b border-slate-800 pb-2">
+        {/* Dedicated Rich Spell Stat Block Card */}
+        {isSpell && (
+          <div className="bg-slate-950/80 border border-violet-500/30 rounded-xl p-5 space-y-4 shadow-inner">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
+              <div className="text-base font-semibold text-violet-300">
+                {spellLevel === 0 ? `${spellSchool} Cantrip` : `${getSpellLevelLabel(spellLevel)} ${spellSchool}`}
+              </div>
+              <div className="flex items-center gap-2">
+                {concentration && (
+                  <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-950/70 text-blue-300 border border-blue-500/40">
+                    Concentration
+                  </span>
+                )}
+                {ritual && (
+                  <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-950/70 text-emerald-300 border border-emerald-500/40">
+                    Ritual
+                  </span>
+                )}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+              <div>
+                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Casting Time</span>
+                <span className="text-slate-200 font-medium">{castingTime || '1 action'}</span>
+              </div>
+              <div>
+                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Range</span>
+                <span className="text-slate-200 font-medium">{range || 'Self'}</span>
+              </div>
+              <div>
+                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Components</span>
+                <span className="text-slate-200 font-mono">{components || 'V, S'}</span>
+              </div>
+              <div>
+                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Duration</span>
+                <span className="text-slate-200 font-medium">{duration || 'Instantaneous'}</span>
+              </div>
+            </div>
+
+            {(spellClasses.length > 0 || subclassSpellLists.length > 0) && (
+              <div className="pt-3 border-t border-slate-800/80 space-y-2 text-xs">
+                {spellClasses.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span className="text-slate-400 font-medium">Classes:</span>
+                    {spellClasses.map(cls => (
+                      <button
+                        key={cls}
+                        onClick={() => onNavigate(`character-options/classes/${cls}`)}
+                        className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 hover:border-violet-500 text-slate-200 hover:text-violet-300 transition-colors font-medium text-xs"
+                      >
+                        {cls}
+                      </button>
+                    ))}
+                  </div>
+                )}
+
+                {subclassSpellLists.length > 0 && (
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <span className="text-violet-400 font-medium">Subclass Lists:</span>
+                    {subclassSpellLists.map(sc => (
+                      <span
+                        key={sc}
+                        className="px-2.5 py-1 rounded-lg bg-violet-950/60 border border-violet-800/50 text-violet-200 text-[11px]"
+                      >
+                        {sc}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Navigation Tabs for Classes and Subclasses with Spells */}
+        {(isClass || (isSubclass && classSpells.length > 0)) && (
+          <div className="flex flex-wrap items-center gap-2 border-b border-slate-800 pb-2">
             <button
               onClick={() => setActiveTab('content')}
               className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${
@@ -181,8 +277,22 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              Class Features & Rules
+              {isClass ? 'Class Features & Rules' : 'Subclass Features'}
             </button>
+
+            {classSpells.length > 0 && (
+              <button
+                onClick={() => setActiveTab('spells')}
+                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 ${
+                  activeTab === 'spells'
+                    ? 'bg-amber-500 text-slate-950 shadow'
+                    : 'text-slate-400 hover:text-slate-200'
+                }`}
+              >
+                <Sparkles className="w-3.5 h-3.5 text-violet-400" />
+                <span>Spells ({classSpells.length})</span>
+              </button>
+            )}
 
             {subclasses.length > 0 && (
               <button
@@ -233,23 +343,25 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           <div className="space-y-6">
             <MarkdownView content={entry.body} onNavigate={onNavigate} />
 
+            {/* If this is the spells index page or a level index page */}
             {entry.category === 'spells' && entry.id.endsWith('/index') && (
-              <div className="mt-6 rounded-xl border border-slate-800 bg-slate-900/50 p-4">
-                <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-violet-300">Available Spells</h2>
-                <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                  {(entry.subcategory
-                    ? archiveDb.entries.filter(candidate => candidate.category === 'spells' && candidate.subcategory === entry.subcategory && !candidate.id.endsWith('/index'))
-                    : archiveDb.entries.filter(candidate => candidate.category === 'spells' && !candidate.id.endsWith('/index'))
-                  ).sort((a, b) => a.title.localeCompare(b.title)).map(spell => (
-                    <button
-                      key={spell.id}
-                      onClick={() => onNavigate(spell.id)}
-                      className="rounded-lg border border-slate-800 bg-slate-950/60 px-3 py-2 text-left text-sm text-slate-300 transition-colors hover:border-violet-500/50 hover:text-violet-300"
-                    >
-                      {spell.title}
-                    </button>
-                  ))}
-                </div>
+              <div className="mt-8 pt-6 border-t border-slate-800">
+                <SpellCatalogue
+                  initialClass="All Spells"
+                  initialLevel={
+                    entry.subcategory === 'cantrips' ? 0 :
+                    entry.subcategory?.includes('1st') ? 1 :
+                    entry.subcategory?.includes('2nd') ? 2 :
+                    entry.subcategory?.includes('3rd') ? 3 :
+                    entry.subcategory?.includes('4th') ? 4 :
+                    entry.subcategory?.includes('5th') ? 5 :
+                    entry.subcategory?.includes('6th') ? 6 :
+                    entry.subcategory?.includes('7th') ? 7 :
+                    entry.subcategory?.includes('8th') ? 8 :
+                    entry.subcategory?.includes('9th') ? 9 : 'all'
+                  }
+                  onSelectSpell={onNavigate}
+                />
               </div>
             )}
 
@@ -276,8 +388,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
               </div>
             )}
 
-            {/* If not a class, show backlinks directly at bottom */}
-            {!isClass && entry.incomingLinks && entry.incomingLinks.length > 0 && (
+            {/* Backlinks at bottom for non-class entries */}
+            {!isClass && !isSubclass && entry.incomingLinks && entry.incomingLinks.length > 0 && (
               <div className="mt-8 pt-6 border-t border-slate-800">
                 <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">
                   <Link2 className="w-4 h-4 text-amber-400" />
@@ -300,6 +412,17 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                 </div>
               </div>
             )}
+          </div>
+        )}
+
+        {/* Tab: Dedicated Class/Subclass Spells */}
+        {activeTab === 'spells' && classSpells.length > 0 && (
+          <div className="space-y-4">
+            <SpellCatalogue
+              initialClass={entry.title}
+              hideClassSelector={true}
+              onSelectSpell={onNavigate}
+            />
           </div>
         )}
 

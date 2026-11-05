@@ -41,7 +41,16 @@ export interface ArchiveEntry {
   content_status: 'complete' | 'incomplete' | 'draft';
   frontmatter: Record<string, any>;
   body: string;
-  wikilinks: string[];
+  level?: number | null;
+  school?: string | null;
+  classes?: string[];
+  subclass_spell_lists?: string[];
+  casting_time?: string | null;
+  range?: string | null;
+  duration?: string | null;
+  components?: string | null;
+  ritual?: boolean;
+  concentration?: boolean;
   incomingLinks?: string[];
 }
 

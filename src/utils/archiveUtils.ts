@@ -138,3 +138,32 @@ export function formatModifier(mod: number): string {
 export function calculateProficiencyBonus(level: number): number {
   return Math.floor((Math.max(1, Math.min(20, level)) - 1) / 4) + 2;
 }
+
+export function getSpellsForClass(className: string): ArchiveEntry[] {
+  const normalized = className.trim().toLowerCase();
+  return archiveDb.entries.filter(e => {
+    if (e.category !== 'spells' || e.id.endsWith('/index')) return false;
+
+    // Direct classes list
+    const classes = e.classes || (Array.isArray(e.frontmatter.classes) ? e.frontmatter.classes : []);
+    if (classes.some((c: string) => c.toLowerCase() === normalized)) return true;
+
+    // Subclass spell lists
+    const sublists = e.subclass_spell_lists || (Array.isArray(e.frontmatter.subclass_spell_lists) ? e.frontmatter.subclass_spell_lists : []);
+    if (sublists.some((s: string) => {
+      const sl = s.toLowerCase();
+      return sl === normalized || (normalized === 'way of the wu jen' && sl === 'wu jen') || (normalized === 'wu jen' && sl === 'wu jen');
+    })) return true;
+
+    return false;
+  });
+}
+
+export function getSpellLevelLabel(level: number | null | undefined): string {
+  if (level === 0) return 'Cantrip';
+  if (level === 1) return '1st-Level';
+  if (level === 2) return '2nd-Level';
+  if (level === 3) return '3rd-Level';
+  if (level !== null && level !== undefined) return `${level}th-Level`;
+  return 'Cantrip';
+}

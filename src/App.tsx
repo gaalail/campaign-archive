@@ -7,7 +7,9 @@ import { ItemCatalogue } from './components/ItemCatalogue';
 import { KnowledgeGraph } from './components/KnowledgeGraph';
 import { getEntryById } from './utils/archiveUtils';
 
-export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns';
+import { SpellCatalogue } from './components/SpellCatalogue';
+
+export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells';
 
 export default function App() {
   const [view, setView] = useState<AppView>('reader');
@@ -17,6 +19,18 @@ export default function App() {
   const entry = useMemo(() => entryId ? getEntryById(entryId) : undefined, [entryId]);
 
   const navigate = (id: string) => {
+    if (id === 'spells/index' || id === 'spells') {
+      setView('spells');
+      setEntryId(id);
+      setSidebarOpen(false);
+      return;
+    }
+    if (id === 'items/index' || id === 'items') {
+      setView('items');
+      setEntryId(id);
+      setSidebarOpen(false);
+      return;
+    }
     setEntryId(id);
     setView('reader');
     setSidebarOpen(false);
@@ -42,6 +56,7 @@ export default function App() {
       <main className="md:ml-72 min-h-screen p-4 md:p-8">
         {view === 'reader' && entry && <EntryDetail entry={entry} onNavigate={navigate} />}
         {view === 'reader' && !entry && <div className="text-slate-400">Entry not found.</div>}
+        {view === 'spells' && <SpellCatalogue onSelectSpell={navigate} />}
         {view === 'builder' && <CharacterBuilder onNavigateToEntry={navigate} />}
         {view === 'items' && <ItemCatalogue onSelectItem={navigate} />}
         {view === 'campaigns' && <CampaignHub onNavigate={navigate} onOpenCharacterBuilder={() => setView('builder')} onOpenGraph={() => setView('graph')} />}
