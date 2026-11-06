@@ -1,33 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.sleep
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Sleep
+title: "Sleep"
 level: 1
 school: Enchantment
+casting_time: "1 action"
+range: "90 feet"
+duration: "1 minute"
+components: "V, S, M (a pinch of fine sand, rose petals, or a cricket)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Roll 5d8; creatures within 20 feet fall into a magical slumber in ascending order of their current hit points."
 classes:
   - Bard
   - Sorcerer
   - Wizard
-  - Thanatomancer
-  - Tamer
-casting_time: 1 action
-range: 90 feet
-duration: 1 minute
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 subclass_spell_lists:
-  - Mystic
+  - Archfey Patron
 ---
 
 _1st-level enchantment_
-
-**Material components:** A pinch of fine sand, rose petals, or a cricket.
 
 This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).
 
@@ -35,8 +27,7 @@ Starting with the creature that has the lowest current hit points, each creature
 
 Undead and creatures immune to being charmed aren't affected by this spell.
 
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st.
 
 ---
 
@@ -46,6 +37,6 @@ Undead and creatures immune to being charmed aren't affected by this spell.
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

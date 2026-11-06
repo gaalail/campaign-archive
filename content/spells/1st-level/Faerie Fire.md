@@ -1,31 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.faerie-fire
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Faerie Fire
+title: "Faerie Fire"
 level: 1
 school: Evocation
-classes:
-  - Artificer
-  - Druid
-  - Tamer
-casting_time: 1 action
-range: 60 feet
-duration: Up to 1 minute
-components: V
+casting_time: "1 action"
+range: "60 feet"
+duration: "Concentration, up to 1 minute"
+components: "V"
 ritual: false
 concentration: true
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Outline objects and creatures in a 20-foot cube with colorful light, shedding dim light and giving attackers advantage."
+classes:
+  - Bard
+  - Druid
+  - Artificer
 subclass_spell_lists:
-  - Arcane Knight
+  - Light Domain
+  - Archfey Patron
 ---
 
 _1st-level evocation_
 
-Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
+Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius.
 
 Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.
 
@@ -37,6 +34,6 @@ Any attack roll against an affected creature or object has advantage if the atta
 
 **School:** Evocation
 
-**Available to:** [[Druid]], [[Artificer]]
+**Available to:** [[Bard]], [[Druid]], [[Artificer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

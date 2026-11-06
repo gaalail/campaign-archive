@@ -1,39 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.clairvoyance
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Clairvoyance
+title: "Clairvoyance"
 level: 3
 school: Divination
+casting_time: "10 minutes"
+range: "1 mile"
+duration: "Concentration, up to 10 minutes"
+components: "V, S, M (a focus worth at least 100 gp)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Create an invisible sensor within 1 mile in a familiar location, allowing you to see or hear through it as if you were there."
 classes:
   - Bard
   - Cleric
   - Sorcerer
   - Wizard
-  - Thanatomancer
-casting_time: 10 minutes
-range: 1 mile
-duration: Up to 10 minutes
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Mystic
 ---
 
-_3rd-level divination_
+_3th-level divination_
 
-**Material components:** A focus worth at least 100gp, either a jeweled horn for hearing or a glass eye for seeing.
-
-You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with.
-
-When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing.
-
-A creature that can see the sensor (such as a creature benefiting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist.
+Create an invisible sensor within 1 mile in a familiar location, allowing you to see or hear through it as if you were there.
 
 ---
 
@@ -43,6 +30,4 @@ A creature that can see the sensor (such as a creature benefiting from see invis
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
-
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]]

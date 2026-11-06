@@ -1,33 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.inflict-wounds
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Inflict Wounds
+title: "Inflict Wounds"
 level: 1
 school: Necromancy
+casting_time: "1 action"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Make a melee spell attack to channel necrotic decay, dealing 3d10 necrotic damage on a hit."
 classes:
   - Cleric
   - Thanatomancer
-casting_time: 1 action
-range: Touch
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Witchblade
 ---
 
 _1st-level necromancy_
 
 Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.
 
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.
 
 ---
 
@@ -39,4 +32,4 @@ Make a melee spell attack against a creature you can reach. On a hit, the target
 
 **Available to:** [[Cleric]], [[Thanatomancer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

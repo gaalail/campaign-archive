@@ -1,33 +1,21 @@
 ---
-title: 3rd-Level Spells
+title: "3rd-Level Spells"
+aliases:
+  - spells/3rd-level
+  - spells/3rd-level/index
+  - 3rd-Level Spells
+  - 3rd-Level
 ---
 
 # 3rd-Level Spells
 
-Learn at 5th character level
+All 3rd-Level spells in the campaign archive, searchable by class, school, casting time, and components.
 
 ---
-
-## Navigation
-
-? [[spells/2nd-level|2nd-Level Spells]]
-
-[[spells|Back to All Spells]]
-
-[[spells/4th-level|4th-Level Spells]] ?
-
----
-
-## Spells at This Level
 
 ![[spells.base#3rd-Level]]
 
 ---
 
-## Browse by Class
-
-Each spellcasting class has specific spells available. See spell pages for class availability.
-
-**All Classes:** [[Artificer]], [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Sorcerer]], [[Warlock]], [[Wizard]]
-
----
+## Related Spell Levels
+[[spells/cantrips|Cantrips]] | [[spells/1st-level|1st-Level]] | [[spells/2nd-level|2nd-Level]] | [[spells/3rd-level|3rd-Level]] | [[spells/4th-level|4th-Level]] | [[spells/5th-level|5th-Level]] | [[spells/6th-level|6th-Level]] | [[spells/7th-level|7th-Level]] | [[spells/8th-level|8th-Level]] | [[spells/9th-level|9th-Level]]

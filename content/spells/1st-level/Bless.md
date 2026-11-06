@@ -1,34 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.bless
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Bless
+title: "Bless"
 level: 1
 school: Enchantment
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a sprinkling of holy water)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Bless up to three creatures of your choice, adding 1d4 to attack rolls and saving throws."
 classes:
   - Cleric
   - Paladin
-  - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: Up to 1 minute
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _1st-level enchantment_
 
-**Material components:** A sprinkling of holy water.
-
 You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.
 
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
 
 ---
 
@@ -38,6 +30,6 @@ You bless up to three creatures of your choice within range. Whenever a target m
 
 **School:** Enchantment
 
-**Available to:** [[Cleric]], [[Paladin]], [[Thanatomancer]]
+**Available to:** [[Cleric]], [[Paladin]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

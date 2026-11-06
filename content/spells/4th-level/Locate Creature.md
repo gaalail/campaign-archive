@@ -1,12 +1,16 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.locate-creature
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Locate Creature
+title: "Locate Creature"
 level: 4
 school: Divination
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 hour"
+components: "V, S, M (a bit of hound fur)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you."
 classes:
   - Bard
   - Cleric
@@ -14,26 +18,11 @@ classes:
   - Paladin
   - Ranger
   - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: Self
-duration: Up to 1 hour
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _4th-level divination_
 
-**Material components:** A bit of fur from a bloodhound.
-
-Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.
-
-The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close--within 30 feet--at least once. If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this spell doesn't locate the creature.
-
-This spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.
+Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you.
 
 ---
 
@@ -43,6 +32,4 @@ This spell can't locate a creature if running water at least 10 feet wide blocks
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]], [[Thanatomancer]]
-
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]]

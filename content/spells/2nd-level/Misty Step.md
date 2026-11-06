@@ -1,33 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.misty-step
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Misty Step
+title: "Misty Step"
 level: 2
 school: Conjuration
+casting_time: "1 bonus action"
+range: "Self"
+duration: "Instantaneous"
+components: "V"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space you can see."
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: 1 bonus action
-range: Self
-duration: Instantaneous
-components: V
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 subclass_spell_lists:
   - Arcane Knight
-  - Witchblade
-  - Wu Jen
+  - Ancient Oath
+  - Coast Land
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _2nd-level conjuration_
 
@@ -43,4 +35,4 @@ Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied 
 
 **Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

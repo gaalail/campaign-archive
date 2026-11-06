@@ -1,36 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.dispel-evil-and-good
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Dispel Evil and Good
+title: "Dispel Evil and Good"
 level: 5
 school: Abjuration
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (holy water or powdered silver and iron)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Shimmering energy protects you from extraplanar beings: celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you."
 classes:
   - Cleric
   - Paladin
-casting_time: 1 action
-range: Self
-duration: Up to 1 minute
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
+subclass_spell_lists:
+  - Devotion Oath
 ---
 
 _5th-level abjuration_
 
-**Material components:** Holy water or powdered silver and iron.
-
 Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.
 
-You can end the spell early by using either of the following special functions.
-
-_**Break Enchantment.**_ As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.
-
-_**Dismissal.**_ As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.
+You can also end the spell early using one of two special effects: **Break Enchantment** (touch a creature to end charm/frighten/possession) or **Dismissal** (make a melee spell attack to banish an extraplanar creature back to its native plane).
 
 ---
 
@@ -42,4 +34,4 @@ _**Dismissal.**_ As your action, make a melee spell attack against a celestial, 
 
 **Available to:** [[Cleric]], [[Paladin]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -149,6 +149,26 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             </p>
           )}
 
+          {entry.id === 'character-builder' && (
+            <div className="mt-4 p-4 rounded-xl border border-amber-500/40 bg-amber-950/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <div className="text-xs font-semibold text-amber-300 flex items-center gap-1.5">
+                  <Sparkles className="w-4 h-4 text-amber-400" />
+                  <span>Interactive Character Creation Wizard</span>
+                </div>
+                <div className="text-xs text-slate-300 mt-0.5">
+                  Step-by-step visual selection for Race, Class, Subclass, and Background with character sheet export.
+                </div>
+              </div>
+              <button
+                onClick={() => onNavigate('builder')}
+                className="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow transition-colors shrink-0"
+              >
+                Launch Visual Builder →
+              </button>
+            </div>
+          )}
+
           {/* Quick Stat Chips */}
           <div className="flex flex-wrap items-center gap-2.5 mt-4 pt-3 border-t border-slate-800/60">
             {entry.hit_die && (
@@ -266,6 +286,46 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           </div>
         )}
 
+        {/* Dedicated Magic Item Quick Card */}
+        {entry.category === 'items' && !entry.id.endsWith('/index') && (
+          <div className="bg-slate-950/80 border border-amber-500/30 rounded-xl p-4 sm:p-5 space-y-3 shadow-inner">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
+              <div className="text-sm font-semibold text-amber-200">
+                {entry.item_type || entry.subcategory || 'Magic Item'}
+              </div>
+              <div className="flex items-center gap-2">
+                {rarityBadge && (
+                  <span className={`px-2.5 py-0.5 rounded-full text-xs font-semibold border ${rarityBadge.bg} ${rarityBadge.text} ${rarityBadge.border}`}>
+                    {entry.rarity}
+                  </span>
+                )}
+                {entry.attunement && (
+                  <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-950/70 text-purple-300 border border-purple-500/40">
+                    Attunement Required
+                  </span>
+                )}
+              </div>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400">
+              <div>
+                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Category</span>
+                <span className="text-slate-200 font-medium">{entry.subcategory || entry.item_type || 'Item'}</span>
+              </div>
+              <div>
+                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Source</span>
+                <span className="text-slate-200 font-medium">{entry.source || 'SRD 5.1'}</span>
+              </div>
+              {entry.frontmatter?.weight && (
+                <div>
+                  <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Weight</span>
+                  <span className="text-slate-200 font-medium">{entry.frontmatter.weight}</span>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Navigation Tabs for Classes and Subclasses with Spells */}
         {(isClass || (isSubclass && classSpells.length > 0)) && (
           <div className="flex flex-wrap items-center gap-2 border-b border-slate-800 pb-2">
@@ -341,7 +401,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
         {/* Tab 1: Markdown Content */}
         {activeTab === 'content' && (
           <div className="space-y-6">
-            <MarkdownView content={entry.body} onNavigate={onNavigate} />
+            <MarkdownView content={entry.body} currentEntryId={entry.id} onNavigate={onNavigate} />
 
             {/* If this is the spells index page or a level index page */}
             {entry.category === 'spells' && entry.id.endsWith('/index') && (

@@ -1,35 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.grease
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Grease
+title: "Grease"
 level: 1
 school: Conjuration
+casting_time: "1 action"
+range: "60 feet"
+duration: "1 minute"
+components: "V, S, M (a bit of pork rind or butter)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Slick grease covers the ground in a 10-foot square, turning it into difficult terrain and causing creatures to slip and fall prone."
 classes:
   - Artificer
   - Wizard
-  - Tamer
-casting_time: 1 action
-range: 60 feet
-duration: 1 minute
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
 ---
 
 _1st-level conjuration_
 
-**Material components:** A bit of pork rind or butter.
-
 Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration.
 
-When the grease appears, each creature standing in its area must succeed on a dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a dexterity saving throw or fall prone.
+When the grease appears, each creature standing in its area must succeed on a Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.
 
 ---
 
@@ -39,6 +30,6 @@ When the grease appears, each creature standing in its area must succeed on a de
 
 **School:** Conjuration
 
-**Available to:** [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

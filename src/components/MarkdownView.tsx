@@ -2,27 +2,28 @@ import React, { useState } from 'react';
 import { resolveWikilink, getSourceBadgeInfo } from '../utils/archiveUtils';
 import { AlertTriangle, Info, Lightbulb, ShieldAlert, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
 import { SpellCatalogue } from './SpellCatalogue';
+import { CompendiumEmbed } from './CompendiumEmbed';
 
 interface MarkdownViewProps {
   content: string;
+  currentEntryId?: string;
   onNavigate: (entryId: string) => void;
 }
 
-export const MarkdownView: React.FC<MarkdownViewProps> = ({ content, onNavigate }) => {
-  // Parse paragraphs, callouts, tables, and headers
+export const MarkdownView: React.FC<MarkdownViewProps> = ({ content, currentEntryId, onNavigate }) => {
   const elements = parseMarkdownBlocks(content);
 
   return (
     <div className="prose prose-invert max-w-none space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
       {elements.map((el, idx) => (
-        <BlockRenderer key={idx} block={el} onNavigate={onNavigate} />
+        <BlockRenderer key={idx} block={el} currentEntryId={currentEntryId} onNavigate={onNavigate} />
       ))}
     </div>
   );
 };
 
 interface Block {
-  type: 'header' | 'callout' | 'table' | 'list' | 'paragraph' | 'divider' | 'code' | 'embed';
+  type: 'header' | 'callout' | 'blockquote' | 'table' | 'list' | 'ordered-list' | 'paragraph' | 'divider' | 'code' | 'embed';
   target?: string;
   level?: number;
   title?: string;
@@ -33,6 +34,43 @@ interface Block {
   items?: string[];
   rawText?: string;
   lang?: string;
+}
+
+// Smart table row splitter that does not break on pipes inside [[link|alias]] or `code`
+function splitTableRow(line: string): string[] {
+  let trimmed = line.trim();
+  if (trimmed.startsWith('|')) trimmed = trimmed.slice(1);
+  if (trimmed.endsWith('|')) trimmed = trimmed.slice(0, -1);
+
+  const cells: string[] = [];
+  let current = '';
+  let inWikilink = 0;
+  let inCode = false;
+
+  for (let i = 0; i < trimmed.length; i++) {
+    const char = trimmed[i];
+    const nextChar = trimmed[i + 1];
+
+    if (char === '`') {
+      inCode = !inCode;
+      current += char;
+    } else if (!inCode && char === '[' && nextChar === '[') {
+      inWikilink++;
+      current += '[[';
+      i++;
+    } else if (!inCode && char === ']' && nextChar === ']') {
+      if (inWikilink > 0) inWikilink--;
+      current += ']]';
+      i++;
+    } else if (char === '|' && inWikilink === 0 && !inCode) {
+      cells.push(current.trim());
+      current = '';
+    } else {
+      current += char;
+    }
+  }
+  cells.push(current.trim());
+  return cells;
 }
 
 function parseMarkdownBlocks(text: string): Block[] {
@@ -50,7 +88,7 @@ function parseMarkdownBlocks(text: string): Block[] {
       continue;
     }
 
-    // Header
+    // Header: # Heading
     const headerMatch = line.match(/^(#{1,6})\s+(.*)$/);
     if (headerMatch) {
       blocks.push({
@@ -87,7 +125,21 @@ function parseMarkdownBlocks(text: string): Block[] {
       continue;
     }
 
-    // Table: starts with | ... |
+    // Standard Blockquote: > text (without [!type])
+    if (line.trim().startsWith('>') && !line.match(/^>\s*\[!/)) {
+      const quoteLines: string[] = [];
+      while (i < lines.length && lines[i].trim().startsWith('>') && !lines[i].match(/^>\s*\[!/)) {
+        quoteLines.push(lines[i].replace(/^>\s?/, ''));
+        i++;
+      }
+      blocks.push({
+        type: 'blockquote',
+        rawText: quoteLines.join('\n')
+      });
+      continue;
+    }
+
+    // Table: starts with | and ends with |
     if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
       const tableLines: string[] = [];
       while (i < lines.length && lines[i].trim().startsWith('|') && lines[i].trim().endsWith('|')) {
@@ -96,9 +148,9 @@ function parseMarkdownBlocks(text: string): Block[] {
       }
 
       if (tableLines.length >= 2) {
-        const headerRow = tableLines[0].slice(1, -1).split('|').map(s => s.trim());
+        const headerRow = splitTableRow(tableLines[0]);
         // line 1 is usually separator |---|---|
-        const contentRows = tableLines.slice(2).map(r => r.slice(1, -1).split('|').map(s => s.trim()));
+        const contentRows = tableLines.slice(2).map(r => splitTableRow(r));
         blocks.push({
           type: 'table',
           headers: headerRow,
@@ -108,7 +160,7 @@ function parseMarkdownBlocks(text: string): Block[] {
       }
     }
 
-    // Code block
+    // Code block: ```lang ... ```
     if (line.trim().startsWith('```')) {
       const lang = line.trim().slice(3).trim();
       const codeLines: string[] = [];
@@ -126,7 +178,21 @@ function parseMarkdownBlocks(text: string): Block[] {
       continue;
     }
 
-    // Unordered List
+    // Ordered List: 1. Item
+    if (/^\s*\d+\.\s+/.test(line)) {
+      const listItems: string[] = [];
+      while (i < lines.length && /^\s*\d+\.\s+/.test(lines[i])) {
+        listItems.push(lines[i].replace(/^\s*\d+\.\s+/, '').trim());
+        i++;
+      }
+      blocks.push({
+        type: 'ordered-list',
+        items: listItems
+      });
+      continue;
+    }
+
+    // Unordered List: - Item or * Item
     if (/^\s*[-*+]\s+/.test(line)) {
       const listItems: string[] = [];
       while (i < lines.length && /^\s*[-*+]\s+/.test(lines[i])) {
@@ -140,7 +206,7 @@ function parseMarkdownBlocks(text: string): Block[] {
       continue;
     }
 
-    // Obsidian embeds (spells.base, *-spells.base, etc.)
+    // Embed: ![[target]]
     const embedMatch = line.trim().match(/^!\[\[(.*?)\]\]$/);
     if (embedMatch) {
       blocks.push({
@@ -158,18 +224,23 @@ function parseMarkdownBlocks(text: string): Block[] {
         i < lines.length &&
         lines[i].trim() !== '' &&
         !lines[i].match(/^(#{1,6})\s+/) &&
-        !lines[i].match(/^>\s*\[!/) &&
+        !lines[i].match(/^>\s*/) &&
         !lines[i].trim().startsWith('|') &&
         !lines[i].trim().startsWith('```') &&
         !/^\s*[-*+]\s+/.test(lines[i]) &&
+        !/^\s*\d+\.\s+/.test(lines[i]) &&
+        !/^!\[\[.*?\]\]$/.test(lines[i].trim()) &&
         !/^(\*\*\*|---|___)$/.test(lines[i].trim())
       ) {
         paraLines.push(lines[i]);
         i++;
       }
+
+      // Check if lines should preserve breaks (e.g. key-value pairs or lines ending in spaces)
+      const hasExplicitBreaks = paraLines.some(l => l.endsWith('  ') || /^\*\*.*?\*\*:/.test(l.trim()));
       blocks.push({
         type: 'paragraph',
-        rawText: paraLines.join(' ')
+        rawText: hasExplicitBreaks ? paraLines.join('\n') : paraLines.join(' ')
       });
       continue;
     }
@@ -180,7 +251,7 @@ function parseMarkdownBlocks(text: string): Block[] {
   return blocks;
 }
 
-const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }> = ({ block, onNavigate }) => {
+const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigate: (id: string) => void }> = ({ block, currentEntryId, onNavigate }) => {
   const [isOpen, setIsOpen] = useState(!block.isFolded);
 
   if (block.type === 'divider') {
@@ -189,6 +260,7 @@ const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }
 
   if (block.type === 'embed' && block.target) {
     const target = block.target;
+
     // Check if it is a spell list
     if (target.endsWith('-spells.base') || target.startsWith('spells.base')) {
       let initialClass = 'All Spells';
@@ -210,7 +282,7 @@ const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }
       else if (target === 'mystic-spells.base') { initialClass = 'Mystic'; hideClassSelector = true; }
       else if (target === 'witchblade-spells.base') { initialClass = 'Witchblade'; hideClassSelector = true; }
       else if (target === 'wu-jen-spells.base') { initialClass = 'Way of the Wu Jen'; hideClassSelector = true; }
-      else if (target.includes('#Cantrips')) { initialLevel = 0; }
+      else if (target.includes('#Cantrip')) { initialLevel = 0; }
       else if (target.includes('#1st-Level')) { initialLevel = 1; }
       else if (target.includes('#2nd-Level')) { initialLevel = 2; }
       else if (target.includes('#3rd-Level')) { initialLevel = 3; }
@@ -230,6 +302,17 @@ const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }
             onSelectSpell={onNavigate}
           />
         </div>
+      );
+    }
+
+    // All other .base queries (backgrounds.base, items.base, subclasses-of.base, etc.)
+    if (target.endsWith('.base') || target.includes('.base#')) {
+      return (
+        <CompendiumEmbed
+          target={target}
+          currentEntryId={currentEntryId}
+          onNavigate={onNavigate}
+        />
       );
     }
 
@@ -263,6 +346,14 @@ const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }
       <h4 className="text-base font-medium text-slate-200 mt-3 mb-1">
         <InlineContent text={text} onNavigate={onNavigate} />
       </h4>
+    );
+  }
+
+  if (block.type === 'blockquote') {
+    return (
+      <blockquote className="my-3 border-l-2 border-amber-500/60 bg-slate-900/40 py-2.5 px-4 rounded-r-lg italic text-slate-300 space-y-2">
+        <MarkdownView content={block.rawText || ''} currentEntryId={currentEntryId} onNavigate={onNavigate} />
+      </blockquote>
     );
   }
 
@@ -302,7 +393,7 @@ const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }
         </div>
         {isOpen && (
           <div className="mt-2.5 pt-2 border-t border-slate-800/80 text-slate-300 text-sm leading-relaxed space-y-2">
-            <MarkdownView content={block.rawText || ''} onNavigate={onNavigate} />
+            <MarkdownView content={block.rawText || ''} currentEntryId={currentEntryId} onNavigate={onNavigate} />
           </div>
         )}
       </div>
@@ -338,9 +429,21 @@ const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }
     );
   }
 
+  if (block.type === 'ordered-list' && block.items) {
+    return (
+      <ol className="list-decimal list-outside space-y-1.5 my-2.5 pl-6 text-slate-300">
+        {block.items.map((item, idx) => (
+          <li key={idx} className="leading-relaxed">
+            <InlineContent text={item} onNavigate={onNavigate} />
+          </li>
+        ))}
+      </ol>
+    );
+  }
+
   if (block.type === 'list' && block.items) {
     return (
-      <ul className="list-disc list-inside space-y-1 my-2 pl-2 text-slate-300">
+      <ul className="list-disc list-outside space-y-1 my-2 pl-5 text-slate-300">
         {block.items.map((item, idx) => (
           <li key={idx}>
             <InlineContent text={item} onNavigate={onNavigate} />
@@ -352,15 +455,30 @@ const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }
 
   if (block.type === 'code') {
     return (
-      <pre className="p-3 my-3 rounded-lg bg-slate-900 border border-slate-800 font-mono text-xs md:text-sm text-amber-200 overflow-x-auto">
+      <pre className="p-3.5 my-3 rounded-lg bg-slate-900 border border-slate-800 font-mono text-xs md:text-sm text-amber-200 overflow-x-auto">
         <code>{block.rawText}</code>
       </pre>
     );
   }
 
+  // Paragraph with potential line breaks
+  const raw = block.rawText || '';
+  if (raw.includes('\n')) {
+    const lines = raw.split('\n');
+    return (
+      <div className="my-2 space-y-1 text-slate-300 leading-relaxed">
+        {lines.map((ln, idx) => (
+          <div key={idx}>
+            <InlineContent text={ln} onNavigate={onNavigate} />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <p className="my-2 text-slate-300 leading-relaxed">
-      <InlineContent text={block.rawText || ''} onNavigate={onNavigate} />
+      <InlineContent text={raw} onNavigate={onNavigate} />
     </p>
   );
 };
@@ -368,70 +486,122 @@ const BlockRenderer: React.FC<{ block: Block; onNavigate: (id: string) => void }
 export const InlineContent: React.FC<{ text: string; onNavigate: (id: string) => void }> = ({ text, onNavigate }) => {
   if (!text) return null;
 
-  // Split by wikilinks: [[Link Target|Optional Display]] or [[Link Target]]
-  // Also split bold (**text**) and italic (*text*)
-  const wikilinkRegex = /\[\[(.*?)\]\]/g;
+  // Split by markdown elements: wikilinks [[...]], markdown links [text](url), bold/italic
+  // We can do this cleanly in sequence
+  return <>{renderRichText(text, onNavigate)}</>;
+};
+
+function renderRichText(text: string, onNavigate: (id: string) => void): React.ReactNode[] {
+  // Regex pattern matching wikilinks [[...]] OR standard markdown links [label](url)
+  const linkRegex = /\[\[(.*?)\]\]|\[([^\]]+)\]\(([^)]+)\)/g;
   const parts: React.ReactNode[] = [];
   let lastIndex = 0;
   let match: RegExpExecArray | null;
 
-  while ((match = wikilinkRegex.exec(text)) !== null) {
+  while ((match = linkRegex.exec(text)) !== null) {
     const start = match.index;
     if (start > lastIndex) {
-      parts.push(renderFormattedText(text.substring(lastIndex, start)));
+      parts.push(renderFormatting(text.substring(lastIndex, start)));
     }
 
-    const rawLink = match[1];
-    const linkParts = rawLink.split('|');
-    const target = linkParts[0].trim();
-    const label = linkParts[1]?.trim() || target.split('/').pop()?.replace(/\.md$/, '') || target;
+    if (match[1] !== undefined) {
+      // It's a wikilink [[target|label]] or [[target]]
+      const rawLink = match[1];
+      const linkParts = rawLink.split('|');
+      const target = linkParts[0].trim();
+      const label = linkParts[1]?.trim() || target.split('/').pop()?.replace(/\.md$/, '') || target;
 
-    // Check if target is a base embed view (e.g. ![[ra-golvek.base]])
-    if (target.endsWith('.base')) {
-      parts.push(<React.Fragment key={match.index} />);
-    } else {
-      const resolved = resolveWikilink(target);
-      if (resolved) {
-        const badge = getSourceBadgeInfo(resolved.source_type, resolved.source);
+      if (target.endsWith('.base') || target.includes('.base#')) {
+        parts.push(<React.Fragment key={match.index} />);
+      } else {
+        const resolved = resolveWikilink(target);
+        if (resolved) {
+          const badge = getSourceBadgeInfo(resolved.source_type, resolved.source);
+          parts.push(
+            <button
+              key={match.index}
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate(resolved.id);
+              }}
+              title={`${resolved.title} (${badge.label})`}
+              className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5 cursor-pointer text-left"
+            >
+              <span>{label}</span>
+              <ExternalLink className="w-3 h-3 opacity-60 inline shrink-0" />
+            </button>
+          );
+        } else {
+          parts.push(
+            <span key={match.index} className="text-amber-300/80 font-medium">
+              {label}
+            </span>
+          );
+        }
+      }
+    } else if (match[2] !== undefined && match[3] !== undefined) {
+      // It's a standard markdown link [label](url)
+      const label = match[2];
+      const url = match[3];
+
+      if (url.startsWith('http://') || url.startsWith('https://')) {
         parts.push(
-          <button
+          <a
             key={match.index}
-            onClick={(e) => {
-              e.preventDefault();
-              onNavigate(resolved.id);
-            }}
-            title={`${resolved.title} (${badge.label})`}
-            className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5 cursor-pointer"
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5"
           >
             <span>{label}</span>
-            <ExternalLink className="w-3 h-3 opacity-60 inline" />
-          </button>
+            <ExternalLink className="w-3 h-3 opacity-60 inline shrink-0" />
+          </a>
         );
       } else {
-        // Fallback for unresolved wikilinks
-        parts.push(
-          <span key={match.index} className="text-amber-300/80 font-medium">
-            {label}
-          </span>
-        );
+        // Internal relative url
+        const cleanTarget = url.replace(/^\.\//, '').replace(/\.md$/, '');
+        const resolved = resolveWikilink(cleanTarget);
+        if (resolved) {
+          parts.push(
+            <button
+              key={match.index}
+              onClick={(e) => {
+                e.preventDefault();
+                onNavigate(resolved.id);
+              }}
+              className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5 cursor-pointer"
+            >
+              <span>{label}</span>
+            </button>
+          );
+        } else {
+          parts.push(
+            <span key={match.index} className="text-amber-300 font-medium">
+              {label}
+            </span>
+          );
+        }
       }
     }
 
-    lastIndex = wikilinkRegex.lastIndex;
+    lastIndex = linkRegex.lastIndex;
   }
 
   if (lastIndex < text.length) {
-    parts.push(renderFormattedText(text.substring(lastIndex)));
+    parts.push(renderFormatting(text.substring(lastIndex)));
   }
 
-  return <>{parts}</>;
-};
+  return parts;
+}
 
-function renderFormattedText(text: string): React.ReactNode {
-  // Handle bold **text** and italic *text*
-  const tokens = text.split(/(\*\*.*?\*\*|\*.*?\*|`.*?`)/g);
+function renderFormatting(text: string): React.ReactNode {
+  // Handle strikethrough ~~text~~, bold **text**, italic *text* or _text_, and inline `code`
+  const tokens = text.split(/(~~.*?~~|\*\*.*?\*\*|\*[^*\n]+?\*|`.*?`)/g);
 
   return tokens.map((token, i) => {
+    if (token.startsWith('~~') && token.endsWith('~~')) {
+      return <del key={i} className="line-through text-slate-500">{token.slice(2, -2)}</del>;
+    }
     if (token.startsWith('**') && token.endsWith('**')) {
       return <strong key={i} className="font-semibold text-slate-100">{token.slice(2, -2)}</strong>;
     }

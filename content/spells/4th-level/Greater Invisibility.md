@@ -1,32 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.greater-invisibility
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Greater Invisibility
+title: "Greater Invisibility"
 level: 4
 school: Illusion
+casting_time: "1 action"
+range: "Touch"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "You or a creature you touch becomes invisible, and does NOT become visible when attacking or casting a spell."
 classes:
   - Bard
   - Sorcerer
   - Wizard
-  - Tamer
-casting_time: 1 action
-range: Touch
-duration: Up to 1 minute
-components: V, S
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _4th-level illusion_
 
@@ -42,4 +31,4 @@ You or a creature you touch becomes invisible until the spell ends. Anything the
 
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

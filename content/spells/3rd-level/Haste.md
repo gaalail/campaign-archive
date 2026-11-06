@@ -1,32 +1,27 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.haste
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Haste
+title: "Haste"
 level: 3
 school: Transmutation
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a shaving of licorice root)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Target gains doubled speed, +2 AC, advantage on Dex saves, and an additional action each turn to Attack, Dash, Disengage, Hide, or Use an Object."
 classes:
   - Artificer
   - Sorcerer
   - Wizard
-  - Tamer
-casting_time: 1 action
-range: 30 feet
-duration: Up to 1 minute
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
+subclass_spell_lists:
+  - Vengeance Oath
 ---
 
 _3rd-level transmutation_
 
-**Material components:** A shaving of licorice root.
-
-Choose a willing creature that you can see within range. Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.
+Choose a willing creature that you can see within range. Until the spell ends, the target's speed is doubled, it gains a +2 bonus to AC, it has advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.
 
 When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.
 
@@ -38,6 +33,6 @@ When the spell ends, the target can't move or take actions until after its next 
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

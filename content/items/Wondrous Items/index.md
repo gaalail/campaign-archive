@@ -1,29 +1,17 @@
-﻿---
+---
 title: Wondrous Items
+aliases:
+  - items/Wondrous Items
+  - items/Wondrous Items/index
+  - Wondrous Items
 ---
 
 # Wondrous Items
 
-Other magical equipment
+A catch-all category for a vast array of magical gear that doesn't fit other categories: cloaks, boots, wondrous containers, amulets, instruments, and legendary relics.
 
 ---
 
-## Navigation
+## Browse Wondrous Items
 
-[[items|Back to All Items]]
-
----
-
-## Items of This Type
-
-![[items.base#Wondrous-Items]]
-
----
-
-## Related Sections
-
-- [[items|All Items]]
-- [[character-options/classes|Classes]] - Class-specific equipment
-- [[Character Options]] - Build your character
-
----
+![[items.base#Wondrous Items]]

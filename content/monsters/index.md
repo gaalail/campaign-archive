@@ -1,76 +1,53 @@
-﻿---
-title: Monsters
+---
+title: Monsters & Bestiary
+aliases:
+  - monsters
+  - Monsters
+  - bestiary
+  - monsters/index
 ---
 
-# Monsters & Creatures
+# Monsters & Bestiary
 
-A bestiary for quick lookup, encounter preparation, and campaign discovery.
-
-## Choose a Starting Point
-
-### Find by Challenge Rating
-
-Use CR when you already know the approximate threat level you need.
-
-![[monsters.base#By Challenge Rating]]
-
-### Find by Creature Type
-
-Use creature type when the story or rules call for a specific kind of creature.
-
-![[monsters.base#Beasts]]
-![[monsters.base#Monstrosities]]
-![[monsters.base#Undead]]
-
-### Find by Environment
-
-- **Forest:** ![[monsters-forest.base]]
-
-### Find by Tactical Role
-
-- **Ambushers:** ![[monsters-ambushers.base]]
-
-### Find by Source
-
-![[monsters-srd.base]]
-
-### Find Content to Review
-
-![[monsters-review.base]]
-
-## Monster Cards and Full Pages
-
-The catalogue is for scanning. Open a monster page for the complete stat block, traits, actions, provenance, and related campaign context.
-
-## Encounter Preparation
-
-Encounter pages will connect selected monsters to:
-
-- Campaigns
-- Sessions
-- Locations
-- Encounter themes
-- Loot and related rules
-
-No encounter records are invented until actual campaign material exists.
-
-## Monster Page Standard
-
-Each monster should include:
-
-- `canonical_id`
-- `entity_type: monster`
-- Size, creature type, alignment, AC, HP, and CR
-- Habitats, tactical roles, and tags when known
-- Legendary, lair, and spellcaster flags when applicable
-- Source, edition, adaptation, and license status
-- Content status and a specific incomplete reason when needed
-- Explicit campaign, session, location, encounter, and loot links when relevant
-
-## Resources
-
-- [[rules|Rules]] — Combat rules and mechanics
-- [[provenance|Provenance and content filters]]
-- Monster Manual — Official D&D monster source
+Creatures, adversaries, beasts, and planar horrors encountered across the campaigns and wildlands of the 5e multiverse.
 
 ---
+
+## Campaign Foes & Prominent Encounters
+
+| Monster / NPC | Type & Alignment | CR | Key Campaign |
+| :--- | :--- | :--- | :--- |
+| **Strahd von Zarovich** | Undead (Vampire Spellcaster), Lawful Evil | CR 15 | [[campaigns/curse-of-strahd/index\|Curse of Strahd]] |
+| **Vampire Spawn** | Undead, Neutral Evil | CR 5 | [[campaigns/curse-of-strahd/index\|Curse of Strahd]] |
+| **Barovian Witch** | Humanoid (Human), Chaotic Evil | CR 1/2 | [[campaigns/curse-of-strahd/index\|Curse of Strahd]] |
+| **Strahd Zombie** | Undead, Unaligned | CR 1 | [[campaigns/curse-of-strahd/index\|Curse of Strahd]] |
+| **Werewolf** | Humanoid (Shapechanger), Chaotic Evil | CR 3 | [[campaigns/curse-of-strahd/index\|Curse of Strahd]] |
+| **Dire Wolf** | Beast, Unaligned | CR 1 | [[campaigns/curse-of-strahd/index\|Curse of Strahd]] |
+| **Shadow** | Undead, Chaotic Evil | CR 1/2 | [[campaigns/curse-of-strahd/index\|Curse of Strahd]] |
+| **Coastal Sea Hag** | Fey, Chaotic Evil | CR 2 | [[campaigns/ra-golvek/index\|Ra Gol'vek]] |
+| **Sahuagin Baron** | Humanoid (Sahuagin), Lawful Evil | CR 5 | [[campaigns/ra-golvek/index\|Ra Gol'vek]] |
+| **Frontier Owlbear** | Monstrosity, Unaligned | CR 3 | [[campaigns/vyrun/index\|Vyrun]] |
+| **Ancient Treant** | Plant, Chaotic Good | CR 9 | [[campaigns/vyrun/index\|Vyrun]] |
+
+---
+
+## Challenge Rating (CR) & Encounter Difficulty
+
+### What is Challenge Rating?
+A monster's **Challenge Rating (CR)** is an indicator of its threat level. An appropriately equipped and rested party of **four adventurers** should be able to defeat a monster of challenge rating equal to their average character level without suffering any casualties.
+
+### Monster Types
+- **Aberrations:** Alien, tentacled, or aberrant horrors from beyond reality (e.g., Mind Flayers, Aboleths).
+- **Beasts:** Natural fauna of the mortal world (wolves, bears, raptors).
+- **Celestials:** Noble beings of the Upper Planes (angels, pegasi, couatls).
+- **Constructs:** Artificially animated golems, shield guardians, and clockwork automatons.
+- **Dragons:** Ancient reptilian apex predators of raw elemental breath and magic.
+- **Elementals:** Incarnations of air, earth, fire, and water.
+- **Fey:** Magical creatures attuned to nature and the passions of the Feywild.
+- **Fiends:** Wicked creatures of the Lower Planes, including demons of the Abyss and devils of the Nine Hells.
+- **Giants:** Towering humanoids of immense brute strength and elemental affinity.
+- **Humanoids:** The civilized and tribal peoples of the material world (humans, elves, goblins, orcs).
+- **Monstrosities:** Unnatural beasts born of magical experimentation or ancient curses (e.g., chimera, hydra).
+- **Oozes:** Gelatinous subterranean scavengers that dissolve metal and flesh.
+- **Plants:** Vegetable horrors, shambling mounds, and awakened trees.
+- **Undead:** Former living creatures brought back by dark necromancy or unhallowed curses (vampires, skeletons, ghosts).

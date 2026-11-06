@@ -1,36 +1,29 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.blindness-deafness
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Blindness/Deafness
+title: "Blindness-Deafness"
 level: 2
 school: Necromancy
+casting_time: "1 action"
+range: "30 feet"
+duration: "1 minute"
+components: "V"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Blind or deafen a foe on a failed Constitution save, repeating the save at the end of each of its turns."
 classes:
   - Bard
   - Cleric
   - Sorcerer
   - Wizard
   - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: 1 minute
-components: V
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Mystic
 ---
 
 _2nd-level necromancy_
 
-You can blind or deafen a foe. Choose one creature that you can see within range to make a constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a constitution saving throw. On a success, the spell ends.
+You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.
 
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+**At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
 
 ---
 
@@ -42,4 +35,4 @@ You can blind or deafen a foe. Choose one creature that you can see within range
 
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

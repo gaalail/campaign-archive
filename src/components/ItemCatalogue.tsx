@@ -1,277 +1,193 @@
 import React, { useState, useMemo } from 'react';
 import { archiveDb, getRarityColor, getSourceBadgeInfo } from '../utils/archiveUtils';
-import { ArchiveEntry } from '../types/archive';
-import { Search, Filter, Shield, Sparkles, LayoutGrid, List } from 'lucide-react';
+import { Search, Sparkles, Filter, ChevronRight, Shield, Swords, Layers, ExternalLink } from 'lucide-react';
 
 interface ItemCatalogueProps {
-  onSelectItem: (itemId: string) => void;
+  onSelectItem: (id: string) => void;
 }
 
 export const ItemCatalogue: React.FC<ItemCatalogueProps> = ({ onSelectItem }) => {
-  const [selectedType, setSelectedType] = useState<string>('all');
+  const [search, setSearch] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedRarity, setSelectedRarity] = useState<string>('all');
-  const [selectedAttunement, setSelectedAttunement] = useState<string>('all');
-  const [searchQuery, setSearchQuery] = useState<string>('');
-  const [viewMode, setViewMode] = useState<'grid' | 'table'>('grid');
+  const [attunementOnly, setAttunementOnly] = useState<boolean>(false);
 
   const allItems = useMemo(() => {
-    return archiveDb.entries.filter(e => e.category === 'items' && !e.id.endsWith('/index'));
+    return archiveDb.entries
+      .filter(e => e.category === 'items' && !e.id.endsWith('/index'))
+      .sort((a, b) => a.title.localeCompare(b.title));
   }, []);
 
-  const itemTypes = useMemo(() => {
-    const types = new Set<string>();
+  const categories = useMemo(() => {
+    const set = new Set<string>();
     for (const item of allItems) {
-      if (item.subcategory) types.add(item.subcategory);
+      if (item.subcategory) set.add(item.subcategory);
     }
-    return Array.from(types).sort();
+    return Array.from(set).sort();
   }, [allItems]);
+
+  const rarities = ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'];
 
   const filteredItems = useMemo(() => {
     return allItems.filter(item => {
-      if (selectedType !== 'all' && item.subcategory !== selectedType) return false;
-
-      if (selectedRarity !== 'all') {
-        const r = (item.rarity || '').toLowerCase();
-        if (selectedRarity === 'common' && (r !== 'common' || r.includes('uncommon'))) return false;
-        if (selectedRarity === 'uncommon' && !r.includes('uncommon')) return false;
-        if (selectedRarity === 'rare' && (r.includes('very') || !r.includes('rare'))) return false;
-        if (selectedRarity === 'very-rare' && !r.includes('very rare')) return false;
-        if (selectedRarity === 'legendary' && !r.includes('legendary') && !r.includes('artifact')) return false;
+      if (selectedCategory !== 'all' && item.subcategory?.toLowerCase() !== selectedCategory.toLowerCase()) {
+        return false;
       }
-
-      if (selectedAttunement === 'yes' && !item.attunement) return false;
-      if (selectedAttunement === 'no' && item.attunement) return false;
-
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase();
-        if (!item.title.toLowerCase().includes(q) && !item.summary.toLowerCase().includes(q)) {
-          return false;
-        }
+      if (selectedRarity !== 'all' && item.rarity?.toLowerCase() !== selectedRarity.toLowerCase()) {
+        return false;
       }
-
+      if (attunementOnly && !item.attunement) {
+        return false;
+      }
+      if (search.trim()) {
+        const q = search.toLowerCase().trim();
+        const matchesTitle = item.title.toLowerCase().includes(q);
+        const matchesSummary = item.summary?.toLowerCase().includes(q);
+        const matchesCategory = item.subcategory?.toLowerCase().includes(q);
+        if (!matchesTitle && !matchesSummary && !matchesCategory) return false;
+      }
       return true;
     });
-  }, [allItems, selectedType, selectedRarity, selectedAttunement, searchQuery]);
+  }, [allItems, selectedCategory, selectedRarity, attunementOnly, search]);
 
   return (
-    <div className="space-y-6">
-      {/* Catalogue Header & Controls */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl space-y-4">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+    <div className="max-w-6xl mx-auto space-y-6">
+      {/* Header Banner */}
+      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-purple-400 mb-1">
+            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-400 mb-1">
               <Sparkles className="w-4 h-4" />
-              <span>Magic Items & Equipment Archive</span>
+              <span>5e Armory & Vault</span>
             </div>
-            <h1 className="font-fantasy text-2xl md:text-3xl font-bold text-slate-100">
-              Items Compendium
+            <h1 className="font-fantasy text-3xl md:text-4xl font-bold text-slate-100">
+              Magic Items Compendium
             </h1>
+            <p className="text-slate-400 text-sm mt-1">
+              Browse {allItems.length} magical weapons, enchanted armors, rings, scrolls, potions, and wondrous relics.
+            </p>
           </div>
 
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setViewMode('grid')}
-              className={`p-2 rounded-lg border text-xs transition-colors ${
-                viewMode === 'grid'
-                  ? 'bg-amber-500/20 border-amber-500 text-amber-300'
-                  : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-white'
-              }`}
-              title="Grid View"
-            >
-              <LayoutGrid className="w-4 h-4" />
-            </button>
-            <button
-              onClick={() => setViewMode('table')}
-              className={`p-2 rounded-lg border text-xs transition-colors ${
-                viewMode === 'table'
-                  ? 'bg-amber-500/20 border-amber-500 text-amber-300'
-                  : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-white'
-              }`}
-              title="Table View"
-            >
-              <List className="w-4 h-4" />
-            </button>
+          <div className="flex items-center gap-3 self-start md:self-auto">
+            <div className="px-3.5 py-2 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-amber-300">
+              Showing <span className="font-bold text-slate-100">{filteredItems.length}</span> items
+            </div>
           </div>
         </div>
 
-        {/* Filter Toolbar */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 text-xs">
-          {/* Search Box */}
-          <div className="relative">
-            <Search className="w-3.5 h-3.5 absolute left-3 top-3 text-slate-500" />
+        {/* Filter Controls Bar */}
+        <div className="mt-6 pt-5 border-t border-slate-800/80 flex flex-wrap items-center gap-3">
+          {/* Search box */}
+          <div className="relative flex-1 min-w-[200px]">
+            <Search className="w-4 h-4 text-slate-500 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
             <input
               type="text"
-              placeholder="Search items..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-3 py-2 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-purple-500"
+              placeholder="Search items by name, properties, effects..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-4 py-2 text-xs text-slate-100 placeholder-slate-500 focus:border-amber-500 focus:outline-none"
             />
           </div>
 
-          {/* Item Category Filter */}
-          <div>
-            <select
-              value={selectedType}
-              onChange={(e) => setSelectedType(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-slate-200 focus:outline-none focus:border-purple-500 capitalize"
-            >
-              <option value="all">All Item Types ({allItems.length})</option>
-              {itemTypes.map(t => (
-                <option key={t} value={t}>{t}</option>
-              ))}
-            </select>
-          </div>
+          {/* Category Dropdown */}
+          <select
+            value={selectedCategory}
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-300 focus:border-amber-500 focus:outline-none"
+          >
+            <option value="all">All Categories ({allItems.length})</option>
+            {categories.map(c => (
+              <option key={c} value={c}>{c}</option>
+            ))}
+          </select>
 
-          {/* Rarity Filter */}
-          <div>
-            <select
-              value={selectedRarity}
-              onChange={(e) => setSelectedRarity(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-slate-200 focus:outline-none focus:border-purple-500"
-            >
-              <option value="all">All Rarities</option>
-              <option value="common">Common</option>
-              <option value="uncommon">Uncommon</option>
-              <option value="rare">Rare</option>
-              <option value="very-rare">Very Rare</option>
-              <option value="legendary">Legendary / Artifact</option>
-            </select>
-          </div>
+          {/* Rarity Dropdown */}
+          <select
+            value={selectedRarity}
+            onChange={(e) => setSelectedRarity(e.target.value)}
+            className="bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-300 focus:border-amber-500 focus:outline-none"
+          >
+            <option value="all">All Rarities</option>
+            {rarities.map(r => (
+              <option key={r} value={r}>{r}</option>
+            ))}
+          </select>
 
-          {/* Attunement Filter */}
-          <div>
-            <select
-              value={selectedAttunement}
-              onChange={(e) => setSelectedAttunement(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-slate-200 focus:outline-none focus:border-purple-500"
-            >
-              <option value="all">Attunement: Any</option>
-              <option value="yes">Requires Attunement</option>
-              <option value="no">No Attunement</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-between text-xs text-slate-400 pt-1">
-          <span>Showing {filteredItems.length} of {allItems.length} magic items</span>
-          {(selectedType !== 'all' || selectedRarity !== 'all' || selectedAttunement !== 'all' || searchQuery) && (
-            <button
-              onClick={() => {
-                setSelectedType('all');
-                setSelectedRarity('all');
-                setSelectedAttunement('all');
-                setSearchQuery('');
-              }}
-              className="text-amber-400 hover:text-amber-200 underline"
-            >
-              Reset Filters
-            </button>
-          )}
+          {/* Attunement Checkbox Button */}
+          <button
+            onClick={() => setAttunementOnly(!attunementOnly)}
+            className={`px-3 py-2 rounded-xl text-xs font-medium border transition-colors flex items-center gap-1.5 ${
+              attunementOnly
+                ? 'bg-purple-950/80 border-purple-500/60 text-purple-200'
+                : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200'
+            }`}
+          >
+            <span>Attunement Only</span>
+          </button>
         </div>
       </div>
 
-      {/* Grid View */}
-      {viewMode === 'grid' && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredItems.map(item => {
-            const rarityBadge = getRarityColor(item.rarity);
-            const sourceBadge = getSourceBadgeInfo(item.source_type, item.source);
+      {/* Items Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5">
+        {filteredItems.map(item => {
+          const rarity = item.rarity ? getRarityColor(item.rarity) : null;
+          const badge = getSourceBadgeInfo(item.source_type, item.source);
 
-            return (
-              <div
-                key={item.id}
-                onClick={() => onSelectItem(item.id)}
-                className="bg-slate-900 border border-slate-800 hover:border-purple-500/50 hover:bg-slate-800/50 p-5 rounded-2xl cursor-pointer transition-all duration-200 shadow-md group space-y-3 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-start justify-between gap-2">
-                    <h3 className="font-fantasy font-bold text-slate-100 group-hover:text-amber-300 transition-colors text-base">
-                      {item.title}
-                    </h3>
-                    <span className="text-[10px] uppercase font-semibold text-slate-500">
-                      {item.subcategory}
+          return (
+            <div
+              key={item.id}
+              onClick={() => onSelectItem(item.id)}
+              className="group p-4 rounded-xl border border-slate-800 bg-slate-900/60 hover:bg-slate-900 hover:border-amber-500/40 cursor-pointer transition-all flex flex-col justify-between space-y-3"
+            >
+              <div>
+                <div className="flex items-start justify-between gap-2">
+                  <h3 className="font-fantasy font-bold text-slate-100 group-hover:text-amber-300 transition-colors text-base">
+                    {item.title}
+                  </h3>
+                  {rarity ? (
+                    <span className={`text-[10px] px-2 py-0.5 rounded border font-semibold ${rarity.bg} ${rarity.text} ${rarity.border} shrink-0`}>
+                      {item.rarity}
                     </span>
-                  </div>
+                  ) : (
+                    <span className="text-[10px] px-2 py-0.5 rounded border bg-slate-800 text-slate-300 border-slate-700 shrink-0">
+                      Standard
+                    </span>
+                  )}
+                </div>
 
-                  <p className="text-xs text-slate-400 mt-2 line-clamp-2">
-                    {item.summary || 'Click to view magic item description and mechanics.'}
+                <div className="text-[11px] text-slate-400 mt-1 flex items-center gap-2">
+                  <span className="capitalize">{item.subcategory || item.item_type || 'Item'}</span>
+                  {item.attunement && (
+                    <>
+                      <span>•</span>
+                      <span className="text-purple-400 font-medium">Attunement</span>
+                    </>
+                  )}
+                </div>
+
+                {item.summary && (
+                  <p className="text-xs text-slate-300 line-clamp-3 mt-2 leading-relaxed">
+                    {item.summary}
                   </p>
-                </div>
-
-                <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-800/80">
-                  <div className="flex items-center gap-1.5">
-                    <span
-                      className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${rarityBadge.bg} ${rarityBadge.text} ${rarityBadge.border}`}
-                    >
-                      {item.rarity || 'Common'}
-                    </span>
-                    {item.attunement && (
-                      <span className="text-[10px] px-2 py-0.5 rounded-full bg-purple-950/60 text-purple-300 border border-purple-500/30">
-                        Attune
-                      </span>
-                    )}
-                  </div>
-
-                  <span className={`text-[10px] font-medium ${sourceBadge.text}`}>
-                    {sourceBadge.label}
-                  </span>
-                </div>
+                )}
               </div>
-            );
-          })}
-        </div>
-      )}
 
-      {/* Table View */}
-      {viewMode === 'table' && (
-        <div className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900 shadow-xl">
-          <table className="w-full text-left text-xs">
-            <thead className="bg-slate-800/70 text-slate-300 font-semibold border-b border-slate-700">
-              <tr>
-                <th className="px-4 py-3">Name</th>
-                <th className="px-4 py-3">Type</th>
-                <th className="px-4 py-3">Rarity</th>
-                <th className="px-4 py-3">Attunement</th>
-                <th className="px-4 py-3">Source</th>
-                <th className="px-4 py-3">Summary</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-slate-800">
-              {filteredItems.map(item => {
-                const rarityBadge = getRarityColor(item.rarity);
-                return (
-                  <tr
-                    key={item.id}
-                    onClick={() => onSelectItem(item.id)}
-                    className="hover:bg-slate-800/60 cursor-pointer transition-colors"
-                  >
-                    <td className="px-4 py-3 font-fantasy font-bold text-amber-300 whitespace-nowrap">
-                      {item.title}
-                    </td>
-                    <td className="px-4 py-3 text-slate-400 whitespace-nowrap">
-                      {item.subcategory}
-                    </td>
-                    <td className="px-4 py-3 whitespace-nowrap">
-                      <span className={`px-2 py-0.5 rounded-full text-[10px] font-semibold border ${rarityBadge.bg} ${rarityBadge.text} ${rarityBadge.border}`}>
-                        {item.rarity || 'Common'}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-slate-400 whitespace-nowrap">
-                      {item.attunement ? 'Yes' : 'No'}
-                    </td>
-                    <td className="px-4 py-3 text-slate-400 whitespace-nowrap">
-                      {item.source || item.source_type}
-                    </td>
-                    <td className="px-4 py-3 text-slate-400 max-w-xs truncate">
-                      {item.summary}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-      )}
+              <div className="pt-2 border-t border-slate-800/60 flex items-center justify-between text-[11px] text-slate-500">
+                <span>{badge.label}</span>
+                <span className="text-amber-400 group-hover:text-amber-300 font-medium flex items-center gap-0.5">
+                  View Item <ChevronRight className="w-3 h-3" />
+                </span>
+              </div>
+            </div>
+          );
+        })}
+
+        {filteredItems.length === 0 && (
+          <div className="col-span-full p-12 text-center text-slate-500 rounded-xl border border-slate-800 bg-slate-900/30">
+            No magic items found matching your filters.
+          </div>
+        )}
+      </div>
     </div>
   );
 };

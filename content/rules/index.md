@@ -1,54 +1,51 @@
-﻿---
+---
 title: Rules
+aliases:
+  - rules
+  - Rules
+  - 5e-rules
+  - rules/index
 ---
 
-# Rules Compendium
+# 5e Core Rules & Mechanics
 
-This archive uses standard **D&D 5e SRD rules** supplemented with targeted table rulings and campaign-specific mechanics. Rules are organized into modular, atomic reference cards for rapid lookup and cross-referencing.
-
----
-
-## Rule Categories
-
-| Category           | Description                                                                                 | Index                                                |
-| ------------------ | ------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| **Conditions**     | Core 5e status impairments and advantages (15 atomic cards)                                 | [[rules/conditions/index                             | Conditions Index]]                              |
-| **Combat**         | Action economy, attack rolls, critical hits, damage & healing, death saves, flanking, cover | [[rules/combat/index                                 | Combat Rules]]                                  |
-| **Adventuring**    | Resting cycles, attunement, light & vision, and the Epic Point Pool system                  | [[rules/adventuring/index                            | Adventuring Rules]]                             |
-| **Spellcasting**   | Spell slots, components, concentration, and preparation mechanics                           | [[rules/spellcasting/index                           | Spellcasting Rules]]                            |
-| **House Rules**    | Overview of global table modifications across campaigns                                     | [[House Rules]]                                      |
-| **Campaign Rules** | Setting-specific rulings for [[campaigns/curse-of-strahd/rules/index                        | Curse of Strahd]], [[campaigns/ra-golvek/rules/index | Ra Gol'vek]], and [[campaigns/vyrun/rules/index | Vyrun]] | [[campaigns/index | Campaign Hubs]] |
+The rules engine of 5th Edition Dungeons & Dragons, covering combat flow, action economy, resting, conditions, ability checks, and spellcasting principles.
 
 ---
 
-## Interactive Rules Database
+## Quick Reference Rules
 
-Use the tabs below to browse all rules or filter by category:
-
-![[rules.base]]
-
----
-
-## Quick Reference: Table Rulings
-
-| Topic                   | Summary Ruling                                                                       | Detailed Rule                                          |
-| ----------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------ |
-| **Critical Hits**       | Rolls of 19–20 crit; maximized base damage dice + bonus rolled die                   | [[rules/combat/critical-hits                           | Critical Hits]]        |
-| **Death Saves**         | 10 ft. stabilizing Medicine checks; _healing word_ stabilizes automatically          | [[rules/combat/death-saves                             | Death Saves]]          |
-| **Flanking**            | Flat +2 bonus to melee attacks for opposite-side flankers (not advantage)            | [[rules/combat/flanking                                | Flanking]]             |
-| **Long Rests**          | Requires 8 hours of sleep plus 4 waking hours of light activity (max 1 per 24 hours) | [[rules/adventuring/resting                            | Resting]]              |
-| **Attunement**          | Scaling attunement point pool based on proficiency bonus (2x PB)                     | [[rules/Attunement - Epic Point Pool                   | Epic Point Pool]]      |
-| **Barovian Magic**      | Planar isolation; cosmetic spell alterations; Strahd's domain attack bonus           | [[campaigns/curse-of-strahd/rules/alterations-to-magic | Alterations to Magic]] |
-| **Eldritch Madness**    | Wisdom saving throws against supernatural horrors in Ra Gol'vek                      | [[campaigns/ra-golvek/rules/index                      | Ra Gol'vek Rules]]     |
-| **Wilderness Survival** | Group survival checks with lowest modifier; exposure causes exhaustion in Vyrun      | [[campaigns/vyrun/rules/index                          | Vyrun Rules]]          |
+| Rule Category | Description | Reference Link |
+| :--- | :--- | :--- |
+| **Combat & Action Economy** | Rounds, turns, actions, bonus actions, reactions, movement, and cover | [[rules/combat\|Combat Rules]] |
+| **Resting & Recovery** | Short rests, long rests, hit dice healing, exhaustion, and night watches | [[rules/resting\|Resting & Healing]] |
+| **Spellcasting Mechanics** | Spell slots, components (V, S, M), concentration, rituals, and targeting | [[spells/index\|Spell Rules]] |
+| **Barovia Alterations** | Dimensional isolation, cosmetic corruption, and Strahd's domain dominance | [[campaigns/curse-of-strahd/rules/alterations-to-magic\|Curse of Strahd Magic Rules]] |
+| **Campaign House Rules** | Setting-specific rules for Barovia, Ra Gol'vek, and Vyrun | [[campaigns/index\|Campaign Specific Rules]] |
 
 ---
 
-## Official Rules Hierarchy
+## Core Principles
 
-For anything not explicitly modified in this archive, consult:
+### The Core Mechanic
+Whenever a character attempts an action with an uncertain outcome, the Dungeon Master calls for a **d20 roll**:
 
-1. **Player's Handbook** — Core rules
-2. **Dungeon Master's Guide** — Rules variants and environmental hazards
-3. **Monster Manual** — Creature abilities and actions
-4. **Your Dungeon Master** — Context-specific adjudication
+$$\text{Roll} = 1\text{d}20 + \text{Ability Modifier} + \text{Proficiency Bonus (if proficient)}$$
+
+If the total equals or exceeds the **Target DC** (Difficulty Class) or the opponent's **Armor Class (AC)**, the attempt succeeds.
+
+### Advantage and Disadvantage
+- **Advantage:** Roll two twenty-sided dice and use the **higher** roll.
+- **Disadvantage:** Roll two twenty-sided dice and use the **lower** roll.
+- Multiple instances of advantage or disadvantage do not stack; if a roll has at least one source of each, they cancel out completely.
+
+---
+
+## Action Economy in Combat
+
+Every turn in combat grants a creature:
+1. **Movement:** Up to your speed (can be broken up before, between, and after actions).
+2. **One Action:** Attack, Cast a Spell, Dash, Disengage, Dodge, Help, Hide, Ready, Search, or Use an Object.
+3. **One Bonus Action:** Only available when granted by a specific class feature, feat, or spell (e.g., *Misty Step*, Cunning Action).
+4. **One Reaction:** Taken in response to a trigger outside or inside your turn (e.g., Opportunity Attacks, *Shield*, *Counterspell*).
+5. **Free Object Interaction:** Draw a weapon, open an unlocked door, or retrieve an item from a pouch.

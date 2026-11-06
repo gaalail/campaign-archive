@@ -1,35 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.freedom-of-movement
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Freedom of Movement
+title: "Freedom of Movement"
 level: 4
 school: Abjuration
+casting_time: "1 action"
+range: "Touch"
+duration: "1 hour"
+components: "V, S, M (a strap of leather, bound around the arm or a similar appendage)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Touch a willing creature; its movement is unaffected by difficult terrain and spells cannot reduce its speed or paralyze or restrain it."
 classes:
-  - Artificer
   - Bard
   - Cleric
   - Druid
   - Ranger
-  - Tamer
-casting_time: 1 action
-range: Touch
-duration: 1 hour
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
+  - Artificer
 subclass_spell_lists:
-  - Mystic
-  - Wu Jen
+  - Devotion Oath
+  - Hunter
 ---
 
 _4th-level abjuration_
-
-**Material components:** A leather strap, bound around the arm or a similar appendage.
 
 You touch a willing creature. For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained.
 
@@ -45,4 +38,4 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 
 **Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Ranger]], [[Artificer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

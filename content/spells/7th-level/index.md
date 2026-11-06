@@ -1,33 +1,21 @@
 ---
-title: 7th-Level Spells
+title: "7th-Level Spells"
+aliases:
+  - spells/7th-level
+  - spells/7th-level/index
+  - 7th-Level Spells
+  - 7th-Level
 ---
 
 # 7th-Level Spells
 
-Learn at 13th character level
+All 7th-Level spells in the campaign archive, searchable by class, school, casting time, and components.
 
 ---
-
-## Navigation
-
-? [[spells/6th-level|6th-Level Spells]]
-
-[[spells|Back to All Spells]]
-
-[[spells/8th-level|8th-Level Spells]] ?
-
----
-
-## Spells at This Level
 
 ![[spells.base#7th-Level]]
 
 ---
 
-## Browse by Class
-
-Each spellcasting class has specific spells available. See spell pages for class availability.
-
-**All Classes:** [[Artificer]], [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Sorcerer]], [[Warlock]], [[Wizard]]
-
----
+## Related Spell Levels
+[[spells/cantrips|Cantrips]] | [[spells/1st-level|1st-Level]] | [[spells/2nd-level|2nd-Level]] | [[spells/3rd-level|3rd-Level]] | [[spells/4th-level|4th-Level]] | [[spells/5th-level|5th-Level]] | [[spells/6th-level|6th-Level]] | [[spells/7th-level|7th-Level]] | [[spells/8th-level|8th-Level]] | [[spells/9th-level|9th-Level]]

@@ -1,25 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.scorching-ray
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Scorching Ray
+title: "Scorching Ray"
 level: 2
 school: Evocation
+casting_time: "1 action"
+range: "120 feet"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Create three rays of fire and hurl them at targets within range, dealing 2d6 fire damage per hitting ray."
 classes:
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: 120 feet
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 subclass_spell_lists:
-  - Wu Jen
+  - Light Domain
+  - Fiend Patron
 ---
 
 _2nd-level evocation_
@@ -28,8 +25,7 @@ You create three rays of fire and hurl them at targets within range. You can hur
 
 Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.
 
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.
+**At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.
 
 ---
 
@@ -41,4 +37,4 @@ Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire dam
 
 **Available to:** [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

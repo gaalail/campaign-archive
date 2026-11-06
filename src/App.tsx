@@ -31,6 +31,24 @@ export default function App() {
       setSidebarOpen(false);
       return;
     }
+    if (id === 'campaigns/index' || id === 'campaigns') {
+      setView('campaigns');
+      setEntryId(id);
+      setSidebarOpen(false);
+      return;
+    }
+    if (id === 'builder') {
+      setView('builder');
+      setEntryId(id);
+      setSidebarOpen(false);
+      return;
+    }
+    if (id === 'graph') {
+      setView('graph');
+      setEntryId(id);
+      setSidebarOpen(false);
+      return;
+    }
     setEntryId(id);
     setView('reader');
     setSidebarOpen(false);
