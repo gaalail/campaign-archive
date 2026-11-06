@@ -111,6 +111,8 @@ At the end of a long rest, you can touch a nonmagical object and imbue it with o
 
 At 3rd level, choose one Artificer Specialization. It grants features at the levels listed in its description. The available specializations in this archive are [[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], [[Ooze Rancher]], [[Static Conductor]], [[Venomist]], and [[Wagoneer]]. Browse them in the [[character-options/subclasses/Artificer/index|Artificer Specializations index]].
 
+![[subclasses-of.base]]
+
 ### The Right Tool for the Job (3rd Level)
 
 With thieves' tools or artisan's tools in hand, you can magically create one set of artisan's tools in an unoccupied space within 5 feet. This requires 1 hour of uninterrupted work (can coincide with a short or long rest). The tools vanish when you use this feature again.

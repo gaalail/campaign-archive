@@ -245,6 +245,8 @@ Choose one of the following paradigms:
 
 Your paradigm grants features at 3rd, 7th, 10th, and 14th level. Its 7th-level feature improves at 18th level.
 
+![[subclasses-of.base]]
+
 ## Ability Score Improvement
 
 _4th-level Tamer feature_

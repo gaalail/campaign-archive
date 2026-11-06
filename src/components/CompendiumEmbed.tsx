@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { archiveDb, getSourceBadgeInfo, getRarityColor } from '../utils/archiveUtils';
 import { ArchiveEntry } from '../types/archive';
-import { Search, Sparkles, Shield, Heart, ExternalLink, ChevronRight, Filter } from 'lucide-react';
+import { Search, Sparkles, Shield, Heart, ExternalLink, ChevronRight, Filter, Zap } from 'lucide-react';
 
 interface CompendiumEmbedProps {
   target: string;
@@ -195,10 +195,85 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
       </div>
 
       {/* Grid or Table layout depending on quantity */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 max-h-[500px] overflow-y-auto pr-1">
+      <div className={`grid ${isSubclassesOf ? 'grid-cols-1 md:grid-cols-2 gap-4' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5'} max-h-[550px] overflow-y-auto pr-1`}>
         {displayedEntries.map(entry => {
           const badge = getSourceBadgeInfo(entry.source_type, entry.source);
           const rarity = entry.rarity ? getRarityColor(entry.rarity) : null;
+          const features = entry.features || [];
+
+          if (isSubclassesOf) {
+            return (
+              <div
+                key={entry.id}
+                className="rounded-xl border border-slate-800 bg-slate-950/80 p-4 text-left hover:border-amber-500/50 hover:bg-slate-900/60 transition-all flex flex-col justify-between group space-y-3"
+              >
+                <div className="space-y-2.5">
+                  <div className="flex items-start justify-between gap-2 border-b border-slate-800/80 pb-2">
+                    <div>
+                      <h4 className="font-fantasy font-bold text-slate-100 group-hover:text-amber-300 text-base transition-colors">
+                        {entry.title}
+                      </h4>
+                      {entry.parentClass && (
+                        <div className="text-[10px] text-amber-400 font-medium uppercase tracking-wider">
+                          {entry.parentClass} Archetype
+                        </div>
+                      )}
+                    </div>
+                    <span className={`text-[9px] px-1.5 py-0.5 rounded border font-semibold ${badge.bg} ${badge.text} ${badge.border} shrink-0`}>
+                      {badge.label}
+                    </span>
+                  </div>
+
+                  {(entry.flavor || entry.summary) && (
+                    <p className="text-xs text-slate-300 italic line-clamp-2 leading-relaxed border-l-2 border-amber-500/50 pl-2 py-0.5 bg-slate-900/40 rounded-r">
+                      "{entry.flavor || entry.summary}"
+                    </p>
+                  )}
+
+                  {features.length > 0 && (
+                    <div className="space-y-1.5 pt-1 border-t border-slate-800/60">
+                      <div className="text-[10px] uppercase font-semibold text-amber-400 flex items-center gap-1">
+                        <Zap className="w-3 h-3 text-amber-400" />
+                        <span>Core Features ({features.length})</span>
+                      </div>
+                      <div className="space-y-1">
+                        {features.slice(0, 2).map((feat, fIdx) => (
+                          <div key={fIdx} className="bg-slate-900/80 rounded p-1.5 text-xs border border-slate-800/60">
+                            <div className="flex items-center justify-between gap-1">
+                              <span className="font-medium text-slate-200 text-[11px]">{feat.name}</span>
+                              {feat.level && (
+                                <span className="text-[9px] font-mono px-1 rounded bg-amber-950/60 text-amber-300">
+                                  {feat.level}
+                                </span>
+                              )}
+                            </div>
+                            {feat.description && (
+                              <p className="text-[10px] text-slate-400 line-clamp-2 mt-0.5 leading-snug">
+                                {feat.description}
+                              </p>
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                <div className="pt-2 border-t border-slate-800/60 flex items-center justify-between">
+                  <span className="text-[10px] text-slate-500">
+                    {features.length > 2 ? `+${features.length - 2} more features` : 'Complete mechanics'}
+                  </span>
+                  <button
+                    onClick={() => onNavigate(entry.id)}
+                    className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 group/btn"
+                  >
+                    <span>View Archetype</span>
+                    <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" />
+                  </button>
+                </div>
+              </div>
+            );
+          }
 
           return (
             <button
@@ -222,9 +297,9 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
                   )}
                 </div>
 
-                {entry.summary && (
+                {(entry.flavor || entry.summary) && (
                   <p className="text-xs text-slate-400 line-clamp-2 mt-1 leading-normal">
-                    {entry.summary}
+                    {entry.flavor || entry.summary}
                   </p>
                 )}
               </div>

@@ -130,6 +130,8 @@ You can use an arcane focus as a spellcasting focus for your thanatomancer spell
 > [!info]- Thanatology Path (level 3)
 > You choose a Thanatology Path, which grants features at 3rd, 6th, 10th, and 18th level: the [[Path of the Fleshweaver]], [[Path of the Graveguard]], or [[Path of the Reaper]].
 
+![[subclasses-of.base]]
+
 > [!info]- Ability Score Improvement (levels 4, 8, 12, 16, 19)
 > When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score by 2, or increase two ability scores by 1. You can't increase an ability score above 20 using this feature. If your campaign uses the optional feat rules, you can take a feat instead.
 

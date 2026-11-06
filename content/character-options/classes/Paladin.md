@@ -162,6 +162,8 @@ At 3rd level, choose a Sacred Oath that best represents your beliefs. Browse the
 
 Your Sacred Oath grants features at 3rd level, and again when you reach 7th, 15th, and 20th level in this class. Some Oaths grant an **Oath Smite** at 3rd level. An Oath Smite belongs to no Smite Path and works with any spell slot. Many Oaths also grant Channel Divinity options, each of which lists its Resolve cost and has no other limit. The Sacred Oaths catalogue contains each Oath's full rules.
 
+![[subclasses-of.base]]
+
 #### Oath Spells
 
 Each Sacred Oath includes a list of Oath Spells you learn at the Paladin levels in its description. They are Paladin spells for you, don't count against your number of Spells Known, and can't be replaced.

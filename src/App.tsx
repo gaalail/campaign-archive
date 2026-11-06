@@ -72,7 +72,7 @@ export default function App() {
         onClose={() => setSidebarOpen(false)}
       />
       <main className="md:ml-72 min-h-screen p-4 md:p-8">
-        {view === 'reader' && entry && <EntryDetail entry={entry} onNavigate={navigate} />}
+        {view === 'reader' && entry && <EntryDetail key={entry.id} entry={entry} onNavigate={navigate} />}
         {view === 'reader' && !entry && <div className="text-slate-400">Entry not found.</div>}
         {view === 'spells' && <SpellCatalogue onSelectSpell={navigate} />}
         {view === 'builder' && <CharacterBuilder onNavigateToEntry={navigate} />}

@@ -85,6 +85,107 @@ function extractWikilinks(text) {
   return Array.from(links);
 }
 
+function extractFlavorAndFeatures(bodyText) {
+  if (!bodyText) return { flavor: '', features: [] };
+  const lines = bodyText.split(/\r?\n/);
+  const flavorLines = [];
+  let inFlavor = true;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+    if (line.startsWith('# ') && !line.startsWith('## ') && !line.startsWith('### ')) continue;
+    if (line.startsWith('_') && line.endsWith('_')) continue;
+    if (line.startsWith('**') && line.endsWith('**') && (line.includes('subclasses available') || line.includes('Choose at'))) continue;
+    if (line.startsWith('## ') || line.startsWith('### ') || line.startsWith('> [!info')) {
+      inFlavor = false;
+      break;
+    }
+    if (inFlavor) {
+      if (line === '---' || line.startsWith('- [[')) continue;
+      flavorLines.push(line);
+    }
+  }
+  const flavor = flavorLines.join(' ').replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').trim();
+
+  const features = [];
+  const seenFeatureNames = new Set();
+
+  // 1. Obsidian callouts: > [!info]- Name (level X)
+  const calloutRegex = />\s*\[!info\]-?\s*([^(>\n]+)(?:\(([^)]+)\))?\r?\n((?:>[^\n]*\r?\n?)+)/g;
+  let match;
+  while ((match = calloutRegex.exec(bodyText)) !== null) {
+    const rawName = match[1].trim();
+    const rawLevel = match[2]?.trim() || '';
+    const rawContent = match[3]
+      .split('\n')
+      .map(l => l.replace(/^>\s?/, '').trim())
+      .filter(Boolean)
+      .join(' ')
+      .replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1');
+
+    if (!seenFeatureNames.has(rawName.toLowerCase())) {
+      seenFeatureNames.add(rawName.toLowerCase());
+      features.push({
+        name: rawName,
+        level: rawLevel,
+        description: rawContent
+      });
+    }
+  }
+
+  // 2. Headings: ## or ###
+  const headingRegex = /^(?:##|###)\s+([^\n]+)\r?\n+([\s\S]*?)(?=(?:^##\s+|^###\s+|^---\s*$|$))/gm;
+  let hMatch;
+  while ((hMatch = headingRegex.exec(bodyText)) !== null) {
+    const rawTitle = hMatch[1].trim();
+    if (/^(features|how to choose|all .* options|credits|bibliography|source)/i.test(rawTitle)) continue;
+    if (seenFeatureNames.has(rawTitle.toLowerCase())) continue;
+
+    const sectionBody = hMatch[2].trim();
+    if (!sectionBody) continue;
+
+    let level = '';
+    let levelMatch = sectionBody.match(/(?:\*\*|_)([0-9]+(?:st|nd|rd|th)[^._*]+)(?:\*\*|_)/i);
+    if (!levelMatch) levelMatch = sectionBody.match(/([0-9]+(?:st|nd|rd|th)-level)/i);
+    if (levelMatch) level = levelMatch[1].trim();
+
+    let cleanDesc = sectionBody
+      .replace(/^(?:\*\*|_)[^._*]+(?:\*\*|_)\.?\s*/i, '')
+      .replace(/^\|[^\n]+\|(?:\r?\n\|[^\n]+\|)*/gm, '')
+      .replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1')
+      .replace(/\r?\n+/g, ' ')
+      .trim();
+
+    let tableSummary = '';
+    if (sectionBody.includes('|')) {
+      const tableLines = sectionBody.split('\n').filter(l => l.trim().startsWith('|'));
+      if (tableLines.length >= 3) {
+        const rowItems = tableLines.slice(2).map(r => {
+          const cells = r.split('|').map(c => c.trim()).filter(Boolean);
+          return cells.join(': ');
+        }).join('; ');
+        if (rowItems) {
+          tableSummary = '[' + rowItems.replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1') + ']';
+        }
+      }
+    }
+
+    const finalDesc = (cleanDesc + (tableSummary ? (cleanDesc ? ' ' : '') + tableSummary : '')).trim();
+
+    if (finalDesc || level) {
+      seenFeatureNames.add(rawTitle.toLowerCase());
+      features.push({
+        name: rawTitle,
+        level: level,
+        description: finalDesc
+      });
+    }
+  }
+
+  return { flavor, features };
+}
+
 function getAllFiles(dir, fileList = []) {
   if (!fs.existsSync(dir)) return fileList;
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -209,6 +310,14 @@ for (const filePath of files) {
     body,
     wikilinks
   };
+
+  const { flavor, features } = extractFlavorAndFeatures(body);
+  if (flavor) {
+    entry.flavor = flavor;
+  }
+  if (features && features.length > 0) {
+    entry.features = features;
+  }
 
   entries.push(entry);
 

@@ -52,6 +52,14 @@ export interface ArchiveEntry {
   ritual?: boolean;
   concentration?: boolean;
   incomingLinks?: string[];
+  flavor?: string;
+  features?: SubclassFeature[];
+}
+
+export interface SubclassFeature {
+  name: string;
+  level: string;
+  description: string;
 }
 
 export interface GraphNode {
