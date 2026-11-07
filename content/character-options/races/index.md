@@ -10,7 +10,7 @@ aliases:
 
 Your **race** defines your ancestry, heritage, and heritage-based abilities.
 
-Choose at character creation. This list is the races actually in the archive (SRD plus Corpus Angelus), not a full Player's Handbook catalog.
+Choose at character creation. This archive includes SRD ancestries, angelic heritages, and specialized homebrew races (Cnidaran, Cyclopian, Gobboc, Golynn, Lotol, Mycelian, Ombrask, Oozekin, Opteran, Rakin).
 
 ---
 
@@ -19,10 +19,10 @@ Choose at character creation. This list is the races actually in the archive (SR
 Your race gives you:
 
 - **Ability score bonuses** (boost to key attributes)
-- **Special traits** (darkvision, flight, resistance, etc.)
+- **Special traits** (darkvision, flight, burrowing, natural armor, shapeshifting, resistance, etc.)
 - **Cultural background** (helps shape your character's story)
 - **Speed and size** (affects combat and exploration)
-- **Subraces** on some races (variants like High Elf vs Wood Elf)
+- **Subraces** on select races (variants like High Elf, Nematocyst Cnidaran, or Urkin Rakin)
 
 ---
 
@@ -32,9 +32,9 @@ Your race gives you:
 
 ---
 
-## Subraces
+## Subraces & Morphologies
 
-Some races have **subraces** — cultural or magical variants listed on the race page.
+Some races have **subraces** or distinct developmental morphologies listed directly on their race page:
 
 **Examples:**
 
@@ -42,6 +42,10 @@ Some races have **subraces** — cultural or magical variants listed on the race
 - **[[Dwarf]]:** Hill Dwarf
 - **[[Halfling]]:** Lightfoot
 - **[[Peri]]:** Curiosity, Love, Valor
+- **[[Cnidaran]]:** Nematocyst, Shimmerskin
+- **[[Rakin]]:** Urkin, Posskin, Tanukin
+- **[[Opteran]]:** Metamorphic life cycle (Larva to Winged Adult)
+- **[[Oozekin]]:** Reshapeable (Cube and Puddle forms)
 
 ---
 
