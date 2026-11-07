@@ -35,6 +35,7 @@ title: Fighter Subclasses
 | [[Pugilist]]      | Unarmed combat                            |
 | [[Quartermaster]] | Tactical support and prepared rations     |
 | [[Swordsage]]     | Swordplay and battle trance               |
+| [[Spirit Knight]] | Master martial spirits and mimic warrior  |
 | [[Tinker]]        | Mechanical weapon and armor modifications |
 | [[Witchblade]]    | Pact magic and weapon combat              |
 
