@@ -49,21 +49,21 @@ Click your class to see available subclasses:
 | Class         | Subclasses Directory & Highlights                                                                                                     | Theme                    |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | Artificer     | [[character-options/subclasses/Artificer/index\|Artificer]] ([[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], ...)              | Inventive specialization |
-| Barbarian     | [[character-options/subclasses/Barbarian/index\|Barbarian (25 Paths)]] (Berserker, Beast Heart, Path of the Witch, ...)                | Rage & Savage Exploits   |
-| Bard          | [[character-options/subclasses/Bard/index\|Bard (6 Colleges)]] (Lore, Hope, College of Witchcraft, Infernal Archives, ...)            | Magical performance      |
-| Cleric        | [[character-options/subclasses/Cleric/index\|Cleric (7 Domains)]] (Life, Dawn, Domain of Witchcraft, Angel Caller, Exorcist, ...)     | Divine magic             |
+| Barbarian     | [[character-options/subclasses/Barbarian/index\|Barbarian (25 Paths)]] (Berserker, Path of the Branded, Path of the Witch, ...)        | Rage & Savage Exploits   |
+| Bard          | [[character-options/subclasses/Bard/index\|Bard (6 Colleges)]] (College of Infernal Archives, College of Witchcraft, Lore, ...)        | Magical performance      |
+| Cleric        | [[character-options/subclasses/Cleric/index\|Cleric (7 Domains)]] (Domain of Mythology, Domain of Witchcraft, Life, Dawn, ...)         | Divine magic             |
 | Druid         | [[character-options/subclasses/Druid/index\|Druid (5 Circles)]] (Land, Circle of the Brew, Heaven, Phoenix, Unicorns)                 | Nature magic             |
-| Fighter       | [[character-options/subclasses/Fighter/index\|Fighter (21 Archetypes)]] (Arcane Knight, Spirit Knight, Champion, Witchblade, ...)     | Martial prowess          |
-| Monk          | [[character-options/subclasses/Monk/index\|Monk (23 Traditions)]] (Open Hand, Way of the Specter, Wu Jen, Astral Warrior, ...)        | Disciplined power        |
-| Paladin       | [[character-options/subclasses/Paladin/index\|Paladin (26 Oaths)]] (Devotion, Oath of the Coven, Ancients, Vengeance, ...)            | Holy oath                |
-| Ranger        | [[character-options/subclasses/Ranger/index\|Ranger (5 Archetypes)]] (Hunter, Coven Conclave, Evil Slayer, Holy Messenger, ...)       | Primal tracking          |
-| Rogue         | [[character-options/subclasses/Rogue/index\|Rogue (5 Archetypes)]] (Thief, Duskwalker, Chainbreaker, Divine Blade, Vigilante)          | Stealth & cunning        |
-| Sorcerer      | [[character-options/subclasses/Sorcerer/index\|Sorcerer (5 Origins)]] (Draconic, Coven of Spirits, Prismatic, Starborn, ...)           | Innate magic             |
+| Fighter       | [[character-options/subclasses/Fighter/index\|Fighter (23 Archetypes)]] (Curseblade, Descendant, Spirit Knight, Witchblade, ...)      | Martial prowess          |
+| Monk          | [[character-options/subclasses/Monk/index\|Monk (25 Traditions)]] (Way of the Gravedigger, Way of the Penitent, Way of the Specter, ...) | Disciplined power     |
+| Paladin       | [[character-options/subclasses/Paladin/index\|Paladin (28 Oaths)]] (Oath of the Hellbound, Oath of the Saints, Oath of the Coven, ...) | Holy oath                |
+| Ranger        | [[character-options/subclasses/Ranger/index\|Ranger (6 Archetypes)]] (Vampire Hunter Conclave, Coven Conclave, Hunter, Evil Slayer, ...) | Primal tracking        |
+| Rogue         | [[character-options/subclasses/Rogue/index\|Rogue (7 Archetypes)]] (Dark Jester, Sleuth, Duskwalker, Thief, Chainbreaker, ...)          | Stealth & cunning        |
+| Sorcerer      | [[character-options/subclasses/Sorcerer/index\|Sorcerer (6 Origins)]] (Aranea Bloodline, Coven of Spirits, Draconic, Prismatic, ...)     | Innate magic             |
 | Tamer         | [[character-options/subclasses/Tamer/index\|Tamer (4 Archetypes)]] (Infuser, Leader, Necromancer, Splicer)                            | Companion bond           |
 | Thanatomancer | [[character-options/subclasses/Thanatomancer/index\|Thanatomancer (3 Paths)]] (Fleshweaver, Graveguard, Reaper)                        | Necromantic mastery      |
 | Warden        | [[character-options/subclasses/Warden/index\|Warden (15 Calls)]] (Bloodwrath, Grey Watchman, Loreseeker, Storm Sentinel, ...)         | Vigilant defender & tank |
-| Warlock       | [[character-options/subclasses/Warlock/index\|Warlock (13 Patrons)]] (The Witch Patron, Fiend, Archfey, Great Old One, ...)           | Eldritch pact            |
-| Wizard        | [[character-options/subclasses/Wizard/index\|Wizard (5 Traditions)]] (Evocation, School of Witchcraft, Celestial Summoner, ...)        | Scholarly magic          |
+| Warlock       | [[character-options/subclasses/Warlock/index\|Warlock (15 Patrons)]] (Demon Soul, The Nightcomer, The Witch Patron, Fiend, ...)       | Eldritch pact            |
+| Wizard        | [[character-options/subclasses/Wizard/index\|Wizard (6 Traditions)]] (School of Occultism, School of Witchcraft, Evocation, ...)       | Scholarly magic          |
 | Paragon       | [[character-options/subclasses/Paragon/index\|Paragon (3 Orders)]] (Order of Reason, Order of the Voice, Order of Valor)              | Holy warrior (homebrew)  |
 
 ---
