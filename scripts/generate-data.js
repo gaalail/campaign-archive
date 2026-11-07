@@ -245,6 +245,7 @@ for (const filePath of files) {
       if (subcategory === 'monk-techniques') parentClass = 'Monk';
       if (subcategory === 'avatar-features') parentClass = 'Paragon';
       if (subcategory === 'smite-paths') parentClass = 'Paladin';
+      if (subcategory === 'primal-manifestations') parentClass = 'Primal';
     } else if (parts[1] === 'templates') {
       category = 'templates';
     } else {

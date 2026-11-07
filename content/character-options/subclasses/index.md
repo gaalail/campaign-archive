@@ -37,6 +37,7 @@ Click your class to see available subclasses:
 ### Homebrew Classes
 
 - [[character-options/subclasses/Paragon/index|Paragon]] (3 orders) — Corpus Angelus class
+- [[character-options/subclasses/Primal/index|Primal]] (10 bonds) — Curated Primal class
 - [[character-options/subclasses/Thanatomancer/index|Thanatomancer]] (3 paths) — Erevan's Guide to Death & Beyond class
 - [[character-options/subclasses/Warden/index|Warden]] (15 calls) — Complete Warden class
 
@@ -56,6 +57,8 @@ Click your class to see available subclasses:
 | Fighter       | [[character-options/subclasses/Fighter/index\|Fighter (23 Archetypes)]] (Curseblade, Descendant, Spirit Knight, Witchblade, ...)      | Martial prowess          |
 | Monk          | [[character-options/subclasses/Monk/index\|Monk (25 Traditions)]] (Way of the Gravedigger, Way of the Penitent, Way of the Specter, ...) | Disciplined power     |
 | Paladin       | [[character-options/subclasses/Paladin/index\|Paladin (28 Oaths)]] (Oath of the Hellbound, Oath of the Saints, Oath of the Coven, ...) | Holy oath                |
+| Paragon       | [[character-options/subclasses/Paragon/index\|Paragon (3 Orders)]] (Order of Reason, Order of the Voice, Order of Valor)              | Holy warrior (homebrew)  |
+| Primal        | [[character-options/subclasses/Primal/index\|Primal (10 Bonds)]] (Elemental Soul, Beasthide, Stoneblood, Dreadwing, ...)              | Primal conduits & bonds  |
 | Ranger        | [[character-options/subclasses/Ranger/index\|Ranger (6 Archetypes)]] (Vampire Hunter Conclave, Coven Conclave, Hunter, Evil Slayer, ...) | Primal tracking        |
 | Rogue         | [[character-options/subclasses/Rogue/index\|Rogue (7 Archetypes)]] (Dark Jester, Sleuth, Duskwalker, Thief, Chainbreaker, ...)          | Stealth & cunning        |
 | Sorcerer      | [[character-options/subclasses/Sorcerer/index\|Sorcerer (6 Origins)]] (Aranea Bloodline, Coven of Spirits, Draconic, Prismatic, ...)     | Innate magic             |
@@ -64,7 +67,6 @@ Click your class to see available subclasses:
 | Warden        | [[character-options/subclasses/Warden/index\|Warden (15 Calls)]] (Bloodwrath, Grey Watchman, Loreseeker, Storm Sentinel, ...)         | Vigilant defender & tank |
 | Warlock       | [[character-options/subclasses/Warlock/index\|Warlock (15 Patrons)]] (Demon Soul, The Nightcomer, The Witch Patron, Fiend, ...)       | Eldritch pact            |
 | Wizard        | [[character-options/subclasses/Wizard/index\|Wizard (6 Traditions)]] (School of Occultism, School of Witchcraft, Evocation, ...)       | Scholarly magic          |
-| Paragon       | [[character-options/subclasses/Paragon/index\|Paragon (3 Orders)]] (Order of Reason, Order of the Voice, Order of Valor)              | Holy warrior (homebrew)  |
 
 ---
 
@@ -73,7 +75,7 @@ Click your class to see available subclasses:
 **Timing:**
 
 - **Most classes:** 3rd level
-- **Clerics & Sorcerers & Warlocks:** 1st level
+- **Clerics & Sorcerers & Warlocks & Primals:** 1st level
 - **Druids & Wizards:** 2nd level
 - **Barbarians & Fighters:** 3rd level
 - **Thanatomancer:** 3rd level

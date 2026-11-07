@@ -78,6 +78,14 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 ---
 
+### [[character-options/class-options/primal-manifestations/index|🌿 Primal Manifestations]] (Primal)
+
+Customizable supernatural manifestations of primordial power, granting specialized defenses, expanded spellcraft, and natural weapon enhancements.
+
+**30+ manifestations** | Levels 3-20 | By level and Primal Bond
+
+---
+
 ## How Class Options Work
 
 1. **Your class determines what options you can choose**
@@ -87,6 +95,7 @@ Divine powers granted by your deity. Unlock as you bond with your god.
    - Paladins → Smite Paths
    - Monks → Mystic Techniques
    - Paragons → Avatar Features
+   - Primals → Primal Manifestations
 
 2. **You gain them at certain levels** (varies by class)
 

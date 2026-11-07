@@ -29,6 +29,7 @@ Choose at character creation. This archive includes core 5e classes, alternate c
 | Monk          | d10     | DEX/WIS         | Speed + control         |
 | Paladin       | d10     | STR/CHA         | Resolve + Smite Paths   |
 | Paragon       | d10     | WIS/CHA         | Divine champion         |
+| Primal        | d12     | STR/WIS         | Nature's shield & conduit |
 | Ranger        | d10     | DEX/WIS         | Scout + magic           |
 | Rogue         | d8      | DEX             | Stealth + precision     |
 | Sorcerer      | d6      | CHA             | Innate magic            |
@@ -38,7 +39,7 @@ Choose at character creation. This archive includes core 5e classes, alternate c
 | Warlock       | d8      | CHA             | Patron magic            |
 | Wizard        | d6      | INT             | Scholarly magic         |
 
-**Class pages:** [[character-options/classes/Artificer|Artificer]] • [[character-options/classes/Barbarian|Barbarian]] • [[character-options/classes/Bard|Bard]] • [[character-options/classes/Cleric|Cleric]] • [[character-options/classes/Druid|Druid]] • [[character-options/classes/Fighter|Fighter]] • [[character-options/classes/Monk|Monk]] • [[character-options/classes/Paladin|Paladin]] • [[character-options/classes/Paragon|Paragon]] • [[character-options/classes/Ranger|Ranger]] • [[character-options/classes/Rogue|Rogue]] • [[character-options/classes/Sorcerer|Sorcerer]] • [[character-options/classes/Tamer|Tamer]] • [[character-options/classes/Thanatomancer|Thanatomancer]] • [[character-options/classes/Warden|Warden]] • [[character-options/classes/Warlock|Warlock]] • [[character-options/classes/Wizard|Wizard]]
+**Class pages:** [[character-options/classes/Artificer|Artificer]] • [[character-options/classes/Barbarian|Barbarian]] • [[character-options/classes/Bard|Bard]] • [[character-options/classes/Cleric|Cleric]] • [[character-options/classes/Druid|Druid]] • [[character-options/classes/Fighter|Fighter]] • [[character-options/classes/Monk|Monk]] • [[character-options/classes/Paladin|Paladin]] • [[character-options/classes/Paragon|Paragon]] • [[character-options/classes/Primal|Primal]] • [[character-options/classes/Ranger|Ranger]] • [[character-options/classes/Rogue|Rogue]] • [[character-options/classes/Sorcerer|Sorcerer]] • [[character-options/classes/Tamer|Tamer]] • [[character-options/classes/Thanatomancer|Thanatomancer]] • [[character-options/classes/Warden|Warden]] • [[character-options/classes/Warlock|Warlock]] • [[character-options/classes/Wizard|Wizard]]
 
 Spellcasters have their class spell list on the class page and on [[spells|Spells]].
 
