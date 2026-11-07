@@ -38,6 +38,7 @@ Click your class to see available subclasses:
 
 - [[character-options/subclasses/Paragon/index|Paragon]] (3 orders) — Corpus Angelus class
 - [[character-options/subclasses/Thanatomancer/index|Thanatomancer]] (3 paths) — Erevan's Guide to Death & Beyond class
+- [[character-options/subclasses/Warden/index|Warden]] (15 calls) — Complete Warden class
 
 ---
 
@@ -60,6 +61,7 @@ Click your class to see available subclasses:
 | Sorcerer      | [[character-options/subclasses/Sorcerer/index\|Sorcerer (4 Origins)]] (Draconic, Prismatic, Starborn, Knight Dragon Bloodline)        | Innate magic             |
 | Tamer         | [[character-options/subclasses/Tamer/index\|Tamer (4 Archetypes)]] (Infuser, Leader, Necromancer, Splicer)                            | Companion bond           |
 | Thanatomancer | [[character-options/subclasses/Thanatomancer/index\|Thanatomancer (3 Paths)]] (Fleshweaver, Graveguard, Reaper)                        | Necromantic mastery      |
+| Warden        | [[character-options/subclasses/Warden/index\|Warden (15 Calls)]] (Bloodwrath, Grey Watchman, Loreseeker, Storm Sentinel, ...)         | Vigilant defender & tank |
 | Warlock       | [[character-options/subclasses/Warlock/index\|Warlock (12 Patrons)]] (Fiend, Archfey, Great Old One, Archangel, Darklord, ...)       | Eldritch pact            |
 | Wizard        | [[character-options/subclasses/Wizard/index\|Wizard (4 Traditions)]] (Evocation, Celestial Summoner, Education, School of Sealing)   | Scholarly magic          |
 | Paragon       | [[character-options/subclasses/Paragon/index\|Paragon (3 Orders)]] (Order of Reason, Order of the Voice, Order of Valor)              | Holy warrior (homebrew)  |
