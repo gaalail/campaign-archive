@@ -21,7 +21,7 @@ Click your class to see available subclasses:
 ### Core Classes
 
 - [[character-options/subclasses/Artificer/index|Artificer]] (8 specializations)
-- [[character-options/subclasses/Barbarian/index|Barbarian]] (24 paths)
+- [[character-options/subclasses/Barbarian/index|Barbarian]] (31 paths)
 - [[character-options/subclasses/Bard/index|Bard]] (5 colleges)
 - [[character-options/subclasses/Cleric/index|Cleric]] (6 domains)
 - [[character-options/subclasses/Druid/index|Druid]] (4 circles)
@@ -49,7 +49,7 @@ Click your class to see available subclasses:
 | Class         | Subclasses Directory & Highlights                                                                                                     | Theme                    |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
 | Artificer     | [[character-options/subclasses/Artificer/index\|Artificer]] ([[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], ...)              | Inventive specialization |
-| Barbarian     | [[character-options/subclasses/Barbarian/index\|Barbarian (25 Paths)]] (Berserker, Path of the Branded, Path of the Witch, ...)        | Rage & Savage Exploits   |
+| Barbarian     | [[character-options/subclasses/Barbarian/index\|Barbarian (31 Paths)]] (Berserker, Path of the Colossus, Muscle Wizard, Rage Mage, ...) | Rage & Savage Exploits   |
 | Bard          | [[character-options/subclasses/Bard/index\|Bard (6 Colleges)]] (College of Infernal Archives, College of Witchcraft, Lore, ...)        | Magical performance      |
 | Cleric        | [[character-options/subclasses/Cleric/index\|Cleric (7 Domains)]] (Domain of Mythology, Domain of Witchcraft, Life, Dawn, ...)         | Divine magic             |
 | Druid         | [[character-options/subclasses/Druid/index\|Druid (5 Circles)]] (Land, Circle of the Brew, Heaven, Phoenix, Unicorns)                 | Nature magic             |

@@ -4,7 +4,7 @@ title: Barbarian Primal Paths
 
 # Barbarian Primal Paths
 
-**24 Primal Paths available** | Choose at 3rd level
+**31 Primal Paths available** | Choose at 3rd level
 
 ## Original Paths
 
@@ -22,17 +22,24 @@ title: Barbarian Primal Paths
 - [[Path of Self-Sacrifice|Path of Self-Sacrifice]] — Protective rage and defending allies
 - [[Path of Sorcery|Path of Sorcery]] — Innate sorcery fueled by primal rage
 - [[Path of the Virtuous|Path of the Virtuous]] — Virtue-powered holy warrior
+- [[Path of the Witch|Path of the Witch]] — Hexes, curses, and occult fury
 - [[Path of the Zealot|Path of the Zealot]] — Divine fury and sacred power
 
 ## Additional Paths
 
+- [[Path of the Colossus|Path of the Colossus]] — Grows to enormous size to crush foes
 - [[Path of the Deep|Path of the Deep]] — Eldritch power drawn from the depths
 - [[Path of the Favored|Path of the Favored]] — Rage granted by an outside force
+- [[Path of the Fin|Path of the Fin]] — Oceanic totems, aquatic adaptations, and feeding frenzies
+- [[Path of Heavy Metal|Path of Heavy Metal]] — Tavern-smashing warriors rocking out and cracking skulls
 - [[Path of the Inferno|Path of the Inferno]] — Abyssal fire and demonic fury
+- [[Path of the Muscle Wizard|Path of the Muscle Wizard]] — Definitely a "wizard." A buff, angry "wizard"
 - [[Path of the Mutant|Path of the Mutant]] — Alchemical mutations triggered by Rage
 - [[Path of the Packleader|Path of the Packleader]] — Pack tactics and animal companions
+- [[Path of the Rage Mage|Path of the Rage Mage]] — Explosive surges of evocation and transmutation magic
 - [[Path of the Reaver|Path of the Reaver]] — Focused martial prowess and tactical exploits
 - [[Path of the Titan|Path of the Titan]] — Giant blood and growing size
+- [[Path of Tranquility|Path of Tranquility]] — Serene, reactionary warrior entering a zen-like state
 - [[Path of the Warden|Path of the Warden]] — Primal spellcasting and nature magic
 - [[Path of the Wyrmblood|Path of the Wyrmblood]] — Draconic ancestry and elemental fury
 
