@@ -8,9 +8,10 @@ import {
   getSpellsForClass,
   getSpellLevelLabel,
   getEntryById,
+  cleanFlavorText,
   archiveDb
 } from '../utils/archiveUtils';
-import { MarkdownView } from './MarkdownView';
+import { MarkdownView, InlineContent } from './MarkdownView';
 import { SpellCatalogue } from './SpellCatalogue';
 import {
   ArrowLeft,
@@ -194,12 +195,12 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           {/* Subclass Flavor Quote or Summary */}
           {entry.flavor ? (
             <div className="mt-3.5 p-4 rounded-xl bg-slate-950/70 border-l-4 border-amber-500 text-slate-200 text-sm md:text-base italic leading-relaxed shadow-sm">
-              "{entry.flavor}"
+              <InlineContent text={cleanFlavorText(entry.flavor)} onNavigate={onNavigate} />
             </div>
           ) : entry.summary ? (
-            <p className="text-slate-300 text-sm md:text-base mt-2.5 italic">
-              {entry.summary}
-            </p>
+            <div className="text-slate-300 text-sm md:text-base mt-2.5 italic">
+              <InlineContent text={cleanFlavorText(entry.summary)} onNavigate={onNavigate} />
+            </div>
           ) : null}
 
           {/* Subclass quick feature progression banner */}
@@ -639,7 +640,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                         {/* Narrative Flavor Text */}
                         {(sub.flavor || sub.summary) && (
                           <div className="bg-slate-900/70 border-l-2 border-amber-500/70 rounded-r-xl p-3 text-xs text-slate-300 italic leading-relaxed">
-                            "{sub.flavor || sub.summary}"
+                            <InlineContent text={cleanFlavorText(sub.flavor || sub.summary)} onNavigate={onNavigate} />
                           </div>
                         )}
 
@@ -678,9 +679,9 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                                     )}
                                   </div>
                                   {feat.description && (
-                                    <p className="text-[11px] text-slate-400 leading-relaxed line-clamp-3 hover:line-clamp-none transition-all">
-                                      {feat.description}
-                                    </p>
+                                    <div className="text-[11px] text-slate-400 leading-relaxed line-clamp-3 hover:line-clamp-none transition-all">
+                                      <InlineContent text={feat.description} onNavigate={onNavigate} />
+                                    </div>
                                   )}
                                 </div>
                               ))}

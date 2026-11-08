@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from 'react';
-import { archiveDb, getSourceBadgeInfo, getRarityColor } from '../utils/archiveUtils';
+import { archiveDb, getSourceBadgeInfo, getRarityColor, cleanFlavorText } from '../utils/archiveUtils';
 import { ArchiveEntry } from '../types/archive';
 import { Search, Sparkles, Shield, Heart, ExternalLink, ChevronRight, Filter, Zap } from 'lucide-react';
+import { InlineContent } from './MarkdownView';
 
 interface CompendiumEmbedProps {
   target: string;
@@ -225,9 +226,9 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
                   </div>
 
                   {(entry.flavor || entry.summary) && (
-                    <p className="text-xs text-slate-300 italic line-clamp-2 leading-relaxed border-l-2 border-amber-500/50 pl-2 py-0.5 bg-slate-900/40 rounded-r">
-                      "{entry.flavor || entry.summary}"
-                    </p>
+                    <div className="text-xs text-slate-300 italic line-clamp-2 leading-relaxed border-l-2 border-amber-500/50 pl-2 py-0.5 bg-slate-900/40 rounded-r">
+                      <InlineContent text={cleanFlavorText(entry.flavor || entry.summary)} onNavigate={onNavigate} />
+                    </div>
                   )}
 
                   {features.length > 0 && (
@@ -248,9 +249,9 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
                               )}
                             </div>
                             {feat.description && (
-                              <p className="text-[10px] text-slate-400 line-clamp-2 mt-0.5 leading-snug">
-                                {feat.description}
-                              </p>
+                              <div className="text-[10px] text-slate-400 line-clamp-2 mt-0.5 leading-snug">
+                                <InlineContent text={feat.description} onNavigate={onNavigate} />
+                              </div>
                             )}
                           </div>
                         ))}
@@ -298,9 +299,9 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
                 </div>
 
                 {(entry.flavor || entry.summary) && (
-                  <p className="text-xs text-slate-400 line-clamp-2 mt-1 leading-normal">
-                    {entry.flavor || entry.summary}
-                  </p>
+                  <div className="text-xs text-slate-400 line-clamp-2 mt-1 leading-normal">
+                    <InlineContent text={cleanFlavorText(entry.flavor || entry.summary)} onNavigate={onNavigate} />
+                  </div>
                 )}
               </div>
 

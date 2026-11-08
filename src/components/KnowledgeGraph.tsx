@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState, useMemo, useCallback } from 'react';
-import { archiveDb, getSourceBadgeInfo } from '../utils/archiveUtils';
+import { archiveDb, getSourceBadgeInfo, cleanFlavorText } from '../utils/archiveUtils';
+import { InlineContent } from './MarkdownView';
 import { GraphNode } from '../types/archive';
 import {
   Search,
@@ -85,9 +86,9 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry })
 
   const filteredEdges = useMemo(() => {
     return archiveDb.graph.edges.filter(e => {
-      const sId = typeof e.source === 'string' ? e.source : e.source.id;
-      const tId = typeof e.target === 'string' ? e.target : e.target.id;
-      return activeNodeIds.has(sId) && activeNodeIds.has(tId);
+      const sId = typeof e.source === 'string' ? e.source : (e.source?.id || '');
+      const tId = typeof e.target === 'string' ? e.target : (e.target?.id || '');
+      return Boolean(sId && tId && activeNodeIds.has(sId) && activeNodeIds.has(tId));
     });
   }, [activeNodeIds]);
 
@@ -95,8 +96,9 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry })
   const neighborsMap = useMemo(() => {
     const map = new Map<string, Set<string>>();
     for (const e of filteredEdges) {
-      const sId = typeof e.source === 'string' ? e.source : e.source.id;
-      const tId = typeof e.target === 'string' ? e.target : e.target.id;
+      const sId = typeof e.source === 'string' ? e.source : (e.source?.id || '');
+      const tId = typeof e.target === 'string' ? e.target : (e.target?.id || '');
+      if (!sId || !tId) continue;
       if (!map.has(sId)) map.set(sId, new Set());
       if (!map.has(tId)) map.set(tId, new Set());
       map.get(sId)!.add(tId);
@@ -251,8 +253,8 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry })
 
         // Attraction along edges
         for (const edge of filteredEdges) {
-          const sId = typeof edge.source === 'string' ? edge.source : edge.source.id;
-          const tId = typeof edge.target === 'string' ? edge.target : edge.target.id;
+          const sId = typeof edge.source === 'string' ? edge.source : (edge.source?.id || '');
+          const tId = typeof edge.target === 'string' ? edge.target : (edge.target?.id || '');
           const s = nodeMap.get(sId);
           const t = nodeMap.get(tId);
           if (s && t) {
@@ -283,6 +285,8 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry })
           n.vy *= 0.84;
           n.x += n.vx;
           n.y += n.vy;
+          if (isNaN(n.x) || !isFinite(n.x)) n.x = centerX;
+          if (isNaN(n.y) || !isFinite(n.y)) n.y = centerY;
         }
 
         if (!draggedNode.current) {
@@ -318,8 +322,8 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry })
 
       // Draw Edges
       for (const edge of filteredEdges) {
-        const sId = typeof edge.source === 'string' ? edge.source : edge.source.id;
-        const tId = typeof edge.target === 'string' ? edge.target : edge.target.id;
+        const sId = typeof edge.source === 'string' ? edge.source : (edge.source?.id || '');
+        const tId = typeof edge.target === 'string' ? edge.target : (edge.target?.id || '');
         const s = nodeMap.get(sId);
         const t = nodeMap.get(tId);
         if (!s || !t) continue;
@@ -691,12 +695,12 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry })
               {/* Flavor Text / Summary */}
               {selectedEntry.flavor ? (
                 <div className="italic text-slate-300 leading-relaxed bg-slate-950/60 p-3 rounded-xl border border-slate-800/80">
-                  "{selectedEntry.flavor}"
+                  <InlineContent text={cleanFlavorText(selectedEntry.flavor)} onNavigate={onSelectEntry} />
                 </div>
               ) : selectedEntry.summary ? (
-                <p className="text-slate-300 leading-relaxed">
-                  {selectedEntry.summary}
-                </p>
+                <div className="text-slate-300 leading-relaxed">
+                  <InlineContent text={cleanFlavorText(selectedEntry.summary)} onNavigate={onSelectEntry} />
+                </div>
               ) : null}
 
               {/* Quick Tags / Metadata */}

@@ -10,12 +10,14 @@ const entriesByNormalizedAlias = new Map<string, ArchiveEntry>();
 
 for (const entry of archiveDb.entries) {
   entriesById.set(entry.id, entry);
+  entriesById.set(entry.id.toLowerCase().trim(), entry);
   entriesByNormalizedTitle.set(entry.title.toLowerCase().trim(), entry);
   entriesByNormalizedTitle.set(entry.id.toLowerCase().trim(), entry);
 
   const baseFileName = entry.path.split('/').pop()?.replace(/\.md$/, '').toLowerCase().trim();
   if (baseFileName) {
     entriesByNormalizedTitle.set(baseFileName, entry);
+    entriesById.set(baseFileName, entry);
   }
 
   if (entry.aliases) {
@@ -25,8 +27,31 @@ for (const entry of archiveDb.entries) {
   }
 }
 
+export function cleanFlavorText(text?: string | null): string {
+  if (!text) return '';
+  let str = text.trim();
+  // Strip surrounding quotes or formatting marks
+  while (
+    (str.startsWith('"') && str.endsWith('"')) ||
+    (str.startsWith("'") && str.endsWith("'")) ||
+    (str.startsWith('_') && str.endsWith('_')) ||
+    (str.startsWith('*') && str.endsWith('*'))
+  ) {
+    str = str.slice(1, -1).trim();
+  }
+  return str;
+}
+
 export function getEntryById(id: string): ArchiveEntry | undefined {
-  return entriesById.get(id);
+  if (!id) return undefined;
+  const trimmed = id.trim();
+  const lower = trimmed.toLowerCase();
+  return (
+    entriesById.get(trimmed) ||
+    entriesById.get(lower) ||
+    entriesByNormalizedAlias.get(lower) ||
+    entriesByNormalizedTitle.get(lower)
+  );
 }
 
 export function resolveWikilink(linkText: string): ArchiveEntry | undefined {

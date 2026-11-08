@@ -85,6 +85,20 @@ function extractWikilinks(text) {
   return Array.from(links);
 }
 
+function cleanFlavorString(str) {
+  if (!str) return '';
+  let s = str.trim();
+  while (
+    (s.startsWith('"') && s.endsWith('"')) ||
+    (s.startsWith("'") && s.endsWith("'")) ||
+    (s.startsWith('_') && s.endsWith('_')) ||
+    (s.startsWith('*') && s.endsWith('*'))
+  ) {
+    s = s.slice(1, -1).trim();
+  }
+  return s;
+}
+
 function extractFlavorAndFeatures(bodyText) {
   if (!bodyText) return { flavor: '', features: [] };
   const lines = bodyText.split(/\r?\n/);
@@ -95,7 +109,6 @@ function extractFlavorAndFeatures(bodyText) {
     const line = lines[i].trim();
     if (!line) continue;
     if (line.startsWith('# ') && !line.startsWith('## ') && !line.startsWith('### ')) continue;
-    if (line.startsWith('_') && line.endsWith('_')) continue;
     if (line.startsWith('**') && line.endsWith('**') && (line.includes('subclasses available') || line.includes('Choose at'))) continue;
     if (line.startsWith('## ') || line.startsWith('### ') || line.startsWith('> [!info')) {
       inFlavor = false;
@@ -106,7 +119,8 @@ function extractFlavorAndFeatures(bodyText) {
       flavorLines.push(line);
     }
   }
-  const flavor = flavorLines.join(' ').replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').trim();
+  let flavor = flavorLines.join(' ').replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').trim();
+  flavor = cleanFlavorString(flavor);
 
   const features = [];
   const seenFeatureNames = new Set();
@@ -146,12 +160,13 @@ function extractFlavorAndFeatures(bodyText) {
     if (!sectionBody) continue;
 
     let level = '';
-    let levelMatch = sectionBody.match(/(?:\*\*|_)([0-9]+(?:st|nd|rd|th)[^._*]+)(?:\*\*|_)/i);
-    if (!levelMatch) levelMatch = sectionBody.match(/([0-9]+(?:st|nd|rd|th)-level)/i);
+    let levelMatch = sectionBody.match(/(?:\*\*|_|\*)([0-9]+(?:st|nd|rd|th)[^._*\n]+)(?:\*\*|_|\*)/i);
+    if (!levelMatch) levelMatch = sectionBody.match(/([0-9]+(?:st|nd|rd|th)-level[^\n.]*)/i);
     if (levelMatch) level = levelMatch[1].trim();
 
     let cleanDesc = sectionBody
-      .replace(/^(?:\*\*|_)[^._*]+(?:\*\*|_)\.?\s*/i, '')
+      .replace(/^(?:\*\*|_|\*)[0-9]+(?:st|nd|rd|th)[^._*\n]+(?:\*\*|_|\*)\.?\s*/i, '')
+      .replace(/^(?:\*\*|_|\*)[^._*\n]+(?:\*\*|_|\*)\.?\s*/i, '')
       .replace(/^\|[^\n]+\|(?:\r?\n\|[^\n]+\|)*/gm, '')
       .replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1')
       .replace(/\r?\n+/g, ' ')

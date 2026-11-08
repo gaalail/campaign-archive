@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { resolveWikilink, getSourceBadgeInfo } from '../utils/archiveUtils';
 import { AlertTriangle, Info, Lightbulb, ShieldAlert, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
 import { SpellCatalogue } from './SpellCatalogue';
@@ -454,6 +454,9 @@ const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigat
   }
 
   if (block.type === 'code') {
+    if (block.lang === 'statblock' || block.lang === 'monster') {
+      return <StatblockRenderer rawYaml={block.rawText || ''} />;
+    }
     return (
       <pre className="p-3.5 my-3 rounded-lg bg-slate-900 border border-slate-800 font-mono text-xs md:text-sm text-amber-200 overflow-x-auto">
         <code>{block.rawText}</code>
@@ -487,7 +490,6 @@ export const InlineContent: React.FC<{ text: string; onNavigate: (id: string) =>
   if (!text) return null;
 
   // Split by markdown elements: wikilinks [[...]], markdown links [text](url), bold/italic
-  // We can do this cleanly in sequence
   return <>{renderRichText(text, onNavigate)}</>;
 };
 
@@ -595,19 +597,15 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
 }
 
 function renderFormatting(text: string): React.ReactNode {
-  // Handle strikethrough ~~text~~, bold **text**, italic *text* or _text_, and inline `code`
-  const tokens = text.split(/(~~.*?~~|\*\*.*?\*\*|\*[^*\n]+?\*|`.*?`)/g);
+  // Handle inline code `code`, bold-italic ***...*** / ___...___, bold **...** / __...__,
+  // strikethrough ~~...~~, and italic *...* or _..._
+  // Delimiter boundaries ensure identifiers with internal underscores (e.g. var_name) are preserved
+  const tokens = text.split(
+    /(`[^`\n]+`|\*\*\*.*?\*\*\*|___.*?___|\*\*.*?\*\*|(?<=^|[\s([{"'<-])__[^_\n]+__(?=$|[\s.,:;!?)\]}"'>-])|~~.*?~~|\*[^*\n]+?\*|(?<=^|[\s([{"'<-])_[^_\n]+_(?=$|[\s.,:;!?)\]}"'>-]))/g
+  );
 
   return tokens.map((token, i) => {
-    if (token.startsWith('~~') && token.endsWith('~~')) {
-      return <del key={i} className="line-through text-slate-500">{token.slice(2, -2)}</del>;
-    }
-    if (token.startsWith('**') && token.endsWith('**')) {
-      return <strong key={i} className="font-semibold text-slate-100">{token.slice(2, -2)}</strong>;
-    }
-    if (token.startsWith('*') && token.endsWith('*')) {
-      return <em key={i} className="italic text-slate-200">{token.slice(1, -1)}</em>;
-    }
+    if (!token) return null;
     if (token.startsWith('`') && token.endsWith('`')) {
       return (
         <code key={i} className="px-1.5 py-0.5 rounded bg-slate-800 text-amber-300 font-mono text-xs border border-slate-700">
@@ -615,6 +613,171 @@ function renderFormatting(text: string): React.ReactNode {
         </code>
       );
     }
+    if ((token.startsWith('***') && token.endsWith('***')) || (token.startsWith('___') && token.endsWith('___'))) {
+      return (
+        <strong key={i} className="font-semibold text-slate-100">
+          <em className="italic">{token.slice(3, -3)}</em>
+        </strong>
+      );
+    }
+    if ((token.startsWith('**') && token.endsWith('**')) || (token.startsWith('__') && token.endsWith('__'))) {
+      return <strong key={i} className="font-semibold text-slate-100">{token.slice(2, -2)}</strong>;
+    }
+    if (token.startsWith('~~') && token.endsWith('~~')) {
+      return <del key={i} className="line-through text-slate-500">{token.slice(2, -2)}</del>;
+    }
+    if ((token.startsWith('*') && token.endsWith('*')) || (token.startsWith('_') && token.endsWith('_'))) {
+      return <em key={i} className="italic text-slate-200">{token.slice(1, -1)}</em>;
+    }
     return token;
   });
 }
+
+const StatblockRenderer: React.FC<{ rawYaml: string }> = ({ rawYaml }) => {
+  const parsed = useMemo(() => {
+    const lines = rawYaml.split(/\r?\n/);
+    const data: Record<string, any> = { traits: [], actions: [] };
+    let currentSection: 'root' | 'traits' | 'actions' = 'root';
+    let currentItem: { name: string; desc: string } | null = null;
+
+    for (let line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) continue;
+
+      if (trimmed === 'traits:') {
+        currentSection = 'traits';
+        if (currentItem) { data.traits.push(currentItem); currentItem = null; }
+        continue;
+      }
+      if (trimmed === 'actions:') {
+        currentSection = 'actions';
+        if (currentItem) { data.traits.push(currentItem); currentItem = null; }
+        continue;
+      }
+
+      if (currentSection === 'traits' || currentSection === 'actions') {
+        const itemMatch = trimmed.match(/^-\s*name:\s*(.*)$/);
+        if (itemMatch) {
+          if (currentItem) {
+            if (currentSection === 'traits') data.traits.push(currentItem);
+            else data.actions.push(currentItem);
+          }
+          currentItem = { name: itemMatch[1].replace(/^["']|["']$/g, ''), desc: '' };
+          continue;
+        }
+        const descMatch = trimmed.match(/^desc:\s*(.*)$/);
+        if (descMatch && currentItem) {
+          currentItem.desc = descMatch[1].replace(/^["']|["']$/g, '');
+          continue;
+        }
+        if (currentItem && !trimmed.startsWith('-')) {
+          currentItem.desc += ' ' + trimmed.replace(/^["']|["']$/g, '');
+          continue;
+        }
+      }
+
+      const kvMatch = trimmed.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
+      if (kvMatch) {
+        let key = kvMatch[1].toLowerCase();
+        let val: any = kvMatch[2].trim();
+        if (val.startsWith('[') && val.endsWith(']')) {
+          val = val.slice(1, -1).split(',').map((s: string) => s.trim().replace(/^["']|["']$/g, ''));
+        } else {
+          val = val.replace(/^["']|["']$/g, '');
+        }
+        data[key] = val;
+      }
+    }
+
+    if (currentItem) {
+      if (currentSection === 'traits') data.traits.push(currentItem);
+      else data.actions.push(currentItem);
+    }
+
+    return data;
+  }, [rawYaml]);
+
+  const name = parsed.monster || parsed.name || 'Creature';
+  const sizeType = [parsed.size, parsed.type, parsed.alignment].filter(Boolean).join(' • ');
+  const stats = Array.isArray(parsed.stats) && parsed.stats.length >= 6 ? parsed.stats.map(Number) : [10, 10, 10, 10, 10, 10];
+
+  const calcMod = (val: number) => {
+    const mod = Math.floor((val - 10) / 2);
+    return mod >= 0 ? `+${mod}` : `${mod}`;
+  };
+
+  const statLabels = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
+
+  return (
+    <div className="my-5 rounded-2xl border-2 border-amber-600/50 bg-slate-950 p-5 shadow-2xl space-y-4 max-w-2xl not-prose">
+      {/* Title & Type */}
+      <div className="border-b border-amber-900/60 pb-2.5">
+        <h3 className="font-fantasy text-2xl font-bold text-amber-300">{name}</h3>
+        {sizeType && <div className="text-xs text-slate-400 italic capitalize">{sizeType}</div>}
+      </div>
+
+      {/* AC, HP, Speed Bar */}
+      <div className="space-y-1 text-xs border-b border-amber-900/40 pb-3">
+        {parsed.ac && (
+          <div><strong className="text-amber-200">Armor Class:</strong> <span className="text-slate-300">{parsed.ac}</span></div>
+        )}
+        {parsed.hp && (
+          <div><strong className="text-amber-200">Hit Points:</strong> <span className="text-slate-300">{parsed.hp}</span></div>
+        )}
+        {parsed.speed && (
+          <div><strong className="text-amber-200">Speed:</strong> <span className="text-slate-300">{parsed.speed}</span></div>
+        )}
+      </div>
+
+      {/* Ability Scores Table */}
+      <div className="grid grid-cols-6 gap-2 text-center bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+        {statLabels.map((lbl, idx) => {
+          const val = stats[idx] || 10;
+          return (
+            <div key={lbl} className="space-y-0.5">
+              <div className="text-[10px] font-bold text-amber-400">{lbl}</div>
+              <div className="text-xs font-semibold text-slate-200">{val}</div>
+              <div className="text-[10px] font-mono text-slate-400">({calcMod(val)})</div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Defenses, Senses, Languages */}
+      <div className="space-y-1 text-xs border-b border-amber-900/40 pb-3 text-slate-300">
+        {parsed.skills && <div><strong className="text-amber-200">Skills:</strong> {parsed.skills}</div>}
+        {parsed.damage_vulnerabilities && <div><strong className="text-amber-200">Damage Vulnerabilities:</strong> {parsed.damage_vulnerabilities}</div>}
+        {parsed.damage_resistances && <div><strong className="text-amber-200">Damage Resistances:</strong> {parsed.damage_resistances}</div>}
+        {parsed.damage_immunities && <div><strong className="text-amber-200">Damage Immunities:</strong> {parsed.damage_immunities}</div>}
+        {parsed.condition_immunities && <div><strong className="text-amber-200">Condition Immunities:</strong> {parsed.condition_immunities}</div>}
+        {parsed.senses && <div><strong className="text-amber-200">Senses:</strong> {parsed.senses}</div>}
+        {parsed.languages && <div><strong className="text-amber-200">Languages:</strong> {parsed.languages}</div>}
+      </div>
+
+      {/* Traits */}
+      {parsed.traits && parsed.traits.length > 0 && (
+        <div className="space-y-2 border-b border-amber-900/40 pb-3">
+          {parsed.traits.map((t: any, idx: number) => (
+            <div key={idx} className="text-xs leading-relaxed text-slate-300">
+              <strong className="text-amber-200 italic mr-1">{t.name}.</strong>
+              <span>{t.desc}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Actions */}
+      {parsed.actions && parsed.actions.length > 0 && (
+        <div className="space-y-2.5">
+          <h4 className="font-fantasy text-sm font-bold text-amber-400 uppercase tracking-wider border-b border-amber-950 pb-1">Actions</h4>
+          {parsed.actions.map((a: any, idx: number) => (
+            <div key={idx} className="text-xs leading-relaxed text-slate-300">
+              <strong className="text-amber-200 italic mr-1">{a.name}.</strong>
+              <span>{a.desc}</span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};

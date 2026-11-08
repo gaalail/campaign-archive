@@ -346,35 +346,60 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       <span className="truncate">{cls.title}</span>
                       <span className="text-[10px] text-slate-500 font-mono">{cls.hit_die}</span>
                     </button>
-                    {cls.title === 'Warlock' && (
-                      <div className="ml-3 mb-1 border-l border-slate-800 pl-2 space-y-0.5">
-                        {[
-                          ['eldritch-invocations/index', 'Eldritch Invocations'],
-                          ['pact-foci/index', 'Pact Foci'],
-                          ['familiars/index', 'Eldritch Familiars'],
-                          ['elder-arcana/index', 'Elder Arcana']
-                        ].map(([folder, label]) => {
-                          const id = `character-options/class-options/${folder}`;
-                          return (
-                            <button
-                              key={folder}
-                              onClick={() => {
-                                onSetView('reader');
-                                onNavigateToEntry(id);
-                                onClose();
-                              }}
-                              className={`w-full text-left px-2 py-1 rounded-lg transition-colors truncate text-[11px] ${
-                                currentView === 'reader' && currentEntryId === id
-                                  ? 'text-violet-300 bg-violet-500/10 font-semibold'
-                                  : 'text-slate-500 hover:text-slate-200 hover:bg-slate-800/40'
-                              }`}
-                            >
-                              {label}
-                            </button>
-                          );
-                        })}
-                      </div>
-                    )}
+                    {(() => {
+                      const classOptionMap: Record<string, { folder: string; label: string }[]> = {
+                        Warlock: [
+                          { folder: 'eldritch-invocations', label: 'Eldritch Invocations' },
+                          { folder: 'pact-foci', label: 'Pact Foci' },
+                          { folder: 'familiars', label: 'Eldritch Familiars' },
+                          { folder: 'elder-arcana', label: 'Elder Arcana' }
+                        ],
+                        Primal: [
+                          { folder: 'primal-manifestations', label: 'Primal Manifestations' }
+                        ],
+                        Paragon: [
+                          { folder: 'avatar-features', label: 'Avatar Features' }
+                        ],
+                        Paladin: [
+                          { folder: 'smite-paths', label: 'Smite Paths' }
+                        ],
+                        Fighter: [
+                          { folder: 'martial-exploits', label: 'Martial Exploits' }
+                        ],
+                        Sorcerer: [
+                          { folder: 'metamagic', label: 'Metamagic Options' }
+                        ],
+                        Monk: [
+                          { folder: 'monk-techniques', label: 'Monk Techniques' }
+                        ]
+                      };
+                      const options = classOptionMap[cls.title];
+                      if (!options) return null;
+                      return (
+                        <div className="ml-3 mb-1 border-l border-slate-800 pl-2 space-y-0.5">
+                          {options.map(({ folder, label }) => {
+                            const id = `character-options/class-options/${folder}/index`;
+                            return (
+                              <button
+                                key={folder}
+                                onClick={() => {
+                                  onSetView('reader');
+                                  onNavigateToEntry(id);
+                                  onClose();
+                                }}
+                                className={`w-full text-left px-2 py-1 rounded-lg transition-colors truncate text-[11px] ${
+                                  currentView === 'reader' && currentEntryId === id
+                                    ? 'text-amber-300 bg-amber-500/10 font-semibold'
+                                    : 'text-slate-500 hover:text-slate-200 hover:bg-slate-800/40'
+                                }`}
+                              >
+                                {label}
+                              </button>
+                            );
+                          })}
+                        </div>
+                      );
+                    })()}
                   </React.Fragment>
                 ))}
               </div>
