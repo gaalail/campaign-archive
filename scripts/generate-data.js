@@ -339,7 +339,17 @@ for (const filePath of files) {
 
   titleToId.set(title.toLowerCase(), cleanId);
   titleToId.set(cleanId.toLowerCase(), cleanId);
-  titleToId.set(fileNameWithoutExt.toLowerCase(), cleanId);
+  if (cleanId.endsWith('/index')) {
+    const folderName = cleanId.replace(/\/index$/, '').toLowerCase();
+    if (!titleToId.has(folderName)) {
+      titleToId.set(folderName, cleanId);
+    }
+  }
+  if (fileNameWithoutExt.toLowerCase() !== 'index') {
+    if (!titleToId.has(fileNameWithoutExt.toLowerCase())) {
+      titleToId.set(fileNameWithoutExt.toLowerCase(), cleanId);
+    }
+  }
 
   if (entry.aliases) {
     for (const alias of entry.aliases) {
@@ -347,6 +357,11 @@ for (const filePath of files) {
     }
   }
 }
+
+// Ensure root index points strictly to 'index'
+titleToId.set('index', 'index');
+titleToId.set('home', 'index');
+titleToId.set('campaign archive', 'index');
 
 // Build incoming links
 for (const entry of entries) {

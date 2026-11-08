@@ -32,7 +32,11 @@ import {
   Target,
   Search,
   ChevronDown,
-  ChevronUp
+  ChevronUp,
+  Sword,
+  Wand2,
+  Package,
+  Network
 } from 'lucide-react';
 
 interface EntryDetailProps {
@@ -66,7 +70,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const rarityBadge = entry.rarity ? getRarityColor(entry.rarity) : null;
 
   // Breadcrumbs
-  const breadcrumbParts = entry.path.replace(/\.md$/, '').split('/');
+  const isHome = entry.id === 'index' || entry.category === 'home';
+  const breadcrumbParts = isHome ? ['Home Hub'] : entry.path.replace(/\.md$/, '').split('/');
 
   // If this entry is a class, find its subclasses and options
   const isClass = entry.category === 'classes' && !entry.id.endsWith('/index');
@@ -153,8 +158,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
               <span className="text-xs uppercase font-semibold tracking-wider text-slate-400 block mb-1">
-                {entry.category.replace('-', ' ')}
-                {entry.subcategory ? ` • ${entry.subcategory.replace('-', ' ')}` : ''}
+                {isHome ? '5e D&D Reference Vault' : (entry.category.replace('-', ' ') + (entry.subcategory ? ` • ${entry.subcategory.replace('-', ' ')}` : ''))}
               </span>
               <h1 className="font-fantasy text-3xl md:text-4xl font-bold text-slate-100">
                 {entry.title}
@@ -172,6 +176,119 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
               </button>
             )}
           </div>
+
+          {/* Home Hub Quick-Access Portals */}
+          {isHome && (
+            <div className="mt-5 space-y-3.5">
+              <div className="text-xs font-semibold uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                <span>Quick-Access Compendium Portals</span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                <button
+                  onClick={() => onNavigate('builder')}
+                  className="p-3.5 rounded-xl border border-amber-500/30 bg-amber-950/20 hover:bg-amber-950/40 hover:border-amber-500/60 transition-all text-left group flex items-start gap-3"
+                >
+                  <div className="p-2 rounded-lg bg-amber-500/20 text-amber-400 group-hover:scale-105 transition-transform shrink-0">
+                    <Sparkles className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-100 group-hover:text-amber-300 text-sm transition-colors">
+                      Character Builder
+                    </h4>
+                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                      Step-by-step visual character creation & sheet export.
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => onNavigate('spells')}
+                  className="p-3.5 rounded-xl border border-violet-500/30 bg-violet-950/20 hover:bg-violet-950/40 hover:border-violet-500/60 transition-all text-left group flex items-start gap-3"
+                >
+                  <div className="p-2 rounded-lg bg-violet-500/20 text-violet-400 group-hover:scale-105 transition-transform shrink-0">
+                    <Wand2 className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-100 group-hover:text-violet-300 text-sm transition-colors">
+                      Spell Catalogue
+                    </h4>
+                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                      Search 150+ spells by level, school, and class.
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => onNavigate('items')}
+                  className="p-3.5 rounded-xl border border-emerald-500/30 bg-emerald-950/20 hover:bg-emerald-950/40 hover:border-emerald-500/60 transition-all text-left group flex items-start gap-3"
+                >
+                  <div className="p-2 rounded-lg bg-emerald-500/20 text-emerald-400 group-hover:scale-105 transition-transform shrink-0">
+                    <Package className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-100 group-hover:text-emerald-300 text-sm transition-colors">
+                      Magic Items Compendium
+                    </h4>
+                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                      Browse weapons, armor, potions, and wondrous artifacts.
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => onNavigate('campaigns')}
+                  className="p-3.5 rounded-xl border border-rose-500/30 bg-rose-950/20 hover:bg-rose-950/40 hover:border-rose-500/60 transition-all text-left group flex items-start gap-3"
+                >
+                  <div className="p-2 rounded-lg bg-rose-500/20 text-rose-400 group-hover:scale-105 transition-transform shrink-0">
+                    <Compass className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-100 group-hover:text-rose-300 text-sm transition-colors">
+                      Campaign Worlds
+                    </h4>
+                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                      Barovia, Ra Gol'vek, Vyrun: lore, sessions, and NPCs.
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => onNavigate('graph')}
+                  className="p-3.5 rounded-xl border border-indigo-500/30 bg-indigo-950/20 hover:bg-indigo-950/40 hover:border-indigo-500/60 transition-all text-left group flex items-start gap-3"
+                >
+                  <div className="p-2 rounded-lg bg-indigo-500/20 text-indigo-400 group-hover:scale-105 transition-transform shrink-0">
+                    <Network className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-100 group-hover:text-indigo-300 text-sm transition-colors">
+                      Knowledge Graph
+                    </h4>
+                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                      Interactive network simulation connecting 1,200+ entries.
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => onNavigate('character-options/classes/index')}
+                  className="p-3.5 rounded-xl border border-amber-500/30 bg-slate-950/60 hover:bg-slate-900 hover:border-amber-500/60 transition-all text-left group flex items-start gap-3"
+                >
+                  <div className="p-2 rounded-lg bg-amber-500/10 text-amber-300 group-hover:scale-105 transition-transform shrink-0">
+                    <Sword className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-100 group-hover:text-amber-300 text-sm transition-colors">
+                      Classes & Archetypes
+                    </h4>
+                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                      Core and homebrew classes with all mechanics & features.
+                    </p>
+                  </div>
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Subclass Parent Class Banner */}
           {isSubclass && entry.parentClass && (
@@ -230,66 +347,48 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             </div>
           )}
 
-          {entry.id === 'character-builder' && (
-            <div className="mt-4 p-4 rounded-xl border border-amber-500/40 bg-amber-950/30 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div>
-                <div className="text-xs font-semibold text-amber-300 flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-amber-400" />
-                  <span>Interactive Character Creation Wizard</span>
+          {/* Quick Stat Chips (omitted for home hub) */}
+          {!isHome && Boolean(entry.hit_die || (entry.saving_throws && entry.saving_throws.length > 0) || rarityBadge || entry.attunement || entry.campaign_id) && (
+            <div className="flex flex-wrap items-center gap-2.5 mt-4 pt-3 border-t border-slate-800/60">
+              {entry.hit_die && (
+                <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-950 border border-slate-800 text-xs text-slate-300 font-mono">
+                  <Heart className="w-3.5 h-3.5 text-rose-400" />
+                  <span>Hit Die: {entry.hit_die}</span>
                 </div>
-                <div className="text-xs text-slate-300 mt-0.5">
-                  Step-by-step visual selection for Race, Class, Subclass, and Background with character sheet export.
+              )}
+
+              {entry.saving_throws && entry.saving_throws.length > 0 && (
+                <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-950 border border-slate-800 text-xs text-slate-300">
+                  <Shield className="w-3.5 h-3.5 text-blue-400" />
+                  <span>Saves: {entry.saving_throws.join(', ')}</span>
                 </div>
-              </div>
-              <button
-                onClick={() => onNavigate('builder')}
-                className="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs shadow transition-colors shrink-0"
-              >
-                Launch Visual Builder →
-              </button>
+              )}
+
+              {rarityBadge && (
+                <div
+                  className={`px-3 py-1 rounded-lg border text-xs font-semibold ${rarityBadge.bg} ${rarityBadge.text} ${rarityBadge.border}`}
+                >
+                  {entry.rarity} {entry.item_type || ''}
+                </div>
+              )}
+
+              {entry.attunement && (
+                <div className="px-3 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-xs text-purple-300 font-medium">
+                  Requires Attunement
+                </div>
+              )}
+
+              {entry.campaign_id && (
+                <button
+                  onClick={() => onNavigate(`campaigns/${entry.campaign_id}/index`)}
+                  className="flex items-center gap-1 px-3 py-1 rounded-lg bg-amber-950/30 border border-amber-500/30 text-xs text-amber-300 hover:text-amber-200"
+                >
+                  <Compass className="w-3.5 h-3.5" />
+                  <span>Campaign: {entry.campaign_id}</span>
+                </button>
+              )}
             </div>
           )}
-
-          {/* Quick Stat Chips */}
-          <div className="flex flex-wrap items-center gap-2.5 mt-4 pt-3 border-t border-slate-800/60">
-            {entry.hit_die && (
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-950 border border-slate-800 text-xs text-slate-300 font-mono">
-                <Heart className="w-3.5 h-3.5 text-rose-400" />
-                <span>Hit Die: {entry.hit_die}</span>
-              </div>
-            )}
-
-            {entry.saving_throws && entry.saving_throws.length > 0 && (
-              <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-950 border border-slate-800 text-xs text-slate-300">
-                <Shield className="w-3.5 h-3.5 text-blue-400" />
-                <span>Saves: {entry.saving_throws.join(', ')}</span>
-              </div>
-            )}
-
-            {rarityBadge && (
-              <div
-                className={`px-3 py-1 rounded-lg border text-xs font-semibold ${rarityBadge.bg} ${rarityBadge.text} ${rarityBadge.border}`}
-              >
-                {entry.rarity} {entry.item_type || ''}
-              </div>
-            )}
-
-            {entry.attunement && (
-              <div className="px-3 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-xs text-purple-300 font-medium">
-                Requires Attunement
-              </div>
-            )}
-
-            {entry.campaign_id && (
-              <button
-                onClick={() => onNavigate(`campaigns/${entry.campaign_id}/index`)}
-                className="flex items-center gap-1 px-3 py-1 rounded-lg bg-amber-950/30 border border-amber-500/30 text-xs text-amber-300 hover:text-amber-200"
-              >
-                <Compass className="w-3.5 h-3.5" />
-                <span>Campaign: {entry.campaign_id}</span>
-              </button>
-            )}
-          </div>
         </div>
 
         {/* Dedicated Rich Spell Stat Block Card */}
@@ -485,7 +584,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             <MarkdownView content={entry.body} currentEntryId={entry.id} onNavigate={onNavigate} />
 
             {/* If this is the spells index page or a level index page */}
-            {entry.category === 'spells' && entry.id.endsWith('/index') && (
+            {entry.category === 'spells' && entry.id.endsWith('/index') && entry.id !== 'index' && (
               <div className="mt-8 pt-6 border-t border-slate-800">
                 <SpellCatalogue
                   initialClass="All Spells"

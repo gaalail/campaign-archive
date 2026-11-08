@@ -7,24 +7,70 @@ export const archiveDb = archiveDataRaw as unknown as ArchiveDatabase;
 const entriesById = new Map<string, ArchiveEntry>();
 const entriesByNormalizedTitle = new Map<string, ArchiveEntry>();
 const entriesByNormalizedAlias = new Map<string, ArchiveEntry>();
+const entriesBySlug = new Map<string, ArchiveEntry>();
 
+// 1. Authoritative: Register exact IDs
 for (const entry of archiveDb.entries) {
   entriesById.set(entry.id, entry);
   entriesById.set(entry.id.toLowerCase().trim(), entry);
-  entriesByNormalizedTitle.set(entry.title.toLowerCase().trim(), entry);
-  entriesByNormalizedTitle.set(entry.id.toLowerCase().trim(), entry);
 
+  // If this is a folder index (e.g. spells/index, character-options/classes/index),
+  // also register the folder path alias so [[spells]] or [[character-options/classes]] work seamlessly
+  if (entry.id.endsWith('/index')) {
+    const folderPath = entry.id.replace(/\/index$/, '');
+    if (folderPath && !entriesById.has(folderPath)) {
+      entriesById.set(folderPath, entry);
+      entriesById.set(folderPath.toLowerCase().trim(), entry);
+    }
+  }
+}
+
+// 2. Titles, Aliases, and Stems
+for (const entry of archiveDb.entries) {
+  const normTitle = entry.title.toLowerCase().trim();
+  if (!entriesByNormalizedTitle.has(normTitle)) {
+    entriesByNormalizedTitle.set(normTitle, entry);
+  }
+
+  const titleSlug = normTitle.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  if (titleSlug && !entriesBySlug.has(titleSlug)) {
+    entriesBySlug.set(titleSlug, entry);
+  }
+
+  // File stem (e.g. 'fireball' from 'spells/3rd-level/fireball.md')
+  // CRITICAL: NEVER register 'index' from a subfolder as a stem!
   const baseFileName = entry.path.split('/').pop()?.replace(/\.md$/, '').toLowerCase().trim();
-  if (baseFileName) {
-    entriesByNormalizedTitle.set(baseFileName, entry);
-    entriesById.set(baseFileName, entry);
+  if (baseFileName && baseFileName !== 'index') {
+    if (!entriesById.has(baseFileName)) {
+      entriesById.set(baseFileName, entry);
+    }
+    if (!entriesByNormalizedTitle.has(baseFileName)) {
+      entriesByNormalizedTitle.set(baseFileName, entry);
+    }
   }
 
   if (entry.aliases) {
     for (const alias of entry.aliases) {
-      entriesByNormalizedAlias.set(String(alias).toLowerCase().trim(), entry);
+      const normAlias = String(alias).toLowerCase().trim();
+      if (!entriesByNormalizedAlias.has(normAlias)) {
+        entriesByNormalizedAlias.set(normAlias, entry);
+      }
+      const aliasSlug = normAlias.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      if (aliasSlug && !entriesBySlug.has(aliasSlug)) {
+        entriesBySlug.set(aliasSlug, entry);
+      }
     }
   }
+}
+
+// 3. Absolute Lock: The root Home Hub must always resolve to content/index.md
+const rootIndexEntry = archiveDb.entries.find(e => e.id === 'index' || e.path === 'index.md');
+if (rootIndexEntry) {
+  entriesById.set('index', rootIndexEntry);
+  entriesById.set('home', rootIndexEntry);
+  entriesByNormalizedTitle.set('index', rootIndexEntry);
+  entriesByNormalizedTitle.set('campaign archive', rootIndexEntry);
+  entriesByNormalizedTitle.set('home hub', rootIndexEntry);
 }
 
 export function cleanFlavorText(text?: string | null): string {
@@ -46,20 +92,42 @@ export function getEntryById(id: string): ArchiveEntry | undefined {
   if (!id) return undefined;
   const trimmed = id.trim();
   const lower = trimmed.toLowerCase();
+
+  // Root home page guard
+  if (lower === 'index' || lower === 'home' || lower === '' || lower === '/') {
+    return rootIndexEntry || entriesById.get('index');
+  }
+
   return (
     entriesById.get(trimmed) ||
     entriesById.get(lower) ||
+    entriesById.get(`${lower}/index`) ||
+    entriesByNormalizedTitle.get(lower) ||
     entriesByNormalizedAlias.get(lower) ||
-    entriesByNormalizedTitle.get(lower)
+    entriesBySlug.get(lower) ||
+    entriesBySlug.get(lower.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')) ||
+    entriesByNormalizedTitle.get(lower.replace(/-/g, ' '))
   );
 }
 
 export function resolveWikilink(linkText: string): ArchiveEntry | undefined {
-  const clean = linkText.split('|')[0].split('#')[0].trim().toLowerCase();
+  if (!linkText) return undefined;
+  const clean = linkText.split('|')[0].split('#')[0].trim();
+  const lower = clean.toLowerCase();
+
+  if (lower === 'index' || lower === 'home') {
+    return rootIndexEntry || entriesById.get('index');
+  }
+
   return (
     entriesById.get(clean) ||
-    entriesByNormalizedAlias.get(clean) ||
-    entriesByNormalizedTitle.get(clean)
+    entriesById.get(lower) ||
+    entriesById.get(`${lower}/index`) ||
+    entriesByNormalizedTitle.get(lower) ||
+    entriesByNormalizedAlias.get(lower) ||
+    entriesBySlug.get(lower) ||
+    entriesBySlug.get(lower.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')) ||
+    entriesByNormalizedTitle.get(lower.replace(/-/g, ' '))
   );
 }
 

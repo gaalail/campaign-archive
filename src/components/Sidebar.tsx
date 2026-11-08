@@ -114,7 +114,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onClose();
             }}
             className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
-              currentView === 'reader' && currentEntryId === 'index'
+              currentView === 'reader' && (currentEntryId === 'index' || !currentEntryId)
                 ? 'bg-amber-500 text-slate-950 shadow'
                 : 'text-slate-300 hover:bg-slate-800 hover:text-white'
             }`}

@@ -534,11 +534,38 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
             </button>
           );
         } else {
-          parts.push(
-            <span key={match.index} className="text-amber-300/80 font-medium">
-              {label}
-            </span>
-          );
+          const lowerTarget = target.toLowerCase();
+          if (
+            lowerTarget === 'character-builder' ||
+            lowerTarget === 'builder' ||
+            lowerTarget === 'spells' ||
+            lowerTarget === 'items' ||
+            lowerTarget === 'campaigns' ||
+            lowerTarget === 'rules' ||
+            lowerTarget === 'monsters' ||
+            lowerTarget === 'index' ||
+            lowerTarget === 'home'
+          ) {
+            parts.push(
+              <button
+                key={match.index}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate(lowerTarget);
+                }}
+                className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5 cursor-pointer text-left"
+              >
+                <span>{label}</span>
+                <ExternalLink className="w-3 h-3 opacity-60 inline shrink-0" />
+              </button>
+            );
+          } else {
+            parts.push(
+              <span key={match.index} className="text-amber-300/80 font-medium">
+                {label}
+              </span>
+            );
+          }
         }
       }
     } else if (match[2] !== undefined && match[3] !== undefined) {

@@ -19,6 +19,12 @@ export default function App() {
   const entry = useMemo(() => entryId ? getEntryById(entryId) : undefined, [entryId]);
 
   const navigate = (id: string) => {
+    if (id === 'index' || id === 'home') {
+      setView('reader');
+      setEntryId('index');
+      setSidebarOpen(false);
+      return;
+    }
     if (id === 'spells/index' || id === 'spells') {
       setView('spells');
       setEntryId(id);
@@ -37,15 +43,15 @@ export default function App() {
       setSidebarOpen(false);
       return;
     }
-    if (id === 'builder') {
+    if (id === 'builder' || id === 'character-builder') {
       setView('builder');
-      setEntryId(id);
+      setEntryId('character-builder');
       setSidebarOpen(false);
       return;
     }
-    if (id === 'graph') {
+    if (id === 'graph' || id === 'knowledge-graph') {
       setView('graph');
-      setEntryId(id);
+      setEntryId('graph');
       setSidebarOpen(false);
       return;
     }
