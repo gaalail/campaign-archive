@@ -33,6 +33,7 @@ interface SidebarProps {
   onSetView: (view: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells' | 'monsters') => void;
   isOpen: boolean;
   onClose: () => void;
+  onOpenChangelog?: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -41,7 +42,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onNavigateToEntry,
   onSetView,
   isOpen,
-  onClose
+  onClose,
+  onOpenChangelog
 }) => {
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({
     classes: true,
@@ -613,9 +615,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
         </div>
 
         {/* Sidebar Footer */}
-        <div className="p-3 border-t border-slate-800 bg-slate-950/50 text-[11px] text-slate-400 flex items-center justify-between">
-          <span>SRD 5.1 & Homebrew</span>
-          <span className="text-amber-400 font-mono">{archiveDb.stats.totalEntries} entries</span>
+        <div className="p-3 border-t border-stone-800 bg-stone-950/80 text-[11px] text-stone-400 flex items-center justify-between font-serif">
+          {onOpenChangelog ? (
+            <button
+              onClick={onOpenChangelog}
+              className="flex items-center gap-1.5 text-amber-400 hover:text-amber-200 transition-colors font-semibold cursor-pointer"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+              <span>What's New</span>
+            </button>
+          ) : (
+            <span>5e Codex & Grimoire</span>
+          )}
+          <span className="text-amber-400/90 font-mono text-[10px]">{archiveDb.stats.totalEntries} entries</span>
         </div>
       </aside>
     </>

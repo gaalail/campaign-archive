@@ -9,6 +9,8 @@ import { getEntryById } from './utils/archiveUtils';
 
 import { SpellCatalogue } from './components/SpellCatalogue';
 import { BestiaryCatalogue } from './components/BestiaryCatalogue';
+import { ChangelogModal } from './components/ChangelogModal';
+import { Sparkles } from 'lucide-react';
 
 export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells' | 'monsters';
 
@@ -16,6 +18,7 @@ export default function App() {
   const [view, setView] = useState<AppView>('reader');
   const [entryId, setEntryId] = useState<string | null>('index');
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [changelogOpen, setChangelogOpen] = useState(false);
 
   const entry = useMemo(() => entryId ? getEntryById(entryId) : undefined, [entryId]);
 
@@ -69,13 +72,23 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100">
-      <button
-        className="fixed left-3 top-3 z-50 rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 md:hidden"
-        onClick={() => setSidebarOpen(true)}
-        aria-label="Open navigation"
-      >
-        Menu
-      </button>
+      <div className="fixed top-3 left-3 right-3 z-50 flex items-center justify-between pointer-events-none md:hidden">
+        <button
+          className="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 pointer-events-auto text-xs font-serif font-semibold text-stone-200 shadow-lg"
+          onClick={() => setSidebarOpen(true)}
+          aria-label="Open navigation"
+        >
+          Menu
+        </button>
+        <button
+          className="rounded-lg border border-amber-900/60 bg-stone-900 px-3 py-2 pointer-events-auto text-xs font-serif font-semibold text-amber-300 shadow-lg flex items-center gap-1.5"
+          onClick={() => setChangelogOpen(true)}
+        >
+          <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+          <span>What's New</span>
+        </button>
+      </div>
+
       <Sidebar
         currentEntryId={entryId}
         currentView={view}
@@ -83,8 +96,9 @@ export default function App() {
         onSetView={(nextView) => { setView(nextView); setSidebarOpen(false); }}
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
+        onOpenChangelog={() => setChangelogOpen(true)}
       />
-      <main className="md:ml-72 min-h-screen p-4 md:p-8">
+      <main className="md:ml-72 min-h-screen p-4 md:p-8 pt-16 md:pt-8">
         {view === 'reader' && entry && <EntryDetail key={entry.id} entry={entry} onNavigate={navigate} />}
         {view === 'reader' && !entry && <div className="text-slate-400">Entry not found.</div>}
         {view === 'spells' && <SpellCatalogue onSelectSpell={navigate} />}
@@ -94,6 +108,12 @@ export default function App() {
         {view === 'campaigns' && <CampaignHub onNavigate={navigate} onOpenCharacterBuilder={() => setView('builder')} onOpenGraph={() => setView('graph')} />}
         {view === 'graph' && <KnowledgeGraph onSelectEntry={navigate} />}
       </main>
+
+      <ChangelogModal
+        isOpen={changelogOpen}
+        onClose={() => setChangelogOpen(false)}
+        onNavigate={navigate}
+      />
     </div>
   );
 }

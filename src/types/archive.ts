@@ -89,7 +89,8 @@ export interface GraphNode {
 export interface GraphEdge {
   source: string | GraphNode;
   target: string | GraphNode;
-  type?: 'mention' | 'subclass_of' | 'option_of' | 'campaign_content';
+  type?: 'mention' | 'subclass_of' | 'option_of' | 'campaign_content' | 'spell_list';
+  weight?: number;
 }
 
 export interface ArchiveDatabase {

@@ -841,24 +841,47 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
               </div>
             )}
 
-            {/* Backlinks at bottom for non-class entries */}
-            {!isClass && !isSubclass && entry.incomingLinks && entry.incomingLinks.length > 0 && (
-              <div className="mt-8 pt-6 border-t border-slate-800">
-                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">
-                  <Link2 className="w-4 h-4 text-amber-400" />
-                  <span>Incoming References ({entry.incomingLinks.length} backlinks)</span>
+            {/* Rich Codex Cross-References / Where is this referenced? */}
+            {entry.incomingLinks && entry.incomingLinks.length > 0 && (
+              <div className="mt-8 pt-6 border-t-2 border-stone-800/80 space-y-3 font-serif">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-amber-400">
+                    <Network className="w-4 h-4 text-amber-500" />
+                    <span>Codex Cross-References • Referenced By ({entry.incomingLinks.length})</span>
+                  </div>
+                  <span className="text-[10px] text-stone-500 font-sans">Inbound graph edges</span>
                 </div>
-                <div className="flex flex-wrap gap-2">
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
                   {entry.incomingLinks.map(linkId => {
                     const linked = getEntryById(linkId);
+                    const title = linked?.title || linkId.split('/').pop()?.replace(/-/g, ' ');
+                    const cat = linked?.category || 'entry';
+                    const isStrahdLink = linkId.includes('strahd') || linked?.campaign_id === 'curse-of-strahd';
+
                     return (
                       <button
                         key={linkId}
                         onClick={() => onNavigate(linkId)}
-                        className="px-3 py-1.5 rounded-lg bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-slate-300 hover:text-amber-300 transition-colors flex items-center gap-1"
+                        className={`p-3 rounded-xl border text-left transition-all flex items-center justify-between group cursor-pointer ${
+                          isStrahdLink
+                            ? 'bg-stone-950/80 border-rose-950 hover:border-rose-700/60 hover:bg-rose-950/30'
+                            : 'bg-stone-900/60 border-stone-800 hover:border-amber-600/60 hover:bg-stone-900'
+                        }`}
                       >
-                        <span>{linked?.title || linkId.split('/').pop()}</span>
-                        <ChevronRight className="w-3 h-3 opacity-50" />
+                        <div className="truncate pr-2">
+                          <div className="font-semibold text-xs text-stone-200 group-hover:text-amber-300 transition-colors truncate">
+                            {title}
+                          </div>
+                          <div className="text-[10px] text-stone-400 capitalize flex items-center gap-1.5 mt-0.5 font-sans">
+                            <span className="w-1.5 h-1.5 rounded-full bg-amber-500/70"></span>
+                            <span>{cat}</span>
+                            {linked?.parentClass && (
+                              <span className="text-amber-400/80 font-serif">({linked.parentClass})</span>
+                            )}
+                          </div>
+                        </div>
+                        <ChevronRight className="w-3.5 h-3.5 text-stone-500 group-hover:text-amber-300 transition-transform group-hover:translate-x-0.5 shrink-0" />
                       </button>
                     );
                   })}

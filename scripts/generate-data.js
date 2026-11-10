@@ -417,7 +417,7 @@ for (const e of validEntities) {
       const edgeKey = [e.id, resolvedId].sort().join('---');
       if (!edgeSet.has(edgeKey)) {
         edgeSet.add(edgeKey);
-        graphEdges.push({ source: e.id, target: resolvedId, type: 'mention' });
+        graphEdges.push({ source: e.id, target: resolvedId, type: 'mention', weight: 1 });
       }
     }
   }
@@ -428,7 +428,7 @@ for (const e of validEntities) {
     const edgeKey = [e.id, classId].sort().join('---');
     if (!edgeSet.has(edgeKey)) {
       edgeSet.add(edgeKey);
-      graphEdges.push({ source: e.id, target: classId, type: 'subclass_of' });
+      graphEdges.push({ source: e.id, target: classId, type: 'subclass_of', weight: 4 });
     }
   }
 
@@ -438,7 +438,21 @@ for (const e of validEntities) {
     const edgeKey = [e.id, classId].sort().join('---');
     if (!edgeSet.has(edgeKey)) {
       edgeSet.add(edgeKey);
-      graphEdges.push({ source: e.id, target: classId, type: 'option_of' });
+      graphEdges.push({ source: e.id, target: classId, type: 'option_of', weight: 3 });
+    }
+  }
+
+  // Structural relationship: Spell -> Class spell list
+  if (e.category === 'spells' && Array.isArray(e.classes)) {
+    for (const cls of e.classes) {
+      const resolved = titleToId.get(cls.toLowerCase());
+      if (resolved && resolved !== e.id) {
+        const edgeKey = [e.id, resolved].sort().join('---');
+        if (!edgeSet.has(edgeKey)) {
+          edgeSet.add(edgeKey);
+          graphEdges.push({ source: e.id, target: resolved, type: 'spell_list', weight: 2.5 });
+        }
+      }
     }
   }
 
@@ -448,7 +462,7 @@ for (const e of validEntities) {
     const edgeKey = [e.id, hubId].sort().join('---');
     if (!edgeSet.has(edgeKey)) {
       edgeSet.add(edgeKey);
-      graphEdges.push({ source: e.id, target: hubId, type: 'campaign_content' });
+      graphEdges.push({ source: e.id, target: hubId, type: 'campaign_content', weight: 3 });
     }
   }
 }
