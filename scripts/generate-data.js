@@ -99,8 +99,8 @@ function cleanFlavorString(str) {
   return s;
 }
 
-function extractFlavorAndFeatures(bodyText) {
-  if (!bodyText) return { flavor: '', features: [] };
+function extractFlavorAndFeatures(bodyText, category = '') {
+  if (!bodyText || category === 'monsters') return { flavor: '', features: [] };
   const lines = bodyText.split(/\r?\n/);
   const flavorLines = [];
   let inFlavor = true;
@@ -111,6 +111,11 @@ function extractFlavorAndFeatures(bodyText) {
     if (line.startsWith('# ') && !line.startsWith('## ') && !line.startsWith('### ')) continue;
     if (line.startsWith('**') && line.endsWith('**') && (line.includes('subclasses available') || line.includes('Choose at'))) continue;
     if (line.startsWith('## ') || line.startsWith('### ') || line.startsWith('> [!info')) {
+      inFlavor = false;
+      break;
+    }
+    // Stop flavor parsing if a table or stat line is reached
+    if (line.startsWith('|') || line.startsWith('- **Armor Class') || line.startsWith('- **Hit Points') || line.startsWith('- **Speed') || line.startsWith('- **Challenge')) {
       inFlavor = false;
       break;
     }
@@ -334,7 +339,7 @@ for (const filePath of files) {
     wikilinks
   };
 
-  const { flavor, features } = extractFlavorAndFeatures(body);
+  const { flavor, features } = extractFlavorAndFeatures(body, category);
   if (flavor) {
     entry.flavor = flavor;
   }

@@ -512,7 +512,13 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           )}
 
           {/* Subclass Flavor Quote or Summary */}
-          {entry.flavor ? (
+          {isMonster ? (
+            entry.summary ? (
+              <div className="mt-3.5 p-4 rounded-xl bg-stone-950/70 border-l-4 border-amber-600 text-stone-300 text-sm md:text-base italic leading-relaxed shadow-sm font-serif">
+                <InlineContent text={cleanFlavorText(entry.summary)} onNavigate={onNavigate} />
+              </div>
+            ) : null
+          ) : entry.flavor ? (
             <div className="mt-3.5 p-4 rounded-xl bg-slate-950/70 border-l-4 border-amber-500 text-slate-200 text-sm md:text-base italic leading-relaxed shadow-sm">
               <InlineContent text={cleanFlavorText(entry.flavor)} onNavigate={onNavigate} />
             </div>

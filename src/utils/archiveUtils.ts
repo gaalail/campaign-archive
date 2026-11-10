@@ -76,6 +76,10 @@ if (rootIndexEntry) {
 export function cleanFlavorText(text?: string | null): string {
   if (!text) return '';
   let str = text.trim();
+  // If the text is actually an unparsed raw stat table or mechanical block, do not treat as flavor quote
+  if (str.includes('| STR |') || str.includes('Armor Class:') || str.includes('Hit Points:')) {
+    return '';
+  }
   // Strip surrounding quotes or formatting marks
   while (
     (str.startsWith('"') && str.endsWith('"')) ||
