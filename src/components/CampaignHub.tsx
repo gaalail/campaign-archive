@@ -1,6 +1,17 @@
 import React, { useState } from 'react';
 import { archiveDb } from '../utils/archiveUtils';
-import { Compass, Sparkles, Network, BookOpen, MapPin, Users, Skull, ChevronRight, Shield } from 'lucide-react';
+import {
+  GothicRaven,
+  GothicBat,
+  GothicChalice,
+  CrossedSwords,
+  SpellTome,
+  DragonShield,
+  RavenloftCrest,
+  WaxSeal,
+  DndFleuronDivider
+} from './GothicIcons';
+import { Compass, BookOpen, MapPin, Skull, ChevronRight, Sparkles, Network, Flame, ShieldAlert, Anchor } from 'lucide-react';
 
 interface CampaignHubProps {
   onNavigate: (id: string) => void;
@@ -13,168 +24,341 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
   onOpenCharacterBuilder,
   onOpenGraph
 }) => {
-  const [selectedCampaign, setSelectedCampaign] = useState<'all' | 'curse-of-strahd' | 'ra-golvek' | 'vyrun'>('all');
+  const [selectedFilter, setSelectedFilter] = useState<'all' | 'curse-of-strahd' | 'ra-golvek' | 'vyrun'>('all');
 
-  const campaigns = [
-    {
-      id: 'curse-of-strahd',
-      title: 'Curse of Strahd',
-      tagline: 'Gothic Horror in the Mists of Barovia',
-      summary: 'A mist-shrouded valley isolated from the multiverse, ruled over by the ancient vampire lord Strahd von Zarovich from Castle Ravenloft.',
-      theme: 'Gothic Horror, Survival, Mystery',
-      color: 'border-rose-900/50 bg-rose-950/20 text-rose-300',
-      badgeColor: 'bg-rose-950 text-rose-300 border-rose-800',
-      icon: <Skull className="w-5 h-5 text-rose-400" />,
-      ruleLink: 'campaigns/curse-of-strahd/rules/alterations-to-magic',
-      hubLink: 'campaigns/curse-of-strahd/index'
-    },
-    {
-      id: 'ra-golvek',
-      title: "Ra Gol'vek",
-      tagline: 'Coastal Kingdom Intrigue & Ancient Magics',
-      summary: 'A realm of coastal ports, arcane guilds, and political power struggles caught between seafaring dangers and ancient awakenings.',
-      theme: 'Intrigue, Nautical, High Magic',
-      color: 'border-cyan-900/50 bg-cyan-950/20 text-cyan-300',
-      badgeColor: 'bg-cyan-950 text-cyan-300 border-cyan-800',
-      icon: <Compass className="w-5 h-5 text-cyan-400" />,
-      ruleLink: 'campaigns/ra-golvek/rules/index',
-      hubLink: 'campaigns/ra-golvek/index'
-    },
-    {
-      id: 'vyrun',
-      title: 'Vyrun',
-      tagline: 'Frontier Exploration & Ancient Mysteries',
-      summary: 'An untamed frontier territory filled with perilous wilderness, forgotten dungeons, and ancient primal powers awaiting rediscovery.',
-      theme: 'Exploration, Wilderness, Discovery',
-      color: 'border-emerald-900/50 bg-emerald-950/20 text-emerald-300',
-      badgeColor: 'bg-emerald-950 text-emerald-300 border-emerald-800',
-      icon: <MapPin className="w-5 h-5 text-emerald-400" />,
-      ruleLink: 'campaigns/vyrun/rules/index',
-      hubLink: 'campaigns/vyrun/index'
-    }
-  ];
-
-  // Campaign specific entries
   const campaignEntries = archiveDb.entries.filter(e => e.category === 'campaigns' || e.campaign_id);
 
+  const filteredEntries = selectedFilter === 'all'
+    ? campaignEntries
+    : campaignEntries.filter(e => e.campaign_id === selectedFilter || e.path.includes(selectedFilter));
+
   return (
-    <div className="max-w-6xl mx-auto space-y-6">
-      {/* Top Banner */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-xl">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div>
-            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-400 mb-1">
-              <Compass className="w-4 h-4" />
-              <span>Worlds of Adventure</span>
+    <div className="max-w-6xl mx-auto space-y-8 pb-12">
+      {/* Ancient Chronicles & Worlds Banner */}
+      <div className="relative overflow-hidden rounded-2xl border-2 border-amber-900/50 bg-gradient-to-b from-stone-900 via-stone-950 to-stone-950 p-6 md:p-9 shadow-2xl">
+        {/* Subtle decorative corner flourishes */}
+        <div className="absolute top-2 left-2 text-amber-700/40 text-xs font-serif select-none">╔</div>
+        <div className="absolute top-2 right-2 text-amber-700/40 text-xs font-serif select-none">╗</div>
+        <div className="absolute bottom-2 left-2 text-amber-700/40 text-xs font-serif select-none">╚</div>
+        <div className="absolute bottom-2 right-2 text-amber-700/40 text-xs font-serif select-none">╝</div>
+
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-xs font-serif tracking-widest uppercase text-amber-500 font-semibold">
+              <CrossedSwords className="w-4 h-4 text-amber-400" />
+              <span>The Grand Campaign Archives • 5th Edition</span>
             </div>
-            <h1 className="font-fantasy text-3xl md:text-4xl font-bold text-slate-100">
-              Campaigns & Settings
+            <h1 className="font-fantasy text-3xl md:text-5xl font-bold tracking-tight text-amber-100 drop-shadow-md">
+              Worlds of Blood & Myth
             </h1>
-            <p className="text-slate-400 text-sm mt-1">
-              Select an active campaign to access world lore, unique house rules, NPCs, places, and session notes.
+            <p className="text-stone-400 text-sm md:text-base max-w-2xl leading-relaxed font-sans">
+              Chronicles, regional house rules, dramatis personae, and cartographic notes from our running table sagas.
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-2.5">
+          <div className="flex flex-wrap items-center gap-3 shrink-0">
             <button
               onClick={onOpenCharacterBuilder}
-              className="px-3.5 py-2 rounded-xl bg-amber-500 text-slate-950 hover:bg-amber-400 font-semibold text-xs transition-colors flex items-center gap-1.5 shadow"
+              className="px-4 py-2.5 rounded-lg bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-stone-950 hover:from-amber-500 hover:to-amber-400 font-fantasy font-bold text-xs uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg shadow-amber-950/60 border border-amber-400/40"
             >
-              <Sparkles className="w-4 h-4" />
-              <span>Character Builder</span>
+              <CrossedSwords className="w-4 h-4" />
+              <span>Forge a Hero</span>
             </button>
             <button
               onClick={onOpenGraph}
-              className="px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-200 text-xs font-medium transition-colors flex items-center gap-1.5"
+              className="px-4 py-2.5 rounded-lg bg-stone-900 hover:bg-stone-800 border border-stone-700 text-stone-200 text-xs font-serif uppercase tracking-wider transition-all flex items-center gap-2 shadow"
             >
-              <Network className="w-4 h-4 text-indigo-400" />
-              <span>Knowledge Graph</span>
+              <Network className="w-4 h-4 text-amber-400" />
+              <span>Living Map</span>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Campaign Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        {campaigns.map(camp => (
-          <div
-            key={camp.id}
-            className={`rounded-2xl border p-5 flex flex-col justify-between space-y-4 transition-all hover:scale-[1.01] ${camp.color}`}
-          >
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <div className="p-2 rounded-xl bg-slate-950/80 border border-slate-800">
-                  {camp.icon}
-                </div>
-                <span className={`text-[10px] font-semibold uppercase px-2.5 py-0.5 rounded-full border ${camp.badgeColor}`}>
-                  {camp.theme}
-                </span>
-              </div>
+      {/* The Three Great Campaign Tomes */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* ========================================================= */}
+        {/* CURSE OF STRAHD - GOTHIC VAMPIRE HORROR TOME              */}
+        {/* ========================================================= */}
+        <div className="relative group rounded-2xl border-2 border-rose-900/60 bg-gradient-to-b from-stone-950 via-rose-950/30 to-stone-950 p-6 flex flex-col justify-between space-y-6 shadow-[0_4px_30px_rgba(136,19,55,0.22)] hover:border-rose-700 transition-all">
+          {/* Gothic Mist Accent Glow */}
+          <div className="absolute inset-0 bg-radial from-rose-900/10 via-transparent to-transparent pointer-events-none rounded-2xl" />
 
-              <div>
-                <h3 className="font-fantasy font-bold text-xl text-slate-100">
-                  {camp.title}
-                </h3>
-                <div className="text-xs font-medium text-amber-300/90 mt-0.5">
-                  {camp.tagline}
+          <div className="space-y-4 relative z-10">
+            {/* Header: Crest + Wax Seal */}
+            <div className="flex items-center justify-between border-b border-rose-900/40 pb-3">
+              <div className="flex items-center gap-2.5">
+                <RavenloftCrest className="w-7 h-7 text-rose-500" />
+                <div>
+                  <span className="font-serif tracking-widest uppercase text-[10px] text-rose-400 font-bold block">
+                    Domain of Dread
+                  </span>
+                  <span className="text-[11px] text-stone-400 italic">Barovian Mists</span>
                 </div>
               </div>
-
-              <p className="text-xs text-slate-300 leading-relaxed">
-                {camp.summary}
-              </p>
+              <WaxSeal label="S" className="w-8 h-8" />
             </div>
 
-            <div className="pt-3 border-t border-slate-800/80 space-y-2">
-              <button
-                onClick={() => onNavigate(camp.hubLink)}
-                className="w-full py-2 px-3 rounded-xl bg-slate-950 hover:bg-slate-900 border border-slate-800 text-xs font-semibold text-amber-400 hover:text-amber-200 transition-colors flex items-center justify-between"
-              >
-                <span>Enter Campaign Hub</span>
-                <ChevronRight className="w-4 h-4" />
-              </button>
+            {/* Title & Gothic Inscription */}
+            <div>
+              <h2 className="font-fantasy text-2xl font-bold tracking-wide text-rose-100 group-hover:text-rose-200 transition-colors">
+                Curse of Strahd
+              </h2>
+              <div className="font-serif italic text-xs text-rose-300/80 mt-1">
+                "I am the Ancient. I am the Land. My beginnings are lost in darkness..."
+              </div>
+            </div>
 
-              <button
-                onClick={() => onNavigate(camp.ruleLink)}
-                className="w-full py-1.5 px-3 rounded-xl hover:bg-slate-950/60 text-xs text-slate-400 hover:text-slate-200 transition-colors flex items-center justify-between"
-              >
-                <span>Special Rules & Alterations</span>
-                <BookOpen className="w-3.5 h-3.5 opacity-60" />
-              </button>
+            {/* Narrative Flavor Text */}
+            <p className="text-xs text-stone-300 leading-relaxed font-sans">
+              A mist-shrouded valley severed from the multiverse. Lord Strahd von Zarovich rules Barovia from the spires of Castle Ravenloft, hunting heroes who dared step into the fog.
+            </p>
+
+            {/* Gothic Traits */}
+            <div className="grid grid-cols-2 gap-2 text-[11px] font-serif pt-1">
+              <div className="bg-rose-950/50 border border-rose-900/40 rounded p-2 text-rose-200 flex items-center gap-1.5">
+                <GothicBat className="w-3.5 h-3.5 text-rose-400 shrink-0" />
+                <span>Eternal Twilight</span>
+              </div>
+              <div className="bg-rose-950/50 border border-rose-900/40 rounded p-2 text-rose-200 flex items-center gap-1.5">
+                <GothicChalice className="w-3.5 h-3.5 text-rose-400 shrink-0" />
+                <span>Souls Entrapped</span>
+              </div>
             </div>
           </div>
-        ))}
+
+          {/* Action Buttons */}
+          <div className="pt-4 border-t border-rose-900/50 space-y-2 relative z-10">
+            <button
+              onClick={() => onNavigate('campaigns/curse-of-strahd/index')}
+              className="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-rose-950 via-rose-900 to-rose-950 hover:from-rose-900 hover:to-rose-800 border border-rose-700/80 text-xs font-fantasy font-bold uppercase tracking-wider text-rose-100 transition-all flex items-center justify-between shadow-md"
+            >
+              <span className="flex items-center gap-2">
+                <GothicRaven className="w-4 h-4 text-rose-400" />
+                <span>Enter Barovia Hub</span>
+              </span>
+              <ChevronRight className="w-4 h-4 text-rose-400" />
+            </button>
+
+            <button
+              onClick={() => onNavigate('campaigns/curse-of-strahd/rules/alterations-to-magic')}
+              className="w-full py-1.5 px-3 rounded-lg hover:bg-rose-950/50 text-[11px] font-serif text-rose-400/90 hover:text-rose-200 transition-colors flex items-center justify-between"
+            >
+              <span>Alterations to Magic in Ravenloft</span>
+              <span className="text-[10px] uppercase tracking-wider">Gothic Laws →</span>
+            </button>
+          </div>
+        </div>
+
+        {/* ========================================================= */}
+        {/* RA GOL'VEK - COASTAL KINGDOM INTRIGUE & ARCANE TIDES      */}
+        {/* ========================================================= */}
+        <div className="relative group rounded-2xl border-2 border-cyan-900/60 bg-gradient-to-b from-stone-950 via-cyan-950/25 to-stone-950 p-6 flex flex-col justify-between space-y-6 shadow-[0_4px_30px_rgba(8,145,178,0.15)] hover:border-cyan-700 transition-all">
+          <div className="space-y-4 relative z-10">
+            {/* Header */}
+            <div className="flex items-center justify-between border-b border-cyan-900/40 pb-3">
+              <div className="flex items-center gap-2.5">
+                <Anchor className="w-6 h-6 text-cyan-400" />
+                <div>
+                  <span className="font-serif tracking-widest uppercase text-[10px] text-cyan-400 font-bold block">
+                    Seafaring & Intrigue
+                  </span>
+                  <span className="text-[11px] text-stone-400 italic">Abyssal Currents</span>
+                </div>
+              </div>
+              <div className="text-xs font-serif uppercase tracking-widest text-cyan-500 px-2 py-0.5 rounded border border-cyan-800/60 bg-cyan-950/40">
+                Guildlands
+              </div>
+            </div>
+
+            {/* Title */}
+            <div>
+              <h2 className="font-fantasy text-2xl font-bold tracking-wide text-cyan-100 group-hover:text-cyan-200 transition-colors">
+                Ra Gol'vek
+              </h2>
+              <div className="font-serif italic text-xs text-cyan-300/80 mt-1">
+                "Where high guilds barter steel, tide-sorcery, and sovereignty."
+              </div>
+            </div>
+
+            <p className="text-xs text-stone-300 leading-relaxed font-sans">
+              Coastal ports, competing mercantile houses, and forgotten ocean relics. Heroes navigate treacherous political waters as ancient primordial deeps awaken.
+            </p>
+
+            <div className="grid grid-cols-2 gap-2 text-[11px] font-serif pt-1">
+              <div className="bg-cyan-950/50 border border-cyan-900/40 rounded p-2 text-cyan-200 flex items-center gap-1.5">
+                <Compass className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                <span>Nautical Arcana</span>
+              </div>
+              <div className="bg-cyan-950/50 border border-cyan-900/40 rounded p-2 text-cyan-200 flex items-center gap-1.5">
+                <DragonShield className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                <span>Guild Warfare</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-4 border-t border-cyan-900/50 space-y-2 relative z-10">
+            <button
+              onClick={() => onNavigate('campaigns/ra-golvek/index')}
+              className="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-cyan-950 via-cyan-900 to-cyan-950 hover:from-cyan-900 hover:to-cyan-800 border border-cyan-700/80 text-xs font-fantasy font-bold uppercase tracking-wider text-cyan-100 transition-all flex items-center justify-between shadow-md"
+            >
+              <span>Explore Ra Gol'vek</span>
+              <ChevronRight className="w-4 h-4 text-cyan-400" />
+            </button>
+
+            <button
+              onClick={() => onNavigate('campaigns/ra-golvek/rules/index')}
+              className="w-full py-1.5 px-3 rounded-lg hover:bg-cyan-950/50 text-[11px] font-serif text-cyan-400/90 hover:text-cyan-200 transition-colors flex items-center justify-between"
+            >
+              <span>Coastal Treaties & House Rules</span>
+              <span className="text-[10px] uppercase tracking-wider">Codex →</span>
+            </button>
+          </div>
+        </div>
+
+        {/* ========================================================= */}
+        {/* VYRUN - PRIMAL UNTAMED FRONTIER                           */}
+        {/* ========================================================= */}
+        <div className="relative group rounded-2xl border-2 border-emerald-900/60 bg-gradient-to-b from-stone-950 via-emerald-950/25 to-stone-950 p-6 flex flex-col justify-between space-y-6 shadow-[0_4px_30px_rgba(5,150,105,0.15)] hover:border-emerald-700 transition-all">
+          <div className="space-y-4 relative z-10">
+            {/* Header */}
+            <div className="flex items-center justify-between border-b border-emerald-900/40 pb-3">
+              <div className="flex items-center gap-2.5">
+                <Flame className="w-6 h-6 text-emerald-400" />
+                <div>
+                  <span className="font-serif tracking-widest uppercase text-[10px] text-emerald-400 font-bold block">
+                    Untamed Frontier
+                  </span>
+                  <span className="text-[11px] text-stone-400 italic">Primal Wilderness</span>
+                </div>
+              </div>
+              <div className="text-xs font-serif uppercase tracking-widest text-emerald-500 px-2 py-0.5 rounded border border-emerald-800/60 bg-emerald-950/40">
+                Pioneer Realm
+              </div>
+            </div>
+
+            {/* Title */}
+            <div>
+              <h2 className="font-fantasy text-2xl font-bold tracking-wide text-emerald-100 group-hover:text-emerald-200 transition-colors">
+                Vyrun
+              </h2>
+              <div className="font-serif italic text-xs text-emerald-300/80 mt-1">
+                "Beyond the border forts lie primordial ruins and beast-gods."
+              </div>
+            </div>
+
+            <p className="text-xs text-stone-300 leading-relaxed font-sans">
+              A dangerous wilderness frontier awaiting brave expeditions. Ancient megaliths, primeval beasts, and lost dungeons challenge those carving civilization from the wild.
+            </p>
+
+            <div className="grid grid-cols-2 gap-2 text-[11px] font-serif pt-1">
+              <div className="bg-emerald-950/50 border border-emerald-900/40 rounded p-2 text-emerald-200 flex items-center gap-1.5">
+                <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                <span>Expeditions</span>
+              </div>
+              <div className="bg-emerald-950/50 border border-emerald-900/40 rounded p-2 text-emerald-200 flex items-center gap-1.5">
+                <SpellTome className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                <span>Lost Megaliths</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="pt-4 border-t border-emerald-900/50 space-y-2 relative z-10">
+            <button
+              onClick={() => onNavigate('campaigns/vyrun/index')}
+              className="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 hover:from-emerald-900 hover:to-emerald-800 border border-emerald-700/80 text-xs font-fantasy font-bold uppercase tracking-wider text-emerald-100 transition-all flex items-center justify-between shadow-md"
+            >
+              <span>Venture into Vyrun</span>
+              <ChevronRight className="w-4 h-4 text-emerald-400" />
+            </button>
+
+            <button
+              onClick={() => onNavigate('campaigns/vyrun/rules/index')}
+              className="w-full py-1.5 px-3 rounded-lg hover:bg-emerald-950/50 text-[11px] font-serif text-emerald-400/90 hover:text-emerald-200 transition-colors flex items-center justify-between"
+            >
+              <span>Wilderness Survival Rules</span>
+              <span className="text-[10px] uppercase tracking-wider">Manual →</span>
+            </button>
+          </div>
+        </div>
       </div>
 
-      {/* Recent Campaign Records Directory */}
-      <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 space-y-4">
-        <h3 className="font-fantasy text-lg font-bold text-slate-100 flex items-center gap-2">
-          <BookOpen className="w-4 h-4 text-amber-400" />
-          <span>Campaign Lore & Entries Directory</span>
-        </h3>
+      <DndFleuronDivider variant="amber" />
 
+      {/* Campaign Archives Directory */}
+      <div className="rounded-2xl border-2 border-stone-800 bg-stone-900/80 p-6 md:p-8 space-y-5 shadow-2xl">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-stone-800 pb-4">
+          <div className="flex items-center gap-3">
+            <BookOpen className="w-5 h-5 text-amber-500" />
+            <div>
+              <h3 className="font-fantasy text-xl font-bold text-stone-100">
+                Campaign Lore, Characters & Sessions Codex
+              </h3>
+              <p className="text-xs text-stone-400 mt-0.5">
+                Filter documents by active campaign saga.
+              </p>
+            </div>
+          </div>
+
+          {/* Campaign Filter Tabs */}
+          <div className="flex flex-wrap items-center gap-1.5 bg-stone-950 p-1 rounded-xl border border-stone-800">
+            {[
+              { id: 'all', label: 'All Chronicles' },
+              { id: 'curse-of-strahd', label: 'Curse of Strahd' },
+              { id: 'ra-golvek', label: "Ra Gol'vek" },
+              { id: 'vyrun', label: 'Vyrun' }
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setSelectedFilter(tab.id as typeof selectedFilter)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-serif transition-colors ${
+                  selectedFilter === tab.id
+                    ? 'bg-amber-600 text-stone-950 font-bold shadow'
+                    : 'text-stone-400 hover:text-stone-200'
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Entries Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {campaignEntries.slice(0, 15).map(entry => (
-            <button
-              key={entry.id}
-              onClick={() => onNavigate(entry.id)}
-              className="p-3 rounded-xl bg-slate-950/60 hover:bg-slate-950 border border-slate-800 hover:border-amber-500/40 text-left transition-all space-y-1 group"
-            >
-              <div className="flex items-center justify-between text-xs">
-                <span className="font-medium text-slate-200 group-hover:text-amber-300 transition-colors truncate">
-                  {entry.title}
-                </span>
-                <span className="text-[10px] text-slate-500 uppercase shrink-0">
-                  {entry.campaign_id || 'Campaign'}
-                </span>
-              </div>
-              {entry.summary && (
-                <p className="text-[11px] text-slate-400 line-clamp-1">
-                  {entry.summary}
-                </p>
-              )}
-            </button>
-          ))}
+          {filteredEntries.map(entry => {
+            const isStrahdEntry = entry.campaign_id === 'curse-of-strahd' || entry.path.includes('curse-of-strahd');
+            return (
+              <button
+                key={entry.id}
+                onClick={() => onNavigate(entry.id)}
+                className={`p-3.5 rounded-xl border text-left transition-all space-y-1.5 group ${
+                  isStrahdEntry
+                    ? 'bg-stone-950/80 border-rose-950/60 hover:border-rose-600 hover:bg-rose-950/20'
+                    : 'bg-stone-950/80 border-stone-800/80 hover:border-amber-500/50 hover:bg-stone-900'
+                }`}
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <h4 className="font-serif font-bold text-stone-200 group-hover:text-amber-300 text-sm transition-colors truncate">
+                    {entry.title}
+                  </h4>
+                  {isStrahdEntry ? (
+                    <span className="text-[10px] font-serif uppercase tracking-wider text-rose-400 shrink-0">
+                      Barovia
+                    </span>
+                  ) : (
+                    <span className="text-[10px] font-serif uppercase tracking-wider text-amber-500/80 shrink-0">
+                      {entry.campaign_id?.replace('-', ' ') || 'Chronicle'}
+                    </span>
+                  )}
+                </div>
+                {entry.summary && (
+                  <p className="text-xs text-stone-400 line-clamp-2 leading-relaxed">
+                    {entry.summary}
+                  </p>
+                )}
+              </button>
+            );
+          })}
         </div>
       </div>
     </div>

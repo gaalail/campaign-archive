@@ -260,3 +260,8 @@ export function getSpellLevelLabel(level: number | null | undefined): string {
   if (level !== null && level !== undefined) return `${level}th-Level`;
   return 'Cantrip';
 }
+
+export function getAllMonsters(): ArchiveEntry[] {
+  return archiveDb.entries.filter(e => e.category === 'monsters' && !e.id.endsWith('/index'));
+}
+

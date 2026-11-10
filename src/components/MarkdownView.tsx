@@ -3,6 +3,7 @@ import { resolveWikilink, getSourceBadgeInfo } from '../utils/archiveUtils';
 import { AlertTriangle, Info, Lightbulb, ShieldAlert, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
 import { SpellCatalogue } from './SpellCatalogue';
 import { CompendiumEmbed } from './CompendiumEmbed';
+import { DndFleuronDivider } from './GothicIcons';
 
 interface MarkdownViewProps {
   content: string;
@@ -255,7 +256,8 @@ const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigat
   const [isOpen, setIsOpen] = useState(!block.isFolded);
 
   if (block.type === 'divider') {
-    return <hr className="border-slate-800 my-6" />;
+    const isStrahd = currentEntryId?.includes('curse-of-strahd');
+    return <DndFleuronDivider variant={isStrahd ? 'crimson' : 'amber'} className="my-6" />;
   }
 
   if (block.type === 'embed' && block.target) {
@@ -321,37 +323,43 @@ const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigat
 
   if (block.type === 'header') {
     const text = block.rawText || '';
+    const isStrahd = currentEntryId?.includes('curse-of-strahd');
     if (block.level === 1) {
       return (
-        <h1 className="text-2xl md:text-3xl font-bold text-amber-300 border-b border-amber-900/40 pb-2 mt-6 mb-4">
+        <h1 className={`font-fantasy text-2xl md:text-3xl font-bold tracking-wide ${isStrahd ? 'text-rose-200 border-b border-rose-900/60' : 'text-amber-200 border-b border-amber-900/40'} pb-2 mt-7 mb-4`}>
           <InlineContent text={text} onNavigate={onNavigate} />
         </h1>
       );
     }
     if (block.level === 2) {
       return (
-        <h2 className="text-xl md:text-2xl font-semibold text-slate-100 border-b border-slate-800 pb-1.5 mt-6 mb-3">
+        <h2 className={`font-fantasy text-xl md:text-2xl font-bold tracking-wide ${isStrahd ? 'text-rose-100 border-b border-rose-950' : 'text-stone-100 border-b border-stone-800'} pb-1.5 mt-6 mb-3`}>
           <InlineContent text={text} onNavigate={onNavigate} />
         </h2>
       );
     }
     if (block.level === 3) {
       return (
-        <h3 className="text-lg md:text-xl font-medium text-amber-200 mt-4 mb-2">
+        <h3 className={`font-serif text-lg md:text-xl font-bold ${isStrahd ? 'text-rose-300' : 'text-amber-300'} mt-5 mb-2`}>
           <InlineContent text={text} onNavigate={onNavigate} />
         </h3>
       );
     }
     return (
-      <h4 className="text-base font-medium text-slate-200 mt-3 mb-1">
+      <h4 className={`font-serif text-base font-bold ${isStrahd ? 'text-rose-400' : 'text-amber-400/90'} mt-4 mb-1`}>
         <InlineContent text={text} onNavigate={onNavigate} />
       </h4>
     );
   }
 
   if (block.type === 'blockquote') {
+    const isStrahd = currentEntryId?.includes('curse-of-strahd');
     return (
-      <blockquote className="my-3 border-l-2 border-amber-500/60 bg-slate-900/40 py-2.5 px-4 rounded-r-lg italic text-slate-300 space-y-2">
+      <blockquote className={`my-4 border-l-4 py-3 px-4 rounded-r-lg font-serif italic text-stone-200 space-y-2 shadow-sm ${
+        isStrahd
+          ? 'border-rose-700/80 bg-rose-950/20 text-rose-100'
+          : 'border-amber-600/70 bg-stone-900/60 text-amber-100/90'
+      }`}>
         <MarkdownView content={block.rawText || ''} currentEntryId={currentEntryId} onNavigate={onNavigate} />
       </blockquote>
     );
@@ -736,58 +744,67 @@ const StatblockRenderer: React.FC<{ rawYaml: string }> = ({ rawYaml }) => {
   const statLabels = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
 
   return (
-    <div className="my-5 rounded-2xl border-2 border-amber-600/50 bg-slate-950 p-5 shadow-2xl space-y-4 max-w-2xl not-prose">
+    <div className="my-6 rounded-lg border-y-4 border-amber-800/80 bg-gradient-to-b from-[#1c1815] via-[#161311] to-[#120f0d] p-5 shadow-[0_8px_30px_rgba(0,0,0,0.6)] space-y-3.5 max-w-2xl not-prose font-serif">
       {/* Title & Type */}
-      <div className="border-b border-amber-900/60 pb-2.5">
-        <h3 className="font-fantasy text-2xl font-bold text-amber-300">{name}</h3>
-        {sizeType && <div className="text-xs text-slate-400 italic capitalize">{sizeType}</div>}
+      <div className="border-b-2 border-amber-900/60 pb-2">
+        <h3 className="font-fantasy text-2xl font-bold text-amber-300 tracking-wider uppercase">{name}</h3>
+        {sizeType && <div className="text-xs text-stone-400 italic capitalize font-serif">{sizeType}</div>}
+      </div>
+
+      {/* Decorative filigree rule */}
+      <div className="text-[10px] text-amber-700/60 flex items-center justify-center gap-2 select-none">
+        <span>❖</span>
+        <span className="w-16 h-px bg-amber-800/40"></span>
+        <span>⚔</span>
+        <span className="w-16 h-px bg-amber-800/40"></span>
+        <span>❖</span>
       </div>
 
       {/* AC, HP, Speed Bar */}
       <div className="space-y-1 text-xs border-b border-amber-900/40 pb-3">
         {parsed.ac && (
-          <div><strong className="text-amber-200">Armor Class:</strong> <span className="text-slate-300">{parsed.ac}</span></div>
+          <div><strong className="text-amber-400 font-bold uppercase tracking-wider text-[11px]">Armor Class:</strong> <span className="text-stone-200 font-sans ml-1">{parsed.ac}</span></div>
         )}
         {parsed.hp && (
-          <div><strong className="text-amber-200">Hit Points:</strong> <span className="text-slate-300">{parsed.hp}</span></div>
+          <div><strong className="text-amber-400 font-bold uppercase tracking-wider text-[11px]">Hit Points:</strong> <span className="text-stone-200 font-sans ml-1">{parsed.hp}</span></div>
         )}
         {parsed.speed && (
-          <div><strong className="text-amber-200">Speed:</strong> <span className="text-slate-300">{parsed.speed}</span></div>
+          <div><strong className="text-amber-400 font-bold uppercase tracking-wider text-[11px]">Speed:</strong> <span className="text-stone-200 font-sans ml-1">{parsed.speed}</span></div>
         )}
       </div>
 
       {/* Ability Scores Table */}
-      <div className="grid grid-cols-6 gap-2 text-center bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
+      <div className="grid grid-cols-6 gap-2 text-center bg-stone-900/70 p-2.5 rounded-lg border border-amber-900/30">
         {statLabels.map((lbl, idx) => {
           const val = stats[idx] || 10;
           return (
             <div key={lbl} className="space-y-0.5">
-              <div className="text-[10px] font-bold text-amber-400">{lbl}</div>
-              <div className="text-xs font-semibold text-slate-200">{val}</div>
-              <div className="text-[10px] font-mono text-slate-400">({calcMod(val)})</div>
+              <div className="text-[10px] font-bold text-amber-400 tracking-wider">{lbl}</div>
+              <div className="text-xs font-semibold text-stone-100 font-sans">{val}</div>
+              <div className="text-[10px] font-mono text-stone-400">({calcMod(val)})</div>
             </div>
           );
         })}
       </div>
 
       {/* Defenses, Senses, Languages */}
-      <div className="space-y-1 text-xs border-b border-amber-900/40 pb-3 text-slate-300">
-        {parsed.skills && <div><strong className="text-amber-200">Skills:</strong> {parsed.skills}</div>}
-        {parsed.damage_vulnerabilities && <div><strong className="text-amber-200">Damage Vulnerabilities:</strong> {parsed.damage_vulnerabilities}</div>}
-        {parsed.damage_resistances && <div><strong className="text-amber-200">Damage Resistances:</strong> {parsed.damage_resistances}</div>}
-        {parsed.damage_immunities && <div><strong className="text-amber-200">Damage Immunities:</strong> {parsed.damage_immunities}</div>}
-        {parsed.condition_immunities && <div><strong className="text-amber-200">Condition Immunities:</strong> {parsed.condition_immunities}</div>}
-        {parsed.senses && <div><strong className="text-amber-200">Senses:</strong> {parsed.senses}</div>}
-        {parsed.languages && <div><strong className="text-amber-200">Languages:</strong> {parsed.languages}</div>}
+      <div className="space-y-1 text-xs border-b border-amber-900/40 pb-3 text-stone-300">
+        {parsed.skills && <div><strong className="text-amber-400 uppercase tracking-wider text-[11px] font-bold">Skills:</strong> <span className="font-sans ml-1">{parsed.skills}</span></div>}
+        {parsed.damage_vulnerabilities && <div><strong className="text-amber-400 uppercase tracking-wider text-[11px] font-bold">Damage Vulnerabilities:</strong> <span className="font-sans ml-1">{parsed.damage_vulnerabilities}</span></div>}
+        {parsed.damage_resistances && <div><strong className="text-amber-400 uppercase tracking-wider text-[11px] font-bold">Damage Resistances:</strong> <span className="font-sans ml-1">{parsed.damage_resistances}</span></div>}
+        {parsed.damage_immunities && <div><strong className="text-amber-400 uppercase tracking-wider text-[11px] font-bold">Damage Immunities:</strong> <span className="font-sans ml-1">{parsed.damage_immunities}</span></div>}
+        {parsed.condition_immunities && <div><strong className="text-amber-400 uppercase tracking-wider text-[11px] font-bold">Condition Immunities:</strong> <span className="font-sans ml-1">{parsed.condition_immunities}</span></div>}
+        {parsed.senses && <div><strong className="text-amber-400 uppercase tracking-wider text-[11px] font-bold">Senses:</strong> <span className="font-sans ml-1">{parsed.senses}</span></div>}
+        {parsed.languages && <div><strong className="text-amber-400 uppercase tracking-wider text-[11px] font-bold">Languages:</strong> <span className="font-sans ml-1">{parsed.languages}</span></div>}
       </div>
 
       {/* Traits */}
       {parsed.traits && parsed.traits.length > 0 && (
         <div className="space-y-2 border-b border-amber-900/40 pb-3">
           {parsed.traits.map((t: any, idx: number) => (
-            <div key={idx} className="text-xs leading-relaxed text-slate-300">
-              <strong className="text-amber-200 italic mr-1">{t.name}.</strong>
-              <span>{t.desc}</span>
+            <div key={idx} className="text-xs leading-relaxed text-stone-300">
+              <strong className="text-amber-300 italic mr-1 font-bold">{t.name}.</strong>
+              <span className="font-sans">{t.desc}</span>
             </div>
           ))}
         </div>
@@ -796,11 +813,13 @@ const StatblockRenderer: React.FC<{ rawYaml: string }> = ({ rawYaml }) => {
       {/* Actions */}
       {parsed.actions && parsed.actions.length > 0 && (
         <div className="space-y-2.5">
-          <h4 className="font-fantasy text-sm font-bold text-amber-400 uppercase tracking-wider border-b border-amber-950 pb-1">Actions</h4>
+          <h4 className="font-fantasy text-sm font-bold text-amber-400 uppercase tracking-widest border-b border-amber-900/40 pb-1 flex items-center gap-1.5">
+            <span>Actions</span>
+          </h4>
           {parsed.actions.map((a: any, idx: number) => (
-            <div key={idx} className="text-xs leading-relaxed text-slate-300">
-              <strong className="text-amber-200 italic mr-1">{a.name}.</strong>
-              <span>{a.desc}</span>
+            <div key={idx} className="text-xs leading-relaxed text-stone-300">
+              <strong className="text-amber-300 italic mr-1 font-bold">{a.name}.</strong>
+              <span className="font-sans">{a.desc}</span>
             </div>
           ))}
         </div>

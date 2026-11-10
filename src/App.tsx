@@ -8,8 +8,9 @@ import { KnowledgeGraph } from './components/KnowledgeGraph';
 import { getEntryById } from './utils/archiveUtils';
 
 import { SpellCatalogue } from './components/SpellCatalogue';
+import { BestiaryCatalogue } from './components/BestiaryCatalogue';
 
-export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells';
+export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells' | 'monsters';
 
 export default function App() {
   const [view, setView] = useState<AppView>('reader');
@@ -34,6 +35,12 @@ export default function App() {
     if (id === 'items/index' || id === 'items') {
       setView('items');
       setEntryId(id);
+      setSidebarOpen(false);
+      return;
+    }
+    if (id === 'monsters/index' || id === 'monsters' || id === 'bestiary') {
+      setView('monsters');
+      setEntryId('monsters/index');
       setSidebarOpen(false);
       return;
     }
@@ -81,6 +88,7 @@ export default function App() {
         {view === 'reader' && entry && <EntryDetail key={entry.id} entry={entry} onNavigate={navigate} />}
         {view === 'reader' && !entry && <div className="text-slate-400">Entry not found.</div>}
         {view === 'spells' && <SpellCatalogue onSelectSpell={navigate} />}
+        {view === 'monsters' && <BestiaryCatalogue onSelectMonster={navigate} />}
         {view === 'builder' && <CharacterBuilder onNavigateToEntry={navigate} />}
         {view === 'items' && <ItemCatalogue onSelectItem={navigate} />}
         {view === 'campaigns' && <CampaignHub onNavigate={navigate} onOpenCharacterBuilder={() => setView('builder')} onOpenGraph={() => setView('graph')} />}

@@ -13,6 +13,8 @@ import {
 } from '../utils/archiveUtils';
 import { MarkdownView, InlineContent } from './MarkdownView';
 import { SpellCatalogue } from './SpellCatalogue';
+import { MonsterStatblock } from './MonsterStatblock';
+import { BestiaryCatalogue } from './BestiaryCatalogue';
 import {
   ArrowLeft,
   BookOpen,
@@ -38,6 +40,17 @@ import {
   Package,
   Network
 } from 'lucide-react';
+import {
+  GothicRaven,
+  GothicBat,
+  GothicChalice,
+  CrossedSwords,
+  SpellTome,
+  DragonShield,
+  RavenloftCrest,
+  WaxSeal,
+  DndFleuronDivider
+} from './GothicIcons';
 
 interface EntryDetailProps {
   entry: ArchiveEntry;
@@ -69,47 +82,100 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const sourceBadge = getSourceBadgeInfo(entry.source_type, entry.source);
   const rarityBadge = entry.rarity ? getRarityColor(entry.rarity) : null;
 
-  // Breadcrumbs
-  const isHome = entry.id === 'index' || entry.category === 'home';
-  const breadcrumbParts = isHome ? ['Home Hub'] : entry.path.replace(/\.md$/, '').split('/');
+  // Breadcrumbs & Navigation state
+  const breadcrumbParts = useMemo(() => entry.path.split('/').filter(Boolean), [entry.path]);
+  const isHome = entry.id === 'index' || entry.id === 'home' || entry.category === 'home';
+  const isClass = entry.category === 'classes' || entry.entity_type === 'class';
+  const isSubclass = entry.category === 'subclasses' || entry.entity_type === 'subclass';
+  const isSpell = entry.category === 'spells' || entry.entity_type === 'spell';
 
-  // If this entry is a class, find its subclasses and options
-  const isClass = entry.category === 'classes' && !entry.id.endsWith('/index');
-  const isSubclass = entry.category === 'subclasses' && !entry.id.endsWith('/index');
-  const subclasses = isClass ? getSubclassesForClass(entry.title) : [];
-  const classOptions = isClass ? getClassOptionsForClass(entry.title) : [];
-  const classSpells = (isClass || isSubclass) ? getSpellsForClass(entry.title) : [];
-
-  // Guaranteed safe active tab (never stays stuck on subclasses if not a class)
-  const effectiveTab = useMemo(() => {
-    if (activeTab === 'subclasses' && !isClass) return 'content';
-    if (activeTab === 'options' && !isClass) return 'content';
-    if (activeTab === 'spells' && classSpells.length === 0) return 'content';
-    return activeTab;
-  }, [activeTab, isClass, classSpells.length]);
-
-  // If this entry is an individual spell
-  const isSpell = entry.category === 'spells' && !entry.id.endsWith('/index');
-  const spellLevel = entry.level !== null && entry.level !== undefined ? entry.level : (entry.frontmatter?.level ?? 0);
-  const spellSchool = entry.school || entry.frontmatter?.school || '';
+  // Spell attributes
+  const spellLevel = entry.level ?? (entry.frontmatter?.level !== undefined ? Number(entry.frontmatter.level) : 0);
+  const spellSchool = entry.school || entry.frontmatter?.school || 'Universal';
   const castingTime = entry.casting_time || entry.frontmatter?.casting_time || '';
   const range = entry.range || entry.frontmatter?.range || '';
-  const duration = entry.duration || entry.frontmatter?.duration || '';
   const components = entry.components || entry.frontmatter?.components || '';
-  const ritual = entry.ritual ?? Boolean(entry.frontmatter?.ritual);
-  const concentration = entry.concentration ?? Boolean(entry.frontmatter?.concentration);
-  const spellClasses: string[] = entry.classes || entry.frontmatter?.classes || [];
-  const subclassSpellLists: string[] = entry.subclass_spell_lists || entry.frontmatter?.subclass_spell_lists || [];
+  const duration = entry.duration || entry.frontmatter?.duration || '';
+  const concentration = entry.concentration ?? entry.frontmatter?.concentration ?? false;
+  const ritual = entry.ritual ?? entry.frontmatter?.ritual ?? false;
+  const spellClasses: string[] = entry.classes || (Array.isArray(entry.frontmatter?.classes) ? entry.frontmatter.classes : []);
+  const subclassSpellLists: string[] = entry.subclass_spell_lists || (Array.isArray(entry.frontmatter?.subclasses) ? entry.frontmatter.subclasses : []);
+
+  // Class & Subclass related compendiums
+  const subclasses = useMemo(() => isClass ? getSubclassesForClass(entry.title || entry.id) : [], [isClass, entry.title, entry.id]);
+  const classOptions = useMemo(() => isClass ? getClassOptionsForClass(entry.title || entry.id) : [], [isClass, entry.title, entry.id]);
+  const classSpells = useMemo(() => (isClass || isSubclass) ? getSpellsForClass(entry.title || entry.id) : [], [isClass, isSubclass, entry.title, entry.id]);
+
+  const effectiveTab = useMemo(() => {
+    const validTabs: string[] = ['content'];
+    if (classSpells.length > 0) validTabs.push('spells');
+    if (subclasses.length > 0) validTabs.push('subclasses');
+    if (classOptions.length > 0) validTabs.push('options');
+    if (entry.incomingLinks && entry.incomingLinks.length > 0) validTabs.push('backlinks');
+    return validTabs.includes(activeTab) ? activeTab : 'content';
+  }, [activeTab, classSpells.length, subclasses.length, classOptions.length, entry.incomingLinks]);
+
+  // Campaign ambiance detection
+  const isStrahd = entry.campaign_id === 'curse-of-strahd' || entry.path.includes('curse-of-strahd') || entry.id.includes('curse-of-strahd');
+  const isStrahdIndex = isStrahd && (entry.id.endsWith('/index') || entry.id === 'campaigns/curse-of-strahd');
+
+  const isMonster = entry.category === 'monsters' && !entry.id.endsWith('/index');
+  const isMonsterIndex = entry.id === 'monsters/index' || entry.id === 'monsters' || (entry.category === 'monsters' && entry.id.endsWith('/index'));
+
+  // If this is the Bestiary index, render the dedicated Bestiary Catalogue
+  if (isMonsterIndex) {
+    return (
+      <div className="max-w-6xl mx-auto space-y-6">
+        {/* Top Breadcrumb */}
+        <div className="flex items-center justify-between p-3.5 rounded-xl border border-stone-800 bg-stone-900/80 text-stone-400 text-xs font-serif">
+          <div className="flex items-center gap-2">
+            {onBack && (
+              <button
+                onClick={onBack}
+                className="text-amber-400 hover:text-amber-200 flex items-center gap-1 font-semibold mr-1 transition-colors"
+              >
+                <ArrowLeft className="w-3.5 h-3.5" />
+                <span>Back</span>
+              </button>
+            )}
+            <button
+              onClick={() => onNavigate('index')}
+              className="hover:text-stone-200 uppercase tracking-wider font-semibold transition-colors"
+            >
+              Archive
+            </button>
+            <span className="text-stone-600 font-serif">❖</span>
+            <span className="text-amber-300 font-bold capitalize">Bestiary Codex</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <WaxSeal label="5e" className="w-5 h-5 text-[9px]" />
+            <span className="font-serif tracking-widest text-[10px] uppercase font-bold text-amber-300 px-2 py-0.5 rounded border border-amber-900/60 bg-amber-950/40">
+              Monster Manual
+            </span>
+          </div>
+        </div>
+
+        <BestiaryCatalogue onSelectMonster={onNavigate} />
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-5xl mx-auto space-y-6">
       {/* Top Navigation & Breadcrumb */}
-      <div className="flex flex-wrap items-center justify-between gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
-        <div className="flex items-center gap-2 text-xs text-slate-400 overflow-x-auto py-0.5">
+      <div className={`flex flex-wrap items-center justify-between gap-3 p-3.5 rounded-xl border-2 transition-all ${
+        isStrahd
+          ? 'bg-stone-950/90 border-rose-950/80 text-rose-300/80 shadow-[0_2px_15px_rgba(136,19,55,0.15)]'
+          : 'bg-stone-900/80 border-stone-800 text-stone-400'
+      }`}>
+        <div className="flex items-center gap-2 text-xs font-serif overflow-x-auto py-0.5">
           {onBack && (
             <button
               onClick={onBack}
-              className="flex items-center gap-1 text-amber-400 hover:text-amber-200 font-medium transition-colors mr-1"
+              className={`flex items-center gap-1 font-serif transition-colors mr-1 ${
+                isStrahd ? 'text-rose-400 hover:text-rose-200' : 'text-amber-400 hover:text-amber-200'
+              }`}
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>Back</span>
@@ -118,49 +184,185 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
           <button
             onClick={() => onNavigate('index')}
-            className="hover:text-slate-200 transition-colors"
+            className="hover:text-stone-200 transition-colors uppercase tracking-wider font-semibold"
           >
             Archive
           </button>
 
           {breadcrumbParts.map((part, idx) => (
             <React.Fragment key={idx}>
-              <ChevronRight className="w-3 h-3 text-slate-600 shrink-0" />
-              <span className={`capitalize ${idx === breadcrumbParts.length - 1 ? 'text-amber-300 font-semibold' : 'text-slate-400'}`}>
+              <span className="text-stone-600 font-serif">❖</span>
+              <span className={`capitalize ${
+                idx === breadcrumbParts.length - 1
+                  ? (isStrahd ? 'text-rose-300 font-bold' : 'text-amber-300 font-bold')
+                  : 'text-stone-400'
+              }`}>
                 {part.replace(/-/g, ' ')}
               </span>
             </React.Fragment>
           ))}
         </div>
 
-        {/* Source Badge */}
+        {/* Source Badge - Medieval Wax / Heraldic Style */}
         <div className="flex items-center gap-2">
-          <div
-            className={`px-2.5 py-1 rounded-full text-xs font-semibold border flex items-center gap-1.5 ${sourceBadge.bg} ${sourceBadge.text} ${sourceBadge.border}`}
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-current" />
-            <span>{sourceBadge.label}</span>
-          </div>
+          {isStrahd ? (
+            <div className="flex items-center gap-2">
+              <WaxSeal label="S" className="w-5 h-5 text-[9px]" />
+              <span className="font-serif tracking-widest text-[10px] uppercase font-bold text-rose-300 px-2 py-0.5 rounded border border-rose-900/60 bg-rose-950/40">
+                Ravenloft Saga
+              </span>
+            </div>
+          ) : (
+            <div
+              className={`px-2.5 py-0.5 rounded border text-[10px] font-serif uppercase tracking-widest font-bold flex items-center gap-1.5 ${sourceBadge.bg} ${sourceBadge.text} ${sourceBadge.border}`}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-current" />
+              <span>{sourceBadge.label}</span>
+            </div>
+          )}
 
           {entry.content_status === 'incomplete' && (
-            <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-950/60 text-amber-400 border border-amber-500/30 flex items-center gap-1">
+            <span className="px-2 py-0.5 rounded text-[10px] font-serif uppercase tracking-wider font-bold bg-amber-950/60 text-amber-400 border border-amber-500/30 flex items-center gap-1">
               <AlertTriangle className="w-3 h-3" />
-              <span>Incomplete Entry</span>
+              <span>Incomplete</span>
             </span>
           )}
         </div>
       </div>
 
-      {/* Main Entry Container */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 shadow-2xl space-y-6">
+      {/* Main Entry Container with Gothic or Codex theme */}
+      <div className={`relative rounded-2xl p-6 md:p-8 space-y-6 transition-all ${
+        isStrahd
+          ? 'bg-gradient-to-b from-stone-950 via-stone-900 to-rose-950/30 border-2 border-rose-900/60 shadow-[0_0_40px_rgba(136,19,55,0.22)]'
+          : 'bg-stone-900/90 border-2 border-stone-800 shadow-2xl'
+      }`}>
+        {/* Decorative corner brackets */}
+        <div className={`absolute top-2.5 left-2.5 text-xs font-serif select-none pointer-events-none ${isStrahd ? 'text-rose-800/40' : 'text-amber-800/30'}`}>╔</div>
+        <div className={`absolute top-2.5 right-2.5 text-xs font-serif select-none pointer-events-none ${isStrahd ? 'text-rose-800/40' : 'text-amber-800/30'}`}>╗</div>
+        <div className={`absolute bottom-2.5 left-2.5 text-xs font-serif select-none pointer-events-none ${isStrahd ? 'text-rose-800/40' : 'text-amber-800/30'}`}>╚</div>
+        <div className={`absolute bottom-2.5 right-2.5 text-xs font-serif select-none pointer-events-none ${isStrahd ? 'text-rose-800/40' : 'text-amber-800/30'}`}>╝</div>
+
+        {/* Strahd Gothic Banner */}
+        {isStrahd && (
+          <div className="p-4 rounded-xl border border-rose-900/70 bg-gradient-to-r from-rose-950/90 via-stone-950 to-rose-950/90 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-lg">
+            <div className="flex items-start gap-3">
+              <RavenloftCrest className="w-8 h-8 text-rose-500 shrink-0 mt-0.5" />
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-2">
+                  <span className="font-fantasy font-bold text-xs uppercase tracking-widest text-rose-300">
+                    Domain of Dread • Barovia
+                  </span>
+                  <span className="text-[10px] font-serif text-rose-400 italic">Land of the Vampire Lord</span>
+                </div>
+                <p className="text-xs text-rose-200/90 font-serif italic leading-relaxed">
+                  "The mists hem in the valley. The dead walk unquiet, and Count Strahd watches from his perch upon the pillarstone of Ravenloft."
+                </p>
+              </div>
+            </div>
+
+            {!entry.id.endsWith('alterations-to-magic') && (
+              <button
+                onClick={() => onNavigate('campaigns/curse-of-strahd/rules/alterations-to-magic')}
+                className="px-3 py-1.5 rounded-lg bg-rose-950 hover:bg-rose-900 border border-rose-800 text-xs font-serif uppercase tracking-wider text-rose-200 transition-colors shrink-0 flex items-center gap-1.5"
+              >
+                <GothicBat className="w-3.5 h-3.5 text-rose-400" />
+                <span>Alterations to Magic →</span>
+              </button>
+            )}
+          </div>
+        )}
+
+        {/* Strahd Index Portal Cards */}
+        {isStrahdIndex && (
+          <div className="my-5 space-y-3.5">
+            <div className="text-xs font-fantasy uppercase tracking-wider text-rose-400 flex items-center gap-2">
+              <GothicRaven className="w-4 h-4 text-rose-400" />
+              <span>Barovian Sagas & Gothic Records</span>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              <button
+                onClick={() => onNavigate('campaigns/curse-of-strahd/rules/alterations-to-magic')}
+                className="p-3.5 rounded-xl border border-rose-900/60 bg-rose-950/30 hover:bg-rose-950/60 hover:border-rose-700 transition-all text-left space-y-1.5 group"
+              >
+                <div className="flex items-center justify-between">
+                  <GothicChalice className="w-5 h-5 text-rose-400" />
+                  <span className="text-[10px] font-serif uppercase tracking-widest text-rose-400 font-bold">Rules</span>
+                </div>
+                <h4 className="font-fantasy font-bold text-sm text-rose-100 group-hover:text-rose-200">
+                  Alterations to Magic
+                </h4>
+                <p className="text-[11px] text-stone-400 leading-snug">
+                  Cosmetic horrors, planar entrapment, and corrupted divine magic.
+                </p>
+              </button>
+
+              <button
+                onClick={() => onNavigate('campaigns/curse-of-strahd/rules/index')}
+                className="p-3.5 rounded-xl border border-rose-900/60 bg-rose-950/30 hover:bg-rose-950/60 hover:border-rose-700 transition-all text-left space-y-1.5 group"
+              >
+                <div className="flex items-center justify-between">
+                  <SpellTome className="w-5 h-5 text-rose-400" />
+                  <span className="text-[10px] font-serif uppercase tracking-widest text-rose-400 font-bold">Codex</span>
+                </div>
+                <h4 className="font-fantasy font-bold text-sm text-rose-100 group-hover:text-rose-200">
+                  Barovian Calendar & Lore
+                </h4>
+                <p className="text-[11px] text-stone-400 leading-snug">
+                  Day cycle, the Mists, the Dark Powers, and geography.
+                </p>
+              </button>
+
+              <button
+                onClick={() => onNavigate('builder')}
+                className="p-3.5 rounded-xl border border-rose-900/60 bg-rose-950/30 hover:bg-rose-950/60 hover:border-rose-700 transition-all text-left space-y-1.5 group"
+              >
+                <div className="flex items-center justify-between">
+                  <CrossedSwords className="w-5 h-5 text-rose-400" />
+                  <span className="text-[10px] font-serif uppercase tracking-widest text-rose-400 font-bold">Builder</span>
+                </div>
+                <h4 className="font-fantasy font-bold text-sm text-rose-100 group-hover:text-rose-200">
+                  Create Barovian Hero
+                </h4>
+                <p className="text-[11px] text-stone-400 leading-snug">
+                  Haunted One background, grim subclasses, and gothic lineage.
+                </p>
+              </button>
+
+              <button
+                onClick={() => onNavigate('spells')}
+                className="p-3.5 rounded-xl border border-rose-900/60 bg-rose-950/30 hover:bg-rose-950/60 hover:border-rose-700 transition-all text-left space-y-1.5 group"
+              >
+                <div className="flex items-center justify-between">
+                  <GothicBat className="w-5 h-5 text-rose-400" />
+                  <span className="text-[10px] font-serif uppercase tracking-widest text-rose-400 font-bold">Spells</span>
+                </div>
+                <h4 className="font-fantasy font-bold text-sm text-rose-100 group-hover:text-rose-200">
+                  Spells in the Shadows
+                </h4>
+                <p className="text-[11px] text-stone-400 leading-snug">
+                  Necromancy, radiant wards, and abjurations to survive the night.
+                </p>
+              </button>
+            </div>
+          </div>
+        )}
+
         {/* Entry Title & Metadata Header */}
-        <div className="border-b border-slate-800 pb-5">
+        <div className={`border-b pb-5 ${isStrahd ? 'border-rose-900/60' : 'border-stone-800'}`}>
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
-              <span className="text-xs uppercase font-semibold tracking-wider text-slate-400 block mb-1">
-                {isHome ? '5e D&D Reference Vault' : (entry.category.replace('-', ' ') + (entry.subcategory ? ` • ${entry.subcategory.replace('-', ' ')}` : ''))}
+              <span className={`text-xs font-serif uppercase tracking-widest block mb-1 font-bold ${
+                isStrahd ? 'text-rose-400' : 'text-stone-400'
+              }`}>
+                {isStrahd
+                  ? 'Curse of Strahd • Gothic Campaign Chronicle'
+                  : isHome
+                    ? '5e D&D Reference Vault'
+                    : (entry.category.replace('-', ' ') + (entry.subcategory ? ` • ${entry.subcategory.replace('-', ' ')}` : ''))}
               </span>
-              <h1 className="font-fantasy text-3xl md:text-4xl font-bold text-slate-100">
+              <h1 className={`font-fantasy text-3xl md:text-5xl font-bold tracking-tight drop-shadow-sm ${
+                isStrahd ? 'text-rose-100' : 'text-amber-100'
+              }`}>
                 {entry.title}
               </h1>
             </div>
@@ -169,7 +371,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             {entry.parentClass && (
               <button
                 onClick={() => onNavigate(`character-options/classes/${entry.parentClass}`)}
-                className="px-3 py-1.5 rounded-xl bg-slate-950 border border-slate-800 text-xs text-amber-400 hover:text-amber-200 hover:border-amber-500/40 flex items-center gap-1.5 transition-colors font-medium"
+                className="px-3.5 py-1.5 rounded-lg bg-stone-950 border border-stone-800 text-xs font-serif tracking-wider uppercase text-amber-400 hover:text-amber-200 hover:border-amber-500/40 flex items-center gap-1.5 transition-colors font-medium"
               >
                 <span>Class: {entry.parentClass}</span>
                 <ExternalLink className="w-3.5 h-3.5" />
@@ -393,54 +595,57 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
         {/* Dedicated Rich Spell Stat Block Card */}
         {isSpell && (
-          <div className="bg-slate-950/80 border border-violet-500/30 rounded-xl p-5 space-y-4 shadow-inner">
-            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
-              <div className="text-base font-semibold text-violet-300">
-                {spellLevel === 0 ? `${spellSchool} Cantrip` : `${getSpellLevelLabel(spellLevel)} ${spellSchool}`}
+          <div className="bg-stone-950/90 border-2 border-amber-900/50 rounded-xl p-5 space-y-4 shadow-[0_4px_25px_rgba(0,0,0,0.5)]">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-amber-900/30 pb-3">
+              <div className="flex items-center gap-2.5">
+                <SpellTome className="w-5 h-5 text-amber-400" />
+                <div className="font-fantasy text-lg font-bold text-amber-300 tracking-wide">
+                  {spellLevel === 0 ? `${spellSchool} Cantrip` : `${getSpellLevelLabel(spellLevel)} ${spellSchool}`}
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 {concentration && (
-                  <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-950/70 text-blue-300 border border-blue-500/40">
+                  <span className="font-serif tracking-widest text-[10px] uppercase font-bold px-2.5 py-0.5 rounded border border-blue-900/70 bg-blue-950/40 text-blue-300">
                     Concentration
                   </span>
                 )}
                 {ritual && (
-                  <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-950/70 text-emerald-300 border border-emerald-500/40">
+                  <span className="font-serif tracking-widest text-[10px] uppercase font-bold px-2.5 py-0.5 rounded border border-emerald-900/70 bg-emerald-950/40 text-emerald-300">
                     Ritual
                   </span>
                 )}
               </div>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
-              <div>
-                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Casting Time</span>
-                <span className="text-slate-200 font-medium">{castingTime || '1 action'}</span>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs font-serif">
+              <div className="bg-stone-900/60 p-2.5 rounded-lg border border-stone-800">
+                <span className="text-amber-500/80 uppercase tracking-widest block font-bold text-[10px]">Casting Time</span>
+                <span className="text-stone-200 font-sans font-medium text-xs mt-0.5 block">{castingTime || '1 action'}</span>
               </div>
-              <div>
-                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Range</span>
-                <span className="text-slate-200 font-medium">{range || 'Self'}</span>
+              <div className="bg-stone-900/60 p-2.5 rounded-lg border border-stone-800">
+                <span className="text-amber-500/80 uppercase tracking-widest block font-bold text-[10px]">Range</span>
+                <span className="text-stone-200 font-sans font-medium text-xs mt-0.5 block">{range || 'Self'}</span>
               </div>
-              <div>
-                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Components</span>
-                <span className="text-slate-200 font-mono">{components || 'V, S'}</span>
+              <div className="bg-stone-900/60 p-2.5 rounded-lg border border-stone-800">
+                <span className="text-amber-500/80 uppercase tracking-widest block font-bold text-[10px]">Components</span>
+                <span className="text-amber-200/90 font-mono text-xs mt-0.5 block">{components || 'V, S'}</span>
               </div>
-              <div>
-                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Duration</span>
-                <span className="text-slate-200 font-medium">{duration || 'Instantaneous'}</span>
+              <div className="bg-stone-900/60 p-2.5 rounded-lg border border-stone-800">
+                <span className="text-amber-500/80 uppercase tracking-widest block font-bold text-[10px]">Duration</span>
+                <span className="text-stone-200 font-sans font-medium text-xs mt-0.5 block">{duration || 'Instantaneous'}</span>
               </div>
             </div>
 
             {(spellClasses.length > 0 || subclassSpellLists.length > 0) && (
-              <div className="pt-3 border-t border-slate-800/80 space-y-2 text-xs">
+              <div className="pt-3 border-t border-amber-900/30 space-y-2 text-xs">
                 {spellClasses.length > 0 && (
                   <div className="flex flex-wrap items-center gap-1.5">
-                    <span className="text-slate-400 font-medium">Classes:</span>
+                    <span className="text-stone-400 font-serif font-bold uppercase tracking-wider text-[11px]">Classes:</span>
                     {spellClasses.map(cls => (
                       <button
                         key={cls}
                         onClick={() => onNavigate(`character-options/classes/${cls}`)}
-                        className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 hover:border-violet-500 text-slate-200 hover:text-violet-300 transition-colors font-medium text-xs"
+                        className="px-2.5 py-1 rounded-lg bg-stone-900 border border-stone-800 hover:border-amber-500/60 text-stone-300 hover:text-amber-200 transition-colors font-serif text-xs font-semibold"
                       >
                         {cls}
                       </button>
@@ -450,11 +655,11 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
                 {subclassSpellLists.length > 0 && (
                   <div className="flex flex-wrap items-center gap-1.5">
-                    <span className="text-violet-400 font-medium">Subclass Lists:</span>
+                    <span className="text-violet-400 font-serif font-bold uppercase tracking-wider text-[11px]">Subclasses:</span>
                     {subclassSpellLists.map(sc => (
                       <span
                         key={sc}
-                        className="px-2.5 py-1 rounded-lg bg-violet-950/60 border border-violet-800/50 text-violet-200 text-[11px]"
+                        className="px-2.5 py-1 rounded-lg bg-violet-950/50 border border-violet-900/50 text-violet-300 font-serif text-[11px]"
                       >
                         {sc}
                       </span>
@@ -468,43 +673,47 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
         {/* Dedicated Magic Item Quick Card */}
         {entry.category === 'items' && !entry.id.endsWith('/index') && (
-          <div className="bg-slate-950/80 border border-amber-500/30 rounded-xl p-4 sm:p-5 space-y-3 shadow-inner">
-            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
-              <div className="text-sm font-semibold text-amber-200">
-                {entry.item_type || entry.subcategory || 'Magic Item'}
+          <div className="bg-stone-950/90 border-2 border-amber-900/50 rounded-xl p-5 space-y-4 shadow-[0_4px_25px_rgba(0,0,0,0.5)]">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-amber-900/30 pb-3">
+              <div className="flex items-center gap-2.5">
+                <DragonShield className="w-5 h-5 text-amber-400" />
+                <div className="font-fantasy text-lg font-bold text-amber-200 tracking-wide">
+                  {entry.item_type || entry.subcategory || 'Magic Item'}
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 {rarityBadge && (
-                  <span className={`px-2.5 py-0.5 rounded-full text-xs font-semibold border ${rarityBadge.bg} ${rarityBadge.text} ${rarityBadge.border}`}>
+                  <span className={`font-serif tracking-widest text-[10px] uppercase font-bold px-2.5 py-0.5 rounded border ${rarityBadge.bg} ${rarityBadge.text} ${rarityBadge.border}`}>
                     {entry.rarity}
                   </span>
                 )}
                 {entry.attunement && (
-                  <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-purple-950/70 text-purple-300 border border-purple-500/40">
+                  <span className="font-serif tracking-widest text-[10px] uppercase font-bold px-2.5 py-0.5 rounded border border-purple-900/70 bg-purple-950/40 text-purple-300">
                     Attunement Required
                   </span>
                 )}
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-4 text-xs text-slate-400">
-              <div>
-                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Category</span>
-                <span className="text-slate-200 font-medium">{entry.subcategory || entry.item_type || 'Item'}</span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs font-serif">
+              <div className="bg-stone-900/60 p-2.5 rounded-lg border border-stone-800">
+                <span className="text-amber-500/80 uppercase tracking-widest block font-bold text-[10px]">Category</span>
+                <span className="text-stone-200 font-sans font-medium text-xs mt-0.5 block">{entry.subcategory || entry.item_type || 'Item'}</span>
               </div>
-              <div>
-                <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Source</span>
-                <span className="text-slate-200 font-medium">{entry.source || 'SRD 5.1'}</span>
+              <div className="bg-stone-900/60 p-2.5 rounded-lg border border-stone-800">
+                <span className="text-amber-500/80 uppercase tracking-widest block font-bold text-[10px]">Source</span>
+                <span className="text-stone-200 font-sans font-medium text-xs mt-0.5 block">{entry.source || 'SRD 5.1'}</span>
               </div>
               {entry.frontmatter?.weight && (
-                <div>
-                  <span className="text-slate-500 uppercase tracking-wider block font-semibold text-[10px]">Weight</span>
-                  <span className="text-slate-200 font-medium">{entry.frontmatter.weight}</span>
+                <div className="bg-stone-900/60 p-2.5 rounded-lg border border-stone-800">
+                  <span className="text-amber-500/80 uppercase tracking-widest block font-bold text-[10px]">Weight</span>
+                  <span className="text-stone-200 font-sans font-medium text-xs mt-0.5 block">{entry.frontmatter.weight}</span>
                 </div>
               )}
             </div>
           </div>
         )}
+
 
         {/* Navigation Tabs for Classes and Subclasses with Spells */}
         {(isClass || (isSubclass && classSpells.length > 0)) && (
@@ -581,7 +790,11 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
         {/* Tab 1: Markdown Content */}
         {effectiveTab === 'content' && (
           <div className="space-y-6">
-            <MarkdownView content={entry.body} currentEntryId={entry.id} onNavigate={onNavigate} />
+            {isMonster ? (
+              <MonsterStatblock entry={entry} onNavigate={onNavigate} />
+            ) : (
+              <MarkdownView content={entry.body} currentEntryId={entry.id} onNavigate={onNavigate} />
+            )}
 
             {/* If this is the spells index page or a level index page */}
             {entry.category === 'spells' && entry.id.endsWith('/index') && entry.id !== 'index' && (

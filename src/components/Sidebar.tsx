@@ -15,14 +15,22 @@ import {
   Network,
   Home,
   Menu,
-  X
+  X,
+  Anchor
 } from 'lucide-react';
+import {
+  GothicRaven,
+  GothicBat,
+  CrossedSwords,
+  SpellTome,
+  DragonShield
+} from './GothicIcons';
 
 interface SidebarProps {
   currentEntryId: string | null;
-  currentView: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells';
+  currentView: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells' | 'monsters';
   onNavigateToEntry: (id: string) => void;
-  onSetView: (view: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells') => void;
+  onSetView: (view: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells' | 'monsters') => void;
   isOpen: boolean;
   onClose: () => void;
 }
@@ -75,7 +83,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
         }`}
       >
         {/* Brand Header */}
-        <div className="p-4 border-b border-slate-800 flex items-center justify-between">
+        <div className="p-4 border-b border-stone-800 flex items-center justify-between bg-stone-950/80">
           <button
             onClick={() => {
               onSetView('reader');
@@ -84,42 +92,42 @@ export const Sidebar: React.FC<SidebarProps> = ({
             }}
             className="flex items-center gap-2.5 text-left group"
           >
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center text-slate-950 font-bold shadow-md shadow-amber-500/20">
-              ⚔️
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-600 via-amber-700 to-amber-900 border border-amber-500/40 flex items-center justify-center text-amber-200 font-bold shadow-md shadow-amber-950/80">
+              <CrossedSwords className="w-4 h-4 text-amber-200" />
             </div>
             <div>
-              <div className="font-fantasy font-bold text-slate-100 text-sm group-hover:text-amber-400 transition-colors">
+              <div className="font-fantasy font-bold text-amber-100 text-sm tracking-wide group-hover:text-amber-300 transition-colors">
                 Campaign Archive
               </div>
-              <div className="text-[10px] text-slate-400 uppercase tracking-wider font-semibold">
-                5e D&D Reference
+              <div className="text-[10px] text-amber-600/90 uppercase tracking-widest font-serif font-bold">
+                5e Codex & Grimoire
               </div>
             </div>
           </button>
 
           <button
             onClick={onClose}
-            className="p-1.5 text-slate-400 hover:text-white rounded-lg hover:bg-slate-800 lg:hidden"
+            className="p-1.5 text-stone-400 hover:text-white rounded-lg hover:bg-stone-800 lg:hidden"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Primary Views Hub */}
-        <div className="p-3 border-b border-slate-800 space-y-1">
+        <div className="p-3 border-b border-stone-800 space-y-1">
           <button
             onClick={() => {
               onSetView('reader');
               onNavigateToEntry('index');
               onClose();
             }}
-            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
               currentView === 'reader' && (currentEntryId === 'index' || !currentEntryId)
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                ? 'bg-amber-600 text-stone-950 shadow-md'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
             }`}
           >
-            <Home className="w-4 h-4" />
+            <Compass className="w-4 h-4 text-amber-400" />
             <span>Home Hub</span>
           </button>
 
@@ -128,13 +136,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onSetView('builder');
               onClose();
             }}
-            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
               currentView === 'builder'
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                ? 'bg-amber-600 text-stone-950 shadow-md'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
             }`}
           >
-            <Sparkles className="w-4 h-4 text-amber-400" />
+            <CrossedSwords className="w-4 h-4 text-amber-400" />
             <span>Character Builder</span>
           </button>
 
@@ -143,13 +151,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onSetView('graph');
               onClose();
             }}
-            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
               currentView === 'graph'
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                ? 'bg-amber-600 text-stone-950 shadow-md'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
             }`}
           >
-            <Network className="w-4 h-4 text-indigo-400" />
+            <Network className="w-4 h-4 text-amber-300" />
             <span>Knowledge Graph</span>
           </button>
 
@@ -158,14 +166,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onSetView('spells');
               onClose();
             }}
-            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
               currentView === 'spells'
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                ? 'bg-amber-600 text-stone-950 shadow-md'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
             }`}
           >
-            <Sparkles className="w-4 h-4 text-violet-400" />
-            <span>Spell Compendium ({spells.length})</span>
+            <SpellTome className="w-4 h-4 text-violet-400" />
+            <span>Grimoire ({spells.length})</span>
           </button>
 
           <button
@@ -174,29 +182,29 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onNavigateToEntry('rules/index');
               onClose();
             }}
-            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
               currentView === 'reader' && currentEntryId?.startsWith('rules/')
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                ? 'bg-amber-600 text-stone-950 shadow-md'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
             }`}
           >
             <BookOpen className="w-4 h-4 text-teal-400" />
-            <span>Rules Compendium ({rules.length})</span>
+            <span>Rules Codex ({rules.length})</span>
           </button>
 
           <button
             onClick={() => {
-              onSetView('reader');
+              onSetView('monsters');
               onNavigateToEntry('monsters/index');
               onClose();
             }}
-            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
-              currentView === 'reader' && currentEntryId?.startsWith('monsters/')
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
+              currentView === 'monsters' || (currentView === 'reader' && currentEntryId?.startsWith('monsters/'))
+                ? 'bg-amber-600 text-stone-950 shadow-md font-bold'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
             }`}
           >
-            <Shield className="w-4 h-4 text-red-400" />
+            <GothicBat className={`w-4 h-4 ${currentView === 'monsters' ? 'text-stone-950' : 'text-rose-400'}`} />
             <span>Bestiary ({monsters.length})</span>
           </button>
 
@@ -205,14 +213,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onSetView('items');
               onClose();
             }}
-            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
               currentView === 'items'
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                ? 'bg-amber-600 text-stone-950 shadow-md'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
             }`}
           >
-            <Sparkles className="w-4 h-4 text-purple-400" />
-            <span>Items Compendium</span>
+            <DragonShield className="w-4 h-4 text-amber-400" />
+            <span>Armory & Relics</span>
           </button>
 
           <button
@@ -220,38 +228,53 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onSetView('campaigns');
               onClose();
             }}
-            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold transition-all ${
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
               currentView === 'campaigns'
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-300 hover:bg-slate-800 hover:text-white'
+                ? 'bg-amber-600 text-stone-950 shadow-md'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
             }`}
           >
-            <Compass className="w-4 h-4 text-emerald-400" />
-            <span>Campaign Directory</span>
+            <GothicRaven className="w-4 h-4 text-rose-400" />
+            <span>Campaign Chronicles</span>
           </button>
         </div>
 
         {/* Scrollable Tree Navigation */}
-        <div className="flex-1 overflow-y-auto p-3 space-y-4 text-xs">
+        <div className="flex-1 overflow-y-auto p-3 space-y-4 text-xs font-sans">
           {/* CAMPAIGNS ACCORDION */}
           <div>
             <button
               onClick={() => toggleSection('campaigns')}
-              className="w-full flex items-center justify-between text-slate-400 hover:text-slate-200 font-semibold uppercase text-[11px] tracking-wider py-1"
+              className="w-full flex items-center justify-between text-stone-400 hover:text-stone-200 font-serif font-semibold uppercase text-[11px] tracking-wider py-1"
             >
               <div className="flex items-center gap-1.5">
-                <Compass className="w-3.5 h-3.5 text-amber-400" />
-                <span>Campaigns</span>
+                <Compass className="w-3.5 h-3.5 text-amber-500" />
+                <span>Campaign Realms</span>
               </div>
               {openSections.campaigns ? <ChevronDown className="w-3.5 h-3.5" /> : <ChevronRight className="w-3.5 h-3.5" />}
             </button>
 
             {openSections.campaigns && (
-              <div className="pl-2 mt-1 space-y-0.5 border-l border-slate-800">
+              <div className="pl-2 mt-1 space-y-0.5 border-l border-stone-800">
                 {[
-                  { id: 'campaigns/ra-golvek/index', title: "Ra Gol'vek" },
-                  { id: 'campaigns/vyrun/index', title: 'Vyrun' },
-                  { id: 'campaigns/curse-of-strahd/index', title: 'Curse of Strahd' }
+                  {
+                    id: 'campaigns/curse-of-strahd/index',
+                    title: 'Curse of Strahd',
+                    icon: <GothicRaven className="w-3.5 h-3.5 text-rose-400 shrink-0" />,
+                    activeClass: 'text-rose-200 bg-rose-950/60 font-serif font-bold border-l-2 border-rose-600'
+                  },
+                  {
+                    id: 'campaigns/ra-golvek/index',
+                    title: "Ra Gol'vek",
+                    icon: <Anchor className="w-3.5 h-3.5 text-cyan-400 shrink-0" />,
+                    activeClass: 'text-cyan-200 bg-cyan-950/60 font-serif font-bold border-l-2 border-cyan-600'
+                  },
+                  {
+                    id: 'campaigns/vyrun/index',
+                    title: 'Vyrun',
+                    icon: <Flame className="w-3.5 h-3.5 text-emerald-400 shrink-0" />,
+                    activeClass: 'text-emerald-200 bg-emerald-950/60 font-serif font-bold border-l-2 border-emerald-600'
+                  }
                 ].map(c => (
                   <button
                     key={c.id}
@@ -260,13 +283,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       onNavigateToEntry(c.id);
                       onClose();
                     }}
-                    className={`w-full text-left px-2.5 py-1.5 rounded-lg transition-colors truncate ${
+                    className={`w-full text-left px-2.5 py-1.5 rounded-lg transition-colors truncate flex items-center gap-2 ${
                       currentView === 'reader' && currentEntryId === c.id
-                        ? 'text-amber-400 bg-amber-500/10 font-semibold'
-                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
+                        ? c.activeClass
+                        : 'text-stone-400 hover:text-stone-200 hover:bg-stone-800/40 font-serif'
                     }`}
                   >
-                    {c.title}
+                    {c.icon}
+                    <span className="truncate">{c.title}</span>
                   </button>
                 ))}
               </div>

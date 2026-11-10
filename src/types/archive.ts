@@ -54,6 +54,13 @@ export interface ArchiveEntry {
   incomingLinks?: string[];
   flavor?: string;
   features?: SubclassFeature[];
+  cr?: string | number | null;
+  ac?: number | string | null;
+  hp?: number | string | null;
+  monster_type?: string | null;
+  size?: string | null;
+  speed?: string | null;
+  alignment?: string | null;
 }
 
 export interface SubclassFeature {

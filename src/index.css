@@ -1,8 +1,15 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+  --font-fantasy: "Cinzel", "Cinzel Decorative", Georgia, serif;
+  --font-gothic: "Cinzel Decorative", "Cinzel", Georgia, serif;
+  --font-medieval: "MedievalSharp", cursive, serif;
+  --font-serif: "Cinzel", Georgia, Cambria, serif;
+}
+
 @layer base {
   body {
-    @apply bg-slate-950 text-slate-100 font-sans;
+    @apply bg-stone-950 text-stone-200 font-sans selection:bg-rose-950/80 selection:text-rose-200 min-h-screen;
   }
 }

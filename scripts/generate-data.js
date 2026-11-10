@@ -322,6 +322,13 @@ for (const filePath of files) {
     components: frontmatter.components || null,
     ritual: Boolean(frontmatter.ritual),
     concentration: Boolean(frontmatter.concentration),
+    cr: frontmatter.cr !== undefined ? String(frontmatter.cr) : null,
+    ac: frontmatter.ac !== undefined ? String(frontmatter.ac) : null,
+    hp: frontmatter.hp !== undefined ? String(frontmatter.hp) : null,
+    monster_type: frontmatter.type || null,
+    size: frontmatter.size || null,
+    speed: frontmatter.speed || null,
+    alignment: frontmatter.alignment || null,
     frontmatter,
     body,
     wikilinks
