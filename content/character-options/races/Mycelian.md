@@ -10,35 +10,21 @@ source: "Curated Supplement"
 source_type: third-party
 ---
 
-# Mycelian
-
 *Sentient fungal networks that have colonized, preserved, and animated a humanoid host body in a symbiotic rebirth.*
 
 Mycelians are not born; they germinate. When a complex fungal network encounters a deceased humanoid in conditions of moisture and twilight, its filaments weave through muscle fibers, nervous tissue, and marrow, restoring life and motion to the shell. The resulting entity possesses its own collective consciousness while retaining muscle memory and biological remnants of the host.
 
----
-
 ## Mycelian Traits
 
-Your mycelian character exhibits hybrid qualities of both plant and the host humanoid form.
+**Ability score increase:** +2 CON, and one other ability score of your choice increases by 1  
+**Age:** A mycelian colony matures within days of claiming a host corpse. With proper moisture and sustenance, a host body can be maintained and rejuvenated for over a century.  
+**Alignment:** Driven by natural cycles of decomposition, renewal, and interconnected ecosystem balance, mycelians tend toward true neutral or neutral good alignments.  
+**Creature Type:** You are both a Humanoid and a Plant.  
+**Size:** Your size is Small or Medium, determined by the original species of your host body.  
+**Speed:** 30 feet (Medium) or 25 feet (Small)  
+**Languages:** You can speak, read, and write Common and one other language that your host body spoke in life.
 
-> [!info]- Ability Score Increase
-> Your Constitution score increases by 2, and one other ability score of your choice increases by 1 (typically reflecting your host body's original nature).
-
-> [!info]- Age
-> A mycelian colony matures within days of claiming a host corpse. With proper moisture and sustenance, a host body can be maintained and rejuvenated for over a century.
-
-> [!info]- Alignment
-> Driven by natural cycles of decomposition, renewal, and interconnected ecosystem balance, mycelians tend toward true neutral or neutral good alignments.
-
-> [!info]- Creature Type
-> You are both a Humanoid and a Plant. If a spell or effect affects either type, you are affected by it.
-
-> [!info]- Size
-> Your size is Small or Medium, determined by the original species of your host body.
-
-> [!info]- Speed
-> Your base walking speed is 30 feet if your host body was Medium, or 25 feet if your host body was Small.
+## Traits
 
 > [!info]- Symbiotic Assimilation
 > Your fungal lattice integrates biological strengths from the host body's genetic memory. Choose two of the following traits representing remnants of your host:
@@ -57,6 +43,3 @@ Your mycelian character exhibits hybrid qualities of both plant and the host hum
 
 > [!info]- Insporeation
 > If your physical body is slain and dies within 100 feet of an intact humanoid corpse that died within the last 10 days, your core spore cloud can attempt to migrate. Roll a d100; on a roll of 50 or higher, your fungal colony successfully colonizes the new body over the course of 24 hours, restoring you to life with 1 hit point in the new form (reselecting size, speed, and Symbiotic Assimilation traits to match the new host).
-
-> [!info]- Languages
-> You can speak, read, and write Common and one other language that your host body spoke in life.

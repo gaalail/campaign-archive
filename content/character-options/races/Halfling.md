@@ -10,6 +10,10 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+*The comforts of home are the goals of most halflings' lives: a place to settle in peace and quiet, far from marauding monsters, yet possessed of surprising courage and pluck.*
+
+## Halfling Traits
+
 **Ability score increase:** +2 DEX  
 **Age:** A halfling reaches adulthood at the age of 20 and generally lives into the middle of his or her second century.  
 **Alignment:** Most halflings are lawful good. As a rule, they are good-hearted and kind, hate to see others in pain, and have no tolerance for oppression. They are also very orderly and traditional, leaning heavily on the support of their community and the comfort of their old ways.  

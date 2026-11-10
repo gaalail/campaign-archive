@@ -10,6 +10,10 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+*Marked by the ancient infernal bloodline of their ancestors, tieflings survive and thrive through sheer force of will, wit, and charisma in a suspicious world.*
+
+## Tiefling Traits
+
 **Ability score increase:** +1 INT, +2 CHA  
 **Age:** Tieflings mature at the same rate as humans but live a few years longer.  
 **Alignment:** Tieflings might not have an innate tendency toward evil, but many of them end up there. Evil or not, an independent nature inclines many tieflings toward a chaotic alignment.  

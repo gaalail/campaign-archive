@@ -10,35 +10,21 @@ source: "Curated Supplement"
 source_type: third-party
 ---
 
-# Opteran
-
 *Fey insectoid travelers who undergo a miraculous life-cycle transformation from grounded larval spinners to iridescent winged adults.*
 
 Opterans are charming, fey-touched insectoid people reminiscent of moths, butterflies, and silkworms. They experience life in two dramatic stages: early in their adventuring careers, they walk as stout, multi-legged caterpillars equipped with spinnerets that shoot sticky restraining silk. Upon reaching greater maturity, they spin a silken cocoon and undergo a profound 24-hour metamorphosis, emerging as graceful winged humanoids with shimmering scales that cast entrancing auroras.
 
----
-
 ## Opteran Traits
 
-Your opteran character possesses distinct abilities across both stages of their life cycle.
+**Ability score increase:** +2 CHA, +1 to one other ability score of your choice  
+**Age:** Opterans spend their first 10 to 15 years in their larval phase before undergoing their transformative metamorphosis. Once transformed into adulthood, an opteran can live up to 120 years.  
+**Alignment:** Born of the vibrant curiosity and beauty of the Feywild, opterans are overwhelmingly chaotic good or neutral good.  
+**Creature Type:** You are both a Humanoid and a Fey. If a spell or effect affects either type, you are affected by it.  
+**Size:** Small in Larval Stage (Levels 1–4); Medium in Adult Stage (Level 5+)  
+**Speed:** 25 feet (Larval); 30 feet, fly 20 feet (Adult)  
+**Languages:** You can speak, read, and write Common and Sylvan.
 
-> [!info]- Ability Score Increase
-> Your Charisma score increases by 2, and one other ability score of your choice increases by 1.
-
-> [!info]- Age
-> Opterans spend their first 10 to 15 years in their larval phase before undergoing their transformative metamorphosis. Once transformed into adulthood, an opteran can live up to 120 years.
-
-> [!info]- Alignment
-> Born of the vibrant curiosity and beauty of the Feywild, opterans are overwhelmingly chaotic good or neutral good.
-
-> [!info]- Creature Type
-> You are both a Humanoid and a Fey. If a spell or effect affects either type, you are affected by it.
-
-> [!info]- Size and Metamorphosis
-> An opteran begins their adventuring life in the **Larval Stage** and undergoes **Metamorphosis** upon reaching 5th or 6th character level:
-> 
-> - **Larval Stage (Levels 1–4):** Your size is Small. Your base walking speed is 25 feet. While in this stage, you possess the *Many-Footed* and *String Shot* traits described below.
-> - **Adult Stage (Level 5+):** Upon completing a 24-hour chrysalis rest, you emerge as an adult. Your size becomes Medium, and your walking speed increases to 30 feet. You lose the *Many-Footed* and *String Shot* traits and permanently gain the *Flight* and *Radiant Wings* traits described below.
+## Traits
 
 ### Larval Traits (Levels 1–4)
 
@@ -56,5 +42,3 @@ Your opteran character possesses distinct abilities across both stages of their 
 > [!info]- Radiant Wings
 > Your wings are covered in microscopic prismatic dust that sparkles under light. You have advantage on all Charisma checks made to influence, persuade, or perform for humanoids and beasts that can see your wings. In addition, you can shed bright light in a 10-foot radius and dim light for an additional 10 feet as a bonus action, or extinguish it as a bonus action.
 
-> [!info]- Languages
-> You can speak, read, and write Common and Sylvan.

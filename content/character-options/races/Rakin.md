@@ -10,38 +10,23 @@ source: "Curated Supplement"
 source_type: third-party
 ---
 
-# Rakin
-
 *Clever, masked beast-folk with nimble paws and bushy tails, divided into urban tricksters, resilient scavengers, and mystical illusionists.*
 
 Rakin are small, furry humanoids bearing the traits of raccoons, possums, and tanukis. Renowned across coastal cities, ancient forests, and refuse-rich harbor towns for their insatiable curiosity and dexterity, rakin approach life as a high-stakes scavenger hunt. Their prehensile paws, sharp night vision, and natural climbing agility allow them to scale urban roofs and high forest canopies with identical ease.
 
----
-
 ## Rakin Traits
 
-Your rakin character shares foundational traits common to all three rakin lineages.
+**Ability score increase:** +2 DEX  
+**Age:** Rakin mature quickly, reaching adulthood by age 14, and live around 70 to 80 years.  
+**Alignment:** Independence, curiosity, and a disregard for strict property laws mean most rakin lean toward chaotic good or chaotic neutral alignments.  
+**Size:** Rakin stand between 3½ and 4 feet tall and weigh between 50 and 90 pounds. Your size is Small.  
+**Speed:** 30 feet, climb 30 feet  
+**Languages:** You can speak, read, and write Common and one additional language of your choice.
 
-> [!info]- Ability Score Increase
-> Your Dexterity score increases by 2.
-
-> [!info]- Age
-> Rakin mature quickly, reaching adulthood by age 14, and live around 70 to 80 years.
-
-> [!info]- Alignment
-> Independence, curiosity, and a disregard for strict property laws mean most rakin lean toward chaotic good or chaotic neutral alignments.
-
-> [!info]- Size
-> Rakin stand between 3½ and 4 feet tall and weigh between 50 and 90 pounds. Your size is Small.
-
-> [!info]- Speed
-> Your base walking speed is 30 feet, and you possess a climbing speed of 30 feet.
+## Traits
 
 > [!info]- Darkvision
 > Accustomed to nighttime scavenging and subterranean alleyways, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.
-
-> [!info]- Languages
-> You can speak, read, and write Common and one additional language of your choice.
 
 > [!info]- Subrace
 > Three main subraces populate the world: Urkin (raccoon-folk), Posskin (possum-folk), and Tanukin (raccoon-dog spirit-folk). Choose one of these subraces.

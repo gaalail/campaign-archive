@@ -10,6 +10,10 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+*A constant hum of busy activity pervades the warrens and neighborhoods where gnomes form their close-knit communities, fueled by boundless enthusiasm and inventive intellect.*
+
+## Gnome Traits
+
 **Ability score increase:** +2 INT  
 **Age:** Gnomes mature at the same rate humans do, and most are expected to settle down into an adult life by around age 40. They can live 350 to almost 500 years.  
 **Alignment:** Gnomes are most often good. Those who tend toward law are sages, engineers, researchers, scholars, investigators, or inventors. Those who tend toward chaos are minstrels, tricksters, wanderers, or fanciful jewelers. Gnomes are good-hearted, and even the tricksters among them are more playful than vicious.  

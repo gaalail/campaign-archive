@@ -77,7 +77,14 @@ export function cleanFlavorText(text?: string | null): string {
   if (!text) return '';
   let str = text.trim();
   // If the text is actually an unparsed raw stat table or mechanical block, do not treat as flavor quote
-  if (str.includes('| STR |') || str.includes('Armor Class:') || str.includes('Hit Points:')) {
+  if (
+    str.includes('| STR |') ||
+    str.includes('Armor Class:') ||
+    str.includes('Hit Points:') ||
+    str.toLowerCase().startsWith('**ability score increase') ||
+    str.toLowerCase().startsWith('ability score increase') ||
+    str.toLowerCase().includes('**ability score increase:**')
+  ) {
     return '';
   }
   // Strip surrounding quotes or formatting marks

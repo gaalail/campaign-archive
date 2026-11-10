@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: reference-only
 title: Aengel
-summary: Medium celestial; speed 30 ft. and fly 30 ft.; +1 Strength,
-  Constitution, and Charisma
+summary: "Medium celestial; speed 30 ft., fly 30 ft.; +1 STR, +1 CON, +1 CHA"
 source: Corpus Angelus
 source_type: third-party
 ---

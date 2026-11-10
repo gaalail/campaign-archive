@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: reference-only
 title: Light-Touched
-summary: Medium; speed 30 ft.; +2 Charisma; subraces Goldenborn, Iridescent
-  Ones, and Silver Born
+summary: "Medium; speed 30 ft.; +2 CHA; Subraces: Goldenborn, Iridescent Ones, Silver Born"
 source: Corpus Angelus
 source_type: third-party
 ---

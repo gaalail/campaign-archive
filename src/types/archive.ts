@@ -61,6 +61,9 @@ export interface ArchiveEntry {
   size?: string | null;
   speed?: string | null;
   alignment?: string | null;
+  asi?: string | null;
+  traits?: string[];
+  subraces?: string[];
 }
 
 export interface SubclassFeature {

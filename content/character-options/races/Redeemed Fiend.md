@@ -5,8 +5,7 @@ edition: "2014"
 adaptation: curated
 license_status: reference-only
 title: Redeemed Fiend
-summary: Medium fiend; speed 30 ft.; +2 Wisdom; subraces Redeemed
-  Succubus/Incubus and Redeemed Chain Devil
+summary: "Medium fiend; speed 30 ft.; +2 WIS; Subraces: Redeemed Succubus/Incubus, Redeemed Chain Devil"
 source: Corpus Angelus
 source_type: third-party
 ---

@@ -10,6 +10,10 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+*Half-orcs’ grayish pigmentation, sloping foreheads, jutting jaws, and prominent teeth make their orcish heritage unmistakably clear, backed by ferocious physical strength and enduring spirit.*
+
+## Half-Orc Traits
+
 **Ability score increase:** +2 STR, +1 CON  
 **Age:** Half-orcs mature a little faster than humans, reaching adulthood around age 14. They age noticeably faster and rarely live longer than 75 years.  
 **Alignment:** Half-orcs inherit a tendency toward chaos from their orc parents and are not strongly inclined toward good. Half-orcs raised among orcs and willing to live out their lives among them are usually evil.  

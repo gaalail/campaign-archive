@@ -39,6 +39,16 @@ function parseFrontmatter(fileText) {
       continue;
     }
 
+    const continuationMatch = line.match(/^\s+([^:].*)$/);
+    if (continuationMatch && currentKey && !isList && typeof frontmatter[currentKey] === 'string') {
+      let extra = continuationMatch[1].trim();
+      if ((extra.startsWith('"') && extra.endsWith('"')) || (extra.startsWith("'") && extra.endsWith("'"))) {
+        extra = extra.slice(1, -1);
+      }
+      frontmatter[currentKey] = (frontmatter[currentKey] + ' ' + extra).trim();
+      continue;
+    }
+
     const keyValMatch = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
     if (keyValMatch) {
       currentKey = keyValMatch[1].trim();
@@ -107,7 +117,13 @@ function extractFlavorAndFeatures(bodyText, category = '') {
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
-    if (!line) continue;
+    if (!line) {
+      if (category === 'races' && flavorLines.length > 0) {
+        inFlavor = false;
+        break;
+      }
+      continue;
+    }
     if (line.startsWith('# ') && !line.startsWith('## ') && !line.startsWith('### ')) continue;
     if (line.startsWith('**') && line.endsWith('**') && (line.includes('subclasses available') || line.includes('Choose at'))) continue;
     if (line.startsWith('## ') || line.startsWith('### ') || line.startsWith('> [!info')) {
@@ -115,7 +131,14 @@ function extractFlavorAndFeatures(bodyText, category = '') {
       break;
     }
     // Stop flavor parsing if a table or stat line is reached
-    if (line.startsWith('|') || line.startsWith('- **Armor Class') || line.startsWith('- **Hit Points') || line.startsWith('- **Speed') || line.startsWith('- **Challenge')) {
+    if (
+      line.startsWith('|') ||
+      line.startsWith('- **Armor Class') ||
+      line.startsWith('- **Hit Points') ||
+      line.startsWith('- **Speed') ||
+      line.startsWith('- **Challenge') ||
+      /^\*\*(?:Ability [Ss]core [Ii]ncrease|Age|Alignment|Size|Speed|Languages|Creature Type):/i.test(line)
+    ) {
       inFlavor = false;
       break;
     }
@@ -126,6 +149,16 @@ function extractFlavorAndFeatures(bodyText, category = '') {
   }
   let flavor = flavorLines.join(' ').replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').trim();
   flavor = cleanFlavorString(flavor);
+
+  if (category === 'races') {
+    if (
+      flavor.toLowerCase().includes('ability score increase') ||
+      flavor.toLowerCase().includes('speed:') ||
+      flavor.toLowerCase().includes('size:')
+    ) {
+      flavor = '';
+    }
+  }
 
   const features = [];
   const seenFeatureNames = new Set();
@@ -345,6 +378,82 @@ for (const filePath of files) {
   }
   if (features && features.length > 0) {
     entry.features = features;
+  }
+
+  if (category === 'races' && !cleanId.endsWith('/index')) {
+    let asi = '';
+    const asiMatch = body.match(/\*\*Ability [Ss]core [Ii]ncrease:?\*\*?\s*:?\s*([^\n\r]+)/i) ||
+                     body.match(/>\s*\[!info\]-?\s*Ability Score Increase\r?\n>([^\n\r]+)/i);
+    if (asiMatch) {
+      asi = asiMatch[1].trim()
+        .replace(/^Your\s+/i, '')
+        .replace(/^score increases by\s*/i, '')
+        .replace(/^score increases\s*/i, '')
+        .replace(/\.$/, '');
+    } else {
+      const sumAsi = (frontmatter.summary || '').match(/((\+[0-9]|STR|DEX|CON|INT|WIS|CHA)[^;\n\r"]+)/i);
+      if (sumAsi) asi = sumAsi[1].trim();
+    }
+    entry.asi = asi || null;
+
+    let raceSize = frontmatter.size || null;
+    if (!raceSize) {
+      const sizeMatch = body.match(/\*\*Size:?\*\*?\s*:?\s*([^\n\r]+)/i) ||
+                        body.match(/>\s*\[!info\]-?\s*Size[^\r\n]*\r?\n>([^\n\r]+)/i);
+      if (sizeMatch) {
+        const sStr = sizeMatch[1];
+        if (sStr.includes('Larva')) raceSize = 'Small (Larva) / Medium (Adult)';
+        else if (/medium.*?or.*?small|small.*?or.*?medium/i.test(sStr)) raceSize = 'Medium or Small';
+        else if (/\bsmall\b/i.test(sStr)) raceSize = 'Small';
+        else if (/\blarge\b/i.test(sStr)) raceSize = 'Large';
+        else raceSize = 'Medium';
+      } else if (frontmatter.summary) {
+        if (frontmatter.summary.includes('Larva')) raceSize = 'Small (Larva) / Medium (Adult)';
+        else if (/medium.*?or.*?small|small.*?or.*?medium/i.test(frontmatter.summary)) raceSize = 'Medium or Small';
+        else if (/\bsmall\b/i.test(frontmatter.summary)) raceSize = 'Small';
+        else raceSize = 'Medium';
+      }
+    }
+    entry.size = raceSize || 'Medium';
+
+    let raceSpeed = frontmatter.speed || null;
+    if (!raceSpeed) {
+      const speedMatch = body.match(/\*\*Speed:?\*\*?\s*:?\s*([^\n\r]+)/i) ||
+                         body.match(/>\s*\[!info\]-?\s*Speed\r?\n>([^\n\r]+)/i);
+      if (speedMatch) {
+        const sp = speedMatch[1].trim();
+        const spNum = sp.match(/([0-9]+\s*(?:feet|ft)[^\n\r.;]*)/i);
+        if (spNum) raceSpeed = spNum[1].replace(/feet/gi, 'ft.');
+      } else if (frontmatter.summary) {
+        const sumSp = frontmatter.summary.match(/speed\s+([0-9]+\s*(?:ft|feet)[^\n\r;"]*)/i);
+        if (sumSp) raceSpeed = sumSp[1].replace(/feet/gi, 'ft.');
+      }
+    }
+    entry.speed = raceSpeed || '30 ft.';
+
+    const raceTraits = [];
+    const tRegex = />\s*\[!info\]-?\s*([^(>\n]+)/g;
+    let tMatch;
+    while ((tMatch = tRegex.exec(body)) !== null) {
+      const tName = tMatch[1].trim();
+      if (!/ability score increase|age|alignment|size|speed|languages|creature type|subrace/i.test(tName)) {
+        if (!raceTraits.includes(tName)) {
+          raceTraits.push(tName);
+        }
+      }
+    }
+    entry.traits = raceTraits;
+
+    const subraces = [];
+    const subHeadingRegex = /^##\s+([^\n]+)/gm;
+    let shMatch;
+    while ((shMatch = subHeadingRegex.exec(body)) !== null) {
+      const shTitle = shMatch[1].trim();
+      if (!/traits|looks of|life without|society|names|statblock|brave cowards|avian ascendency|disperse and deploy|living coral|redemption|fiendish bloodline|a secluded life|nameless and cursed|lost eternity|different but the same/i.test(shTitle) && !shTitle.toLowerCase().includes(title.toLowerCase())) {
+        subraces.push(shTitle);
+      }
+    }
+    entry.subraces = subraces;
   }
 
   entries.push(entry);
