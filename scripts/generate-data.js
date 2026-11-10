@@ -164,7 +164,7 @@ function extractFlavorAndFeatures(bodyText, category = '') {
   const seenFeatureNames = new Set();
 
   // 1. Obsidian callouts: > [!info]- Name (level X)
-  const calloutRegex = />\s*\[!info\]-?\s*([^(>\n]+)(?:\(([^)]+)\))?\r?\n((?:>[^\n]*\r?\n?)+)/g;
+  const calloutRegex = />\s*\[!info\]-?\s*([^(>\n]+)(?:\(([^)]+)\))?\r?\n((?:>(?!\[!)[^\n]*\r?\n?)+)/g;
   let match;
   while ((match = calloutRegex.exec(bodyText)) !== null) {
     const rawName = match[1].trim();

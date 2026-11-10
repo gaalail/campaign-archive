@@ -110,7 +110,11 @@ function parseMarkdownBlocks(text: string): Block[] {
       const bodyLines: string[] = [];
       i++;
 
-      while (i < lines.length && (lines[i].startsWith('>') || lines[i].trim() === '')) {
+      while (
+        i < lines.length &&
+        lines[i].startsWith('>') &&
+        !lines[i].match(/^>\s*\[![a-zA-Z0-9_-]+\]/)
+      ) {
         const cleaned = lines[i].replace(/^>\s?/, '');
         bodyLines.push(cleaned);
         i++;
