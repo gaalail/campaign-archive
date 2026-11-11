@@ -16,7 +16,12 @@ source_type: homebrew
 
 # Oath of the Exorcist
 
-Exorcists hunt the undead and protect the living, sacrificing ordinary lives to defend the world. **Tenets:** Defend—protect life, especially the innocent; Destroy—hunt and destroy undead; Focus—bear no titles, lands, family, or children.
+Exorcists hunt the undead and protect the living, sacrificing ordinary comforts and mortal ties to cleanse the world of necrotic corruption.
+
+> [!tenets] Sacred Tenets of the Exorcist
+> - **Defend Life:** Protect mortal souls and safeguard the innocent from the horrors of the grave.
+> - **Destroy Undead:** Relentlessly hunt and obliterate the walking dead, returning unnatural spirits to rest.
+> - **Solemn Focus:** Bear no titles, hereditary lands, or earthly attachments that would distract from your sacred duty.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 
@@ -26,7 +31,7 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 | 5th           | invisibility, see invisibility           |
 | 9th           | magic circle, spirit guardians           |
 | 13th          | banishment, greater invisibility         |
-| 17th          | dispel evil and good, holy weapon XGE    |
+| 17th          | dispel evil and good, holy weapon        |
 
 **Sinister Insights (3rd, Channel Divinity, 4 Resolve).** As an action, grasp your holy symbol to gain advantage for 1 hour on ability checks and saving throws related to undead or necromancy magic.
 

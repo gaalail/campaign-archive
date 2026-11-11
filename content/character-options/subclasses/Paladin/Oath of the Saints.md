@@ -18,11 +18,11 @@ The Oath of the Saints is walked by zealots who seek not merely to venerate the 
 
 ---
 
-## Tenets of the Saints
+> [!tenets] Sacred Tenets of the Saints
+> - **Vow of Sacrifice:** I must eagerly seek opportunities to sacrifice my blood, flesh, and comfort in service to the incorruptible.
+> - **Vow of Expiation:** I recognize that mortals are imperfect beings of sin. I must atone for my failings and guide others to expiate their guilt.
+> - **Vow of Censure:** I must destroy that which is anathema to the saints and dismantle the foul works of the wicked.
 
-- **Vow of Sacrifice:** I must eagerly seek opportunities to sacrifice my blood, flesh, and comfort in service to the incorruptible.
-- **Vow of Expiation:** I recognize that mortals are imperfect beings of sin. I must atone for my failings and guide others to expiate their guilt.
-- **Vow of Censure:** I must destroy that which is anathema to the saints and dismantle the foul works of the wicked.
 
 ## Oath Spells
 

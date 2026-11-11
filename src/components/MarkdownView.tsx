@@ -3,7 +3,7 @@ import { resolveWikilink, getSourceBadgeInfo } from '../utils/archiveUtils';
 import { AlertTriangle, Info, Lightbulb, ShieldAlert, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
 import { SpellCatalogue } from './SpellCatalogue';
 import { CompendiumEmbed } from './CompendiumEmbed';
-import { DndFleuronDivider, D20GothicIcon } from './GothicIcons';
+import { DndFleuronDivider, D20GothicIcon, CrossedSwords, GothicChalice } from './GothicIcons';
 import { WikilinkHoverCard } from './WikilinkHoverCard';
 import { useOptionalDice } from './DiceRoller';
 
@@ -377,7 +377,11 @@ const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigat
     let border = 'border-blue-500/40 bg-blue-950/20';
     let headerText = 'text-blue-300';
 
-    if (type === 'warning' || type === 'caution') {
+    if (type === 'tenets' || type === 'vow' || type === 'oath') {
+      icon = <CrossedSwords className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />;
+      border = 'border-amber-600/70 bg-gradient-to-br from-[#1e1712] via-[#16120f] to-[#110e0c] shadow-[0_4px_24px_rgba(217,119,6,0.18)] ring-1 ring-amber-500/30';
+      headerText = 'text-amber-200 font-fantasy text-sm md:text-base font-bold tracking-wide uppercase';
+    } else if (type === 'warning' || type === 'caution') {
       icon = <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />;
       border = 'border-amber-500/40 bg-amber-950/20';
       headerText = 'text-amber-300';
@@ -391,6 +395,7 @@ const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigat
       headerText = 'text-emerald-300';
     }
 
+
     return (
       <div className={`rounded-xl border ${border} p-3.5 my-3 transition-all`}>
         <div
@@ -400,7 +405,13 @@ const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigat
           <div className="flex items-center gap-2 font-medium">
             {icon}
             <span className={headerText}>{block.title}</span>
+            {(type === 'tenets' || type === 'vow' || type === 'oath') && (
+              <span className="text-[10px] font-serif font-bold uppercase tracking-widest text-amber-500/90 px-1.5 py-0.5 rounded border border-amber-600/30 bg-amber-950/60 ml-1.5">
+                Sacred Vows
+              </span>
+            )}
           </div>
+
           <button className="text-slate-400 hover:text-slate-200 p-1">
             {isOpen ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
           </button>
@@ -535,17 +546,17 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
           const badge = getSourceBadgeInfo(resolved.source_type, resolved.source);
           parts.push(
             <WikilinkHoverCard key={match.index} entry={resolved} onNavigate={onNavigate}>
-              <button
+              <a
+                href={`#${resolved.id}`}
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate(resolved.id);
                 }}
                 title={`${resolved.title} (${badge.label})`}
-                className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5 cursor-pointer text-left"
+                className="font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors cursor-pointer inline"
               >
-                <span>{label}</span>
-                <ExternalLink className="w-3 h-3 opacity-60 inline shrink-0" />
-              </button>
+                {label}
+              </a>
             </WikilinkHoverCard>
           );
         } else {
@@ -562,21 +573,21 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
             lowerTarget === 'home'
           ) {
             parts.push(
-              <button
+              <a
                 key={match.index}
+                href={`#${lowerTarget}`}
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate(lowerTarget);
                 }}
-                className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5 cursor-pointer text-left"
+                className="font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors cursor-pointer inline"
               >
-                <span>{label}</span>
-                <ExternalLink className="w-3 h-3 opacity-60 inline shrink-0" />
-              </button>
+                {label}
+              </a>
             );
           } else {
             parts.push(
-              <span key={match.index} className="text-amber-300/80 font-medium">
+              <span key={match.index} className="text-amber-300/80 font-medium inline">
                 {label}
               </span>
             );
@@ -607,20 +618,21 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
         const resolved = resolveWikilink(cleanTarget);
         if (resolved) {
           parts.push(
-            <button
+            <a
               key={match.index}
+              href={`#${resolved.id}`}
               onClick={(e) => {
                 e.preventDefault();
                 onNavigate(resolved.id);
               }}
-              className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5 cursor-pointer"
+              className="font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors cursor-pointer inline"
             >
-              <span>{label}</span>
-            </button>
+              {label}
+            </a>
           );
         } else {
           parts.push(
-            <span key={match.index} className="text-amber-300 font-medium">
+            <span key={match.index} className="text-amber-300 font-medium inline">
               {label}
             </span>
           );

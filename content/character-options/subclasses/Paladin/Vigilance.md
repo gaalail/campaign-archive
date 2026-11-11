@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Vigilance
 
-You protect the material plane from extraplanar influence, whatever its nature. **Tenets:** Discipline—hone body and mind; Purity—don't bargain with or fall under extraplanar influence; Vigilance—find and root it out.
+Paladins of Vigilance protect the mortal plane from extraplanar incursions, hunting aberrant, fiendish, and alien threats wherever they taint the realm.
+
+> [!tenets] Sacred Tenets of Vigilance
+> - **Discipline:** Rigorously hone body, mind, and soul to resist otherworldly deception and eldritch madness.
+> - **Purity:** Never bargain with, make concessions to, or submit to extraplanar entities or dark pacts.
+> - **Vigilance:** Relentlessly seek out alien taint, rooting out extraplanar corruption before it takes root.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

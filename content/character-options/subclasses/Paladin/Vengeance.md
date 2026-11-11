@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Vengeance
 
-Avengers dedicate their lives to destroying a sworn foe or corrupt organization. **Tenets:** Destroy Evil—fight sworn foes and the greater evil; No Mercy—defeat evil by any means; Restitution—make amends for your foes' evil and other evildoers.
+Avengers dedicate their lives to hunting down sworn foes, crushing corrupt cabals, and punishing heinous wickedness without compromise.
+
+> [!tenets] Sacred Tenets of Vengeance
+> - **Fight the Greater Evil:** Face sworn foes and the greatest threats first, prioritizing severe evil over minor transgressions.
+> - **No Mercy for the Wicked:** Pursue and defeat evil by any necessary means; show no leniency to monsters.
+> - **Restitution:** Make amends to the victims of your foes' atrocities and restore what has been unjustly stolen.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

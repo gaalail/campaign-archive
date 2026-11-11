@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Liberty
 
-Liberty paladins stand with the oppressed against tyranny and seek justice fairly applied. **Tenets:** Equality—treat all equally; Equity—ensure access to basic needs; Freedom—free the oppressed and bring justice to oppressors.
+Liberty paladins stand alongside the oppressed against tyrants, despots, and corrupt systems of bondage.
+
+> [!tenets] Sacred Tenets of Liberty
+> - **Equality:** Treat all sapient beings equally, judging them solely by their character, conscience, and deeds.
+> - **Equity:** Ensure that the vulnerable and needy have access to basic sustenance, shelter, and rightful opportunity.
+> - **Freedom:** Free the oppressed from physical and spiritual bondage, and bring swift justice to their oppressors.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 
@@ -21,9 +26,9 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 | ------------- | --------------------------------------- |
 | 3rd           | heroism, shield of faith                |
 | 5th           | prayer of healing, warding bond         |
-| 9th           | life transference XGE, revivify         |
+| 9th           | life transference, revivify             |
 | 13th          | aura of purity, freedom of movement     |
-| 17th          | mass cure wounds, skill empowerment XGE |
+| 17th          | mass cure wounds, skill empowerment     |
 
 **Admonish the Tyrannical (3rd, Channel Divinity, 4 Resolve).** When a creature you see within 30 feet damages another creature, use a reaction to rebuke it. For 1 minute or until concentration ends, it has disadvantage on attacks that don't target you.
 

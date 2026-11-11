@@ -24,12 +24,12 @@ Witchmarks for Oath of the Coven paladins frequently resemble ancestral family c
 
 ---
 
-## Tenets of the Coven
+> [!tenets] Sacred Tenets of the Coven
+> - **Punish the Wicked, Help the Good:** I am the sword that punishes those who abuse magic for evil, and the shield that protects those who wield it for good.
+> - **Seek Out the Wicked:** Nothing in this world will deter me from pursuing those who commit magical atrocities.
+> - **Neutralize or Exterminate:** Those who abuse arcane power will not go free without answering for their crimes.
+> - **Magic is Neutral:** Magic is a fundamental force of nature; I will never treat magic or its practitioners as inherently evil.
 
-- **Punish the Wicked, Help the Good:** I am the sword that punishes those who use magic for evil, and the shield that protects those who use it for good.
-- **Seek Out the Wicked:** Nothing in this world will deter me from pursuing those who commit magical atrocities.
-- **Neutralize or Exterminate:** Those who abuse magic will not go free without answering for their crimes.
-- **Magic is Neutral:** Magic is a neutral force of nature; I will never treat magic or its practitioners as inherently evil.
 
 ## Oath Spells
 

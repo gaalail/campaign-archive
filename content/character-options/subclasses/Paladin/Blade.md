@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of the Blade
 
-Blade Masters dedicate their lives to martial mastery. **Tenets:** Fair Play—level the field for a fair fight; Respect—respect every fellow warrior, even a bitter foe.
+Blade Masters dedicate their entire lives to martial mastery, honing body and spirit in pursuit of the ultimate sword technique.
+
+> [!tenets] Sacred Tenets of the Blade
+> - **Fair Play:** Level the playing field for an honorable duel; never strike an unarmed or defenseless foe dishonorably.
+> - **Martial Discipline:** Dedicate body, soul, and mind to perfecting your swordcraft each and every day.
+> - **Respect:** Respect every fellow warrior you cross blades with, even a bitter or deadly adversary.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

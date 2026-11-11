@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of the Templar
 
-Templars are temple-trained knights who withstand foes, aid allies, and comfort the faithful. Their temple may provide quests, tokens, and shelter. **Tenets:** Faith—let faith be your shield; Loyalty—let temple and allies be your weapons; Unwavering—do not fear the divine.
+Templars are temple-trained holy knights who withstand hostile onslaughts, bolster companions, and bring solace to the faithful.
+
+> [!tenets] Sacred Tenets of the Templar
+> - **Faith:** Let your unyielding devotion be an impenetrable shield against heresy and fear.
+> - **Loyalty:** Let your holy temple, deity, and traveling companions be your trusted weapons and shelter.
+> - **Unwavering:** Stand fearless before divine judgment, mortal tyrants, and otherworldly terrors alike.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

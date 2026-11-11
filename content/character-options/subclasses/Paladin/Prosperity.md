@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Prosperity
 
-Prosperity paladins pursue material wealth, measuring actions and lives by their value in gold. **Tenets:** Benefit—analyze gains before acting; Investment—make every action pay; Profit—never enter a bad deal.
+Prosperity paladins pursue material abundance, viewing commerce, trade, and economic thriving as the essential lifeblood of civilization.
+
+> [!tenets] Sacred Tenets of Prosperity
+> - **Analyze the Benefit:** Calculate gains and consequences before taking action; let wisdom guide your ventures.
+> - **Make Every Action Pay:** Invest time, resolve, and resources where they yield tangible prosperity for your allies.
+> - **Profit:** Build lasting wealth for your community and never enter a ruinous or fraudulent deal.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 
@@ -21,7 +26,7 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 | ------------- | ---------------------------------- |
 | 3rd           | alarm, identify                    |
 | 5th           | arcane lock, locate object         |
-| 9th           | glyph of warding, tiny servant XGE |
+| 9th           | glyph of warding, tiny servant     |
 | 13th          | fabricate, secret chest            |
 | 17th          | animate objects, legend lore       |
 

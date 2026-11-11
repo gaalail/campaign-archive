@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Inquisition
 
-Inquisitors reveal what is hidden and punish those who deceive mortals by obscuring their true form. **Tenets:** Truth—bring truth to light; Immutability—distrust those who alter or hide their form; Retribution—fit punishment to the crime.
+Inquisitors reveal what is hidden, root out arcane deceit, and punish those who deceive mortals by obscuring their true form.
+
+> [!tenets] Sacred Tenets of Inquisition
+> - **Truth:** Bring the truth to light, no matter how deeply buried or uncomfortable it may be.
+> - **Immutability:** Distrust shapeshifters, deceivers, and all who alter or conceal their true forms.
+> - **Retribution:** Ensure the punishment fits the crime, dispensing impartial and unyielding justice.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 
@@ -22,7 +27,7 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 | 3rd           | charm person, command         |
 | 5th           | moonbeam, zone of truth       |
 | 9th           | clairvoyance, magic circle    |
-| 13th          | arcane eye, charm monster XGE |
+| 13th          | arcane eye, charm monster     |
 | 17th          | legend lore, scrying          |
 
 **Divine Interrogation (3rd, Channel Divinity, 4 Resolve).** As an action, choose a creature within 10 feet that can see or hear you. Charisma save or you learn its true name, and it has disadvantage on the first Intelligence, Wisdom, or Charisma save you force it to make within 1 minute.

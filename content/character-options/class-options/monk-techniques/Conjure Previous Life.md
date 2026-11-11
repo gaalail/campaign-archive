@@ -15,7 +15,7 @@ prerequisite: 13th-level Monk
 
 **Prerequisite:** 13th-level Monk
 
-You summon a specter of your past life to come to your aid. As an action, you can spend 5 Ki to produce the effects of the summon celestial TCE spell at 5th-level using your body as a Spellcasting focus, without requiring the normal material components. The spell has the following changes:
+You summon a specter of your past life to come to your aid. As an action, you can spend 5 Ki to produce the effects of the *summon celestial* spell at 5th-level using your body as a Spellcasting focus, without requiring the normal material components. The spell has the following changes:
 
 Appearance & Statistics. You must choose the Defender option, and it takes on the appearance of a Humanoid Monk of Medium size, though it may not be the same race as you.
 

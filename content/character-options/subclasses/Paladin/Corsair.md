@@ -13,17 +13,22 @@ source_type: homebrew
 
 # Oath of the Corsair
 
-Corsairs are fearsome sea warriors devoted to personal freedom and loyalty to their crew. **Tenets:** Bravery—live so others sing of your deeds; Freedom—be free of rules you did not agree to; Loyalty—reward loyalty and judge traitors ruthlessly.
+Corsairs are fearsome sea warriors devoted to personal freedom, legendary fortune, and fierce loyalty to their crew.
+
+> [!tenets] Sacred Tenets of the Corsair
+> - **Bravery:** Live so boldly that bards and sailors will sing songs of your deeds across every port and ocean.
+> - **Freedom:** The sea bows to no master, and neither do you. Never accept chains or submit to decrees you did not agree to.
+> - **Loyalty:** Fiercely protect your crew and reward steadfast loyalty, but judge traitors and mutineers with ruthless finality.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
-| 3rd           | fog cloud, zephyr strike XGE     |
-| 5th           | arcane lock, warding wind XGE    |
-| 9th           | thunder step XGE, tidal wave XGE |
-| 13th          | control water, storm sphere XGE  |
-| 17th          | control winds XGE, maelstrom XGE |
+| 3rd           | fog cloud, zephyr strike         |
+| 5th           | arcane lock, warding wind        |
+| 9th           | thunder step, tidal wave         |
+| 13th          | control water, storm sphere      |
+| 17th          | control winds, maelstrom         |
 
 **All Hands on Deck (3rd, Channel Divinity, 4 Resolve).** As a bonus action, choose up to your Charisma modifier creatures within 30 feet who can see or hear you. Each can use its reaction to move up to its speed without provoking opportunity attacks.
 

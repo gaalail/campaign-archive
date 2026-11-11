@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of the Zealot
 
-Zealots are master orators and warriors whose strict faith makes heretics and infidels their mortal enemies. **Tenets:** Divine Might—prepare to fight your deity's enemies; God's Kingdom—rule with wisdom and strength; True Path—those who defy it are infidels.
+Zealots are charismatic orators and unwavering holy crusaders whose fervent faith compels them to eradicate heresy and desecration.
+
+> [!tenets] Sacred Tenets of the Zealot
+> - **Divine Might:** Train body and spirit unceasingly to battle and vanquish the sworn enemies of your faith.
+> - **Kingdom of Faith:** Govern your actions with divine strength, spiritual wisdom, and unshakeable conviction.
+> - **The True Path:** Champion orthodoxy and righteousness, permitting no blasphemy or corruption to take root.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

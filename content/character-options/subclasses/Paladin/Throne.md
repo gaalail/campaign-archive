@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of the Throne
 
-You serve your sovereign, uphold their laws, and protect their lands and subjects. **Tenets:** Bravery—carry out orders despite overwhelming odds; Loyalty—serve your liege's interests; Order—uphold the law as civilization's bedrock.
+Paladins of the Throne serve their sovereign, defend lawful authority, and protect the kingdom's lands and subjects with their lives.
+
+> [!tenets] Sacred Tenets of the Throne
+> - **Bravery:** Carry out legitimate commands without hesitation, even in the face of overwhelming odds.
+> - **Loyalty:** Faithfully serve your rightful liege's interests and uphold the honor of the realm.
+> - **Order:** Defend and enforce the law as the indispensable bedrock upon which civilization endures.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

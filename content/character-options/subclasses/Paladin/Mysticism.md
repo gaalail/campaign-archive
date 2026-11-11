@@ -13,13 +13,18 @@ source_type: homebrew
 
 # Oath of Mysticism
 
-Mystics awaken their own inner psionic power. Optional rule: use Intelligence instead of Charisma for all Paladin features. **Tenets:** Asceticism—forsake attachments; Enlightenment—realize potential and help others; Knowledge—seek deeper enlightenment through knowledge.
+Mystics awaken their own inner psionic power, unifying physical martial discipline with transcendent consciousness. *(Optional rule: use Intelligence instead of Charisma for all Paladin features.)*
+
+> [!tenets] Sacred Tenets of Mysticism
+> - **Asceticism:** Forsake material attachments and excess to keep your spirit uncluttered, focused, and free.
+> - **Enlightenment:** Realize your fullest mental and spiritual potential, and guide others toward self-discovery.
+> - **Knowledge:** Seek deeper enlightenment through the preservation and contemplation of esoteric wisdom.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
-| 3rd           | catapult XGE, dissonant whispers |
+| 3rd           | catapult, dissonant whispers     |
 | 5th           | detect thoughts, levitate        |
 | 9th           | clairvoyance, slow               |
 | 13th          | confusion, phantasmal killer     |

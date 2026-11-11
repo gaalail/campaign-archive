@@ -8,7 +8,12 @@ title: Paladin Subclasses
 
 ## Sacred Oath Rules
 
-Oath spells are Paladin spells for you, don't count against your Spells Known, and can't be replaced. Resolve features are Channel Divinity options with their listed costs and have no other limit. Oaths refer to creature types or their own Tenets, never alignment. For Oath Smite scaling, marked dice, rider limits, and Avatar transformation rules, see the [[character-options/subclasses/Paladin/index#sacred-oath-rules|shared Sacred Oath rules]].
+Oath spells are Paladin spells for you, don't count against your Spells Known, and can't be replaced. Resolve features are Channel Divinity options with their listed costs and have no other limit. Oaths refer to creature types or their own Tenets, never alignment. For Oath Smite scaling, marked dice, rider limits, and Avatar transformation rules, see the shared rules below.
+
+### Sacred Tenets
+
+Every Paladin who swears a Sacred Oath binds their soul to an illuminated covenant of Sacred Tenets. These vows represent the holy compass guiding a knight's resolve, martial conduct, and divine authority. Violating one's Sacred Tenets risks severing your connection to oath powers until proper reparations are made, and persistent defiance risks an irrevocable fall into the ranks of the Oathless or a dreaded Blackguard.
+
 
 ### Oath Smites
 

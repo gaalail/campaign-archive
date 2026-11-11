@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Conquest
 
-Conquerors seek glory through domination, crushing foes in body and spirit and upholding law through iron justice. **Tenets:** Conquest—crush foes so they never oppose you again; Iron Law—your word is law, reward loyalty and punish dissent; Might—might makes right, and you are mighty.
+Conquerors seek glory through absolute domination, crushing adversaries in body and spirit and imposing order through iron justice.
+
+> [!tenets] Sacred Tenets of Conquest
+> - **Douse the Flame of Hope:** Crush your enemies in body and spirit so that they never harbor the will to oppose you again.
+> - **Iron Law:** Your word is law. Reward fierce loyalty, root out sedition, and punish dissent with unwavering resolve.
+> - **Strength Above All:** Might makes right, and you must remain the mightiest force in the realm.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

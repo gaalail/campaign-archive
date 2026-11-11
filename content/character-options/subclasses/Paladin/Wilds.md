@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of the Wilds
 
-Wilds paladins protect the balance between civilization and nature and embody the power of beasts. **Tenets:** Balance—keep nature and civilization in balance; Freedom—let living things choose their path; Natural Law—uphold the world's natural order.
+Wilds paladins safeguard the sacred equilibrium between civilization and the untamed wilderness, embodying the primal fury of beasts.
+
+> [!tenets] Sacred Tenets of the Wilds
+> - **Balance:** Maintain harmony between expanding civilization and the ancient wild ecosystems.
+> - **Freedom:** Allow living creatures to choose their own destinies and roam untamed without cruel confinement.
+> - **Natural Law:** Uphold the fundamental natural order of predator, prey, season, and cycle.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

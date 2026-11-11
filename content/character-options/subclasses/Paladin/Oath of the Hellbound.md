@@ -18,13 +18,13 @@ Having clawed their way from the very pits of the inferno, the Hellbound walks a
 
 ---
 
-## Tenets of the Hellbound
+> [!tenets] Sacred Tenets of the Hellbound
+> - **Forgiveness:** I will make good on my past sins and will not repeat the mistakes that damned me to Hell.
+> - **Freedom:** Neither I nor any other creature will be bound against their will to another in infernal servitude.
+> - **Vile Fiends:** Fiends cannot be trusted; bargaining with them is damnation, a fate I will not suffer again.
+> - **Redemption:** There is hope in even the darkest souls. Anyone can be redeemed if they possess the will.
+> - **Second Chances:** All mortals are worthy of a second chance—but never a third.
 
-- **Forgiveness:** I will make good on my past sins and will not repeat the mistakes that damned me to Hell.
-- **Freedom:** Neither I nor any other creature will be bound against their will to another.
-- **Vile Fiends:** Fiends cannot be trusted; doing so is eternal damnation, a fate I will not suffer again.
-- **Redemption:** There is hope in even the darkest souls. Anyone can be redeemed if they possess the will.
-- **Second Chances:** All are worthy of a second chance, but never a third.
 
 ## Oath Spells
 

@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of the Shield
 
-Divine Shields defend the innocent by standing between allies and danger. **Tenets:** Defend—protect those who seek aid; Immovable—keep your vows; Resilient—stand firm while innocents are at risk.
+Divine Shields defend the innocent by standing between vulnerable allies and deadly danger, acting as an immovable bulwark against harm.
+
+> [!tenets] Sacred Tenets of the Shield
+> - **Defend:** Stand as an unbreakable wall between danger and those who seek your aid or protection.
+> - **Immovable:** Keep your sacred vows without hesitation; never retreat when innocents rely upon your defense.
+> - **Resilient:** Endure pain, wounds, and hardship with quiet resolve while those under your watch remain at risk.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

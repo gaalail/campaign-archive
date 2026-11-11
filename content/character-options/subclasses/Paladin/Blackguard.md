@@ -13,7 +13,10 @@ source_type: homebrew
 
 # Blackguard
 
-Blackguards devote themselves to cruelty and ruin. Sparing the helpless or protecting the weak at personal cost breaks their vow.
+Blackguards are fallen holy warriors who have severed their ties to virtue, devoting themselves entirely to malice, cruelty, and ruin.
+
+> [!danger] Sinister Code of Ruin
+> Sparing the helpless, showing unearned mercy, or protecting the weak at personal cost directly breaks a Blackguard's vow. They answer only to conquest, terror, and ruthless dominion.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

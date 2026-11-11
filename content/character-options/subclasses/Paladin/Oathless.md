@@ -13,7 +13,10 @@ source_type: homebrew
 
 # The Oathless
 
-Oathless paladins broke their oath for reasons other than evil but retain some power. They owe allegiance to none; their safety and power come first.
+Oathless paladins broke their holy vows for reasons other than evil, yet through iron will retain a remnant of their martial and divine power.
+
+> [!warning] The Broken Vow
+> Having severed their sacred oaths, the Oathless owe allegiance to neither gods nor kings. Their personal survival, autonomy, and unchecked power come before all else.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

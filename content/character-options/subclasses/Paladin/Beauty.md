@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Beauty
 
-Paladins of Beauty strive for excellence and a gleaming presence, inspiring the downtrodden or manipulating those they consider beneath them. **Tenets:** Grace—act with quiet dignity; Perfection—improve combat skill and social standing; Reputation—uphold the highest social standard.
+Paladins of Beauty strive for aesthetic excellence and an awe-inspiring presence, lifting up the downtrodden or commanding reverence from all in their court.
+
+> [!tenets] Sacred Tenets of Beauty
+> - **Grace:** Act with quiet dignity, poise, and refined presence in all social and martial encounters.
+> - **Perfection:** Continuously hone your combat prowess, physical aesthetics, and standing in civilization.
+> - **Reputation:** Uphold the highest standard of elegance and never suffer disrespect or tarnished honor.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 
@@ -22,7 +27,7 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 | 3rd           | charm person, disguise self   |
 | 5th           | enthrall, suggestion          |
 | 9th           | fear, hypnotic pattern        |
-| 13th          | charm monster XGE, compulsion |
+| 13th          | charm monster, compulsion     |
 | 17th          | dominate person, seeming      |
 
 **Otherworldly Elegance (3rd, Channel Divinity, 4 Resolve).** As an action, touch your holy symbol to enhance your appearance with divine glamour for 1 hour. Treat a 9 or lower on the d20 as a 10 on Charisma (Deception) and Charisma (Persuasion) checks.

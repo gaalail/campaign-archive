@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of the Ancients
 
-Often called green knights, these paladins guard life and natural beauty. **Tenets:** Beauty—protect natural beauty and innocent life; Hope—kindle hope and never give in to despair; Light—delight in song, dance, and laughter, and spread joy.
+Often called green knights, these paladins guard the light of the mortal realm, preserving natural beauty and ancient wonder against the encroaching dark.
+
+> [!tenets] Sacred Tenets of the Ancients
+> - **Kindle the Light:** Delight in song, dance, and laughter. Through your acts of mercy and kindness, kindle hope in the hearts of others.
+> - **Shelter the Light:** Where love, laughter, beauty, and joy thrive, stand firm against the darkness that would swallow them.
+> - **Preserve the Light:** Protect natural beauty and innocent life, and never allow despair to extinguish the joy in your own soul.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

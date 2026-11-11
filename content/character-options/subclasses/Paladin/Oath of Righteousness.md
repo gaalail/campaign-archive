@@ -13,15 +13,11 @@ source_type: third-party
 
 The Oath of Righteousness binds a paladin to honor, justice, order, and all other concepts encompassed by righteousness. They pursue the greater good. They are knights who help those in need and the enemies of all that is dishonorable. They worship the good gods of honor, justice, and law. They have no fear in the face of injustice, even if that means they have to fight the entire world.
 
-## Tenets of Righteousness
+> [!tenets] Sacred Tenets of Righteousness
+> - **Passion:** Never let your enemies take away your righteous zeal. Relentlessly pursue that which is moral, honorable, and just.
+> - **Patience:** Don't act in blind anger. Think before you strike, and weigh the consequences of your deeds.
+> - **Truth:** Always seek and speak the truth, even when doing so comes at great personal detriment.
 
-Paladins that take the Oath of Righteousness may follow different ideals, but they all share the following tenets.
-
-**Passion.** Never let your enemies take away your zeal. Always go after what you think is right.
-
-**Patience.** Don't act in anger. Think before you act.
-
-**Truth.** Always seek the truth, even if it is to your detriment.
 
 ## Oath of Righteousness spells
 

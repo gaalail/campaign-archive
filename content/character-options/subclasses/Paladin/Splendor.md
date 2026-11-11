@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Splendor
 
-You serve a primordial power and remake the material plane in its elemental image. **Tenets:** Destruction—display elemental power; Nobility—act with beauty befitting your patron; Wrath—destroy those who oppose or disrespect you.
+Paladins of Splendor serve primordial powers, remaking the material plane in the awe-inspiring image of elemental majesty.
+
+> [!tenets] Sacred Tenets of Splendor
+> - **Destruction:** Unleash overwhelming elemental fury to purge corruption and reshape the battlefield.
+> - **Nobility:** Carry yourself with breathtaking majesty and poise befitting the primordial patrons you serve.
+> - **Wrath:** Strike down those who oppose or disrespect the sacred glory of your elemental order.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

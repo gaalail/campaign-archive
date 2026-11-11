@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Repentance
 
-You seek forgiveness and use violence only as a last resort. **Tenets:** Peace—violence is a last resort; Poverty—give excess wealth to those suffering; Redemption—no mortal is beyond forgiveness.
+Paladins of Repentance walk a somber path of redemption, seeking atonement for past bloodshed and turning to violence only as a dire last resort.
+
+> [!tenets] Sacred Tenets of Repentance
+> - **Peace:** Violence is an absolute last resort; exhaust every avenue of reconciliation, parley, and mercy before drawing steel.
+> - **Poverty:** Give surplus wealth to those who suffer, hoarding nothing while others go hungry or cold.
+> - **Redemption:** No mortal soul is truly beyond redemption; offer forgiveness to all who sincerely seek to make amends.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

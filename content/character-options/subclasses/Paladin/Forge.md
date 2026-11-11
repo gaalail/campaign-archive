@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of the Forge
 
-Forge paladins pursue progress and order through a chosen craft. **Tenets:** Order—create order from disorder; Perfection—strive for perfection; Progress—pass knowledge on so successors surpass you.
+Forge paladins pursue divine progress, civilization, and enduring order through craftsmanship, innovation, and sacred labor.
+
+> [!tenets] Sacred Tenets of the Forge
+> - **Order from Chaos:** Create lasting beauty, structure, and order from raw disorder and rough ore.
+> - **Strive for Perfection:** Demand excellence of your creations and hone your martial and smithing arts tirelessly.
+> - **Progress:** Pass down your craft and sacred knowledge freely so that your apprentices and successors surpass you.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 

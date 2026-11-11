@@ -13,7 +13,12 @@ source_type: homebrew
 
 # Oath of Glory
 
-You strive to become a legendary hero through mighty deeds and deadly challenges. **Tenets:** Glory—be known for deeds, not words; Might—seek physical, spiritual, and mental perfection; Tenacity—meet worthy adversity without fleeing.
+You strive to become a legendary hero through mighty deeds, epic challenges, and triumphs worthy of the gods.
+
+> [!tenets] Sacred Tenets of Glory
+> - **Actions Over Words:** Strive to be known for heroic deeds, decisive valor, and courageous victories, not empty boastfulness.
+> - **Pursue Perfection:** Push your physical, spiritual, and mental limits to become an exemplar of legendary heroism.
+> - **Unyielding Tenacity:** Meet worthy adversity head-on, never fleeing from a challenge or yielding to despair.
 
 See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smite rules]] and [[character-options/subclasses/Paladin/index#avatar-terms|Avatar terms]].
 
