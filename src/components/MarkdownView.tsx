@@ -3,7 +3,9 @@ import { resolveWikilink, getSourceBadgeInfo } from '../utils/archiveUtils';
 import { AlertTriangle, Info, Lightbulb, ShieldAlert, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
 import { SpellCatalogue } from './SpellCatalogue';
 import { CompendiumEmbed } from './CompendiumEmbed';
-import { DndFleuronDivider } from './GothicIcons';
+import { DndFleuronDivider, D20GothicIcon } from './GothicIcons';
+import { WikilinkHoverCard } from './WikilinkHoverCard';
+import { useOptionalDice } from './DiceRoller';
 
 interface MarkdownViewProps {
   content: string;
@@ -532,18 +534,19 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
         if (resolved) {
           const badge = getSourceBadgeInfo(resolved.source_type, resolved.source);
           parts.push(
-            <button
-              key={match.index}
-              onClick={(e) => {
-                e.preventDefault();
-                onNavigate(resolved.id);
-              }}
-              title={`${resolved.title} (${badge.label})`}
-              className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5 cursor-pointer text-left"
-            >
-              <span>{label}</span>
-              <ExternalLink className="w-3 h-3 opacity-60 inline shrink-0" />
-            </button>
+            <WikilinkHoverCard key={match.index} entry={resolved} onNavigate={onNavigate}>
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate(resolved.id);
+                }}
+                title={`${resolved.title} (${badge.label})`}
+                className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5 cursor-pointer text-left"
+              >
+                <span>{label}</span>
+                <ExternalLink className="w-3 h-3 opacity-60 inline shrink-0" />
+              </button>
+            </WikilinkHoverCard>
           );
         } else {
           const lowerTarget = target.toLowerCase();
@@ -635,6 +638,53 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
   return parts;
 }
 
+const InlineDiceChip: React.FC<{ formula: string }> = ({ formula }) => {
+  const dice = useOptionalDice();
+
+  return (
+    <button
+      type="button"
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (dice) {
+          dice.roll(formula, `Roll ${formula}`);
+        }
+      }}
+      title={`Click to roll ${formula}`}
+      className="inline-flex items-center gap-1 px-1.5 py-0.5 my-0.5 mx-1 rounded bg-amber-950/70 hover:bg-amber-900 border border-amber-600/50 hover:border-amber-400 text-amber-300 hover:text-amber-100 font-mono text-xs font-semibold shadow-xs cursor-pointer transition-all active:scale-95 not-prose select-none align-baseline"
+    >
+      <D20GothicIcon className="w-3 h-3 text-amber-400 inline shrink-0" />
+      <span>{formula}</span>
+    </button>
+  );
+};
+
+function renderDiceAndText(plainText: string, keyPrefix: string | number): React.ReactNode {
+  // Match standard D&D dice notations (e.g. 1d20+5, 2d6, 3d8-1, 8d6, 1d100, 1d4+2)
+  const diceRegex = /\b([1-9]\d*d(?:4|6|8|10|12|20|100)(?:\s*[+-]\s*\d+)?)\b/gi;
+  const parts: React.ReactNode[] = [];
+  let lastIdx = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = diceRegex.exec(plainText)) !== null) {
+    if (match.index > lastIdx) {
+      parts.push(plainText.substring(lastIdx, match.index));
+    }
+    const formula = match[1];
+    parts.push(
+      <InlineDiceChip key={`${keyPrefix}-dice-${match.index}`} formula={formula} />
+    );
+    lastIdx = diceRegex.lastIndex;
+  }
+
+  if (lastIdx < plainText.length) {
+    parts.push(plainText.substring(lastIdx));
+  }
+
+  return <React.Fragment key={keyPrefix}>{parts}</React.Fragment>;
+}
+
 function renderFormatting(text: string): React.ReactNode {
   // Handle inline code `code`, bold-italic ***...*** / ___...___, bold **...** / __...__,
   // strikethrough ~~...~~, and italic *...* or _..._
@@ -655,22 +705,23 @@ function renderFormatting(text: string): React.ReactNode {
     if ((token.startsWith('***') && token.endsWith('***')) || (token.startsWith('___') && token.endsWith('___'))) {
       return (
         <strong key={i} className="font-semibold text-slate-100">
-          <em className="italic">{token.slice(3, -3)}</em>
+          <em className="italic">{renderDiceAndText(token.slice(3, -3), `bi-${i}`)}</em>
         </strong>
       );
     }
     if ((token.startsWith('**') && token.endsWith('**')) || (token.startsWith('__') && token.endsWith('__'))) {
-      return <strong key={i} className="font-semibold text-slate-100">{token.slice(2, -2)}</strong>;
+      return <strong key={i} className="font-semibold text-slate-100">{renderDiceAndText(token.slice(2, -2), `b-${i}`)}</strong>;
     }
     if (token.startsWith('~~') && token.endsWith('~~')) {
       return <del key={i} className="line-through text-slate-500">{token.slice(2, -2)}</del>;
     }
     if ((token.startsWith('*') && token.endsWith('*')) || (token.startsWith('_') && token.endsWith('_'))) {
-      return <em key={i} className="italic text-slate-200">{token.slice(1, -1)}</em>;
+      return <em key={i} className="italic text-slate-200">{renderDiceAndText(token.slice(1, -1), `i-${i}`)}</em>;
     }
-    return token;
+    return renderDiceAndText(token, i);
   });
 }
+
 
 const StatblockRenderer: React.FC<{ rawYaml: string }> = ({ rawYaml }) => {
   const parsed = useMemo(() => {

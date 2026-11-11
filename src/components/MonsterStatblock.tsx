@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { ArchiveEntry } from '../types/archive';
 import { WaxSeal, GothicBat, CrossedSwords, DndFleuronDivider } from './GothicIcons';
 import { InlineContent } from './MarkdownView';
+import { useOptionalDice } from './DiceRoller';
 
 interface MonsterStatblockProps {
   entry: ArchiveEntry;
@@ -229,6 +230,7 @@ export const MonsterStatblock: React.FC<MonsterStatblockProps> = ({
 }) => {
   const data = useMemo(() => parseMonsterFromEntry(entry), [entry]);
   const isStrahd = entry.campaign_id === 'curse-of-strahd' || entry.id.includes('strahd');
+  const dice = useOptionalDice();
 
   const statList = [
     { label: 'STR', ...data.stats.str },
@@ -302,11 +304,21 @@ export const MonsterStatblock: React.FC<MonsterStatblockProps> = ({
       {/* 6 Ability Scores Grid */}
       <div className="my-3.5 grid grid-cols-3 sm:grid-cols-6 gap-2 text-center bg-stone-900/70 p-2.5 rounded-lg border border-amber-900/30">
         {statList.map((st) => (
-          <div key={st.label} className="space-y-0.5">
-            <div className="text-[10px] font-bold text-amber-400 tracking-wider">{st.label}</div>
+          <button
+            key={st.label}
+            type="button"
+            onClick={() => {
+              const modNum = parseInt(st.mod, 10) || 0;
+              const formula = `1d20${modNum >= 0 ? `+${modNum}` : `${modNum}`}`;
+              dice?.roll(formula, `${data.name}: ${st.label} Check`);
+            }}
+            title={`Click to roll ${st.label} check (1d20${st.mod})`}
+            className="space-y-0.5 p-1 rounded-lg hover:bg-stone-800/80 hover:border-amber-500/40 border border-transparent transition-all group/stat cursor-pointer text-center"
+          >
+            <div className="text-[10px] font-bold text-amber-400 tracking-wider group-hover/stat:text-amber-300">{st.label}</div>
             <div className="text-sm font-semibold text-stone-100 font-sans">{st.score}</div>
-            <div className="text-[11px] font-mono text-stone-400">({st.mod})</div>
-          </div>
+            <div className="text-[11px] font-mono text-stone-400 group-hover/stat:text-amber-300">({st.mod})</div>
+          </button>
         ))}
       </div>
 

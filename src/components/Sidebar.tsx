@@ -16,7 +16,8 @@ import {
   Home,
   Menu,
   X,
-  Anchor
+  Anchor,
+  Search
 } from 'lucide-react';
 import {
   GothicRaven,
@@ -34,6 +35,7 @@ interface SidebarProps {
   isOpen: boolean;
   onClose: () => void;
   onOpenChangelog?: () => void;
+  onOpenSearch?: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -43,7 +45,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   onSetView,
   isOpen,
   onClose,
-  onOpenChangelog
+  onOpenChangelog,
+  onOpenSearch
 }) => {
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({
     classes: true,
@@ -117,6 +120,25 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
         {/* Primary Views Hub */}
         <div className="p-3 border-b border-stone-800 space-y-1">
+          {/* Quick Search Trigger */}
+          {onOpenSearch && (
+            <button
+              onClick={() => {
+                onOpenSearch();
+                onClose();
+              }}
+              className="w-full flex items-center justify-between px-3 py-2 mb-1.5 rounded-xl text-xs font-serif font-semibold bg-stone-950/90 border border-amber-900/50 hover:border-amber-500/70 text-stone-300 hover:text-amber-200 transition-all shadow-inner group"
+            >
+              <div className="flex items-center gap-2">
+                <Search className="w-4 h-4 text-amber-400 group-hover:scale-110 transition-transform" />
+                <span>Search Codex...</span>
+              </div>
+              <kbd className="px-1.5 py-0.5 rounded bg-stone-900 border border-stone-700 text-[10px] font-mono text-stone-400 group-hover:text-amber-300">
+                Ctrl+K
+              </kbd>
+            </button>
+          )}
+
           <button
             onClick={() => {
               onSetView('reader');
@@ -132,6 +154,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <Compass className="w-4 h-4 text-amber-400" />
             <span>Home Hub</span>
           </button>
+
 
           <button
             onClick={() => {

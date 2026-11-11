@@ -1,6 +1,6 @@
 import React from 'react';
-import { X, Sparkles, Sword, BookOpen, Shield, Flame, Network, CheckCircle2 } from 'lucide-react';
-import { WaxSeal, CrossedSwords, GothicBat, DragonShield, DndFleuronDivider } from './GothicIcons';
+import { X, Sparkles, Sword, BookOpen, Shield, Flame, Network, CheckCircle2, Search } from 'lucide-react';
+import { WaxSeal, CrossedSwords, GothicBat, DragonShield, DndFleuronDivider, D20GothicIcon } from './GothicIcons';
 
 interface ChangelogModalProps {
   isOpen: boolean;
@@ -37,6 +37,49 @@ export const ChangelogModal: React.FC<ChangelogModalProps> = ({ isOpen, onClose,
 
         {/* Scrollable Changelog Content */}
         <div className="p-6 space-y-6 overflow-y-auto text-stone-300 text-sm leading-relaxed">
+          {/* Release: Interactive Living Archive */}
+          <div className="space-y-3 rounded-xl border border-amber-500/60 bg-gradient-to-br from-amber-950/40 via-stone-950/80 to-stone-900/90 p-5 shadow-[0_0_25px_rgba(245,158,11,0.15)]">
+            <div className="flex flex-wrap items-center justify-between gap-2 border-b border-amber-900/50 pb-2">
+              <div className="flex items-center gap-2">
+                <D20GothicIcon className="w-5 h-5 text-amber-400" />
+                <h3 className="font-fantasy text-lg font-bold text-amber-200">
+                  Living Archive & Interactive Tabletop Tools
+                </h3>
+              </div>
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold">
+                Latest Update
+              </span>
+            </div>
+
+            <p className="text-xs text-stone-300 font-serif">
+              Transformed the compendium into a fully interactive digital tabletop suite:
+            </p>
+
+            <ul className="space-y-2 text-xs">
+              <li className="flex items-start gap-2">
+                <D20GothicIcon className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-amber-300">Universal Dice Engine & Toast: </strong>
+                  <span>Every dice formula in spells, traits, and monster attacks (e.g. <code>2d6 + 3</code>, <code>1d20 + 5</code>) is now a clickable roll chip. Features Advantage/Disadvantage toggles, roll breakdown, history drawer, and golden confetti on Natural 20s.</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <Search className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-amber-300">Command Palette (Ctrl+K / Cmd+K): </strong>
+                  <span>Instant keyboard-navigable search across all 1,223 spells, monsters, magic items, rules, and campaigns with instant category filtering.</span>
+                </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
+                <div>
+                  <strong className="text-amber-300">Wikilink Hover Cards: </strong>
+                  <span>Hover over any <code>[[wikilink]]</code> to inspect its source badge, key attributes (CR, AC/HP, Spell School & Level, Item Rarity), and narrative excerpt without leaving your reading place.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
           {/* Release 1: Classes & Barbarian Primal Paths */}
           <div className="space-y-3 rounded-xl border border-amber-900/40 bg-stone-950/70 p-5">
             <div className="flex flex-wrap items-center justify-between gap-2 border-b border-amber-900/30 pb-2">
