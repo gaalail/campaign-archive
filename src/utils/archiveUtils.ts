@@ -101,7 +101,8 @@ export function cleanFlavorText(text?: string | null): string {
 
 export function getEntryById(id: string): ArchiveEntry | undefined {
   if (!id) return undefined;
-  const trimmed = id.trim();
+  const rawClean = id.trim().split('#')[0].split('?')[0].trim();
+  const trimmed = rawClean.replace(/^\.\//, '').replace(/\.md$/, '');
   const lower = trimmed.toLowerCase();
 
   // Root home page guard
@@ -123,7 +124,8 @@ export function getEntryById(id: string): ArchiveEntry | undefined {
 
 export function resolveWikilink(linkText: string): ArchiveEntry | undefined {
   if (!linkText) return undefined;
-  const clean = linkText.split('|')[0].split('#')[0].trim();
+  const rawTarget = linkText.split('|')[0].split('#')[0].split('?')[0].trim();
+  const clean = rawTarget.replace(/^\.\//, '').replace(/\.md$/, '');
   const lower = clean.toLowerCase();
 
   if (lower === 'index' || lower === 'home') {

@@ -78,10 +78,122 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
     return { total, spells, monsters, items, rules, classes, races, campaigns };
   }, []);
 
+  // Primary interactive tools pool
+  const toolShortcuts: ArchiveEntry[] = useMemo(() => [
+    {
+      id: 'builder',
+      title: 'Character Builder & Armory',
+      path: 'character-builder',
+      category: 'classes',
+      subcategory: 'Creation Tool',
+      parentClass: null,
+      summary: 'Interactive 6-step hero creator with live-calc HUD, 27-pt buy, click-to-roll sheet, and exports.',
+      source: 'Codex Tool',
+      source_type: 'SRD',
+      entity_type: 'tool',
+      tags: ['character', 'builder', 'creator', 'sheet', 'hero', 'statblock', 'rolls'],
+      aliases: ['character builder', 'hero creator', 'sheet builder'],
+      content_status: 'complete',
+      frontmatter: {},
+      body: '',
+      wikilinks: []
+    },
+    {
+      id: 'graph',
+      title: 'Knowledge Graph (Interactive Network)',
+      path: 'knowledge-graph',
+      category: 'rules',
+      subcategory: 'Cosmic Network',
+      parentClass: null,
+      summary: 'Force-directed visual network mapping connections between classes, subclasses, spells, monsters, and campaigns.',
+      source: 'Codex Tool',
+      source_type: 'SRD',
+      entity_type: 'tool',
+      tags: ['graph', 'network', 'map', 'relationships', 'visual', 'nodes'],
+      aliases: ['knowledge graph', 'codex graph', 'network map'],
+      content_status: 'complete',
+      frontmatter: {},
+      body: '',
+      wikilinks: []
+    },
+    {
+      id: 'spells',
+      title: 'Grimoire (Spellbook Catalogue)',
+      path: 'spells',
+      category: 'spells',
+      subcategory: 'All Circles',
+      parentClass: null,
+      summary: 'Search, filter, and cast spells from cantrips to 9th-level across all spellcasting classes.',
+      source: 'Codex Grimoire',
+      source_type: 'SRD',
+      entity_type: 'catalogue',
+      tags: ['spells', 'grimoire', 'magic', 'casting', 'slots', 'cantrip'],
+      aliases: ['spellbook', 'grimoire', 'spells catalogue'],
+      content_status: 'complete',
+      frontmatter: {},
+      body: '',
+      wikilinks: []
+    },
+    {
+      id: 'monsters',
+      title: 'Bestiary (Creatures & NPC Statblocks)',
+      path: 'monsters',
+      category: 'monsters',
+      subcategory: 'All CRs',
+      parentClass: null,
+      summary: 'Filtered compendium of undead, fiends, dragons, and beasts with interactive dice-rollable statblocks.',
+      source: 'Codex Bestiary',
+      source_type: 'SRD',
+      entity_type: 'catalogue',
+      tags: ['monsters', 'bestiary', 'creatures', 'statblock', 'cr', 'enemies'],
+      aliases: ['bestiary', 'monster manual', 'creatures'],
+      content_status: 'complete',
+      frontmatter: {},
+      body: '',
+      wikilinks: []
+    },
+    {
+      id: 'items',
+      title: 'Armory & Magic Items Catalogue',
+      path: 'items',
+      category: 'items',
+      subcategory: 'Magic Relics',
+      parentClass: null,
+      summary: 'Browse enchanted weapons, armor, rings, potions, scrolls, and wondrous artifacts sorted by rarity.',
+      source: 'Codex Armory',
+      source_type: 'SRD',
+      entity_type: 'catalogue',
+      tags: ['items', 'weapons', 'armor', 'magic items', 'relics', 'artifacts', 'loot'],
+      aliases: ['magic items', 'armory', 'items catalogue'],
+      content_status: 'complete',
+      frontmatter: {},
+      body: '',
+      wikilinks: []
+    },
+    {
+      id: 'campaigns',
+      title: 'Campaign Worlds & Gothic Chronicles',
+      path: 'campaigns',
+      category: 'campaigns',
+      subcategory: 'Setting Hub',
+      parentClass: null,
+      summary: 'Explore Barovia, Curse of Strahd alterations to magic, Ra Golvek, and Vyrun campaign archives.',
+      source: 'Campaigns Hub',
+      source_type: 'campaign-original',
+      entity_type: 'catalogue',
+      tags: ['campaigns', 'barovia', 'strahd', 'ra golvek', 'vyrun', 'worlds'],
+      aliases: ['campaigns', 'campaign hub', 'settings'],
+      content_status: 'complete',
+      frontmatter: {},
+      body: '',
+      wikilinks: []
+    }
+  ], []);
+
   // Filter & match entries
   const results = useMemo(() => {
     const cleanQ = query.trim().toLowerCase();
-    let pool = archiveDb.entries.filter(e => !e.id.endsWith('/index'));
+    let pool = [...toolShortcuts, ...archiveDb.entries.filter(e => !e.id.endsWith('/index'))];
 
     if (categoryFilter !== 'all') {
       pool = pool.filter(e => e.category === categoryFilter);
@@ -120,7 +232,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
 
     scored.sort((a, b) => b.score - a.score || a.entry.title.localeCompare(b.entry.title));
     return scored.slice(0, 40).map(s => s.entry);
-  }, [query, categoryFilter]);
+  }, [query, categoryFilter, toolShortcuts]);
 
   // Keep selected index in bounds
   useEffect(() => {

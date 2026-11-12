@@ -1,22 +1,153 @@
-import React, { useState, useMemo } from 'react';
-import { archiveDb, getSubclassesForClass } from '../utils/archiveUtils';
+import React, { useReducer, useState, useMemo, useEffect } from 'react';
+import { archiveDb, getSubclassesForClass, getEntryById } from '../utils/archiveUtils';
 import { ArchiveEntry } from '../types/archive';
-import { Sparkles, Shield, Heart, ArrowRight, ArrowLeft, Check, RefreshCw, Copy, BookOpen } from 'lucide-react';
+import { characterReducer } from './character-builder/characterReducer';
+import { INITIAL_CHARACTER_STATE, CharacterState } from './character-builder/types';
+import { calculateDerivedStats } from './character-builder/builderUtils';
+import { CharacterHud } from './character-builder/CharacterHud';
+import { RuleInspectorDrawer } from './character-builder/RuleInspectorDrawer';
+import { AbilityScorePicker } from './character-builder/AbilityScorePicker';
+import { InteractiveCharacterSheet } from './character-builder/InteractiveCharacterSheet';
+import {
+  Sparkles,
+  ArrowRight,
+  ArrowLeft,
+  Check,
+  BookOpen,
+  RotateCcw,
+  Search,
+  Filter
+} from 'lucide-react';
 import confetti from 'canvas-confetti';
+
+const LOCAL_STORAGE_KEY = 'gothic_codex_character_builder_state_v2';
 
 interface CharacterBuilderProps {
   onNavigateToEntry: (id: string) => void;
+  initialParams?: Record<string, string>;
 }
 
-export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateToEntry }) => {
-  const [step, setStep] = useState<number>(1);
-  const [selectedRace, setSelectedRace] = useState<ArchiveEntry | null>(null);
-  const [selectedClass, setSelectedClass] = useState<ArchiveEntry | null>(null);
-  const [selectedSubclass, setSelectedSubclass] = useState<ArchiveEntry | null>(null);
-  const [selectedBackground, setSelectedBackground] = useState<ArchiveEntry | null>(null);
-  const [characterName, setCharacterName] = useState<string>('Hero of the Realm');
-  const [copied, setCopied] = useState<boolean>(false);
+export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateToEntry, initialParams }) => {
+  const [state, dispatch] = useReducer(characterReducer, INITIAL_CHARACTER_STATE);
 
+  // Inspector Drawer state
+  const [inspectedEntry, setInspectedEntry] = useState<ArchiveEntry | null>(null);
+  const [isInspectorOpen, setIsInspectorOpen] = useState(false);
+
+  // Search filters per step
+  const [raceSearch, setRaceSearch] = useState('');
+  const [classSearch, setClassSearch] = useState('');
+  const [subclassSearch, setSubclassSearch] = useState('');
+  const [backgroundSearch, setBackgroundSearch] = useState('');
+
+  // 1. Restore from URL Hash or LocalStorage on mount
+  useEffect(() => {
+    try {
+      const hash = window.location.hash;
+      const buildMatch = hash.match(/build=([A-Za-z0-9+/=_-]+)/);
+      if (buildMatch) {
+        const decoded = decodeURIComponent(atob(buildMatch[1]));
+        const parsed = JSON.parse(decoded);
+        dispatch({
+          type: 'LOAD_STATE',
+          payload: {
+            ...INITIAL_CHARACTER_STATE,
+            name: parsed.name || INITIAL_CHARACTER_STATE.name,
+            genderOrTitle: parsed.title || INITIAL_CHARACTER_STATE.genderOrTitle,
+            alignment: parsed.alignment || INITIAL_CHARACTER_STATE.alignment,
+            raceId: parsed.race || null,
+            classId: parsed.class || null,
+            subclassId: parsed.subclass || null,
+            backgroundId: parsed.background || null,
+            featId: parsed.feat || null,
+            baseAbilities: parsed.abilities || INITIAL_CHARACTER_STATE.baseAbilities,
+            racialBonuses: parsed.racialBonuses || INITIAL_CHARACTER_STATE.racialBonuses,
+            selectedSkills: parsed.skills || INITIAL_CHARACTER_STATE.selectedSkills,
+            customArmor: parsed.armor || INITIAL_CHARACTER_STATE.customArmor,
+            shieldEquipped: parsed.shield ?? INITIAL_CHARACTER_STATE.shieldEquipped,
+            notes: parsed.notes || '',
+            step: 6
+          }
+        });
+        return;
+      }
+
+      // If initialParams provided from navigation (e.g. builder?class=Paladin), apply them
+      if (initialParams && Object.keys(initialParams).length > 0) {
+        if (initialParams.subclass) {
+          const sub = getEntryById(initialParams.subclass);
+          if (sub) {
+            const parent = sub.parentClass || sub.subcategory;
+            const parentClassEntry = parent ? getEntryById(`character-options/classes/${parent}`) : null;
+            if (parentClassEntry) {
+              dispatch({ type: 'SELECT_CLASS', payload: parentClassEntry.id });
+            }
+            dispatch({ type: 'SELECT_SUBCLASS', payload: sub.id });
+            dispatch({ type: 'SET_STEP', payload: 3 });
+            return;
+          }
+        }
+
+        if (initialParams.class) {
+          const cls = getEntryById(initialParams.class);
+          if (cls) {
+            dispatch({ type: 'SELECT_CLASS', payload: cls.id });
+            dispatch({ type: 'SET_STEP', payload: 3 });
+            return;
+          }
+        }
+
+        if (initialParams.race) {
+          const r = getEntryById(initialParams.race);
+          if (r) {
+            dispatch({ type: 'SELECT_RACE', payload: r.id });
+            dispatch({ type: 'SET_STEP', payload: 2 });
+            return;
+          }
+        }
+
+        if (initialParams.background) {
+          const bg = getEntryById(initialParams.background);
+          if (bg) {
+            dispatch({ type: 'SELECT_BACKGROUND', payload: bg.id });
+            dispatch({ type: 'SET_STEP', payload: 4 });
+            return;
+          }
+        }
+
+        if (initialParams.feat) {
+          const f = getEntryById(initialParams.feat);
+          if (f) {
+            dispatch({ type: 'SELECT_FEAT', payload: f.id });
+            dispatch({ type: 'SET_STEP', payload: 5 });
+            return;
+          }
+        }
+      }
+
+      // If no URL hash build, check local storage
+      const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+      if (saved) {
+        const parsedState = JSON.parse(saved);
+        if (parsedState && typeof parsedState === 'object') {
+          dispatch({ type: 'LOAD_STATE', payload: parsedState });
+        }
+      }
+    } catch {
+      // Storage parsing failure, fallback to initial state
+    }
+  }, [initialParams]);
+
+  // 2. Auto-save to LocalStorage on every state update
+  useEffect(() => {
+    try {
+      localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(state));
+    } catch {
+      // Ignore storage quota errors
+    }
+  }, [state]);
+
+  // Archive data collections
   const races = useMemo(() => {
     return archiveDb.entries
       .filter(e => e.category === 'races' && !e.id.endsWith('/index'))
@@ -29,130 +160,247 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
       .sort((a, b) => a.title.localeCompare(b.title));
   }, []);
 
-  const subclasses = useMemo(() => {
-    if (!selectedClass) return [];
-    return getSubclassesForClass(selectedClass.title).sort((a, b) => a.title.localeCompare(b.title));
-  }, [selectedClass]);
-
   const backgrounds = useMemo(() => {
     return archiveDb.entries
       .filter(e => e.category === 'backgrounds' && !e.id.endsWith('/index'))
       .sort((a, b) => a.title.localeCompare(b.title));
   }, []);
 
-  const handleFinish = () => {
+  const feats = useMemo(() => {
+    return archiveDb.entries
+      .filter(e => e.category === 'feats' || e.id.startsWith('character-options/feats/'))
+      .sort((a, b) => a.title.localeCompare(b.title));
+  }, []);
+
+  // Selected entry lookups
+  const selectedRace = useMemo(() => {
+    return races.find(r => r.id === state.raceId) || null;
+  }, [races, state.raceId]);
+
+  const selectedClass = useMemo(() => {
+    return classes.find(c => c.id === state.classId) || null;
+  }, [classes, state.classId]);
+
+  const subclasses = useMemo(() => {
+    if (!selectedClass) return [];
+    return getSubclassesForClass(selectedClass.title).sort((a, b) => a.title.localeCompare(b.title));
+  }, [selectedClass]);
+
+  const selectedSubclass = useMemo(() => {
+    return subclasses.find(s => s.id === state.subclassId) || null;
+  }, [subclasses, state.subclassId]);
+
+  const selectedBackground = useMemo(() => {
+    return backgrounds.find(b => b.id === state.backgroundId) || null;
+  }, [backgrounds, state.backgroundId]);
+
+  const selectedFeat = useMemo(() => {
+    return feats.find(f => f.id === state.featId) || null;
+  }, [feats, state.featId]);
+
+  // Derived stats live calculation
+  const derived = useMemo(() => {
+    return calculateDerivedStats(state, selectedRace, selectedClass);
+  }, [state, selectedRace, selectedClass]);
+
+  // Filtered queries
+  const filteredRaces = useMemo(() => {
+    if (!raceSearch.trim()) return races;
+    const q = raceSearch.toLowerCase();
+    return races.filter(r => r.title.toLowerCase().includes(q) || r.summary?.toLowerCase().includes(q));
+  }, [races, raceSearch]);
+
+  const filteredClasses = useMemo(() => {
+    if (!classSearch.trim()) return classes;
+    const q = classSearch.toLowerCase();
+    return classes.filter(c => c.title.toLowerCase().includes(q) || c.summary?.toLowerCase().includes(q));
+  }, [classes, classSearch]);
+
+  const filteredSubclasses = useMemo(() => {
+    if (!subclassSearch.trim()) return subclasses;
+    const q = subclassSearch.toLowerCase();
+    return subclasses.filter(s => s.title.toLowerCase().includes(q) || s.summary?.toLowerCase().includes(q));
+  }, [subclasses, subclassSearch]);
+
+  const filteredBackgrounds = useMemo(() => {
+    if (!backgroundSearch.trim()) return backgrounds;
+    const q = backgroundSearch.toLowerCase();
+    return backgrounds.filter(b => b.title.toLowerCase().includes(q) || b.summary?.toLowerCase().includes(q));
+  }, [backgrounds, backgroundSearch]);
+
+  const openInspector = (entry: ArchiveEntry) => {
+    setInspectedEntry(entry);
+    setIsInspectorOpen(true);
+  };
+
+  const handleFinishToSheet = () => {
     confetti({
       particleCount: 80,
       spread: 70,
       origin: { y: 0.6 }
     });
-    setStep(5);
+    dispatch({ type: 'SET_STEP', payload: 6 });
   };
 
-  const copySummary = () => {
-    const text = `=== 5e D&D Character ===
-Name: ${characterName}
-Race: ${selectedRace?.title || 'None'}
-Class: ${selectedClass?.title || 'None'}${selectedSubclass ? ` (${selectedSubclass.title})` : ''}
-Hit Die: ${selectedClass?.hit_die || '1d8'}
-Saving Throws: ${selectedClass?.saving_throws?.join(', ') || 'None'}
-Background: ${selectedBackground?.title || 'None'}
-Background Summary: ${selectedBackground?.summary || 'None'}
-Generated via Campaign Archive 5e Wiki`;
-
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
+  const stepsList = [
+    { num: 1, label: 'Ancestry' },
+    { num: 2, label: 'Class' },
+    { num: 3, label: 'Archetype' },
+    { num: 4, label: 'Background' },
+    { num: 5, label: 'Abilities' },
+    { num: 6, label: 'Sheet' }
+  ];
 
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
+    <div className="max-w-5xl mx-auto space-y-6 pb-16">
+      
       {/* Step Progress Tracker */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
-        <div className="flex items-center justify-between border-b border-slate-800 pb-4 mb-4">
+      <div className="bg-stone-900 border border-stone-800 rounded-2xl p-4 md:p-6 shadow-xl space-y-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-stone-800 pb-4">
           <div>
-            <div className="text-xs uppercase tracking-wider text-amber-400 font-semibold flex items-center gap-1.5">
+            <div className="text-xs uppercase tracking-wider text-amber-400 font-semibold flex items-center gap-1.5 font-serif">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Step-by-Step Creation</span>
+              <span>Gothic Compendium Character Builder</span>
             </div>
-            <h1 className="font-fantasy text-2xl md:text-3xl font-bold text-slate-100">
-              5e Character Builder
+            <h1 className="font-serif text-2xl md:text-3xl font-bold text-stone-100">
+              Hero Creator & Armory
             </h1>
           </div>
 
-          <div className="text-xs font-mono text-slate-400 bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800">
-            Step {step} of 5
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-mono text-stone-400 bg-stone-950 px-3 py-1.5 rounded-lg border border-stone-800">
+              Step {state.step} of 6
+            </span>
+            <button
+              onClick={() => dispatch({ type: 'RESET' })}
+              className="p-1.5 rounded-lg text-stone-500 hover:text-stone-300 hover:bg-stone-800 text-xs transition-colors"
+              title="Reset builder"
+            >
+              <RotateCcw className="w-4 h-4" />
+            </button>
           </div>
         </div>
 
-        {/* Wizard Steps Navigation */}
-        <div className="grid grid-cols-5 gap-2 text-center text-xs">
-          {[
-            { num: 1, label: 'Race' },
-            { num: 2, label: 'Class' },
-            { num: 3, label: 'Subclass' },
-            { num: 4, label: 'Background' },
-            { num: 5, label: 'Review' }
-          ].map(s => (
-            <button
-              key={s.num}
-              onClick={() => s.num < step && setStep(s.num)}
-              disabled={s.num > step}
-              className={`py-2 px-1 rounded-xl font-medium transition-all flex flex-col items-center gap-1 ${
-                step === s.num
-                  ? 'bg-amber-500 text-slate-950 shadow font-bold'
-                  : s.num < step
-                  ? 'bg-slate-950 text-slate-300 hover:text-white border border-slate-800'
-                  : 'text-slate-600 bg-slate-950/40 cursor-not-allowed'
-              }`}
-            >
-              <span className="text-[10px] font-mono opacity-80">0{s.num}</span>
-              <span className="truncate">{s.label}</span>
-            </button>
-          ))}
+        {/* Wizard Steps Navigation Bar */}
+        <div className="grid grid-cols-6 gap-1.5 md:gap-2 text-center text-xs">
+          {stepsList.map(s => {
+            const isCurrent = state.step === s.num;
+            const isCompleted = state.step > s.num;
+
+            return (
+              <button
+                key={s.num}
+                onClick={() => dispatch({ type: 'SET_STEP', payload: s.num })}
+                className={`py-2 px-1 rounded-xl font-medium transition-all flex flex-col items-center gap-0.5 cursor-pointer ${
+                  isCurrent
+                    ? 'bg-amber-500 text-stone-950 font-bold shadow-lg ring-1 ring-amber-400'
+                    : isCompleted
+                    ? 'bg-stone-950 text-stone-300 hover:text-white border border-stone-800 hover:border-amber-900/60'
+                    : 'text-stone-500 bg-stone-950/40 border border-stone-900 hover:text-stone-300'
+                }`}
+              >
+                <span className="text-[10px] font-mono opacity-80">0{s.num}</span>
+                <span className="truncate w-full font-serif text-[11px] md:text-xs">
+                  {s.label}
+                </span>
+              </button>
+            );
+          })}
         </div>
       </div>
 
-      {/* Step 1: Pick Race */}
-      {step === 1 && (
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
-          <div>
-            <h2 className="font-fantasy text-xl font-bold text-slate-100">Step 1: Choose Your Race</h2>
-            <p className="text-xs text-slate-400">Select your character's ancestry, physical traits, and racial features.</p>
+      {/* Floating / Sticky Live-Calc HUD (Visible on Steps 1 - 5) */}
+      {state.step < 6 && (
+        <CharacterHud
+          state={state}
+          selectedRace={selectedRace}
+          selectedClass={selectedClass}
+          selectedSubclass={selectedSubclass}
+          selectedBackground={selectedBackground}
+          derived={derived}
+          onJumpToStep={(s) => dispatch({ type: 'SET_STEP', payload: s })}
+        />
+      )}
+
+      {/* Step 1: Ancestry & Race */}
+      {state.step === 1 && (
+        <div className="bg-stone-900 border border-stone-800 rounded-2xl p-5 md:p-6 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <h2 className="font-serif text-xl font-bold text-stone-100">Step 1: Choose Ancestry / Race</h2>
+              <p className="text-xs text-stone-400">
+                Pick your lineage to gain innate traits, movement speed, and physical abilities.
+              </p>
+            </div>
+
+            <div className="relative w-full sm:w-64">
+              <Search className="w-3.5 h-3.5 text-stone-500 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                placeholder="Search ancestry..."
+                value={raceSearch}
+                onChange={(e) => setRaceSearch(e.target.value)}
+                className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-stone-950 border border-stone-800 text-xs text-stone-200 focus:outline-none focus:border-amber-500"
+              />
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-            {races.map(r => (
-              <button
-                key={r.id}
-                onClick={() => setSelectedRace(r)}
-                className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between space-y-2 ${
-                  selectedRace?.id === r.id
-                    ? 'border-amber-500 bg-amber-950/30 ring-1 ring-amber-500'
-                    : 'border-slate-800 bg-slate-950 hover:border-slate-700'
-                }`}
-              >
-                <div>
-                  <div className="font-fantasy font-bold text-slate-200 text-sm">{r.title}</div>
-                  {r.summary && <div className="text-xs text-slate-400 mt-1 line-clamp-2">{r.summary}</div>}
-                </div>
-                {selectedRace?.id === r.id && (
-                  <div className="text-amber-400 text-xs font-semibold flex items-center gap-1">
-                    <Check className="w-3.5 h-3.5" /> Selected
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-[460px] overflow-y-auto pr-1">
+            {filteredRaces.map(r => {
+              const isSelected = selectedRace?.id === r.id;
+              return (
+                <div
+                  key={r.id}
+                  className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between space-y-2 ${
+                    isSelected
+                      ? 'border-amber-500 bg-amber-950/30 ring-1 ring-amber-500 shadow-md'
+                      : 'border-stone-800 bg-stone-950 hover:border-stone-700'
+                  }`}
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-1">
+                      <div className="font-serif font-bold text-stone-200 text-sm truncate">{r.title}</div>
+                      {isSelected && (
+                        <span className="text-amber-400 text-xs font-semibold flex items-center gap-0.5 shrink-0">
+                          <Check className="w-3.5 h-3.5" /> Selected
+                        </span>
+                      )}
+                    </div>
+                    {r.summary && <div className="text-xs text-stone-400 mt-1 line-clamp-2">{r.summary}</div>}
                   </div>
-                )}
-              </button>
-            ))}
+
+                  <div className="flex items-center justify-between pt-2 border-t border-stone-900 text-xs">
+                    <button
+                      onClick={() => dispatch({ type: 'SELECT_RACE', payload: r.id })}
+                      className={`font-semibold hover:underline cursor-pointer ${
+                        isSelected ? 'text-amber-400' : 'text-stone-300 hover:text-white'
+                      }`}
+                    >
+                      {isSelected ? 'Selected' : 'Choose Race'}
+                    </button>
+
+                    <button
+                      onClick={() => openInspector(r)}
+                      className="text-stone-400 hover:text-amber-300 flex items-center gap-1 text-[11px] transition-colors cursor-pointer"
+                      title="Inspect full ancestry traits in rulebook"
+                    >
+                      <BookOpen className="w-3.5 h-3.5" />
+                      <span>Inspect</span>
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
-          <div className="flex justify-end pt-4 border-t border-slate-800">
+          <div className="flex justify-end pt-4 border-t border-stone-800">
             <button
-              onClick={() => setStep(2)}
+              onClick={() => dispatch({ type: 'SET_STEP', payload: 2 })}
               disabled={!selectedRace}
-              className={`px-5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all ${
+              className={`px-5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
                 selectedRace
-                  ? 'bg-amber-500 text-slate-950 hover:bg-amber-400 shadow'
-                  : 'bg-slate-800 text-slate-500 cursor-not-allowed'
+                  ? 'bg-amber-500 text-stone-950 hover:bg-amber-400 shadow font-bold'
+                  : 'bg-stone-800 text-stone-500 cursor-not-allowed'
               }`}
             >
               <span>Continue to Class</span>
@@ -162,72 +410,99 @@ Generated via Campaign Archive 5e Wiki`;
         </div>
       )}
 
-      {/* Step 2: Pick Class */}
-      {step === 2 && (
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
-          <div className="flex items-center justify-between">
+      {/* Step 2: Class */}
+      {state.step === 2 && (
+        <div className="bg-stone-900 border border-stone-800 rounded-2xl p-5 md:p-6 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
-              <h2 className="font-fantasy text-xl font-bold text-slate-100">Step 2: Choose Your Class</h2>
-              <p className="text-xs text-slate-400">Your class governs your role, hit die, weapon/armor proficiencies, and combat features.</p>
+              <h2 className="font-serif text-xl font-bold text-stone-100">Step 2: Choose Your Class</h2>
+              <p className="text-xs text-stone-400">
+                Your class determines your combat prowess, hit die, saving throws, and magic.
+              </p>
             </div>
-            <button onClick={() => setStep(1)} className="text-xs text-slate-400 hover:text-slate-200 flex items-center gap-1">
-              <ArrowLeft className="w-3.5 h-3.5" /> Back to Race
-            </button>
+
+            <div className="relative w-full sm:w-64">
+              <Search className="w-3.5 h-3.5 text-stone-500 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                placeholder="Search classes..."
+                value={classSearch}
+                onChange={(e) => setClassSearch(e.target.value)}
+                className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-stone-950 border border-stone-800 text-xs text-stone-200 focus:outline-none focus:border-amber-500"
+              />
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-            {classes.map(c => (
-              <button
-                key={c.id}
-                onClick={() => {
-                  setSelectedClass(c);
-                  setSelectedSubclass(null);
-                }}
-                className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between space-y-2 ${
-                  selectedClass?.id === c.id
-                    ? 'border-amber-500 bg-amber-950/30 ring-1 ring-amber-500'
-                    : 'border-slate-800 bg-slate-950 hover:border-slate-700'
-                }`}
-              >
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="font-fantasy font-bold text-slate-200 text-sm">{c.title}</span>
-                    {c.hit_die && (
-                      <span className="text-[10px] font-mono text-rose-400 bg-rose-950/60 border border-rose-900 px-1.5 py-0.5 rounded">
-                        {c.hit_die}
-                      </span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-[460px] overflow-y-auto pr-1">
+            {filteredClasses.map(c => {
+              const isSelected = selectedClass?.id === c.id;
+              return (
+                <div
+                  key={c.id}
+                  className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between space-y-2 ${
+                    isSelected
+                      ? 'border-amber-500 bg-amber-950/30 ring-1 ring-amber-500 shadow-md'
+                      : 'border-stone-800 bg-stone-950 hover:border-stone-700'
+                  }`}
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-1">
+                      <span className="font-serif font-bold text-stone-200 text-sm truncate">{c.title}</span>
+                      {c.hit_die && (
+                        <span className="text-[10px] font-mono text-rose-400 bg-rose-950/60 border border-rose-900 px-1.5 py-0.5 rounded font-bold shrink-0">
+                          {c.hit_die}
+                        </span>
+                      )}
+                    </div>
+                    {c.summary && <div className="text-xs text-stone-400 mt-1 line-clamp-2">{c.summary}</div>}
+                    {c.saving_throws && c.saving_throws.length > 0 && (
+                      <div className="text-[10px] text-stone-500 font-mono mt-1.5">
+                        Saves: {c.saving_throws.join(', ')}
+                      </div>
                     )}
                   </div>
-                  {c.summary && <div className="text-xs text-slate-400 mt-1 line-clamp-2">{c.summary}</div>}
-                  {c.saving_throws && c.saving_throws.length > 0 && (
-                    <div className="text-[10px] text-slate-500 mt-2">
-                      Saves: {c.saving_throws.join(', ')}
-                    </div>
-                  )}
-                </div>
-                {selectedClass?.id === c.id && (
-                  <div className="text-amber-400 text-xs font-semibold flex items-center gap-1">
-                    <Check className="w-3.5 h-3.5" /> Selected
+
+                  <div className="flex items-center justify-between pt-2 border-t border-stone-900 text-xs">
+                    <button
+                      onClick={() => dispatch({ type: 'SELECT_CLASS', payload: c.id })}
+                      className={`font-semibold hover:underline cursor-pointer ${
+                        isSelected ? 'text-amber-400' : 'text-stone-300 hover:text-white'
+                      }`}
+                    >
+                      {isSelected ? 'Selected' : 'Choose Class'}
+                    </button>
+
+                    <button
+                      onClick={() => openInspector(c)}
+                      className="text-stone-400 hover:text-amber-300 flex items-center gap-1 text-[11px] transition-colors cursor-pointer"
+                      title="Inspect full class features & spell progression in rulebook"
+                    >
+                      <BookOpen className="w-3.5 h-3.5" />
+                      <span>Inspect</span>
+                    </button>
                   </div>
-                )}
-              </button>
-            ))}
+                </div>
+              );
+            })}
           </div>
 
-          <div className="flex justify-between pt-4 border-t border-slate-800">
-            <button onClick={() => setStep(1)} className="px-4 py-2 rounded-xl text-xs text-slate-400 hover:text-white">
+          <div className="flex justify-between pt-4 border-t border-stone-800">
+            <button
+              onClick={() => dispatch({ type: 'SET_STEP', payload: 1 })}
+              className="px-4 py-2 rounded-xl text-xs text-stone-400 hover:text-white cursor-pointer"
+            >
               Back
             </button>
             <button
-              onClick={() => setStep(3)}
+              onClick={() => dispatch({ type: 'SET_STEP', payload: 3 })}
               disabled={!selectedClass}
-              className={`px-5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all ${
+              className={`px-5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
                 selectedClass
-                  ? 'bg-amber-500 text-slate-950 hover:bg-amber-400 shadow'
-                  : 'bg-slate-800 text-slate-500 cursor-not-allowed'
+                  ? 'bg-amber-500 text-stone-950 hover:bg-amber-400 shadow font-bold'
+                  : 'bg-stone-800 text-stone-500 cursor-not-allowed'
               }`}
             >
-              <span>Continue to Subclass</span>
+              <span>Continue to Archetype</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -235,55 +510,94 @@ Generated via Campaign Archive 5e Wiki`;
       )}
 
       {/* Step 3: Pick Subclass */}
-      {step === 3 && (
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
-          <div className="flex items-center justify-between">
+      {state.step === 3 && (
+        <div className="bg-stone-900 border border-stone-800 rounded-2xl p-5 md:p-6 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
-              <h2 className="font-fantasy text-xl font-bold text-slate-100">Step 3: Pick Archetype / Subclass</h2>
-              <p className="text-xs text-slate-400">Available specializations for {selectedClass?.title || 'your class'}.</p>
+              <h2 className="font-serif text-xl font-bold text-stone-100">Step 3: Archetype / Subclass</h2>
+              <p className="text-xs text-stone-400">
+                Specializations, Sacred Oaths, and Paths for {selectedClass?.title || 'your class'}.
+              </p>
             </div>
-            <button onClick={() => setStep(2)} className="text-xs text-slate-400 hover:text-slate-200 flex items-center gap-1">
-              <ArrowLeft className="w-3.5 h-3.5" /> Back to Class
-            </button>
+
+            {subclasses.length > 4 && (
+              <div className="relative w-full sm:w-64">
+                <Search className="w-3.5 h-3.5 text-stone-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                <input
+                  type="text"
+                  placeholder="Filter archetypes..."
+                  value={subclassSearch}
+                  onChange={(e) => setSubclassSearch(e.target.value)}
+                  className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-stone-950 border border-stone-800 text-xs text-stone-200 focus:outline-none focus:border-amber-500"
+                />
+              </div>
+            )}
           </div>
 
           {subclasses.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[400px] overflow-y-auto pr-2">
-              {subclasses.map(sub => (
-                <button
-                  key={sub.id}
-                  onClick={() => setSelectedSubclass(sub)}
-                  className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between space-y-2 ${
-                    selectedSubclass?.id === sub.id
-                      ? 'border-amber-500 bg-amber-950/30 ring-1 ring-amber-500'
-                      : 'border-slate-800 bg-slate-950 hover:border-slate-700'
-                  }`}
-                >
-                  <div>
-                    <div className="font-fantasy font-bold text-slate-200 text-sm">{sub.title}</div>
-                    {sub.summary && <div className="text-xs text-slate-400 mt-1 line-clamp-2">{sub.summary}</div>}
-                  </div>
-                  {selectedSubclass?.id === sub.id && (
-                    <div className="text-amber-400 text-xs font-semibold flex items-center gap-1">
-                      <Check className="w-3.5 h-3.5" /> Selected
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[460px] overflow-y-auto pr-1">
+              {filteredSubclasses.map(sub => {
+                const isSelected = selectedSubclass?.id === sub.id;
+                return (
+                  <div
+                    key={sub.id}
+                    className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between space-y-2 ${
+                      isSelected
+                        ? 'border-amber-500 bg-amber-950/30 ring-1 ring-amber-500 shadow-md'
+                        : 'border-stone-800 bg-stone-950 hover:border-stone-700'
+                    }`}
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-1">
+                        <div className="font-serif font-bold text-stone-200 text-sm">{sub.title}</div>
+                        {isSelected && (
+                          <span className="text-amber-400 text-xs font-semibold flex items-center gap-0.5 shrink-0">
+                            <Check className="w-3.5 h-3.5" /> Selected
+                          </span>
+                        )}
+                      </div>
+                      {sub.summary && <div className="text-xs text-stone-400 mt-1 line-clamp-2">{sub.summary}</div>}
                     </div>
-                  )}
-                </button>
-              ))}
+
+                    <div className="flex items-center justify-between pt-2 border-t border-stone-900 text-xs">
+                      <button
+                        onClick={() => dispatch({ type: 'SELECT_SUBCLASS', payload: isSelected ? null : sub.id })}
+                        className={`font-semibold hover:underline cursor-pointer ${
+                          isSelected ? 'text-amber-400' : 'text-stone-300 hover:text-white'
+                        }`}
+                      >
+                        {isSelected ? 'Selected' : 'Choose Archetype'}
+                      </button>
+
+                      <button
+                        onClick={() => openInspector(sub)}
+                        className="text-stone-400 hover:text-amber-300 flex items-center gap-1 text-[11px] transition-colors cursor-pointer"
+                        title="Read tenets, archetype spells, and mechanics in rulebook"
+                      >
+                        <BookOpen className="w-3.5 h-3.5" />
+                        <span>Inspect Tenets & Rules</span>
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           ) : (
-            <div className="p-8 text-center text-slate-400 rounded-xl bg-slate-950 border border-slate-800 text-xs">
-              No specific subclasses found for {selectedClass?.title}. You can continue to Background.
+            <div className="p-8 text-center text-stone-400 rounded-xl bg-stone-950 border border-stone-800 text-xs">
+              No specific archetype required at 1st level for {selectedClass?.title || 'this class'}. You can proceed to Background.
             </div>
           )}
 
-          <div className="flex justify-between pt-4 border-t border-slate-800">
-            <button onClick={() => setStep(2)} className="px-4 py-2 rounded-xl text-xs text-slate-400 hover:text-white">
+          <div className="flex justify-between pt-4 border-t border-stone-800">
+            <button
+              onClick={() => dispatch({ type: 'SET_STEP', payload: 2 })}
+              className="px-4 py-2 rounded-xl text-xs text-stone-400 hover:text-white cursor-pointer"
+            >
               Back
             </button>
             <button
-              onClick={() => setStep(4)}
-              className="px-5 py-2.5 rounded-xl text-xs font-semibold bg-amber-500 text-slate-950 hover:bg-amber-400 shadow flex items-center gap-2"
+              onClick={() => dispatch({ type: 'SET_STEP', payload: 4 })}
+              className="px-5 py-2.5 rounded-xl text-xs font-semibold bg-amber-500 text-stone-950 hover:bg-amber-400 shadow font-bold flex items-center gap-2 cursor-pointer"
             >
               <span>Continue to Background</span>
               <ArrowRight className="w-4 h-4" />
@@ -293,149 +607,180 @@ Generated via Campaign Archive 5e Wiki`;
       )}
 
       {/* Step 4: Pick Background */}
-      {step === 4 && (
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-4">
-          <div className="flex items-center justify-between">
+      {state.step === 4 && (
+        <div className="bg-stone-900 border border-stone-800 rounded-2xl p-5 md:p-6 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
             <div>
-              <h2 className="font-fantasy text-xl font-bold text-slate-100">Step 4: Choose Background</h2>
-              <p className="text-xs text-slate-400">Background defines your character's upbringing, proficiencies, and unique narrative perk.</p>
+              <h2 className="font-serif text-xl font-bold text-stone-100">Step 4: Choose Background</h2>
+              <p className="text-xs text-stone-400">
+                Your character's upbringing, cultural roots, narrative features, and skill proficiencies.
+              </p>
             </div>
-            <button onClick={() => setStep(3)} className="text-xs text-slate-400 hover:text-slate-200 flex items-center gap-1">
-              <ArrowLeft className="w-3.5 h-3.5" /> Back to Subclass
-            </button>
+
+            <div className="relative w-full sm:w-64">
+              <Search className="w-3.5 h-3.5 text-stone-500 absolute left-3 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                placeholder="Search backgrounds..."
+                value={backgroundSearch}
+                onChange={(e) => setBackgroundSearch(e.target.value)}
+                className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-stone-950 border border-stone-800 text-xs text-stone-200 focus:outline-none focus:border-amber-500"
+              />
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-[400px] overflow-y-auto pr-2">
-            {backgrounds.map(b => (
-              <button
-                key={b.id}
-                onClick={() => setSelectedBackground(b)}
-                className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between space-y-2 ${
-                  selectedBackground?.id === b.id
-                    ? 'border-amber-500 bg-amber-950/30 ring-1 ring-amber-500'
-                    : 'border-slate-800 bg-slate-950 hover:border-slate-700'
-                }`}
-              >
-                <div>
-                  <div className="font-fantasy font-bold text-slate-200 text-sm">{b.title}</div>
-                  {b.summary && <div className="text-xs text-slate-400 mt-1 line-clamp-2">{b.summary}</div>}
-                </div>
-                {selectedBackground?.id === b.id && (
-                  <div className="text-amber-400 text-xs font-semibold flex items-center gap-1">
-                    <Check className="w-3.5 h-3.5" /> Selected
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 max-h-[460px] overflow-y-auto pr-1">
+            {filteredBackgrounds.map(b => {
+              const isSelected = selectedBackground?.id === b.id;
+              return (
+                <div
+                  key={b.id}
+                  className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between space-y-2 ${
+                    isSelected
+                      ? 'border-amber-500 bg-amber-950/30 ring-1 ring-amber-500 shadow-md'
+                      : 'border-stone-800 bg-stone-950 hover:border-stone-700'
+                  }`}
+                >
+                  <div>
+                    <div className="flex items-center justify-between gap-1">
+                      <div className="font-serif font-bold text-stone-200 text-sm truncate">{b.title}</div>
+                      {isSelected && (
+                        <span className="text-amber-400 text-xs font-semibold flex items-center gap-0.5 shrink-0">
+                          <Check className="w-3.5 h-3.5" /> Selected
+                        </span>
+                      )}
+                    </div>
+                    {b.summary && <div className="text-xs text-stone-400 mt-1 line-clamp-2">{b.summary}</div>}
                   </div>
-                )}
-              </button>
-            ))}
+
+                  <div className="flex items-center justify-between pt-2 border-t border-stone-900 text-xs">
+                    <button
+                      onClick={() => dispatch({ type: 'SELECT_BACKGROUND', payload: b.id })}
+                      className={`font-semibold hover:underline cursor-pointer ${
+                        isSelected ? 'text-amber-400' : 'text-stone-300 hover:text-white'
+                      }`}
+                    >
+                      {isSelected ? 'Selected' : 'Choose Background'}
+                    </button>
+
+                    <button
+                      onClick={() => openInspector(b)}
+                      className="text-stone-400 hover:text-amber-300 flex items-center gap-1 text-[11px] transition-colors cursor-pointer"
+                      title="Inspect background narrative features"
+                    >
+                      <BookOpen className="w-3.5 h-3.5" />
+                      <span>Inspect</span>
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
-          <div className="flex justify-between pt-4 border-t border-slate-800">
-            <button onClick={() => setStep(3)} className="px-4 py-2 rounded-xl text-xs text-slate-400 hover:text-white">
+          <div className="flex justify-between pt-4 border-t border-stone-800">
+            <button
+              onClick={() => dispatch({ type: 'SET_STEP', payload: 3 })}
+              className="px-4 py-2 rounded-xl text-xs text-stone-400 hover:text-white cursor-pointer"
+            >
               Back
             </button>
             <button
-              onClick={handleFinish}
+              onClick={() => dispatch({ type: 'SET_STEP', payload: 5 })}
               disabled={!selectedBackground}
-              className={`px-5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all ${
+              className={`px-5 py-2.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all cursor-pointer ${
                 selectedBackground
-                  ? 'bg-amber-500 text-slate-950 hover:bg-amber-400 shadow'
-                  : 'bg-slate-800 text-slate-500 cursor-not-allowed'
+                  ? 'bg-amber-500 text-stone-950 hover:bg-amber-400 shadow font-bold'
+                  : 'bg-stone-800 text-stone-500 cursor-not-allowed'
               }`}
             >
-              <span>Complete Character Review</span>
+              <span>Continue to Abilities & Feats</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Step 5: Ability Scores & Feats */}
+      {state.step === 5 && (
+        <div className="bg-stone-900 border border-stone-800 rounded-2xl p-5 md:p-6 space-y-6">
+          <AbilityScorePicker
+            state={state}
+            onSetMode={(mode) => dispatch({ type: 'SET_ABILITY_MODE', payload: mode })}
+            onSetAbility={(ability, score) => dispatch({ type: 'SET_BASE_ABILITY', payload: { ability, score } })}
+            onSetAllAbilities={(scores) => dispatch({ type: 'SET_ALL_BASE_ABILITIES', payload: scores })}
+            onSetRacialBonus={(type, ability) => dispatch({ type: 'SET_RACIAL_BONUS', payload: { type, ability } })}
+            onSelectFeat={(featId) => dispatch({ type: 'SELECT_FEAT', payload: featId })}
+            onInspectEntry={openInspector}
+            feats={feats}
+          />
+
+          <div className="flex justify-between pt-4 border-t border-stone-800">
+            <button
+              onClick={() => dispatch({ type: 'SET_STEP', payload: 4 })}
+              className="px-4 py-2 rounded-xl text-xs text-stone-400 hover:text-white cursor-pointer"
+            >
+              Back to Background
+            </button>
+            <button
+              onClick={handleFinishToSheet}
+              className="px-6 py-2.5 rounded-xl text-xs font-bold bg-amber-500 text-stone-950 hover:bg-amber-400 shadow-lg flex items-center gap-2 cursor-pointer"
+            >
+              <span>Generate Interactive Character Sheet</span>
               <Sparkles className="w-4 h-4" />
             </button>
           </div>
         </div>
       )}
 
-      {/* Step 5: Character Review & Sheet */}
-      {step === 5 && (
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 space-y-6">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-5">
-            <div>
-              <div className="text-xs uppercase tracking-wider text-amber-400 font-semibold mb-1">Character Sheet Preview</div>
-              <input
-                type="text"
-                value={characterName}
-                onChange={(e) => setCharacterName(e.target.value)}
-                className="bg-transparent font-fantasy text-2xl md:text-3xl font-bold text-slate-100 border-b border-transparent hover:border-slate-700 focus:border-amber-500 focus:outline-none"
-              />
-            </div>
-
-            <div className="flex items-center gap-2">
-              <button
-                onClick={copySummary}
-                className="px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-slate-200 transition-colors flex items-center gap-1.5"
-              >
-                <Copy className="w-3.5 h-3.5" />
-                <span>{copied ? 'Copied!' : 'Copy Summary'}</span>
-              </button>
-              <button
-                onClick={() => setStep(1)}
-                className="px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-xs text-slate-400 hover:text-white transition-colors flex items-center gap-1.5"
-              >
-                <RefreshCw className="w-3.5 h-3.5" />
-                <span>Restart</span>
-              </button>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-1">
-              <span className="text-[10px] uppercase font-semibold text-slate-500 block">Race</span>
-              <span className="text-base font-bold text-slate-100 block">{selectedRace?.title || 'None'}</span>
-              {selectedRace && (
-                <button
-                  onClick={() => onNavigateToEntry(selectedRace.id)}
-                  className="text-xs text-amber-400 hover:text-amber-200 underline pt-1 block"
-                >
-                  View Details →
-                </button>
-              )}
-            </div>
-
-            <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-1">
-              <span className="text-[10px] uppercase font-semibold text-slate-500 block">Class</span>
-              <span className="text-base font-bold text-slate-100 block">{selectedClass?.title || 'None'}</span>
-              {selectedClass && (
-                <button
-                  onClick={() => onNavigateToEntry(selectedClass.id)}
-                  className="text-xs text-amber-400 hover:text-amber-200 underline pt-1 block"
-                >
-                  View Class & Spells →
-                </button>
-              )}
-            </div>
-
-            <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-1">
-              <span className="text-[10px] uppercase font-semibold text-slate-500 block">Subclass</span>
-              <span className="text-base font-bold text-slate-100 block">{selectedSubclass?.title || 'Standard Progression'}</span>
-              {selectedSubclass && (
-                <button
-                  onClick={() => onNavigateToEntry(selectedSubclass.id)}
-                  className="text-xs text-amber-400 hover:text-amber-200 underline pt-1 block"
-                >
-                  View Archetype →
-                </button>
-              )}
-            </div>
-
-            <div className="bg-slate-950 border border-slate-800 rounded-xl p-4 space-y-1">
-              <span className="text-[10px] uppercase font-semibold text-slate-500 block">Background</span>
-              <span className="text-base font-bold text-slate-100 block">{selectedBackground?.title || 'None'}</span>
-              {selectedBackground && (
-                <button
-                  onClick={() => onNavigateToEntry(selectedBackground.id)}
-                  className="text-xs text-amber-400 hover:text-amber-200 underline pt-1 block"
-                >
-                  View Background Perks →
-                </button>
-              )}
-            </div>
-          </div>
-        </div>
+      {/* Step 6: Final Interactive Sheet & Armory */}
+      {state.step === 6 && (
+        <InteractiveCharacterSheet
+          state={state}
+          selectedRace={selectedRace}
+          selectedClass={selectedClass}
+          selectedSubclass={selectedSubclass}
+          selectedBackground={selectedBackground}
+          selectedFeat={selectedFeat}
+          derived={derived}
+          onSetName={(name) => dispatch({ type: 'SET_NAME', payload: name })}
+          onSetGenderOrTitle={(title) => dispatch({ type: 'SET_GENDER_OR_TITLE', payload: title })}
+          onSetAlignment={(align) => dispatch({ type: 'SET_ALIGNMENT', payload: align })}
+          onToggleSkill={(skill) => dispatch({ type: 'TOGGLE_SKILL', payload: skill })}
+          onSetArmor={(armor) => dispatch({ type: 'SET_ARMOR', payload: armor })}
+          onToggleShield={() => dispatch({ type: 'TOGGLE_SHIELD' })}
+          onSetNotes={(notes) => dispatch({ type: 'SET_NOTES', payload: notes })}
+          onAddAttack={(atk) => dispatch({ type: 'ADD_ATTACK', payload: atk })}
+          onRemoveAttack={(id) => dispatch({ type: 'REMOVE_ATTACK', payload: id })}
+          onInspectEntry={openInspector}
+          onReset={() => dispatch({ type: 'RESET' })}
+        />
       )}
+
+      {/* Rulebook Side Drawer Inspector */}
+      <RuleInspectorDrawer
+        entry={inspectedEntry}
+        isOpen={isInspectorOpen}
+        onClose={() => setIsInspectorOpen(false)}
+        onSelectOption={(entry) => {
+          if (entry.category === 'races') dispatch({ type: 'SELECT_RACE', payload: entry.id });
+          else if (entry.category === 'classes') dispatch({ type: 'SELECT_CLASS', payload: entry.id });
+          else if (entry.category === 'subclasses') dispatch({ type: 'SELECT_SUBCLASS', payload: entry.id });
+          else if (entry.category === 'backgrounds') dispatch({ type: 'SELECT_BACKGROUND', payload: entry.id });
+          else if (entry.category === 'feats') dispatch({ type: 'SELECT_FEAT', payload: entry.id });
+          setIsInspectorOpen(false);
+        }}
+        isSelected={
+          inspectedEntry
+            ? inspectedEntry.id === state.raceId ||
+              inspectedEntry.id === state.classId ||
+              inspectedEntry.id === state.subclassId ||
+              inspectedEntry.id === state.backgroundId ||
+              inspectedEntry.id === state.featId
+            : false
+        }
+        onNavigateToEntry={onNavigateToEntry}
+      />
+
     </div>
   );
 };

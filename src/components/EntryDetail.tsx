@@ -39,7 +39,8 @@ import {
   Sword,
   Wand2,
   Package,
-  Network
+  Network,
+  User
 } from 'lucide-react';
 import {
   GothicRaven,
@@ -64,11 +65,24 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const [expandedSubclasses, setExpandedSubclasses] = useState<Set<string>>(new Set());
   const [subclassSearch, setSubclassSearch] = useState('');
 
-  // Whenever entry changes, reset activeTab to 'content'
+  // Whenever entry changes, reset activeTab to 'content' and handle anchor jump
   useEffect(() => {
     setActiveTab('content');
     setExpandedSubclasses(new Set());
     setSubclassSearch('');
+
+    // Check for anchor hash scroll
+    const hash = window.location.hash;
+    const anchorMatch = hash.match(/#([^#?]+)$/);
+    if (anchorMatch) {
+      const anchorId = anchorMatch[1].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      setTimeout(() => {
+        const el = document.getElementById(anchorId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 120);
+    }
   }, [entry.id]);
 
   const toggleSubclassExpand = (id: string) => {
@@ -123,6 +137,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const isMonster = entry.category === 'monsters' && !entry.id.endsWith('/index');
   const isMonsterIndex = entry.id === 'monsters/index' || entry.id === 'monsters' || (entry.category === 'monsters' && entry.id.endsWith('/index'));
   const isRace = entry.category === 'races' && !entry.id.endsWith('/index');
+  const isBackground = entry.category === 'backgrounds' && !entry.id.endsWith('/index');
+  const isFeat = (entry.category === 'feats' || entry.id.startsWith('character-options/feats/')) && !entry.id.endsWith('/index');
 
   // If this is the Bestiary index, render the dedicated Bestiary Catalogue
   if (isMonsterIndex) {
@@ -369,16 +385,81 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
               </h1>
             </div>
 
-            {/* Subclass parent link */}
-            {entry.parentClass && (
-              <button
-                onClick={() => onNavigate(`character-options/classes/${entry.parentClass}`)}
-                className="px-3.5 py-1.5 rounded-lg bg-stone-950 border border-stone-800 text-xs font-serif tracking-wider uppercase text-amber-400 hover:text-amber-200 hover:border-amber-500/40 flex items-center gap-1.5 transition-colors font-medium"
-              >
-                <span>Class: {entry.parentClass}</span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </button>
-            )}
+            <div className="flex flex-wrap items-center gap-2 pt-1">
+              {/* Subclass parent link */}
+              {entry.parentClass && (
+                <button
+                  onClick={() => onNavigate(`character-options/classes/${entry.parentClass}`)}
+                  className="px-3 py-1.5 rounded-lg bg-stone-950 border border-stone-800 text-xs font-serif tracking-wider uppercase text-amber-400 hover:text-amber-200 hover:border-amber-500/40 flex items-center gap-1.5 transition-colors font-medium cursor-pointer"
+                >
+                  <span>Class: {entry.parentClass}</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </button>
+              )}
+
+              {/* Synergistic Connector: Quick Character Build Buttons */}
+              {isClass && (
+                <button
+                  onClick={() => onNavigate(`builder?class=${entry.id}`)}
+                  className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
+                >
+                  <CrossedSwords className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Build a {entry.title}</span>
+                </button>
+              )}
+
+              {isSubclass && (
+                <button
+                  onClick={() => onNavigate(`builder?subclass=${entry.id}`)}
+                  className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
+                >
+                  <CrossedSwords className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Adopt in Builder</span>
+                </button>
+              )}
+
+              {isRace && (
+                <button
+                  onClick={() => onNavigate(`builder?race=${entry.id}`)}
+                  className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
+                >
+                  <User className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Create {entry.title} Hero</span>
+                </button>
+              )}
+
+              {isBackground && (
+                <button
+                  onClick={() => onNavigate(`builder?background=${entry.id}`)}
+                  className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
+                >
+                  <BookOpen className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Use in Character Builder</span>
+                </button>
+              )}
+
+              {isFeat && (
+                <button
+                  onClick={() => onNavigate(`builder?feat=${entry.id}`)}
+                  className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
+                >
+                  <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Select Feat in Builder</span>
+                </button>
+              )}
+
+              {/* Synergistic Connector: Knowledge Graph Focus */}
+              {!isHome && (
+                <button
+                  onClick={() => onNavigate(`graph?focus=${entry.id}`)}
+                  className="px-3 py-1.5 rounded-lg bg-stone-950 hover:bg-stone-850 border border-stone-800 hover:border-indigo-500/50 text-xs font-serif tracking-wider text-stone-300 hover:text-indigo-300 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm"
+                  title="Explore relationships in the Knowledge Graph"
+                >
+                  <Network className="w-3.5 h-3.5 text-indigo-400" />
+                  <span>Graph Node</span>
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Home Hub Quick-Access Portals */}

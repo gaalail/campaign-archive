@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from 'react';
+import { useMemo, useState, useEffect, useCallback } from 'react';
 import { Sidebar } from './components/Sidebar';
 import { EntryDetail } from './components/EntryDetail';
 import { CharacterBuilder } from './components/CharacterBuilder';
@@ -6,7 +6,6 @@ import { CampaignHub } from './components/CampaignHub';
 import { ItemCatalogue } from './components/ItemCatalogue';
 import { KnowledgeGraph } from './components/KnowledgeGraph';
 import { getEntryById } from './utils/archiveUtils';
-
 import { SpellCatalogue } from './components/SpellCatalogue';
 import { BestiaryCatalogue } from './components/BestiaryCatalogue';
 import { ChangelogModal } from './components/ChangelogModal';
@@ -16,14 +15,87 @@ import { Sparkles, Search } from 'lucide-react';
 
 export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells' | 'monsters';
 
+interface ParsedRoute {
+  view: AppView;
+  entryId: string;
+  anchor: string | null;
+  params: Record<string, string>;
+}
+
+function parseHashRoute(hashStr: string): ParsedRoute {
+  const clean = hashStr.replace(/^#/, '').trim();
+  if (!clean || clean === 'index' || clean === 'home') {
+    return { view: 'reader', entryId: 'index', anchor: null, params: {} };
+  }
+
+  // Extract query parameters (?class=Paladin&focus=xyz)
+  const [routePart, queryPart] = clean.split('?');
+  const params: Record<string, string> = {};
+  if (queryPart) {
+    queryPart.split('&').forEach(pair => {
+      const [k, v] = pair.split('=');
+      if (k) params[decodeURIComponent(k)] = decodeURIComponent(v || '');
+    });
+  }
+
+  // Extract anchor (#oath-smites)
+  const [baseRoute, anchor] = routePart.split('#');
+
+  if (baseRoute === 'spells' || baseRoute === 'spells/index') {
+    return { view: 'spells', entryId: 'spells/index', anchor: null, params };
+  }
+  if (baseRoute === 'monsters' || baseRoute === 'monsters/index' || baseRoute === 'bestiary') {
+    return { view: 'monsters', entryId: 'monsters/index', anchor: null, params };
+  }
+  if (baseRoute === 'items' || baseRoute === 'items/index') {
+    return { view: 'items', entryId: 'items/index', anchor: null, params };
+  }
+  if (baseRoute === 'campaigns' || baseRoute === 'campaigns/index') {
+    return { view: 'campaigns', entryId: 'campaigns/index', anchor: null, params };
+  }
+  if (baseRoute === 'builder' || baseRoute === 'character-builder') {
+    return { view: 'builder', entryId: 'character-builder', anchor: null, params };
+  }
+  if (baseRoute === 'graph' || baseRoute === 'knowledge-graph') {
+    return { view: 'graph', entryId: 'graph', anchor: null, params };
+  }
+
+  return { view: 'reader', entryId: baseRoute, anchor: anchor || null, params };
+}
+
 export default function App() {
-  const [view, setView] = useState<AppView>('reader');
-  const [entryId, setEntryId] = useState<string | null>('index');
+  const initialRoute = useMemo(() => parseHashRoute(window.location.hash), []);
+  const [view, setView] = useState<AppView>(initialRoute.view);
+  const [entryId, setEntryId] = useState<string | null>(initialRoute.entryId);
+  const [routeParams, setRouteParams] = useState<Record<string, string>>(initialRoute.params);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [changelogOpen, setChangelogOpen] = useState(false);
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
 
   const entry = useMemo(() => entryId ? getEntryById(entryId) : undefined, [entryId]);
+
+  // Synchronize with Browser History (Back / Forward buttons & URL Hash)
+  useEffect(() => {
+    const handleHashChange = () => {
+      const parsed = parseHashRoute(window.location.hash);
+      setView(parsed.view);
+      setEntryId(parsed.entryId);
+      setRouteParams(parsed.params);
+
+      // Smooth scroll to anchor if present
+      if (parsed.anchor) {
+        setTimeout(() => {
+          const el = document.getElementById(parsed.anchor!);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 120);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   // Global Ctrl+K / Cmd+K keyboard shortcut
   useEffect(() => {
@@ -37,53 +109,33 @@ export default function App() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  const navigate = (id: string) => {
-    if (id === 'index' || id === 'home') {
-      setView('reader');
-      setEntryId('index');
-      setSidebarOpen(false);
-      return;
-    }
-    if (id === 'spells/index' || id === 'spells') {
-      setView('spells');
-      setEntryId(id);
-      setSidebarOpen(false);
-      return;
-    }
-    if (id === 'items/index' || id === 'items') {
-      setView('items');
-      setEntryId(id);
-      setSidebarOpen(false);
-      return;
-    }
-    if (id === 'monsters/index' || id === 'monsters' || id === 'bestiary') {
-      setView('monsters');
-      setEntryId('monsters/index');
-      setSidebarOpen(false);
-      return;
-    }
-    if (id === 'campaigns/index' || id === 'campaigns') {
-      setView('campaigns');
-      setEntryId(id);
-      setSidebarOpen(false);
-      return;
-    }
-    if (id === 'builder' || id === 'character-builder') {
-      setView('builder');
-      setEntryId('character-builder');
-      setSidebarOpen(false);
-      return;
-    }
-    if (id === 'graph' || id === 'knowledge-graph') {
-      setView('graph');
-      setEntryId('graph');
-      setSidebarOpen(false);
-      return;
-    }
-    setEntryId(id);
-    setView('reader');
+  const navigate = useCallback((target: string) => {
+    const parsed = parseHashRoute(target);
+    
+    // Update browser URL hash
+    window.location.hash = '#' + target;
+    
+    setView(parsed.view);
+    setEntryId(parsed.entryId);
+    setRouteParams(parsed.params);
     setSidebarOpen(false);
-  };
+
+    // Scroll to top or to anchor
+    if (parsed.anchor) {
+      setTimeout(() => {
+        const el = document.getElementById(parsed.anchor!);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 120);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, []);
+
+  const handleSetView = useCallback((nextView: AppView) => {
+    navigate(nextView);
+  }, [navigate]);
 
   return (
     <DiceProvider>
@@ -92,14 +144,14 @@ export default function App() {
         <div className="fixed top-3 left-3 right-3 z-50 flex items-center justify-between pointer-events-none md:hidden">
           <div className="flex items-center gap-2">
             <button
-              className="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 pointer-events-auto text-xs font-serif font-semibold text-stone-200 shadow-lg"
+              className="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 pointer-events-auto text-xs font-serif font-semibold text-stone-200 shadow-lg cursor-pointer"
               onClick={() => setSidebarOpen(true)}
               aria-label="Open navigation"
             >
               Menu
             </button>
             <button
-              className="rounded-lg border border-amber-900/60 bg-slate-900 px-3 py-2 pointer-events-auto text-xs font-serif font-semibold text-amber-300 shadow-lg flex items-center gap-1.5"
+              className="rounded-lg border border-amber-900/60 bg-slate-900 px-3 py-2 pointer-events-auto text-xs font-serif font-semibold text-amber-300 shadow-lg flex items-center gap-1.5 cursor-pointer"
               onClick={() => setCommandPaletteOpen(true)}
               aria-label="Quick search"
             >
@@ -108,7 +160,7 @@ export default function App() {
             </button>
           </div>
           <button
-            className="rounded-lg border border-amber-900/60 bg-stone-900 px-3 py-2 pointer-events-auto text-xs font-serif font-semibold text-amber-300 shadow-lg flex items-center gap-1.5"
+            className="rounded-lg border border-amber-900/60 bg-stone-900 px-3 py-2 pointer-events-auto text-xs font-serif font-semibold text-amber-300 shadow-lg flex items-center gap-1.5 cursor-pointer"
             onClick={() => setChangelogOpen(true)}
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-500" />
@@ -120,21 +172,58 @@ export default function App() {
           currentEntryId={entryId}
           currentView={view}
           onNavigateToEntry={navigate}
-          onSetView={(nextView) => { setView(nextView); setSidebarOpen(false); }}
+          onSetView={handleSetView}
           isOpen={sidebarOpen}
           onClose={() => setSidebarOpen(false)}
           onOpenChangelog={() => setChangelogOpen(true)}
           onOpenSearch={() => setCommandPaletteOpen(true)}
         />
+        
         <main className="md:ml-72 min-h-screen p-4 md:p-8 pt-16 md:pt-8">
-          {view === 'reader' && entry && <EntryDetail key={entry.id} entry={entry} onNavigate={navigate} />}
-          {view === 'reader' && !entry && <div className="text-slate-400">Entry not found.</div>}
+          {view === 'reader' && entry && (
+            <EntryDetail
+              key={entry.id}
+              entry={entry}
+              onNavigate={navigate}
+              onBack={() => window.history.back()}
+            />
+          )}
+          {view === 'reader' && !entry && (
+            <div className="p-8 text-center text-stone-400 bg-stone-900 border border-stone-800 rounded-2xl max-w-lg mx-auto space-y-3">
+              <h2 className="font-serif text-xl font-bold text-amber-200">Chronicle Page Not Found</h2>
+              <p className="text-xs text-stone-400">
+                The requested entry <code className="text-amber-400 font-mono">{entryId}</code> could not be found in the current codex.
+              </p>
+              <button
+                onClick={() => navigate('index')}
+                className="px-4 py-2 rounded-xl bg-amber-500 text-stone-950 font-bold text-xs hover:bg-amber-400"
+              >
+                Return to Home Hub
+              </button>
+            </div>
+          )}
           {view === 'spells' && <SpellCatalogue onSelectSpell={navigate} />}
           {view === 'monsters' && <BestiaryCatalogue onSelectMonster={navigate} />}
-          {view === 'builder' && <CharacterBuilder onNavigateToEntry={navigate} />}
+          {view === 'builder' && (
+            <CharacterBuilder
+              onNavigateToEntry={navigate}
+              initialParams={routeParams}
+            />
+          )}
           {view === 'items' && <ItemCatalogue onSelectItem={navigate} />}
-          {view === 'campaigns' && <CampaignHub onNavigate={navigate} onOpenCharacterBuilder={() => setView('builder')} onOpenGraph={() => setView('graph')} />}
-          {view === 'graph' && <KnowledgeGraph onSelectEntry={navigate} />}
+          {view === 'campaigns' && (
+            <CampaignHub
+              onNavigate={navigate}
+              onOpenCharacterBuilder={() => navigate('builder')}
+              onOpenGraph={() => navigate('graph')}
+            />
+          )}
+          {view === 'graph' && (
+            <KnowledgeGraph
+              onSelectEntry={navigate}
+              initialFocusId={routeParams.focus || null}
+            />
+          )}
         </main>
 
         <ChangelogModal

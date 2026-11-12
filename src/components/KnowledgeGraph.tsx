@@ -18,6 +18,7 @@ import {
 
 interface KnowledgeGraphProps {
   onSelectEntry: (id: string) => void;
+  initialFocusId?: string | null;
 }
 
 interface SimNode extends GraphNode {
@@ -43,17 +44,28 @@ const CATEGORY_COLORS: Record<string, string> = {
   monsters: '#ef4444' // Red
 };
 
-export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry }) => {
+export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry, initialFocusId }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
-  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(initialFocusId || null);
 
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState({ x: 0, y: 0 });
+
+  // Autofocus target node if specified
+  useEffect(() => {
+    if (initialFocusId) {
+      setSelectedNodeId(initialFocusId);
+      const targetNode = archiveDb.entries.find(e => e.id === initialFocusId);
+      if (targetNode && selectedCategory !== 'all' && targetNode.category !== selectedCategory) {
+        setSelectedCategory('all');
+      }
+    }
+  }, [initialFocusId, selectedCategory]);
 
   // Mouse interaction state
   const isDraggingCanvas = useRef(false);

@@ -329,30 +329,31 @@ const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigat
 
   if (block.type === 'header') {
     const text = block.rawText || '';
+    const slug = text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     const isStrahd = currentEntryId?.includes('curse-of-strahd');
     if (block.level === 1) {
       return (
-        <h1 className={`font-fantasy text-2xl md:text-3xl font-bold tracking-wide ${isStrahd ? 'text-rose-200 border-b border-rose-900/60' : 'text-amber-200 border-b border-amber-900/40'} pb-2 mt-7 mb-4`}>
+        <h1 id={slug} className={`font-fantasy text-2xl md:text-3xl font-bold tracking-wide scroll-mt-20 ${isStrahd ? 'text-rose-200 border-b border-rose-900/60' : 'text-amber-200 border-b border-amber-900/40'} pb-2 mt-7 mb-4`}>
           <InlineContent text={text} onNavigate={onNavigate} />
         </h1>
       );
     }
     if (block.level === 2) {
       return (
-        <h2 className={`font-fantasy text-xl md:text-2xl font-bold tracking-wide ${isStrahd ? 'text-rose-100 border-b border-rose-950' : 'text-stone-100 border-b border-stone-800'} pb-1.5 mt-6 mb-3`}>
+        <h2 id={slug} className={`font-fantasy text-xl md:text-2xl font-bold tracking-wide scroll-mt-20 ${isStrahd ? 'text-rose-100 border-b border-rose-950' : 'text-stone-100 border-b border-stone-800'} pb-1.5 mt-6 mb-3`}>
           <InlineContent text={text} onNavigate={onNavigate} />
         </h2>
       );
     }
     if (block.level === 3) {
       return (
-        <h3 className={`font-serif text-lg md:text-xl font-bold ${isStrahd ? 'text-rose-300' : 'text-amber-300'} mt-5 mb-2`}>
+        <h3 id={slug} className={`font-serif text-lg md:text-xl font-bold scroll-mt-20 ${isStrahd ? 'text-rose-300' : 'text-amber-300'} mt-5 mb-2`}>
           <InlineContent text={text} onNavigate={onNavigate} />
         </h3>
       );
     }
     return (
-      <h4 className={`font-serif text-base font-bold ${isStrahd ? 'text-rose-400' : 'text-amber-400/90'} mt-4 mb-1`}>
+      <h4 id={slug} className={`font-serif text-base font-bold scroll-mt-20 ${isStrahd ? 'text-rose-400' : 'text-amber-400/90'} mt-4 mb-1`}>
         <InlineContent text={text} onNavigate={onNavigate} />
       </h4>
     );
@@ -544,13 +545,15 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
         const resolved = resolveWikilink(target);
         if (resolved) {
           const badge = getSourceBadgeInfo(resolved.source_type, resolved.source);
+          const hashAnchor = target.includes('#') ? '#' + target.split('#')[1].trim() : '';
+          const fullTargetId = resolved.id + hashAnchor;
           parts.push(
             <WikilinkHoverCard key={match.index} entry={resolved} onNavigate={onNavigate}>
               <a
-                href={`#${resolved.id}`}
+                href={`#${fullTargetId}`}
                 onClick={(e) => {
                   e.preventDefault();
-                  onNavigate(resolved.id);
+                  onNavigate(fullTargetId);
                 }}
                 title={`${resolved.title} (${badge.label})`}
                 className="font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors cursor-pointer inline"
