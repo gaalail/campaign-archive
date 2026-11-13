@@ -22,25 +22,54 @@ interface ParsedRoute {
   params: Record<string, string>;
 }
 
+function safeDecode(str: string): string {
+  try {
+    return decodeURIComponent(str);
+  } catch {
+    return str;
+  }
+}
+
 function parseHashRoute(hashStr: string): ParsedRoute {
   const clean = hashStr.replace(/^#/, '').trim();
   if (!clean || clean === 'index' || clean === 'home') {
     return { view: 'reader', entryId: 'index', anchor: null, params: {} };
   }
 
-  // Extract query parameters (?class=Paladin&focus=xyz)
-  const [routePart, queryPart] = clean.split('?');
+  // Extract query parameters (?class=Paladin&focus=xyz&build=...==)
+  const qIdx = clean.indexOf('?');
+  const routePart = qIdx >= 0 ? clean.slice(0, qIdx) : clean;
+  const queryPart = qIdx >= 0 ? clean.slice(qIdx + 1) : '';
   const params: Record<string, string> = {};
   if (queryPart) {
-    queryPart.split('&').forEach(pair => {
-      const [k, v] = pair.split('=');
-      if (k) params[decodeURIComponent(k)] = decodeURIComponent(v || '');
+    // Strip trailing anchor if someone placed ?params#anchor
+    const cleanQuery = queryPart.split('#')[0];
+    cleanQuery.split('&').forEach(pair => {
+      if (!pair) return;
+      const eqIdx = pair.indexOf('=');
+      if (eqIdx === -1) {
+        params[safeDecode(pair)] = '';
+      } else {
+        const k = pair.slice(0, eqIdx);
+        const v = pair.slice(eqIdx + 1);
+        if (k) params[safeDecode(k)] = safeDecode(v);
+      }
     });
   }
 
   // Extract anchor (#oath-smites)
-  const [baseRoute, anchor] = routePart.split('#');
+  const hashIdx = routePart.indexOf('#');
+  const rawBaseRoute = hashIdx >= 0 ? routePart.slice(0, hashIdx) : routePart;
+  const rawAnchor = hashIdx >= 0 ? routePart.slice(hashIdx + 1) : '';
 
+  const baseRoute = safeDecode(rawBaseRoute).trim().replace(/^\/+|\/+$/g, '');
+  const anchor = rawAnchor
+    ? safeDecode(rawAnchor).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+    : null;
+
+  if (!baseRoute || baseRoute === 'index' || baseRoute === 'home') {
+    return { view: 'reader', entryId: 'index', anchor, params };
+  }
   if (baseRoute === 'spells' || baseRoute === 'spells/index') {
     return { view: 'spells', entryId: 'spells/index', anchor: null, params };
   }
@@ -60,7 +89,7 @@ function parseHashRoute(hashStr: string): ParsedRoute {
     return { view: 'graph', entryId: 'graph', anchor: null, params };
   }
 
-  return { view: 'reader', entryId: baseRoute, anchor: anchor || null, params };
+  return { view: 'reader', entryId: baseRoute, anchor, params };
 }
 
 export default function App() {
@@ -110,11 +139,15 @@ export default function App() {
   }, []);
 
   const navigate = useCallback((target: string) => {
-    const parsed = parseHashRoute(target);
-    
+    const cleanTarget = target.replace(/^#/, '');
+    const parsed = parseHashRoute(cleanTarget);
+
     // Update browser URL hash
-    window.location.hash = '#' + target;
-    
+    const nextHash = '#' + cleanTarget;
+    if (window.location.hash !== nextHash) {
+      window.location.hash = nextHash;
+    }
+
     setView(parsed.view);
     setEntryId(parsed.entryId);
     setRouteParams(parsed.params);
@@ -134,6 +167,10 @@ export default function App() {
   }, []);
 
   const handleSetView = useCallback((nextView: AppView) => {
+    if (nextView === 'reader') {
+      setView('reader');
+      return;
+    }
     navigate(nextView);
   }, [navigate]);
 

@@ -91,7 +91,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <div className="p-4 border-b border-stone-800 flex items-center justify-between bg-stone-950/80">
           <button
             onClick={() => {
-              onSetView('reader');
               onNavigateToEntry('index');
               onClose();
             }}
@@ -141,7 +140,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           <button
             onClick={() => {
-              onSetView('reader');
               onNavigateToEntry('index');
               onClose();
             }}
@@ -203,7 +201,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           <button
             onClick={() => {
-              onSetView('reader');
               onNavigateToEntry('rules/index');
               onClose();
             }}
@@ -219,7 +216,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           <button
             onClick={() => {
-              onSetView('monsters');
               onNavigateToEntry('monsters/index');
               onClose();
             }}
@@ -304,7 +300,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <button
                     key={c.id}
                     onClick={() => {
-                      onSetView('reader');
                       onNavigateToEntry(c.id);
                       onClose();
                     }}
@@ -348,7 +343,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     <button
                       key={folder}
                       onClick={() => {
-                        onSetView('reader');
                         onNavigateToEntry(`spells/${folder}/index`);
                         onClose();
                       }}
@@ -382,7 +376,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <React.Fragment key={cls.id}>
                     <button
                       onClick={() => {
-                        onSetView('reader');
                         onNavigateToEntry(cls.id);
                         onClose();
                       }}
@@ -432,7 +425,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                               <button
                                 key={folder}
                                 onClick={() => {
-                                  onSetView('reader');
                                   onNavigateToEntry(id);
                                   onClose();
                                 }}
@@ -474,7 +466,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <button
                     key={r.id}
                     onClick={() => {
-                      onSetView('reader');
                       onNavigateToEntry(r.id);
                       onClose();
                     }}
@@ -510,7 +501,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <button
                     key={b.id}
                     onClick={() => {
-                      onSetView('reader');
                       onNavigateToEntry(b.id);
                       onClose();
                     }}
@@ -546,7 +536,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <button
                     key={f.id}
                     onClick={() => {
-                      onSetView('reader');
                       onNavigateToEntry(f.id);
                       onClose();
                     }}
@@ -582,7 +571,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   <button
                     key={fs.id}
                     onClick={() => {
-                      onSetView('reader');
                       onNavigateToEntry(fs.id);
                       onClose();
                     }}
@@ -606,7 +594,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
             <button
               onClick={() => {
-                onSetView('reader');
                 onNavigateToEntry('character-builder');
                 onClose();
               }}
@@ -616,7 +603,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </button>
             <button
               onClick={() => {
-                onSetView('reader');
                 onNavigateToEntry('discovery-features');
                 onClose();
               }}
@@ -626,7 +612,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </button>
             <button
               onClick={() => {
-                onSetView('reader');
                 onNavigateToEntry('getting-started');
                 onClose();
               }}

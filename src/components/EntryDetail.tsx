@@ -71,11 +71,17 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
     setExpandedSubclasses(new Set());
     setSubclassSearch('');
 
-    // Check for anchor hash scroll
+    // Check for anchor hash scroll (only match a secondary #anchor fragment)
     const hash = window.location.hash;
-    const anchorMatch = hash.match(/#([^#?]+)$/);
+    const anchorMatch = hash.match(/^#[^#?]+#([^#?]+)/);
     if (anchorMatch) {
-      const anchorId = anchorMatch[1].toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      let decodedAnchor = anchorMatch[1];
+      try {
+        decodedAnchor = decodeURIComponent(anchorMatch[1]);
+      } catch {
+        // ignore
+      }
+      const anchorId = decodedAnchor.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
       setTimeout(() => {
         const el = document.getElementById(anchorId);
         if (el) {
@@ -400,7 +406,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
               {/* Synergistic Connector: Quick Character Build Buttons */}
               {isClass && (
                 <button
-                  onClick={() => onNavigate(`builder?class=${entry.id}`)}
+                  onClick={() => onNavigate(`builder?class=${encodeURIComponent(entry.id)}`)}
                   className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
                 >
                   <CrossedSwords className="w-3.5 h-3.5 text-amber-400" />
@@ -410,7 +416,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
               {isSubclass && (
                 <button
-                  onClick={() => onNavigate(`builder?subclass=${entry.id}`)}
+                  onClick={() => onNavigate(`builder?subclass=${encodeURIComponent(entry.id)}`)}
                   className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
                 >
                   <CrossedSwords className="w-3.5 h-3.5 text-amber-400" />
@@ -420,7 +426,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
               {isRace && (
                 <button
-                  onClick={() => onNavigate(`builder?race=${entry.id}`)}
+                  onClick={() => onNavigate(`builder?race=${encodeURIComponent(entry.id)}`)}
                   className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
                 >
                   <User className="w-3.5 h-3.5 text-amber-400" />
@@ -430,7 +436,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
               {isBackground && (
                 <button
-                  onClick={() => onNavigate(`builder?background=${entry.id}`)}
+                  onClick={() => onNavigate(`builder?background=${encodeURIComponent(entry.id)}`)}
                   className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
                 >
                   <BookOpen className="w-3.5 h-3.5 text-amber-400" />
@@ -440,7 +446,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
               {isFeat && (
                 <button
-                  onClick={() => onNavigate(`builder?feat=${entry.id}`)}
+                  onClick={() => onNavigate(`builder?feat=${encodeURIComponent(entry.id)}`)}
                   className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
                 >
                   <Sparkles className="w-3.5 h-3.5 text-amber-400" />
@@ -451,7 +457,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
               {/* Synergistic Connector: Knowledge Graph Focus */}
               {!isHome && (
                 <button
-                  onClick={() => onNavigate(`graph?focus=${entry.id}`)}
+                  onClick={() => onNavigate(`graph?focus=${encodeURIComponent(entry.id)}`)}
                   className="px-3 py-1.5 rounded-lg bg-stone-950 hover:bg-stone-850 border border-stone-800 hover:border-indigo-500/50 text-xs font-serif tracking-wider text-stone-300 hover:text-indigo-300 flex items-center gap-1.5 transition-all cursor-pointer shadow-sm"
                   title="Explore relationships in the Knowledge Graph"
                 >

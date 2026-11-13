@@ -1,4 +1,4 @@
-import React, { useReducer, useState, useMemo, useEffect } from 'react';
+import React, { useReducer, useState, useMemo, useEffect, useRef } from 'react';
 import { archiveDb, getSubclassesForClass, getEntryById } from '../utils/archiveUtils';
 import { ArchiveEntry } from '../types/archive';
 import { characterReducer } from './character-builder/characterReducer';
@@ -29,6 +29,7 @@ interface CharacterBuilderProps {
 
 export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateToEntry, initialParams }) => {
   const [state, dispatch] = useReducer(characterReducer, INITIAL_CHARACTER_STATE);
+  const hasHydratedRef = useRef(false);
 
   // Inspector Drawer state
   const [inspectedEntry, setInspectedEntry] = useState<ArchiveEntry | null>(null);
@@ -40,13 +41,16 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
   const [subclassSearch, setSubclassSearch] = useState('');
   const [backgroundSearch, setBackgroundSearch] = useState('');
 
-  // 1. Restore from URL Hash or LocalStorage on mount
+  // 1. Restore from URL Hash, LocalStorage, and initialParams on mount / param change
   useEffect(() => {
     try {
+      const buildParam = initialParams?.build;
       const hash = window.location.hash;
-      const buildMatch = hash.match(/build=([A-Za-z0-9+/=_-]+)/);
-      if (buildMatch) {
-        const decoded = decodeURIComponent(atob(buildMatch[1]));
+      const buildMatch = !buildParam ? hash.match(/build=([A-Za-z0-9+/=_-]+)/) : null;
+      const encodedBuild = buildParam || (buildMatch ? buildMatch[1] : null);
+
+      if (encodedBuild) {
+        const decoded = decodeURIComponent(atob(encodedBuild));
         const parsed = JSON.parse(decoded);
         dispatch({
           type: 'LOAD_STATE',
@@ -69,10 +73,22 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
             step: 6
           }
         });
+        hasHydratedRef.current = true;
         return;
       }
 
-      // If initialParams provided from navigation (e.g. builder?class=Paladin), apply them
+      // Restore draft from local storage first
+      if (!hasHydratedRef.current) {
+        const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
+        if (saved) {
+          const parsedState = JSON.parse(saved);
+          if (parsedState && typeof parsedState === 'object') {
+            dispatch({ type: 'LOAD_STATE', payload: parsedState });
+          }
+        }
+      }
+
+      // Apply initialParams overrides if navigated via entry connectors (e.g. builder?class=...)
       if (initialParams && Object.keys(initialParams).length > 0) {
         if (initialParams.subclass) {
           const sub = getEntryById(initialParams.subclass);
@@ -84,62 +100,43 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
             }
             dispatch({ type: 'SELECT_SUBCLASS', payload: sub.id });
             dispatch({ type: 'SET_STEP', payload: 3 });
-            return;
           }
-        }
-
-        if (initialParams.class) {
+        } else if (initialParams.class) {
           const cls = getEntryById(initialParams.class);
           if (cls) {
             dispatch({ type: 'SELECT_CLASS', payload: cls.id });
             dispatch({ type: 'SET_STEP', payload: 3 });
-            return;
           }
-        }
-
-        if (initialParams.race) {
+        } else if (initialParams.race) {
           const r = getEntryById(initialParams.race);
           if (r) {
             dispatch({ type: 'SELECT_RACE', payload: r.id });
             dispatch({ type: 'SET_STEP', payload: 2 });
-            return;
           }
-        }
-
-        if (initialParams.background) {
+        } else if (initialParams.background) {
           const bg = getEntryById(initialParams.background);
           if (bg) {
             dispatch({ type: 'SELECT_BACKGROUND', payload: bg.id });
             dispatch({ type: 'SET_STEP', payload: 4 });
-            return;
           }
-        }
-
-        if (initialParams.feat) {
+        } else if (initialParams.feat) {
           const f = getEntryById(initialParams.feat);
           if (f) {
             dispatch({ type: 'SELECT_FEAT', payload: f.id });
             dispatch({ type: 'SET_STEP', payload: 5 });
-            return;
           }
-        }
-      }
-
-      // If no URL hash build, check local storage
-      const saved = localStorage.getItem(LOCAL_STORAGE_KEY);
-      if (saved) {
-        const parsedState = JSON.parse(saved);
-        if (parsedState && typeof parsedState === 'object') {
-          dispatch({ type: 'LOAD_STATE', payload: parsedState });
         }
       }
     } catch {
       // Storage parsing failure, fallback to initial state
+    } finally {
+      hasHydratedRef.current = true;
     }
   }, [initialParams]);
 
-  // 2. Auto-save to LocalStorage on every state update
+  // 2. Auto-save to LocalStorage on every state update after hydration
   useEffect(() => {
+    if (!hasHydratedRef.current) return;
     try {
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(state));
     } catch {

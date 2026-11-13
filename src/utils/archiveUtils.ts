@@ -99,10 +99,19 @@ export function cleanFlavorText(text?: string | null): string {
   return str;
 }
 
+function safeDecode(str: string): string {
+  try {
+    return decodeURIComponent(str);
+  } catch {
+    return str;
+  }
+}
+
 export function getEntryById(id: string): ArchiveEntry | undefined {
   if (!id) return undefined;
-  const rawClean = id.trim().split('#')[0].split('?')[0].trim();
-  const trimmed = rawClean.replace(/^\.\//, '').replace(/\.md$/, '');
+  const decoded = safeDecode(id);
+  const rawClean = decoded.trim().split('#')[0].split('?')[0].trim();
+  const trimmed = rawClean.replace(/^\.\//, '').replace(/^\/+|\/+$/g, '').replace(/\.md$/, '');
   const lower = trimmed.toLowerCase();
 
   // Root home page guard
@@ -124,8 +133,9 @@ export function getEntryById(id: string): ArchiveEntry | undefined {
 
 export function resolveWikilink(linkText: string): ArchiveEntry | undefined {
   if (!linkText) return undefined;
-  const rawTarget = linkText.split('|')[0].split('#')[0].split('?')[0].trim();
-  const clean = rawTarget.replace(/^\.\//, '').replace(/\.md$/, '');
+  const decoded = safeDecode(linkText);
+  const rawTarget = decoded.split('|')[0].split('#')[0].split('?')[0].trim();
+  const clean = rawTarget.replace(/^\.\//, '').replace(/^\/+|\/+$/g, '').replace(/\.md$/, '');
   const lower = clean.toLowerCase();
 
   if (lower === 'index' || lower === 'home') {

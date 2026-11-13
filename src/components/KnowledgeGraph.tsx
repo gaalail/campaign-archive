@@ -60,12 +60,10 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry, i
   useEffect(() => {
     if (initialFocusId) {
       setSelectedNodeId(initialFocusId);
-      const targetNode = archiveDb.entries.find(e => e.id === initialFocusId);
-      if (targetNode && selectedCategory !== 'all' && targetNode.category !== selectedCategory) {
-        setSelectedCategory('all');
-      }
+      setSelectedCategory('all');
+      setSearch('');
     }
-  }, [initialFocusId, selectedCategory]);
+  }, [initialFocusId]);
 
   // Mouse interaction state
   const isDraggingCanvas = useRef(false);
@@ -88,11 +86,22 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry, i
       );
     }
     // Limit to top 240 connected nodes to guarantee 60fps smooth canvas rendering
-    return nodes
+    const topNodes = nodes
       .slice()
       .sort((a, b) => (b.linkCount || 0) - (a.linkCount || 0))
       .slice(0, 240);
-  }, [search, selectedCategory]);
+
+    // Ensure focused node is always included even if outside top 240 by linkCount
+    const focusTarget = selectedNodeId || initialFocusId;
+    if (focusTarget && !topNodes.some(n => n.id === focusTarget)) {
+      const targetNode = archiveDb.graph.nodes.find(n => n.id === focusTarget);
+      if (targetNode) {
+        topNodes.unshift(targetNode);
+      }
+    }
+
+    return topNodes;
+  }, [search, selectedCategory, selectedNodeId, initialFocusId]);
 
   const activeNodeIds = useMemo(() => new Set(filteredNodes.map(n => n.id)), [filteredNodes]);
 
