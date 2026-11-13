@@ -13,6 +13,7 @@ export type Category =
   | 'monsters'
   | 'items'
   | 'campaigns'
+  | 'pantheons'
   | 'rules'
   | 'home'
   | 'builder'
@@ -64,6 +65,12 @@ export interface ArchiveEntry {
   asi?: string | null;
   traits?: string[];
   subraces?: string[];
+  pantheon?: string | null;
+  domains?: string[];
+  symbol?: string | null;
+  favored_weapon?: string | null;
+  worshippers?: string | null;
+  recommended_oaths?: string[];
 }
 
 export interface SubclassFeature {
@@ -92,7 +99,7 @@ export interface GraphNode {
 export interface GraphEdge {
   source: string | GraphNode;
   target: string | GraphNode;
-  type?: 'mention' | 'subclass_of' | 'option_of' | 'campaign_content' | 'spell_list';
+  type?: 'mention' | 'subclass_of' | 'option_of' | 'campaign_content' | 'spell_list' | 'deity_of' | 'domain_synergy';
   weight?: number;
 }
 
@@ -111,6 +118,7 @@ export interface ArchiveDatabase {
     monsters: number;
     items: number;
     campaigns: number;
+    pantheons: number;
     rules: number;
   };
   entries: ArchiveEntry[];

@@ -33,6 +33,8 @@ export interface CharacterState {
   subclassId: string | null;
   backgroundId: string | null;
   featId: string | null;
+  campaignId: string | null;
+  deityId: string | null;
   
   // Ability scores
   abilityMode: AbilityMode;
@@ -110,6 +112,8 @@ export const INITIAL_CHARACTER_STATE: CharacterState = {
   subclassId: null,
   backgroundId: null,
   featId: null,
+  campaignId: null,
+  deityId: null,
   abilityMode: 'standard',
   baseAbilities: {
     str: 15,

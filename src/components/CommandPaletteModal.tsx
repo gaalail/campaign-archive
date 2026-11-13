@@ -10,7 +10,8 @@ import {
   Shield,
   ExternalLink,
   Flame,
-  ArrowRight
+  ArrowRight,
+  Sun
 } from 'lucide-react';
 import { GothicBat, DragonShield, CrossedSwords, D20GothicIcon } from './GothicIcons';
 
@@ -20,7 +21,7 @@ interface CommandPaletteModalProps {
   onNavigate: (id: string) => void;
 }
 
-type FilterCategory = 'all' | 'spells' | 'monsters' | 'items' | 'rules' | 'classes' | 'races' | 'campaigns';
+type FilterCategory = 'all' | 'spells' | 'monsters' | 'items' | 'rules' | 'classes' | 'races' | 'campaigns' | 'pantheons';
 
 export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
   isOpen,
@@ -75,7 +76,8 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
     const classes = archiveDb.entries.filter(e => e.category === 'classes' && !e.id.endsWith('/index')).length;
     const races = archiveDb.entries.filter(e => e.category === 'races' && !e.id.endsWith('/index')).length;
     const campaigns = archiveDb.entries.filter(e => e.category === 'campaigns' && !e.id.endsWith('/index')).length;
-    return { total, spells, monsters, items, rules, classes, races, campaigns };
+    const pantheons = archiveDb.entries.filter(e => e.category === 'pantheons' && !e.id.endsWith('/index')).length;
+    return { total, spells, monsters, items, rules, classes, races, campaigns, pantheons };
   }, []);
 
   // Primary interactive tools pool
@@ -187,6 +189,24 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
       frontmatter: {},
       body: '',
       wikilinks: []
+    },
+    {
+      id: 'pantheons',
+      title: 'Pantheons & Deities',
+      path: 'pantheons',
+      category: 'pantheons',
+      subcategory: 'Cosmology & Worship',
+      parentClass: null,
+      summary: 'Browse campaign-specific deities, divine domains, holy symbols, and recommended oaths across all realms.',
+      source: 'Codex Cosmology',
+      source_type: 'campaign-original',
+      entity_type: 'catalogue',
+      tags: ['pantheons', 'deities', 'gods', 'religion', 'domains', 'cleric', 'paladin'],
+      aliases: ['pantheons', 'deities', 'gods'],
+      content_status: 'complete',
+      frontmatter: {},
+      body: '',
+      wikilinks: []
     }
   ], []);
 
@@ -283,6 +303,8 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
         return <BookOpen className="w-4 h-4 text-teal-400 shrink-0" />;
       case 'campaigns':
         return <Flame className="w-4 h-4 text-amber-500 shrink-0" />;
+      case 'pantheons':
+        return <Sun className="w-4 h-4 text-amber-300 shrink-0" />;
       default:
         return <Shield className="w-4 h-4 text-stone-400 shrink-0" />;
     }
@@ -335,6 +357,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
             { id: 'rules', label: `Rules (${counts.rules})` },
             { id: 'classes', label: `Classes (${counts.classes})` },
             { id: 'races', label: `Races (${counts.races})` },
+            { id: 'pantheons', label: `Pantheons (${counts.pantheons})` },
             { id: 'campaigns', label: `Campaigns (${counts.campaigns})` }
           ].map(cat => (
             <button
@@ -402,6 +425,9 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
                 metaHint = `${entry.rarity || 'Common'} • ${entry.item_type || 'Item'}`;
               } else if (entry.category === 'classes') {
                 metaHint = `Hit Die: ${entry.hit_die || 'd8'}`;
+              } else if (entry.category === 'pantheons') {
+                const doms = entry.domains?.slice(0, 2).join(', ');
+                metaHint = [entry.alignment, doms].filter(Boolean).join(' • ');
               } else if (entry.subcategory) {
                 metaHint = entry.subcategory;
               }

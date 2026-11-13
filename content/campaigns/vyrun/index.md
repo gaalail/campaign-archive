@@ -107,6 +107,7 @@ Click the **All entries** tab to see everything for this campaign in one table.
 
 ## Resources
 
+- **[[campaigns/vyrun/pantheon/index|Pantheon & Worship]]** — The Reawakened Old Gods and frontier faiths of Vyrun
 - **[[campaigns/vyrun/rules/index|Campaign Rules]]** — Setting rulings, group survival checks, and wilderness exhaustion
 - **[[Character Builder|Build a character]]** — Create your character
 - **[[Spells]]** — Magic reference

@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { CharacterState, AbilityKey, ABILITY_LABELS, ALL_SKILLS, CustomAttack } from './types';
 import { ArchiveEntry } from '../../types/archive';
+import { getCampaignDisplayName } from '../../utils/archiveUtils';
 import { DerivedStats, formatModifier, generateDefaultAttacks } from './builderUtils';
 import { useOptionalDice } from '../DiceRoller';
 import {
@@ -30,6 +31,7 @@ interface InteractiveCharacterSheetProps {
   selectedSubclass: ArchiveEntry | null;
   selectedBackground: ArchiveEntry | null;
   selectedFeat: ArchiveEntry | null;
+  selectedDeity?: ArchiveEntry | null;
   derived: DerivedStats;
   onSetName: (name: string) => void;
   onSetGenderOrTitle: (title: string) => void;
@@ -51,6 +53,7 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
   selectedSubclass,
   selectedBackground,
   selectedFeat,
+  selectedDeity,
   derived,
   onSetName,
   onSetGenderOrTitle,
@@ -145,6 +148,8 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
         subclass: state.subclassId,
         background: state.backgroundId,
         feat: state.featId,
+        campaign: state.campaignId,
+        deity: state.deityId,
         abilities: state.baseAbilities,
         racialBonuses: state.racialBonuses,
         skills: state.selectedSkills,
@@ -169,7 +174,7 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
     const lines = [
       `# ${state.name} — ${state.genderOrTitle || 'Hero'}`,
       `**Level 1 ${selectedRace?.title || 'Unknown Ancestry'} ${selectedClass?.title || 'Adventurer'}${selectedSubclass ? ` (${selectedSubclass.title})` : ''}** | ${state.alignment}`,
-      `**Background:** ${selectedBackground?.title || 'None'}`,
+      `**Background:** ${selectedBackground?.title || 'None'}${state.campaignId ? ` | **Campaign:** ${getCampaignDisplayName(state.campaignId)}` : ''}${selectedDeity ? ` | **Patron Deity:** ${selectedDeity.title}` : ''}`,
       '',
       '---',
       '',
@@ -280,6 +285,18 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
               </span>
               <span>•</span>
               <span className="text-stone-400">{selectedBackground?.title || 'Background Unset'}</span>
+              {selectedDeity && (
+                <>
+                  <span>•</span>
+                  <span className="text-amber-200 font-medium">{selectedDeity.title}</span>
+                </>
+              )}
+              {state.campaignId && !selectedDeity && (
+                <>
+                  <span>•</span>
+                  <span className="text-stone-400">{getCampaignDisplayName(state.campaignId)}</span>
+                </>
+              )}
               <span>•</span>
               <input
                 type="text"
@@ -748,6 +765,31 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
               ) : (
                 <div className="p-3 rounded-xl bg-stone-950/50 border border-stone-800/60 flex items-center text-xs text-stone-500 italic">
                   No starting feat chosen.
+                </div>
+              )}
+
+              {/* Deity / Patron Card */}
+              {selectedDeity && (
+                <div className="sm:col-span-2 p-3 rounded-xl bg-stone-950 border border-amber-900/50 flex items-start justify-between gap-2">
+                  <div className="min-w-0">
+                    <span className="text-[10px] uppercase font-bold text-amber-400 block">
+                      Patron Deity · {getCampaignDisplayName(selectedDeity.campaign_id)}
+                    </span>
+                    <span className="font-serif font-bold text-stone-200 text-xs truncate block">
+                      {selectedDeity.title} ({selectedDeity.alignment || 'Unaligned'})
+                    </span>
+                    <p className="text-[11px] text-stone-400 line-clamp-1 mt-0.5">
+                      Domains: {(selectedDeity.domains || []).join(', ')}
+                      {selectedDeity.symbol ? ` · Symbol: ${selectedDeity.symbol}` : ''}
+                    </p>
+                  </div>
+                  <button
+                    onClick={() => onInspectEntry(selectedDeity)}
+                    className="p-1.5 rounded-lg bg-stone-900 hover:bg-stone-800 text-amber-400 hover:text-amber-200 transition-colors shrink-0 cursor-pointer"
+                    title="Read deity lore & tenets"
+                  >
+                    <BookOpen className="w-3.5 h-3.5" />
+                  </button>
                 </div>
               )}
             </div>

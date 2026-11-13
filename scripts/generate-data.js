@@ -144,7 +144,7 @@ function extractFlavorAndFeatures(bodyText, category = '') {
     }
     if (inFlavor) {
       if (line === '---' || line.startsWith('- [[')) continue;
-      flavorLines.push(line);
+      flavorLines.push(line.replace(/^>\s?/, ''));
     }
   }
   let flavor = flavorLines.join(' ').replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').trim();
@@ -316,8 +316,13 @@ for (const filePath of files) {
       subcategory = parts[1];
     }
   } else if (parts[0] === 'campaigns') {
-    category = 'campaigns';
-    subcategory = parts[1] || null;
+    if (parts[2] === 'pantheon') {
+      category = 'pantheons';
+      subcategory = parts[1] || null;
+    } else {
+      category = 'campaigns';
+      subcategory = parts[1] || null;
+    }
   } else if (parts[0] === 'rules') {
     category = 'rules';
   } else if (cleanId === 'index') {
@@ -338,7 +343,7 @@ for (const filePath of files) {
     subcategory,
     parentClass,
     summary: frontmatter.summary || '',
-    source: frontmatter.source || (frontmatter.source_type === 'SRD' ? 'SRD 5.1' : (category === 'campaigns' ? 'Campaign Archive' : '')),
+    source: frontmatter.source || (frontmatter.source_type === 'SRD' ? 'SRD 5.1' : (category === 'campaigns' || category === 'pantheons' ? 'Campaign Archive' : '')),
     source_type: frontmatter.source_type || (frontmatter.source === 'SRD 5.1' ? 'SRD' : 'homebrew'),
     entity_type: frontmatter.entity_type || '',
     tags: Array.isArray(frontmatter.tags) ? frontmatter.tags : (frontmatter.tags ? [frontmatter.tags] : []),
@@ -367,6 +372,12 @@ for (const filePath of files) {
     size: frontmatter.size || null,
     speed: frontmatter.speed || null,
     alignment: frontmatter.alignment || null,
+    pantheon: frontmatter.pantheon || null,
+    domains: Array.isArray(frontmatter.domains) ? frontmatter.domains : (frontmatter.domains ? [frontmatter.domains] : []),
+    symbol: frontmatter.symbol || null,
+    favored_weapon: frontmatter.favored_weapon || null,
+    worshippers: frontmatter.worshippers || null,
+    recommended_oaths: Array.isArray(frontmatter.recommended_oaths) ? frontmatter.recommended_oaths : (frontmatter.recommended_oaths ? [frontmatter.recommended_oaths] : []),
     frontmatter,
     body,
     wikilinks
@@ -579,6 +590,30 @@ for (const e of validEntities) {
       graphEdges.push({ source: e.id, target: hubId, type: 'campaign_content', weight: 3 });
     }
   }
+
+  // Structural relationship: Deity -> Recommended subclasses & Divine Classes
+  if (e.category === 'pantheons') {
+    if (Array.isArray(e.recommended_oaths)) {
+      for (const oath of e.recommended_oaths) {
+        const resolved = titleToId.get(String(oath).toLowerCase());
+        if (resolved && resolved !== e.id) {
+          const edgeKey = [e.id, resolved].sort().join('---');
+          if (!edgeSet.has(edgeKey)) {
+            edgeSet.add(edgeKey);
+            graphEdges.push({ source: e.id, target: resolved, type: 'domain_synergy', weight: 2.5 });
+          }
+        }
+      }
+    }
+    const clericId = titleToId.get('cleric');
+    if (clericId) {
+      const edgeKey = [e.id, clericId].sort().join('---');
+      if (!edgeSet.has(edgeKey)) {
+        edgeSet.add(edgeKey);
+        graphEdges.push({ source: e.id, target: clericId, type: 'deity_of', weight: 2 });
+      }
+    }
+  }
 }
 
 const outputData = {
@@ -596,6 +631,7 @@ const outputData = {
     monsters: entries.filter(e => e.category === 'monsters' && !e.id.endsWith('/index')).length,
     items: entries.filter(e => e.category === 'items' && !e.id.endsWith('/index')).length,
     campaigns: entries.filter(e => e.category === 'campaigns').length,
+    pantheons: entries.filter(e => e.category === 'pantheons' && !e.id.endsWith('/index')).length,
     rules: entries.filter(e => e.category === 'rules' || e.id.includes('/rules/')).length
   },
   entries,

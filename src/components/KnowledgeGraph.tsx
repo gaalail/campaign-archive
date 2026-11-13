@@ -41,7 +41,8 @@ const CATEGORY_COLORS: Record<string, string> = {
   backgrounds: '#f472b6', // Pink
   feats: '#c084fc', // Lilac
   'class-options': '#eab308', // Gold
-  monsters: '#ef4444' // Red
+  monsters: '#ef4444', // Red
+  pantheons: '#fde047' // Sacred Bright Gold
 };
 
 export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry, initialFocusId }) => {
@@ -601,6 +602,7 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry, i
             <option value="spells">Spells</option>
             <option value="items">Items</option>
             <option value="campaigns">Campaigns</option>
+            <option value="pantheons">Pantheons & Deities</option>
             <option value="rules">Rules</option>
             <option value="races">Races</option>
             <option value="backgrounds">Backgrounds</option>
@@ -656,7 +658,7 @@ export const KnowledgeGraph: React.FC<KnowledgeGraphProps> = ({ onSelectEntry, i
             Categories
           </div>
           <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-            {Object.entries(CATEGORY_COLORS).slice(0, 8).map(([cat, col]) => (
+            {Object.entries(CATEGORY_COLORS).slice(0, 12).map(([cat, col]) => (
               <div key={cat} className="flex items-center gap-1.5 text-slate-300 capitalize">
                 <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: col }} />
                 <span>{cat.replace('-', ' ')}</span>

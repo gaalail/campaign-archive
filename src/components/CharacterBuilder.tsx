@@ -1,5 +1,5 @@
 import React, { useReducer, useState, useMemo, useEffect, useRef } from 'react';
-import { archiveDb, getSubclassesForClass, getEntryById } from '../utils/archiveUtils';
+import { archiveDb, getSubclassesForClass, getEntryById, getAllDeities, getDeitiesForCampaign, getCampaignDisplayName } from '../utils/archiveUtils';
 import { ArchiveEntry } from '../types/archive';
 import { characterReducer } from './character-builder/characterReducer';
 import { INITIAL_CHARACTER_STATE, CharacterState } from './character-builder/types';
@@ -16,7 +16,8 @@ import {
   BookOpen,
   RotateCcw,
   Search,
-  Filter
+  Filter,
+  Sun
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
@@ -64,6 +65,8 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
             subclassId: parsed.subclass || null,
             backgroundId: parsed.background || null,
             featId: parsed.feat || null,
+            campaignId: parsed.campaign || null,
+            deityId: parsed.deity || null,
             baseAbilities: parsed.abilities || INITIAL_CHARACTER_STATE.baseAbilities,
             racialBonuses: parsed.racialBonuses || INITIAL_CHARACTER_STATE.racialBonuses,
             selectedSkills: parsed.skills || INITIAL_CHARACTER_STATE.selectedSkills,
@@ -90,6 +93,22 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
 
       // Apply initialParams overrides if navigated via entry connectors (e.g. builder?class=...)
       if (initialParams && Object.keys(initialParams).length > 0) {
+        if (initialParams.campaign) {
+          dispatch({ type: 'SELECT_CAMPAIGN', payload: initialParams.campaign });
+        }
+        if (initialParams.deity) {
+          const d = getEntryById(initialParams.deity);
+          if (d) {
+            if (d.campaign_id && !initialParams.campaign) {
+              dispatch({ type: 'SELECT_CAMPAIGN', payload: d.campaign_id });
+            }
+            dispatch({ type: 'SELECT_DEITY', payload: d.id });
+            if (!initialParams.class && !initialParams.subclass && !initialParams.race) {
+              dispatch({ type: 'SET_STEP', payload: 2 });
+            }
+          }
+        }
+
         if (initialParams.subclass) {
           const sub = getEntryById(initialParams.subclass);
           if (sub) {
@@ -194,6 +213,16 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
   const selectedFeat = useMemo(() => {
     return feats.find(f => f.id === state.featId) || null;
   }, [feats, state.featId]);
+
+  const allDeities = useMemo(() => getAllDeities(), []);
+  const availableDeities = useMemo(() => {
+    return getDeitiesForCampaign(state.campaignId || 'all');
+  }, [state.campaignId]);
+
+  const selectedDeity = useMemo(() => {
+    if (!state.deityId) return null;
+    return allDeities.find(d => d.id === state.deityId) || getEntryById(state.deityId) || null;
+  }, [allDeities, state.deityId]);
 
   // Derived stats live calculation
   const derived = useMemo(() => {
@@ -314,6 +343,7 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
           selectedClass={selectedClass}
           selectedSubclass={selectedSubclass}
           selectedBackground={selectedBackground}
+          selectedDeity={selectedDeity}
           derived={derived}
           onJumpToStep={(s) => dispatch({ type: 'SET_STEP', payload: s })}
         />
@@ -483,6 +513,80 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
             })}
           </div>
 
+          {/* Optional Campaign & Patron Deity Selector */}
+          <div className="rounded-xl border border-stone-800 bg-stone-950/80 p-4 space-y-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div className="flex items-center gap-2">
+                <Sun className="w-4 h-4 text-amber-400 shrink-0" />
+                <div>
+                  <h3 className="font-serif text-sm font-bold text-stone-200">
+                    Campaign Setting & Patron Faith (Optional)
+                  </h3>
+                  <p className="text-[11px] text-stone-400">
+                    Filter deities by campaign world—recommended for Clerics, Paladins, and Paragons.
+                  </p>
+                </div>
+              </div>
+              {selectedDeity && (
+                <button
+                  onClick={() => openInspector(selectedDeity)}
+                  className="text-xs font-serif text-amber-400 hover:text-amber-200 flex items-center gap-1 self-start sm:self-auto cursor-pointer"
+                >
+                  <BookOpen className="w-3.5 h-3.5" />
+                  <span>Inspect {selectedDeity.title}</span>
+                </button>
+              )}
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="space-y-1">
+                <label className="text-[11px] font-serif text-stone-400 block">Campaign World</label>
+                <select
+                  value={state.campaignId || ''}
+                  onChange={e => dispatch({ type: 'SELECT_CAMPAIGN', payload: e.target.value || null })}
+                  className="w-full bg-stone-900 border border-stone-800 rounded-xl px-3 py-2 text-xs text-stone-200 focus:border-amber-500 focus:outline-none"
+                >
+                  <option value="">Any / Unspecified Realm</option>
+                  <option value="curse-of-strahd">Curse of Strahd (Barovia)</option>
+                  <option value="ra-golvek">Ra Gol&apos;vek</option>
+                  <option value="vyrun">Vyrun</option>
+                </select>
+              </div>
+
+              <div className="space-y-1">
+                <label className="text-[11px] font-serif text-stone-400 block">Patron Deity / Power</label>
+                <select
+                  value={state.deityId || ''}
+                  onChange={e => dispatch({ type: 'SELECT_DEITY', payload: e.target.value || null })}
+                  className="w-full bg-stone-900 border border-stone-800 rounded-xl px-3 py-2 text-xs text-stone-200 focus:border-amber-500 focus:outline-none"
+                >
+                  <option value="">No Patron Chosen</option>
+                  {availableDeities.map(d => (
+                    <option key={d.id} value={d.id}>
+                      {d.title} ({getCampaignDisplayName(d.campaign_id)} · {d.alignment || 'Unaligned'})
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            {selectedDeity && (
+              <div className="text-[11px] text-stone-300 pt-2 border-t border-stone-900 flex flex-wrap items-center gap-2">
+                <span className="text-amber-300 font-semibold">{selectedDeity.title}</span>
+                <span aria-hidden="true">·</span>
+                <span>Domains: {(selectedDeity.domains || []).join(', ')}</span>
+                {selectedDeity.recommended_oaths && selectedDeity.recommended_oaths.length > 0 && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span className="text-stone-400">
+                      Aligned Paths: {selectedDeity.recommended_oaths.join(', ')}
+                    </span>
+                  </>
+                )}
+              </div>
+            )}
+          </div>
+
           <div className="flex justify-between pt-4 border-t border-stone-800">
             <button
               onClick={() => dispatch({ type: 'SET_STEP', payload: 1 })}
@@ -535,23 +639,34 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[460px] overflow-y-auto pr-1">
               {filteredSubclasses.map(sub => {
                 const isSelected = selectedSubclass?.id === sub.id;
+                const isDeityAligned = Boolean(
+                  selectedDeity?.recommended_oaths?.some(
+                    o => o.toLowerCase() === sub.title.toLowerCase()
+                  )
+                );
                 return (
                   <div
                     key={sub.id}
                     className={`p-3.5 rounded-xl border text-left transition-all flex flex-col justify-between space-y-2 ${
                       isSelected
                         ? 'border-amber-500 bg-amber-950/30 ring-1 ring-amber-500 shadow-md'
+                        : isDeityAligned
+                        ? 'border-amber-700/60 bg-stone-950 hover:border-amber-500/80'
                         : 'border-stone-800 bg-stone-950 hover:border-stone-700'
                     }`}
                   >
                     <div>
                       <div className="flex items-center justify-between gap-1">
                         <div className="font-serif font-bold text-stone-200 text-sm">{sub.title}</div>
-                        {isSelected && (
+                        {isSelected ? (
                           <span className="text-amber-400 text-xs font-semibold flex items-center gap-0.5 shrink-0">
                             <Check className="w-3.5 h-3.5" /> Selected
                           </span>
-                        )}
+                        ) : isDeityAligned ? (
+                          <span className="text-amber-300/90 text-[11px] font-serif shrink-0">
+                            Aligned with {selectedDeity?.title}
+                          </span>
+                        ) : null}
                       </div>
                       {sub.summary && <div className="text-xs text-stone-400 mt-1 line-clamp-2">{sub.summary}</div>}
                     </div>
@@ -738,6 +853,7 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
           selectedSubclass={selectedSubclass}
           selectedBackground={selectedBackground}
           selectedFeat={selectedFeat}
+          selectedDeity={selectedDeity}
           derived={derived}
           onSetName={(name) => dispatch({ type: 'SET_NAME', payload: name })}
           onSetGenderOrTitle={(title) => dispatch({ type: 'SET_GENDER_OR_TITLE', payload: title })}
@@ -764,6 +880,12 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
           else if (entry.category === 'subclasses') dispatch({ type: 'SELECT_SUBCLASS', payload: entry.id });
           else if (entry.category === 'backgrounds') dispatch({ type: 'SELECT_BACKGROUND', payload: entry.id });
           else if (entry.category === 'feats') dispatch({ type: 'SELECT_FEAT', payload: entry.id });
+          else if (entry.category === 'pantheons') {
+            if (entry.campaign_id && entry.campaign_id !== state.campaignId) {
+              dispatch({ type: 'SELECT_CAMPAIGN', payload: entry.campaign_id });
+            }
+            dispatch({ type: 'SELECT_DEITY', payload: entry.id });
+          }
           setIsInspectorOpen(false);
         }}
         isSelected={
@@ -772,7 +894,8 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
               inspectedEntry.id === state.classId ||
               inspectedEntry.id === state.subclassId ||
               inspectedEntry.id === state.backgroundId ||
-              inspectedEntry.id === state.featId
+              inspectedEntry.id === state.featId ||
+              inspectedEntry.id === state.deityId
             : false
         }
         onNavigateToEntry={onNavigateToEntry}

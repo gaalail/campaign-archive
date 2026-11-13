@@ -94,6 +94,7 @@ Click the **All entries** tab to see everything for this campaign in one table.
 
 ## Resources
 
+- **[[campaigns/curse-of-strahd/pantheon/index|Pantheon & Barovian Faiths]]** — The Morninglord, Mother Night, and the Dark Powers beneath the Mists
 - **[[campaigns/curse-of-strahd/rules/index|Campaign Rules]]** — Setting rulings, alterations to magic, and planar restrictions
 - **[[Character Builder|Build a character]]** — Create your character
 - **[[Spells]]** — Magic reference

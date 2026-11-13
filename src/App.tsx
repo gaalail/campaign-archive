@@ -8,12 +8,13 @@ import { KnowledgeGraph } from './components/KnowledgeGraph';
 import { getEntryById } from './utils/archiveUtils';
 import { SpellCatalogue } from './components/SpellCatalogue';
 import { BestiaryCatalogue } from './components/BestiaryCatalogue';
+import { PantheonCatalogue } from './components/PantheonCatalogue';
 import { ChangelogModal } from './components/ChangelogModal';
 import { CommandPaletteModal } from './components/CommandPaletteModal';
 import { DiceProvider } from './components/DiceRoller';
 import { Sparkles, Search } from 'lucide-react';
 
-export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells' | 'monsters';
+export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'pantheons' | 'spells' | 'monsters';
 
 interface ParsedRoute {
   view: AppView;
@@ -81,6 +82,9 @@ function parseHashRoute(hashStr: string): ParsedRoute {
   }
   if (baseRoute === 'campaigns' || baseRoute === 'campaigns/index') {
     return { view: 'campaigns', entryId: 'campaigns/index', anchor: null, params };
+  }
+  if (baseRoute === 'pantheons' || baseRoute === 'pantheons/index' || baseRoute === 'deities') {
+    return { view: 'pantheons', entryId: 'pantheons', anchor: null, params };
   }
   if (baseRoute === 'builder' || baseRoute === 'character-builder') {
     return { view: 'builder', entryId: 'character-builder', anchor: null, params };
@@ -253,6 +257,12 @@ export default function App() {
               onNavigate={navigate}
               onOpenCharacterBuilder={() => navigate('builder')}
               onOpenGraph={() => navigate('graph')}
+            />
+          )}
+          {view === 'pantheons' && (
+            <PantheonCatalogue
+              onSelectEntry={navigate}
+              initialCampaign={routeParams.campaign || 'all'}
             />
           )}
           {view === 'graph' && (

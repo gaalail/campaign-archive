@@ -17,7 +17,8 @@ import {
   Menu,
   X,
   Anchor,
-  Search
+  Search,
+  Sun
 } from 'lucide-react';
 import {
   GothicRaven,
@@ -29,9 +30,9 @@ import {
 
 interface SidebarProps {
   currentEntryId: string | null;
-  currentView: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells' | 'monsters';
+  currentView: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'pantheons' | 'spells' | 'monsters';
   onNavigateToEntry: (id: string) => void;
-  onSetView: (view: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'spells' | 'monsters') => void;
+  onSetView: (view: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'pantheons' | 'spells' | 'monsters') => void;
   isOpen: boolean;
   onClose: () => void;
   onOpenChangelog?: () => void;
@@ -71,6 +72,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const backgrounds = archiveDb.entries.filter(e => e.category === 'backgrounds' && !e.id.endsWith('/index'));
   const feats = archiveDb.entries.filter(e => e.category === 'feats' && !e.id.endsWith('/index'));
   const fightingStyles = archiveDb.entries.filter(e => e.category === 'fighting-styles' && !e.id.endsWith('/index'));
+  const deities = archiveDb.entries.filter(e => e.category === 'pantheons' && !e.id.endsWith('/index'));
 
   return (
     <>
@@ -257,6 +259,21 @@ export const Sidebar: React.FC<SidebarProps> = ({
           >
             <GothicRaven className="w-4 h-4 text-rose-400" />
             <span>Campaign Chronicles</span>
+          </button>
+
+          <button
+            onClick={() => {
+              onSetView('pantheons');
+              onClose();
+            }}
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
+              currentView === 'pantheons' || (currentView === 'reader' && currentEntryId?.includes('/pantheon/'))
+                ? 'bg-amber-600 text-stone-950 shadow-md'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
+            }`}
+          >
+            <Sun className={`w-4 h-4 ${currentView === 'pantheons' ? 'text-stone-950' : 'text-amber-300'}`} />
+            <span>Pantheons ({deities.length})</span>
           </button>
         </div>
 

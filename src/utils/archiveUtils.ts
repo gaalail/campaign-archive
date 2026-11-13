@@ -288,3 +288,45 @@ export function getAllMonsters(): ArchiveEntry[] {
   return archiveDb.entries.filter(e => e.category === 'monsters' && !e.id.endsWith('/index'));
 }
 
+export function getAllDeities(): ArchiveEntry[] {
+  return archiveDb.entries
+    .filter(e => (e.category === 'pantheons' || e.entity_type === 'deity') && !e.id.endsWith('/index'))
+    .sort((a, b) => a.title.localeCompare(b.title));
+}
+
+export function getDeitiesForCampaign(campaignId?: string | null): ArchiveEntry[] {
+  const deities = getAllDeities();
+  if (!campaignId || campaignId === 'all') return deities;
+  return deities.filter(d => d.campaign_id === campaignId || d.subcategory === campaignId);
+}
+
+export function getPantheonOverviewForCampaign(campaignId: string): ArchiveEntry | undefined {
+  return archiveDb.entries.find(
+    e => (e.category === 'pantheons' || e.id.includes('/pantheon/')) && e.id.endsWith('/index') && e.campaign_id === campaignId
+  );
+}
+
+export function getDeityDomains(): string[] {
+  const domains = new Set<string>();
+  for (const d of getAllDeities()) {
+    const list = d.domains || (Array.isArray(d.frontmatter?.domains) ? d.frontmatter.domains : []);
+    for (const dom of list) {
+      if (dom) domains.add(String(dom));
+    }
+  }
+  return Array.from(domains).sort((a, b) => a.localeCompare(b));
+}
+
+export function getCampaignDisplayName(campaignId?: string | null): string {
+  switch (campaignId) {
+    case 'curse-of-strahd':
+      return 'Curse of Strahd';
+    case 'ra-golvek':
+      return "Ra Gol'vek";
+    case 'vyrun':
+      return 'Vyrun';
+    default:
+      return campaignId ? campaignId.replace(/-/g, ' ') : 'All Realms';
+  }
+}
+

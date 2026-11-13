@@ -11,7 +11,7 @@ import {
   WaxSeal,
   DndFleuronDivider
 } from './GothicIcons';
-import { Compass, BookOpen, MapPin, Skull, ChevronRight, Sparkles, Network, Flame, ShieldAlert, Anchor } from 'lucide-react';
+import { Compass, BookOpen, MapPin, Skull, ChevronRight, Sparkles, Network, Flame, ShieldAlert, Anchor, Sun } from 'lucide-react';
 
 interface CampaignHubProps {
   onNavigate: (id: string) => void;
@@ -63,6 +63,13 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
             >
               <CrossedSwords className="w-4 h-4" />
               <span>Forge a Hero</span>
+            </button>
+            <button
+              onClick={() => onNavigate('pantheons')}
+              className="px-4 py-2.5 rounded-lg bg-stone-900 hover:bg-stone-800 border border-amber-800/60 text-amber-200 text-xs font-serif uppercase tracking-wider transition-all flex items-center gap-2 shadow cursor-pointer"
+            >
+              <Sun className="w-4 h-4 text-amber-400" />
+              <span>Pantheons</span>
             </button>
             <button
               onClick={onOpenGraph}
@@ -147,6 +154,14 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
               <span>Alterations to Magic in Ravenloft</span>
               <span className="text-[10px] uppercase tracking-wider">Gothic Laws →</span>
             </button>
+
+            <button
+              onClick={() => onNavigate('campaigns/curse-of-strahd/pantheon/index')}
+              className="w-full py-1.5 px-3 rounded-lg hover:bg-rose-950/50 text-[11px] font-serif text-rose-300/90 hover:text-rose-100 transition-colors flex items-center justify-between cursor-pointer"
+            >
+              <span>Faiths of Barovia (Morninglord & Night)</span>
+              <span className="text-[10px] uppercase tracking-wider">Pantheon →</span>
+            </button>
           </div>
         </div>
 
@@ -213,6 +228,14 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
               <span>Coastal Treaties & House Rules</span>
               <span className="text-[10px] uppercase tracking-wider">Codex →</span>
             </button>
+
+            <button
+              onClick={() => onNavigate('campaigns/ra-golvek/pantheon/index')}
+              className="w-full py-1.5 px-3 rounded-lg hover:bg-cyan-950/50 text-[11px] font-serif text-cyan-300/90 hover:text-cyan-100 transition-colors flex items-center justify-between cursor-pointer"
+            >
+              <span>The Tide-Sworn & Sunken Court</span>
+              <span className="text-[10px] uppercase tracking-wider">Pantheon →</span>
+            </button>
           </div>
         </div>
 
@@ -278,6 +301,14 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
             >
               <span>Wilderness Survival Rules</span>
               <span className="text-[10px] uppercase tracking-wider">Manual →</span>
+            </button>
+
+            <button
+              onClick={() => onNavigate('campaigns/vyrun/pantheon/index')}
+              className="w-full py-1.5 px-3 rounded-lg hover:bg-emerald-950/50 text-[11px] font-serif text-emerald-300/90 hover:text-emerald-100 transition-colors flex items-center justify-between cursor-pointer"
+            >
+              <span>The Reawakened Old Gods</span>
+              <span className="text-[10px] uppercase tracking-wider">Pantheon →</span>
             </button>
           </div>
         </div>

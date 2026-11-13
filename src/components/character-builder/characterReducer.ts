@@ -10,6 +10,8 @@ export type CharacterAction =
   | { type: 'SELECT_SUBCLASS'; payload: string | null }
   | { type: 'SELECT_BACKGROUND'; payload: string | null }
   | { type: 'SELECT_FEAT'; payload: string | null }
+  | { type: 'SELECT_CAMPAIGN'; payload: string | null }
+  | { type: 'SELECT_DEITY'; payload: string | null }
   | { type: 'SET_ABILITY_MODE'; payload: AbilityMode }
   | { type: 'SET_BASE_ABILITY'; payload: { ability: AbilityKey; score: number } }
   | { type: 'SET_ALL_BASE_ABILITIES'; payload: Record<AbilityKey, number> }
@@ -60,6 +62,16 @@ export function characterReducer(state: CharacterState, action: CharacterAction)
 
     case 'SELECT_FEAT':
       return { ...state, featId: action.payload };
+
+    case 'SELECT_CAMPAIGN':
+      return {
+        ...state,
+        campaignId: action.payload,
+        deityId: null
+      };
+
+    case 'SELECT_DEITY':
+      return { ...state, deityId: action.payload };
 
     case 'SET_ABILITY_MODE':
       return { ...state, abilityMode: action.payload };

@@ -9,12 +9,14 @@ import {
   getSpellLevelLabel,
   getEntryById,
   cleanFlavorText,
+  getCampaignDisplayName,
   archiveDb
 } from '../utils/archiveUtils';
 import { MarkdownView, InlineContent } from './MarkdownView';
 import { SpellCatalogue } from './SpellCatalogue';
 import { MonsterStatblock } from './MonsterStatblock';
 import { BestiaryCatalogue } from './BestiaryCatalogue';
+import { PantheonCatalogue } from './PantheonCatalogue';
 import {
   ArrowLeft,
   BookOpen,
@@ -40,7 +42,8 @@ import {
   Wand2,
   Package,
   Network,
-  User
+  User,
+  Sun
 } from 'lucide-react';
 import {
   GothicRaven,
@@ -145,6 +148,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const isRace = entry.category === 'races' && !entry.id.endsWith('/index');
   const isBackground = entry.category === 'backgrounds' && !entry.id.endsWith('/index');
   const isFeat = (entry.category === 'feats' || entry.id.startsWith('character-options/feats/')) && !entry.id.endsWith('/index');
+  const isDeity = (entry.category === 'pantheons' || entry.entity_type === 'deity') && !entry.id.endsWith('/index');
+  const isPantheonIndex = (entry.category === 'pantheons' || entry.entity_type === 'pantheon_overview') && entry.id.endsWith('/index');
 
   // If this is the Bestiary index, render the dedicated Bestiary Catalogue
   if (isMonsterIndex) {
@@ -454,6 +459,20 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                 </button>
               )}
 
+              {isDeity && (
+                <button
+                  onClick={() =>
+                    onNavigate(
+                      `builder?campaign=${encodeURIComponent(entry.campaign_id || '')}&deity=${encodeURIComponent(entry.id)}`
+                    )
+                  }
+                  className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
+                >
+                  <Sun className="w-3.5 h-3.5 text-amber-400" />
+                  <span>Adopt Patron in Builder</span>
+                </button>
+              )}
+
               {/* Synergistic Connector: Knowledge Graph Focus */}
               {!isHome && (
                 <button
@@ -574,6 +593,23 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                     </h4>
                     <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
                       Core and homebrew classes with all mechanics & features.
+                    </p>
+                  </div>
+                </button>
+
+                <button
+                  onClick={() => onNavigate('pantheons')}
+                  className="p-3.5 rounded-xl border border-amber-500/30 bg-amber-950/15 hover:bg-amber-950/35 hover:border-amber-500/60 transition-all text-left group flex items-start gap-3 cursor-pointer"
+                >
+                  <div className="p-2 rounded-lg bg-amber-500/20 text-amber-300 group-hover:scale-105 transition-transform shrink-0">
+                    <Sun className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-100 group-hover:text-amber-300 text-sm transition-colors">
+                      Pantheons & Deities
+                    </h4>
+                    <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                      Setting-specific gods, divine domains, and sacred oaths.
                     </p>
                   </div>
                 </button>
@@ -907,6 +943,99 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
         )}
 
 
+        {/* Dedicated Deity & Cosmology Infocard */}
+        {isDeity && (
+          <div className="bg-stone-950/90 border border-amber-900/50 rounded-xl p-5 space-y-4">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-800 pb-3">
+              <div className="flex items-center gap-2.5">
+                <Sun className="w-5 h-5 text-amber-400" />
+                <div className="font-fantasy text-lg font-bold text-amber-200 tracking-wide">
+                  {entry.pantheon || getCampaignDisplayName(entry.campaign_id)}
+                </div>
+              </div>
+              <div className="text-xs font-serif text-stone-300 flex items-center gap-2">
+                <span>{entry.alignment || 'Unaligned'}</span>
+                {entry.campaign_id && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <button
+                      onClick={() => onNavigate(`campaigns/${entry.campaign_id}/pantheon/index`)}
+                      className="text-amber-400 hover:text-amber-200 underline cursor-pointer"
+                    >
+                      All {getCampaignDisplayName(entry.campaign_id)} Deities
+                    </button>
+                  </>
+                )}
+              </div>
+            </div>
+
+            <dl className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+              <div className="bg-stone-900/70 p-3 rounded-lg border border-stone-800 space-y-1">
+                <dt className="text-amber-500/80 uppercase tracking-widest font-serif font-bold text-[10px]">
+                  Divine Domains
+                </dt>
+                <dd className="text-amber-200 font-medium leading-snug">
+                  {entry.domains && entry.domains.length > 0 ? entry.domains.join(', ') : 'Any'}
+                </dd>
+              </div>
+              <div className="bg-stone-900/70 p-3 rounded-lg border border-stone-800 space-y-1">
+                <dt className="text-amber-500/80 uppercase tracking-widest font-serif font-bold text-[10px]">
+                  Holy Symbol
+                </dt>
+                <dd className="text-stone-200 leading-snug">
+                  {entry.symbol || 'Sacred emblem'}
+                </dd>
+              </div>
+              <div className="bg-stone-900/70 p-3 rounded-lg border border-stone-800 space-y-1">
+                <dt className="text-amber-500/80 uppercase tracking-widest font-serif font-bold text-[10px]">
+                  Favored Weapon
+                </dt>
+                <dd className="text-stone-200 leading-snug">
+                  {entry.favored_weapon || 'Mace'}
+                </dd>
+              </div>
+              <div className="bg-stone-900/70 p-3 rounded-lg border border-stone-800 space-y-1">
+                <dt className="text-amber-500/80 uppercase tracking-widest font-serif font-bold text-[10px]">
+                  Worshippers
+                </dt>
+                <dd className="text-stone-300 leading-snug">
+                  {entry.worshippers || 'Devoted faithful'}
+                </dd>
+              </div>
+            </dl>
+
+            {entry.recommended_oaths && entry.recommended_oaths.length > 0 && (
+              <div className="pt-2 border-t border-stone-800/80 flex flex-wrap items-center gap-2 text-xs">
+                <span className="text-stone-400 font-serif font-bold uppercase tracking-wider text-[11px]">
+                  Aligned Domains & Oaths:
+                </span>
+                {entry.recommended_oaths.map(oath => {
+                  const target = getEntryById(oath);
+                  if (target) {
+                    return (
+                      <button
+                        key={oath}
+                        onClick={() => onNavigate(target.id)}
+                        className="px-2.5 py-1 rounded-lg bg-stone-900 border border-stone-800 hover:border-amber-500/60 text-amber-200 hover:text-amber-100 transition-colors font-serif text-xs cursor-pointer"
+                      >
+                        {oath}
+                      </button>
+                    );
+                  }
+                  return (
+                    <span
+                      key={oath}
+                      className="px-2.5 py-1 rounded-lg bg-stone-900/60 border border-stone-800 text-stone-300 font-serif text-xs"
+                    >
+                      {oath}
+                    </span>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        )}
+
         {/* Navigation Tabs for Classes and Subclasses with Spells */}
         {(isClass || (isSubclass && classSpells.length > 0)) && (
           <div className="flex flex-wrap items-center gap-2 border-b border-slate-800 pb-2">
@@ -1006,6 +1135,16 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                     entry.subcategory?.includes('9th') ? 9 : 'all'
                   }
                   onSelectSpell={onNavigate}
+                />
+              </div>
+            )}
+
+            {isPantheonIndex && (
+              <div className="mt-8 pt-6 border-t border-stone-800">
+                <PantheonCatalogue
+                  initialCampaign={entry.campaign_id || 'all'}
+                  hideCampaignSelector={true}
+                  onSelectEntry={onNavigate}
                 />
               </div>
             )}

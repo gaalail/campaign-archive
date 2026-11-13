@@ -93,6 +93,7 @@ Click the **All entries** tab to see everything for this campaign in one table.
 
 ## Resources
 
+- **[[campaigns/ra-golvek/pantheon/index|Pantheon & Worship]]** — The Tide-Sworn & Sunken Court deities of Ra Gol'vek
 - **[[campaigns/ra-golvek/rules/index|Campaign Rules]]** — Setting rulings, supernatural madness saves, and hazards
 - **[[Character Builder|Build a character]]** — Create your character
 - **[[Spells]]** — Magic reference

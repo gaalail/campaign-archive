@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ArchiveEntry } from '../types/archive';
 import { getSourceBadgeInfo, getRarityColor, cleanFlavorText, getSpellLevelLabel } from '../utils/archiveUtils';
-import { BookOpen, Sparkles, Sword, Shield, ExternalLink, Flame } from 'lucide-react';
+import { BookOpen, Sparkles, Sword, Shield, ExternalLink, Flame, Sun } from 'lucide-react';
 import { GothicBat, DragonShield } from './GothicIcons';
 
 interface WikilinkHoverCardProps {
@@ -65,6 +65,8 @@ export const WikilinkHoverCard: React.FC<WikilinkHoverCardProps> = ({ entry, chi
         return <BookOpen className="w-3.5 h-3.5 text-teal-400" />;
       case 'campaigns':
         return <Flame className="w-3.5 h-3.5 text-amber-500" />;
+      case 'pantheons':
+        return <Sun className="w-3.5 h-3.5 text-amber-300" />;
       default:
         return <Shield className="w-3.5 h-3.5 text-stone-400" />;
     }
@@ -122,6 +124,25 @@ export const WikilinkHoverCard: React.FC<WikilinkHoverCardProps> = ({ entry, chi
         <div className="flex items-center justify-between py-1.5 px-2 bg-stone-950/70 rounded border border-stone-800 text-[11px] font-sans">
           <span className="text-stone-400">Hit Die: <strong className="text-stone-200 font-mono">{entry.hit_die || 'd8'}</strong></span>
           <span className="text-stone-400">Primary: <strong className="text-amber-300">{primaryStat}</strong></span>
+        </div>
+      );
+    }
+
+    if (entry.category === 'pantheons' && !entry.id.endsWith('/index')) {
+      const domains = (entry.domains || []).slice(0, 3).join(', ');
+      return (
+        <div className="space-y-1 py-1.5 px-2 bg-stone-950/70 rounded border border-stone-800 text-[11px] font-sans">
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-stone-400">Alignment: <strong className="text-amber-200">{entry.alignment || 'Unaligned'}</strong></span>
+            {entry.favored_weapon && (
+              <span className="text-stone-400 truncate">Weapon: <strong className="text-stone-200">{entry.favored_weapon}</strong></span>
+            )}
+          </div>
+          {domains && (
+            <div className="text-stone-400 truncate">
+              Domains: <strong className="text-amber-300">{domains}</strong>
+            </div>
+          )}
         </div>
       );
     }

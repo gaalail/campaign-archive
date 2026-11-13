@@ -11,6 +11,7 @@ interface CharacterHudProps {
   selectedClass: ArchiveEntry | null;
   selectedSubclass: ArchiveEntry | null;
   selectedBackground: ArchiveEntry | null;
+  selectedDeity?: ArchiveEntry | null;
   derived: DerivedStats;
   onJumpToStep: (step: number) => void;
 }
@@ -21,6 +22,7 @@ export const CharacterHud: React.FC<CharacterHudProps> = ({
   selectedClass,
   selectedSubclass,
   selectedBackground,
+  selectedDeity,
   derived,
   onJumpToStep
 }) => {
@@ -60,6 +62,12 @@ export const CharacterHud: React.FC<CharacterHudProps> = ({
                   <>
                     <span>•</span>
                     <span className="text-stone-400 hidden sm:inline">{selectedBackground.title}</span>
+                  </>
+                )}
+                {selectedDeity && (
+                  <>
+                    <span>•</span>
+                    <span className="text-amber-300/90 hidden md:inline">Faith: {selectedDeity.title}</span>
                   </>
                 )}
               </div>
