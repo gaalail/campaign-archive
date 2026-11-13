@@ -17,6 +17,6 @@ content_status: complete
 
 # Flesh Fixer
 
-You can cast the [[regenerate]] spell once without using a spell slot, regaining the ability upon completing a long rest.
+You can cast the *regenerate* spell once without using a spell slot, regaining the ability upon completing a long rest.
 
 **Prerequisites:** The Nightcomer patron, 15th level

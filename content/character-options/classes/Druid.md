@@ -15,6 +15,8 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+# Druid
+
 ## The Druid table
 
 | Level | Proficiency Bonus | Features                                                                 | Max CR | Swim | Fly | Cantrips Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
@@ -93,7 +95,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared.
 
 > [!info]- Spellcasting Focus
-> You can use a druidic focus (see chapter 5, "Equipment") as a spellcasting focus for your druid spells.
+> You can use a druidic focus (see Equipment) as a spellcasting focus for your druid spells.
 
 ## Multiclassing
 

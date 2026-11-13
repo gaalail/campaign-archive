@@ -14,7 +14,10 @@ source: Corpus Angelus
 source_type: third-party
 ---
 
-…to wield weapons and be a close combatant, you may enjoy playing a paragon of the Order of Valor. If you want to talk to the masses and affect your enemies with your voice, Order of the Voice is for you. Or, if you want to be an expert about your enemies' weaknesses and powers, and be a scholar of religious knowledge, you would do well to choose the Order of Reason.
+# Paragon
+
+If you wish to wield weapons and stand on the front lines as a consecrated combatant, you may enjoy playing a paragon of the **Order of Valor**. If you want to move the masses and strike down your enemies with your voice, **Order of the Voice** is for you. Or, if you want to be a scholar of religious lore who exposes your enemies' weaknesses and powers, you would do well to choose the **Order of Reason**.
+
 Paragons can have various goals in life that may or may not be related to their orders. No matter which order you choose for your paragon character, your unwavering will and devotion form the foundation of your powers. Being a paragon is merely a tool for your faith, the eternal and the perpetual.
 
 ## The Paragon table
@@ -44,7 +47,7 @@ Paragons can have various goals in life that may or may not be related to their 
 
 ## Quick build
 
-You can make a paragon quickly by following these suggestions. First, the DC of your avatar features is determined by your Charisma modifier, and it should be your highest ability score, followed by Strength, Dexterity, or Constitution depending on your Order and play style. Second, choose the Blessed Child (p. 83) background.
+You can make a paragon quickly by following these suggestions. First, the DC of your avatar features is determined by your Charisma modifier, and it should be your highest ability score, followed by Strength, Dexterity, or Constitution depending on your Order and play style. Second, choose the [[character-options/backgrounds/Blessed Child|Blessed Child]] background.
 
 ## Hit points
 
@@ -154,9 +157,9 @@ You start with the following equipment, in addition to the equipment granted by 
 >
 > **Infinite.** If you are in the Order of Reason, your mind is blessed to the extent that you can comprehend the mysteries of the universe, all destined to unravel before you. Once a month, you can perform a 1-hour ritual and travel within the strings of fate in a hypnotic state. As you do so, you think about one of your allies and see prophetic visions of an event that is going to happen to them or around them within 1 month.
 
-## Class options
+## Class Options
 
-Avatar features are choices, not automatic features. You pick the number shown in the Avatar Features column of the table, if you meet the prerequisites. Members of each Order can also choose that Order's own avatar features, listed on its subclass page.
+Avatar features are choices, not automatic features. You pick the number shown in the Avatar Features column of the table, if you meet the prerequisites. Browse the full [[character-options/class-options/avatar-features/index|Avatar Features catalogue]]. Members of each Order can also choose that Order's own avatar features, listed on its subclass page.
 
 ![[class-options-of.base]]
 

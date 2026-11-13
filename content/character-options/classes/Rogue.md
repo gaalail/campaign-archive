@@ -14,6 +14,8 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+# Rogue
+
 ## The Rogue table
 
 | Level | Proficiency Bonus | Features                               | Sneak Attack |

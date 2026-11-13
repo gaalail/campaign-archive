@@ -66,7 +66,7 @@ Each campaign has sessions, NPCs, locations, and loot specific to your adventure
 
 ## Material Attribution
 
-Material marked **SRD 5.1** is used under a Creative Commons license from the System Reference Document. See the [[srd-attribution|attribution page]] for details.
+Material marked **SRD 5.1** is used under the Creative Commons Attribution 4.0 International (CC-BY-4.0) license from the System Reference Document (SRD 5.1).
 
 Other material marked **Homebrew** is custom content created for these campaigns. **Corpus Angelus** material is from external sources.
 

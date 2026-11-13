@@ -1,5 +1,7 @@
 ---
 title: Metamagic
+parent_class: Sorcerer
+summary: Sorcery Point spell modifications available to Sorcerers
 ---
 
 # Metamagic
@@ -24,6 +26,7 @@ Your innate magical power lets you bend spells in unique ways. These **Metamagic
 - **[[Empowered Spell]]** — Reroll damage dice
 - **[[Distant Spell]]** — Stretch a spell's range
 - **[[Extended Spell]]** — Double a spell's duration
+- **[[Twinned Spell]]** — Target a second creature with a single-target spell
 
 ---
 

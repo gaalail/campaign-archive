@@ -17,7 +17,7 @@ content_status: incomplete
 incomplete_reason: The supplied alternate class replaces the SRD class; its provided spell list is not yet reconciled with existing spell records or catalogue filters.
 ---
 
-# The Warlock
+# Warlock
 
 A striking tiefling with an auburn complexion and dark horns stands in a ritual circle beneath the full moon. As he chants in a forgotten tongue, the moon is swallowed by darkness. A voice beyond the stars offers power if he works toward its goals. He agrees, and the moonlight returns as eldritch power fills him.
 
@@ -161,6 +161,12 @@ Browse the [[character-options/class-options/elder-arcana/index|Elder Arcanum ca
 At 20th level, choose a second Otherworldly Patron. You gain that Patron's 2nd-level features and all of its Patron Spells.
 
 Whenever you finish a long rest, you may replace this secondary Patron with another Otherworldly Patron available to Warlocks.
+
+## Class Options
+
+Warlocks customize their pact across four option catalogues: [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations]], [[character-options/class-options/pact-foci/index|Pact Foci]], [[character-options/class-options/familiars/index|Eldritch Familiars]], and [[character-options/class-options/elder-arcana/index|Elder Arcana]]:
+
+![[class-options-of.base]]
 
 ## Subclasses
 

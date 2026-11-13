@@ -15,6 +15,8 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+# Cleric
+
 ## The Cleric table
 
 | Level | Proficiency Bonus | Features                                                                         | Channel Divinity | Destroy Undead (CR) | Cantrips Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
@@ -124,8 +126,6 @@ You start with the following equipment, in addition to the equipment granted by 
 > Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.
 >
 > Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.
->
-> **Level 6.** Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.
 
 > [!info]- Channel Divinity: Turn Undead (level 2)
 > As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
@@ -151,9 +151,6 @@ You start with the following equipment, in addition to the equipment granted by 
 > If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.
 >
 > At 20th level, your call for intervention succeeds automatically, no roll required.
-
-> [!info]- Supreme Healing (level 17)
-> Starting at 17th level, when you would normally roll one or more dice to restore hit points with a spell, you instead use the highest number possible for each die. For example, instead of restoring 2d6 hit points to a creature, you restore 12.
 
 > [!info]- Divine Intervention Improvement (level 20)
 > At 20th level, your call for intervention succeeds automatically, no roll required.

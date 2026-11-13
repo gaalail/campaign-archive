@@ -1,5 +1,6 @@
 ---
 title: Paladin Smite Paths
+parent_class: Paladin
 summary: Nine themed paths of escalating Paladin smites
 ---
 

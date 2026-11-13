@@ -10,7 +10,7 @@ aliases:
 
 At **3rd level** (sometimes 1st or 2nd), you specialize your class with a **subclass**.
 
-**119 subclasses available** | Choose at level-up | Defines your playstyle
+**208 subclasses available** | Choose at level-up | Defines your playstyle
 
 ---
 
@@ -22,22 +22,23 @@ Click your class to see available subclasses:
 
 - [[character-options/subclasses/Artificer/index|Artificer]] (8 specializations)
 - [[character-options/subclasses/Barbarian/index|Barbarian]] (31 paths)
-- [[character-options/subclasses/Bard/index|Bard]] (5 colleges)
-- [[character-options/subclasses/Cleric/index|Cleric]] (6 domains)
-- [[character-options/subclasses/Druid/index|Druid]] (4 circles)
-- [[character-options/subclasses/Fighter/index|Fighter]] (20 archetypes)
-- [[character-options/subclasses/Monk/index|Monk]] (22 traditions)
-- [[character-options/subclasses/Paladin/index|Paladin]] (24 oaths)
-- [[character-options/subclasses/Ranger/index|Ranger]] (4 archetypes)
-- [[character-options/subclasses/Rogue/index|Rogue]] (4 archetypes)
-- [[character-options/subclasses/Sorcerer/index|Sorcerer]] (4 origins)
-- [[character-options/subclasses/Warlock/index|Warlock]] (4 patrons)
-- [[character-options/subclasses/Wizard/index|Wizard]] (4 traditions)
+- [[character-options/subclasses/Bard/index|Bard]] (6 colleges)
+- [[character-options/subclasses/Cleric/index|Cleric]] (7 domains)
+- [[character-options/subclasses/Druid/index|Druid]] (5 circles)
+- [[character-options/subclasses/Fighter/index|Fighter]] (23 archetypes)
+- [[character-options/subclasses/Monk/index|Monk]] (25 traditions)
+- [[character-options/subclasses/Paladin/index|Paladin]] (28 oaths)
+- [[character-options/subclasses/Ranger/index|Ranger]] (6 archetypes)
+- [[character-options/subclasses/Rogue/index|Rogue]] (7 archetypes)
+- [[character-options/subclasses/Sorcerer/index|Sorcerer]] (6 origins)
+- [[character-options/subclasses/Warlock/index|Warlock]] (15 patrons)
+- [[character-options/subclasses/Wizard/index|Wizard]] (6 traditions)
 
 ### Homebrew Classes
 
 - [[character-options/subclasses/Paragon/index|Paragon]] (3 orders) — Corpus Angelus class
 - [[character-options/subclasses/Primal/index|Primal]] (10 bonds) — Curated Primal class
+- [[character-options/subclasses/Tamer/index|Tamer]] (4 paradigms) — Heliana's Guide class
 - [[character-options/subclasses/Thanatomancer/index|Thanatomancer]] (3 paths) — Erevan's Guide to Death & Beyond class
 - [[character-options/subclasses/Warden/index|Warden]] (15 calls) — Complete Warden class
 

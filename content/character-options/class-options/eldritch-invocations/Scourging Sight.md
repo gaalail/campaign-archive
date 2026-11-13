@@ -16,6 +16,6 @@ content_status: complete
 
 # Scourging Sight
 
-When you use your demon soul transformation, you can see invisible creatures within 100 feet of you. One time during your transformation when you hit such a creature with your [[eldritch-blast]] cantrip, you can choose for it to immediately become visible.
+When you use your demon soul transformation, you can see invisible creatures within 100 feet of you. One time during your transformation when you hit such a creature with your [[Warlock|Eldritch Blast]], you can choose for it to immediately become visible.
 
 **Prerequisite:** Evil Eye feature

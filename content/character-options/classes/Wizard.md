@@ -15,6 +15,8 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+# Wizard
+
 ## The Wizard table
 
 | Level | Proficiency Bonus | Features                              | Arcane Recovery (slot levels) | Cantrips Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |

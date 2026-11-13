@@ -48,7 +48,7 @@ Specializes your class at a certain level (usually 3rd).
 - [[character-options/classes/Cleric|Cleric]] → Life
 - [[character-options/classes/Warlock|Warlock]] → Fiend
 - [[character-options/classes/Sorcerer|Sorcerer]] → Draconic
-- [[character-options/classes/Artificer|Artificer]] → Battle Smith
+- [[character-options/classes/Artificer|Artificer]] → Forgebound
 
 ---
 
@@ -60,8 +60,9 @@ Some classes have unique choice mechanics:
 
 **Examples:**
 
-- **Warlock:** Eldritch Invocations (32 magical powers)
-- **Sorcerer:** Metamagic (7 spell modifications)
+- **Warlock:** Eldritch Invocations (66 magical powers), Pact Foci, Eldritch Familiars, and Elder Arcana
+- **Sorcerer:** Metamagic (8 spell modifications)
+- **Fighter & Barbarian:** Martial Exploits (78) and Savage Exploits (59)
 - **Artificer:** Infuse Item (magical item crafting)
 
 Fighting Styles are shared martial options available through features from multiple classes. [[character-options/fighting-styles/index|Browse the Fighting Styles catalogue]].
@@ -103,11 +104,11 @@ Some classes have unique mechanics for customization:
 
 ### Eldritch Invocations (Warlock)
 
-32 magical powers you learn as your patron teaches you.
+66 magical powers you learn and bind to Trinkets as your patron teaches you.
 
 ### Metamagic (Sorcerer)
 
-7 ways to bend and modify your spells using Sorcery Points.
+8 ways to bend and modify your spells using Sorcery Points.
 
 ### Infuse Item (Artificer)
 

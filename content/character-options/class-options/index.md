@@ -16,43 +16,27 @@ Some classes have **class-specific choice mechanics** — powers you can pick to
 
 ## Your Class Options
 
-### [[character-options/class-options/eldritch-invocations/index|🎭 Eldritch Invocations]] (Warlock)
+### [[character-options/class-options/savage-exploits/index|Savage Exploits]] (Barbarian)
 
-Magical powers granted by your patron. You choose which ones enhance your abilities.
+Primal martial techniques and heroic feats powered by Exploit Dice, including optional Advanced Savage Exploits.
 
-**32 invocations** | Levels 2-18 | Prerequisites vary
-
----
-
-### [[character-options/class-options/pact-foci/index|Pact Foci]] (Warlock)
-
-Choose a Pact Focus at 3rd level to gain a weapon, familiar, tome, or other source-approved focus.
-
----
-
-### [[character-options/class-options/familiars/index|Eldritch Familiars]] (Warlock)
-
-Use source-transcribed stat blocks when selecting the Eldritch Familiar Pact Focus.
-
----
-
-### [[character-options/class-options/elder-arcana/index|Elder Arcana]] (Warlock)
-
-High-level Warlock options available at 11th level and higher.
-
----
-
-### [[character-options/class-options/metamagic/index|✨ Metamagic]] (Sorcerer)
-
-Ways to bend and modify your spells. Modify your magic on the fly with these options.
-
-**7 metamagic options** | Levels 3+ | Sorcery Point cost
+**59 exploits** | 1st–5th Degree | Levels 2–20
 
 ---
 
 ### [[character-options/class-options/martial-exploits/index|Martial Exploits]] (Fighter)
 
 Martial techniques for attacks, ability checks, saving throws, and tactical support.
+
+**78 exploits** | 1st–5th Degree | Levels 2–20
+
+---
+
+### [[character-options/class-options/monk-techniques/index|Mystic Techniques]] (Monk)
+
+Ki-powered techniques learned by Monks as they advance.
+
+**43 techniques** | Levels 2–20 | Prerequisites vary
 
 ---
 
@@ -64,17 +48,11 @@ Nine themed paths that define the damage and effects of a Paladin's Divine Smite
 
 ---
 
-### [[character-options/class-options/monk-techniques/index|Mystic Techniques]] (Monk)
-
-Ki-powered techniques learned by Monks as they advance.
-
----
-
 ### [[character-options/class-options/avatar-features/index|⚡ Avatar Features]] (Paragon)
 
 Divine powers granted by your deity. Unlock as you bond with your god.
 
-**75+ avatar features** | Levels 1-20 | By Order (Voice, Valor, Reason)
+**75 avatar features** | Levels 1–20 | By Order (Voice, Valor, Reason)
 
 ---
 
@@ -82,20 +60,79 @@ Divine powers granted by your deity. Unlock as you bond with your god.
 
 Customizable supernatural manifestations of primordial power, granting specialized defenses, expanded spellcraft, and natural weapon enhancements.
 
-**30+ manifestations** | Levels 3-20 | By level and Primal Bond
+**33 manifestations** | Levels 3–20 | By level and Primal Bond
+
+---
+
+### [[character-options/class-options/metamagic/index|✨ Metamagic]] (Sorcerer)
+
+Ways to bend and modify your spells. Modify your magic on the fly with these options.
+
+**8 metamagic options** | Levels 3+ | Sorcery Point cost
+
+---
+
+### [[character-options/class-options/veil-techniques/index|Veil Techniques]] (Thanatomancer)
+
+Techniques fueled by mortis points that reshape necrotic attacks, senses, and defensive wards—unlocking 7th- and 13th-level enhancements as you advance.
+
+**8 techniques** | Levels 1–20 | Mortis point cost
+
+---
+
+### [[character-options/class-options/warden-alternate-features/index|Warden Alternate Class Features]] (Warden)
+
+Complete 1st-level variant kits replacing Warden's Grasp, Warden's Mark, and Warden's Resolve for specialized tanking archetypes.
+
+**5 alternate packages** | Level 1 choice | Replaces core tank trio
+
+---
+
+### [[character-options/class-options/eldritch-invocations/index|🎭 Eldritch Invocations]] (Warlock)
+
+Magical powers granted by your patron and bound to Trinkets. You choose which ones enhance your abilities.
+
+**66 invocations** | Levels 1–18 | Prerequisites vary
+
+---
+
+### [[character-options/class-options/pact-foci/index|Pact Foci]] (Warlock)
+
+Choose a Pact Focus at 3rd level to gain a weapon, familiar, tome, or other source-approved focus.
+
+**3 pact foci** | Level 3 | Defines your pact implement
+
+---
+
+### [[character-options/class-options/familiars/index|Eldritch Familiars]] (Warlock)
+
+Use source-transcribed stat blocks when selecting the Eldritch Familiar Pact Focus.
+
+**12 familiar forms** | Scales with Warlock Proficiency Bonus
+
+---
+
+### [[character-options/class-options/elder-arcana/index|Elder Arcana]] (Warlock)
+
+High-level Warlock options available at 11th level and higher.
+
+**17 arcanum options** | Levels 11–17 | Prerequisites vary
 
 ---
 
 ## How Class Options Work
 
 1. **Your class determines what options you can choose**
-   - Warlocks → Eldritch Invocations
-   - Sorcerers → Metamagic
+   - Barbarians → Savage Exploits
    - Fighters → Martial Exploits
-   - Paladins → Smite Paths
    - Monks → Mystic Techniques
+   - Paladins → Smite Paths
    - Paragons → Avatar Features
    - Primals → Primal Manifestations
+   - Sorcerers → Metamagic
+   - Thanatomancers → Veil Techniques
+   - Wardens → Warden Alternate Class Features
+   - Warlocks → Eldritch Invocations, Pact Foci, Eldritch Familiars, and Elder Arcana
 
 2. **You gain them at certain levels** (varies by class)
 
@@ -107,17 +144,16 @@ Customizable supernatural manifestations of primordial power, granting specializ
 
 ## Finding Your Options
 
-**Playing a [[Warlock]]?** → Go to [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations]]
-
-**Playing a [[Sorcerer]]?** → Go to [[character-options/class-options/metamagic/index|Metamagic]]
-
-**Playing a [[Fighter]]?** → Go to [[character-options/class-options/martial-exploits/index|Martial Exploits]]; Fighting Styles are in the shared [[character-options/fighting-styles/index|Fighting Styles]] catalogue
-
-**Playing a [[Paladin]]?** → Go to [[character-options/class-options/smite-paths/index|Smite Paths]]
-
-**Playing a [[Monk]]?** → Go to [[character-options/class-options/monk-techniques/index|Mystic Techniques]]
-
-**Playing a [[Paragon]]?** → Go to [[character-options/class-options/avatar-features/index|Avatar Features]]
+- **Playing a [[Barbarian]]?** → Go to [[character-options/class-options/savage-exploits/index|Savage Exploits]]
+- **Playing a [[Fighter]]?** → Go to [[character-options/class-options/martial-exploits/index|Martial Exploits]]; Fighting Styles are in the shared [[character-options/fighting-styles/index|Fighting Styles]] catalogue
+- **Playing a [[Monk]]?** → Go to [[character-options/class-options/monk-techniques/index|Mystic Techniques]]
+- **Playing a [[Paladin]]?** → Go to [[character-options/class-options/smite-paths/index|Smite Paths]]
+- **Playing a [[Paragon]]?** → Go to [[character-options/class-options/avatar-features/index|Avatar Features]]
+- **Playing a [[Primal]]?** → Go to [[character-options/class-options/primal-manifestations/index|Primal Manifestations]]
+- **Playing a [[Sorcerer]]?** → Go to [[character-options/class-options/metamagic/index|Metamagic]]
+- **Playing a [[Thanatomancer]]?** → Go to [[character-options/class-options/veil-techniques/index|Veil Techniques]]
+- **Playing a [[Warden]]?** → Go to [[character-options/class-options/warden-alternate-features/index|Warden Alternate Class Features]]
+- **Playing a [[Warlock]]?** → Explore [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations]], [[character-options/class-options/pact-foci/index|Pact Foci]], [[character-options/class-options/familiars/index|Eldritch Familiars]], and [[character-options/class-options/elder-arcana/index|Elder Arcana]]
 
 ---
 

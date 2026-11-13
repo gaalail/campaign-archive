@@ -88,7 +88,7 @@ Browse the available [[character-options/fighting-styles/index|Fighting Styles]]
 
 ### Second Wind (1st Level)
 
-You can fight on when lesser warriors would fail. As a bonus action, regain hit points equal to 1d10 + your Fighter level. You regain the use of this feature when you finish a [[rules/adventuring/resting|short or long rest]]. Starting at 14th level, you can use Second Wind twice between rests.
+You can fight on when lesser warriors would fail. As a bonus action, regain hit points equal to 1d10 + your Fighter level. You regain the use of this feature when you finish a [[rules/resting|short or long rest]]. Starting at 14th level, you can use Second Wind twice between rests.
 
 ### Martial Exploits (2nd Level)
 
@@ -112,15 +112,13 @@ Browse [[character-options/class-options/martial-exploits/index|Martial Exploits
 
 ### Eye for Talent (3rd Level)
 
-As a bonus action, you can take the [[rules/combat/actions-in-combat|Search action]] to assess one creature you can see within 30 feet. The check's DC is 8 + the creature's challenge rating. If you have hit the creature with a weapon attack within the last minute, you can add your Fighter level to the check.
+As a bonus action, you can take the [[rules/combat|Search action]] to assess one creature you can see within 30 feet. The check's DC is 8 + the creature's challenge rating. If you have hit the creature with a weapon attack within the last minute, you can add your Fighter level to the check.
 
 On a success, learn one of the following characteristics of your choice: its Armor Class; highest or lowest ability score; special senses; resistances, immunities, or vulnerabilities; or one trait or action from its stat block. On a failure, you learn nothing and can't use this feature on that creature again until you finish a long rest or hit it with a weapon attack.
 
 ### Warrior Archetype (3rd Level)
 
-Choose a Warrior Archetype that represents your training and tactics. It grants features at 3rd, 7th, 10th, 15th, and 18th level. Browse the [[character-options/subclasses/Fighter/index|Warrior Archetypes]].
-
-![[subclasses-of.base]]
+Choose a Warrior Archetype that represents your training and tactics. It grants features at 3rd, 7th, 10th, 15th, and 18th level. Browse the [[character-options/subclasses/Fighter/index|Warrior Archetypes]] in the **Subclasses** section below.
 
 ### Ability Score Improvement (4th Level)
 
@@ -148,6 +146,18 @@ Once per round in combat, you can use a 1st- or 2nd-degree Martial Exploit you k
 
 Whenever you roll initiative, you regain all expended Exploit Dice. You can use any 3rd-degree Martial Exploit you know without limit, but must still expend Exploit Dice as normal.
 
+## Class Options
+
+Browse all 78 Martial Exploits in the [[character-options/class-options/martial-exploits/index|Martial Exploits catalogue]]:
+
+![[class-options-of.base]]
+
+## Subclasses
+
+Choose a Warrior Archetype at 3rd level from the [[character-options/subclasses/Fighter/index|Warrior Archetypes catalogue]]:
+
+![[subclasses-of.base]]
+
 ## Related Content
 
 - [[character-options/classes|Back to all classes]]
@@ -155,6 +165,6 @@ Whenever you roll initiative, you regain all expended Exploit Dice. You can use 
 - [[character-options/fighting-styles/index|Fighting Styles]]
 - [[character-options/class-options/martial-exploits/index|Martial Exploits]]
 - [[character-options/feats|Feats]]
-- [[rules/combat/index|Combat Rules]]
+- [[rules/combat|Combat Rules]]
 - [[character-options/class-options|Class Options]]
 - [[character-options/subclasses|All subclasses]]

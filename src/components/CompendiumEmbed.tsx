@@ -45,11 +45,11 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
       );
     } else if (target === 'class-options-of.base') {
       isClassOptionsOf = true;
-      title = currentClass ? `${currentClass} Class Options & Exploits` : 'Class Options';
+      title = currentClass ? `${currentClass} Class Options` : 'Class Options';
       filtered = archiveDb.entries.filter(e =>
         e.category === 'class-options' &&
         !e.id.endsWith('/index') &&
-        (currentClass ? (e.parentClass?.toLowerCase() === currentClass.toLowerCase() || e.path.toLowerCase().includes(currentClass.toLowerCase())) : true)
+        (currentClass ? e.parentClass?.toLowerCase() === currentClass.toLowerCase() : true)
       );
     } else if (target === 'feats.base') {
       title = 'Feats';
@@ -73,30 +73,43 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
         }
         return true;
       });
-    } else if (target === 'martial-exploits.base') {
-      title = 'Martial Exploits';
-      filtered = archiveDb.entries.filter(e => e.category === 'class-options' && e.subcategory === 'martial-exploits' && !e.id.endsWith('/index'));
-    } else if (target === 'eldritch-invocations.base') {
-      title = 'Eldritch Invocations';
-      filtered = archiveDb.entries.filter(e => e.category === 'class-options' && e.subcategory === 'eldritch-invocations' && !e.id.endsWith('/index'));
-    } else if (target === 'avatar-features.base') {
-      title = 'Avatar Features';
-      filtered = archiveDb.entries.filter(e => e.category === 'class-options' && e.subcategory === 'avatar-features' && !e.id.endsWith('/index'));
-    } else if (target === 'metamagic.base') {
-      title = 'Metamagic Options';
-      filtered = archiveDb.entries.filter(e => e.category === 'class-options' && e.subcategory === 'metamagic' && !e.id.endsWith('/index'));
-    } else if (target === 'monk-techniques.base') {
-      title = 'Monk Techniques';
-      filtered = archiveDb.entries.filter(e => e.category === 'class-options' && e.subcategory === 'monk-techniques' && !e.id.endsWith('/index'));
-    } else if (target === 'warlock-elder-arcana.base') {
-      title = 'Elder Arcana';
-      filtered = archiveDb.entries.filter(e => e.category === 'class-options' && e.subcategory === 'elder-arcana' && !e.id.endsWith('/index'));
-    } else if (target === 'warlock-pact-foci.base') {
-      title = 'Pact Foci';
-      filtered = archiveDb.entries.filter(e => e.category === 'class-options' && e.subcategory === 'pact-foci' && !e.id.endsWith('/index'));
-    } else if (target === 'warlock-familiars.base') {
-      title = 'Pact Familiars';
-      filtered = archiveDb.entries.filter(e => e.category === 'class-options' && e.subcategory === 'familiars' && !e.id.endsWith('/index'));
+    } else if (
+      target in {
+        'martial-exploits.base': true,
+        'savage-exploits.base': true,
+        'eldritch-invocations.base': true,
+        'avatar-features.base': true,
+        'metamagic.base': true,
+        'monk-techniques.base': true,
+        'smite-paths.base': true,
+        'primal-manifestations.base': true,
+        'veil-techniques.base': true,
+        'warden-alternate-features.base': true,
+        'warlock-elder-arcana.base': true,
+        'warlock-pact-foci.base': true,
+        'warlock-familiars.base': true
+      }
+    ) {
+      const CLASS_OPTION_BASE_MAP: Record<string, { subcategory: string; title: string }> = {
+        'martial-exploits.base': { subcategory: 'martial-exploits', title: 'Martial Exploits' },
+        'savage-exploits.base': { subcategory: 'savage-exploits', title: 'Savage Exploits' },
+        'eldritch-invocations.base': { subcategory: 'eldritch-invocations', title: 'Eldritch Invocations' },
+        'avatar-features.base': { subcategory: 'avatar-features', title: 'Avatar Features' },
+        'metamagic.base': { subcategory: 'metamagic', title: 'Metamagic Options' },
+        'monk-techniques.base': { subcategory: 'monk-techniques', title: 'Mystic Techniques' },
+        'smite-paths.base': { subcategory: 'smite-paths', title: 'Smite Paths' },
+        'primal-manifestations.base': { subcategory: 'primal-manifestations', title: 'Primal Manifestations' },
+        'veil-techniques.base': { subcategory: 'veil-techniques', title: 'Veil Techniques' },
+        'warden-alternate-features.base': { subcategory: 'warden-alternate-features', title: 'Warden Alternate Class Features' },
+        'warlock-elder-arcana.base': { subcategory: 'elder-arcana', title: 'Elder Arcana' },
+        'warlock-pact-foci.base': { subcategory: 'pact-foci', title: 'Pact Foci' },
+        'warlock-familiars.base': { subcategory: 'familiars', title: 'Eldritch Familiars' }
+      };
+      const pool = CLASS_OPTION_BASE_MAP[target];
+      title = pool.title;
+      filtered = archiveDb.entries.filter(
+        e => e.category === 'class-options' && e.subcategory === pool.subcategory && !e.id.endsWith('/index')
+      );
     } else if (target === 'class-options.base') {
       title = 'Class Options & Powers Directory';
       filtered = archiveDb.entries.filter(e => e.category === 'class-options' && !e.id.endsWith('/index'));

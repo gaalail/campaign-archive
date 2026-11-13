@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { archiveDb } from '../utils/archiveUtils';
+import { archiveDb, getClassOptionPoolsForClass } from '../utils/archiveUtils';
 import {
   BookOpen,
   Compass,
@@ -406,55 +406,26 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       <span className="text-[10px] text-slate-500 font-mono">{cls.hit_die}</span>
                     </button>
                     {(() => {
-                      const classOptionMap: Record<string, { folder: string; label: string }[]> = {
-                        Warlock: [
-                          { folder: 'eldritch-invocations', label: 'Eldritch Invocations' },
-                          { folder: 'pact-foci', label: 'Pact Foci' },
-                          { folder: 'familiars', label: 'Eldritch Familiars' },
-                          { folder: 'elder-arcana', label: 'Elder Arcana' }
-                        ],
-                        Primal: [
-                          { folder: 'primal-manifestations', label: 'Primal Manifestations' }
-                        ],
-                        Paragon: [
-                          { folder: 'avatar-features', label: 'Avatar Features' }
-                        ],
-                        Paladin: [
-                          { folder: 'smite-paths', label: 'Smite Paths' }
-                        ],
-                        Fighter: [
-                          { folder: 'martial-exploits', label: 'Martial Exploits' }
-                        ],
-                        Sorcerer: [
-                          { folder: 'metamagic', label: 'Metamagic Options' }
-                        ],
-                        Monk: [
-                          { folder: 'monk-techniques', label: 'Monk Techniques' }
-                        ]
-                      };
-                      const options = classOptionMap[cls.title];
-                      if (!options) return null;
+                      const pools = getClassOptionPoolsForClass(cls.title);
+                      if (pools.length === 0) return null;
                       return (
                         <div className="ml-3 mb-1 border-l border-slate-800 pl-2 space-y-0.5">
-                          {options.map(({ folder, label }) => {
-                            const id = `character-options/class-options/${folder}/index`;
-                            return (
-                              <button
-                                key={folder}
-                                onClick={() => {
-                                  onNavigateToEntry(id);
-                                  onClose();
-                                }}
-                                className={`w-full text-left px-2 py-1 rounded-lg transition-colors truncate text-[11px] ${
-                                  currentView === 'reader' && currentEntryId === id
-                                    ? 'text-amber-300 bg-amber-500/10 font-semibold'
-                                    : 'text-slate-500 hover:text-slate-200 hover:bg-slate-800/40'
-                                }`}
-                              >
-                                {label}
-                              </button>
-                            );
-                          })}
+                          {pools.map(pool => (
+                            <button
+                              key={pool.id}
+                              onClick={() => {
+                                onNavigateToEntry(pool.id);
+                                onClose();
+                              }}
+                              className={`w-full text-left px-2 py-1 rounded-lg transition-colors truncate text-[11px] ${
+                                currentView === 'reader' && currentEntryId === pool.id
+                                  ? 'text-amber-300 bg-amber-500/10 font-semibold'
+                                  : 'text-slate-500 hover:text-slate-200 hover:bg-slate-800/40'
+                              }`}
+                            >
+                              {pool.title}
+                            </button>
+                          ))}
                         </div>
                       );
                     })()}

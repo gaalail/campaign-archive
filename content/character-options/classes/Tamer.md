@@ -239,13 +239,7 @@ You can bond with two companions at 3rd level, three at 7th, four at 11th, five 
 
 _3rd-level Tamer feature_
 
-Choose one of the following paradigms:
-
-- [[character-options/subclasses/Tamer|Tamer Training Paradigms]]
-
-Your paradigm grants features at 3rd, 7th, 10th, and 14th level. Its 7th-level feature improves at 18th level.
-
-![[subclasses-of.base]]
+At 3rd level, choose a Training Paradigm from the [[character-options/subclasses/Tamer/index|Tamer Training Paradigms]] catalogue. Your paradigm grants features at 3rd, 7th, 10th, and 14th level, and its 7th-level feature improves at 18th level.
 
 ## Ability Score Improvement
 
@@ -296,11 +290,15 @@ Command a companion to adopt Provoking Poise or Shrinking Violet for one minute.
 
 ## Summon the Horde
 
-_20th-level Tamer feature
+_20th-level Tamer feature_
 
 As an action, summon additional companions for one minute, up to three simultaneously from this feature. Command all companions with one action. When the minute ends, all but one return to their vessels and you cannot move or act until the end of your next turn.
 
 Once used, this feature returns after a long rest.
+
+## Subclasses
+
+![[subclasses-of.base]]
 
 ## Related Content
 

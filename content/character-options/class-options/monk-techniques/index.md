@@ -1,5 +1,6 @@
 ---
 title: Monk Techniques
+parent_class: Monk
 summary: Mystic Techniques available to the Monk
 ---
 

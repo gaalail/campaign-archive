@@ -180,9 +180,15 @@ You have attained mastery over your inner spiritual life. Upon reaching 20th lev
 
 This spiritual mastery also means you can never be caught off guard if danger strikes. When you roll initiative, you regain expended Ki equal to your Wisdom modifier (minimum of 1), and your Warrior's Spirit feature allows you to regain 2 Ki at the start of each of your turns in combat.
 
-## Monastic Traditions
+## Class Options
 
-Choose a tradition at 3rd level from the [[character-options/subclasses/Monk/index|Monk Subclasses]] catalogue. Your chosen tradition grants features at 3rd, 6th, 10th, and 17th level.
+Browse all 43 techniques in the [[character-options/class-options/monk-techniques/index|Mystic Techniques catalogue]]:
+
+![[class-options-of.base]]
+
+## Subclasses
+
+Choose a Monastic Tradition at 3rd level from the [[character-options/subclasses/Monk/index|Monk Subclasses catalogue]]. Your chosen tradition grants features at 3rd, 6th, 10th, and 17th level.
 
 ![[subclasses-of.base]]
 

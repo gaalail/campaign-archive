@@ -1,5 +1,7 @@
 ---
 title: Avatar Features
+parent_class: Paragon
+summary: Divine powers and Order features unlocked through a Paragon's Avatar Form
 ---
 
 # Avatar Features

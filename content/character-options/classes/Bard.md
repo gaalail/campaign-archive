@@ -15,6 +15,8 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+# Bard
+
 ## The Bard table
 
 | Level | Proficiency Bonus | Features                                             | Bardic Inspiration | Song of Rest | Magical Secrets Max 5 | Magical Secrets Max 7 | Magical Secrets Max 9 | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |

@@ -81,13 +81,17 @@ function parseFrontmatter(fileText) {
 }
 
 function extractWikilinks(text) {
+  // Ignore fenced code blocks and inline code literals (e.g. `[[like this]]`)
+  const stripped = text
+    .replace(/```[\s\S]*?```/g, '')
+    .replace(/`[^`\n]+`/g, '');
   const regex = /\[\[(.*?)\]\]/g;
   const links = new Set();
   let match;
-  while ((match = regex.exec(text)) !== null) {
+  while ((match = regex.exec(stripped)) !== null) {
     const raw = match[1];
     const parts = raw.split('|');
-    const target = parts[0].split('#')[0].trim();
+    const target = parts[0].replace(/\\+$/, '').split('#')[0].trim();
     if (target && !target.endsWith('.base')) {
       links.add(target);
     }
@@ -290,15 +294,23 @@ for (const filePath of files) {
       category = 'fighting-styles';
     } else if (parts[1] === 'class-options') {
       category = 'class-options';
-      subcategory = parts[2] || null;
-      // map subcategory to class if relevant
-      if (subcategory === 'eldritch-invocations' || subcategory === 'pact-foci' || subcategory === 'elder-arcana') parentClass = 'Warlock';
-      if (subcategory === 'martial-exploits') parentClass = 'Fighter';
-      if (subcategory === 'metamagic') parentClass = 'Sorcerer';
-      if (subcategory === 'monk-techniques') parentClass = 'Monk';
-      if (subcategory === 'avatar-features') parentClass = 'Paragon';
-      if (subcategory === 'smite-paths') parentClass = 'Paladin';
-      if (subcategory === 'primal-manifestations') parentClass = 'Primal';
+      subcategory = (parts[2] && parts[2] !== 'index.md') ? parts[2] : null;
+      const CLASS_OPTION_PARENT_MAP = {
+        'eldritch-invocations': 'Warlock',
+        'pact-foci': 'Warlock',
+        'familiars': 'Warlock',
+        'elder-arcana': 'Warlock',
+        'martial-exploits': 'Fighter',
+        'savage-exploits': 'Barbarian',
+        'metamagic': 'Sorcerer',
+        'monk-techniques': 'Monk',
+        'avatar-features': 'Paragon',
+        'smite-paths': 'Paladin',
+        'primal-manifestations': 'Primal',
+        'veil-techniques': 'Thanatomancer',
+        'warden-alternate-features': 'Warden'
+      };
+      parentClass = (subcategory ? CLASS_OPTION_PARENT_MAP[subcategory] : null) || frontmatter.parent_class || null;
     } else if (parts[1] === 'templates') {
       category = 'templates';
     } else {

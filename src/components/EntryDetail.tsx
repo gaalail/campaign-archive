@@ -5,6 +5,7 @@ import {
   getRarityColor,
   getSubclassesForClass,
   getClassOptionsForClass,
+  getClassOptionPoolsForClass,
   getSpellsForClass,
   getSpellLevelLabel,
   getEntryById,
@@ -1378,32 +1379,97 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
         )}
 
         {/* Tab 3: Class Options Grid */}
-        {effectiveTab === 'options' && (
-          <div className="space-y-4">
-            <div className="text-xs text-slate-400">
-              Specialized choices, exploits, and invocations for {entry.title}.
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[600px] overflow-y-auto pr-2">
-              {classOptions.map(opt => (
-                <div
-                  key={opt.id}
-                  onClick={() => onNavigate(opt.id)}
-                  className="p-3.5 rounded-xl border border-slate-800 bg-slate-950 hover:border-amber-500/40 hover:bg-slate-800/40 cursor-pointer transition-all space-y-1.5"
-                >
-                  <div className="font-fantasy font-bold text-slate-100 text-sm">
-                    {opt.title}
+        {effectiveTab === 'options' && (() => {
+          const pools = getClassOptionPoolsForClass(entry.title);
+          const poolBySubcat = new Map<string, ArchiveEntry>();
+          for (const p of pools) {
+            if (p.subcategory) poolBySubcat.set(p.subcategory, p);
+          }
+
+          const groupedMap = new Map<string, ArchiveEntry[]>();
+          for (const opt of classOptions) {
+            const key = opt.subcategory || 'general';
+            const existing = groupedMap.get(key) || [];
+            existing.push(opt);
+            groupedMap.set(key, existing);
+          }
+
+          const orderedKeys: string[] = [];
+          for (const p of pools) {
+            if (p.subcategory && groupedMap.has(p.subcategory)) {
+              orderedKeys.push(p.subcategory);
+            }
+          }
+          for (const key of groupedMap.keys()) {
+            if (!orderedKeys.includes(key)) orderedKeys.push(key);
+          }
+
+          return (
+            <div className="space-y-6">
+              <div className="text-xs text-slate-400">
+                Specialized option pools and selectable features for {entry.title}.
+              </div>
+              {orderedKeys.map(subcat => {
+                const items = (groupedMap.get(subcat) || []).slice().sort((a, b) => a.title.localeCompare(b.title));
+                const poolIndex = poolBySubcat.get(subcat);
+                const sectionLabel =
+                  poolIndex?.title ||
+                  subcat
+                    .split('-')
+                    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+                    .join(' ');
+
+                return (
+                  <div key={subcat} className="space-y-3">
+                    <div className="flex items-center justify-between border-b border-slate-800/80 pb-2">
+                      <div className="flex items-baseline gap-2">
+                        <h3 className="font-fantasy font-bold text-slate-100 text-base">
+                          {sectionLabel}
+                        </h3>
+                        <span className="text-xs text-slate-500 font-mono">
+                          · {items.length}
+                        </span>
+                      </div>
+                      {poolIndex && (
+                        <button
+                          onClick={() => onNavigate(poolIndex.id)}
+                          className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 transition-colors"
+                        >
+                          <span>View Catalogue</span>
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[520px] overflow-y-auto pr-1">
+                      {items.map(opt => (
+                        <button
+                          key={opt.id}
+                          onClick={() => onNavigate(opt.id)}
+                          className="p-3.5 rounded-xl border border-slate-800 bg-slate-950 hover:border-amber-500/40 hover:bg-slate-800/40 text-left transition-all space-y-1.5 flex flex-col justify-between"
+                        >
+                          <div className="space-y-1">
+                            <div className="font-fantasy font-bold text-slate-100 text-sm">
+                              {opt.title}
+                            </div>
+                            <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
+                              {cleanFlavorText(opt.flavor || opt.summary) || 'View mechanics and prerequisites.'}
+                            </p>
+                          </div>
+                          {opt.frontmatter?.prerequisite && opt.frontmatter.prerequisite !== 'None' && (
+                            <div className="text-[11px] text-slate-500 pt-1 border-t border-slate-800/60 truncate w-full">
+                              Req: {String(opt.frontmatter.prerequisite)}
+                            </div>
+                          )}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-400 line-clamp-2">
-                    {opt.summary || 'View power description and prerequisites.'}
-                  </p>
-                  <div className="text-[10px] text-amber-400/80">
-                    {opt.subcategory?.replace('-', ' ')}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {/* Tab 4: Backlinks Tab */}
         {effectiveTab === 'backlinks' && entry.incomingLinks && (

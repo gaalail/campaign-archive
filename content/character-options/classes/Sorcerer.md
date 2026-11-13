@@ -15,6 +15,8 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+# Sorcerer
+
 ## The Sorcerer table
 
 | Level | Proficiency Bonus | Features                                                                                       | Sorcery Points | Metamagic | Cantrips Known | Spells Known | 1st | 2nd | 3rd | 4th | 5th | 6th | 7th | 8th | 9th |
@@ -109,7 +111,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells.
 
 > [!info]- Flexible Casting: Converting Spell Slot (level 2)
-> As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level..
+> As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level.
 
 > [!info]- Flexible Casting: Creating Spell Slots (level 2)
 > You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.
@@ -124,16 +126,11 @@ You start with the following equipment, in addition to the equipment granted by 
 > You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.
 
 > [!info]- Metamagic (levels 3, 10, 17)
-> At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.
+> At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two Metamagic options of your choice, and gain another at 10th and 17th level.
 >
 > You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.
 >
-> The full list of options is in the Class options section below.
-
-> [!info]- Metamagic: Twinned Spell (level 3)
-> When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).
->
-> To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, magic missile and scorching ray aren't eligible, but ray of frost is.
+> Browse all options in the [[character-options/class-options/metamagic/index|Metamagic catalogue]] or in the Class Options section below.
 
 > [!info]- Ability Score Improvement (levels 4, 8, 12, 16, 19)
 > When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.
@@ -146,9 +143,9 @@ You start with the following equipment, in addition to the equipment granted by 
 > [!info]- Sorcerous Restoration (level 20)
 > At 20th level, you regain 4 expended sorcery points whenever you finish a short rest.
 
-## Class options
+## Class Options
 
-These are choices, not automatic features. You pick the number your class table allows. Each option has its own page.
+These are choices, not automatic features. You pick the number your class table allows. Browse the [[character-options/class-options/metamagic/index|Metamagic catalogue]] or select an option below.
 
 ![[class-options-of.base]]
 

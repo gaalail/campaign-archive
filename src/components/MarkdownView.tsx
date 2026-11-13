@@ -536,7 +536,7 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
       // It's a wikilink [[target|label]] or [[target]]
       const rawLink = match[1];
       const linkParts = rawLink.split('|');
-      const target = linkParts[0].trim();
+      const target = linkParts[0].replace(/\\+$/, '').trim();
       const label = linkParts[1]?.trim() || target.split('/').pop()?.replace(/\.md$/, '') || target;
 
       if (target.endsWith('.base') || target.includes('.base#')) {

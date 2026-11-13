@@ -15,6 +15,8 @@ source: SRD 5.1
 source_type: SRD
 ---
 
+# Ranger
+
 ## The Ranger table
 
 | Level | Proficiency Bonus | Features                                                    | Favored Enemies | Favored Terrain | Spells Known | 1st | 2nd | 3rd | 4th | 5th |
@@ -127,7 +129,7 @@ You start with the following equipment, in addition to the equipment granted by 
 > You choose additional favored terrain types at 6th and 10th level.
 
 > [!info]- Fighting Style (level 2)
-> At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.
+> At 2nd level, you adopt a particular style of fighting as your specialty. Choose one of the following options (or browse the shared [[character-options/fighting-styles/index|Fighting Styles]] catalogue). You can't take a Fighting Style option more than once, even if you later get to choose again.
 >
 > **Archery.** You gain a +2 bonus to attack rolls you make with ranged weapons.
 >

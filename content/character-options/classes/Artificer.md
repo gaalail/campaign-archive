@@ -105,13 +105,11 @@ You can cast artificer spells as rituals if the spell has the ritual tag and you
 
 ### Infuse Item (2nd Level)
 
-At the end of a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions. You know 4 infusions at 2nd level and learn more at higher levels. You can infuse a number of items equal to your level (see progression table).
+At the end of a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions. You know 4 infusions at 2nd level and learn more at higher levels; the number of items you can have infused at once is shown in the **Infused Items** column of the progression table (from 2 at 2nd level up to 6 at 18th level).
 
 ### Artificer Specialization (3rd Level)
 
-At 3rd level, choose one Artificer Specialization. It grants features at the levels listed in its description. The available specializations in this archive are [[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], [[Ooze Rancher]], [[Static Conductor]], [[Venomist]], and [[Wagoneer]]. Browse them in the [[character-options/subclasses/Artificer/index|Artificer Specializations index]].
-
-![[subclasses-of.base]]
+At 3rd level, choose one Artificer Specialization. It grants features at the levels listed in its description. Browse the [[character-options/subclasses/Artificer/index|Artificer Specializations index]].
 
 ### The Right Tool for the Job (3rd Level)
 
@@ -185,15 +183,13 @@ Always gain:
 
 ---
 
-## Artificer Specializations
-
-Choose from the eight specializations in the [[character-options/subclasses/Artificer/index|specialization index]]: [[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], [[Ooze Rancher]], [[Static Conductor]], [[Venomist]], and [[Wagoneer]].
-
----
-
 ## Optional Rules
 
 **Firearm Proficiency:** If your DM uses firearms rules, and you've been exposed to guns, you're proficient with them.
+
+## Subclasses
+
+![[subclasses-of.base]]
 
 ---
 
@@ -202,7 +198,7 @@ Choose from the eight specializations in the [[character-options/subclasses/Arti
 - [[character-options/classes|Back to All Classes]]
 - [[Spells]] — Artificer spell list
 - [[Items]] — Magic items to find and craft
-- [[character-options/class-options|Class Options]] — Artificer-specific options
+- [[character-options/subclasses/Artificer/index|Artificer Specializations]] — All 8 Artificer specializations
 - [[character-options/feats|Feats]] — Abilities that work with Artificer
 - [[Rules]] — House rules that affect casters
 

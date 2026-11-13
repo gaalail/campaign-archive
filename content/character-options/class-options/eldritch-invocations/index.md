@@ -1,5 +1,7 @@
 ---
 title: Eldritch Invocations
+parent_class: Warlock
+summary: Warlock invocations bound to Trinkets across all Pact levels
 ---
 
 # Eldritch Invocations
@@ -37,7 +39,7 @@ The Warlock class table and each invocation entry show level prerequisites.
 
 ## Popular Invocations
 
-- **[[Agonizing Blast]]** — Add Charisma to your cantrip damage
+- **[[Agonizing Blast]]** — Add your Pact modifier to your Eldritch Blast damage
 - **[[Armor of Shadows]]** — Cast Mage Armor at will
 - **[[Mask of Many Faces]]** — Cast Alter Self at will
 - **[[One with Shadows]]** — Become invisible in dim light

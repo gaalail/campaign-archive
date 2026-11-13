@@ -122,15 +122,13 @@ You can use an arcane focus as a spellcasting focus for your thanatomancer spell
 >
 > Starting at 7th level, when you activate a Veil Technique, you can expend 1 additional mortis point to gain its 7th-level enhancement. Starting at 13th level, you can expend 2 additional mortis points to gain its 13th-level enhancement. You can pay for either or both enhancements.
 >
-> The available techniques appear below.
+> Browse the full options in the [[character-options/class-options/veil-techniques/index|Veil Techniques catalogue]] or the **Class Options** section below.
 
 > [!info]- Deathlike Reflexes (level 2)
 > When a creature you can see targets you with an attack, you can use your reaction to impose disadvantage on the attack roll. You must decide before the result is known. You can use this feature a number of times equal to your Intelligence modifier (minimum once), regaining all expended uses when you finish a long rest.
 
 > [!info]- Thanatology Path (level 3)
-> You choose a Thanatology Path, which grants features at 3rd, 6th, 10th, and 18th level: the [[Path of the Fleshweaver]], [[Path of the Graveguard]], or [[Path of the Reaper]].
-
-![[subclasses-of.base]]
+> You choose a Thanatology Path, which grants features at 3rd, 6th, 10th, and 18th level: the [[Path of the Fleshweaver]], [[Path of the Graveguard]], or [[Path of the Reaper]]. See the [[character-options/subclasses/Thanatomancer/index|Thanatology Paths catalogue]] or **Subclasses** below.
 
 > [!info]- Ability Score Improvement (levels 4, 8, 12, 16, 19)
 > When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score by 2, or increase two ability scores by 1. You can't increase an ability score above 20 using this feature. If your campaign uses the optional feat rules, you can take a feat instead.
@@ -154,68 +152,16 @@ You can use an arcane focus as a spellcasting focus for your thanatomancer spell
 > [!info]- Avatar of Thanatos (level 20)
 > As a bonus action, you assume the form of Thanatos for 1 minute. While in this form, you are immune to necrotic and poison damage, and your necromancy spells deal maximum damage instead of rolling. Each creature of your choice that starts its turn within 30 feet of you must succeed on a Constitution saving throw against your spell save DC or take necrotic damage equal to your Intelligence modifier (minimum 1) + your proficiency bonus. Once you use this feature, you can't use it again until you finish a long rest.
 
-## Veil Technique options
+## Class Options
 
-### Corrupting Essence
+Browse the [[character-options/class-options/veil-techniques/index|Veil Techniques catalogue]]:
 
-When you hit a creature with a weapon attack or deal damage with a spell attack that targets only one creature, you can expend 1 mortis point to deal extra necrotic damage to it equal to your Intelligence modifier (minimum 1). The next time you deal damage to that creature before the end of your next turn, it takes necrotic damage equal to your proficiency bonus.
+![[class-options-of.base]]
 
-- **7th level:** Expend 1 additional mortis point to gain advantage on the next attack roll you make against the branded creature before the end of your next turn.
-- **13th level:** Expend 2 additional mortis points. Until the start of your next turn, the creature has disadvantage on the next saving throw it makes.
+## Subclasses
 
-### Entropic Decay
+Choose a Thanatology Path at 3rd level from the [[character-options/subclasses/Thanatomancer/index|Thanatology Paths catalogue]]:
 
-When you hit a creature with a weapon attack or deal damage with a spell that targets only one creature, you can expend 2 mortis points to curse it with lingering entropy. The target can't regain hit points until the start of your next turn.
-
-- **7th level:** Expend 1 additional mortis point. Until the start of your next turn, the target takes extra necrotic damage equal to your Intelligence modifier (minimum 1) for every 5 feet it moves.
-- **13th level:** Expend 2 additional mortis points. For the next minute, at the start of each of its turns, the target suffers a cumulative −1 penalty (maximum −3) to attack and damage rolls. At the end of each of its turns, it can make a Constitution saving throw against your spell save DC, ending the effect on itself on a success.
-
-### Gravebind
-
-When you deal damage to a creature with a weapon attack or deal necrotic damage with a spell that targets only one creature, you can expend 2 mortis points. The creature takes necrotic damage equal to your Intelligence modifier (minimum 1) and must succeed on a Strength saving throw against your spell save DC or be restrained until the end of its next turn.
-
-- **7th level:** If the creature fails its save, expend 1 additional mortis point. When its restrained condition ends, it takes extra necrotic damage equal to your thanatomancer level.
-- **13th level:** Expend 2 additional mortis points to prevent the creature from teleporting or entering the Ethereal Plane until the end of its next turn.
-
-### Pierce the Veil
-
-As an action, expend 1 mortis point to attune your senses to the Mortis Veil for 1 minute. You sense the presence and direction, but not exact location, of Undead creatures and corpses that died within the past 24 hours within 30 feet. You also have advantage on Wisdom (Medicine and Perception) and Intelligence (Investigation and Religion) checks related to death, undeath, or necromancy.
-
-- **7th level:** Expend 1 additional mortis point. For the duration, you gain tremorsense out to 10 feet and darkvision out to 60 feet (or extend your existing darkvision by 30 feet); magical darkness doesn't impede your darkvision.
-- **13th level:** Expend 2 additional mortis points. Until the end of your next turn, you can see into the Ethereal Plane and detect invisible creatures within 30 feet as faint blurs.
-
-### Reaper's Shroud
-
-As a reaction when you fail a saving throw against being charmed, frightened, paralyzed, possessed, or stunned, expend 1 mortis point to immediately reroll the saving throw. You must use the new result.
-
-- **7th level:** Expend 1 additional mortis point to extend the shroud until the end of your next turn. While shrouded, you have advantage on saving throws against being charmed, frightened, paralyzed, possessed, or stunned.
-- **13th level:** Expend 2 additional mortis points to shroud one ally within 30 feet when you activate this technique. That ally has advantage on saving throws against being charmed, frightened, paralyzed, possessed, or stunned until the end of their next turn.
-
-### Sapping Strike
-
-When you hit a creature with a weapon attack or deal damage with a spell that targets only one creature, expend 1 mortis point to sap its momentum. Until the end of its next turn, the target's speed is halved and it can't take reactions.
-
-- **7th level:** Expend 1 additional mortis point to give the target disadvantage on Dexterity saving throws until the end of its next turn.
-- **13th level:** Expend 2 additional mortis points. The target must succeed on a Constitution saving throw against your spell save DC or be hindered until the end of its next turn. While hindered, it can take either an action or a bonus action on its turn, not both.
-
-### Withering Grasp
-
-When you hit a creature with a weapon attack or deal damage with a spell attack that targets only one creature, expend 1 mortis point to wither its vitality. The target has disadvantage on the next Strength or Constitution saving throw it makes before the end of your next turn.
-
-- **7th level:** Expend 1 additional mortis point to give the target disadvantage on the next attack roll it makes before the end of your next turn.
-- **13th level:** Expend 2 additional mortis points to unmake the target's resistances. The creature loses any resistance to necrotic damage until the end of your next turn. If it is immune to necrotic damage, it instead has resistance to necrotic damage for the same duration.
-
-### Wraith's Reflex
-
-When an attacker you can see hits you with a melee attack, use your reaction and expend 1 mortis point to phase out of existence and move up to 15 feet to an unoccupied space you can see without provoking opportunity attacks.
-
-- **7th level:** Expend 1 additional mortis point to become intangible until the end of your next turn. You can move through creatures as if they were difficult terrain. If you end your turn inside a creature, you are shunted to the last unoccupied space you left and take 1d10 force damage for every 5 feet moved.
-- **13th level:** Expend 2 additional mortis points to become incorporeal until the start of your next turn. You gain resistance to all damage except force and radiant, and immunity to the grappled and restrained conditions.
-
-## Thanatology Paths
-
-- [[Path of the Fleshweaver]]
-- [[Path of the Graveguard]]
-- [[Path of the Reaper]]
+![[subclasses-of.base]]
 
 _From Erevan's Guide to Death & Beyond._

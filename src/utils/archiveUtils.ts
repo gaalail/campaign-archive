@@ -110,7 +110,7 @@ function safeDecode(str: string): string {
 export function getEntryById(id: string): ArchiveEntry | undefined {
   if (!id) return undefined;
   const decoded = safeDecode(id);
-  const rawClean = decoded.trim().split('#')[0].split('?')[0].trim();
+  const rawClean = decoded.trim().split('#')[0].split('?')[0].replace(/\\+$/, '').trim();
   const trimmed = rawClean.replace(/^\.\//, '').replace(/^\/+|\/+$/g, '').replace(/\.md$/, '');
   const lower = trimmed.toLowerCase();
 
@@ -134,7 +134,7 @@ export function getEntryById(id: string): ArchiveEntry | undefined {
 export function resolveWikilink(linkText: string): ArchiveEntry | undefined {
   if (!linkText) return undefined;
   const decoded = safeDecode(linkText);
-  const rawTarget = decoded.split('|')[0].split('#')[0].split('?')[0].trim();
+  const rawTarget = decoded.split('|')[0].replace(/\\+$/, '').split('#')[0].split('?')[0].trim();
   const clean = rawTarget.replace(/^\.\//, '').replace(/^\/+|\/+$/g, '').replace(/\.md$/, '');
   const lower = clean.toLowerCase();
 
@@ -172,11 +172,37 @@ export function getSubclassesForClass(className: string): ArchiveEntry[] {
 }
 
 export function getClassOptionsForClass(className: string): ArchiveEntry[] {
+  const normalized = className.toLowerCase();
   return archiveDb.entries.filter(e =>
     e.category === 'class-options' &&
-    (e.parentClass?.toLowerCase() === className.toLowerCase() ||
-     e.path.toLowerCase().includes(className.toLowerCase()))
+    !e.id.endsWith('/index') &&
+    e.parentClass?.toLowerCase() === normalized
   );
+}
+
+const POOL_ORDER: Record<string, number> = {
+  'eldritch-invocations': 1,
+  'pact-foci': 2,
+  'familiars': 3,
+  'elder-arcana': 4,
+};
+
+export function getClassOptionPoolsForClass(className: string): ArchiveEntry[] {
+  const normalized = className.toLowerCase();
+  return archiveDb.entries
+    .filter(
+      e =>
+        e.category === 'class-options' &&
+        e.id.endsWith('/index') &&
+        e.id !== 'character-options/class-options/index' &&
+        e.parentClass?.toLowerCase() === normalized
+    )
+    .sort((a, b) => {
+      const orderA = a.subcategory ? (POOL_ORDER[a.subcategory] ?? 99) : 99;
+      const orderB = b.subcategory ? (POOL_ORDER[b.subcategory] ?? 99) : 99;
+      if (orderA !== orderB) return orderA - orderB;
+      return a.title.localeCompare(b.title);
+    });
 }
 
 export function getSourceBadgeInfo(sourceType?: SourceType, sourceName?: string): {

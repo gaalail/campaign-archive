@@ -123,7 +123,7 @@ At 14th level, the range of this ability increases to 10 feet.
 
 ## Fighting Style
 
-At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.
+At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options (or see the shared [[character-options/fighting-styles/index|Fighting Styles catalogue]]). You can’t take a Fighting Style option more than once, even if you later get to choose again.
 
 - **Crippling:** When you hit a creature with a melee weapon attack, its speed is reduced by 10 feet, to a minimum of 0, until the end of its next turn, and it can’t take the Dash action until the end of its turn.
 - **Great Weapon Fighting:** When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll. The weapon must have the two-handed or versatile property for you to gain this benefit.
@@ -142,22 +142,7 @@ By the time you reach 3rd level, you feel the inexorable pull of an important du
 
 Your choice grants you features at 3rd level and again at 6th, 13th, and 20th level.
 
-Browse available [[character-options/subclasses/Warden/index|Warden Calls (Subclasses)]]:
-- [[character-options/subclasses/Warden/Bloodwrath Guardian|Bloodwrath Guardian]]
-- [[character-options/subclasses/Warden/Carrion King|Carrion King]]
-- [[character-options/subclasses/Warden/Fey Trailblazer|Fey Trailblazer]]
-- [[character-options/subclasses/Warden/Godsworn|Godsworn]]
-- [[character-options/subclasses/Warden/Grey Watchman|Grey Watchman]]
-- [[character-options/subclasses/Warden/Hellkeeper|Hellkeeper]]
-- [[character-options/subclasses/Warden/Iceheart Bastion|Iceheart Bastion]]
-- [[character-options/subclasses/Warden/Lawbringer|Lawbringer]]
-- [[character-options/subclasses/Warden/Loreseeker|Loreseeker]]
-- [[character-options/subclasses/Warden/Nightgaunt|Nightgaunt]]
-- [[character-options/subclasses/Warden/Soulblood Shaman|Soulblood Shaman]]
-- [[character-options/subclasses/Warden/Stoneheart Defender|Stoneheart Defender]]
-- [[character-options/subclasses/Warden/Storm Sentinel|Storm Sentinel]]
-- [[character-options/subclasses/Warden/Verdant Protector|Verdant Protector]]
-- [[character-options/subclasses/Warden/Witchbane Hunter|Witchbane Hunter]]
+Browse all 15 Warden Calls in the [[character-options/subclasses/Warden/index|Warden Calls catalogue]] or in the **Subclasses** section below.
 
 ## Warden’s Resolve
 
@@ -205,41 +190,14 @@ Wardens are unshakable guardians that cannot be bowed. At 18th level, choose one
 
 ---
 
-## Warden Alternate Class Features
+## Class Options
 
-The warden’s unique "tank" role is supported entirely on its three core features: **Warden’s Grasp** at 1st level, **Warden’s Mark** at 2nd level, and **Warden’s Resolve** at 3rd level. At 1st level, you can pick one of the following sets of alternate class features for your warden. If you do so, you use all three of the variant’s features instead of Warden’s Mark, Warden’s Grasp, and Warden’s Resolve, as well as their respective improvements at later levels.
+At 1st level, a Warden can swap out **Warden's Grasp**, **Warden's Mark**, and **Warden's Resolve** (along with their higher-level improvements) for one of five complete alternate tank packages in the [[character-options/class-options/warden-alternate-features/index|Warden Alternate Class Features catalogue]]:
 
-### 1. Warden Champion
-*Champions engage practically anyone in a fair duel, setting aside matters at hand to prove their mettle and skill.*
+![[class-options-of.base]]
 
-- **Champion’s Challenge** *(Replaces Warden’s Grasp at 1st level)*: As a bonus action, issue a challenge to each creature within 5 feet of you. Only hostile creatures of Large size or smaller with at least 5 Intelligence heed this challenge. On its next turn, a creature that heeds the challenge must make an attack against you if it makes an attack on its turn and you are within range. At 14th level, range extends to 10 feet.
-- **Champion’s Mark** *(Replaces Warden’s Mark at 2nd level)*: Bonus action to mark a creature you can see within 15 feet. You have a +2 bonus to your AC against the marked creature’s attacks. Lasts 1 minute, or until you mark another, become incapacitated, or die. At 11th level, make an additional attack against a marked creature when taking the Attack action.
-- **Champion’s Fortitude** *(Replaces Warden’s Resolve at 3rd level)*: Bludgeoning, piercing, and slashing damage taken from nonmagical weapons is reduced by your proficiency bonus. At 17th level, as a reaction, reduce damage taken by your level (1/long rest).
+## Subclasses
 
-### 2. Warden of the Hunt
-*Wardens of the hunt practice an aggressive form of defense: dead foes can’t harm allies.*
+Choose a Champion's Call at 3rd level from the [[character-options/subclasses/Warden/index|Warden Calls catalogue]]:
 
-- **Hunter’s Snare** *(Replaces Warden’s Grasp at 1st level)*: As a bonus action, trap foes in close combat. Until the beginning of your next turn, creatures within 5 feet provoke opportunity attacks when they leave your reach, even if they took the Disengage action.
-- **Hunter’s Mark** *(Replaces Warden’s Mark at 2nd level)*: Bonus action to mark a creature within 60 feet. Deal an extra 1d6 damage when hitting marked target with a melee weapon attack. Lasts 1 minute. At 11th level, make an additional attack against marked creature when taking the Attack action. Does not stack with the spell *hunter's mark*.
-- **Hunter’s Resistance** *(Replaces Warden’s Resolve at 3rd level)*: You gain resistance points equal to 2 × proficiency bonus (regained on short or long rest). Reaction when taking bludgeoning, piercing, or slashing damage from a seen effect: spend 1 resistance point to gain resistance against the damage.
-
-### 3. Maneater Warden
-*Fast, ruthless, and predatory wardens who dart around prey, carving pieces off with lightning-quick strikes.*
-
-- **Maneater’s Howl** *(Replaces Warden’s Grasp at 1st level)*: Bonus action thunderous howl. Each Large or smaller creature you choose within 5 feet is pushed 5 feet away. At 14th level, affects creatures within 10 feet and pushes up to 10 feet.
-- **Maneater’s Mark** *(Replaces Warden’s Mark at 2nd level)*: Bonus action to mark a creature within 60 feet. Melee weapon attacks against the marked creature score a critical hit on a roll of 19 or 20. Lasts 1 minute. At 11th level, make an additional attack against marked creature when taking the Attack action.
-- **Maneater’s Bloodlust** *(Replaces Warden’s Resolve at 3rd level)*: You have a temporary damage pool. When you take damage, it is added to this pool instead of being subtracted from HP. When regaining HP, split healing between HP and decreasing damage in this pool. When dealing melee weapon damage to a marked creature, decrease damage pool by half the damage dealt (minimum 1). At the end of your turn, the damage pool is subtracted from your HP and resets to 0. At 17th level, whenever you use Font of Life, damage pool is reduced to 0 without being subtracted from HP.
-
-### 4. Warden Paragon
-*Templars and outcast paladins channeling divine resilience to bear the brunt of enemy blows.*
-
-- **Paragon’s Rescue** *(Replaces Warden’s Grasp at 1st level)*: Bonus action to grant allies respite. Each friendly creature you choose within 5 feet can immediately move up to 10 feet without provoking opportunity attacks. At 14th level, affects friendly creatures within 10 feet, moving up to 15 feet.
-- **Paragon’s Twin Marks** *(Replaces Warden’s Mark at 2nd level)*: Place two marks within 30 feet: a mark of shielding on a friendly creature and a mark of bane on a hostile creature. When shielded creature takes damage, damage is halved and you take the same amount. When dealing damage to creature with mark of bane, damage is considered magical. At 11th level, make an additional attack against creature with mark of bane when taking the Attack action.
-- **Paragon’s Font** *(Replaces Warden’s Resolve at 3rd level)*: Pool of healing power equal to warden level × 5 (replenishes on long rest). Action to restore hit points up to maximum remaining in pool. At 17th level, can also use this ability without an action when using Font of Life.
-
-### 5. Warden Penumbral
-*Touched by primeval darkness lurking in forgotten corners untouched by sunlight.*
-
-- **Grasping Shadows** *(Replaces Warden’s Grasp at 1st level)*: Bonus action to summon a 10-foot radius cloud of shadows centered on yourself. Heavily obscured from outside, lit normally from inside. Shadowy hands prevent you and chosen Large or smaller creatures from leaving the sphere unless taking the Disengage action. Disperses at beginning of next turn. At 14th level, radius extends to 15 feet.
-- **Mark of Shadows** *(Replaces Warden’s Mark at 2nd level)*: Bonus action to mark creature within 30 feet. If Large or smaller, pull it up to 5 feet closer. When marked creature willingly moves away, it treats the area as difficult terrain. Lasts 1 minute. At 11th level, make an additional attack against marked creature when taking the Attack action.
-- **Form of Shadows** *(Replaces Warden’s Resolve at 3rd level)*: When under half HP, fade into shifting darkness: melee attack rolls against you have disadvantage (unless attacker has blindsight or truesight). At 17th level, gain advantage on Strength, Dexterity, and Constitution saving throws while under half HP.
+![[subclasses-of.base]]

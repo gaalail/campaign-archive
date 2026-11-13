@@ -117,17 +117,7 @@ While you have your armor integrated with your primal power, when you take bludg
 
 You select an aspect of primordial power, gaining the ability to manifest your bond with that elemental or cosmic current. Your choice grants you features at 1st level and again at 3rd, 7th, 14th, and 17th level.
 
-Browse available [[character-options/subclasses/Primal/index|Primal Bonds (Subclasses)]]:
-- [[Elemental Soul]]
-- [[Beasthide]]
-- [[Elderheart]]
-- [[Stoneblood]]
-- [[Sunwatcher]]
-- [[Ironbound]]
-- [[Dreadwing]]
-- [[Timetwister]]
-- [[Astral Guardian]]
-- [[Bone Binder]]
+Browse available [[character-options/subclasses/Primal/index|Primal Bonds]] in the **Subclasses** section below.
 
 ---
 
@@ -159,7 +149,7 @@ You gain additional Endurance Dice as you advance: 4 dice at 5th level, 5 dice a
 
 At 3rd level, your connection to primal forces develops in unique ways that grant you specialized powers.
 
-You gain two Primal Manifestations of your choice from the list at the end of the class description. When you reach certain Primal levels, you learn additional manifestations as indicated in the Manifestations Known column of the Primal Table.
+You gain two Primal Manifestations of your choice from the [[character-options/class-options/primal-manifestations/index|Primal Manifestations catalogue]]. When you reach certain Primal levels, you learn additional manifestations as indicated in the Manifestations Known column of the Primal Table.
 
 Additionally, when you gain a level in this class, you can choose one of the manifestations you know and replace it with another manifestation that you could learn at that level. If a manifestation has a prerequisite, you must meet it to learn the manifestation. A level prerequisite refers to your level in this class.
 
@@ -262,132 +252,14 @@ Once you invoke a Primal Decree, you cannot do so again until you complete a lon
 
 ---
 
-## Primal Manifestations
+## Class Options
 
-If a manifestation has a level requirement, you must have that level in the Primal class to learn it.
+Browse all 33 manifestations in the [[character-options/class-options/primal-manifestations/index|Primal Manifestations catalogue]]:
 
-### Balanced Assault
-You gain the Two-Weapon Fighting Fighting Style: when you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
+![[class-options-of.base]]
 
-### Create Barrier
-When you take the Attack action on your turn, you can replace one of your attacks with manifesting an elemental barrier in an unoccupied space on the ground within 30 feet of you. This barrier forms out of nearby natural materials (dirt, stone, or wood) and cannot form in their absence. The barrier fills a 5-foot cube, has an AC of 15, and hit points equal to 10 + your Primal level. You can have a number of barriers active equal to your proficiency bonus; creating a new one beyond this limit causes the oldest barrier to crumble. You can create a total number of barriers equal to your Primal level per short or long rest.
-- **Astral Barrier** *(Prerequisite: Astral Guardian)*: Does not require nearby materials.
-- **Ice Barrier** *(Prerequisite: Elemental Soul)*: Does not require nearby materials; deals 1d6 cold damage to any creature that attacks it.
-- **Iron Barrier** *(Prerequisite: Ironbound)*: Gains resistance to bludgeoning, piercing, and slashing damage.
-- **Tree Barrier** *(Prerequisite: Elderheart)*: Does not require nearby materials; hit points equal 10 + twice your Primal level, and can grow up to 20 feet tall.
-- **Stone Barrier** *(Prerequisite: Stoneblood)*: AC equals your AC (unless already higher).
+## Subclasses
 
-### Elemental Rebuke
-You learn the spell *Aldricor's elemental rebuke*. You do not need material components to cast it and can cast it once without expending a spell slot (regained on a long rest). You can cast it again early by expending 2 Endurance Dice.
+Choose a Primal Bond at 1st level from the [[character-options/subclasses/Primal/index|Primal Bonds catalogue]]:
 
-### Gift of Life
-As an action, you can expend an Endurance Die to heal a creature you touch for 1 hit point and grant them temporary hit points equal to a roll of your Endurance Die + your Wisdom modifier.
-
-### Guided Wrath
-When you make an attack with a natural weapon granted by this class, you can use your **Wisdom modifier**, instead of Strength or Dexterity, for attack and damage rolls.
-- **Living Weapons** *(Prerequisite: Elderheart)*: You can use your Wisdom modifier instead of Strength to initiate and contest grapple checks made with your Lashing Vines.
-- **Living Chains** *(Prerequisite: Ironbound)*: You can use your Wisdom modifier instead of Strength to initiate and contest grapple checks made with Binding Interdiction chains.
-- **Living Arms** *(Prerequisite: Astral Guardian)*: You can use your Wisdom modifier instead of Strength to initiate and contest grapple checks made with your Astral Arms.
-
-### Engulfing Vines
-*Prerequisite: Elderheart subclass*  
-You can grapple a number of creatures with each of your Lashing Vines equal to your Wisdom modifier. While it is not grappling its maximum number of targets, it can still attack ungrappled foes. Additionally, at the start of your turn, you can pull any creature grappled by your Lashing Vines 5 feet towards you (no action required).
-
-### Heart of the Storm
-You gain resistance to damage from area-of-effect spells cast by allied creatures. If you would normally resist the damage, you take no damage instead.
-
-### Karmic Edict
-The spell *karmic reflection* is added to your innate spells: you can cast it once without expending a spell slot or Endurance Dice (regained on a long rest). You can cast it again early by expending Endurance Dice equal to 1 + the spell's level.
-
-### Mystic Deflection
-Your AC increases by 1 while you are wearing light or medium armor.
-
-### Mystic Reinforcement
-The damage reduction granted by your **Mystic Bulwark** increases by 1.
-
-### Primal Intuition
-You gain blindsight out to a range of 10 feet.
-
-### Protective Interdiction
-If an allied creature within range of your Primal Interdiction takes nonmagical bludgeoning, piercing, or slashing damage, you can use your reaction to reduce the damage taken by twice the damage reduction of your Mystic Bulwark.
-
-### Reliable Endurance
-When you roll an Endurance Die, you can replace the die roll with 2d4 (becoming 1d4 + 1d6 when the die becomes a d10, and 3d4 when the die becomes a d12).
-
-### Temporal Torsion
-*Prerequisite: Timetwister subclass*  
-When you take the Attack action, you can replace one attack with violently distorting time for a creature within 30 feet. The target must make a Charisma saving throw against your spell save DC. On a failure, it takes 1d8 + your Wisdom modifier necrotic damage and its speed is reduced by 10 feet until the start of your next turn. This damage increases with features that enlarge your natural weapon dice.
-
-### Time Trick
-*Prerequisite: Timetwister subclass*  
-You can speed up your own mundane actions within narrow limits: you can don or doff armor, change clothes, or complete a simple non-combat task that takes less than 1 minute as an action. You cannot move, interact with other creatures, cast spells, attack, or make ability checks during this action. Usable a number of times equal to your Wisdom modifier per long rest.
-
-### Unrelenting Onslaught
-If you cast a spell as an action, you can make a single weapon attack with a natural weapon as a bonus action.
-
-### Well of Fortitude
-When you complete a short rest, you can roll 1 Hit Die for free without expending it to recover hit points. You can use this a number of times equal to your proficiency bonus per long rest (maximum once per short rest).
-
-### Wildheart
-*Prerequisite: Beasthide subclass*  
-For all Beast-type creatures with a CR equal to or lower than your Primal level, you are perpetually under the effect of *sanctuary*. You also have advantage on Animal Handling checks and checks to persuade, deter, or converse with beasts.
-
-### Sacrificing Stance
-*Prerequisite: 6th level*  
-When you make a saving throw against an area-of-effect spell or magical effect that deals damage, you can choose to roll your saving throw with disadvantage to shield your allies. When you do so, allied creatures within your Primal Interdiction gain resistance to the damage dealt by the effect.
-
-### Savage Weapons
-*Prerequisite: 6th level*  
-The damage dice of all natural weapons granted by the class increase by one size (e.g., d6 becomes d8). If a weapon has multiple dice, only one die increases.
-
-### Devouring Earth
-*Prerequisite: 9th level*  
-You can cast *quicksand* once without expending a spell slot (regained on a long rest).
-
-### Falling Sky
-*Prerequisite: 9th level*  
-You can cast *sleet storm* once without expending a spell slot (regained on a long rest).
-
-### One With Stone
-*Prerequisite: 9th level*  
-You can cast *meld into stone* once without expending a spell slot (regained on a long rest).
-
-### Arise Stone
-*Prerequisite: 12th level*  
-You can cast *wall of stone* once without expending a spell slot (regained on a long rest).
-
-### Crushing Grip
-*Prerequisite: 12th level*  
-At the start of your turn, you deal **2d6 bludgeoning damage** to all creatures you are currently grappling.
-
-### Font of Will
-*Prerequisite: 12th level*  
-When you would make a saving throw at the end of your turn to end an effect, you can instead make that saving throw at the start of your turn.
-
-### Revitalizing Endurance
-*Prerequisite: 12th level*  
-When you start your turn with 0 hit points, you can expend an Endurance Die, rolling it and immediately regaining hit points equal to the number rolled.
-
-### Unlimited Endurance
-*Prerequisite: 12th level*  
-Your maximum pool of Endurance Dice increases by 1.
-
-### Arise Thorns
-*Prerequisite: 16th level, Elderheart subclass*  
-You can cast *wall of thorns* once without expending a spell slot (regained on a long rest).
-
-### Arise Ice
-*Prerequisite: 16th level, Elemental Soul subclass*  
-You can cast *wall of ice* once without expending a spell slot (regained on a long rest).
-
-### Immortal Body
-*Prerequisite: 16th level*  
-If you start your turn with less than half your maximum hit points (and at least 1 hit point), you regain **1d6 hit points**.
-
-### Last Stand
-*Prerequisite: 16th level*  
-At the end of your turn, you can declare a Last Stand. Until the start of your next turn, any damage taken by allied creatures within 60 feet that would reduce them below 1 hit point is instead redirected to you. This effect ends early if you fall unconscious. Usable once per short or long rest.
-
-### Planar Guardian
-*Prerequisite: 16th level, Astral Guardian subclass*  
-You can cast *plane shift* once without expending a spell slot, targeting only willing creatures (regained on a long rest).
+![[subclasses-of.base]]
