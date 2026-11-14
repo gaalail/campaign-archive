@@ -9,12 +9,12 @@ option_group: Primal Manifestation
 parent_class: Primal
 min_level: 12
 prerequisite: "12th level"
-summary: ""
+summary: "Cast wall of stone once per long rest without expending a spell slot."
 source: "Curated Supplement"
 source_type: third-party
 ---
 
-
+You can cast *wall of stone* once without expending a spell slot (regained on a long rest).
 
 **Prerequisite:** 12th level  
 **Minimum level:** 12

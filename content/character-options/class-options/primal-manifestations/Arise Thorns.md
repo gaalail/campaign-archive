@@ -9,12 +9,12 @@ option_group: Primal Manifestation
 parent_class: Primal
 min_level: 16
 prerequisite: "16th level, Elderheart subclass"
-summary: ""
+summary: "Cast wall of thorns once per long rest without expending a spell slot."
 source: "Curated Supplement"
 source_type: third-party
 ---
 
-
+You can cast *wall of thorns* once without expending a spell slot (regained on a long rest).
 
 **Prerequisite:** 16th level, Elderheart subclass  
 **Minimum level:** 16

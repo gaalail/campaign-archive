@@ -9,12 +9,12 @@ option_group: Primal Manifestation
 parent_class: Primal
 min_level: 12
 prerequisite: "12th level"
-summary: ""
+summary: "Make end-of-turn saving throws against ongoing effects at the start of your turn instead."
 source: "Curated Supplement"
 source_type: third-party
 ---
 
-
+When you would make a saving throw at the end of your turn to end an effect, you can instead make that saving throw at the start of your turn.
 
 **Prerequisite:** 12th level  
 **Minimum level:** 12

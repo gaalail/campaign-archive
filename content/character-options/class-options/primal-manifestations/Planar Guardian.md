@@ -9,12 +9,12 @@ option_group: Primal Manifestation
 parent_class: Primal
 min_level: 16
 prerequisite: "16th level, Astral Guardian subclass"
-summary: ""
+summary: "Cast plane shift on willing creatures once per long rest without expending a spell slot."
 source: "Curated Supplement"
 source_type: third-party
 ---
 
-
+You can cast *plane shift* once without expending a spell slot, targeting only willing creatures (regained on a long rest).
 
 **Prerequisite:** 16th level, Astral Guardian subclass  
 **Minimum level:** 16

@@ -9,12 +9,12 @@ option_group: Primal Manifestation
 parent_class: Primal
 min_level: 16
 prerequisite: "16th level"
-summary: ""
+summary: "Regain 1d6 hit points at the start of your turn while below half maximum hit points and conscious."
 source: "Curated Supplement"
 source_type: third-party
 ---
 
-
+If you start your turn with less than half your maximum hit points (and at least 1 hit point), you regain **1d6 hit points**.
 
 **Prerequisite:** 16th level  
 **Minimum level:** 16

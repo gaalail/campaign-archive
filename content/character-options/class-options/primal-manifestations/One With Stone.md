@@ -9,12 +9,12 @@ option_group: Primal Manifestation
 parent_class: Primal
 min_level: 9
 prerequisite: "9th level"
-summary: ""
+summary: "Cast meld into stone once per long rest without expending a spell slot."
 source: "Curated Supplement"
 source_type: third-party
 ---
 
-
+You can cast *meld into stone* once without expending a spell slot (regained on a long rest).
 
 **Prerequisite:** 9th level  
 **Minimum level:** 9

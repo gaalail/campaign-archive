@@ -9,12 +9,12 @@ option_group: Primal Manifestation
 parent_class: Primal
 min_level: 12
 prerequisite: "12th level"
-summary: ""
+summary: "Increase your maximum pool of Endurance Dice by 1."
 source: "Curated Supplement"
 source_type: third-party
 ---
 
-
+Your maximum pool of Endurance Dice increases by 1.
 
 **Prerequisite:** 12th level  
 **Minimum level:** 12

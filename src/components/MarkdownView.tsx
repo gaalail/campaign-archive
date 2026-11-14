@@ -244,7 +244,7 @@ function parseMarkdownBlocks(text: string): Block[] {
       }
 
       // Check if lines should preserve breaks (e.g. key-value pairs or lines ending in spaces)
-      const hasExplicitBreaks = paraLines.some(l => l.endsWith('  ') || /^\*\*.*?\*\*:/.test(l.trim()));
+      const hasExplicitBreaks = paraLines.some(l => l.endsWith('  ') || /^\*\*[^*\n]+:\*\*|^\*\*[^*\n]+\*\*:/.test(l.trim()));
       blocks.push({
         type: 'paragraph',
         rawText: hasExplicitBreaks ? paraLines.join('\n') : paraLines.join(' ')

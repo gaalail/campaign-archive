@@ -113,54 +113,94 @@ function cleanFlavorString(str) {
   return s;
 }
 
+const FLAVOR_CATEGORIES = new Set([
+  'classes',
+  'subclasses',
+  'races',
+  'backgrounds',
+  'campaigns',
+  'pantheons'
+]);
+
+const DEGREE_LEVEL_MAP = {
+  '1st-degree': 2,
+  '2nd-degree': 5,
+  '3rd-degree': 9,
+  '4th-degree': 13,
+  '5th-degree': 17
+};
+
+function deriveMinLevel(frontmatter, bodyText, category, subcategory) {
+  if (frontmatter.min_level !== undefined && frontmatter.min_level !== null && frontmatter.min_level !== '') {
+    const n = Number(frontmatter.min_level);
+    if (!Number.isNaN(n)) return n;
+  }
+
+  const prereqStr = frontmatter.prerequisite ? String(frontmatter.prerequisite) : '';
+  const lvlMatch =
+    prereqStr.match(/\b([0-9]+)(?:st|nd|rd|th)[-\s]+level\b/i) ||
+    bodyText.match(/\*\*Minimum level:\*\*\s*([0-9]+)/i);
+  if (lvlMatch) {
+    return Number(lvlMatch[1]);
+  }
+
+  const degreeStr = frontmatter.degree ? String(frontmatter.degree).toLowerCase().trim() : '';
+  if (degreeStr && DEGREE_LEVEL_MAP[degreeStr] !== undefined) {
+    return DEGREE_LEVEL_MAP[degreeStr];
+  }
+
+  if (category === 'class-options' && (subcategory === 'monk-techniques' || subcategory === 'eldritch-invocations')) {
+    return 2;
+  }
+
+  return null;
+}
+
 function extractFlavorAndFeatures(bodyText, category = '') {
   if (!bodyText || category === 'monsters') return { flavor: '', features: [] };
-  const lines = bodyText.split(/\r?\n/);
-  const flavorLines = [];
-  let inFlavor = true;
 
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (!line) {
-      if (category === 'races' && flavorLines.length > 0) {
-        inFlavor = false;
+  let flavor = '';
+  if (FLAVOR_CATEGORIES.has(category)) {
+    const lines = bodyText.split(/\r?\n/);
+    const flavorLines = [];
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (!line) {
+        if (category === 'races' && flavorLines.length > 0) {
+          break;
+        }
+        continue;
+      }
+      if (line.startsWith('# ') && !line.startsWith('## ') && !line.startsWith('### ')) continue;
+      if (line.startsWith('**') && line.endsWith('**') && (line.includes('subclasses available') || line.includes('Choose at'))) continue;
+      if (line.startsWith('## ') || line.startsWith('### ') || line.startsWith('> [!info') || line.startsWith('![[')) {
         break;
       }
-      continue;
-    }
-    if (line.startsWith('# ') && !line.startsWith('## ') && !line.startsWith('### ')) continue;
-    if (line.startsWith('**') && line.endsWith('**') && (line.includes('subclasses available') || line.includes('Choose at'))) continue;
-    if (line.startsWith('## ') || line.startsWith('### ') || line.startsWith('> [!info')) {
-      inFlavor = false;
-      break;
-    }
-    // Stop flavor parsing if a table or stat line is reached
-    if (
-      line.startsWith('|') ||
-      line.startsWith('- **Armor Class') ||
-      line.startsWith('- **Hit Points') ||
-      line.startsWith('- **Speed') ||
-      line.startsWith('- **Challenge') ||
-      /^\*\*(?:Ability [Ss]core [Ii]ncrease|Age|Alignment|Size|Speed|Languages|Creature Type):/i.test(line)
-    ) {
-      inFlavor = false;
-      break;
-    }
-    if (inFlavor) {
-      if (line === '---' || line.startsWith('- [[')) continue;
+      // Stop flavor parsing before lists, tables, stat lines, or metadata footers
+      if (
+        line.startsWith('|') ||
+        /^(?:[-*+]|\d+\.)\s+/.test(line) ||
+        /^\*\*(?:Ability [Ss]core [Ii]ncrease|Age|Alignment|Size|Speed|Languages|Creature Type|Prerequisite|Minimum level|Degree|Class|Damage type|Cost|Trigger)s?:/i.test(line) ||
+        /^\*\*(?:Prerequisite|Minimum level|Degree|Damage type|Class)s?:\*\*/i.test(line)
+      ) {
+        break;
+      }
+      if (line === '---') continue;
       flavorLines.push(line.replace(/^>\s?/, ''));
     }
-  }
-  let flavor = flavorLines.join(' ').replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').trim();
-  flavor = cleanFlavorString(flavor);
 
-  if (category === 'races') {
-    if (
-      flavor.toLowerCase().includes('ability score increase') ||
-      flavor.toLowerCase().includes('speed:') ||
-      flavor.toLowerCase().includes('size:')
-    ) {
-      flavor = '';
+    flavor = flavorLines.join(' ').replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1').trim();
+    flavor = cleanFlavorString(flavor);
+
+    if (category === 'races') {
+      if (
+        flavor.toLowerCase().includes('ability score increase') ||
+        flavor.toLowerCase().includes('speed:') ||
+        flavor.toLowerCase().includes('size:')
+      ) {
+        flavor = '';
+      }
     }
   }
 
@@ -347,6 +387,11 @@ for (const filePath of files) {
 
   const wikilinks = extractWikilinks(body);
 
+  const rawPrereq = frontmatter.prerequisite ? String(frontmatter.prerequisite).trim() : '';
+  const prerequisite = rawPrereq && rawPrereq.toLowerCase() !== 'none' ? rawPrereq : null;
+  const degree = frontmatter.degree ? String(frontmatter.degree).trim() : null;
+  const minLevel = deriveMinLevel(frontmatter, body, category, subcategory);
+
   const entry = {
     id: cleanId,
     title,
@@ -355,6 +400,9 @@ for (const filePath of files) {
     subcategory,
     parentClass,
     summary: frontmatter.summary || '',
+    min_level: minLevel,
+    prerequisite,
+    degree,
     source: frontmatter.source || (frontmatter.source_type === 'SRD' ? 'SRD 5.1' : (category === 'campaigns' || category === 'pantheons' ? 'Campaign Archive' : '')),
     source_type: frontmatter.source_type || (frontmatter.source === 'SRD 5.1' ? 'SRD' : 'homebrew'),
     entity_type: frontmatter.entity_type || '',

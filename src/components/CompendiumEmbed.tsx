@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
-import { archiveDb, getSourceBadgeInfo, getRarityColor, cleanFlavorText } from '../utils/archiveUtils';
+import React, { useState, useMemo, useEffect } from 'react';
+import { archiveDb, getRarityColor, cleanFlavorText } from '../utils/archiveUtils';
 import { ArchiveEntry } from '../types/archive';
-import { Search, Sparkles, Shield, Heart, ExternalLink, ChevronRight, Filter, Zap } from 'lucide-react';
+import { Search, ChevronRight, Zap, ArrowUpDown } from 'lucide-react';
 import { InlineContent } from './MarkdownView';
 
 interface CompendiumEmbedProps {
@@ -13,6 +13,14 @@ interface CompendiumEmbedProps {
 export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, currentEntryId, onNavigate }) => {
   const [search, setSearch] = useState('');
   const [selectedSubtype, setSelectedSubtype] = useState<string>('all');
+  const [maxLevel, setMaxLevel] = useState<string>('all');
+  const [sortBy, setSortBy] = useState<'level' | 'alpha'>('level');
+
+  useEffect(() => {
+    setSelectedSubtype('all');
+    setMaxLevel('all');
+    setSortBy('level');
+  }, [target, currentEntryId]);
 
   // Determine what entries to show based on the target
   const { title, entries, isSubclassesOf, isClassOptionsOf, itemCategory } = useMemo(() => {
@@ -139,6 +147,21 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
     return { title, entries: filtered, isSubclassesOf, isClassOptionsOf, itemCategory };
   }, [target, currentEntryId]);
 
+  const hasLevels = useMemo(
+    () => entries.some(e => typeof e.min_level === 'number' && e.min_level > 0),
+    [entries]
+  );
+
+  const availableLevels = useMemo(() => {
+    const levels = new Set<number>();
+    for (const e of entries) {
+      if (typeof e.min_level === 'number' && e.min_level > 0) {
+        levels.add(e.min_level);
+      }
+    }
+    return Array.from(levels).sort((a, b) => a - b);
+  }, [entries]);
+
   // Extract distinct subcategories or rarities for filtering
   const subcategories = useMemo(() => {
     const set = new Set<string>();
@@ -149,22 +172,36 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
     return Array.from(set).sort();
   }, [entries]);
 
-  // Apply search and filter
+  // Apply search, filter, and sorting
   const displayedEntries = useMemo(() => {
     let list = entries;
     if (selectedSubtype !== 'all') {
       list = list.filter(e => e.subcategory === selectedSubtype || e.rarity === selectedSubtype);
     }
+    if (maxLevel !== 'all') {
+      const cap = Number(maxLevel);
+      list = list.filter(e => (e.min_level ?? 1) <= cap);
+    }
     if (search.trim()) {
       const q = search.toLowerCase().trim();
-      list = list.filter(e => 
-        e.title.toLowerCase().includes(q) || 
+      list = list.filter(e =>
+        e.title.toLowerCase().includes(q) ||
         e.summary.toLowerCase().includes(q) ||
+        (e.prerequisite && e.prerequisite.toLowerCase().includes(q)) ||
+        (e.degree && e.degree.toLowerCase().includes(q)) ||
         (e.parentClass && e.parentClass.toLowerCase().includes(q))
       );
     }
-    return list;
-  }, [entries, search, selectedSubtype]);
+    if (hasLevels && sortBy === 'level') {
+      return [...list].sort((a, b) => {
+        const lvlA = a.min_level ?? 99;
+        const lvlB = b.min_level ?? 99;
+        if (lvlA !== lvlB) return lvlA - lvlB;
+        return a.title.localeCompare(b.title);
+      });
+    }
+    return [...list].sort((a, b) => a.title.localeCompare(b.title));
+  }, [entries, search, selectedSubtype, maxLevel, hasLevels, sortBy]);
 
   if (entries.length === 0) {
     return null;
@@ -177,15 +214,46 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
         <div>
           <h3 className="font-fantasy text-lg font-bold text-slate-100 flex items-center gap-2">
             <span>{title}</span>
-            <span className="text-xs font-mono font-normal text-slate-400">({displayedEntries.length} entries)</span>
+            <span className="text-xs font-mono tabular-nums font-normal text-slate-400">
+              ({displayedEntries.length} {displayedEntries.length === 1 ? 'entry' : 'entries'})
+            </span>
           </h3>
         </div>
 
         <div className="flex flex-wrap items-center gap-2">
-          {subcategories.length > 0 && (
+          {hasLevels && (
+            <button
+              type="button"
+              onClick={() => setSortBy(prev => (prev === 'level' ? 'alpha' : 'level'))}
+              className="inline-flex items-center gap-1.5 bg-slate-950 border border-slate-800 hover:border-amber-500/50 text-xs text-slate-200 hover:text-amber-300 rounded-lg px-2.5 py-1.5 transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+              title="Toggle sort order between Minimum Level and Alphabetical"
+            >
+              <ArrowUpDown className="w-3.5 h-3.5 text-amber-400" />
+              <span>{sortBy === 'level' ? 'Sort: Level' : 'Sort: A–Z'}</span>
+            </button>
+          )}
+
+          {availableLevels.length > 1 && (
+            <select
+              value={maxLevel}
+              onChange={(e) => setMaxLevel(e.target.value)}
+              aria-label="Filter by character level"
+              className="bg-slate-950 border border-slate-800 text-xs text-slate-300 rounded-lg px-2.5 py-1.5 focus:border-amber-500 focus:outline-none"
+            >
+              <option value="all">All Levels</option>
+              {availableLevels.map(lvl => (
+                <option key={lvl} value={String(lvl)}>
+                  Up to Lv {lvl}
+                </option>
+              ))}
+            </select>
+          )}
+
+          {subcategories.length > 1 && (
             <select
               value={selectedSubtype}
               onChange={(e) => setSelectedSubtype(e.target.value)}
+              aria-label="Filter by type"
               className="bg-slate-950 border border-slate-800 text-xs text-slate-300 rounded-lg px-2.5 py-1.5 focus:border-amber-500 focus:outline-none"
             >
               <option value="all">All Types</option>
@@ -209,127 +277,144 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
       </div>
 
       {/* Grid or Table layout depending on quantity */}
-      <div className={`grid ${isSubclassesOf ? 'grid-cols-1 md:grid-cols-2 gap-4' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5'} max-h-[550px] overflow-y-auto pr-1`}>
-        {displayedEntries.map(entry => {
-          const badge = getSourceBadgeInfo(entry.source_type, entry.source);
-          const rarity = entry.rarity ? getRarityColor(entry.rarity) : null;
-          const features = entry.features || [];
+      {displayedEntries.length === 0 ? (
+        <div className="py-6 text-center text-xs text-slate-400">
+          No entries match the current level or search filter.
+        </div>
+      ) : (
+        <div className={`grid ${isSubclassesOf ? 'grid-cols-1 md:grid-cols-2 gap-4' : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5'} max-h-[550px] overflow-y-auto pr-1`}>
+          {displayedEntries.map(entry => {
+            const rarity = entry.rarity ? getRarityColor(entry.rarity) : null;
+            const features = entry.features || [];
 
-          if (isSubclassesOf) {
-            return (
-              <div
-                key={entry.id}
-                className="rounded-xl border border-slate-800 bg-slate-950/80 p-4 text-left hover:border-amber-500/50 hover:bg-slate-900/60 transition-all flex flex-col justify-between group space-y-3"
-              >
-                <div className="space-y-2.5">
-                  <div className="flex items-start justify-between gap-2 border-b border-slate-800/80 pb-2">
-                    <div>
-                      <h4 className="font-fantasy font-bold text-slate-100 group-hover:text-amber-300 text-base transition-colors">
-                        {entry.title}
-                      </h4>
-                      {entry.parentClass && (
-                        <div className="text-[10px] text-amber-400 font-medium uppercase tracking-wider">
-                          {entry.parentClass} Archetype
+            if (isSubclassesOf) {
+              return (
+                <div
+                  key={entry.id}
+                  className="rounded-xl border border-slate-800 bg-slate-950/80 p-4 text-left hover:border-amber-500/50 hover:bg-slate-900/60 transition-all flex flex-col justify-between group space-y-3"
+                >
+                  <div className="space-y-2.5">
+                    <div className="flex items-start justify-between gap-2 border-b border-slate-800/80 pb-2">
+                      <div>
+                        <h4 className="font-fantasy font-bold text-slate-100 group-hover:text-amber-300 text-base transition-colors">
+                          {entry.title}
+                        </h4>
+                        <div className="text-[11px] text-slate-400 flex items-center gap-1.5 mt-0.5">
+                          {entry.parentClass && (
+                            <span className="text-amber-400 font-medium">{entry.parentClass} Archetype</span>
+                          )}
+                          {entry.parentClass && entry.source && <span aria-hidden="true">·</span>}
+                          {entry.source && <span>{entry.source}</span>}
                         </div>
-                      )}
+                      </div>
                     </div>
-                    <span className={`text-[9px] px-1.5 py-0.5 rounded border font-semibold ${badge.bg} ${badge.text} ${badge.border} shrink-0`}>
-                      {badge.label}
-                    </span>
+
+                    {(entry.flavor || entry.summary) && (
+                      <div className="text-xs text-slate-300 italic line-clamp-2 leading-relaxed">
+                        <InlineContent text={cleanFlavorText(entry.flavor || entry.summary)} onNavigate={onNavigate} />
+                      </div>
+                    )}
+
+                    {features.length > 0 && (
+                      <div className="space-y-1.5 pt-1 border-t border-slate-800/60">
+                        <div className="text-[10px] uppercase font-semibold text-amber-400 flex items-center gap-1">
+                          <Zap className="w-3 h-3 text-amber-400" />
+                          <span>Core Features ({features.length})</span>
+                        </div>
+                        <div className="space-y-1">
+                          {features.slice(0, 2).map((feat, fIdx) => (
+                            <div key={fIdx} className="bg-slate-900/80 rounded p-1.5 text-xs border border-slate-800/60">
+                              <div className="flex items-center justify-between gap-1">
+                                <span className="font-medium text-slate-200 text-[11px]">{feat.name}</span>
+                                {feat.level && (
+                                  <span className="text-[10px] font-mono tabular-nums text-amber-300">
+                                    {feat.level}
+                                  </span>
+                                )}
+                              </div>
+                              {feat.description && (
+                                <div className="text-[10px] text-slate-400 line-clamp-2 mt-0.5 leading-snug">
+                                  <InlineContent text={feat.description} onNavigate={onNavigate} />
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
 
+                  <div className="pt-2 border-t border-slate-800/60 flex items-center justify-between">
+                    <span className="text-[10px] text-slate-500">
+                      {features.length > 2 ? `+${features.length - 2} more features` : 'Complete mechanics'}
+                    </span>
+                    <button
+                      onClick={() => onNavigate(entry.id)}
+                      className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 group/btn cursor-pointer"
+                    >
+                      <span>View Archetype</span>
+                      <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" />
+                    </button>
+                  </div>
+                </div>
+              );
+            }
+
+            const metaLine = [
+              entry.degree || null,
+              entry.prerequisite ? `Req: ${entry.prerequisite}` : null
+            ]
+              .filter(Boolean)
+              .join(' · ');
+
+            return (
+              <button
+                key={entry.id}
+                onClick={() => onNavigate(entry.id)}
+                className="rounded-lg border border-slate-800/90 bg-slate-950/70 p-3 text-left hover:border-amber-500/50 hover:bg-slate-900 transition-all flex flex-col justify-between group space-y-1.5 cursor-pointer"
+              >
+                <div className="w-full">
+                  <div className="flex items-baseline justify-between gap-2">
+                    <h4 className="font-medium text-slate-200 group-hover:text-amber-300 text-sm transition-colors">
+                      {entry.title}
+                    </h4>
+                    {typeof entry.min_level === 'number' ? (
+                      <span className="text-[11px] font-mono tabular-nums font-semibold text-amber-300 shrink-0 whitespace-nowrap">
+                        Lv {entry.min_level}
+                      </span>
+                    ) : rarity && entry.rarity ? (
+                      <span className={`text-[10px] font-semibold ${rarity.text} shrink-0 whitespace-nowrap`}>
+                        {entry.rarity}
+                      </span>
+                    ) : null}
+                  </div>
+
+                  {metaLine && (
+                    <div className="text-[11px] text-amber-400/80 mt-0.5 truncate">
+                      {metaLine}
+                    </div>
+                  )}
+
                   {(entry.flavor || entry.summary) && (
-                    <div className="text-xs text-slate-300 italic line-clamp-2 leading-relaxed border-l-2 border-amber-500/50 pl-2 py-0.5 bg-slate-900/40 rounded-r">
+                    <div className="text-xs text-slate-400 line-clamp-2 mt-1 leading-normal">
                       <InlineContent text={cleanFlavorText(entry.flavor || entry.summary)} onNavigate={onNavigate} />
                     </div>
                   )}
-
-                  {features.length > 0 && (
-                    <div className="space-y-1.5 pt-1 border-t border-slate-800/60">
-                      <div className="text-[10px] uppercase font-semibold text-amber-400 flex items-center gap-1">
-                        <Zap className="w-3 h-3 text-amber-400" />
-                        <span>Core Features ({features.length})</span>
-                      </div>
-                      <div className="space-y-1">
-                        {features.slice(0, 2).map((feat, fIdx) => (
-                          <div key={fIdx} className="bg-slate-900/80 rounded p-1.5 text-xs border border-slate-800/60">
-                            <div className="flex items-center justify-between gap-1">
-                              <span className="font-medium text-slate-200 text-[11px]">{feat.name}</span>
-                              {feat.level && (
-                                <span className="text-[9px] font-mono px-1 rounded bg-amber-950/60 text-amber-300">
-                                  {feat.level}
-                                </span>
-                              )}
-                            </div>
-                            {feat.description && (
-                              <div className="text-[10px] text-slate-400 line-clamp-2 mt-0.5 leading-snug">
-                                <InlineContent text={feat.description} onNavigate={onNavigate} />
-                              </div>
-                            )}
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
                 </div>
 
-                <div className="pt-2 border-t border-slate-800/60 flex items-center justify-between">
-                  <span className="text-[10px] text-slate-500">
-                    {features.length > 2 ? `+${features.length - 2} more features` : 'Complete mechanics'}
+                <div className="flex items-center justify-between text-[10px] text-slate-500 pt-1.5 border-t border-slate-800/60 w-full gap-2">
+                  <span className="capitalize truncate">
+                    {entry.subcategory?.replace(/-/g, ' ') || entry.category}
                   </span>
-                  <button
-                    onClick={() => onNavigate(entry.id)}
-                    className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 group/btn"
-                  >
-                    <span>View Archetype</span>
-                    <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" />
-                  </button>
+                  <span className="text-amber-400/80 group-hover:text-amber-300 flex items-center gap-0.5 shrink-0 whitespace-nowrap">
+                    View <ChevronRight className="w-3 h-3" />
+                  </span>
                 </div>
-              </div>
+              </button>
             );
-          }
-
-          return (
-            <button
-              key={entry.id}
-              onClick={() => onNavigate(entry.id)}
-              className="rounded-lg border border-slate-800/90 bg-slate-950/70 p-3 text-left hover:border-amber-500/50 hover:bg-slate-900 transition-all flex flex-col justify-between group space-y-1.5"
-            >
-              <div>
-                <div className="flex items-start justify-between gap-2">
-                  <h4 className="font-medium text-slate-200 group-hover:text-amber-300 text-sm transition-colors">
-                    {entry.title}
-                  </h4>
-                  {rarity ? (
-                    <span className={`text-[10px] px-1.5 py-0.5 rounded border font-semibold ${rarity.bg} ${rarity.text} ${rarity.border} shrink-0`}>
-                      {entry.rarity}
-                    </span>
-                  ) : (
-                    <span className={`text-[9px] px-1.5 py-0.5 rounded border ${badge.bg} ${badge.text} ${badge.border} shrink-0`}>
-                      {badge.label}
-                    </span>
-                  )}
-                </div>
-
-                {(entry.flavor || entry.summary) && (
-                  <div className="text-xs text-slate-400 line-clamp-2 mt-1 leading-normal">
-                    <InlineContent text={cleanFlavorText(entry.flavor || entry.summary)} onNavigate={onNavigate} />
-                  </div>
-                )}
-              </div>
-
-              <div className="flex items-center justify-between text-[10px] text-slate-500 pt-1 border-t border-slate-800/60 w-full">
-                <span className="capitalize">
-                  {entry.subcategory?.replace(/-/g, ' ') || entry.category}
-                </span>
-                <span className="text-amber-400/80 group-hover:text-amber-300 flex items-center gap-0.5">
-                  View <ChevronRight className="w-3 h-3" />
-                </span>
-              </div>
-            </button>
-          );
-        })}
-      </div>
+          })}
+        </div>
+      )}
     </div>
   );
 };

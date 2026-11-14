@@ -54,6 +54,9 @@ export interface ArchiveEntry {
   concentration?: boolean;
   incomingLinks?: string[];
   flavor?: string;
+  min_level?: number | null;
+  prerequisite?: string | null;
+  degree?: string | null;
   features?: SubclassFeature[];
   cr?: string | number | null;
   ac?: number | string | null;

@@ -9,12 +9,12 @@ option_group: Primal Manifestation
 parent_class: Primal
 min_level: 6
 prerequisite: "6th level"
-summary: ""
+summary: "Increase the damage dice of all natural weapons granted by the Primal class by one die size."
 source: "Curated Supplement"
 source_type: third-party
 ---
 
-
+The damage dice of all natural weapons granted by the class increase by one size (e.g., d6 becomes d8). If a weapon has multiple dice, only one die increases.
 
 **Prerequisite:** 6th level  
 **Minimum level:** 6

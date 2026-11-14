@@ -44,7 +44,8 @@ import {
   Package,
   Network,
   User,
-  Sun
+  Sun,
+  ArrowUpDown
 } from 'lucide-react';
 import {
   GothicRaven,
@@ -68,12 +69,16 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const [activeTab, setActiveTab] = useState<'content' | 'spells' | 'subclasses' | 'options' | 'backlinks'>('content');
   const [expandedSubclasses, setExpandedSubclasses] = useState<Set<string>>(new Set());
   const [subclassSearch, setSubclassSearch] = useState('');
+  const [optionSort, setOptionSort] = useState<'level' | 'alpha'>('level');
+  const [optionMaxLevel, setOptionMaxLevel] = useState<string>('all');
 
   // Whenever entry changes, reset activeTab to 'content' and handle anchor jump
   useEffect(() => {
     setActiveTab('content');
     setExpandedSubclasses(new Set());
     setSubclassSearch('');
+    setOptionSort('level');
+    setOptionMaxLevel('all');
 
     // Check for anchor hash scroll (only match a secondary #anchor fragment)
     const hash = window.location.hash;
@@ -149,6 +154,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const isRace = entry.category === 'races' && !entry.id.endsWith('/index');
   const isBackground = entry.category === 'backgrounds' && !entry.id.endsWith('/index');
   const isFeat = (entry.category === 'feats' || entry.id.startsWith('character-options/feats/')) && !entry.id.endsWith('/index');
+  const isClassOption = entry.category === 'class-options' && !entry.id.endsWith('/index');
+  const showFlavorBanner = ['classes', 'subclasses', 'races', 'backgrounds', 'campaigns', 'pantheons'].includes(entry.category);
   const isDeity = (entry.category === 'pantheons' || entry.entity_type === 'deity') && !entry.id.endsWith('/index');
   const isPantheonIndex = (entry.category === 'pantheons' || entry.entity_type === 'pantheon_overview') && entry.id.endsWith('/index');
 
@@ -637,24 +644,56 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             </div>
           )}
 
-          {/* Subclass / Monster / Race Flavor Quote or Summary */}
+          {/* Class Option Planning Metadata Strip */}
+          {isClassOption && (
+            <div className="mt-3.5 px-3.5 py-2.5 rounded-xl bg-stone-950/70 border border-stone-800 flex flex-wrap items-center gap-x-2.5 gap-y-1 text-xs text-stone-300">
+              {entry.subcategory && (
+                <button
+                  onClick={() => onNavigate(`character-options/class-options/${entry.subcategory}/index`)}
+                  className="text-amber-400 hover:text-amber-200 font-semibold capitalize transition-colors cursor-pointer"
+                >
+                  {entry.subcategory.replace(/-/g, ' ')}
+                </button>
+              )}
+              {typeof entry.min_level === 'number' && (
+                <>
+                  {entry.subcategory && <span className="text-stone-600" aria-hidden="true">·</span>}
+                  <span className="font-mono tabular-nums font-semibold text-amber-300">
+                    Minimum Level {entry.min_level}
+                  </span>
+                </>
+              )}
+              {entry.degree && (
+                <>
+                  <span className="text-stone-600" aria-hidden="true">·</span>
+                  <span className="text-stone-200 font-medium">{entry.degree}</span>
+                </>
+              )}
+              <span className="text-stone-600" aria-hidden="true">·</span>
+              <span className="text-stone-400">
+                Prerequisite: <span className="text-stone-200">{entry.prerequisite || 'None'}</span>
+              </span>
+            </div>
+          )}
+
+          {/* Narrative Flavor Quote or Summary (only for narrative categories) */}
           {isMonster ? (
             entry.summary ? (
-              <div className="mt-3.5 p-4 rounded-xl bg-stone-950/70 border-l-4 border-amber-600 text-stone-300 text-sm md:text-base italic leading-relaxed shadow-sm font-serif">
+              <div className="mt-3.5 p-4 rounded-xl bg-stone-950/70 border border-stone-800 text-stone-300 text-sm md:text-base italic leading-relaxed shadow-sm font-serif">
                 <InlineContent text={cleanFlavorText(entry.summary)} onNavigate={onNavigate} />
               </div>
             ) : null
           ) : isRace ? (
             entry.flavor ? (
-              <div className="mt-3.5 p-4 rounded-xl bg-stone-950/70 border-l-4 border-amber-500 text-stone-200 text-sm md:text-base italic leading-relaxed shadow-sm font-serif">
+              <div className="mt-3.5 p-4 rounded-xl bg-stone-950/70 border border-amber-500/20 text-stone-200 text-sm md:text-base italic leading-relaxed shadow-sm font-serif">
                 <InlineContent text={cleanFlavorText(entry.flavor)} onNavigate={onNavigate} />
               </div>
             ) : null
-          ) : entry.flavor ? (
-            <div className="mt-3.5 p-4 rounded-xl bg-slate-950/70 border-l-4 border-amber-500 text-slate-200 text-sm md:text-base italic leading-relaxed shadow-sm">
+          ) : showFlavorBanner && entry.flavor ? (
+            <div className="mt-3.5 p-4 rounded-xl bg-slate-950/70 border border-amber-500/20 text-slate-200 text-sm md:text-base italic leading-relaxed shadow-sm">
               <InlineContent text={cleanFlavorText(entry.flavor)} onNavigate={onNavigate} />
             </div>
-          ) : entry.summary ? (
+          ) : showFlavorBanner && entry.summary ? (
             <div className="text-slate-300 text-sm md:text-base mt-2.5 italic">
               <InlineContent text={cleanFlavorText(entry.summary)} onNavigate={onNavigate} />
             </div>
@@ -1150,7 +1189,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
               </div>
             )}
 
-            {entry.category === 'class-options' && entry.id.endsWith('/index') && (
+            {entry.category === 'class-options' && entry.id.endsWith('/index') && !entry.body.includes('.base]]') && (
               <div className="mt-6 rounded-xl border border-slate-800 bg-slate-900/50 p-4">
                 <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-violet-300">
                   Available {entry.title}
@@ -1158,15 +1197,27 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                 <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
                   {archiveDb.entries
                     .filter(candidate => candidate.category === 'class-options' && candidate.subcategory === entry.subcategory && !candidate.id.endsWith('/index'))
-                    .sort((a, b) => a.title.localeCompare(b.title))
+                    .sort((a, b) => {
+                      const lvlA = a.min_level ?? 99;
+                      const lvlB = b.min_level ?? 99;
+                      if (lvlA !== lvlB) return lvlA - lvlB;
+                      return a.title.localeCompare(b.title);
+                    })
                     .map(option => (
                       <button
                         key={option.id}
                         onClick={() => onNavigate(option.id)}
                         className="rounded-lg border border-slate-800 bg-slate-950/60 px-3 py-2 text-left transition-colors hover:border-violet-500/50"
                       >
-                        <span className="block text-sm font-semibold text-slate-200">{option.title}</span>
-                        {option.summary && <span className="mt-1 block text-xs text-slate-400">{option.summary}</span>}
+                        <div className="flex items-baseline justify-between gap-2">
+                          <span className="text-sm font-semibold text-slate-200">{option.title}</span>
+                          {typeof option.min_level === 'number' && (
+                            <span className="text-[11px] font-mono tabular-nums text-amber-300 shrink-0">
+                              Lv {option.min_level}
+                            </span>
+                          )}
+                        </div>
+                        {option.summary && <span className="mt-1 block text-xs text-slate-400 line-clamp-2">{option.summary}</span>}
                       </button>
                     ))}
                 </div>
@@ -1306,7 +1357,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
                         {/* Narrative Flavor Text */}
                         {(sub.flavor || sub.summary) && (
-                          <div className="bg-slate-900/70 border-l-2 border-amber-500/70 rounded-r-xl p-3 text-xs text-slate-300 italic leading-relaxed">
+                          <div className="bg-slate-900/70 border border-slate-800/80 rounded-xl p-3 text-xs text-slate-300 italic leading-relaxed">
                             <InlineContent text={cleanFlavorText(sub.flavor || sub.summary)} onNavigate={onNavigate} />
                           </div>
                         )}
@@ -1386,8 +1437,22 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             if (p.subcategory) poolBySubcat.set(p.subcategory, p);
           }
 
+          const hasOptionLevels = classOptions.some(opt => typeof opt.min_level === 'number' && opt.min_level > 0);
+          const availableOptionLevels = Array.from(
+            new Set(
+              classOptions
+                .map(opt => opt.min_level)
+                .filter((lvl): lvl is number => typeof lvl === 'number' && lvl > 0)
+            )
+          ).sort((a, b) => a - b);
+
+          const filteredOptions =
+            optionMaxLevel !== 'all'
+              ? classOptions.filter(opt => (opt.min_level ?? 1) <= Number(optionMaxLevel))
+              : classOptions;
+
           const groupedMap = new Map<string, ArchiveEntry[]>();
-          for (const opt of classOptions) {
+          for (const opt of filteredOptions) {
             const key = opt.subcategory || 'general';
             const existing = groupedMap.get(key) || [];
             existing.push(opt);
@@ -1406,67 +1471,131 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
           return (
             <div className="space-y-6">
-              <div className="text-xs text-slate-400">
-                Specialized option pools and selectable features for {entry.title}.
-              </div>
-              {orderedKeys.map(subcat => {
-                const items = (groupedMap.get(subcat) || []).slice().sort((a, b) => a.title.localeCompare(b.title));
-                const poolIndex = poolBySubcat.get(subcat);
-                const sectionLabel =
-                  poolIndex?.title ||
-                  subcat
-                    .split('-')
-                    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-                    .join(' ');
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
+                <div className="text-xs text-slate-400">
+                  Specialized option pools and selectable features for {entry.title}.
+                </div>
 
-                return (
-                  <div key={subcat} className="space-y-3">
-                    <div className="flex items-center justify-between border-b border-slate-800/80 pb-2">
-                      <div className="flex items-baseline gap-2">
-                        <h3 className="font-fantasy font-bold text-slate-100 text-base">
-                          {sectionLabel}
-                        </h3>
-                        <span className="text-xs text-slate-500 font-mono">
-                          · {items.length}
-                        </span>
-                      </div>
-                      {poolIndex && (
-                        <button
-                          onClick={() => onNavigate(poolIndex.id)}
-                          className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 transition-colors"
-                        >
-                          <span>View Catalogue</span>
-                          <ChevronRight className="w-3.5 h-3.5" />
-                        </button>
-                      )}
-                    </div>
+                {(hasOptionLevels || availableOptionLevels.length > 1) && (
+                  <div className="flex flex-wrap items-center gap-2">
+                    {hasOptionLevels && (
+                      <button
+                        type="button"
+                        onClick={() => setOptionSort(prev => (prev === 'level' ? 'alpha' : 'level'))}
+                        className="inline-flex items-center gap-1.5 bg-slate-950 border border-slate-800 hover:border-amber-500/50 text-xs text-slate-200 hover:text-amber-300 rounded-lg px-2.5 py-1.5 transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+                        title="Toggle sort order between Minimum Level and Alphabetical"
+                      >
+                        <ArrowUpDown className="w-3.5 h-3.5 text-amber-400" />
+                        <span>{optionSort === 'level' ? 'Sort: Level' : 'Sort: A–Z'}</span>
+                      </button>
+                    )}
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[520px] overflow-y-auto pr-1">
-                      {items.map(opt => (
-                        <button
-                          key={opt.id}
-                          onClick={() => onNavigate(opt.id)}
-                          className="p-3.5 rounded-xl border border-slate-800 bg-slate-950 hover:border-amber-500/40 hover:bg-slate-800/40 text-left transition-all space-y-1.5 flex flex-col justify-between"
-                        >
-                          <div className="space-y-1">
-                            <div className="font-fantasy font-bold text-slate-100 text-sm">
-                              {opt.title}
-                            </div>
-                            <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
-                              {cleanFlavorText(opt.flavor || opt.summary) || 'View mechanics and prerequisites.'}
-                            </p>
-                          </div>
-                          {opt.frontmatter?.prerequisite && opt.frontmatter.prerequisite !== 'None' && (
-                            <div className="text-[11px] text-slate-500 pt-1 border-t border-slate-800/60 truncate w-full">
-                              Req: {String(opt.frontmatter.prerequisite)}
-                            </div>
-                          )}
-                        </button>
-                      ))}
-                    </div>
+                    {availableOptionLevels.length > 1 && (
+                      <select
+                        value={optionMaxLevel}
+                        onChange={(e) => setOptionMaxLevel(e.target.value)}
+                        aria-label="Filter class options by level"
+                        className="bg-slate-950 border border-slate-800 text-xs text-slate-300 rounded-lg px-2.5 py-1.5 focus:border-amber-500 focus:outline-none"
+                      >
+                        <option value="all">All Levels</option>
+                        {availableOptionLevels.map(lvl => (
+                          <option key={lvl} value={String(lvl)}>
+                            Up to Lv {lvl}
+                          </option>
+                        ))}
+                      </select>
+                    )}
                   </div>
-                );
-              })}
+                )}
+              </div>
+
+              {orderedKeys.length === 0 ? (
+                <div className="py-6 text-center text-xs text-slate-400">
+                  No options match the selected level filter.
+                </div>
+              ) : (
+                orderedKeys.map(subcat => {
+                  const items = (groupedMap.get(subcat) || []).slice().sort((a, b) => {
+                    if (hasOptionLevels && optionSort === 'level') {
+                      const lvlA = a.min_level ?? 99;
+                      const lvlB = b.min_level ?? 99;
+                      if (lvlA !== lvlB) return lvlA - lvlB;
+                    }
+                    return a.title.localeCompare(b.title);
+                  });
+                  const poolIndex = poolBySubcat.get(subcat);
+                  const sectionLabel =
+                    poolIndex?.title ||
+                    subcat
+                      .split('-')
+                      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+                      .join(' ');
+
+                  return (
+                    <div key={subcat} className="space-y-3">
+                      <div className="flex items-center justify-between border-b border-slate-800/80 pb-2">
+                        <div className="flex items-baseline gap-2">
+                          <h3 className="font-fantasy font-bold text-slate-100 text-base">
+                            {sectionLabel}
+                          </h3>
+                          <span className="text-xs text-slate-500 font-mono tabular-nums">
+                            · {items.length}
+                          </span>
+                        </div>
+                        {poolIndex && (
+                          <button
+                            onClick={() => onNavigate(poolIndex.id)}
+                            className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 transition-colors cursor-pointer whitespace-nowrap shrink-0"
+                          >
+                            <span>View Catalogue</span>
+                            <ChevronRight className="w-3.5 h-3.5" />
+                          </button>
+                        )}
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[520px] overflow-y-auto pr-1">
+                        {items.map(opt => {
+                          const metaLine = [
+                            opt.degree || null,
+                            opt.prerequisite ? `Req: ${opt.prerequisite}` : null
+                          ]
+                            .filter(Boolean)
+                            .join(' · ');
+
+                          return (
+                            <button
+                              key={opt.id}
+                              onClick={() => onNavigate(opt.id)}
+                              className="p-3.5 rounded-xl border border-slate-800 bg-slate-950 hover:border-amber-500/40 hover:bg-slate-800/40 text-left transition-all space-y-1.5 flex flex-col justify-between cursor-pointer"
+                            >
+                              <div className="space-y-1 w-full">
+                                <div className="flex items-baseline justify-between gap-2">
+                                  <div className="font-fantasy font-bold text-slate-100 text-sm">
+                                    {opt.title}
+                                  </div>
+                                  {typeof opt.min_level === 'number' && (
+                                    <span className="text-[11px] font-mono tabular-nums font-semibold text-amber-300 shrink-0 whitespace-nowrap">
+                                      Lv {opt.min_level}
+                                    </span>
+                                  )}
+                                </div>
+                                <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
+                                  {cleanFlavorText(opt.summary) || 'View mechanics and prerequisites.'}
+                                </p>
+                              </div>
+                              {metaLine && (
+                                <div className="text-[11px] text-amber-400/80 pt-1.5 border-t border-slate-800/60 truncate w-full">
+                                  {metaLine}
+                                </div>
+                              )}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })
+              )}
             </div>
           );
         })()}
