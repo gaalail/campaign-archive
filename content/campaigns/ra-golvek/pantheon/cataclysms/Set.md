@@ -5,26 +5,34 @@ title: "Set"
 campaign_id: ra-golvek
 pantheon: "Cataclysms"
 divine_rank: "Cataclysm"
+primary_title: "The Red Lord of Storms, Desert Chaos & Betrayal"
 worship_forbidden: true
 alignment: "Chaotic Evil"
-portfolios: []
-summary: "Cataclysm excluded from all Deitric pantheons whose worship is forbidden across most lands."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+portfolios: ["Storms", "Chaos", "Evil", "Destruction"]
+domains: ["Tempest", "Trickery", "War"]
+symbol: "Bent was-scepter crowned by the storm-beast"
+favored_weapon: "Khopesh or Spear"
+summary: "Egyptian storm-beast Cataclysm cast outside Metu Neter; worship is strictly forbidden."
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
 content_status: draft
-tags: [ra-golvek, deity, cataclysms]
+tags: ["ra-golvek", "deity", "cataclysms"]
 ---
-
 # Set
 
-**Set** is one of the **Cataclysms**—entities that belong to no Pantheon and whose worship is **strictly forbidden** and considered catastrophic across nearly all lands of **Ra Gol'vek**.
+**Set**, Egyptian lord of howling desert storms, murder, and cosmic chaos, stands cast out from **Metu Neter** as a **Cataclysm** whose worship is **forbidden** across Ra Gol'vek.
 
-## Binding & Status
+Yet desert raiders and desperate usurpers still risk execution by whispering to the Red Lord in sandstorms.
 
-- **Classification:** Cataclysm (No Pantheon)
-- **Worship Status:** Forbidden across most lands
-- **Binding Condition:** *Awaiting specification*
-- **Portfolio:** *Awaiting specification*
+## Divine Profile
+
+- **Pantheon / Structure:** Cataclysms
+- **Primary Title:** The Red Lord of Storms, Desert Chaos & Betrayal
+- **Alignment:** Chaotic Evil
+- **Portfolios:** Storms, Chaos, Evil, Destruction
+- **Divine Domains:** Tempest, Trickery, War
+- **Holy Symbol:** Bent was-scepter crowned by the storm-beast
+- **Favored Weapon:** Khopesh or Spear
 
 ---
 
@@ -32,5 +40,5 @@ tags: [ra-golvek, deity, cataclysms]
 
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
-- [[campaigns/ra-golvek/Cosmology & History|Cosmology & History]]
-- [[campaigns/ra-golvek/rules/index|Ra Gol'vek Campaign Rules]]
+- [[campaigns/ra-golvek/Cosmology & History|Chapter 0: Cosmology & History]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]

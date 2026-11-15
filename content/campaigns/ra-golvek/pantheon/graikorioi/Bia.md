@@ -5,25 +5,40 @@ title: "Bia"
 campaign_id: ra-golvek
 pantheon: "Graikorioi"
 divine_rank: "Divine"
+primary_title: "Enforcer of Raw Force, Might & Compulsion"
 alignment: "Lawful Neutral"
-portfolios: []
+portfolios: ["Strength", "Battle", "Law"]
+domains: ["War", "Order"]
+symbol: "Clenched iron gauntlet cracking a marble pillar"
+favored_weapon: "Warhammer or Maul"
+worshippers: "Shock-troopers, arena wardens, enforcers of divine decree, and oath-sworn strongarms"
 recommended_oaths:
   - "Oath of Conquest"
-  - "Domain of Mythology"
-summary: "Divine power of Graikorioi, the bridged Greek/Roman Deitric realm of marble cities, labyrinths, and eternal contests."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+  - "Oath of the Blade"
+  - "Order of Valor"
+summary: "Winged personification of irresistible force and sovereign compulsion in Graikorioi."
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
 content_status: draft
-tags: [ra-golvek, deity, graikorioi]
+tags: ["ra-golvek", "deity", "graikorioi"]
 ---
 
 # Bia
 
-**Bia** is a Divinity of **Graikorioi**, the Greek/Roman Deitric realm bridged to Ra Gol'vek—a land of marble cities, lush forests, grand feasts, and lethal labyrinths shaped by immortal contests and intrigue.
+**Bia** is a Divinity of **Graikorioi**, embodying the unyielding physical weight that backs divine authority when words fail.
 
-- **Pantheon:** Graikorioi (Greek/Roman)
-- **Primary Title:** *Awaiting specification*
-- **Portfolio:** *Awaiting specification*
+Alongside her sibling [[campaigns/ra-golvek/pantheon/graikorioi/Nike|Nike]], she stood firm in Olympus's battles while her brothers [[campaigns/ra-golvek/pantheon/exoria/Kratos|Kratos]] and [[campaigns/ra-golvek/pantheon/exoria/Zelus|Zelus]] crossed into Exoría's perpetual wars.
+
+## Divine Profile
+
+- **Pantheon / Structure:** Graikorioi (Greek/Roman)
+- **Primary Title:** Enforcer of Raw Force, Might & Compulsion
+- **Alignment:** Lawful Neutral
+- **Portfolios:** Strength, Battle, Law
+- **Divine Domains:** War, Order
+- **Holy Symbol:** Clenched iron gauntlet cracking a marble pillar
+- **Favored Weapon:** Warhammer or Maul
+- **Worshippers:** Shock-troopers, arena wardens, enforcers of divine decree, and oath-sworn strongarms
 
 ---
 
@@ -31,4 +46,5 @@ tags: [ra-golvek, deity, graikorioi]
 
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
+- [[campaigns/ra-golvek/Cosmology & History|Chapter 0: Cosmology & History]]
 - [[campaigns/ra-golvek/Lands & Kingdoms|Chapter 3: Lands & Kingdoms]]

@@ -5,26 +5,40 @@ title: "Zelus"
 campaign_id: ra-golvek
 pantheon: "Exoría"
 divine_rank: "Divine"
-alignment: "Chaotic Neutral"
-portfolios: []
+primary_title: "Winged Spirit of Zeal, Rivalry & Ardour"
+alignment: "Lawful Neutral"
+portfolios: ["Battle", "Courage", "Wrath", "Justice"]
+domains: ["War", "Light"]
+symbol: "Blazing torch crossed with a golden winged spur"
+favored_weapon: "Longsword or Spear"
+worshippers: "Fanatical duelists, champions striving for renown, and militant zealots of Exoria"
 recommended_oaths:
-  - "Oath of Vengeance"
   - "Oath of Glory"
   - "Oath of the Zealot"
-summary: "Divine power of Exoría, the Golden Kingdom of Eternal War."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+  - "Oath of Vengeance"
+summary: "Winged brother of Nike and Kratos embodying fierce emulation and burning dedication in Exoría."
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
 content_status: draft
-tags: [ra-golvek, deity, exoria]
+tags: ["ra-golvek", "deity", "exoria"]
 ---
 
 # Zelus
 
-**Zelus** belongs to **Exoría**, the fallen continental prison-kingdom of endless divine conflict.
+**Zelus** belongs to **Exoría**, kindling jealous ambition and tireless devotion inside every warrior sworn to outdo all rivals.
 
-- **Pantheon / Realm:** Exoría
-- **Primary Title:** *Awaiting specification*
-- **Portfolio:** *Awaiting specification*
+He refuses half-measures; those who bear his blessing burn brighter than mortal iron—whether toward noble triumph or fanatical ruin.
+
+## Divine Profile
+
+- **Pantheon / Structure:** Exoría
+- **Primary Title:** Winged Spirit of Zeal, Rivalry & Ardour
+- **Alignment:** Lawful Neutral
+- **Portfolios:** Battle, Courage, Wrath, Justice
+- **Divine Domains:** War, Light
+- **Holy Symbol:** Blazing torch crossed with a golden winged spur
+- **Favored Weapon:** Longsword or Spear
+- **Worshippers:** Fanatical duelists, champions striving for renown, and militant zealots of Exoria
 
 ---
 
@@ -33,3 +47,4 @@ tags: [ra-golvek, deity, exoria]
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
 - [[campaigns/ra-golvek/Lands & Kingdoms|Chapter 3: Lands & Kingdoms (Exoria)]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]

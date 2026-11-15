@@ -5,26 +5,40 @@ title: "Ioke"
 campaign_id: ra-golvek
 pantheon: "Exoría"
 divine_rank: "Divine"
+primary_title: "Spirit of the Headlong Charge & Pursuit"
 alignment: "Chaotic Neutral"
-portfolios: []
+portfolios: ["Battle", "War", "Courage", "Blood"]
+domains: ["War"]
+symbol: "Winged bronze spearhead streaking through crimson haze"
+favored_weapon: "Spear or Javelin"
+worshippers: "Cavalry shock-lancers, pursuers, duelists, and skirmishers who never sound retreat"
 recommended_oaths:
-  - "Oath of Vengeance"
   - "Oath of Glory"
-  - "Oath of the Zealot"
-summary: "Divine power of Exoría, the Golden Kingdom of Eternal War."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+  - "Oath of the Blade"
+  - "Oath of Vengeance"
+summary: "Makhai spirit of the relentless charge, onslaught, and battle-pursuit in Exoría."
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
 content_status: draft
-tags: [ra-golvek, deity, exoria]
+tags: ["ra-golvek", "deity", "exoria"]
 ---
 
 # Ioke
 
-**Ioke** belongs to **Exoría**, the fallen continental prison-kingdom of endless divine conflict.
+**Ioke** belongs to **Exoría**, surging forward in the breathless instant a cavalry wedge smashes into broken ranks.
 
-- **Pantheon / Realm:** Exoría
-- **Primary Title:** *Awaiting specification*
-- **Portfolio:** *Awaiting specification*
+Invoked at the bugle's first note, she lends speed to charging hooves and sharpens every thrown spear.
+
+## Divine Profile
+
+- **Pantheon / Structure:** Exoría
+- **Primary Title:** Spirit of the Headlong Charge & Pursuit
+- **Alignment:** Chaotic Neutral
+- **Portfolios:** Battle, War, Courage, Blood
+- **Divine Domains:** War
+- **Holy Symbol:** Winged bronze spearhead streaking through crimson haze
+- **Favored Weapon:** Spear or Javelin
+- **Worshippers:** Cavalry shock-lancers, pursuers, duelists, and skirmishers who never sound retreat
 
 ---
 
@@ -33,3 +47,4 @@ tags: [ra-golvek, deity, exoria]
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
 - [[campaigns/ra-golvek/Lands & Kingdoms|Chapter 3: Lands & Kingdoms (Exoria)]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]

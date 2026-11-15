@@ -5,34 +5,43 @@ title: "Whiro"
 campaign_id: ra-golvek
 pantheon: "Avehrneol"
 divine_rank: "Archdevil"
+primary_title: "Lord of Calamity, Darkness & Creeping Dread"
 sin: "Fear"
 dominion: "Uncegila"
 alignment: "Lawful Evil"
-portfolios: []
+portfolios: ["Fear", "Darkness", "Evil"]
+domains: ["Death", "Trickery"]
+symbol: "Obsidian lizard clinging to a dark moon"
+favored_weapon: "Spear or Dagger"
+worshippers: "Infernal warlocks, power-brokers, cultists, and oath-binders of Avehrneol"
 recommended_oaths:
   - "Blackguard"
   - "Oath of the Hellbound"
   - "Oath of Conquest"
+  - "Fiend"
 summary: "Archdevil of Avehrneol holding the sin of Fear and dominion over Uncegila."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: complete
-tags: [ra-golvek, deity, avehrneol]
+content_status: draft
+tags: ["ra-golvek", "deity", "avehrneol"]
 ---
-
 # Whiro
 
-**Whiro** is an **Archdevil** of **Avehrneol**, holding the sin of **Fear** and ruling the dominion of **Uncegila**.
+Rooted in Māori mythic tradition as lord of darkness, disease, and dread, **Whiro** commands **Uncegila** as Archdevil of **Fear**.
 
-Although not a God in the classical Deitric sense, Whiro commands **Divine Power** rank and receives sufficient mortal worship to stand among Ra Gol'vek's recognized pantheon-like structures.
+Though not a God in the classical Deitric sense, this sovereign wields **Divine Power** rank and receives widespread mortal reverence across Ra Gol'vek.
 
-## Sovereign Attributes
+## Divine Profile
 
-- **Structure:** Avehrneol
-- **Rank:** Archdevil (Divine Power)
+- **Pantheon / Structure:** Avehrneol
+- **Primary Title:** Lord of Calamity, Darkness & Creeping Dread
+- **Alignment:** Lawful Evil
 - **Sin:** Fear
 - **Dominion:** Uncegila
-- **Portfolio:** *Awaiting detailed specification*
+- **Portfolios:** Fear, Darkness, Evil
+- **Divine Domains:** Death, Trickery
+- **Holy Symbol:** Obsidian lizard clinging to a dark moon
+- **Favored Weapon:** Spear or Dagger
 
 ---
 
@@ -40,4 +49,5 @@ Although not a God in the classical Deitric sense, Whiro commands **Divine Power
 
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
-- [[campaigns/ra-golvek/Cosmology & History|Cosmology & History]]
+- [[campaigns/ra-golvek/Cosmology & History|Chapter 0: Cosmology & History]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]

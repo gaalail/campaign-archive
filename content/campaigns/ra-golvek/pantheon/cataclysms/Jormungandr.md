@@ -5,28 +5,36 @@ title: "Jörmungandr"
 campaign_id: ra-golvek
 pantheon: "Cataclysms"
 divine_rank: "Cataclysm"
+primary_title: "The World Serpent of the Encircling Abyss"
 worship_forbidden: true
 alignment: "Chaotic Evil"
-portfolios: []
-summary: "Serpentine Cataclysm whose worship is forbidden across nearly all mortal lands."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+portfolios: ["Serpents", "Sea", "Destruction", "Death"]
+domains: ["Tempest", "Death"]
+symbol: "Colossal serpent devouring its own tail"
+favored_weapon: "Venomous Whip or Trident"
+summary: "World-encircling Serpent Cataclysm whose worship is forbidden across mortal lands."
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
 content_status: draft
-tags: [ra-golvek, deity, cataclysms]
+tags: ["ra-golvek", "deity", "cataclysms"]
 aliases:
   - "Jormungandr"
 ---
-
 # Jörmungandr
 
-**Jörmungandr** is one of the **Cataclysms**—entities that belong to no Pantheon and whose worship is **strictly forbidden** and considered catastrophic across nearly all lands of **Ra Gol'vek**.
+**Jörmungandr**, the World Serpent of Norse myth, coils beneath Ra Gol'vek's abyssal oceans—a **Cataclysm** belonging to no Pantheon whose worship is **forbidden** across civilized lands.
 
-## Binding & Status
+Legend foretells that when the serpent loosens its tail, venom will blacken sky and sea alike.
 
-- **Classification:** Cataclysm (No Pantheon)
-- **Worship Status:** Forbidden across most lands
-- **Binding Condition:** *Awaiting specification*
-- **Portfolio:** *Awaiting specification*
+## Divine Profile
+
+- **Pantheon / Structure:** Cataclysms
+- **Primary Title:** The World Serpent of the Encircling Abyss
+- **Alignment:** Chaotic Evil
+- **Portfolios:** Serpents, Sea, Destruction, Death
+- **Divine Domains:** Tempest, Death
+- **Holy Symbol:** Colossal serpent devouring its own tail
+- **Favored Weapon:** Venomous Whip or Trident
 
 ---
 
@@ -34,5 +42,5 @@ aliases:
 
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
-- [[campaigns/ra-golvek/Cosmology & History|Cosmology & History]]
-- [[campaigns/ra-golvek/rules/index|Ra Gol'vek Campaign Rules]]
+- [[campaigns/ra-golvek/Cosmology & History|Chapter 0: Cosmology & History]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]

@@ -5,28 +5,42 @@ title: "Atë"
 campaign_id: ra-golvek
 pantheon: "Exoría"
 divine_rank: "Divine"
-alignment: "Chaotic Neutral"
-portfolios: []
+primary_title: "Spirit of Ruinous Folly & Blind Recklessness"
+alignment: "Chaotic Evil"
+portfolios: ["Madness", "Chaos", "Trickery", "Punishment"]
+domains: ["Trickery", "War"]
+symbol: "Split golden apple cracked by jagged lightning"
+favored_weapon: "Dagger or Whip"
+worshippers: "Saboteurs, spite-driven duelists, reckless strategists, and whisperers in royal war rooms"
 recommended_oaths:
   - "Oath of Vengeance"
-  - "Oath of Glory"
+  - "The Oathless"
   - "Oath of the Zealot"
-summary: "Divine power of Exoría, the Golden Kingdom of Eternal War."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+summary: "Hellenic daemon of fatal delusion and impulsive ruin within the exiled ranks of Exoría."
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
 content_status: draft
-tags: [ra-golvek, deity, exoria]
+tags: ["ra-golvek", "deity", "exoria"]
 aliases:
   - "Ate"
 ---
 
 # Atë
 
-**Atë** belongs to **Exoría**, the fallen continental prison-kingdom of endless divine conflict.
+**Atë** belongs to **Exoría**, clouding proud commanders with fatal hubris so wise plans rot into ruin before the first volley flies.
 
-- **Pantheon / Realm:** Exoría
-- **Primary Title:** *Awaiting specification*
-- **Portfolio:** *Awaiting specification*
+Even rival warlords fear her footsteps above their banners, for victory bought through Atë always carries a hidden snare.
+
+## Divine Profile
+
+- **Pantheon / Structure:** Exoría
+- **Primary Title:** Spirit of Ruinous Folly & Blind Recklessness
+- **Alignment:** Chaotic Evil
+- **Portfolios:** Madness, Chaos, Trickery, Punishment
+- **Divine Domains:** Trickery, War
+- **Holy Symbol:** Split golden apple cracked by jagged lightning
+- **Favored Weapon:** Dagger or Whip
+- **Worshippers:** Saboteurs, spite-driven duelists, reckless strategists, and whisperers in royal war rooms
 
 ---
 
@@ -35,3 +49,4 @@ aliases:
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
 - [[campaigns/ra-golvek/Lands & Kingdoms|Chapter 3: Lands & Kingdoms (Exoria)]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]

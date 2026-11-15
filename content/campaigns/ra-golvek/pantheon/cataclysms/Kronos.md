@@ -5,27 +5,34 @@ title: "Kronos"
 campaign_id: ra-golvek
 pantheon: "Cataclysms"
 divine_rank: "Cataclysm"
+primary_title: "The Harvester Titan of Devouring Time"
 worship_forbidden: true
 alignment: "Chaotic Evil"
-portfolios: []
-summary: "Cataclysm bound following the ancient Titanomachy; worship is forbidden across most lands."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+portfolios: ["Time", "Destruction", "Earth"]
+domains: ["Grave", "Order", "War"]
+symbol: "Adamantine sickle crossing a cracked hourglass"
+favored_weapon: "Sickle or Scythe"
+summary: "Overthrown Titan Cataclysm of devouring time from the Titanomachy; worship is forbidden."
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
 content_status: draft
-tags: [ra-golvek, deity, cataclysms]
+tags: ["ra-golvek", "deity", "cataclysms"]
 ---
-
 # Kronos
 
-**Kronos** is one of the **Cataclysms**—entities that belong to no Pantheon and whose worship is **strictly forbidden** and considered catastrophic across nearly all lands of **Ra Gol'vek**.
-Kronos's overthrow forged the **Titanomachy** of the Godly Wars.
+**Kronos**, Titan king and merciless harvester of time in Hellenic myth, stands classified among the **Cataclysms**—outside every Pantheon, his worship **strictly forbidden**.
 
-## Binding & Status
+Overthrown in the **Titanomachy** led by **[[campaigns/ra-golvek/pantheon/iusiurand/Athena|Athena]]**, **[[campaigns/ra-golvek/pantheon/iusiurand/Tyr|Tyr]]**, and **[[campaigns/ra-golvek/pantheon/metu-neter/Heka|Heka]]**, his unmaking left scars woven into Ra Gol'vek's very mountains.
 
-- **Classification:** Cataclysm (No Pantheon)
-- **Worship Status:** Forbidden across most lands
-- **Binding Condition:** *Awaiting specification*
-- **Portfolio:** *Awaiting specification*
+## Divine Profile
+
+- **Pantheon / Structure:** Cataclysms
+- **Primary Title:** The Harvester Titan of Devouring Time
+- **Alignment:** Chaotic Evil
+- **Portfolios:** Time, Destruction, Earth
+- **Divine Domains:** Grave, Order, War
+- **Holy Symbol:** Adamantine sickle crossing a cracked hourglass
+- **Favored Weapon:** Sickle or Scythe
 
 ---
 
@@ -33,5 +40,5 @@ Kronos's overthrow forged the **Titanomachy** of the Godly Wars.
 
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
-- [[campaigns/ra-golvek/Cosmology & History|Cosmology & History]]
-- [[campaigns/ra-golvek/rules/index|Ra Gol'vek Campaign Rules]]
+- [[campaigns/ra-golvek/Cosmology & History|Chapter 0: Cosmology & History]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]

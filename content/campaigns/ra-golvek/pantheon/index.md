@@ -21,7 +21,7 @@ This codex catalogues the pantheons and pantheon-like structures that receive wo
 
 Many entities listed under **Avehrneol**, **Daevayim**, and the **Kingdoms of Night** are beings of **Divine Power** rank rather than classical Gods, yet command sufficient worship and structure to stand alongside formal pantheons. Conversely, the **Cataclysms** belong to no Pantheon—worship of them is **highly discouraged and strictly forbidden** across most lands.
 
-Numerous lesser divinities are absent from this roster due to the catastrophic divine losses suffered during the **Deumachy**.
+Numerous lesser divinities are absent from this roster due to the catastrophic divine losses suffered during the **Deumachy**. Real-world mythological parallels across the Deitric realms are populated with classic 5e domains, symbols, favored weapons, and Ra Gol'vek Portfolios for immediate play and easy setting customization.
 
 For Divine Power mechanics—**Divine Immunity**, **Miracle**, **Mythic Actions**, **Superior Advantage/Disadvantage**, and all **Portfolios**—see [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]].
 
@@ -36,16 +36,19 @@ For Divine Power mechanics—**Divine Immunity**, **Miracle**, **Mythic Actions*
 | **Avehrneol** | Archdevils (10) | Infernal Sovereigns of Sin & Dominion |
 | **Graikorioi** | Greek/Roman Pantheon (14) | Olympian & Hellenic Deitric Realm |
 | **Exoría** | Exiled Divines (15) | Banished to the Lost Continent of Exoria |
-| **Iusiurand** | Divine Covenant (6) | Includes Athena, Tyr, Morrigan, Surya, Zagreus & Machaloth |
+| **Iusiurand** | Divine Covenant (6) | Athena, Tyr, Morrigan, Surya, Zagreus & Machaloth |
 | **Faewylds** | Faebles / Courts (4) | Father Midnight, Maeru, Prince of Fireflies, Serafina |
 | **Plia Dral** | Custom Pantheon (4) | Aramisia, Chernabog, Raz’a Nur, Syfendra |
 | **Heralds of the End** | End-Heralds (4) | A'aeshtar (Death), Azazel (War), Mastema (Ruin), Reshef (Plague) |
 | **Powers Primaeval** | Elemental Primaevals (4) | Raz’a Eur (Air), Raz’a Gni (Fire), Raz’a Llus (Earth), Raz’a Und (Water) |
-| **Daidōis** | Chinese/Japanese Pantheon | Guan Yu, Sun Wukong |
-| **Metu Neter** | Egyptian Pantheon | [[campaigns/ra-golvek/pantheon/metu-neter/Amun-Ra|Amun-Ra]] |
-| **Kingdoms of Night** | Divine Power / Shadowlands | [[campaigns/ra-golvek/pantheon/kingdoms-of-night/Z|Z]], [[campaigns/ra-golvek/pantheon/kingdoms-of-night/Raz'a Noct|Raz'a Noct]] |
+| **Daidōis** | Chinese/Japanese Pantheon (2) | Guan Yu, Sun Wukong |
+| **Metu Neter** | Egyptian Pantheon (10) | Amun-Ra, Heka, Anubis, Bastet, Horus, Isis, Osiris, Ptah, Sekhmet, Thoth |
+| **Norse** | Norse Pantheon (9) | Odin, Thor, Freyja, Frigg, Heimdall, Hel, Loki, Njord, Skadi |
+| **Shaivi** | Hindu Pantheon (10) | Shiva, Vishnu, Brahma, Kali, Durga, Ganesha, Indra, Lakshmi, Saraswati, Yama |
+| **Mayincatec** | Mayan/Incan/Aztec Pantheon (8) | Quetzalcoatl, Tezcatlipoca, Huitzilopochtli, Tlaloc, Mictlantecuhtli, Inti, Pachamama, Ixchel |
+| **Kaheawahu** | Islander Pantheon (8) | Kāne, Kanaloa, Kū, Lono, Pele, Poliʻahu, Kamohoaliʻi, Māui |
+| **Kingdoms of Night** | Divine Power / Shadowlands (2) | [[campaigns/ra-golvek/pantheon/kingdoms-of-night/Z|Z]], [[campaigns/ra-golvek/pantheon/kingdoms-of-night/Raz'a Noct|Raz'a Noct]] |
 | **Omneris** | Sovereign Realm | [[campaigns/ra-golvek/pantheon/omneris/King Orvald|King Orvald]] |
-| **Other Realms** | Roster Expansion Pending | [[campaigns/ra-golvek/pantheon/kaheawahu/Kaheawahu|Kaheawahu]], [[campaigns/ra-golvek/pantheon/mayincatec/Mayincatec|Mayincatec]], [[campaigns/ra-golvek/pantheon/norse/Norse|Norse]], [[campaigns/ra-golvek/pantheon/shaivi/Shaivi|Shaivi]] |
 | **Cataclysms** | No Pantheon · Forbidden (7) | Acera, Fenrir, Jörmungandr, Kronos, Set, Surtr, Typhon |
 
 ---

@@ -5,26 +5,40 @@ title: "Strife"
 campaign_id: ra-golvek
 pantheon: "Exoría"
 divine_rank: "Divine"
-alignment: "Chaotic Neutral"
-portfolios: []
+primary_title: "Sovereign Aspect of Siege, Contention & Ruin"
+alignment: "Chaotic Evil"
+portfolios: ["War", "Destruction", "Chaos", "Wrath"]
+domains: ["War", "Death"]
+symbol: "Two shattered crowns colliding above crossed glaives"
+favored_weapon: "Glaive or Halberd"
+worshippers: "Bitter faction-breakers, siege captains, duel-judges, and endless-war fanatics of Exoria"
 recommended_oaths:
   - "Oath of Vengeance"
-  - "Oath of Glory"
+  - "Oath of Conquest"
   - "Oath of the Zealot"
-summary: "Divine power of Exoría, the Golden Kingdom of Eternal War."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+summary: "Primordial manifestation of unending conflict and fractured alliances within Exoría."
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
 content_status: draft
-tags: [ra-golvek, deity, exoria]
+tags: ["ra-golvek", "deity", "exoria"]
 ---
 
 # Strife
 
-**Strife** belongs to **Exoría**, the fallen continental prison-kingdom of endless divine conflict.
+**Strife** belongs to **Exoría**, thriving wherever truces fail, brothers draw steel, and ancient grudges outlive their first causes.
 
-- **Pantheon / Realm:** Exoría
-- **Primary Title:** *Awaiting specification*
-- **Portfolio:** *Awaiting specification*
+Distinct yet kindred to **[[campaigns/ra-golvek/pantheon/exoria/Eris|Eris]]**, Strife embodies the grinding inevitability of endless siege across the Godsbane Expanse.
+
+## Divine Profile
+
+- **Pantheon / Structure:** Exoría
+- **Primary Title:** Sovereign Aspect of Siege, Contention & Ruin
+- **Alignment:** Chaotic Evil
+- **Portfolios:** War, Destruction, Chaos, Wrath
+- **Divine Domains:** War, Death
+- **Holy Symbol:** Two shattered crowns colliding above crossed glaives
+- **Favored Weapon:** Glaive or Halberd
+- **Worshippers:** Bitter faction-breakers, siege captains, duel-judges, and endless-war fanatics of Exoria
 
 ---
 
@@ -33,3 +47,4 @@ tags: [ra-golvek, deity, exoria]
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
 - [[campaigns/ra-golvek/Lands & Kingdoms|Chapter 3: Lands & Kingdoms (Exoria)]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]

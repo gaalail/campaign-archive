@@ -5,34 +5,43 @@ title: "Mammon"
 campaign_id: ra-golvek
 pantheon: "Avehrneol"
 divine_rank: "Archdevil"
+primary_title: "Lord of Gilded Vaults & Covetousness"
 sin: "Avarice"
 dominion: "Dis"
 alignment: "Lawful Evil"
-portfolios: []
+portfolios: ["Wealth", "Metal", "Evil"]
+domains: ["Trickery", "Forge"]
+symbol: "Gold coin stamped with a grasping talon"
+favored_weapon: "Shortspear or Mace"
+worshippers: "Infernal warlocks, power-brokers, cultists, and oath-binders of Avehrneol"
 recommended_oaths:
   - "Blackguard"
   - "Oath of the Hellbound"
   - "Oath of Conquest"
+  - "Fiend"
 summary: "Archdevil of Avehrneol holding the sin of Avarice and dominion over Dis."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: complete
-tags: [ra-golvek, deity, avehrneol]
+content_status: draft
+tags: ["ra-golvek", "deity", "avehrneol"]
 ---
-
 # Mammon
 
-**Mammon** is an **Archdevil** of **Avehrneol**, holding the sin of **Avarice** and ruling the dominion of **Dis**.
+Summoned at **Sumar**'s fall, **Mammon** rules **Dis** as Archdevil of **Avarice**, turning empires, guilds, and vaults into engines of endless greed.
 
-Although not a God in the classical Deitric sense, Mammon commands **Divine Power** rank and receives sufficient mortal worship to stand among Ra Gol'vek's recognized pantheon-like structures.
+Though not a God in the classical Deitric sense, this sovereign wields **Divine Power** rank and receives widespread mortal reverence across Ra Gol'vek.
 
-## Sovereign Attributes
+## Divine Profile
 
-- **Structure:** Avehrneol
-- **Rank:** Archdevil (Divine Power)
+- **Pantheon / Structure:** Avehrneol
+- **Primary Title:** Lord of Gilded Vaults & Covetousness
+- **Alignment:** Lawful Evil
 - **Sin:** Avarice
 - **Dominion:** Dis
-- **Portfolio:** *Awaiting detailed specification*
+- **Portfolios:** Wealth, Metal, Evil
+- **Divine Domains:** Trickery, Forge
+- **Holy Symbol:** Gold coin stamped with a grasping talon
+- **Favored Weapon:** Shortspear or Mace
 
 ---
 
@@ -40,4 +49,5 @@ Although not a God in the classical Deitric sense, Mammon commands **Divine Powe
 
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
-- [[campaigns/ra-golvek/Cosmology & History|Cosmology & History]]
+- [[campaigns/ra-golvek/Cosmology & History|Chapter 0: Cosmology & History]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]

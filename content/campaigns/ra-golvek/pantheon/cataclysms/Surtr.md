@@ -5,26 +5,34 @@ title: "Surtr"
 campaign_id: ra-golvek
 pantheon: "Cataclysms"
 divine_rank: "Cataclysm"
+primary_title: "The Black-Flamed Sovereign of Muspel's End"
 worship_forbidden: true
 alignment: "Chaotic Evil"
-portfolios: []
-summary: "Cataclysm whose worship is forbidden across most lands."
-source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
+portfolios: ["Fire", "Destruction", "War"]
+domains: ["Light", "War", "Forge"]
+symbol: "Blazing black-iron greatsword"
+favored_weapon: "Greatsword"
+summary: "Flame-giant Cataclysm of apocalyptic fire; belongs to no Pantheon and worship is forbidden."
+source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
 content_status: draft
-tags: [ra-golvek, deity, cataclysms]
+tags: ["ra-golvek", "deity", "cataclysms"]
 ---
-
 # Surtr
 
-**Surtr** is one of the **Cataclysms**—entities that belong to no Pantheon and whose worship is **strictly forbidden** and considered catastrophic across nearly all lands of **Ra Gol'vek**.
+**Surtr**, black-flamed giant sovereign of Norse Ragnarok, waits at creation's fiery edge as a **Cataclysm** whose worship is **forbidden** across mortal realms.
 
-## Binding & Status
+When his blazing greatsword rises, entire worlds burn down to ash.
 
-- **Classification:** Cataclysm (No Pantheon)
-- **Worship Status:** Forbidden across most lands
-- **Binding Condition:** *Awaiting specification*
-- **Portfolio:** *Awaiting specification*
+## Divine Profile
+
+- **Pantheon / Structure:** Cataclysms
+- **Primary Title:** The Black-Flamed Sovereign of Muspel's End
+- **Alignment:** Chaotic Evil
+- **Portfolios:** Fire, Destruction, War
+- **Divine Domains:** Light, War, Forge
+- **Holy Symbol:** Blazing black-iron greatsword
+- **Favored Weapon:** Greatsword
 
 ---
 
@@ -32,5 +40,5 @@ tags: [ra-golvek, deity, cataclysms]
 
 - [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
 - [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
-- [[campaigns/ra-golvek/Cosmology & History|Cosmology & History]]
-- [[campaigns/ra-golvek/rules/index|Ra Gol'vek Campaign Rules]]
+- [[campaigns/ra-golvek/Cosmology & History|Chapter 0: Cosmology & History]]
+- [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions & Faiths]]
