@@ -31,7 +31,7 @@ For Divine Power mechanics—**Divine Immunity**, **Miracle**, **Mythic Actions*
 
 | Structure | Classification | Notable Members / Notes |
 | :--- | :--- | :--- |
-| **Cosmic Origins** | First Mother | [[campaigns/ra-golvek/pantheon/A'aeshtar, the First Mother|A'aeshtar, the First Mother]] |
+| **Cosmic Origins** | First Mother & End-Herald | [[campaigns/ra-golvek/pantheon/A'aeshtar, the First Mother|A'aeshtar, the First Mother]] (also Harbinger of Death) |
 | **Daevayim** | Archangels (9) | Virtues on the Prime Material · Guided by [[campaigns/ra-golvek/The Church of the Archangels|The Church of the Archangels]] |
 | **Avehrneol** | Archdevils (10) | Infernal Sovereigns of Sin & Dominion |
 | **Graikorioi** | Greek/Roman Pantheon (14) | Olympian & Hellenic Deitric Realm |
@@ -39,7 +39,7 @@ For Divine Power mechanics—**Divine Immunity**, **Miracle**, **Mythic Actions*
 | **Iusiurand** | Divine Covenant (6) | Includes Athena, Tyr, Morrigan, Surya, Zagreus & Machaloth |
 | **Faewylds** | Faebles / Courts (4) | Father Midnight, Maeru, Prince of Fireflies, Serafina |
 | **Plia Dral** | Custom Pantheon (4) | Aramisia, Chernabog, Raz’a Nur, Syfendra |
-| **Heralds of the End** | End-Heralds (4) | Aeshtaar (Death), Azazel (War), Mastema (Ruin), Reshef (Plague) |
+| **Heralds of the End** | End-Heralds (4) | A'aeshtar (Death), Azazel (War), Mastema (Ruin), Reshef (Plague) |
 | **Powers Primaeval** | Elemental Primaevals (4) | Raz’a Eur (Air), Raz’a Gni (Fire), Raz’a Llus (Earth), Raz’a Und (Water) |
 | **Daidōis** | Chinese/Japanese Pantheon | Guan Yu, Sun Wukong |
 | **Metu Neter** | Egyptian Pantheon | [[campaigns/ra-golvek/pantheon/metu-neter/Amun-Ra|Amun-Ra]] |
