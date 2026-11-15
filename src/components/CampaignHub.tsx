@@ -11,7 +11,7 @@ import {
   WaxSeal,
   DndFleuronDivider
 } from './GothicIcons';
-import { Compass, BookOpen, MapPin, Skull, ChevronRight, Sparkles, Network, Flame, ShieldAlert, Anchor, Sun } from 'lucide-react';
+import { Compass, BookOpen, MapPin, Skull, ChevronRight, Sparkles, Network, Flame, ShieldAlert, Sun } from 'lucide-react';
 
 interface CampaignHubProps {
   onNavigate: (id: string) => void;
@@ -166,23 +166,23 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
         </div>
 
         {/* ========================================================= */}
-        {/* RA GOL'VEK - COASTAL KINGDOM INTRIGUE & ARCANE TIDES      */}
+        {/* RA GOL'VEK - EPIC COSMIC CYCLE & DIVINE ACCORD            */}
         {/* ========================================================= */}
         <div className="relative group rounded-2xl border-2 border-cyan-900/60 bg-gradient-to-b from-stone-950 via-cyan-950/25 to-stone-950 p-6 flex flex-col justify-between space-y-6 shadow-[0_4px_30px_rgba(8,145,178,0.15)] hover:border-cyan-700 transition-all">
           <div className="space-y-4 relative z-10">
             {/* Header */}
             <div className="flex items-center justify-between border-b border-cyan-900/40 pb-3">
               <div className="flex items-center gap-2.5">
-                <Anchor className="w-6 h-6 text-cyan-400" />
+                <Sun className="w-6 h-6 text-cyan-400" />
                 <div>
                   <span className="font-serif tracking-widest uppercase text-[10px] text-cyan-400 font-bold block">
-                    Seafaring & Intrigue
+                    Cosmic Cycle & High Magic
                   </span>
-                  <span className="text-[11px] text-stone-400 italic">Abyssal Currents</span>
+                  <span className="text-[11px] text-stone-400 italic">Law of Recurrence</span>
                 </div>
               </div>
-              <div className="text-xs font-serif uppercase tracking-widest text-cyan-500 px-2 py-0.5 rounded border border-cyan-800/60 bg-cyan-950/40">
-                Guildlands
+              <div className="text-xs font-serif uppercase tracking-widest text-cyan-400 px-2 py-0.5 rounded border border-cyan-800/60 bg-cyan-950/40 tabular-nums">
+                1199 AMH
               </div>
             </div>
 
@@ -192,22 +192,22 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
                 Ra Gol'vek
               </h2>
               <div className="font-serif italic text-xs text-cyan-300/80 mt-1">
-                "Where high guilds barter steel, tide-sorcery, and sovereignty."
+                "Torn from a dying multiverse, bound to rebirth—until severed threads rewrite the end."
               </div>
             </div>
 
             <p className="text-xs text-stone-300 leading-relaxed font-sans">
-              Coastal ports, competing mercantile houses, and forgotten ocean relics. Heroes navigate treacherous political waters as ancient primordial deeps awaken.
+              Four continents—Exoria, Omathu, Ayineawa, and Ulta—standing beneath bridged Deitric realms and the Entente's 2,000-year clock as heroes pulled from death confront a looming convergence.
             </p>
 
             <div className="grid grid-cols-2 gap-2 text-[11px] font-serif pt-1">
               <div className="bg-cyan-950/50 border border-cyan-900/40 rounded p-2 text-cyan-200 flex items-center gap-1.5">
-                <Compass className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-                <span>Nautical Arcana</span>
+                <Sparkles className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                <span>Deitric Realms</span>
               </div>
               <div className="bg-cyan-950/50 border border-cyan-900/40 rounded p-2 text-cyan-200 flex items-center gap-1.5">
                 <DragonShield className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-                <span>Guild Warfare</span>
+                <span>Severed Fate</span>
               </div>
             </div>
           </div>
@@ -215,7 +215,7 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
           <div className="pt-4 border-t border-cyan-900/50 space-y-2 relative z-10">
             <button
               onClick={() => onNavigate('campaigns/ra-golvek/index')}
-              className="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-cyan-950 via-cyan-900 to-cyan-950 hover:from-cyan-900 hover:to-cyan-800 border border-cyan-700/80 text-xs font-fantasy font-bold uppercase tracking-wider text-cyan-100 transition-all flex items-center justify-between shadow-md"
+              className="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-cyan-950 via-cyan-900 to-cyan-950 hover:from-cyan-900 hover:to-cyan-800 border border-cyan-700/80 text-xs font-fantasy font-bold uppercase tracking-wider text-cyan-100 transition-all flex items-center justify-between shadow-md cursor-pointer"
             >
               <span>Explore Ra Gol'vek</span>
               <ChevronRight className="w-4 h-4 text-cyan-400" />
@@ -223,9 +223,9 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
 
             <button
               onClick={() => onNavigate('campaigns/ra-golvek/rules/index')}
-              className="w-full py-1.5 px-3 rounded-lg hover:bg-cyan-950/50 text-[11px] font-serif text-cyan-400/90 hover:text-cyan-200 transition-colors flex items-center justify-between"
+              className="w-full py-1.5 px-3 rounded-lg hover:bg-cyan-950/50 text-[11px] font-serif text-cyan-400/90 hover:text-cyan-200 transition-colors flex items-center justify-between cursor-pointer"
             >
-              <span>Coastal Treaties & House Rules</span>
+              <span>Severed Fate, Entente & Rules</span>
               <span className="text-[10px] uppercase tracking-wider">Codex →</span>
             </button>
 
@@ -233,7 +233,7 @@ export const CampaignHub: React.FC<CampaignHubProps> = ({
               onClick={() => onNavigate('campaigns/ra-golvek/pantheon/index')}
               className="w-full py-1.5 px-3 rounded-lg hover:bg-cyan-950/50 text-[11px] font-serif text-cyan-300/90 hover:text-cyan-100 transition-colors flex items-center justify-between cursor-pointer"
             >
-              <span>The Tide-Sworn & Sunken Court</span>
+              <span>Deitric Realms & Pantheons</span>
               <span className="text-[10px] uppercase tracking-wider">Pantheon →</span>
             </button>
           </div>

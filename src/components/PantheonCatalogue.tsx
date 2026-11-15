@@ -15,8 +15,7 @@ import {
   Crosshair,
   Shield,
   Sparkles,
-  Flame,
-  Anchor
+  Flame
 } from 'lucide-react';
 import { GothicRaven, CrossedSwords } from './GothicIcons';
 
@@ -39,7 +38,7 @@ const CAMPAIGN_REALMS = [
   {
     id: 'ra-golvek',
     name: "Ra Gol'vek",
-    subtitle: 'The Tide-Sworn & Sunken Court · Civic Temples & Deep Covenants',
+    subtitle: 'Deitric Realms & Archangelic Church · Under the Entente of Divine Concordance',
     accentText: 'text-cyan-300',
     borderClass: 'border-cyan-900/50',
     hoverBorderClass: 'hover:border-cyan-700/80',
@@ -61,7 +60,7 @@ function getRealmIcon(campaignId?: string | null) {
     case 'curse-of-strahd':
       return <GothicRaven className="w-4 h-4 text-rose-400 shrink-0" />;
     case 'ra-golvek':
-      return <Anchor className="w-4 h-4 text-cyan-400 shrink-0" />;
+      return <Sparkles className="w-4 h-4 text-cyan-400 shrink-0" />;
     case 'vyrun':
       return <Flame className="w-4 h-4 text-emerald-400 shrink-0" />;
     default:

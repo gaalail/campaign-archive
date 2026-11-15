@@ -144,7 +144,7 @@ export const BestiaryCatalogue: React.FC<BestiaryCatalogueProps> = ({ onSelectMo
               </div>
             </div>
             <p className="text-sm font-serif text-stone-300 max-w-2xl leading-relaxed">
-              Explore combat statistics, ability scores, legendary traits, and lair powers for monsters encountered across Castle Ravenloft, the high-seas of Ra Gol'vek, Vyrun's primordial frontiers, and witch familiars.
+              Explore combat statistics, ability scores, legendary traits, and lair powers for monsters encountered across Castle Ravenloft, the mythic realms of Ra Gol'vek, Vyrun's primordial frontiers, and witch familiars.
             </p>
           </div>
 
@@ -196,7 +196,7 @@ export const BestiaryCatalogue: React.FC<BestiaryCatalogueProps> = ({ onSelectMo
           {[
             { id: 'all', label: 'All Realms' },
             { id: 'curse-of-strahd', label: 'Curse of Strahd', icon: '🦇' },
-            { id: 'ra-golvek', label: "Ra Gol'vek", icon: '⚓' },
+            { id: 'ra-golvek', label: "Ra Gol'vek", icon: '⏳' },
             { id: 'vyrun', label: 'Vyrun', icon: '🌲' },
             { id: 'hexbound', label: 'Hexbound Familiars', icon: '✨' },
             { id: 'srd', label: 'SRD Core', icon: '📜' }

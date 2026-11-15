@@ -1,6 +1,6 @@
 ---
 title: Ra Gol'vek
-tags: [ra-golvek]
+tags: [ra-golvek, cosmology, setting, campaign]
 aliases:
   - campaigns/ra-golvek
   - ra-golvek
@@ -10,116 +10,56 @@ entity_type: campaign
 canonical_id: campaign-ra-golvek
 campaign_id: ra-golvek
 calendar_id: ra-golvek-calendar
-calendar_name: Ra Gol'vek Calendar
+calendar_name: AMH (Entente Era)
 calendar_system: custom
-current_year: 1
+current_year: 1199
 current_month: 1
 current_day: 1
 calendar_month_names: []
 calendar_weekday_names: []
-source: Campaign Archive house rule
+source: "Ra Gol'vek Campaign Setting"
 source_type: campaign-original
-content_status: incomplete
-incomplete_reason: Campaign chronology, calendar rules, and location map are still being established
+content_status: complete
 ---
 
 # Ra Gol'vek Campaign
 
-Everything for the Ra Gol'vek campaign. New entries show up in the tables below automatically.
+> *"Long before Ra Gol'vek, there existed another multiverse... Twelve stopped trying to save the dying multiverse. They tore their new world loose and shoved it backward—out of time, beneath a single frost-bound promise: the Law of Recurrence."*
 
-## Quick Start
+**Current Era:** **Year 1199 AMH** — 801 years before the two-thousand-year sunset clause of the **Entente of Divine Concordance**.
 
-**First time here?**
-
-- [[Character Builder|Build a character]] for this campaign
-- Read the overview below to understand the setting
-- Check the Sessions tab to see what's happened so far
+**Ra Gol'vek** is an epic, high-magic campaign setting forged from cosmic collapse, divine wars, and the **Law of Recurrence**. Torn free from an earlier multiverse unmade by eldritch horrors, the Prime Material realm is anchored above the submerged **First Mother (A'aeshtar)** and bridged to sovereign **Deitric Realms** patterned on ancient mythologies. The player characters begin severed from the Loom of Fate—anomalies deliberately pulled back from death by a God to confront a looming convergence and end Ra Gol'vek's recursion.
 
 ---
 
-## Campaign Overview
+## Core Setting Chronicles
 
-**Ra Gol'vek** is a coastal kingdom caught between ancient magic, modern politics, and forces beyond mortal understanding. The campaign focuses on political intrigue, supernatural threats, and the player characters' mysterious connections to the land's troubled past.
-
-**Setting:** A sprawling coastal kingdom with merchant cities, ancient ruins, and wild borderlands. The capital Ra Gol'vek dominates the trade routes; smaller cities compete for power and influence.
-
-**Theme:** Political intrigue meets supernatural horror. Mysterious and atmospheric with high stakes and moral ambiguity. Not everything is black-and-white.
-
-**Main Conflicts:**
-
-- An ancient curse is slowly consuming the kingdom from within
-- Political factions vie for power and control of trade
-- A mysterious organization works to influence events from the shadows
-- Each player character has a hidden connection to these events
+- **[[campaigns/ra-golvek/Cosmology & History|Chapter 0 & 1: Cosmology, History & the Looming Convergence]]** — The First Inversion, the Breach, Excision by the Twelve, the Drakonmachy, Heaven's Sundering, the Titanomachy & Gigantomachy, the Deumachy, Faustus & the Fall of Sumar, the Mortalimachy, the Entente of Divine Concordance, and Year 1199 AMH.
+- **[[campaigns/ra-golvek/Afterlife & Resurrection|Chapter 2: The Afterlife, Resurrection & Fate]]** — How death marks ordinary souls, why the party's severed fate makes them cosmic anomalies, and character reflection prompts after returning from death.
+- **[[campaigns/ra-golvek/Lands & Kingdoms|Chapter 3: Lands, Continents & Deitric Realms]]** — Full gazetteer of the four continents (**Exoria**, **Omathu**, **Ayineawa**, **Ulta**) and the nine bridged **Deitric & Planar Realms**.
+- **[[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions, Guilds & Faiths]]** — The **Church of the Archangels**, the **Old Pantheons** in their Deitric realms, and regional traditions.
 
 ---
 
-## Navigate This Campaign
+## The Four Continents at a Glance
 
-### Sessions
-
-Click the **Sessions** tab to see:
-
-- What happened in each session
-- Which NPCs you met
-- What locations you visited
-- What loot you found
-
-Each session links to related NPCs, locations, and encounters.
-
-### Characters (NPCs)
-
-Click the **Characters** tab to see:
-
-- Major NPCs in the campaign
-- Their roles and motivations
-- Which sessions they appear in
-- Their relationships to each other
-
-### Locations
-
-Click the **Locations** tab to see:
-
-- Important places in Ra Gol'vek
-- What sessions take place there
-- Key NPCs based there
-- Campaign significance
-
-### All Entries
-
-Click the **All entries** tab to see everything for this campaign in one table.
+- **Exoria (The Lost Continent):** Sealed behind ancient wards since the divine rebellion, where **Ares**, **Kratos**, and **Eris** rule shattered battlefields across the Everforge Peaks, the Wailing Wastes (housing the Maze of Astraeus), and the Godsbane Expanse.
+- **Omathu:** Home to **Arkigike, the Jewel of Omathu** (governed by the immortal High Council of Archlords descending from Heyl'el's table), the ancient elven canopy city of **Grands Bois Rougeoyants**, and the cursed, war-torn **Northlands**.
+- **Ayineawa:** A wild island continent pulsing with living magic and blood rites—housing the sentient forests of **Quetzali**, the volcanic heights of **Maq'tara**, the **Pit of Teotli** gateway to the Underworld, the magic-draining **Ezuuli Reef**, and the **Trenches of Manō-Nui**.
+- **Ulta:** The eastern forge of stone and steel, spanning the dwarven Lithomancer stronghold of **Pozolochen Gora** beneath the Throat of Titans, the hextech rail-metropolis of **Neocropoli** (led by Artifex Voda, contested by the awakened War-Forged general Titanus 87), the **Wilds of Nyar'cath**, and the mutated **Hexcrag Isles**.
 
 ---
 
-## Resources
+## Player Quick Start & Resources
 
-- **[[campaigns/ra-golvek/pantheon/index|Pantheon & Worship]]** — The Tide-Sworn & Sunken Court deities of Ra Gol'vek
-- **[[campaigns/ra-golvek/rules/index|Campaign Rules]]** — Setting rulings, supernatural madness saves, and hazards
-- **[[Character Builder|Build a character]]** — Create your character
-- **[[Spells]]** — Magic reference
-- **[[Items]]** — Equipment and magic items
-- **[[Monsters]]** — Creature reference
+- **[[Character Builder|Build a character]]** for Ra Gol'vek
+- **[[campaigns/ra-golvek/pantheon/index|Deitric Realms & Pantheons]]** — *Graikorioi*, *Metu Neter*, *Norse*, *Daidōis*, *Shaivi*, *The Church of the Archangels*, *Exoria Exiles*, and cosmic powers
+- **[[campaigns/ra-golvek/rules/index|Campaign Rules & Mechanics]]** — Severed-fate anomalies, Madness Saving Throws, Ezuuli Reef arcane drain, and setting rulings
+- **[[Spells]]** · **[[Items]]** · **[[Monsters]]**
 
 ---
 
-## Add to This Campaign
-
-**For Dungeon Masters:**
-
-- Add sessions via Pages CMS (document what happened)
-- Add NPCs (characters players interact with)
-- Add locations (places the party visits)
-- Add encounters (battles and challenges)
-
-**For Players:**
-
-- Ask your DM to add session summaries
-- Check back between sessions for updates
-- Use this as a reference during gameplay
-
----
-
-## Tables Below
+## Campaign Directory
 
 ![[ra-golvek.base]]
 

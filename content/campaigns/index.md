@@ -11,7 +11,7 @@ Choose a campaign to explore its setting, sessions, characters, locations, and o
 
 ## Ra Gol'vek
 
-A coastal kingdom caught between ancient magic, political intrigue, and supernatural threats.
+An epic, high-magic cosmos torn from a dying multiverse and bound by the Law of Recurrence—where heroes severed from death and fate confront a looming convergence in Year 1199 AMH.
 
 **[[campaigns/ra-golvek|Visit the Ra Gol'vek campaign]]**
 
