@@ -69,6 +69,16 @@ export interface ArchiveEntry {
   traits?: string[];
   subraces?: string[];
   pantheon?: string | null;
+  divine_rank?: string | null;
+  primary_title?: string | null;
+  dominion?: string | null;
+  sin?: string | null;
+  virtue?: string | null;
+  harbinger?: string | null;
+  element?: string | null;
+  binding_condition?: string | null;
+  portfolios?: string[];
+  worship_forbidden?: boolean;
   domains?: string[];
   symbol?: string | null;
   favored_weapon?: string | null;

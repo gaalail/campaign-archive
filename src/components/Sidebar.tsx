@@ -16,7 +16,6 @@ import {
   Home,
   Menu,
   X,
-  Anchor,
   Search,
   Sun
 } from 'lucide-react';
@@ -304,7 +303,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   {
                     id: 'campaigns/ra-golvek/index',
                     title: "Ra Gol'vek",
-                    icon: <Anchor className="w-3.5 h-3.5 text-cyan-400 shrink-0" />,
+                    icon: <Sparkles className="w-3.5 h-3.5 text-cyan-400 shrink-0" />,
                     activeClass: 'text-cyan-200 bg-cyan-950/60 font-serif font-bold border-l-2 border-cyan-600'
                   },
                   {

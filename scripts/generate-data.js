@@ -117,9 +117,7 @@ const FLAVOR_CATEGORIES = new Set([
   'classes',
   'subclasses',
   'races',
-  'backgrounds',
-  'campaigns',
-  'pantheons'
+  'backgrounds'
 ]);
 
 const DEGREE_LEVEL_MAP = {
@@ -167,7 +165,7 @@ function extractFlavorAndFeatures(bodyText, category = '') {
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
       if (!line) {
-        if (category === 'races' && flavorLines.length > 0) {
+        if (flavorLines.length > 0) {
           break;
         }
         continue;
@@ -177,12 +175,11 @@ function extractFlavorAndFeatures(bodyText, category = '') {
       if (line.startsWith('## ') || line.startsWith('### ') || line.startsWith('> [!info') || line.startsWith('![[')) {
         break;
       }
-      // Stop flavor parsing before lists, tables, stat lines, or metadata footers
+      // Stop flavor parsing before lists, tables, stat lines, bold key-values, or metadata footers
       if (
         line.startsWith('|') ||
         /^(?:[-*+]|\d+\.)\s+/.test(line) ||
-        /^\*\*(?:Ability [Ss]core [Ii]ncrease|Age|Alignment|Size|Speed|Languages|Creature Type|Prerequisite|Minimum level|Degree|Class|Damage type|Cost|Trigger)s?:/i.test(line) ||
-        /^\*\*(?:Prerequisite|Minimum level|Degree|Damage type|Class)s?:\*\*/i.test(line)
+        /^\*\*[^*\n]+:\*\*|^\*\*[^*\n]+\*\*:/.test(line)
       ) {
         break;
       }
@@ -433,6 +430,16 @@ for (const filePath of files) {
     speed: frontmatter.speed || null,
     alignment: frontmatter.alignment || null,
     pantheon: frontmatter.pantheon || null,
+    divine_rank: frontmatter.divine_rank || null,
+    primary_title: frontmatter.primary_title || null,
+    dominion: frontmatter.dominion || null,
+    sin: frontmatter.sin || null,
+    virtue: frontmatter.virtue || null,
+    harbinger: frontmatter.harbinger || null,
+    element: frontmatter.element || null,
+    binding_condition: frontmatter.binding_condition || null,
+    portfolios: Array.isArray(frontmatter.portfolios) ? frontmatter.portfolios : (frontmatter.portfolios ? [frontmatter.portfolios] : []),
+    worship_forbidden: Boolean(frontmatter.worship_forbidden),
     domains: Array.isArray(frontmatter.domains) ? frontmatter.domains : (frontmatter.domains ? [frontmatter.domains] : []),
     symbol: frontmatter.symbol || null,
     favored_weapon: frontmatter.favored_weapon || null,

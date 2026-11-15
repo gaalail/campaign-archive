@@ -74,7 +74,7 @@ export const RuleInspectorDrawer: React.FC<RuleInspectorDrawerProps> = ({
             </div>
 
             <div className="flex items-center gap-2 shrink-0">
-              {onSelectOption && (
+              {onSelectOption && !entry.worship_forbidden && (
                 <button
                   onClick={() => {
                     onSelectOption(entry);

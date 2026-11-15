@@ -467,7 +467,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                 </button>
               )}
 
-              {isDeity && (
+              {isDeity && !entry.worship_forbidden && (
                 <button
                   onClick={() =>
                     onNavigate(
@@ -676,27 +676,21 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             </div>
           )}
 
-          {/* Narrative Flavor Quote or Summary (only for narrative categories) */}
+          {/* Summary / Explicit Frontmatter Flavor Quote (never duplicate or flatten Markdown body prose) */}
           {isMonster ? (
             entry.summary ? (
               <div className="mt-3.5 p-4 rounded-xl bg-stone-950/70 border border-stone-800 text-stone-300 text-sm md:text-base italic leading-relaxed shadow-sm font-serif">
                 <InlineContent text={cleanFlavorText(entry.summary)} onNavigate={onNavigate} />
               </div>
             ) : null
-          ) : isRace ? (
-            entry.flavor ? (
-              <div className="mt-3.5 p-4 rounded-xl bg-stone-950/70 border border-amber-500/20 text-stone-200 text-sm md:text-base italic leading-relaxed shadow-sm font-serif">
-                <InlineContent text={cleanFlavorText(entry.flavor)} onNavigate={onNavigate} />
-              </div>
-            ) : null
-          ) : showFlavorBanner && entry.flavor ? (
+          ) : entry.frontmatter?.flavor ? (
             <div className="mt-3.5 p-4 rounded-xl bg-slate-950/70 border border-amber-500/20 text-slate-200 text-sm md:text-base italic leading-relaxed shadow-sm">
-              <InlineContent text={cleanFlavorText(entry.flavor)} onNavigate={onNavigate} />
+              <InlineContent text={cleanFlavorText(String(entry.frontmatter.flavor))} onNavigate={onNavigate} />
             </div>
-          ) : showFlavorBanner && entry.summary ? (
-            <div className="text-slate-300 text-sm md:text-base mt-2.5 italic">
-              <InlineContent text={cleanFlavorText(entry.summary)} onNavigate={onNavigate} />
-            </div>
+          ) : showFlavorBanner && entry.summary && !['classes', 'subclasses', 'races', 'backgrounds'].includes(entry.category) ? (
+            <p className="text-stone-400 text-sm mt-2.5 leading-relaxed">
+              {entry.summary}
+            </p>
           ) : null}
 
           {/* Subclass quick feature progression banner */}
@@ -984,97 +978,118 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
 
         {/* Dedicated Deity & Cosmology Infocard */}
-        {isDeity && (
-          <div className="bg-stone-950/90 border border-amber-900/50 rounded-xl p-5 space-y-4">
-            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-800 pb-3">
-              <div className="flex items-center gap-2.5">
-                <Sun className="w-5 h-5 text-amber-400" />
-                <div className="font-fantasy text-lg font-bold text-amber-200 tracking-wide">
-                  {entry.pantheon || getCampaignDisplayName(entry.campaign_id)}
+        {isDeity && (() => {
+          const infoCells: { label: string; value: string; highlight?: boolean }[] = [];
+          if (entry.divine_rank) infoCells.push({ label: 'Classification', value: entry.divine_rank, highlight: true });
+          if (entry.primary_title) infoCells.push({ label: 'Primary Title', value: entry.primary_title });
+          if (entry.sin) infoCells.push({ label: 'Sin', value: entry.sin, highlight: true });
+          if (entry.virtue) infoCells.push({ label: 'Virtue', value: entry.virtue, highlight: true });
+          if (entry.harbinger) infoCells.push({ label: 'Harbinger', value: entry.harbinger, highlight: true });
+          if (entry.element) infoCells.push({ label: 'Element', value: entry.element, highlight: true });
+          if (entry.dominion) infoCells.push({ label: 'Dominion', value: entry.dominion });
+          if (entry.binding_condition) infoCells.push({ label: 'Binding Condition', value: entry.binding_condition });
+          if (entry.portfolios && entry.portfolios.length > 0) {
+            infoCells.push({ label: 'Portfolios', value: entry.portfolios.join(', '), highlight: true });
+          }
+          if (entry.domains && entry.domains.length > 0) {
+            infoCells.push({ label: 'Divine Domains', value: entry.domains.join(', '), highlight: true });
+          }
+          if (entry.symbol) infoCells.push({ label: 'Holy Symbol', value: entry.symbol });
+          if (entry.favored_weapon) infoCells.push({ label: 'Favored Weapon', value: entry.favored_weapon });
+          if (entry.worshippers) infoCells.push({ label: 'Worshippers', value: entry.worshippers });
+
+          return (
+            <div className="bg-stone-950/90 border border-amber-900/50 rounded-xl p-5 space-y-4">
+              <div className="flex flex-wrap items-center justify-between gap-3 border-b border-stone-800 pb-3">
+                <div className="flex items-center gap-2.5">
+                  <Sun className="w-5 h-5 text-amber-400" />
+                  <div className="font-fantasy text-lg font-bold text-amber-200 tracking-wide">
+                    {entry.pantheon || getCampaignDisplayName(entry.campaign_id)}
+                  </div>
+                </div>
+                <div className="text-xs font-serif text-stone-300 flex flex-wrap items-center gap-2">
+                  <span>{entry.alignment || 'Unaligned'}</span>
+                  {entry.campaign_id === 'ra-golvek' && (
+                    <>
+                      <span aria-hidden="true">·</span>
+                      <button
+                        onClick={() => onNavigate('campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank')}
+                        className="text-cyan-300 hover:text-cyan-200 underline cursor-pointer"
+                      >
+                        Divine Portfolios & Mythic Rules
+                      </button>
+                    </>
+                  )}
+                  {entry.campaign_id && (
+                    <>
+                      <span aria-hidden="true">·</span>
+                      <button
+                        onClick={() => onNavigate(`campaigns/${entry.campaign_id}/pantheon/index`)}
+                        className="text-amber-400 hover:text-amber-200 underline cursor-pointer"
+                      >
+                        All {getCampaignDisplayName(entry.campaign_id)} Powers
+                      </button>
+                    </>
+                  )}
                 </div>
               </div>
-              <div className="text-xs font-serif text-stone-300 flex items-center gap-2">
-                <span>{entry.alignment || 'Unaligned'}</span>
-                {entry.campaign_id && (
-                  <>
-                    <span aria-hidden="true">·</span>
-                    <button
-                      onClick={() => onNavigate(`campaigns/${entry.campaign_id}/pantheon/index`)}
-                      className="text-amber-400 hover:text-amber-200 underline cursor-pointer"
-                    >
-                      All {getCampaignDisplayName(entry.campaign_id)} Deities
-                    </button>
-                  </>
-                )}
-              </div>
-            </div>
 
-            <dl className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
-              <div className="bg-stone-900/70 p-3 rounded-lg border border-stone-800 space-y-1">
-                <dt className="text-amber-500/80 uppercase tracking-widest font-serif font-bold text-[10px]">
-                  Divine Domains
-                </dt>
-                <dd className="text-amber-200 font-medium leading-snug">
-                  {entry.domains && entry.domains.length > 0 ? entry.domains.join(', ') : 'Any'}
-                </dd>
-              </div>
-              <div className="bg-stone-900/70 p-3 rounded-lg border border-stone-800 space-y-1">
-                <dt className="text-amber-500/80 uppercase tracking-widest font-serif font-bold text-[10px]">
-                  Holy Symbol
-                </dt>
-                <dd className="text-stone-200 leading-snug">
-                  {entry.symbol || 'Sacred emblem'}
-                </dd>
-              </div>
-              <div className="bg-stone-900/70 p-3 rounded-lg border border-stone-800 space-y-1">
-                <dt className="text-amber-500/80 uppercase tracking-widest font-serif font-bold text-[10px]">
-                  Favored Weapon
-                </dt>
-                <dd className="text-stone-200 leading-snug">
-                  {entry.favored_weapon || 'Mace'}
-                </dd>
-              </div>
-              <div className="bg-stone-900/70 p-3 rounded-lg border border-stone-800 space-y-1">
-                <dt className="text-amber-500/80 uppercase tracking-widest font-serif font-bold text-[10px]">
-                  Worshippers
-                </dt>
-                <dd className="text-stone-300 leading-snug">
-                  {entry.worshippers || 'Devoted faithful'}
-                </dd>
-              </div>
-            </dl>
+              {entry.worship_forbidden && (
+                <div className="rounded-lg border border-rose-900/60 bg-rose-950/30 px-3.5 py-2.5 flex items-center gap-2 text-xs text-rose-200">
+                  <AlertTriangle className="w-4 h-4 text-rose-400 shrink-0" />
+                  <span>
+                    <strong className="font-semibold text-rose-100">Forbidden Worship:</strong> Cataclysms belong to no Pantheon, and venerating them is outlawed across most mortal lands.
+                  </span>
+                </div>
+              )}
 
-            {entry.recommended_oaths && entry.recommended_oaths.length > 0 && (
-              <div className="pt-2 border-t border-stone-800/80 flex flex-wrap items-center gap-2 text-xs">
-                <span className="text-stone-400 font-serif font-bold uppercase tracking-wider text-[11px]">
-                  Aligned Domains & Oaths:
-                </span>
-                {entry.recommended_oaths.map(oath => {
-                  const target = getEntryById(oath);
-                  if (target) {
+              {infoCells.length > 0 && (
+                <dl className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+                  {infoCells.map(cell => (
+                    <div key={cell.label} className="bg-stone-900/70 p-3 rounded-lg border border-stone-800 space-y-1">
+                      <dt className="text-amber-500/80 uppercase tracking-widest font-serif font-bold text-[10px]">
+                        {cell.label}
+                      </dt>
+                      <dd className={cell.highlight ? 'text-amber-200 font-medium leading-snug' : 'text-stone-200 leading-snug'}>
+                        {cell.value}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
+
+              {entry.recommended_oaths && entry.recommended_oaths.length > 0 && (
+                <div className="pt-2 border-t border-stone-800/80 flex flex-wrap items-center gap-2 text-xs">
+                  <span className="text-stone-400 font-serif font-bold uppercase tracking-wider text-[11px]">
+                    Aligned Domains & Oaths:
+                  </span>
+                  {entry.recommended_oaths.map(oath => {
+                    const target = getEntryById(oath);
+                    if (target) {
+                      return (
+                        <button
+                          key={oath}
+                          onClick={() => onNavigate(target.id)}
+                          className="px-2.5 py-1 rounded-lg bg-stone-900 border border-stone-800 hover:border-amber-500/60 text-amber-200 hover:text-amber-100 transition-colors font-serif text-xs cursor-pointer"
+                        >
+                          {oath}
+                        </button>
+                      );
+                    }
                     return (
-                      <button
+                      <span
                         key={oath}
-                        onClick={() => onNavigate(target.id)}
-                        className="px-2.5 py-1 rounded-lg bg-stone-900 border border-stone-800 hover:border-amber-500/60 text-amber-200 hover:text-amber-100 transition-colors font-serif text-xs cursor-pointer"
+                        className="px-2.5 py-1 rounded-lg bg-stone-900/60 border border-stone-800 text-stone-300 font-serif text-xs"
                       >
                         {oath}
-                      </button>
+                      </span>
                     );
-                  }
-                  return (
-                    <span
-                      key={oath}
-                      className="px-2.5 py-1 rounded-lg bg-stone-900/60 border border-stone-800 text-stone-300 font-serif text-xs"
-                    >
-                      {oath}
-                    </span>
-                  );
-                })}
-              </div>
-            )}
-          </div>
-        )}
+                  })}
+                </div>
+              )}
+            </div>
+          );
+        })()}
 
         {/* Navigation Tabs for Classes and Subclasses with Spells */}
         {(isClass || (isSubclass && classSpells.length > 0)) && (

@@ -18,28 +18,26 @@ Choose at character creation. This archive includes core 5e classes, alternate c
 
 ![[classes.base]]
 
-| Class         | Hit Die | Primary Ability | Role                    |
-| ------------- | ------- | --------------- | ----------------------- |
-| Artificer     | d8      | INT             | Crafting + magic        |
-| Barbarian     | d12     | STR             | Rage + Savage Exploits  |
-| Bard          | d8      | CHA             | Magic + support         |
-| Cleric        | d8      | WIS             | Holy magic + healing    |
-| Druid         | d8      | WIS             | Nature magic            |
-| Fighter       | d10     | STR/DEX         | Weapon master           |
-| Monk          | d10     | DEX/WIS         | Speed + control         |
-| Paladin       | d10     | STR/CHA         | Resolve + Smite Paths   |
-| Paragon       | d10     | WIS/CHA         | Divine champion         |
-| Primal        | d12     | STR/WIS         | Nature's shield & conduit |
-| Ranger        | d10     | DEX/WIS         | Scout + magic           |
-| Rogue         | d8      | DEX             | Stealth + precision     |
-| Sorcerer      | d6      | CHA             | Innate magic            |
-| Tamer         | d8      | Choice          | Companion tamer         |
-| Thanatomancer | d8      | INT             | Necromantic spellcaster |
-| Warden        | d10     | CON/STR         | Nature's shield & tank  |
-| Warlock       | d8      | Choice          | Patron magic            |
-| Wizard        | d6      | INT             | Scholarly magic         |
-
-**Class pages:** [[character-options/classes/Artificer|Artificer]] • [[character-options/classes/Barbarian|Barbarian]] • [[character-options/classes/Bard|Bard]] • [[character-options/classes/Cleric|Cleric]] • [[character-options/classes/Druid|Druid]] • [[character-options/classes/Fighter|Fighter]] • [[character-options/classes/Monk|Monk]] • [[character-options/classes/Paladin|Paladin]] • [[character-options/classes/Paragon|Paragon]] • [[character-options/classes/Primal|Primal]] • [[character-options/classes/Ranger|Ranger]] • [[character-options/classes/Rogue|Rogue]] • [[character-options/classes/Sorcerer|Sorcerer]] • [[character-options/classes/Tamer|Tamer]] • [[character-options/classes/Thanatomancer|Thanatomancer]] • [[character-options/classes/Warden|Warden]] • [[character-options/classes/Warlock|Warlock]] • [[character-options/classes/Wizard|Wizard]]
+| Class | Hit Die | Primary Ability | Role |
+| :--- | :--- | :--- | :--- |
+| [[character-options/classes/Artificer\|Artificer]] | d8 | INT | Crafting + magic |
+| [[character-options/classes/Barbarian\|Barbarian]] | d12 | STR | Rage + Savage Exploits |
+| [[character-options/classes/Bard\|Bard]] | d8 | CHA | Magic + support |
+| [[character-options/classes/Cleric\|Cleric]] | d8 | WIS | Holy magic + healing |
+| [[character-options/classes/Druid\|Druid]] | d8 | WIS | Nature magic |
+| [[character-options/classes/Fighter\|Fighter]] | d10 | STR/DEX | Weapon master |
+| [[character-options/classes/Monk\|Monk]] | d10 | DEX/WIS | Speed + control |
+| [[character-options/classes/Paladin\|Paladin]] | d10 | STR/CHA | Resolve + Smite Paths |
+| [[character-options/classes/Paragon\|Paragon]] | d10 | WIS/CHA | Divine champion |
+| [[character-options/classes/Primal\|Primal]] | d12 | STR/WIS | Nature's shield & conduit |
+| [[character-options/classes/Ranger\|Ranger]] | d10 | DEX/WIS | Scout + magic |
+| [[character-options/classes/Rogue\|Rogue]] | d8 | DEX | Stealth + precision |
+| [[character-options/classes/Sorcerer\|Sorcerer]] | d6 | CHA | Innate magic |
+| [[character-options/classes/Tamer\|Tamer]] | d8 | Choice | Companion tamer |
+| [[character-options/classes/Thanatomancer\|Thanatomancer]] | d8 | INT | Necromantic spellcaster |
+| [[character-options/classes/Warden\|Warden]] | d10 | CON/STR | Nature's shield & tank |
+| [[character-options/classes/Warlock\|Warlock]] | d8 | Choice | Patron magic |
+| [[character-options/classes/Wizard\|Wizard]] | d6 | INT | Scholarly magic |
 
 Spellcasters have their class spell list on the class page and on [[spells|Spells]].
 

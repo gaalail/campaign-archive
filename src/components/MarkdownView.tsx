@@ -35,6 +35,7 @@ interface Block {
   rows?: string[][];
   headers?: string[];
   items?: string[];
+  listItems?: { text: string; depth: number }[];
   rawText?: string;
   lang?: string;
 }
@@ -199,16 +200,22 @@ function parseMarkdownBlocks(text: string): Block[] {
       continue;
     }
 
-    // Unordered List: - Item or * Item
+    // Unordered List: - Item or * Item (preserves nested indentation)
     if (/^\s*[-*+]\s+/.test(line)) {
-      const listItems: string[] = [];
+      const listItems: { text: string; depth: number }[] = [];
       while (i < lines.length && /^\s*[-*+]\s+/.test(lines[i])) {
-        listItems.push(lines[i].replace(/^\s*[-*+]\s+/, '').trim());
+        const rawLine = lines[i];
+        const leadingSpaces = rawLine.match(/^(\s*)/)?.[1]?.length || 0;
+        const depth = Math.min(2, Math.floor(leadingSpaces / 2));
+        listItems.push({
+          text: rawLine.replace(/^\s*[-*+]\s+/, '').trim(),
+          depth
+        });
         i++;
       }
       blocks.push({
         type: 'list',
-        items: listItems
+        listItems
       });
       continue;
     }
@@ -467,12 +474,16 @@ const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigat
     );
   }
 
-  if (block.type === 'list' && block.items) {
+  if (block.type === 'list' && (block.listItems || block.items)) {
+    const normalized = block.listItems || (block.items || []).map(text => ({ text, depth: 0 }));
     return (
       <ul className="list-disc list-outside space-y-1 my-2 pl-5 text-slate-300">
-        {block.items.map((item, idx) => (
-          <li key={idx}>
-            <InlineContent text={item} onNavigate={onNavigate} />
+        {normalized.map((item, idx) => (
+          <li
+            key={idx}
+            className={item.depth === 1 ? 'ml-5 list-[circle]' : item.depth >= 2 ? 'ml-10 list-[square]' : undefined}
+          >
+            <InlineContent text={item.text} onNavigate={onNavigate} />
           </li>
         ))}
       </ul>

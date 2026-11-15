@@ -561,11 +561,34 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                   className="w-full bg-stone-900 border border-stone-800 rounded-xl px-3 py-2 text-xs text-stone-200 focus:border-amber-500 focus:outline-none"
                 >
                   <option value="">No Patron Chosen</option>
-                  {availableDeities.map(d => (
-                    <option key={d.id} value={d.id}>
-                      {d.title} ({getCampaignDisplayName(d.campaign_id)} · {d.alignment || 'Unaligned'})
-                    </option>
-                  ))}
+                  {(() => {
+                    const groups = new Map<string, ArchiveEntry[]>();
+                    for (const d of availableDeities) {
+                      const label = state.campaignId
+                        ? d.pantheon || getCampaignDisplayName(d.campaign_id)
+                        : `${getCampaignDisplayName(d.campaign_id)} — ${d.pantheon || 'General'}`;
+                      if (!groups.has(label)) groups.set(label, []);
+                      groups.get(label)!.push(d);
+                    }
+                    return Array.from(groups.entries())
+                      .sort((a, b) => {
+                        if (a[0].includes('Cataclysms')) return 1;
+                        if (b[0].includes('Cataclysms')) return -1;
+                        return a[0].localeCompare(b[0]);
+                      })
+                      .map(([groupLabel, list]) => (
+                        <optgroup key={groupLabel} label={groupLabel}>
+                          {list.map(d => (
+                            <option key={d.id} value={d.id} disabled={Boolean(d.worship_forbidden)}>
+                              {d.title}
+                              {d.worship_forbidden
+                                ? ' (Worship Forbidden)'
+                                : ` (${d.alignment || 'Unaligned'})`}
+                            </option>
+                          ))}
+                        </optgroup>
+                      ));
+                  })()}
                 </select>
               </div>
             </div>
@@ -573,8 +596,48 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
             {selectedDeity && (
               <div className="text-[11px] text-stone-300 pt-2 border-t border-stone-900 flex flex-wrap items-center gap-2">
                 <span className="text-amber-300 font-semibold">{selectedDeity.title}</span>
-                <span aria-hidden="true">·</span>
-                <span>Domains: {(selectedDeity.domains || []).join(', ')}</span>
+                {selectedDeity.pantheon && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>{selectedDeity.pantheon}</span>
+                  </>
+                )}
+                {selectedDeity.sin && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>Sin: {selectedDeity.sin}</span>
+                  </>
+                )}
+                {selectedDeity.virtue && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>Virtue: {selectedDeity.virtue}</span>
+                  </>
+                )}
+                {selectedDeity.harbinger && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>Harbinger: {selectedDeity.harbinger}</span>
+                  </>
+                )}
+                {selectedDeity.element && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>Element: {selectedDeity.element}</span>
+                  </>
+                )}
+                {selectedDeity.domains && selectedDeity.domains.length > 0 && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>Domains: {selectedDeity.domains.join(', ')}</span>
+                  </>
+                )}
+                {selectedDeity.portfolios && selectedDeity.portfolios.length > 0 && (
+                  <>
+                    <span aria-hidden="true">·</span>
+                    <span>Portfolios: {selectedDeity.portfolios.join(', ')}</span>
+                  </>
+                )}
                 {selectedDeity.recommended_oaths && selectedDeity.recommended_oaths.length > 0 && (
                   <>
                     <span aria-hidden="true">·</span>

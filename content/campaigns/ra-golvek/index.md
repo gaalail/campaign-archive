@@ -53,7 +53,9 @@ content_status: complete
 ## Player Quick Start & Resources
 
 - **[[Character Builder|Build a character]]** for Ra Gol'vek
-- **[[campaigns/ra-golvek/pantheon/index|Deitric Realms & Pantheons]]** — *Graikorioi*, *Metu Neter*, *Norse*, *Daidōis*, *Shaivi*, *The Church of the Archangels*, *Exoria Exiles*, and cosmic powers
+- **[[campaigns/ra-golvek/pantheon/index|Gods, Spirits, and Sovereigns]]** — Individual entries across *Avehrneol*, *Daevayim*, *Graikorioi*, *Exoría*, *Iusiurand*, *Faewylds*, *Heralds of the End*, *Plia Dral*, *Powers Primaeval*, *Daidōis*, *Metu Neter*, *Kingdoms of Night*, *Omneris*, and the forbidden *Cataclysms*
+- **[[campaigns/ra-golvek/The Church of the Archangels|The Church of the Archangels]]** — Prime-Material celestial order guided by the **Daevayim**
+- **[[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]** — Divine Immunity, Miracle, Mythic Actions, Superior Advantage/Disadvantage, and Portfolio mechanics
 - **[[campaigns/ra-golvek/rules/index|Campaign Rules & Mechanics]]** — Severed-fate anomalies, Madness Saving Throws, Ezuuli Reef arcane drain, and setting rulings
 - **[[Spells]]** · **[[Items]]** · **[[Monsters]]**
 

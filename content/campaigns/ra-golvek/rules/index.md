@@ -36,7 +36,7 @@ Ra Gol'vek is a high-magic cosmos built over the scar of a dead multiverse (**th
 ### 3. The Entente of Divine Concordance
 
 - **Divinity Held at Distance:** Following the **Mortalimachy**, surviving pantheons withdrew into bridged **Deitric Realms** (*Graikorioi*, *Metu Neter*, *Norse*, *Daidōis*, *Shaivi*, etc.). Direct divine intervention on the Prime Material requires arbitration by the **Council of Pantheons**.
-- **Freedom of Devotion:** By treaty law, mortals hold the guaranteed right to worship any permitted faith—or none at all—which underpins the rise of the **Church of the Archangels** alongside the Old Pantheons.
+- **Freedom of Devotion & Forbidden Cults:** By treaty law, mortals hold the guaranteed right to worship any permitted faith—or none at all—which underpins the rise of the **Church of the Archangels** (**Daevayim**) alongside the Old Pantheons and **Avehrneol** cults. Worship of the **Cataclysms** remains strictly forbidden across most lands.
 - **Sunset Clause:** Ratified for 2,000 years, the treaty clock stands at **Year 1199 AMH**—with Exoria's seals weakening and ley arteries misfiring.
 
 ### 4. Environmental Hazards (Ezuuli Reef & Hexcrag Wyrdstorms)
@@ -44,11 +44,16 @@ Ra Gol'vek is a high-magic cosmos built over the scar of a dead multiverse (**th
 - **Ezuuli Reef (Ayineawa):** The magic-eating coral off western Ayineawa functions as a living arcane drain. Spells fail to manifest and enchanted items lose potency within the reef's boundary.
 - **Wyrdstorms (Hexcrag Isles):** Arcane hurricanes surging from mutated eastern leylines distort magnetic and planar navigation and tear apart unwarded vessels.
 
+### 5. Divine Power & Portfolios
+
+- **Mythic Rules:** See [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]] for Divine Immunity, Miracle (3 MA uses), Mythic Actions (9/round), Superior Advantage/Disadvantage, and all 23 mechanical Portfolios.
+
 ---
 
 ## Related Content
 
 - [[campaigns/ra-golvek/index|Ra Gol'vek Campaign Hub]]
+- [[campaigns/ra-golvek/rules/Divine Portfolios and Mythic Rank|Divine Portfolios & Mythic Rank]]
 - [[campaigns/ra-golvek/Cosmology & History|Cosmology & History]]
-- [[campaigns/ra-golvek/pantheon/index|Pantheons & Deitric Realms]]
+- [[campaigns/ra-golvek/pantheon/index|Gods, Spirits, and Sovereigns]]
 - [[rules|Global Rules Hub]]

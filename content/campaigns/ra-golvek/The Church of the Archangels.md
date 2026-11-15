@@ -1,6 +1,6 @@
 ---
-entity_type: deity
-canonical_id: pantheon.ra-golvek.church-of-the-archangels
+entity_type: organization
+canonical_id: campaign.ra-golvek.church-of-the-archangels
 title: "The Church of the Archangels"
 campaign_id: ra-golvek
 pantheon: "Prime Material Celestial Faith"
@@ -23,6 +23,7 @@ tags: [ra-golvek, deity, religion, archangels, prime-material]
 aliases:
   - Church of the Archangels
   - Archangels
+  - campaigns/ra-golvek/pantheon/The Church of the Archangels
 ---
 
 # The Church of the Archangels
@@ -50,6 +51,7 @@ Priests and inquisitors of the Church frequently serve as [[character-options/su
 
 ## Related Lore
 
-- [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Pantheons Overview]]
+- [[campaigns/ra-golvek/pantheon/index|Ra Gol'vek Gods, Spirits, and Sovereigns]]
+- [[campaigns/ra-golvek/pantheon/daevayim/Michael|Michael]] · [[campaigns/ra-golvek/pantheon/daevayim/Uriel|Uriel]] · [[campaigns/ra-golvek/pantheon/daevayim/Gabriel|Gabriel]] · [[campaigns/ra-golvek/pantheon/daevayim/Metatron|Metatron]]
 - [[campaigns/ra-golvek/Factions & Faiths|Chapter 4: Factions, Guilds & Faiths]]
 - [[campaigns/ra-golvek/Cosmology & History|Cosmology & History]]
