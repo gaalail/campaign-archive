@@ -22,9 +22,9 @@ Champions forgo all other forms of training to focus on their raw physical might
 
 ### Mighty Warrior
 
-**3rd-level Champion Archetype feature.** The raw physical might you have cultivated enhances your attacks. Your weapon attacks score a [[rules/combat/critical-hits|critical hit]] on a roll of 19 or 20 on the d20.
+**3rd-level Champion Archetype feature.** The raw physical might you have cultivated enhances your attacks. Your weapon attacks score a [[rules/combat|critical hit]] on a roll of 19 or 20 on the d20.
 
-At 15th level, this critical hit range increases again and your weapon attacks score a [[rules/combat/critical-hits|critical hit]] on a d20 roll of 18 through 20 on the d20.
+At 15th level, this critical hit range increases again and your weapon attacks score a [[rules/combat|critical hit]] on a d20 roll of 18 through 20 on the d20.
 
 ### Peak Athlete
 
@@ -40,9 +40,9 @@ Used this way, feat of strength counts as if you spent one Exploit Die, though y
 
 ### Devastating Critical
 
-**10th-level Champion Archetype feature.** Whenever you score a [[rules/combat/critical-hits|critical hit]] with a weapon attack you deal bonus damage equal to your Fighter level.
+**10th-level Champion Archetype feature.** Whenever you score a [[rules/combat|critical hit]] with a weapon attack you deal bonus damage equal to your Fighter level.
 
-At 15th level, when you score a [[rules/combat/critical-hits|critical hit]] with a weapon attack, you can maximize the damage instead of rolling. Once you do you must finish a [[rules/adventuring/resting|long rest]] before you can do so again.
+At 15th level, when you score a [[rules/combat|critical hit]] with a weapon attack, you can maximize the damage instead of rolling. Once you do you must finish a [[rules/resting|long rest]] before you can do so again.
 
 ### Legendary Champion
 
@@ -58,4 +58,4 @@ The Champion as included here is also the most straightforward option for the Al
 
 - [[Fighter|Fighter class]]
 - [[character-options/subclasses/Fighter/index|Warrior Archetypes]]
-- [[rules/combat/critical-hits|Critical Hits Rule]]
+- [[rules/combat|Combat Rules]]

@@ -3,6 +3,7 @@ entity_type: character_option
 parent_class: Tamer
 canonical_id: subclass.tamer.leader
 title: Leader
+summary: "Rallies and commands companions with tactical inspiration, bonus actions, and protective aura magic."
 source: User-provided Tamer class
 source_type: homebrew
 edition: system-neutral

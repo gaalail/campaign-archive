@@ -50,7 +50,7 @@ An Avatar feature lasts 1 minute unless that feature says otherwise. It ends ear
 - [[character-options/subclasses/Paladin/Beauty|Oath of Beauty]]
 - [[character-options/subclasses/Paladin/Blade|Oath of the Blade]]
 - [[character-options/subclasses/Paladin/Corsair|Oath of the Corsair]]
-- [[character-options/subclasses/Paladin/Exorcist|Oath of the Exorcist]]
+- [[character-options/subclasses/Paladin/Oath of the Exorcist|Oath of the Exorcist]]
 - [[character-options/subclasses/Paladin/Forge|Oath of the Forge]]
 - [[character-options/subclasses/Paladin/Inquisition|Oath of Inquisition]]
 - [[character-options/subclasses/Paladin/Liberty|Oath of Liberty]]

@@ -30,7 +30,7 @@ The rules engine of 5th Edition Dungeons & Dragons, covering combat flow, action
 ### The Core Mechanic
 Whenever a character attempts an action with an uncertain outcome, the Dungeon Master calls for a **d20 roll**:
 
-$$\text{Roll} = 1\text{d}20 + \text{Ability Modifier} + \text{Proficiency Bonus (if proficient)}$$
+> **Roll** = 1d20 + Ability Modifier + Proficiency Bonus *(if proficient)*
 
 If the total equals or exceeds the **Target DC** (Difficulty Class) or the opponent's **Armor Class (AC)**, the attempt succeeds.
 

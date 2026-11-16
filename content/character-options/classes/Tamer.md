@@ -86,7 +86,7 @@ If you forgo this equipment and the items granted by your background, you start 
 **Proficiencies Gained:** Light armor, shields, simple weapons, and nets.  
 **Spell Slots:** Add half your Tamer levels, rounded down, to levels from other spellcasting classes when determining spell slots.
 
-## Pocket Familiar
+### Pocket Familiar
 
 _1st-level Tamer feature_
 
@@ -94,7 +94,7 @@ You become bonded to a Small or smaller creature with a challenge rating of 1/2 
 
 Work with your GM to choose a companion appropriate to the campaign. It obeys your commands and is friendly to you and your allies.
 
-### Vessel
+#### Vessel
 
 When not summoned, your companion exists inside a magical vessel. While inside, it has full cover, is unaffected by external areas of effect, and exists in stasis. It needs no food, drink, sleep, or air, and is immune to poison and disease. A companion at 0 hit points is stabilized when it enters its vessel.
 
@@ -102,27 +102,27 @@ If a vessel is broken, the companion ceases to be a Tamer companion and acts acc
 
 A companion's home plane becomes the demiplane within its vessel. If it is permanently banished, it reappears in the vessel.
 
-### Summoning
+#### Summoning
 
 As an action, summon your companion to an unoccupied space you can see within 30 feet, or within 5 feet of you. Dismiss it within 30 feet as an action or bonus action. You must hold the vessel. You can have only one companion summoned at a time.
 
 A dominated companion can make a Charisma saving throw against your Tamer spell save DC to resist being recalled.
 
-### Combat
+#### Combat
 
 Your companion shares your initiative and acts immediately after you. It can move and use reactions, but takes only Dodge unless you use an action or bonus action to command it. If you are incapacitated, it can act freely. It cannot use Multiattack until you reach 5th level.
 
-### Rest
+#### Rest
 
 A companion gains the benefits of a long rest when you finish one. If it has at least 1 hit point, it regains all its hit points. It cannot spend Hit Dice during a short rest.
 
-### Items
+#### Items
 
 A companion can wear or carry equipment its size and form permit. It must be proficient with armor and weapons to use them normally.
 
 Over one hour, you can bond a companion to an object it can wear or carry. It can have up to three bonded items. Unbonded items are dropped when it returns to its vessel. Companions cannot attune to magic items unless a feature permits it.
 
-## Soul Bond
+### Soul Bond
 
 _1st-level Tamer feature_
 
@@ -130,7 +130,7 @@ Companions make death saving throws, die, and can be revived like player charact
 
 You have a healing pool equal to five times your Tamer level. It replenishes after a long rest. When you finish a short rest, restore hit points among your companions up to the amount remaining in the pool.
 
-## Monster Trainer
+### Monster Trainer
 
 _1st-level Tamer feature_
 
@@ -140,7 +140,7 @@ Whenever you gain an Ability Score Improvement from Tamer levels, each companion
 
 Whenever you gain a Tamer level beyond 1st, each companion gains one improvement from the Companion Improvement Training table. A newly gained companion receives improvements as though you had possessed it since 1st level.
 
-### Companion Improvement Training
+#### Companion Improvement Training
 
 | Improvement        | Effect                                                                      |
 | ------------------ | --------------------------------------------------------------------------- |
@@ -153,17 +153,17 @@ Whenever you gain a Tamer level beyond 1st, each companion gains one improvement
 
 Go for the Throat can benefit each companion once before 5th level, twice from 5th level, and three times from 9th level. Heavy armor proficiency requires the lighter armor proficiencies first.
 
-## Tame Creature
+### Tame Creature
 
 _1st-level Tamer feature_
 
 You can tame a Small or smaller creature of CR 1/2 or lower. Your maximum size and CR increase as shown in the Companion Summary table.
 
-### Vessel
+#### Vessel
 
 Preparing a vessel takes 8 hours and materials worth at least 100 gp multiplied by the target creature's CR. A vessel can be dismantled to provide components for another vessel. You can release a companion at any time; the vessel remains intact.
 
-### Taming a Creature
+#### Taming a Creature
 
 As an action, throw an empty vessel at a creature within 30 feet. It makes a Charisma saving throw against your Tamer spell save DC or becomes trapped.
 
@@ -171,11 +171,11 @@ A creature automatically succeeds if it is a humanoid, giant, or swarm; exceeds 
 
 A failed creature becomes your companion when you next finish a long rest.
 
-### Lost Traits
+#### Lost Traits
 
 A companion loses spellcasting, summoning or creature-creating actions, Regeneration, Rejuvenation, Legendary Resistance, legendary and mythic actions, lair actions, and regional effects.
 
-## Companion Summary
+### Companion Summary
 
 | Tamer Level | Bonded Companions | Max Size | Max CR | CR 1/2: Improvements/Hit Dice | CR 1: Improvements/Hit Dice | CR 2: Improvements/Hit Dice | CR 3: Improvements/Hit Dice | CR 4: Improvements/Hit Dice | CR 5: Improvements/Hit Dice | CR 6: Improvements/Hit Dice |
 | ----------: | ----------------: | -------- | -----: | ----------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- | --------------------------- |
@@ -200,7 +200,7 @@ A companion loses spellcasting, summoning or creature-creating actions, Regenera
 |          19 |                 6 | Huge     |      6 | 18/5                          | 15/4                        | 12/4                        | 9/3                         | 6/2                         | 3/1                         | 0/0                         |
 |          20 |                 6 | Huge     |      6 | 19/5                          | 16/4                        | 13/4                        | 10/3                        | 7/2                         | 4/1                         | 1/0                         |
 
-## Spellcasting
+### Spellcasting
 
 _2nd-level Tamer feature_
 
@@ -215,13 +215,13 @@ Choose Intelligence, Wisdom, or Charisma as your Tamer spellcasting ability.
 
 A companion's vessel can serve as your spellcasting focus.
 
-## Bolster
+### Bolster
 
 _2nd-level Tamer feature_
 
 While your companion is within 100 feet and you hold its vessel, expend a spell slot as an action to restore hit points equal to your spellcasting ability modifier, minimum 1, plus 2d4 per level of the slot.
 
-## Psychic Bond
+### Psychic Bond
 
 _2nd-level Tamer feature_
 
@@ -229,31 +229,31 @@ While your companion is within 100 feet, communicate telepathically. As an actio
 
 While your companion is summoned, within 100 feet, and you hold its vessel, its known spells are added to your known spells. A spell with a range of self or touch can target your companion.
 
-## Pocket Family
+### Pocket Family
 
 _3rd-level Tamer feature_
 
 You can bond with two companions at 3rd level, three at 7th, four at 11th, five at 15th, and six at 19th. Your maximum companion size becomes Medium at 5th level, Large at 11th, and Huge at 17th level.
 
-## Training Paradigm
+### Training Paradigm
 
 _3rd-level Tamer feature_
 
 At 3rd level, choose a Training Paradigm from the [[character-options/subclasses/Tamer/index|Tamer Training Paradigms]] catalogue. Your paradigm grants features at 3rd, 7th, 10th, and 14th level, and its 7th-level feature improves at 18th level.
 
-## Ability Score Improvement
+### Ability Score Improvement
 
 _4th-level Tamer feature_
 
 At 4th level, and again at 8th, 12th, 16th, and 19th level, gain the Ability Score Improvement feat or another feat for which you qualify.
 
-## Multiattack
+### Multiattack
 
 _5th-level Tamer feature_
 
 When you command your companion, you can command it to use Multiattack if it has that action.
 
-## Malleable Presence
+### Malleable Presence
 
 _5th-level Tamer feature_
 
@@ -264,31 +264,31 @@ Command your companion to impose either Aggressive or Cautious behavior on a cre
 
 Once used, this feature returns after a short or long rest.
 
-## Alpha Strike
+### Alpha Strike
 
 _6th-level Tamer feature_
 
 As part of summoning a companion, command it to take an action. Uses equal your spellcasting ability modifier, minimum once, regained on a long rest.
 
-## Wilful Blows
+### Wilful Blows
 
 _6th-level Tamer feature_
 
 Your companions' attacks count as magical for overcoming resistance and immunity to nonmagical attacks and damage.
 
-## Switcheroo
+### Switcheroo
 
 _13th-level Tamer feature_
 
 While you and a companion are within 100 feet, use a bonus action or reaction to switch places. Uses equal your spellcasting ability modifier, minimum once, regained on a long rest.
 
-## Magnificent Presence
+### Magnificent Presence
 
 _17th-level Tamer feature_
 
 Command a companion to adopt Provoking Poise or Shrinking Violet for one minute. Once used, this feature returns after a long rest.
 
-## Summon the Horde
+### Summon the Horde
 
 _20th-level Tamer feature_
 

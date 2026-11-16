@@ -3,6 +3,7 @@ entity_type: character_option
 parent_class: Tamer
 canonical_id: subclass.tamer.splicer
 title: Splicer
+summary: "Alters companion physiology through surgical biomancy, spending splicer points on natural weapons, senses, and wings."
 source: User-provided Tamer class
 source_type: homebrew
 edition: system-neutral

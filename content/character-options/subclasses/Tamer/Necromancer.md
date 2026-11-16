@@ -3,6 +3,7 @@ entity_type: character_option
 parent_class: Tamer
 canonical_id: subclass.tamer.necromancer
 title: Necromancer
+summary: "Binds fallen souls into undead companions and channels life-draining necrotic magic through their strikes."
 source: User-provided Tamer class
 source_type: homebrew
 edition: system-neutral

@@ -29,7 +29,7 @@ Vyrun's rugged mountain passes and untamed wildlands demand rigorous survival na
 
 ### Accelerated Exhaustion
 
-- **Harsh Exposure:** Traveling through severe blizzards, freezing alpine elevations, or torrential mountain storms without adequate shelter, fire, or cold-weather gear accelerates [[rules/conditions/exhaustion|exhaustion]].
+- **Harsh Exposure:** Traveling through severe blizzards, freezing alpine elevations, or torrential mountain storms without adequate shelter, fire, or cold-weather gear accelerates [[rules/resting|exhaustion]].
 - **Exposure Tiers:** Characters forced to march or camp without shelter in severe weather must make a DC 10 Constitution saving throw every 4 hours, gaining **one level of exhaustion** on a failure in addition to normal resting requirements.
 
 ---
@@ -38,5 +38,5 @@ Vyrun's rugged mountain passes and untamed wildlands demand rigorous survival na
 
 - [[campaigns/vyrun/index|Vyrun Campaign Hub]]
 - [[rules|Global Rules Hub]]
-- [[rules/conditions/exhaustion|Exhaustion Rule]]
-- [[rules/adventuring/resting|Resting Rules]]
+- [[rules/resting|Exhaustion & Resting Rules]]
+- [[rules/combat|Combat Rules]]

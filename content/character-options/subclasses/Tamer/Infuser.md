@@ -3,6 +3,7 @@ entity_type: character_option
 parent_class: Tamer
 canonical_id: subclass.tamer.infuser
 title: Infuser
+summary: "Melds primordial elemental power with companions, infusing strikes and unleashing acid, cold, fire, or lightning discharges."
 source: User-provided Tamer class
 source_type: homebrew
 edition: system-neutral

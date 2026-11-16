@@ -22,7 +22,7 @@ _3rd-level Loreseeker feature_
 
 You have learned to apply your archival knowledge to spellcasting.
 
-- **Cantrips:** You learn two cantrips of your choice from the [[spells/wizard|wizard spell list]]. You learn an additional wizard cantrip of your choice at 10th level.
+- **Cantrips:** You learn two cantrips of your choice from the [[character-options/classes/Wizard|wizard spell list]]. You learn an additional wizard cantrip of your choice at 10th level.
 - **Spell Slots:** The Loreseeker Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.
 - **Spells Known of 1st-Level and Higher:** You know three 1st-level wizard spells of your choice, two of which you must choose from the abjuration and evocation spells on the wizard spell list. The Spells Known column shows when you learn more wizard spells of 1st level or higher. Each of these spells must be an abjuration or evocation spell of your choice, and must be of a level for which you have spell slots. The spells you learn at 8th, 14th, and 20th level can come from any school of magic.
 - **Replacing Spells:** Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it must be an abjuration or evocation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.

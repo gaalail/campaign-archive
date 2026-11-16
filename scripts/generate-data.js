@@ -299,6 +299,7 @@ const entries = [];
 const linkIndex = new Map();
 const titleToId = new Map();
 const aliasToId = new Map();
+const slugToId = new Map();
 
 for (const filePath of files) {
   const relPath = path.relative(contentDir, filePath).replace(/\\/g, '/');
@@ -536,8 +537,16 @@ for (const filePath of files) {
 
   entries.push(entry);
 
-  titleToId.set(title.toLowerCase(), cleanId);
+  const toSlug = (str) => String(str).toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+  if (!titleToId.has(title.toLowerCase())) {
+    titleToId.set(title.toLowerCase(), cleanId);
+  }
   titleToId.set(cleanId.toLowerCase(), cleanId);
+  const titleSlug = toSlug(title);
+  if (titleSlug && !slugToId.has(titleSlug)) {
+    slugToId.set(titleSlug, cleanId);
+  }
   if (cleanId.endsWith('/index')) {
     const folderName = cleanId.replace(/\/index$/, '').toLowerCase();
     if (!titleToId.has(folderName)) {
@@ -545,14 +554,24 @@ for (const filePath of files) {
     }
   }
   if (fileNameWithoutExt.toLowerCase() !== 'index') {
-    if (!titleToId.has(fileNameWithoutExt.toLowerCase())) {
-      titleToId.set(fileNameWithoutExt.toLowerCase(), cleanId);
+    const stemLower = fileNameWithoutExt.toLowerCase();
+    if (!titleToId.has(stemLower)) {
+      titleToId.set(stemLower, cleanId);
+    }
+    const stemSlug = toSlug(fileNameWithoutExt);
+    if (stemSlug && !slugToId.has(stemSlug)) {
+      slugToId.set(stemSlug, cleanId);
     }
   }
 
   if (entry.aliases) {
     for (const alias of entry.aliases) {
-      aliasToId.set(String(alias).toLowerCase(), cleanId);
+      const aliasLower = String(alias).toLowerCase();
+      aliasToId.set(aliasLower, cleanId);
+      const aliasSlug = toSlug(alias);
+      if (aliasSlug && !slugToId.has(aliasSlug)) {
+        slugToId.set(aliasSlug, cleanId);
+      }
     }
   }
 }
@@ -562,11 +581,22 @@ titleToId.set('index', 'index');
 titleToId.set('home', 'index');
 titleToId.set('campaign archive', 'index');
 
+function resolveWikilinkId(rawLink) {
+  const clean = String(rawLink).replace(/^\.\//, '').replace(/^\/+|\/+$/g, '').replace(/\.md$/, '').toLowerCase().trim();
+  if (!clean) return undefined;
+  return (
+    aliasToId.get(clean) ||
+    titleToId.get(clean) ||
+    slugToId.get(clean) ||
+    titleToId.get(clean.replace(/-/g, ' ')) ||
+    slugToId.get(clean.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''))
+  );
+}
+
 // Build incoming links
 for (const entry of entries) {
   for (const link of entry.wikilinks) {
-    const normalized = link.toLowerCase();
-    const resolvedId = aliasToId.get(normalized) || titleToId.get(normalized);
+    const resolvedId = resolveWikilinkId(link);
     if (resolvedId) {
       if (!linkIndex.has(resolvedId)) {
         linkIndex.set(resolvedId, new Set());
@@ -603,8 +633,7 @@ for (const e of validEntities) {
 
   // Explicit wikilinks
   for (const link of e.wikilinks) {
-    const normalized = link.toLowerCase();
-    const resolvedId = aliasToId.get(normalized) || titleToId.get(normalized);
+    const resolvedId = resolveWikilinkId(link);
     if (resolvedId && resolvedId !== e.id && !resolvedId.endsWith('/index')) {
       const edgeKey = [e.id, resolvedId].sort().join('---');
       if (!edgeSet.has(edgeKey)) {

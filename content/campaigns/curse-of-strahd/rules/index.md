@@ -31,4 +31,4 @@ The gothic horror atmosphere of Ravenloft introduces specific environmental, mys
 
 - [[campaigns/curse-of-strahd/index|Curse of Strahd Campaign Hub]]
 - [[rules|Global Rules Hub]]
-- [[rules/combat/index|Combat Rules]]
+- [[rules/combat|Combat Rules]]

@@ -47,33 +47,6 @@ To make a Primal quickly, first place your highest ability score in **Strength**
 
 ---
 
-## Class Features
-
-As a Primal, you gain the following class features.
-
-### Hit Points
-- **Hit Dice:** 1d12 per Primal level
-- **Hit Points at 1st Level:** 12 + your Constitution modifier
-- **Hit Points at Higher Levels:** 1d12 (or 7) + your Constitution modifier per Primal level after 1st
-
-### Proficiencies
-- **Armor:** Light armor, medium armor, shields
-- **Weapons:** Simple weapons
-- **Tools:** None
-- **Saving Throws:** Strength, Wisdom
-- **Skills:** Choose two from Animal Handling, Athletics, Insight, Intimidation, Medicine, Nature, Perception, and Survival
-- **Languages:** Primordial
-
-### Equipment
-You start with the following equipment, in addition to the equipment granted by your background:
-- (a) scale mail or (b) leather armor
-- a simple melee weapon and a shield
-- (a) two javelins or (b) two handaxes
-- (a) a dungeoneer's pack or (b) an explorer's pack
-- *Alternatively, you may start with 5d4 × 10 gp to purchase your own equipment.*
-
----
-
 ## The Primal Table
 
 | Level | Proficiency Bonus | Endurance Dice | Die Size | Manifestations Known | Features |
@@ -98,6 +71,33 @@ You start with the following equipment, in addition to the equipment granted by 
 | **18th** | +6 | 7 | d12 | 7 | Timeless Body, Invulnerable Endurance |
 | **19th** | +6 | 7 | d12 | 7 | Ability Score Improvement |
 | **20th** | +6 | 7 | d12 | 7 | Primal Decree |
+
+---
+
+## Class Features
+
+As a Primal, you gain the following class features.
+
+### Hit Points
+- **Hit Dice:** 1d12 per Primal level
+- **Hit Points at 1st Level:** 12 + your Constitution modifier
+- **Hit Points at Higher Levels:** 1d12 (or 7) + your Constitution modifier per Primal level after 1st
+
+### Proficiencies
+- **Armor:** Light armor, medium armor, shields
+- **Weapons:** Simple weapons
+- **Tools:** None
+- **Saving Throws:** Strength, Wisdom
+- **Skills:** Choose two from Animal Handling, Athletics, Insight, Intimidation, Medicine, Nature, Perception, and Survival
+- **Languages:** Primordial
+
+### Equipment
+You start with the following equipment, in addition to the equipment granted by your background:
+- (a) scale mail or (b) leather armor
+- a simple melee weapon and a shield
+- (a) two javelins or (b) two handaxes
+- (a) a dungeoneer's pack or (b) an explorer's pack
+- *Alternatively, you may start with 5d4 × 10 gp to purchase your own equipment.*
 
 ---
 

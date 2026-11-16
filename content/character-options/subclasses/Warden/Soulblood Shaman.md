@@ -22,7 +22,7 @@ _3rd-level Soulblood Shaman feature_
 
 You can channel your ancient insights into magic.
 
-- **Cantrips:** You learn two cantrips of your choice from the [[spells/druid|druid spell list]]. You learn an additional druid cantrip of your choice at 10th level.
+- **Cantrips:** You learn two cantrips of your choice from the [[character-options/classes/Druid|druid spell list]]. You learn an additional druid cantrip of your choice at 10th level.
 - **Spell Slots:** The Soulblood Shaman Spellcasting table shows how many spell slots you have to cast your druid spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.
 - **Spells Known of 1st-Level and Higher:** You know three 1st-level druid spells of your choice, two of which you must choose from the evocation and transmutation spells on the druid spell list. The Spells Known column shows when you learn more druid spells of 1st level or higher. Each of these spells must be an evocation or transmutation spell of your choice, and must be of a level for which you have spell slots. The spells you learn at 8th, 14th, and 20th level can come from any school of magic.
 - **Replacing Spells:** Whenever you gain a level in this class, you can replace one of the druid spells you know with another spell of your choice from the druid spell list. The new spell must be of a level for which you have spell slots, and it must be an evocation or transmutation spell, unless you’re replacing the spell you gained at 3rd, 8th, 14th, or 20th level from any school of magic.

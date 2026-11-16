@@ -52,6 +52,33 @@ You can build a warden quickly with these suggestions. First, make Constitution 
 
 ---
 
+## The Warden Table
+
+| Level | Proficiency Bonus | Features |
+| :--- | :---: | :--- |
+| 1st | +2 | Sentinel's Stand, Warden's Grasp |
+| 2nd | +2 | Fighting Style, Warden’s Mark |
+| 3rd | +2 | Champion’s Call, Warden's Resolve |
+| 4th | +2 | Ability Score Improvement, Font of Life |
+| 5th | +3 | Extra Attack |
+| 6th | +3 | Call feature |
+| 7th | +3 | Sentinel’s Step |
+| 8th | +3 | Ability Score Improvement |
+| 9th | +4 | Undying |
+| 10th | +4 | Interrupt |
+| 11th | +4 | Warden's Mark improvement |
+| 12th | +4 | Ability Score Improvement |
+| 13th | +5 | Call feature |
+| 14th | +5 | Warden's Grasp improvement |
+| 15th | +5 | Font of Life improvement |
+| 16th | +5 | Ability Score Improvement |
+| 17th | +6 | Warden's Resolve improvement |
+| 18th | +6 | Sentinel’s Soul |
+| 19th | +6 | Ability Score Improvement |
+| 20th | +6 | Call feature |
+
+---
+
 ## Class Features
 
 As a warden, you gain the following class features.
@@ -80,34 +107,7 @@ You start with the following equipment, in addition to the equipment granted to 
 
 ---
 
-## The Warden Table
-
-| Level | Proficiency Bonus | Features |
-| :--- | :---: | :--- |
-| 1st | +2 | Sentinel's Stand, Warden's Grasp |
-| 2nd | +2 | Fighting Style, Warden’s Mark |
-| 3rd | +2 | Champion’s Call, Warden's Resolve |
-| 4th | +2 | Ability Score Improvement, Font of Life |
-| 5th | +3 | Extra Attack |
-| 6th | +3 | Call feature |
-| 7th | +3 | Sentinel’s Step |
-| 8th | +3 | Ability Score Improvement |
-| 9th | +4 | Undying |
-| 10th | +4 | Interrupt |
-| 11th | +4 | Warden's Mark improvement |
-| 12th | +4 | Ability Score Improvement |
-| 13th | +5 | Call feature |
-| 14th | +5 | Warden's Grasp improvement |
-| 15th | +5 | Font of Life improvement |
-| 16th | +5 | Ability Score Improvement |
-| 17th | +6 | Warden's Resolve improvement |
-| 18th | +6 | Sentinel’s Soul |
-| 19th | +6 | Ability Score Improvement |
-| 20th | +6 | Call feature |
-
----
-
-## Sentinel’s Stand
+### Sentinel’s Stand
 
 Wardens are towers that cannot easily be felled. At 1st level, choose one of the following features:
 
@@ -115,13 +115,13 @@ Wardens are towers that cannot easily be felled. At 1st level, choose one of the
 - **Primal Toughness:** Your hit point maximum increases by 1 + your Constitution modifier, and it increases by 1 every time you gain a level in this class.
 - **Stalwart Spirit:** You gain proficiency in one saving throw of your choice.
 
-## Warden’s Grasp
+### Warden’s Grasp
 
 At 1st level, as a bonus action, you can use the force of your daunting presence to ensnare nearby enemies into combat. Until the beginning of your next turn, you can’t move, and each Large or smaller creature you choose within 5 feet can’t willingly move away from you unless it first takes the Disengage action.
 
 At 14th level, the range of this ability increases to 10 feet.
 
-## Fighting Style
+### Fighting Style
 
 At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options (or see the shared [[character-options/fighting-styles/index|Fighting Styles catalogue]]). You can’t take a Fighting Style option more than once, even if you later get to choose again.
 
@@ -130,13 +130,13 @@ At 2nd level, you adopt a style of fighting as your specialty. Choose one of the
 - **Protection:** When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a weapon or shield.
 - **Titan Fighting:** You gain a +2 bonus to melee weapon attack rolls you make against Large or larger creatures.
 
-## Warden’s Mark
+### Warden’s Mark
 
 At 2nd level, you can use your bonus action to mark a creature you can see within 30 feet. While a marked creature is within 5 feet of you, it has disadvantage on any attack roll that doesn’t target you. The mark lasts for 1 minute, or until you mark another creature, become incapacitated, or die.
 
 At 11th level, whenever you take the Attack action on your turn, you can make an additional attack against a creature you have marked.
 
-## Champion’s Call
+### Champion’s Call
 
 By the time you reach 3rd level, you feel the inexorable pull of an important duty or task that you assume as your own. No outside force compels your choice or enforces your conduct; if you fail in your charge, you alone are responsible.
 
@@ -144,27 +144,27 @@ Your choice grants you features at 3rd level and again at 6th, 13th, and 20th le
 
 Browse all 15 Warden Calls in the [[character-options/subclasses/Warden/index|Warden Calls catalogue]] or in the **Subclasses** section below.
 
-## Warden’s Resolve
+### Warden’s Resolve
 
 Starting at 3rd level, whenever your hit points are less than half your maximum, you have resistance to bludgeoning, piercing, and slashing damage.
 
 Starting at 17th level, when your hit points are less than half your maximum, you have resistance to all damage except psychic.
 
-## Ability Score Improvement
+### Ability Score Improvement
 
 When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.
 
-## Font of Life
+### Font of Life
 
 By 4th level, you can use your action to end either one disease or one condition afflicting you. The condition can be blinded, charmed, deafened, frightened, paralyzed, or poisoned. You can use this action even if the condition you end would otherwise prevent it. Once you use this ability, you must finish a short or long rest before you can use it again.
 
 At 15th level, once per day when you use this ability, your hit points are also restored to half your maximum, if they were lower.
 
-## Extra Attack
+### Extra Attack
 
 Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.
 
-## Sentinel’s Step
+### Sentinel’s Step
 
 Wardens are faultless trackers who can navigate hazardous terrain with ease. At 7th level, select one of the following features:
 
@@ -172,15 +172,15 @@ Wardens are faultless trackers who can navigate hazardous terrain with ease. At 
 - **Thundering Charge:** On your first round of combat, your speed increases by 30 feet and you have advantage on the first melee weapon attack you make.
 - **Wildblood:** Your reflexes have been honed by the perils of nature. You can’t be surprised while you are conscious. Additionally, you have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores.
 
-## Undying
+### Undying
 
 At 9th level, when you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can’t use it again until you finish a long rest.
 
-## Interrupt
+### Interrupt
 
 Starting at 10th level, as a reaction when a creature within 5 feet of you makes a melee attack against you, you can punctuate its strikes. After that attack, the creature can make one fewer attack than normal on this turn.
 
-## Sentinel’s Soul
+### Sentinel’s Soul
 
 Wardens are unshakable guardians that cannot be bowed. At 18th level, choose one of the following features:
 

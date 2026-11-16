@@ -17,7 +17,7 @@ Combat in 5e proceeds in rounds, with each round representing approximately 6 se
 
 1. **Determine Surprise:** The GM determines if anyone is caught off-guard. Surprised creatures can't move or take actions on their first turn, and can't take reactions until that turn ends.
 2. **Establish Positions:** Creatures are placed on the battlefield grid or theatre of the mind.
-3. **Roll Initiative:** Every combatant rolls $1\text{d}20 + \text{Dexterity modifier}$. Combatants act in order from highest initiative to lowest.
+3. **Roll Initiative:** Every combatant rolls **1d20 + Dexterity modifier**. Combatants act in order from highest initiative to lowest.
 4. **Take Turns:** Each participant takes their turn in initiative order.
 5. **Begin the Next Round:** When everyone has acted, the round ends and a new round begins in the same initiative order.
 
