@@ -530,36 +530,115 @@ export const InlineContent: React.FC<{ text: string; onNavigate: (id: string) =>
   return <>{renderRichText(text, onNavigate)}</>;
 };
 
-function renderRichText(text: string, onNavigate: (id: string) => void): React.ReactNode[] {
-  // Regex pattern matching wikilinks [[...]] OR standard markdown links [label](url)
-  const linkRegex = /\[\[(.*?)\]\]|\[([^\]]+)\]\(([^)]+)\)/g;
-  const parts: React.ReactNode[] = [];
-  let lastIndex = 0;
-  let match: RegExpExecArray | null;
+function expandSentinelsAndDice(
+  plainText: string,
+  codeTokens: string[],
+  linkNodes: React.ReactNode[],
+  keyPrefix: string | number
+): React.ReactNode {
+  const parts = plainText.split(/(\uE000(?:CODE|LINK)_\d+\uE001)/g);
+  return (
+    <React.Fragment key={keyPrefix}>
+      {parts.map((part, idx) => {
+        if (!part) return null;
+        if (part.startsWith('\uE000CODE_') && part.endsWith('\uE001')) {
+          const tokenIdx = Number(part.slice(6, -1));
+          return (
+            <code
+              key={`${keyPrefix}-code-${idx}`}
+              className="px-1.5 py-0.5 rounded bg-slate-800 text-amber-300 font-mono text-xs border border-slate-700"
+            >
+              {codeTokens[tokenIdx]}
+            </code>
+          );
+        }
+        if (part.startsWith('\uE000LINK_') && part.endsWith('\uE001')) {
+          const linkIdx = Number(part.slice(6, -1));
+          return <React.Fragment key={`${keyPrefix}-link-${idx}`}>{linkNodes[linkIdx]}</React.Fragment>;
+        }
+        return renderDiceAndText(part, `${keyPrefix}-txt-${idx}`);
+      })}
+    </React.Fragment>
+  );
+}
 
-  while ((match = linkRegex.exec(text)) !== null) {
-    const start = match.index;
-    if (start > lastIndex) {
-      parts.push(renderFormatting(text.substring(lastIndex, start)));
+function renderFormattingWithSentinels(
+  text: string,
+  codeTokens: string[],
+  linkNodes: React.ReactNode[],
+  keyPrefix: string | number
+): React.ReactNode[] {
+  const tokens = text.split(
+    /(\*\*\*.*?\*\*\*|___.*?___|\*\*.*?\*\*|(?<=^|[\s([{"'<-])__[^_\n]+__(?=$|[\s.,:;!?)\]}"'>-])|~~.*?~~|\*[^*\n]+?\*|(?<=^|[\s([{"'<-])_[^_\n]+_(?=$|[\s.,:;!?)\]}"'>-]))/g
+  );
+
+  return tokens.map((token, i) => {
+    if (!token) return null;
+    if ((token.startsWith('***') && token.endsWith('***')) || (token.startsWith('___') && token.endsWith('___'))) {
+      return (
+        <strong key={`${keyPrefix}-bi-${i}`} className="font-semibold text-slate-100">
+          <em className="italic">{expandSentinelsAndDice(token.slice(3, -3), codeTokens, linkNodes, `${keyPrefix}-bi-${i}`)}</em>
+        </strong>
+      );
     }
+    if ((token.startsWith('**') && token.endsWith('**')) || (token.startsWith('__') && token.endsWith('__'))) {
+      return (
+        <strong key={`${keyPrefix}-b-${i}`} className="font-semibold text-slate-100">
+          {expandSentinelsAndDice(token.slice(2, -2), codeTokens, linkNodes, `${keyPrefix}-b-${i}`)}
+        </strong>
+      );
+    }
+    if (token.startsWith('~~') && token.endsWith('~~')) {
+      return (
+        <del key={`${keyPrefix}-del-${i}`} className="line-through text-slate-500">
+          {expandSentinelsAndDice(token.slice(2, -2), codeTokens, linkNodes, `${keyPrefix}-del-${i}`)}
+        </del>
+      );
+    }
+    if ((token.startsWith('*') && token.endsWith('*')) || (token.startsWith('_') && token.endsWith('_'))) {
+      return (
+        <em key={`${keyPrefix}-i-${i}`} className="italic text-slate-200">
+          {expandSentinelsAndDice(token.slice(1, -1), codeTokens, linkNodes, `${keyPrefix}-i-${i}`)}
+        </em>
+      );
+    }
+    return expandSentinelsAndDice(token, codeTokens, linkNodes, `${keyPrefix}-p-${i}`);
+  });
+}
 
-    if (match[1] !== undefined) {
-      // It's a wikilink [[target|label]] or [[target]]
-      const rawLink = match[1];
-      const linkParts = rawLink.split('|');
+function renderRichText(text: string, onNavigate: (id: string) => void): React.ReactNode[] {
+  const codeTokens: string[] = [];
+  const linkNodes: React.ReactNode[] = [];
+
+  // Protect inline code spans first so literal syntax like `[[example]]` or `**raw**` is preserved verbatim
+  let protectedText = text.replace(/`[^`\n]+`/g, (codeMatch) => {
+    const idx = codeTokens.length;
+    codeTokens.push(codeMatch.slice(1, -1));
+    return `\uE000CODE_${idx}\uE001`;
+  });
+
+  // Protect wikilinks [[...]] and markdown links [label](url) so wrapping emphasis (**[[Link]]**, *[[Link]]*)
+  // applies cleanly around the rendered anchor rather than leaving stray asterisks/underscores.
+  const linkRegex = /\[\[(.*?)\]\]|\[([^\]]+)\]\(([^)]+)\)/g;
+  protectedText = protectedText.replace(linkRegex, (_full, wikiInner, mdLabel, mdUrl, offset) => {
+    const key = `l-${offset}-${linkNodes.length}`;
+    let node: React.ReactNode;
+
+    if (wikiInner !== undefined) {
+      const linkParts = wikiInner.split('|');
       const target = linkParts[0].replace(/\\+$/, '').trim();
       const label = linkParts[1]?.trim() || target.split('/').pop()?.replace(/\.md$/, '') || target;
 
       if (target.endsWith('.base') || target.includes('.base#')) {
-        parts.push(<React.Fragment key={match.index} />);
+        node = <React.Fragment key={key} />;
       } else {
         const resolved = resolveWikilink(target);
         if (resolved) {
           const badge = getSourceBadgeInfo(resolved.source_type, resolved.source);
           const hashAnchor = target.includes('#') ? '#' + target.split('#')[1].trim() : '';
           const fullTargetId = resolved.id + hashAnchor;
-          parts.push(
-            <WikilinkHoverCard key={match.index} entry={resolved} onNavigate={onNavigate}>
+          node = (
+            <WikilinkHoverCard key={key} entry={resolved} onNavigate={onNavigate}>
               <a
                 href={`#${fullTargetId}`}
                 onClick={(e) => {
@@ -569,7 +648,7 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
                 title={`${resolved.title} (${badge.label})`}
                 className="font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors cursor-pointer inline"
               >
-                {label}
+                {renderFormattingWithSentinels(label, codeTokens, linkNodes, `wl-${key}`)}
               </a>
             </WikilinkHoverCard>
           );
@@ -586,9 +665,9 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
             lowerTarget === 'index' ||
             lowerTarget === 'home'
           ) {
-            parts.push(
+            node = (
               <a
-                key={match.index}
+                key={key}
                 href={`#${lowerTarget}`}
                 onClick={(e) => {
                   e.preventDefault();
@@ -596,44 +675,42 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
                 }}
                 className="font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors cursor-pointer inline"
               >
-                {label}
+                {renderFormattingWithSentinels(label, codeTokens, linkNodes, `wl-${key}`)}
               </a>
             );
           } else {
-            parts.push(
-              <span key={match.index} className="text-amber-300/80 font-medium inline">
-                {label}
+            node = (
+              <span key={key} className="text-amber-300/80 font-medium inline">
+                {renderFormattingWithSentinels(label, codeTokens, linkNodes, `wl-${key}`)}
               </span>
             );
           }
         }
       }
-    } else if (match[2] !== undefined && match[3] !== undefined) {
-      // It's a standard markdown link [label](url)
-      const label = match[2];
-      const url = match[3];
+    } else {
+      const label = mdLabel;
+      const url = mdUrl;
 
       if (url.startsWith('http://') || url.startsWith('https://')) {
-        parts.push(
+        node = (
           <a
-            key={match.index}
+            key={key}
             href={url}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1 font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors mx-0.5"
           >
-            <span>{label}</span>
+            <span>{renderFormattingWithSentinels(label, codeTokens, linkNodes, `ml-${key}`)}</span>
             <ExternalLink className="w-3 h-3 opacity-60 inline shrink-0" />
           </a>
         );
       } else {
-        // Internal relative url
         const cleanTarget = url.replace(/^\.\//, '').replace(/\.md$/, '');
         const resolved = resolveWikilink(cleanTarget);
         if (resolved) {
-          parts.push(
+          node = (
             <a
-              key={match.index}
+              key={key}
               href={`#${resolved.id}`}
               onClick={(e) => {
                 e.preventDefault();
@@ -641,27 +718,25 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
               }}
               className="font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors cursor-pointer inline"
             >
-              {label}
+              {renderFormattingWithSentinels(label, codeTokens, linkNodes, `ml-${key}`)}
             </a>
           );
         } else {
-          parts.push(
-            <span key={match.index} className="text-amber-300 font-medium inline">
-              {label}
+          node = (
+            <span key={key} className="text-amber-300 font-medium inline">
+              {renderFormattingWithSentinels(label, codeTokens, linkNodes, `ml-${key}`)}
             </span>
           );
         }
       }
     }
 
-    lastIndex = linkRegex.lastIndex;
-  }
+    const idx = linkNodes.length;
+    linkNodes.push(node);
+    return `\uE000LINK_${idx}\uE001`;
+  });
 
-  if (lastIndex < text.length) {
-    parts.push(renderFormatting(text.substring(lastIndex)));
-  }
-
-  return parts;
+  return renderFormattingWithSentinels(protectedText, codeTokens, linkNodes, 'root');
 }
 
 const InlineDiceChip: React.FC<{ formula: string }> = ({ formula }) => {
@@ -709,43 +784,6 @@ function renderDiceAndText(plainText: string, keyPrefix: string | number): React
   }
 
   return <React.Fragment key={keyPrefix}>{parts}</React.Fragment>;
-}
-
-function renderFormatting(text: string): React.ReactNode {
-  // Handle inline code `code`, bold-italic ***...*** / ___...___, bold **...** / __...__,
-  // strikethrough ~~...~~, and italic *...* or _..._
-  // Delimiter boundaries ensure identifiers with internal underscores (e.g. var_name) are preserved
-  const tokens = text.split(
-    /(`[^`\n]+`|\*\*\*.*?\*\*\*|___.*?___|\*\*.*?\*\*|(?<=^|[\s([{"'<-])__[^_\n]+__(?=$|[\s.,:;!?)\]}"'>-])|~~.*?~~|\*[^*\n]+?\*|(?<=^|[\s([{"'<-])_[^_\n]+_(?=$|[\s.,:;!?)\]}"'>-]))/g
-  );
-
-  return tokens.map((token, i) => {
-    if (!token) return null;
-    if (token.startsWith('`') && token.endsWith('`')) {
-      return (
-        <code key={i} className="px-1.5 py-0.5 rounded bg-slate-800 text-amber-300 font-mono text-xs border border-slate-700">
-          {token.slice(1, -1)}
-        </code>
-      );
-    }
-    if ((token.startsWith('***') && token.endsWith('***')) || (token.startsWith('___') && token.endsWith('___'))) {
-      return (
-        <strong key={i} className="font-semibold text-slate-100">
-          <em className="italic">{renderDiceAndText(token.slice(3, -3), `bi-${i}`)}</em>
-        </strong>
-      );
-    }
-    if ((token.startsWith('**') && token.endsWith('**')) || (token.startsWith('__') && token.endsWith('__'))) {
-      return <strong key={i} className="font-semibold text-slate-100">{renderDiceAndText(token.slice(2, -2), `b-${i}`)}</strong>;
-    }
-    if (token.startsWith('~~') && token.endsWith('~~')) {
-      return <del key={i} className="line-through text-slate-500">{token.slice(2, -2)}</del>;
-    }
-    if ((token.startsWith('*') && token.endsWith('*')) || (token.startsWith('_') && token.endsWith('_'))) {
-      return <em key={i} className="italic text-slate-200">{renderDiceAndText(token.slice(1, -1), `i-${i}`)}</em>;
-    }
-    return renderDiceAndText(token, i);
-  });
 }
 
 
