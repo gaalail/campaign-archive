@@ -182,7 +182,7 @@ export default function App() {
     <DiceProvider>
       <div className="min-h-screen bg-slate-950 text-slate-100">
         {/* Mobile top bar */}
-        <div className="fixed top-3 left-3 right-3 z-50 flex items-center justify-between pointer-events-none md:hidden">
+        <div className="fixed top-3 left-3 right-3 z-50 flex items-center justify-between pointer-events-none md:hidden print:hidden">
           <div className="flex items-center gap-2">
             <button
               className="rounded-lg border border-slate-700 bg-slate-900 px-3 py-2 pointer-events-auto text-xs font-serif font-semibold text-stone-200 shadow-lg cursor-pointer"

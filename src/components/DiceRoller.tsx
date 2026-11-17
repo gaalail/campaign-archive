@@ -165,7 +165,7 @@ export const DiceProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
       {/* Floating Roll Result HUD / Toast */}
       {showToast && lastRoll && (
-        <div className="fixed bottom-20 right-4 z-50 max-w-sm w-80 animate-in slide-in-from-bottom-4 duration-200">
+        <div className="fixed bottom-20 right-4 z-50 max-w-sm w-80 animate-in slide-in-from-bottom-4 duration-200 print:hidden">
           <div className={`p-4 rounded-xl border shadow-[0_12px_40px_rgba(0,0,0,0.8)] backdrop-blur-md transition-all ${
             lastRoll.isCritSuccess
               ? 'bg-gradient-to-br from-amber-950 via-stone-900 to-amber-900/80 border-amber-500 ring-2 ring-amber-500/50 shadow-amber-950/80'
@@ -272,7 +272,7 @@ export const DiceProvider: React.FC<{ children: React.ReactNode }> = ({ children
       )}
 
       {/* Floating d20 Launcher Toggle */}
-      <div className="fixed bottom-4 right-4 z-40">
+      <div className="fixed bottom-4 right-4 z-40 print:hidden">
         <button
           onClick={() => setTrayOpen(!trayOpen)}
           className="group relative flex items-center gap-2 rounded-full border border-amber-600/60 bg-gradient-to-r from-amber-700 via-stone-900 to-amber-900 px-4 py-2.5 text-xs font-serif font-bold text-amber-200 shadow-xl shadow-amber-950/60 hover:border-amber-400 hover:text-amber-100 transition-all hover:scale-105 active:scale-95"

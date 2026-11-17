@@ -24,6 +24,7 @@ export interface CustomAttack {
 
 export interface CharacterState {
   step: number; // 1 to 6
+  id?: string;
   name: string;
   genderOrTitle: string;
   alignment: string;
@@ -32,10 +33,15 @@ export interface CharacterState {
   classId: string | null;
   subclassId: string | null;
   backgroundId: string | null;
-  featId: string | null;
+  featId: string | null; // Kept synced with selectedFeatIds[0] for backwards compatibility
+  selectedFeatIds: string[];
+  selectedFightingStyleId: string | null;
+  selectedClassOptionIds: string[];
+  selectedSpellIds: string[];
+  spellcastingAbilityOverride: AbilityKey | null;
   campaignId: string | null;
   deityId: string | null;
-  
+
   // Ability scores
   abilityMode: AbilityMode;
   baseAbilities: AbilityScores;
@@ -43,13 +49,26 @@ export interface CharacterState {
     primary: AbilityKey;
     secondary: AbilityKey;
   };
-  
-  // Proficiencies
+
+  // Combat, Vitals & Proficiencies
   selectedSkills: string[];
+  expertSkills: string[];
   customArmor: string;
   shieldEquipped: boolean;
+  hpModifierBonus: number;
+  currentHp: number | null;
+  tempHp: number;
+  usedSpellSlots: Record<number, number>;
+  equipment: string[];
   notes: string;
   customAttacks: CustomAttack[];
+}
+
+export interface SavedCharacterRecord {
+  id: string;
+  updatedAt: string;
+  summary: string;
+  state: CharacterState;
 }
 
 export interface SkillDefinition {
@@ -112,6 +131,11 @@ export const INITIAL_CHARACTER_STATE: CharacterState = {
   subclassId: null,
   backgroundId: null,
   featId: null,
+  selectedFeatIds: [],
+  selectedFightingStyleId: null,
+  selectedClassOptionIds: [],
+  selectedSpellIds: [],
+  spellcastingAbilityOverride: null,
   campaignId: null,
   deityId: null,
   abilityMode: 'standard',
@@ -128,8 +152,14 @@ export const INITIAL_CHARACTER_STATE: CharacterState = {
     secondary: 'con'
   },
   selectedSkills: ['Athletics', 'Perception'],
+  expertSkills: [],
   customArmor: 'Chain Mail',
   shieldEquipped: true,
+  hpModifierBonus: 0,
+  currentHp: null,
+  tempHp: 0,
+  usedSpellSlots: {},
+  equipment: ["Explorer's Pack", 'Signet Ring'],
   notes: 'Sworn oath upon the tomb of ancestors. Wandering the fog-veiled reaches of the valley.',
   customAttacks: []
 };

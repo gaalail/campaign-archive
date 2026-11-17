@@ -29,7 +29,7 @@ export const CharacterHud: React.FC<CharacterHudProps> = ({
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
-    <div className="sticky top-2 z-30 transition-all duration-200">
+    <div className="sticky top-2 z-30 transition-all duration-200 print:hidden">
       <div className="rounded-2xl border border-amber-900/60 bg-stone-900/95 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.8)] overflow-hidden">
         
         {/* Main Header Bar */}
@@ -45,7 +45,7 @@ export const CharacterHud: React.FC<CharacterHudProps> = ({
                   {state.name || 'Nameless Hero'}
                 </span>
                 <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-amber-950/80 text-amber-300 border border-amber-900/60 shrink-0">
-                  Lvl 1
+                  Lvl {derived.level}
                 </span>
               </div>
               
@@ -182,8 +182,20 @@ export const CharacterHud: React.FC<CharacterHudProps> = ({
 
             {/* Quick jump to step 6 */}
             {state.step < 6 && (
-              <div className="flex items-center justify-between pt-1 text-[11px] text-stone-400">
-                <span>Changes to race, class, and ability scores update stats in real-time.</span>
+              <div className="flex flex-wrap items-center justify-between gap-2 pt-1 text-[11px] text-stone-400">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span>Changes update stats live.</span>
+                  {(state.selectedClassOptionIds.length > 0 || state.selectedSpellIds.length > 0 || state.selectedFeatIds.length > 0) && (
+                    <span className="text-amber-300/90 font-mono flex items-center gap-1.5">
+                      <BookOpen className="w-3 h-3" />
+                      {[
+                        state.selectedClassOptionIds.length > 0 ? `${state.selectedClassOptionIds.length} Opt` : '',
+                        state.selectedSpellIds.length > 0 ? `${state.selectedSpellIds.length} Spells` : '',
+                        state.selectedFeatIds.length > 0 ? `${state.selectedFeatIds.length} Feats` : ''
+                      ].filter(Boolean).join(' · ')}
+                    </span>
+                  )}
+                </div>
                 <button
                   onClick={() => onJumpToStep(6)}
                   className="text-amber-400 hover:text-amber-200 underline font-medium cursor-pointer"

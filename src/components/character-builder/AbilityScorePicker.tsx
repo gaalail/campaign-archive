@@ -6,22 +6,26 @@ import { Sparkles, Plus, Minus, RotateCcw, BookOpen, Search, Check, Flame } from
 
 interface AbilityScorePickerProps {
   state: CharacterState;
+  asiCount: number;
   onSetMode: (mode: AbilityMode) => void;
   onSetAbility: (ability: AbilityKey, score: number) => void;
   onSetAllAbilities: (scores: Record<AbilityKey, number>) => void;
   onSetRacialBonus: (type: 'primary' | 'secondary', ability: AbilityKey) => void;
-  onSelectFeat: (featId: string | null) => void;
+  onToggleFeat: (featId: string) => void;
+  onClearFeats: () => void;
   onInspectEntry: (entry: ArchiveEntry) => void;
   feats: ArchiveEntry[];
 }
 
 export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
   state,
+  asiCount,
   onSetMode,
   onSetAbility,
   onSetAllAbilities,
   onSetRacialBonus,
-  onSelectFeat,
+  onToggleFeat,
+  onClearFeats,
   onInspectEntry,
   feats
 }) => {
@@ -41,7 +45,6 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
 
   // Standard array assignment helpers
   const handleStandardArrayChange = (targetAbility: AbilityKey, newScore: number) => {
-    // If another ability already had this score, swap them
     const newAbilities = { ...state.baseAbilities };
     const oldScore = newAbilities[targetAbility];
 
@@ -62,7 +65,7 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
     const targetCost = POINT_BUY_COSTS[target] || 0;
     const diff = targetCost - currentCost;
 
-    if (diff > pointsRemaining) return; // Not enough points
+    if (diff > pointsRemaining) return;
 
     onSetAbility(ability, target);
   };
@@ -93,12 +96,17 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
   const filteredFeats = useMemo(() => {
     if (!featSearch.trim()) return feats;
     const q = featSearch.toLowerCase();
-    return feats.filter(f => f.title.toLowerCase().includes(q) || f.summary?.toLowerCase().includes(q));
+    return feats.filter(
+      f =>
+        f.title.toLowerCase().includes(q) ||
+        f.summary?.toLowerCase().includes(q) ||
+        f.prerequisite?.toLowerCase().includes(q)
+    );
   }, [feats, featSearch]);
 
-  const selectedFeatEntry = useMemo(() => {
-    return feats.find(f => f.id === state.featId) || null;
-  }, [feats, state.featId]);
+  const selectedFeatEntries = useMemo(() => {
+    return feats.filter(f => state.selectedFeatIds.includes(f.id));
+  }, [feats, state.selectedFeatIds]);
 
   return (
     <div className="space-y-6">
@@ -111,7 +119,8 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
             <span>Step 5: Ability Scores & Feats</span>
           </h2>
           <p className="text-xs text-stone-400 mt-0.5">
-            Determine your six core attributes and pick an optional starting or background feat.
+            Set your core attributes and select feats. At Level {state.level}, your class grants{' '}
+            <strong className="text-amber-300">{asiCount}</strong> ASI / Feat milestone{asiCount === 1 ? '' : 's'} (use Custom/Manual to add +2 ASIs above 15).
           </p>
         </div>
 
@@ -122,7 +131,7 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
               onSetMode('standard');
               resetToStandard();
             }}
-            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
               state.abilityMode === 'standard'
                 ? 'bg-amber-500 text-stone-950 shadow'
                 : 'text-stone-400 hover:text-stone-200'
@@ -135,7 +144,7 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
               onSetMode('pointbuy');
               resetToPointBuy();
             }}
-            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
               state.abilityMode === 'pointbuy'
                 ? 'bg-amber-500 text-stone-950 shadow'
                 : 'text-stone-400 hover:text-stone-200'
@@ -145,7 +154,7 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
           </button>
           <button
             onClick={() => onSetMode('custom')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
               state.abilityMode === 'custom'
                 ? 'bg-amber-500 text-stone-950 shadow'
                 : 'text-stone-400 hover:text-stone-200'
@@ -169,7 +178,7 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
             </span>
             <button
               onClick={resetToPointBuy}
-              className="text-stone-400 hover:text-stone-200 text-xs flex items-center gap-1"
+              className="text-stone-400 hover:text-stone-200 text-xs flex items-center gap-1 cursor-pointer"
             >
               <RotateCcw className="w-3 h-3" /> Reset
             </button>
@@ -256,11 +265,11 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
                   <input
                     type="number"
                     min={3}
-                    max={20}
+                    max={30}
                     value={base}
                     onChange={(e) => {
                       const val = parseInt(e.target.value, 10);
-                      if (!isNaN(val)) onSetAbility(ability, Math.max(1, Math.min(20, val)));
+                      if (!isNaN(val)) onSetAbility(ability, Math.max(1, Math.min(30, val)));
                     }}
                     className="w-16 bg-stone-900 border border-stone-700 text-stone-100 text-xs font-mono font-bold rounded-lg px-2 py-1 text-center focus:border-amber-500 focus:outline-none"
                   />
@@ -330,35 +339,56 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
         </div>
       </div>
 
-      {/* Feat Selection Section */}
+      {/* Multi-Feat Selection Section */}
       <div className="p-4 rounded-xl bg-stone-950 border border-stone-800 space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-stone-900 pb-3">
           <div>
             <h3 className="font-serif text-sm font-bold text-stone-100 flex items-center gap-2">
               <BookOpen className="w-4 h-4 text-rose-400" />
-              <span>Optional Starting / Bonus Feat ({feats.length} available)</span>
+              <span>Feats & Origin Talents ({selectedFeatEntries.length} selected · {feats.length} available)</span>
             </h3>
             <p className="text-xs text-stone-400 mt-0.5">
-              Select a feat granted by your background, variant ancestry, or house rules.
+              Select starting feats, ASI feats, or house-rule bonus feats freely.
             </p>
           </div>
 
-          {selectedFeatEntry && (
+          {selectedFeatEntries.length > 0 && (
             <button
-              onClick={() => onSelectFeat(null)}
-              className="text-xs text-rose-400 hover:text-rose-200 underline font-mono shrink-0"
+              onClick={onClearFeats}
+              className="text-xs text-rose-400 hover:text-rose-200 underline font-mono shrink-0 cursor-pointer"
             >
-              Clear Feat
+              Clear All ({selectedFeatEntries.length})
             </button>
           )}
         </div>
+
+        {/* Selected Feat Chips */}
+        {selectedFeatEntries.length > 0 && (
+          <div className="flex flex-wrap gap-1.5">
+            {selectedFeatEntries.map(f => (
+              <span
+                key={f.id}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-950/60 border border-amber-700/70 text-amber-200 text-xs font-serif"
+              >
+                <span>{f.title}</span>
+                <button
+                  onClick={() => onToggleFeat(f.id)}
+                  className="text-amber-400 hover:text-white text-xs font-mono cursor-pointer"
+                  title={`Remove ${f.title}`}
+                >
+                  ×
+                </button>
+              </span>
+            ))}
+          </div>
+        )}
 
         {/* Feat Search Input */}
         <div className="relative">
           <Search className="w-4 h-4 text-stone-500 absolute left-3 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder="Search feats by name or trait..."
+            placeholder="Search feats by name, trait, or prerequisite..."
             value={featSearch}
             onChange={(e) => setFeatSearch(e.target.value)}
             className="w-full pl-9 pr-3 py-2 rounded-xl bg-stone-900 border border-stone-800 text-xs text-stone-200 placeholder:text-stone-600 focus:outline-none focus:border-amber-500"
@@ -366,9 +396,9 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
         </div>
 
         {/* Feats Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 max-h-60 overflow-y-auto pr-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 max-h-72 overflow-y-auto pr-1">
           {filteredFeats.map((feat) => {
-            const isSelected = state.featId === feat.id;
+            const isSelected = state.selectedFeatIds.includes(feat.id);
             return (
               <div
                 key={feat.id}
@@ -389,6 +419,11 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
                       </span>
                     )}
                   </div>
+                  {feat.prerequisite && (
+                    <div className="text-[10px] text-amber-300/80 font-mono mt-0.5 truncate">
+                      Prereq: {feat.prerequisite}
+                    </div>
+                  )}
                   {feat.summary && (
                     <p className="text-[11px] text-stone-400 line-clamp-2 mt-1">
                       {feat.summary}
@@ -398,17 +433,17 @@ export const AbilityScorePicker: React.FC<AbilityScorePickerProps> = ({
 
                 <div className="flex items-center justify-between pt-1 border-t border-stone-800/60 text-[10px]">
                   <button
-                    onClick={() => onSelectFeat(isSelected ? null : feat.id)}
-                    className={`font-semibold hover:underline ${
+                    onClick={() => onToggleFeat(feat.id)}
+                    className={`font-semibold hover:underline cursor-pointer ${
                       isSelected ? 'text-amber-400' : 'text-stone-300 hover:text-white'
                     }`}
                   >
-                    {isSelected ? 'Deselect' : 'Choose Feat'}
+                    {isSelected ? 'Remove Feat' : 'Add Feat'}
                   </button>
 
                   <button
                     onClick={() => onInspectEntry(feat)}
-                    className="text-stone-400 hover:text-amber-300 flex items-center gap-1 transition-colors"
+                    className="text-stone-400 hover:text-amber-300 flex items-center gap-1 transition-colors cursor-pointer"
                     title="Inspect RAW feat rules"
                   >
                     <BookOpen className="w-3 h-3" />

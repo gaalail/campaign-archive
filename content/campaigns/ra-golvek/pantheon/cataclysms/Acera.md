@@ -1,31 +1,59 @@
 ---
 entity_type: deity
 canonical_id: deity.ra-golvek.cataclysms.acera
-title: "Acera"
+title: "Acera Blightstar"
+aliases:
+  - "Acera"
 campaign_id: ra-golvek
 pantheon: "Cataclysms"
-divine_rank: "Cataclysm"
-binding_condition: "Acera must remain imprisoned and ever wounded, but never killed"
+divine_rank: "Anathemic Overbeing (6) · Sky-Father Tier"
+primary_title: "Black-Blood Anathemic Overbeing"
+dominion: "Algol / The Ebon Cataracts (Abyss) — currently imprisoned by Faustus"
+binding_condition: "Acera must remain imprisoned by Faustus and ever wounded, never slain (death reforms her free in Algol)"
 worship_forbidden: true
 alignment: "Chaotic Evil"
-portfolios: []
-summary: "Bound Cataclysm whose perpetual imprisonment requires remaining ever wounded yet never slain."
+symbol: "A Bleeding Eye, Blood Forming a Scythe Circling the Eye"
+favored_weapon: "Scythe"
+worshippers: "Cult of Acera"
+domains:
+  - "Death"
+  - "Knowledge"
+  - "Tempest"
+  - "Trickery"
+  - "War"
+portfolios:
+  - "Blood"
+  - "Destruction"
+  - "Evil"
+  - "Knowledge"
+  - "Madness"
+summary: "Black-Blood Anathemic Overbeing (6) tied to A'aeshtar; currently imprisoned and kept ever wounded by Faustus lest death reform her unmonitored in Algol."
 source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
 source_type: campaign-original
 content_status: complete
-tags: [ra-golvek, deity, cataclysms]
+tags: [ra-golvek, deity, cataclysms, black-blood]
 ---
 
-# Acera
+# Acera Blightstar
 
-**Acera** is one of the **Cataclysms**—entities that belong to no Pantheon and whose worship is **strictly forbidden** and considered catastrophic across nearly all lands of **Ra Gol'vek**.
+**Acera Blightstar** is an **Anathemic Overbeing (6)** of the **Black-Blood**—standing at roughly Sky-father power alongside other Black-Blooded entities tied directly to **[[campaigns/ra-golvek/pantheon/A'aeshtar, the First Mother|A'aeshtar]]** rather than forming a traditional pantheon. Among mortals of **Ra Gol'vek**, she is classified among the **Cataclysms**, and worship through the **Cult of Acera** is strictly forbidden across most lands.
 
-## Binding & Status
+## Imprisonment & Reformation
 
-- **Classification:** Cataclysm (No Pantheon)
-- **Worship Status:** Forbidden across most lands
-- **Binding Condition:** Acera must remain imprisoned and ever wounded, but never killed
-- **Portfolio:** *Awaiting specification*
+- **Home Realm:** Algol / The Ebon Cataracts (Abyss)
+- **Current Prison:** Acera is *not* held in the Ebon Cataracts—**[[campaigns/ra-golvek/pantheon/avehrneol/Faustus|Faustus]]** currently holds her contained elsewhere.
+- **Binding Condition:** Acera must remain imprisoned and ever wounded, but **never killed**. If she is slain, she reforms in **Algol**, leaving her free and unmonitored.
+
+## Divine Profile
+
+- **Pantheon / Classification:** Cataclysms · Black-Blood (Non-Pantheon)
+- **Divine Rank:** Anathemic Overbeing (6) *(Sky-Father tier)*
+- **Alignment:** Chaotic Evil
+- **Symbol:** A Bleeding Eye, Blood Forming a Scythe Circling the Eye
+- **Favored Weapon:** Scythe
+- **Cleric Domains:** Death, Knowledge, Tempest, Trickery, War *(reflecting Blood, Destruction, Evil, Knowledge & Madness)*
+- **Portfolios:** Blood, Destruction, Evil, Knowledge, Madness
+- **Worshippers:** Cult of Acera *(Forbidden)*
 
 ---
 
