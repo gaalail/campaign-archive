@@ -29,6 +29,7 @@ import {
   BookmarkPlus
 } from 'lucide-react';
 import { D20GothicIcon, CrossedSwords, DragonShield } from '../GothicIcons';
+import { PrintableCharacterSheet } from './PrintableCharacterSheet';
 
 interface InteractiveCharacterSheetProps {
   state: CharacterState;
@@ -432,7 +433,22 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
     derived.spellSlots.casterType !== 'none';
 
   return (
-    <div className="space-y-6 printable-sheet">
+    <>
+      <PrintableCharacterSheet
+        state={state}
+        selectedRace={selectedRace}
+        selectedClass={selectedClass}
+        selectedSubclass={selectedSubclass}
+        selectedBackground={selectedBackground}
+        selectedFeats={selectedFeats}
+        selectedFightingStyle={selectedFightingStyle}
+        selectedClassOptions={selectedClassOptions}
+        selectedSpells={selectedSpells}
+        selectedDeity={selectedDeity}
+        derived={derived}
+        allAttacks={allAttacks}
+      />
+      <div className="space-y-6 print:hidden">
       
       {/* Top Banner & Header Information */}
       <div className="rounded-2xl border border-stone-800 bg-stone-900/90 p-5 md:p-6 shadow-2xl space-y-4 print-card">
@@ -1453,6 +1469,7 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
         </div>
       )}
 
-    </div>
+      </div>
+    </>
   );
 };

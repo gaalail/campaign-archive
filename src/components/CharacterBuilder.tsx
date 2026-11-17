@@ -478,7 +478,7 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
   }, [inspectedEntry, state]);
 
   return (
-    <div className="max-w-5xl mx-auto space-y-6 pb-16">
+    <div className="max-w-5xl mx-auto space-y-6 pb-16 print:max-w-none print:pb-0 print:space-y-0">
       
       {/* Step Progress Tracker & Roster Bar (Hidden on Print) */}
       <div className="bg-stone-900 border border-stone-800 rounded-2xl p-4 md:p-6 shadow-xl space-y-4 print:hidden">

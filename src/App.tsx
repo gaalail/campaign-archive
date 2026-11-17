@@ -180,7 +180,7 @@ export default function App() {
 
   return (
     <DiceProvider>
-      <div className="min-h-screen bg-slate-950 text-slate-100">
+      <div className="min-h-screen bg-slate-950 text-slate-100 print:bg-white print:text-black">
         {/* Mobile top bar */}
         <div className="fixed top-3 left-3 right-3 z-50 flex items-center justify-between pointer-events-none md:hidden print:hidden">
           <div className="flex items-center gap-2">
@@ -220,7 +220,7 @@ export default function App() {
           onOpenSearch={() => setCommandPaletteOpen(true)}
         />
         
-        <main className="md:ml-72 min-h-screen p-4 md:p-8 pt-16 md:pt-8">
+        <main className="md:ml-72 min-h-screen p-4 md:p-8 pt-16 md:pt-8 print:ml-0 print:p-0 print:min-h-0">
           {view === 'reader' && entry && (
             <EntryDetail
               key={entry.id}

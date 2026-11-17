@@ -16,47 +16,28 @@
 
 @media print {
   @page {
-    margin: 0.5in;
+    margin: 0.35in;
   }
 
-  body {
+  html,
+  body,
+  #root {
     background: #ffffff !important;
-    color: #111827 !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  aside,
-  .print\:hidden {
+  aside {
     display: none !important;
   }
 
   main {
     margin-left: 0 !important;
     padding: 0 !important;
-  }
-
-  .printable-sheet,
-  .printable-sheet * {
-    color: #111827 !important;
-    border-color: #d1d5db !important;
-    box-shadow: none !important;
-  }
-
-  .printable-sheet {
     background: #ffffff !important;
-  }
-
-  .printable-sheet .print-card {
-    background: #f9fafb !important;
-    border: 1px solid #d1d5db !important;
-    break-inside: avoid;
-  }
-
-  .printable-sheet input,
-  .printable-sheet select,
-  .printable-sheet textarea {
-    background: transparent !important;
-    border-color: #d1d5db !important;
   }
 }
