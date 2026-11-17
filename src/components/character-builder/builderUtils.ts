@@ -1,16 +1,6 @@
 import { CharacterState, AbilityKey, AbilityScores } from './types';
 import { ArchiveEntry } from '../../types/archive';
-
-export function getFinalAbilityScores(state: CharacterState): AbilityScores {
-  const scores: AbilityScores = { ...state.baseAbilities };
-  if (state.racialBonuses.primary) {
-    scores[state.racialBonuses.primary] += 2;
-  }
-  if (state.racialBonuses.secondary && state.racialBonuses.secondary !== state.racialBonuses.primary) {
-    scores[state.racialBonuses.secondary] += 1;
-  }
-  return scores;
-}
+import { computeRuleAutomation, FightingStyleEffects, RuleAutomationSummary } from './rulesEngine';
 
 export function getAbilityModifier(score: number): number {
   return Math.floor((score - 10) / 2);
@@ -27,89 +17,10 @@ export function parseHitDieMax(hitDieStr?: string | null): number {
 }
 
 export interface SpellSlotProgression {
-  casterType: 'full' | 'half' | 'pact' | 'none';
+  casterType: 'full' | 'half' | 'pact' | 'third' | 'none';
   slots: Record<number, number>; // slot level (1-9) -> max slots
   pactSlots?: number;
   pactSlotLevel?: number;
-}
-
-const FULL_CASTER_SLOTS: Record<number, number[]> = {
-  1:  [2, 0, 0, 0, 0, 0, 0, 0, 0],
-  2:  [3, 0, 0, 0, 0, 0, 0, 0, 0],
-  3:  [4, 2, 0, 0, 0, 0, 0, 0, 0],
-  4:  [4, 3, 0, 0, 0, 0, 0, 0, 0],
-  5:  [4, 3, 2, 0, 0, 0, 0, 0, 0],
-  6:  [4, 3, 3, 0, 0, 0, 0, 0, 0],
-  7:  [4, 3, 3, 1, 0, 0, 0, 0, 0],
-  8:  [4, 3, 3, 2, 0, 0, 0, 0, 0],
-  9:  [4, 3, 3, 3, 1, 0, 0, 0, 0],
-  10: [4, 3, 3, 3, 2, 0, 0, 0, 0],
-  11: [4, 3, 3, 3, 2, 1, 0, 0, 0],
-  12: [4, 3, 3, 3, 2, 1, 0, 0, 0],
-  13: [4, 3, 3, 3, 2, 1, 1, 0, 0],
-  14: [4, 3, 3, 3, 2, 1, 1, 0, 0],
-  15: [4, 3, 3, 3, 2, 1, 1, 1, 0],
-  16: [4, 3, 3, 3, 2, 1, 1, 1, 0],
-  17: [4, 3, 3, 3, 2, 1, 1, 1, 1],
-  18: [4, 3, 3, 3, 3, 1, 1, 1, 1],
-  19: [4, 3, 3, 3, 3, 2, 1, 1, 1],
-  20: [4, 3, 3, 3, 3, 2, 2, 1, 1],
-};
-
-export function getSpellSlotsForClass(classTitle: string, rawLevel: number): SpellSlotProgression {
-  const level = Math.max(1, Math.min(20, rawLevel || 1));
-  const lower = classTitle.toLowerCase();
-
-  if (lower.includes('warlock')) {
-    const pactSlots = level === 1 ? 1 : level < 11 ? 2 : level < 17 ? 3 : 4;
-    const pactSlotLevel = Math.min(5, Math.ceil(level / 2));
-    return {
-      casterType: 'pact',
-      slots: { [pactSlotLevel]: pactSlots },
-      pactSlots,
-      pactSlotLevel
-    };
-  }
-
-  if (
-    lower.includes('bard') ||
-    lower.includes('cleric') ||
-    lower.includes('druid') ||
-    lower.includes('sorcerer') ||
-    lower.includes('thanatomancer') ||
-    lower.includes('wizard')
-  ) {
-    const arr = FULL_CASTER_SLOTS[level];
-    const slots: Record<number, number> = {};
-    arr.forEach((count, i) => {
-      if (count > 0) slots[i + 1] = count;
-    });
-    return { casterType: 'full', slots };
-  }
-
-  const isArtificer = lower.includes('artificer');
-  const isHalfCaster =
-    isArtificer ||
-    lower.includes('paladin') ||
-    lower.includes('paragon') ||
-    lower.includes('primal') ||
-    lower.includes('ranger') ||
-    lower.includes('tamer');
-
-  if (isHalfCaster) {
-    if (!isArtificer && level < 2) {
-      return { casterType: 'half', slots: {} };
-    }
-    const effectiveLevel = Math.max(1, Math.ceil(level / 2));
-    const arr = FULL_CASTER_SLOTS[effectiveLevel];
-    const slots: Record<number, number> = {};
-    arr.forEach((count, i) => {
-      if (count > 0 && i < 5) slots[i + 1] = count;
-    });
-    return { casterType: 'half', slots };
-  }
-
-  return { casterType: 'none', slots: {} };
 }
 
 export function getAsiCountForLevel(classTitle: string, level: number): number {
@@ -119,7 +30,7 @@ export function getAsiCountForLevel(classTitle: string, level: number): number {
     : lower.includes('rogue')
     ? [4, 8, 10, 12, 16, 19]
     : [4, 8, 12, 16, 19];
-  return thresholds.filter(t => level >= t).length;
+  return thresholds.filter((t) => level >= t).length;
 }
 
 export function getCantripDiceCount(level: number): number {
@@ -134,10 +45,13 @@ export interface DerivedStats {
   finalAbilities: AbilityScores;
   modifiers: Record<AbilityKey, number>;
   maxHp: number;
+  hpBreakdown: string;
   hitDie: string;
   hitDiceTotal: string;
   armorClass: number;
+  acBreakdown: string;
   initiative: number;
+  initiativeNote?: string;
   speed: string;
   proficiencyBonus: number;
   passivePerception: number;
@@ -147,16 +61,39 @@ export interface DerivedStats {
   spellSaveDc?: number;
   spellAttackBonus?: number;
   spellSlots: SpellSlotProgression;
+  cantripsKnown: number;
+  spellsKnown: number | null;
+  preparedSpellLimit: number | null;
+  classOptionsKnown: number;
+  classOptionsLabel: string | null;
   asiCount: number;
+  rules: RuleAutomationSummary;
 }
 
 export function calculateDerivedStats(
   state: CharacterState,
   selectedRace: ArchiveEntry | null,
-  selectedClass: ArchiveEntry | null
+  selectedClass: ArchiveEntry | null,
+  selectedSubclass: ArchiveEntry | null = null,
+  selectedBackground: ArchiveEntry | null = null,
+  selectedFeats: ArchiveEntry[] = [],
+  selectedFightingStyle: ArchiveEntry | null = null,
+  allSpells: ArchiveEntry[] = []
 ): DerivedStats {
   const level = Math.max(1, Math.min(20, state.level || 1));
-  const finalAbilities = getFinalAbilityScores(state);
+
+  const rules = computeRuleAutomation(
+    state,
+    selectedRace,
+    selectedClass,
+    selectedSubclass,
+    selectedBackground,
+    selectedFeats,
+    selectedFightingStyle,
+    allSpells
+  );
+
+  const finalAbilities = rules.abilityBonuses.total;
   const modifiers: Record<AbilityKey, number> = {
     str: getAbilityModifier(finalAbilities.str),
     dex: getAbilityModifier(finalAbilities.dex),
@@ -166,140 +103,182 @@ export function calculateDerivedStats(
     cha: getAbilityModifier(finalAbilities.cha),
   };
 
-  const proficiencyBonus = Math.ceil(level / 4) + 1;
+  const proficiencyBonus = rules.classProg.proficiencyBonus;
 
-  // Hit Points: 1st level max hit die + fixed average per additional level + CON*level
+  // Hit Points: 1st level max hit die + fixed average per additional level + CON*level + rule bonuses (Hill Dwarf, etc.)
   const hitDieNumber = parseHitDieMax(selectedClass?.hit_die);
   const avgPerLevel = Math.floor(hitDieNumber / 2) + 1;
   const rawMaxHp =
     hitDieNumber +
     (level - 1) * avgPerLevel +
     level * modifiers.con +
+    rules.hpBonusFromRules +
     (state.hpModifierBonus || 0);
   const maxHp = Math.max(level, rawMaxHp);
 
-  // Speed
-  let speed = '30 ft.';
-  if (selectedRace?.speed) {
-    speed = selectedRace.speed;
-  } else if (selectedRace?.title) {
-    const lower = selectedRace.title.toLowerCase();
-    if (lower.includes('dwarf') || lower.includes('gnome') || lower.includes('halfling')) {
-      speed = '25 ft.';
-    } else if (lower.includes('wood elf')) {
-      speed = '35 ft.';
-    }
-  }
+  const hpParts = [`${hitDieNumber}+${(level - 1) * avgPerLevel} hit die`, `${level * modifiers.con >= 0 ? '+' : ''}${level * modifiers.con} CON`];
+  if (rules.hpBonusFromRules > 0) hpParts.push(`+${rules.hpBonusFromRules} ancestry`);
+  if (state.hpModifierBonus) hpParts.push(`${formatModifier(state.hpModifierBonus)} misc`);
 
   // Armor Class Calculation
-  let baseAc = 10 + modifiers.dex;
-  const armor = state.customArmor.toLowerCase();
+  const armor = (state.customArmor || '').toLowerCase();
   const classTitle = (selectedClass?.title || '').toLowerCase();
+  const isUnarmored = armor === 'unarmored' || !armor;
+  const hasHardyPhysique = selectedFeats.some((f) => f.title.toLowerCase() === 'hardy physique');
+  const hasMartialArtist = selectedFeats.some((f) => f.title.toLowerCase() === 'martial artist');
 
-  if (armor === 'unarmored' || !armor) {
+  // Determine armor-adjusted DEX equivalent (supports Hardy Physique CON & Primal Mystic Bulwark WIS)
+  const isLightArmor = armor.includes('leather') || armor.includes('padded') || armor.includes('studded');
+  const isMediumArmor =
+    armor.includes('hide') ||
+    armor.includes('chain shirt') ||
+    armor.includes('scale') ||
+    armor.includes('breastplate') ||
+    armor.includes('half plate');
+
+  let armorStatMod = modifiers.dex;
+  let armorStatLabel = 'DEX';
+  if (!isUnarmored && hasHardyPhysique && modifiers.con > armorStatMod) {
+    armorStatMod = modifiers.con;
+    armorStatLabel = 'CON (Hardy Physique)';
+  }
+  if ((isLightArmor || isMediumArmor) && rules.classProg.mysticBulwark && modifiers.wis > armorStatMod) {
+    armorStatMod = modifiers.wis;
+    armorStatLabel = 'WIS (Mystic Bulwark)';
+  }
+
+  let baseAc = 10 + modifiers.dex;
+  let acSourceLabel = `10 + DEX`;
+
+  if (isUnarmored) {
+    const candidates: { ac: number; label: string }[] = [
+      { ac: 10 + modifiers.dex, label: 'Unarmored (10 + DEX)' },
+    ];
     if (classTitle.includes('barbarian')) {
-      baseAc = 10 + modifiers.dex + modifiers.con;
-    } else if (classTitle.includes('monk')) {
-      baseAc = 10 + modifiers.dex + modifiers.wis;
-    } else {
-      baseAc = 10 + modifiers.dex;
+      candidates.push({ ac: 10 + modifiers.dex + modifiers.con, label: 'Unarmored Defense (10 + DEX + CON)' });
     }
-  } else if (armor.includes('leather') || armor.includes('padded')) {
-    baseAc = 11 + modifiers.dex;
+    if (classTitle.includes('monk') && !state.shieldEquipped) {
+      candidates.push({ ac: 10 + modifiers.dex + modifiers.wis, label: 'Unarmored Defense (10 + DEX + WIS)' });
+    }
+    if (hasMartialArtist && !state.shieldEquipped) {
+      candidates.push({ ac: 10 + modifiers.str + modifiers.dex, label: 'Martial Artist (10 + STR + DEX)' });
+    }
+    if (rules.raceProfile.naturalArmorBase) {
+      candidates.push({
+        ac: rules.raceProfile.naturalArmorBase + modifiers.dex,
+        label: `Natural Armor (${rules.raceProfile.naturalArmorBase} + DEX)`,
+      });
+    }
+    const best = candidates.reduce((a, b) => (b.ac > a.ac ? b : a));
+    baseAc = best.ac;
+    acSourceLabel = best.label;
   } else if (armor.includes('studded')) {
-    baseAc = 12 + modifiers.dex;
+    baseAc = 12 + armorStatMod;
+    acSourceLabel = `Studded Leather (12 + ${armorStatLabel})`;
+  } else if (armor.includes('leather') || armor.includes('padded')) {
+    baseAc = 11 + armorStatMod;
+    acSourceLabel = `Light Armor (11 + ${armorStatLabel})`;
   } else if (armor.includes('hide')) {
-    baseAc = 12 + Math.min(modifiers.dex, 2);
+    baseAc = 12 + Math.min(armorStatMod, 2);
+    acSourceLabel = `Hide (12 + max2 ${armorStatLabel})`;
   } else if (armor.includes('chain shirt')) {
-    baseAc = 13 + Math.min(modifiers.dex, 2);
+    baseAc = 13 + Math.min(armorStatMod, 2);
+    acSourceLabel = `Chain Shirt (13 + max2 ${armorStatLabel})`;
   } else if (armor.includes('scale') || armor.includes('breastplate')) {
-    baseAc = 14 + Math.min(modifiers.dex, 2);
+    baseAc = 14 + Math.min(armorStatMod, 2);
+    acSourceLabel = `${state.customArmor} (14 + max2 ${armorStatLabel})`;
   } else if (armor.includes('half plate')) {
-    baseAc = 15 + Math.min(modifiers.dex, 2);
+    baseAc = 15 + Math.min(armorStatMod, 2);
+    acSourceLabel = `Half Plate (15 + max2 ${armorStatLabel})`;
   } else if (armor.includes('ring mail')) {
     baseAc = 14;
+    acSourceLabel = 'Ring Mail (14)';
   } else if (armor.includes('chain mail')) {
     baseAc = 16;
+    acSourceLabel = 'Chain Mail (16)';
   } else if (armor.includes('splint')) {
     baseAc = 17;
+    acSourceLabel = 'Splint (17)';
   } else if (armor.includes('plate')) {
     baseAc = 18;
+    acSourceLabel = 'Plate (18)';
+  }
+
+  // Natural armor minimum check when worn armor would be lower (Golynn)
+  if (!isUnarmored && rules.raceProfile.naturalArmorBase) {
+    const nat = rules.raceProfile.naturalArmorBase + modifiers.dex;
+    if (nat > baseAc) {
+      baseAc = nat;
+      acSourceLabel = `Natural Armor (${rules.raceProfile.naturalArmorBase} + DEX)`;
+    }
   }
 
   if (state.shieldEquipped) {
     baseAc += 2;
+    acSourceLabel += ' + Shield (+2)';
   }
 
-  // Saving throws
-  const classSaves = (selectedClass?.saving_throws || []).map(s => s.toLowerCase());
+  if (rules.styleEffects.acBonus > 0) {
+    baseAc += rules.styleEffects.acBonus;
+    acSourceLabel += ` + ${rules.styleEffects.acBonus} (${rules.styleEffects.acCondition || 'Style'})`;
+  }
+
+  // Saving throws (Class proficiencies + Magical Birthmarks +1)
+  const classSaves = (selectedClass?.saving_throws || []).map((s) => s.toLowerCase());
+  const makeSave = (ab: AbilityKey, fullName: string) => {
+    const prof = classSaves.includes(ab) || classSaves.includes(fullName);
+    return {
+      proficient: prof,
+      bonus: modifiers[ab] + (prof ? proficiencyBonus : 0) + rules.allSavesBonus,
+    };
+  };
   const savingThrows: Record<AbilityKey, { proficient: boolean; bonus: number }> = {
-    str: {
-      proficient: classSaves.includes('str') || classSaves.includes('strength'),
-      bonus: modifiers.str + ((classSaves.includes('str') || classSaves.includes('strength')) ? proficiencyBonus : 0)
-    },
-    dex: {
-      proficient: classSaves.includes('dex') || classSaves.includes('dexterity'),
-      bonus: modifiers.dex + ((classSaves.includes('dex') || classSaves.includes('dexterity')) ? proficiencyBonus : 0)
-    },
-    con: {
-      proficient: classSaves.includes('con') || classSaves.includes('constitution'),
-      bonus: modifiers.con + ((classSaves.includes('con') || classSaves.includes('constitution')) ? proficiencyBonus : 0)
-    },
-    int: {
-      proficient: classSaves.includes('int') || classSaves.includes('intelligence'),
-      bonus: modifiers.int + ((classSaves.includes('int') || classSaves.includes('intelligence')) ? proficiencyBonus : 0)
-    },
-    wis: {
-      proficient: classSaves.includes('wis') || classSaves.includes('wisdom'),
-      bonus: modifiers.wis + ((classSaves.includes('wis') || classSaves.includes('wisdom')) ? proficiencyBonus : 0)
-    },
-    cha: {
-      proficient: classSaves.includes('cha') || classSaves.includes('charisma'),
-      bonus: modifiers.cha + ((classSaves.includes('cha') || classSaves.includes('charisma')) ? proficiencyBonus : 0)
-    },
+    str: makeSave('str', 'strength'),
+    dex: makeSave('dex', 'dexterity'),
+    con: makeSave('con', 'constitution'),
+    int: makeSave('int', 'intelligence'),
+    wis: makeSave('wis', 'wisdom'),
+    cha: makeSave('cha', 'charisma'),
   };
 
-  // Passive Perception (supports Expertise)
-  const isPerceptionExpert = (state.expertSkills || []).includes('Perception');
-  const isPerceptionProficient = state.selectedSkills.includes('Perception');
+  // Jack of All Trades bonus (Bard Lv 2+)
+  const joatBonus = rules.classProg.jackOfAllTrades ? Math.floor(proficiencyBonus / 2) : 0;
+
+  // Passive Perception (auto-granted + manual skills + Expertise + Jack of All Trades)
+  const isPerceptionExpert = rules.effectiveExpertSkills.includes('Perception');
+  const isPerceptionProficient = rules.effectiveSkills.includes('Perception');
   const passivePerception =
     10 +
     modifiers.wis +
-    (isPerceptionExpert ? proficiencyBonus * 2 : isPerceptionProficient ? proficiencyBonus : 0);
+    (isPerceptionExpert ? proficiencyBonus * 2 : isPerceptionProficient ? proficiencyBonus : joatBonus);
 
-  // Spellcasting
-  let spellcastingAbility: AbilityKey | undefined = undefined;
-  const spellAbilityStr = String(selectedClass?.frontmatter?.spellcasting_ability || '').toLowerCase();
-  const allowsSpellcastingChoice = spellAbilityStr === 'choice' || classTitle.includes('warlock') || classTitle.includes('tamer');
+  // Initiative (DEX + Jack of All Trades if Bard Lv 2+)
+  const initiative = modifiers.dex + joatBonus;
+  const initiativeNote = joatBonus > 0 ? `DEX + ${joatBonus} (Jack of All Trades)` : 'Dexterity Modifier';
 
-  if (allowsSpellcastingChoice && state.spellcastingAbilityOverride) {
-    spellcastingAbility = state.spellcastingAbilityOverride;
-  } else if (spellAbilityStr && spellAbilityStr !== 'choice') {
-    if (spellAbilityStr.includes('int')) spellcastingAbility = 'int';
-    else if (spellAbilityStr.includes('wis')) spellcastingAbility = 'wis';
-    else if (spellAbilityStr.includes('cha')) spellcastingAbility = 'cha';
-  } else if (classTitle.includes('wizard') || classTitle.includes('artificer') || classTitle.includes('thanatomancer')) {
-    spellcastingAbility = 'int';
-  } else if (classTitle.includes('cleric') || classTitle.includes('druid') || classTitle.includes('ranger') || classTitle.includes('primal')) {
-    spellcastingAbility = 'wis';
-  } else if (
-    classTitle.includes('bard') ||
-    classTitle.includes('paladin') ||
-    classTitle.includes('paragon') ||
-    classTitle.includes('sorcerer') ||
-    classTitle.includes('warlock') ||
-    classTitle.includes('tamer')
-  ) {
-    spellcastingAbility = 'cha';
-  }
-
-  const spellSlots = getSpellSlotsForClass(selectedClass?.title || '', level);
+  // Spellcasting & Prepared Limit
+  const spellcastingAbility = rules.classProg.spellcastingAbility;
+  const spellSlots: SpellSlotProgression = {
+    casterType: rules.classProg.casterType,
+    slots: rules.classProg.spellSlots,
+    pactSlots: rules.classProg.pactSlots,
+    pactSlotLevel: rules.classProg.pactSlotLevel,
+  };
 
   let spellSaveDc: number | undefined = undefined;
   let spellAttackBonus: number | undefined = undefined;
   if (spellcastingAbility) {
     spellSaveDc = 8 + proficiencyBonus + modifiers[spellcastingAbility];
     spellAttackBonus = proficiencyBonus + modifiers[spellcastingAbility];
+  }
+
+  let preparedSpellLimit: number | null = null;
+  if (rules.classProg.preparedFormula && rules.classProg.hasSpellcastingAtLevel) {
+    const { ability, halfLevel } = rules.classProg.preparedFormula;
+    preparedSpellLimit = Math.max(
+      1,
+      modifiers[ability] + (halfLevel ? Math.floor(level / 2) : level)
+    );
   }
 
   const hitDie = selectedClass?.hit_die || 'd8';
@@ -309,20 +288,29 @@ export function calculateDerivedStats(
     finalAbilities,
     modifiers,
     maxHp,
+    hpBreakdown: hpParts.join(' '),
     hitDie,
     hitDiceTotal: `${level}${hitDie}`,
     armorClass: baseAc,
-    initiative: modifiers.dex,
-    speed,
+    acBreakdown: acSourceLabel,
+    initiative,
+    initiativeNote,
+    speed: rules.speedDisplay,
     proficiencyBonus,
     passivePerception,
     savingThrows,
     spellcastingAbility,
-    allowsSpellcastingChoice,
+    allowsSpellcastingChoice: rules.classProg.allowsSpellcastingChoice,
     spellSaveDc,
     spellAttackBonus,
     spellSlots,
-    asiCount: getAsiCountForLevel(selectedClass?.title || '', level),
+    cantripsKnown: rules.classProg.cantripsKnown,
+    spellsKnown: rules.classProg.spellsKnown,
+    preparedSpellLimit,
+    classOptionsKnown: rules.classProg.classOptionsKnown + rules.extraClassOptions,
+    classOptionsLabel: rules.classProg.classOptionsLabel,
+    asiCount: getAsiCountForLevel(selectedClass?.title || '', level) + rules.raceProfile.grantsBonusFeat,
+    rules,
   };
 }
 
@@ -331,98 +319,286 @@ export function generateDefaultAttacks(
   modifiers: Record<AbilityKey, number>,
   profBonus: number,
   level = 1,
-  spellMod?: number
+  spellMod?: number,
+  styleEffects?: FightingStyleEffects,
+  martialArtist = false
 ): { name: string; type: 'melee' | 'ranged' | 'spell'; bonus: number; damageDice: string; damageType: string }[] {
   const title = (selectedClass?.title || '').toLowerCase();
   const cDice = getCantripDiceCount(level);
   const castMod = spellMod ?? Math.max(modifiers.int, modifiers.wis, modifiers.cha);
+  const rAtkBonus = styleEffects?.rangedAttackBonus || 0;
+  const mAtkBonus = styleEffects?.meleeAttackBonus || 0;
+  const mDmgBonus = styleEffects?.meleeDamageBonus || 0;
+
+  const bowStat =
+    styleEffects?.useStrForBows && modifiers.str > modifiers.dex
+      ? modifiers.str
+      : modifiers.dex;
+  const bowDmgExtra = styleEffects?.useStrForBows && modifiers.str >= modifiers.dex ? 1 : 0;
 
   if (title.includes('rogue')) {
     const sneakDice = Math.ceil(level / 2);
     return [
-      { name: 'Rapier', type: 'melee', bonus: modifiers.dex + profBonus, damageDice: `1d8${formatModifier(modifiers.dex)}`, damageType: `piercing (+${sneakDice}d6 Sneak Attack)` },
-      { name: 'Shortbow', type: 'ranged', bonus: modifiers.dex + profBonus, damageDice: `1d6${formatModifier(modifiers.dex)}`, damageType: 'piercing (80/320 ft)' },
+      {
+        name: 'Rapier',
+        type: 'melee',
+        bonus: modifiers.dex + profBonus + mAtkBonus,
+        damageDice: `1d8${formatModifier(modifiers.dex + mDmgBonus)}`,
+        damageType: `piercing (+${sneakDice}d6 Sneak Attack)`,
+      },
+      {
+        name: 'Shortbow',
+        type: 'ranged',
+        bonus: bowStat + profBonus + rAtkBonus,
+        damageDice: `1d6${formatModifier(bowStat + bowDmgExtra)}`,
+        damageType: 'piercing (80/320 ft)',
+      },
     ];
   }
 
   if (title.includes('barbarian')) {
     return [
-      { name: 'Greataxe', type: 'melee', bonus: modifiers.str + profBonus, damageDice: `1d12${formatModifier(modifiers.str)}`, damageType: 'slashing (heavy)' },
-      { name: 'Handaxe', type: 'melee', bonus: modifiers.str + profBonus, damageDice: `1d6${formatModifier(modifiers.str)}`, damageType: 'slashing (thrown 20/60)' },
+      {
+        name: 'Greataxe',
+        type: 'melee',
+        bonus: modifiers.str + profBonus + mAtkBonus,
+        damageDice: `1d12${formatModifier(modifiers.str + mDmgBonus)}`,
+        damageType: 'slashing (heavy)',
+      },
+      {
+        name: 'Handaxe',
+        type: 'melee',
+        bonus: modifiers.str + profBonus + mAtkBonus,
+        damageDice: `1d6${formatModifier(modifiers.str + mDmgBonus)}`,
+        damageType: 'slashing (thrown 20/60)',
+      },
     ];
   }
 
   if (title.includes('monk')) {
-    const maDie = level >= 17 ? '1d10' : level >= 11 ? '1d8' : level >= 5 ? '1d6' : '1d4';
+    const maDie = level >= 17 ? '1d12' : level >= 11 ? '1d10' : level >= 5 ? '1d8' : '1d6';
     const atkStat = Math.max(modifiers.dex, modifiers.str);
     return [
-      { name: 'Unarmed Strike', type: 'melee', bonus: atkStat + profBonus, damageDice: `${maDie}${formatModifier(atkStat)}`, damageType: 'bludgeoning (Martial Arts)' },
-      { name: 'Quarterstaff', type: 'melee', bonus: atkStat + profBonus, damageDice: `1d8${formatModifier(atkStat)}`, damageType: 'bludgeoning (versatile)' },
+      {
+        name: 'Unarmed Strike',
+        type: 'melee',
+        bonus: atkStat + profBonus + mAtkBonus,
+        damageDice: `${maDie}${formatModifier(atkStat + mDmgBonus)}`,
+        damageType: 'bludgeoning (Martial Arts)',
+      },
+      {
+        name: 'Quarterstaff',
+        type: 'melee',
+        bonus: atkStat + profBonus + mAtkBonus,
+        damageDice: `1d8${formatModifier(atkStat + mDmgBonus)}`,
+        damageType: 'bludgeoning (versatile)',
+      },
     ];
   }
 
   if (title.includes('ranger')) {
     return [
-      { name: 'Longbow', type: 'ranged', bonus: modifiers.dex + profBonus, damageDice: `1d8${formatModifier(modifiers.dex)}`, damageType: 'piercing (150/600 ft)' },
-      { name: 'Shortsword', type: 'melee', bonus: modifiers.dex + profBonus, damageDice: `1d6${formatModifier(modifiers.dex)}`, damageType: 'piercing (finesse)' },
+      {
+        name: 'Longbow',
+        type: 'ranged',
+        bonus: bowStat + profBonus + rAtkBonus,
+        damageDice: `1d8${formatModifier(bowStat + bowDmgExtra)}`,
+        damageType: 'piercing (150/600 ft)',
+      },
+      {
+        name: 'Shortsword',
+        type: 'melee',
+        bonus: modifiers.dex + profBonus + mAtkBonus,
+        damageDice: `1d6${formatModifier(modifiers.dex + mDmgBonus)}`,
+        damageType: 'piercing (finesse)',
+      },
     ];
   }
 
   if (title.includes('warlock')) {
     return [
-      { name: 'Eldritch Blast', type: 'spell', bonus: castMod + profBonus, damageDice: `${cDice}d10`, damageType: 'force (120 ft)' },
-      { name: 'Dagger', type: 'melee', bonus: modifiers.dex + profBonus, damageDice: `1d4${formatModifier(modifiers.dex)}`, damageType: 'piercing (finesse)' },
+      {
+        name: 'Eldritch Blast',
+        type: 'spell',
+        bonus: castMod + profBonus,
+        damageDice: `${cDice}d10`,
+        damageType: 'force (120 ft)',
+      },
+      {
+        name: 'Dagger',
+        type: 'melee',
+        bonus: modifiers.dex + profBonus + mAtkBonus,
+        damageDice: `1d4${formatModifier(modifiers.dex + mDmgBonus)}`,
+        damageType: 'piercing (finesse)',
+      },
     ];
   }
 
   if (title.includes('thanatomancer')) {
     return [
-      { name: 'Death’s Toll / Ray', type: 'spell', bonus: modifiers.int + profBonus, damageDice: `${cDice}d8`, damageType: 'necrotic (60 ft)' },
-      { name: 'Sickle / Dagger', type: 'melee', bonus: modifiers.dex + profBonus, damageDice: `1d4${formatModifier(modifiers.dex)}`, damageType: 'slashing / finesse' },
+      {
+        name: 'Death’s Toll / Ray',
+        type: 'spell',
+        bonus: modifiers.int + profBonus,
+        damageDice: `${cDice}d8`,
+        damageType: 'necrotic (60 ft)',
+      },
+      {
+        name: 'Sickle / Dagger',
+        type: 'melee',
+        bonus: modifiers.dex + profBonus + mAtkBonus,
+        damageDice: `1d4${formatModifier(modifiers.dex + mDmgBonus)}`,
+        damageType: 'slashing / finesse',
+      },
     ];
   }
 
   if (title.includes('wizard') || title.includes('sorcerer')) {
     return [
-      { name: 'Fire Bolt', type: 'spell', bonus: castMod + profBonus, damageDice: `${cDice}d10`, damageType: 'fire (120 ft)' },
-      { name: 'Dagger', type: 'melee', bonus: modifiers.dex + profBonus, damageDice: `1d4${formatModifier(modifiers.dex)}`, damageType: 'piercing (finesse)' },
+      {
+        name: 'Fire Bolt',
+        type: 'spell',
+        bonus: castMod + profBonus,
+        damageDice: `${cDice}d10`,
+        damageType: 'fire (120 ft)',
+      },
+      {
+        name: 'Dagger',
+        type: 'melee',
+        bonus: modifiers.dex + profBonus + mAtkBonus,
+        damageDice: `1d4${formatModifier(modifiers.dex + mDmgBonus)}`,
+        damageType: 'piercing (finesse)',
+      },
     ];
   }
 
   if (title.includes('artificer')) {
     return [
-      { name: 'Light Crossbow', type: 'ranged', bonus: modifiers.dex + profBonus, damageDice: `1d8${formatModifier(modifiers.dex)}`, damageType: 'piercing (80/320 ft)' },
-      { name: 'Arcane Cantrip', type: 'spell', bonus: modifiers.int + profBonus, damageDice: `${cDice}d8`, damageType: 'force / fire' },
+      {
+        name: 'Light Crossbow',
+        type: 'ranged',
+        bonus: modifiers.dex + profBonus + rAtkBonus,
+        damageDice: `1d8${formatModifier(modifiers.dex)}`,
+        damageType: 'piercing (80/320 ft)',
+      },
+      {
+        name: 'Arcane Cantrip',
+        type: 'spell',
+        bonus: modifiers.int + profBonus,
+        damageDice: `${cDice}d8`,
+        damageType: 'force / fire',
+      },
     ];
   }
 
   if (title.includes('cleric') || title.includes('druid') || title.includes('bard')) {
     const weapon = title.includes('bard')
-      ? { name: 'Rapier', type: 'melee' as const, bonus: modifiers.dex + profBonus, damageDice: `1d8${formatModifier(modifiers.dex)}`, damageType: 'piercing (finesse)' }
-      : { name: 'Quarterstaff / Mace', type: 'melee' as const, bonus: modifiers.str + profBonus, damageDice: `1d6${formatModifier(modifiers.str)}`, damageType: 'bludgeoning' };
+      ? {
+          name: 'Rapier',
+          type: 'melee' as const,
+          bonus: modifiers.dex + profBonus + mAtkBonus,
+          damageDice: `1d8${formatModifier(modifiers.dex + mDmgBonus)}`,
+          damageType: 'piercing (finesse)',
+        }
+      : {
+          name: 'Quarterstaff / Mace',
+          type: 'melee' as const,
+          bonus: modifiers.str + profBonus + mAtkBonus,
+          damageDice: `1d6${formatModifier(modifiers.str + mDmgBonus)}`,
+          damageType: 'bludgeoning',
+        };
     return [
       weapon,
-      { name: 'Spell Attack Cantrip', type: 'spell', bonus: castMod + profBonus, damageDice: `${cDice}d8`, damageType: 'radiant / thunder' },
+      {
+        name: 'Spell Attack Cantrip',
+        type: 'spell',
+        bonus: castMod + profBonus,
+        damageDice: `${cDice}d8`,
+        damageType: 'radiant / thunder',
+      },
     ];
   }
 
-  if (title.includes('warden') || title.includes('primal') || title.includes('paragon') || title.includes('paladin')) {
+  if (
+    title.includes('warden') ||
+    title.includes('primal') ||
+    title.includes('paragon') ||
+    title.includes('paladin')
+  ) {
     return [
-      { name: 'Warhammer / Longsword', type: 'melee', bonus: modifiers.str + profBonus, damageDice: `1d8${formatModifier(modifiers.str)}`, damageType: 'bludgeoning / slashing' },
-      { name: 'Javelin', type: 'ranged', bonus: modifiers.str + profBonus, damageDice: `1d6${formatModifier(modifiers.str)}`, damageType: 'piercing (thrown 30/120)' },
+      {
+        name: 'Warhammer / Longsword',
+        type: 'melee',
+        bonus: modifiers.str + profBonus + mAtkBonus,
+        damageDice: `1d8${formatModifier(modifiers.str + mDmgBonus)}`,
+        damageType: 'bludgeoning / slashing',
+      },
+      {
+        name: 'Javelin',
+        type: 'ranged',
+        bonus: modifiers.str + profBonus + rAtkBonus,
+        damageDice: `1d6${formatModifier(modifiers.str)}`,
+        damageType: 'piercing (thrown 30/120)',
+      },
     ];
   }
 
   if (title.includes('tamer')) {
     return [
-      { name: 'Light Crossbow', type: 'ranged', bonus: modifiers.dex + profBonus, damageDice: `1d8${formatModifier(modifiers.dex)}`, damageType: 'piercing (80/320 ft)' },
-      { name: 'Quarterstaff', type: 'melee', bonus: modifiers.str + profBonus, damageDice: `1d6${formatModifier(modifiers.str)}`, damageType: 'bludgeoning (versatile)' },
+      {
+        name: 'Light Crossbow',
+        type: 'ranged',
+        bonus: modifiers.dex + profBonus + rAtkBonus,
+        damageDice: `1d8${formatModifier(modifiers.dex)}`,
+        damageType: 'piercing (80/320 ft)',
+      },
+      {
+        name: 'Quarterstaff',
+        type: 'melee',
+        bonus: modifiers.str + profBonus + mAtkBonus,
+        damageDice: `1d6${formatModifier(modifiers.str + mDmgBonus)}`,
+        damageType: 'bludgeoning (versatile)',
+      },
+    ];
+  }
+
+  // Brawling / Martial Artist unarmed override if selected on Fighter/default
+  const unarmedDie = styleEffects?.unarmedDie || (martialArtist ? '1d4' : null);
+  if (unarmedDie) {
+    const stat = Math.max(modifiers.str, modifiers.dex);
+    return [
+      {
+        name: 'Unarmed Strike',
+        type: 'melee',
+        bonus: stat + profBonus + mAtkBonus,
+        damageDice: `${unarmedDie}${formatModifier(stat + mDmgBonus)}`,
+        damageType: 'bludgeoning',
+      },
+      {
+        name: 'Longsword',
+        type: 'melee',
+        bonus: modifiers.str + profBonus + mAtkBonus,
+        damageDice: `1d8${formatModifier(modifiers.str + mDmgBonus)}`,
+        damageType: 'slashing (versatile 1d10)',
+      },
     ];
   }
 
   // Fighter / default martial
   return [
-    { name: 'Longsword', type: 'melee', bonus: modifiers.str + profBonus, damageDice: `1d8${formatModifier(modifiers.str)}`, damageType: 'slashing (versatile 1d10)' },
-    { name: 'Javelin', type: 'ranged', bonus: modifiers.str + profBonus, damageDice: `1d6${formatModifier(modifiers.str)}`, damageType: 'piercing (thrown 30/120)' },
+    {
+      name: 'Longsword',
+      type: 'melee',
+      bonus: modifiers.str + profBonus + mAtkBonus,
+      damageDice: `1d8${formatModifier(modifiers.str + mDmgBonus)}`,
+      damageType: 'slashing (versatile 1d10)',
+    },
+    {
+      name: 'Javelin',
+      type: 'ranged',
+      bonus: modifiers.str + profBonus + rAtkBonus,
+      damageDice: `1d6${formatModifier(modifiers.str)}`,
+      damageType: 'piercing (thrown 30/120)',
+    },
   ];
 }

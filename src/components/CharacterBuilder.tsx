@@ -111,9 +111,18 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
             spellcastingAbilityOverride: parsed.spellAbility || null,
             campaignId: parsed.campaign || null,
             deityId: parsed.deity || null,
+            subrace: parsed.subrace || null,
+            asiSystem: parsed.asiSystem === 'flexible' ? 'flexible' : 'racial',
+            racialChoiceAbilities: Array.isArray(parsed.racialChoiceAbilities) ? parsed.racialChoiceAbilities : [],
+            racialSkillChoices: Array.isArray(parsed.racialSkillChoices) ? parsed.racialSkillChoices : [],
+            featAbilityChoices: parsed.featAbilityChoices && typeof parsed.featAbilityChoices === 'object' ? parsed.featAbilityChoices : {},
+            classSkillChoices: Array.isArray(parsed.classSkillChoices) ? parsed.classSkillChoices : [],
+            backgroundSkillChoices: Array.isArray(parsed.backgroundSkillChoices) ? parsed.backgroundSkillChoices : [],
+            applyBackgroundGear: typeof parsed.applyBackgroundGear === 'boolean' ? parsed.applyBackgroundGear : true,
+            includeSubclassSpells: typeof parsed.includeSubclassSpells === 'boolean' ? parsed.includeSubclassSpells : true,
             baseAbilities: parsed.abilities || INITIAL_CHARACTER_STATE.baseAbilities,
             racialBonuses: parsed.racialBonuses || INITIAL_CHARACTER_STATE.racialBonuses,
-            selectedSkills: parsed.skills || INITIAL_CHARACTER_STATE.selectedSkills,
+            selectedSkills: Array.isArray(parsed.skills) ? parsed.skills : [],
             expertSkills: Array.isArray(parsed.expertSkills) ? parsed.expertSkills : [],
             customArmor: parsed.armor || INITIAL_CHARACTER_STATE.customArmor,
             shieldEquipped: parsed.shield ?? INITIAL_CHARACTER_STATE.shieldEquipped,
@@ -314,10 +323,40 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
     return allDeities.find(d => d.id === state.deityId) || getEntryById(state.deityId) || null;
   }, [allDeities, state.deityId]);
 
-  // Derived stats live calculation
+  // Derived stats live calculation (with complete rule automation)
   const derived = useMemo(() => {
-    return calculateDerivedStats(state, selectedRace, selectedClass);
-  }, [state, selectedRace, selectedClass]);
+    return calculateDerivedStats(
+      state,
+      selectedRace,
+      selectedClass,
+      selectedSubclass,
+      selectedBackground,
+      selectedFeats,
+      selectedFightingStyle,
+      allSpells
+    );
+  }, [
+    state,
+    selectedRace,
+    selectedClass,
+    selectedSubclass,
+    selectedBackground,
+    selectedFeats,
+    selectedFightingStyle,
+    allSpells
+  ]);
+
+  // Combine manually selected spells + unlocked subclass Domain/Oath/Circle/Patron spells when enabled
+  const effectiveSelectedSpells = useMemo(() => {
+    if (!state.includeSubclassSpells || derived.rules.subclassSpellsUnlocked.length === 0) {
+      return selectedSpells;
+    }
+    const existingIds = new Set(selectedSpells.map(s => s.id));
+    const bonusEntries = derived.rules.subclassSpellsUnlocked
+      .map(b => b.entry)
+      .filter((e): e is ArchiveEntry => Boolean(e) && !existingIds.has(e.id));
+    return [...selectedSpells, ...bonusEntries];
+  }, [selectedSpells, state.includeSubclassSpells, derived.rules.subclassSpellsUnlocked]);
 
   // Filtered queries
   const filteredRaces = useMemo(() => {
@@ -731,6 +770,98 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
             })}
           </div>
 
+          {/* Ancestry Configurator: Subraces, Speeds, Innate Spells & Racial Skill Choices */}
+          {selectedRace && (
+            <div className="rounded-xl border border-amber-900/40 bg-stone-950/90 p-4 space-y-4">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-900 pb-2.5">
+                <div>
+                  <h3 className="font-serif text-sm font-bold text-amber-200">
+                    {selectedRace.title} Ancestry Traits &amp; Morphologies
+                  </h3>
+                  <p className="text-[11px] text-stone-400">
+                    Speed: <strong className="text-stone-200">{derived.speed}</strong>
+                    {' · '}Size: <strong className="text-stone-200">{derived.rules.raceProfile.size}</strong>
+                    {derived.rules.raceProfile.darkvision ? ` · Darkvision ${derived.rules.raceProfile.darkvision} ft.` : ''}
+                    {derived.rules.raceProfile.naturalArmorBase ? ` · Natural Armor ${derived.rules.raceProfile.naturalArmorBase} + DEX` : ''}
+                    {derived.rules.raceProfile.fixedSkills.length > 0 ? ` · Auto Skills: ${derived.rules.raceProfile.fixedSkills.join(', ')}` : ''}
+                    {derived.rules.raceProfile.languages.length > 0 ? ` · Languages: ${derived.rules.raceProfile.languages.join(', ')}` : ''}
+                  </p>
+                  {derived.rules.innateSpells.length > 0 && (
+                    <p className="text-[11px] text-violet-300 mt-1">
+                      Innate Spells: {derived.rules.innateSpells.map(s => s.name).join(', ')}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {derived.rules.raceProfile.subraces.length > 0 && (
+                <div className="space-y-2">
+                  <div className="text-xs font-serif font-semibold text-stone-300">
+                    Choose Subrace / Variant:
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+                    {derived.rules.raceProfile.subraces.map(sub => {
+                      const active = derived.rules.raceProfile.activeSubrace?.name === sub.name;
+                      return (
+                        <button
+                          key={sub.name}
+                          onClick={() => dispatch({ type: 'SELECT_SUBRACE', payload: sub.name })}
+                          className={`p-3 rounded-xl border text-left transition-all cursor-pointer ${
+                            active
+                              ? 'border-amber-500 bg-amber-950/40 ring-1 ring-amber-500'
+                              : 'border-stone-800 bg-stone-900/70 hover:border-stone-700'
+                          }`}
+                        >
+                          <div className="flex items-center justify-between gap-1">
+                            <span className="font-serif font-bold text-xs text-stone-100">{sub.name}</span>
+                            {active && <Check className="w-3.5 h-3.5 text-amber-400 shrink-0" />}
+                          </div>
+                          <p className="text-[11px] text-stone-400 mt-1">{sub.summary}</p>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {derived.rules.raceProfile.skillChoice && (
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-serif font-semibold text-amber-200">
+                      {derived.rules.raceProfile.skillChoice.label}
+                    </span>
+                    <span className="font-mono text-[11px] text-amber-400">
+                      {(state.racialSkillChoices || []).filter(s => derived.rules.raceProfile.skillChoice!.from.includes(s)).length} / {derived.rules.raceProfile.skillChoice.count} selected
+                    </span>
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {derived.rules.raceProfile.skillChoice.from.map(sk => {
+                      const active = (state.racialSkillChoices || []).includes(sk);
+                      return (
+                        <button
+                          key={sk}
+                          onClick={() =>
+                            dispatch({
+                              type: 'TOGGLE_RACIAL_SKILL',
+                              payload: { skill: sk, max: derived.rules.raceProfile.skillChoice!.count }
+                            })
+                          }
+                          className={`px-2.5 py-1 rounded-lg text-[11px] font-medium border transition-colors cursor-pointer ${
+                            active
+                              ? 'bg-amber-500 text-stone-950 border-amber-400 font-bold'
+                              : 'bg-stone-900 text-stone-300 border-stone-800 hover:border-amber-700'
+                          }`}
+                        >
+                          {sk}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
           <div className="flex justify-end pt-4 border-t border-stone-800">
             <button
               onClick={() => dispatch({ type: 'SET_STEP', payload: 2 })}
@@ -840,6 +971,100 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
               );
             })}
           </div>
+
+          {/* Automated Class Proficiencies, Skills & Progression Preview */}
+          {selectedClass && (
+            <div className="rounded-xl border border-amber-900/40 bg-stone-950/90 p-4 space-y-4">
+              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-900 pb-2.5">
+                <div>
+                  <h3 className="font-serif text-sm font-bold text-amber-200">
+                    {selectedClass.title} (Level {derived.level}) — Automated Class Features
+                  </h3>
+                  <p className="text-[11px] text-stone-400">
+                    {[
+                      derived.rules.classProg.armorProficiencies.length > 0
+                        ? `Armor: ${derived.rules.classProg.armorProficiencies.join(', ')}`
+                        : 'Armor: None',
+                      derived.rules.classProg.weaponProficiencies.length > 0
+                        ? `Weapons: ${derived.rules.classProg.weaponProficiencies.join(', ')}`
+                        : '',
+                      derived.rules.classProg.toolProficiencies.length > 0
+                        ? `Tools: ${derived.rules.classProg.toolProficiencies.join(', ')}`
+                        : ''
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-1.5 text-[10px] font-mono">
+                  {derived.cantripsKnown > 0 && (
+                    <span className="px-2 py-0.5 rounded bg-violet-950/70 border border-violet-800/60 text-violet-200">
+                      {derived.cantripsKnown} Cantrips
+                    </span>
+                  )}
+                  {derived.spellsKnown !== null && derived.spellsKnown > 0 && (
+                    <span className="px-2 py-0.5 rounded bg-violet-950/70 border border-violet-800/60 text-violet-200">
+                      {derived.spellsKnown} Spells Known
+                    </span>
+                  )}
+                  {derived.preparedSpellLimit !== null && (
+                    <span className="px-2 py-0.5 rounded bg-violet-950/70 border border-violet-800/60 text-violet-200">
+                      Prepare {derived.preparedSpellLimit} Spells
+                    </span>
+                  )}
+                  {derived.classOptionsKnown > 0 && (
+                    <span className="px-2 py-0.5 rounded bg-cyan-950/70 border border-cyan-800/60 text-cyan-200">
+                      {derived.classOptionsKnown} {derived.classOptionsLabel || 'Class Options'}
+                    </span>
+                  )}
+                  {derived.rules.classProg.resources.map(res => (
+                    <span
+                      key={res.label}
+                      className="px-2 py-0.5 rounded bg-stone-900 border border-stone-800 text-stone-300"
+                    >
+                      {res.label}: {res.value}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Class Starting Skill Picker */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between text-xs">
+                  <span className="font-serif font-semibold text-stone-200">
+                    {derived.rules.classProg.skillChoice.label}
+                  </span>
+                  <span className="font-mono text-[11px] text-amber-400">
+                    {(state.classSkillChoices || []).filter(s => derived.rules.classProg.skillChoice.from.includes(s)).length} / {derived.rules.classProg.skillChoice.count} selected
+                  </span>
+                </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {derived.rules.classProg.skillChoice.from.map(sk => {
+                    const active = (state.classSkillChoices || []).includes(sk);
+                    return (
+                      <button
+                        key={sk}
+                        onClick={() =>
+                          dispatch({
+                            type: 'TOGGLE_CLASS_SKILL',
+                            payload: { skill: sk, max: derived.rules.classProg.skillChoice.count }
+                          })
+                        }
+                        className={`px-2.5 py-1 rounded-lg text-[11px] font-medium border transition-colors cursor-pointer ${
+                          active
+                            ? 'bg-amber-500 text-stone-950 border-amber-400 font-bold'
+                            : 'bg-stone-900 text-stone-300 border-stone-800 hover:border-amber-700'
+                        }`}
+                      >
+                        {sk}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* Flexible Spellcasting Ability Choice (Warlock / Tamer) */}
           {selectedClass && derived.allowsSpellcastingChoice && (
@@ -1125,17 +1350,43 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
             )}
           </div>
 
+          {/* Unlocked Subclass Domain / Oath / Patron Spells Preview */}
+          {selectedSubclass && derived.rules.subclassSpellsUnlocked.length > 0 && (
+            <div className="rounded-xl border border-violet-900/40 bg-violet-950/15 p-3.5 space-y-1.5">
+              <div className="text-xs font-serif font-bold text-violet-200 flex items-center justify-between gap-2">
+                <span>
+                  {selectedSubclass.title} — Always-Prepared / Bonus Spells (Lv {derived.level})
+                </span>
+                <span className="text-[10px] font-mono text-violet-300">Auto-included on sheet</span>
+              </div>
+              <div className="flex flex-wrap gap-1.5">
+                {derived.rules.subclassSpellsUnlocked.map(sp => (
+                  <span
+                    key={sp.name}
+                    className="px-2 py-0.5 rounded bg-violet-950/60 border border-violet-800/60 text-[11px] text-violet-200"
+                  >
+                    {sp.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Fighting Styles Picker (30 archive styles) */}
           <div className="rounded-xl border border-stone-800 bg-stone-950/80 p-4 space-y-3">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
               <div className="flex items-center gap-2">
                 <Swords className="w-4 h-4 text-emerald-400 shrink-0" />
                 <div>
-                  <h3 className="font-serif text-sm font-bold text-stone-200">
-                    Fighting Style (Optional · {fightingStyles.length} styles)
+                  <h3 className="font-serif text-sm font-bold text-stone-200 flex items-center gap-2">
+                    <span>
+                      Fighting Style ({derived.rules.grantsFightingStyleCount > 0 ? `${derived.rules.grantsFightingStyleCount} Granted` : 'Optional'} · {fightingStyles.length} styles)
+                    </span>
                   </h3>
                   <p className="text-[11px] text-stone-400">
-                    Pick a martial discipline if granted by Fighter, Paladin, Ranger, Paragon, or house feats.
+                    {derived.rules.grantsFightingStyleCount > 0
+                      ? 'Active Fighting Style combat & AC modifiers apply automatically to your sheet.'
+                      : 'Granted at Fighter Lv1, Paladin Lv1, Ranger/Warden Lv2, or via Alternate Fighting Initiate feat.'}
                   </p>
                 </div>
               </div>
@@ -1295,6 +1546,93 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                 );
               })}
             </div>
+            {/* Automated Background Benefits & Choices */}
+            {derived.rules.bgProfile && (
+              <div className="rounded-xl border border-amber-900/40 bg-stone-950/90 p-4 space-y-3">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-stone-900 pb-2">
+                  <div>
+                    <h3 className="font-serif text-sm font-bold text-amber-200">
+                      {derived.rules.bgProfile.title} — Automated Background Benefits
+                    </h3>
+                    <p className="text-[11px] text-stone-400">
+                      {[
+                        derived.rules.bgProfile.fixedSkills.length > 0
+                          ? `Auto Skills: ${derived.rules.bgProfile.fixedSkills.join(', ')}`
+                          : '',
+                        derived.rules.bgProfile.tools.length > 0
+                          ? `Tools: ${derived.rules.bgProfile.tools.join(', ')}`
+                          : '',
+                        derived.rules.bgProfile.languages.length > 0
+                          ? `Languages: ${derived.rules.bgProfile.languages.join(', ')}`
+                          : ''
+                      ]
+                        .filter(Boolean)
+                        .join(' · ') || 'Choose your background skill proficiencies below.'}
+                    </p>
+                  </div>
+
+                  {derived.rules.bgProfile.equipment.length > 0 && (
+                    <label className="inline-flex items-center gap-1.5 text-[11px] text-stone-300 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        checked={state.applyBackgroundGear}
+                        onChange={() => dispatch({ type: 'TOGGLE_APPLY_BACKGROUND_GEAR' })}
+                        className="rounded border-stone-700 text-amber-500 bg-stone-900"
+                      />
+                      <span>Include Background Gear ({derived.rules.bgProfile.equipment.length} items)</span>
+                    </label>
+                  )}
+                </div>
+
+                {derived.rules.bgProfile.skillChoices.map(pool => {
+                  const pickedInPool = (state.backgroundSkillChoices || []).filter(s =>
+                    pool.from.includes(s)
+                  );
+                  const totalBgMax = derived.rules.bgProfile!.skillChoices.reduce(
+                    (acc, c) => acc + c.count,
+                    0
+                  );
+                  return (
+                    <div key={pool.id} className="space-y-1.5">
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="font-medium text-amber-200">{pool.label}</span>
+                        <span className="font-mono text-[11px] text-amber-400">
+                          {Math.min(pickedInPool.length, pool.count)} / {pool.count} selected
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {pool.from.map(sk => {
+                          const active = (state.backgroundSkillChoices || []).includes(sk);
+                          return (
+                            <button
+                              key={sk}
+                              onClick={() =>
+                                dispatch({
+                                  type: 'TOGGLE_BACKGROUND_SKILL',
+                                  payload: {
+                                    skill: sk,
+                                    max: totalBgMax,
+                                    groupPool: pool.from,
+                                    groupMax: pool.count
+                                  }
+                                })
+                              }
+                              className={`px-2.5 py-1 rounded-lg text-[11px] font-medium border transition-colors cursor-pointer ${
+                                active
+                                  ? 'bg-amber-500 text-stone-950 border-amber-400 font-bold'
+                                  : 'bg-stone-900 text-stone-300 border-stone-800 hover:border-amber-700'
+                              }`}
+                            >
+                              {sk}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           {/* Class Options Pool (Invocations, Maneuvers, Metamagic, Disciplines, etc.) */}
@@ -1304,10 +1642,16 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                 <div>
                   <h3 className="font-serif text-sm font-bold text-cyan-200 flex items-center gap-2">
                     <Sparkles className="w-4 h-4 text-cyan-400" />
-                    <span>{selectedClass?.title} Class Options ({selectedClassOptions.length} selected · {classOptionsForClass.length} available)</span>
+                    <span>
+                      {selectedClass?.title} {derived.classOptionsLabel || 'Class Options'} (
+                      {selectedClassOptions.length}
+                      {derived.classOptionsKnown > 0 ? ` / ${derived.classOptionsKnown}` : ''} selected · {classOptionsForClass.length} available)
+                    </span>
                   </h3>
                   <p className="text-[11px] text-stone-400">
-                    Sorted by level prerequisite. Options above your current level ({derived.level}) remain dimmed until unlocked.
+                    {derived.classOptionsKnown > 0
+                      ? `At Level ${derived.level}, your build knows ${derived.classOptionsKnown} ${derived.classOptionsLabel || 'options'}.`
+                      : `Sorted by level prerequisite. Options above Level ${derived.level} remain dimmed until unlocked.`}
                   </p>
                 </div>
 
@@ -1387,14 +1731,39 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
               <div>
                 <h3 className="font-serif text-sm font-bold text-violet-200 flex items-center gap-2">
                   <Wand2 className="w-4 h-4 text-violet-400" />
-                  <span>Known &amp; Prepared Spells ({selectedSpells.length} chosen · {allSpells.length} in codex)</span>
+                  <span>
+                    Known &amp; Prepared Spells ({selectedSpells.filter(s => (s.level ?? 0) === 0).length}
+                    {derived.cantripsKnown > 0 ? `/${derived.cantripsKnown}` : ''} cantrips ·{' '}
+                    {selectedSpells.filter(s => (s.level ?? 0) > 0).length}
+                    {derived.spellsKnown !== null
+                      ? `/${derived.spellsKnown} known`
+                      : derived.preparedSpellLimit !== null
+                      ? `/${derived.preparedSpellLimit} prep`
+                      : ' leveled'})
+                  </span>
                 </h3>
                 <p className="text-[11px] text-stone-400">
-                  Add cantrips and leveled spells to your interactive sheet grimoire.
+                  {derived.rules.classProg.hasSpellcastingAtLevel
+                    ? 'Budgets read dynamically from your archive class table at Level ' + derived.level + '.'
+                    : selectedClass
+                    ? `${selectedClass.title} has no class spell slots at Level ${derived.level}${derived.rules.innateSpells.length > 0 ? ' (innate spells still apply).' : '.'}`
+                    : 'Add cantrips and leveled spells to your interactive sheet grimoire.'}
                 </p>
               </div>
 
               <div className="flex flex-wrap items-center gap-2">
+                {derived.rules.subclassSpellsUnlocked.length > 0 && (
+                  <label className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-violet-950/40 border border-violet-800/50 text-[11px] text-violet-200 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={state.includeSubclassSpells}
+                      onChange={() => dispatch({ type: 'TOGGLE_INCLUDE_SUBCLASS_SPELLS' })}
+                      className="rounded border-violet-700 text-violet-500 bg-stone-900"
+                    />
+                    <span>Include Subclass Spells ({derived.rules.subclassSpellsUnlocked.length})</span>
+                  </label>
+                )}
+
                 {selectedClass && classMatchedSpellCount > 0 && (
                   <button
                     onClick={() => setSpellClassOnly(!spellClassOnly)}
@@ -1433,15 +1802,29 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
               </div>
             </div>
 
+            {derived.rules.innateSpells.length > 0 && (
+              <div className="rounded-lg bg-violet-950/20 border border-violet-900/40 px-3 py-2 text-[11px] text-violet-200 flex flex-wrap items-center gap-1.5">
+                <span className="font-mono uppercase text-[10px] text-violet-400">Innate Spells:</span>
+                {derived.rules.innateSpells.map((sp, i) => (
+                  <span key={`${sp.name}_${i}`} className="px-2 py-0.5 rounded bg-violet-950/60 border border-violet-800/50">
+                    {sp.name} ({sp.source})
+                  </span>
+                ))}
+              </div>
+            )}
+
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 max-h-64 overflow-y-auto pr-1">
               {filteredSpells.map(sp => {
                 const isSelected = state.selectedSpellIds.includes(sp.id);
+                const isSubclassAuto =
+                  state.includeSubclassSpells &&
+                  derived.rules.subclassSpellsUnlocked.some(b => b.entry?.id === sp.id);
                 const lvlLabel = (sp.level ?? 0) === 0 ? 'Cantrip' : `Lv ${sp.level}`;
                 return (
                   <div
                     key={sp.id}
                     className={`p-2.5 rounded-xl border transition-all flex flex-col justify-between gap-1.5 ${
-                      isSelected
+                      isSelected || isSubclassAuto
                         ? 'border-violet-500 bg-violet-950/30 ring-1 ring-violet-500'
                         : 'border-stone-800 bg-stone-900/60 hover:border-stone-700'
                     }`}
@@ -1459,14 +1842,18 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                     </div>
 
                     <div className="flex items-center justify-between pt-1 border-t border-stone-800/70 text-[10px]">
-                      <button
-                        onClick={() => dispatch({ type: 'TOGGLE_SPELL', payload: sp.id })}
-                        className={`font-semibold hover:underline cursor-pointer ${
-                          isSelected ? 'text-violet-300' : 'text-stone-300 hover:text-white'
-                        }`}
-                      >
-                        {isSelected ? 'Remove' : 'Prepare / Learn'}
-                      </button>
+                      {isSubclassAuto && !isSelected ? (
+                        <span className="text-violet-300 font-mono font-semibold">Auto (Subclass)</span>
+                      ) : (
+                        <button
+                          onClick={() => dispatch({ type: 'TOGGLE_SPELL', payload: sp.id })}
+                          className={`font-semibold hover:underline cursor-pointer ${
+                            isSelected ? 'text-violet-300' : 'text-stone-300 hover:text-white'
+                          }`}
+                        >
+                          {isSelected ? 'Remove' : 'Prepare / Learn'}
+                        </button>
+                      )}
                       <button
                         onClick={() => openInspector(sp)}
                         className="text-stone-400 hover:text-amber-300 flex items-center gap-1 cursor-pointer"
@@ -1509,11 +1896,18 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
         <div className="bg-stone-900 border border-stone-800 rounded-2xl p-5 md:p-6 space-y-6">
           <AbilityScorePicker
             state={state}
-            asiCount={derived.asiCount}
+            derived={derived}
+            selectedRace={selectedRace}
+            selectedClass={selectedClass}
             onSetMode={(mode) => dispatch({ type: 'SET_ABILITY_MODE', payload: mode })}
+            onSetAsiSystem={(sys) => dispatch({ type: 'SET_ASI_SYSTEM', payload: sys })}
             onSetAbility={(ability, score) => dispatch({ type: 'SET_BASE_ABILITY', payload: { ability, score } })}
             onSetAllAbilities={(scores) => dispatch({ type: 'SET_ALL_BASE_ABILITIES', payload: scores })}
             onSetRacialBonus={(type, ability) => dispatch({ type: 'SET_RACIAL_BONUS', payload: { type, ability } })}
+            onSetRacialChoiceAbilities={(abs) => dispatch({ type: 'SET_RACIAL_CHOICE_ABILITIES', payload: abs })}
+            onSetFeatAbilityChoice={(featId, ability) =>
+              dispatch({ type: 'SET_FEAT_ABILITY_CHOICE', payload: { featId, ability } })
+            }
             onToggleFeat={(featId) => dispatch({ type: 'TOGGLE_FEAT', payload: featId })}
             onClearFeats={() => dispatch({ type: 'SELECT_FEAT', payload: null })}
             onInspectEntry={openInspector}
@@ -1549,7 +1943,7 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
           selectedFeats={selectedFeats}
           selectedFightingStyle={selectedFightingStyle}
           selectedClassOptions={selectedClassOptions}
-          selectedSpells={selectedSpells}
+          selectedSpells={effectiveSelectedSpells}
           selectedDeity={selectedDeity}
           derived={derived}
           onSetName={(name) => dispatch({ type: 'SET_NAME', payload: name })}

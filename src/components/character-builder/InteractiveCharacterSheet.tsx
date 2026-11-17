@@ -133,9 +133,20 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
 
   const spellMod = derived.spellcastingAbility ? derived.modifiers[derived.spellcastingAbility] : undefined;
 
+  const isMartialArtist = selectedFeats.some(f => f.title.toLowerCase() === 'martial artist');
+  const joatBonus = derived.rules.classProg.jackOfAllTrades ? Math.floor(derived.proficiencyBonus / 2) : 0;
+
   const defaultAttacks = useMemo(() => {
-    return generateDefaultAttacks(selectedClass, derived.modifiers, derived.proficiencyBonus, derived.level, spellMod);
-  }, [selectedClass, derived.modifiers, derived.proficiencyBonus, derived.level, spellMod]);
+    return generateDefaultAttacks(
+      selectedClass,
+      derived.modifiers,
+      derived.proficiencyBonus,
+      derived.level,
+      spellMod,
+      derived.rules.styleEffects,
+      isMartialArtist
+    );
+  }, [selectedClass, derived.modifiers, derived.proficiencyBonus, derived.level, spellMod, derived.rules.styleEffects, isMartialArtist]);
 
   const allAttacks = useMemo(() => {
     const list = [...defaultAttacks];
@@ -170,9 +181,10 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
   };
 
   const rollSkill = (skillName: string, ability: AbilityKey) => {
-    const isProf = state.selectedSkills.includes(skillName);
-    const isExp = state.expertSkills.includes(skillName);
-    const mod = derived.modifiers[ability] + (isExp ? derived.proficiencyBonus * 2 : isProf ? derived.proficiencyBonus : 0);
+    const isProf = derived.rules.effectiveSkills.includes(skillName);
+    const isExp = derived.rules.effectiveExpertSkills.includes(skillName);
+    const bonus = isExp ? derived.proficiencyBonus * 2 : isProf ? derived.proficiencyBonus : joatBonus;
+    const mod = derived.modifiers[ability] + bonus;
     dice?.roll(`1d20${formatModifier(mod)}`, `${skillName} (${ABILITY_LABELS[ability].abbr}) Check`);
   };
 
@@ -235,12 +247,12 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
       ),
       '',
       `### Skills`,
-      ...ALL_SKILLS.filter(s => state.selectedSkills.includes(s.name)).map(s => {
-        const isExp = state.expertSkills.includes(s.name);
+      ...ALL_SKILLS.filter(s => derived.rules.effectiveSkills.includes(s.name)).map(s => {
+        const isExp = derived.rules.effectiveExpertSkills.includes(s.name);
         const mod = derived.modifiers[s.ability] + (isExp ? derived.proficiencyBonus * 2 : derived.proficiencyBonus);
         return `- **${s.name}** (${ABILITY_LABELS[s.ability].abbr}): ${formatModifier(mod)}${isExp ? ' *(Expertise)*' : ''}`;
       }),
-      ...(state.selectedSkills.length === 0 ? ['- No skill proficiencies selected'] : []),
+      ...(derived.rules.effectiveSkills.length === 0 ? ['- No skill proficiencies selected'] : []),
       '',
       `### Weapons & Attacks`,
       ...allAttacks.map(a => `- **${a.name}** (${a.type}): ${formatModifier(a.bonus)} to hit, ${a.damageDice} ${a.damageType}`),
@@ -262,6 +274,13 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
             '',
           ]
         : []),
+      ...(derived.rules.innateSpells.length > 0
+        ? [
+            `### Innate Spells`,
+            ...derived.rules.innateSpells.map(s => `- **${s.name}** (${s.source}${s.note ? ` · ${s.note}` : ''})`),
+            '',
+          ]
+        : []),
       ...(selectedSpells.length > 0
         ? [
             `### Known / Prepared Spells`,
@@ -271,9 +290,26 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
             '',
           ]
         : []),
+      `### Proficiencies, Languages & Resources`,
+      ...(derived.rules.effectiveArmorProficiencies.length > 0
+        ? [`- **Armor:** ${derived.rules.effectiveArmorProficiencies.join(', ')}`]
+        : []),
+      ...(derived.rules.effectiveWeapons.length > 0
+        ? [`- **Weapons:** ${derived.rules.effectiveWeapons.join(', ')}`]
+        : []),
+      ...(derived.rules.effectiveTools.length > 0
+        ? [`- **Tools:** ${derived.rules.effectiveTools.join(', ')}`]
+        : []),
+      ...(derived.rules.effectiveLanguages.length > 0
+        ? [`- **Languages:** ${derived.rules.effectiveLanguages.join(', ')}`]
+        : []),
+      ...(derived.rules.classProg.resources.length > 0
+        ? [`- **Class Resources:** ${derived.rules.classProg.resources.map(r => `${r.label} (${r.value})`).join(', ')}`]
+        : []),
+      '',
       `### Equipment & Inventory`,
       `- **Armor:** ${state.customArmor}${state.shieldEquipped ? ' + Shield' : ''}`,
-      ...(state.equipment || []).map(item => `- ${item}`),
+      ...derived.rules.effectiveEquipment.map(item => `- ${item}`),
       '',
       `### Character Notes & Backstory`,
       state.notes || 'None recorded.',
@@ -325,6 +361,15 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
         spellAbility: state.spellcastingAbilityOverride,
         campaign: state.campaignId,
         deity: state.deityId,
+        subrace: state.subrace,
+        asiSystem: state.asiSystem,
+        racialChoiceAbilities: state.racialChoiceAbilities,
+        racialSkillChoices: state.racialSkillChoices,
+        featAbilityChoices: state.featAbilityChoices,
+        classSkillChoices: state.classSkillChoices,
+        backgroundSkillChoices: state.backgroundSkillChoices,
+        applyBackgroundGear: state.applyBackgroundGear,
+        includeSubclassSpells: state.includeSubclassSpells,
         abilities: state.baseAbilities,
         racialBonuses: state.racialBonuses,
         skills: state.selectedSkills,
@@ -427,10 +472,19 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
     return Array.from(map.entries()).sort(([a], [b]) => a - b);
   }, [selectedSpells]);
 
+  const subclassBonusSpellIds = useMemo(() => {
+    return new Set(
+      derived.rules.subclassSpellsUnlocked
+        .map(b => b.entry?.id)
+        .filter((id): id is string => Boolean(id))
+    );
+  }, [derived.rules.subclassSpellsUnlocked]);
+
   const showSpellcastingPanel =
     derived.spellSaveDc !== undefined ||
     selectedSpells.length > 0 ||
-    derived.spellSlots.casterType !== 'none';
+    derived.spellSlots.casterType !== 'none' ||
+    derived.rules.innateSpells.length > 0;
 
   return (
     <>
@@ -701,12 +755,12 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
           </div>
 
           {/* Armor Class */}
-          <div className="p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-900/60 flex items-center justify-between shadow-inner print-card">
+          <div className="p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-900/60 flex items-center justify-between shadow-inner print-card" title={derived.acBreakdown}>
             <div>
               <span className="text-[10px] uppercase font-bold text-emerald-400 block tracking-wider">Armor Class</span>
               <span className="text-2xl font-mono font-bold text-emerald-200">{derived.armorClass}</span>
-              <span className="text-[10px] text-emerald-400/80 block mt-0.5 truncate max-w-[140px]">
-                {state.customArmor}{state.shieldEquipped ? ' + Shield' : ''}
+              <span className="text-[10px] text-emerald-400/80 block mt-0.5 truncate max-w-[170px]">
+                {derived.acBreakdown}
               </span>
             </div>
             <div className="p-2 rounded-lg bg-emerald-900/40 text-emerald-300 print:hidden">
@@ -719,7 +773,9 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
             <div>
               <span className="text-[10px] uppercase font-bold text-cyan-400 block tracking-wider">Initiative</span>
               <span className="text-2xl font-mono font-bold text-cyan-200">{formatModifier(derived.initiative)}</span>
-              <span className="text-[10px] text-cyan-400/80 block mt-0.5">Dexterity Modifier</span>
+              <span className="text-[10px] text-cyan-400/80 block mt-0.5 truncate max-w-[160px]">
+                {derived.initiativeNote || 'Dexterity Modifier'}
+              </span>
             </div>
             <button
               onClick={rollInitiative}
@@ -831,26 +887,32 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
             </div>
           </div>
 
-          {/* Trained Skills List w/ Expertise */}
+          {/* Trained Skills List w/ Automated Sources, Expertise & Jack of All Trades */}
           <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-4 space-y-3 print-card">
             <div className="flex items-center justify-between">
               <h3 className="font-serif text-sm font-bold text-stone-200 flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-amber-400" />
-                <span>Skills ({state.selectedSkills.length} Prof{state.expertSkills.length > 0 ? ` · ${state.expertSkills.length} Exp` : ''})</span>
+                <span>
+                  Skills ({derived.rules.effectiveSkills.length} Prof
+                  {derived.rules.effectiveExpertSkills.length > 0 ? ` · ${derived.rules.effectiveExpertSkills.length} Exp` : ''})
+                </span>
               </h3>
               <span className="text-[10px] text-stone-400 font-mono">
-                PB +{derived.proficiencyBonus}
+                PB +{derived.proficiencyBonus}{joatBonus > 0 ? ` · JoAT +${joatBonus}` : ''}
               </span>
             </div>
 
             <div className="divide-y divide-stone-900 max-h-[420px] overflow-y-auto pr-1">
               {ALL_SKILLS.map((skill) => {
-                const isProf = state.selectedSkills.includes(skill.name);
-                const isExpert = state.expertSkills.includes(skill.name);
+                const autoEntry = derived.rules.autoSkills.find(a => a.name === skill.name);
+                const isAuto = Boolean(autoEntry);
+                const isManual = state.selectedSkills.includes(skill.name);
+                const isProf = isAuto || isManual;
+                const isExpert = derived.rules.effectiveExpertSkills.includes(skill.name);
                 const abilityMod = derived.modifiers[skill.ability];
                 const totalMod =
                   abilityMod +
-                  (isExpert ? derived.proficiencyBonus * 2 : isProf ? derived.proficiencyBonus : 0);
+                  (isExpert ? derived.proficiencyBonus * 2 : isProf ? derived.proficiencyBonus : joatBonus);
 
                 return (
                   <div
@@ -861,9 +923,10 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
                       <input
                         type="checkbox"
                         checked={isProf}
+                        disabled={isAuto && !isManual}
                         onChange={() => onToggleSkill(skill.name)}
-                        className="rounded border-stone-700 text-amber-500 focus:ring-0 focus:ring-offset-0 bg-stone-950 cursor-pointer"
-                        title="Toggle proficiency (+PB)"
+                        className="rounded border-stone-700 text-amber-500 focus:ring-0 focus:ring-offset-0 bg-stone-950 cursor-pointer disabled:opacity-80"
+                        title={isAuto ? `Granted by ${autoEntry!.sources.join(', ')}` : 'Toggle bonus proficiency (+PB)'}
                       />
                       <button
                         onClick={() => onToggleSkillExpertise(skill.name)}
@@ -882,6 +945,11 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
                       <span className="text-[10px] font-mono text-stone-500 uppercase">
                         ({ABILITY_LABELS[skill.ability].abbr})
                       </span>
+                      {autoEntry && (
+                        <span className="text-[9px] font-mono text-amber-400/80 bg-amber-950/40 px-1 rounded truncate max-w-[72px]" title={`Granted by ${autoEntry.sources.join(', ')}`}>
+                          {autoEntry.sources[0]}
+                        </span>
+                      )}
                     </div>
 
                     <button
@@ -933,11 +1001,45 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
                       </span>
                     </>
                   )}
+                  {derived.cantripsKnown > 0 && (
+                    <span className="px-2 py-0.5 rounded bg-stone-950 border border-stone-800 text-stone-300">
+                      Cantrips: {derived.cantripsKnown}
+                    </span>
+                  )}
+                  {derived.spellsKnown !== null && derived.spellsKnown > 0 && (
+                    <span className="px-2 py-0.5 rounded bg-stone-950 border border-stone-800 text-stone-300">
+                      Known: {derived.spellsKnown}
+                    </span>
+                  )}
+                  {derived.preparedSpellLimit !== null && (
+                    <span className="px-2 py-0.5 rounded bg-stone-950 border border-stone-800 text-stone-300">
+                      Prepare: {derived.preparedSpellLimit}
+                    </span>
+                  )}
                   <span className="px-2 py-0.5 rounded bg-stone-950 border border-stone-800 text-stone-300">
                     Cantrip ×{getCantripDiceCount(derived.level)}
                   </span>
                 </div>
               </div>
+
+              {/* Innate Spells from Ancestry & Feats */}
+              {derived.rules.innateSpells.length > 0 && (
+                <div className="rounded-xl bg-stone-950/90 border border-violet-900/40 p-2.5 space-y-1.5">
+                  <div className="text-[10px] uppercase font-mono text-violet-300">
+                    Innate Spells (Ancestry / Feats)
+                  </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {derived.rules.innateSpells.map((sp, i) => (
+                      <span
+                        key={`${sp.name}_${i}`}
+                        className="px-2 py-0.5 rounded bg-violet-950/60 border border-violet-800/50 text-[11px] text-violet-200"
+                      >
+                        {sp.name} <span className="text-[9px] text-violet-400">({sp.source})</span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Interactive Spell Slot Tracker */}
               {Object.keys(derived.spellSlots.slots).length > 0 && (
@@ -992,35 +1094,49 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
                         {lvl === 0 ? 'Cantrips' : `Level ${lvl} Spells`}
                       </div>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
-                        {list.map(sp => (
-                          <div
-                            key={sp.id}
-                            className="px-2.5 py-1.5 rounded-lg bg-stone-950 border border-stone-800 flex items-center justify-between gap-2 text-xs"
-                          >
-                            <button
-                              onClick={() => onInspectEntry(sp)}
-                              className="text-left text-stone-200 hover:text-amber-300 font-serif truncate cursor-pointer"
-                              title="Inspect full spell description"
+                        {list.map(sp => {
+                          const isManualSpell = state.selectedSpellIds.includes(sp.id);
+                          const isSubclassAuto = !isManualSpell && subclassBonusSpellIds.has(sp.id);
+                          return (
+                            <div
+                              key={sp.id}
+                              className="px-2.5 py-1.5 rounded-lg bg-stone-950 border border-stone-800 flex items-center justify-between gap-2 text-xs"
                             >
-                              {sp.title}
-                            </button>
-                            <div className="flex items-center gap-1.5 shrink-0 print:hidden">
-                              {sp.concentration && (
-                                <span className="text-[9px] font-mono text-cyan-400" title="Concentration">C</span>
-                              )}
-                              {sp.ritual && (
-                                <span className="text-[9px] font-mono text-amber-400" title="Ritual">R</span>
-                              )}
                               <button
-                                onClick={() => onRemoveSpell(sp.id)}
-                                className="text-stone-500 hover:text-rose-400 cursor-pointer"
-                                title={`Remove ${sp.title}`}
+                                onClick={() => onInspectEntry(sp)}
+                                className="text-left text-stone-200 hover:text-amber-300 font-serif truncate cursor-pointer"
+                                title="Inspect full spell description"
                               >
-                                ×
+                                {sp.title}
                               </button>
+                              <div className="flex items-center gap-1.5 shrink-0 print:hidden">
+                                {isSubclassAuto && (
+                                  <span
+                                    className="text-[9px] font-mono px-1 rounded bg-violet-950 text-violet-300 border border-violet-800/60"
+                                    title="Always prepared / granted by archetype"
+                                  >
+                                    Sub
+                                  </span>
+                                )}
+                                {sp.concentration && (
+                                  <span className="text-[9px] font-mono text-cyan-400" title="Concentration">C</span>
+                                )}
+                                {sp.ritual && (
+                                  <span className="text-[9px] font-mono text-amber-400" title="Ritual">R</span>
+                                )}
+                                {isManualSpell && (
+                                  <button
+                                    onClick={() => onRemoveSpell(sp.id)}
+                                    className="text-stone-500 hover:text-rose-400 cursor-pointer"
+                                    title={`Remove ${sp.title}`}
+                                  >
+                                    ×
+                                  </button>
+                                )}
+                              </div>
                             </div>
-                          </div>
-                        ))}
+                          );
+                        })}
                       </div>
                     </div>
                   ))}
@@ -1195,30 +1311,45 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
             </div>
           </div>
 
-          {/* Equipment & Inventory */}
+          {/* Equipment & Inventory (Background Gear + Manual Gear) */}
           <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-4 space-y-3 print-card">
             <h3 className="font-serif text-sm font-bold text-stone-200 flex items-center gap-2">
               <Backpack className="w-4 h-4 text-amber-400" />
-              <span>Equipment & Inventory</span>
+              <span>Equipment &amp; Inventory</span>
             </h3>
 
             <div className="flex flex-wrap gap-1.5">
-              {(state.equipment || []).length > 0 ? (
-                state.equipment.map((item, idx) => (
-                  <span
-                    key={`${item}_${idx}`}
-                    className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-stone-950 border border-stone-800 text-xs text-stone-200"
-                  >
-                    <span>{item}</span>
-                    <button
-                      onClick={() => onRemoveEquipment(idx)}
-                      className="text-stone-500 hover:text-rose-400 cursor-pointer print:hidden"
-                      title={`Remove ${item}`}
+              {derived.rules.effectiveEquipment.length > 0 ? (
+                derived.rules.effectiveEquipment.map((item, idx) => {
+                  const manualIdx = (state.equipment || []).indexOf(item);
+                  const isManual = manualIdx >= 0;
+                  return (
+                    <span
+                      key={`${item}_${idx}`}
+                      className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs ${
+                        isManual
+                          ? 'bg-stone-950 border-stone-800 text-stone-200'
+                          : 'bg-amber-950/30 border-amber-900/50 text-amber-200'
+                      }`}
                     >
-                      ×
-                    </button>
-                  </span>
-                ))
+                      <span>{item}</span>
+                      {!isManual && (
+                        <span className="text-[9px] font-mono text-amber-400/80" title="Auto-granted by background">
+                          BG
+                        </span>
+                      )}
+                      {isManual && (
+                        <button
+                          onClick={() => onRemoveEquipment(manualIdx)}
+                          className="text-stone-500 hover:text-rose-400 cursor-pointer print:hidden"
+                          title={`Remove ${item}`}
+                        >
+                          ×
+                        </button>
+                      )}
+                    </span>
+                  );
+                })
               ) : (
                 <span className="text-xs text-stone-500 italic">No gear listed yet.</span>
               )}
@@ -1246,8 +1377,57 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
           <div className="rounded-2xl border border-stone-800 bg-stone-900/80 p-4 space-y-4 print-card">
             <h3 className="font-serif text-sm font-bold text-stone-200 flex items-center gap-2">
               <DragonShield className="w-4 h-4 text-amber-500" />
-              <span>Features, Style, Class Options & Feats</span>
+              <span>Features, Style, Class Options &amp; Feats</span>
             </h3>
+
+            {/* Proficiencies, Languages & Active Class Resources Strip */}
+            {(derived.rules.effectiveArmorProficiencies.length > 0 ||
+              derived.rules.effectiveWeapons.length > 0 ||
+              derived.rules.effectiveTools.length > 0 ||
+              derived.rules.effectiveLanguages.length > 0 ||
+              derived.rules.classProg.resources.length > 0) && (
+              <div className="rounded-xl bg-stone-950/90 border border-stone-800/90 p-3 space-y-2 text-[11px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-stone-300">
+                  {derived.rules.effectiveArmorProficiencies.length > 0 && (
+                    <div>
+                      <span className="text-stone-500 font-mono uppercase text-[10px]">Armor: </span>
+                      <span>{derived.rules.effectiveArmorProficiencies.join(', ')}</span>
+                    </div>
+                  )}
+                  {derived.rules.effectiveWeapons.length > 0 && (
+                    <div>
+                      <span className="text-stone-500 font-mono uppercase text-[10px]">Weapons: </span>
+                      <span>{derived.rules.effectiveWeapons.join(', ')}</span>
+                    </div>
+                  )}
+                  {derived.rules.effectiveTools.length > 0 && (
+                    <div>
+                      <span className="text-stone-500 font-mono uppercase text-[10px]">Tools: </span>
+                      <span>{derived.rules.effectiveTools.join(', ')}</span>
+                    </div>
+                  )}
+                  {derived.rules.effectiveLanguages.length > 0 && (
+                    <div>
+                      <span className="text-stone-500 font-mono uppercase text-[10px]">Languages: </span>
+                      <span>{derived.rules.effectiveLanguages.join(', ')}</span>
+                    </div>
+                  )}
+                </div>
+
+                {derived.rules.classProg.resources.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 pt-1.5 border-t border-stone-900">
+                    {derived.rules.classProg.resources.map(res => (
+                      <span
+                        key={res.label}
+                        className="px-2 py-0.5 rounded bg-stone-900 border border-stone-800 font-mono text-[10px] text-amber-300"
+                      >
+                        {res.label}: {res.value}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               {/* Race Card */}

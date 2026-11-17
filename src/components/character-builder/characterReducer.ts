@@ -7,11 +7,13 @@ export type CharacterAction =
   | { type: 'SET_ALIGNMENT'; payload: string }
   | { type: 'SET_LEVEL'; payload: number }
   | { type: 'SELECT_RACE'; payload: string | null }
+  | { type: 'SELECT_SUBRACE'; payload: string | null }
   | { type: 'SELECT_CLASS'; payload: string | null }
   | { type: 'SELECT_SUBCLASS'; payload: string | null }
   | { type: 'SELECT_BACKGROUND'; payload: string | null }
   | { type: 'SELECT_FEAT'; payload: string | null }
   | { type: 'TOGGLE_FEAT'; payload: string }
+  | { type: 'SET_FEAT_ABILITY_CHOICE'; payload: { featId: string; ability: AbilityKey } }
   | { type: 'SELECT_FIGHTING_STYLE'; payload: string | null }
   | { type: 'TOGGLE_CLASS_OPTION'; payload: string }
   | { type: 'TOGGLE_SPELL'; payload: string }
@@ -19,9 +21,16 @@ export type CharacterAction =
   | { type: 'SELECT_CAMPAIGN'; payload: string | null }
   | { type: 'SELECT_DEITY'; payload: string | null }
   | { type: 'SET_ABILITY_MODE'; payload: AbilityMode }
+  | { type: 'SET_ASI_SYSTEM'; payload: 'racial' | 'flexible' }
   | { type: 'SET_BASE_ABILITY'; payload: { ability: AbilityKey; score: number } }
   | { type: 'SET_ALL_BASE_ABILITIES'; payload: Record<AbilityKey, number> }
   | { type: 'SET_RACIAL_BONUS'; payload: { type: 'primary' | 'secondary'; ability: AbilityKey } }
+  | { type: 'SET_RACIAL_CHOICE_ABILITIES'; payload: AbilityKey[] }
+  | { type: 'TOGGLE_RACIAL_SKILL'; payload: { skill: string; max: number } }
+  | { type: 'TOGGLE_CLASS_SKILL'; payload: { skill: string; max: number } }
+  | { type: 'TOGGLE_BACKGROUND_SKILL'; payload: { skill: string; max: number; groupPool?: string[]; groupMax?: number } }
+  | { type: 'TOGGLE_APPLY_BACKGROUND_GEAR' }
+  | { type: 'TOGGLE_INCLUDE_SUBCLASS_SPELLS' }
   | { type: 'TOGGLE_SKILL'; payload: string }
   | { type: 'TOGGLE_SKILL_EXPERTISE'; payload: string }
   | { type: 'SET_SKILLS'; payload: string[] }
@@ -52,7 +61,15 @@ function normalizeLoadedState(raw: Partial<CharacterState>): CharacterState {
       ...INITIAL_CHARACTER_STATE.racialBonuses,
       ...(raw.racialBonuses || {})
     },
-    selectedSkills: Array.isArray(raw.selectedSkills) ? raw.selectedSkills : INITIAL_CHARACTER_STATE.selectedSkills,
+    asiSystem: raw.asiSystem === 'flexible' ? 'flexible' : 'racial',
+    racialChoiceAbilities: Array.isArray(raw.racialChoiceAbilities) ? raw.racialChoiceAbilities : [],
+    racialSkillChoices: Array.isArray(raw.racialSkillChoices) ? raw.racialSkillChoices : [],
+    featAbilityChoices: raw.featAbilityChoices && typeof raw.featAbilityChoices === 'object' ? raw.featAbilityChoices : {},
+    classSkillChoices: Array.isArray(raw.classSkillChoices) ? raw.classSkillChoices : [],
+    backgroundSkillChoices: Array.isArray(raw.backgroundSkillChoices) ? raw.backgroundSkillChoices : [],
+    applyBackgroundGear: typeof raw.applyBackgroundGear === 'boolean' ? raw.applyBackgroundGear : true,
+    includeSubclassSpells: typeof raw.includeSubclassSpells === 'boolean' ? raw.includeSubclassSpells : true,
+    selectedSkills: Array.isArray(raw.selectedSkills) ? raw.selectedSkills : [],
     expertSkills: Array.isArray(raw.expertSkills) ? raw.expertSkills : [],
     selectedClassOptionIds: Array.isArray(raw.selectedClassOptionIds) ? raw.selectedClassOptionIds : [],
     selectedSpellIds: Array.isArray(raw.selectedSpellIds) ? raw.selectedSpellIds : [],
@@ -97,9 +114,21 @@ export function characterReducer(state: CharacterState, action: CharacterAction)
     }
 
     case 'SELECT_RACE':
+      if (state.raceId === action.payload) return state;
       return {
         ...state,
-        raceId: action.payload
+        raceId: action.payload,
+        subrace: null,
+        racialChoiceAbilities: [],
+        racialSkillChoices: []
+      };
+
+    case 'SELECT_SUBRACE':
+      return {
+        ...state,
+        subrace: action.payload,
+        racialChoiceAbilities: [],
+        racialSkillChoices: []
       };
 
     case 'SELECT_CLASS':
@@ -109,6 +138,7 @@ export function characterReducer(state: CharacterState, action: CharacterAction)
         classId: action.payload,
         subclassId: null,
         selectedClassOptionIds: [],
+        classSkillChoices: [],
         spellcastingAbilityOverride: null,
         currentHp: null,
         usedSpellSlots: {}
@@ -118,11 +148,16 @@ export function characterReducer(state: CharacterState, action: CharacterAction)
       return { ...state, subclassId: action.payload };
 
     case 'SELECT_BACKGROUND':
-      return { ...state, backgroundId: action.payload };
+      if (state.backgroundId === action.payload) return state;
+      return {
+        ...state,
+        backgroundId: action.payload,
+        backgroundSkillChoices: []
+      };
 
     case 'SELECT_FEAT': {
       if (!action.payload) {
-        return { ...state, featId: null, selectedFeatIds: [] };
+        return { ...state, featId: null, selectedFeatIds: [], featAbilityChoices: {} };
       }
       const next = state.selectedFeatIds.includes(action.payload)
         ? state.selectedFeatIds
@@ -135,12 +170,24 @@ export function characterReducer(state: CharacterState, action: CharacterAction)
       const next = exists
         ? state.selectedFeatIds.filter(id => id !== action.payload)
         : [...state.selectedFeatIds, action.payload];
+      const nextChoices = { ...state.featAbilityChoices };
+      if (exists) delete nextChoices[action.payload];
       return {
         ...state,
         selectedFeatIds: next,
-        featId: next[0] || null
+        featId: next[0] || null,
+        featAbilityChoices: nextChoices
       };
     }
+
+    case 'SET_FEAT_ABILITY_CHOICE':
+      return {
+        ...state,
+        featAbilityChoices: {
+          ...state.featAbilityChoices,
+          [action.payload.featId]: action.payload.ability
+        }
+      };
 
     case 'SELECT_FIGHTING_STYLE':
       return { ...state, selectedFightingStyleId: action.payload };
@@ -181,6 +228,9 @@ export function characterReducer(state: CharacterState, action: CharacterAction)
     case 'SET_ABILITY_MODE':
       return { ...state, abilityMode: action.payload };
 
+    case 'SET_ASI_SYSTEM':
+      return { ...state, asiSystem: action.payload };
+
     case 'SET_BASE_ABILITY':
       return {
         ...state,
@@ -206,6 +256,55 @@ export function characterReducer(state: CharacterState, action: CharacterAction)
           [action.payload.type]: action.payload.ability
         }
       };
+
+    case 'SET_RACIAL_CHOICE_ABILITIES':
+      return { ...state, racialChoiceAbilities: action.payload };
+
+    case 'TOGGLE_RACIAL_SKILL': {
+      const { skill, max } = action.payload;
+      const exists = state.racialSkillChoices.includes(skill);
+      if (exists) {
+        return { ...state, racialSkillChoices: state.racialSkillChoices.filter(s => s !== skill) };
+      }
+      if (state.racialSkillChoices.length >= max) {
+        return { ...state, racialSkillChoices: [...state.racialSkillChoices.slice(1), skill] };
+      }
+      return { ...state, racialSkillChoices: [...state.racialSkillChoices, skill] };
+    }
+
+    case 'TOGGLE_CLASS_SKILL': {
+      const { skill, max } = action.payload;
+      const exists = state.classSkillChoices.includes(skill);
+      if (exists) {
+        return { ...state, classSkillChoices: state.classSkillChoices.filter(s => s !== skill) };
+      }
+      if (state.classSkillChoices.length >= max) {
+        return { ...state, classSkillChoices: [...state.classSkillChoices.slice(1), skill] };
+      }
+      return { ...state, classSkillChoices: [...state.classSkillChoices, skill] };
+    }
+
+    case 'TOGGLE_BACKGROUND_SKILL': {
+      const { skill, max, groupPool, groupMax } = action.payload;
+      const exists = state.backgroundSkillChoices.includes(skill);
+      if (exists) {
+        return { ...state, backgroundSkillChoices: state.backgroundSkillChoices.filter(s => s !== skill) };
+      }
+      let next = [...state.backgroundSkillChoices];
+      if (groupPool && groupMax && groupMax === 1) {
+        // Swap within same pool group (e.g. Martyr Scholarly vs Devout)
+        next = next.filter(s => !groupPool.includes(s));
+      } else if (next.length >= max) {
+        next = next.slice(1);
+      }
+      return { ...state, backgroundSkillChoices: [...next, skill] };
+    }
+
+    case 'TOGGLE_APPLY_BACKGROUND_GEAR':
+      return { ...state, applyBackgroundGear: !state.applyBackgroundGear };
+
+    case 'TOGGLE_INCLUDE_SUBCLASS_SPELLS':
+      return { ...state, includeSubclassSpells: !state.includeSubclassSpells };
 
     case 'TOGGLE_SKILL': {
       const exists = state.selectedSkills.includes(action.payload);

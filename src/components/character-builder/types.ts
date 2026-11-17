@@ -30,6 +30,7 @@ export interface CharacterState {
   alignment: string;
   level: number;
   raceId: string | null;
+  subrace: string | null;
   classId: string | null;
   subclassId: string | null;
   backgroundId: string | null;
@@ -42,16 +43,24 @@ export interface CharacterState {
   campaignId: string | null;
   deityId: string | null;
 
-  // Ability scores
+  // Ability scores & automation choices
   abilityMode: AbilityMode;
+  asiSystem: 'racial' | 'flexible';
   baseAbilities: AbilityScores;
   racialBonuses: {
     primary: AbilityKey;
     secondary: AbilityKey;
   };
+  racialChoiceAbilities: AbilityKey[];
+  racialSkillChoices: string[];
+  featAbilityChoices: Record<string, AbilityKey>;
+  classSkillChoices: string[];
+  backgroundSkillChoices: string[];
+  applyBackgroundGear: boolean;
+  includeSubclassSpells: boolean;
 
   // Combat, Vitals & Proficiencies
-  selectedSkills: string[];
+  selectedSkills: string[]; // Additional / manual sheet overrides
   expertSkills: string[];
   customArmor: string;
   shieldEquipped: boolean;
@@ -127,6 +136,7 @@ export const INITIAL_CHARACTER_STATE: CharacterState = {
   alignment: 'Lawful Neutral',
   level: 1,
   raceId: null,
+  subrace: null,
   classId: null,
   subclassId: null,
   backgroundId: null,
@@ -139,6 +149,7 @@ export const INITIAL_CHARACTER_STATE: CharacterState = {
   campaignId: null,
   deityId: null,
   abilityMode: 'standard',
+  asiSystem: 'racial',
   baseAbilities: {
     str: 15,
     dex: 13,
@@ -151,7 +162,14 @@ export const INITIAL_CHARACTER_STATE: CharacterState = {
     primary: 'str',
     secondary: 'con'
   },
-  selectedSkills: ['Athletics', 'Perception'],
+  racialChoiceAbilities: [],
+  racialSkillChoices: [],
+  featAbilityChoices: {},
+  classSkillChoices: [],
+  backgroundSkillChoices: [],
+  applyBackgroundGear: true,
+  includeSubclassSpells: true,
+  selectedSkills: [],
   expertSkills: [],
   customArmor: 'Chain Mail',
   shieldEquipped: true,

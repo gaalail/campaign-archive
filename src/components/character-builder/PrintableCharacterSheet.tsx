@@ -61,41 +61,35 @@ export const PrintableCharacterSheet: React.FC<PrintableCharacterSheetProps> = (
 
   const proficienciesList = useMemo(() => {
     const items: string[] = [];
-    const armorProfs = selectedClass?.frontmatter?.armor_proficiencies;
-    const weaponProfs = selectedClass?.frontmatter?.weapon_proficiencies;
-    const toolProfs = selectedClass?.frontmatter?.tool_proficiencies;
-    const languages = selectedRace?.frontmatter?.languages;
 
-    if (Array.isArray(armorProfs) && armorProfs.length > 0) {
-      items.push(`Armor: ${armorProfs.join(', ')}`);
-    } else if (typeof armorProfs === 'string' && armorProfs) {
-      items.push(`Armor: ${armorProfs}`);
+    if (derived.rules.effectiveArmorProficiencies.length > 0) {
+      items.push(`Armor: ${derived.rules.effectiveArmorProficiencies.join(', ')}`);
     }
-
-    if (Array.isArray(weaponProfs) && weaponProfs.length > 0) {
-      items.push(`Weapons: ${weaponProfs.join(', ')}`);
-    } else if (typeof weaponProfs === 'string' && weaponProfs) {
-      items.push(`Weapons: ${weaponProfs}`);
+    if (derived.rules.effectiveWeapons.length > 0) {
+      items.push(`Weapons: ${derived.rules.effectiveWeapons.join(', ')}`);
     }
-
-    if (Array.isArray(toolProfs) && toolProfs.length > 0) {
-      items.push(`Tools: ${toolProfs.join(', ')}`);
-    } else if (typeof toolProfs === 'string' && toolProfs) {
-      items.push(`Tools: ${toolProfs}`);
+    if (derived.rules.effectiveTools.length > 0) {
+      items.push(`Tools: ${derived.rules.effectiveTools.join(', ')}`);
     }
-
-    if (Array.isArray(languages) && languages.length > 0) {
-      items.push(`Languages: ${languages.join(', ')}`);
-    } else if (typeof languages === 'string' && languages) {
-      items.push(`Languages: ${languages}`);
+    if (derived.rules.effectiveLanguages.length > 0) {
+      items.push(`Languages: ${derived.rules.effectiveLanguages.join(', ')}`);
     }
-
     if (selectedClass?.saving_throws && selectedClass.saving_throws.length > 0) {
-      items.push(`Saving Throws: ${selectedClass.saving_throws.join(', ')}`);
+      items.push(
+        `Saving Throws: ${selectedClass.saving_throws.join(', ')}${
+          derived.rules.allSavesBonus > 0 ? ` (+${derived.rules.allSavesBonus} all saves)` : ''
+        }`
+      );
+    } else if (derived.rules.allSavesBonus > 0) {
+      items.push(`Saving Throws: +${derived.rules.allSavesBonus} to all saves`);
     }
 
     return items;
-  }, [selectedClass, selectedRace]);
+  }, [derived.rules, selectedClass]);
+
+  const joatBonus = derived.rules.classProg.jackOfAllTrades
+    ? Math.floor(derived.proficiencyBonus / 2)
+    : 0;
 
   const spellSlotEntries = Object.entries(derived.spellSlots.slots).sort(
     ([a], [b]) => Number(a) - Number(b)
@@ -103,7 +97,7 @@ export const PrintableCharacterSheet: React.FC<PrintableCharacterSheetProps> = (
 
   // Fill up to 5 attack rows cleanly
   const blankAttackRows = Math.max(0, 5 - allAttacks.length);
-  const equipmentItems = state.equipment || [];
+  const equipmentItems = derived.rules.effectiveEquipment || [];
   const blankInventoryLines = Math.max(0, 9 - equipmentItems.length);
 
   return (
@@ -197,7 +191,10 @@ export const PrintableCharacterSheet: React.FC<PrintableCharacterSheetProps> = (
             <div className="border-[1.5px] border-black rounded px-2 py-1">
               <div className="text-[7px] uppercase font-bold text-gray-600">Race / Background</div>
               <div className="font-semibold text-[9.5px] truncate">
-                {selectedRace?.title || 'Unset'} · {selectedBackground?.title || 'Unset'}
+                {selectedRace?.title || 'Unset'}
+                {derived.rules.raceProfile.activeSubrace ? ` (${derived.rules.raceProfile.activeSubrace.name})` : ''}
+                {' · '}
+                {selectedBackground?.title || 'Unset'}
               </div>
             </div>
           </div>
@@ -270,11 +267,15 @@ export const PrintableCharacterSheet: React.FC<PrintableCharacterSheetProps> = (
                           {group.abbr}
                         </div>
                         {group.skills.map((sk) => {
-                          const isProf = state.selectedSkills.includes(sk.name);
-                          const isExp = state.expertSkills.includes(sk.name);
+                          const isProf = derived.rules.effectiveSkills.includes(sk.name);
+                          const isExp = derived.rules.effectiveExpertSkills.includes(sk.name);
                           const mod =
                             derived.modifiers[sk.ability] +
-                            (isExp ? derived.proficiencyBonus * 2 : isProf ? derived.proficiencyBonus : 0);
+                            (isExp
+                              ? derived.proficiencyBonus * 2
+                              : isProf
+                              ? derived.proficiencyBonus
+                              : joatBonus);
 
                           return (
                             <div key={sk.name} className="flex items-center gap-1 text-[8px] leading-tight">
@@ -296,7 +297,7 @@ export const PrintableCharacterSheet: React.FC<PrintableCharacterSheetProps> = (
                     ))}
                   </div>
                   <div className="border-t border-gray-300 px-1.5 py-0.5 text-[6.5px] text-gray-600 flex justify-between">
-                    <span>○ Untrained</span>
+                    <span>○ Untrained{joatBonus > 0 ? ` (+${joatBonus} JoAT)` : ''}</span>
                     <span>● Proficient</span>
                     <span>◉ Expertise</span>
                   </div>
@@ -475,6 +476,21 @@ export const PrintableCharacterSheet: React.FC<PrintableCharacterSheetProps> = (
                         </div>
                       );
                     })}
+                    {derived.rules.classProg.resources.map((res) => (
+                      <div key={res.label} className="flex items-center justify-between text-[8px] border-b border-gray-200 pb-0.5">
+                        <span className="font-semibold">{res.label}</span>
+                        <span className="font-mono font-bold">{res.value}</span>
+                      </div>
+                    ))}
+                  </>
+                ) : derived.rules.classProg.resources.length > 0 ? (
+                  <>
+                    {derived.rules.classProg.resources.map((res) => (
+                      <div key={res.label} className="flex items-center justify-between border-b border-gray-300 py-0.5 text-[8.5px]">
+                        <span className="font-semibold">{res.label}</span>
+                        <span className="font-mono font-bold">{res.value}</span>
+                      </div>
+                    ))}
                   </>
                 ) : (
                   Array.from({ length: 4 }).map((_, i) => (
@@ -553,12 +569,21 @@ export const PrintableCharacterSheet: React.FC<PrintableCharacterSheetProps> = (
               <div className="p-2 space-y-1.5 text-[8px] leading-snug">
                 {selectedRace && (
                   <div className="border-b border-gray-200 pb-1">
-                    <div className="font-bold uppercase text-[7.5px]">Ancestry: {selectedRace.title}</div>
+                    <div className="font-bold uppercase text-[7.5px]">
+                      Ancestry: {selectedRace.title}
+                      {derived.rules.raceProfile.activeSubrace ? ` (${derived.rules.raceProfile.activeSubrace.name})` : ''}
+                      {derived.rules.raceProfile.darkvision ? ` · Darkvision ${derived.rules.raceProfile.darkvision} ft.` : ''}
+                    </div>
                     {selectedRace.traits && selectedRace.traits.length > 0 ? (
                       <div>{selectedRace.traits.join(' · ')}</div>
                     ) : selectedRace.summary ? (
                       <div>{selectedRace.summary}</div>
                     ) : null}
+                    {derived.rules.innateSpells.length > 0 && (
+                      <div className="text-[7.5px] text-gray-800 mt-0.5">
+                        <strong>Innate Spells:</strong> {derived.rules.innateSpells.map(s => s.name).join(', ')}
+                      </div>
+                    )}
                   </div>
                 )}
 
