@@ -14,9 +14,6 @@ source: SRD 5.1
 source_type: SRD
 ---
 
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
-
 _Potion, very rare_
 
 When you drink this potion, you gain the effect of the haste spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own.

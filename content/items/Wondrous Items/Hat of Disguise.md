@@ -14,9 +14,6 @@ source: SRD 5.1
 source_type: SRD
 ---
 
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
-
 _Wondrous item, uncommon (requires attunement)_
 
 While wearing this hat, you can use an action to cast the disguise self spell from it at will. The spell ends if the hat is removed.

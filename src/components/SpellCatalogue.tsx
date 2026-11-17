@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { archiveDb, getSpellLevelLabel, getSourceBadgeInfo } from '../utils/archiveUtils';
 import { ArchiveEntry } from '../types/archive';
 import {
@@ -85,6 +85,16 @@ export const SpellCatalogue: React.FC<SpellCatalogueProps> = ({
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [viewMode, setViewMode] = useState<'table' | 'grid'>('table');
   const [groupByLevel, setGroupByLevel] = useState<boolean>(true);
+
+  useEffect(() => {
+    setSelectedClass(initialClass);
+    setSelectedLevel(initialLevel);
+    setSelectedSchool('All Schools');
+    setSelectedSourceType('all');
+    setSelectedConcentration('all');
+    setSelectedRitual('all');
+    setSearchQuery('');
+  }, [initialClass, initialLevel]);
 
   // Collect all spells
   const allSpells = useMemo(() => {
@@ -401,9 +411,23 @@ export const SpellCatalogue: React.FC<SpellCatalogueProps> = ({
       {filteredSpells.length === 0 ? (
         <div className="text-center py-16 bg-slate-900/60 rounded-2xl border border-slate-800 space-y-3">
           <Sparkles className="w-10 h-10 text-slate-600 mx-auto" />
-          <h3 className="font-fantasy text-lg text-slate-300 font-bold">No Spells Match Your Criteria</h3>
+          <h3 className="font-fantasy text-lg text-slate-300 font-bold">
+            {selectedSchool === 'All Schools' &&
+            selectedSourceType === 'all' &&
+            selectedConcentration === 'all' &&
+            selectedRitual === 'all' &&
+            searchQuery.trim() === ''
+              ? `No ${selectedLevel === 'all' ? '' : `${getSpellLevelLabel(selectedLevel)} `}${selectedClass === 'All Spells' ? '' : `${selectedClass} `}Spells Added Yet`
+              : 'No Spells Match Your Criteria'}
+          </h3>
           <p className="text-xs text-slate-500 max-w-md mx-auto">
-            Try adjusting your class, level, school, or search query filters above to locate the spells you need.
+            {selectedSchool === 'All Schools' &&
+            selectedSourceType === 'all' &&
+            selectedConcentration === 'all' &&
+            selectedRitual === 'all' &&
+            searchQuery.trim() === ''
+              ? 'This spell tier is currently awaiting spell entries in the archive. Select another spell level above to browse existing spells.'
+              : 'Try adjusting your class, level, school, or search query filters above to locate the spells you need.'}
           </p>
         </div>
       ) : groupByLevel && selectedLevel === 'all' ? (

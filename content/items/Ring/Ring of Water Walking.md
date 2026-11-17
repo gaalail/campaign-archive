@@ -14,9 +14,6 @@ source: SRD 5.1
 source_type: SRD
 ---
 
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
-
 _Ring, uncommon_
 
 While wearing this ring, you can stand on and move across any liquid surface as if it were solid ground.

@@ -204,7 +204,12 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
   }, [entries, search, selectedSubtype, maxLevel, hasLevels, sortBy]);
 
   if (entries.length === 0) {
-    return null;
+    return (
+      <div className="my-6 not-prose rounded-xl border border-slate-800 bg-slate-900/50 p-5 text-center space-y-1">
+        <h3 className="font-fantasy text-base font-bold text-slate-300">{title}</h3>
+        <p className="text-xs text-slate-500">No entries have been added to this compendium section yet.</p>
+      </div>
+    );
   }
 
   return (

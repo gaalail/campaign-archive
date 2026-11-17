@@ -12,18 +12,18 @@ title: Spells
 
 Choose a spell level to see all spells available at that progression:
 
-| Level     | When You Get It     | Count |
-| --------- | ------------------- | ----- |
-| Cantrips  | Always available    | 80    |
-| 1st-Level | Character level 1+  | 117   |
-| 2nd-Level | Character level 3+  | 120   |
-| 3rd-Level | Character level 5+  | 101   |
-| 4th-Level | Character level 7+  | 95    |
-| 5th-Level | Character level 9+  | 74    |
-| 6th-Level | Character level 11+ | 54    |
-| 7th-Level | Character level 13+ | 39    |
-| 8th-Level | Character level 15+ | 30    |
-| 9th-Level | Character level 17+ | 35    |
+| Level     | When You Get It     | Archive Count | Status |
+| --------- | ------------------- | ------------- | ------ |
+| [[spells/cantrips|Cantrips]]  | Always available    | 0             | Awaiting import |
+| [[spells/1st-level|1st-Level]] | Character level 1+  | 37            | Active |
+| [[spells/2nd-level|2nd-Level]] | Character level 3+  | 34            | Active |
+| [[spells/3rd-level|3rd-Level]] | Character level 5+  | 34            | Active |
+| [[spells/4th-level|4th-Level]] | Character level 7+  | 26            | Active |
+| [[spells/5th-level|5th-Level]] | Character level 9+  | 9             | Active |
+| [[spells/6th-level|6th-Level]] | Character level 11+ | 0             | Awaiting import |
+| [[spells/7th-level|7th-Level]] | Character level 13+ | 0             | Awaiting import |
+| [[spells/8th-level|8th-Level]] | Character level 15+ | 1             | Active |
+| [[spells/9th-level|9th-Level]] | Character level 17+ | 0             | Awaiting import |
 
 **Browse spell levels:** [[spells/cantrips|Cantrips]], [[spells/1st-level|1st-Level]], [[spells/2nd-level|2nd-Level]], [[spells/3rd-level|3rd-Level]], [[spells/4th-level|4th-Level]], [[spells/5th-level|5th-Level]], [[spells/6th-level|6th-Level]], [[spells/7th-level|7th-Level]], [[spells/8th-level|8th-Level]], [[spells/9th-level|9th-Level]]
 
@@ -40,6 +40,7 @@ Choose a spell level to see all spells available at that progression:
 - [[character-options/classes/Paladin|Paladin]] — Holy magic
 - [[character-options/classes/Ranger|Ranger]] — Primal magic
 - [[character-options/classes/Sorcerer|Sorcerer]] — Innate magic
+- [[character-options/classes/Tamer|Tamer]] — Companion magic
 - [[character-options/classes/Thanatomancer|Thanatomancer]] — Necromantic magic
 - [[character-options/classes/Warlock|Warlock]] — Patron magic
 - [[character-options/classes/Wizard|Wizard]] — Scholarly magic

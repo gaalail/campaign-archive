@@ -8,8 +8,7 @@ adaptation: curated
 license_status: reference-only
 source: Alternate Warlock
 source_type: third-party
-content_status: incomplete
-incomplete_reason: The submitted excerpt lists this option but omits its rules text. Awaiting the complete source entry.
+content_status: complete
 title: Minion of Chaos
 option_group: Elder Arcanum
 parent_class: Warlock

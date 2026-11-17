@@ -12,37 +12,75 @@ properties:
     displayName: Level
   school:
     displayName: School
+  casting_time:
+    displayName: Casting time
+  concentration:
+    displayName: Concentration
   source:
     displayName: Source
-  content_status:
-    displayName: Status
 views:
   - type: table
     name: All Tamer Spells
     groupBy:
       property: level
       direction: ASC
-    order: [formula.Name, level, school, source, content_status]
+    order: [formula.Name, school, casting_time, concentration, source]
     sort:
       - property: level
         direction: ASC
       - property: file.name
         direction: ASC
   - type: table
-    name: Complete Tamer Spells
+    name: Cantrips
     filters:
       and:
-        - content_status == "complete"
-    order: [formula.Name, level, school, source]
+        - level == 0
+    order: [formula.Name, school, casting_time]
     sort:
-      - property: level
+      - property: file.name
         direction: ASC
   - type: table
-    name: Tamer Appendix B Spells to Review
+    name: 1st-Level
     filters:
       and:
-        - content_status == "incomplete"
-    order: [formula.Name, level, source]
+        - level == 1
+    order: [formula.Name, school, concentration]
     sort:
-      - property: level
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 2nd-Level
+    filters:
+      and:
+        - level == 2
+    order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 3rd-Level
+    filters:
+      and:
+        - level == 3
+    order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 4th-Level
+    filters:
+      and:
+        - level == 4
+    order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: table
+    name: 5th-Level
+    filters:
+      and:
+        - level == 5
+    order: [formula.Name, school, concentration]
+    sort:
+      - property: file.name
         direction: ASC

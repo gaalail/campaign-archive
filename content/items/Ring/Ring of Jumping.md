@@ -14,9 +14,6 @@ source: SRD 5.1
 source_type: SRD
 ---
 
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
-
 _Ring, uncommon (requires attunement)_
 
 While wearing this ring, you can cast the jump spell from it as a bonus action at will, but can target only yourself when you do so.
