@@ -483,7 +483,7 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
   const showSpellcastingPanel =
     derived.spellSaveDc !== undefined ||
     selectedSpells.length > 0 ||
-    derived.spellSlots.casterType !== 'none' ||
+    derived.rules.classProg.hasSpellcastingAtLevel ||
     derived.rules.innateSpells.length > 0;
 
   return (
@@ -923,7 +923,7 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
                       <input
                         type="checkbox"
                         checked={isProf}
-                        disabled={isAuto && !isManual}
+                        disabled={isAuto}
                         onChange={() => onToggleSkill(skill.name)}
                         className="rounded border-stone-700 text-amber-500 focus:ring-0 focus:ring-offset-0 bg-stone-950 cursor-pointer disabled:opacity-80"
                         title={isAuto ? `Granted by ${autoEntry!.sources.join(', ')}` : 'Toggle bonus proficiency (+PB)'}

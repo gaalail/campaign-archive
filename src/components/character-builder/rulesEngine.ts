@@ -167,6 +167,43 @@ function matchSkillNames(text: string): string[] {
   });
 }
 
+function splitMarkdownTableRow(rowStr: string): string[] {
+  const trimmed = rowStr.trim().replace(/^\|/, '').replace(/\|$/, '');
+  const cells: string[] = [];
+  let current = '';
+  let linkDepth = 0;
+
+  for (let i = 0; i < trimmed.length; i++) {
+    const ch = trimmed[i];
+    const next = trimmed[i + 1];
+    if (ch === '[' && next === '[') {
+      linkDepth++;
+      current += '[[';
+      i++;
+      continue;
+    }
+    if (ch === ']' && next === ']' && linkDepth > 0) {
+      linkDepth--;
+      current += ']]';
+      i++;
+      continue;
+    }
+    if (ch === '\\' && next === '|') {
+      current += '|';
+      i++;
+      continue;
+    }
+    if (ch === '|' && linkDepth === 0) {
+      cells.push(cleanMarkdown(current));
+      current = '';
+      continue;
+    }
+    current += ch;
+  }
+  cells.push(cleanMarkdown(current));
+  return cells;
+}
+
 function parseMarkdownTables(body: string): { headers: string[]; rows: string[][] }[] {
   const lines = body.split('\n');
   const tables: { headers: string[]; rows: string[][] }[] = [];
@@ -177,18 +214,11 @@ function parseMarkdownTables(body: string): { headers: string[]; rows: string[][
     const next = i + 1 < lines.length ? lines[i + 1].trim() : '';
 
     if (line.startsWith('|') && next.startsWith('|') && /[-:]{2,}/.test(next)) {
-      const parseCells = (rowStr: string) =>
-        rowStr
-          .replace(/^\|/, '')
-          .replace(/\|$/, '')
-          .split('|')
-          .map((c) => cleanMarkdown(c));
-
-      const headers = parseCells(line);
+      const headers = splitMarkdownTableRow(line);
       const rows: string[][] = [];
       i += 2;
       while (i < lines.length && lines[i].trim().startsWith('|')) {
-        rows.push(parseCells(lines[i].trim()));
+        rows.push(splitMarkdownTableRow(lines[i].trim()));
         i++;
       }
       tables.push({ headers, rows });
@@ -824,15 +854,17 @@ export function getBackgroundRuleProfile(bgEntry: ArchiveEntry | null): Backgrou
 
 // ---------- Class & Subclass Progression Parser (All 18 Classes + 1/3 Casters + Domain/Oath Spells) ----------
 
-function resolveSpellByName(name: string, allSpells: ArchiveEntry[]): ArchiveEntry | undefined {
+function resolveSpellByName(name: string, allSpells: ArchiveEntry[] = []): ArchiveEntry | undefined {
   const cleaned = cleanMarkdown(name)
     .replace(/\s*\([^)]*\)/g, '')
     .replace(/\s+ll\b/gi, '')
     .trim()
     .toLowerCase();
-  if (!cleaned) return undefined;
+  if (!cleaned || allSpells.length === 0) return undefined;
+  const slug = cleaned.replace(/[\/\s]+/g, '-');
   return (
     allSpells.find((sp) => sp.title.toLowerCase() === cleaned) ||
+    allSpells.find((sp) => sp.id.toLowerCase().endsWith(`/${slug}`)) ||
     allSpells.find((sp) => sp.id.toLowerCase().endsWith(`/${cleaned.replace(/\s+/g, '-')}`)) ||
     allSpells.find((sp) => sp.id.toLowerCase().endsWith(`/${cleaned}`))
   );
@@ -841,8 +873,8 @@ function resolveSpellByName(name: string, allSpells: ArchiveEntry[]): ArchiveEnt
 export function parseSubclassBonusSpells(
   subclassEntry: ArchiveEntry | null,
   level: number,
-  allSpells: ArchiveEntry[],
-  highestSlotLevel: number
+  allSpells: ArchiveEntry[] = [],
+  highestSlotLevel: number = 0
 ): { name: string; entry?: ArchiveEntry; unlockLevel: number }[] {
   if (!subclassEntry) return [];
   const tables = parseMarkdownTables(subclassEntry.body || '');
@@ -961,7 +993,7 @@ export function parseClassAndSubclassProgression(
   subclassEntry: ArchiveEntry | null,
   level: number,
   abilityOverride: AbilityKey | null,
-  allSpells: ArchiveEntry[]
+  allSpells: ArchiveEntry[] = []
 ): ClassProgressionProfile {
   const lvl = Math.max(1, Math.min(20, level || 1));
   const title = classEntry?.title || '';
@@ -1063,6 +1095,7 @@ export function parseClassAndSubclassProgression(
         { match: 'invocations known', label: 'Eldritch Invocations' },
         { match: 'exploits known', label: lower.includes('barbarian') ? 'Savage Exploits' : 'Martial Exploits' },
         { match: 'techniques known', label: 'Mystic Techniques' },
+        { match: 'avatar feature', label: 'Avatar Features' },
         { match: 'infusions known', label: 'Artificer Infusions' },
         { match: 'metamagic', label: 'Metamagic Options' },
         { match: 'manifestations known', label: 'Primal Manifestations' },
@@ -1102,6 +1135,7 @@ export function parseClassAndSubclassProgression(
         { colMatch: 'sorcery points', label: 'Sorcery Points' },
         { colMatch: 'mortis points', label: 'Mortis Points' },
         { colMatch: 'resolve', label: 'Resolve' },
+        { colMatch: 'aura radius', label: 'Aura Radius' },
         { colMatch: 'channel divinity', label: 'Channel Divinity' },
         { colMatch: 'endurance dice', label: 'Endurance Dice' },
         { colMatch: 'infused items', label: 'Max Infused Items' },
@@ -1330,6 +1364,10 @@ export const FEAT_RULES_REGISTRY: Record<string, FeatRuleMetadata> = {
     asiChoice: { count: 1, amount: 1, allowed: ['str', 'dex', 'con'], distinct: true, label: '+1 STR, DEX, or CON' },
     grantsWeaponProficiency: 'All Simple & Martial Weapons',
   },
+  'weapon master': {
+    grantsWeaponProficiency: 'All Simple & Martial Weapons',
+    notes: ['+1 attack and damage with PB chosen Simple/Martial weapons'],
+  },
   'wings of light': {
     flySpeed: 30,
   },
@@ -1359,7 +1397,13 @@ export function checkFeatPrerequisite(
   effectiveSkills: string[],
   hasSpellcasting: boolean
 ): { met: boolean; reason?: string } {
-  const pre = cleanMarkdown(feat.prerequisite || '').trim();
+  let pre = cleanMarkdown(feat.prerequisite || '').trim();
+  if (!pre && feat.body) {
+    const bodyMatch = feat.body.match(/\*\*Prerequisites?:\*\*\s*([^\n]+)/i) || feat.body.match(/^Prerequisites?:\s*([^\n]+)/im);
+    if (bodyMatch) {
+      pre = cleanMarkdown(bodyMatch[1]).trim();
+    }
+  }
   if (!pre) return { met: true };
   const pl = pre.toLowerCase();
 
@@ -1403,6 +1447,12 @@ export function checkFeatPrerequisite(
   // Class prerequisites
   if (pl.includes('good-aligned paladin') && !classTitle.toLowerCase().includes('paladin')) {
     return { met: false, reason: 'Requires Paladin class' };
+  }
+  if (pl.includes('martial exploit')) {
+    const cl = classTitle.toLowerCase();
+    if (!cl.includes('fighter') && !cl.includes('barbarian')) {
+      return { met: false, reason: 'Requires Martial Exploit Known' };
+    }
   }
   if (pl.includes('cleric, paladin, or paragon')) {
     const cl = classTitle.toLowerCase();
