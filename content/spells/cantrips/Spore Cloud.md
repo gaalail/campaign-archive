@@ -1,37 +1,35 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.spore-cloud
-title: Spore Cloud
-spell_name: Spore Cloud
+title: "Spore Cloud"
 level: 0
 school: Biomancy
+alternate_school: Conjuration
+casting_time: "1 action"
+range: "Self (5-foot-radius sphere)"
+duration: "Instantaneous"
+components: "V, S, M (a toadstool)"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You produce a cloud of virulent spores.  Each creature within 5 feet of you, other than you, must succeed on a Constitution saving throw or take 1d4 poison damage."
 classes:
   - Druid
   - Sorcerer
   - Warlock
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: Self (5-foot-radius sphere)
-Components: V, S, M (a toadstool)
-Duration: Instantaneous
+_Biomancy* cantrip (*can be replaced with conjuration)_
 
-Each creature other than you within 5 feet makes a Constitution save or takes 1d4 poison damage. Failure by 5 or more poisons the creature until the end of its next turn. Damage increases by 1d4 at 5th, 11th, and 17th level.
+You produce a cloud of virulent spores. Each creature within 5 feet of you, other than you, must succeed on a Constitution saving throw or take 1d4 poison damage. A creature that fails the saving throw by 5 or more is poisoned until the end of its next turn. The spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).
+
+---
 
 ## Related Content
 
 **Spell Level:** [[spells/cantrips|Cantrips]]
 
-**School:** Biomancy
+**School:** Biomancy (or Conjuration)
 
-**Source:** Appendix B — Spells
+**Available to:** [[Druid]], [[Sorcerer]], [[Warlock]]
 
-**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Warlock|Warlock]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

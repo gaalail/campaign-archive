@@ -1,42 +1,36 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.stalkerseye
-title: Stalker's Eye
+title: "Stalker's Eye"
 level: 0
 school: Enchantment
+casting_time: "1 action"
+range: "Touch"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (small magnifying lens)"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "A willing creature you touch gains a preternatural ability to perceive the weaknesses in a creature's defences.  The first time the creature makes an attack while under the..."
 classes:
   - Bard
   - Druid
   - Tamer
-  - Thanatomancer
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Stalker's Eye
 ---
 
-Casting Time: 1 action
-Range: Touch
-Components: V, S, M (a small magnifying lens)
-Duration: Concentration, up to 1 minute
+_Enchantment cantrip_
 
-A willing creature gains insight into its target's weaknesses. Its first attack under the spell has advantage, then the spell ends. At 5th level it scores a critical hit on 19–20; at 11th on 18–20; at 17th on 17–20.
+A willing creature you touch gains a preternatural ability to perceive the weaknesses in a creature's defences. The first time the creature makes an attack while under the effect of this spell, it makes the attack with advantage. After it makes an attack, the spell ends.
+
+This spell augments the creature's ability to strike at vital points when you reach certain levels. When you reach 5th level, the augmented attack scores a critical hit on a roll of 19 or 20. At 11th level, this range is increased to 18 to 20, and at 17th level, this range becomes 17 to 20.
+
+---
 
 ## Related Content
-
-**Thanatomancer access:** Eligible school and Cleric, Druid, or Wizard list.
-
-**Class:** [[character-options/classes/Thanatomancer|Thanatomancer]]
 
 **Spell Level:** [[spells/cantrips|Cantrips]]
 
 **School:** Enchantment
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Druid]], [[Tamer]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Tamer|Tamer]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

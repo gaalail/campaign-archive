@@ -1,42 +1,41 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.sugarrush
-title: Sugar Rush
+title: "Sugar Rush"
 level: 2
 school: Biomancy
+alternate_school: Transmutation
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (some candy)"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "Choose a willing creature that you can see within range.  Until the spell ends, the target's speed is increased by 15 feet, and it gains a +1 bonus to AC."
 classes:
   - Bard
   - Cleric
   - Paladin
   - Sorcerer
   - Tamer
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Sugar Rush
-alternate_school: Transmutation
 ---
 
-Casting Time: 1 action
-Range: 30 feet
-Components: V, S, M (some candy)
-Duration: Concentration, up to 1 minute
+_2nd-level biomancy* (*can be replaced with transmutation)_
 
-A willing creature gains 15 feet of speed and +1 AC. As a bonus action on each turn it can Dash, Disengage, Hide, or Use an Object. When the spell ends, or if it ends a turn without moving up to its walking speed, it is poisoned until the end of its next turn.
+Choose a willing creature that you can see within range. Until the spell ends, the target's speed is increased by 15 feet, and it gains a +1 bonus to AC. As a bonus action on each of its turns, it can take the Dash, Disengage, Hide, or Use an Object action.
 
-**At Higher Levels.** Target one additional creature per slot level above 2nd.
+When the spell ends, or if an affected creature does not spend movement up to its walking speed by the end of its turn, it then develops a stomach ache and is poisoned until the end of its next turn
+
+**At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/2nd-level|2nd-Level]]
+**Spell Level:** [[spells/2nd-level|2nd level]]
 
-**School:** Biomancy
+**School:** Biomancy (or Transmutation)
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Cleric]], [[Paladin]], [[Sorcerer]], [[Tamer]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Paladin|Paladin]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

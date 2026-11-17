@@ -13,6 +13,7 @@ source_type: SRD
 summary: "Touch a willing creature to create a mystic ward; it gains +1 AC and saving throws and resistance to all damage, while you take identical damage."
 classes:
   - Cleric
+  - Tamer
 ---
 
 _2nd-level abjuration_
@@ -29,6 +30,6 @@ The spell ends if you drop to 0 hit points or if you and the target become separ
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]]
+**Available to:** [[Cleric]], [[Tamer]]
 
 **Source:** SRD 5.1

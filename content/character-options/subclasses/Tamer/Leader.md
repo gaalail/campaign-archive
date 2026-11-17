@@ -9,8 +9,7 @@ source_type: homebrew
 edition: system-neutral
 adaptation: curated
 license_status: original
-content_status: incomplete
-incomplete_reason: Referenced Leader spell options include Appendix B spells whose source text was not supplied.
+content_status: complete
 ---
 
 # Leader
@@ -29,7 +28,7 @@ The die is a d6, becoming a d8 at 6th level, d10 at 10th level, and d12 at 14th 
 
 ## Leader Spells
 
-These spells count as Tamer spells and do not count against spells known. Appendix B spells remain unimported.
+These spells count as Tamer spells and do not count against spells known.
 
 | Tamer Level | Spells                                          |
 | ----------- | ----------------------------------------------- |

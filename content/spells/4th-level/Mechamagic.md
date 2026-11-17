@@ -1,38 +1,44 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.mechamagic
-title: Mechamagic
-spell_name: Mechamagic
+title: "Mechamagic"
 level: 4
 school: Transmutation
+casting_time: "1 action"
+range: "Touch"
+duration: "1 hour"
+components: "V, S, M (adhesive tape with gorillas drawn on it)"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You touch one item, instilling it with levels of belief worthy of a kobold and granting it one of the following properties, based on the item type, for the duration."
 classes:
   - Bard
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: Touch
-Components: V, S, M (adhesive tape with gorillas drawn on it)
-Duration: 1 hour
+_4th-level transmutation_
 
-Touch an item and grant one property based on its type: armor grants its wearer 1d4 temporary HP at each turn's start; belt grants 30-foot flying speed; boots add 10 feet walking speed and triple jump distance; cloak grants advantage on Stealth checks and hiding while lightly obscured; gloves grant climbing speed equal to walking, ceiling climbing without checks, and advantage on grapple checks; headwear removes need to breathe and grants poison resistance and advantage on saves against poison. Touch the item to end the spell; casting it again ends the previous casting.
+You touch one item, instilling it with levels of belief worthy of a kobold and granting it one of the following properties, based on the item type, for the duration.
 
-**At Higher Levels.** Target one additional item per slot level above 4th.
+- **Armour.** A creature wearing this armour gains 1d4 temporary hit points at the start of each of its turns.
+- **Belt.** A creature wearing this belt gains a flying speed of 30 feet.
+- **Boots.** A creature wearing these boots has its walking speed increased by 10 feet and its jump distance tripled.
+- **Cloak.** A creature wearing this cloak has advantage on Stealth checks it makes to hide and can hide while only lightly obscured.
+- **Gloves.** A creature wearing these gloves gains a climbing speed equal to its walking speed and can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check. Additionally, it has advantage on any ability checks it makes related to grappling.
+- **Headwear.** A creature wearing this headwear doesn't need to breathe, has advantage on saving throws against being poisoned, and has resistance to poison damage.
+
+You can end this spell early by touching the item. The spell ends if you cast it again.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, you can target one additional item for each slot level above 4th.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/4th-level|4th-Level]]
+**Spell Level:** [[spells/4th-level|4th level]]
 
 **School:** Transmutation
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

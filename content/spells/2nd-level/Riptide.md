@@ -1,38 +1,37 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.riptide
-title: Riptide
-spell_name: Riptide
+title: "Riptide"
 level: 2
 school: Transmutation
+casting_time: "1 action"
+range: "300 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "Choose one creature you can see within range that is in at least 2 feet of water and choose a direction.  Turbulent currents wrap around the creature."
 classes:
   - Druid
   - Sorcerer
   - Warlock
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
+subclass_spell_lists:
+  - Infuser
 ---
 
-Casting Time: 1 action
-Range: 300 feet
-Components: V, S
-Duration: Concentration, up to 1 minute
+_2nd-level transmutation_
 
-Choose a creature you see in at least 2 feet of water and a direction. At the start of each turn, it makes a Strength save. Failure drags it 30 feet in the chosen direction and reduces its swimming speed to 0 until its next turn. Success lets it move normally until then. As a bonus action, change current direction. The spell ends if it leaves range or is no longer in water at least 2 feet deep.
+Choose one creature you can see within range that is in at least 2 feet of water and choose a direction. Turbulent currents wrap around the creature. For the duration, the target must make a Strength saving throw at the start of each of its turns. On a failure, it is dragged 30 feet in the direction you chose, and its swimming speed is reduced to 0 feet until the start of its next turn. On a success, the creature can move normally until the start of its next turn. As a bonus action on your turn, you can change the direction of the underwater currents. The spell ends early if the creature is ever out of the spell's range, or is no longer in water at least 2 feet deep.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/2nd-level|2nd-Level]]
+**Spell Level:** [[spells/2nd-level|2nd level]]
 
 **School:** Transmutation
 
-**Source:** Appendix B — Spells
+**Available to:** [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

@@ -1,40 +1,37 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.blinding-radiance
-title: Blinding Radiance
-spell_name: Blinding Radiance
+title: "Blinding Radiance"
 level: 4
 school: Evocation
+casting_time: "1 action"
+range: "Self (10-foot-radius sphere)"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a strip of magnesium)"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "Bright light erupts from your form and dazzles those around you.  For the duration, you emit bright light in a 50-foot radius and dim light for an additional 50 feet."
 classes:
   - Cleric
   - Paladin
   - Sorcerer
   - Warlock
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: Self (10-foot-radius sphere)
-Components: V, S, M (a strip of magnesium)
-Duration: Concentration, up to 1 minute
+_4th-level evocation_
 
-You emit bright light for 50 feet and dim light for another 50 feet. Creatures moving within 10 feet of you for the first time on a turn or starting there make Constitution saves or take 3d10 radiant damage and become blinded until your next turn; on success, they take half damage and aren't blinded.
+Bright light erupts from your form and dazzles those around you. For the duration, you emit bright light in a 50-foot radius and dim light for an additional 50 feet. Each creature that moves within 10 feet of you for the first time on its turn or that starts its turn there must make a Constitution saving throw. On a failure, a creature takes 3d10 radiant damage and is blinded until the start of its next turn. On a success, a creature takes half as much damage and isn't blinded.
 
-**At Higher Levels.** Damage increases by 1d10 per slot level above 4th.
+**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/4th-level|4th-Level]]
+**Spell Level:** [[spells/4th-level|4th level]]
 
 **School:** Evocation
 
-**Source:** Appendix B — Spells
+**Available to:** [[Cleric]], [[Paladin]], [[Sorcerer]], [[Warlock]]
 
-**Available to:** [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Paladin|Paladin]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Warlock|Warlock]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

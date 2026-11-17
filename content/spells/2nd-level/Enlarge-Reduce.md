@@ -15,6 +15,7 @@ classes:
   - Artificer
   - Sorcerer
   - Wizard
+  - Tamer
 ---
 
 _2th-level transmutation_
@@ -29,4 +30,4 @@ Cause a creature or object to grow or shrink: Enlarge doubles size, adds advanta
 
 **School:** Transmutation
 
-**Available to:** [[Artificer]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Wizard]], [[Tamer]]

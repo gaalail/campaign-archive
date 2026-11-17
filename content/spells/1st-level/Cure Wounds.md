@@ -18,6 +18,7 @@ classes:
   - Paladin
   - Ranger
   - Artificer
+  - Tamer
 ---
 
 _1st-level evocation_
@@ -34,6 +35,6 @@ A creature you touch regains a number of hit points equal to 1d8 + your spellcas
 
 **School:** Evocation
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Artificer]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Artificer]], [[Tamer]]
 
 **Source:** SRD 5.1

@@ -15,6 +15,7 @@ classes:
   - Bard
   - Sorcerer
   - Wizard
+  - Tamer
 ---
 
 _2th-level divination_
@@ -29,4 +30,4 @@ Read the surface thoughts of a creature within 30 feet, or probe deeper into its
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Tamer]]

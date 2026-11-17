@@ -1,40 +1,37 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.fixit
-title: Fixit
-spell_name: Fixit
+title: "Fixit"
 level: 1
 school: Transmutation
+casting_time: "1 minute"
+range: "Touch"
+duration: "10 minutes"
+components: "V, S, M (adhesive tape with ducks drawn on it)"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You imbue a broken item no larger than 20 feet in any dimension with pure belief.  For the duration, the item is whole once more."
 classes:
   - Bard
   - Cleric
   - Sorcerer
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 minute
-Range: Touch
-Components: V, S, M (adhesive tape with ducks drawn on it)
-Duration: 10 minutes
+_1st-level transmutation_
 
-A broken item no larger than 20 feet in any dimension becomes whole. If you know its magical function and its rarity is Common or lower, it regains magical properties for the duration.
+You imbue a broken item no larger than 20 feet in any dimension with pure belief. For the duration, the item is whole once more. In addition, if you were familiar with the item's magical function (GM's discretion) and its rarity was no higher than common, the item regains its magical properties for the duration.
 
-**At Higher Levels.** Maximum rarity becomes Uncommon at 3rd, Rare at 5th, Very Rare at 7th, or Legendary at 9th level.
+**At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, the rarity of the item that can regain its magical properties increases to uncommon (3rd level), rare (5th level), very rare (7th level), or legendary (9th level).
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/1st-level|1st-Level]]
+**Spell Level:** [[spells/1st-level|1st level]]
 
 **School:** Transmutation
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

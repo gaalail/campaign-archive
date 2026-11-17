@@ -1,10 +1,16 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.incorporeality
-title: Incorporeality
-spell_name: Incorporeality
+title: "Incorporeality"
 level: 5
 school: Transmutation
+casting_time: "1 action"
+range: "Touch"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You touch a willing creature, causing it, and everything it is wearing and carrying, to become translucent.  At the start of each of the target's turns for the duration, it can..."
 classes:
   - Bard
   - Cleric
@@ -13,31 +19,22 @@ classes:
   - Tamer
   - Warlock
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: Touch
-Components: V, S
-Duration: Concentration, up to 1 minute
+_5th-level transmutation_
 
-A willing creature and its carried gear become translucent. At the start of each turn, it can become incorporeal until turn end. While incorporeal, it has advantage on Stealth checks, resistance to nonmagical bludgeoning, piercing, and slashing damage, and can move through creatures and objects as difficult terrain. Ending a turn inside an object shunts it to the nearest open space, dealing 1d10 force damage per 5 feet moved.
+You touch a willing creature, causing it, and everything it is wearing and carrying, to become translucent. At the start of each of the target's turns for the duration, it can choose to become incorporeal (no action required) until the end of its turn. While incorporeal, it has advantage on Stealth checks; it gains resistance to nonmagical bludgeoning, piercing, and slashing damage; and it can move through other creatures and objects as if they were difficult terrain. If the target ends its turn inside an object, it is shunted to the nearest unoccupied space, taking 1d10 force damage for every 5 feet it is shunted.
 
-**At Higher Levels.** Per slot level above 5th, increase duration or target count. Duration options: 10 minutes at 6th, 1 hour at 7th, 8 hours at 8th, 24 hours at 9th.
+**At Higher Levels.** When you cast this spell using a spell slot of 6th level or higher, you can choose to increase the spell's duration, or the number of targets, for each slot level above 5th. If you choose duration, the duration increases in increments to 10 minutes (6th level), 1 hour (7th level), 8 hours (8th level), or 24 hours (9th level). If you choose to increase the number of targets, the number increases by 1 for each slot level.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/5th-level|5th-Level]]
+**Spell Level:** [[spells/5th-level|5th level]]
 
 **School:** Transmutation
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Tamer]], [[Warlock]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

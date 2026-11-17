@@ -1,45 +1,37 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.massleech
-title: Mass Leech
+title: "Mass Leech"
 level: 3
 school: Necromancy
+casting_time: "1 action"
+range: "Self (20-foot-radius sphere)"
+duration: "Instantaneous"
+components: "V, S, M (a live leech that has fed on humanoid blood in the past 24 hours)"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You drain the life force of those around you, turning their limbs heavy and their bones cold.  Each creature of your choice within 20 feet of you must make a Constitution..."
 classes:
   - Cleric
   - Tamer
   - Warlock
   - Wizard
-  - Thanatomancer
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Mass Leech
 ---
 
-Casting Time: 1 action
-Range: Self (20-foot-radius sphere)
-Components: V, S, M (a live leech that fed on humanoid blood within 24 hours)
-Duration: Instantaneous
+_3rd-level necromancy_
 
-Creatures of your choice within 20 feet make Constitution saves, taking 2d8 necrotic damage on failure or half on success. You regain hit points equal to half the necrotic damage dealt to Small or larger creatures.
+You drain the life force of those around you, turning their limbs heavy and their bones cold. Each creature of your choice within 20 feet of you must make a Constitution saving throw. A target takes 2d8 necrotic damage on a failure, or half as much damage on a success. The caster regains hit points equal to half the total amount of necrotic damage dealt to Small or larger creatures.
 
-**At Higher Levels.** Damage increases by 1d8 per slot level above 3rd.
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.
+
+---
 
 ## Related Content
 
-**Thanatomancer access:** Eligible school and Cleric, Druid, or Wizard list.
-
-**Class:** [[character-options/classes/Thanatomancer|Thanatomancer]]
-
-**Spell Level:** [[spells/3rd-level|3rd-Level]]
+**Spell Level:** [[spells/3rd-level|3rd level]]
 
 **School:** Necromancy
 
-**Source:** Appendix B — Spells
+**Available to:** [[Cleric]], [[Tamer]], [[Warlock]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

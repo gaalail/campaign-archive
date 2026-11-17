@@ -1,40 +1,39 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.mireball
-title: Mireball
-spell_name: Mireball
+title: "Mireball"
 level: 3
 school: Conjuration
+casting_time: "1 action"
+range: "150 feet (15-foot-radius sphere)"
+duration: "1 minute"
+components: "V, S, M (a tiny ball of guano and mud)"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "A blob of gloopy mud splunks from your pointed finger to a point you choose within range, where it splooges with a wet burp into an explosion of sludge.  Each creature in a..."
 classes:
   - Bard
   - Druid
   - Sorcerer
   - Warlock
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: 150 feet (15-foot-radius sphere)
-Components: V, S, M (a tiny ball of guano and mud)
-Duration: 1 minute
+_3rd-level conjuration_
 
-Creatures in a 15-foot-radius sphere make Strength saves, taking 3d10 bludgeoning damage and falling prone on failure, half damage without falling prone on success. The area becomes slick, sticky mud. A creature moving through it for the first time on a turn makes a Dexterity save or falls prone; moving at half speed avoids the save.
+A blob of gloopy mud splunks from your pointed finger to a point you choose within range, where it splooges with a wet burp into an explosion of sludge. Each creature in a 15-foot-radius sphere centred on that point must make a Strength saving throw. On a failed save, a target takes 3d10 bludgeoning damage and is knocked prone. On a successful one, it takes half as much damage and is not knocked prone.
 
-**At Higher Levels.** Damage increases by 1d10 per slot level above 3rd.
+In addition, all surfaces within the area become covered in unpredictably slick and sticky patches of mud for the duration. The first time a creature moves through the muddy area on its turn it must succeed on a Dexterity saving throw against your spell save DC or fall prone. A creature moving through the area at half speed doesn't need to make the saving throw.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/3rd-level|3rd-Level]]
+**Spell Level:** [[spells/3rd-level|3rd level]]
 
 **School:** Conjuration
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Warlock|Warlock]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

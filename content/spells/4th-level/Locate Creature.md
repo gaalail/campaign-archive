@@ -18,6 +18,7 @@ classes:
   - Paladin
   - Ranger
   - Wizard
+  - Tamer
 ---
 
 _4th-level divination_
@@ -32,4 +33,4 @@ Describe or name a creature that is familiar to you. You sense the direction to 
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Wizard]], [[Tamer]]

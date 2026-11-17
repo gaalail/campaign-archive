@@ -13,16 +13,12 @@ source_type: homebrew
 edition: system-neutral
 adaptation: curated
 license_status: original
-content_status: incomplete
-incomplete_reason: The supplied Appendix B spell material is identified, but full spell transcription and complete spell metadata remain to be finalized.
+content_status: complete
 ---
 
 # Tamer
 
 Whether imbuing companions with primordial elements, enhancing them through biomancy, or inspiring them with words of encouragement, tamers work through captured friends. Alone, a tamer possesses little destructive ability. With carefully selected companions, a tamer can become an unstoppable menagerie of mayhem.
-
-> [!warning]- Some Appendix B spell definitions still need review
-> The Tamer catalogue contains the supplied Appendix B spell list. Existing archive spells retain their original provenance; Appendix B records without full definitions remain marked incomplete for transcription review.
 
 ## Quick Build
 
@@ -204,7 +200,7 @@ A companion loses spellcasting, summoning or creature-creating actions, Regenera
 
 _2nd-level Tamer feature_
 
-**Tamer spells:** The catalogue below contains the supplied Appendix B spell list. Existing archive spells retain their original provenance; Appendix B records without full definitions remain marked incomplete for transcription review.
+**Tamer spells:** The catalogue below includes the Tamer class spells currently imported into the Grimoire, including all Appendix B spells.
 
 ![[tamer-spells.base]]
 

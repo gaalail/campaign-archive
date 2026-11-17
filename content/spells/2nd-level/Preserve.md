@@ -1,9 +1,17 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.preserve
-title: Preserve
+title: "Preserve"
 level: 2
 school: Biomancy
+alternate_school: Abjuration
+casting_time: "1 action"
+range: "60 feet"
+duration: "24 hours"
+components: "V, S, M (some ether)"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "With a flare of brilliant octarine light, each creature within a 10-foot-radius sphere centred on a point you can see within range must succeed on a Charisma saving throw or..."
 classes:
   - Cleric
   - Druid
@@ -11,33 +19,22 @@ classes:
   - Ranger
   - Tamer
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Preserve
-alternate_school: Abjuration
 ---
 
-Casting Time: 1 action
-Range: 60 feet
-Components: V, S, M (some ether)
-Duration: 24 hours
+_2nd-level biomancy* (*can be replaced with abjuration)_
 
-Each creature in a 10-foot-radius sphere centered on a point you can see within range must succeed on a Charisma saving throw or become soulbound for the duration, its magical essence tied to its physical or incorporeal form. If a soulbound creature dies, its magic remains bound to its components for 24 hours, allowing harvesting to begin during that period. The spell ends for a corpse once harvesting begins. Creatures with robust or stronger essence, typically CR 7 or higher, automatically succeed.
+With a flare of brilliant octarine light, each creature within a 10-foot-radius sphere centred on a point you can see within range must succeed on a Charisma saving throw or become soulbound for the duration, its magical essence tied to its physical (or incorporeal) form. If a creature dies while soulbound, its magic is bound to its components for 24 hours allowing harvesting to start at any time within this period (see page 87 for the rules on harvesting). Once harvesting starts on a corpse under the effect of this spell, the spell ends for that corpse. Creatures possessing robust or more powerful essence (typically, those of CR 7 or higher) automatically succeed on this saving throw.
 
-**At Higher Levels.** When you cast this spell using a 4th-level or higher slot, the essence tier that automatically succeeds rises by one tier for every two slot levels above 2nd: potent (typically CR 12+) at 4th, mythic (typically CR 18+) at 6th, and deific (typically CR 25+) at 8th.
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the strength of the essence possessed by creatures that allows them to automatically succeed on the saving throw increases by one tier for each two slot levels above 2nd. Creatures with potent or more powerful essence (typically CR 12 or higher) automatically succeed at 4th level, mythic (typically CR 18 or higher) at 6th level, and deific (typically CR 25 or higher) at 8th level.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/2nd-level|2nd-Level]]
+**Spell Level:** [[spells/2nd-level|2nd level]]
 
-**School:** Biomancy (optional alternate: Abjuration)
+**School:** Biomancy (or Abjuration)
 
-**Source:** Appendix B — Spells
+**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Tamer]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Paladin|Paladin]], [[character-options/classes/Ranger|Ranger]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

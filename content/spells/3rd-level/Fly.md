@@ -16,6 +16,7 @@ classes:
   - Sorcerer
   - Warlock
   - Wizard
+  - Tamer
 ---
 
 _3rd-level transmutation_
@@ -32,6 +33,6 @@ You touch a willing creature. The target gains a flying speed of 60 feet for the
 
 **School:** Transmutation
 
-**Available to:** [[Artificer]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Tamer]]
 
 **Source:** SRD 5.1

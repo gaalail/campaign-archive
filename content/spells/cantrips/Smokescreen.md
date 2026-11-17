@@ -1,29 +1,30 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.smokescreen
-title: Smokescreen
+title: "Smokescreen"
 level: 0
 school: Conjuration
+casting_time: "1 action"
+range: "Self (5-foot-diameter, 10-foot-high cylinder)"
+duration: "Concentration, up to 1 round"
+components: "V, S, M (a puffball mushroom)"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You spew a thick cloud of dense black smoke that forms a 5-foot-diameter, 10-foot-high cylinder centred on you that lasts until the start of your next turn.  The smoke heavily..."
 classes:
   - Druid
   - Sorcerer
   - Tamer
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Smokescreen
 ---
 
-Casting Time: 1 action
-Range: Self (5-foot-radius, 10-foot-high cylinder)
-Components: V, S, M (a puffball mushroom)
-Duration: Concentration, up to 1 round
+_Conjuration cantrip_
 
-A heavily obscuring black smoke cylinder appears centered on you until the start of your next turn. Choose whether it stays in place or moves with you. Its maximum diameter and height become 15 feet at 5th level, 25 feet at 11th, and 40 feet at 17th level. Choose dimensions up to those limits when casting.
+You spew a thick cloud of dense black smoke that forms a 5-foot-diameter, 10-foot-high cylinder centred on you that lasts until the start of your next turn. The smoke heavily obscures its area. When you cast the spell, you can choose whether the cloud remains in the location where you cast it or if it moves with you, centred on you.
+
+When you reach higher levels, the size of the cloud you can create with this spell increases. When you reach 5th level, the cloud has a maximum diameter and height of 15 feet; at 11th level this increases to 25 feet; and at 17th level this increases to 40 feet. You choose how big the cloud is in each dimension up to this maximum each time that you cast it.
+
+---
 
 ## Related Content
 
@@ -31,8 +32,6 @@ A heavily obscuring black smoke cylinder appears centered on you until the start
 
 **School:** Conjuration
 
-**Source:** Appendix B — Spells
+**Available to:** [[Druid]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

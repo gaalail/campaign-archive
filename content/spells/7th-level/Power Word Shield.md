@@ -1,38 +1,35 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.power-word-shield
-title: Power Word Shield
-spell_name: Power Word Shield
+title: "Power Word Shield"
 level: 7
 school: Abjuration
+casting_time: "1 reaction, which you take when a creature you can see is the target of an attack or spell"
+range: "60 feet"
+duration: "1 round"
+components: "V"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "With a word, a translucent shield bubbles out from a creature you can see within range.  Until the end of its next turn, it is immune to all damage types except psychic, it has..."
 classes:
   - Bard
   - Cleric
   - Sorcerer
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 reaction, when a creature you see is targeted by an attack or spell
-Range: 60 feet
-Components: V
-Duration: 1 round
+_7th-level abjuration_
 
-A translucent shield protects a creature you see. Until the end of its next turn, it is immune to all damage except psychic, has advantage on all saving throws, and is unaffected by other power word spells. The spell removes poison and extinguishes flames on it.
+With a word, a translucent shield bubbles out from a creature you can see within range. Until the end of its next turn, it is immune to all damage types except psychic, it has advantage on all saving throws, and all other power word spells have no effect on it. If the creature is poisoned, that condition is removed, and if the creature is aflame, the fires are extinguished.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/7th-level|7th-Level]]
+**Spell Level:** [[spells/7th-level|7th level]]
 
 **School:** Abjuration
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

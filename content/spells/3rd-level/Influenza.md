@@ -1,39 +1,41 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.influenza
-title: Influenza
-spell_name: Influenza
+title: "Influenza"
 level: 3
 school: Biomancy
+alternate_school: Necromancy
+casting_time: "1 action"
+range: "Self (30-foot cone)"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (some pollen)"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "With a mighty sneeze that can be heard up to 300 feet away, you blast forth a 30-foot cone of phlegm, bad breath, and viral pathogens.  Each creature in the area must make a..."
 classes:
   - Cleric
   - Druid
   - Warlock
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
+subclass_spell_lists:
+  - Necromancer
 ---
 
-Casting Time: 1 action
-Range: Self (30-foot cone)
-Components: V, S, M (some pollen)
-Duration: Concentration, up to 1 minute
+_3rd-level biomancy* (*can be replaced with necromancy)_
 
-Creatures in the cone make Dexterity saves, taking 3d6 poison damage and becoming poisoned on failure, half damage without poison on success. A poisoned creature repeats a Constitution save at the end of each turn. At the start of each poisoned creature's turn, roll a d12; on 1–3 it is incapacitated by coughing until its next turn. Creatures within 5 feet of one incapacitated this way make Constitution saves or contract the effect.
+With a mighty sneeze that can be heard up to 300 feet away, you blast forth a 30-foot cone of phlegm, bad breath, and viral pathogens. Each creature in the area must make a Dexterity saving throw. On a failed save, a creature takes 3d6 poison damage and is poisoned for the duration. On a successful save, the creature takes half as much damage and isn't poisoned. A poisoned creature can make a Constitution saving throw at the end of each of its turns, ending the effect on itself on a success.
 
-**At Higher Levels.** Damage and the coughing threshold increase by 1d6 and 1 per slot level above 3rd.
+Whilst poisoned in this way, a creature must roll a d12 at the start of each of its turns. On a 3 or lower, it is racked by a coughing fit and becomes incapacitated until the start of its next turn. Each creature within 5 feet of a creature when it becomes incapacitated in this way must succeed on a Constitution saving throw or also become poisoned in this way for the spell's duration.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 and the value a poisoned creature must roll on the d12 to cause a coughing fit increases by 1 for each slot level above 3rd.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/3rd-level|3rd-Level]]
+**Spell Level:** [[spells/3rd-level|3rd level]]
 
-**School:** Biomancy
+**School:** Biomancy (or Necromancy)
 
-**Source:** Appendix B — Spells
+**Available to:** [[Cleric]], [[Druid]], [[Warlock]]
 
-**Available to:** [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Warlock|Warlock]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

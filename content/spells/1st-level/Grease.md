@@ -14,6 +14,7 @@ summary: "Slick grease covers the ground in a 10-foot square, turning it into di
 classes:
   - Artificer
   - Wizard
+  - Tamer
 ---
 
 _1st-level conjuration_
@@ -30,6 +31,6 @@ When the grease appears, each creature standing in its area must succeed on a De
 
 **School:** Conjuration
 
-**Available to:** [[Artificer]], [[Wizard]]
+**Available to:** [[Artificer]], [[Wizard]], [[Tamer]]
 
 **Source:** SRD 5.1

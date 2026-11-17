@@ -1,45 +1,37 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.corrupting-ichor
-title: Corrupting Ichor
-spell_name: Corrupting Ichor
+title: "Corrupting Ichor"
 level: 1
 school: Necromancy
+casting_time: "1 action"
+range: "60 feet"
+duration: "Instantaneous"
+components: "S, M (some phlegm)"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You spit a globule of phlegm at one creature within range.  Make a ranged spell attack against the target."
 classes:
   - Druid
   - Sorcerer
   - Warlock
   - Wizard
-  - Thanatomancer
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: 60 feet
-Components: S, M (some phlegm)
-Duration: Instantaneous
+_1st-level necromancy_
 
-Make a ranged spell attack against a creature. On a hit, it takes 2d8 necrotic damage. Until it uses an action to wipe off the phlegm, it takes 1d4 necrotic damage at the start of each turn and regains only half the hit points it otherwise would.
+You spit a globule of phlegm at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 necrotic damage. In addition, until it uses its action to wipe off the phlegm, it takes 1d4 necrotic damage at the start of each of its turns and any hit points regained are reduced by half.
 
-**At Higher Levels.** The ongoing damage increases by 1d4 per slot level above 1st.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, the damage at the start of the target's next turn increases by 1d4 for each slot level above 1st.
+
+---
 
 ## Related Content
 
-**Thanatomancer access:** Eligible school and Cleric, Druid, or Wizard list.
-
-**Class:** [[character-options/classes/Thanatomancer|Thanatomancer]]
-
-**Spell Level:** [[spells/1st-level|1st-Level]]
+**Spell Level:** [[spells/1st-level|1st level]]
 
 **School:** Necromancy
 
-**Source:** Appendix B — Spells
+**Available to:** [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

@@ -1,44 +1,38 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.daydream
-title: Daydream
-spell_name: Daydream
+title: "Daydream"
 level: 1
 school: Enchantment
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a tiny, four-panelled window)"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You float some mildly distracting thoughts into the mind of a humanoid you can see within range.  The target must succeed on a Wisdom saving throw or have disadvantage on..."
 classes:
   - Bard
   - Druid
   - Warlock
-  - Thanatomancer
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: 30 feet
-Components: V, S, M (a tiny, four-panelled window)
-Duration: Concentration, up to 1 minute
+_1st-level enchantment_
 
-A humanoid you see makes a Wisdom save or has disadvantage on Perception checks and a −5 penalty to passive Perception. Creatures immune to charm are unaffected. A creature succeeding by 5 or more knows magic was attempted; otherwise it is unaware.
+You float some mildly distracting thoughts into the mind of a humanoid you can see within range. The target must succeed on a Wisdom saving throw or have disadvantage on Wisdom (Perception) checks (taking a -5 penalty to its passive Perception as a result of this disadvantage) until the spell ends. A creature immune to being charmed is unaffected by this spell.
 
-**At Higher Levels.** Per slot level above 1st, target one additional creature or increase range by 30 feet.
+A creature that succeeds on the saving throw by 5 or more is aware that an attempt was made to influence it with magic. Otherwise, the creature remains unaware of the magic that affected it.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st, or you can extend the range of the spell by 30 feet for each slot level above 1st.
+
+---
 
 ## Related Content
 
-**Thanatomancer access:** Eligible school and Cleric, Druid, or Wizard list.
-
-**Class:** [[character-options/classes/Thanatomancer|Thanatomancer]]
-
-**Spell Level:** [[spells/1st-level|1st-Level]]
+**Spell Level:** [[spells/1st-level|1st level]]
 
 **School:** Enchantment
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Druid]], [[Warlock]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Warlock|Warlock]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

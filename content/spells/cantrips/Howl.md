@@ -1,27 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.howl
-title: Howl
+title: "Howl"
 level: 0
 school: Transmutation
+casting_time: "1 action"
+range: "Self (1,000-foot-radius sphere)"
+duration: "1 round"
+components: "V"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You utter a bestial, magically-augmented howl that can be heard for 1,000 feet.  The howl can manifest as any animal call you've heard, such as the screech of a hawk or trumpet..."
 classes:
   - Druid
   - Tamer
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Howl
 ---
 
-Casting Time: 1 action
-Range: Self (1,000-foot-radius sphere)
-Components: V
-Duration: 1 round
+_Transmutation cantrip_
 
-You utter a magically augmented animal howl audible for 1,000 feet. Choose one familiar creature as recipient; if it hears your howl, it understands your meaning and can respond similarly. Other creatures able to understand beasts or affected by comprehend languages can understand it; otherwise it is unintelligible.
+You utter a bestial, magically-augmented howl that can be heard for 1,000 feet. The howl can manifest as any animal call you've heard, such as the screech of a hawk or trumpet of an elephant. Choose one creature with whom you are familiar as the recipient: if it can hear your howl, it understands your meaning and can respond in a likewise manner.
+
+Creatures other than your recipient that hear the howl and that are under the effects of the comprehend languages spell or similar magic, or that can understand beasts, can understand the howl's meaning. Otherwise, the howl is unintelligible to creatures that can hear it.
+
+---
 
 ## Related Content
 
@@ -29,8 +30,6 @@ You utter a magically augmented animal howl audible for 1,000 feet. Choose one f
 
 **School:** Transmutation
 
-**Source:** Appendix B — Spells
+**Available to:** [[Druid]], [[Tamer]]
 
-**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Tamer|Tamer]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

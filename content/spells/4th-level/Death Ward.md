@@ -14,6 +14,7 @@ summary: "Touch a creature to grant it protection from death: the first time it 
 classes:
   - Cleric
   - Paladin
+  - Tamer
 subclass_spell_lists:
   - Life Domain
 ---
@@ -32,6 +33,6 @@ If the spell is still in effect when the target is subjected to an effect that w
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Tamer]]
 
 **Source:** SRD 5.1

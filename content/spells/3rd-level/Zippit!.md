@@ -1,41 +1,43 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.zippit
-title: Zippit!
-spell_name: Zippit!
+title: "Zippit!"
 level: 3
 school: Biomancy
+alternate_school: Transmutation
+casting_time: "1 reaction, which you take when a creature within range vocalises"
+range: "60 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "In response to a creature vocalizing, you make a sharp sound and hold a finger up in an attempt to interrupt them.  The target must succeed on a Constitution saving throw or..."
 classes:
   - Bard
   - Druid
   - Sorcerer
   - Warlock
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
+subclass_spell_lists:
+  - Splicer
 ---
 
-Casting Time: 1 reaction, when a creature within range vocalizes
-Range: 60 feet
-Components: V, S
-Duration: Concentration, up to 1 minute
+_3rd-level biomancy* (*can be replaced with transmutation)_
 
-The target makes a Constitution save or its mouth fuses shut and it is silenced. If it was casting a spell with verbal components, the slot is not expended but its action is wasted. At the end of each turn it can make a Strength save; success deals 1d8 slashing damage and ends the silence. Alternatively, it can use an action and a bladed implement to cut its mouth open, take 1d8 slashing damage, and end the spell.
+In response to a creature vocalizing, you make a sharp sound and hold a finger up in an attempt to interrupt them. The target must succeed on a Constitution saving throw or become silenced as its mouth is fused shut for the duration. If you silence a target that is casting a spell with verbal components, the target's spell slot isn't expended, but its action is wasted.
 
-**At Higher Levels.** Slashing damage increases by 1d8 per slot level above 3rd.
+At the end of each of its turns, the target can make a Strength saving throw as it tries to tear open its mouth. On a success, the target takes 1d8 slashing damage and is no longer silenced. Alternatively, as an action, the target can use a bladed implement to cut open its mouth, taking 1d8 slashing damage and ending the silence.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/3rd-level|3rd-Level]]
+**Spell Level:** [[spells/3rd-level|3rd level]]
 
-**School:** Biomancy
+**School:** Biomancy (or Transmutation)
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

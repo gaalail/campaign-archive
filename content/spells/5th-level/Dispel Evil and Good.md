@@ -14,6 +14,7 @@ summary: "Shimmering energy protects you from extraplanar beings: celestials, el
 classes:
   - Cleric
   - Paladin
+  - Tamer
 subclass_spell_lists:
   - Devotion Oath
 ---
@@ -32,6 +33,6 @@ You can also end the spell early using one of two special effects: **Break Encha
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Tamer]]
 
 **Source:** SRD 5.1

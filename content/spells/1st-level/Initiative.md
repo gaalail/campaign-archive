@@ -1,46 +1,38 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.initiative
-title: Initiative
+title: "Initiative"
 level: 1
 school: Enchantment
+casting_time: "1 reaction, which you take when initiative is rolled"
+range: "30 feet"
+duration: "Instantaneous"
+components: "V, S, M (a coffee bean)"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "As a reaction when initiative is rolled, choose a willing creature you can see within range; it begins to subtly jitter as its pupils dilate.  If the target is surprised, it is..."
 classes:
   - Bard
   - Ranger
   - Sorcerer
   - Tamer
   - Wizard
-  - Thanatomancer
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Initiative
 ---
 
-Casting Time: 1 reaction, taken when initiative is rolled
-Range: 30 feet
-Components: V, S, M (a coffee bean)
-Duration: Instantaneous
+_1st-level enchantment_
 
-Choose a willing creature you see. If surprised, it is no longer surprised and takes its first-round turn normally. Otherwise it has advantage on the triggering initiative roll.
+As a reaction when initiative is rolled, choose a willing creature you can see within range; it begins to subtly jitter as its pupils dilate. If the target is surprised, it is no longer surprised, and takes its turn on the first round as normal. If the target is not surprised, it gains advantage on the initiative roll that prompted this spell.
 
-**At Higher Levels.** Target one additional creature per slot level above 1st.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you may target one additional creature for each spell slot above 1st.
+
+---
 
 ## Related Content
 
-**Thanatomancer access:** Eligible school and Cleric, Druid, or Wizard list.
-
-**Class:** [[character-options/classes/Thanatomancer|Thanatomancer]]
-
-**Spell Level:** [[spells/1st-level|1st-Level]]
+**Spell Level:** [[spells/1st-level|1st level]]
 
 **School:** Enchantment
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Ranger]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Ranger|Ranger]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

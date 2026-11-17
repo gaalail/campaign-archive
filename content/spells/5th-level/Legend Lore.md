@@ -15,6 +15,7 @@ classes:
   - Bard
   - Cleric
   - Wizard
+  - Tamer
 ---
 
 _5th-level divination_
@@ -29,4 +30,4 @@ Name or describe a person, place, or object of legendary importance to bring lor
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Wizard]], [[Tamer]]

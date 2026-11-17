@@ -1,41 +1,38 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.shieldingword
-title: Shielding Word
+title: "Shielding Word"
 level: 2
 school: Abjuration
+casting_time: "1 reaction, which you take when a creature within range that you can see is hit by an attack from an attacker you can see or fails a Strength or Dexterity saving throw"
+range: "30 feet"
+duration: "1 round"
+components: "V"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "With a word, you coat a creature in a shimmering shield that absorbs the energy of incoming blows.  The creature gains 15 temporary hit points the instant before it takes the..."
 classes:
   - Bard
   - Cleric
   - Paladin
   - Sorcerer
   - Tamer
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Shielding Word
 ---
 
-Casting Time: 1 reaction, when a creature you see within range is hit by an attack or fails a Strength or Dexterity save
-Range: 30 feet
-Components: V
-Duration: 1 round
+_2nd-level abjuration_
 
-The creature gains 15 temporary HP immediately before the triggering damage. These HP last until the start of its next turn.
+With a word, you coat a creature in a shimmering shield that absorbs the energy of incoming blows. The creature gains 15 temporary hit points the instant before it takes the triggering damage. These hit points last until the start of the creature's next turn.
 
-**At Higher Levels.** Per slot level above 2nd, increase range by 30 feet or temporary HP by 5.
+**At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, you may choose to either increase the range of the spell by 30 feet or increase the number of temporary hit points gained by 5, for each slot level above 2nd.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/2nd-level|2nd-Level]]
+**Spell Level:** [[spells/2nd-level|2nd level]]
 
 **School:** Abjuration
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Cleric]], [[Paladin]], [[Sorcerer]], [[Tamer]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Paladin|Paladin]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

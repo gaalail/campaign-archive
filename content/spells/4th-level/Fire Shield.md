@@ -13,6 +13,7 @@ source_type: SRD
 summary: "Thin flames wreathe your body, granting resistance to fire or cold damage and dealing 2d8 damage to creatures that strike you in melee."
 classes:
   - Wizard
+  - Tamer
 subclass_spell_lists:
   - Fiend Patron
 ---
@@ -33,6 +34,6 @@ The flames provide you with a warm shield or a chill shield, as you choose:
 
 **School:** Evocation
 
-**Available to:** [[Wizard]]
+**Available to:** [[Wizard]], [[Tamer]]
 
 **Source:** SRD 5.1

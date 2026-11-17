@@ -15,6 +15,7 @@ classes:
   - Artificer
   - Sorcerer
   - Wizard
+  - Tamer
 subclass_spell_lists:
   - Vengeance Oath
 ---
@@ -33,6 +34,6 @@ When the spell ends, the target can't move or take actions until after its next 
 
 **School:** Transmutation
 
-**Available to:** [[Artificer]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Wizard]], [[Tamer]]
 
 **Source:** SRD 5.1

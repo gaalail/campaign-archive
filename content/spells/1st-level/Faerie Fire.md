@@ -15,6 +15,7 @@ classes:
   - Bard
   - Druid
   - Artificer
+  - Tamer
 subclass_spell_lists:
   - Light Domain
   - Archfey Patron
@@ -34,6 +35,6 @@ Any attack roll against an affected creature or object has advantage if the atta
 
 **School:** Evocation
 
-**Available to:** [[Bard]], [[Druid]], [[Artificer]]
+**Available to:** [[Bard]], [[Druid]], [[Artificer]], [[Tamer]]
 
 **Source:** SRD 5.1

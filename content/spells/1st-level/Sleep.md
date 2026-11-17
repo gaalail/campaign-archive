@@ -15,6 +15,7 @@ classes:
   - Bard
   - Sorcerer
   - Wizard
+  - Tamer
 subclass_spell_lists:
   - Archfey Patron
 ---
@@ -37,6 +38,6 @@ Undead and creatures immune to being charmed aren't affected by this spell.
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Tamer]]
 
 **Source:** SRD 5.1

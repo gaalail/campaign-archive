@@ -1,42 +1,41 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.eelskin
-title: Eelskin
+title: "Eelskin"
 level: 2
 school: Biomancy
+alternate_school: Evocation
+casting_time: "1 action or 1 bonus action"
+range: "Touch"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (some jellied eel)"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You cause the skin of a willing creature you touch to produce a slimy, electrified mucous.  The creature's unarmed strikes and natural weapon attacks become magical for the..."
 classes:
   - Druid
   - Sorcerer
   - Tamer
   - Warlock
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Eelskin
-alternate_school: Evocation
 ---
 
-Casting Time: 1 action or 1 bonus action
-Range: Touch
-Components: V, S, M (some jellied eel)
-Duration: Concentration, up to 1 minute
+_2nd-level biomancy* (*can be replaced with evocation)_
 
-A willing creature's skin produces slimy, electrified mucous. Its unarmed strikes and natural weapon attacks become magical. The first time it hits with one on its turn, it deals an extra 1d8 lightning damage. It has advantage on checks and saves to avoid grapples and restraints, and disadvantage on attempts to grapple.
+You cause the skin of a willing creature you touch to produce a slimy, electrified mucous. The creature's unarmed strikes and natural weapon attacks become magical for the duration of the spell. The first time the creature hits with an unarmed strike or an attack using a natural weapon on its turn, it deals an additional 1d8 lightning damage as the stored lightning discharges.
 
-**At Higher Levels.** Damage increases by 1d8 per two slot levels above 2nd.
+**Slimy.** For the duration, the creature has advantage on checks and saves made to avoid being grappled or restrained, and disadvantage on any attempts it makes to grapple another creature.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each two slot levels above 2nd.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/2nd-level|2nd-Level]]
+**Spell Level:** [[spells/2nd-level|2nd level]]
 
-**School:** Biomancy
+**School:** Biomancy (or Evocation)
 
-**Source:** Appendix B — Spells
+**Available to:** [[Druid]], [[Sorcerer]], [[Tamer]], [[Warlock]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

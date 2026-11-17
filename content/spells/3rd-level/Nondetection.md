@@ -15,6 +15,7 @@ classes:
   - Bard
   - Ranger
   - Wizard
+  - Tamer
 ---
 
 _3th-level abjuration_
@@ -29,4 +30,4 @@ Hide a target from divination magic: the target cannot be targeted by any divina
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Ranger]], [[Wizard]]
+**Available to:** [[Bard]], [[Ranger]], [[Wizard]], [[Tamer]]

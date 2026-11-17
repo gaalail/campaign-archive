@@ -1,41 +1,39 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.flipperform
-title: Flipperform
-spell_name: Flipperform
+title: "Flipperform"
 level: 1
 school: Biomancy
+alternate_school: Transmutation
+casting_time: "1 action"
+range: "30 feet"
+duration: "1 hour"
+components: "V, S, M (a fish's fin)"
+ritual: true
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You change the morphology of a willing creature within range.  It grows webbed fingers and gains a swimming speed equal to its walking speed."
 classes:
   - Druid
   - Ranger
   - Sorcerer
   - Tamer
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: 30 feet
-Components: V, S, M (a fish's fin)
-Duration: 1 hour
+_1st-level biomancy* (ritual; *can be replaced with transmutation)_
 
-A willing creature grows webbed fingers and gains a swimming speed equal to its walking speed.
+You change the morphology of a willing creature within range. It grows webbed fingers and gains a swimming speed equal to its walking speed.
 
-**At Higher Levels.** Target one additional creature per slot level above 1st, and double the duration for each slot level above 1st.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. In addition, the duration of the spell doubles for each slot level above 1st.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/1st-level|1st-Level]]
+**Spell Level:** [[spells/1st-level|1st level]]
 
-**School:** Biomancy
+**School:** Biomancy (or Transmutation)
 
-**Source:** Appendix B — Spells
+**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Ranger|Ranger]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

@@ -1,30 +1,31 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.ferocious-strike
-title: Ferocious Strike
-spell_name: Ferocious Strike
+title: "Ferocious Strike"
 level: 0
 school: Biomancy
+casting_time: "1 action"
+range: "Self"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "With a pulse of adrenaline, a tremendous ferocity comes upon you.  Make one weapon attack against a target within your reach or range."
 classes:
   - Bard
   - Druid
   - Sorcerer
   - Tamer
   - Warlock
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: Self
-Components: V, S
-Duration: Instantaneous
+_Biomancy cantrip* (*can be replaced with transmutation)_
 
-Make one weapon attack against a target in reach or range. On a hit, it takes an extra 1d4 damage of the weapon's type. This increases by 1d4 at 5th, 11th, and 17th level.
+With a pulse of adrenaline, a tremendous ferocity comes upon you. Make one weapon attack against a target within your reach or range. If this attack hits, the target takes additional 1d4 damage of the weapon's damage type.
+
+This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4) and 17th level (4d4).
+
+---
 
 ## Related Content
 
@@ -32,8 +33,6 @@ Make one weapon attack against a target in reach or range. On a hit, it takes an
 
 **School:** Biomancy
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Tamer]], [[Warlock]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Warlock|Warlock]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

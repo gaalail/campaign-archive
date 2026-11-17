@@ -16,6 +16,7 @@ classes:
   - Sorcerer
   - Warlock
   - Wizard
+  - Tamer
 ---
 
 _3rd-level illusion_
@@ -32,6 +33,6 @@ While frightened by this spell, a creature must take the Dash action and move aw
 
 **School:** Illusion
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Tamer]]
 
 **Source:** SRD 5.1

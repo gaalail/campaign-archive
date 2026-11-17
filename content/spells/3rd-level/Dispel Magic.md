@@ -20,6 +20,7 @@ classes:
   - Warlock
   - Wizard
   - Artificer
+  - Tamer
 subclass_spell_lists:
   - Devotion Oath
 ---
@@ -38,6 +39,6 @@ Choose one creature, object, or magical effect within range. Any spell of 3rd le
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]], [[Tamer]]
 
 **Source:** SRD 5.1

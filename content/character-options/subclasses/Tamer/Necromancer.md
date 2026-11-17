@@ -9,8 +9,7 @@ source_type: homebrew
 edition: system-neutral
 adaptation: curated
 license_status: original
-content_status: incomplete
-incomplete_reason: Several Necromancer spell references are Appendix B spells whose source text was not supplied.
+content_status: complete
 ---
 
 # Necromancer
@@ -33,7 +32,7 @@ Within one minute of a creature dying, you can attempt to tame it. Its soul make
 
 ## Necromancer Spells
 
-These spells count as Tamer spells and do not count against spells known. Appendix B spells remain unimported.
+These spells count as Tamer spells and do not count against spells known.
 
 | Tamer Level | Spells                                          |
 | ----------- | ----------------------------------------------- |

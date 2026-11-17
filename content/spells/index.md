@@ -14,14 +14,14 @@ Choose a spell level to see all spells available at that progression:
 
 | Level     | When You Get It     | Archive Count | Status |
 | --------- | ------------------- | ------------- | ------ |
-| [[spells/cantrips|Cantrips]]  | Always available    | 0             | Awaiting import |
-| [[spells/1st-level|1st-Level]] | Character level 1+  | 37            | Active |
-| [[spells/2nd-level|2nd-Level]] | Character level 3+  | 34            | Active |
-| [[spells/3rd-level|3rd-Level]] | Character level 5+  | 34            | Active |
-| [[spells/4th-level|4th-Level]] | Character level 7+  | 26            | Active |
-| [[spells/5th-level|5th-Level]] | Character level 9+  | 9             | Active |
-| [[spells/6th-level|6th-Level]] | Character level 11+ | 0             | Awaiting import |
-| [[spells/7th-level|7th-Level]] | Character level 13+ | 0             | Awaiting import |
+| [[spells/cantrips|Cantrips]]  | Always available    | 15            | Active |
+| [[spells/1st-level|1st-Level]] | Character level 1+  | 46            | Active |
+| [[spells/2nd-level|2nd-Level]] | Character level 3+  | 45            | Active |
+| [[spells/3rd-level|3rd-Level]] | Character level 5+  | 47            | Active |
+| [[spells/4th-level|4th-Level]] | Character level 7+  | 36            | Active |
+| [[spells/5th-level|5th-Level]] | Character level 9+  | 15            | Active |
+| [[spells/6th-level|6th-Level]] | Character level 11+ | 2             | Active |
+| [[spells/7th-level|7th-Level]] | Character level 13+ | 2             | Active |
 | [[spells/8th-level|8th-Level]] | Character level 15+ | 1             | Active |
 | [[spells/9th-level|9th-Level]] | Character level 17+ | 0             | Awaiting import |
 

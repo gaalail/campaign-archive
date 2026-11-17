@@ -1,39 +1,36 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.gravity-smash
-title: Gravity Smash
-spell_name: Gravity Smash
+title: "Gravity Smash"
 level: 5
 school: Evocation
+casting_time: "1 action"
+range: "120 feet (40-foot-radius, 100-foot-high cylinder)"
+duration: "Concentration, up to 1 round"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You strike the ground, choosing a point you can see within range to begin accumulating gravity.  A 40-foot-radius, 100-foot-high cylinder centred on that point becomes..."
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: 120 feet (40-foot-radius, 100-foot-high cylinder)
-Components: V, S
-Duration: Concentration, up to 1 round
+_5th-level evocation_
 
-A cylinder becomes difficult terrain until your next turn. When the spell ends, creatures in the area make Strength saves. If it lasted its full duration, failure deals 8d10 force damage and knocks prone; if it ended early, failure deals 4d10 force damage. Success deals half damage and avoids prone.
+You strike the ground, choosing a point you can see within range to begin accumulating gravity. A 40-foot-radius, 100-foot-high cylinder centred on that point becomes difficult terrain until the start of your next turn. When the spell ends, the gravity reaches a critical magnitude, smashing all creatures in the cylinder downwards; each creature in the area must make a Strength saving throw. If the spell lasts its full duration and ends at the start of your next turn, then, on a failed saving throw, a creature takes 8d10 force damage and is knocked prone. If the spell ends before the start of your next turn, a creature takes 4d10 force damage on a failure instead. On a successful save, a creature takes half as much damage and isn't knocked prone.
 
-**At Higher Levels.** Both damage values increase by 1d10 per slot level above 5th.
+**At Higher Levels.** When you cast this spell using a spell slot of 6th level or higher, both damage values increase by 1d10 for each slot level above 5th.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/5th-level|5th-Level]]
+**Spell Level:** [[spells/5th-level|5th level]]
 
 **School:** Evocation
 
-**Source:** Appendix B — Spells
+**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

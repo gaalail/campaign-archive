@@ -15,6 +15,7 @@ classes:
   - Cleric
   - Druid
   - Wizard
+  - Tamer
 ---
 
 _4th-level transmutation_
@@ -29,4 +30,4 @@ Control freestanding water in a 100-foot cube to Flood, Part Water, Redirect Flo
 
 **School:** Transmutation
 
-**Available to:** [[Cleric]], [[Druid]], [[Wizard]]
+**Available to:** [[Cleric]], [[Druid]], [[Wizard]], [[Tamer]]

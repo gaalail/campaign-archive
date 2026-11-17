@@ -1,39 +1,46 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.fungal-infection
-title: Fungal Infection
-spell_name: Fungal Infection
+title: "Fungal Infection"
 level: 4
 school: Biomancy
+alternate_school: Necromancy
+casting_time: "1 action"
+range: "90 feet (15-foot radius sphere)"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a mushroom)"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "With an exhalation, fungal spores waft their way towards a point within range.  Each creature in a 15-foot-radius sphere centred on that point must succeed on a Constitution..."
 classes:
   - Druid
   - Warlock
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: 90 feet (15-foot-radius sphere)
-Components: V, S, M (a mushroom)
-Duration: Concentration, up to 1 minute
+_4th-level biomancy* (*can be replaced with necromancy)_
 
-Creatures in the sphere make Constitution saves or become cursed. Choose one fungus: Amanita Rotgut (2d6 poison initially and at each turn's end, poisoned); Necrotising Zygomycosis (2d8 necrotic immediately and each turn's start); Psilocybin Quickitrippiae (d4 at turn start, on 1 no movement or actions); Paralysing Mucorales (stunned at turn end, or paralyzed if initial save failed by 5+); Raging Henbane (charmed by you and uses reaction to attack a random creature other than you); Veiled Lady (disadvantage on Dexterity saves and ranged attacks against it have advantage). Affected creatures repeat the save at the end of turns after effects trigger.
+With an exhalation, fungal spores waft their way towards a point within range. Each creature in a 15-foot-radius sphere centred on that point must succeed on a Constitution saving throw or become cursed until the spell ends. When you cast the spell, choose one of the following fungi to grow on the cursed creatures:
 
-**At Higher Levels.** At 5th level or higher, the two damage options scale by 1d6 and 1d8 per slot level above 4th. At 6th level or higher, choose two fungi.
+- **Amanita Rotgut.** The creature immediately takes 2d6 poison damage and becomes poisoned. While poisoned in this way, the creature takes 2d6 poison damage at the end of each of its subsequent turns.
+- **Necrotising Zygomycosis.** The creature immediately takes 2d8 necrotic damage, and takes 2d8 necrotic damage at the start of each of its turns.
+- **Psilocybin Quickitrippiae.** The creature begins 'tripping'. It must roll a d4 at the start of each of its turns. On a 1, the creature doesn't move or take actions this turn.
+- **Paralysing Mucorales.** At the end of each of the creature's turns, it becomes stunned until the start of its next turn. If the creature fails a saving throw against this spell by 5 or more then, if it would be stunned, it is paralysed instead.
+- **Raging Henbane.** The creature becomes charmed by you and must use its reaction at the start of each of its turns to make one weapon attack against a randomly determined creature within its reach/range other than you.
+- **Veiled Lady.** The creature's vision darkens to a pinhole; the creature has disadvantage on Dexterity saving throws, and ranged attacks have advantage against the creature.
+
+An affected creature can repeat the saving throw at the end of each of its turns (after the effects of this spell have triggered), ending the effect on itself on a success.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, the damage (both initial and later) of Amanita Rotgut and Necrotising Zygomycosis increases by 1d6 and 1d8, respectively, for each slot level above 4th. When you cast this spell using a spell slot of 6th level or higher, you can choose two different fungi to grow on affected targets instead of one.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/4th-level|4th-Level]]
+**Spell Level:** [[spells/4th-level|4th level]]
 
-**School:** Biomancy
+**School:** Biomancy (or Necromancy)
 
-**Source:** Appendix B — Spells
+**Available to:** [[Druid]], [[Warlock]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Druid|Druid]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

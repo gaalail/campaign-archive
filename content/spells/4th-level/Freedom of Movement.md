@@ -17,6 +17,7 @@ classes:
   - Druid
   - Ranger
   - Artificer
+  - Tamer
 subclass_spell_lists:
   - Devotion Oath
   - Hunter
@@ -36,6 +37,6 @@ The target can also spend 5 feet of movement to automatically escape from nonmag
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Ranger]], [[Artificer]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Ranger]], [[Artificer]], [[Tamer]]
 
 **Source:** SRD 5.1

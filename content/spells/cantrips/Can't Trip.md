@@ -1,30 +1,31 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.canttrip
-title: Can't Trip
+title: "Can't Trip"
 level: 0
 school: Abjuration
+casting_time: "1 action"
+range: "30 feet"
+duration: "1 round"
+components: "V, S"
+ritual: false
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "Choose a willing creature within range that you can see.  Until the end of your next turn, that creature is immune to the prone condition."
 classes:
   - Bard
   - Cleric
   - Druid
   - Tamer
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Can't Trip
 ---
 
-Casting Time: 1 action
-Range: 30 feet
-Components: V, S
-Duration: 1 round
+_Abjuration cantrip_
 
-A willing creature you see becomes immune to prone until the end of your next turn. If it is prone and not restrained, it stands. You can target two creatures at 5th level, three at 11th, and four at 17th.
+Choose a willing creature within range that you can see. Until the end of your next turn, that creature is immune to the prone condition. If it is already prone and is not restrained, this spell sets it on its feet.
+
+The number of creatures you can simultaneously target with this spell increases by 1 when you reach 5th level (2 creatures), 11th level (3 creatures), and 17th level (4 creatures).
+
+---
 
 ## Related Content
 
@@ -32,8 +33,6 @@ A willing creature you see becomes immune to prone until the end of your next tu
 
 **School:** Abjuration
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Tamer]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Tamer|Tamer]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

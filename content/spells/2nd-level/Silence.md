@@ -15,6 +15,7 @@ classes:
   - Bard
   - Cleric
   - Ranger
+  - Tamer
 ---
 
 _2nd-level illusion (ritual)_
@@ -29,6 +30,6 @@ For the duration, no sound can be created within or pass through a 20-foot-radiu
 
 **School:** Illusion
 
-**Available to:** [[Bard]], [[Cleric]], [[Ranger]]
+**Available to:** [[Bard]], [[Cleric]], [[Ranger]], [[Tamer]]
 
 **Source:** SRD 5.1

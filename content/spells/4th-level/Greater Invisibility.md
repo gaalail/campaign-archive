@@ -15,6 +15,7 @@ classes:
   - Bard
   - Sorcerer
   - Wizard
+  - Tamer
 ---
 
 _4th-level illusion_
@@ -29,6 +30,6 @@ You or a creature you touch becomes invisible until the spell ends. Anything the
 
 **School:** Illusion
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Tamer]]
 
 **Source:** SRD 5.1

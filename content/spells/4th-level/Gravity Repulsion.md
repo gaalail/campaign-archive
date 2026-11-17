@@ -1,39 +1,38 @@
 ---
-entity_type: spell
-canonical_id: spell.appendix-b.gravity-repulsion
-title: Gravity Repulsion
-spell_name: Gravity Repulsion
+title: "Gravity Repulsion"
 level: 4
 school: Evocation
+casting_time: "1 action"
+range: "Self (20-foot-radius sphere)"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You emit waves of gravitational energy, distorting the trajectories of incoming projectiles and making movement difficult.  For the duration, ranged weapon attacks made against..."
 classes:
   - Sorcerer
   - Warlock
   - Wizard
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
 ---
 
-Casting Time: 1 action
-Range: Self (20-foot-radius sphere)
-Components: V, S
-Duration: Concentration, up to 1 minute
+_4th-level evocation_
 
-Ranged weapon attacks against you have disadvantage. The area within 20 feet is difficult terrain for creatures you choose. As a bonus action when cast and on later turns, force one Huge or smaller creature you see within 20 feet to make a Strength save. On failure, push it 10 feet, knock it prone, and deal 3d6 force damage.
+You emit waves of gravitational energy, distorting the trajectories of incoming projectiles and making movement difficult. For the duration, ranged weapon attacks made against you have disadvantage. In addition, the area within 20 feet of you is difficult terrain for creatures of your choice that you can see.
 
-**At Higher Levels.** The terrain radius increases by 5 feet and pulse damage and push distance increase by 1d6 and 5 feet per slot level above 4th.
+**Gravity Pulse.** When you cast this spell and as a bonus action on your subsequent turns, you can create a gravity pulse, forcing one Huge or smaller creature of your choice that you can see within 20 feet of you to make a Strength saving throw. On a failure, the creature is pushed 10 feet in a direction of your choice and falls prone, taking 3d6 force damage.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, the radius of the difficult terrain increases by 5 feet, and gravity pulse's damage and range increase by 1d6 and 5 feet, respectively, for each slot level above 4th.
+
+---
 
 ## Related Content
 
-**Spell Level:** [[spells/4th-level|4th-Level]]
+**Spell Level:** [[spells/4th-level|4th level]]
 
 **School:** Evocation
 
-**Source:** Appendix B — Spells
+**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Available to:** [[character-options/classes/Sorcerer|Sorcerer]], [[character-options/classes/Warlock|Warlock]], [[character-options/classes/Wizard|Wizard]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

@@ -17,6 +17,7 @@ classes:
   - Paladin
   - Ranger
   - Sorcerer
+  - Tamer
 ---
 
 _3rd-level evocation_
@@ -33,6 +34,6 @@ If any of this spell's area overlaps with an area of darkness created by a spell
 
 **School:** Evocation
 
-**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Sorcerer]]
+**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Sorcerer]], [[Tamer]]
 
 **Source:** SRD 5.1

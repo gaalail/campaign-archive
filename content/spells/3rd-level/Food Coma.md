@@ -1,46 +1,38 @@
 ---
-entity_type: spell
-canonical_id: spell.tamer.foodcoma
-title: Food Coma
+title: "Food Coma"
 level: 3
 school: Enchantment
+casting_time: "1 minute"
+range: "Touch"
+duration: "1 hour"
+components: "V, S, M (a turkey drumstick and a cranberry-coloured ruby worth at least 50 gp, both of which the spell consumes)"
+ritual: true
+concentration: false
+source: "Heliana's Guide to Monster Hunting (Appendix B)"
+source_type: third-party
+summary: "You crush a ruby into dust, sprinkling it over a turkey drumstick, which wafts with an alluring aroma.  A willing creature that entirely consumes the meat of this drumstick..."
 classes:
   - Bard
   - Cleric
   - Druid
   - Paladin
   - Tamer
-  - Thanatomancer
-source: Appendix B — Spells
-source_type: third-party
-edition: system-neutral
-adaptation: curated
-license_status: reference-only
-content_status: complete
-spell_name: Food Coma
 ---
 
-Casting Time: 1 minute
-Range: Touch
-Components: V, S, M (a turkey drumstick and cranberry-colored ruby worth at least 50 gp, both consumed)
-Duration: 1 hour
+_3rd-level enchantment (ritual)_
 
-Enchant a turkey drumstick. A willing creature that eats all of it falls asleep and is unconscious for one hour. It wakes early only if damaged or affected by greater restoration or wish. At the end of the hour, it wakes with full HP. If woken early, the spell has no effect.
+You crush a ruby into dust, sprinkling it over a turkey drumstick, which wafts with an alluring aroma. A willing creature that entirely consumes the meat of this drumstick falls asleep and is unconscious for 1 hour, drowning out the sound of relatives asking whether they have a boyfriend yet or when they expect to have babies. You can only be woken early by taking damage or by a greater restoration or wish spell. At the end of the hour, you wake feeling refreshed and have all of your hit points restored. If you are woken prematurely, the spell ends with no effect and you are grumpy.
 
-**At Higher Levels.** Enchant one additional drumstick per slot level above 3rd.
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, you may enchant an additional turkey drumstick (and hence affect one additional creature) for each slot level above 3rd.
+
+---
 
 ## Related Content
 
-**Thanatomancer access:** Eligible school and Cleric, Druid, or Wizard list.
-
-**Class:** [[character-options/classes/Thanatomancer|Thanatomancer]]
-
-**Spell Level:** [[spells/3rd-level|3rd-Level]]
+**Spell Level:** [[spells/3rd-level|3rd level]]
 
 **School:** Enchantment
 
-**Source:** Appendix B — Spells
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Tamer]]
 
-**Available to:** [[character-options/classes/Bard|Bard]], [[character-options/classes/Cleric|Cleric]], [[character-options/classes/Druid|Druid]], [[character-options/classes/Paladin|Paladin]], [[character-options/classes/Tamer|Tamer]]
-
-**Related:** [[spells|All Spells]] | [[character-options/classes/Tamer|Tamer]]
+**Source:** Heliana's Guide to Monster Hunting (Appendix B)

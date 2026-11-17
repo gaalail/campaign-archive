@@ -9,8 +9,7 @@ source_type: homebrew
 edition: system-neutral
 adaptation: curated
 license_status: original
-content_status: incomplete
-incomplete_reason: Several Infuser spell references are Appendix B spells whose source text was not supplied.
+content_status: complete
 ---
 
 # Infuser
@@ -27,7 +26,7 @@ The damage becomes 1d6 at 6th level, 1d8 at 10th level, and 1d10 at 14th level.
 
 ## Infuser Spells
 
-These spells count as Tamer spells and do not count against spells known. Appendix B spells remain unimported.
+These spells count as Tamer spells and do not count against spells known.
 
 | Tamer Level | Spells                                            |
 | ----------- | ------------------------------------------------- |
