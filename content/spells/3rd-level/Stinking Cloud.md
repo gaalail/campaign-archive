@@ -1,35 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.stinking-cloud
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Stinking Cloud
+title: "Stinking Cloud"
 level: 3
 school: Conjuration
+casting_time: "1 action"
+range: "90 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a rotten egg or several skunk cabbage leaves)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Create a 20-foot-radius sphere of nauseating yellow gas that heavily obscures and causes creatures to waste their action."
 classes:
   - Bard
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: 90 feet
-duration: Up to 1 minute
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _3rd-level conjuration_
 
-**Material components:** A rotten egg or several skunk cabbage leaves.
-
-You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration.
-
-Each creature that is completely within the cloud at the start of its turn must make a constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw.
-
-A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round.
+You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration. Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling.
 
 ---
 
@@ -41,4 +31,4 @@ A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds.
 
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

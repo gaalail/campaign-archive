@@ -1,34 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.disguise-self
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Disguise Self
+title: "Disguise Self"
 level: 1
 school: Illusion
+casting_time: "1 action"
+range: "Self"
+duration: "1 hour"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Change your apparent height, build, and clothing with an illusion for 1 hour."
 classes:
   - Artificer
   - Bard
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: Self
-duration: 1 hour
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _1st-level illusion_
 
-You make yourself--including your clothing, armor, weapons, and other belongings on your person--look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you.
-
-The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair.
-
-To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.
+You make yourself—including your clothing, armor, weapons, and other belongings on your person—look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. The changes fail to hold up to physical inspection, and a creature can use its action to inspect your appearance with an Intelligence (Investigation) check against your spell save DC.
 
 ---
 
@@ -38,6 +30,6 @@ To discern that you are disguised, a creature can use its action to inspect your
 
 **School:** Illusion
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Bard]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

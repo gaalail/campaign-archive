@@ -1,33 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.sequester
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Sequester
+title: "Sequester"
 level: 7
 school: Transmutation
-classes:
-  - Wizard
-casting_time: 1 action
-range: Touch
-duration: Until dispelled
-components: V, S, M
+casting_time: "1 action"
+range: "Touch"
+duration: "Until dispelled"
+components: "V, S, M (a powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes)"
 ritual: false
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Make a willing creature or object invisible, undetectable by divination, and placed in suspended animation until a trigger condition."
+classes:
+  - Wizard
 ---
 
 _7th-level transmutation_
 
-**Material components:** A powder composed of diamond, emerald, ruby, and sapphire dust worth at least 5,000 gp, which the spell consumes.
-
-By means of this spell, a willing creature or an object can be hidden away, safe from detection for the duration. When you cast the spell and touch the target, it becomes invisible and can't be targeted by divination spells or perceived through scrying sensors created by divination spells.
-
-If the target is a creature, it falls into a state of suspended animation. Time ceases to flow for it, and it doesn't grow older.
-
-You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include "after 1,000 years" or "when the tarrasque awakens." This spell also ends if the target takes any damage.
+By means of this spell, a willing creature or an object can be hidden away, safe from detection for the duration. When you cast the spell and touch the target, it becomes invisible and can't be targeted by divination spells or perceived through scrying sensors created by divination spells. If the target is a creature, it falls into a state of suspended animation until the condition you set occurs.
 
 ---
 
@@ -39,4 +29,4 @@ You can set a condition for the spell to end early. The condition can be anythin
 
 **Available to:** [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

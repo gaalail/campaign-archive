@@ -1,29 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.produce-flame
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Produce Flame
+title: "Produce Flame"
 level: 0
 school: Conjuration
-classes:
-  - Druid
-casting_time: 1 action
-range: Self
-duration: 10 minutes
-components: V, S
+casting_time: "1 action"
+range: "Self"
+duration: "10 minutes"
+components: "V, S"
 ritual: false
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "A flickering flame appears in your hand for light, or can be hurled at a creature within 30 feet for 1d8 fire damage."
+classes:
+  - Druid
 ---
 
 _Conjuration cantrip_
 
-A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again.
-
-You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage.
+A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. You can also attack with the flame (hurling it up to 30 feet) as a ranged spell attack on the turn you cast it or as an action on a later turn, dealing 1d8 fire damage on a hit.
 
 This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
@@ -37,4 +31,4 @@ This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level 
 
 **Available to:** [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

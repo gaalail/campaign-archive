@@ -1,39 +1,27 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.dimension-door
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Dimension Door
+title: "Dimension Door"
 level: 4
 school: Conjuration
+casting_time: "1 action"
+range: "500 feet"
+duration: "Instantaneous"
+components: "V"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Teleport yourself and up to one willing creature of your size or smaller up to 500 feet to any spot you can visualize or describe."
 classes:
   - Bard
   - Sorcerer
+  - Tamer
   - Warlock
   - Wizard
-  - Tamer
-casting_time: 1 action
-range: 500 feet
-duration: Instantaneous
-components: V
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
-  - Mystic
-  - Witchblade
 ---
 
 _4th-level conjuration_
 
-You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as "200 feet straight downward" or "upward to the northwest at a 45-degree angle, 300 feet."
-
-You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.
-
-If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.
+You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction. You can bring along objects as long as their weight doesn't exceed what you can carry, plus one willing creature of your size or smaller who is within 5 feet of you.
 
 ---
 
@@ -43,6 +31,6 @@ If you would arrive in a place already occupied by an object or a creature, you 
 
 **School:** Conjuration
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Tamer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

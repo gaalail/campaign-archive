@@ -1,12 +1,16 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.enhance-ability
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Enhance Ability
+title: "Enhance Ability"
 level: 2
 school: Transmutation
+casting_time: "1 action"
+range: "Touch"
+duration: "Concentration, up to 1 hour"
+components: "V, S, M (fur or a feather from a beast)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Grant a creature advantage on ability checks with one chosen ability (Bear’s Endurance, Bull’s Strength, Cat’s Grace, Eagle’s Splendor, Fox’s Cunning, or Owl’s Wisdom)."
 classes:
   - Artificer
   - Bard
@@ -14,36 +18,13 @@ classes:
   - Druid
   - Sorcerer
   - Tamer
-casting_time: 1 action
-range: Touch
-duration: Up to 1 hour
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _2nd-level transmutation_
 
-**Material components:** Fur or a feather from a beast.
+You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends: Bear's Endurance (advantage on Constitution checks, 2d6 temporary HP), Bull's Strength (advantage on Strength checks, double carrying capacity), Cat's Grace (advantage on Dexterity checks, no falling damage from 20 feet or less), Eagle's Splendor (advantage on Charisma checks), Fox's Cunning (advantage on Intelligence checks), or Owl's Wisdom (advantage on Wisdom checks).
 
-You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.
-
-_**Bear's Endurance.**_ The target has advantage on constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.
-
-_**Bull's Strength.**_ The target has advantage on strength checks, and his or her carrying capacity doubles.
-
-_**Cat's Grace.**_ The target has advantage on dexterity checks. It also doesn't take damage from falling 20 feet or less if it isn't incapacitated.
-
-_**Eagle's Splendor.**_ The target has advantage on Charisma checks.
-
-_**Fox's Cunning.**_ The target has advantage on intelligence checks.
-
-_**Owl's Wisdom.**_ The target has advantage on wisdom checks.
-
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
+**At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.
 
 ---
 
@@ -53,6 +34,6 @@ _**Owl's Wisdom.**_ The target has advantage on wisdom checks.
 
 **School:** Transmutation
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Artificer]]
+**Available to:** [[Artificer]], [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Tamer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,24 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.fire-bolt
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Fire Bolt
+title: "Fire Bolt"
 level: 0
 school: Evocation
+casting_time: "1 action"
+range: "120 feet"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Hurl a mote of fire at a creature or object for 1d10 fire damage and ignite unattended flammables."
 classes:
   - Artificer
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: 120 feet
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _Evocation cantrip_
@@ -35,6 +31,6 @@ This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th leve
 
 **School:** Evocation
 
-**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

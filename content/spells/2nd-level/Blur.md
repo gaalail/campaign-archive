@@ -1,33 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.blur
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Blur
+title: "Blur"
 level: 2
 school: Illusion
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Your body becomes blurred, shifting and wavering so attackers have disadvantage on attack rolls against you."
 classes:
   - Artificer
   - Sorcerer
-  - Wizard
   - Tamer
-casting_time: 1 action
-range: Self
-duration: Up to 1 minute
-components: V
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
-  - Mystic
+  - Wizard
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _2nd-level illusion_
 
@@ -41,6 +30,6 @@ Your body becomes blurred, shifting and wavering to all who can see you. For the
 
 **School:** Illusion
 
-**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,32 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.telepathic-bond
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Telepathic Bond
+title: "Telepathic Bond"
+aliases:
+  - "Rary's Telepathic Bond"
 level: 5
 school: Divination
-classes:
-  - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: 1 hour
-components: V, S, M
+casting_time: "1 action"
+range: "30 feet"
+duration: "1 hour"
+components: "V, S, M (pieces of eggshell from two different kinds of creatures)"
 ritual: true
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Forge a telepathic link among up to eight willing creatures anywhere on the same plane for 1 hour."
+classes:
+  - Tamer
+  - Wizard
 ---
 
 _5th-level divination (ritual)_
 
-**Material components:** Pieces of eggshell from two different kinds of creatures
-
-You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this spell.
-
-Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it can't extend to other planes of existence.
+You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this spell. Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language, across any distance on the same plane.
 
 ---
 
@@ -36,6 +30,6 @@ Until the spell ends, the targets can communicate telepathically through the bon
 
 **School:** Divination
 
-**Available to:** [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Tamer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

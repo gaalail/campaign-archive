@@ -1,35 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.tongues
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Tongues
+title: "Tongues"
 level: 3
 school: Divination
+casting_time: "1 action"
+range: "Touch"
+duration: "1 hour"
+components: "V, M (a small clay model of a ziggurat)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Touch a creature so it understands any spoken language and is understood by any creature that knows at least one language."
 classes:
   - Bard
   - Cleric
   - Sorcerer
+  - Tamer
   - Warlock
   - Wizard
-  - Thanatomancer
-  - Tamer
-casting_time: 1 action
-range: Touch
-duration: 1 hour
-components: V, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Mystic
 ---
 
 _3rd-level divination_
-
-**Material components:** A small clay model of a ziggurat.
 
 This spell grants the creature you touch the ability to understand any spoken language it hears. Moreover, when the target speaks, any creature that knows at least one language and can hear the target understands what it says.
 
@@ -41,6 +32,6 @@ This spell grants the creature you touch the ability to understand any spoken la
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Tamer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

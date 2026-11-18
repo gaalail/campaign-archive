@@ -6,6 +6,8 @@ adaptation: curated
 license_status: CC-BY-4.0
 content_status: complete
 title: Tasha's Caustic Brew
+aliases:
+  - "Caustic Brew"
 level: 1
 school: Evocation
 classes:

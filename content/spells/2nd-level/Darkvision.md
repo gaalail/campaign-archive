@@ -1,32 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.darkvision
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Darkvision
+title: "Darkvision"
 level: 2
 school: Transmutation
+casting_time: "1 action"
+range: "Touch"
+duration: "8 hours"
+components: "V, S, M (either a pinch of dried carrot or an agate)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Grant a willing creature darkvision out to a range of 60 feet for 8 hours."
 classes:
   - Artificer
   - Druid
   - Ranger
   - Sorcerer
-  - Wizard
   - Tamer
-casting_time: 1 action
-range: Touch
-duration: 8 hours
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
+  - Wizard
 ---
 
 _2nd-level transmutation_
-
-**Material components:** Either a pinch of dried carrot or an agate.
 
 You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.
 
@@ -38,6 +32,6 @@ You touch a willing creature to grant it the ability to see in the dark. For the
 
 **School:** Transmutation
 
-**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

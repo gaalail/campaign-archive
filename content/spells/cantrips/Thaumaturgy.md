@@ -1,41 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.thaumaturgy
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Thaumaturgy
+title: "Thaumaturgy"
 level: 0
 school: Transmutation
-classes:
-  - Cleric
-casting_time: 1 action
-range: 30 feet
-duration: 1 minute
-components: V
+casting_time: "1 action"
+range: "30 feet"
+duration: "Up to 1 minute"
+components: "V"
 ritual: false
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Manifest a minor wonder such as booming voice, flickering flames, harmless tremors, phantom sounds, opening unlocked doors, or altering your eyes."
+classes:
+  - Cleric
 ---
 
 _Transmutation cantrip_
 
-You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range.
-
-- Your voice booms up to three times as loud as normal for 1 minute.
-
-- You cause flames to flicker, brighten, dim, or change color for 1 minute.
-
-- You cause harmless tremors in the ground for 1 minute.
-
-- You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.
-
-- You instantaneously cause an unlocked door or window to fly open or slam shut.
-
-- You alter the appearance of your eyes for 1 minute.
-
-If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.
+You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range: your voice booms up to three times as loud as normal for 1 minute; you cause flames to flicker, brighten, dim, or change color for 1 minute; you cause harmless tremors in the ground for 1 minute; you create an instantaneous sound originating from a point of your choice; you instantaneously cause an unlocked door or window to fly open or slam shut; or you alter the appearance of your eyes for 1 minute.
 
 ---
 
@@ -47,4 +29,4 @@ If you cast this spell multiple times, you can have up to three of its 1-minute 
 
 **Available to:** [[Cleric]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

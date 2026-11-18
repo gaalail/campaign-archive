@@ -1,28 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.8th-level.mind-blank
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Mind Blank
+title: "Mind Blank"
 level: 8
 school: Abjuration
+casting_time: "1 action"
+range: "Touch"
+duration: "24 hours"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Grant a willing creature immunity to psychic damage, mind-reading, divination, and the charmed condition for 24 hours."
 classes:
   - Bard
   - Wizard
-casting_time: 1 action
-range: Touch
-duration: 24 hours
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _8th-level abjuration_
 
@@ -38,4 +30,4 @@ Until the spell ends, one willing creature you touch is immune to psychic damage
 
 **Available to:** [[Bard]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

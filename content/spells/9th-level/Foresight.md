@@ -1,35 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.9th-level.foresight
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Foresight
+title: "Foresight"
 level: 9
 school: Divination
+casting_time: "1 minute"
+range: "Touch"
+duration: "8 hours"
+components: "V, S, M (a hummingbird feather)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Grant a willing creature limited future sight: cannot be surprised, advantage on attacks/checks/saves, and disadvantage on incoming attacks."
 classes:
   - Bard
   - Druid
   - Warlock
   - Wizard
-  - Thanatomancer
-casting_time: 1 minute
-range: Touch
-duration: 8 hours
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _9th-level divination_
 
-**Material components:** A hummingbird feather.
-
 You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can't be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration.
-
-This spell immediately ends if you cast it again before its duration ends.
 
 ---
 
@@ -39,6 +30,6 @@ This spell immediately ends if you cast it again before its duration ends.
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Druid]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

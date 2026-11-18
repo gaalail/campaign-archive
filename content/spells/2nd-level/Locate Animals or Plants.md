@@ -1,31 +1,24 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.locate-animals-or-plants
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Locate Animals or Plants
+title: "Locate Animals or Plants"
 level: 2
 school: Divination
+casting_time: "1 action"
+range: "Self"
+duration: "Instantaneous"
+components: "V, S, M (a bit of fur from a bloodhound)"
+ritual: true
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Learn the direction and distance to the closest specific kind of beast or plant within 5 miles."
 classes:
   - Bard
   - Druid
   - Ranger
-  - Thanatomancer
   - Tamer
-casting_time: 1 action
-range: Self
-duration: Instantaneous
-components: V, S, M
-ritual: true
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _2nd-level divination (ritual)_
-
-**Material components:** A bit of fur from a bloodhound.
 
 Describe or name a specific kind of beast or plant. Concentrating on the voice of nature in your surroundings, you learn the direction and distance to the closest creature or plant of that kind within 5 miles, if any are present.
 
@@ -37,6 +30,6 @@ Describe or name a specific kind of beast or plant. Concentrating on the voice o
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Tamer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

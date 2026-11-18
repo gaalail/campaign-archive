@@ -1,36 +1,30 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.alter-self
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Alter Self
+title: "Alter Self"
 level: 2
 school: Transmutation
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 hour"
+components: "V, S"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Assume a different form for aquatic adaptation, changed appearance, or magical +1 natural weapons."
 classes:
   - Artificer
   - Sorcerer
-  - Wizard
   - Tamer
-casting_time: 1 action
-range: Self
-duration: Up to 1 hour
-components: V, S
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
+  - Wizard
 ---
 
 _2nd-level transmutation_
 
-You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one.
+You assume a different form. When you cast the spell, choose one of the following options, the effects of which last for the duration of the spell. While the spell lasts, you can end one option as an action to gain the benefits of a different one:
 
-_**Aquatic Adaptation.**_ You adapt your body to an aquatic environment, sprouting gills and growing webbing between your fingers. You can breathe underwater and gain a swimming speed equal to your walking speed.
-
-_**Change Appearance.**_ You transform your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and distinguishing characteristics, if any. You can make yourself appear as a member of another race, though none of your statistics change. You also can't appear as a creature of a different size than you, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. At any time for the duration of the spell, you can use your action to change your appearance in this way again.
-
-_**Natural Weapons.**_ You grow claws, fangs, spines, horns, or a different natural weapon of your choice. Your unarmed strikes deal 1d6 bludgeoning, piercing, or slashing damage, as appropriate to the natural weapon you chose, and you are proficient with your unarmed strikes. Finally, the natural weapon is magic and you have a +1 bonus to the attack and damage rolls you make using it.
+- **Aquatic Adaptation.** You sprout gills and webbing, allowing you to breathe underwater and gain a swimming speed equal to your walking speed.
+- **Change Appearance.** You transform your appearance, including height, weight, facial features, voice, hair, and race.
+- **Natural Weapons.** You grow claws, fangs, spines, horns, or a different natural weapon that deals 1d6 damage, counts as magical, and has a +1 bonus to attack and damage rolls.
 
 ---
 
@@ -40,6 +34,6 @@ _**Natural Weapons.**_ You grow claws, fangs, spines, horns, or a different natu
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,29 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.shield-of-faith
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Shield of Faith
+title: "Shield of Faith"
 level: 1
 school: Abjuration
+casting_time: "1 bonus action"
+range: "60 feet"
+duration: "Concentration, up to 10 minutes"
+components: "V, S, M (a small parchment with a bit of holy text written on it)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "A shimmering field surrounds a creature within range, granting a +2 bonus to AC."
 classes:
   - Cleric
   - Paladin
   - Tamer
-casting_time: 1 bonus action
-range: 60 feet
-duration: Up to 10 minutes
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _1st-level abjuration_
-
-**Material components:** A small parchment with a bit of holy text written on it.
 
 A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.
 
@@ -35,6 +29,6 @@ A shimmering field appears and surrounds a creature of your choice within range,
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]], [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]], [[Tamer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

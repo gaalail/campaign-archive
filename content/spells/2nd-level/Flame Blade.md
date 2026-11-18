@@ -1,38 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.flame-blade
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Flame Blade
+title: "Flame Blade"
 level: 2
 school: Evocation
-classes:
-  - Druid
-casting_time: 1 bonus action
-range: Self
-duration: Up to 10 minutes
-components: V, S, M
+casting_time: "1 bonus action"
+range: "Self"
+duration: "Concentration, up to 10 minutes"
+components: "V, S, M (leaf of sumac)"
 ritual: false
 concentration: true
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
-subclass_spell_lists:
-  - Wu Jen
+summary: "Evoke a fiery scimitar-like blade in your hand for melee spell attacks dealing 3d6 fire damage."
+classes:
+  - Druid
 ---
 
 _2nd-level evocation_
 
-**Material components:** Leaf of sumac.
+You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes 3d6 fire damage. The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
 
-You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action.
-
-You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes 3d6 fire damage.
-
-The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet.
-
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.
 
 ---
 
@@ -44,4 +31,4 @@ The flaming blade sheds bright light in a 10-foot radius and dim light for an ad
 
 **Available to:** [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

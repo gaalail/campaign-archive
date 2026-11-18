@@ -1,32 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.arcane-sword
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Arcane Sword
+title: "Arcane Sword"
+aliases:
+  - "Mordenkainen's Sword"
 level: 7
 school: Evocation
+casting_time: "1 action"
+range: "60 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Create a floating sword of force that strikes twice on cast and as a bonus action for 3d10 force damage."
 classes:
   - Bard
   - Wizard
-casting_time: 1 action
-range: 60 feet
-duration: Up to 1 minute
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _7th-level evocation_
 
-**Material components:** A miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp.
-
-You create a sword-shaped plane of force that hovers within range. It lasts for the duration.
-
-When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one.
+You create a sword-shaped plane of force that hovers within range. It lasts for the duration. When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one.
 
 ---
 
@@ -38,4 +32,4 @@ When the sword appears, you make a melee spell attack against a target of your c
 
 **Available to:** [[Bard]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,38 +1,27 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.ice-storm
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Ice Storm
+title: "Ice Storm"
 level: 4
 school: Evocation
+casting_time: "1 action"
+range: "300 feet"
+duration: "Instantaneous"
+components: "V, S, M (a pinch of dust and a few drops of water)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Hail pounds a 20-foot-radius, 40-foot-high cylinder for 2d8 bludgeoning and 4d6 cold damage and creates difficult terrain."
 classes:
   - Druid
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: 300 feet
-duration: Instantaneous
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Wu Jen
 ---
 
 _4th-level evocation_
 
-**Material components:** A pinch of dust and a few drops of water.
+A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one. Hailstones turn the storm's area of effect into difficult terrain until the end of your next turn.
 
-A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.
-
-Hailstones turn the storm's area of effect into difficult terrain until the end of your next turn.
-
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.
+**At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th.
 
 ---
 
@@ -44,4 +33,4 @@ Hailstones turn the storm's area of effect into difficult terrain until the end 
 
 **Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

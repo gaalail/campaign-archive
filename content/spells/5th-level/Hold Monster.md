@@ -1,36 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.hold-monster
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Hold Monster
+title: "Hold Monster"
 level: 5
 school: Enchantment
+casting_time: "1 action"
+range: "90 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a small, straight piece of iron)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Choose a creature within 90 feet (no effect on undead); it must succeed on a Wisdom save or be paralyzed."
 classes:
   - Bard
   - Sorcerer
   - Warlock
   - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: 90 feet
-duration: Up to 1 minute
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _5th-level enchantment_
 
-**Material components:** A small piece of iron.
+Choose a creature that you can see within range. The target must succeed on a Wisdom saving throw or be paralyzed for the duration. This spell has no effect on undead. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.
 
-Choose a creature you can see and reach. The target must make a saving throw of Wisdom or be paralyzed for the duration of the spell. This spell has no effect against the undead. At the end of each round, the target can make a new saving throw of Wisdom. If successful, the spell ends for the creature.
-
-> [!info]- At higher levels
-> When you cast this spell using a level 6 or higher location, you can target an additional creature for each level of location beyond the fifth. The creatures must be within 30 feet o f each other when you target them.
+**At Higher Levels.** When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th.
 
 ---
 
@@ -40,6 +32,6 @@ Choose a creature you can see and reach. The target must make a saving throw of 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

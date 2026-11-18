@@ -1,37 +1,29 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.charm-person
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Charm Person
+title: "Charm Person"
 level: 1
 school: Enchantment
+casting_time: "1 action"
+range: "30 feet"
+duration: "1 hour"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Attempt to charm a humanoid within range (with advantage if fighting you), making it regard you as a friendly acquaintance."
 classes:
   - Bard
   - Druid
   - Sorcerer
   - Warlock
   - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: 1 hour
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Mystic
 ---
 
 _1st-level enchantment_
 
-You attempt to charm a humanoid you can see within range. It must make a wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.
+You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.
 
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
 
 ---
 
@@ -41,6 +33,6 @@ You attempt to charm a humanoid you can see within range. It must make a wisdom 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Druid]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

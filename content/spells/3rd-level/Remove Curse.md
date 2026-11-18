@@ -1,31 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.remove-curse
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Remove Curse
+title: "Remove Curse"
 level: 3
 school: Abjuration
+casting_time: "1 action"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "End all curses affecting one creature or break attunement to a cursed magic item."
 classes:
   - Cleric
   - Paladin
+  - Tamer
   - Warlock
   - Wizard
-  - Tamer
-casting_time: 1 action
-range: Touch
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _3rd-level abjuration_
 
@@ -39,6 +31,6 @@ At your touch, all curses affecting one creature or object end. If the object is
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]], [[Paladin]], [[Warlock]], [[Wizard]]
+**Available to:** [[Cleric]], [[Paladin]], [[Tamer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

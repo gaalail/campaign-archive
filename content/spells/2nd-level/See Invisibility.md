@@ -1,33 +1,27 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.see-invisibility
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: See Invisibility
+title: "See Invisibility"
 level: 2
 school: Divination
-classes:
-  - Bard
-  - Sorcerer
-  - Wizard
-  - Thanatomancer
-  - Tamer
-casting_time: 1 action
-range: Self
-duration: 1 hour
-components: V, S, M
+casting_time: "1 action"
+range: "Self"
+duration: "1 hour"
+components: "V, S, M (a pinch of talc and a small sprinkling of powdered silver)"
 ritual: false
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "See invisible creatures and objects as if they were visible, and see into the Ethereal Plane."
+classes:
+  - Artificer
+  - Bard
+  - Sorcerer
+  - Tamer
+  - Wizard
 ---
 
 _2nd-level divination_
 
-**Material components:** A dash of talc and a small amount of silver powder.
-
-For the duration of the spell, you see invisible creatures and objects as if they were visible, and you can see through Ethereal. The ethereal objects and creatures appear ghostly translucent.
+For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent.
 
 ---
 
@@ -37,6 +31,6 @@ For the duration of the spell, you see invisible creatures and objects as if the
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Artificer]], [[Bard]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

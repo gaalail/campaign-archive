@@ -1,29 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.shillelagh
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Shillelagh
+title: "Shillelagh"
 level: 0
 school: Transmutation
-classes:
-  - Druid
-casting_time: 1 bonus action
-range: Touch
-duration: 1 minute
-components: V, S, M
+casting_time: "1 bonus action"
+range: "Touch"
+duration: "1 minute"
+components: "V, S, M (mistletoe, a shamrock leaf, and a club or quarterstaff)"
 ritual: false
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Imbue a club or quarterstaff with nature magic to use your spellcasting ability and deal 1d8 magical bludgeoning damage."
+classes:
+  - Druid
 ---
 
 _Transmutation cantrip_
 
-**Material components:** Mistletoe, a shamrock leaf, and a club or quarterstaff.
-
-The wood of a club or a quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon.
+The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already.
 
 ---
 
@@ -35,4 +29,4 @@ The wood of a club or a quarterstaff you are holding is imbued with nature's pow
 
 **Available to:** [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

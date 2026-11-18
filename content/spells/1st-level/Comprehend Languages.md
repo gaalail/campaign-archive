@@ -1,35 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.comprehend-languages
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Comprehend Languages
+title: "Comprehend Languages"
 level: 1
 school: Divination
+casting_time: "1 action"
+range: "Self"
+duration: "1 hour"
+components: "V, S, M (a pinch of soot and salt)"
+ritual: true
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Understand the literal meaning of any spoken language you hear or written language you touch for 1 hour."
 classes:
   - Bard
   - Sorcerer
   - Warlock
   - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: Self
-duration: 1 hour
-components: V, S, M
-ritual: true
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _1st-level divination (ritual)_
 
-**Material components:** A pinch of soot and salt.
-
-For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.
-
-This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.
+For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.
 
 ---
 
@@ -39,6 +30,6 @@ This spell doesn't decode secret messages in a text or a glyph, such as an arcan
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

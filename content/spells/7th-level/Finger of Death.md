@@ -1,32 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.finger-of-death
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Finger of Death
+title: "Finger of Death"
 level: 7
 school: Necromancy
-classes:
-  - Sorcerer
-  - Warlock
-  - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: 60 feet
-duration: Instantaneous
-components: V, S
+casting_time: "1 action"
+range: "60 feet"
+duration: "Instantaneous"
+components: "V, S"
 ritual: false
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Send negative energy through a creature for 7d8 + 30 necrotic damage; a humanoid killed by it rises permanently as a zombie."
+classes:
+  - Sorcerer
+  - Thanatomancer
+  - Warlock
+  - Wizard
 ---
 
 _7th-level necromancy_
 
-You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one.
-
-A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability.
+You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one. A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability.
 
 ---
 
@@ -36,6 +30,6 @@ A humanoid killed by this spell rises at the start of your next turn as a zombie
 
 **School:** Necromancy
 
-**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Sorcerer]], [[Thanatomancer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

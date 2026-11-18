@@ -1,34 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.shield
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Shield
+title: "Shield"
 level: 1
 school: Abjuration
+casting_time: "1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell"
+range: "Self"
+duration: "1 round"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "As a reaction, gain +5 AC until the start of your next turn and take no damage from magic missile."
 classes:
   - Sorcerer
   - Wizard
-casting_time: 1 reaction
-range: Self
-duration: 1 round
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
-  - Mystic
-  - Witchblade
-mystic_list_marker: LL
-witchblade_list_marker: LL
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _1st-level abjuration_
 
@@ -44,4 +30,4 @@ An invisible barrier of magical force appears and protects you. Until the start 
 
 **Available to:** [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

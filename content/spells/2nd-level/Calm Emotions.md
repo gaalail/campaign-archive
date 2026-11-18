@@ -1,34 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.calm-emotions
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Calm Emotions
+title: "Calm Emotions"
 level: 2
 school: Enchantment
+casting_time: "1 action"
+range: "60 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Suppress strong emotions in a 20-foot-radius sphere, suppressing charmed/frightened or rendering creatures indifferent."
 classes:
   - Bard
   - Cleric
-  - Thanatomancer
   - Tamer
-casting_time: 1 action
-range: 60 feet
-duration: Up to 1 minute
-components: V, S
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Mystic
 ---
 
 _2nd-level enchantment_
 
-You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects. You can suppress any effect causing a target to be charmed or frightened. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.
-
-Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the GM rules otherwise.
+You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. On a failed save, you can suppress any effect causing a target to be charmed or frightened, or make a target indifferent about creatures of your choice that it is hostile toward.
 
 ---
 
@@ -38,6 +29,6 @@ Alternatively, you can make a target indifferent about creatures of your choice 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Cleric]], [[Tamer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

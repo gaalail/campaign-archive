@@ -1,37 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.6th-level.conjure-fey
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Conjure Fey
+title: "Conjure Fey"
 level: 6
 school: Conjuration
+casting_time: "1 minute"
+range: "90 feet"
+duration: "Concentration, up to 1 hour"
+components: "V, S"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Summon a fey creature of CR 6 or lower (or a fey spirit in beast form) to obey your verbal commands."
 classes:
   - Druid
   - Warlock
-casting_time: 1 minute
-range: 90 feet
-duration: Up to 1 hour
-components: V, S
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _6th-level conjuration_
 
-You summon a fey creature of challenge rating 6 or lower, or a fey spirit that takes the form of a beast of challenge rating 6 or lower. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends.
+You summon a fey creature of challenge rating 6 or lower, or a fey spirit that takes the form of a beast of challenge rating 6 or lower. It appears in an unoccupied space that you can see within range. The fey creature disappears when it drops to 0 hit points or when the spell ends. If your concentration is broken, the fey creature doesn't disappear; instead, you lose control of it for the remainder of the hour.
 
-The fey creature is friendly to you and your companions for the duration. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the fey creature, it defends itself from hostile creatures but otherwise takes no actions.
-
-If your concentration is broken, the fey creature doesn't disappear. Instead, you lose control of the fey creature, it becomes hostile toward you and your companions, and it might attack. An uncontrolled fey creature can't be dismissed by you, and it disappears 1 hour after you summoned it.
-
-The GM has the fey creature's statistics.
-
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th.
+**At Higher Levels.** When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th.
 
 ---
 
@@ -43,4 +32,4 @@ The GM has the fey creature's statistics.
 
 **Available to:** [[Druid]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

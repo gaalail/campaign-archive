@@ -1,38 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.planar-binding
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Planar Binding
+title: "Planar Binding"
 level: 5
 school: Abjuration
+casting_time: "1 hour"
+range: "60 feet"
+duration: "24 hours"
+components: "V, S, M (a jewel worth at least 1,000 gp, which the spell consumes)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Attempt to bind a celestial, elemental, fey, or fiend to your service for 24 hours."
 classes:
   - Bard
   - Cleric
   - Druid
-  - Warlock
   - Wizard
-casting_time: 1 hour
-range: 60 feet
-duration: 24 hours
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _5th-level abjuration_
 
-**Material components:** A jewel worth at least 1,000 gp, which the spell consumes.
+With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be within range for the entire casting of the spell. At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. A bound creature must follow your instructions to the best of its ability.
 
-With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted magic circle in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is extended to match the duration of this spell.
-
-A bound creature must follow your instructions to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends.
-
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot.
+**At Higher Levels.** When you cast this spell using a spell slot of a higher level, the duration increases to 10 days (6th), 30 days (7th), 180 days (8th), or a year and a day (9th).
 
 ---
 
@@ -42,6 +32,6 @@ A bound creature must follow your instructions to the best of its ability. You m
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]], [[Wizard]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

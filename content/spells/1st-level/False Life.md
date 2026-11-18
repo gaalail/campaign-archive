@@ -1,37 +1,29 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.false-life
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: False Life
+title: "False Life"
 level: 1
 school: Necromancy
-classes:
-  - Sorcerer
-  - Wizard
-  - Thanatomancer
-  - Tamer
-casting_time: 1 action
-range: Self
-duration: 1 hour
-components: V, S, M
+casting_time: "1 action"
+range: "Self"
+duration: "1 hour"
+components: "V, S, M (a small amount of alcohol or distilled spirits)"
 ritual: false
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
-subclass_spell_lists:
-  - Witchblade
+summary: "Gain 1d4 + 4 temporary hit points for 1 hour."
+classes:
+  - Artificer
+  - Sorcerer
+  - Tamer
+  - Thanatomancer
+  - Wizard
 ---
 
 _1st-level necromancy_
 
-**Material components:** A small amount of alcohol or distilled spirits.
-
 Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration.
 
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.
 
 ---
 
@@ -41,6 +33,6 @@ Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 tempo
 
 **School:** Necromancy
 
-**Available to:** [[Sorcerer]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Tamer]], [[Thanatomancer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

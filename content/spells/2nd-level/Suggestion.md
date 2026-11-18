@@ -1,41 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.suggestion
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Suggestion
+title: "Suggestion"
 level: 2
 school: Enchantment
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 8 hours"
+components: "V, M (a snake’s tongue and either a bit of honeycomb or a drop of sweet oil)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Suggest a reasonable-sounding course of activity up to two sentences to a creature that can hear and understand you."
 classes:
   - Bard
   - Sorcerer
   - Warlock
   - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: Up to 8 hours
-components: V, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Mystic
 ---
 
 _2nd-level enchantment_
 
-**Material components:** A snake's tongue and either a bit of honeycomb or a drop of sweet oil.
-
-You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. Asking the creature to stab itself, throw itself onto a spear, immolate itself, or do some other obviously harmful act ends the spell.
-
-The target must make a wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability. The suggested course of action can continue for the entire duration. If the suggested activity can be completed in a shorter time, the spell ends when the subject finishes what it was asked to do.
-
-You can also specify conditions that will trigger a special activity during the duration. For example, you might suggest that a knight give her warhorse to the first beggar she meets. If the condition isn't met before the spell expires, the activity isn't performed.
-
-If you or any of your companions damage the target, the spell ends.
+You suggest a course of activity (limited to a sentence or two) and magically influence a creature you can see within range that can hear and understand you. Creatures that can't be charmed are immune to this effect. The suggestion must be worded in such a manner as to make the course of action sound reasonable. The target must make a Wisdom saving throw. On a failed save, it pursues the course of action you described to the best of its ability for up to 8 hours.
 
 ---
 
@@ -45,6 +30,6 @@ If you or any of your companions damage the target, the spell ends.
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

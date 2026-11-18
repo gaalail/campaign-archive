@@ -1,34 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.message
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Message
+title: "Message"
 level: 0
 school: Transmutation
+casting_time: "1 action"
+range: "120 feet"
+duration: "1 round"
+components: "V, S, M (a short piece of copper wire)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Point toward a creature within range and whisper a message that only it can hear and reply to."
 classes:
   - Artificer
   - Bard
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: 120 feet
-duration: 1 round
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _Transmutation cantrip_
 
-**Material components:** A short piece of copper wire.
-
-You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear.
-
-You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier. Magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell. The spell doesn't have to follow a straight line and can travel freely around corners or through openings.
+You point your finger toward a creature within range and whisper a message. The target (and only the target) hears the message and can reply in a whisper that only you can hear. You can cast this spell through solid objects if you are familiar with the target and know it is beyond the barrier, though magical silence, 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood blocks the spell.
 
 ---
 
@@ -38,6 +30,6 @@ You can cast this spell through solid objects if you are familiar with the targe
 
 **School:** Transmutation
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Bard]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

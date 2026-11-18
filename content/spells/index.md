@@ -14,16 +14,16 @@ Choose a spell level to see all spells available at that progression:
 
 | Level     | When You Get It     | Archive Count | Status |
 | --------- | ------------------- | ------------- | ------ |
-| [[spells/cantrips|Cantrips]]  | Always available    | 15            | Active |
-| [[spells/1st-level|1st-Level]] | Character level 1+  | 46            | Active |
-| [[spells/2nd-level|2nd-Level]] | Character level 3+  | 45            | Active |
-| [[spells/3rd-level|3rd-Level]] | Character level 5+  | 47            | Active |
-| [[spells/4th-level|4th-Level]] | Character level 7+  | 36            | Active |
-| [[spells/5th-level|5th-Level]] | Character level 9+  | 15            | Active |
-| [[spells/6th-level|6th-Level]] | Character level 11+ | 2             | Active |
-| [[spells/7th-level|7th-Level]] | Character level 13+ | 2             | Active |
-| [[spells/8th-level|8th-Level]] | Character level 15+ | 1             | Active |
-| [[spells/9th-level|9th-Level]] | Character level 17+ | 0             | Awaiting import |
+| [[spells/cantrips|Cantrips]]  | Always available    | 39            | Active |
+| [[spells/1st-level|1st-Level]] | Character level 1+  | 86            | Active |
+| [[spells/2nd-level|2nd-Level]] | Character level 3+  | 84            | Active |
+| [[spells/3rd-level|3rd-Level]] | Character level 5+  | 75            | Active |
+| [[spells/4th-level|4th-Level]] | Character level 7+  | 57            | Active |
+| [[spells/5th-level|5th-Level]] | Character level 9+  | 45            | Active |
+| [[spells/6th-level|6th-Level]] | Character level 11+ | 33            | Active |
+| [[spells/7th-level|7th-Level]] | Character level 13+ | 22            | Active |
+| [[spells/8th-level|8th-Level]] | Character level 15+ | 16            | Active |
+| [[spells/9th-level|9th-Level]] | Character level 17+ | 15            | Active |
 
 **Browse spell levels:** [[spells/cantrips|Cantrips]], [[spells/1st-level|1st-Level]], [[spells/2nd-level|2nd-Level]], [[spells/3rd-level|3rd-Level]], [[spells/4th-level|4th-Level]], [[spells/5th-level|5th-Level]], [[spells/6th-level|6th-Level]], [[spells/7th-level|7th-Level]], [[spells/8th-level|8th-Level]], [[spells/9th-level|9th-Level]]
 

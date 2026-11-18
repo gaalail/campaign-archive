@@ -1,34 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.conjure-celestial
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Conjure Celestial
+title: "Conjure Celestial"
 level: 7
 school: Conjuration
-classes:
-  - Cleric
-casting_time: 1 minute
-range: 90 feet
-duration: Up to 1 hour
-components: V, S
+casting_time: "1 minute"
+range: "90 feet"
+duration: "Concentration, up to 1 hour"
+components: "V, S"
 ritual: false
 concentration: true
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Summon a celestial of challenge rating 4 or lower to serve and obey your verbal commands."
+classes:
+  - Cleric
 ---
 
 _7th-level conjuration_
 
-You summon a celestial of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends.
+You summon a celestial of challenge rating 4 or lower, which appears in an unoccupied space that you can see within range. The celestial disappears when it drops to 0 hit points or when the spell ends. The celestial is friendly to you and your companions for the duration and obeys any verbal commands that you issue to it.
 
-The celestial is friendly to you and your companions for the duration. Roll initiative for the celestial, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you), as long as they don't violate its alignment. If you don't issue any commands to the celestial, it defends itself from hostile creatures but otherwise takes no actions.
-
-The GM has the celestial's statistics.
-
-> [!info]- At higher levels
-> When you cast this spell using a 9th-level spell slot, you summon a celestial of challenge rating 5 or lower.
+**At Higher Levels.** When you cast this spell using a 9th-level spell slot, you summon a celestial of challenge rating 5 or lower.
 
 ---
 
@@ -40,4 +31,4 @@ The GM has the celestial's statistics.
 
 **Available to:** [[Cleric]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

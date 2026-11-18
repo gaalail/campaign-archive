@@ -1,34 +1,24 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.spike-growth
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Spike Growth
+title: "Spike Growth"
 level: 2
 school: Transmutation
+casting_time: "1 action"
+range: "150 feet"
+duration: "Concentration, up to 10 minutes"
+components: "V, S, M (seven sharp thorns or seven small twigs, each sharpened to a point)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Transform a 20-foot-radius circle into hard spikes that make difficult terrain and deal 2d4 piercing damage per 5 feet moved."
 classes:
   - Druid
   - Ranger
-casting_time: 1 action
-range: 150 feet
-duration: Up to 10 minutes
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Wu Jen
 ---
 
 _2nd-level transmutation_
 
-**Material components:** Seven sharp thorns or seven small twigs, each sharpened to a point.
-
-The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels.
-
-The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast can make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it.
+The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels. The transformation of the ground is camouflaged to look natural.
 
 ---
 
@@ -40,4 +30,4 @@ The transformation of the ground is camouflaged to look natural. Any creature th
 
 **Available to:** [[Druid]], [[Ranger]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,35 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.magic-weapon
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Magic Weapon
+title: "Magic Weapon"
 level: 2
 school: Transmutation
+casting_time: "1 bonus action"
+range: "Touch"
+duration: "Concentration, up to 1 hour"
+components: "V, S"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Touch a nonmagical weapon to turn it into a +1 magic weapon (+2 at 4th level, +3 at 6th level)."
 classes:
   - Artificer
   - Paladin
+  - Ranger
   - Wizard
-casting_time: 1 bonus action
-range: Touch
-duration: Up to 1 hour
-components: V, S
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
-arcane_knight_list_marker: LL
 ---
 
 _2nd-level transmutation_
 
 You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.
 
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.
 
 ---
 
@@ -39,6 +32,6 @@ You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic
 
 **School:** Transmutation
 
-**Available to:** [[Paladin]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Paladin]], [[Ranger]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,26 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.ray-of-frost
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Ray of Frost
+title: "Ray of Frost"
 level: 0
 school: Evocation
+casting_time: "1 action"
+range: "60 feet"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "A frigid beam streaks toward a creature for 1d8 cold damage and reduces its speed by 10 feet."
 classes:
   - Artificer
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: 60 feet
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Wu Jen
 ---
 
 _Evocation cantrip_
@@ -37,6 +31,6 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 
 **School:** Evocation
 
-**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

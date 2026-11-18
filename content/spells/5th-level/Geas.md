@@ -1,39 +1,30 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.geas
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Geas
+title: "Geas"
 level: 5
 school: Enchantment
+casting_time: "1 minute"
+range: "60 feet"
+duration: "30 days"
+components: "V"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Command a creature to perform a service or refrain from an action for 30 days, dealing 5d10 psychic damage once per day if it disobeys."
 classes:
   - Bard
   - Cleric
   - Druid
   - Paladin
+  - Tamer
   - Wizard
-  - Thanatomancer
-casting_time: 1 minute
-range: 60 feet
-duration: 30 days
-components: V
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _5th-level enchantment_
 
-You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell.
+You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day.
 
-You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends.
-
-You can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it.
-
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above.
+**At Higher Levels.** When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year; with a 9th-level slot, the spell lasts until ended by remove curse, greater restoration, or wish.
 
 ---
 
@@ -43,6 +34,6 @@ You can end the spell early by using an action to dismiss it. A remove curse, gr
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Tamer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

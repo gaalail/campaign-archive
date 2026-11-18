@@ -1,31 +1,27 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.6th-level.irresistible-dance
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Irresistible Dance
+title: "Irresistible Dance"
+aliases:
+  - "Otto's Irresistible Dance"
+  - "otto's-irresistible-dance"
 level: 6
 school: Enchantment
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 1 minute"
+components: "V"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Force a creature to dance comically in place, halving speed to 0 and granting advantage on attacks against it."
 classes:
   - Bard
   - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: Up to 1 minute
-components: V
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _6th-level enchantment_
 
-Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be charmed are immune to this spell.
-
-A dancing creature must use all its movement to dance without leaving its space and has disadvantage on dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a wisdom saving throw to regain control of itself. On a successful save, the spell ends.
+Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be charmed are immune to this spell. A dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself.
 
 ---
 
@@ -35,6 +31,6 @@ A dancing creature must use all its movement to dance without leaving its space 
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

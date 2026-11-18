@@ -1,35 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.mirage-arcane
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Mirage Arcane
+title: "Mirage Arcane"
 level: 7
 school: Illusion
+casting_time: "10 minutes"
+range: "Sight"
+duration: "10 days"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Create a tactile, audible, olfactory, and visual illusion transforming a 1-mile-square area for 10 days."
 classes:
   - Bard
   - Druid
   - Wizard
-casting_time: 10 minutes
-range: Sight
-duration: 10 days
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _7th-level illusion_
 
-You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. The terrain's general shape remains the same, however. Open fields or a road could be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road.
-
-Similarly, you can alter the appearance of structures, or add them where none are present. The spell doesn't disguise, conceal, or add creatures.
-
-The illusion includes audible, visual, tactile, and olfactory elements, so it can turn clear ground into difficult terrain (or vice versa) or otherwise impede movement through the area. Any piece of the illusory terrain (such as a rock or stick) that is removed from the spell's area disappears immediately.
-
-Creatures with truesight can see through the illusion to the terrain's true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion's presence, the creature can still physically interact with the illusion.
+You make terrain in an area up to 1 mile square look, sound, smell, and even feel like some other sort of terrain. The terrain's general shape remains the same, however. Unlike hallucinatory terrain, the illusion includes audible, tactile, and olfactory elements, so it can turn clear ground into difficult terrain or vice versa.
 
 ---
 
@@ -41,4 +31,4 @@ Creatures with truesight can see through the illusion to the terrain's true form
 
 **Available to:** [[Bard]], [[Druid]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

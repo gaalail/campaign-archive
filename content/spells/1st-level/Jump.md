@@ -1,37 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.jump
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Jump
+title: "Jump"
 level: 1
 school: Transmutation
+casting_time: "1 action"
+range: "Touch"
+duration: "1 minute"
+components: "V, S, M (a grasshopper’s hind leg)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Triple a touched creature's jump distance for 1 minute."
 classes:
   - Artificer
   - Druid
   - Ranger
   - Sorcerer
-  - Wizard
   - Tamer
-casting_time: 1 action
-range: Touch
-duration: 1 minute
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
-  - Mystic
-arcane_knight_list_marker: LL
-mystic_list_marker: LL
+  - Wizard
 ---
 
 _1st-level transmutation_
-
-**Material components:** A grasshopper's hind leg.
 
 You touch a creature. The creature's jump distance is tripled until the spell ends.
 
@@ -43,6 +32,6 @@ You touch a creature. The creature's jump distance is tripled until the spell en
 
 **School:** Transmutation
 
-**Available to:** [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

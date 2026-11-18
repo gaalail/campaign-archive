@@ -1,31 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.create-food-and-water
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Create Food and Water
+title: "Create Food and Water"
 level: 3
 school: Conjuration
+casting_time: "1 action"
+range: "30 feet"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Create 45 pounds of bland nourishing food and 30 gallons of water, enough to sustain fifteen humanoids or five steeds."
 classes:
   - Artificer
   - Cleric
-  - Druid
   - Paladin
   - Tamer
-casting_time: 1 action
-range: 30 feet
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _3rd-level conjuration_
 
@@ -39,6 +30,6 @@ You create 45 pounds of food and 30 gallons of water on the ground or in contain
 
 **School:** Conjuration
 
-**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Artificer]]
+**Available to:** [[Artificer]], [[Cleric]], [[Paladin]], [[Tamer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,39 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.web
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Web
+title: "Web"
 level: 2
 school: Conjuration
+casting_time: "1 action"
+range: "60 feet"
+duration: "Concentration, up to 1 hour"
+components: "V, S, M (a bit of spiderweb)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Conjure sticky, flammable webs in a 20-foot cube that create difficult terrain and restrain creatures."
 classes:
   - Artificer
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: 60 feet
-duration: Up to 1 hour
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _2nd-level conjuration_
 
-**Material components:** A bit of spiderweb.
-
-You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area.
-
-If the webs aren't anchored between two solid masses (such as walls or trees) or layered across a floor, wall, or ceiling, the conjured web collapses on itself, and the spell ends at the start of your next turn. Webs layered over a flat surface have a depth of 5 feet.
-
-Each creature that starts its turn in the webs or that enters them during its turn must make a dexterity saving throw. On a failed save, the creature is restrained as long as it remains in the webs or until it breaks free.
-
-A creature restrained by the webs can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.
-
-The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature that starts its turn in the fire.
+You conjure a mass of thick, sticky webbing at a point of your choice within range. The webs fill a 20-foot cube from that point for the duration. The webs are difficult terrain and lightly obscure their area. Each creature that starts its turn in the webs or that enters them during its turn must make a Dexterity saving throw or become restrained. The webs are flammable; any 5-foot cube of webs exposed to fire burns away in 1 round, dealing 2d4 fire damage to any creature starting its turn in the fire.
 
 ---
 
@@ -43,6 +29,6 @@ The webs are flammable. Any 5-foot cube of webs exposed to fire burns away in 1 
 
 **School:** Conjuration
 
-**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,38 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.gaseous-form
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Gaseous Form
+title: "Gaseous Form"
 level: 3
 school: Transmutation
+casting_time: "1 action"
+range: "Touch"
+duration: "Concentration, up to 1 hour"
+components: "V, S, M (a bit of gauze and a wisp of smoke)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Transform a willing creature and its gear into a misty cloud with a 10-foot flying speed and resistance to nonmagical damage."
 classes:
-  - Artificer
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: 1 action
-range: Touch
-duration: Up to 1 hour
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Wu Jen
 ---
 
 _3rd-level transmutation_
 
-**Material components:** A bit of gauze and a wisp of smoke.
-
-You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.
-
-While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.
-
-While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.
+You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. While in this form, the target's only method of movement is a flying speed of 10 feet, it can enter and occupy another creature's space, it has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. It can pass through small holes and narrow openings, though it can't attack, cast spells, or manipulate objects.
 
 ---
 
@@ -42,6 +29,6 @@ While in the form of a misty cloud, the target can't talk or manipulate objects,
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
+**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

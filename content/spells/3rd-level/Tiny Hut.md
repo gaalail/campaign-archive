@@ -1,34 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.tiny-hut
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Tiny Hut
+title: "Tiny Hut"
+aliases:
+  - "Leomund's Tiny Hut"
 level: 3
 school: Evocation
+casting_time: "1 minute"
+range: "Self (10-foot-radius hemisphere)"
+duration: "8 hours"
+components: "V, S, M (a small crystal bead)"
+ritual: true
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Create a 10-foot-radius immobile dome of force that shelters up to nine Medium or smaller creatures from weather, attacks, and spells."
 classes:
   - Bard
   - Wizard
-casting_time: 1 minute
-range: Self
-duration: 8 hours
-components: V, S, M
-ritual: true
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _3rd-level evocation (ritual)_
 
-**Material components:** A small crystal bead.
-
-A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area.
-
-Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside.
-
-Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside.
+A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area. Nine creatures of Medium size or smaller can fit inside the dome with you. Creatures and objects within the dome when you cast this spell can move through it freely; all other creatures and objects are barred from passing through it, and spells and other magical effects can't extend through the dome or be cast through it.
 
 ---
 
@@ -40,4 +32,4 @@ Until the spell ends, you can command the interior to become dimly lit or dark. 
 
 **Available to:** [[Bard]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

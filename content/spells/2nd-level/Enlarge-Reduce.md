@@ -1,5 +1,7 @@
 ---
 title: "Enlarge-Reduce"
+aliases:
+  - "Enlarge/Reduce"
 level: 2
 school: Transmutation
 casting_time: "1 action"
@@ -18,7 +20,7 @@ classes:
   - Tamer
 ---
 
-_2th-level transmutation_
+_2nd-level transmutation_
 
 Cause a creature or object to grow or shrink: Enlarge doubles size, adds advantage on Str checks/saves, and deals +1d4 weapon damage; Reduce halves size and subtracts 1d4 damage.
 

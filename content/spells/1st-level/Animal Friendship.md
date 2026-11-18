@@ -1,32 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.animal-friendship
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Animal Friendship
+title: "Animal Friendship"
 level: 1
 school: Enchantment
+casting_time: "1 action"
+range: "30 feet"
+duration: "24 hours"
+components: "V, S, M (a morsel of food)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Convince a beast with Intelligence 3 or less that you mean it no harm, charming it for 24 hours."
 classes:
   - Bard
   - Druid
   - Ranger
-  - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: 24 hours
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
+  - Tamer
 ---
 
 _1st-level enchantment_
 
-**Material components:** A morsel of food.
+This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a Wisdom saving throw or be charmed by you for the spell's duration. If you or one of your companions harms the target, the spell ends.
 
-This spell lets you convince a beast that you mean it no harm. Choose a beast that you can see within range. It must see and hear you. If the beast's Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed on a wisdom saving throw or be charmed by you for the spell's duration. If you or one of your companions harms the target, the spells ends.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional beast for each slot level above 1st.
 
 ---
 
@@ -36,6 +32,6 @@ This spell lets you convince a beast that you mean it no harm. Choose a beast th
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Druid]], [[Ranger]], [[Tamer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

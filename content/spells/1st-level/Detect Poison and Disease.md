@@ -1,35 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.detect-poison-and-disease
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Detect Poison and Disease
+title: "Detect Poison and Disease"
 level: 1
 school: Divination
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 10 minutes"
+components: "V, S, M (a yew leaf)"
+ritual: true
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet."
 classes:
   - Cleric
   - Druid
   - Paladin
   - Ranger
-  - Thanatomancer
-casting_time: 1 action
-range: Self
-duration: Up to 10 minutes
-components: V, S, M
-ritual: true
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _1st-level divination (ritual)_
 
-**Material components:** A yew leaf.
-
-For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.
-
-The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
+For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case. The spell can penetrate most barriers, but is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.
 
 ---
 
@@ -39,6 +30,6 @@ The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 i
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Thanatomancer]]
+**Available to:** [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

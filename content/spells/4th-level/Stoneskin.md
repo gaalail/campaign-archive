@@ -1,34 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.stoneskin
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Stoneskin
+title: "Stoneskin"
 level: 4
 school: Abjuration
+casting_time: "1 action"
+range: "Touch"
+duration: "Concentration, up to 1 hour"
+components: "V, S, M (diamond dust worth 100 gp, which the spell consumes)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Turn a willing creature’s flesh as hard as stone, granting resistance to nonmagical bludgeoning, piercing, and slashing damage."
 classes:
   - Artificer
   - Druid
   - Ranger
   - Sorcerer
-  - Wizard
   - Tamer
-casting_time: 1 action
-range: Touch
-duration: Up to 1 hour
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Wu Jen
+  - Wizard
 ---
 
 _4th-level abjuration_
-
-**Material components:** Diamond dust worth 100 gp, which the spell consumes.
 
 This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.
 
@@ -40,6 +32,6 @@ This spell turns the flesh of a willing creature you touch as hard as stone. Unt
 
 **School:** Abjuration
 
-**Available to:** [[Artificer]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Artificer]], [[Druid]], [[Ranger]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,34 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.spider-climb
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Spider Climb
+title: "Spider Climb"
 level: 2
 school: Transmutation
+casting_time: "1 action"
+range: "Touch"
+duration: "Concentration, up to 1 hour"
+components: "V, S, M (a drop of bitumen and a spider)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Grant a willing creature a climbing speed equal to its walking speed and the ability to walk on walls and ceilings."
 classes:
   - Artificer
   - Sorcerer
+  - Tamer
   - Warlock
   - Wizard
-  - Tamer
-casting_time: 1 action
-range: Touch
-duration: Up to 1 hour
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
-  - Witchblade
 ---
 
 _2nd-level transmutation_
-
-**Material components:** A drop of bitumen and a spider.
 
 Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.
 
@@ -40,6 +31,6 @@ Until the spell ends, one willing creature you touch gains the ability to move u
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Tamer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

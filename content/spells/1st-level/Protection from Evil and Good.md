@@ -1,38 +1,27 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.protection-from-evil-and-good
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Protection from Evil and Good
+title: "Protection from Evil and Good"
 level: 1
 school: Abjuration
+casting_time: "1 action"
+range: "Touch"
+duration: "Concentration, up to 10 minutes"
+components: "V, S, M (holy water or powdered silver and iron, which the spell consumes)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Protect a creature against aberrations, celestials, elementals, fey, fiends, and undead (disadvantage on attacks and immunity to charm/frighten/possession)."
 classes:
   - Cleric
   - Paladin
+  - Tamer
   - Warlock
   - Wizard
-  - Tamer
-casting_time: 1 action
-range: Touch
-duration: Up to 10 minutes
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
-  - Witchblade
 ---
 
 _1st-level abjuration_
 
-**Material components:** Holy water or powdered silver and iron, which the spell consumes.
-
-Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.
-
-The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.
+Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.
 
 ---
 
@@ -42,6 +31,6 @@ The protection grants several benefits. Creatures of those types have disadvanta
 
 **School:** Abjuration
 
-**Available to:** [[Cleric]], [[Paladin]], [[Warlock]], [[Wizard]]
+**Available to:** [[Cleric]], [[Paladin]], [[Tamer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

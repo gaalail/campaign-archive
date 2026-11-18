@@ -1,13 +1,16 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.lesser-restoration
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Lesser Restoration
+title: "Lesser Restoration"
 level: 2
 school: Abjuration
+casting_time: "1 action"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Touch a creature to end one disease or one condition (blinded, deafened, paralyzed, or poisoned)."
 classes:
   - Artificer
   - Bard
@@ -16,18 +19,7 @@ classes:
   - Paladin
   - Ranger
   - Tamer
-casting_time: 1 action
-range: Touch
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _2nd-level abjuration_
 
@@ -41,6 +33,6 @@ You touch a creature and can end either one disease or one condition afflicting 
 
 **School:** Abjuration
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Artificer]]
+**Available to:** [[Artificer]], [[Bard]], [[Cleric]], [[Druid]], [[Paladin]], [[Ranger]], [[Tamer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

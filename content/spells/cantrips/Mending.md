@@ -1,36 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.mending
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Mending
+title: "Mending"
 level: 0
 school: Transmutation
+casting_time: "1 minute"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S, M (two lodestones)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Repair a single break or tear up to 1 foot in any dimension in an object you touch."
 classes:
   - Artificer
-  - Cleric
   - Bard
+  - Cleric
   - Druid
   - Sorcerer
   - Wizard
-casting_time: 1 minute
-range: Touch
-duration: Instantaneous
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _Transmutation cantrip_
 
-**Material components:** Two lodestones.
-
-This spell repairs a single break or tear in an object you touch, such as a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no longer than 1 foot in any dimension, you mend it, leaving no trace of the former damage.
-
-This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.
+This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage. It can physically repair a magic item or construct, but can't restore magic to such an object.
 
 ---
 
@@ -40,6 +32,6 @@ This spell can physically repair a magic item or construct, but the spell can't 
 
 **School:** Transmutation
 
-**Available to:** [[Cleric]], [[Bard]], [[Druid]], [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Bard]], [[Cleric]], [[Druid]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

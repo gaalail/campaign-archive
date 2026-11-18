@@ -1,29 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.6th-level.word-of-recall
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Word of Recall
+title: "Word of Recall"
 level: 6
 school: Conjuration
-classes:
-  - Cleric
-casting_time: 1 action
-range: 5 feet
-duration: Instantaneous
-components: V
+casting_time: "1 action"
+range: "5 feet"
+duration: "Instantaneous"
+components: "V"
 ritual: false
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Instantly teleport yourself and up to five willing creatures to a previously designated sanctuary on the same plane."
+classes:
+  - Cleric
 ---
 
 _6th-level conjuration_
 
-You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary (see below). If you cast this spell without first preparing a sanctuary, the spell has no effect.
-
-You must designate a sanctuary by casting this spell within a location, such as a temple, dedicated to or strongly linked to your deity. If you attempt to cast the spell in this manner in an area that isn't dedicated to your deity, the spell has no effect.
+You and up to five willing creatures within 5 feet of you instantly teleport to a previously designated sanctuary. You and any creatures that teleport with you appear in the nearest unoccupied space to the spot you designated when you prepared your sanctuary. To designate a sanctuary, you cast this spell within a location such as a temple dedicated to or strongly linked to your deity.
 
 ---
 
@@ -35,4 +29,4 @@ You must designate a sanctuary by casting this spell within a location, such as 
 
 **Available to:** [[Cleric]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,33 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.expeditious-retreat
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Expeditious Retreat
+title: "Expeditious Retreat"
 level: 1
 school: Transmutation
+casting_time: "1 bonus action"
+range: "Self"
+duration: "Concentration, up to 10 minutes"
+components: "V, S"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Take the Dash action immediately and as a bonus action on each of your turns for up to 10 minutes."
 classes:
   - Artificer
   - Sorcerer
+  - Tamer
   - Warlock
   - Wizard
-  - Tamer
-casting_time: 1 bonus action
-range: Self
-duration: Up to 10 minutes
-components: V, S
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Witchblade
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _1st-level transmutation_
 
@@ -41,6 +31,6 @@ This spell allows you to move at an incredible pace. When you cast this spell, a
 
 **School:** Transmutation
 
-**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Tamer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

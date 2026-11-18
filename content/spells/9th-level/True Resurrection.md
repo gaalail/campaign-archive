@@ -1,35 +1,24 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.9th-level.true-resurrection
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: True Resurrection
+title: "True Resurrection"
 level: 9
 school: Necromancy
+casting_time: "1 hour"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S, M (a sprinkle of holy water and diamonds worth at least 25,000 gp, which the spell consumes)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Restore a creature dead up to 200 years to life with full hit points, even providing a new body if none remains."
 classes:
   - Cleric
   - Druid
-  - Thanatomancer
-casting_time: 1 hour
-range: Touch
-duration: Instantaneous
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _9th-level necromancy_
 
-**Material components:** A sprinkle of holy water and diamonds worth at least 25,000gp, which the spell consumes.
-
-You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature's soul is free and willing, the creature is restored to life with all its hit points.
-
-This spell closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses affecting the creature when it died. The spell replaces damaged or missing organs and limbs.
-
-The spell can even provide a new body if the original no longer exists, in which case you must speak the creature's name. The creature then appears in an unoccupied space you choose within 10 feet of you.
+You touch a creature that has been dead for no longer than 200 years and that died for any reason except old age. If the creature's soul is free and willing, the creature is restored to life with all its hit points. This spell closes all wounds, neutralizes any poison, cures all diseases, and lifts any curses affecting the creature when it died. The spell can even provide a new body if the original no longer exists.
 
 ---
 
@@ -39,6 +28,6 @@ The spell can even provide a new body if the original no longer exists, in which
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
+**Available to:** [[Cleric]], [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

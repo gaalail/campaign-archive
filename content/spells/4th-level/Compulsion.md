@@ -1,31 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.compulsion
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Compulsion
+title: "Compulsion"
 level: 4
 school: Enchantment
-classes:
-  - Bard
-casting_time: 1 action
-range: 30 feet
-duration: Up to 1 minute
-components: V, S
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
 ritual: false
 concentration: true
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
-subclass_spell_lists:
-  - Mystic
+summary: "Force creatures within 30 feet that can hear you to use all their movement to travel in a direction you choose each turn."
+classes:
+  - Bard
 ---
 
 _4th-level enchantment_
 
-Creatures of your choice that you can see within range and that can hear you must make a wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take any action before it moves. After moving in this way, it can make another Wisdom save to try to end the effect.
-
-A target isn't compelled to move into an obviously deadly hazard, such as a fire or a pit, but it will provoke opportunity attacks to move in the designated direction.
+Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you; each affected target must use as much of its movement as possible to move in that direction on its next turn.
 
 ---
 
@@ -37,4 +29,4 @@ A target isn't compelled to move into an obviously deadly hazard, such as a fire
 
 **Available to:** [[Bard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

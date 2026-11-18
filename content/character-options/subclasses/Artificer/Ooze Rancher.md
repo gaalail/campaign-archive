@@ -74,7 +74,7 @@ You always have the following spells prepared. They don't count against the numb
 | Artificer Level | Spells                                             |
 | --------------- | -------------------------------------------------- |
 | 3rd             | _Caustic brew, [[Inflict Wounds]]_                 |
-| 5th             | _[[Acid Arrow]], [[spells/2nd-level/Enlarge-Reduce | Enlarge/Reduce]]_ |
+| 5th             | _[[Acid Arrow]], [[spells/2nd-level/Enlarge-Reduce\|Enlarge/Reduce]]_ |
 | 9th             | _Corrosive bolt, [[Slow]]_                         |
 | 13th            | _[[Freedom of Movement]], vitriolic sphere_        |
 | 17th            | _[[Contagion]], [[Reincarnate]]_                   |

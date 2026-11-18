@@ -1,45 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.conjure-animals
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Conjure Animals
+title: "Conjure Animals"
 level: 3
 school: Conjuration
+casting_time: "1 action"
+range: "60 feet"
+duration: "Concentration, up to 1 hour"
+components: "V, S"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Summon fey spirits that take the forms of beasts (one CR 2, two CR 1, four CR 1/2, or eight CR 1/4) to obey your commands."
 classes:
   - Druid
   - Ranger
-casting_time: 1 action
-range: 60 feet
-duration: Up to 1 hour
-components: V, S
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
 
 _3rd-level conjuration_
 
-You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options for what appears:
+You summon fey spirits that take the form of beasts and appear in unoccupied spaces that you can see within range. Choose one of the following options: one beast of challenge rating 2 or lower; two beasts of challenge rating 1 or lower; four beasts of challenge rating 1/2 or lower; or eight beasts of challenge rating 1/4 or lower. They are friendly to you and your companions and obey your verbal commands.
 
-- One beast of challenge rating 2 or lower
-
-- Two beasts of challenge rating 1 or lower
-
-- Four beasts of challenge rating 1/2 or lower
-
-- Eight beasts of challenge rating 1/4 or lower
-
-- Each beast is also considered fey, and it disappears when it drops to 0 hit points or when the spell ends.
-
-The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which has its own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions.
-
-The GM has the creatures' statistics.
-
-> [!info]- At higher levels
-> When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level.
+**At Higher Levels.** When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot.
 
 ---
 
@@ -51,4 +32,4 @@ The GM has the creatures' statistics.
 
 **Available to:** [[Druid]], [[Ranger]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

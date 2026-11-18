@@ -1,39 +1,28 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.light
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Light
+title: "Light"
 level: 0
 school: Evocation
+casting_time: "1 action"
+range: "Touch"
+duration: "1 hour"
+components: "V, M (a firefly or phosphorescent moss)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Cause an object to shed bright light in a 20-foot radius and dim light for an additional 20 feet."
 classes:
   - Artificer
   - Bard
   - Cleric
   - Sorcerer
-  - Wizard
   - Tamer
-casting_time: 1 action
-range: Touch
-duration: 1 hour
-components: V, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
-  - Wu Jen
+  - Wizard
 ---
 
 _Evocation cantrip_
 
-**Material components:** A firefly or phosphorescent moss.
-
 You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.
-
-If you target an object held or worn by a hostile creature, that creature must succeed on a dexterity saving throw to avoid the spell.
 
 ---
 
@@ -43,6 +32,6 @@ If you target an object held or worn by a hostile creature, that creature must s
 
 **School:** Evocation
 
-**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Bard]], [[Cleric]], [[Sorcerer]], [[Tamer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

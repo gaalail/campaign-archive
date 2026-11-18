@@ -1,36 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.bane
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Bane
+title: "Bane"
 level: 1
 school: Enchantment
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a drop of blood)"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Up to three creatures make Charisma saves or subtract 1d4 from all attack rolls and saving throws for the duration."
 classes:
   - Bard
   - Cleric
-  - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: Up to 1 minute
-components: V, S, M
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Witchblade
 ---
 
 _1st-level enchantment_
 
-**Material components:** A drop of blood.
+Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.
 
-Up to three creatures of your choice that you can see within range must make charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.
-
-> [!info]- At higher levels
-> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.
 
 ---
 
@@ -40,6 +30,6 @@ Up to three creatures of your choice that you can see within range must make cha
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Cleric]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,34 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.divination
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Divination
+title: "Divination"
 level: 4
 school: Divination
-classes:
-  - Druid
-  - Thanatomancer
-casting_time: 1 action
-range: Self
-duration: Instantaneous
-components: V, S, M
+casting_time: "1 action"
+range: "Self"
+duration: "Instantaneous"
+components: "V, S, M (incense and a sacrificial offering appropriate to your religion, together worth at least 25 gp, which the spell consumes)"
 ritual: true
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Ask your deity or its servants a single question concerning a specific goal, event, or activity to occur within 7 days."
+classes:
+  - Cleric
+  - Druid
+  - Wizard
 ---
 
 _4th-level divination (ritual)_
 
-**Material components:** Incense and a sacrificial offering appropriate to your religion, together worth at least 25gp, which the spell consumes.
-
 Your magic and an offering put you in contact with a god or a god's servants. You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The GM offers a truthful reply. The reply might be a short phrase, a cryptic rhyme, or an omen.
-
-The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion.
-
-If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The GM makes this roll in secret.
 
 ---
 
@@ -38,6 +29,6 @@ If you cast the spell two or more times before finishing your next long rest, th
 
 **School:** Divination
 
-**Available to:** [[Druid]], [[Thanatomancer]]
+**Available to:** [[Cleric]], [[Druid]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

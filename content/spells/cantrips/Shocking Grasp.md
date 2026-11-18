@@ -1,26 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.shocking-grasp
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Shocking Grasp
+title: "Shocking Grasp"
 level: 0
 school: Evocation
+casting_time: "1 action"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Lightning springs from your hand in a melee spell attack for 1d8 lightning damage and denies reactions."
 classes:
   - Artificer
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: Touch
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
-subclass_spell_lists:
-  - Arcane Knight
 ---
 
 _Evocation cantrip_
@@ -37,6 +31,6 @@ The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (
 
 **School:** Evocation
 
-**Available to:** [[Sorcerer]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

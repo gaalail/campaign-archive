@@ -1,31 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.guidance
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-content_status: complete
-title: Guidance
+title: "Guidance"
 level: 0
 school: Divination
+casting_time: "1 action"
+range: "Touch"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "SRD 5.1"
+source_type: SRD
+summary: "Touch one willing creature so it can add 1d4 to one ability check of its choice before the spell ends."
 classes:
   - Artificer
   - Cleric
   - Druid
-  - Thanatomancer
   - Tamer
-casting_time: 1 action
-range: Touch
-duration: Up to 1 minute
-components: V, S
-ritual: false
-concentration: true
-source: SRD 5.1
-source_type: SRD
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _Divination cantrip_
 
@@ -39,6 +30,6 @@ You touch one willing creature. Once before the spell ends, the target can roll 
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]], [[Artificer]]
+**Available to:** [[Artificer]], [[Cleric]], [[Druid]], [[Tamer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,35 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.alarm
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Alarm
+title: "Alarm"
 level: 1
 school: Abjuration
+casting_time: "1 minute"
+range: "30 feet"
+duration: "8 hours"
+components: "V, S, M (a tiny bell and a piece of fine silver wire)"
+ritual: true
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Set an invisible ward around a door, window, or 20-foot cube that alerts you mentally or audibly when a Tiny or larger creature enters."
 classes:
   - Artificer
   - Ranger
   - Wizard
-casting_time: 1 minute
-range: 30 feet
-duration: 8 hours
-components: V, S, M
-ritual: true
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _1st-level abjuration (ritual)_
 
-**Material components:** A tiny bell and a piece of fine silver wire.
-
-You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm. You also choose whether the alarm is mental or audible.
-
-A mental alarm alerts you with a ping in your mind if you are within 1 mile of the warded area. This ping awakens you if you are sleeping.
-
-An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet.
+You set an alarm against unwanted intrusion. Choose a door, a window, or an area within range that is no larger than a 20-foot cube. Until the spell ends, an alarm alerts you whenever a Tiny or larger creature touches or enters the warded area. When you cast the spell, you can designate creatures that won't set off the alarm, and choose whether the alarm is mental (pinging your mind within 1 mile) or audible (a hand bell ringing for 10 seconds within 60 feet).
 
 ---
 
@@ -39,6 +29,6 @@ An audible alarm produces the sound of a hand bell for 10 seconds within 60 feet
 
 **School:** Abjuration
 
-**Available to:** [[Ranger]], [[Wizard]], [[Artificer]]
+**Available to:** [[Artificer]], [[Ranger]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

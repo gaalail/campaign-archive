@@ -1,35 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.6th-level.instant-summons
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Instant Summons
+title: "Instant Summons"
+aliases:
+  - "Drawmij's Instant Summons"
 level: 6
 school: Conjuration
-classes:
-  - Wizard
-casting_time: 1 minute
-range: Touch
-duration: Until dispelled
-components: V, S, M
+casting_time: "1 minute"
+range: "Touch"
+duration: "Until dispelled"
+components: "V, S, M (a sapphire worth 1,000 gp)"
 ritual: true
 concentration: false
-source: SRD 5.1
+source: "SRD 5.1"
 source_type: SRD
+summary: "Mark a nonmagical object up to 10 pounds and summon it to your hand later by crushing a linked 1,000 gp sapphire."
+classes:
+  - Wizard
 ---
 
 _6th-level conjuration (ritual)_
 
-**Material components:** A sapphire worth 1,000 gp.
-
-You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibly inscribes the name of the item on the sapphire you use as the material component. Each time you cast this spell, you must use a different sapphire.
-
-At any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the spell ends.
-
-If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment.
-
-Dispel magic or a similar effect successfully applied to the sapphire ends this spell's effect.
+You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibly inscribes the name of the item on the sapphire you use as the material component. Each time you cast this spell, you must use a different sapphire. At any time thereafter, you can use your action to speak the item's name and crush the sapphire; the item instantly appears in your hand regardless of physical or planar distances, provided no other creature is holding or carrying it.
 
 ---
 
@@ -41,4 +31,4 @@ Dispel magic or a similar effect successfully applied to the sapphire ends this 
 
 **Available to:** [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1

@@ -1,41 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.forcecage
-edition: "2014"
-adaptation: curated
-license_status: CC-BY-4.0
-title: Forcecage
+title: "Forcecage"
 level: 7
 school: Evocation
+casting_time: "1 action"
+range: "100 feet"
+duration: "1 hour"
+components: "V, S, M (ruby dust worth 1,500 gp)"
+ritual: false
+concentration: false
+source: "SRD 5.1"
+source_type: SRD
+summary: "Trap creatures inside an immobile invisible 20-foot barred cage or 10-foot solid box of magical force for 1 hour."
 classes:
   - Bard
   - Warlock
   - Wizard
-casting_time: 1 action
-range: 100 feet
-duration: 1 hour
-components: V, S, M
-ritual: false
-concentration: false
-source: SRD 5.1
-source_type: SRD
 ---
 
 _7th-level evocation_
 
-**Material components:** Ruby dust worth 1,500 gp.
-
-An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose.
-
-A prison in the shape of a cage can be up to 20 feet on a side and is made from 1/2-inch diameter bars spaced 1/2 inch apart.
-
-A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area.
-
-When you cast the spell, any creature that is completely inside the cage's area is trapped. Creatures only partially within the area, or those too large to fit inside the area, are pushed away from the center of the area until they are completely outside the area.
-
-A creature inside the cage can't leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a charisma saving throw. On a success, the creature can use that magic to exit the cage. On a failure, the creature can't exit the cage and wastes the use of the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.
-
-This spell can't be dispelled by dispel magic.
+An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage (20 feet on a side) or a solid box (10 feet on a side), chosen when you cast the spell. A creature inside the cage can't leave it by nonmagical means, and teleportation or interplanar travel requires a Charisma saving throw.
 
 ---
 
@@ -47,4 +31,4 @@ This spell can't be dispelled by dispel magic.
 
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** SRD 5.1
