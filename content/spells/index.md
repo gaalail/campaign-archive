@@ -14,14 +14,14 @@ Choose a spell level to see all spells available at that progression:
 
 | Level     | When You Get It     | Archive Count | Status |
 | --------- | ------------------- | ------------- | ------ |
-| [[spells/cantrips|Cantrips]]  | Always available    | 49            | Active |
-| [[spells/1st-level|1st-Level]] | Character level 1+  | 96            | Active |
-| [[spells/2nd-level|2nd-Level]] | Character level 3+  | 94            | Active |
-| [[spells/3rd-level|3rd-Level]] | Character level 5+  | 85            | Active |
-| [[spells/4th-level|4th-Level]] | Character level 7+  | 69            | Active |
-| [[spells/5th-level|5th-Level]] | Character level 9+  | 58            | Active |
-| [[spells/6th-level|6th-Level]] | Character level 11+ | 43            | Active |
-| [[spells/7th-level|7th-Level]] | Character level 13+ | 31            | Active |
+| [[spells/cantrips|Cantrips]]  | Always available    | 67            | Active |
+| [[spells/1st-level|1st-Level]] | Character level 1+  | 100           | Active |
+| [[spells/2nd-level|2nd-Level]] | Character level 3+  | 102           | Active |
+| [[spells/3rd-level|3rd-Level]] | Character level 5+  | 90            | Active |
+| [[spells/4th-level|4th-Level]] | Character level 7+  | 73            | Active |
+| [[spells/5th-level|5th-Level]] | Character level 9+  | 67            | Active |
+| [[spells/6th-level|6th-Level]] | Character level 11+ | 48            | Active |
+| [[spells/7th-level|7th-Level]] | Character level 13+ | 33            | Active |
 | [[spells/8th-level|8th-Level]] | Character level 15+ | 25            | Active |
 | [[spells/9th-level|9th-Level]] | Character level 17+ | 25            | Active |
 
@@ -58,7 +58,7 @@ Each class page shows **spells organized by level you can learn them**.
 - **2nd-level spells:** Character level 3+ (more slots as you level)
 - **3rd-9th-level spells:** Character levels 5-17+ (highest power)
 
-Check your [[character-options/classes|class]] page for exact spell slot progression.
+Check your [[character-options/classes|class]] page for exact spell slot progression, and see **[[rules/combat#alternate-casting-times-laserllama-spells|Alternate Casting Times]]** for **On Hit** and **1 Attack** casting mechanics used by Laserllama spells.
 
 ---
 
@@ -91,5 +91,6 @@ Check your [[character-options/classes|class]] page for exact spell slot progres
 - [[character-options/feats|Feats]] — Magic-focused feats
 - [[items|Items]] — Magic items that cast spells
 - [[monsters|Monsters]] — Spells creatures cast
+- [[rules/licensing|Open Game License & Attribution]] — OGL v1.0a, CC-BY-4.0, and third-party spell attribution
 
 ---

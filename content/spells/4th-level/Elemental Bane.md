@@ -32,6 +32,17 @@ Choose one creature you can see within range, and choose one of the following da
 
 **At Higher Levels.** When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *3rd level transmutation* — **Classes:** Artificer, Druid, Magus, Shaman, Sorcerer, Warlock, Wizard
+> **Casting Time:** 1 action | **Range:** 60 feet | **Components:** V, S | **Duration:** 1 minute
+>
+> Choose one of the following damage types: acid, cold, fire, lightning, poison, or thunder; and one creature within range. It must make Constitution saving throw or be afflicted with an elemental curse, and if it has Resistance to the damage type you chose, it loses it for the duration.
+>
+> The first time each turn a cursed creature takes damage of the chosen type, it takes a bonus 1d6 damage, then it repeats the Constitution saving throw, ending the curse on a success.
+>
+> **At Higher Levels.** If you cast this spell using a spell slot of 4th-level or higher, you can either increase the bonus damage by 1d6, or target another creature within range, for each spell slot level above 4th. If you target more than one creature, you use the same damage type for all taragets of the spell.
+
 ---
 
 ## Related Content

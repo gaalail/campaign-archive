@@ -27,6 +27,17 @@ You either create or destroy water.
 
 **At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *1st level transmutation* — **Classes:** Cleric, Druid
+> **Casting Time:** 1 minute | **Range:** 30 feet | **Components:** V, S, M (a drop of water if creating water, or a grain of sand if destroying water) | **Duration:** Instantaneous
+>
+> You create up to 10 gallons of clean water within range. The water appears in open containers you can see, or falls as rain in a 30-foot radius centered on you, extinguishing all flames.
+>
+> **Inverse Casting.** You can use this spell to destory water. You destroy up to 10 gallons of water in open containers in range, or destroy fog in a 30-foot radius centered on you.
+>
+> **At Higher Levels.** If you cast this spell with a spell slot of 2nd level or higher, you can create (or destroy) an additional 10 gallons of water, or the radius of this spell effect increases by 10 feet, for each slot level above 1st.
+
 ---
 
 ## Related Content

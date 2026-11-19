@@ -17,4 +17,4 @@ prerequisite: Eldritch Familiar
 summary: "Once per short or long rest, cast dominate creature at 8th level without a spell slot"
 ---
 
-Once per short or long rest, cast dominate creature *(LL)* at 8th level without a spell slot. A target under [[spells/5th-level/Hold Monster|Hold Monster]] automatically fails its save against [[spells/8th-level/Dominate Monster|Dominate Monster]], and Hold Monster ends.
+Once per short or long rest, cast [[spells/4th-level/Dominate Creature|Dominate Creature]] *(LL)* at 8th level without a spell slot. A target under [[spells/5th-level/Hold Monster|Hold Monster]] automatically fails its save against [[spells/8th-level/Dominate Monster|Dominate Monster]], and Hold Monster ends.

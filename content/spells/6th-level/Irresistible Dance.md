@@ -23,6 +23,17 @@ _6th-level enchantment_
 
 Choose one creature that you can see within range. The target begins a comic dance in place: shuffling, tapping its feet, and capering for the duration. Creatures that can't be charmed are immune to this spell. A dancing creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, other creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *3rd level enchantment* — **Classes:** Bard
+> **Casting Time:** 1 action | **Range:** 30 feet | **Components:** V | **Duration:** Concentration, up to 1 minute
+>
+> You force a creature that can hear you within range to make a Wisdom saving throw. On a failure, it begins a comic dance in place: shuffling, tapping feet, and capering for the duration. Creatures that can't be charmed are immune to this spell.
+>
+> This creature must use all its movement to dance without leaving its space and has disadvantage on Dexterity saving throws and attack rolls. While the target is affected by this spell, creatures have advantage on attack rolls against it. As an action, a dancing creature makes a Wisdom saving throw to regain control of itself, ending the spell on a success.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 4th-level or higher, you target one additional creature who can hear you within range for each slot level above 3rd.
+
 ---
 
 ## Related Content

@@ -5,28 +5,37 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: complete
-title: Mystic Spear
+title: "Mystic Spear"
 level: 2
-school: Evocation
+school: Enchantment
 classes:
-  - Sorcerer
-  - Wizard
-casting_time: 1 action
-range: 120 feet
-duration: Instantaneous
-components: V, S
+  - Psion
+  - Warlock
+casting_time: "1 action"
+range: "120 feet"
+duration: "Instantaneous"
+components: "V"
 ritual: false
 concentration: false
-source: "Alternate Fighter"
+source: "Laserllama Compendium of Spells v0.5"
 source_type: homebrew
-summary: "Form a lance of pure psionic force and hurl it at an enemy, piercing armor for 3d10 force damage."
+summary: "You project a violent bolt of mental power at a creature you can see within range."
 subclass_spell_lists:
   - Mystic
 ---
 
-_2nd-level evocation (Laserllama Homebrew)_
+_2nd level enchantment (Laserllama Homebrew)_
 
-You coalesce psionic force into the shape of a glittering spear and hurl it at a creature within range. Make a ranged spell attack. On a hit, the target takes 3d10 force damage. If the target is wearing medium or heavy armor, you make the attack roll with advantage.
+**Casting Time:** 1 action  
+**Range:** 120 feet  
+**Components:** V  
+**Duration:** Instantaneous
+
+You project a violent bolt of mental power at a creature you can see within range. You do not need to see the target if you speak its name as part of the verbal component of this spell.
+
+The creature must make an Intelligence saving throw. On a failed save, it takes 4d6 psychic damage and is incapacitated until the start of your next turn. On a successful save, it takes half as much psychic damage and is not incapacitated.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.
 
 ---
 
@@ -34,8 +43,8 @@ You coalesce psionic force into the shape of a glittering spear and hurl it at a
 
 **Spell Level:** [[spells/2nd-level|2nd level]]
 
-**School:** Evocation
+**School:** Enchantment
 
-**Available to:** [[Sorcerer]], [[Wizard]]
+**Available to:** Psion, [[Warlock]]
 
-**Source:** Alternate Fighter
+**Source:** Laserllama Compendium of Spells v0.5

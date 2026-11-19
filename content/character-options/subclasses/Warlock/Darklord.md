@@ -29,7 +29,7 @@ You also learn certain spells at the Warlock levels below. They become Warlock s
 | 2nd | [[spells/1st-level/Hex|Hex]], [[spells/1st-level/Inflict Wounds|Inflict Wounds]] |
 | 3rd | [[spells/2nd-level/Blindness-Deafness|Blindness-Deafness]], [[spells/2nd-level/Blur|Blur]] |
 | 5th | [[spells/3rd-level/Fear|Fear]], [[spells/3rd-level/Enemies Abound|Enemies Abound]] |
-| 7th | Accursed Touch *(LL)*, [[spells/4th-level/Phantasmal Killer|Phantasmal Killer]] |
+| 7th | [[spells/4th-level/Accursed Touch|Accursed Touch]] *(LL)*, [[spells/4th-level/Phantasmal Killer|Phantasmal Killer]] |
 | 9th | [[spells/5th-level/Dream|Dream]], Enervation |
 
 ## Fell Curses

@@ -20,11 +20,11 @@ summary: "Choose one 6th-level Arcanum spell; once per long rest cast it at 6th 
 Choose one spell from the list below. It counts as a Warlock spell for you, and once per long rest, you can cast this **Minor Arcanum** spell at 6th level without expending a spell slot:
 
 - Arcane Gate
-- Astral Blade *(LL)*
+- [[spells/6th-level/Astral Blade|Astral Blade]] *(LL)*
 - [[spells/9th-level/Astral Projection|Astral Projection]] *(LL)*
 - [[spells/6th-level/Circle of Death|Circle of Death]]
 - [[spells/6th-level/Eyebite|Eyebite]]
-- Elemental Avatar *(LL)*
+- [[spells/6th-level/Elemental Avatar|Elemental Avatar]] *(LL)*
 - [[spells/6th-level/Mass Suggestion|Mass Suggestion]]
 - Mental Prison
 - Otherworldly Guise

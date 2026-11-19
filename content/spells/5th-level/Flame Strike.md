@@ -24,6 +24,15 @@ A vertical column of divine fire roars down from the heavens in a location you s
 
 **At Higher Levels.** When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *5th level evocation* — **Classes:** Cleric
+> **Casting Time:** 1 action | **Range:** 60 feet | **Components:** V, S, M (a pinch of sulfur) | **Duration:** Instantaneous
+>
+> A vertical column of divine fire roars down from the heavens in a location you specify. Creatures within this 10-foot-radius, 40-foot-high cylinder must make a Dexterity saving throw. On a failure, they take 5d6 fire and 5d6 radiant damage, and half as much damage on a successful save.
+>
+> **At Higher Levels.** If you cast this spell with a spell slot of 6th-level or higher, both the fire and radiant damage increase by 1d6 for each level above 5th.
+
 ---
 
 ## Related Content

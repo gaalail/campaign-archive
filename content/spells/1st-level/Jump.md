@@ -24,6 +24,15 @@ _1st-level transmutation_
 
 You touch a creature. The creature's jump distance is tripled until the spell ends.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *1st level transmutation* — **Classes:** Artificer, Druid, Magus, Psion, Ranger, Sorcerer, Vessel, Warlock, Wizard
+> **Casting Time:** 1 bonus action | **Range:** Touch | **Components:** V S M (A grasshopper's hind leg) | **Duration:** 1 minute
+>
+> You touch a willing creature and greatly alter its buoyancy. Once on each of its turns until the spell ends, the target can spend 10 feet of its movement to jump up to 30 feet.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 2nd-level or higher, the distance of this magical jump increases by 10 feet for each slot level above 1st.
+
 ---
 
 ## Related Content

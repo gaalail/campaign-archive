@@ -66,8 +66,10 @@ Each campaign has sessions, NPCs, locations, and loot specific to your adventure
 
 ## Material Attribution
 
-Material marked **SRD 5.1** is used under the Creative Commons Attribution 4.0 International (CC-BY-4.0) license from the System Reference Document (SRD 5.1).
+Material marked **SRD 5.1** is used under the Creative Commons Attribution 4.0 International (CC-BY-4.0) license and the **Open Game License Version 1.0a** from the System Reference Document (SRD 5.1).
 
-Other material marked **Homebrew** is custom content created for these campaigns. **Corpus Angelus** material is from external sources.
+Other material marked **Homebrew** includes custom campaign content as well as **Laserllama** third-party/homebrew works (*Alternate Warlock*, *Compendium of Spells v0.5*, and expanded Alternate Classes). External supplements retain their respective creator copyrights.
+
+See **[[rules/licensing|Open Game License & Attribution]]** for the full **OGL v1.0a** license text and copyright notices.
 
 ---

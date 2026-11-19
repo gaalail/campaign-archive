@@ -31,6 +31,15 @@ _3rd-level transmutation_
 
 You touch a quiver containing arrows or bolts. When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the quiver, the target takes an extra 1d6 fire damage. The spell's magic ends on a piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the quiver.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *3rd level transmutation* — **Classes:** Artificer, Magus, Ranger
+> **Casting Time:** 1 bonus action | **Range:** Touch | **Components:** V, S | **Duration:** 1 hour
+>
+> You touch a quiver containing ranged weapon ammunition. The first twelve pieces of ammunition drawn from the quiver deal fire damage in place of their normal damage type, plus an additional 1d6 fire damage on hit. If fired into a flammable object, it bursts into flame on hit. The magic of this spell ends for each piece of ammunition when it hits or misses, and the spell ends after twelve pieces of ammunition are fired.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 4th-level or higher, you can draw two additional pieces of ammunition from the quiver for each slot level above 3rd.
+
 ---
 
 ## Related Content

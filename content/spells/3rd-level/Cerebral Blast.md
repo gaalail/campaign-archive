@@ -5,29 +5,34 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: complete
-title: Cerebral Blast
+title: "Cerebral Blast"
 level: 3
 school: Evocation
 classes:
-  - Sorcerer
-  - Warlock
-  - Wizard
-casting_time: 1 action
-range: Self (30-foot cone)
-duration: Instantaneous
-components: V, S
+  - Psion
+casting_time: "1 action"
+range: "Self (30-foot cone)"
+duration: "Instantaneous"
+components: "V"
 ritual: false
 concentration: false
-source: "Alternate Fighter"
+source: "Laserllama Compendium of Spells v0.5"
 source_type: homebrew
-summary: "Project a cone of disruptive mental pressure dealing 4d8 psychic damage and deafening creatures."
+summary: "Your mind unleashes a blast of overwhelming mental force in a 30-foot cone."
 subclass_spell_lists:
   - Mystic
 ---
 
-_3rd-level evocation (Laserllama Homebrew)_
+_3rd level evocation (Laserllama Homebrew)_
 
-You emit a cone of psychic wave energy in a 30-foot cone. Each creature in that area must make an Intelligence saving throw. On a failed save, a creature takes 4d8 psychic damage and is deafened until the end of its next turn. On a success, it takes half damage.
+**Casting Time:** 1 action  
+**Range:** Self (30-foot cone)  
+**Components:** V  
+**Duration:** Instantaneous
+
+Your mind unleashes a blast of overwhelming mental force in a 30-foot cone. Creature in the area of this spell must make a Strength saving throw. On a failed save, a creature takes 5d8 psychic damage and is pushed 20 feet directly away from you in a line, then falls prone. On a success, creatures take half as much damage, remain in place, and don't fall prone.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 4th-level or higher, the psychic damage increases by 1d8 for each spell slot level above 3rd.
 
 ---
 
@@ -37,6 +42,6 @@ You emit a cone of psychic wave energy in a 30-foot cone. Each creature in that 
 
 **School:** Evocation
 
-**Available to:** [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** Psion
 
-**Source:** Alternate Fighter
+**Source:** Laserllama Compendium of Spells v0.5

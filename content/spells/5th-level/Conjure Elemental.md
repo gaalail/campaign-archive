@@ -22,6 +22,23 @@ You call forth an elemental servant. Choose an area of air, earth, fire, or wate
 
 **At Higher Levels.** When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *3rd level conjuration* — **Classes:** Druid, Ranger, Warlock, Wizard
+> **Casting Time:** 1 action | **Range:** 30 feet | **Components:** V, S, M (a gemstone containing a mote of pure elemental air, earth, fire, or water, worth at least 50 gold) | **Duration:** Concentration, 1 hour
+>
+> Grasping the material component of the spell, you conjure an Elemental whose makeup matches the material component. While your concentration lasts, the Elemental is Friendly to you and your allies and obeys all of your commands. For the duration, the Elemental uses the rules below:
+>
+> **Statistics.** The Elemental appears in an unoccupied space of your choice you can see in range. It takes on the statistics and appearance of an Elemental of CR 3 or lower, so long as its makeup matches that of the material component.
+>
+> Combat. The Elemental shares your initiative and it acts during your turn. You can give it verbal commands (no action required). If the Elemental does not receive a command, or its commands are completed, it will only defend itself.
+>
+> **Spellcasting.** If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.
+>
+> **Control.** If your concentration on this spell is broken, the Elemental remains, but is no longer under your control. For the duration of the spell, or until it is reduced to 0 hit points, the Elemental will act according to its alignment, spreading chaos and destruction wherever it can.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the CR of Elemental that you can conjure increases by 1 for each slot level above 3rd.
+
 ---
 
 ## Related Content

@@ -43,3 +43,13 @@ On your turn, you can spend your Action to perform one of the following:
 ## Opportunity Attacks
 
 You can make an opportunity attack when a hostile creature that you can see moves out of your reach. To do so, you spend your Reaction to make one melee attack with a weapon right before the creature leaves your reach.
+
+---
+
+## Alternate Casting Times (Laserllama Spells)
+
+Multiple spells from the **Laserllama Compendium of Spells** use two special casting times: **On Hit** and **1 Attack**.
+
+- **On Hit:** Spells with a casting time of `"On hit"` can be cast whenever you hit the specified target with a weapon attack during your turn, much like a Paladin's *Divine Smite* feature. You cannot expend more than one spell slot as part of a single attack.
+- **1 Attack:** Spells with a casting time of `"1 attack"` can be cast in place of a single attack whenever you could make a weapon attack during your turn. These spells cannot be cast in place of a spell attack, and to cast them as part of an opportunity attack, you need the *War Caster* feat or a similar feature.
+

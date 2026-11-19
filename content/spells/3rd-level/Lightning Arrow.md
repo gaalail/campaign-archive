@@ -27,6 +27,19 @@ _3rd-level transmutation_
 
 The next time you make a ranged weapon attack during the spell's duration, the weapon's ammunition, or the weapon itself if it's a thrown weapon, transforms into a bolt of lightning. Make the attack roll as normal. The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon's normal damage. Whether you hit or miss, each creature within 10 feet of the target must make a Dexterity saving throw, taking 2d8 lightning damage on a failed save.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *3rd level transmutation* — **Classes:** Artificer, Ranger
+> **Casting Time:** 1 attack | **Range:** Self | **Components:** V, S | **Duration:** Instantaneous
+>
+> As part of a ranged weapon attack, you can transmute a piece of ammunition, or the thrown weapon, into a bolt of lightning. On hit, the target takes the normal damage of the attack, plus a bonus 4d8 lighting damage. On a miss, the target takes half as much lightning damage, and none of the normal damage.
+>
+> Regardless if this attack hits or misses, all creatures within 10 feet of the target must make a Dexterity saving throw. On a failed save, creatures take 2d8 lighting damage, and half as much lighting damage on a success. The piece of ammunition or thrown weapon then returns to its normal form.
+>
+> Any creature that takes lighting damage from this spell cannot take reactions until the beginning of your next turn.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 4th-level or higher, the damage for both effects of the spell increases by 1d8 for each slot level above 3rd.
+
 ---
 
 ## Related Content

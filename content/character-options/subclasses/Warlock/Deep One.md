@@ -26,10 +26,10 @@ You also learn the spells in the following table at the Warlock levels shown. Th
 
 | Warlock Level | Spells                                                                  |
 | ------------- | ----------------------------------------------------------------------- |
-| 2nd           | [[spells/1st-level/Create or Destroy Water|Create Water]], Torrent      |
-| 3rd           | Aura of Frost, [[Gust of Wind]]                                         |
-| 5th           | [[Tidal Wave]], [[Sleet Storm]]                                         |
-| 7th           | [[Control Water]], Eldritch Tentacles                                   |
+| 2nd           | [[spells/1st-level/Create or Destroy Water|Create Water]], [[spells/1st-level/Torrent|Torrent]] *(LL)* |
+| 3rd           | [[spells/2nd-level/Aura of Frost|Aura of Frost]] *(LL)*, [[Gust of Wind]]                            |
+| 5th           | [[Tidal Wave]], [[Sleet Storm]]                                                                   |
+| 7th           | [[Control Water]], [[spells/4th-level/Eldritch Tentacles|Eldritch Tentacles]] *(LL)*              |
 | 9th           | [[Cone of Cold]], Maelstrom                                             |
 
 ## Grasp of the Deep

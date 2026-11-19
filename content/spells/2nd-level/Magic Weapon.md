@@ -24,6 +24,15 @@ You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic
 
 **At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *2nd level transmutation* — **Classes:** Artificer, Druid, Paladin, Magus, Ranger, Sorcerer, Wizard
+> **Casting Time:** 1 bonus action | **Range:** Touch | **Components:** V, S | **Duration:** 1 hour
+>
+> You touch a nonmagical weapon and imbue it with arcane power. For the duration, it becomes a magical weapon with a +1 bonus to attack and damage rolls.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 3rd-level or higher, the bonus is +2. When you use a spell slot of 6th-level or higher, the bonus increases to +3.
+
 ---
 
 ## Related Content

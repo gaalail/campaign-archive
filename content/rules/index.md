@@ -23,6 +23,7 @@ The rules engine of 5th Edition Dungeons & Dragons, covering combat flow, action
 | **Spellcasting Mechanics** | Spell slots, components (V, S, M), concentration, rituals, and targeting | [[spells/index\|Spell Rules]] |
 | **Barovia Alterations** | Dimensional isolation, cosmetic corruption, and Strahd's domain dominance | [[campaigns/curse-of-strahd/rules/alterations-to-magic\|Curse of Strahd Magic Rules]] |
 | **Campaign House Rules** | Setting-specific rules for Barovia, Ra Gol'vek, and Vyrun | [[campaigns/index\|Campaign Specific Rules]] |
+| **Licensing & Attribution** | Open Game License v1.0a, SRD 5.1 notices, and creator credits | [[rules/licensing\|Open Game License & Attribution]] |
 
 ---
 

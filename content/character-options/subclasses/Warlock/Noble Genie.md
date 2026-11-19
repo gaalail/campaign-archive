@@ -57,7 +57,7 @@ The first spell shown at each level is granted by every Noble Genie. Your choice
 
 | Warlock Level | Dao Spells          | Djinn Spells             | Efreeti Spells     | Marid Spells      |
 | ------------- | ------------------- | ------------------------ | ------------------ | ----------------- |
-| 2nd           | [[Sanctuary]]       | [[Thunderwave]]          | [[Burning Hands]]  | Torrent           |
+| 2nd           | [[Sanctuary]]       | [[Thunderwave]]          | [[Burning Hands]]  | [[spells/1st-level/Torrent|Torrent]] *(LL)* |
 | 3rd           | [[Spike Growth]]    | [[Gust of Wind]]         | [[Flaming Sphere]] | [[Misty Step]]    |
 | 5th           | [[Meld into Stone]] | [[Gaseous Form]]         | Minute Meteors     | [[Tidal Wave]]    |
 | 7th           | [[Pillars of Earth]]| [[Greater Invisibility]] | [[Fire Shield]]    | [[Watery Sphere]] |

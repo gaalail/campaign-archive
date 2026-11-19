@@ -21,6 +21,21 @@ You summon a celestial of challenge rating 4 or lower, which appears in an unocc
 
 **At Higher Levels.** When you cast this spell using a 9th-level spell slot, you summon a celestial of challenge rating 5 or lower.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *5th level conjuration* — **Classes:** Cleric, Paladin
+> **Casting Time:** 1 action | **Range:** 30 feet | **Components:** V (a Celestial's true name), S | **Duration:** Concentration, up to 1 hour
+>
+> Speaking its true name, you conjure a Celestial of CR 5 or lower to aid you. This Celestial is Friendly to you and your allies, obeys your commands, and uses the rules below:
+>
+> **Statistics.** The Celestial appears in an unoccupied space of your choice you can see in range. When it appears, you can cause it to take on the appearance and statistics of a different Celestial of your choice equal to its CR, or lower.
+>
+> Combat. This Celestial shares your initiative and it acts during your turn. You can give it verbal commands (no action required). If the Celestial does not receive a command, or its commands are completed, it will move and defend itself.
+>
+> **Spellcasting.** If it can cast spells, you can command it to do so, but it uses your spell slots to fuel its spellcasting, even if it would normally be able to cast without spell slots.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 6th level or higher, the CR of the Celestials that you can conjure increases by 1 for each slot level above 5th.
+
 ---
 
 ## Related Content

@@ -5,29 +5,40 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: complete
-title: Elemental Blade
+title: "Elemental Blade"
 level: 2
-school: Evocation
+school: Conjuration
 classes:
   - Druid
-  - Ranger
-  - Paladin
-casting_time: 1 bonus action
-range: Touch
-duration: Concentration, up to 1 hour
-components: V, S
+  - Magus
+  - Sorcerer
+casting_time: "1 bonus action"
+range: "Self"
+duration: "Concentration, up to 10 minutes"
+components: "V, S, M (a charred wooden hilt)"
 ritual: false
 concentration: true
-source: "Alternate Barbarian Expanded"
+source: "Laserllama Compendium of Spells v0.5"
 source_type: homebrew
-summary: "Imbue a weapon you touch with acid, cold, fire, lightning, or thunder, dealing an extra 1d6 elemental damage on hits."
+summary: "You evoke an elemental blade in a free hand, choosing one of the following damage types: acid, cold, fire, lightning, poison, or thunder."
 subclass_spell_lists:
   - Path of the Warden
 ---
 
-_2nd-level evocation (Laserllama Homebrew)_
+_2nd level conjuration (Laserllama Homebrew)_
 
-You touch a weapon. Until the spell ends, the weapon becomes imbued with elemental energy of your choice (acid, cold, fire, lightning, or thunder). Attacks made with the weapon deal an extra 1d6 damage of the chosen type on a hit.
+**Casting Time:** 1 bonus action  
+**Range:** Self  
+**Components:** V, S, M (a charred wooden hilt)  
+**Duration:** Concentration, up to 10 minutes
+
+You evoke an elemental blade in a free hand, choosing one of the following damage types: acid, cold, fire, lightning, poison, or thunder. The elemental blade appears as if it were made of the chosen element, and lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action without expending a spell slot.
+
+Whenever you would make a melee attack, you can make a melee spell attack with the elemental blade against a target within your reach. On hit, it takes damage of the chosen type equal to 2d6 + your spellcasting modifier.
+
+While in your hand, the blade sheds bright light in a 10-foot radius and dim light an additional 10 feet beyond that.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd.
 
 ---
 
@@ -35,8 +46,8 @@ You touch a weapon. Until the spell ends, the weapon becomes imbued with element
 
 **Spell Level:** [[spells/2nd-level|2nd level]]
 
-**School:** Evocation
+**School:** Conjuration
 
-**Available to:** [[Druid]], [[Ranger]], [[Paladin]]
+**Available to:** [[Druid]], Magus, [[Sorcerer]]
 
-**Source:** Alternate Barbarian Expanded
+**Source:** Laserllama Compendium of Spells v0.5

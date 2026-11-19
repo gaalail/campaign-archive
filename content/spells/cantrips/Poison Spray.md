@@ -25,6 +25,15 @@ You extend your hand toward a creature you can see within range and project a pu
 
 This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *Necromancy cantrip* — **Classes:** Artificer, Druid, Magus, Shaman, Sorcerer, Warlock, Wizard
+> **Casting Time:** 1 action | **Range:** 30 feet | **Components:** V, S | **Duration:** Instantaneous
+>
+> You raise your hand and project a toxic mist at a creature you can see within range. Make a ranged spell attack against the target. On hit, the target takes 1d12 poison damage.
+>
+> **At Higher Levels.** The damage of this spell increases by 1d12 at 5th (2d12), 11th (3d12), and 17th level (4d12).
+
 ---
 
 ## Related Content

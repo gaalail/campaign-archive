@@ -25,6 +25,15 @@ You touch a creature and grant it a measure of protection from death. The first 
 
 If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *4th level abjuration* — **Classes:** Cleric, Paladin
+> **Casting Time:** 1 action | **Range:** Touch | **Components:** V, S | **Duration:** 8 hours
+>
+> You touch a creature and ward it against the touch of death. The first time the target starts its turn with 0 hit points, but is not dead, it can stand up with 1 hit point, and the spell ends.
+>
+> If the spell is still in effect when the target is subjected to an effect that would kill it instantly without dealing damage, that effect is negated against the target, and the spell ends.
+
 ---
 
 ## Related Content

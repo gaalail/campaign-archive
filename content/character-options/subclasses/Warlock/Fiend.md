@@ -27,7 +27,7 @@ You also learn the spells in the following table at the Warlock levels shown. Th
 | Warlock Level | Spells                             |
 | ------------- | ---------------------------------- |
 | 2nd           | [[Command]], [[Hellish Rebuke]]    |
-| 3rd           | [[Blindness-Deafness]], Flame Whip |
+| 3rd           | [[Blindness-Deafness]], [[spells/2nd-level/Flame Whip|Flame Whip]] *(LL)* |
 | 5th           | [[Bestow Curse]], [[Fireball]]     |
 | 7th           | [[Blight]], [[Wall of Fire]]       |
 | 9th           | [[Cloudkill]], Immolation          |

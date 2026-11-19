@@ -29,7 +29,7 @@ You also learn certain spells at the Warlock levels below. They are Warlock spel
 | 2nd | [[spells/1st-level/Arms of Hadar|Arms of Hadar]], [[spells/1st-level/Dissonant Whispers|Dissonant Whispers]] |
 | 3rd | [[spells/2nd-level/Detect Thoughts|Detect Thoughts]], [[spells/2nd-level/Tasha's Mind Whip|Mind Whip]] |
 | 5th | [[spells/3rd-level/Clairvoyance|Clairvoyance]], [[spells/3rd-level/Hunger of Hadar|Hunger of Hadar]] *(LL)* |
-| 7th | [[spells/4th-level/Confusion|Confusion]], Eldritch Tentacles *(LL)* |
+| 7th | [[spells/4th-level/Confusion|Confusion]], [[spells/4th-level/Eldritch Tentacles|Eldritch Tentacles]] *(LL)* |
 | 9th | [[spells/5th-level/Modify Memory|Modify Memory]], [[spells/5th-level/Telekinesis|Telekinesis]] |
 
 ## Awakened Mind

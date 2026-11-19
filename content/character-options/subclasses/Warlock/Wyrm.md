@@ -40,8 +40,8 @@ You also learn certain spells at the Warlock levels below. They are Warlock spel
 | 2nd | [[spells/1st-level/Command|Command]], [[spells/1st-level/Burning Hands|Burning Hands]] |
 | 3rd | [[spells/2nd-level/Dragon's Breath|Dragon's Breath]], [[spells/2nd-level/Scorching Ray|Scorching Ray]] |
 | 5th | [[spells/3rd-level/Fear|Fear]], [[spells/3rd-level/Fireball|Fireball]] |
-| 7th | [[spells/8th-level/Dominate Monster|Dominate Creature]] *(LL)*, [[spells/4th-level/Wall of Fire|Wall of Fire]] |
-| 9th | Conjure Dragon *(LL)*, [[spells/5th-level/Legend Lore|Legend Lore]] |
+| 7th | [[spells/4th-level/Dominate Creature|Dominate Creature]] *(LL)*, [[spells/4th-level/Wall of Fire|Wall of Fire]] |
+| 9th | [[spells/5th-level/Conjure Dragon|Conjure Dragon]] *(LL)*, [[spells/5th-level/Legend Lore|Legend Lore]] |
 
 ## Draconic Blast
 
@@ -57,7 +57,7 @@ _10th-level Wyrm Patron feature_
 
 Your willpower rivals that of your draconic Patron. You gain Immunity to the Charmed and Frightened conditions.
 
-Moreover, you can cast the Conjure Dragon spell without providing the normal material component. When you do so, the conjured Dragon's Essence always matches that of your Draconic Spark type.
+Moreover, you can cast the [[spells/5th-level/Conjure Dragon|Conjure Dragon]] spell without providing the normal material component. When you do so, the conjured Dragon's Essence always matches that of your Draconic Spark type.
 
 ## Dragon Wings
 

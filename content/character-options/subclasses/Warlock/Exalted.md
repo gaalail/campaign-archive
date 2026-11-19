@@ -35,7 +35,7 @@ You also learn certain spells at the Warlock levels below. They are Warlock spel
 | Warlock Level | Spells |
 | :---: | :--- |
 | 2nd | [[spells/1st-level/Cure Wounds|Cure Wounds]], [[spells/1st-level/Guiding Bolt|Guiding Bolt]] |
-| 3rd | [[spells/2nd-level/Flaming Sphere|Flaming Sphere]], [[spells/2nd-level/Lesser Restoration|Restoration]] *(LL)* |
+| 3rd | [[spells/2nd-level/Flaming Sphere|Flaming Sphere]], [[spells/2nd-level/Restoration|Restoration]] *(LL)* |
 | 5th | [[spells/3rd-level/Daylight|Daylight]], [[spells/3rd-level/Revivify|Revivify]] |
 | 7th | [[spells/4th-level/Guardian of Faith|Guardian of Faith]], [[spells/4th-level/Wall of Fire|Wall of Fire]] |
 | 9th | [[spells/7th-level/Conjure Celestial|Conjure Celestial]] *(LL)*, [[spells/5th-level/Flame Strike|Flame Strike]] |

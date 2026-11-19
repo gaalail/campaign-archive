@@ -25,6 +25,17 @@ _1st-level evocation_
 
 The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *1st level evocation* — **Classes:** Paladin
+> **Casting Time:** On hit | **Range:** Self | **Components:** V, M (a melee weapon worth at least 1 sp) | **Duration:** Concentration, up to 1 minute
+>
+> When you hit with a melee weapon attack you can cause the weapon to strike at both body and mind. This attack deals an additional 1d8 psychic damage, and the target must succeed on a Wisdom saving throw, or it is frightened of you until the spell ends. As an action, the creature can repeat this Wisdom saving throw, ending the effects of the spell on a success.
+>
+> If your target is an aberration or it can speak telepathically this bonus psychic damage increases by 1d8.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 2nd-level or higher, the psychic damage increases by 1d8 for each spell slot level above 1st.
+
 ---
 
 ## Related Content

@@ -29,6 +29,15 @@ The next time you hit a creature with a ranged weapon attack before the spell en
 
 **At Higher Levels.** If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st (to a maximum of 6d10).
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *1st level conjuration* — **Classes:** Ranger
+> **Casting Time:** On hit | **Range:** 60 feet | **Components:** V | **Duration:** Instantaneous
+>
+> When you hit a creature within range with a ranged weapon attack, you can cause the piece of ammunition to explode into a hail of thorns. In addition to the normal effect of the attack, the target of your attack and each creature within 5 feet must make a Dexterity saving throw. Creatures take 1d10 piercing damage on a failure, or half as much damage on a success.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 2nd-level or higher, the damage increases by 1d10 for each slot level above 1st.
+
 ---
 
 ## Related Content

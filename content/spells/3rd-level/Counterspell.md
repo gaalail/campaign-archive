@@ -23,6 +23,17 @@ You attempt to interrupt a creature in the process of casting a spell. If the cr
 
 **At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *3rd level abjuration* — **Classes:** Magus, Sorcerer, Warlock, Wizard
+> **Casting Time:** 1 reaction, which you take when you see a creature within 60 feet of you casting a spell | **Range:** 60 feet | **Components:** V, S | **Duration:** Instantaneous
+>
+> You attempt to interrupt a creature in the process of casting a spell. You and the target both make an ability check with your respective spellcasting abilities. The target adds the level of the spell it is casting to its ability check, and you add the level at which you cast this counterspell to your ability check.
+>
+> If you know the spell the creature is attempting to cast or if you have it prepared you have advantage on this ability check, unless you are using this spell against another counterspell.
+>
+> If the result of your ability check is greater then the result of the target's ability check, its spell fails and has no effect.
+
 ---
 
 ## Related Content

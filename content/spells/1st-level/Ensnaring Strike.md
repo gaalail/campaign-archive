@@ -32,6 +32,17 @@ While restrained by this spell, the target takes 1d6 piercing damage at the star
 
 **At Higher Levels.** If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *1st level conjuration* — **Classes:** Artificer, Ranger
+> **Casting Time:** On hit | **Range:** Self | **Components:** V, M (a weapon worth at least 1 sp) | **Duration:** Concentration, up to 1 minute
+>
+> When you hit a creature with a weapon attack, you can cause the point of impact to explode with a writhing mass of thorny vines. The target must succeed on a Strength saving throw or be restrained by the vines until the spell ends. Creatures that are Large or larger have advantage on this saving throw.
+>
+> The restrained creature takes 1d6 piercing damage at the start of each of its turns. The restrained creature, or another creature within 5 feet, can use its action to make a Strength check against your Spell save DC, freeing it on a success.
+>
+> **At Higher Levels.** When you cast this spell using a spell slot of 2nd-level or higher, the damage it takes at the start of each turn increases by 1d6 for each slot level above 1st.
+
 ---
 
 ## Related Content

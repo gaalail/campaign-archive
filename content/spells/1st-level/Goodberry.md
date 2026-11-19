@@ -20,6 +20,15 @@ _1st-level transmutation_
 
 Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *1st level transmutation* — **Classes:** Druid, Ranger
+> **Casting Time:** 1 minute | **Range:** Touch | **Components:** V, S, M (up to 10 fresh-picked berries, which are consumed by the casting of this spell) | **Duration:** Instantaneous
+>
+> You hold up to ten berries in your hands and infuse them with primal magic. As an action, a creature can eat a berry. It then regains 1 hit point and nourishment for one day.
+>
+> The berries wither and lose their potency if they have not been consumed within 24 hours of the casting of this spell.
+
 ---
 
 ## Related Content

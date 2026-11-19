@@ -606,6 +606,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
             >
               Getting Started Guide
             </button>
+            <button
+              onClick={() => {
+                onNavigateToEntry('rules/licensing');
+                onClose();
+              }}
+              className={`w-full text-left px-2.5 py-1.5 rounded-lg transition-colors ${
+                currentView === 'reader' && currentEntryId === 'rules/licensing'
+                  ? 'text-amber-300 bg-amber-500/10 font-semibold'
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
+              }`}
+            >
+              Open Game License & Attribution
+            </button>
           </div>
         </div>
 

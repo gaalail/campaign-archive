@@ -5,30 +5,36 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: complete
-title: Id Insinuation
+title: "Id Insinuation"
 level: 1
 school: Enchantment
 classes:
-  - Bard
-  - Sorcerer
-  - Warlock
-  - Wizard
-casting_time: 1 action
-range: 60 feet
-duration: Concentration, up to 1 minute
-components: V, S
+  - Psion
+casting_time: "1 action"
+range: "60 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
 ritual: false
 concentration: true
-source: "Alternate Fighter"
+source: "Laserllama Compendium of Spells v0.5"
 source_type: homebrew
-summary: "Infiltrate target's mind with primal impulses, causing psychic damage and incapacitating on a failed save."
+summary: "You unleash a storm of conflicting desires within the mind of one creature you can see within range."
 subclass_spell_lists:
   - Mystic
 ---
 
-_1st-level enchantment (Laserllama Homebrew)_
+_1st level enchantment (Laserllama Homebrew)_
 
-You unleash a barrage of conflicting, primitive impulses into the mind of one creature you can see within range. The target must make a Wisdom saving throw. On a failed save, it takes 1d12 psychic damage and is incapacitated until the start of your next turn.
+**Casting Time:** 1 action  
+**Range:** 60 feet  
+**Components:** V, S  
+**Duration:** Concentration, up to 1 minute
+
+You unleash a storm of conflicting desires within the mind of one creature you can see within range. It must succeed on a Wisdom saving throw or be incapacitated for the duration.
+
+The creature can repeat this Wisdom saving throw at the end of each of its turns and each time that it takes damage, ending the effects of this spell on a successful save.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.
 
 ---
 
@@ -38,6 +44,6 @@ You unleash a barrage of conflicting, primitive impulses into the mind of one cr
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** Psion
 
-**Source:** Alternate Fighter
+**Source:** Laserllama Compendium of Spells v0.5

@@ -5,30 +5,34 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: complete
-title: Ego Scourge
+title: "Ego Scourge"
 level: 4
 school: Enchantment
 classes:
-  - Bard
-  - Sorcerer
-  - Warlock
-  - Wizard
-casting_time: 1 action
-range: 60 feet
-duration: Concentration, up to 1 minute
-components: V, S
+  - Psion
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 1 minute"
+components: "V"
 ritual: false
 concentration: true
-source: "Alternate Fighter"
+source: "Laserllama Compendium of Spells v0.5"
 source_type: homebrew
-summary: "Shatter a creature's ego and confidence with a mental scourge, stripping bonuses and imposing disadvantage on d20 rolls."
+summary: "You strike at the mind of a creature you can see within range, attacking its sense of self."
 subclass_spell_lists:
   - Mystic
 ---
 
-_4th-level enchantment (Laserllama Homebrew)_
+_4th level enchantment (Laserllama Homebrew)_
 
-You project a whip of psychic static directly at a creature's sense of self. The target must succeed on an Intelligence saving throw or take 4d8 psychic damage and have disadvantage on all attack rolls and ability checks for the duration. It can repeat the saving throw at the end of each of its turns.
+**Casting Time:** 1 action  
+**Range:** 30 feet  
+**Components:** V  
+**Duration:** Concentration, up to 1 minute
+
+You strike at the mind of a creature you can see within range, attacking its sense of self. It must succeed on an Intelligence saving throw or suffer disadvantage on attack rolls and ability checks, and be unable to cast spells for the duration.
+
+At the end of each of its turns the creature can repeat this saving throw, ending the effect of this spell on a success.
 
 ---
 
@@ -38,6 +42,6 @@ You project a whip of psychic static directly at a creature's sense of self. The
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
+**Available to:** Psion
 
-**Source:** Alternate Fighter
+**Source:** Laserllama Compendium of Spells v0.5

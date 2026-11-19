@@ -26,6 +26,15 @@ A 60-foot-radius sphere of light spreads out from a point you choose within rang
 
 If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.
 
+
+> [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
+> *3rd level evocation* — **Classes:** Cleric, Druid, Paladin, Ranger, Sorcerer
+> **Casting Time:** 1 action | **Range:** 60 feet | **Components:** V, S | **Duration:** 1 hour
+>
+> An orb of light appears at a point you can see within 60 feet, hovering in place. It emits bright light out to a 60-foot radius, and dim light 60 feet beyond that. This light is true sunlight. If this area overlaps with magical darkness created by a spell equal to the level you cast this spell or lower, it is dispelled.
+>
+> Alternately, you can cast this spell on a Tiny object that isn't being worn or carried, causing it to emit the light of this spell. The light moves with that object for the duration. If the object is covered by an opaque object, it blocks the light.
+
 ---
 
 ## Related Content

@@ -5,28 +5,36 @@ edition: "2014"
 adaptation: curated
 license_status: CC-BY-4.0
 content_status: complete
-title: Aura of Frost
+title: "Aura of Frost"
 level: 2
-school: Evocation
+school: Conjuration
 classes:
-  - Paladin
+  - Druid
+  - Magus
   - Sorcerer
-casting_time: 1 bonus action
-range: Self (10-foot radius)
-duration: Concentration, up to 1 minute
-components: V
+casting_time: "1 action"
+range: "Self (10 foot radius)"
+duration: "Concentration, up to 1 minute"
+components: "V"
 ritual: false
 concentration: true
-source: "Alternate Fighter"
+source: "Laserllama Compendium of Spells v0.5"
 source_type: homebrew
-summary: "Frost radiates from you in a 10-foot aura, turning the ground to ice and dealing 2d4 cold damage to enemies."
+summary: "Arcane frost, snow, and wind swirl about you in an aura with a 10-foot radius, and until the spell ends, the aura moves with you, centered on you."
 subclass_spell_lists:
   - Arcane Knight
 ---
 
-_2nd-level evocation (Laserllama Homebrew)_
+_2nd level conjuration (Laserllama Homebrew)_
 
-Sub-zero frost radiates from your body in a 10-foot radius. The ground in the area becomes slick difficult terrain. Any enemy creature that enters the aura or starts its turn there must succeed on a Constitution saving throw or take 2d4 cold damage and have its movement speed reduced by 10 feet until the start of its next turn.
+**Casting Time:** 1 action  
+**Range:** Self (10 foot radius)  
+**Components:** V  
+**Duration:** Concentration, up to 1 minute
+
+Arcane frost, snow, and wind swirl about you in an aura with a 10-foot radius, and until the spell ends, the aura moves with you, centered on you. When a creature other than you, enters the area for the first time on a turn or starts its turn there, it must succeed on a Constitution saving throw or it takes 2d8 cold damage and have its speed is reduced by 20 feet until the start of its next turn. On a successful save, it takes half as much cold damage and its speed isn't reduced.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 3rd-level or higher, a creature that fails its save takes an additional 1d8 cold damage and has its speed reduced by an additional 10 feet for each spell level above 2nd.
 
 ---
 
@@ -34,8 +42,8 @@ Sub-zero frost radiates from your body in a 10-foot radius. The ground in the ar
 
 **Spell Level:** [[spells/2nd-level|2nd level]]
 
-**School:** Evocation
+**School:** Conjuration
 
-**Available to:** [[Paladin]], [[Sorcerer]]
+**Available to:** [[Druid]], Magus, [[Sorcerer]]
 
-**Source:** Alternate Fighter
+**Source:** Laserllama Compendium of Spells v0.5
