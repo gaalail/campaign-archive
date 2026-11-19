@@ -1,28 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.changing-feather
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Changing Feather
+title: "Changing Feather"
 level: 0
 school: Evocation
+casting_time: "1 action"
+range: "Self"
+duration: "Instantaneous"
+components: "V, M (fire from a torch, a drop of water, a handful of dirt, or nothing)"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "When you cast this spell, a dagger-sized feather appears in your hand. You throw it at a target within 30 feet of you, making a ranged spell attack against it."
 classes:
   - Druid
   - Wizard
-casting_time: 1 action
-range: Self
-duration: Instantaneous
-components: V, M
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _Evocation cantrip_
-
-**Material components:** fire from a torch, a drop of water, a handful of dirt, or nothing
 
 When you cast this spell, a dagger-sized feather appears in your hand. You throw it at a target within 30 feet of you, making a ranged spell attack against it. On a hit, the target takes 1d6 piercing damage.
 
@@ -38,4 +32,4 @@ You can cast this spell using a material component and change the damage type of
 
 **Available to:** [[Druid]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

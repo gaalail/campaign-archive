@@ -1,28 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.charge-of-glory
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Charge of Glory
+title: "Charge of Glory"
 level: 1
 school: Evocation
+casting_time: "1 action"
+range: "Self (30-foot line)"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Corpus Angelus"
+source_type: third-party
+summary: "Spirits of glorious, mount-riding knights appear in your space in their shining armor, and charge in a direction of your choice in a 30-foot-long and 5-foot-wide line."
 classes:
   - Sorcerer
   - Warlock
-casting_time: 1 action
-range: Self (30-foot line)
-duration: Concentration, up to 1 minute
-components: V, S
-ritual: false
-concentration: true
-source: Corpus Angelus
-source_type: third-party
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _1st-level evocation_
 
@@ -38,4 +30,4 @@ Spirits of glorious, mount-riding knights appear in your space in their shining 
 
 **Available to:** [[Sorcerer]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

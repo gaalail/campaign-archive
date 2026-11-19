@@ -1,25 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.weapon-of-the-hero
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Weapon of the Hero
+title: "Weapon of the Hero"
 level: 2
 school: Conjuration
+casting_time: "1 bonus action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You conjure the weapon of a hero whose story is now legend. This magic weapon remains until the spell ends."
 classes:
   - Bard
   - Paladin
   - Ranger
   - Sorcerer
-casting_time: 1 bonus action
-range: Self
-duration: Concentration, up to 1 minute
-components: V, S
-ritual: false
-concentration: true
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _2nd-level conjuration_
@@ -40,4 +36,4 @@ If you let go of the weapon, it disappears, but you can conjure it again as anot
 
 **Available to:** [[Bard]], [[Paladin]], [[Ranger]], [[Sorcerer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

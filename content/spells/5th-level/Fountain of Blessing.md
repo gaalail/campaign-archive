@@ -1,23 +1,19 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.fountain-of-blessing
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Fountain of Blessing
+title: "Fountain of Blessing"
 level: 5
 school: Evocation
+casting_time: "1 action"
+range: "30 feet"
+duration: "1 hour"
+components: "V, S"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You create a fountain of blessed water with a 10-foot radius centered on a point within range."
 classes:
   - Cleric
   - Druid
-casting_time: 1 action
-range: 30 feet
-duration: 1 hour
-components: V, S
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _5th-level evocation_
@@ -38,4 +34,4 @@ A poisoned fountain can be purified by casting the bless spell on it 3 consecuti
 
 **Available to:** [[Cleric]], [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

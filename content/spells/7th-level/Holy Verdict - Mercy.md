@@ -1,26 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.holy-verdict-mercy
-edition: "2014"
-adaptation: curated
-license_status: reference-only
 title: "Holy Verdict: Mercy"
 level: 7
 school: Enchantment
+casting_time: "1 action"
+range: "Self (60-foot-radius sphere)"
+duration: "1 minute"
+components: "V"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "With only one word of power, you surround yourself with a sphere of light that pacifies the creatures within."
 classes:
   - Bard
   - Cleric
   - Druid
   - Warlock
-  - Thanatomancer
-casting_time: 1 action
-range: Self (60-foot-radius sphere)
-duration: 1 minute
-components: V
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _7th-level enchantment_
@@ -37,6 +32,6 @@ The sphere moves with you, centered on you.
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Cleric]], [[Druid]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

@@ -1,32 +1,24 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.weaponification
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Weaponification
+title: "Weaponification"
 level: 7
 school: Transmutation
+casting_time: "1 action"
+range: "Touch"
+duration: "Until dispelled"
+components: "V, S, M (broken pieces of a former magic weapon)"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You touch a willing creature and transform it into a sentient weapon of your choice."
 classes:
   - Warlock
   - Wizard
-casting_time: 1 action
-range: Touch
-duration: Until dispelled
-components: V, S, M
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _7th-level transmutation_
 
-**Material components:** broken pieces of a former magic weapon
-
-You touch a willing creature and transform it into a sentient weapon of your choice. The weapon can look however you want, as long as the GM approves. The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment. You or the target creature can dismiss the spell as a bonus action. If the creature transforms back to its original form while being carried or wielded by a creature, it appears in the nearest unoccupied space.
-
-While transformed into a weapon, the creature can't move, speak, cast spells, benefit from spells and magical effects (other than this spell), and is limited to the following actions and benefits:
+You touch a willing creature and transform it into a sentient weapon of your choice. The weapon can look however you want, as long as the GM approves. The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment. You or the target creature can dismiss the spell as a bonus action. If the creature transforms back to its original form while being carried or wielded by a creature, it appears in the nearest unoccupied space. While transformed into a weapon, the creature can't move, speak, cast spells, benefit from spells and magical effects (other than this spell), and is limited to the following actions and benefits:
 
 - Attacks made with the weapon are magical and the weapon's properties are not suppressed in areas affected by the antimagic field spell.
 - If the weapon is a ranged or thrown weapon, it can use its action to offer a number of attack and damage bonuses to its wielder equal to its Dexterity modifier. For example, if the weapon's Dexterity modifier is 5, it offers a +5 bonus to attack rolls and damage rolls. These bonuses last until the start of its next turn.
@@ -50,4 +42,4 @@ You can have only one weapon created in this way at a time. If you cast the spel
 
 **Available to:** [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

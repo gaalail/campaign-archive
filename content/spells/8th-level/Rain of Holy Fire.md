@@ -1,28 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.8th-level.rain-of-holy-fire
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Rain of Holy Fire
+title: "Rain of Holy Fire"
 level: 8
 school: Illusion
+casting_time: "1 action"
+range: "90 feet"
+duration: "Instantaneous"
+components: "V, S, M (a mirror that you break while casting the spell)"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You choose a target within range and show it an illusion in which the skies part, the ground trembles, and holy fire rains down to engulf and scorch the target until it is..."
 classes:
   - Cleric
   - Sorcerer
-casting_time: 1 action
-range: 90 feet
-duration: Instantaneous
-components: V, S, M
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _8th-level illusion_
-
-**Material components:** a mirror that you break while casting the spell
 
 You choose a target within range and show it an illusion in which the skies part, the ground trembles, and holy fire rains down to engulf and scorch the target until it is completely annihilated.
 
@@ -38,4 +32,4 @@ The illusion is so realistic that the target must succeed on a Wisdom saving thr
 
 **Available to:** [[Cleric]], [[Sorcerer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

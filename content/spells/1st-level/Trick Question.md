@@ -1,29 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.trick-question
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Trick Question
+title: "Trick Question"
 level: 1
 school: Enchantment
+casting_time: "1 action"
+range: "30 feet"
+duration: "Instantaneous"
+components: "V"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You target a creature within range and ask them a question that makes absolutely no sense."
 classes:
   - Bard
   - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: Instantaneous
-components: V
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _1st-level enchantment_
 
@@ -37,6 +28,6 @@ You target a creature within range and ask them a question that makes absolutely
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

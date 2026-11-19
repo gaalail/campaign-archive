@@ -1,22 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.illusionary-divine-choir
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Illusionary Divine Choir
+title: "Illusionary Divine Choir"
+aliases:
+  - "Divine Choir"
 level: 5
 school: Illusion
-classes:
-  - Bard
-casting_time: 1 action
-range: Self
-duration: Concentration, up to 1 minute
-components: V, S
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
 ritual: false
 concentration: true
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "You clap your hands and everyone around you starts to hear the singing of a heavenly choir to the backdrop of beating war drums."
+classes:
+  - Bard
 ---
 
 _5th-level illusion_
@@ -35,4 +33,4 @@ On each of your turns until the spell ends, you can use your action to make the 
 
 **Available to:** [[Bard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

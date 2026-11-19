@@ -1,29 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.6th-level.merciful-touch
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Merciful Touch
+title: "Merciful Touch"
 level: 6
 school: Illusion
+casting_time: "1 action"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S, M (a bowl of milk, which is consumed by the spell)"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You touch a creature and show it a vision of one of the happiest or most peaceful moments of its life."
 classes:
   - Bard
   - Cleric
   - Druid
-casting_time: 1 action
-range: Touch
-duration: Instantaneous
-components: V, S, M
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _6th-level illusion_
-
-**Material components:** a bowl of milk, which is consumed by the spell
 
 You touch a creature and show it a vision of one of the happiest or most peaceful moments of its life. It no longer suffers pain and one of the following effects of your choice takes place:
 
@@ -41,4 +35,4 @@ You touch a creature and show it a vision of one of the happiest or most peacefu
 
 **Available to:** [[Bard]], [[Cleric]], [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

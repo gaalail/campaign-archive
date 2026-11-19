@@ -1,37 +1,27 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.hallowed-altar
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Hallowed Altar
+title: "Hallowed Altar"
 level: 7
 school: Conjuration
-classes:
-  - Cleric
-casting_time: 10 minutes
-range: 120 feet
-duration: 8 hours
-components: V, S, M
+casting_time: "10 minutes"
+range: "120 feet"
+duration: "8 hours"
+components: "V, S, M (a holy symbol and a piece of marble worth 500 gp, which the spell consumes)"
 ritual: false
 concentration: false
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "You hold a piece of marble in one hand and a holy symbol in the other, and pray for your deities to conjure a 5-foot-cube altar of marble in an unoccupied space within range."
+classes:
+  - Cleric
 ---
 
 _7th-level conjuration_
-
-**Material components:** a holy symbol and a piece of marble worth 500 gp, which the spell consumes
 
 You hold a piece of marble in one hand and a holy symbol in the other, and pray for your deities to conjure a 5-foot-cube altar of marble in an unoccupied space within range. A wooden feast table of a maximum of 60 feet in length that seats a maximum of 24 appears in an unoccupied space near the altar. The altar and the table remain for the duration or until dismissed by you.
 
 A 60-foot-radius circle centered on the altar becomes consecrated ground. Evil aberrations, elementals, fey, fiends, and the undead have disadvantage on ability checks, attack rolls, and saving throws while within the area.
 
-When you and your allies use the altar to perform rituals, you have advantage on every roll regarding the ritual.
-
-While within 30 feet of the altar, the DC of the spells cast by good-aligned clerics, paladins, and paragons increases by 2.
-
-Creatures praying within 5 feet of the altar feel light and peaceful. Also when they pray in this way, they must roll a d100. On a result of 80 and higher, they receive the blessing of a deity, and have advantage on Wisdom saving throws until they finish a long rest.
+When you and your allies use the altar to perform rituals, you have advantage on every roll regarding the ritual. While within 30 feet of the altar, the DC of the spells cast by good-aligned clerics, paladins, and paragons increases by 2. Creatures praying within 5 feet of the altar feel light and peaceful. Also when they pray in this way, they must roll a d100. On a result of 80 and higher, they receive the blessing of a deity, and have advantage on Wisdom saving throws until they finish a long rest.
 
 Celestials summoned within 30 feet of the altar are stronger. They have temporary hit points equal to twice your spellcasting ability modifier and a +1 bonus to their attack and damage rolls.
 
@@ -49,4 +39,4 @@ You can create a permanent hallowed altar by casting this spell in the same loca
 
 **Available to:** [[Cleric]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

@@ -1,29 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.final-words
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Final Words
+title: "Final Words"
 level: 1
 school: Necromancy
+casting_time: "1 action"
+range: "10 feet"
+duration: "1 minute"
+components: "V, S, M (a small piece of concave glass)"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You channel magical energies into a corpse to wake it from its eternal sleep for a moment, just long enough for it to say its final words."
 classes:
   - Bard
   - Cleric
-  - Thanatomancer
-casting_time: 1 action
-range: 10 feet
-duration: 1 minute
-components: V, S, M
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _1st-level necromancy_
-
-**Material components:** a small piece of concave glass
 
 You channel magical energies into a corpse to wake it from its eternal sleep for a moment, just long enough for it to say its final words. Choose a corpse and a creature, both within range. The corpse wakes and talks to the creature, uttering up to three sentences that it wanted to say to the creature at the moment of its death.
 
@@ -37,6 +30,6 @@ The corpse must still have a mouth and can't be undead. The spell fails if the c
 
 **School:** Necromancy
 
-**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Cleric]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

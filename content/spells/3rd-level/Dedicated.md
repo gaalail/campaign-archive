@@ -1,22 +1,18 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.dedicated
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Dedicated
+title: "Dedicated"
 level: 3
 school: Enchantment
-classes:
-  - Bard
-casting_time: 1 action
-range: 30 feet
-duration: Instantaneous
-components: V
+casting_time: "1 action"
+range: "30 feet"
+duration: "Instantaneous"
+components: "V"
 ritual: false
 concentration: false
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "You target a creature within range that can hear you and assign a goal to it in the form of a declaration."
+classes:
+  - Bard
 ---
 
 _3rd-level enchantment_
@@ -37,4 +33,4 @@ The target can make a Wisdom saving throw to negate the effects of the spell. Th
 
 **Available to:** [[Bard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

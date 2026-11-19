@@ -1,29 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.6th-level.exclusion
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Exclusion
+title: "Exclusion"
 level: 6
 school: Abjuration
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a rotten egg)"
+ritual: false
+concentration: true
+source: "Corpus Angelus"
+source_type: third-party
+summary: "For the duration of the spell, you do not take damage from spells and other magical effects that target an area."
 classes:
   - Bard
   - Sorcerer
   - Wizard
-casting_time: 1 action
-range: Self
-duration: Concentration, up to 1 minute
-components: V, S, M
-ritual: false
-concentration: true
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _6th-level abjuration_
-
-**Material components:** a rotten egg
 
 For the duration of the spell, you do not take damage from spells and other magical effects that target an area. If a spell or magical effect causes an effect in an area without dealing damage, you are still affected by it.
 
@@ -37,4 +31,4 @@ For the duration of the spell, you do not take damage from spells and other magi
 
 **Available to:** [[Bard]], [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

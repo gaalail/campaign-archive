@@ -1,29 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.9th-level.merciful-gesture
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Merciful Gesture
+title: "Merciful Gesture"
 level: 9
 school: Evocation
+casting_time: "1 action"
+range: "90 feet"
+duration: "Instantaneous"
+components: "S"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You make a gesture, pointing at a creature within range."
 classes:
   - Bard
   - Warlock
   - Wizard
-casting_time: 1 action
-range: 90 feet
-duration: Instantaneous
-components: S
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _9th-level evocation_
 
@@ -39,4 +31,4 @@ You make a gesture, pointing at a creature within range. The creature is bombard
 
 **Available to:** [[Bard]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { archiveDb, getSpellLevelLabel, getSourceBadgeInfo } from '../utils/archiveUtils';
+import { archiveDb, getSpellLevelLabel, getSourceBadgeInfo, matchesSpellClassFilter } from '../utils/archiveUtils';
 import { ArchiveEntry } from '../types/archive';
 import {
   Search,
@@ -40,7 +40,8 @@ const CLASS_LIST = [
   'Arcane Knight',
   'Mystic',
   'Witchblade',
-  'Way of the Wu Jen'
+  'Way of the Wu Jen',
+  'Path of the Warden'
 ];
 
 const SCHOOL_LIST = [
@@ -105,18 +106,8 @@ export const SpellCatalogue: React.FC<SpellCatalogueProps> = ({
   const filteredSpells = useMemo(() => {
     return allSpells.filter(spell => {
       // Class filter
-      if (selectedClass !== 'All Spells') {
-        const normTarget = selectedClass.toLowerCase();
-        const mainClasses = (spell.classes || spell.frontmatter?.classes || []).map((c: string) => c.toLowerCase());
-        const subLists = (spell.subclass_spell_lists || spell.frontmatter?.subclass_spell_lists || []).map((s: string) => s.toLowerCase());
-
-        const matchesMain = mainClasses.includes(normTarget);
-        const matchesSub = subLists.some((s: string) => {
-          if (normTarget === 'way of the wu jen' && (s === 'wu jen' || s === 'way of the wu jen')) return true;
-          return s === normTarget;
-        });
-
-        if (!matchesMain && !matchesSub) return false;
+      if (selectedClass !== 'All Spells' && !matchesSpellClassFilter(spell, selectedClass)) {
+        return false;
       }
 
       // Level filter

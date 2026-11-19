@@ -32,7 +32,9 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
 
     // Current entry context for context-sensitive queries
     const currentEntry = currentEntryId ? archiveDb.entries.find(e => e.id === currentEntryId) : undefined;
-    const currentClass = currentEntry?.title || '';
+    const currentClass = currentEntry?.id.endsWith('/index')
+      ? (currentEntry.parentClass || currentEntry.title || '')
+      : (currentEntry?.title || '');
 
     if (target === 'backgrounds.base') {
       title = 'Character Backgrounds';

@@ -1,23 +1,19 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.personal-heaven
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Personal Heaven
+title: "Personal Heaven"
 level: 4
 school: Illusion
+casting_time: "1 hour"
+range: "Touch"
+duration: "1 day"
+components: "V, S"
+ritual: true
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You touch a point and transform a 100-foot radius centered on that point into a safe haven for yourself and your allies."
 classes:
   - Sorcerer
   - Wizard
-casting_time: 1 hour
-range: Touch
-duration: 1 day
-components: V, S
-ritual: true
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _4th-level illusion (ritual)_
@@ -36,4 +32,4 @@ The time required to finish a short and long rest is halved within the area. Als
 
 **Available to:** [[Sorcerer]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

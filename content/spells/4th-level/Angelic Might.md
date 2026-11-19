@@ -1,29 +1,26 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.angelic-might
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Angelic Might
+title: "Angelic Might"
 level: 4
 school: Conjuration
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You summon the unparallelled strength of angels. Your Strength score becomes 21."
 classes:
   - Cleric
   - Paladin
-casting_time: 1 action
-range: Self
-duration: Concentration, up to 1 minute
-components: V, S
-ritual: false
-concentration: true
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _4th-level conjuration_
 
 You summon the unparallelled strength of angels. Your Strength score becomes 21.
-HL: Your Strength score increases even more when you cast this spell using a spell slot of 5th level or higher (to 23 at 5th, to 25 at 6th, to 27 at 7th, and to 29 at 9th).
+
+**At Higher Levels.** Your Strength score increases even more when you cast this spell using a spell slot of 5th level or higher (to 23 at 5th, to 25 at 6th, to 27 at 7th, and to 29 at 9th).
 
 ---
 
@@ -35,4 +32,4 @@ HL: Your Strength score increases even more when you cast this spell using a spe
 
 **Available to:** [[Cleric]], [[Paladin]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

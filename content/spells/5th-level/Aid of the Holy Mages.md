@@ -1,30 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.aid-of-the-holy-mages
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Aid of the Holy Mages
+title: "Aid of the Holy Mages"
 level: 5
 school: Conjuration
+casting_time: "1 action"
+range: "60 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Corpus Angelus"
+source_type: third-party
+summary: "Choose a point within range, in which a golden, translucent humanoid figure (the holy mage) appears as your requested aid from the holy."
 classes:
   - Bard
   - Sorcerer
   - Warlock
   - Wizard
-casting_time: 1 action
-range: 60 feet
-duration: Concentration, up to 1 minute
-components: V, S
-ritual: false
-concentration: true
-source: Corpus Angelus
-source_type: third-party
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _5th-level conjuration_
 
@@ -40,4 +32,4 @@ Choose a point within range, in which a golden, translucent humanoid figure (the
 
 **Available to:** [[Bard]], [[Sorcerer]], [[Warlock]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

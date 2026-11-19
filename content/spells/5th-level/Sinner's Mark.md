@@ -1,28 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.sinner-s-mark
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Sinner's Mark
+title: "Sinner's Mark"
 level: 5
 school: Divination
+casting_time: "1 action"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You hold the hand of a creature and learn whether or not it has sinned in the last week by reading the marks on its hand."
 classes:
   - Bard
   - Warlock
-casting_time: 1 action
-range: Touch
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _5th-level divination_
 
@@ -38,4 +30,4 @@ You hold the hand of a creature and learn whether or not it has sinned in the la
 
 **Available to:** [[Bard]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

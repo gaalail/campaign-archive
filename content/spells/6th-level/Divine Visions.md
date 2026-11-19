@@ -1,28 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.6th-level.divine-visions
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Divine Visions
+title: "Divine Visions"
 level: 6
 school: Divination
-classes:
-  - Cleric
-  - Thanatomancer
-casting_time: 1 hour
-range: Self
-duration: 1 hour
-components: S, M
+casting_time: "1 hour"
+range: "Self"
+duration: "1 hour"
+components: "S, M (a piece of the target creature such as a lock of hair and 500 gp worth of ruby, which the spell consumes)"
 ritual: true
 concentration: false
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "You focus on a certain part of a specific creature for 1 hour, for the duration of which you enter a state of a special meditation and are incapacitated."
+classes:
+  - Cleric
 ---
 
 _6th-level divination (ritual)_
-
-**Material components:** a piece of the target creature such as a lock of hair and 500 gp worth of ruby, which the spell consumes
 
 You focus on a certain part of a specific creature for 1 hour, for the duration of which you enter a state of a special meditation and are incapacitated.
 
@@ -36,6 +29,6 @@ As you cast the spell, you experience each and every moment of the target's exis
 
 **School:** Divination
 
-**Available to:** [[Cleric]], [[Thanatomancer]]
+**Available to:** [[Cleric]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

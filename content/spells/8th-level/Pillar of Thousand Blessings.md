@@ -1,33 +1,25 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.8th-level.pillar-of-thousand-blessings
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Pillar of Thousand Blessings
+title: "Pillar of Thousand Blessings"
 level: 8
 school: Abjuration
-classes:
-  - Cleric
-casting_time: 10 minutes
-range: 5 feet
-duration: 10 minutes
-components: V, S, M
+casting_time: "10 minutes"
+range: "5 feet"
+duration: "10 minutes"
+components: "V, S, M (precious gems, metals, and coins worth at least 5,000 gp which the spell consumes)"
 ritual: false
 concentration: false
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "You conjure a 10-foot tall cylindrical marble pillar of a 5-foot radius within range that has decorative carvings, small water fountains, ornamental plants, oil lamps, and celestial..."
+classes:
+  - Cleric
 ---
 
 _8th-level abjuration_
 
-**Material components:** precious gems, metals, and coins worth at least 5,000 gp which the spell consumes
-
 You conjure a 10-foot tall cylindrical marble pillar of a 5-foot radius within range that has decorative carvings, small water fountains, ornamental plants, oil lamps, and celestial writings on it. The pillar remains for the spell's duration and then turns to dust, leaving no traces of its existence behind.
 
-The pillar offers special benefits to creatures who use their action to offer a copper coin worth at least 1 copper piece. Once a copper piece has been offered to the pillar in this way, it cannot be retrieved by any means. Each creature that donated at least 1 copper piece must choose up to six benefits from the following list with which they are affected for 1 hour. A creature cannot choose the same benefit twice.
-
-If a target is affected by the dispel magic spell or any other similar effect, each effect gained from this spell must be dispelled separately, as if they are 8th-level spells.
+The pillar offers special benefits to creatures who use their action to offer a copper coin worth at least 1 copper piece. Once a copper piece has been offered to the pillar in this way, it cannot be retrieved by any means. Each creature that donated at least 1 copper piece must choose up to six benefits from the following list with which they are affected for 1 hour. A creature cannot choose the same benefit twice. If a target is affected by the dispel magic spell or any other similar effect, each effect gained from this spell must be dispelled separately, as if they are 8th-level spells.
 
 - You have advantage on Strength, Dexterity, and Constitution saving throws.
 - You have advantage on Intelligence, Wisdom, and Charisma saving throws.
@@ -81,4 +73,4 @@ If a target is affected by the dispel magic spell or any other similar effect, e
 
 **Available to:** [[Cleric]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

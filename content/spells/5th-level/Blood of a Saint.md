@@ -1,29 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.blood-of-a-saint
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Blood of a Saint
+title: "Blood of a Saint"
 level: 5
 school: Transmutation
+casting_time: "1 bonus action"
+range: "Self"
+duration: "1 minute"
+components: "V, S"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You carry the blood of a saint within your veins, which harms your enemies when spilled."
 classes:
   - Cleric
   - Sorcerer
   - Warlock
-casting_time: 1 bonus action
-range: Self
-duration: 1 minute
-components: V, S
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _5th-level transmutation_
 
@@ -39,4 +31,4 @@ You carry the blood of a saint within your veins, which harms your enemies when 
 
 **Available to:** [[Cleric]], [[Sorcerer]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

@@ -1,29 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.burden-of-sins
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Burden of Sins
+title: "Burden of Sins"
 level: 5
 school: Enchantment
+casting_time: "1 action"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You touch a creature and cause it to see all the deeds of evil it has ever committed in an instant."
 classes:
   - Paladin
   - Wizard
-  - Thanatomancer
-casting_time: 1 action
-range: Touch
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _5th-level enchantment_
 
@@ -37,6 +28,6 @@ You touch a creature and cause it to see all the deeds of evil it has ever commi
 
 **School:** Enchantment
 
-**Available to:** [[Paladin]], [[Wizard]], [[Thanatomancer]]
+**Available to:** [[Paladin]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

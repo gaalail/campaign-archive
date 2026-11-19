@@ -1,29 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.6th-level.twin-of-light
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Twin of Light
+title: "Twin of Light"
 level: 6
 school: Conjuration
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V, S, M (a mirror)"
+ritual: false
+concentration: true
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You look in a mirror and create a twin of yourself, completely made out of light."
 classes:
   - Cleric
   - Sorcerer
   - Warlock
-casting_time: 1 action
-range: Self
-duration: Concentration, up to 1 minute
-components: V, S, M
-ritual: false
-concentration: true
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _6th-level conjuration_
-
-**Material components:** a mirror
 
 You look in a mirror and create a twin of yourself, completely made out of light. The twin is under your control and its initiative is equal to yours minus 10. It has the following properties:
 
@@ -44,4 +38,4 @@ You look in a mirror and create a twin of yourself, completely made out of light
 
 **Available to:** [[Cleric]], [[Sorcerer]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

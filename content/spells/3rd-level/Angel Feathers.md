@@ -1,32 +1,27 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.3rd-level.angel-feathers
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Angel Feathers
+title: "Angel Feathers"
 level: 3
 school: Evocation
+casting_time: "1 action"
+range: "Self (60-foot cone)"
+duration: "Instantaneous"
+components: "V, S, M (an angel feather)"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You point at an area and angelic feathers erupt from your hands, piercing through everything."
 classes:
   - Cleric
   - Druid
   - Ranger
-casting_time: 1 action
-range: Self (60-foot cone)
-duration: Instantaneous
-components: V, S, M
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _3rd-level evocation_
 
-**Material components:** an angel feather
-
 You point at an area and angelic feathers erupt from your hands, piercing through everything. Each creature in a 60-foot cone in the direction in which you pointed must make a Dexterity saving throw, taking 6d8 radiant damage on a failed save, or half as much damage on a successful one.
-HL: When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.
+
+**At Higher Levels.** When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.
 
 ---
 
@@ -38,4 +33,4 @@ HL: When you cast this spell using a spell slot of 4th level or higher, the dama
 
 **Available to:** [[Cleric]], [[Druid]], [[Ranger]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

@@ -1,30 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.holy-verdict-wrath
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
 title: "Holy Verdict: Wrath"
 level: 7
 school: Evocation
+casting_time: "1 action"
+range: "60 feet"
+duration: "Instantaneous"
+components: "V"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "Choose a target that you can see within range. You speak a single word filled with wrath and a heavenly golden sword falls down from the heavens to destroy it."
 classes:
   - Bard
   - Cleric
   - Sorcerer
   - Warlock
-casting_time: 1 action
-range: 60 feet
-duration: Instantaneous
-components: V
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _7th-level evocation_
 
@@ -40,4 +32,4 @@ Choose a target that you can see within range. You speak a single word filled wi
 
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

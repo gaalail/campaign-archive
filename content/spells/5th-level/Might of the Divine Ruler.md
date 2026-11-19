@@ -1,27 +1,19 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.5th-level.might-of-the-divine-ruler
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Might of the Divine Ruler
+title: "Might of the Divine Ruler"
 level: 5
 school: Transmutation
-classes:
-  - Paladin
-casting_time: 1 action
-range: Self
-duration: Concentration, up to 1 minute
-components: V
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V"
 ritual: false
 concentration: true
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "Your body becomes silver and your size increases by one size category. For instance, if your size is Medium, you become Large."
+classes:
+  - Paladin
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _5th-level transmutation_
 
@@ -37,4 +29,4 @@ Your body becomes silver and your size increases by one size category. For insta
 
 **Available to:** [[Paladin]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

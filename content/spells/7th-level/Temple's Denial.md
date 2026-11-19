@@ -1,28 +1,20 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.temple-s-denial
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Temple's Denial
+title: "Temple's Denial"
 level: 7
 school: Illusion
+casting_time: "1 reaction, which you take when you are targeted by a single target spell"
+range: "Self"
+duration: "Instantaneous"
+components: "S"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You create the illusion of a temple around you in an area that is 60 feet long, 40 feet wide, and 12 feet high."
 classes:
   - Cleric
   - Sorcerer
-casting_time: 1 reaction, which you take when you are targeted by a single target spell
-range: Self
-duration: Instantaneous
-components: S
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _7th-level illusion_
 
@@ -38,4 +30,4 @@ You create the illusion of a temple around you in an area that is 60 feet long, 
 
 **Available to:** [[Cleric]], [[Sorcerer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

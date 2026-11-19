@@ -1,27 +1,19 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.9th-level.constant-reshape
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Constant Reshape
+title: "Constant Reshape"
 level: 9
 school: Transmutation
-classes:
-  - Wizard
-casting_time: 1 action
-range: Self
-duration: Concentration, up to 1 minute
-components: V, S
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
 ritual: false
 concentration: true
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "The rules of existence of all that surrounds you are altered constantly, bending to your will."
+classes:
+  - Wizard
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _9th-level transmutation_
 
@@ -37,4 +29,4 @@ The rules of existence of all that surrounds you are altered constantly, bending
 
 **Available to:** [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

@@ -1,27 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.anchor
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Anchor
+title: "Anchor"
 level: 2
 school: Abjuration
-classes:
-  - Wizard
-casting_time: 1 action
-range: Touch
-duration: 1 hour
-components: V, S, M
+casting_time: "1 action"
+range: "Touch"
+duration: "1 hour"
+components: "V, S, M (a small crystal anchor worth at least 20 gp)"
 ritual: false
 concentration: false
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "This spell anchors you to a willing creature and binds you to each other until the spell ends."
+classes:
+  - Wizard
 ---
 
 _2nd-level abjuration_
-
-**Material components:** a small crystal anchor worth at least 20 gp
 
 This spell anchors you to a willing creature and binds you to each other until the spell ends.
 
@@ -39,4 +33,4 @@ The spell ends if there are no spaces that the target can teleport to, if the sp
 
 **Available to:** [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

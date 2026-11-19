@@ -1,28 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.9th-level.grace
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Grace
+title: "Grace"
 level: 9
 school: Abjuration
+casting_time: "1 hour"
+range: "Touch"
+duration: "24 hours"
+components: "S, M (an emanation of grace (p. 241))"
+ritual: true
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You pray for an hour as you touch an emanation of grace."
 classes:
   - Cleric
   - Druid
-casting_time: 1 hour
-range: Touch
-duration: 24 hours
-components: S, M
-ritual: true
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _9th-level abjuration (ritual)_
-
-**Material components:** an emanation of grace (p. 241)
 
 You pray for an hour as you touch an emanation of grace. Each good-aligned creature within a 2,000-foot-radius sphere of the emanation of grace gains the following benefits for the duration:
 
@@ -32,7 +26,8 @@ You pray for an hour as you touch an emanation of grace. Each good-aligned creat
 - Creatures regain 1 hit point at the start of each of their turns.
 - Creatures have resistance against necrotic damage as their life essence is protected by the emanation of grace.
 - The number of hit points regained by spells is doubled. If you are within 150 feet of the emanation of grace, this effect does not stack with the Enhanced Healing feature of the emanation.
-- Evil aberrations, elementals, fey, fiends, or undead must succeed on a Wisdom saving throw in order to enter the area. If they enter the area for the first time, their hit point maximum is reduced by 3 times your spellcasting modifier.
+
+Evil aberrations, elementals, fey, fiends, or undead must succeed on a Wisdom saving throw in order to enter the area. If they enter the area for the first time, their hit point maximum is reduced by 3 times your spellcasting modifier.
 
 ---
 
@@ -44,4 +39,4 @@ You pray for an hour as you touch an emanation of grace. Each good-aligned creat
 
 **Available to:** [[Cleric]], [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

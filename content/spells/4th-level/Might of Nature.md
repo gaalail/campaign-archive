@@ -1,27 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.might-of-nature
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Might of Nature
+title: "Might of Nature"
 level: 4
 school: Transmutation
-classes:
-  - Druid
-casting_time: 1 action
-range: 60 feet
-duration: Concentration, up to 1 hour
-components: V, S, M
+casting_time: "1 action"
+range: "60 feet"
+duration: "Concentration, up to 1 hour"
+components: "V, S, M (a piece belonging to the chosen creature)"
 ritual: false
 concentration: true
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "You call upon the deities of nature and ask for their blessing."
+classes:
+  - Druid
 ---
 
 _4th-level transmutation_
-
-**Material components:** a piece belonging the chosen creature
 
 You call upon the deities of nature and ask for their blessing. Target a creature you can see within range and choose an unaligned or good-aligned beast, elemental, fey, monstrosity, or plant. The target's body transforms partially, bearing the chosen creature's features (flaming hair, oaken skin, etc.) The target gains the following benefits for the duration:
 
@@ -41,4 +35,4 @@ The chosen creature's challenge rating must be equal to or less than the target'
 
 **Available to:** [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

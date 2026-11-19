@@ -281,23 +281,37 @@ export function calculateProficiencyBonus(level: number): number {
   return Math.floor((Math.max(1, Math.min(20, level)) - 1) / 4) + 2;
 }
 
-export function getSpellsForClass(className: string): ArchiveEntry[] {
+const SUBCLASS_SPELL_LIST_ALIASES: Record<string, string[]> = {
+  'way of the wu jen': ['wu jen', 'way of the wu jen'],
+  'wu jen': ['wu jen', 'way of the wu jen'],
+  'oath of the ancients': ['ancient oath', 'oath of the ancients'],
+  'oath of devotion': ['devotion oath', 'oath of devotion'],
+  'oath of vengeance': ['vengeance oath', 'oath of vengeance'],
+  'archfey': ['archfey patron', 'archfey'],
+  'fiend': ['fiend patron', 'fiend'],
+};
+
+export function matchesSpellClassFilter(spell: ArchiveEntry, className: string): boolean {
   const normalized = className.trim().toLowerCase();
+  if (!normalized || normalized === 'all spells') return true;
+
+  const classes = spell.classes || (Array.isArray(spell.frontmatter?.classes) ? spell.frontmatter.classes : []);
+  if (classes.some((c: string) => c.toLowerCase() === normalized)) return true;
+
+  const sublists = spell.subclass_spell_lists || (Array.isArray(spell.frontmatter?.subclass_spell_lists) ? spell.frontmatter.subclass_spell_lists : []);
+  const aliasMatches = SUBCLASS_SPELL_LIST_ALIASES[normalized];
+  if (sublists.some((s: string) => {
+    const sl = s.toLowerCase();
+    return sl === normalized || (aliasMatches ? aliasMatches.includes(sl) : false);
+  })) return true;
+
+  return false;
+}
+
+export function getSpellsForClass(className: string): ArchiveEntry[] {
   return archiveDb.entries.filter(e => {
     if (e.category !== 'spells' || e.id.endsWith('/index')) return false;
-
-    // Direct classes list
-    const classes = e.classes || (Array.isArray(e.frontmatter.classes) ? e.frontmatter.classes : []);
-    if (classes.some((c: string) => c.toLowerCase() === normalized)) return true;
-
-    // Subclass spell lists
-    const sublists = e.subclass_spell_lists || (Array.isArray(e.frontmatter.subclass_spell_lists) ? e.frontmatter.subclass_spell_lists : []);
-    if (sublists.some((s: string) => {
-      const sl = s.toLowerCase();
-      return sl === normalized || (normalized === 'way of the wu jen' && sl === 'wu jen') || (normalized === 'wu jen' && sl === 'wu jen');
-    })) return true;
-
-    return false;
+    return matchesSpellClassFilter(e, className);
   });
 }
 

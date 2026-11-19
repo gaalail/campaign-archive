@@ -1,24 +1,19 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.dictate-morality
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Dictate Morality
+title: "Dictate Morality"
 level: 4
 school: Enchantment
+casting_time: "1 action"
+range: "30 feet"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You choose a creature within range and dictate your own rights and wrongs to it."
 classes:
   - Bard
   - Cleric
-  - Thanatomancer
-casting_time: 1 action
-range: 30 feet
-duration: Concentration, up to 1 minute
-components: V, S
-ritual: false
-concentration: true
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _4th-level enchantment_
@@ -35,6 +30,6 @@ This spell and the damage dealt by the spell are not considered to harm the crea
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Cleric]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Cleric]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

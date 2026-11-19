@@ -1,23 +1,19 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.6th-level.teleport-to-companion
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Teleport to Companion
+title: "Teleport to Companion"
 level: 6
 school: Conjuration
+casting_time: "1 action"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You touch a willing creature, binding yourself to it."
 classes:
   - Bard
   - Wizard
-casting_time: 1 action
-range: Touch
-duration: Instantaneous
-components: V, S
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _6th-level conjuration_
@@ -36,4 +32,4 @@ If there are no available unoccupied spaces within 5 feet of the creature (or yo
 
 **Available to:** [[Bard]], [[Wizard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

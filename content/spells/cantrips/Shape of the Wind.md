@@ -1,23 +1,19 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.cantrips.shape-of-the-wind
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Shape of the Wind
+title: "Shape of the Wind"
 level: 0
 school: Transmutation
+casting_time: "1 action"
+range: "60 feet"
+duration: "Concentration, up to 1 minute"
+components: "V"
+ritual: false
+concentration: true
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You choose a point within range and a warm wind blows within a 15-foot-radius sphere centered on it."
 classes:
   - Druid
   - Sorcerer
-casting_time: 1 action
-range: 60 feet
-duration: Concentration, up to 1 minute
-components: V
-ritual: false
-concentration: true
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _Transmutation cantrip_
@@ -39,4 +35,4 @@ You choose a point within range and a warm wind blows within a 15-foot-radius sp
 
 **Available to:** [[Druid]], [[Sorcerer]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

@@ -1,29 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.endow-life
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Endow Life
+title: "Endow Life"
 level: 7
 school: Necromancy
+casting_time: "1 action"
+range: "Touch"
+duration: "1 day"
+components: "V, S, M (a piece of an aorta preserved in amber)"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You touch a creature, expanding its ability to sustain life. The creature's hit point maximum increases by 20 for the duration of the spell."
 classes:
   - Cleric
   - Druid
-  - Thanatomancer
-casting_time: 1 action
-range: Touch
-duration: 1 day
-components: V, S, M
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _7th-level necromancy_
-
-**Material components:** a piece of an aorta preserved in amber
 
 You touch a creature, expanding its ability to sustain life. The creature's hit point maximum increases by 20 for the duration of the spell.
 
@@ -35,6 +28,6 @@ You touch a creature, expanding its ability to sustain life. The creature's hit 
 
 **School:** Necromancy
 
-**Available to:** [[Cleric]], [[Druid]], [[Thanatomancer]]
+**Available to:** [[Cleric]], [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

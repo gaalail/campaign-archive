@@ -1,27 +1,19 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.4th-level.scourging-smite
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-content_status: complete
-title: Scourging Smite
+title: "Scourging Smite"
 level: 4
 school: Evocation
-classes:
-  - Paladin
-casting_time: 1 bonus action
-range: Self
-duration: Concentration, up to 1 minute
-components: V
+casting_time: "1 bonus action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V"
 ritual: false
 concentration: true
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "The weapon you are wielding gathers great magical power which is to be released as you strike."
+classes:
+  - Paladin
 ---
-
-> [!warning]- ⚠️ This Entry Is Incomplete
-> This entry may be inaccurate or missing information. Check with your DM for clarification, or contact the archive maintainers if you'd like to help complete it.
 
 _4th-level evocation_
 
@@ -37,4 +29,4 @@ The weapon you are wielding gathers great magical power which is to be released 
 
 **Available to:** [[Paladin]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

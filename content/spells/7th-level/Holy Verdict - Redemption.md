@@ -1,30 +1,23 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.7th-level.holy-verdict-redemption
-edition: "2014"
-adaptation: curated
-license_status: reference-only
 title: "Holy Verdict: Redemption"
 level: 7
 school: Divination
+casting_time: "1 day"
+range: "10 feet"
+duration: "Instantaneous"
+components: "V, M (conversation)"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You become an emissary of angels and the spirits of redemption to reach those who seek forgiveness."
 classes:
   - Bard
   - Cleric
   - Warlock
-  - Thanatomancer
-casting_time: 1 day
-range: 10 feet
-duration: Instantaneous
-components: V, M
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _7th-level divination_
-
-**Material components:** conversation
 
 You become an emissary of angels and the spirits of redemption to reach those who seek forgiveness. You and the target sit up to 10 feet away from each other, and you speak with the target about its past sins and the reasons for their search for redemption, embellishing the dialogue with the magical words of the divine. You speak for the casting time and the conversation acts as the material component of the spell. At the end of it, if the divine find the target's intentions to be righteous, they present the target with a quest that must be completed within the next 77 days. If the target succeeds in their quest, it is redeemed of all sins.
 
@@ -38,6 +31,6 @@ For these 77 days, the target has advantage on all saving throws unless it devia
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Warlock]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Cleric]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

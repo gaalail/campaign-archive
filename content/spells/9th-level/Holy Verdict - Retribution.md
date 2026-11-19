@@ -1,25 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.9th-level.holy-verdict-retribution
-edition: "2014"
-adaptation: curated
-license_status: reference-only
 title: "Holy Verdict: Retribution"
 level: 9
 school: Evocation
+casting_time: "1 action"
+range: "120 feet"
+duration: "Instantaneous"
+components: "V"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "Choose a target that you can see within range. You utter a single word."
 classes:
   - Bard
   - Cleric
   - Sorcerer
   - Warlock
-casting_time: 1 action
-range: 120 feet
-duration: Instantaneous
-components: V
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _9th-level evocation_
@@ -38,4 +34,4 @@ If this damage reduces the target to 0 hit points, all good creatures within 120
 
 **Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

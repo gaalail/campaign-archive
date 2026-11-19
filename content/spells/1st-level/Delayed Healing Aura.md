@@ -1,30 +1,24 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.1st-level.delayed-healing-aura
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Delayed Healing Aura
+title: "Delayed Healing Aura"
 level: 1
 school: Evocation
+casting_time: "1 action"
+range: "Self"
+duration: "Concentration, up to 1 minute"
+components: "V, S"
+ritual: false
+concentration: true
+source: "Corpus Angelus"
+source_type: third-party
+summary: "Wherever you go, you're able to manifest a magical aura that hangs in the air for a moment."
 classes:
   - Cleric
   - Druid
-casting_time: 1 action
-range: Self
-duration: Concentration, up to 1 minute
-components: V, S
-ritual: false
-concentration: true
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _1st-level evocation_
 
-Wherever you go, you're able to manifest a magical aura that hangs in the air for a moment. When you cast this spell, a magical aura appears where you are standing. It remains there until the start of your next turn, and then disappears into thin air. For the duration of the spell, you can use your action to conjure other magical auras at the start of each of your turns.
-
-If a creature moves through the space filled with the aura or ends its turn there, it regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
+Wherever you go, you're able to manifest a magical aura that hangs in the air for a moment. When you cast this spell, a magical aura appears where you are standing. It remains there until the start of your next turn, and then disappears into thin air. For the duration of the spell, you can use your action to conjure other magical auras at the start of each of your turns. If a creature moves through the space filled with the aura or ends its turn there, it regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.
 
 ---
 
@@ -36,4 +30,4 @@ If a creature moves through the space filled with the aura or ends its turn ther
 
 **Available to:** [[Cleric]], [[Druid]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

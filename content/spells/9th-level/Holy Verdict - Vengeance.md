@@ -1,26 +1,21 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.9th-level.holy-verdict-vengeance
-edition: "2014"
-adaptation: curated
-license_status: reference-only
 title: "Holy Verdict: Vengeance"
 level: 9
 school: Divination
+casting_time: "1 hour"
+range: "Self"
+duration: "Instantaneous"
+components: "V"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You meditate about a creature on whom you want to wreak vengeance."
 classes:
   - Bard
   - Cleric
   - Sorcerer
   - Warlock
-  - Thanatomancer
-casting_time: 1 hour
-range: Self
-duration: Instantaneous
-components: V
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _9th-level divination_
@@ -39,6 +34,6 @@ You can affect fate in this way for only one creature at a time. If you die befo
 
 **School:** Divination
 
-**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]], [[Thanatomancer]]
+**Available to:** [[Bard]], [[Cleric]], [[Sorcerer]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

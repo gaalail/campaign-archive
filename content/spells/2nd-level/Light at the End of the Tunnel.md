@@ -1,22 +1,18 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.2nd-level.light-at-the-end-of-the-tunnel
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Light at the End of the Tunnel
+title: "Light at the End of the Tunnel"
 level: 2
 school: Evocation
-classes:
-  - Bard
-casting_time: 1 action
-range: Self (30-foot radius)
-duration: Concentration, up to 10 minutes
-components: V
+casting_time: "1 action"
+range: "Self (30-foot radius)"
+duration: "Concentration, up to 10 minutes"
+components: "V"
 ritual: false
 concentration: true
-source: Corpus Angelus
+source: "Corpus Angelus"
 source_type: third-party
+summary: "You sing a joyful song to remind your allies that hope still lives on in their hearts."
+classes:
+  - Bard
 ---
 
 _2nd-level evocation_
@@ -35,4 +31,4 @@ Also, if a creature benefits from this spell for 10 consecutive minutes, it rega
 
 **Available to:** [[Bard]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus

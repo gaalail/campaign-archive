@@ -1,29 +1,22 @@
 ---
-entity_type: spell
-canonical_id: spell.spells.9th-level.redeemer-of-souls
-edition: "2014"
-adaptation: curated
-license_status: reference-only
-title: Redeemer of Souls
+title: "Redeemer of Souls"
 level: 9
 school: Enchantment
+casting_time: "1 action"
+range: "Touch"
+duration: "Instantaneous"
+components: "V, S, M (a fragment of your life energy)"
+ritual: false
+concentration: false
+source: "Corpus Angelus"
+source_type: third-party
+summary: "You touch an evil-aligned creature, stare into its eyes, and look deep into its very soul."
 classes:
   - Cleric
   - Warlock
-  - Thanatomancer
-casting_time: 1 action
-range: Touch
-duration: Instantaneous
-components: V, S, M
-ritual: false
-concentration: false
-source: Corpus Angelus
-source_type: third-party
 ---
 
 _9th-level enchantment_
-
-**Material components:** a fragment of your life energy
 
 You touch an evil-aligned creature, stare into its eyes, and look deep into its very soul. You sacrifice a part of your vitality to send the evil-aligned creature to another plane of existence and have a vision in which it can see all the potential of a life lived by the virtues of the good. This spell strains the confines of your soul so much that you take 10d10 necrotic damage, which can't be reduced or prevented by any means.
 
@@ -39,6 +32,6 @@ The vision lasts a year in the demiplane and an hour in the material plane. Afte
 
 **School:** Enchantment
 
-**Available to:** [[Cleric]], [[Warlock]], [[Thanatomancer]]
+**Available to:** [[Cleric]], [[Warlock]]
 
-**Related:** [[spells|All Spells]] | [[items|Magic Items]]
+**Source:** Corpus Angelus
