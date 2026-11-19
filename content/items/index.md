@@ -47,5 +47,5 @@ Explore magic items organized by equipment slot and category:
 - **Very Rare:** Elite tier artifacts wielded by tier 3 heroes at levels 11–16 (e.g., *+3 Weapon*, *Staff of Power*).
 - **Legendary:** World-shaping items of mythic power at levels 17+ (e.g., *Holy Avenger*, *Ring of Three Wishes*).
 
-### Attunement
-A character can be attuned to no more than **three magic items** concurrently. Attuning requires spending a **short rest** focusing on the item while maintaining physical contact with it.
+### Attunement (Variant Capacity)
+A character's **Attunement Capacity** equals **twice their Proficiency Bonus**, with each attuned item costing capacity by rarity (Common/Uncommon **1**, Rare **2**, Very Rare **3**, Legendary **5**, Mythic **8**). See [[rules/attunement|Variant Rule: Attunement Capacity]] for full rules.

@@ -13,8 +13,7 @@ saving_throws:
 summary: d8 hit die; WIS and INT saves; pact magic using Intelligence, Wisdom, or Charisma
 source: Alternate Warlock
 source_type: third-party
-content_status: incomplete
-incomplete_reason: The supplied alternate class replaces the SRD class; its provided spell list is not yet reconciled with existing spell records or catalogue filters.
+content_status: complete
 ---
 
 # Warlock

@@ -19,6 +19,7 @@ The rules engine of 5th Edition Dungeons & Dragons, covering combat flow, action
 | :--- | :--- | :--- |
 | **Combat & Action Economy** | Rounds, turns, actions, bonus actions, reactions, movement, and cover | [[rules/combat\|Combat Rules]] |
 | **Resting & Recovery** | Short rests, long rests, hit dice healing, exhaustion, and night watches | [[rules/resting\|Resting & Healing]] |
+| **Attunement Capacity** | Capacity equal to 2× Proficiency Bonus with rarity-based costs (1–8) | [[rules/attunement\|Attunement Rules]] |
 | **Spellcasting Mechanics** | Spell slots, components (V, S, M), concentration, rituals, and targeting | [[spells/index\|Spell Rules]] |
 | **Barovia Alterations** | Dimensional isolation, cosmetic corruption, and Strahd's domain dominance | [[campaigns/curse-of-strahd/rules/alterations-to-magic\|Curse of Strahd Magic Rules]] |
 | **Campaign House Rules** | Setting-specific rules for Barovia, Ra Gol'vek, and Vyrun | [[campaigns/index\|Campaign Specific Rules]] |
