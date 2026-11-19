@@ -614,9 +614,9 @@ for (const entry of entries) {
 // Build graph nodes and links
 const graphNodes = [];
 const graphEdges = [];
-const edgeSet = new Set();
 
-const validEntities = entries.filter(e => !e.id.endsWith('/index') && e.id !== 'index');
+const isCampaignHub = (e) => e.category === 'campaigns' && /^campaigns\/[^/]+\/index$/.test(e.id);
+const validEntities = entries.filter(e => (!e.id.endsWith('/index') && e.id !== 'index') || isCampaignHub(e));
 
 for (const e of validEntities) {
   graphNodes.push({
@@ -628,88 +628,201 @@ for (const e of validEntities) {
     source: e.source,
     source_type: e.source_type,
     campaign: e.campaign_id,
-    linkCount: (e.incomingLinks?.length || 0) + (e.wikilinks?.length || 0)
+    linkCount: 0
   });
+}
 
-  // Explicit wikilinks
-  for (const link of e.wikilinks) {
+const validNodeIds = new Set(graphNodes.map(n => n.id));
+const classEntriesByLower = new Map();
+for (const e of validEntities) {
+  if (e.category === 'classes') {
+    classEntriesByLower.set(e.title.toLowerCase(), e.id);
+    classEntriesByLower.set(path.basename(e.id).toLowerCase(), e.id);
+  }
+}
+
+const SUBCLASS_SPELL_ALIAS_TARGETS = {
+  'arcane knight': 'character-options/subclasses/Fighter/Arcane Knight',
+  'witchblade': 'character-options/subclasses/Fighter/Witchblade',
+  'wu jen': 'character-options/subclasses/Monk/Way of the Wu Jen',
+  'way of the wu jen': 'character-options/subclasses/Monk/Way of the Wu Jen',
+  'path of the warden': 'character-options/subclasses/Barbarian/Path of the Warden',
+  'fiend patron': 'character-options/subclasses/Warlock/Fiend',
+  'fiend': 'character-options/subclasses/Warlock/Fiend',
+  'archfey patron': 'character-options/subclasses/Warlock/Archfey',
+  'archfey': 'character-options/subclasses/Warlock/Archfey',
+  'ancient oath': 'character-options/subclasses/Paladin/Ancients',
+  'oath of the ancients': 'character-options/subclasses/Paladin/Ancients',
+  'devotion oath': 'character-options/subclasses/Paladin/Devotion',
+  'oath of devotion': 'character-options/subclasses/Paladin/Devotion',
+  'vengeance oath': 'character-options/subclasses/Paladin/Vengeance',
+  'oath of vengeance': 'character-options/subclasses/Paladin/Vengeance',
+  'coast land': 'character-options/subclasses/Druid/Land',
+  'life domain': 'character-options/subclasses/Cleric/Life',
+  'infuser': 'character-options/subclasses/Tamer/Infuser',
+  'necromancer': 'character-options/subclasses/Tamer/Necromancer',
+  'splicer': 'character-options/subclasses/Tamer/Splicer',
+  'hunter': 'character-options/subclasses/Ranger/Hunter',
+  'mystic': 'character-options/subclasses/Fighter/Mystic'
+};
+
+const EDGE_PRIORITY = {
+  subclass_of: 7,
+  option_of: 6,
+  campaign_content: 5,
+  domain_synergy: 4,
+  spell_list: 3,
+  deity_of: 2,
+  mention: 1
+};
+
+const edgeByPair = new Map();
+const directedMentions = new Set();
+
+function upsertEdge(source, target, type, weight) {
+  if (!source || !target || source === target) return;
+  if (!validNodeIds.has(source) || !validNodeIds.has(target)) return;
+
+  if (type === 'mention') {
+    directedMentions.add(`${source}->${target}`);
+  }
+
+  const pairKey = [source, target].sort().join('---');
+  const existing = edgeByPair.get(pairKey);
+  if (!existing) {
+    edgeByPair.set(pairKey, { source, target, type, weight });
+    return;
+  }
+
+  const nextPrio = EDGE_PRIORITY[type] ?? 0;
+  const prevPrio = EDGE_PRIORITY[existing.type] ?? 0;
+  if (nextPrio > prevPrio) {
+    edgeByPair.set(pairKey, { source, target, type, weight });
+  }
+}
+
+function resolveClassTarget(name) {
+  if (!name) return undefined;
+  const lower = String(name).trim().toLowerCase();
+  return classEntriesByLower.get(lower) || resolveWikilinkId(`character-options/classes/${name}`) || resolveWikilinkId(name);
+}
+
+// 1. Track explicit wikilink mentions (also records mutual directionality)
+for (const e of validEntities) {
+  for (const link of (e.wikilinks || [])) {
     const resolvedId = resolveWikilinkId(link);
-    if (resolvedId && resolvedId !== e.id && !resolvedId.endsWith('/index')) {
-      const edgeKey = [e.id, resolvedId].sort().join('---');
-      if (!edgeSet.has(edgeKey)) {
-        edgeSet.add(edgeKey);
-        graphEdges.push({ source: e.id, target: resolvedId, type: 'mention', weight: 1 });
+    if (resolvedId && validNodeIds.has(resolvedId) && resolvedId !== e.id) {
+      upsertEdge(e.id, resolvedId, 'mention', 1);
+    }
+  }
+}
+
+// 2. Layer authoritative structural edges (higher priority upgrades/overrides plain mentions)
+for (const e of validEntities) {
+  // Structural: Subclass -> Class
+  if (e.category === 'subclasses' && e.parentClass) {
+    const classId = resolveClassTarget(e.parentClass);
+    upsertEdge(e.id, classId, 'subclass_of', 4);
+  }
+
+  // Structural: Class-option -> Class
+  if (e.category === 'class-options' && e.parentClass) {
+    const classId = resolveClassTarget(e.parentClass);
+    upsertEdge(e.id, classId, 'option_of', 3);
+  }
+
+  // Structural: Fighting Style / Feat prerequisites matching a Class, Fighting Style, Feat, or Race
+  if ((e.category === 'fighting-styles' || e.category === 'feats') && e.prerequisite) {
+    const prereqLower = String(e.prerequisite).toLowerCase();
+    for (const [clsLower, clsId] of classEntriesByLower.entries()) {
+      if (new RegExp(`\\b${clsLower}\\b`, 'i').test(prereqLower)) {
+        upsertEdge(e.id, clsId, e.category === 'fighting-styles' ? 'option_of' : 'mention', 2);
       }
     }
-  }
-
-  // Structural relationship: Subclass -> Class
-  if (e.category === 'subclasses' && e.parentClass) {
-    const classId = `character-options/classes/${e.parentClass}`;
-    const edgeKey = [e.id, classId].sort().join('---');
-    if (!edgeSet.has(edgeKey)) {
-      edgeSet.add(edgeKey);
-      graphEdges.push({ source: e.id, target: classId, type: 'subclass_of', weight: 4 });
-    }
-  }
-
-  // Structural relationship: Class-option -> Class
-  if (e.category === 'class-options' && e.parentClass) {
-    const classId = `character-options/classes/${e.parentClass}`;
-    const edgeKey = [e.id, classId].sort().join('---');
-    if (!edgeSet.has(edgeKey)) {
-      edgeSet.add(edgeKey);
-      graphEdges.push({ source: e.id, target: classId, type: 'option_of', weight: 3 });
-    }
-  }
-
-  // Structural relationship: Spell -> Class spell list
-  if (e.category === 'spells' && Array.isArray(e.classes)) {
-    for (const cls of e.classes) {
-      const resolved = titleToId.get(cls.toLowerCase());
-      if (resolved && resolved !== e.id) {
-        const edgeKey = [e.id, resolved].sort().join('---');
-        if (!edgeSet.has(edgeKey)) {
-          edgeSet.add(edgeKey);
-          graphEdges.push({ source: e.id, target: resolved, type: 'spell_list', weight: 2.5 });
+    // Check exact prerequisite links to other fighting styles, feats, or races
+    for (const candidate of validEntities) {
+      if (candidate.id === e.id) continue;
+      if (candidate.category === 'fighting-styles' || candidate.category === 'feats' || candidate.category === 'races') {
+        const titleLower = candidate.title.toLowerCase();
+        if (titleLower.length >= 4 && new RegExp(`\\b${titleLower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(prereqLower)) {
+          upsertEdge(e.id, candidate.id, 'mention', 1.8);
         }
       }
     }
   }
 
-  // Structural relationship: Campaign entry -> Campaign hub
-  if (e.category === 'campaigns' && e.campaign_id && e.id !== `campaigns/${e.campaign_id}/index`) {
-    const hubId = `campaigns/${e.campaign_id}/index`;
-    const edgeKey = [e.id, hubId].sort().join('---');
-    if (!edgeSet.has(edgeKey)) {
-      edgeSet.add(edgeKey);
-      graphEdges.push({ source: e.id, target: hubId, type: 'campaign_content', weight: 3 });
+  // Structural: Spell -> Class & Subclass spell lists
+  if (e.category === 'spells') {
+    if (Array.isArray(e.classes)) {
+      for (const cls of e.classes) {
+        const resolved = resolveClassTarget(cls);
+        upsertEdge(e.id, resolved, 'spell_list', 2);
+      }
+    }
+    if (Array.isArray(e.subclass_spell_lists)) {
+      for (const subName of e.subclass_spell_lists) {
+        const key = String(subName).trim().toLowerCase();
+        const aliasTarget = SUBCLASS_SPELL_ALIAS_TARGETS[key];
+        const resolved = (aliasTarget && validNodeIds.has(aliasTarget)) ? aliasTarget : resolveWikilinkId(subName);
+        if (resolved && validNodeIds.has(resolved)) {
+          upsertEdge(e.id, resolved, 'spell_list', 2.2);
+        }
+      }
     }
   }
 
-  // Structural relationship: Deity -> Recommended subclasses & Divine Classes
+  // Structural: Item attunement class restrictions
+  if (e.category === 'items' && e.attunement && e.body) {
+    const attuneMatch = e.body.match(/requires attunement by (?:a |an )?([^)\n.]+)/i);
+    if (attuneMatch) {
+      const clause = attuneMatch[1].toLowerCase();
+      for (const [clsLower, clsId] of classEntriesByLower.entries()) {
+        if (new RegExp(`\\b${clsLower}\\b`, 'i').test(clause)) {
+          upsertEdge(e.id, clsId, 'mention', 1.5);
+        }
+      }
+    }
+  }
+
+  // Structural: Campaign-scoped lore, deities & campaign monsters -> Campaign Hub
+  if (e.campaign_id && !isCampaignHub(e)) {
+    const hubId = `campaigns/${e.campaign_id}/index`;
+    if (validNodeIds.has(hubId)) {
+      upsertEdge(e.id, hubId, 'campaign_content', 3);
+    }
+  }
+
+  // Structural: Deity -> Recommended subclasses & Divine Patronage
   if (e.category === 'pantheons') {
     if (Array.isArray(e.recommended_oaths)) {
       for (const oath of e.recommended_oaths) {
-        const resolved = titleToId.get(String(oath).toLowerCase());
-        if (resolved && resolved !== e.id) {
-          const edgeKey = [e.id, resolved].sort().join('---');
-          if (!edgeSet.has(edgeKey)) {
-            edgeSet.add(edgeKey);
-            graphEdges.push({ source: e.id, target: resolved, type: 'domain_synergy', weight: 2.5 });
-          }
+        const resolved = resolveWikilinkId(oath);
+        if (resolved && validNodeIds.has(resolved)) {
+          upsertEdge(e.id, resolved, 'domain_synergy', 2.5);
         }
       }
     }
-    const clericId = titleToId.get('cleric');
-    if (clericId) {
-      const edgeKey = [e.id, clericId].sort().join('---');
-      if (!edgeSet.has(edgeKey)) {
-        edgeSet.add(edgeKey);
-        graphEdges.push({ source: e.id, target: clericId, type: 'deity_of', weight: 2 });
-      }
+    if (!e.worship_forbidden) {
+      const clericId = classEntriesByLower.get('cleric');
+      upsertEdge(e.id, clericId, 'deity_of', 1.5);
     }
   }
+}
+
+const degreeCounter = new Map();
+for (const edge of edgeByPair.values()) {
+  const isMutual =
+    edge.type === 'mention' &&
+    directedMentions.has(`${edge.source}->${edge.target}`) &&
+    directedMentions.has(`${edge.target}->${edge.source}`);
+
+  graphEdges.push(isMutual ? { ...edge, bidirectional: true } : edge);
+  degreeCounter.set(edge.source, (degreeCounter.get(edge.source) || 0) + 1);
+  degreeCounter.set(edge.target, (degreeCounter.get(edge.target) || 0) + 1);
+}
+
+for (const node of graphNodes) {
+  node.linkCount = degreeCounter.get(node.id) || 0;
 }
 
 const outputData = {
