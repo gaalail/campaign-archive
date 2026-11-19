@@ -16,19 +16,21 @@ content_status: complete
 
 You have bonded yourself to a primordial force of the ancient waters. Deep Ones are thalassic entities whose unknown motives stretch back to an age before recorded history. Their servants wield the crushing, alien pressure of the ocean depths.
 
-## Patron Magic
+## Deep Magic
+
+_2nd-level Deep One Patron feature_
 
 Your Eldritch Blast can deal Cold damage instead of Force damage, equal to 1d10 + your Pact modifier.
 
 You also learn the spells in the following table at the Warlock levels shown. They count as Warlock spells for you, do not count against Spells Known, and cannot be replaced.
 
-| Warlock Level | Spells                                |
-| ------------- | ------------------------------------- |
-| 2nd           | Create Water, Torrent                 |
-| 3rd           | Aura of Frost, [[Gust of Wind]]       |
-| 5th           | Tidal Wave, [[Sleet Storm]]           |
-| 7th           | [[Control Water]], Eldritch Tentacles |
-| 9th           | [[Cone of Cold]], Maelstrom           |
+| Warlock Level | Spells                                                                  |
+| ------------- | ----------------------------------------------------------------------- |
+| 2nd           | [[spells/1st-level/Create or Destroy Water|Create Water]], Torrent      |
+| 3rd           | Aura of Frost, [[Gust of Wind]]                                         |
+| 5th           | [[Tidal Wave]], [[Sleet Storm]]                                         |
+| 7th           | [[Control Water]], Eldritch Tentacles                                   |
+| 9th           | [[Cone of Cold]], Maelstrom                                             |
 
 ## Grasp of the Deep
 

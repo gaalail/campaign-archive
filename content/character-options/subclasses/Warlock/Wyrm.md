@@ -8,63 +8,69 @@ title: Wyrm
 parent_class: Warlock
 parent_class_id: class.character-options.classes.warlock
 option_group: Otherworldly Patron
-summary: Otherworldly Patron that grants alternate Warlock Patron magic
+summary: "Otherworldly Patron of elder dragons, granting a Draconic Spark element, draconic wings, and elemental breath."
 source: Alternate Warlock
 source_type: third-party
-content_status: incomplete
-incomplete_reason: Mechanics were transcribed from the supplied Alternate Warlock source and require line-by-line verification before use.
+content_status: complete
 ---
 
-Great dragons are innately arcane beings with lifespans beyond mortal comprehension. Kind or terrible, benevolent or malicious, elder dragons make for dangerous Patrons whose motives exceed mortal understanding.
-
-## Patron Magic
-
-You can choose for Eldritch Blast to deal damage matching your Draconic Spark: Acid, Cold, Fire, Lightning, or Poison. This damage is equal to 1d10 + your Pact modifier.
-
-You also learn the spells in the following table at the Warlock levels shown. They count as Warlock spells for you, do not count against Spells Known, and cannot be replaced.
-
-| Warlock Level | Spells                                 |
-| ------------- | -------------------------------------- |
-| 2nd           | [[Command]], [[Burning Hands]]         |
-| 3rd           | Dragon's Breath, [[Scorching Ray]]     |
-| 5th           | [[Fear]], [[Fireball]]                 |
-| 7th           | [[Dominate Monster]], [[Wall of Fire]] |
-| 9th           | Conjure Dragon, [[Legend Lore]]        |
+Innately arcane beings with incredibly long lifespans, great dragons hoard not only wealth, but powerful servants and slaves. Kind and terrible, good and evil, benevolent and malicious, elder dragons of every disposition have motivations that are beyond the comprehension of mortal beings, and make for dire Patrons.
 
 ## Draconic Spark
 
 _2nd-level Wyrm Patron feature_
 
-Choose Acid, Cold, Fire, Lightning, or Poison for your Draconic Spark. You gain Resistance to that damage type; Warlock spells you cast that deal damage can deal your Spark damage instead; you gain Draconic language proficiency; and you learn [[Beguiling Influence]], which cannot be replaced. If you already know it, choose another qualifying Eldritch Invocation.
+Your Patron has bestowed upon you a portion of its elemental power, a Draconic Spark. Choose Acid, Cold, Fire, Lightning, or Poison for your Draconic Spark. Great dragons often bestow a Spark that matches their own draconic power. Once chosen, your Draconic Spark cannot be changed, and it grants you the benefits below:
+
+- You gain Resistance to the damage type of your Draconic Spark.
+- Whenever you cast a Warlock spell that deals damage, you can alter the spell, changing its damage type to match that of your Draconic Spark.
+- You learn to speak, read, and write Draconic.
+- You gain the [[character-options/class-options/eldritch-invocations/Beguiling Influence|Beguiling Influence]] Eldritch Invocation. It cannot be replaced, and if you already know it, you gain a different Eldritch Invocation of your choice.
 
 ## Wyrm Magic
 
 _2nd-level Wyrm Patron feature_
 
-You gain the listed Wyrm Patron spells. They count as Warlock spells for you, do not count against Spells Known, and cannot be replaced.
+Your Patron infuses your magic with draconic power. You can choose for your Eldritch Blast beams to deal Draconic Spark damage equal to `1d10` + your Pact modifier on hit.
+
+You also learn certain spells at the Warlock levels below. They are Warlock spells for you, but they don't count against your number of Spells Known, and they cannot be replaced:
+
+| Warlock Level | Spells |
+| :---: | :--- |
+| 2nd | [[spells/1st-level/Command|Command]], [[spells/1st-level/Burning Hands|Burning Hands]] |
+| 3rd | [[spells/2nd-level/Dragon's Breath|Dragon's Breath]], [[spells/2nd-level/Scorching Ray|Scorching Ray]] |
+| 5th | [[spells/3rd-level/Fear|Fear]], [[spells/3rd-level/Fireball|Fireball]] |
+| 7th | [[spells/8th-level/Dominate Monster|Dominate Creature]] *(LL)*, [[spells/4th-level/Wall of Fire|Wall of Fire]] |
+| 9th | Conjure Dragon *(LL)*, [[spells/5th-level/Legend Lore|Legend Lore]] |
 
 ## Draconic Blast
 
 _6th-level Wyrm Patron feature_
 
-When you use Eldritch Blast or cast a Warlock spell dealing Draconic Spark damage, you can produce it from your mouth without a Trinket or focus. Against Resistance, ignore it; treat Immunity as Resistance; and treat rolls of 1 or 2 on Spark damage dice as 3.
+Your Pact has reshaped your physiology to resemble that of a dragon. When you use Eldritch Blast or cast a Warlock spell that deals Draconic Spark damage, you can produce its effect from your mouth without the use of a Trinket or Focus.
+
+Any time you deal Draconic Spark damage, you can ignore Resistance to it, treat Immunity to it as Resistance, and finally treat a roll of 1 or 2 on a Draconic Spark damage die as a 3.
 
 ## Regal Presence
 
 _10th-level Wyrm Patron feature_
 
-You gain Immunity to the Charmed and Frightened conditions. You can cast Conjure Dragon without material components, and the conjured Dragon’s Essence matches your Draconic Spark.
+Your willpower rivals that of your draconic Patron. You gain Immunity to the Charmed and Frightened conditions.
+
+Moreover, you can cast the Conjure Dragon spell without providing the normal material component. When you do so, the conjured Dragon's Essence always matches that of your Draconic Spark type.
 
 ## Dragon Wings
 
 _14th-level Wyrm Patron feature_
 
-As a bonus action, manifest or retract Draconic Wings. While manifested, you have a flying speed equal to your walking speed. Wings destroy armor or clothing not designed to accommodate them.
+As a bonus action on your turn, you can manifest (or retract) a pair of Draconic Wings from your back. While manifested, you have a flying speed equal to your walking speed.
+
+When you manifest these wings, they destroy any armor or clothing that isn't designed to accommodate your wings.
 
 ## Ancient Blast
 
 _14th-level Wyrm Patron feature_
 
-As an action, exhale elemental power in a 25-foot cone or 50-foot line. Creatures make Dexterity saves, take 6d10 Draconic Spark damage on a failure or half on a success, and suffer the additional effects of Eldritch Blast only on a failure. You can use this once per long rest, or expend a Pact Magic spell slot afterward.
+You have unlocked the full potential of your Draconic Spark. As an action, you can exhale pure elemental power in either a 25-foot cone or 50-foot line, forcing all creatures in that area to make a Dexterity saving throw. On a failure, creatures take `6d10` Draconic Spark damage and suffer the non-damaging effects of your Eldritch Blast. On a success, they take half as much damage and suffer no additional effects.
 
----
+You can use this feature once per long rest at no cost. After that, you must expend a Pact Magic spell slot to use it again.

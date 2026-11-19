@@ -17,4 +17,4 @@ prerequisite: Eldritch Tome
 summary: "Your Tome contains wish"
 ---
 
-Your Tome contains wish. Cast it once per long rest without a spell slot. If used to duplicate a spell, its casting time must be one action or bonus action.
+Your Tome contains [[spells/9th-level/Wish|Wish]]. Cast it once per long rest without a spell slot. If used to duplicate a spell, its casting time must be one action or bonus action.

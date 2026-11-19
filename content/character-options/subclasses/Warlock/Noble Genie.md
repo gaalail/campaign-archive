@@ -50,18 +50,18 @@ You learn the spells in the following table at the Warlock levels shown. They co
 | 2nd           | [[Sleep]], your Genie spell          |
 | 3rd           | [[Enlarge-Reduce]], your Genie spell |
 | 5th           | [[Fly]], your Genie spell            |
-| 7th           | Polymorph, your Genie spell          |
+| 7th           | [[Polymorph]], your Genie spell      |
 | 9th           | [[Arcane Hand]], your Genie spell    |
 
 The first spell shown at each level is granted by every Noble Genie. Your choice of Dao, Djinn, Efreeti, or Marid determines the second spell.
 
-| Warlock Level | Dao Spells        | Djinn Spells             | Efreeti Spells     | Marid Spells     |
-| ------------- | ----------------- | ------------------------ | ------------------ | ---------------- |
-| 2nd           | [[Sanctuary]]     | Thunderwave              | [[Burning Hands]]  | Torrent          |
-| 3rd           | Spike Growth      | [[Gust of Wind]]         | [[Flaming Sphere]] | [[Misty Step]]   |
-| 5th           | Meld into Stone   | [[Gaseous Form]]         | Minute Meteors     | Tidal Wave       |
-| 7th           | Pillars of Earth  | [[Greater Invisibility]] | [[Fire Shield]]    | Watery Sphere    |
-| 9th           | [[Wall of Stone]] | [[Seeming]]              | [[Flame Strike]]   | [[Cone of Cold]] |
+| Warlock Level | Dao Spells          | Djinn Spells             | Efreeti Spells     | Marid Spells      |
+| ------------- | ------------------- | ------------------------ | ------------------ | ----------------- |
+| 2nd           | [[Sanctuary]]       | [[Thunderwave]]          | [[Burning Hands]]  | Torrent           |
+| 3rd           | [[Spike Growth]]    | [[Gust of Wind]]         | [[Flaming Sphere]] | [[Misty Step]]    |
+| 5th           | [[Meld into Stone]] | [[Gaseous Form]]         | Minute Meteors     | [[Tidal Wave]]    |
+| 7th           | [[Pillars of Earth]]| [[Greater Invisibility]] | [[Fire Shield]]    | [[Watery Sphere]] |
+| 9th           | [[Wall of Stone]]   | [[Seeming]]              | [[Flame Strike]]   | [[Cone of Cold]]  |
 
 ## Ethereal Nature
 

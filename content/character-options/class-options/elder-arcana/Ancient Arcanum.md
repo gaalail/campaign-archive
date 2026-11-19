@@ -8,14 +8,21 @@ adaptation: curated
 license_status: reference-only
 source: Alternate Warlock
 source_type: third-party
-content_status: incomplete
-incomplete_reason: The submitted excerpt lists this option but omits its rules text. Awaiting the complete source entry.
+content_status: complete
 title: Ancient Arcanum
 option_group: Elder Arcanum
 parent_class: Warlock
 min_level: 17
 prerequisite: None
-summary: "The source lists eligible 9th-level spells but their option text is not included in the supplied excerpt"
+summary: "Choose one 9th-level Arcanum spell; once per long rest cast it at 9th level without a spell slot."
 ---
 
-The source lists eligible 9th-level spells but their option text is not included in the supplied excerpt.
+Choose one spell from the list below. It counts as a Warlock spell for you, and once per long rest, you can cast this **Ancient Arcanum** spell at 9th level without expending a spell slot:
+
+- [[spells/9th-level/Foresight|Foresight]]
+- [[spells/9th-level/Gate|Gate]]
+- [[spells/9th-level/Imprisonment|Imprisonment]]
+- [[spells/9th-level/Power Word Kill|Power Word Kill]]
+- Psychic Scream
+- [[spells/9th-level/True Polymorph|True Polymorph]] *(LL)*
+- [[spells/9th-level/Weird|Weird]] *(LL)*

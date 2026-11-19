@@ -6,16 +6,19 @@ adaptation: curated
 license_status: reference-only
 title: Fiend
 parent_class: Warlock
+parent_class_id: class.character-options.classes.warlock
+option_group: Otherworldly Patron
 summary: Otherworldly Patron that channels infernal flame and vitality from death
 source: Alternate Warlock
 source_type: third-party
+content_status: complete
 ---
-
-_2nd-level Otherworldly Patron feature_
 
 You have entered a Pact with a powerful Fiend from the lower planes. Whether you struck a bargain, were coerced, or tricked your Patron, you are now linked to a being of absolute evil. Only the most powerful Fiends can serve as Patrons; archdevils, demon lords, and especially mighty servants of extraplanar evil are common.
 
 ## Fiendish Magic
+
+_2nd-level Fiend Patron feature_
 
 Your Patron infuses your magic with infernal flame. You can choose for Eldritch Blast to deal Fire damage equal to 1d10 + your Pact modifier on a hit, ignoring Resistance to Fire damage.
 

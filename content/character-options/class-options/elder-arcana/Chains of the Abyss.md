@@ -17,4 +17,4 @@ prerequisite: Eldritch Familiar
 summary: "You learn hold monster"
 ---
 
-You learn hold monster. Cast it without a spell slot or material components against Aberrations, Celestials, Elementals, Fey, or Fiends. A creature that succeeds is immune until dawn unless you expend a Pact Magic spell slot.
+You learn [[spells/5th-level/Hold Monster|Hold Monster]]. Cast it without a spell slot or material components against Aberrations, Celestials, Elementals, Fey, or Fiends. A creature that succeeds is immune until dawn unless you expend a Pact Magic spell slot.
