@@ -166,8 +166,20 @@ export function getEntriesByCategory(category: string, subcategory?: string | nu
 export function getSubclassesForClass(className: string): ArchiveEntry[] {
   return archiveDb.entries.filter(e => 
     e.category === 'subclasses' && 
+    !e.id.endsWith('/index') &&
     (e.parentClass?.toLowerCase() === className.toLowerCase() ||
      e.path.toLowerCase().includes(`/subclasses/${className.toLowerCase()}/`))
+  );
+}
+
+export function getSubclassIndexForClass(className: string): ArchiveEntry | undefined {
+  const normalized = className.toLowerCase();
+  return archiveDb.entries.find(e =>
+    e.category === 'subclasses' &&
+    e.id.endsWith('/index') &&
+    e.id !== 'character-options/subclasses/index' &&
+    (e.parentClass?.toLowerCase() === normalized ||
+     e.path.toLowerCase().includes(`/subclasses/${normalized}/index.md`))
   );
 }
 

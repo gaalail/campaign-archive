@@ -1,10 +1,16 @@
 ---
-title: Warlock Subclasses
+title: Otherworldly Patrons
+aliases:
+  - Warlock Subclasses
+  - Warlock Otherworldly Patrons
+  - character-options/subclasses/Warlock
 ---
 
-# Warlock Subclasses
+# Warlock Otherworldly Patrons
 
-**24 subclasses available** | Choose at 2nd level | Otherworldly Patrons
+**24 patrons (subclasses) available** | Choose at 2nd level (see [[character-options/classes/Warlock#Otherworldly Patron|Otherworldly Patron]] & [[character-options/classes/Warlock#Seat at the Table|Seat at the Table]])
+
+A Warlock's subclasses are its **Otherworldly Patrons**. Each Patron grants **Patron Magic** spells and subclass features at **2nd, 6th, 10th, and 14th levels**.
 
 ---
 

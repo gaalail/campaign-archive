@@ -293,7 +293,7 @@ const DeityInspector: React.FC<DeityInspectorProps> = ({
             className="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-stone-950 text-xs font-serif font-bold transition-colors flex items-center gap-2 whitespace-nowrap shrink-0 cursor-pointer focus-visible:outline-2 focus-visible:outline-amber-300"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Adopt Patron</span>
+            <span>Adopt Patron Deity</span>
           </button>
         )}
       </div>

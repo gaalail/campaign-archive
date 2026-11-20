@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import {
   archiveDb,
   getClassOptionPoolsForClass,
+  getSubclassIndexForClass,
   getAllMonsters,
   getAllFamiliarsAndCompanions
 } from '../utils/archiveUtils';
@@ -427,10 +428,28 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       <span className="text-[10px] text-slate-500 font-mono">{cls.hit_die}</span>
                     </button>
                     {(() => {
+                      const subclassIdx = getSubclassIndexForClass(cls.title);
                       const pools = getClassOptionPoolsForClass(cls.title);
-                      if (pools.length === 0) return null;
+                      if (!subclassIdx && pools.length === 0) return null;
+                      const isWarlock = cls.title.toLowerCase() === 'warlock';
                       return (
                         <div className="ml-3 mb-1 border-l border-slate-800 pl-2 space-y-0.5">
+                          {subclassIdx && (
+                            <button
+                              key={subclassIdx.id}
+                              onClick={() => {
+                                onNavigateToEntry(subclassIdx.id);
+                                onClose();
+                              }}
+                              className={`w-full text-left px-2 py-1 rounded-lg transition-colors truncate text-[11px] ${
+                                currentView === 'reader' && currentEntryId === subclassIdx.id
+                                  ? 'text-amber-300 bg-amber-500/10 font-semibold'
+                                  : 'text-slate-500 hover:text-slate-200 hover:bg-slate-800/40'
+                              }`}
+                            >
+                              {isWarlock ? 'Otherworldly Patrons' : 'Subclasses'}
+                            </button>
+                          )}
                           {pools.map(pool => (
                             <button
                               key={pool.id}

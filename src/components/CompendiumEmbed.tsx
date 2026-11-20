@@ -10,6 +10,28 @@ interface CompendiumEmbedProps {
   onNavigate: (id: string) => void;
 }
 
+const POOL_ORDER: Record<string, number> = {
+  'eldritch-invocations': 1,
+  'pact-foci': 2,
+  familiars: 3,
+  'elder-arcana': 4
+};
+
+const SUBTYPE_LABELS: Record<string, string> = {
+  'eldritch-invocations': 'Eldritch Invocations',
+  'pact-foci': 'Pact Foci',
+  familiars: 'Eldritch Familiars',
+  'elder-arcana': 'Elder Arcana'
+};
+
+function formatSubtypeLabel(slug: string): string {
+  if (SUBTYPE_LABELS[slug]) return SUBTYPE_LABELS[slug];
+  return slug
+    .split('-')
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ');
+}
+
 export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, currentEntryId, onNavigate }) => {
   const [search, setSearch] = useState('');
   const [selectedSubtype, setSelectedSubtype] = useState<string>('all');
@@ -47,7 +69,9 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
       filtered = archiveDb.entries.filter(e => e.category === 'classes' && !e.id.endsWith('/index'));
     } else if (target === 'subclasses-of.base') {
       isSubclassesOf = true;
-      title = currentClass ? `${currentClass} Subclasses & Archetypes` : 'Subclasses';
+      title = currentClass
+        ? (currentClass.toLowerCase() === 'warlock' ? 'Warlock Otherworldly Patrons (Subclasses)' : `${currentClass} Subclasses & Archetypes`)
+        : 'Subclasses';
       filtered = archiveDb.entries.filter(e => 
         e.category === 'subclasses' && 
         !e.id.endsWith('/index') &&
@@ -171,7 +195,21 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
       if (e.subcategory) set.add(e.subcategory);
       if (e.rarity) set.add(e.rarity);
     }
-    return Array.from(set).sort();
+    return Array.from(set).sort((a, b) => {
+      const orderA = POOL_ORDER[a] ?? 99;
+      const orderB = POOL_ORDER[b] ?? 99;
+      if (orderA !== orderB) return orderA - orderB;
+      return a.localeCompare(b);
+    });
+  }, [entries]);
+
+  const subtypeCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const e of entries) {
+      const key = e.subcategory || e.rarity;
+      if (key) counts.set(key, (counts.get(key) || 0) + 1);
+    }
+    return counts;
   }, [entries]);
 
   // Apply search, filter, and sorting
@@ -256,7 +294,7 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
             </select>
           )}
 
-          {subcategories.length > 1 && (
+          {subcategories.length > 1 && !isClassOptionsOf && (
             <select
               value={selectedSubtype}
               onChange={(e) => setSelectedSubtype(e.target.value)}
@@ -265,7 +303,7 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
             >
               <option value="all">All Types</option>
               {subcategories.map(s => (
-                <option key={s} value={s}>{s}</option>
+                <option key={s} value={s}>{formatSubtypeLabel(s)}</option>
               ))}
             </select>
           )}
@@ -282,6 +320,37 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
           </div>
         </div>
       </div>
+
+      {/* Segmented Pool Filter Tabs for Class Options Embed */}
+      {isClassOptionsOf && subcategories.length > 1 && (
+        <div className="flex flex-wrap items-center gap-1.5 border-b border-slate-800/80 pb-3">
+          <button
+            type="button"
+            onClick={() => setSelectedSubtype('all')}
+            className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition-colors cursor-pointer whitespace-nowrap shrink-0 ${
+              selectedSubtype === 'all'
+                ? 'bg-amber-500/20 border-amber-500/60 text-amber-200'
+                : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+            }`}
+          >
+            All (<span className="font-mono tabular-nums">{entries.length}</span>)
+          </button>
+          {subcategories.map(s => (
+            <button
+              key={s}
+              type="button"
+              onClick={() => setSelectedSubtype(s)}
+              className={`px-2.5 py-1 rounded-lg text-xs font-medium border transition-colors cursor-pointer whitespace-nowrap shrink-0 ${
+                selectedSubtype === s
+                  ? 'bg-amber-500/20 border-amber-500/60 text-amber-200'
+                  : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+              }`}
+            >
+              {formatSubtypeLabel(s)} (<span className="font-mono tabular-nums">{subtypeCounts.get(s) || 0}</span>)
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Grid or Table layout depending on quantity */}
       {displayedEntries.length === 0 ? (
@@ -308,7 +377,9 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
                         </h4>
                         <div className="text-[11px] text-slate-400 flex items-center gap-1.5 mt-0.5">
                           {entry.parentClass && (
-                            <span className="text-amber-400 font-medium">{entry.parentClass} Archetype</span>
+                            <span className="text-amber-400 font-medium">
+                              {entry.parentClass.toLowerCase() === 'warlock' ? 'Otherworldly Patron' : `${entry.parentClass} Archetype`}
+                            </span>
                           )}
                           {entry.parentClass && entry.source && <span aria-hidden="true">·</span>}
                           {entry.source && <span>{entry.source}</span>}
@@ -359,7 +430,7 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
                       onClick={() => onNavigate(entry.id)}
                       className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 group/btn cursor-pointer"
                     >
-                      <span>View Archetype</span>
+                      <span>{entry.parentClass?.toLowerCase() === 'warlock' ? 'View Patron' : 'View Archetype'}</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" />
                     </button>
                   </div>
@@ -410,8 +481,8 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
                 </div>
 
                 <div className="flex items-center justify-between text-[10px] text-slate-500 pt-1.5 border-t border-slate-800/60 w-full gap-2">
-                  <span className="capitalize truncate">
-                    {entry.subcategory?.replace(/-/g, ' ') || entry.category}
+                  <span className="truncate">
+                    {entry.subcategory ? formatSubtypeLabel(entry.subcategory) : entry.category}
                   </span>
                   <span className="text-amber-400/80 group-hover:text-amber-300 flex items-center gap-0.5 shrink-0 whitespace-nowrap">
                     View <ChevronRight className="w-3 h-3" />

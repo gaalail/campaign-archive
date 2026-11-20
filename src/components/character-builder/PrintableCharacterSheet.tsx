@@ -539,7 +539,7 @@ export const PrintableCharacterSheet: React.FC<PrintableCharacterSheetProps> = (
                 )}
                 {selectedDeity && (
                   <div className="pt-1 border-t border-gray-300">
-                    <strong>Patron:</strong> {selectedDeity.title} ({selectedDeity.alignment || 'Unaligned'})
+                    <strong>Patron Deity:</strong> {selectedDeity.title} ({selectedDeity.alignment || 'Unaligned'})
                     {selectedDeity.domains && selectedDeity.domains.length > 0 && (
                       <span> · Domains: {selectedDeity.domains.join(', ')}</span>
                     )}

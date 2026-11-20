@@ -1105,10 +1105,12 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                 <Sun className="w-4 h-4 text-amber-400 shrink-0" />
                 <div>
                   <h3 className="font-serif text-sm font-bold text-stone-200">
-                    Campaign Setting & Patron Faith (Optional)
+                    Campaign Setting &amp; Patron Deity (Optional)
                   </h3>
                   <p className="text-[11px] text-stone-400">
-                    Filter deities by campaign world—recommended for Clerics, Paladins, and Paragons.
+                    {selectedClass?.title.toLowerCase() === 'warlock'
+                      ? 'Optional divine allegiance by realm. Your mechanical Warlock Otherworldly Patron (subclass) is selected in Step 3.'
+                      : 'Filter deities by campaign world—recommended for Clerics, Paladins, and Paragons.'}
                   </p>
                 </div>
               </div>
@@ -1139,13 +1141,13 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
               </div>
 
               <div className="space-y-1">
-                <label className="text-[11px] font-serif text-stone-400 block">Patron Deity / Power</label>
+                <label className="text-[11px] font-serif text-stone-400 block">Patron Deity / Faith Power</label>
                 <select
                   value={state.deityId || ''}
                   onChange={e => dispatch({ type: 'SELECT_DEITY', payload: e.target.value || null })}
                   className="w-full bg-stone-900 border border-stone-800 rounded-xl px-3 py-2 text-xs text-stone-200 focus:border-amber-500 focus:outline-none"
                 >
-                  <option value="">No Patron Chosen</option>
+                  <option value="">No Deity Chosen</option>
                   {(() => {
                     const groups = new Map<string, ArchiveEntry[]>();
                     for (const d of availableDeities) {
@@ -1251,22 +1253,28 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                   : 'bg-stone-800 text-stone-500 cursor-not-allowed'
               }`}
             >
-              <span>Continue to Archetype</span>
+              <span>{selectedClass?.title.toLowerCase() === 'warlock' ? 'Continue to Patron' : 'Continue to Archetype'}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>
       )}
 
-      {/* Step 3: Archetype & Fighting Style */}
+      {/* Step 3: Archetype / Otherworldly Patron & Fighting Style */}
       {state.step === 3 && (
         <div className="bg-stone-900 border border-stone-800 rounded-2xl p-5 md:p-6 space-y-6">
           <div className="space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
-                <h2 className="font-serif text-xl font-bold text-stone-100">Step 3: Archetype & Fighting Style</h2>
+                <h2 className="font-serif text-xl font-bold text-stone-100">
+                  {selectedClass?.title.toLowerCase() === 'warlock'
+                    ? 'Step 3: Otherworldly Patron & Fighting Style'
+                    : 'Step 3: Archetype & Fighting Style'}
+                </h2>
                 <p className="text-xs text-stone-400">
-                  Specializations, Sacred Oaths, and Paths for {selectedClass?.title || 'your class'}.
+                  {selectedClass?.title.toLowerCase() === 'warlock'
+                    ? 'Otherworldly Patrons (Warlock subclasses), chosen at 2nd level.'
+                    : `Specializations, Sacred Oaths, and Paths for ${selectedClass?.title || 'your class'}.`}
                 </p>
               </div>
 
@@ -1275,7 +1283,7 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                   <Search className="w-3.5 h-3.5 text-stone-500 absolute left-3 top-1/2 -translate-y-1/2" />
                   <input
                     type="text"
-                    placeholder="Filter archetypes..."
+                    placeholder={selectedClass?.title.toLowerCase() === 'warlock' ? 'Filter patrons...' : 'Filter archetypes...'}
                     value={subclassSearch}
                     onChange={(e) => setSubclassSearch(e.target.value)}
                     className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-stone-950 border border-stone-800 text-xs text-stone-200 focus:outline-none focus:border-amber-500"
@@ -1327,7 +1335,11 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                             isSelected ? 'text-amber-400' : 'text-stone-300 hover:text-white'
                           }`}
                         >
-                          {isSelected ? 'Selected' : 'Choose Archetype'}
+                          {isSelected
+                            ? 'Selected'
+                            : selectedClass?.title.toLowerCase() === 'warlock'
+                            ? 'Choose Patron'
+                            : 'Choose Archetype'}
                         </button>
 
                         <button
@@ -1336,7 +1348,11 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                           title="Read tenets, archetype spells, and mechanics in rulebook"
                         >
                           <BookOpen className="w-3.5 h-3.5" />
-                          <span>Inspect Tenets & Rules</span>
+                          <span>
+                            {selectedClass?.title.toLowerCase() === 'warlock'
+                              ? 'Inspect Patron & Rules'
+                              : 'Inspect Tenets & Rules'}
+                          </span>
                         </button>
                       </div>
                     </div>

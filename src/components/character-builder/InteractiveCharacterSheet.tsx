@@ -1470,14 +1470,16 @@ export const InteractiveCharacterSheet: React.FC<InteractiveCharacterSheetProps>
               {selectedSubclass && (
                 <div className="p-3 rounded-xl bg-stone-950 border border-stone-800 flex items-start justify-between gap-2">
                   <div className="min-w-0">
-                    <span className="text-[10px] uppercase font-bold text-stone-500 block">Archetype</span>
+                    <span className="text-[10px] uppercase font-bold text-stone-500 block">
+                      {selectedClass?.title.toLowerCase() === 'warlock' ? 'Otherworldly Patron' : 'Archetype'}
+                    </span>
                     <span className="font-serif font-bold text-stone-200 text-xs truncate block">{selectedSubclass.title}</span>
                     <p className="text-[11px] text-stone-400 line-clamp-1 mt-0.5">{selectedSubclass.summary}</p>
                   </div>
                   <button
                     onClick={() => onInspectEntry(selectedSubclass)}
                     className="p-1.5 rounded-lg bg-stone-900 hover:bg-stone-800 text-amber-400 hover:text-amber-200 transition-colors shrink-0 cursor-pointer print:hidden"
-                    title="Read archetype tenets & features"
+                    title="Read subclass tenets & features"
                   >
                     <BookOpen className="w-3.5 h-3.5" />
                   </button>

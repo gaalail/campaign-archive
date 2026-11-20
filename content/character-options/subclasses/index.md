@@ -76,8 +76,8 @@ Click your class to see available subclasses:
 **Timing:**
 
 - **Most classes:** 3rd level
-- **Clerics & Sorcerers & Warlocks & Primals:** 1st level
-- **Druids & Wizards:** 2nd level
+- **Clerics, Sorcerers & Primals:** 1st level
+- **Druids, Warlocks & Wizards:** 2nd level
 - **Barbarians & Fighters:** 3rd level
 - **Thanatomancer:** 3rd level
 

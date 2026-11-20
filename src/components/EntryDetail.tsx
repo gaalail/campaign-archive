@@ -4,6 +4,7 @@ import {
   getSourceBadgeInfo,
   getRarityColor,
   getSubclassesForClass,
+  getSubclassIndexForClass,
   getClassOptionsForClass,
   getClassOptionPoolsForClass,
   getSpellsForClass,
@@ -20,6 +21,7 @@ import { SpellCatalogue } from './SpellCatalogue';
 import { MonsterStatblock } from './MonsterStatblock';
 import { BestiaryCatalogue } from './BestiaryCatalogue';
 import { PantheonCatalogue } from './PantheonCatalogue';
+import { WarlockOverview } from './WarlockOverview';
 import {
   ArrowLeft,
   BookOpen,
@@ -71,16 +73,22 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const [activeTab, setActiveTab] = useState<'content' | 'spells' | 'subclasses' | 'options' | 'backlinks'>('content');
   const [expandedSubclasses, setExpandedSubclasses] = useState<Set<string>>(new Set());
   const [subclassSearch, setSubclassSearch] = useState('');
+  const [patronSourceFilter, setPatronSourceFilter] = useState<string>('all');
   const [optionSort, setOptionSort] = useState<'level' | 'alpha'>('level');
   const [optionMaxLevel, setOptionMaxLevel] = useState<string>('all');
+  const [optionPoolFilter, setOptionPoolFilter] = useState<string>('all');
+  const [optionSearch, setOptionSearch] = useState<string>('');
 
   // Whenever entry changes, reset activeTab to 'content' and handle anchor jump
   useEffect(() => {
     setActiveTab('content');
     setExpandedSubclasses(new Set());
     setSubclassSearch('');
+    setPatronSourceFilter('all');
     setOptionSort('level');
     setOptionMaxLevel('all');
+    setOptionPoolFilter('all');
+    setOptionSearch('');
 
     // Check for anchor hash scroll (only match a secondary #anchor fragment)
     const hash = window.location.hash;
@@ -135,6 +143,9 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
 
   // Class & Subclass related compendiums
   const subclasses = useMemo(() => isClass ? getSubclassesForClass(entry.title || entry.id) : [], [isClass, entry.title, entry.id]);
+  const subclassIndex = useMemo(() => isClass ? getSubclassIndexForClass(entry.title || entry.id) : undefined, [isClass, entry.title, entry.id]);
+  const isWarlockClass = isClass && entry.title.toLowerCase() === 'warlock';
+  const isWarlockPatron = isSubclass && (entry.parentClass || '').toLowerCase() === 'warlock';
   const classOptions = useMemo(() => isClass ? getClassOptionsForClass(entry.title || entry.id) : [], [isClass, entry.title, entry.id]);
   const classSpells = useMemo(() => (isClass || isSubclass) ? getSpellsForClass(entry.title || entry.id) : [], [isClass, isSubclass, entry.title, entry.id]);
 
@@ -438,7 +449,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                   className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
                 >
                   <CrossedSwords className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Adopt in Builder</span>
+                  <span>{isWarlockPatron ? 'Adopt Patron in Builder' : 'Adopt in Builder'}</span>
                 </button>
               )}
 
@@ -482,7 +493,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                   className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
                 >
                   <Sun className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Adopt Patron in Builder</span>
+                  <span>Adopt Patron Deity in Builder</span>
                 </button>
               )}
 
@@ -725,8 +736,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             </div>
           )}
 
-          {/* Quick Stat Chips (omitted for home hub) */}
-          {!isHome && Boolean(entry.hit_die || (entry.saving_throws && entry.saving_throws.length > 0) || rarityBadge || entry.attunement || entry.campaign_id) && (
+          {/* Quick Stat Chips (omitted for home hub and Warlock which renders dedicated Pact Architecture) */}
+          {!isHome && !isWarlockClass && Boolean(entry.hit_die || (entry.saving_throws && entry.saving_throws.length > 0) || rarityBadge || entry.attunement || entry.campaign_id) && (
             <div className="flex flex-wrap items-center gap-2.5 mt-4 pt-3 border-t border-slate-800/60">
               {entry.hit_die && (
                 <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-950 border border-slate-800 text-xs text-slate-300 font-mono">
@@ -1096,12 +1107,30 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           );
         })()}
 
+        {/* Dedicated Warlock Pact Architecture Hub */}
+        {isWarlockClass && (
+          <WarlockOverview
+            classOptions={classOptions}
+            subclasses={subclasses}
+            classSpells={classSpells}
+            subclassIndex={subclassIndex}
+            effectiveTab={effectiveTab}
+            onSelectTab={(tab, poolSubcategory) => {
+              setActiveTab(tab);
+              if (tab === 'options' && poolSubcategory) {
+                setOptionPoolFilter(poolSubcategory);
+              }
+            }}
+            onNavigate={onNavigate}
+          />
+        )}
+
         {/* Navigation Tabs for Classes and Subclasses with Spells */}
         {(isClass || (isSubclass && classSpells.length > 0)) && (
           <div className="flex flex-wrap items-center gap-2 border-b border-slate-800 pb-2">
             <button
               onClick={() => setActiveTab('content')}
-              className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all ${
+              className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all whitespace-nowrap shrink-0 ${
                 effectiveTab === 'content'
                   ? 'bg-amber-500 text-slate-950 shadow'
                   : 'text-slate-400 hover:text-slate-200'
@@ -1113,42 +1142,42 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             {classSpells.length > 0 && (
               <button
                 onClick={() => setActiveTab('spells')}
-                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 ${
+                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                   effectiveTab === 'spells'
                     ? 'bg-amber-500 text-slate-950 shadow'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
                 <Sparkles className="w-3.5 h-3.5 text-violet-400" />
-                <span>Spells ({classSpells.length})</span>
+                <span>Spells (<span className="font-mono tabular-nums">{classSpells.length}</span>)</span>
               </button>
             )}
 
             {subclasses.length > 0 && (
               <button
                 onClick={() => setActiveTab('subclasses')}
-                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 ${
+                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                   effectiveTab === 'subclasses'
                     ? 'bg-amber-500 text-slate-950 shadow'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
                 <Layers className="w-3.5 h-3.5" />
-                <span>Subclasses ({subclasses.length})</span>
+                <span>{isWarlockClass ? `Otherworldly Patrons (${subclasses.length})` : `Subclasses (${subclasses.length})`}</span>
               </button>
             )}
 
             {classOptions.length > 0 && (
               <button
                 onClick={() => setActiveTab('options')}
-                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 ${
+                className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 ${
                   effectiveTab === 'options'
                     ? 'bg-amber-500 text-slate-950 shadow'
                     : 'text-slate-400 hover:text-slate-200'
                 }`}
               >
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>Options & Exploits ({classOptions.length})</span>
+                <span>{isWarlockClass ? `Pact Options (${classOptions.length})` : `Options & Exploits (${classOptions.length})`}</span>
               </button>
             )}
 
@@ -1245,52 +1274,68 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             )}
 
             {/* Rich Codex Cross-References / Where is this referenced? */}
-            {entry.incomingLinks && entry.incomingLinks.length > 0 && (
-              <div className="mt-8 pt-6 border-t-2 border-stone-800/80 space-y-3 font-serif">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-amber-400">
-                    <Network className="w-4 h-4 text-amber-500" />
-                    <span>Codex Cross-References • Referenced By ({entry.incomingLinks.length})</span>
-                  </div>
-                  <span className="text-[10px] text-stone-500 font-sans">Inbound graph edges</span>
-                </div>
+            {entry.incomingLinks && entry.incomingLinks.length > 0 && (() => {
+              const MAX_INLINE_BACKLINKS = 18;
+              const isCapped = entry.incomingLinks.length > 24;
+              const displayedLinks = isCapped ? entry.incomingLinks.slice(0, MAX_INLINE_BACKLINKS) : entry.incomingLinks;
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
-                  {entry.incomingLinks.map(linkId => {
-                    const linked = getEntryById(linkId);
-                    const title = linked?.title || linkId.split('/').pop()?.replace(/-/g, ' ');
-                    const cat = linked?.category || 'entry';
-                    const isStrahdLink = linkId.includes('strahd') || linked?.campaign_id === 'curse-of-strahd';
-
-                    return (
+              return (
+                <div className="mt-8 pt-6 border-t-2 border-stone-800/80 space-y-3 font-serif">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <div className="flex items-center gap-2 text-xs uppercase tracking-widest font-bold text-amber-400">
+                      <Network className="w-4 h-4 text-amber-500" />
+                      <span>Codex Cross-References · Referenced By (<span className="font-mono tabular-nums">{entry.incomingLinks.length}</span>)</span>
+                    </div>
+                    {isCapped ? (
                       <button
-                        key={linkId}
-                        onClick={() => onNavigate(linkId)}
-                        className={`p-3 rounded-xl border text-left transition-all flex items-center justify-between group cursor-pointer ${
-                          isStrahdLink
-                            ? 'bg-stone-950/80 border-rose-950 hover:border-rose-700/60 hover:bg-rose-950/30'
-                            : 'bg-stone-900/60 border-stone-800 hover:border-amber-600/60 hover:bg-stone-900'
-                        }`}
+                        type="button"
+                        onClick={() => setActiveTab('backlinks')}
+                        className="text-xs font-sans font-medium text-amber-400 hover:text-amber-300 flex items-center gap-1 cursor-pointer whitespace-nowrap shrink-0"
                       >
-                        <div className="truncate pr-2">
-                          <div className="font-semibold text-xs text-stone-200 group-hover:text-amber-300 transition-colors truncate">
-                            {title}
-                          </div>
-                          <div className="text-[10px] text-stone-400 capitalize flex items-center gap-1.5 mt-0.5 font-sans">
-                            <span className="w-1.5 h-1.5 rounded-full bg-amber-500/70"></span>
-                            <span>{cat}</span>
-                            {linked?.parentClass && (
-                              <span className="text-amber-400/80 font-serif">({linked.parentClass})</span>
-                            )}
-                          </div>
-                        </div>
-                        <ChevronRight className="w-3.5 h-3.5 text-stone-500 group-hover:text-amber-300 transition-transform group-hover:translate-x-0.5 shrink-0" />
+                        <span>View all {entry.incomingLinks.length} references in Backlinks tab</span>
+                        <ChevronRight className="w-3.5 h-3.5" />
                       </button>
-                    );
-                  })}
+                    ) : (
+                      <span className="text-[10px] text-stone-500 font-sans">Inbound graph edges</span>
+                    )}
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                    {displayedLinks.map(linkId => {
+                      const linked = getEntryById(linkId);
+                      const title = linked?.title || linkId.split('/').pop()?.replace(/-/g, ' ');
+                      const cat = linked?.category || 'entry';
+                      const isStrahdLink = linkId.includes('strahd') || linked?.campaign_id === 'curse-of-strahd';
+
+                      return (
+                        <button
+                          key={linkId}
+                          onClick={() => onNavigate(linkId)}
+                          className={`p-3 rounded-xl border text-left transition-all flex items-center justify-between group cursor-pointer ${
+                            isStrahdLink
+                              ? 'bg-stone-950/80 border-rose-950 hover:border-rose-700/60 hover:bg-rose-950/30'
+                              : 'bg-stone-900/60 border-stone-800 hover:border-amber-600/60 hover:bg-stone-900'
+                          }`}
+                        >
+                          <div className="truncate pr-2">
+                            <div className="font-semibold text-xs text-stone-200 group-hover:text-amber-300 transition-colors truncate">
+                              {title}
+                            </div>
+                            <div className="text-[10px] text-stone-400 capitalize flex items-center gap-1.5 mt-0.5 font-sans">
+                              <span>{cat}</span>
+                              {linked?.parentClass && (
+                                <span className="text-amber-400/80 font-serif">· {linked.parentClass}</span>
+                              )}
+                            </div>
+                          </div>
+                          <ChevronRight className="w-3.5 h-3.5 text-stone-500 group-hover:text-amber-300 transition-transform group-hover:translate-x-0.5 shrink-0" />
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })()}
           </div>
         )}
 
@@ -1306,47 +1351,111 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
         )}
 
         {/* Tab 2: Subclasses Grid with Flavor Text and Game Mechanics */}
-        {effectiveTab === 'subclasses' && (
-          <div className="space-y-5">
-            {/* Header & Subclass Filter */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
-              <div>
-                <h3 className="font-fantasy text-lg font-bold text-slate-100 flex items-center gap-2">
-                  <Layers className="w-4 h-4 text-amber-400" />
-                  <span>{entry.title} Archetypes & Subclasses</span>
-                  <span className="text-xs font-mono font-normal text-slate-400">({subclasses.length})</span>
-                </h3>
-                <p className="text-xs text-slate-400 mt-0.5">
-                  Complete narrative flavor text, core game mechanics, and feature progressions.
-                </p>
+        {effectiveTab === 'subclasses' && (() => {
+          const sourceCounts = new Map<string, number>();
+          for (const sub of subclasses) {
+            const label = getSourceBadgeInfo(sub.source_type, sub.source).label;
+            sourceCounts.set(label, (sourceCounts.get(label) || 0) + 1);
+          }
+          const distinctSources = Array.from(sourceCounts.entries()).sort((a, b) => b[1] - a[1]);
+
+          const filteredSubclasses = subclasses.filter(sub => {
+            if (patronSourceFilter !== 'all') {
+              const label = getSourceBadgeInfo(sub.source_type, sub.source).label;
+              if (label !== patronSourceFilter) return false;
+            }
+            if (!subclassSearch.trim()) return true;
+            const q = subclassSearch.toLowerCase().trim();
+            return (
+              sub.title.toLowerCase().includes(q) ||
+              (sub.flavor && sub.flavor.toLowerCase().includes(q)) ||
+              (sub.summary && sub.summary.toLowerCase().includes(q)) ||
+              (sub.features &&
+                sub.features.some(
+                  f => f.name.toLowerCase().includes(q) || f.description.toLowerCase().includes(q)
+                ))
+            );
+          });
+
+          return (
+            <div className="space-y-5">
+              {/* Header & Subclass Filter */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
+                <div>
+                  <h3 className="font-fantasy text-lg font-bold text-slate-100 flex items-center gap-2">
+                    <Layers className="w-4 h-4 text-amber-400" />
+                    <span>{isWarlockClass ? 'Warlock Otherworldly Patrons (Subclasses)' : `${entry.title} Archetypes & Subclasses`}</span>
+                    <span className="text-xs font-mono tabular-nums font-normal text-slate-400">
+                      ({filteredSubclasses.length})
+                    </span>
+                  </h3>
+                  <p className="text-xs text-slate-400 mt-0.5">
+                    {isWarlockClass
+                      ? 'Every Warlock subclass is an Otherworldly Patron chosen at 2nd level (with an optional second Patron at 20th level).'
+                      : 'Complete narrative flavor text, core game mechanics, and feature progressions.'}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-2">
+                  {subclassIndex && (
+                    <button
+                      onClick={() => onNavigate(subclassIndex.id)}
+                      className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-500/40 transition-colors cursor-pointer whitespace-nowrap shrink-0"
+                    >
+                      <span>{isWarlockClass ? 'Patrons Catalogue' : 'Subclasses Index'}</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  )}
+
+                  {subclasses.length > 3 && (
+                    <div className="relative">
+                      <Search className="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                      <input
+                        type="text"
+                        placeholder={isWarlockClass ? 'Filter patrons...' : 'Filter archetypes...'}
+                        value={subclassSearch}
+                        onChange={(e) => setSubclassSearch(e.target.value)}
+                        className="bg-slate-950 border border-slate-800 rounded-xl pl-8 pr-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:border-amber-500 focus:outline-none w-48"
+                      />
+                    </div>
+                  )}
+                </div>
               </div>
 
-              {subclasses.length > 3 && (
-                <div className="relative">
-                  <Search className="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-                  <input
-                    type="text"
-                    placeholder="Filter archetypes..."
-                    value={subclassSearch}
-                    onChange={(e) => setSubclassSearch(e.target.value)}
-                    className="bg-slate-950 border border-slate-800 rounded-xl pl-8 pr-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:border-amber-500 focus:outline-none w-48"
-                  />
+              {/* Source Filter Strip (when multiple sources exist) */}
+              {distinctSources.length > 1 && (
+                <div className="flex flex-wrap items-center gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => setPatronSourceFilter('all')}
+                    className={`px-3 py-1 rounded-lg text-xs font-medium transition-colors cursor-pointer whitespace-nowrap shrink-0 border ${
+                      patronSourceFilter === 'all'
+                        ? 'bg-amber-500/20 border-amber-500/60 text-amber-200'
+                        : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                    }`}
+                  >
+                    All Sources (<span className="font-mono tabular-nums">{subclasses.length}</span>)
+                  </button>
+                  {distinctSources.map(([label, count]) => (
+                    <button
+                      key={label}
+                      type="button"
+                      onClick={() => setPatronSourceFilter(label)}
+                      className={`px-3 py-1 rounded-lg text-xs font-medium transition-colors cursor-pointer whitespace-nowrap shrink-0 border ${
+                        patronSourceFilter === label
+                          ? 'bg-amber-500/20 border-amber-500/60 text-amber-200'
+                          : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                      }`}
+                    >
+                      {label} (<span className="font-mono tabular-nums">{count}</span>)
+                    </button>
+                  ))}
                 </div>
               )}
-            </div>
 
-            {/* Subclass Cards Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-              {subclasses
-                .filter(sub => {
-                  if (!subclassSearch.trim()) return true;
-                  const q = subclassSearch.toLowerCase().trim();
-                  return sub.title.toLowerCase().includes(q) ||
-                    (sub.flavor && sub.flavor.toLowerCase().includes(q)) ||
-                    (sub.summary && sub.summary.toLowerCase().includes(q)) ||
-                    (sub.features && sub.features.some(f => f.name.toLowerCase().includes(q) || f.description.toLowerCase().includes(q)));
-                })
-                .map(sub => {
+              {/* Subclass Cards Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {filteredSubclasses.map(sub => {
                   const subBadge = getSourceBadgeInfo(sub.source_type, sub.source);
                   const isExpanded = expandedSubclasses.has(sub.id);
                   const features = sub.features || [];
@@ -1354,47 +1463,50 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                   return (
                     <div
                       key={sub.id}
-                      className="rounded-2xl border border-slate-800 bg-slate-950/80 p-5 space-y-4 hover:border-amber-500/40 transition-colors shadow-lg flex flex-col justify-between"
+                      className="rounded-xl border border-slate-800 bg-slate-950/80 p-5 space-y-4 hover:border-amber-500/40 transition-colors flex flex-col justify-between"
                     >
                       <div className="space-y-3.5">
                         {/* Subclass Header */}
                         <div className="flex items-start justify-between gap-3 border-b border-slate-800/80 pb-3">
                           <div>
-                            <div className="text-[10px] uppercase font-semibold tracking-wider text-amber-400 mb-0.5">
-                              {entry.title} Archetype
+                            <div className="text-[11px] text-slate-400 flex flex-wrap items-center gap-1.5 mb-0.5">
+                              <span className="uppercase font-semibold tracking-wider text-amber-400">
+                                {isWarlockClass ? 'Otherworldly Patron' : `${entry.title} Archetype`}
+                              </span>
+                              <span className="text-slate-600" aria-hidden="true">·</span>
+                              <span className={subBadge.text}>{subBadge.label}</span>
                             </div>
                             <h4 className="font-fantasy text-xl font-bold text-slate-100">
                               {sub.title}
                             </h4>
                           </div>
-
-                          <div className="flex items-center gap-1.5">
-                            <span className={`text-[10px] px-2 py-0.5 rounded-full border font-semibold ${subBadge.bg} ${subBadge.text} ${subBadge.border}`}>
-                              {subBadge.label}
+                          {features.length > 0 && (
+                            <span className="text-[11px] font-mono tabular-nums text-slate-400 shrink-0">
+                              {features.length} features
                             </span>
-                          </div>
+                          )}
                         </div>
 
                         {/* Narrative Flavor Text */}
                         {(sub.flavor || sub.summary) && (
-                          <div className="bg-slate-900/70 border border-slate-800/80 rounded-xl p-3 text-xs text-slate-300 italic leading-relaxed">
+                          <div className="border-b border-slate-800/60 pb-3 text-xs text-slate-300 italic leading-relaxed">
                             <InlineContent text={cleanFlavorText(sub.flavor || sub.summary)} onNavigate={onNavigate} />
                           </div>
                         )}
 
                         {/* Game Mechanics & Core Features */}
                         {features.length > 0 ? (
-                          <div className="space-y-2 pt-1 border-t border-slate-800/80">
+                          <div className="space-y-2">
                             <div className="flex items-center justify-between text-[11px] font-semibold uppercase tracking-wider text-amber-400">
                               <span className="flex items-center gap-1.5">
                                 <Zap className="w-3.5 h-3.5 text-amber-400" />
-                                <span>Core Game Mechanics & Features ({features.length})</span>
+                                <span>Progression Features</span>
                               </span>
                               {features.length > 2 && (
                                 <button
                                   type="button"
                                   onClick={() => toggleSubclassExpand(sub.id)}
-                                  className="text-amber-400 hover:text-amber-300 flex items-center gap-1 font-medium capitalize text-[10px] transition-colors"
+                                  className="text-amber-400 hover:text-amber-300 flex items-center gap-1 font-medium capitalize text-[11px] transition-colors cursor-pointer"
                                 >
                                   <span>{isExpanded ? 'Show fewer' : `All ${features.length} features`}</span>
                                   {isExpanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
@@ -1402,16 +1514,13 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                               )}
                             </div>
 
-                            <div className="space-y-2">
+                            <div className="divide-y divide-slate-800/80 border border-slate-800/80 rounded-lg bg-slate-900/40">
                               {(isExpanded ? features : features.slice(0, 2)).map((feat, fIdx) => (
-                                <div
-                                  key={fIdx}
-                                  className="bg-slate-900/80 border border-slate-800/90 rounded-xl p-3 space-y-1 text-xs"
-                                >
-                                  <div className="flex flex-wrap items-center justify-between gap-1.5">
+                                <div key={fIdx} className="p-3 space-y-1 text-xs">
+                                  <div className="flex flex-wrap items-baseline justify-between gap-1.5">
                                     <span className="font-semibold text-slate-200">{feat.name}</span>
                                     {feat.level && (
-                                      <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-950/70 text-amber-300 border border-amber-800/50">
+                                      <span className="text-[11px] font-mono tabular-nums text-amber-300">
                                         {feat.level}
                                       </span>
                                     )}
@@ -1433,21 +1542,31 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                       </div>
 
                       {/* Card Footer Navigation */}
-                      <div className="pt-3 border-t border-slate-800/80">
+                      <div className="pt-3 border-t border-slate-800/80 flex items-center gap-2">
                         <button
                           onClick={() => onNavigate(sub.id)}
-                          className="w-full py-2 px-3 rounded-xl bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-amber-400 border border-slate-800 hover:border-amber-400 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all group"
+                          className="flex-1 py-2 px-3 rounded-lg bg-slate-900 hover:bg-amber-500 hover:text-slate-950 text-amber-300 border border-slate-800 hover:border-amber-400 text-xs font-semibold flex items-center justify-center gap-1.5 transition-all group cursor-pointer"
                         >
-                          <span>Open Full {sub.title} Entry</span>
+                          <span>Open {sub.title}</span>
                           <ExternalLink className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
                         </button>
+                        {isWarlockClass && (
+                          <button
+                            type="button"
+                            onClick={() => onNavigate(`builder?subclass=${sub.id}`)}
+                            className="py-2 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 hover:border-amber-500/40 text-xs font-medium transition-colors cursor-pointer whitespace-nowrap shrink-0"
+                          >
+                            Adopt Patron
+                          </button>
+                        )}
                       </div>
                     </div>
                   );
                 })}
+              </div>
             </div>
-          </div>
-        )}
+          );
+        })()}
 
         {/* Tab 3: Class Options Grid */}
         {effectiveTab === 'options' && (() => {
@@ -1455,6 +1574,22 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           const poolBySubcat = new Map<string, ArchiveEntry>();
           for (const p of pools) {
             if (p.subcategory) poolBySubcat.set(p.subcategory, p);
+          }
+
+          const poolCounts = new Map<string, number>();
+          for (const opt of classOptions) {
+            const key = opt.subcategory || 'general';
+            poolCounts.set(key, (poolCounts.get(key) || 0) + 1);
+          }
+
+          const allPoolKeys: string[] = [];
+          for (const p of pools) {
+            if (p.subcategory && poolCounts.has(p.subcategory)) {
+              allPoolKeys.push(p.subcategory);
+            }
+          }
+          for (const key of poolCounts.keys()) {
+            if (!allPoolKeys.includes(key)) allPoolKeys.push(key);
           }
 
           const hasOptionLevels = classOptions.some(opt => typeof opt.min_level === 'number' && opt.min_level > 0);
@@ -1466,10 +1601,24 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             )
           ).sort((a, b) => a - b);
 
-          const filteredOptions =
-            optionMaxLevel !== 'all'
-              ? classOptions.filter(opt => (opt.min_level ?? 1) <= Number(optionMaxLevel))
-              : classOptions;
+          const query = optionSearch.trim().toLowerCase();
+          const filteredOptions = classOptions.filter(opt => {
+            if (optionPoolFilter !== 'all' && (opt.subcategory || 'general') !== optionPoolFilter) {
+              return false;
+            }
+            if (optionMaxLevel !== 'all' && (opt.min_level ?? 1) > Number(optionMaxLevel)) {
+              return false;
+            }
+            if (query) {
+              return (
+                opt.title.toLowerCase().includes(query) ||
+                (opt.summary && opt.summary.toLowerCase().includes(query)) ||
+                (opt.prerequisite && opt.prerequisite.toLowerCase().includes(query)) ||
+                (opt.degree && opt.degree.toLowerCase().includes(query))
+              );
+            }
+            return true;
+          });
 
           const groupedMap = new Map<string, ArchiveEntry[]>();
           for (const opt of filteredOptions) {
@@ -1479,25 +1628,41 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             groupedMap.set(key, existing);
           }
 
-          const orderedKeys: string[] = [];
-          for (const p of pools) {
-            if (p.subcategory && groupedMap.has(p.subcategory)) {
-              orderedKeys.push(p.subcategory);
-            }
-          }
-          for (const key of groupedMap.keys()) {
-            if (!orderedKeys.includes(key)) orderedKeys.push(key);
-          }
+          const orderedKeys = allPoolKeys.filter(key => groupedMap.has(key));
+
+          const formatPoolTitle = (subcat: string): string => {
+            const poolIndex = poolBySubcat.get(subcat);
+            if (poolIndex?.title) return poolIndex.title;
+            return subcat
+              .split('-')
+              .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+              .join(' ');
+          };
 
           return (
-            <div className="space-y-6">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
-                <div className="text-xs text-slate-400">
-                  Specialized option pools and selectable features for {entry.title}.
-                </div>
+            <div className="space-y-5">
+              {/* Filter Bar: Pool Tabs + Search + Sort + Level Cap */}
+              <div className="space-y-3 border-b border-slate-800 pb-4">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
+                  <div className="text-xs text-slate-400">
+                    {isWarlockClass
+                      ? 'Browse Warlock Pact customization pools across Eldritch Invocations, Pact Foci, Eldritch Familiars, and Elder Arcana.'
+                      : `Specialized option pools and selectable features for ${entry.title}.`}
+                  </div>
 
-                {(hasOptionLevels || availableOptionLevels.length > 1) && (
                   <div className="flex flex-wrap items-center gap-2">
+                    <div className="relative">
+                      <Search className="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+                      <input
+                        type="text"
+                        placeholder={isWarlockClass ? 'Filter pact options...' : 'Filter options...'}
+                        value={optionSearch}
+                        onChange={(e) => setOptionSearch(e.target.value)}
+                        aria-label="Filter class options"
+                        className="bg-slate-950 border border-slate-800 rounded-lg pl-8 pr-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:border-amber-500 focus:outline-none w-44 sm:w-52"
+                      />
+                    </div>
+
                     {hasOptionLevels && (
                       <button
                         type="button"
@@ -1526,12 +1691,56 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                       </select>
                     )}
                   </div>
+                </div>
+
+                {/* Segmented Pool Filter Strip */}
+                {allPoolKeys.length > 1 && (
+                  <div className="flex flex-wrap items-center gap-1.5">
+                    <button
+                      type="button"
+                      onClick={() => setOptionPoolFilter('all')}
+                      className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors cursor-pointer whitespace-nowrap shrink-0 ${
+                        optionPoolFilter === 'all'
+                          ? 'bg-amber-500/20 border-amber-500/60 text-amber-200'
+                          : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                      }`}
+                    >
+                      All Pools (<span className="font-mono tabular-nums">{classOptions.length}</span>)
+                    </button>
+                    {allPoolKeys.map(subcat => (
+                      <button
+                        key={subcat}
+                        type="button"
+                        onClick={() => setOptionPoolFilter(subcat)}
+                        className={`px-3 py-1.5 rounded-lg text-xs font-medium border transition-colors cursor-pointer whitespace-nowrap shrink-0 ${
+                          optionPoolFilter === subcat
+                            ? 'bg-amber-500/20 border-amber-500/60 text-amber-200'
+                            : 'bg-slate-950 border-slate-800 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                        }`}
+                      >
+                        {formatPoolTitle(subcat)} (<span className="font-mono tabular-nums">{poolCounts.get(subcat) || 0}</span>)
+                      </button>
+                    ))}
+                  </div>
                 )}
               </div>
 
               {orderedKeys.length === 0 ? (
-                <div className="py-6 text-center text-xs text-slate-400">
-                  No options match the selected level filter.
+                <div className="py-8 text-center text-xs text-slate-400 space-y-2">
+                  <div>No options match the current pool, level, or search filters.</div>
+                  {(optionPoolFilter !== 'all' || optionMaxLevel !== 'all' || optionSearch) && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setOptionPoolFilter('all');
+                        setOptionMaxLevel('all');
+                        setOptionSearch('');
+                      }}
+                      className="text-amber-400 hover:text-amber-300 font-medium cursor-pointer"
+                    >
+                      Reset Filters
+                    </button>
+                  )}
                 </div>
               ) : (
                 orderedKeys.map(subcat => {
@@ -1544,16 +1753,11 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                     return a.title.localeCompare(b.title);
                   });
                   const poolIndex = poolBySubcat.get(subcat);
-                  const sectionLabel =
-                    poolIndex?.title ||
-                    subcat
-                      .split('-')
-                      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-                      .join(' ');
+                  const sectionLabel = formatPoolTitle(subcat);
 
                   return (
                     <div key={subcat} className="space-y-3">
-                      <div className="flex items-center justify-between border-b border-slate-800/80 pb-2">
+                      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800/80 pb-2">
                         <div className="flex items-baseline gap-2">
                           <h3 className="font-fantasy font-bold text-slate-100 text-base">
                             {sectionLabel}
@@ -1562,18 +1766,31 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                             · {items.length}
                           </span>
                         </div>
-                        {poolIndex && (
-                          <button
-                            onClick={() => onNavigate(poolIndex.id)}
-                            className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 transition-colors cursor-pointer whitespace-nowrap shrink-0"
-                          >
-                            <span>View Catalogue</span>
-                            <ChevronRight className="w-3.5 h-3.5" />
-                          </button>
-                        )}
+                        <div className="flex items-center gap-3">
+                          {subcat === 'familiars' && (
+                            <button
+                              type="button"
+                              onClick={() => onNavigate('companions')}
+                              className="text-xs text-violet-300 hover:text-violet-200 font-medium flex items-center gap-1 transition-colors cursor-pointer whitespace-nowrap shrink-0"
+                            >
+                              <span>Familiars &amp; Companions</span>
+                              <ChevronRight className="w-3.5 h-3.5" />
+                            </button>
+                          )}
+                          {poolIndex && (
+                            <button
+                              type="button"
+                              onClick={() => onNavigate(poolIndex.id)}
+                              className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 transition-colors cursor-pointer whitespace-nowrap shrink-0"
+                            >
+                              <span>View Catalogue</span>
+                              <ChevronRight className="w-3.5 h-3.5" />
+                            </button>
+                          )}
+                        </div>
                       </div>
 
-                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[520px] overflow-y-auto pr-1">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[560px] overflow-y-auto pr-1">
                         {items.map(opt => {
                           const metaLine = [
                             opt.degree || null,

@@ -38,7 +38,9 @@ Warlocks seek power for many reasons: wealth, glory, protection, service, or rev
 
 Consider why your character pursues knowledge and power. Are they driven to uncover lost secrets? Has an entity enlisted them as its agent? Do they seek power to serve others? Also consider how their spells and invocations manifest: do they draw from several occult traditions, or resemble the magic of a more traditional mage?
 
-## The Warlock table
+---
+
+## The Warlock Table
 
 | Level | PB  | Features                               | Invocations Known | Cantrips Known | Spells Known | Spell Slots | Slot Level |
 | ----- | --- | -------------------------------------- | ----------------- | -------------- | ------------ | ----------- | ---------- |
@@ -63,7 +65,9 @@ Consider why your character pursues knowledge and power. Are they driven to unco
 | 19th  | +6  | Ability Score Improvement              | 8                 | 4              | 10           | 4           | 5th        |
 | 20th  | +6  | Seat at the Table                      | 8                 | 4              | 10           | 4           | 5th        |
 
-## Class Features
+---
+
+## Core Traits
 
 ### Hit Points
 
@@ -90,38 +94,46 @@ You start with the following equipment, in addition to the equipment granted by 
 
 ### Quick Build
 
-Choose Intelligence, Wisdom, or Charisma as your highest ability score, followed by Constitution. Choose the Charlatan background. For starting invocations, choose Eyes of the Rune Keeper and Mask of Many Faces.
+Choose Intelligence, Wisdom, or Charisma as your highest ability score, followed by Constitution. Choose the Charlatan background. For starting invocations, choose [[character-options/class-options/eldritch-invocations/Eyes of the Rune Keeper|Eyes of the Rune Keeper]] and [[character-options/class-options/eldritch-invocations/Mask of Many Faces|Mask of Many Faces]].
 
 ### Multiclassing and the Warlock
 
 If your group uses multiclassing, you need a score of 13 in Intelligence, Wisdom, or Charisma to take a Warlock level or a level in another class while you are a warlock. This must be your Pact Spellcasting Ability. If Warlock is not your initial class, you gain proficiency with light armor and simple weapons.
 
-## Eldritch Invocations
+---
+
+## Class Features
+
+### Eldritch Invocations (1st Level)
 
 At 1st level, you bind two invocations to Trinkets. A lost or destroyed Trinket reforms on your person at the end of your next short or long rest. The Invocations Known column shows when you learn additional invocations. You can learn an invocation when you meet its prerequisites. When you gain a Warlock level, you can replace one invocation you know with another for which you qualify.
 
 Browse the complete [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations catalogue]].
 
-### Eldritch Spellcasting
+#### Eldritch Spellcasting
 
 Choose Intelligence, Wisdom, or Charisma as your Pact Ability. Use it whenever an invocation or spell refers to your Spellcasting Ability, sets a saving throw DC, or requires a spell attack roll.
 
 - **Spell save DC:** 8 + your Proficiency Bonus + your Pact modifier
 - **Spell attack modifier:** your Proficiency Bonus + your Pact modifier
 
-### Eldritch Blast
+#### Eldritch Blast
 
 While holding a Trinket containing an invocation, use your action to make a ranged spell attack against one creature you can see within 120 feet. On a hit, the target takes 1d8 + your Pact modifier Force damage.
 
-### Otherworldly Patron
+---
 
-At 2nd level, choose an Otherworldly Patron. Your Patron grants features at 2nd, 6th, 10th, and 14th levels. If a Patron feature forces a saving throw, it uses your Pact save DC.
+### Otherworldly Patron (2nd Level)
 
-### Patron Magic
+At 2nd level, choose an Otherworldly Patron from the [[character-options/subclasses/Warlock/index|Otherworldly Patrons (Warlock Subclasses)]] catalogue. Your Patron grants features at 2nd, 6th, 10th, and 14th levels, as well as Patron Magic spells. If a Patron feature forces a saving throw, it uses your Pact save DC.
+
+#### Patron Magic
 
 Each Patron grants spells at the Warlock levels listed in its description. These spells count as Warlock spells for you but do not count against your Spells Known.
 
-### Pact Magic
+---
+
+### Pact Magic (2nd Level)
 
 At 2nd level, you learn two cantrips from the Warlock spell list. You learn another cantrip at 4th and 10th levels. The Warlock table shows your spell slots and their level. All your slots are the same level, and you regain expended slots after a short or long rest.
 
@@ -129,46 +141,76 @@ At 2nd level, you know three 1st-level Warlock spells. The Spells Known column s
 
 Spells learned from an invocation count as Warlock spells but do not count against your Spells Known. You can use an invocation-bearing Trinket or an arcane focus as a Spellcasting Focus.
 
-Browse available Warlock spells by level:
-
 ![[warlock-spells.base]]
 
-## Pact Focus
+---
 
-At 3rd level, choose one of the [[character-options/class-options/pact-foci/index|Pact Foci]]. Each option's record gives its rules.
+### Pact Focus (3rd Level)
 
-### Eldritch Familiars
+At 3rd level, choose one of the eight [[character-options/class-options/pact-foci/index|Pact Foci]] below. Each focus establishes your pact style and unlocks dedicated invocations and Elder Arcana.
 
-When you choose Eldritch Familiar, conjure one of the [[character-options/class-options/familiars/index|Eldritch Familiar forms]]. Each record contains the applicable stat block.
+| Pact Focus | Focus Form | Signature Capability |
+| --- | --- | --- |
+| [[character-options/class-options/pact-foci/Eldritch Blade|Eldritch Blade]] | Conjured or bonded melee weapon | Use Pact modifier for attacks/damage; deals Eldritch Blast damage type |
+| [[character-options/class-options/pact-foci/Eldritch Chalice|Eldritch Chalice]] | Otherworldly Tiny cup | Counts as Alchemist's Supplies & Herbalism Kit; brews daily potions |
+| [[character-options/class-options/pact-foci/Eldritch Familiar|Eldritch Familiar]] | Companion spirit bond | Ritual *find familiar* + access to [[character-options/class-options/familiars/index|Eldritch Familiar forms]] |
+| [[character-options/class-options/pact-foci/Eldritch Flesh|Eldritch Flesh]] | Otherworldly transformation | Unarmored AC (`10 + Pact + CON`), temporary HP each turn, Intimidation focus |
+| [[character-options/class-options/pact-foci/Eldritch Hourglass|Eldritch Hourglass]] | Timekeeping relic | Short-rest d20 failure reroll and add Pact modifier to initiative |
+| [[character-options/class-options/pact-foci/Eldritch Instrument|Eldritch Instrument]] | Ethereal musical instrument | +1 Pact-specific invocation, tool expertise, convert spell damage to Thunder |
+| [[character-options/class-options/pact-foci/Eldritch Shroud|Eldritch Shroud]] | Spectral cloak | Turn invisible in shadow/darkness/fog and Stealth using Pact Ability |
+| [[character-options/class-options/pact-foci/Eldritch Tome|Eldritch Tome]] | Living grimbook | Stores known spells as rituals and grants +1 prerequisite-free invocation |
 
-### Ability Score Improvement
+#### Eldritch Familiars
+
+When you choose [[character-options/class-options/pact-foci/Eldritch Familiar|Eldritch Familiar]], conjure one of the [[character-options/class-options/familiars/index|Eldritch Familiar forms]] (also browsable under [[companions|Familiars & Companions]]). Each record contains the applicable stat block.
+
+---
+
+### Ability Score Improvement (4th Level)
 
 When you reach 4th, 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or increase two ability scores of your choice by 1. You cannot increase an ability score above 20 using this feature.
 
-### Empowered Blast
+---
+
+### Empowered Blast (5th Level)
 
 At 5th level, Eldritch Blast creates two beams. It creates three beams at 11th level and four at 17th level. You can direct each beam at the same target or different targets, making a separate spell attack roll for each.
 
-### Elder Arcanum
+---
+
+### Elder Arcanum (11th Level)
 
 At 11th level, choose an Elder Arcanum for which you meet the prerequisites. You learn another at 13th, 15th, and 17th level. Once learned, an Arcanum cannot be replaced.
 
 Browse the [[character-options/class-options/elder-arcana/index|Elder Arcanum catalogue]].
 
-### Seat at the Table
+---
 
-At 20th level, choose a second Otherworldly Patron. You gain that Patron's 2nd-level features and all of its Patron Spells.
+### Seat at the Table (20th Level)
+
+At 20th level, choose a second [[character-options/subclasses/Warlock/index|Otherworldly Patron]]. You gain that Patron's 2nd-level features and all of its Patron Spells.
 
 Whenever you finish a long rest, you may replace this secondary Patron with another Otherworldly Patron available to Warlocks.
 
-## Class Options
+---
 
-Warlocks customize their pact across four option catalogues: [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations]], [[character-options/class-options/pact-foci/index|Pact Foci]], [[character-options/class-options/familiars/index|Eldritch Familiars]], and [[character-options/class-options/elder-arcana/index|Elder Arcana]]:
+## Pact Options Directory
+
+Warlocks customize their pact across four structured catalogues:
+
+| Option Pool | Unlock Level | Scaling | Catalogue |
+| --- | --- | --- | --- |
+| [[character-options/class-options/eldritch-invocations/index|Eldritch Invocations]] | 1st Level | 2 to 8 Trinket-bound invocations | 69 entries |
+| [[character-options/class-options/pact-foci/index|Pact Foci]] | 3rd Level | 1 Signature Pact Focus | 8 entries |
+| [[character-options/class-options/familiars/index|Eldritch Familiars]] | 3rd Level | Unlocks via Eldritch Familiar | 12 stat blocks |
+| [[character-options/class-options/elder-arcana/index|Elder Arcana]] | 11th Level | 1 to 4 permanent secrets | 28 entries |
 
 ![[class-options-of.base]]
 
-## Subclasses
+---
+
+## Otherworldly Patrons (Subclasses)
+
+A Warlock's subclass is their **Otherworldly Patron**, chosen at 2nd level (with a secondary Patron at 20th level via Seat at the Table). Browse the full [[character-options/subclasses/Warlock/index|Otherworldly Patrons index]] or filter every Patron below:
 
 ![[subclasses-of.base]]
-
----
