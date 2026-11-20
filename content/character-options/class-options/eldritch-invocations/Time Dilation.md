@@ -15,7 +15,7 @@ summary: "Once per long rest, cast haste or slow at your Slot Level without expe
 content_status: complete
 ---
 
-Once per long rest, cast haste or slow at your Slot Level without expending a spell slot.
+Once per long rest, use your [[character-options/class-options/pact-foci/Eldritch Hourglass|Eldritch Hourglass]] to cast [[spells/3rd-level/Haste|haste]] or [[spells/3rd-level/Slow|slow]] at your Slot Level without expending a spell slot.
 
-**Prerequisite:** Eldritch Hourglass  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Hourglass|Eldritch Hourglass]]  
 **Minimum level:** 7

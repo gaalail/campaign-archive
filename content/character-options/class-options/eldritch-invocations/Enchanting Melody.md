@@ -15,7 +15,7 @@ summary: "You learn charm monster"
 content_status: complete
 ---
 
-You learn charm monster. Once per long rest, cast it without a spell slot using your Instrument. While using your bonus action to continue playing each turn, your concentration cannot be broken.
+You learn [[spells/4th-level/Charm Monster|charm monster]]. Once per long rest, cast it without a spell slot using your [[character-options/class-options/pact-foci/Eldritch Instrument|Eldritch Instrument]]. While using your bonus action to continue playing each turn, your concentration cannot be broken.
 
-**Prerequisite:** Eldritch Instrument  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Instrument|Eldritch Instrument]]  
 **Minimum level:** 9

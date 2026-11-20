@@ -92,15 +92,15 @@ Complete 1st-level variant kits replacing Warden's Grasp, Warden's Mark, and War
 
 Magical powers granted by your patron and bound to Trinkets. You choose which ones enhance your abilities.
 
-**66 invocations** | Levels 1–18 | Prerequisites vary
+**69 invocations** | Levels 1–18 | Prerequisites vary
 
 ---
 
 ### [[character-options/class-options/pact-foci/index|Pact Foci]] (Warlock)
 
-Choose a Pact Focus at 3rd level to gain a weapon, familiar, tome, or other source-approved focus.
+Choose a Pact Focus at 3rd level to gain a weapon, familiar, tome, chalice, flesh, hourglass, instrument, or shroud.
 
-**3 pact foci** | Level 3 | Defines your pact implement
+**8 pact foci** | Level 3 | Defines your pact implement
 
 ---
 
@@ -116,7 +116,7 @@ Use source-transcribed stat blocks when selecting the Eldritch Familiar Pact Foc
 
 High-level Warlock options available at 11th level and higher.
 
-**17 arcanum options** | Levels 11–17 | Prerequisites vary
+**28 arcanum options** | Levels 11–17 | Prerequisites vary
 
 ---
 

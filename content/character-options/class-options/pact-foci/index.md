@@ -11,7 +11,7 @@ summary: Pact objects and forms granted by a Warlock's Pact Focus feature
 
 **Warlock class options chosen at 3rd level.**
 
-A Warlock who gains a Pact Focus chooses one of the three core forms below or another focus made available by the DM.
+A Warlock who gains a Pact Focus chooses from the three core forms or five additional forms from the Alternate Warlock Compendium below.
 
 ## All Pact Foci
 

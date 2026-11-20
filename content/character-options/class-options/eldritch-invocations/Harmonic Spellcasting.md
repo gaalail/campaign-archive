@@ -17,5 +17,5 @@ content_status: complete
 
 When a creature within 30 feet casts a spell with a Verbal component, use your reaction to play alien harmonies on your Instrument. One target of the spell has disadvantage on its initial saving throw.
 
-**Prerequisite:** Eldritch Instrument  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Instrument|Eldritch Instrument]]  
 **Minimum level:** 3

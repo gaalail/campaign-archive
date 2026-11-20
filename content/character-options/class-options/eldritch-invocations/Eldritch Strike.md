@@ -17,5 +17,5 @@ content_status: complete
 
 When you use Eldritch Blast, replace any number of beams with melee spell attacks that deal a beam's damage and effects. After hitting with an Eldritch Strike, you can use a bonus action to automatically Grapple the target.
 
-**Prerequisite:** Eldritch Flesh  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Flesh|Eldritch Flesh]]  
 **Minimum level:** 3

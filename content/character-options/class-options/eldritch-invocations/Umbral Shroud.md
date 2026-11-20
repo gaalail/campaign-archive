@@ -15,7 +15,7 @@ summary: "While your Shroud is equipped and you are in darkness or shadow, creat
 content_status: complete
 ---
 
-While your Shroud is equipped and you are in darkness or shadow, creatures relying on Darkvision or a feature that sees in darkness cannot see you.
+While your [[character-options/class-options/pact-foci/Eldritch Shroud|Eldritch Shroud]] is equipped and you are in darkness or shadow, creatures relying on Darkvision or a feature such as [[character-options/class-options/eldritch-invocations/Devil's Sight|Devil's Sight]] to see in darkness cannot see you.
 
-**Prerequisite:** Eldritch Shroud  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Shroud|Eldritch Shroud]]  
 **Minimum level:** 7

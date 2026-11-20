@@ -12,7 +12,9 @@ prerequisite: Eldritch Familiar
 creature_role: familiar
 granted_by:
   - "character-options/class-options/pact-foci/Eldritch Familiar"
+  - "character-options/feats/Greater Familiar"
   - "spells/1st-level/Find Familiar"
+  - "spells/1st-level/Conjure Familiar"
 summary: "Small Giant familiar form."
 source: Alternate Warlock
 source_type: third-party
@@ -33,7 +35,7 @@ content_status: complete
 
 Eldritch Bond. When the familiar is forced to make an ability check or saving throw, add the Warlock’s Proficiency Bonus.
 
-Hit Dice. The familiar has a number of d4 Hit Dice equal to the Warlock level and gains the normal benefits of short and long rests.
+Hit Dice. The familiar has a number of d6 Hit Dice equal to the Warlock level and gains the normal benefits of short and long rests.
 
 Magic Resistance. The familiar has advantage on saving throws against spells and other magical effects.
 

@@ -10,7 +10,7 @@ aliases:
 
 At **3rd level** (sometimes 1st or 2nd), you specialize your class with a **subclass**.
 
-**208 subclasses available** | Choose at level-up | Defines your playstyle
+**217 subclasses available** | Choose at level-up | Defines your playstyle
 
 ---
 
@@ -31,7 +31,7 @@ Click your class to see available subclasses:
 - [[character-options/subclasses/Ranger/index|Ranger]] (6 archetypes)
 - [[character-options/subclasses/Rogue/index|Rogue]] (7 archetypes)
 - [[character-options/subclasses/Sorcerer/index|Sorcerer]] (6 origins)
-- [[character-options/subclasses/Warlock/index|Warlock]] (15 patrons)
+- [[character-options/subclasses/Warlock/index|Warlock]] (24 patrons)
 - [[character-options/subclasses/Wizard/index|Wizard]] (6 traditions)
 
 ### Homebrew Classes
@@ -66,7 +66,7 @@ Click your class to see available subclasses:
 | Tamer         | [[character-options/subclasses/Tamer/index\|Tamer (4 Archetypes)]] (Infuser, Leader, Necromancer, Splicer)                            | Companion bond           |
 | Thanatomancer | [[character-options/subclasses/Thanatomancer/index\|Thanatomancer (3 Paths)]] (Fleshweaver, Graveguard, Reaper)                        | Necromantic mastery      |
 | Warden        | [[character-options/subclasses/Warden/index\|Warden (15 Calls)]] (Bloodwrath, Grey Watchman, Loreseeker, Storm Sentinel, ...)         | Vigilant defender & tank |
-| Warlock       | [[character-options/subclasses/Warlock/index\|Warlock (15 Patrons)]] (Demon Soul, The Nightcomer, The Witch Patron, Fiend, ...)       | Eldritch pact            |
+| Warlock       | [[character-options/subclasses/Warlock/index\|Warlock (24 Patrons)]] (Archmage, Collective, Coven, Elder Sphinx, Mummy Lord, Primeval Growth, Titan, Unblinking, Wild Hunt, ...)       | Eldritch pact            |
 | Wizard        | [[character-options/subclasses/Wizard/index\|Wizard (6 Traditions)]] (School of Occultism, School of Witchcraft, Evocation, ...)       | Scholarly magic          |
 
 ---

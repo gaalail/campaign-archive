@@ -15,7 +15,7 @@ summary: "While transformed by Eldritch Flesh, use your reaction when damaged to
 content_status: complete
 ---
 
-While transformed by Eldritch Flesh, use your reaction when damaged to reduce the damage by your Pact modifier (minimum 1).
+While transformed by [[character-options/class-options/pact-foci/Eldritch Flesh|Eldritch Flesh]], use your reaction when damaged to reduce the damage by your Pact modifier (minimum 1).
 
-**Prerequisite:** Eldritch Flesh  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Flesh|Eldritch Flesh]]  
 **Minimum level:** 9

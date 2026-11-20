@@ -15,7 +15,7 @@ summary: "You gain a climb speed equal to your walking speed and can climb verti
 content_status: complete
 ---
 
-You gain a climb speed equal to your walking speed and can climb vertical surfaces and ceilings without checks, leaving your hands free.
+Your [[character-options/class-options/pact-foci/Eldritch Flesh|Eldritch Flesh]] grants a climb speed equal to your walking speed, and you can climb vertical surfaces and ceilings without checks, leaving your hands free.
 
-**Prerequisite:** Eldritch Flesh  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Flesh|Eldritch Flesh]]  
 **Minimum level:** 5

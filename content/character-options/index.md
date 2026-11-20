@@ -60,7 +60,7 @@ Some classes have unique choice mechanics:
 
 **Examples:**
 
-- **Warlock:** Eldritch Invocations (66 magical powers), Pact Foci, Eldritch Familiars, and Elder Arcana
+- **Warlock:** Eldritch Invocations (69 magical powers), Pact Foci, Eldritch Familiars, and Elder Arcana
 - **Sorcerer:** Metamagic (8 spell modifications)
 - **Fighter & Barbarian:** Martial Exploits (78) and Savage Exploits (59)
 - **Artificer:** Infuse Item (magical item crafting)
@@ -104,7 +104,7 @@ Some classes have unique mechanics for customization:
 
 ### Eldritch Invocations (Warlock)
 
-66 magical powers you learn and bind to Trinkets as your patron teaches you.
+69 magical powers you learn and bind to Trinkets as your patron teaches you.
 
 ### Metamagic (Sorcerer)
 

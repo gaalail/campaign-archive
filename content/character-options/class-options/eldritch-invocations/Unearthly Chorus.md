@@ -17,5 +17,5 @@ content_status: complete
 
 When producing an Eldritch Blast beam with your Instrument, forgo its attack roll to force a creature that can hear you within 60 feet to make a Constitution saving throw. On a failure, it suffers one beam's effects and damage.
 
-**Prerequisite:** Eldritch Instrument  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Instrument|Eldritch Instrument]]  
 **Minimum level:** 3

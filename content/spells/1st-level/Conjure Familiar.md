@@ -68,6 +68,9 @@ If your table uses the Laserllama Compendium of Beasts, the following Beasts are
 | 0 | Spider |
 | 0 | Tortoise |
 
+> [!tip]- Greater Familiar Option
+> Characters who take the [[character-options/feats/Greater Familiar|Greater Familiar]] feat at 4th level or higher can use *conjure familiar* to summon any of the [[character-options/class-options/familiars/index|Eldritch Familiar forms]] listed in [[companions|Familiars & Companions]].
+
 ---
 
 ## Related Content

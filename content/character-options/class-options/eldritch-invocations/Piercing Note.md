@@ -15,7 +15,7 @@ summary: "When you deal Thunder damage with Eldritch Blast using your Instrument
 content_status: complete
 ---
 
-When you deal Thunder damage with Eldritch Blast using your Instrument, forgo adding your Pact modifier to damage to Deafened the target until the start of your next turn.
+When you deal Thunder damage with Eldritch Blast using your [[character-options/class-options/pact-foci/Eldritch Instrument|Eldritch Instrument]], forgo adding your Pact modifier to damage to make the target Deafened until the start of your next turn.
 
-**Prerequisite:** Eldritch Instrument  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Instrument|Eldritch Instrument]]  
 **Minimum level:** 3

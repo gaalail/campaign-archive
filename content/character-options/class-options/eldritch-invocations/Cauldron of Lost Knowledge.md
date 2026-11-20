@@ -17,5 +17,5 @@ content_status: complete
 
 During a 1-hour ritual, pour a vial or potion into your Chalice and add that liquid to those you can conjure after a short or long rest. The poured liquid is destroyed.
 
-**Prerequisite:** Eldritch Chalice  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Chalice|Eldritch Chalice]]  
 **Minimum level:** 5

@@ -15,7 +15,7 @@ summary: "While transformed by Eldritch Flesh, use your Pact Ability for Strengt
 content_status: complete
 ---
 
-While transformed by Eldritch Flesh, use your Pact Ability for Strength checks. You can Grapple creatures up to two sizes larger than you.
+While transformed by [[character-options/class-options/pact-foci/Eldritch Flesh|Eldritch Flesh]], use your Pact Ability for Strength checks. You can Grapple creatures up to two sizes larger than you.
 
-**Prerequisite:** Eldritch Flesh  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Flesh|Eldritch Flesh]]  
 **Minimum level:** 7

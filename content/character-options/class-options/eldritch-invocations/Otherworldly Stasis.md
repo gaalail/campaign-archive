@@ -17,5 +17,5 @@ content_status: complete
 
 As an action, shatter your Hourglass over a willing creature to place it in stasis for 1 minute. If it takes no damage and makes no checks or saves during that time, it gains a short rest. You cannot conjure the Hourglass again until you expend a Pact Magic slot or finish a long rest.
 
-**Prerequisite:** Eldritch Hourglass  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Hourglass|Eldritch Hourglass]]  
 **Minimum level:** 5

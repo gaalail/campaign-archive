@@ -17,5 +17,5 @@ content_status: complete
 
 When you take damage while your Shroud is equipped, use your reaction to halve the damage. The Shroud disappears. You can do this a number of times equal to your Pact modifier (minimum 1); regain one use after a short rest and all uses after a long rest. With no uses left, you cannot conjure the Shroud.
 
-**Prerequisite:** Eldritch Shroud  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Shroud|Eldritch Shroud]]  
 **Minimum level:** 5

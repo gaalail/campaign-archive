@@ -17,5 +17,5 @@ content_status: complete
 
 Once per turn when you hit a creature with Eldritch Blast using your Hourglass, forgo the damage to force a Charisma saving throw. On a failure, its speed becomes 0 until your next turn, then you gain the benefits of Dash for the rest of this turn.
 
-**Prerequisite:** Eldritch Hourglass  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Hourglass|Eldritch Hourglass]]  
 **Minimum level:** 7

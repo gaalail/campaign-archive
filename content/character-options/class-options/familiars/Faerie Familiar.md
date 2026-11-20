@@ -12,7 +12,9 @@ prerequisite: Eldritch Familiar
 creature_role: familiar
 granted_by:
   - "character-options/class-options/pact-foci/Eldritch Familiar"
+  - "character-options/feats/Greater Familiar"
   - "spells/1st-level/Find Familiar"
+  - "spells/1st-level/Conjure Familiar"
 summary: "Tiny Fey familiar form."
 source: Alternate Warlock
 source_type: third-party
