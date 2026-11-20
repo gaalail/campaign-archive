@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Muse of sacred speech, scholarship, and flowing rivers of wisdom in Shaivi."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "shaivi"]
 ---
 # Saraswati

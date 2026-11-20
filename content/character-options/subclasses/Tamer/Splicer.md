@@ -42,11 +42,11 @@ These spells count as Tamer spells and do not count against spells known.
 
 | Tamer Level | Spells                                            |
 | ----------- | ------------------------------------------------- |
-| 3rd         | _chameleon skin_ (Appendix B), _disguise self_    |
-| 5th         | _barkskin_, _eelskin_ (Appendix B)                |
-| 9th         | _mass leech_ (Appendix B), _zippit!_ (Appendix B) |
-| 13th        | _frogskin_ (Appendix B), _stoneskin_              |
-| 17th        | _contagion_, _feverskin_ (Appendix B)             |
+| 3rd         | _[[spells/1st-level/Chameleon Skin|chameleon skin]]_ (Appendix B), _[[spells/1st-level/Disguise Self|disguise self]]_    |
+| 5th         | _[[spells/2nd-level/Barkskin|barkskin]]_, _[[spells/2nd-level/Eelskin|eelskin]]_ (Appendix B)                |
+| 9th         | _[[spells/3rd-level/Mass Leech|mass leech]]_ (Appendix B), _[[spells/3rd-level/Zippit!|zippit!]]_ (Appendix B) |
+| 13th        | _[[spells/4th-level/Frogskin|frogskin]]_ (Appendix B), _[[spells/4th-level/Stoneskin|stoneskin]]_              |
+| 17th        | _[[spells/5th-level/Contagion|contagion]]_, _[[spells/5th-level/Feverskin|feverskin]]_ (Appendix B)             |
 
 ## Modular Upgrades
 

@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Immortal Monkey King of seventy-two transformations and sky-shaking defiance in Daidōis."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "daidois"]
 ---
 

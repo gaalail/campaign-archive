@@ -78,11 +78,11 @@ You always have the following spells prepared. They don't count against the numb
 
 | Artificer Level | Spells                                     |
 | --------------- | ------------------------------------------ |
-| 3rd             | _[[Longstrider]], zephyr strike_           |
+| 3rd             | _[[Longstrider]], [[spells/1st-level/Zephyr Strike|zephyr strike]]_           |
 | 5th             | _[[Heat Metal]], [[Misty Step]]_           |
-| 9th             | _[[Haste]], conjure volley_                |
+| 9th             | _[[Haste]], [[spells/3rd-level/Conjure Volley|conjure volley]]_                |
 | 13th            | _[[Fire Shield]], [[Freedom of Movement]]_ |
-| 17th            | _Banishing smite, steel wind strike_       |
+| 17th            | _[[spells/5th-level/Banishing Smite|Banishing smite]], [[spells/5th-level/Steel Wind Strike|steel wind strike]]_       |
 
 ## Extra Attack
 

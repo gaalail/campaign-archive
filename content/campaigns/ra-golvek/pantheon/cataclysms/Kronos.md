@@ -15,7 +15,7 @@ favored_weapon: "Sickle or Scythe"
 summary: "Overthrown Titan Cataclysm of devouring time from the Titanomachy; worship is forbidden."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "cataclysms"]
 ---
 # Kronos

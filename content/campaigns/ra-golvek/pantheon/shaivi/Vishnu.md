@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Preserver deity of Shaivi descending in mortal avatars whenever cosmic balance falters."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "shaivi"]
 ---
 # Vishnu

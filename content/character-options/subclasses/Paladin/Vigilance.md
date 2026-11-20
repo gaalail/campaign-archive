@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                   |
 | ------------- | ----------------------------- |
-| 3rd           | alarm, ethereal anchor ll     |
-| 5th           | locate creature ll, moonbeam  |
-| 9th           | counterspell ll, nondetection |
-| 13th          | aura of purity, banishment    |
-| 17th          | hold monster, scrying         |
+| 3rd           | [[spells/1st-level/Alarm|alarm]], [[spells/1st-level/Ethereal Anchor|ethereal anchor]] ll     |
+| 5th           | [[spells/4th-level/Locate Creature|locate creature]] ll, [[spells/2nd-level/Moonbeam|moonbeam]]  |
+| 9th           | [[spells/3rd-level/Counterspell|counterspell]] ll, [[spells/3rd-level/Nondetection|nondetection]] |
+| 13th          | [[spells/4th-level/Aura of Purity|aura of purity]], [[spells/4th-level/Banishment|banishment]]    |
+| 17th          | [[spells/5th-level/Hold Monster|hold monster]], [[spells/5th-level/Scrying|scrying]]         |
 
 Unless your DM or table decides otherwise, aberrations, celestials, elementals, fey, and fiends are extraplanar, as are many creatures not native to the material plane.
 

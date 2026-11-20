@@ -30,11 +30,11 @@ These spells count as Tamer spells and do not count against spells known.
 
 | Tamer Level | Spells                                            |
 | ----------- | ------------------------------------------------- |
-| 3rd         | _hellish rebuke_, _peppermint plate_ (Appendix B) |
-| 5th         | _eelskin_ (Appendix B), _riptide_ (Appendix B)    |
-| 9th         | _protection from energy_, _wind wall_             |
-| 13th        | _control water_, _fire shield_                    |
-| 17th        | _feverskin_ (Appendix B), _wall of stone_         |
+| 3rd         | _[[spells/1st-level/Hellish Rebuke|hellish rebuke]]_, _[[spells/1st-level/Peppermint Plate|peppermint plate]]_ (Appendix B) |
+| 5th         | _[[spells/2nd-level/Eelskin|eelskin]]_ (Appendix B), _[[spells/2nd-level/Riptide|riptide]]_ (Appendix B)    |
+| 9th         | _[[spells/3rd-level/Protection from Energy|protection from energy]]_, _[[spells/3rd-level/Wind Wall|wind wall]]_             |
+| 13th        | _[[spells/4th-level/Control Water|control water]]_, _[[spells/4th-level/Fire Shield|fire shield]]_                    |
+| 17th        | _[[spells/5th-level/Feverskin|feverskin]]_ (Appendix B), _[[spells/5th-level/Wall of Stone|wall of stone]]_         |
 
 ## Elemental Discharge
 

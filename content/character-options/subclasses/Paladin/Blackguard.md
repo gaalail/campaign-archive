@@ -22,11 +22,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Blackguard spells                       |
 | ------------- | --------------------------------------- |
-| 3rd           | cause fear*, hellish rebuke             |
-| 5th           | blindness/deafness, shadow blade*       |
-| 9th           | animate dead ll, conjure fiend ll       |
-| 13th          | accursed touch ll, create undead ll     |
-| 17th          | spiritual sundering ll, vorpal blade ll |
+| 3rd           | [[spells/1st-level/Cause Fear|cause fear]]*, [[spells/1st-level/Hellish Rebuke|hellish rebuke]]             |
+| 5th           | [[spells/2nd-level/Blindness-Deafness|blindness/deafness]], [[spells/2nd-level/Shadow Blade|shadow blade]]*       |
+| 9th           | [[spells/3rd-level/Animate Dead|animate dead]] ll, [[spells/3rd-level/Conjure Fiend|conjure fiend]] ll       |
+| 13th          | [[spells/4th-level/Accursed Touch|accursed touch]] ll, [[spells/6th-level/Create Undead|create undead]] ll     |
+| 17th          | [[spells/5th-level/Spiritual Sundering|spiritual sundering]] ll, [[spells/5th-level/Vorpal Blade|vorpal blade]] ll |
 
 **Dreadful Smite (3rd, Oath Smite, necrotic).** Wisdom save or frightened of you until its next turn ends.
 

@@ -107,6 +107,6 @@ Cantrips (0-Level) beckon air ll control flames ll create bonfire * druidcraft f
 
 2nd-Level dust devil * earthbind * elemental blade ll gust of wind magic weapon ll shatter spike growth warding wind *
 
-3rd-Level elemental weapon plant growth grasping vine ll sleet storm thunder step * tidal wave * wall of sand * wall of water * wind wall
+3rd-Level [[spells/3rd-level/Elemental Weapon|elemental weapon]] plant growth grasping vine ll sleet storm thunder step * tidal wave * wall of sand * wall of water * wind wall
 
 4th-Level pillars of earth ll fire shield guardian of nature * ice storm storm sphere * wall of ice ll wall of thorns ll

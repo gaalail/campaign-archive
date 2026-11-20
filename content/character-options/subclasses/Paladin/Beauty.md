@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                   |
 | ------------- | ----------------------------- |
-| 3rd           | charm person, disguise self   |
-| 5th           | enthrall, suggestion          |
-| 9th           | fear, hypnotic pattern        |
-| 13th          | charm monster, compulsion     |
-| 17th          | dominate person, seeming      |
+| 3rd           | [[spells/1st-level/Charm Person|charm person]], [[spells/1st-level/Disguise Self|disguise self]]   |
+| 5th           | [[spells/2nd-level/Enthrall|enthrall]], [[spells/2nd-level/Suggestion|suggestion]]          |
+| 9th           | [[spells/3rd-level/Fear|fear]], [[spells/3rd-level/Hypnotic Pattern|hypnotic pattern]]        |
+| 13th          | [[spells/4th-level/Charm Monster|charm monster]], [[spells/4th-level/Compulsion|compulsion]]     |
+| 17th          | [[spells/5th-level/Dominate Person|dominate person]], [[spells/5th-level/Seeming|seeming]]      |
 
 **Otherworldly Elegance (3rd, Channel Divinity, 4 Resolve).** As an action, touch your holy symbol to enhance your appearance with divine glamour for 1 hour. Treat a 9 or lower on the d20 as a 10 on Charisma (Deception) and Charisma (Persuasion) checks.
 

@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Resurrected sovereign of the underworld, harvest renewal, and lawful judgment in Metu Neter."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "metu-neter"]
 ---
 # Osiris

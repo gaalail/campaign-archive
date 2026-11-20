@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                   |
 | ------------- | ----------------------------- |
-| 3rd           | bless, guiding bolt           |
-| 5th           | silence, zone of truth        |
-| 9th           | daylight, spirit guardians    |
-| 13th          | divination, guardian of faith |
-| 17th          | commune, hallow               |
+| 3rd           | [[spells/1st-level/Bless|bless]], [[spells/1st-level/Guiding Bolt|guiding bolt]]           |
+| 5th           | [[spells/2nd-level/Silence|silence]], [[spells/2nd-level/Zone of Truth|zone of truth]]        |
+| 9th           | [[spells/3rd-level/Daylight|daylight]], [[spells/3rd-level/Spirit Guardians|spirit guardians]]    |
+| 13th          | [[spells/4th-level/Divination|divination]], [[spells/4th-level/Guardian of Faith|guardian of faith]] |
+| 17th          | [[spells/5th-level/Commune|commune]], [[spells/5th-level/Hallow|hallow]]               |
 
 **Hand of Temple (3rd, Channel Divinity, 4 Resolve).** As an action, shed bright light in a 30-foot radius. Up to five allies of your choice in the area regain 1 hit point at the end of each of their turns for 1 minute.
 

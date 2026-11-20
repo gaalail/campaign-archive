@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Creator-smith of Metu Neter who conceived the world in thought and shaped it in stone and metal."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "metu-neter"]
 ---
 # Ptah

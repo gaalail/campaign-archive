@@ -22,11 +22,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oathless spells                      |
 | ------------- | ------------------------------------ |
-| 3rd           | charm person, false life             |
-| 5th           | invisibility, suggestion             |
-| 9th           | gaseous form, vampiric touch         |
-| 13th          | charm monster*, greater invisibility |
-| 17th          | dominate person, passwall            |
+| 3rd           | [[spells/1st-level/Charm Person|charm person]], [[spells/1st-level/False Life|false life]]             |
+| 5th           | [[spells/2nd-level/Invisibility|invisibility]], [[spells/2nd-level/Suggestion|suggestion]]             |
+| 9th           | [[spells/3rd-level/Gaseous Form|gaseous form]], [[spells/3rd-level/Vampiric Touch|vampiric touch]]         |
+| 13th          | [[spells/4th-level/Charm Monster|charm monster]]*, [[spells/4th-level/Greater Invisibility|greater invisibility]] |
+| 17th          | [[spells/5th-level/Dominate Person|dominate person]], [[spells/5th-level/Passwall|passwall]]            |
 
 **Shattered Oath (3rd).** Subtract your Paladin level from ability checks to convince a creature to trust you or enter any deal or agreement; creatures distrust you.
 

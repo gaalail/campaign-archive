@@ -39,9 +39,9 @@ You always have the following spells prepared. They don't count against the numb
 | Artificer Level | Spells                                          |
 | --------------- | ----------------------------------------------- |
 | 3rd             | _[[Cure Wounds]], [[Grease]]_                   |
-| 5th             | _[[spells/2nd-level/Enlarge-Reduce\|Enlarge/Reduce]], purify_ |
+| 5th             | _[[spells/2nd-level/Enlarge-Reduce\|Enlarge/Reduce]], [[spells/1st-level/Purify Food and Drink|purify]]_ |
 | 9th             | _[[Beacon of Hope]], [[Create Food and Water]]_ |
-| 13th            | _Aura of purity, [[Freedom of Movement]]_       |
+| 13th            | _[[spells/4th-level/Aura of Purity|Aura of purity]], [[Freedom of Movement]]_       |
 | 17th            | _[[Creation]], [[Mass Cure Wounds]]_            |
 
 ## Wondrous Caravan

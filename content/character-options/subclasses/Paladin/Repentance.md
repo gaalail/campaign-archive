@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                          |
 | ------------- | ------------------------------------ |
-| 3rd           | sanctuary, sleep                     |
-| 5th           | calm emotions, hold person           |
-| 9th           | counterspell ll, hypnotic pattern ll |
-| 13th          | aura of life, resilient sphere       |
-| 17th          | hold monster, wall of force ll       |
+| 3rd           | [[spells/1st-level/Sanctuary|sanctuary]], [[spells/1st-level/Sleep|sleep]]                     |
+| 5th           | [[spells/2nd-level/Calm Emotions|calm emotions]], [[spells/2nd-level/Hold Person|hold person]]           |
+| 9th           | [[spells/3rd-level/Counterspell|counterspell]] ll, [[spells/3rd-level/Hypnotic Pattern|hypnotic pattern]] ll |
+| 13th          | [[spells/4th-level/Aura of Life|aura of life]], [[spells/4th-level/Resilient Sphere|resilient sphere]]       |
+| 17th          | [[spells/5th-level/Hold Monster|hold monster]], [[spells/5th-level/Wall of Force|wall of force]] ll       |
 
 **Righteous Emissary (3rd, Channel Divinity, 2 Resolve).** When you make a Persuasion check, spend 2 Resolve to add your Paladin level.
 

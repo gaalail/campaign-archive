@@ -19,11 +19,11 @@ The Life domain focuses on the vibrant positive energy--one of the fundamental f
 
 | Level | Spells                               |
 | ----- | ------------------------------------ |
-| 1st   | Bless, Cure Wounds                   |
-| 3rd   | Lesser Restoration, Spiritual Weapon |
-| 5th   | Beacon of Hope, Revivify             |
-| 7th   | Death Ward                           |
-| 9th   | Mass Cure Wounds, Raise Dead         |
+| 1st   | [[spells/1st-level/Bless|Bless]], [[spells/1st-level/Cure Wounds|Cure Wounds]]                   |
+| 3rd   | [[spells/2nd-level/Lesser Restoration|Lesser Restoration]], [[spells/2nd-level/Spiritual Weapon|Spiritual Weapon]] |
+| 5th   | [[spells/3rd-level/Beacon of Hope|Beacon of Hope]], [[spells/3rd-level/Revivify|Revivify]]             |
+| 7th   | [[spells/4th-level/Death Ward|Death Ward]]                           |
+| 9th   | [[spells/5th-level/Mass Cure Wounds|Mass Cure Wounds]], [[spells/5th-level/Raise Dead|Raise Dead]]         |
 
 ## Features
 

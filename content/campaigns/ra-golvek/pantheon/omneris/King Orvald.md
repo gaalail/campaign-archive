@@ -14,7 +14,7 @@ recommended_oaths:
 summary: "Sovereign ruler of Omneris, the dark realm of mortals who seized Godhood through soul magic and vile rituals."
 source: "Ra Gol'vek Campaign Setting (Chapter 3 & Gods, Spirits, and Sovereigns)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: [ra-golvek, deity, omneris]
 aliases:
   - Orvald

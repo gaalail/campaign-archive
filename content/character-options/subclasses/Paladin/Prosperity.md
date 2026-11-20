@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                        |
 | ------------- | ---------------------------------- |
-| 3rd           | alarm, identify                    |
-| 5th           | arcane lock, locate object         |
-| 9th           | glyph of warding, tiny servant     |
-| 13th          | fabricate, secret chest            |
-| 17th          | animate objects, legend lore       |
+| 3rd           | [[spells/1st-level/Alarm|alarm]], [[spells/1st-level/Identify|identify]]                    |
+| 5th           | [[spells/2nd-level/Arcane Lock|arcane lock]], [[spells/2nd-level/Locate Object|locate object]]         |
+| 9th           | [[spells/3rd-level/Glyph of Warding|glyph of warding]], [[spells/3rd-level/Tiny Servant|tiny servant]]     |
+| 13th          | [[spells/4th-level/Fabricate|fabricate]], [[spells/4th-level/Secret Chest|secret chest]]            |
+| 17th          | [[spells/5th-level/Animate Objects|animate objects]], [[spells/5th-level/Legend Lore|legend lore]]       |
 
 **Distilled Fortune (3rd, Channel Divinity, 4 Resolve).** As an action, touch a Large or smaller nonmagical object not worn or carried with your holy symbol, transforming it into a Tiny gemstone worth the same amount. As an action, touch the gem with your holy symbol to restore the original object.
 

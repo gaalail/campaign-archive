@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Lord of oceanic depths, navigation, and hidden abyssal currents in Kaheawahu."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "kaheawahu"]
 ---
 # Kanaloa

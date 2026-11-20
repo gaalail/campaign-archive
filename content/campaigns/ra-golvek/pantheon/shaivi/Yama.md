@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Incorruptible judge of karmic deeds and sovereign of death in Shaivi."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "shaivi"]
 ---
 # Yama

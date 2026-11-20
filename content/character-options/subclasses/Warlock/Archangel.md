@@ -27,7 +27,7 @@ The archangel lets you choose from an expanded list of spells when you learn a w
 | 2nd         | [[Angelic Executioner]], [[Spiritual Weapon]] |
 | 3rd         | [[Beacon of Hope]], [[Revivify]]              |
 | 4th         | [[Dictate Morality]], [[Radiant Storm]]       |
-| 5th         | [[Burden of Sins]], well of blessing          |
+| 5th         | [[Burden of Sins]], [[spells/5th-level/Fountain of Blessing|well of blessing]] |
 
 ## Features
 

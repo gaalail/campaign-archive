@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Jubilant Muse of laughter, thriving pastures, and sunlit amphitheaters in Graikorioi."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "graikorioi"]
 ---
 

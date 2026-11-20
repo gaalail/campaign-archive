@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                  |
 | ------------- | ---------------------------- |
-| 3rd           | command, speak with animals  |
-| 5th           | beast sense, find steed      |
-| 9th           | conjure animals, fear        |
-| 13th          | dominate beast, giant insect |
-| 17th          | awaken, insect plague        |
+| 3rd           | [[spells/1st-level/Command|command]], [[spells/1st-level/Speak with Animals|speak with animals]]  |
+| 5th           | [[spells/2nd-level/Beast Sense|beast sense]], [[spells/2nd-level/Find Steed|find steed]]      |
+| 9th           | [[spells/3rd-level/Conjure Animals|conjure animals]], [[spells/3rd-level/Fear|fear]]        |
+| 13th          | [[spells/4th-level/Dominate Beast|dominate beast]], [[spells/4th-level/Giant Insect|giant insect]] |
+| 17th          | [[spells/5th-level/Awaken|awaken]], [[spells/5th-level/Insect Plague|insect plague]]        |
 
 **Predator's Mark (3rd, Channel Divinity, 4 Resolve).** As a bonus action, mark a creature you see within 120 feet as your Prey for 1 hour. Add Charisma modifier (minimum +1) to checks to track, tame, grapple, or subdue it.
 

@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Celtic Phantom Queen of prophecy, ravens, and sovereign destiny bound to Iusiurand."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "iusiurand"]
 ---
 

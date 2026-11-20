@@ -52,11 +52,11 @@ You always have the following spells prepared. They don't count against the numb
 
 | Artificer Level | Spells                                  |
 | --------------- | --------------------------------------- |
-| 3rd             | _Thunderous smite, witch bolt_          |
+| 3rd             | _[[spells/1st-level/Thunderous Smite|Thunderous smite]], [[spells/1st-level/Witch Bolt|witch bolt]]_          |
 | 5th             | _[[Misty Step]], [[Shatter]]_           |
-| 9th             | _[[Lightning Bolt]], thunder step_      |
-| 13th            | _[[Freedom of Movement]], storm sphere_ |
-| 17th            | _Far step, steel wind strike_           |
+| 9th             | _[[Lightning Bolt]], [[spells/3rd-level/Thunder Step|thunder step]]_      |
+| 13th            | _[[Freedom of Movement]], [[spells/4th-level/Storm Sphere|storm sphere]]_ |
+| 17th            | _[[spells/5th-level/Far Step|Far step]], [[spells/5th-level/Steel Wind Strike|steel wind strike]]_           |
 
 ## Channel Lightning
 

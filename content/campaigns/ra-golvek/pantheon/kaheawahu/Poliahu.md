@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Snow-mantled mountain goddess holding cool poise above island volcanoes."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "kaheawahu"]
 aliases:
   - "Poliahu"

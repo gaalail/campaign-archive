@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Supreme cosmic dancer of Shaivi dissolving illusion and ending weary cycles so renewal can begin."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "shaivi"]
 ---
 # Shiva

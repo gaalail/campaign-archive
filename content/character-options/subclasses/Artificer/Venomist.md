@@ -48,11 +48,11 @@ You always have the following spells prepared. They don't count against the numb
 
 | Artificer Level | Spells                                                |
 | --------------- | ----------------------------------------------------- |
-| 3rd             | _[[Detect Poison and Disease]], ray of sickness_      |
+| 3rd             | _[[Detect Poison and Disease]], [[spells/1st-level/Ray of Sickness|ray of sickness]]_      |
 | 5th             | _[[Protection from Poison]], [[Ray of Enfeeblement]]_ |
-| 9th             | _[[Bestow Curse]], enemies abound_                    |
-| 13th            | _[[Blight]], vitriolic sphere_                        |
-| 17th            | _[[Contagion]], negative energy flood_                |
+| 9th             | _[[Bestow Curse]], [[spells/3rd-level/Enemies Abound|enemies abound]]_                    |
+| 13th            | _[[Blight]], [[spells/4th-level/Vitriolic Sphere|vitriolic sphere]]_                        |
+| 17th            | _[[Contagion]], [[spells/5th-level/Negative Energy Flood|negative energy flood]]_                |
 
 ## Infused Poisons
 

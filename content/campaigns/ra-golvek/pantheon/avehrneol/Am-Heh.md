@@ -22,7 +22,7 @@ recommended_oaths:
 summary: "Archdevil of Avehrneol holding the sin of Gluttony and dominion over Ikiyyah."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "avehrneol"]
 ---
 # Am-Heh

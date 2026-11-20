@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Hellenic goddess of grain, fertility, and the patient cycle of spring bloom and autumn blight."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "graikorioi"]
 ---
 

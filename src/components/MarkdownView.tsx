@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { resolveWikilink, getSourceBadgeInfo } from '../utils/archiveUtils';
 import { AlertTriangle, Info, Lightbulb, ShieldAlert, ChevronDown, ChevronRight, ExternalLink } from 'lucide-react';
 import { SpellCatalogue } from './SpellCatalogue';
@@ -19,7 +19,7 @@ export const MarkdownView: React.FC<MarkdownViewProps> = ({ content, currentEntr
   return (
     <div className="prose prose-invert max-w-none space-y-4 text-slate-300 leading-relaxed text-sm md:text-base">
       {elements.map((el, idx) => (
-        <BlockRenderer key={idx} block={el} currentEntryId={currentEntryId} onNavigate={onNavigate} />
+        <BlockRenderer key={`${currentEntryId || 'doc'}-${idx}-${el.type}`} block={el} currentEntryId={currentEntryId} onNavigate={onNavigate} />
       ))}
     </div>
   );
@@ -267,6 +267,10 @@ function parseMarkdownBlocks(text: string): Block[] {
 
 const BlockRenderer: React.FC<{ block: Block; currentEntryId?: string; onNavigate: (id: string) => void }> = ({ block, currentEntryId, onNavigate }) => {
   const [isOpen, setIsOpen] = useState(!block.isFolded);
+
+  useEffect(() => {
+    setIsOpen(!block.isFolded);
+  }, [currentEntryId, block.isFolded, block.title]);
 
   if (block.type === 'divider') {
     const isStrahd = currentEntryId?.includes('curse-of-strahd');
@@ -631,6 +635,25 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
 
       if (target.endsWith('.base') || target.includes('.base#')) {
         node = <React.Fragment key={key} />;
+      } else if (target.startsWith('#')) {
+        const rawAnchor = target.slice(1).trim();
+        const anchorSlug = rawAnchor.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+        const displayLabel = linkParts[1]?.trim() || rawAnchor;
+        node = (
+          <a
+            key={key}
+            href={`#${anchorSlug}`}
+            onClick={(e) => {
+              e.preventDefault();
+              if (anchorSlug) {
+                document.getElementById(anchorSlug)?.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="font-semibold text-amber-400 hover:text-amber-200 underline decoration-amber-500/50 hover:decoration-amber-300 transition-colors cursor-pointer inline"
+          >
+            {renderFormattingWithSentinels(displayLabel, codeTokens, linkNodes, `wl-${key}`)}
+          </a>
+        );
       } else {
         const resolved = resolveWikilink(target);
         if (resolved) {

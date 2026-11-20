@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Fierce solar war god sustained by sacred blood rites atop volcanic peaks."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "mayincatec"]
 ---
 # Huitzilopochtli

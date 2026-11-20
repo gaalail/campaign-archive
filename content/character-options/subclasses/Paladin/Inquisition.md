@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                   |
 | ------------- | ----------------------------- |
-| 3rd           | charm person, command         |
-| 5th           | moonbeam, zone of truth       |
-| 9th           | clairvoyance, magic circle    |
-| 13th          | arcane eye, charm monster     |
-| 17th          | legend lore, scrying          |
+| 3rd           | [[spells/1st-level/Charm Person|charm person]], [[spells/1st-level/Command|command]]         |
+| 5th           | [[spells/2nd-level/Moonbeam|moonbeam]], [[spells/2nd-level/Zone of Truth|zone of truth]]       |
+| 9th           | [[spells/3rd-level/Clairvoyance|clairvoyance]], [[spells/3rd-level/Magic Circle|magic circle]]    |
+| 13th          | [[spells/4th-level/Arcane Eye|arcane eye]], [[spells/4th-level/Charm Monster|charm monster]]     |
+| 17th          | [[spells/5th-level/Legend Lore|legend lore]], [[spells/5th-level/Scrying|scrying]]          |
 
 **Divine Interrogation (3rd, Channel Divinity, 4 Resolve).** As an action, choose a creature within 10 feet that can see or hear you. Charisma save or you learn its true name, and it has disadvantage on the first Intelligence, Wisdom, or Charisma save you force it to make within 1 minute.
 

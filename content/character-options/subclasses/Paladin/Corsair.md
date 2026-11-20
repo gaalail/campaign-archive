@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
-| 3rd           | fog cloud, zephyr strike         |
-| 5th           | arcane lock, warding wind        |
-| 9th           | thunder step, tidal wave         |
-| 13th          | control water, storm sphere      |
-| 17th          | control winds, maelstrom         |
+| 3rd           | [[spells/1st-level/Fog Cloud|fog cloud]], [[spells/1st-level/Zephyr Strike|zephyr strike]]         |
+| 5th           | [[spells/2nd-level/Arcane Lock|arcane lock]], [[spells/2nd-level/Warding Wind|warding wind]]        |
+| 9th           | [[spells/3rd-level/Thunder Step|thunder step]], [[spells/3rd-level/Tidal Wave|tidal wave]]         |
+| 13th          | [[spells/4th-level/Control Water|control water]], [[spells/4th-level/Storm Sphere|storm sphere]]      |
+| 17th          | [[spells/5th-level/Control Winds|control winds]], [[spells/5th-level/Maelstrom|maelstrom]]         |
 
 **All Hands on Deck (3rd, Channel Divinity, 4 Resolve).** As a bonus action, choose up to your Charisma modifier creatures within 30 feet who can see or hear you. Each can use its reaction to move up to its speed without provoking opportunity attacks.
 

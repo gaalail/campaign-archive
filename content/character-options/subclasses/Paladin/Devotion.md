@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
-| 3rd           | bless, shield of faith           |
-| 5th           | find steed ll, restoration ll    |
-| 9th           | beacon of hope, remove curse     |
-| 13th          | death ward ll, guardian of faith |
-| 17th          | dawn, dispel evil and good       |
+| 3rd           | [[spells/1st-level/Bless|bless]], [[spells/1st-level/Shield of Faith|shield of faith]]           |
+| 5th           | [[spells/2nd-level/Find Steed|find steed]] ll, [[spells/2nd-level/Restoration|restoration]] ll    |
+| 9th           | [[spells/3rd-level/Beacon of Hope|beacon of hope]], [[spells/3rd-level/Remove Curse|remove curse]]     |
+| 13th          | [[spells/4th-level/Death Ward|death ward]] ll, [[spells/4th-level/Guardian of Faith|guardian of faith]] |
+| 17th          | [[spells/5th-level/Dawn|dawn]], [[spells/5th-level/Dispel Evil and Good|dispel evil and good]]       |
 
 **Consecrated Smite (3rd, Oath Smite, radiant).** Wisdom save or, until the end of its next turn, the target can't willingly move closer to you or take reactions. Fiends and undead have disadvantage on the save.
 

@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                          |
 | ------------- | ------------------------------------ |
-| 3rd           | bane, detect magic                   |
-| 5th           | flame blade, pass without trace      |
-| 9th           | bestow curse, protection from energy |
-| 13th          | confusion, freedom of movement       |
-| 17th          | hallow, planar binding               |
+| 3rd           | [[spells/1st-level/Bane|bane]], [[spells/1st-level/Detect Magic|detect magic]]                   |
+| 5th           | [[spells/2nd-level/Flame Blade|flame blade]], [[spells/2nd-level/Pass without Trace|pass without trace]]      |
+| 9th           | [[spells/3rd-level/Bestow Curse|bestow curse]], [[spells/3rd-level/Protection from Energy|protection from energy]] |
+| 13th          | [[spells/4th-level/Confusion|confusion]], [[spells/4th-level/Freedom of Movement|freedom of movement]]       |
+| 17th          | [[spells/5th-level/Hallow|hallow]], [[spells/5th-level/Planar Binding|planar binding]]               |
 
 **Dedicated Faithful (3rd).** When you would expend a spell slot to cast a spell or use a smite, you can spend 4 Resolve per slot level instead.
 

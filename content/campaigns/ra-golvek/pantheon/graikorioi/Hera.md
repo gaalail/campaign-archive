@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Sovereign queen of Graikorioi upholding dynasty, hearth-vows, and fierce retribution against betrayal."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "graikorioi"]
 ---
 

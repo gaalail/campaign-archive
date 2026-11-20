@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Vedic solar sovereign of unflinching truth, oath-keeping, and radiant law in Iusiurand."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "iusiurand"]
 ---
 

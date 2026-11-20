@@ -14,7 +14,7 @@ recommended_oaths:
 summary: "Sovereign figure of Divine Power rank listed under the Kingdoms of Night."
 source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: [ra-golvek, deity, kingdoms-of-night]
 ---
 

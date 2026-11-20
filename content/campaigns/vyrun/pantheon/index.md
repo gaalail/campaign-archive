@@ -7,7 +7,7 @@ pantheon: "The Reawakened Old Gods"
 summary: "Frontier hearth-faiths, primeval woodland spirits, and the awakening divine resonance of Vyrun's lost civilization."
 source: "Vyrun Campaign Setting"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: [vyrun, pantheon, frontier, wilderness, magic]
 aliases:
   - campaigns/vyrun/pantheon

@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Omnipresent lord of the Smoking Mirror ruling night, fate, war, and sudden ruin in Mayincatec."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "mayincatec"]
 ---
 # Tezcatlipoca

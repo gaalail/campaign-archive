@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Chthonic prince of blood-rites, defiance, and death-rebirth mysteries within Iusiurand."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "iusiurand"]
 ---
 

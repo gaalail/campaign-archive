@@ -864,6 +864,7 @@ function resolveSpellByName(name: string, allSpells: ArchiveEntry[] = []): Archi
   const slug = cleaned.replace(/[\/\s]+/g, '-');
   return (
     allSpells.find((sp) => sp.title.toLowerCase() === cleaned) ||
+    allSpells.find((sp) => (sp.aliases || []).some((a) => String(a).toLowerCase() === cleaned)) ||
     allSpells.find((sp) => sp.id.toLowerCase().endsWith(`/${slug}`)) ||
     allSpells.find((sp) => sp.id.toLowerCase().endsWith(`/${cleaned.replace(/\s+/g, '-')}`)) ||
     allSpells.find((sp) => sp.id.toLowerCase().endsWith(`/${cleaned}`))
@@ -902,11 +903,11 @@ export function parseSubclassBonusSpells(
       const spellListStr = row[1] || '';
       const names = spellListStr
         .split(',')
-        .map((s) => cleanMarkdown(s).replace(/\s+ll\b/gi, '').trim())
+        .map((s) => cleanMarkdown(s).replace(/\s*\(ll\)/gi, '').replace(/\s+ll\b/gi, '').trim())
         .filter(Boolean);
 
       for (const spName of names) {
-        if (/choose|option|none/i.test(spName)) continue;
+        if (/choose|option|none|your genie spell/i.test(spName)) continue;
         const entry = resolveSpellByName(spName, allSpells);
         if (!results.some((r) => r.name.toLowerCase() === (entry?.title || spName).toLowerCase())) {
           results.push({

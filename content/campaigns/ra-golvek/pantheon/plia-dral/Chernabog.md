@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Slavic Black God of winter darkness and ill fate dwelling in forgotten dragon-haunted Plia Dral."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "plia-dral"]
 ---
 # Chernabog

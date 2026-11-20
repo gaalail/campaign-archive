@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Mayan lunar goddess of healing waters, childbirth, weaving, and nocturnal magic."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "mayincatec"]
 ---
 # Ixchel

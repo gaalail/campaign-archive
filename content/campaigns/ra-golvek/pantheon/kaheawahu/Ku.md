@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Fierce god of righteous war, upland forests, and civic defense in Kaheawahu."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "kaheawahu"]
 aliases:
   - "Ku"

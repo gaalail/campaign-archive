@@ -23,15 +23,15 @@ Divine Smite draws its smites from these paths. Choose one path at 2nd level and
 
 Each path has five smites, unlocking as your Paladin level rises. Choose the theme and combat effect you want to build around; the linked page includes that path’s full rules and all five smites.
 
-- **[[Corrosion|Corrosion Smite Path]]** · Acid damage — Strips away a foe's defenses, then corrodes its body.
-- **[[Arcana|Arcana Smite Path]]** · Force damage — Repositions enemies and disrupts the magic and protections they rely on.
-- **[[Frost|Frost Smite Path]]** · Cold damage — Slows enemies, spreads that control across the field, then locks a target in place.
-- **[[Radiance|Radiance Smite Path]]** · Radiant damage — Reveals hidden foes, blinds them, binds them, and brings divine judgment.
-- **[[Inferno|Inferno Smite Path]]** · Fire damage — Punishes a foe for attacking or moving, escalating into overwhelming heat.
-- **[[Judgment|Judgment Smite Path]]** · Psychic damage — Shakes a foe's courage, footing, aim, and control of its actions.
-- **[[Storm|Storm Smite Path]]** · lightning or thunder damage — Opens with thunder and builds into lightning, disruption, and surging force.
-- **[[Venom|Venom Smite Path]]** · Poison damage — Undermines a foe's body, steadily weakening its ability to act.
-- **[[Blight-Smite-Path|Blight Smite Path]]** · Necrotic damage — Drains a foe's vitality and withers its ability to fight.
+- **[[character-options/class-options/smite-paths/Corrosion|Corrosion Smite Path]]** · Acid damage — Strips away a foe's defenses, then corrodes its body.
+- **[[character-options/class-options/smite-paths/Arcana|Arcana Smite Path]]** · Force damage — Repositions enemies and disrupts the magic and protections they rely on.
+- **[[character-options/class-options/smite-paths/Frost|Frost Smite Path]]** · Cold damage — Slows enemies, spreads that control across the field, then locks a target in place.
+- **[[character-options/class-options/smite-paths/Radiance|Radiance Smite Path]]** · Radiant damage — Reveals hidden foes, blinds them, binds them, and brings divine judgment.
+- **[[character-options/class-options/smite-paths/Inferno|Inferno Smite Path]]** · Fire damage — Punishes a foe for attacking or moving, escalating into overwhelming heat.
+- **[[character-options/class-options/smite-paths/Judgment|Judgment Smite Path]]** · Psychic damage — Shakes a foe's courage, footing, aim, and control of its actions.
+- **[[character-options/class-options/smite-paths/Storm|Storm Smite Path]]** · lightning or thunder damage — Opens with thunder and builds into lightning, disruption, and surging force.
+- **[[character-options/class-options/smite-paths/Venom|Venom Smite Path]]** · Poison damage — Undermines a foe's body, steadily weakening its ability to act.
+- **[[character-options/class-options/smite-paths/Blight-Smite-Path|Blight Smite Path]]** · Necrotic damage — Drains a foe's vitality and withers its ability to fight.
 
 ## Designer's Notes
 

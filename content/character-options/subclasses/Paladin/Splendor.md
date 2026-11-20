@@ -33,11 +33,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                                                |
 | ------------- | ---------------------------------------------------------- |
-| 3rd           | absorb elements*, burning hands                            |
-| 5th           | mirror image, scorching ray                                |
-| 9th           | elemental bane ll, summon elemental ll (your element only) |
-| 13th          | wall of fire, ice storm                                    |
-| 17th          | contact other plane, flame strike                          |
+| 3rd           | [[spells/1st-level/Absorb Elements|absorb elements]]*, [[spells/1st-level/Burning Hands|burning hands]]                            |
+| 5th           | [[spells/2nd-level/Mirror Image|mirror image]], [[spells/2nd-level/Scorching Ray|scorching ray]]                                |
+| 9th           | [[spells/4th-level/Elemental Bane|elemental bane]] ll, [[spells/4th-level/Summon Elemental|summon elemental]] ll (your element only) |
+| 13th          | [[spells/4th-level/Wall of Fire|wall of fire]], [[spells/4th-level/Ice Storm|ice storm]]                                    |
+| 17th          | [[spells/5th-level/Contact Other Plane|contact other plane]], [[spells/5th-level/Flame Strike|flame strike]]                          |
 
 Whenever you cast a Splendor spell, its damage uses your element's type instead of its normal type.
 

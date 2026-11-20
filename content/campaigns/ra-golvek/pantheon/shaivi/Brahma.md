@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Creator deity of Shaivi from whose four faces flow sacred wisdom and world-shaping truth."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "shaivi"]
 ---
 # Brahma

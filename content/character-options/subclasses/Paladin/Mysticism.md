@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
-| 3rd           | catapult, dissonant whispers     |
-| 5th           | detect thoughts, levitate        |
-| 9th           | clairvoyance, slow               |
-| 13th          | confusion, phantasmal killer     |
-| 17th          | telekinesis, wall of force       |
+| 3rd           | [[spells/1st-level/Catapult|catapult]], [[spells/1st-level/Dissonant Whispers|dissonant whispers]]     |
+| 5th           | [[spells/2nd-level/Detect Thoughts|detect thoughts]], [[spells/2nd-level/Levitate|levitate]]        |
+| 9th           | [[spells/3rd-level/Clairvoyance|clairvoyance]], [[spells/3rd-level/Slow|slow]]               |
+| 13th          | [[spells/4th-level/Confusion|confusion]], [[spells/4th-level/Phantasmal Killer|phantasmal killer]]     |
+| 17th          | [[spells/5th-level/Telekinesis|telekinesis]], [[spells/5th-level/Wall of Force|wall of force]]       |
 
 **Enlightened Spell (3rd, Channel Divinity, 4 Resolve).** When casting a Mysticism spell, grasp your holy symbol to cast without verbal or somatic components.
 

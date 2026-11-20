@@ -23,10 +23,10 @@ Inside you are four different mythological entities: a falcon (Avian), a wolf (P
 | Cleric level | Spells                                       |
 | ------------ | -------------------------------------------- |
 | 1st          | [[Faerie Fire]], [[Find Familiar]]           |
-| 3rd          | Beast Sense, [[Find Steed]]                  |
+| 3rd          | [[spells/2nd-level/Beast Sense|Beast Sense]], [[Find Steed]]                  |
 | 5th          | [[Fly]], [[Protection From Energy]]          |
 | 7th          | [[Freedom of Movement]], [[Locate Creature]] |
-| 9th          | Commune with Nature, [[Dominate Monster]]    |
+| 9th          | [[spells/5th-level/Commune with Nature|Commune with Nature]], [[Dominate Monster]]    |
 
 ## Features
 

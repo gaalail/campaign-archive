@@ -54,7 +54,7 @@ You always have the following spells prepared. They don't count against the numb
 
 | Artificer Level | Spells                               |
 | --------------- | ------------------------------------ |
-| 3rd             | _Ensnaring strike, [[Grease]]_       |
+| 3rd             | _[[spells/1st-level/Ensnaring Strike|Ensnaring strike]], [[Grease]]_       |
 | 5th             | _[[Locate Creature]], [[Web]]_       |
 | 9th             | _[[Clairvoyance]], [[Nondetection]]_ |
 | 13th            | _[[Arcane Eye]], [[Divination]]_     |

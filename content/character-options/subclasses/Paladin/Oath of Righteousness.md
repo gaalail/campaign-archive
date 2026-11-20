@@ -25,7 +25,7 @@ You gain oath spells at the paladin levels listed.
 
 | Paladin level | Spells                                 |
 | ------------- | -------------------------------------- |
-| 3rd           | [[Command]], compelled duel            |
+| 3rd           | [[Command]], [[spells/1st-level/Compelled Duel|compelled duel]]            |
 | 5th           | [[Warding Bond]], [[Zone of Truth]]    |
 | 9th           | [[Dispel Magic]], [[Tongues]]          |
 | 13th          | [[Banishment]], [[Enhance Perception]] |

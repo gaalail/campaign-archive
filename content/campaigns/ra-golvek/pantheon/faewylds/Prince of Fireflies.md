@@ -14,7 +14,7 @@ recommended_oaths:
 summary: "Faeble sovereign of the Faewylds; Court and Portfolio awaiting expansion."
 source: "Ra Gol'vek Campaign Setting (Gods, Spirits, and Sovereigns)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: [ra-golvek, deity, faewylds]
 ---
 

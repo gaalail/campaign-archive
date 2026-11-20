@@ -13,7 +13,7 @@ recommended_oaths: [Zealot, Glory, Vengeance]
 summary: "Fierce frontier god of mountain storms, apex beasts, blood-oaths, and unyielding grit under crushing odds."
 source: "Vyrun Campaign Setting"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: [vyrun, deity, war, beast, mountain]
 aliases:
   - Gorrak

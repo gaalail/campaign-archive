@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Twin herald of battlefield dread and rout riding beside Ares in Exoría."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "exoria"]
 ---
 

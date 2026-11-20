@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                              |
 | ------------- | ---------------------------------------- |
-| 3rd           | identify, burning hands                  |
-| 5th           | heat metal, magic weapon                 |
-| 9th           | elemental weapon, protection from energy |
-| 13th          | fabricate, wall of fire                  |
-| 17th          | animate objects, creation                |
+| 3rd           | [[spells/1st-level/Identify|identify]], [[spells/1st-level/Burning Hands|burning hands]]                  |
+| 5th           | [[spells/2nd-level/Heat Metal|heat metal]], [[spells/2nd-level/Magic Weapon|magic weapon]]                 |
+| 9th           | [[spells/3rd-level/Elemental Weapon|elemental weapon]], [[spells/3rd-level/Protection from Energy|protection from energy]] |
+| 13th          | [[spells/4th-level/Fabricate|fabricate]], [[spells/4th-level/Wall of Fire|wall of fire]]                  |
+| 17th          | [[spells/5th-level/Animate Objects|animate objects]], [[spells/5th-level/Creation|creation]]                |
 
 **Molten Weapon (3rd, Channel Divinity, 4 Resolve).** As a bonus action, imbue a melee weapon for 1 minute; it deals an extra 1d6 fire damage on a hit.
 

@@ -30,7 +30,7 @@ You also learn the spells in the following table at the Warlock levels shown. Th
 | 3rd           | [[Blindness-Deafness]], [[spells/2nd-level/Flame Whip|Flame Whip]] *(LL)* |
 | 5th           | [[Bestow Curse]], [[Fireball]]     |
 | 7th           | [[Blight]], [[Wall of Fire]]       |
-| 9th           | [[Cloudkill]], Immolation          |
+| 9th           | [[Cloudkill]], [[spells/5th-level/Immolation|Immolation]] |
 
 ## Dark Vitality
 

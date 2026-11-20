@@ -36,11 +36,11 @@ These spells count as Tamer spells and do not count against spells known.
 
 | Tamer Level | Spells                                          |
 | ----------- | ----------------------------------------------- |
-| 3rd         | _false life_, _inflict wounds_                  |
-| 5th         | _blindness/deafness_, _ray of enfeeblement_     |
-| 9th         | _influenza_ (Appendix B), _vampiric touch_      |
-| 13th        | _confusion_, _death ward_                       |
-| 17th        | _bone cage_ (Appendix B), _endure_ (Appendix B) |
+| 3rd         | _[[spells/1st-level/False Life|false life]]_, _[[spells/1st-level/Inflict Wounds|inflict wounds]]_                  |
+| 5th         | _[[spells/2nd-level/Blindness-Deafness|blindness/deafness]]_, _[[spells/2nd-level/Ray of Enfeeblement|ray of enfeeblement]]_     |
+| 9th         | _[[spells/3rd-level/Influenza|influenza]]_ (Appendix B), _[[spells/3rd-level/Vampiric Touch|vampiric touch]]_      |
+| 13th        | _[[spells/4th-level/Confusion|confusion]]_, _[[spells/4th-level/Death Ward|death ward]]_                       |
+| 17th        | _[[spells/5th-level/Bone Cage|bone cage]]_ (Appendix B), _[[spells/5th-level/Endure|endure]]_ (Appendix B) |
 
 ## Animate Dead
 

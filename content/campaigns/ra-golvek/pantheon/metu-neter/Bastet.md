@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Feline goddess of household protection, revelry, and watchful grace in Metu Neter."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "metu-neter"]
 ---
 # Bastet

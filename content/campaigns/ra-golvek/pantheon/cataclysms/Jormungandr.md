@@ -15,7 +15,7 @@ favored_weapon: "Venomous Whip or Trident"
 summary: "World-encircling Serpent Cataclysm whose worship is forbidden across mortal lands."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "cataclysms"]
 aliases:
   - "Jormungandr"

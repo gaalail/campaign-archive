@@ -32,11 +32,11 @@ These spells count as Tamer spells and do not count against spells known.
 
 | Tamer Level | Spells                                          |
 | ----------- | ----------------------------------------------- |
-| 3rd         | _divine favor_, _protection from evil and good_ |
-| 5th         | _inequality_ (Appendix B), _warding bond_       |
-| 9th         | _beacon of hope_, _haste_                       |
-| 13th        | _death ward_, _freedom of movement_             |
-| 17th        | _dispel evil and good_, _endure_ (Appendix B)   |
+| 3rd         | _[[spells/1st-level/Divine Favor|divine favor]]_, _[[spells/1st-level/Protection from Evil and Good|protection from evil and good]]_ |
+| 5th         | _[[spells/2nd-level/Inequality|inequality]]_ (Appendix B), _[[spells/2nd-level/Warding Bond|warding bond]]_       |
+| 9th         | _[[spells/3rd-level/Beacon of Hope|beacon of hope]]_, _[[spells/3rd-level/Haste|haste]]_                       |
+| 13th        | _[[spells/4th-level/Death Ward|death ward]]_, _[[spells/4th-level/Freedom of Movement|freedom of movement]]_             |
+| 17th        | _[[spells/5th-level/Dispel Evil and Good|dispel evil and good]]_, _[[spells/5th-level/Endure|endure]]_ (Appendix B)   |
 
 ## Action Burst
 

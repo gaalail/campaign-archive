@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Fierce and generous lord of thunder, mountain springs, and crop-saving rains in Mayincatec."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "mayincatec"]
 ---
 # Tlaloc

@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Mystery-cult solar sovereign of sworn brotherhood, truth, and steadfast courage in Graikorioi."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "graikorioi"]
 ---
 

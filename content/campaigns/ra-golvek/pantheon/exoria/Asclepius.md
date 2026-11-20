@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Master healer exiled alongside Exoría's warring hosts, tending mortal wounds and forbidden resurrection."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "exoria"]
 ---
 

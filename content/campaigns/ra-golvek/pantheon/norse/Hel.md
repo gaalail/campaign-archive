@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Half-living, half-spectral sovereign who shelters all northern dead not claimed by Valhalla."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "norse"]
 ---
 # Hel

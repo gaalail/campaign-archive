@@ -30,7 +30,7 @@ You also learn the spells in the following table at the Warlock levels shown. Th
 | 3rd           | [[spells/2nd-level/Aura of Frost|Aura of Frost]] *(LL)*, [[Gust of Wind]]                            |
 | 5th           | [[Tidal Wave]], [[Sleet Storm]]                                                                   |
 | 7th           | [[Control Water]], [[spells/4th-level/Eldritch Tentacles|Eldritch Tentacles]] *(LL)*              |
-| 9th           | [[Cone of Cold]], Maelstrom                                             |
+| 9th           | [[Cone of Cold]], [[spells/5th-level/Maelstrom|Maelstrom]]                                             |
 
 ## Grasp of the Deep
 

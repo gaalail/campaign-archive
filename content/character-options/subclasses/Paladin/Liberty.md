@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                             |
 | ------------- | --------------------------------------- |
-| 3rd           | heroism, shield of faith                |
-| 5th           | prayer of healing, warding bond         |
-| 9th           | life transference, revivify             |
-| 13th          | aura of purity, freedom of movement     |
-| 17th          | mass cure wounds, skill empowerment     |
+| 3rd           | [[spells/1st-level/Heroism|heroism]], [[spells/1st-level/Shield of Faith|shield of faith]]                |
+| 5th           | [[spells/2nd-level/Prayer of Healing|prayer of healing]], [[spells/2nd-level/Warding Bond|warding bond]]         |
+| 9th           | [[spells/3rd-level/Life Transference|life transference]], [[spells/3rd-level/Revivify|revivify]]             |
+| 13th          | [[spells/4th-level/Aura of Purity|aura of purity]], [[spells/4th-level/Freedom of Movement|freedom of movement]]     |
+| 17th          | [[spells/5th-level/Mass Cure Wounds|mass cure wounds]], [[spells/5th-level/Skill Empowerment|skill empowerment]]     |
 
 **Admonish the Tyrannical (3rd, Channel Divinity, 4 Resolve).** When a creature you see within 30 feet damages another creature, use a reaction to rebuke it. For 1 minute or until concentration ends, it has disadvantage on attacks that don't target you.
 

@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "King of the Devas in Shaivi wielding lightning and monsoon rains."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "shaivi"]
 ---
 # Indra

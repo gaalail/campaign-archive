@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                        |
 | ------------- | ---------------------------------- |
-| 3rd           | command, compelled duel ll         |
-| 5th           | find steed ll, warding bond        |
-| 9th           | aura of vitality, spirit guardians |
-| 13th          | banishment, guardian of faith      |
-| 17th          | circle of power, geas              |
+| 3rd           | [[spells/1st-level/Command|command]], [[spells/1st-level/Compelled Duel|compelled duel]] ll         |
+| 5th           | [[spells/2nd-level/Find Steed|find steed]] ll, [[spells/2nd-level/Warding Bond|warding bond]]        |
+| 9th           | [[spells/3rd-level/Aura of Vitality|aura of vitality]], [[spells/3rd-level/Spirit Guardians|spirit guardians]] |
+| 13th          | [[spells/4th-level/Banishment|banishment]], [[spells/4th-level/Guardian of Faith|guardian of faith]]      |
+| 17th          | [[spells/5th-level/Circle of Power|circle of power]], [[spells/5th-level/Geas|geas]]              |
 
 **Challenging Smite (3rd, Oath Smite, radiant).** Wisdom save or disadvantage on attacks against creatures other than you until the end of its next turn.
 

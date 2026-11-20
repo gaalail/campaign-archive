@@ -22,7 +22,7 @@ recommended_oaths:
 summary: "Archdevil of Avehrneol holding the sin of Wrath and dominion over Hutam’ir."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "avehrneol"]
 ---
 # Belial

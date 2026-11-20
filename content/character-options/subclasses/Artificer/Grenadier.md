@@ -82,11 +82,11 @@ You always have the following spells prepared. They don't count against the numb
 
 | Artificer Level | Spells                                 |
 | --------------- | -------------------------------------- |
-| 3rd             | _Caustic brew, earth tremor_           |
+| 3rd             | _[[spells/1st-level/Tasha's Caustic Brew|Caustic brew]], [[spells/1st-level/Earth Tremor|earth tremor]]_           |
 | 5th             | _[[Flaming Sphere]], [[Shatter]]_      |
-| 9th             | _[[Fireball]], erupting earth_         |
-| 13th            | _Sickening radiance, [[Wall of Fire]]_ |
-| 17th            | _Immolation, maelstrom_                |
+| 9th             | _[[Fireball]], [[spells/3rd-level/Erupting Earth|erupting earth]]_         |
+| 13th            | _[[spells/4th-level/Sickening Radiance|Sickening radiance]], [[Wall of Fire]]_ |
+| 17th            | _[[spells/5th-level/Immolation|Immolation]], [[spells/5th-level/Maelstrom|maelstrom]]_                |
 
 ## Extra Attack
 

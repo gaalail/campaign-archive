@@ -13,7 +13,7 @@ recommended_oaths: [Forge, Shield, Dawn Domain, Oath of Righteousness]
 summary: "Guardian of frontier hearths, forged iron, and life-preserving warmth against Vyrun's crushing winters."
 source: "Vyrun Campaign Setting"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: [vyrun, deity, fire, forge, pioneer]
 aliases:
   - Solarys

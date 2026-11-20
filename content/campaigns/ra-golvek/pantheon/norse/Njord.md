@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Vanir lord of favorable winds, rich catches, and maritime wealth in the Norse realm."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "norse"]
 ---
 # Njord

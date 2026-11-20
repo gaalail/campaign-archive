@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Shapeshifting Norse trickster whose schemes rescue and imperil the gods in equal measure."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "norse"]
 ---
 # Loki

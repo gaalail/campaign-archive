@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Feathered Serpent deity of wind, morning light, arts, and wise rulership in Mayincatec."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "mayincatec"]
 ---
 # Quetzalcoatl

@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Dread-son of Ares embodying sudden panic and creeping battle-horror in Exoría."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "exoria"]
 ---
 

@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Hellenic daemon of fatal delusion and impulsive ruin within the exiled ranks of Exoría."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "exoria"]
 aliases:
   - "Ate"

@@ -13,7 +13,7 @@ recommended_oaths: [Mysticism, Domain of Mythology, Order of the Voice]
 summary: "The newly awakened numinous consciousness echoing through Vyrun's ancient megaliths and returning ley lines."
 source: "Vyrun Campaign Setting"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: [vyrun, deity, arcana, ruins, magic]
 aliases:
   - Whispering Ley

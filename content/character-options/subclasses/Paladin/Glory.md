@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                        |
 | ------------- | ---------------------------------- |
-| 3rd           | compelled duel ll, jump ll         |
-| 5th           | enhance ability, magic weapon ll   |
-| 9th           | haste, thunder step*               |
-| 13th          | death ward ll, freedom of movement |
-| 17th          | steel wind strike, circle of power |
+| 3rd           | [[spells/1st-level/Compelled Duel|compelled duel]] ll, [[spells/1st-level/Jump|jump]] ll         |
+| 5th           | [[spells/2nd-level/Enhance Ability|enhance ability]], [[spells/2nd-level/Magic Weapon|magic weapon]] ll   |
+| 9th           | [[spells/3rd-level/Haste|haste]], [[spells/3rd-level/Thunder Step|thunder step]]*               |
+| 13th          | [[spells/4th-level/Death Ward|death ward]] ll, [[spells/4th-level/Freedom of Movement|freedom of movement]] |
+| 17th          | [[spells/5th-level/Steel Wind Strike|steel wind strike]], [[spells/5th-level/Circle of Power|circle of power]] |
 
 **Glorious Smite (3rd, Oath Smite, radiant).** Immediately after your attack, distribute temporary hit points equal to your Charisma modifier + twice the expended slot's level among creatures you choose within 10 feet. From 6th level, the range is your Aura Radius.
 

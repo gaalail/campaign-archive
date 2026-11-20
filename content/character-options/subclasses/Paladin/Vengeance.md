@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                |
 | ------------- | -------------------------- |
-| 3rd           | bane, compelled duel ll    |
-| 5th           | hold person, misty step    |
-| 9th           | haste, nondetection        |
-| 13th          | banishment, dimension door |
-| 17th          | far step*, hold monster    |
+| 3rd           | [[spells/1st-level/Bane|bane]], [[spells/1st-level/Compelled Duel|compelled duel]] ll    |
+| 5th           | [[spells/2nd-level/Hold Person|hold person]], [[spells/2nd-level/Misty Step|misty step]]    |
+| 9th           | [[spells/3rd-level/Haste|haste]], [[spells/3rd-level/Nondetection|nondetection]]        |
+| 13th          | [[spells/4th-level/Banishment|banishment]], [[spells/4th-level/Dimension Door|dimension door]] |
+| 17th          | [[spells/5th-level/Far Step|far step]]*, [[spells/5th-level/Hold Monster|hold monster]]    |
 
 **Vow of Enmity (3rd, Channel Divinity, 4 Resolve).** As a bonus action, mark a creature you see within 30 feet as your Sworn Foe for 1 minute or until it dies. You have advantage on all attacks against it. You can't use this again while your Sworn Foe lives.
 

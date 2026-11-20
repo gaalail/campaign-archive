@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
-| 3rd           | shield, shield of faith          |
-| 5th           | aid, warding bond                |
-| 9th           | protection from energy, tiny hut |
-| 13th          | fire shield, resilient sphere    |
-| 17th          | circle of power, wall of stone   |
+| 3rd           | [[spells/1st-level/Shield|shield]], [[spells/1st-level/Shield of Faith|shield of faith]]          |
+| 5th           | [[spells/2nd-level/Aid|aid]], [[spells/2nd-level/Warding Bond|warding bond]]                |
+| 9th           | [[spells/3rd-level/Protection from Energy|protection from energy]], [[spells/3rd-level/Tiny Hut|tiny hut]] |
+| 13th          | [[spells/4th-level/Fire Shield|fire shield]], [[spells/4th-level/Resilient Sphere|resilient sphere]]    |
+| 17th          | [[spells/5th-level/Circle of Power|circle of power]], [[spells/5th-level/Wall of Stone|wall of stone]]   |
 
 **Shimmering Ward (3rd, Channel Divinity, 4 Resolve).** As an action, project a 10-foot-radius shimmering aura that lasts until you move. Creatures you choose in it gain half cover.
 

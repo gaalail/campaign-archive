@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Primordial manifestation of unending conflict and fractured alliances within Exoría."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "exoria"]
 ---
 

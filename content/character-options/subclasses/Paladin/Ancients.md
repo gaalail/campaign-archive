@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
-| 3rd           | absorb elements*, entangle       |
-| 5th           | moonbeam, spike growth           |
-| 9th           | grasping vine ll, plant growth   |
-| 13th          | guardian of nature*, ice storm   |
-| 17th          | commune with nature, tree stride |
+| 3rd           | [[spells/1st-level/Absorb Elements|absorb elements]]*, [[spells/1st-level/Entangle|entangle]]       |
+| 5th           | [[spells/2nd-level/Moonbeam|moonbeam]], [[spells/2nd-level/Spike Growth|spike growth]]           |
+| 9th           | [[spells/3rd-level/Grasping Vine|grasping vine]] ll, [[spells/3rd-level/Plant Growth|plant growth]]   |
+| 13th          | [[spells/4th-level/Guardian of Nature|guardian of nature]]*, [[spells/4th-level/Ice Storm|ice storm]]   |
+| 17th          | [[spells/5th-level/Commune with Nature|commune with nature]], [[spells/5th-level/Tree Stride|tree stride]] |
 
 **Elder Shield (3rd, Channel Divinity, 2 Resolve).** As a reaction when you or a creature within 10 feet takes cold, fire, lightning, poison, or thunder damage, reduce it by your Paladin level + Charisma modifier. At 6th level, this can protect any creature under your Aura of Protection.
 

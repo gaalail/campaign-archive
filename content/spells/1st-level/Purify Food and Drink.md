@@ -1,5 +1,7 @@
 ---
 title: "Purify Food and Drink"
+aliases:
+  - "Purify"
 level: 1
 school: Transmutation
 casting_time: "1 action"

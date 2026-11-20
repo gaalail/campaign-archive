@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Unerring huntress of silver moonlight and untamed forests within Graikorioi."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "graikorioi"]
 ---
 

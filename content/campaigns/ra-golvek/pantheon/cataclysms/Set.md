@@ -15,7 +15,7 @@ favored_weapon: "Khopesh or Spear"
 summary: "Egyptian storm-beast Cataclysm cast outside Metu Neter; worship is strictly forbidden."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "cataclysms"]
 ---
 # Set

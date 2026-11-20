@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Hellenic spirit of overwhelming pleasure and fevered indulgence amidst Exoría's carnage."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "exoria"]
 ---
 

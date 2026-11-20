@@ -27,11 +27,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                              |
 | ------------- | ---------------------------------------- |
-| 3rd           | protection from evil and good, sanctuary |
-| 5th           | invisibility, see invisibility           |
-| 9th           | magic circle, spirit guardians           |
-| 13th          | banishment, greater invisibility         |
-| 17th          | dispel evil and good, holy weapon        |
+| 3rd           | [[spells/1st-level/Protection from Evil and Good|protection from evil and good]], [[spells/1st-level/Sanctuary|sanctuary]] |
+| 5th           | [[spells/2nd-level/Invisibility|invisibility]], [[spells/2nd-level/See Invisibility|see invisibility]]           |
+| 9th           | [[spells/3rd-level/Magic Circle|magic circle]], [[spells/3rd-level/Spirit Guardians|spirit guardians]]           |
+| 13th          | [[spells/4th-level/Banishment|banishment]], [[spells/4th-level/Greater Invisibility|greater invisibility]]         |
+| 17th          | [[spells/5th-level/Dispel Evil and Good|dispel evil and good]], [[spells/5th-level/Holy Weapon|holy weapon]]        |
 
 **Sinister Insights (3rd, Channel Divinity, 4 Resolve).** As an action, grasp your holy symbol to gain advantage for 1 hour on ability checks and saving throws related to undead or necromancy magic.
 

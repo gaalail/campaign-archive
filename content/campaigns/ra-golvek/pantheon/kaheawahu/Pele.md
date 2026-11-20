@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Tempestuous volcanic goddess whose fire both consumes old ground and forges new islands."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "kaheawahu"]
 ---
 # Pele

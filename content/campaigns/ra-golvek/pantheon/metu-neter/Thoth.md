@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Ibis-headed scribe of Metu Neter keeping the records of magic, time, and lunar wisdom."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "metu-neter"]
 ---
 # Thoth

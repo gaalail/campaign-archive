@@ -19,7 +19,7 @@ recommended_oaths:
 summary: "Apotheosized general of unbreakable loyalty, righteous warfare, and protected commerce in Daidōis."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "daidois"]
 ---
 

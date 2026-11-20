@@ -24,11 +24,11 @@ See the shared [[character-options/subclasses/Paladin/index#oath-smites|Oath Smi
 
 | Paladin level | Oath spells                      |
 | ------------- | -------------------------------- |
-| 3rd           | cause fear*, command             |
-| 5th           | hold person, find steed ll       |
-| 9th           | bestow curse, fear               |
-| 13th          | dominate creature ll, compulsion |
-| 17th          | dominate person, vorpal blade ll |
+| 3rd           | [[spells/1st-level/Cause Fear|cause fear]]*, [[spells/1st-level/Command|command]]             |
+| 5th           | [[spells/2nd-level/Hold Person|hold person]], [[spells/2nd-level/Find Steed|find steed]] ll       |
+| 9th           | [[spells/3rd-level/Bestow Curse|bestow curse]], [[spells/3rd-level/Fear|fear]]               |
+| 13th          | [[spells/4th-level/Dominate Creature|dominate creature]] ll, [[spells/4th-level/Compulsion|compulsion]] |
+| 17th          | [[spells/5th-level/Dominate Person|dominate person]], [[spells/5th-level/Vorpal Blade|vorpal blade]] ll |
 
 **Conquering Smite (3rd, Oath Smite, psychic).** Wisdom save or frightened of you until the end of its next turn.
 

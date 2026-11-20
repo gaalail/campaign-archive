@@ -13,7 +13,7 @@ recommended_oaths: [Wilds, Ancients, Vigilance]
 summary: "Quiet warden of Vyrun's ancient forests, seasonal cycles, and the boundary stones marking wild territory."
 source: "Vyrun Campaign Setting"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: [vyrun, deity, nature, wilderness, frontier]
 aliases:
   - Kaelen

@@ -18,7 +18,7 @@ recommended_oaths:
 summary: "Beloved patron of intellect, auspicious beginnings, and clear paths in Shaivi."
 source: "Ra Gol'vek Campaign Setting (Mythological Parallels)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: ["ra-golvek", "deity", "shaivi"]
 ---
 # Ganesha

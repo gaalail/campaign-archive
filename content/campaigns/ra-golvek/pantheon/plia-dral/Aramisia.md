@@ -13,7 +13,7 @@ recommended_oaths:
 summary: "Forgotten Divinity of Plia Dral, dragon-haunted refuge of deities whose names faded from mortal speech."
 source: "Ra Gol'vek Campaign Setting (Chapter 3 & Gods, Spirits, and Sovereigns)"
 source_type: campaign-original
-content_status: draft
+content_status: complete
 tags: [ra-golvek, deity, plia-dral]
 ---
 
