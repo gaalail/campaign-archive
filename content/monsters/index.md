@@ -9,7 +9,7 @@ aliases:
 
 # Monsters & Bestiary
 
-Creatures, adversaries, planar familiars, and horrors encountered across the campaigns and wildlands of the 5e multiverse.
+Creatures, horrors, NPCs, and wildland monsters encountered across the campaigns and realms of the 5e multiverse. For player-accessible familiars, pact companions, and summons, see [[companions|Familiars & Companions]].
 
 ---
 
@@ -33,14 +33,16 @@ Creatures, adversaries, planar familiars, and horrors encountered across the cam
 
 ## Witch Familiars & Occult Companions
 
-| Familiar / Creature | Type | CR | Distinctive Trait | Source |
+*Also listed in [[companions|Familiars & Companions]] alongside [[character-options/class-options/familiars/index|Warlock Eldritch Familiars]].*
+
+| Familiar / Creature | Type | CR | Granted By | Source |
 | :--- | :--- | :--- | :--- | :--- |
-| [[monsters/Jackalope\|Jackalope]] | Tiny beast | CR 0 | Legendary Stomach (consumes anything) | Hexbound |
-| [[monsters/Etherfire Cat\|Etherfire Cat]] | Tiny construct | CR 0 | Undead Sense (60 ft. spectral vision) | Hexbound |
-| [[monsters/Incipient\|Incipient]] | Small construct | CR 0 | Daily Prophecy & Flight | Hexbound |
-| [[monsters/Dog Remnant\|Dog Remnant]] | Medium construct | CR 1/8 | Ghostly Soul Tracker (500 ft.) | Hexbound |
-| [[monsters/Weather Fish\|Weather Fish]] | Tiny construct | CR 0 | Weather Forecasting Scales & Perpetual Bubble | Hexbound |
-| [[monsters/One-Eyed Raven\|One-Eyed Raven]] | Tiny construct | CR 0 | Gold Sight & Mimicry | Hexbound |
+| [[monsters/Jackalope\|Jackalope]] | Tiny beast | CR 0 | [[spells/1st-level/Find Familiar\|Find Familiar]], [[character-options/subclasses/Warlock/The Witch Patron\|The Witch Patron]] | Hexbound |
+| [[monsters/Etherfire Cat\|Etherfire Cat]] | Tiny construct | CR 0 | [[spells/1st-level/Find Familiar\|Find Familiar]], [[character-options/subclasses/Warlock/The Witch Patron\|The Witch Patron]] | Hexbound |
+| [[monsters/Incipient\|Incipient]] | Small construct | CR 0 | [[spells/1st-level/Find Familiar\|Find Familiar]], [[character-options/subclasses/Warlock/The Witch Patron\|The Witch Patron]] | Hexbound |
+| [[monsters/Dog Remnant\|Dog Remnant]] | Medium construct | CR 1/8 | [[spells/1st-level/Find Familiar\|Find Familiar]], [[character-options/subclasses/Warlock/The Witch Patron\|The Witch Patron]] | Hexbound |
+| [[monsters/Weather Fish\|Weather Fish]] | Tiny construct | CR 0 | [[spells/1st-level/Find Familiar\|Find Familiar]], [[character-options/subclasses/Warlock/The Witch Patron\|The Witch Patron]] | Hexbound |
+| [[monsters/One-Eyed Raven\|One-Eyed Raven]] | Tiny construct | CR 0 | [[spells/1st-level/Find Familiar\|Find Familiar]], [[character-options/subclasses/Warlock/The Witch Patron\|The Witch Patron]] | Hexbound |
 
 ---
 

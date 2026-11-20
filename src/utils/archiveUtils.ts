@@ -324,8 +324,27 @@ export function getSpellLevelLabel(level: number | null | undefined): string {
   return 'Cantrip';
 }
 
+export function isCompanionEntry(entry: ArchiveEntry): boolean {
+  if (entry.id.endsWith('/index')) return false;
+  const role = (entry.creature_role || entry.frontmatter?.creature_role || '').toString().toLowerCase();
+  if (['familiar', 'companion', 'summon'].includes(role)) return true;
+  if (entry.category === 'class-options' && entry.subcategory === 'familiars') return true;
+  return false;
+}
+
+export function hasCreatureStatblock(entry: ArchiveEntry): boolean {
+  if (entry.id.endsWith('/index')) return false;
+  return entry.category === 'monsters' || isCompanionEntry(entry);
+}
+
 export function getAllMonsters(): ArchiveEntry[] {
-  return archiveDb.entries.filter(e => e.category === 'monsters' && !e.id.endsWith('/index'));
+  return archiveDb.entries.filter(e => e.category === 'monsters' && !e.id.endsWith('/index') && !isCompanionEntry(e));
+}
+
+export function getAllFamiliarsAndCompanions(): ArchiveEntry[] {
+  return archiveDb.entries
+    .filter(e => isCompanionEntry(e))
+    .sort((a, b) => a.title.localeCompare(b.title));
 }
 
 export function getAllDeities(): ArchiveEntry[] {

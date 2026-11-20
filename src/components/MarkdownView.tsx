@@ -685,6 +685,8 @@ function renderRichText(text: string, onNavigate: (id: string) => void): React.R
             lowerTarget === 'campaigns' ||
             lowerTarget === 'rules' ||
             lowerTarget === 'monsters' ||
+            lowerTarget === 'companions' ||
+            lowerTarget === 'familiars-and-companions' ||
             lowerTarget === 'index' ||
             lowerTarget === 'home'
           ) {

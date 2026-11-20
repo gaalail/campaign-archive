@@ -1,5 +1,10 @@
-import React, { useState } from 'react';
-import { archiveDb, getClassOptionPoolsForClass } from '../utils/archiveUtils';
+import React, { useState, useMemo } from 'react';
+import {
+  archiveDb,
+  getClassOptionPoolsForClass,
+  getAllMonsters,
+  getAllFamiliarsAndCompanions
+} from '../utils/archiveUtils';
 import {
   BookOpen,
   Compass,
@@ -29,9 +34,9 @@ import {
 
 interface SidebarProps {
   currentEntryId: string | null;
-  currentView: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'pantheons' | 'spells' | 'monsters';
+  currentView: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'pantheons' | 'spells' | 'monsters' | 'companions';
   onNavigateToEntry: (id: string) => void;
-  onSetView: (view: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'pantheons' | 'spells' | 'monsters') => void;
+  onSetView: (view: 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'pantheons' | 'spells' | 'monsters' | 'companions') => void;
   isOpen: boolean;
   onClose: () => void;
   onOpenChangelog?: () => void;
@@ -65,7 +70,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   const spells = archiveDb.entries.filter(e => e.category === 'spells' && !e.id.endsWith('/index'));
   const rules = archiveDb.entries.filter(e => e.category === 'rules' && !e.id.endsWith('/index'));
-  const monsters = archiveDb.entries.filter(e => e.category === 'monsters' && !e.id.endsWith('/index'));
+  const monsters = useMemo(() => getAllMonsters(), []);
+  const companions = useMemo(() => getAllFamiliarsAndCompanions(), []);
+  const companionIds = useMemo(() => new Set(companions.map(c => c.id)), [companions]);
   const classes = archiveDb.entries.filter(e => e.category === 'classes' && !e.id.endsWith('/index'));
   const races = archiveDb.entries.filter(e => e.category === 'races' && !e.id.endsWith('/index'));
   const backgrounds = archiveDb.entries.filter(e => e.category === 'backgrounds' && !e.id.endsWith('/index'));
@@ -221,13 +228,28 @@ export const Sidebar: React.FC<SidebarProps> = ({
               onClose();
             }}
             className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
-              currentView === 'monsters' || (currentView === 'reader' && currentEntryId?.startsWith('monsters/'))
+              currentView === 'monsters' || (currentView === 'reader' && currentEntryId?.startsWith('monsters/') && !companionIds.has(currentEntryId))
                 ? 'bg-amber-600 text-stone-950 shadow-md font-bold'
                 : 'text-stone-300 hover:bg-stone-800 hover:text-white'
             }`}
           >
             <GothicBat className={`w-4 h-4 ${currentView === 'monsters' ? 'text-stone-950' : 'text-rose-400'}`} />
             <span>Bestiary ({monsters.length})</span>
+          </button>
+
+          <button
+            onClick={() => {
+              onNavigateToEntry('companions');
+              onClose();
+            }}
+            className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-serif font-semibold transition-all ${
+              currentView === 'companions' || (currentView === 'reader' && currentEntryId && companionIds.has(currentEntryId))
+                ? 'bg-violet-600 text-white shadow-md font-bold'
+                : 'text-stone-300 hover:bg-stone-800 hover:text-white'
+            }`}
+          >
+            <Sparkles className={`w-4 h-4 ${currentView === 'companions' ? 'text-white' : 'text-violet-400'}`} />
+            <span>Familiars & Companions ({companions.length})</span>
           </button>
 
           <button

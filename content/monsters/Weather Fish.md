@@ -11,6 +11,10 @@ hit_dice: "1d4 - 1"
 speed: "0 ft., fly 20 ft."
 source: "Hexbound: A Witch RPG Supplement"
 source_type: third-party
+creature_role: familiar
+granted_by:
+  - "spells/1st-level/Find Familiar"
+  - "character-options/subclasses/Warlock/The Witch Patron"
 summary: "Tiny construct floating inside a perpetual water bubble whose scales forecast tomorrow's weather."
 ---
 
@@ -39,3 +43,8 @@ summary: "Tiny construct floating inside a perpetual water bubble whose scales f
 ### Actions
 
 - **Help:** The weather fish aids a friendly creature in attacking a target within 5 feet. The next attack roll against that target is made with advantage.
+
+## Summoned & Granted By
+
+- [[spells/1st-level/Find Familiar|Find Familiar]] *(with GM / Hexbound familiar approval)*
+- [[character-options/subclasses/Warlock/The Witch Patron|The Witch Patron]] *(Greater Familiar)*

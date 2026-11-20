@@ -42,6 +42,8 @@ You learn the [[find-familiar]] spell and can cast it as a ritual (material cost
 - You are not blinded or deafened when perceiving through its senses.
 - It adds your Charisma modifier to its AC, and your Charisma modifier + proficiency bonus to its maximum HP.
 
+**Hexbound Familiar Forms:** With GM approval, your *find familiar* ritual can take any of the occult forms in [[companions|Familiars & Companions]], including the [[monsters/Jackalope|Jackalope]], [[monsters/Etherfire Cat|Etherfire Cat]], [[monsters/Incipient|Incipient]], [[monsters/Dog Remnant|Dog Remnant]], [[monsters/Weather Fish|Weather Fish]], and [[monsters/One-Eyed Raven|One-Eyed Raven]].
+
 ## Coven Magic
 
 _1st-level Witch Patron feature_

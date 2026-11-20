@@ -11,6 +11,10 @@ hit_dice: 1d4
 speed: "20 ft."
 source: "Hexbound: A Witch RPG Supplement"
 source_type: third-party
+creature_role: familiar
+granted_by:
+  - "spells/1st-level/Find Familiar"
+  - "character-options/subclasses/Warlock/The Witch Patron"
 summary: "Tiny beast familiar equipped with a Legendary Stomach capable of eating and permanently destroying any object."
 ---
 
@@ -38,3 +42,8 @@ summary: "Tiny beast familiar equipped with a Legendary Stomach capable of eatin
 ### Actions
 
 - **Help:** The jackalope aids a friendly creature in attacking a target within 5 feet. The next attack roll against that target is made with advantage.
+
+## Summoned & Granted By
+
+- [[spells/1st-level/Find Familiar|Find Familiar]] *(with GM / Hexbound familiar approval)*
+- [[character-options/subclasses/Warlock/The Witch Patron|The Witch Patron]] *(Greater Familiar)*

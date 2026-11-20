@@ -383,7 +383,75 @@ for (const filePath of files) {
     category = 'guide';
   }
 
-  const wikilinks = extractWikilinks(body);
+  const grantedByRaw = Array.isArray(frontmatter.granted_by)
+    ? frontmatter.granted_by
+    : (frontmatter.granted_by ? [frontmatter.granted_by] : []);
+  const grantedBy = grantedByRaw
+    .map(item => String(item).trim())
+    .filter(Boolean);
+
+  const inferredCreatureRole = frontmatter.creature_role
+    ? String(frontmatter.creature_role).trim().toLowerCase()
+    : (category === 'class-options' && subcategory === 'familiars' && !cleanId.endsWith('/index'))
+      ? 'familiar'
+      : (category === 'monsters' && !cleanId.endsWith('/index'))
+        ? 'monster'
+        : null;
+
+  const isCreatureStatblock = Boolean(
+    !cleanId.endsWith('/index') &&
+    (category === 'monsters' || ['monster', 'familiar', 'companion', 'summon'].includes(inferredCreatureRole || ''))
+  );
+
+  // Extract body vitals as fallback when frontmatter omits them (e.g. scaling familiars)
+  let parsedAc = frontmatter.ac !== undefined ? String(frontmatter.ac) : null;
+  let parsedHp = frontmatter.hp !== undefined ? String(frontmatter.hp) : null;
+  let parsedSpeed = frontmatter.speed ? String(frontmatter.speed) : null;
+  let parsedSize = frontmatter.size ? String(frontmatter.size) : null;
+  let parsedType = frontmatter.type ? String(frontmatter.type) : null;
+  let parsedAlignment = frontmatter.alignment ? String(frontmatter.alignment) : null;
+
+  if (isCreatureStatblock) {
+    if (!parsedAc) {
+      const m = body.match(/-\s*\*\*Armor Class:\*\*\s*([^\n\r]+)/i);
+      if (m) parsedAc = m[1].trim();
+    }
+    if (!parsedHp) {
+      const m = body.match(/-\s*\*\*Hit Points:\*\*\s*([^\n\r]+)/i);
+      if (m) parsedHp = m[1].trim();
+    }
+    if (!parsedSpeed) {
+      const m = body.match(/-\s*\*\*Speed:\*\*\s*([^\n\r]+)/i);
+      if (m) parsedSpeed = m[1].trim();
+    }
+    if (!parsedSize || !parsedType || !parsedAlignment) {
+      const sizeTypeMatch =
+        body.match(/^\*([^*\n]+)\*$/m) ||
+        body.match(/^\*\*([^*:\n]+,\s*[^*\n]+)\*\*$/m);
+      if (sizeTypeMatch) {
+        const rawLine = sizeTypeMatch[1].trim();
+        const [leftPart, ...alignParts] = rawLine.split(',');
+        if (!parsedAlignment && alignParts.length > 0) {
+          parsedAlignment = alignParts.join(',').trim();
+        }
+        if (leftPart) {
+          const sizeMatch = leftPart.match(/^((?:Tiny|Small|Medium|Large|Huge|Gargantuan)(?:\s+or\s+(?:Tiny|Small|Medium|Large|Huge|Gargantuan))?)\s+(.+)$/i);
+          if (sizeMatch) {
+            if (!parsedSize) parsedSize = sizeMatch[1].trim();
+            if (!parsedType) parsedType = sizeMatch[2].trim();
+          }
+        }
+      }
+    }
+  }
+
+  const allWikilinks = new Set(extractWikilinks(body));
+  for (const gb of grantedBy) {
+    const wlMatch = gb.match(/^\[\[([^|\]]+)/);
+    const target = (wlMatch ? wlMatch[1] : gb).replace(/\\+$/, '').split('#')[0].trim();
+    if (target) allWikilinks.add(target);
+  }
+  const wikilinks = Array.from(allWikilinks);
 
   const rawPrereq = frontmatter.prerequisite ? String(frontmatter.prerequisite).trim() : '';
   const prerequisite = rawPrereq && rawPrereq.toLowerCase() !== 'none' ? rawPrereq : null;
@@ -424,12 +492,14 @@ for (const filePath of files) {
     ritual: Boolean(frontmatter.ritual),
     concentration: Boolean(frontmatter.concentration),
     cr: frontmatter.cr !== undefined ? String(frontmatter.cr) : null,
-    ac: frontmatter.ac !== undefined ? String(frontmatter.ac) : null,
-    hp: frontmatter.hp !== undefined ? String(frontmatter.hp) : null,
-    monster_type: frontmatter.type || null,
-    size: frontmatter.size || null,
-    speed: frontmatter.speed || null,
-    alignment: frontmatter.alignment || null,
+    ac: parsedAc,
+    hp: parsedHp,
+    monster_type: parsedType,
+    size: parsedSize,
+    speed: parsedSpeed,
+    alignment: parsedAlignment,
+    creature_role: inferredCreatureRole,
+    granted_by: grantedBy,
     pantheon: frontmatter.pantheon || null,
     divine_rank: frontmatter.divine_rank || null,
     primary_title: frontmatter.primary_title || null,

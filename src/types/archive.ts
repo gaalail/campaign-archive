@@ -65,6 +65,8 @@ export interface ArchiveEntry {
   size?: string | null;
   speed?: string | null;
   alignment?: string | null;
+  creature_role?: 'monster' | 'familiar' | 'companion' | 'summon' | null;
+  granted_by?: string[];
   asi?: string | null;
   traits?: string[];
   subraces?: string[];

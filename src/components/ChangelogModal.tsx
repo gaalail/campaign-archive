@@ -196,8 +196,8 @@ export const ChangelogModal: React.FC<ChangelogModalProps> = ({ isOpen, onClose,
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-rose-400">❖</span>
-                <button onClick={() => { onNavigate('monsters/Jackalope'); onClose(); }} className="hover:underline font-bold text-rose-200">
-                  Hexbound Witch Familiars (6)
+                <button onClick={() => { onNavigate('companions'); onClose(); }} className="hover:underline font-bold text-violet-200">
+                  Familiars & Companions (Hexbound & Warlock)
                 </button>
               </li>
             </ul>

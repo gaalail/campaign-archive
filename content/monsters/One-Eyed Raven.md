@@ -11,6 +11,10 @@ hit_dice: "1d4 - 1"
 speed: "5 ft., fly 40 ft."
 source: "Hexbound: A Witch RPG Supplement"
 source_type: third-party
+creature_role: familiar
+granted_by:
+  - "spells/1st-level/Find Familiar"
+  - "character-options/subclasses/Warlock/The Witch Patron"
 summary: "Tiny construct raven familiar gifted with Gold Sight to appraise currency through chests and pockets."
 ---
 
@@ -42,3 +46,8 @@ summary: "Tiny construct raven familiar gifted with Gold Sight to appraise curre
 ### Bonus Actions
 
 - **Gold Sight:** The one-eyed raven's eye glints with golden radiance. For 1 minute, it perceives the exact quantity of gold pieces a creature within sight carries, or the precise amount of gold coins contained inside a closed chest, safe, or container (1/long rest).
+
+## Summoned & Granted By
+
+- [[spells/1st-level/Find Familiar|Find Familiar]] *(with GM / Hexbound familiar approval)*
+- [[character-options/subclasses/Warlock/The Witch Patron|The Witch Patron]] *(Greater Familiar)*

@@ -11,6 +11,8 @@ import {
   getEntryById,
   cleanFlavorText,
   getCampaignDisplayName,
+  hasCreatureStatblock,
+  isCompanionEntry,
   archiveDb
 } from '../utils/archiveUtils';
 import { MarkdownView, InlineContent } from './MarkdownView';
@@ -149,7 +151,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const isStrahd = entry.campaign_id === 'curse-of-strahd' || entry.path.includes('curse-of-strahd') || entry.id.includes('curse-of-strahd');
   const isStrahdIndex = isStrahd && (entry.id.endsWith('/index') || entry.id === 'campaigns/curse-of-strahd');
 
-  const isMonster = entry.category === 'monsters' && !entry.id.endsWith('/index');
+  const isMonster = hasCreatureStatblock(entry);
+  const isCompanion = isCompanionEntry(entry);
   const isMonsterIndex = entry.id === 'monsters/index' || entry.id === 'monsters' || (entry.category === 'monsters' && entry.id.endsWith('/index'));
   const isRace = entry.category === 'races' && !entry.id.endsWith('/index');
   const isBackground = entry.category === 'backgrounds' && !entry.id.endsWith('/index');
@@ -389,13 +392,15 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div>
               <span className={`text-xs font-serif uppercase tracking-widest block mb-1 font-bold ${
-                isStrahd ? 'text-rose-400' : 'text-stone-400'
+                isStrahd ? 'text-rose-400' : isCompanion ? 'text-violet-400' : 'text-stone-400'
               }`}>
                 {isStrahd
                   ? 'Curse of Strahd • Gothic Campaign Chronicle'
-                  : isHome
-                    ? '5e D&D Reference Vault'
-                    : (entry.category.replace('-', ' ') + (entry.subcategory ? ` • ${entry.subcategory.replace('-', ' ')}` : ''))}
+                  : isCompanion
+                    ? `Familiars & Companions • ${entry.creature_role || 'Familiar'}`
+                    : isHome
+                      ? '5e D&D Reference Vault'
+                      : (entry.category.replace('-', ' ') + (entry.subcategory ? ` • ${entry.subcategory.replace('-', ' ')}` : ''))}
               </span>
               <h1 className={`font-fantasy text-3xl md:text-5xl font-bold tracking-tight drop-shadow-sm ${
                 isStrahd ? 'text-rose-100' : 'text-amber-100'

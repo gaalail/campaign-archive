@@ -14,7 +14,7 @@ import { CommandPaletteModal } from './components/CommandPaletteModal';
 import { DiceProvider } from './components/DiceRoller';
 import { Sparkles, Search } from 'lucide-react';
 
-export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'pantheons' | 'spells' | 'monsters';
+export type AppView = 'reader' | 'builder' | 'graph' | 'items' | 'campaigns' | 'pantheons' | 'spells' | 'monsters' | 'companions';
 
 interface ParsedRoute {
   view: AppView;
@@ -75,7 +75,11 @@ function parseHashRoute(hashStr: string): ParsedRoute {
     return { view: 'spells', entryId: 'spells/index', anchor: null, params };
   }
   if (baseRoute === 'monsters' || baseRoute === 'monsters/index' || baseRoute === 'bestiary') {
-    return { view: 'monsters', entryId: 'monsters/index', anchor: null, params };
+    const initialView: AppView = params.tab === 'companions' ? 'companions' : 'monsters';
+    return { view: initialView, entryId: 'monsters/index', anchor: null, params };
+  }
+  if (baseRoute === 'companions' || baseRoute === 'familiars' || baseRoute === 'familiars-and-companions') {
+    return { view: 'companions', entryId: 'monsters/index', anchor: null, params };
   }
   if (baseRoute === 'items' || baseRoute === 'items/index') {
     return { view: 'items', entryId: 'items/index', anchor: null, params };
@@ -244,7 +248,12 @@ export default function App() {
             </div>
           )}
           {view === 'spells' && <SpellCatalogue onSelectSpell={navigate} />}
-          {view === 'monsters' && <BestiaryCatalogue onSelectMonster={navigate} />}
+          {(view === 'monsters' || view === 'companions') && (
+            <BestiaryCatalogue
+              onSelectMonster={navigate}
+              initialTab={view === 'companions' ? 'companions' : 'monsters'}
+            />
+          )}
           {view === 'builder' && (
             <CharacterBuilder
               onNavigateToEntry={navigate}

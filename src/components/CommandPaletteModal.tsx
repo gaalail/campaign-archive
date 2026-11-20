@@ -1,19 +1,24 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { archiveDb, getSourceBadgeInfo, getSpellLevelLabel } from '../utils/archiveUtils';
+import {
+  archiveDb,
+  getSourceBadgeInfo,
+  getSpellLevelLabel,
+  getAllMonsters,
+  getAllFamiliarsAndCompanions,
+  isCompanionEntry
+} from '../utils/archiveUtils';
 import { ArchiveEntry } from '../types/archive';
 import {
   Search,
   X,
   Sparkles,
   BookOpen,
-  Sword,
   Shield,
-  ExternalLink,
   Flame,
-  ArrowRight,
-  Sun
+  Sun,
+  ArrowRight
 } from 'lucide-react';
-import { GothicBat, DragonShield, CrossedSwords, D20GothicIcon } from './GothicIcons';
+import { GothicBat, DragonShield, CrossedSwords } from './GothicIcons';
 
 interface CommandPaletteModalProps {
   isOpen: boolean;
@@ -21,7 +26,7 @@ interface CommandPaletteModalProps {
   onNavigate: (id: string) => void;
 }
 
-type FilterCategory = 'all' | 'spells' | 'monsters' | 'items' | 'rules' | 'classes' | 'races' | 'campaigns' | 'pantheons';
+type FilterCategory = 'all' | 'spells' | 'monsters' | 'companions' | 'items' | 'rules' | 'classes' | 'races' | 'campaigns' | 'pantheons';
 
 export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
   isOpen,
@@ -70,14 +75,15 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
   const counts = useMemo(() => {
     const total = archiveDb.entries.filter(e => !e.id.endsWith('/index')).length;
     const spells = archiveDb.entries.filter(e => e.category === 'spells' && !e.id.endsWith('/index')).length;
-    const monsters = archiveDb.entries.filter(e => e.category === 'monsters' && !e.id.endsWith('/index')).length;
+    const monsters = getAllMonsters().length;
+    const companions = getAllFamiliarsAndCompanions().length;
     const items = archiveDb.entries.filter(e => e.category === 'items' && !e.id.endsWith('/index')).length;
     const rules = archiveDb.entries.filter(e => e.category === 'rules' && !e.id.endsWith('/index')).length;
     const classes = archiveDb.entries.filter(e => e.category === 'classes' && !e.id.endsWith('/index')).length;
     const races = archiveDb.entries.filter(e => e.category === 'races' && !e.id.endsWith('/index')).length;
     const campaigns = archiveDb.entries.filter(e => e.category === 'campaigns' && !e.id.endsWith('/index')).length;
     const pantheons = archiveDb.entries.filter(e => e.category === 'pantheons' && !e.id.endsWith('/index')).length;
-    return { total, spells, monsters, items, rules, classes, races, campaigns, pantheons };
+    return { total, spells, monsters, companions, items, rules, classes, races, campaigns, pantheons };
   }, []);
 
   // Primary interactive tools pool
@@ -147,8 +153,27 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
       source: 'Codex Bestiary',
       source_type: 'SRD',
       entity_type: 'catalogue',
-      tags: ['monsters', 'bestiary', 'creatures', 'statblock', 'cr', 'enemies'],
+      tags: ['monsters', 'bestiary', 'creatures', 'statblock', 'cr'],
       aliases: ['bestiary', 'monster manual', 'creatures'],
+      content_status: 'complete',
+      frontmatter: {},
+      body: '',
+      wikilinks: []
+    },
+    {
+      id: 'companions',
+      title: 'Familiars & Companions',
+      path: 'companions',
+      category: 'class-options',
+      subcategory: 'Summons & Familiars',
+      parentClass: null,
+      creature_role: 'companion',
+      summary: 'Player-accessible familiars, pact companions, and summoned forms linked directly to the spells and features that grant them.',
+      source: 'Codex Bestiary',
+      source_type: 'SRD',
+      entity_type: 'catalogue',
+      tags: ['familiars', 'companions', 'summons', 'witch', 'warlock', 'statblock'],
+      aliases: ['familiars', 'companions', 'familiars and companions'],
       content_status: 'complete',
       frontmatter: {},
       body: '',
@@ -215,7 +240,11 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
     const cleanQ = query.trim().toLowerCase();
     let pool = [...toolShortcuts, ...archiveDb.entries.filter(e => !e.id.endsWith('/index'))];
 
-    if (categoryFilter !== 'all') {
+    if (categoryFilter === 'monsters') {
+      pool = pool.filter(e => e.category === 'monsters' && !isCompanionEntry(e));
+    } else if (categoryFilter === 'companions') {
+      pool = pool.filter(e => e.id === 'companions' || isCompanionEntry(e));
+    } else if (categoryFilter !== 'all') {
       pool = pool.filter(e => e.category === categoryFilter);
     }
 
@@ -353,6 +382,7 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
             { id: 'all', label: `All (${counts.total})` },
             { id: 'spells', label: `Spells (${counts.spells})` },
             { id: 'monsters', label: `Monsters (${counts.monsters})` },
+            { id: 'companions', label: `Familiars (${counts.companions})` },
             { id: 'items', label: `Items (${counts.items})` },
             { id: 'rules', label: `Rules (${counts.rules})` },
             { id: 'classes', label: `Classes (${counts.classes})` },
@@ -419,6 +449,8 @@ export const CommandPaletteModal: React.FC<CommandPaletteModalProps> = ({
               let metaHint = '';
               if (entry.category === 'spells') {
                 metaHint = `${getSpellLevelLabel(entry.level)} • ${entry.school || 'Magic'}`;
+              } else if (isCompanionEntry(entry)) {
+                metaHint = `${entry.creature_role || 'Familiar'} • AC ${entry.ac ?? '—'}`;
               } else if (entry.category === 'monsters') {
                 metaHint = `CR ${entry.cr ?? '—'} • ${entry.frontmatter.type || 'Creature'}`;
               } else if (entry.category === 'items') {

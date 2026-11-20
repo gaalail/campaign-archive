@@ -1,8 +1,10 @@
 import React, { useMemo } from 'react';
 import { ArchiveEntry } from '../types/archive';
-import { WaxSeal, GothicBat, CrossedSwords, DndFleuronDivider } from './GothicIcons';
+import { WaxSeal } from './GothicIcons';
 import { InlineContent } from './MarkdownView';
 import { useOptionalDice } from './DiceRoller';
+import { getEntryById, isCompanionEntry } from '../utils/archiveUtils';
+import { Sparkles, Link2 } from 'lucide-react';
 
 interface MonsterStatblockProps {
   entry: ArchiveEntry;
@@ -72,11 +74,17 @@ export function parseMonsterFromEntry(entry: ArchiveEntry): ParsedMonsterData {
     const line = lines[i].trim();
     if (!line) continue;
 
-    // Check size & type line: *Medium undead, lawful evil*
-    const sizeTypeMatch = line.match(/^\*([^*]+)\*$/);
+    // Check size & type line: *Medium undead, lawful evil* or **Tiny Aberration, Patron Alignment**
+    const sizeTypeMatch = line.match(/^\*([^*]+)\*$/) || line.match(/^\*\*([^*:\n]+,\s*[^*\n]+)\*\*$/);
     if (sizeTypeMatch && currentSection === 'header') {
       data.sizeType = sizeTypeMatch[1].trim();
       continue;
+    }
+
+    // Stop statblock parsing if we hit trailing companion metadata/modifier tables
+    if (/^\*\*Ability modifiers and saves\*\*/i.test(line) || /^##\s+(summoned\s+by|granted\s+by|related)/i.test(line)) {
+      if (currentItem) pushCurrentItem();
+      break;
     }
 
     // Core vitals
@@ -88,6 +96,57 @@ export function parseMonsterFromEntry(entry: ArchiveEntry): ParsedMonsterData {
 
     const speedMatch = line.match(/-\s*\*\*Speed:\*\*\s*(.*)/i);
     if (speedMatch) { data.speed = speedMatch[1].trim(); continue; }
+
+    // Inline ability scores: - **Ability Scores:** Str 3 (-4), Dex 16 (+3), Con 12 (+1), Int 13 (+1), Wis 10 (+0), Cha 8 (-1)
+    const inlineStatsMatch = line.match(/-\s*\*\*Ability Scores:\*\*\s*(.*)/i);
+    if (inlineStatsMatch) {
+      const text = inlineStatsMatch[1];
+      const parseInlineStat = (abbr: string) => {
+        const m = text.match(new RegExp(`\\b${abbr}\\s+(\\d+)(?:\\s*\\(([+-]?\\d+)\\))?`, 'i'));
+        if (!m) return { score: 10, mod: '+0' };
+        const score = parseInt(m[1], 10);
+        let mod = m[2];
+        if (!mod) {
+          const calc = Math.floor((score - 10) / 2);
+          mod = calc >= 0 ? `+${calc}` : `${calc}`;
+        }
+        if (!mod.startsWith('+') && !mod.startsWith('-')) mod = `+${mod}`;
+        return { score, mod };
+      };
+      data.stats = {
+        str: parseInlineStat('Str'),
+        dex: parseInlineStat('Dex'),
+        con: parseInlineStat('Con'),
+        int: parseInlineStat('Int'),
+        wis: parseInlineStat('Wis'),
+        cha: parseInlineStat('Cha')
+      };
+      continue;
+    }
+
+    // Compact "- **Other:** ..." summary line used in scaling familiars
+    const otherMatch = line.match(/-\s*\*\*Other:\*\*\s*(.*)/i);
+    if (otherMatch) {
+      const parts = otherMatch[1].split(';').map(p => p.trim()).filter(Boolean);
+      const extraSenses: string[] = [];
+      const extraLangs: string[] = [];
+      for (const part of parts) {
+        if (/^resistance:/i.test(part)) {
+          data.damageResistances = part.replace(/^resistance:\s*/i, '').trim();
+        } else if (/^damage immunit/i.test(part) || /^immunities?:/i.test(part)) {
+          data.damageImmunities = part.replace(/^(?:damage\s+)?immunit(?:y|ies):\s*/i, '').trim();
+        } else if (/^condition immunit/i.test(part)) {
+          data.conditionImmunities = part.replace(/^condition immunit(?:y|ies):\s*/i, '').trim();
+        } else if (/darkvision|blindsight|truesight|tremorsense|passive perception/i.test(part)) {
+          extraSenses.push(part);
+        } else {
+          extraLangs.push(part);
+        }
+      }
+      if (extraSenses.length > 0) data.senses = extraSenses.join('; ');
+      if (extraLangs.length > 0) data.languages = extraLangs.join('; ');
+      continue;
+    }
 
     const savesMatch = line.match(/-\s*\*\*Saving Throws:\*\*\s*(.*)/i);
     if (savesMatch) { data.savingThrows = savesMatch[1].trim(); continue; }
@@ -195,9 +254,22 @@ export function parseMonsterFromEntry(entry: ArchiveEntry): ParsedMonsterData {
       continue;
     }
 
+    // Plain sentence-style trait/action used by Eldritch Familiars: "Eldritch Bond. When the familiar..."
+    if (currentSection !== 'header' && !line.startsWith('-') && !line.startsWith('|') && !line.startsWith('**Prerequisite:')) {
+      const plainItemMatch = line.match(/^([A-Z][A-Za-z0-9'’\-\s]{1,40})\.\s+(.+)$/);
+      if (plainItemMatch) {
+        pushCurrentItem();
+        currentItem = {
+          name: plainItemMatch[1].trim(),
+          desc: plainItemMatch[2].trim()
+        };
+        continue;
+      }
+    }
+
     // Additional paragraphs for the current item or legendary intro
     if (currentItem) {
-      if (line.startsWith('- ') || line.startsWith('### ')) {
+      if (line.startsWith('- ') || line.startsWith('### ') || line.startsWith('**Prerequisite:')) {
         pushCurrentItem();
       } else {
         currentItem.desc += '\n' + line;
@@ -230,7 +302,32 @@ export const MonsterStatblock: React.FC<MonsterStatblockProps> = ({
 }) => {
   const data = useMemo(() => parseMonsterFromEntry(entry), [entry]);
   const isStrahd = entry.campaign_id === 'curse-of-strahd' || entry.id.includes('strahd');
+  const isCompanion = isCompanionEntry(entry);
   const dice = useOptionalDice();
+
+  const grantedByEntries = useMemo(() => {
+    const rawList: string[] = Array.isArray(entry.granted_by)
+      ? entry.granted_by
+      : Array.isArray(entry.frontmatter?.granted_by)
+        ? entry.frontmatter.granted_by
+        : [];
+    const seen = new Set<string>();
+    const resolved: Array<{ id?: string; label: string; category?: string }> = [];
+    for (const raw of rawList) {
+      const cleanRaw = String(raw).replace(/^\[\[([^|\]]+)(?:\|([^\]]+))?\]\]$/, '$1').trim();
+      const displayMatch = String(raw).match(/^\[\[[^|\]]+\|([^\]]+)\]\]$/);
+      const target = getEntryById(cleanRaw);
+      const key = (target?.id || cleanRaw).toLowerCase();
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      resolved.push({
+        id: target?.id,
+        label: displayMatch?.[1]?.trim() || target?.title || cleanRaw.split('/').pop() || cleanRaw,
+        category: target?.category
+      });
+    }
+    return resolved;
+  }, [entry]);
 
   const statList = [
     { label: 'STR', ...data.stats.str },
@@ -241,12 +338,20 @@ export const MonsterStatblock: React.FC<MonsterStatblockProps> = ({
     { label: 'CHA', ...data.stats.cha }
   ];
 
+  const badgeText = data.challenge
+    ? data.challenge
+    : isCompanion
+      ? (entry.min_level ? `Lv ${entry.min_level}+ ${entry.creature_role || 'Familiar'}` : (entry.creature_role || 'Familiar'))
+      : null;
+
   return (
     <div
       className={`rounded-xl border-y-4 shadow-[0_8px_30px_rgba(0,0,0,0.6)] font-serif p-5 sm:p-6 transition-all ${
         isStrahd
           ? 'bg-gradient-to-b from-[#181113] via-[#120d0f] to-[#0a0708] border-rose-900/80 shadow-[0_0_35px_rgba(136,19,55,0.25)]'
-          : 'bg-gradient-to-b from-[#1c1815] via-[#161311] to-[#120f0d] border-amber-800/80'
+          : isCompanion
+            ? 'bg-gradient-to-b from-[#17151c] via-[#121017] to-[#0d0b10] border-violet-800/70'
+            : 'bg-gradient-to-b from-[#1c1815] via-[#161311] to-[#120f0d] border-amber-800/80'
       } ${className}`}
     >
       {/* Top Header */}
@@ -255,7 +360,7 @@ export const MonsterStatblock: React.FC<MonsterStatblockProps> = ({
           <div className="flex items-center gap-2">
             {isStrahd && <WaxSeal label="S" className="w-5 h-5 text-[9px]" />}
             <h2 className={`font-fantasy text-2xl sm:text-3xl font-bold tracking-wide uppercase ${
-              isStrahd ? 'text-rose-200' : 'text-amber-300'
+              isStrahd ? 'text-rose-200' : isCompanion ? 'text-violet-200' : 'text-amber-300'
             }`}>
               {data.name}
             </h2>
@@ -265,16 +370,48 @@ export const MonsterStatblock: React.FC<MonsterStatblockProps> = ({
           </div>
         </div>
 
-        {data.challenge && (
+        {badgeText && (
           <div className={`px-3 py-1 rounded text-xs font-bold font-serif tracking-widest uppercase border ${
             isStrahd
               ? 'bg-rose-950/70 text-rose-300 border-rose-900/80'
-              : 'bg-amber-950/70 text-amber-300 border-amber-900/80'
+              : isCompanion
+                ? 'bg-violet-950/70 text-violet-300 border-violet-800/70'
+                : 'bg-amber-950/70 text-amber-300 border-amber-900/80'
           }`}>
-            {data.challenge}
+            {badgeText}
           </div>
         )}
       </div>
+
+      {/* Summoned / Granted By Provenance Bar */}
+      {grantedByEntries.length > 0 && (
+        <div className="mt-3 px-3 py-2 rounded-lg bg-stone-950/70 border border-violet-900/40 flex flex-wrap items-center gap-2 text-xs">
+          <span className="text-[10px] uppercase tracking-widest font-bold text-violet-300 flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5 text-violet-400" />
+            <span>Summoned / Granted By:</span>
+          </span>
+          {grantedByEntries.map((gb, idx) => (
+            gb.id ? (
+              <button
+                key={idx}
+                type="button"
+                onClick={() => onNavigate(gb.id!)}
+                className="px-2.5 py-0.5 rounded border border-violet-700/50 bg-violet-950/50 hover:bg-violet-900/60 hover:border-violet-400/60 text-violet-200 hover:text-white font-sans font-semibold text-xs flex items-center gap-1 transition-colors cursor-pointer"
+              >
+                <Link2 className="w-3 h-3 text-violet-400" />
+                <span>{gb.label}</span>
+              </button>
+            ) : (
+              <span
+                key={idx}
+                className="px-2.5 py-0.5 rounded border border-stone-700 bg-stone-900 text-stone-300 font-sans text-xs"
+              >
+                {gb.label}
+              </span>
+            )
+          ))}
+        </div>
+      )}
 
       {/* Decorative Fleuron */}
       <div className="my-2 text-[10px] flex items-center justify-center gap-2 select-none opacity-60">

@@ -9,6 +9,10 @@ option_group: Eldritch Familiar
 parent_class: Warlock
 min_level: 3
 prerequisite: Eldritch Familiar
+creature_role: familiar
+granted_by:
+  - "character-options/class-options/pact-foci/Eldritch Familiar"
+  - "spells/1st-level/Find Familiar"
 summary: "Tiny Fiend familiar form."
 source: Alternate Warlock
 source_type: third-party
@@ -50,5 +54,5 @@ Shapechanger. Transform into a rat (20-ft. speed, 20-ft. climb), lizard (20-ft. 
 | WIS     |     8 |       -1 |   -1 |
 | CHA     |    13 |       +1 |   +1 |
 
-**Prerequisite:** Eldritch Familiar  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Familiar|Eldritch Familiar]]  
 **Minimum level:** 3

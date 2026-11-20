@@ -21,6 +21,23 @@ You gain the service of a familiar, a spirit that takes an animal form you choos
 
 ---
 
+## Extended Familiar Forms
+
+Depending on your table, patron, or sourcebooks, *find familiar* can also conjure specialized familiar forms from the [[companions|Familiars & Companions]] catalogue:
+
+| Familiar | Type & Size | Distinctive Trait | Source |
+| :--- | :--- | :--- | :--- |
+| [[monsters/Jackalope\|Jackalope]] | Tiny beast | Legendary Stomach (consumes and destroys objects) | Hexbound |
+| [[monsters/Etherfire Cat\|Etherfire Cat]] | Tiny construct | Undead Sense (detects undead within 60 ft.) | Hexbound |
+| [[monsters/Incipient\|Incipient]] | Small construct | Prophet (daily omen & flight) | Hexbound |
+| [[monsters/Dog Remnant\|Dog Remnant]] | Medium construct | Ghostly Tracker (tracks souls up to 500 ft.) | Hexbound |
+| [[monsters/Weather Fish\|Weather Fish]] | Tiny construct | Weather Shifting Scales & Perpetual Bubble | Hexbound |
+| [[monsters/One-Eyed Raven\|One-Eyed Raven]] | Tiny construct | Gold Sight & Mimicry | Hexbound |
+
+- **Warlock Pact & Subclass Options:** [[character-options/subclasses/Warlock/The Witch Patron|The Witch Patron]] enhances your familiar's intelligence, defenses, and combat presence, while the [[character-options/class-options/pact-foci/Eldritch Familiar|Eldritch Familiar]] Pact Focus unlocks 12 scaling [[character-options/class-options/familiars/index|Eldritch Familiar forms]].
+
+---
+
 ## Related Content
 
 **Spell Level:** [[spells/1st-level|1st level]]

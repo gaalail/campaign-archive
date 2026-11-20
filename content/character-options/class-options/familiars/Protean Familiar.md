@@ -9,6 +9,10 @@ option_group: Eldritch Familiar
 parent_class: Warlock
 min_level: 3
 prerequisite: Eldritch Familiar
+creature_role: familiar
+granted_by:
+  - "character-options/class-options/pact-foci/Eldritch Familiar"
+  - "spells/1st-level/Find Familiar"
 summary: "Tiny Elemental familiar form."
 source: Alternate Warlock
 source_type: third-party
@@ -50,5 +54,5 @@ Elemental Spark. Ranged Spell Attack: Warlock spell attack modifier to hit, rang
 | WIS     |    10 |       +0 |   +0 |
 | CHA     |    12 |       +1 |   +1 |
 
-**Prerequisite:** Eldritch Familiar  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Familiar|Eldritch Familiar]]  
 **Minimum level:** 3

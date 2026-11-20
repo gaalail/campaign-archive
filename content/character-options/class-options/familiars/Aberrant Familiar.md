@@ -9,6 +9,10 @@ option_group: Eldritch Familiar
 parent_class: Warlock
 min_level: 3
 prerequisite: Eldritch Familiar
+creature_role: familiar
+granted_by:
+  - "character-options/class-options/pact-foci/Eldritch Familiar"
+  - "spells/1st-level/Find Familiar"
 summary: "Tiny Aberration familiar form."
 source: Alternate Warlock
 source_type: third-party
@@ -48,5 +52,5 @@ Aberrant Whispers. One creature the familiar can see within 30 feet makes an Int
 | WIS     |    10 |       +0 |   +0 |
 | CHA     |     8 |       -1 |   -1 |
 
-**Prerequisite:** Eldritch Familiar  
+**Prerequisite:** [[character-options/class-options/pact-foci/Eldritch Familiar|Eldritch Familiar]]  
 **Minimum level:** 3
