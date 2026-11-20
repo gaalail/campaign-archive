@@ -4,7 +4,7 @@ title: Warlock Subclasses
 
 # Warlock Subclasses
 
-**12 subclasses available** | Choose at 2nd level | Otherworldly Patrons
+**15 subclasses available** | Choose at 2nd level | Otherworldly Patrons
 
 ---
 
@@ -22,8 +22,11 @@ title: Warlock Subclasses
 | [[Nature]]        | Nature patron    | Wild pact               |
 | [[Noble Genie]]   | Elemental noble  | Genie pact              |
 | [[The Returned]]  | Returned patron  | Celestial second chance |
-| [[Undying]]       | Undead patron    | Ageless pact            |
-| [[Wyrm]]          | Dragon patron    | Draconic pact           |
+| [[Undying]]          | Undead patron         | Ageless pact            |
+| [[Wyrm]]             | Dragon patron         | Draconic pact           |
+| [[Demon Soul]]       | Symbiotic fiend       | Demonic transformation  |
+| [[The Nightcomer]]   | Pale fleshcrafting    | Severed-heart occultism |
+| [[The Witch Patron]] | Archwitch coven       | Greater familiar bond   |
 
 ---
 

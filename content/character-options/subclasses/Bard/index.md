@@ -4,7 +4,7 @@ title: Bard Subclasses
 
 # Bard Subclasses
 
-**5 subclasses available** | Choose at 3rd level | Colleges
+**6 subclasses available** | Choose at 3rd level | Colleges
 
 ---
 
@@ -17,6 +17,7 @@ title: Bard Subclasses
 | [[College of Truth]]             | Truth and knowledge                   | Speaking truths                                      |
 | [[Lore]]                         | Lore Master                           | Broader spell access                                 |
 | [[Hymn Singer]]                  | Sacred music                          | Holy melodies                                        |
+| [[College of Witchcraft]]        | Planar voice & spirit hymns           | Spirit summoning and haunting polyphony              |
 
 ---
 

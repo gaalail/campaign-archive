@@ -4,7 +4,7 @@ title: Sorcerer Subclasses
 
 # Sorcerer Subclasses
 
-**4 subclasses available** | Choose at 1st level | Sorcerous Origins
+**6 subclasses available** | Choose at 1st level | Sorcerous Origins
 
 ---
 
@@ -14,8 +14,10 @@ title: Sorcerer Subclasses
 | ------------------------------- | ---------------- | ----------------- |
 | [[Draconic]]                    | Dragon bloodline | Draconic heritage |
 | [[Prismatic Sorcerer]]          | Rainbow magic    | Prism powers      |
-| [[Starborn]]                    | Celestial magic  | Star-touched      |
-| [[The Knight Dragon Bloodline]] | Dragon knight    | Holy dragon power |
+| [[Starborn]]                    | Celestial magic     | Star-touched      |
+| [[The Knight Dragon Bloodline]] | Dragon knight       | Holy dragon power |
+| [[Aranea Bloodline]]            | Arachnid webs       | Spider-touched sorcery |
+| [[Coven of Spirits]]            | Ethereal kin spirits | Ancestral coven magic |
 
 ---
 

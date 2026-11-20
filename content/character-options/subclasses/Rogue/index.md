@@ -4,7 +4,7 @@ title: Rogue Subclasses
 
 # Rogue Subclasses
 
-**4 subclasses available** | Choose at 3rd level | Roguish Archetypes
+**7 subclasses available** | Choose at 3rd level | Roguish Archetypes
 
 ---
 
@@ -14,8 +14,11 @@ title: Rogue Subclasses
 | ---------------- | --------------- | ----------------- |
 | [[Chainbreaker]] | Breaking chains | Freedom fighter   |
 | [[Divine Blade]] | Holy rogue      | Sacred assassin   |
-| [[Thief]]        | Stealth master  | Second-story work |
-| [[Vigilante]]    | Justice seeker  | Righteous avenger |
+| [[Thief]]        | Stealth master         | Second-story work |
+| [[Vigilante]]    | Justice seeker         | Righteous avenger |
+| [[Dark Jester]]  | Terror toys & japes    | Macabre merrymaker |
+| [[Duskwalker]]   | Shadow-light shifting  | Crepuscular ambush |
+| [[Sleuth]]       | Forensic deduction     | Master detective  |
 
 ---
 

@@ -4,7 +4,7 @@ title: Wizard Subclasses
 
 # Wizard Subclasses
 
-**4 subclasses available** | Choose at 2nd level | Arcane Traditions
+**6 subclasses available** | Choose at 2nd level | Arcane Traditions
 
 ---
 
@@ -14,8 +14,10 @@ title: Wizard Subclasses
 | ---------------------- | -------------------- | ---------------------- |
 | [[Evocation]]          | Explosive spells     | Blasters and artillery |
 | [[Celestial Summoner]] | Summoning celestials | Calling angels         |
-| [[Education]]          | Knowledge keeper     | Master scholar         |
-| [[School of Sealing]]  | Sealing magic        | Binding and sealing    |
+| [[Education]]            | Knowledge keeper     | Master scholar         |
+| [[School of Sealing]]    | Sealing magic        | Binding and sealing    |
+| [[School of Occultism]]  | Ceremonial sacrifice | Dark ritual arcana     |
+| [[School of Witchcraft]] | Oral & spirit lore   | Scholastic witchcraft  |
 
 ---
 

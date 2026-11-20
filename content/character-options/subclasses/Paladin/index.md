@@ -4,7 +4,7 @@ title: Paladin Subclasses
 
 # Paladin Subclasses
 
-**24 Sacred Oaths available** | Choose at 3rd level | Features at 3rd, 7th, 15th, and 20th level
+**28 Sacred Oaths available** | Choose at 3rd level | Features at 3rd, 7th, 15th, and 20th level
 
 ## Sacred Oath Rules
 
@@ -29,7 +29,7 @@ An Avatar feature lasts 1 minute unless that feature says otherwise. It ends ear
 
 ### Spell source marks
 
-`ll` identifies a laserllama Spell Compendium version, as described in the archive's Warden spell list. Those alternate versions are not included here, so their levels cannot be verified from the archive. The standard versions of Grasping Vine and Elemental Bane are 4th-level spells, Locate Creature is 4th level, Create Undead is 6th level, and Dominate Creature is 8th level. The `ll` variants may differ; confirm their actual levels in the compendium before using these lists with the Paladin slot progression. This matters for the listed unlocks: Grasping Vine and Elemental Bane at 9th-level Paladin, Locate Creature at 5th, Dominate Creature at 13th, and Create Undead at 13th.
+`ll` identifies a **Laserllama Compendium of Spells (v0.5)** version, included inside the corresponding spell entries as collapsible alternate version callouts alongside the standard spell text.
 
 ## Part 1: Core Oaths
 
@@ -60,6 +60,9 @@ An Avatar feature lasts 1 minute unless that feature says otherwise. It ends ear
 - [[character-options/subclasses/Paladin/Wilds|Oath of the Wilds]]
 - [[character-options/subclasses/Paladin/Zealot|Oath of the Zealot]]
 - [[character-options/subclasses/Paladin/Templar|Oath of the Templar]]
+- [[character-options/subclasses/Paladin/Oath of the Coven|Oath of the Coven]]
+- [[character-options/subclasses/Paladin/Oath of the Hellbound|Oath of the Hellbound]]
+- [[character-options/subclasses/Paladin/Oath of the Saints|Oath of the Saints]]
 
 ## Other Records
 

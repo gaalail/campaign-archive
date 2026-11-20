@@ -4,7 +4,7 @@ title: Cleric Subclasses
 
 # Cleric Subclasses
 
-**6 subclasses available** | Choose at 1st level | Domains
+**7 subclasses available** | Choose at 1st level | Domains
 
 ---
 
@@ -18,6 +18,7 @@ title: Cleric Subclasses
 | [[character-options/subclasses/Cleric/Exorcist | Exorcist]]                  | Banishing evil             | Removing corruption |
 | [[Holy Virtues Domain]]                        | Divine virtues              | Sacred principles          |
 | [[Life]]                                       | Healing and protection      | Life preservation          |
+| [[Domain of Witchcraft]]                       | Spirit mediumship           | Possession and spectral hexes |
 
 ---
 

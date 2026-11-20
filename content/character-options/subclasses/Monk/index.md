@@ -4,7 +4,7 @@ title: Monk Subclasses
 
 # Monk Subclasses
 
-**22 traditions available** | Choose at 3rd level | Monastic Traditions
+**25 traditions available** | Choose at 3rd level | Monastic Traditions
 
 ---
 
@@ -18,10 +18,12 @@ title: Monk Subclasses
 - [[character-options/subclasses/Monk/Way of the Drunken Fist|Way of the Drunken Fist]]
 - [[character-options/subclasses/Monk/Way of Ferocity|Way of Ferocity]]
 - [[character-options/subclasses/Monk/Way of the Flowing River|Way of the Flowing River]]
+- [[character-options/subclasses/Monk/Way of the Gravedigger|Way of the Gravedigger]]
 - [[character-options/subclasses/Monk/Way of Harmony|Way of Harmony]]
 - [[character-options/subclasses/Monk/Way of the Hurricane|Way of the Hurricane]]
 - [[character-options/subclasses/Monk/Open Hand|Open Hand]]
 - [[character-options/subclasses/Monk/Way of the Mystic|Way of the Mystic]]
+- [[character-options/subclasses/Monk/Way of the Penitent|Way of the Penitent]]
 - [[character-options/subclasses/Monk/Way of the Pilgrims|Way of the Pilgrims]]
 - [[character-options/subclasses/Monk/Way of Radiance|Way of Radiance]]
 - [[character-options/subclasses/Monk/Way of the Reaper|Way of the Reaper]]
@@ -29,6 +31,7 @@ title: Monk Subclasses
 - [[character-options/subclasses/Monk/Way of the Sacred Inks|Way of the Sacred Inks]]
 - [[character-options/subclasses/Monk/Way of the Shadow Arts|Way of the Shadow Arts]]
 - [[character-options/subclasses/Monk/Way of Shining Steel|Way of Shining Steel]]
+- [[character-options/subclasses/Monk/Way of the Specter|Way of the Specter]]
 - [[character-options/subclasses/Monk/Way of the Vigilante|Way of the Vigilante]]
 - [[character-options/subclasses/Monk/Way of the Void|Way of the Void]]
 - [[character-options/subclasses/Monk/Way of the Wu Jen|Way of the Wu Jen]]

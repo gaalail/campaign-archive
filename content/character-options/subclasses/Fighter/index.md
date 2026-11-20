@@ -4,7 +4,7 @@ title: Fighter Subclasses
 
 # Fighter Subclasses
 
-**20 Warrior Archetypes available** | Choose at 3rd level
+**23 Warrior Archetypes available** | Choose at 3rd level
 
 ---
 
@@ -38,6 +38,8 @@ title: Fighter Subclasses
 | [[Spirit Knight]] | Master martial spirits and mimic warrior  |
 | [[Tinker]]        | Mechanical weapon and armor modifications |
 | [[Witchblade]]    | Pact magic and weapon combat              |
+| [[Curseblade]]    | Sentient cursed weapons and spirit blades |
+| [[Descendant]]    | Ancestral whip mastery and bloodline lore |
 
 ---
 

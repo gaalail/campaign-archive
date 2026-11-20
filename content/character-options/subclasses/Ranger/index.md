@@ -4,7 +4,7 @@ title: Ranger Subclasses
 
 # Ranger Subclasses
 
-**4 subclasses available** | Choose at 3rd level | Ranger Archetypes
+**6 subclasses available** | Choose at 3rd level | Ranger Archetypes
 
 ---
 
@@ -14,8 +14,10 @@ title: Ranger Subclasses
 | ------------------- | ---------------- | --------------- |
 | [[Evil Slayer]]     | Against evil     | Good hunter     |
 | [[Holy Messenger]]  | Divine messenger | Sacred scout    |
-| [[Hunter]]          | Monster hunter   | Skilled tracker |
-| [[Keeper of Light]] | Light guardian   | Holy ranger     |
+| [[Hunter]]                  | Monster hunter         | Skilled tracker |
+| [[Keeper of Light]]         | Light guardian         | Holy ranger     |
+| [[Coven Conclave]]          | Primeval witch spirits | Spirit-bound guardian |
+| [[Vampire Hunter Conclave]] | Hunter's arsenal       | Traps & crucifixes |
 
 ---
 

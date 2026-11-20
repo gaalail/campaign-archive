@@ -4,7 +4,7 @@ title: Druid Subclasses
 
 # Druid Subclasses
 
-**4 subclasses available** | Choose at 2nd level | Druidic Circles
+**5 subclasses available** | Choose at 2nd level | Druidic Circles
 
 ---
 
@@ -16,6 +16,7 @@ title: Druid Subclasses
 | [[Circle of Phoenix]]  | Rebirth and flame | Phoenix-like renewal    |
 | [[Circle of Unicorns]] | Mystical unicorns | Unicorn connection      |
 | [[Land]]               | Terrain mastery   | Command over landscapes |
+| [[Circle of the Brew]] | Herbal apothecary | Cauldron brews & extracts |
 
 ---
 
