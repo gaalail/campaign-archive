@@ -10,7 +10,7 @@ aliases:
 
 At **3rd level** (sometimes 1st or 2nd), you specialize your class with a **subclass**.
 
-**217 subclasses available** | Choose at level-up | Defines your playstyle
+**236 subclasses available** | Choose at level-up | Defines your playstyle
 
 ---
 
@@ -23,7 +23,7 @@ Click your class to see available subclasses:
 - [[character-options/subclasses/Artificer/index|Artificer]] (8 specializations)
 - [[character-options/subclasses/Barbarian/index|Barbarian]] (31 paths)
 - [[character-options/subclasses/Bard/index|Bard]] (6 colleges)
-- [[character-options/subclasses/Cleric/index|Cleric]] (7 domains)
+- [[character-options/subclasses/Cleric/index|Cleric]] (26 domains)
 - [[character-options/subclasses/Druid/index|Druid]] (5 circles)
 - [[character-options/subclasses/Fighter/index|Fighter]] (23 archetypes)
 - [[character-options/subclasses/Monk/index|Monk]] (25 traditions)
@@ -53,7 +53,7 @@ Click your class to see available subclasses:
 | Artificer     | [[character-options/subclasses/Artificer/index\|Artificer]] ([[Agent]], [[Forgebound]], [[Grenadier]], [[Lycanist]], ...)              | Inventive specialization |
 | Barbarian     | [[character-options/subclasses/Barbarian/index\|Barbarian (31 Paths)]] (Berserker, Path of the Colossus, Muscle Wizard, Rage Mage, ...) | Rage & Savage Exploits   |
 | Bard          | [[character-options/subclasses/Bard/index\|Bard (6 Colleges)]] (College of Infernal Archives, College of Witchcraft, Lore, ...)        | Magical performance      |
-| Cleric        | [[character-options/subclasses/Cleric/index\|Cleric (7 Domains)]] (Domain of Mythology, Domain of Witchcraft, Life, Dawn, ...)         | Divine magic             |
+| Cleric        | [[character-options/subclasses/Cleric/index\|Cleric (26 Domains)]] (Arcana, Blood, Death, Forge, Hearth, Life, Light, Luck, Mysticism, Tempest, War, ...)         | Divine magic             |
 | Druid         | [[character-options/subclasses/Druid/index\|Druid (5 Circles)]] (Land, Circle of the Brew, Heaven, Phoenix, Unicorns)                 | Nature magic             |
 | Fighter       | [[character-options/subclasses/Fighter/index\|Fighter (23 Archetypes)]] (Curseblade, Descendant, Spirit Knight, Witchblade, ...)      | Martial prowess          |
 | Monk          | [[character-options/subclasses/Monk/index\|Monk (25 Traditions)]] (Way of the Gravedigger, Way of the Penitent, Way of the Specter, ...) | Disciplined power     |
@@ -76,8 +76,8 @@ Click your class to see available subclasses:
 **Timing:**
 
 - **Most classes:** 3rd level
-- **Clerics, Sorcerers & Primals:** 1st level
-- **Druids, Warlocks & Wizards:** 2nd level
+- **Sorcerers & Primals:** 1st level
+- **Clerics, Druids, Warlocks & Wizards:** 2nd level
 - **Barbarians & Fighters:** 3rd level
 - **Thanatomancer:** 3rd level
 

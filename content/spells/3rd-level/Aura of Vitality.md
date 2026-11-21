@@ -9,6 +9,7 @@ title: Aura of Vitality
 level: 3
 school: Evocation
 classes:
+  - Cleric
   - Paladin
 casting_time: 1 action
 range: Self (30-foot radius)
@@ -35,6 +36,6 @@ Healing energy radiates from you in an aura with a 30-foot radius. Until the spe
 
 **School:** Evocation
 
-**Available to:** [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]]
 
 **Source:** Player's Handbook

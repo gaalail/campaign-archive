@@ -22,6 +22,7 @@ import { MonsterStatblock } from './MonsterStatblock';
 import { BestiaryCatalogue } from './BestiaryCatalogue';
 import { PantheonCatalogue } from './PantheonCatalogue';
 import { WarlockOverview } from './WarlockOverview';
+import { ClericOverview } from './ClericOverview';
 import {
   ArrowLeft,
   BookOpen,
@@ -146,6 +147,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
   const subclassIndex = useMemo(() => isClass ? getSubclassIndexForClass(entry.title || entry.id) : undefined, [isClass, entry.title, entry.id]);
   const isWarlockClass = isClass && entry.title.toLowerCase() === 'warlock';
   const isWarlockPatron = isSubclass && (entry.parentClass || '').toLowerCase() === 'warlock';
+  const isClericClass = isClass && entry.title.toLowerCase() === 'cleric';
+  const isClericDomain = isSubclass && (entry.parentClass || '').toLowerCase() === 'cleric';
   const classOptions = useMemo(() => isClass ? getClassOptionsForClass(entry.title || entry.id) : [], [isClass, entry.title, entry.id]);
   const classSpells = useMemo(() => (isClass || isSubclass) ? getSpellsForClass(entry.title || entry.id) : [], [isClass, isSubclass, entry.title, entry.id]);
 
@@ -449,7 +452,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                   className="px-3.5 py-1.5 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/50 text-amber-300 text-xs font-serif font-bold flex items-center gap-1.5 transition-all shadow-sm cursor-pointer"
                 >
                   <CrossedSwords className="w-3.5 h-3.5 text-amber-400" />
-                  <span>{isWarlockPatron ? 'Adopt Patron in Builder' : 'Adopt in Builder'}</span>
+                  <span>{isWarlockPatron ? 'Adopt Patron in Builder' : isClericDomain ? 'Adopt Domain in Builder' : 'Adopt in Builder'}</span>
                 </button>
               )}
 
@@ -736,8 +739,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
             </div>
           )}
 
-          {/* Quick Stat Chips (omitted for home hub and Warlock which renders dedicated Pact Architecture) */}
-          {!isHome && !isWarlockClass && Boolean(entry.hit_die || (entry.saving_throws && entry.saving_throws.length > 0) || rarityBadge || entry.attunement || entry.campaign_id) && (
+          {/* Quick Stat Chips (omitted for home hub, Warlock, and Cleric which render dedicated architecture hubs) */}
+          {!isHome && !isWarlockClass && !isClericClass && Boolean(entry.hit_die || (entry.saving_throws && entry.saving_throws.length > 0) || rarityBadge || entry.attunement || entry.campaign_id) && (
             <div className="flex flex-wrap items-center gap-2.5 mt-4 pt-3 border-t border-slate-800/60">
               {entry.hit_die && (
                 <div className="flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-950 border border-slate-800 text-xs text-slate-300 font-mono">
@@ -1125,6 +1128,24 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
           />
         )}
 
+        {/* Dedicated Cleric Sacred Architecture Hub */}
+        {isClericClass && (
+          <ClericOverview
+            classOptions={classOptions}
+            subclasses={subclasses}
+            classSpells={classSpells}
+            subclassIndex={subclassIndex}
+            effectiveTab={effectiveTab}
+            onSelectTab={(tab, poolSubcategory) => {
+              setActiveTab(tab);
+              if (tab === 'options' && poolSubcategory) {
+                setOptionPoolFilter(poolSubcategory);
+              }
+            }}
+            onNavigate={onNavigate}
+          />
+        )}
+
         {/* Navigation Tabs for Classes and Subclasses with Spells */}
         {(isClass || (isSubclass && classSpells.length > 0)) && (
           <div className="flex flex-wrap items-center gap-2 border-b border-slate-800 pb-2">
@@ -1163,7 +1184,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                 }`}
               >
                 <Layers className="w-3.5 h-3.5" />
-                <span>{isWarlockClass ? `Otherworldly Patrons (${subclasses.length})` : `Subclasses (${subclasses.length})`}</span>
+                <span>{isWarlockClass ? `Otherworldly Patrons (${subclasses.length})` : isClericClass ? `Divine Domains (${subclasses.length})` : `Subclasses (${subclasses.length})`}</span>
               </button>
             )}
 
@@ -1177,7 +1198,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                 }`}
               >
                 <Sparkles className="w-3.5 h-3.5" />
-                <span>{isWarlockClass ? `Pact Options (${classOptions.length})` : `Options & Exploits (${classOptions.length})`}</span>
+                <span>{isWarlockClass ? `Pact Options (${classOptions.length})` : isClericClass ? `Sacred Callings (${classOptions.length})` : `Options & Exploits (${classOptions.length})`}</span>
               </button>
             )}
 
@@ -1384,7 +1405,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                 <div>
                   <h3 className="font-fantasy text-lg font-bold text-slate-100 flex items-center gap-2">
                     <Layers className="w-4 h-4 text-amber-400" />
-                    <span>{isWarlockClass ? 'Warlock Otherworldly Patrons (Subclasses)' : `${entry.title} Archetypes & Subclasses`}</span>
+                    <span>{isWarlockClass ? 'Warlock Otherworldly Patrons (Subclasses)' : isClericClass ? 'Cleric Divine Domains (Subclasses)' : `${entry.title} Archetypes & Subclasses`}</span>
                     <span className="text-xs font-mono tabular-nums font-normal text-slate-400">
                       ({filteredSubclasses.length})
                     </span>
@@ -1392,6 +1413,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                   <p className="text-xs text-slate-400 mt-0.5">
                     {isWarlockClass
                       ? 'Every Warlock subclass is an Otherworldly Patron chosen at 2nd level (with an optional second Patron at 20th level).'
+                      : isClericClass
+                      ? 'Alternate Clerics choose a Divine Domain at 2nd level (with Domain Spells and Channel Divinity options); Supplemental & archive domains use classic 1st/2nd/6th/8th/17th progression.'
                       : 'Complete narrative flavor text, core game mechanics, and feature progressions.'}
                   </p>
                 </div>
@@ -1402,7 +1425,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                       onClick={() => onNavigate(subclassIndex.id)}
                       className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-slate-950 border border-slate-800 hover:border-amber-500/40 transition-colors cursor-pointer whitespace-nowrap shrink-0"
                     >
-                      <span>{isWarlockClass ? 'Patrons Catalogue' : 'Subclasses Index'}</span>
+                      <span>{isWarlockClass ? 'Patrons Catalogue' : isClericClass ? 'Domains Catalogue' : 'Subclasses Index'}</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </button>
                   )}
@@ -1412,7 +1435,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                       <Search className="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                       <input
                         type="text"
-                        placeholder={isWarlockClass ? 'Filter patrons...' : 'Filter archetypes...'}
+                        placeholder={isWarlockClass ? 'Filter patrons...' : isClericClass ? 'Filter domains...' : 'Filter archetypes...'}
                         value={subclassSearch}
                         onChange={(e) => setSubclassSearch(e.target.value)}
                         className="bg-slate-950 border border-slate-800 rounded-xl pl-8 pr-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:border-amber-500 focus:outline-none w-48"
@@ -1471,7 +1494,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                           <div>
                             <div className="text-[11px] text-slate-400 flex flex-wrap items-center gap-1.5 mb-0.5">
                               <span className="uppercase font-semibold tracking-wider text-amber-400">
-                                {isWarlockClass ? 'Otherworldly Patron' : `${entry.title} Archetype`}
+                                {isWarlockClass ? 'Otherworldly Patron' : isClericClass ? 'Divine Domain' : `${entry.title} Archetype`}
                               </span>
                               <span className="text-slate-600" aria-hidden="true">·</span>
                               <span className={subBadge.text}>{subBadge.label}</span>
@@ -1550,13 +1573,13 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                           <span>Open {sub.title}</span>
                           <ExternalLink className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
                         </button>
-                        {isWarlockClass && (
+                        {(isWarlockClass || isClericClass) && (
                           <button
                             type="button"
                             onClick={() => onNavigate(`builder?subclass=${sub.id}`)}
                             className="py-2 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 hover:border-amber-500/40 text-xs font-medium transition-colors cursor-pointer whitespace-nowrap shrink-0"
                           >
-                            Adopt Patron
+                            {isWarlockClass ? 'Adopt Patron' : 'Adopt Domain'}
                           </button>
                         )}
                       </div>
@@ -1647,6 +1670,8 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                   <div className="text-xs text-slate-400">
                     {isWarlockClass
                       ? 'Browse Warlock Pact customization pools across Eldritch Invocations, Pact Foci, Eldritch Familiars, and Elder Arcana.'
+                      : isClericClass
+                      ? 'Sacred Callings are chosen by Alternate Clerics at 1st level and evolve automatically at 7th and 14th levels.'
                       : `Specialized option pools and selectable features for ${entry.title}.`}
                   </div>
 
@@ -1655,7 +1680,7 @@ export const EntryDetail: React.FC<EntryDetailProps> = ({ entry, onNavigate, onB
                       <Search className="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-1/2 -translate-y-1/2 pointer-events-none" />
                       <input
                         type="text"
-                        placeholder={isWarlockClass ? 'Filter pact options...' : 'Filter options...'}
+                        placeholder={isWarlockClass ? 'Filter pact options...' : isClericClass ? 'Filter callings...' : 'Filter options...'}
                         value={optionSearch}
                         onChange={(e) => setOptionSearch(e.target.value)}
                         aria-label="Filter class options"

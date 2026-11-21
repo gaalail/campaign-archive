@@ -1253,7 +1253,7 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                   : 'bg-stone-800 text-stone-500 cursor-not-allowed'
               }`}
             >
-              <span>{selectedClass?.title.toLowerCase() === 'warlock' ? 'Continue to Patron' : 'Continue to Archetype'}</span>
+              <span>{selectedClass?.title.toLowerCase() === 'warlock' ? 'Continue to Patron' : selectedClass?.title.toLowerCase() === 'cleric' ? 'Continue to Domain' : 'Continue to Archetype'}</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -1269,11 +1269,15 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                 <h2 className="font-serif text-xl font-bold text-stone-100">
                   {selectedClass?.title.toLowerCase() === 'warlock'
                     ? 'Step 3: Otherworldly Patron & Fighting Style'
+                    : selectedClass?.title.toLowerCase() === 'cleric'
+                    ? 'Step 3: Divine Domain & Fighting Style'
                     : 'Step 3: Archetype & Fighting Style'}
                 </h2>
                 <p className="text-xs text-stone-400">
                   {selectedClass?.title.toLowerCase() === 'warlock'
                     ? 'Otherworldly Patrons (Warlock subclasses), chosen at 2nd level.'
+                    : selectedClass?.title.toLowerCase() === 'cleric'
+                    ? 'Divine Domains (Cleric subclasses), chosen at 2nd level under Alternate Cleric rules.'
                     : `Specializations, Sacred Oaths, and Paths for ${selectedClass?.title || 'your class'}.`}
                 </p>
               </div>
@@ -1283,7 +1287,7 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                   <Search className="w-3.5 h-3.5 text-stone-500 absolute left-3 top-1/2 -translate-y-1/2" />
                   <input
                     type="text"
-                    placeholder={selectedClass?.title.toLowerCase() === 'warlock' ? 'Filter patrons...' : 'Filter archetypes...'}
+                    placeholder={selectedClass?.title.toLowerCase() === 'warlock' ? 'Filter patrons...' : selectedClass?.title.toLowerCase() === 'cleric' ? 'Filter domains...' : 'Filter archetypes...'}
                     value={subclassSearch}
                     onChange={(e) => setSubclassSearch(e.target.value)}
                     className="w-full pl-8 pr-3 py-1.5 rounded-xl bg-stone-950 border border-stone-800 text-xs text-stone-200 focus:outline-none focus:border-amber-500"
@@ -1339,6 +1343,8 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                             ? 'Selected'
                             : selectedClass?.title.toLowerCase() === 'warlock'
                             ? 'Choose Patron'
+                            : selectedClass?.title.toLowerCase() === 'cleric'
+                            ? 'Choose Domain'
                             : 'Choose Archetype'}
                         </button>
 
@@ -1351,6 +1357,8 @@ export const CharacterBuilder: React.FC<CharacterBuilderProps> = ({ onNavigateTo
                           <span>
                             {selectedClass?.title.toLowerCase() === 'warlock'
                               ? 'Inspect Patron & Rules'
+                              : selectedClass?.title.toLowerCase() === 'cleric'
+                              ? 'Inspect Domain & Rules'
                               : 'Inspect Tenets & Rules'}
                           </span>
                         </button>

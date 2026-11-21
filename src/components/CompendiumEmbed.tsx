@@ -14,14 +14,16 @@ const POOL_ORDER: Record<string, number> = {
   'eldritch-invocations': 1,
   'pact-foci': 2,
   familiars: 3,
-  'elder-arcana': 4
+  'elder-arcana': 4,
+  'sacred-callings': 5
 };
 
 const SUBTYPE_LABELS: Record<string, string> = {
   'eldritch-invocations': 'Eldritch Invocations',
   'pact-foci': 'Pact Foci',
   familiars: 'Eldritch Familiars',
-  'elder-arcana': 'Elder Arcana'
+  'elder-arcana': 'Elder Arcana',
+  'sacred-callings': 'Sacred Callings'
 };
 
 function formatSubtypeLabel(slug: string): string {
@@ -70,7 +72,11 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
     } else if (target === 'subclasses-of.base') {
       isSubclassesOf = true;
       title = currentClass
-        ? (currentClass.toLowerCase() === 'warlock' ? 'Warlock Otherworldly Patrons (Subclasses)' : `${currentClass} Subclasses & Archetypes`)
+        ? (currentClass.toLowerCase() === 'warlock'
+          ? 'Warlock Otherworldly Patrons (Subclasses)'
+          : currentClass.toLowerCase() === 'cleric'
+          ? 'Cleric Divine Domains (Subclasses)'
+          : `${currentClass} Subclasses & Archetypes`)
         : 'Subclasses';
       filtered = archiveDb.entries.filter(e => 
         e.category === 'subclasses' && 
@@ -121,7 +127,8 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
         'warden-alternate-features.base': true,
         'warlock-elder-arcana.base': true,
         'warlock-pact-foci.base': true,
-        'warlock-familiars.base': true
+        'warlock-familiars.base': true,
+        'sacred-callings.base': true
       }
     ) {
       const CLASS_OPTION_BASE_MAP: Record<string, { subcategory: string; title: string }> = {
@@ -137,7 +144,8 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
         'warden-alternate-features.base': { subcategory: 'warden-alternate-features', title: 'Warden Alternate Class Features' },
         'warlock-elder-arcana.base': { subcategory: 'elder-arcana', title: 'Elder Arcana' },
         'warlock-pact-foci.base': { subcategory: 'pact-foci', title: 'Pact Foci' },
-        'warlock-familiars.base': { subcategory: 'familiars', title: 'Eldritch Familiars' }
+        'warlock-familiars.base': { subcategory: 'familiars', title: 'Eldritch Familiars' },
+        'sacred-callings.base': { subcategory: 'sacred-callings', title: 'Sacred Callings' }
       };
       const pool = CLASS_OPTION_BASE_MAP[target];
       title = pool.title;
@@ -378,7 +386,7 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
                         <div className="text-[11px] text-slate-400 flex items-center gap-1.5 mt-0.5">
                           {entry.parentClass && (
                             <span className="text-amber-400 font-medium">
-                              {entry.parentClass.toLowerCase() === 'warlock' ? 'Otherworldly Patron' : `${entry.parentClass} Archetype`}
+                              {entry.parentClass.toLowerCase() === 'warlock' ? 'Otherworldly Patron' : entry.parentClass.toLowerCase() === 'cleric' ? 'Divine Domain' : `${entry.parentClass} Archetype`}
                             </span>
                           )}
                           {entry.parentClass && entry.source && <span aria-hidden="true">·</span>}
@@ -430,7 +438,7 @@ export const CompendiumEmbed: React.FC<CompendiumEmbedProps> = ({ target, curren
                       onClick={() => onNavigate(entry.id)}
                       className="text-xs text-amber-400 hover:text-amber-300 font-medium flex items-center gap-1 group/btn cursor-pointer"
                     >
-                      <span>{entry.parentClass?.toLowerCase() === 'warlock' ? 'View Patron' : 'View Archetype'}</span>
+                      <span>{entry.parentClass?.toLowerCase() === 'warlock' ? 'View Patron' : entry.parentClass?.toLowerCase() === 'cleric' ? 'View Domain' : 'View Archetype'}</span>
                       <ChevronRight className="w-3.5 h-3.5 transition-transform group-hover/btn:translate-x-0.5" />
                     </button>
                   </div>

@@ -12,6 +12,7 @@ source: "SRD 5.1"
 source_type: SRD
 summary: "Brilliant sunlight flashes in a 60-foot-radius sphere, dealing 12d6 radiant damage and blinding creatures for 1 minute."
 classes:
+  - Cleric
   - Druid
   - Sorcerer
   - Wizard
@@ -29,6 +30,6 @@ Brilliant sunlight flashes in a 60-foot radius centered on a point you choose wi
 
 **School:** Evocation
 
-**Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Cleric]], [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Source:** SRD 5.1

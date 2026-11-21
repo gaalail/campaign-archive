@@ -9,6 +9,7 @@ title: Aura of Purity
 level: 4
 school: Abjuration
 classes:
+  - Cleric
   - Paladin
 casting_time: 1 action
 range: Self (30-foot radius)
@@ -38,6 +39,6 @@ Purifying energy radiates from you in an aura with a 30-foot radius. Until the s
 
 **School:** Abjuration
 
-**Available to:** [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]]
 
 **Source:** Player's Handbook

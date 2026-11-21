@@ -1109,6 +1109,10 @@ export function parseClassAndSubclassProgression(
           break;
         }
       }
+      if (classOptionsKnown === 0 && lower === 'cleric') {
+        classOptionsKnown = 1;
+        classOptionsLabel = 'Sacred Calling';
+      }
 
       // Martial Arts & Unarmored Movement
       const maCol = headers.findIndex((h) => h.includes('martial arts'));

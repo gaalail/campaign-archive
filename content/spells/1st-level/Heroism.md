@@ -13,6 +13,7 @@ source_type: SRD
 summary: "Imbue a willing creature with bravery: immunity to frightened and temporary hit points equal to your casting modifier each turn."
 classes:
   - Bard
+  - Cleric
   - Paladin
   - Tamer
 ---
@@ -31,6 +32,6 @@ A willing creature you touch is imbued with bravery. Until the spell ends, the c
 
 **School:** Enchantment
 
-**Available to:** [[Bard]], [[Paladin]], [[Tamer]]
+**Available to:** [[Bard]], [[Cleric]], [[Paladin]], [[Tamer]]
 
 **Source:** SRD 5.1

@@ -24,6 +24,14 @@ Primal martial techniques and heroic feats powered by Exploit Dice, including op
 
 ---
 
+### [[character-options/class-options/sacred-callings/index|Sacred Callings]] (Cleric)
+
+Devotional vocations—Crusader, Monastic, or Scholastic—defining how a Cleric serves their deity across 1st, 7th, and 14th levels.
+
+**3 callings** | Level 1 choice | Scales at 7th & 14th levels
+
+---
+
 ### [[character-options/class-options/martial-exploits/index|Martial Exploits]] (Fighter)
 
 Martial techniques for attacks, ability checks, saving throws, and tactical support.
@@ -124,6 +132,7 @@ High-level Warlock options available at 11th level and higher.
 
 1. **Your class determines what options you can choose**
    - Barbarians → Savage Exploits
+   - Clerics → Sacred Callings
    - Fighters → Martial Exploits
    - Monks → Mystic Techniques
    - Paladins → Smite Paths
@@ -145,6 +154,7 @@ High-level Warlock options available at 11th level and higher.
 ## Finding Your Options
 
 - **Playing a [[Barbarian]]?** → Go to [[character-options/class-options/savage-exploits/index|Savage Exploits]]
+- **Playing a [[Cleric]]?** → Go to [[character-options/class-options/sacred-callings/index|Sacred Callings]]
 - **Playing a [[Fighter]]?** → Go to [[character-options/class-options/martial-exploits/index|Martial Exploits]]; Fighting Styles are in the shared [[character-options/fighting-styles/index|Fighting Styles]] catalogue
 - **Playing a [[Monk]]?** → Go to [[character-options/class-options/monk-techniques/index|Mystic Techniques]]
 - **Playing a [[Paladin]]?** → Go to [[character-options/class-options/smite-paths/index|Smite Paths]]

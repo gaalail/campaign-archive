@@ -338,6 +338,7 @@ for (const filePath of files) {
         'pact-foci': 'Warlock',
         'familiars': 'Warlock',
         'elder-arcana': 'Warlock',
+        'sacred-callings': 'Cleric',
         'martial-exploits': 'Fighter',
         'savage-exploits': 'Barbarian',
         'metamagic': 'Sorcerer',

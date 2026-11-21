@@ -12,6 +12,7 @@ source: "SRD 5.1"
 source_type: SRD
 summary: "A churning 360-foot-radius storm cloud rains acid, hail, lightning bolts, and freezing gusts across ten rounds."
 classes:
+  - Cleric
   - Druid
 ---
 
@@ -46,6 +47,6 @@ A churning storm cloud forms, centered on a point you can see and spreading to a
 
 **School:** Conjuration
 
-**Available to:** [[Druid]]
+**Available to:** [[Cleric]], [[Druid]]
 
 **Source:** SRD 5.1

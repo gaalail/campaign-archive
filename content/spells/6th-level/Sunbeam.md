@@ -12,6 +12,7 @@ source: "SRD 5.1"
 source_type: SRD
 summary: "Shoot a 5-foot-wide, 60-foot-long beam of sunlight each turn that blinds and deals 6d8 radiant damage."
 classes:
+  - Cleric
   - Druid
   - Sorcerer
   - Wizard
@@ -29,6 +30,6 @@ A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-l
 
 **School:** Evocation
 
-**Available to:** [[Druid]], [[Sorcerer]], [[Wizard]]
+**Available to:** [[Cleric]], [[Druid]], [[Sorcerer]], [[Wizard]]
 
 **Source:** SRD 5.1

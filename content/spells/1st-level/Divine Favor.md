@@ -12,6 +12,7 @@ source: "SRD 5.1"
 source_type: SRD
 summary: "Your weapon strikes deal an extra 1d4 radiant damage on a hit for the duration."
 classes:
+  - Cleric
   - Paladin
 ---
 
@@ -21,7 +22,7 @@ Your prayer empowers you with divine radiance. Until the spell ends, your weapon
 
 
 > [!info]- Laserllama Alternate Version (Compendium of Spells v0.5)
-> *1st level evocation* — **Classes:** Paladin
+> *1st level evocation* — **Classes:** Cleric, Paladin
 > **Casting Time:** 1 bonus action | **Range:** Self | **Components:** V, S | **Duration:** Concentration, up to 1 minute
 >
 > Your prayer empowers one weapon of your choice within 10 feet of you with divine radiance. Until the spell ends, attacks with that weapon deal an extra 1d4 radiant damage on a hit.
@@ -36,6 +37,6 @@ Your prayer empowers you with divine radiance. Until the spell ends, your weapon
 
 **School:** Evocation
 
-**Available to:** [[Paladin]]
+**Available to:** [[Cleric]], [[Paladin]]
 
 **Source:** SRD 5.1
